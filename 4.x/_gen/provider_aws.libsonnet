@@ -139,50 +139,6 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
     use_dualstack_endpoint: use_dualstack_endpoint,
     use_fips_endpoint: use_fips_endpoint,
   }),
-  assume_role:: {
-    new(
-      duration=null,
-      duration_seconds=null,
-      external_id=null,
-      policy=null,
-      policy_arns=null,
-      role_arn=null,
-      session_name=null,
-      source_identity=null,
-      tags=null,
-      transitive_tag_keys=null
-    ):: std.prune(a={
-      duration: duration,
-      duration_seconds: duration_seconds,
-      external_id: external_id,
-      policy: policy,
-      policy_arns: policy_arns,
-      role_arn: role_arn,
-      session_name: session_name,
-      source_identity: source_identity,
-      tags: tags,
-      transitive_tag_keys: transitive_tag_keys,
-    }),
-  },
-  assume_role_with_web_identity:: {
-    new(
-      duration=null,
-      policy=null,
-      policy_arns=null,
-      role_arn=null,
-      session_name=null,
-      web_identity_token=null,
-      web_identity_token_file=null
-    ):: std.prune(a={
-      duration: duration,
-      policy: policy,
-      policy_arns: policy_arns,
-      role_arn: role_arn,
-      session_name: session_name,
-      web_identity_token: web_identity_token,
-      web_identity_token_file: web_identity_token_file,
-    }),
-  },
   default_tags:: {
     new(
       tags=null
@@ -950,6 +906,50 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
     ):: std.prune(a={
       key_prefixes: key_prefixes,
       keys: keys,
+    }),
+  },
+  assume_role:: {
+    new(
+      duration=null,
+      duration_seconds=null,
+      external_id=null,
+      policy=null,
+      policy_arns=null,
+      role_arn=null,
+      session_name=null,
+      source_identity=null,
+      tags=null,
+      transitive_tag_keys=null
+    ):: std.prune(a={
+      duration: duration,
+      duration_seconds: duration_seconds,
+      external_id: external_id,
+      policy: policy,
+      policy_arns: policy_arns,
+      role_arn: role_arn,
+      session_name: session_name,
+      source_identity: source_identity,
+      tags: tags,
+      transitive_tag_keys: transitive_tag_keys,
+    }),
+  },
+  assume_role_with_web_identity:: {
+    new(
+      duration=null,
+      policy=null,
+      policy_arns=null,
+      role_arn=null,
+      session_name=null,
+      web_identity_token=null,
+      web_identity_token_file=null
+    ):: std.prune(a={
+      duration: duration,
+      policy: policy,
+      policy_arns: policy_arns,
+      role_arn: role_arn,
+      session_name: session_name,
+      web_identity_token: web_identity_token,
+      web_identity_token_file: web_identity_token_file,
     }),
   },
 }
