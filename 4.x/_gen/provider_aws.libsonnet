@@ -139,15 +139,6 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
     use_dualstack_endpoint: use_dualstack_endpoint,
     use_fips_endpoint: use_fips_endpoint,
   }),
-  ignore_tags:: {
-    new(
-      key_prefixes=null,
-      keys=null
-    ):: std.prune(a={
-      key_prefixes: key_prefixes,
-      keys: keys,
-    }),
-  },
   assume_role:: {
     new(
       duration=null,
@@ -950,6 +941,15 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
       workspaces: workspaces,
       workspacesweb: workspacesweb,
       xray: xray,
+    }),
+  },
+  ignore_tags:: {
+    new(
+      key_prefixes=null,
+      keys=null
+    ):: std.prune(a={
+      key_prefixes: key_prefixes,
+      keys: keys,
     }),
   },
 }
