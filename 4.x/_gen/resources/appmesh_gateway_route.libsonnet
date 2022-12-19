@@ -1,0 +1,350 @@
+local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
+local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
+{
+  '#':: d.pkg(name='appmesh_gateway_route', url='', help='`appmesh_gateway_route` represents the `aws_appmesh_gateway_route` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
+  '#new':: d.fn(help="\n`aws.appmesh_gateway_route.new` injects a new `aws_appmesh_gateway_route` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.appmesh_gateway_route.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.appmesh_gateway_route` using the reference:\n\n    $._ref.aws_appmesh_gateway_route.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_appmesh_gateway_route.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `mesh_name` (`string`): \n  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.\n  - `name` (`string`): \n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `virtual_gateway_name` (`string`): \n  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.new](#fn-appmeshgatewayroutespecnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  new(
+    resourceLabel,
+    mesh_name,
+    name,
+    virtual_gateway_name,
+    mesh_owner=null,
+    spec=null,
+    tags=null,
+    tags_all=null,
+    _meta={}
+  ):: tf.withResource(
+    type='aws_appmesh_gateway_route',
+    label=resourceLabel,
+    attrs=self.newAttrs(
+      mesh_name=mesh_name,
+      mesh_owner=mesh_owner,
+      name=name,
+      spec=spec,
+      tags=tags,
+      tags_all=tags_all,
+      virtual_gateway_name=virtual_gateway_name
+    ),
+    _meta=_meta
+  ),
+  '#newAttrs':: d.fn(help='\n`aws.appmesh_gateway_route.newAttrs` constructs a new object with attributes and blocks configured for the `appmesh_gateway_route`\nTerraform resource.\n\nUnlike [aws.appmesh_gateway_route.new](#fn-appmeshgatewayroutenew), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `mesh_name` (`string`): \n  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.\n  - `name` (`string`): \n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `virtual_gateway_name` (`string`): \n  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.new](#fn-appmeshgatewayroutespecnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appmesh_gateway_route` resource into the root Terraform configuration.\n', args=[]),
+  newAttrs(
+    mesh_name,
+    name,
+    virtual_gateway_name,
+    mesh_owner=null,
+    spec=null,
+    tags=null,
+    tags_all=null
+  ):: std.prune(a={
+    mesh_name: mesh_name,
+    mesh_owner: mesh_owner,
+    name: name,
+    spec: spec,
+    tags: tags,
+    tags_all: tags_all,
+    virtual_gateway_name: virtual_gateway_name,
+  }),
+  spec:: {
+    grpc_route:: {
+      action:: {
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.grpc_route.action.new` constructs a new object with attributes and blocks configured for the `action`\nTerraform sub block.\n\n\n\n**Args**:\n  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.new](#fn-actiontargetnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `action` sub block.\n', args=[]),
+        new(
+          target=null
+        ):: std.prune(a={
+          target: target,
+        }),
+        target:: {
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.grpc_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service` (`list[obj]`):  When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.virtual_service.new](#fn-targetvirtualservicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
+          new(
+            virtual_service=null
+          ):: std.prune(a={
+            virtual_service: virtual_service,
+          }),
+          virtual_service:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.grpc_route.action.target.virtual_service.new` constructs a new object with attributes and blocks configured for the `virtual_service`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service_name` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `virtual_service` sub block.\n', args=[]),
+            new(
+              virtual_service_name
+            ):: std.prune(a={
+              virtual_service_name: virtual_service_name,
+            }),
+          },
+        },
+      },
+      match:: {
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.grpc_route.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `service_name` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+        new(
+          service_name
+        ):: std.prune(a={
+          service_name: service_name,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.grpc_route.new` constructs a new object with attributes and blocks configured for the `grpc_route`\nTerraform sub block.\n\n\n\n**Args**:\n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.new](#fn-grpcrouteactionnew) constructor.\n  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.match.new](#fn-grpcroutematchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `grpc_route` sub block.\n', args=[]),
+      new(
+        action=null,
+        match=null
+      ):: std.prune(a={
+        action: action,
+        match: match,
+      }),
+    },
+    http2_route:: {
+      action:: {
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.new` constructs a new object with attributes and blocks configured for the `action`\nTerraform sub block.\n\n\n\n**Args**:\n  - `rewrite` (`list[obj]`):  When `null`, the `rewrite` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.new](#fn-actionrewritenew) constructor.\n  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.new](#fn-actiontargetnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `action` sub block.\n', args=[]),
+        new(
+          rewrite=null,
+          target=null
+        ):: std.prune(a={
+          rewrite: rewrite,
+          target: target,
+        }),
+        rewrite:: {
+          hostname:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.hostname.new` constructs a new object with attributes and blocks configured for the `hostname`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_target_hostname` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `hostname` sub block.\n', args=[]),
+            new(
+              default_target_hostname
+            ):: std.prune(a={
+              default_target_hostname: default_target_hostname,
+            }),
+          },
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.new` constructs a new object with attributes and blocks configured for the `rewrite`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.hostname.new](#fn-rewritehostnamenew) constructor.\n  - `prefix` (`list[obj]`):  When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new](#fn-rewriteprefixnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rewrite` sub block.\n', args=[]),
+          new(
+            hostname=null,
+            prefix=null
+          ):: std.prune(a={
+            hostname: hostname,
+            prefix: prefix,
+          }),
+          prefix:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new` constructs a new object with attributes and blocks configured for the `prefix`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_prefix` (`string`):  When `null`, the `default_prefix` field will be omitted from the resulting object.\n  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `prefix` sub block.\n', args=[]),
+            new(
+              default_prefix=null,
+              value=null
+            ):: std.prune(a={
+              default_prefix: default_prefix,
+              value: value,
+            }),
+          },
+        },
+        target:: {
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service` (`list[obj]`):  When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.virtual_service.new](#fn-targetvirtualservicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
+          new(
+            virtual_service=null
+          ):: std.prune(a={
+            virtual_service: virtual_service,
+          }),
+          virtual_service:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.target.virtual_service.new` constructs a new object with attributes and blocks configured for the `virtual_service`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service_name` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `virtual_service` sub block.\n', args=[]),
+            new(
+              virtual_service_name
+            ):: std.prune(a={
+              virtual_service_name: virtual_service_name,
+            }),
+          },
+        },
+      },
+      match:: {
+        hostname:: {
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.hostname.new` constructs a new object with attributes and blocks configured for the `hostname`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`):  When `null`, the `exact` field will be omitted from the resulting object.\n  - `suffix` (`string`):  When `null`, the `suffix` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `hostname` sub block.\n', args=[]),
+          new(
+            exact=null,
+            suffix=null
+          ):: std.prune(a={
+            exact: exact,
+            suffix: suffix,
+          }),
+        },
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.\n  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.hostname.new](#fn-matchhostnamenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+        new(
+          hostname=null,
+          prefix=null
+        ):: std.prune(a={
+          hostname: hostname,
+          prefix: prefix,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.new` constructs a new object with attributes and blocks configured for the `http2_route`\nTerraform sub block.\n\n\n\n**Args**:\n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.new](#fn-http2routeactionnew) constructor.\n  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.new](#fn-http2routematchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `http2_route` sub block.\n', args=[]),
+      new(
+        action=null,
+        match=null
+      ):: std.prune(a={
+        action: action,
+        match: match,
+      }),
+    },
+    http_route:: {
+      action:: {
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.new` constructs a new object with attributes and blocks configured for the `action`\nTerraform sub block.\n\n\n\n**Args**:\n  - `rewrite` (`list[obj]`):  When `null`, the `rewrite` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.new](#fn-actionrewritenew) constructor.\n  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.new](#fn-actiontargetnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `action` sub block.\n', args=[]),
+        new(
+          rewrite=null,
+          target=null
+        ):: std.prune(a={
+          rewrite: rewrite,
+          target: target,
+        }),
+        rewrite:: {
+          hostname:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.rewrite.hostname.new` constructs a new object with attributes and blocks configured for the `hostname`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_target_hostname` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `hostname` sub block.\n', args=[]),
+            new(
+              default_target_hostname
+            ):: std.prune(a={
+              default_target_hostname: default_target_hostname,
+            }),
+          },
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.rewrite.new` constructs a new object with attributes and blocks configured for the `rewrite`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.hostname.new](#fn-rewritehostnamenew) constructor.\n  - `prefix` (`list[obj]`):  When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new](#fn-rewriteprefixnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rewrite` sub block.\n', args=[]),
+          new(
+            hostname=null,
+            prefix=null
+          ):: std.prune(a={
+            hostname: hostname,
+            prefix: prefix,
+          }),
+          prefix:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new` constructs a new object with attributes and blocks configured for the `prefix`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_prefix` (`string`):  When `null`, the `default_prefix` field will be omitted from the resulting object.\n  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `prefix` sub block.\n', args=[]),
+            new(
+              default_prefix=null,
+              value=null
+            ):: std.prune(a={
+              default_prefix: default_prefix,
+              value: value,
+            }),
+          },
+        },
+        target:: {
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service` (`list[obj]`):  When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.virtual_service.new](#fn-targetvirtualservicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
+          new(
+            virtual_service=null
+          ):: std.prune(a={
+            virtual_service: virtual_service,
+          }),
+          virtual_service:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.target.virtual_service.new` constructs a new object with attributes and blocks configured for the `virtual_service`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service_name` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `virtual_service` sub block.\n', args=[]),
+            new(
+              virtual_service_name
+            ):: std.prune(a={
+              virtual_service_name: virtual_service_name,
+            }),
+          },
+        },
+      },
+      match:: {
+        hostname:: {
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.hostname.new` constructs a new object with attributes and blocks configured for the `hostname`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`):  When `null`, the `exact` field will be omitted from the resulting object.\n  - `suffix` (`string`):  When `null`, the `suffix` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `hostname` sub block.\n', args=[]),
+          new(
+            exact=null,
+            suffix=null
+          ):: std.prune(a={
+            exact: exact,
+            suffix: suffix,
+          }),
+        },
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.\n  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.hostname.new](#fn-matchhostnamenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+        new(
+          hostname=null,
+          prefix=null
+        ):: std.prune(a={
+          hostname: hostname,
+          prefix: prefix,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.new` constructs a new object with attributes and blocks configured for the `http_route`\nTerraform sub block.\n\n\n\n**Args**:\n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.new](#fn-httprouteactionnew) constructor.\n  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.new](#fn-httproutematchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `http_route` sub block.\n', args=[]),
+      new(
+        action=null,
+        match=null
+      ):: std.prune(a={
+        action: action,
+        match: match,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.new` constructs a new object with attributes and blocks configured for the `spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `grpc_route` (`list[obj]`):  When `null`, the `grpc_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.new](#fn-specgrpcroutenew) constructor.\n  - `http2_route` (`list[obj]`):  When `null`, the `http2_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.new](#fn-spechttp2routenew) constructor.\n  - `http_route` (`list[obj]`):  When `null`, the `http_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.new](#fn-spechttproutenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `spec` sub block.\n', args=[]),
+    new(
+      grpc_route=null,
+      http2_route=null,
+      http_route=null
+    ):: std.prune(a={
+      grpc_route: grpc_route,
+      http2_route: http2_route,
+      http_route: http_route,
+    }),
+  },
+  '#withMeshName':: d.fn(help='`aws.string.withMeshName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the mesh_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `mesh_name` field.\n', args=[]),
+  withMeshName(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          mesh_name: value,
+        },
+      },
+    },
+  },
+  '#withMeshOwner':: d.fn(help='`aws.string.withMeshOwner` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the mesh_owner field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `mesh_owner` field.\n', args=[]),
+  withMeshOwner(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          mesh_owner: value,
+        },
+      },
+    },
+  },
+  '#withName':: d.fn(help='`aws.string.withName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `name` field.\n', args=[]),
+  withName(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          name: value,
+        },
+      },
+    },
+  },
+  '#withSpec':: d.fn(help='`aws.list[obj].withSpec` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the spec field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withSpecMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `spec` field.\n', args=[]),
+  withSpec(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          spec: value,
+        },
+      },
+    },
+  },
+  '#withSpecMixin':: d.fn(help='`aws.list[obj].withSpecMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the spec field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withSpec](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `spec` field.\n', args=[]),
+  withSpecMixin(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          spec+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withTags':: d.fn(help='`aws.obj.withTags` constructs a mixin object that can be merged into the `obj`\nTerraform resource block to set or update the tags field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`obj`): The value to set for the `tags` field.\n', args=[]),
+  withTags(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          tags: value,
+        },
+      },
+    },
+  },
+  '#withTagsAll':: d.fn(help='`aws.obj.withTagsAll` constructs a mixin object that can be merged into the `obj`\nTerraform resource block to set or update the tags_all field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`obj`): The value to set for the `tags_all` field.\n', args=[]),
+  withTagsAll(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          tags_all: value,
+        },
+      },
+    },
+  },
+  '#withVirtualGatewayName':: d.fn(help='`aws.string.withVirtualGatewayName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the virtual_gateway_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `virtual_gateway_name` field.\n', args=[]),
+  withVirtualGatewayName(resourceLabel, value): {
+    resource+: {
+      aws_appmesh_gateway_route+: {
+        [resourceLabel]+: {
+          virtual_gateway_name: value,
+        },
+      },
+    },
+  },
+}

@@ -1,0 +1,130 @@
+---
+permalink: /chime_voice_connector/
+---
+
+# chime_voice_connector
+
+`chime_voice_connector` represents the `aws_chime_voice_connector` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAwsRegion()`](#fn-withawsregion)
+* [`fn withName()`](#fn-withname)
+* [`fn withRequireEncryption()`](#fn-withrequireencryption)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.chime_voice_connector.new` injects a new `aws_chime_voice_connector` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.chime_voice_connector.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.chime_voice_connector` using the reference:
+
+    $._ref.aws_chime_voice_connector.some_id.get('id')
+
+This is the same as directly entering `"${ aws_chime_voice_connector.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `aws_region` (`string`):  When `null`, the `aws_region` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `require_encryption` (`bool`): 
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.chime_voice_connector.newAttrs` constructs a new object with attributes and blocks configured for the `chime_voice_connector`
+Terraform resource.
+
+Unlike [aws.chime_voice_connector.new](#fn-chimevoiceconnectornew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `aws_region` (`string`):  When `null`, the `aws_region` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `require_encryption` (`bool`): 
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `chime_voice_connector` resource into the root Terraform configuration.
+
+
+### fn withAwsRegion
+
+```ts
+withAwsRegion()
+```
+
+`aws.string.withAwsRegion` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the aws_region field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `aws_region` field.
+
+
+### fn withName
+
+```ts
+withName()
+```
+
+`aws.string.withName` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withRequireEncryption
+
+```ts
+withRequireEncryption()
+```
+
+`aws.bool.withRequireEncryption` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the require_encryption field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `require_encryption` field.

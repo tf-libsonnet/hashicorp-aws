@@ -1,0 +1,206 @@
+---
+permalink: /batch_job_queue/
+---
+
+# batch_job_queue
+
+`batch_job_queue` represents the `aws_batch_job_queue` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withComputeEnvironments()`](#fn-withcomputeenvironments)
+* [`fn withName()`](#fn-withname)
+* [`fn withPriority()`](#fn-withpriority)
+* [`fn withSchedulingPolicyArn()`](#fn-withschedulingpolicyarn)
+* [`fn withState()`](#fn-withstate)
+* [`fn withTags()`](#fn-withtags)
+* [`fn withTagsAll()`](#fn-withtagsall)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.batch_job_queue.new` injects a new `aws_batch_job_queue` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.batch_job_queue.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.batch_job_queue` using the reference:
+
+    $._ref.aws_batch_job_queue.some_id.get('id')
+
+This is the same as directly entering `"${ aws_batch_job_queue.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `compute_environments` (`list`): 
+  - `name` (`string`): 
+  - `priority` (`number`): 
+  - `scheduling_policy_arn` (`string`):  When `null`, the `scheduling_policy_arn` field will be omitted from the resulting object.
+  - `state` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.batch_job_queue.newAttrs` constructs a new object with attributes and blocks configured for the `batch_job_queue`
+Terraform resource.
+
+Unlike [aws.batch_job_queue.new](#fn-batchjobqueuenew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `compute_environments` (`list`): 
+  - `name` (`string`): 
+  - `priority` (`number`): 
+  - `scheduling_policy_arn` (`string`):  When `null`, the `scheduling_policy_arn` field will be omitted from the resulting object.
+  - `state` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `batch_job_queue` resource into the root Terraform configuration.
+
+
+### fn withComputeEnvironments
+
+```ts
+withComputeEnvironments()
+```
+
+`aws.list.withComputeEnvironments` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the compute_environments field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `compute_environments` field.
+
+
+### fn withName
+
+```ts
+withName()
+```
+
+`aws.string.withName` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withPriority
+
+```ts
+withPriority()
+```
+
+`aws.number.withPriority` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the priority field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `priority` field.
+
+
+### fn withSchedulingPolicyArn
+
+```ts
+withSchedulingPolicyArn()
+```
+
+`aws.string.withSchedulingPolicyArn` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the scheduling_policy_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `scheduling_policy_arn` field.
+
+
+### fn withState
+
+```ts
+withState()
+```
+
+`aws.string.withState` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the state field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `state` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.obj.withTags` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the tags field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags` field.
+
+
+### fn withTagsAll
+
+```ts
+withTagsAll()
+```
+
+`aws.obj.withTagsAll` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the tags_all field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags_all` field.

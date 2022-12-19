@@ -1,0 +1,237 @@
+---
+permalink: /elastic_beanstalk_configuration_template/
+---
+
+# elastic_beanstalk_configuration_template
+
+`elastic_beanstalk_configuration_template` represents the `aws_elastic_beanstalk_configuration_template` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withApplication()`](#fn-withapplication)
+* [`fn withDescription()`](#fn-withdescription)
+* [`fn withEnvironmentId()`](#fn-withenvironmentid)
+* [`fn withName()`](#fn-withname)
+* [`fn withSetting()`](#fn-withsetting)
+* [`fn withSettingMixin()`](#fn-withsettingmixin)
+* [`fn withSolutionStackName()`](#fn-withsolutionstackname)
+* [`obj setting`](#obj-setting)
+  * [`fn new()`](#fn-settingnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.elastic_beanstalk_configuration_template.new` injects a new `aws_elastic_beanstalk_configuration_template` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.elastic_beanstalk_configuration_template.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.elastic_beanstalk_configuration_template` using the reference:
+
+    $._ref.aws_elastic_beanstalk_configuration_template.some_id.get('id')
+
+This is the same as directly entering `"${ aws_elastic_beanstalk_configuration_template.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `application` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `environment_id` (`string`):  When `null`, the `environment_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `solution_stack_name` (`string`):  When `null`, the `solution_stack_name` field will be omitted from the resulting object.
+  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_configuration_template.setting.new](#fn-elasticbeanstalkconfigurationtemplatesettingnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.elastic_beanstalk_configuration_template.newAttrs` constructs a new object with attributes and blocks configured for the `elastic_beanstalk_configuration_template`
+Terraform resource.
+
+Unlike [aws.elastic_beanstalk_configuration_template.new](#fn-elasticbeanstalkconfigurationtemplatenew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `application` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `environment_id` (`string`):  When `null`, the `environment_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `solution_stack_name` (`string`):  When `null`, the `solution_stack_name` field will be omitted from the resulting object.
+  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_configuration_template.setting.new](#fn-elasticbeanstalkconfigurationtemplatesettingnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastic_beanstalk_configuration_template` resource into the root Terraform configuration.
+
+
+### fn withApplication
+
+```ts
+withApplication()
+```
+
+`aws.string.withApplication` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the application field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `application` field.
+
+
+### fn withDescription
+
+```ts
+withDescription()
+```
+
+`aws.string.withDescription` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the description field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `description` field.
+
+
+### fn withEnvironmentId
+
+```ts
+withEnvironmentId()
+```
+
+`aws.string.withEnvironmentId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the environment_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `environment_id` field.
+
+
+### fn withName
+
+```ts
+withName()
+```
+
+`aws.string.withName` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withSetting
+
+```ts
+withSetting()
+```
+
+`aws.list[obj].withSetting` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the setting field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withSettingMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `setting` field.
+
+
+### fn withSettingMixin
+
+```ts
+withSettingMixin()
+```
+
+`aws.list[obj].withSettingMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the setting field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withSetting](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `setting` field.
+
+
+### fn withSolutionStackName
+
+```ts
+withSolutionStackName()
+```
+
+`aws.string.withSolutionStackName` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the solution_stack_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `solution_stack_name` field.
+
+
+## obj setting
+
+
+
+### fn setting.new
+
+```ts
+new()
+```
+
+
+`aws.elastic_beanstalk_configuration_template.setting.new` constructs a new object with attributes and blocks configured for the `setting`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): 
+  - `namespace` (`string`): 
+  - `resource` (`string`):  When `null`, the `resource` field will be omitted from the resulting object.
+  - `value` (`string`): 
+
+**Returns**:
+  - An attribute object that represents the `setting` sub block.
