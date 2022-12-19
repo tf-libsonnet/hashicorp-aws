@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): 
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-glue_security_configurationencryption_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.glue_security_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `glue_security_configuration`
 Terraform resource.
 
-Unlike [aws.glue_security_configuration.new](#fn-glue_security_configurationnew), this function will not inject the `resource`
+Unlike [aws.glue_security_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): 
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-glue_security_configurationencryption_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_security_configuration` resource into the root Terraform configuration.
@@ -158,9 +158,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_encryption` (`list[obj]`):  When `null`, the `cloudwatch_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.cloudwatch_encryption.new](#fn-encryption_configurationcloudwatch_encryptionnew) constructor.
-  - `job_bookmarks_encryption` (`list[obj]`):  When `null`, the `job_bookmarks_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.job_bookmarks_encryption.new](#fn-encryption_configurationjob_bookmarks_encryptionnew) constructor.
-  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.s3_encryption.new](#fn-encryption_configurations3_encryptionnew) constructor.
+  - `cloudwatch_encryption` (`list[obj]`):  When `null`, the `cloudwatch_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.cloudwatch_encryption.new](#fn-cloudwatch_encryptionnew) constructor.
+  - `job_bookmarks_encryption` (`list[obj]`):  When `null`, the `job_bookmarks_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.job_bookmarks_encryption.new](#fn-job_bookmarks_encryptionnew) constructor.
+  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.s3_encryption.new](#fn-s3_encryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.

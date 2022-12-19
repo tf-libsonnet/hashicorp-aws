@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `data_delivery` (`list[obj]`):  When `null`, the `data_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.new](#fn-evidently_projectdata_deliverynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.timeouts.new](#fn-evidently_projecttimeoutsnew) constructor.
+  - `data_delivery` (`list[obj]`):  When `null`, the `data_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.new](#fn-data_deliverynew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.evidently_project.newAttrs` constructs a new object with attributes and blocks configured for the `evidently_project`
 Terraform resource.
 
-Unlike [aws.evidently_project.new](#fn-evidently_projectnew), this function will not inject the `resource`
+Unlike [aws.evidently_project.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,8 +94,8 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `data_delivery` (`list[obj]`):  When `null`, the `data_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.new](#fn-evidently_projectdata_deliverynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.timeouts.new](#fn-evidently_projecttimeoutsnew) constructor.
+  - `data_delivery` (`list[obj]`):  When `null`, the `data_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.new](#fn-data_deliverynew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `evidently_project` resource into the root Terraform configuration.
@@ -255,8 +255,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.cloudwatch_logs.new](#fn-data_deliverycloudwatch_logsnew) constructor.
-  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.s3_destination.new](#fn-data_deliverys3_destinationnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.cloudwatch_logs.new](#fn-cloudwatch_logsnew) constructor.
+  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.s3_destination.new](#fn-s3_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_delivery` sub block.

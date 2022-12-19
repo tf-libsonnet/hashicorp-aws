@@ -66,7 +66,7 @@ newAttrs()
 `aws.route53recoverycontrolconfig_routing_control.newAttrs` constructs a new object with attributes and blocks configured for the `route53recoverycontrolconfig_routing_control`
 Terraform resource.
 
-Unlike [aws.route53recoverycontrolconfig_routing_control.new](#fn-route53recoverycontrolconfig_routing_controlnew), this function will not inject the `resource`
+Unlike [aws.route53recoverycontrolconfig_routing_control.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

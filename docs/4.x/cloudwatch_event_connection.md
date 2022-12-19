@@ -79,7 +79,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `authorization_type` (`string`): 
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `auth_parameters` (`list[obj]`):  When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-cloudwatch_event_connectionauth_parametersnew) constructor.
+  - `auth_parameters` (`list[obj]`):  When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-auth_parametersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,7 +95,7 @@ newAttrs()
 `aws.cloudwatch_event_connection.newAttrs` constructs a new object with attributes and blocks configured for the `cloudwatch_event_connection`
 Terraform resource.
 
-Unlike [aws.cloudwatch_event_connection.new](#fn-cloudwatch_event_connectionnew), this function will not inject the `resource`
+Unlike [aws.cloudwatch_event_connection.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -106,7 +106,7 @@ injecting into a complete block.
   - `authorization_type` (`string`): 
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `auth_parameters` (`list[obj]`):  When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-cloudwatch_event_connectionauth_parametersnew) constructor.
+  - `auth_parameters` (`list[obj]`):  When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-auth_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_event_connection` resource into the root Terraform configuration.
@@ -214,10 +214,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `api_key` (`list[obj]`):  When `null`, the `api_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.api_key.new](#fn-auth_parametersapi_keynew) constructor.
-  - `basic` (`list[obj]`):  When `null`, the `basic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.basic.new](#fn-auth_parametersbasicnew) constructor.
-  - `invocation_http_parameters` (`list[obj]`):  When `null`, the `invocation_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.new](#fn-auth_parametersinvocation_http_parametersnew) constructor.
-  - `oauth` (`list[obj]`):  When `null`, the `oauth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.new](#fn-auth_parametersoauthnew) constructor.
+  - `api_key` (`list[obj]`):  When `null`, the `api_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.api_key.new](#fn-api_keynew) constructor.
+  - `basic` (`list[obj]`):  When `null`, the `basic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.basic.new](#fn-basicnew) constructor.
+  - `invocation_http_parameters` (`list[obj]`):  When `null`, the `invocation_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.new](#fn-invocation_http_parametersnew) constructor.
+  - `oauth` (`list[obj]`):  When `null`, the `oauth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.new](#fn-oauthnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auth_parameters` sub block.
@@ -288,9 +288,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.body.new](#fn-invocation_http_parametersbodynew) constructor.
-  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.header.new](#fn-invocation_http_parametersheadernew) constructor.
-  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.query_string.new](#fn-invocation_http_parametersquery_stringnew) constructor.
+  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.body.new](#fn-auth_parametersbodynew) constructor.
+  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.header.new](#fn-auth_parametersheadernew) constructor.
+  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.query_string.new](#fn-auth_parametersquery_stringnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `invocation_http_parameters` sub block.
@@ -390,8 +390,8 @@ Terraform sub block.
 **Args**:
   - `authorization_endpoint` (`string`): 
   - `http_method` (`string`): 
-  - `client_parameters` (`list[obj]`):  When `null`, the `client_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.client_parameters.new](#fn-oauthclient_parametersnew) constructor.
-  - `oauth_http_parameters` (`list[obj]`):  When `null`, the `oauth_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.new](#fn-oauthoauth_http_parametersnew) constructor.
+  - `client_parameters` (`list[obj]`):  When `null`, the `client_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.client_parameters.new](#fn-auth_parametersclient_parametersnew) constructor.
+  - `oauth_http_parameters` (`list[obj]`):  When `null`, the `oauth_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.new](#fn-auth_parametersoauth_http_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `oauth` sub block.
@@ -438,9 +438,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.body.new](#fn-oauth_http_parametersbodynew) constructor.
-  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.header.new](#fn-oauth_http_parametersheadernew) constructor.
-  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.query_string.new](#fn-oauth_http_parametersquery_stringnew) constructor.
+  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.body.new](#fn-auth_parametersoauthbodynew) constructor.
+  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.header.new](#fn-auth_parametersoauthheadernew) constructor.
+  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.query_string.new](#fn-auth_parametersoauthquery_stringnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `oauth_http_parameters` sub block.

@@ -109,14 +109,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `kafkaconnect_version` (`string`): 
   - `name` (`string`): 
   - `service_execution_role_arn` (`string`): 
-  - `capacity` (`list[obj]`):  When `null`, the `capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.new](#fn-mskconnect_connectorcapacitynew) constructor.
-  - `kafka_cluster` (`list[obj]`):  When `null`, the `kafka_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.new](#fn-mskconnect_connectorkafka_clusternew) constructor.
-  - `kafka_cluster_client_authentication` (`list[obj]`):  When `null`, the `kafka_cluster_client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_client_authentication.new](#fn-mskconnect_connectorkafka_cluster_client_authenticationnew) constructor.
-  - `kafka_cluster_encryption_in_transit` (`list[obj]`):  When `null`, the `kafka_cluster_encryption_in_transit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_encryption_in_transit.new](#fn-mskconnect_connectorkafka_cluster_encryption_in_transitnew) constructor.
-  - `log_delivery` (`list[obj]`):  When `null`, the `log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.new](#fn-mskconnect_connectorlog_deliverynew) constructor.
-  - `plugin` (`list[obj]`):  When `null`, the `plugin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.plugin.new](#fn-mskconnect_connectorpluginnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.timeouts.new](#fn-mskconnect_connectortimeoutsnew) constructor.
-  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.worker_configuration.new](#fn-mskconnect_connectorworker_configurationnew) constructor.
+  - `capacity` (`list[obj]`):  When `null`, the `capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.new](#fn-capacitynew) constructor.
+  - `kafka_cluster` (`list[obj]`):  When `null`, the `kafka_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.new](#fn-kafka_clusternew) constructor.
+  - `kafka_cluster_client_authentication` (`list[obj]`):  When `null`, the `kafka_cluster_client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_client_authentication.new](#fn-kafka_cluster_client_authenticationnew) constructor.
+  - `kafka_cluster_encryption_in_transit` (`list[obj]`):  When `null`, the `kafka_cluster_encryption_in_transit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_encryption_in_transit.new](#fn-kafka_cluster_encryption_in_transitnew) constructor.
+  - `log_delivery` (`list[obj]`):  When `null`, the `log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.new](#fn-log_deliverynew) constructor.
+  - `plugin` (`list[obj]`):  When `null`, the `plugin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.plugin.new](#fn-pluginnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.timeouts.new](#fn-timeoutsnew) constructor.
+  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.worker_configuration.new](#fn-worker_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -132,7 +132,7 @@ newAttrs()
 `aws.mskconnect_connector.newAttrs` constructs a new object with attributes and blocks configured for the `mskconnect_connector`
 Terraform resource.
 
-Unlike [aws.mskconnect_connector.new](#fn-mskconnect_connectornew), this function will not inject the `resource`
+Unlike [aws.mskconnect_connector.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -145,14 +145,14 @@ injecting into a complete block.
   - `kafkaconnect_version` (`string`): 
   - `name` (`string`): 
   - `service_execution_role_arn` (`string`): 
-  - `capacity` (`list[obj]`):  When `null`, the `capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.new](#fn-mskconnect_connectorcapacitynew) constructor.
-  - `kafka_cluster` (`list[obj]`):  When `null`, the `kafka_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.new](#fn-mskconnect_connectorkafka_clusternew) constructor.
-  - `kafka_cluster_client_authentication` (`list[obj]`):  When `null`, the `kafka_cluster_client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_client_authentication.new](#fn-mskconnect_connectorkafka_cluster_client_authenticationnew) constructor.
-  - `kafka_cluster_encryption_in_transit` (`list[obj]`):  When `null`, the `kafka_cluster_encryption_in_transit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_encryption_in_transit.new](#fn-mskconnect_connectorkafka_cluster_encryption_in_transitnew) constructor.
-  - `log_delivery` (`list[obj]`):  When `null`, the `log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.new](#fn-mskconnect_connectorlog_deliverynew) constructor.
-  - `plugin` (`list[obj]`):  When `null`, the `plugin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.plugin.new](#fn-mskconnect_connectorpluginnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.timeouts.new](#fn-mskconnect_connectortimeoutsnew) constructor.
-  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.worker_configuration.new](#fn-mskconnect_connectorworker_configurationnew) constructor.
+  - `capacity` (`list[obj]`):  When `null`, the `capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.new](#fn-capacitynew) constructor.
+  - `kafka_cluster` (`list[obj]`):  When `null`, the `kafka_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.new](#fn-kafka_clusternew) constructor.
+  - `kafka_cluster_client_authentication` (`list[obj]`):  When `null`, the `kafka_cluster_client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_client_authentication.new](#fn-kafka_cluster_client_authenticationnew) constructor.
+  - `kafka_cluster_encryption_in_transit` (`list[obj]`):  When `null`, the `kafka_cluster_encryption_in_transit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster_encryption_in_transit.new](#fn-kafka_cluster_encryption_in_transitnew) constructor.
+  - `log_delivery` (`list[obj]`):  When `null`, the `log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.new](#fn-log_deliverynew) constructor.
+  - `plugin` (`list[obj]`):  When `null`, the `plugin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.plugin.new](#fn-pluginnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.timeouts.new](#fn-timeoutsnew) constructor.
+  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.worker_configuration.new](#fn-worker_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `mskconnect_connector` resource into the root Terraform configuration.
@@ -550,8 +550,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `autoscaling` (`list[obj]`):  When `null`, the `autoscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.autoscaling.new](#fn-capacityautoscalingnew) constructor.
-  - `provisioned_capacity` (`list[obj]`):  When `null`, the `provisioned_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.provisioned_capacity.new](#fn-capacityprovisioned_capacitynew) constructor.
+  - `autoscaling` (`list[obj]`):  When `null`, the `autoscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.autoscaling.new](#fn-autoscalingnew) constructor.
+  - `provisioned_capacity` (`list[obj]`):  When `null`, the `provisioned_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.provisioned_capacity.new](#fn-provisioned_capacitynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `capacity` sub block.
@@ -577,8 +577,8 @@ Terraform sub block.
   - `max_worker_count` (`number`): 
   - `mcu_count` (`number`):  When `null`, the `mcu_count` field will be omitted from the resulting object.
   - `min_worker_count` (`number`): 
-  - `scale_in_policy` (`list[obj]`):  When `null`, the `scale_in_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.autoscaling.scale_in_policy.new](#fn-autoscalingscale_in_policynew) constructor.
-  - `scale_out_policy` (`list[obj]`):  When `null`, the `scale_out_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.autoscaling.scale_out_policy.new](#fn-autoscalingscale_out_policynew) constructor.
+  - `scale_in_policy` (`list[obj]`):  When `null`, the `scale_in_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.autoscaling.scale_in_policy.new](#fn-capacityscale_in_policynew) constructor.
+  - `scale_out_policy` (`list[obj]`):  When `null`, the `scale_out_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.capacity.autoscaling.scale_out_policy.new](#fn-capacityscale_out_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `autoscaling` sub block.
@@ -671,7 +671,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `apache_kafka_cluster` (`list[obj]`):  When `null`, the `apache_kafka_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.apache_kafka_cluster.new](#fn-kafka_clusterapache_kafka_clusternew) constructor.
+  - `apache_kafka_cluster` (`list[obj]`):  When `null`, the `apache_kafka_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.apache_kafka_cluster.new](#fn-apache_kafka_clusternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kafka_cluster` sub block.
@@ -695,7 +695,7 @@ Terraform sub block.
 
 **Args**:
   - `bootstrap_servers` (`string`): 
-  - `vpc` (`list[obj]`):  When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.apache_kafka_cluster.vpc.new](#fn-apache_kafka_clustervpcnew) constructor.
+  - `vpc` (`list[obj]`):  When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.kafka_cluster.apache_kafka_cluster.vpc.new](#fn-kafka_clustervpcnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `apache_kafka_cluster` sub block.
@@ -788,7 +788,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `worker_log_delivery` (`list[obj]`):  When `null`, the `worker_log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.new](#fn-log_deliveryworker_log_deliverynew) constructor.
+  - `worker_log_delivery` (`list[obj]`):  When `null`, the `worker_log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.new](#fn-worker_log_deliverynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `log_delivery` sub block.
@@ -811,9 +811,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.cloudwatch_logs.new](#fn-worker_log_deliverycloudwatch_logsnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.firehose.new](#fn-worker_log_deliveryfirehosenew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.s3.new](#fn-worker_log_deliverys3new) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.cloudwatch_logs.new](#fn-log_deliverycloudwatch_logsnew) constructor.
+  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.firehose.new](#fn-log_deliveryfirehosenew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.log_delivery.worker_log_delivery.s3.new](#fn-log_deliverys3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `worker_log_delivery` sub block.
@@ -909,7 +909,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_plugin` (`list[obj]`):  When `null`, the `custom_plugin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.plugin.custom_plugin.new](#fn-plugincustom_pluginnew) constructor.
+  - `custom_plugin` (`list[obj]`):  When `null`, the `custom_plugin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_connector.plugin.custom_plugin.new](#fn-custom_pluginnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `plugin` sub block.

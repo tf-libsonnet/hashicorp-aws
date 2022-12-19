@@ -65,7 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `time_zone` (`string`): 
-  - `config` (`list[obj]`):  When `null`, the `config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.new](#fn-connect_hours_of_operationconfignew) constructor.
+  - `config` (`list[obj]`):  When `null`, the `config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.new](#fn-confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,7 +81,7 @@ newAttrs()
 `aws.connect_hours_of_operation.newAttrs` constructs a new object with attributes and blocks configured for the `connect_hours_of_operation`
 Terraform resource.
 
-Unlike [aws.connect_hours_of_operation.new](#fn-connect_hours_of_operationnew), this function will not inject the `resource`
+Unlike [aws.connect_hours_of_operation.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -95,7 +95,7 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `time_zone` (`string`): 
-  - `config` (`list[obj]`):  When `null`, the `config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.new](#fn-connect_hours_of_operationconfignew) constructor.
+  - `config` (`list[obj]`):  When `null`, the `config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.new](#fn-confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_hours_of_operation` resource into the root Terraform configuration.
@@ -252,8 +252,8 @@ Terraform sub block.
 
 **Args**:
   - `day` (`string`): 
-  - `end_time` (`list[obj]`):  When `null`, the `end_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.end_time.new](#fn-configend_timenew) constructor.
-  - `start_time` (`list[obj]`):  When `null`, the `start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.start_time.new](#fn-configstart_timenew) constructor.
+  - `end_time` (`list[obj]`):  When `null`, the `end_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.end_time.new](#fn-end_timenew) constructor.
+  - `start_time` (`list[obj]`):  When `null`, the `start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.start_time.new](#fn-start_timenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `config` sub block.

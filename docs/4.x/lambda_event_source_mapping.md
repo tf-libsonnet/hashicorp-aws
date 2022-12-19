@@ -103,12 +103,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `starting_position_timestamp` (`string`):  When `null`, the `starting_position_timestamp` field will be omitted from the resulting object.
   - `topics` (`list`):  When `null`, the `topics` field will be omitted from the resulting object.
   - `tumbling_window_in_seconds` (`number`):  When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
-  - `amazon_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-lambda_event_source_mappingamazon_managed_kafka_event_source_confignew) constructor.
-  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-lambda_event_source_mappingdestination_confignew) constructor.
-  - `filter_criteria` (`list[obj]`):  When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-lambda_event_source_mappingfilter_criterianew) constructor.
-  - `self_managed_event_source` (`list[obj]`):  When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-lambda_event_source_mappingself_managed_event_sourcenew) constructor.
-  - `self_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-lambda_event_source_mappingself_managed_kafka_event_source_confignew) constructor.
-  - `source_access_configuration` (`list[obj]`):  When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-lambda_event_source_mappingsource_access_configurationnew) constructor.
+  - `amazon_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
+  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
+  - `filter_criteria` (`list[obj]`):  When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
+  - `self_managed_event_source` (`list[obj]`):  When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
+  - `self_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
+  - `source_access_configuration` (`list[obj]`):  When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -124,7 +124,7 @@ newAttrs()
 `aws.lambda_event_source_mapping.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_event_source_mapping`
 Terraform resource.
 
-Unlike [aws.lambda_event_source_mapping.new](#fn-lambda_event_source_mappingnew), this function will not inject the `resource`
+Unlike [aws.lambda_event_source_mapping.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -147,12 +147,12 @@ injecting into a complete block.
   - `starting_position_timestamp` (`string`):  When `null`, the `starting_position_timestamp` field will be omitted from the resulting object.
   - `topics` (`list`):  When `null`, the `topics` field will be omitted from the resulting object.
   - `tumbling_window_in_seconds` (`number`):  When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
-  - `amazon_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-lambda_event_source_mappingamazon_managed_kafka_event_source_confignew) constructor.
-  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-lambda_event_source_mappingdestination_confignew) constructor.
-  - `filter_criteria` (`list[obj]`):  When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-lambda_event_source_mappingfilter_criterianew) constructor.
-  - `self_managed_event_source` (`list[obj]`):  When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-lambda_event_source_mappingself_managed_event_sourcenew) constructor.
-  - `self_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-lambda_event_source_mappingself_managed_kafka_event_source_confignew) constructor.
-  - `source_access_configuration` (`list[obj]`):  When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-lambda_event_source_mappingsource_access_configurationnew) constructor.
+  - `amazon_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
+  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
+  - `filter_criteria` (`list[obj]`):  When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
+  - `self_managed_event_source` (`list[obj]`):  When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
+  - `self_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
+  - `source_access_configuration` (`list[obj]`):  When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_event_source_mapping` resource into the root Terraform configuration.
@@ -660,7 +660,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.
+  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-on_failurenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_config` sub block.
@@ -706,7 +706,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-filter_criteriafilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter_criteria` sub block.

@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `app_id` (`string`): 
   - `domain_name` (`string`): 
   - `wait_for_verification` (`bool`):  When `null`, the `wait_for_verification` field will be omitted from the resulting object.
-  - `sub_domain` (`list[obj]`):  When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-amplify_domain_associationsub_domainnew) constructor.
+  - `sub_domain` (`list[obj]`):  When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.amplify_domain_association.newAttrs` constructs a new object with attributes and blocks configured for the `amplify_domain_association`
 Terraform resource.
 
-Unlike [aws.amplify_domain_association.new](#fn-amplify_domain_associationnew), this function will not inject the `resource`
+Unlike [aws.amplify_domain_association.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `app_id` (`string`): 
   - `domain_name` (`string`): 
   - `wait_for_verification` (`bool`):  When `null`, the `wait_for_verification` field will be omitted from the resulting object.
-  - `sub_domain` (`list[obj]`):  When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-amplify_domain_associationsub_domainnew) constructor.
+  - `sub_domain` (`list[obj]`):  When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `amplify_domain_association` resource into the root Terraform configuration.

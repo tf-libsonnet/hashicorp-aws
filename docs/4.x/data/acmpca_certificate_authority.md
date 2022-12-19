@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `revocation_configuration` (`list[obj]`):  When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.acmpca_certificate_authority.revocation_configuration.new](#fn-acmpca_certificate_authorityrevocation_configurationnew) constructor.
+  - `revocation_configuration` (`list[obj]`):  When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.acmpca_certificate_authority.revocation_configuration.new](#fn-revocation_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.data.acmpca_certificate_authority.newAttrs` constructs a new object with attributes and blocks configured for the `acmpca_certificate_authority`
 Terraform data source.
 
-Unlike [aws.data.acmpca_certificate_authority.new](#fn-acmpca_certificate_authoritynew), this function will not inject the `data source`
+Unlike [aws.data.acmpca_certificate_authority.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -83,7 +83,7 @@ injecting into a complete block.
 **Args**:
   - `arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `revocation_configuration` (`list[obj]`):  When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.acmpca_certificate_authority.revocation_configuration.new](#fn-acmpca_certificate_authorityrevocation_configurationnew) constructor.
+  - `revocation_configuration` (`list[obj]`):  When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.acmpca_certificate_authority.revocation_configuration.new](#fn-revocation_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `acmpca_certificate_authority` data source into the root Terraform configuration.
@@ -175,8 +175,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `crl_configuration` (`list[obj]`):  When `null`, the `crl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new](#fn-revocation_configurationcrl_configurationnew) constructor.
-  - `ocsp_configuration` (`list[obj]`):  When `null`, the `ocsp_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.ocsp_configuration.new](#fn-revocation_configurationocsp_configurationnew) constructor.
+  - `crl_configuration` (`list[obj]`):  When `null`, the `crl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new](#fn-crl_configurationnew) constructor.
+  - `ocsp_configuration` (`list[obj]`):  When `null`, the `ocsp_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.ocsp_configuration.new](#fn-ocsp_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `revocation_configuration` sub block.

@@ -71,8 +71,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpc_id` (`string`): 
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-networkfirewall_firewallencryption_configurationnew) constructor.
-  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-networkfirewall_firewallsubnet_mappingnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,7 +88,7 @@ newAttrs()
 `aws.networkfirewall_firewall.newAttrs` constructs a new object with attributes and blocks configured for the `networkfirewall_firewall`
 Terraform resource.
 
-Unlike [aws.networkfirewall_firewall.new](#fn-networkfirewall_firewallnew), this function will not inject the `resource`
+Unlike [aws.networkfirewall_firewall.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -105,8 +105,8 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpc_id` (`string`): 
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-networkfirewall_firewallencryption_configurationnew) constructor.
-  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-networkfirewall_firewallsubnet_mappingnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkfirewall_firewall` resource into the root Terraform configuration.

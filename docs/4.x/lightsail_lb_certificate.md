@@ -68,7 +68,7 @@ newAttrs()
 `aws.lightsail_lb_certificate.newAttrs` constructs a new object with attributes and blocks configured for the `lightsail_lb_certificate`
 Terraform resource.
 
-Unlike [aws.lightsail_lb_certificate.new](#fn-lightsail_lb_certificatenew), this function will not inject the `resource`
+Unlike [aws.lightsail_lb_certificate.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

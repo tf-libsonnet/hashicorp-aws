@@ -67,7 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `supported_login_providers` (`obj`):  When `null`, the `supported_login_providers` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `cognito_identity_providers` (`list[obj]`):  When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_poolcognito_identity_providersnew) constructor.
+  - `cognito_identity_providers` (`list[obj]`):  When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_providersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,7 +83,7 @@ newAttrs()
 `aws.cognito_identity_pool.newAttrs` constructs a new object with attributes and blocks configured for the `cognito_identity_pool`
 Terraform resource.
 
-Unlike [aws.cognito_identity_pool.new](#fn-cognito_identity_poolnew), this function will not inject the `resource`
+Unlike [aws.cognito_identity_pool.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,7 +100,7 @@ injecting into a complete block.
   - `supported_login_providers` (`obj`):  When `null`, the `supported_login_providers` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `cognito_identity_providers` (`list[obj]`):  When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_poolcognito_identity_providersnew) constructor.
+  - `cognito_identity_providers` (`list[obj]`):  When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_providersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_identity_pool` resource into the root Terraform configuration.

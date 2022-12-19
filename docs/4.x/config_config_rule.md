@@ -69,8 +69,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-config_config_rulescopenew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-config_config_rulesourcenew) constructor.
+  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,7 +86,7 @@ newAttrs()
 `aws.config_config_rule.newAttrs` constructs a new object with attributes and blocks configured for the `config_config_rule`
 Terraform resource.
 
-Unlike [aws.config_config_rule.new](#fn-config_config_rulenew), this function will not inject the `resource`
+Unlike [aws.config_config_rule.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,8 +100,8 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-config_config_rulescopenew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-config_config_rulesourcenew) constructor.
+  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_config_rule` resource into the root Terraform configuration.
@@ -322,8 +322,8 @@ Terraform sub block.
 **Args**:
   - `owner` (`string`): 
   - `source_identifier` (`string`):  When `null`, the `source_identifier` field will be omitted from the resulting object.
-  - `custom_policy_details` (`list[obj]`):  When `null`, the `custom_policy_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.custom_policy_details.new](#fn-sourcecustom_policy_detailsnew) constructor.
-  - `source_detail` (`list[obj]`):  When `null`, the `source_detail` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.source_detail.new](#fn-sourcesource_detailnew) constructor.
+  - `custom_policy_details` (`list[obj]`):  When `null`, the `custom_policy_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.custom_policy_details.new](#fn-custom_policy_detailsnew) constructor.
+  - `source_detail` (`list[obj]`):  When `null`, the `source_detail` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.source_detail.new](#fn-source_detailnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.

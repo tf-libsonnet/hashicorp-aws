@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.elasticache_replication_group.newAttrs` constructs a new object with attributes and blocks configured for the `elasticache_replication_group`
 Terraform data source.
 
-Unlike [aws.data.elasticache_replication_group.new](#fn-elasticache_replication_groupnew), this function will not inject the `data source`
+Unlike [aws.data.elasticache_replication_group.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

@@ -64,7 +64,7 @@ newAttrs()
 `aws.detective_graph.newAttrs` constructs a new object with attributes and blocks configured for the `detective_graph`
 Terraform resource.
 
-Unlike [aws.detective_graph.new](#fn-detective_graphnew), this function will not inject the `resource`
+Unlike [aws.detective_graph.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

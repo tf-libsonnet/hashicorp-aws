@@ -77,10 +77,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `redirect_url` (`string`):  When `null`, the `redirect_url` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_endpoints` (`list[obj]`):  When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-appstream_stackaccess_endpointsnew) constructor.
-  - `application_settings` (`list[obj]`):  When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-appstream_stackapplication_settingsnew) constructor.
-  - `storage_connectors` (`list[obj]`):  When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-appstream_stackstorage_connectorsnew) constructor.
-  - `user_settings` (`list[obj]`):  When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-appstream_stackuser_settingsnew) constructor.
+  - `access_endpoints` (`list[obj]`):  When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
+  - `application_settings` (`list[obj]`):  When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
+  - `storage_connectors` (`list[obj]`):  When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
+  - `user_settings` (`list[obj]`):  When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,7 +96,7 @@ newAttrs()
 `aws.appstream_stack.newAttrs` constructs a new object with attributes and blocks configured for the `appstream_stack`
 Terraform resource.
 
-Unlike [aws.appstream_stack.new](#fn-appstream_stacknew), this function will not inject the `resource`
+Unlike [aws.appstream_stack.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -112,10 +112,10 @@ injecting into a complete block.
   - `redirect_url` (`string`):  When `null`, the `redirect_url` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_endpoints` (`list[obj]`):  When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-appstream_stackaccess_endpointsnew) constructor.
-  - `application_settings` (`list[obj]`):  When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-appstream_stackapplication_settingsnew) constructor.
-  - `storage_connectors` (`list[obj]`):  When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-appstream_stackstorage_connectorsnew) constructor.
-  - `user_settings` (`list[obj]`):  When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-appstream_stackuser_settingsnew) constructor.
+  - `access_endpoints` (`list[obj]`):  When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
+  - `application_settings` (`list[obj]`):  When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
+  - `storage_connectors` (`list[obj]`):  When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
+  - `user_settings` (`list[obj]`):  When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appstream_stack` resource into the root Terraform configuration.

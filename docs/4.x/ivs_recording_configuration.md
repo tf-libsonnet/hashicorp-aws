@@ -67,9 +67,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `recording_reconnect_window_seconds` (`number`):  When `null`, the `recording_reconnect_window_seconds` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-ivs_recording_configurationdestination_configurationnew) constructor.
-  - `thumbnail_configuration` (`list[obj]`):  When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-ivs_recording_configurationthumbnail_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-ivs_recording_configurationtimeoutsnew) constructor.
+  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
+  - `thumbnail_configuration` (`list[obj]`):  When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-thumbnail_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,7 +85,7 @@ newAttrs()
 `aws.ivs_recording_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `ivs_recording_configuration`
 Terraform resource.
 
-Unlike [aws.ivs_recording_configuration.new](#fn-ivs_recording_configurationnew), this function will not inject the `resource`
+Unlike [aws.ivs_recording_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -97,9 +97,9 @@ injecting into a complete block.
   - `recording_reconnect_window_seconds` (`number`):  When `null`, the `recording_reconnect_window_seconds` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-ivs_recording_configurationdestination_configurationnew) constructor.
-  - `thumbnail_configuration` (`list[obj]`):  When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-ivs_recording_configurationthumbnail_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-ivs_recording_configurationtimeoutsnew) constructor.
+  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
+  - `thumbnail_configuration` (`list[obj]`):  When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-thumbnail_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ivs_recording_configuration` resource into the root Terraform configuration.
@@ -296,7 +296,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-destination_configurations3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-s3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_configuration` sub block.

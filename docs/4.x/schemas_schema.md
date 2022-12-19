@@ -74,7 +74,7 @@ newAttrs()
 `aws.schemas_schema.newAttrs` constructs a new object with attributes and blocks configured for the `schemas_schema`
 Terraform resource.
 
-Unlike [aws.schemas_schema.new](#fn-schemas_schemanew), this function will not inject the `resource`
+Unlike [aws.schemas_schema.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

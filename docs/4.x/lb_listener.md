@@ -83,8 +83,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ssl_policy` (`string`):  When `null`, the `ssl_policy` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.new](#fn-lb_listenerdefault_actionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.timeouts.new](#fn-lb_listenertimeoutsnew) constructor.
+  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.new](#fn-default_actionnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -100,7 +100,7 @@ newAttrs()
 `aws.lb_listener.newAttrs` constructs a new object with attributes and blocks configured for the `lb_listener`
 Terraform resource.
 
-Unlike [aws.lb_listener.new](#fn-lb_listenernew), this function will not inject the `resource`
+Unlike [aws.lb_listener.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -116,8 +116,8 @@ injecting into a complete block.
   - `ssl_policy` (`string`):  When `null`, the `ssl_policy` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.new](#fn-lb_listenerdefault_actionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.timeouts.new](#fn-lb_listenertimeoutsnew) constructor.
+  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.new](#fn-default_actionnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lb_listener` resource into the root Terraform configuration.
@@ -344,11 +344,11 @@ Terraform sub block.
   - `order` (`number`):  When `null`, the `order` field will be omitted from the resulting object.
   - `target_group_arn` (`string`):  When `null`, the `target_group_arn` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `authenticate_cognito` (`list[obj]`):  When `null`, the `authenticate_cognito` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.authenticate_cognito.new](#fn-default_actionauthenticate_cognitonew) constructor.
-  - `authenticate_oidc` (`list[obj]`):  When `null`, the `authenticate_oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.authenticate_oidc.new](#fn-default_actionauthenticate_oidcnew) constructor.
-  - `fixed_response` (`list[obj]`):  When `null`, the `fixed_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.fixed_response.new](#fn-default_actionfixed_responsenew) constructor.
-  - `forward` (`list[obj]`):  When `null`, the `forward` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.forward.new](#fn-default_actionforwardnew) constructor.
-  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.redirect.new](#fn-default_actionredirectnew) constructor.
+  - `authenticate_cognito` (`list[obj]`):  When `null`, the `authenticate_cognito` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.authenticate_cognito.new](#fn-authenticate_cognitonew) constructor.
+  - `authenticate_oidc` (`list[obj]`):  When `null`, the `authenticate_oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.authenticate_oidc.new](#fn-authenticate_oidcnew) constructor.
+  - `fixed_response` (`list[obj]`):  When `null`, the `fixed_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.fixed_response.new](#fn-fixed_responsenew) constructor.
+  - `forward` (`list[obj]`):  When `null`, the `forward` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.forward.new](#fn-forwardnew) constructor.
+  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.redirect.new](#fn-redirectnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `default_action` sub block.
@@ -459,8 +459,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `stickiness` (`list[obj]`):  When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.forward.stickiness.new](#fn-forwardstickinessnew) constructor.
-  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.forward.target_group.new](#fn-forwardtarget_groupnew) constructor.
+  - `stickiness` (`list[obj]`):  When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.forward.stickiness.new](#fn-default_actionstickinessnew) constructor.
+  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.forward.target_group.new](#fn-default_actiontarget_groupnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `forward` sub block.

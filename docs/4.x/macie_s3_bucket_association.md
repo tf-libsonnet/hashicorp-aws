@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `bucket_name` (`string`): 
   - `member_account_id` (`string`):  When `null`, the `member_account_id` field will be omitted from the resulting object.
   - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `classification_type` (`list[obj]`):  When `null`, the `classification_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie_s3_bucket_association.classification_type.new](#fn-macie_s3_bucket_associationclassification_typenew) constructor.
+  - `classification_type` (`list[obj]`):  When `null`, the `classification_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie_s3_bucket_association.classification_type.new](#fn-classification_typenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.macie_s3_bucket_association.newAttrs` constructs a new object with attributes and blocks configured for the `macie_s3_bucket_association`
 Terraform resource.
 
-Unlike [aws.macie_s3_bucket_association.new](#fn-macie_s3_bucket_associationnew), this function will not inject the `resource`
+Unlike [aws.macie_s3_bucket_association.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `bucket_name` (`string`): 
   - `member_account_id` (`string`):  When `null`, the `member_account_id` field will be omitted from the resulting object.
   - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `classification_type` (`list[obj]`):  When `null`, the `classification_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie_s3_bucket_association.classification_type.new](#fn-macie_s3_bucket_associationclassification_typenew) constructor.
+  - `classification_type` (`list[obj]`):  When `null`, the `classification_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie_s3_bucket_association.classification_type.new](#fn-classification_typenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `macie_s3_bucket_association` resource into the root Terraform configuration.

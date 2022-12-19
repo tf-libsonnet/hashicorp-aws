@@ -151,11 +151,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-rds_clusterrestore_to_point_in_timenew) constructor.
-  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-rds_clusters3_importnew) constructor.
-  - `scaling_configuration` (`list[obj]`):  When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-rds_clusterscaling_configurationnew) constructor.
-  - `serverlessv2_scaling_configuration` (`list[obj]`):  When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-rds_clusterserverlessv2_scaling_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-rds_clustertimeoutsnew) constructor.
+  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
+  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-s3_importnew) constructor.
+  - `scaling_configuration` (`list[obj]`):  When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-scaling_configurationnew) constructor.
+  - `serverlessv2_scaling_configuration` (`list[obj]`):  When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-serverlessv2_scaling_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -171,7 +171,7 @@ newAttrs()
 `aws.rds_cluster.newAttrs` constructs a new object with attributes and blocks configured for the `rds_cluster`
 Terraform resource.
 
-Unlike [aws.rds_cluster.new](#fn-rds_clusternew), this function will not inject the `resource`
+Unlike [aws.rds_cluster.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -222,11 +222,11 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-rds_clusterrestore_to_point_in_timenew) constructor.
-  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-rds_clusters3_importnew) constructor.
-  - `scaling_configuration` (`list[obj]`):  When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-rds_clusterscaling_configurationnew) constructor.
-  - `serverlessv2_scaling_configuration` (`list[obj]`):  When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-rds_clusterserverlessv2_scaling_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-rds_clustertimeoutsnew) constructor.
+  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
+  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-s3_importnew) constructor.
+  - `scaling_configuration` (`list[obj]`):  When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-scaling_configurationnew) constructor.
+  - `serverlessv2_scaling_configuration` (`list[obj]`):  When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-serverlessv2_scaling_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `rds_cluster` resource into the root Terraform configuration.

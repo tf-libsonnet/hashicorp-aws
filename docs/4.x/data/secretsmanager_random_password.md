@@ -78,7 +78,7 @@ newAttrs()
 `aws.data.secretsmanager_random_password.newAttrs` constructs a new object with attributes and blocks configured for the `secretsmanager_random_password`
 Terraform data source.
 
-Unlike [aws.data.secretsmanager_random_password.new](#fn-secretsmanager_random_passwordnew), this function will not inject the `data source`
+Unlike [aws.data.secretsmanager_random_password.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

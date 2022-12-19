@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `include_compliance_details` (`bool`):  When `null`, the `include_compliance_details` field will be omitted from the resulting object.
   - `resource_arn_list` (`list`):  When `null`, the `resource_arn_list` field will be omitted from the resulting object.
   - `resource_type_filters` (`list`):  When `null`, the `resource_type_filters` field will be omitted from the resulting object.
-  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-resourcegroupstaggingapi_resourcestag_filternew) constructor.
+  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-tag_filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.data.resourcegroupstaggingapi_resources.newAttrs` constructs a new object with attributes and blocks configured for the `resourcegroupstaggingapi_resources`
 Terraform data source.
 
-Unlike [aws.data.resourcegroupstaggingapi_resources.new](#fn-resourcegroupstaggingapi_resourcesnew), this function will not inject the `data source`
+Unlike [aws.data.resourcegroupstaggingapi_resources.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `include_compliance_details` (`bool`):  When `null`, the `include_compliance_details` field will be omitted from the resulting object.
   - `resource_arn_list` (`list`):  When `null`, the `resource_arn_list` field will be omitted from the resulting object.
   - `resource_type_filters` (`list`):  When `null`, the `resource_type_filters` field will be omitted from the resulting object.
-  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-resourcegroupstaggingapi_resourcestag_filternew) constructor.
+  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-tag_filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `resourcegroupstaggingapi_resources` data source into the root Terraform configuration.

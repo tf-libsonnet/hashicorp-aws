@@ -167,7 +167,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `connector_type` (`string`): 
   - `kms_arn` (`string`):  When `null`, the `kms_arn` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `connector_profile_config` (`list[obj]`):  When `null`, the `connector_profile_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.new](#fn-appflow_connector_profileconnector_profile_confignew) constructor.
+  - `connector_profile_config` (`list[obj]`):  When `null`, the `connector_profile_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.new](#fn-connector_profile_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -183,7 +183,7 @@ newAttrs()
 `aws.appflow_connector_profile.newAttrs` constructs a new object with attributes and blocks configured for the `appflow_connector_profile`
 Terraform resource.
 
-Unlike [aws.appflow_connector_profile.new](#fn-appflow_connector_profilenew), this function will not inject the `resource`
+Unlike [aws.appflow_connector_profile.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -196,7 +196,7 @@ injecting into a complete block.
   - `connector_type` (`string`): 
   - `kms_arn` (`string`):  When `null`, the `kms_arn` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `connector_profile_config` (`list[obj]`):  When `null`, the `connector_profile_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.new](#fn-appflow_connector_profileconnector_profile_confignew) constructor.
+  - `connector_profile_config` (`list[obj]`):  When `null`, the `connector_profile_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.new](#fn-connector_profile_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appflow_connector_profile` resource into the root Terraform configuration.
@@ -336,8 +336,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `connector_profile_credentials` (`list[obj]`):  When `null`, the `connector_profile_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.new](#fn-connector_profile_configconnector_profile_credentialsnew) constructor.
-  - `connector_profile_properties` (`list[obj]`):  When `null`, the `connector_profile_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.new](#fn-connector_profile_configconnector_profile_propertiesnew) constructor.
+  - `connector_profile_credentials` (`list[obj]`):  When `null`, the `connector_profile_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.new](#fn-connector_profile_credentialsnew) constructor.
+  - `connector_profile_properties` (`list[obj]`):  When `null`, the `connector_profile_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.new](#fn-connector_profile_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `connector_profile_config` sub block.
@@ -360,24 +360,24 @@ Terraform sub block.
 
 
 **Args**:
-  - `amplitude` (`list[obj]`):  When `null`, the `amplitude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.amplitude.new](#fn-connector_profile_credentialsamplitudenew) constructor.
-  - `custom_connector` (`list[obj]`):  When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.new](#fn-connector_profile_credentialscustom_connectornew) constructor.
-  - `datadog` (`list[obj]`):  When `null`, the `datadog` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.datadog.new](#fn-connector_profile_credentialsdatadognew) constructor.
-  - `dynatrace` (`list[obj]`):  When `null`, the `dynatrace` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.dynatrace.new](#fn-connector_profile_credentialsdynatracenew) constructor.
-  - `google_analytics` (`list[obj]`):  When `null`, the `google_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.google_analytics.new](#fn-connector_profile_credentialsgoogle_analyticsnew) constructor.
-  - `honeycode` (`list[obj]`):  When `null`, the `honeycode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.honeycode.new](#fn-connector_profile_credentialshoneycodenew) constructor.
-  - `infor_nexus` (`list[obj]`):  When `null`, the `infor_nexus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.infor_nexus.new](#fn-connector_profile_credentialsinfor_nexusnew) constructor.
-  - `marketo` (`list[obj]`):  When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.marketo.new](#fn-connector_profile_credentialsmarketonew) constructor.
-  - `redshift` (`list[obj]`):  When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.redshift.new](#fn-connector_profile_credentialsredshiftnew) constructor.
-  - `salesforce` (`list[obj]`):  When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.new](#fn-connector_profile_credentialssalesforcenew) constructor.
-  - `sapo_data` (`list[obj]`):  When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.new](#fn-connector_profile_credentialssapo_datanew) constructor.
-  - `service_now` (`list[obj]`):  When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.service_now.new](#fn-connector_profile_credentialsservice_nownew) constructor.
-  - `singular` (`list[obj]`):  When `null`, the `singular` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.singular.new](#fn-connector_profile_credentialssingularnew) constructor.
-  - `slack` (`list[obj]`):  When `null`, the `slack` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.slack.new](#fn-connector_profile_credentialsslacknew) constructor.
-  - `snowflake` (`list[obj]`):  When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.snowflake.new](#fn-connector_profile_credentialssnowflakenew) constructor.
-  - `trendmicro` (`list[obj]`):  When `null`, the `trendmicro` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.trendmicro.new](#fn-connector_profile_credentialstrendmicronew) constructor.
-  - `veeva` (`list[obj]`):  When `null`, the `veeva` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.veeva.new](#fn-connector_profile_credentialsveevanew) constructor.
-  - `zendesk` (`list[obj]`):  When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.zendesk.new](#fn-connector_profile_credentialszendesknew) constructor.
+  - `amplitude` (`list[obj]`):  When `null`, the `amplitude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.amplitude.new](#fn-connector_profile_configamplitudenew) constructor.
+  - `custom_connector` (`list[obj]`):  When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.new](#fn-connector_profile_configcustom_connectornew) constructor.
+  - `datadog` (`list[obj]`):  When `null`, the `datadog` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.datadog.new](#fn-connector_profile_configdatadognew) constructor.
+  - `dynatrace` (`list[obj]`):  When `null`, the `dynatrace` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.dynatrace.new](#fn-connector_profile_configdynatracenew) constructor.
+  - `google_analytics` (`list[obj]`):  When `null`, the `google_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.google_analytics.new](#fn-connector_profile_configgoogle_analyticsnew) constructor.
+  - `honeycode` (`list[obj]`):  When `null`, the `honeycode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.honeycode.new](#fn-connector_profile_confighoneycodenew) constructor.
+  - `infor_nexus` (`list[obj]`):  When `null`, the `infor_nexus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.infor_nexus.new](#fn-connector_profile_configinfor_nexusnew) constructor.
+  - `marketo` (`list[obj]`):  When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.marketo.new](#fn-connector_profile_configmarketonew) constructor.
+  - `redshift` (`list[obj]`):  When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.redshift.new](#fn-connector_profile_configredshiftnew) constructor.
+  - `salesforce` (`list[obj]`):  When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.new](#fn-connector_profile_configsalesforcenew) constructor.
+  - `sapo_data` (`list[obj]`):  When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.new](#fn-connector_profile_configsapo_datanew) constructor.
+  - `service_now` (`list[obj]`):  When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.service_now.new](#fn-connector_profile_configservice_nownew) constructor.
+  - `singular` (`list[obj]`):  When `null`, the `singular` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.singular.new](#fn-connector_profile_configsingularnew) constructor.
+  - `slack` (`list[obj]`):  When `null`, the `slack` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.slack.new](#fn-connector_profile_configslacknew) constructor.
+  - `snowflake` (`list[obj]`):  When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.snowflake.new](#fn-connector_profile_configsnowflakenew) constructor.
+  - `trendmicro` (`list[obj]`):  When `null`, the `trendmicro` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.trendmicro.new](#fn-connector_profile_configtrendmicronew) constructor.
+  - `veeva` (`list[obj]`):  When `null`, the `veeva` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.veeva.new](#fn-connector_profile_configveevanew) constructor.
+  - `zendesk` (`list[obj]`):  When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.zendesk.new](#fn-connector_profile_configzendesknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `connector_profile_credentials` sub block.
@@ -425,10 +425,10 @@ Terraform sub block.
 
 **Args**:
   - `authentication_type` (`string`): 
-  - `api_key` (`list[obj]`):  When `null`, the `api_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.api_key.new](#fn-custom_connectorapi_keynew) constructor.
-  - `basic` (`list[obj]`):  When `null`, the `basic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.basic.new](#fn-custom_connectorbasicnew) constructor.
-  - `custom` (`list[obj]`):  When `null`, the `custom` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.custom.new](#fn-custom_connectorcustomnew) constructor.
-  - `oauth2` (`list[obj]`):  When `null`, the `oauth2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.oauth2.new](#fn-custom_connectoroauth2new) constructor.
+  - `api_key` (`list[obj]`):  When `null`, the `api_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.api_key.new](#fn-connector_profile_configconnector_profile_credentialsapi_keynew) constructor.
+  - `basic` (`list[obj]`):  When `null`, the `basic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.basic.new](#fn-connector_profile_configconnector_profile_credentialsbasicnew) constructor.
+  - `custom` (`list[obj]`):  When `null`, the `custom` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.custom.new](#fn-connector_profile_configconnector_profile_credentialscustomnew) constructor.
+  - `oauth2` (`list[obj]`):  When `null`, the `oauth2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.oauth2.new](#fn-connector_profile_configconnector_profile_credentialsoauth2new) constructor.
 
 **Returns**:
   - An attribute object that represents the `custom_connector` sub block.
@@ -527,7 +527,7 @@ Terraform sub block.
   - `client_id` (`string`):  When `null`, the `client_id` field will be omitted from the resulting object.
   - `client_secret` (`string`):  When `null`, the `client_secret` field will be omitted from the resulting object.
   - `refresh_token` (`string`):  When `null`, the `refresh_token` field will be omitted from the resulting object.
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.oauth2.oauth_request.new](#fn-oauth2oauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.custom_connector.oauth2.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialscustom_connectoroauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `oauth2` sub block.
@@ -625,7 +625,7 @@ Terraform sub block.
   - `client_id` (`string`): 
   - `client_secret` (`string`): 
   - `refresh_token` (`string`):  When `null`, the `refresh_token` field will be omitted from the resulting object.
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.google_analytics.oauth_request.new](#fn-google_analyticsoauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.google_analytics.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `google_analytics` sub block.
@@ -674,7 +674,7 @@ Terraform sub block.
 **Args**:
   - `access_token` (`string`):  When `null`, the `access_token` field will be omitted from the resulting object.
   - `refresh_token` (`string`):  When `null`, the `refresh_token` field will be omitted from the resulting object.
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.honeycode.oauth_request.new](#fn-honeycodeoauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.honeycode.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `honeycode` sub block.
@@ -750,7 +750,7 @@ Terraform sub block.
   - `access_token` (`string`):  When `null`, the `access_token` field will be omitted from the resulting object.
   - `client_id` (`string`): 
   - `client_secret` (`string`): 
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.marketo.oauth_request.new](#fn-marketooauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.marketo.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `marketo` sub block.
@@ -824,7 +824,7 @@ Terraform sub block.
   - `access_token` (`string`):  When `null`, the `access_token` field will be omitted from the resulting object.
   - `client_credentials_arn` (`string`):  When `null`, the `client_credentials_arn` field will be omitted from the resulting object.
   - `refresh_token` (`string`):  When `null`, the `refresh_token` field will be omitted from the resulting object.
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.oauth_request.new](#fn-salesforceoauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `salesforce` sub block.
@@ -871,8 +871,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `basic_auth_credentials` (`list[obj]`):  When `null`, the `basic_auth_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.basic_auth_credentials.new](#fn-sapo_databasic_auth_credentialsnew) constructor.
-  - `oauth_credentials` (`list[obj]`):  When `null`, the `oauth_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.oauth_credentials.new](#fn-sapo_dataoauth_credentialsnew) constructor.
+  - `basic_auth_credentials` (`list[obj]`):  When `null`, the `basic_auth_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.basic_auth_credentials.new](#fn-connector_profile_configconnector_profile_credentialsbasic_auth_credentialsnew) constructor.
+  - `oauth_credentials` (`list[obj]`):  When `null`, the `oauth_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.oauth_credentials.new](#fn-connector_profile_configconnector_profile_credentialsoauth_credentialsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sapo_data` sub block.
@@ -923,7 +923,7 @@ Terraform sub block.
   - `client_id` (`string`): 
   - `client_secret` (`string`): 
   - `refresh_token` (`string`):  When `null`, the `refresh_token` field will be omitted from the resulting object.
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.oauth_credentials.oauth_request.new](#fn-oauth_credentialsoauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.sapo_data.oauth_credentials.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialssapo_dataoauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `oauth_credentials` sub block.
@@ -1020,7 +1020,7 @@ Terraform sub block.
   - `access_token` (`string`):  When `null`, the `access_token` field will be omitted from the resulting object.
   - `client_id` (`string`): 
   - `client_secret` (`string`): 
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.slack.oauth_request.new](#fn-slackoauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.slack.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `slack` sub block.
@@ -1141,7 +1141,7 @@ Terraform sub block.
   - `access_token` (`string`):  When `null`, the `access_token` field will be omitted from the resulting object.
   - `client_id` (`string`): 
   - `client_secret` (`string`): 
-  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.zendesk.oauth_request.new](#fn-zendeskoauth_requestnew) constructor.
+  - `oauth_request` (`list[obj]`):  When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.zendesk.oauth_request.new](#fn-connector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `zendesk` sub block.
@@ -1188,24 +1188,24 @@ Terraform sub block.
 
 
 **Args**:
-  - `amplitude` (`list[obj]`):  When `null`, the `amplitude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.amplitude.new](#fn-connector_profile_propertiesamplitudenew) constructor.
-  - `custom_connector` (`list[obj]`):  When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.custom_connector.new](#fn-connector_profile_propertiescustom_connectornew) constructor.
-  - `datadog` (`list[obj]`):  When `null`, the `datadog` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.datadog.new](#fn-connector_profile_propertiesdatadognew) constructor.
-  - `dynatrace` (`list[obj]`):  When `null`, the `dynatrace` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.dynatrace.new](#fn-connector_profile_propertiesdynatracenew) constructor.
-  - `google_analytics` (`list[obj]`):  When `null`, the `google_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.google_analytics.new](#fn-connector_profile_propertiesgoogle_analyticsnew) constructor.
-  - `honeycode` (`list[obj]`):  When `null`, the `honeycode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.honeycode.new](#fn-connector_profile_propertieshoneycodenew) constructor.
-  - `infor_nexus` (`list[obj]`):  When `null`, the `infor_nexus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.infor_nexus.new](#fn-connector_profile_propertiesinfor_nexusnew) constructor.
-  - `marketo` (`list[obj]`):  When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.marketo.new](#fn-connector_profile_propertiesmarketonew) constructor.
-  - `redshift` (`list[obj]`):  When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.redshift.new](#fn-connector_profile_propertiesredshiftnew) constructor.
-  - `salesforce` (`list[obj]`):  When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.salesforce.new](#fn-connector_profile_propertiessalesforcenew) constructor.
-  - `sapo_data` (`list[obj]`):  When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.sapo_data.new](#fn-connector_profile_propertiessapo_datanew) constructor.
-  - `service_now` (`list[obj]`):  When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.service_now.new](#fn-connector_profile_propertiesservice_nownew) constructor.
-  - `singular` (`list[obj]`):  When `null`, the `singular` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.singular.new](#fn-connector_profile_propertiessingularnew) constructor.
-  - `slack` (`list[obj]`):  When `null`, the `slack` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.slack.new](#fn-connector_profile_propertiesslacknew) constructor.
-  - `snowflake` (`list[obj]`):  When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.snowflake.new](#fn-connector_profile_propertiessnowflakenew) constructor.
-  - `trendmicro` (`list[obj]`):  When `null`, the `trendmicro` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.trendmicro.new](#fn-connector_profile_propertiestrendmicronew) constructor.
-  - `veeva` (`list[obj]`):  When `null`, the `veeva` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.veeva.new](#fn-connector_profile_propertiesveevanew) constructor.
-  - `zendesk` (`list[obj]`):  When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.zendesk.new](#fn-connector_profile_propertieszendesknew) constructor.
+  - `amplitude` (`list[obj]`):  When `null`, the `amplitude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.amplitude.new](#fn-connector_profile_configamplitudenew) constructor.
+  - `custom_connector` (`list[obj]`):  When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.custom_connector.new](#fn-connector_profile_configcustom_connectornew) constructor.
+  - `datadog` (`list[obj]`):  When `null`, the `datadog` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.datadog.new](#fn-connector_profile_configdatadognew) constructor.
+  - `dynatrace` (`list[obj]`):  When `null`, the `dynatrace` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.dynatrace.new](#fn-connector_profile_configdynatracenew) constructor.
+  - `google_analytics` (`list[obj]`):  When `null`, the `google_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.google_analytics.new](#fn-connector_profile_configgoogle_analyticsnew) constructor.
+  - `honeycode` (`list[obj]`):  When `null`, the `honeycode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.honeycode.new](#fn-connector_profile_confighoneycodenew) constructor.
+  - `infor_nexus` (`list[obj]`):  When `null`, the `infor_nexus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.infor_nexus.new](#fn-connector_profile_configinfor_nexusnew) constructor.
+  - `marketo` (`list[obj]`):  When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.marketo.new](#fn-connector_profile_configmarketonew) constructor.
+  - `redshift` (`list[obj]`):  When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.redshift.new](#fn-connector_profile_configredshiftnew) constructor.
+  - `salesforce` (`list[obj]`):  When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.salesforce.new](#fn-connector_profile_configsalesforcenew) constructor.
+  - `sapo_data` (`list[obj]`):  When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.sapo_data.new](#fn-connector_profile_configsapo_datanew) constructor.
+  - `service_now` (`list[obj]`):  When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.service_now.new](#fn-connector_profile_configservice_nownew) constructor.
+  - `singular` (`list[obj]`):  When `null`, the `singular` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.singular.new](#fn-connector_profile_configsingularnew) constructor.
+  - `slack` (`list[obj]`):  When `null`, the `slack` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.slack.new](#fn-connector_profile_configslacknew) constructor.
+  - `snowflake` (`list[obj]`):  When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.snowflake.new](#fn-connector_profile_configsnowflakenew) constructor.
+  - `trendmicro` (`list[obj]`):  When `null`, the `trendmicro` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.trendmicro.new](#fn-connector_profile_configtrendmicronew) constructor.
+  - `veeva` (`list[obj]`):  When `null`, the `veeva` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.veeva.new](#fn-connector_profile_configveevanew) constructor.
+  - `zendesk` (`list[obj]`):  When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.zendesk.new](#fn-connector_profile_configzendesknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `connector_profile_properties` sub block.
@@ -1249,7 +1249,7 @@ Terraform sub block.
 
 **Args**:
   - `profile_properties` (`obj`):  When `null`, the `profile_properties` field will be omitted from the resulting object.
-  - `oauth2_properties` (`list[obj]`):  When `null`, the `oauth2_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.custom_connector.oauth2_properties.new](#fn-custom_connectoroauth2_propertiesnew) constructor.
+  - `oauth2_properties` (`list[obj]`):  When `null`, the `oauth2_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.custom_connector.oauth2_properties.new](#fn-connector_profile_configconnector_profile_propertiesoauth2_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `custom_connector` sub block.
@@ -1485,7 +1485,7 @@ Terraform sub block.
   - `logon_language` (`string`):  When `null`, the `logon_language` field will be omitted from the resulting object.
   - `port_number` (`number`): 
   - `private_link_service_name` (`string`):  When `null`, the `private_link_service_name` field will be omitted from the resulting object.
-  - `oauth_properties` (`list[obj]`):  When `null`, the `oauth_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.sapo_data.oauth_properties.new](#fn-sapo_dataoauth_propertiesnew) constructor.
+  - `oauth_properties` (`list[obj]`):  When `null`, the `oauth_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.sapo_data.oauth_properties.new](#fn-connector_profile_configconnector_profile_propertiesoauth_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sapo_data` sub block.

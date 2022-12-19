@@ -55,8 +55,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.timeouts.new](#fn-iot_topic_rule_destinationtimeoutsnew) constructor.
-  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.vpc_configuration.new](#fn-iot_topic_rule_destinationvpc_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,7 +72,7 @@ newAttrs()
 `aws.iot_topic_rule_destination.newAttrs` constructs a new object with attributes and blocks configured for the `iot_topic_rule_destination`
 Terraform resource.
 
-Unlike [aws.iot_topic_rule_destination.new](#fn-iot_topic_rule_destinationnew), this function will not inject the `resource`
+Unlike [aws.iot_topic_rule_destination.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -81,8 +81,8 @@ injecting into a complete block.
 
 **Args**:
   - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.timeouts.new](#fn-iot_topic_rule_destinationtimeoutsnew) constructor.
-  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.vpc_configuration.new](#fn-iot_topic_rule_destinationvpc_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule_destination.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_topic_rule_destination` resource into the root Terraform configuration.

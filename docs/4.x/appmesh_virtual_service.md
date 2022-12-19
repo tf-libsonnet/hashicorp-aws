@@ -65,7 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-appmesh_virtual_servicespecnew) constructor.
+  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-specnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,7 +81,7 @@ newAttrs()
 `aws.appmesh_virtual_service.newAttrs` constructs a new object with attributes and blocks configured for the `appmesh_virtual_service`
 Terraform resource.
 
-Unlike [aws.appmesh_virtual_service.new](#fn-appmesh_virtual_servicenew), this function will not inject the `resource`
+Unlike [aws.appmesh_virtual_service.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,7 +94,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-appmesh_virtual_servicespecnew) constructor.
+  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-specnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appmesh_virtual_service` resource into the root Terraform configuration.
@@ -234,7 +234,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.new](#fn-specprovidernew) constructor.
+  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.new](#fn-providernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.
@@ -257,8 +257,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_node` (`list[obj]`):  When `null`, the `virtual_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_node.new](#fn-providervirtual_nodenew) constructor.
-  - `virtual_router` (`list[obj]`):  When `null`, the `virtual_router` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_router.new](#fn-providervirtual_routernew) constructor.
+  - `virtual_node` (`list[obj]`):  When `null`, the `virtual_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_node.new](#fn-specvirtual_nodenew) constructor.
+  - `virtual_router` (`list[obj]`):  When `null`, the `virtual_router` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_router.new](#fn-specvirtual_routernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `provider` sub block.

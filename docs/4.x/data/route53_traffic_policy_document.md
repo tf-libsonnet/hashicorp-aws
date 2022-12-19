@@ -73,8 +73,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `start_endpoint` (`string`):  When `null`, the `start_endpoint` field will be omitted from the resulting object.
   - `start_rule` (`string`):  When `null`, the `start_rule` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `endpoint` (`list[obj]`):  When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.endpoint.new](#fn-route53_traffic_policy_documentendpointnew) constructor.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.rule.new](#fn-route53_traffic_policy_documentrulenew) constructor.
+  - `endpoint` (`list[obj]`):  When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.endpoint.new](#fn-endpointnew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -90,7 +90,7 @@ newAttrs()
 `aws.data.route53_traffic_policy_document.newAttrs` constructs a new object with attributes and blocks configured for the `route53_traffic_policy_document`
 Terraform data source.
 
-Unlike [aws.data.route53_traffic_policy_document.new](#fn-route53_traffic_policy_documentnew), this function will not inject the `data source`
+Unlike [aws.data.route53_traffic_policy_document.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -102,8 +102,8 @@ injecting into a complete block.
   - `start_endpoint` (`string`):  When `null`, the `start_endpoint` field will be omitted from the resulting object.
   - `start_rule` (`string`):  When `null`, the `start_rule` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `endpoint` (`list[obj]`):  When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.endpoint.new](#fn-route53_traffic_policy_documentendpointnew) constructor.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.rule.new](#fn-route53_traffic_policy_documentrulenew) constructor.
+  - `endpoint` (`list[obj]`):  When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.endpoint.new](#fn-endpointnew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_traffic_policy_document.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `route53_traffic_policy_document` data source into the root Terraform configuration.
@@ -290,12 +290,12 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `geo_proximity_location` (`list[obj]`):  When `null`, the `geo_proximity_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.geo_proximity_location.new](#fn-rulegeo_proximity_locationnew) constructor.
-  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.items.new](#fn-ruleitemsnew) constructor.
-  - `location` (`list[obj]`):  When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.location.new](#fn-rulelocationnew) constructor.
-  - `primary` (`list[obj]`):  When `null`, the `primary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.primary.new](#fn-ruleprimarynew) constructor.
-  - `region` (`list[obj]`):  When `null`, the `region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.region.new](#fn-ruleregionnew) constructor.
-  - `secondary` (`list[obj]`):  When `null`, the `secondary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.secondary.new](#fn-rulesecondarynew) constructor.
+  - `geo_proximity_location` (`list[obj]`):  When `null`, the `geo_proximity_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.geo_proximity_location.new](#fn-geo_proximity_locationnew) constructor.
+  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.items.new](#fn-itemsnew) constructor.
+  - `location` (`list[obj]`):  When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.location.new](#fn-locationnew) constructor.
+  - `primary` (`list[obj]`):  When `null`, the `primary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.primary.new](#fn-primarynew) constructor.
+  - `region` (`list[obj]`):  When `null`, the `region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.region.new](#fn-regionnew) constructor.
+  - `secondary` (`list[obj]`):  When `null`, the `secondary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_traffic_policy_document.rule.secondary.new](#fn-secondarynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

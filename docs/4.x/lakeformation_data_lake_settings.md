@@ -59,8 +59,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `admins` (`list`):  When `null`, the `admins` field will be omitted from the resulting object.
   - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `trusted_resource_owners` (`list`):  When `null`, the `trusted_resource_owners` field will be omitted from the resulting object.
-  - `create_database_default_permissions` (`list[obj]`):  When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-lakeformation_data_lake_settingscreate_database_default_permissionsnew) constructor.
-  - `create_table_default_permissions` (`list[obj]`):  When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-lakeformation_data_lake_settingscreate_table_default_permissionsnew) constructor.
+  - `create_database_default_permissions` (`list[obj]`):  When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-create_database_default_permissionsnew) constructor.
+  - `create_table_default_permissions` (`list[obj]`):  When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-create_table_default_permissionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,7 +76,7 @@ newAttrs()
 `aws.lakeformation_data_lake_settings.newAttrs` constructs a new object with attributes and blocks configured for the `lakeformation_data_lake_settings`
 Terraform resource.
 
-Unlike [aws.lakeformation_data_lake_settings.new](#fn-lakeformation_data_lake_settingsnew), this function will not inject the `resource`
+Unlike [aws.lakeformation_data_lake_settings.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,8 +87,8 @@ injecting into a complete block.
   - `admins` (`list`):  When `null`, the `admins` field will be omitted from the resulting object.
   - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `trusted_resource_owners` (`list`):  When `null`, the `trusted_resource_owners` field will be omitted from the resulting object.
-  - `create_database_default_permissions` (`list[obj]`):  When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-lakeformation_data_lake_settingscreate_database_default_permissionsnew) constructor.
-  - `create_table_default_permissions` (`list[obj]`):  When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-lakeformation_data_lake_settingscreate_table_default_permissionsnew) constructor.
+  - `create_database_default_permissions` (`list[obj]`):  When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-create_database_default_permissionsnew) constructor.
+  - `create_table_default_permissions` (`list[obj]`):  When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-create_table_default_permissionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lakeformation_data_lake_settings` resource into the root Terraform configuration.

@@ -93,10 +93,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
   - `vpc_classic_link_id` (`string`):  When `null`, the `vpc_classic_link_id` field will be omitted from the resulting object.
   - `vpc_classic_link_security_groups` (`list`):  When `null`, the `vpc_classic_link_security_groups` field will be omitted from the resulting object.
-  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ebs_block_device.new](#fn-launch_configurationebs_block_devicenew) constructor.
-  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ephemeral_block_device.new](#fn-launch_configurationephemeral_block_devicenew) constructor.
-  - `metadata_options` (`list[obj]`):  When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.metadata_options.new](#fn-launch_configurationmetadata_optionsnew) constructor.
-  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.root_block_device.new](#fn-launch_configurationroot_block_devicenew) constructor.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `metadata_options` (`list[obj]`):  When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.metadata_options.new](#fn-metadata_optionsnew) constructor.
+  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.root_block_device.new](#fn-root_block_devicenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -112,7 +112,7 @@ newAttrs()
 `aws.launch_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `launch_configuration`
 Terraform resource.
 
-Unlike [aws.launch_configuration.new](#fn-launch_configurationnew), this function will not inject the `resource`
+Unlike [aws.launch_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -136,10 +136,10 @@ injecting into a complete block.
   - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
   - `vpc_classic_link_id` (`string`):  When `null`, the `vpc_classic_link_id` field will be omitted from the resulting object.
   - `vpc_classic_link_security_groups` (`list`):  When `null`, the `vpc_classic_link_security_groups` field will be omitted from the resulting object.
-  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ebs_block_device.new](#fn-launch_configurationebs_block_devicenew) constructor.
-  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ephemeral_block_device.new](#fn-launch_configurationephemeral_block_devicenew) constructor.
-  - `metadata_options` (`list[obj]`):  When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.metadata_options.new](#fn-launch_configurationmetadata_optionsnew) constructor.
-  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.root_block_device.new](#fn-launch_configurationroot_block_devicenew) constructor.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `metadata_options` (`list[obj]`):  When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.metadata_options.new](#fn-metadata_optionsnew) constructor.
+  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.root_block_device.new](#fn-root_block_devicenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `launch_configuration` resource into the root Terraform configuration.

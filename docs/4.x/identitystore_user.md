@@ -81,10 +81,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `title` (`string`):  When `null`, the `title` field will be omitted from the resulting object.
   - `user_name` (`string`): 
   - `user_type` (`string`):  When `null`, the `user_type` field will be omitted from the resulting object.
-  - `addresses` (`list[obj]`):  When `null`, the `addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.addresses.new](#fn-identitystore_useraddressesnew) constructor.
-  - `emails` (`list[obj]`):  When `null`, the `emails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.emails.new](#fn-identitystore_useremailsnew) constructor.
-  - `name` (`list[obj]`):  When `null`, the `name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.name.new](#fn-identitystore_usernamenew) constructor.
-  - `phone_numbers` (`list[obj]`):  When `null`, the `phone_numbers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.phone_numbers.new](#fn-identitystore_userphone_numbersnew) constructor.
+  - `addresses` (`list[obj]`):  When `null`, the `addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.addresses.new](#fn-addressesnew) constructor.
+  - `emails` (`list[obj]`):  When `null`, the `emails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.emails.new](#fn-emailsnew) constructor.
+  - `name` (`list[obj]`):  When `null`, the `name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.name.new](#fn-namenew) constructor.
+  - `phone_numbers` (`list[obj]`):  When `null`, the `phone_numbers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.phone_numbers.new](#fn-phone_numbersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -100,7 +100,7 @@ newAttrs()
 `aws.identitystore_user.newAttrs` constructs a new object with attributes and blocks configured for the `identitystore_user`
 Terraform resource.
 
-Unlike [aws.identitystore_user.new](#fn-identitystore_usernew), this function will not inject the `resource`
+Unlike [aws.identitystore_user.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -118,10 +118,10 @@ injecting into a complete block.
   - `title` (`string`):  When `null`, the `title` field will be omitted from the resulting object.
   - `user_name` (`string`): 
   - `user_type` (`string`):  When `null`, the `user_type` field will be omitted from the resulting object.
-  - `addresses` (`list[obj]`):  When `null`, the `addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.addresses.new](#fn-identitystore_useraddressesnew) constructor.
-  - `emails` (`list[obj]`):  When `null`, the `emails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.emails.new](#fn-identitystore_useremailsnew) constructor.
-  - `name` (`list[obj]`):  When `null`, the `name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.name.new](#fn-identitystore_usernamenew) constructor.
-  - `phone_numbers` (`list[obj]`):  When `null`, the `phone_numbers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.phone_numbers.new](#fn-identitystore_userphone_numbersnew) constructor.
+  - `addresses` (`list[obj]`):  When `null`, the `addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.addresses.new](#fn-addressesnew) constructor.
+  - `emails` (`list[obj]`):  When `null`, the `emails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.emails.new](#fn-emailsnew) constructor.
+  - `name` (`list[obj]`):  When `null`, the `name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.name.new](#fn-namenew) constructor.
+  - `phone_numbers` (`list[obj]`):  When `null`, the `phone_numbers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_user.phone_numbers.new](#fn-phone_numbersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `identitystore_user` resource into the root Terraform configuration.

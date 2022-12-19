@@ -65,10 +65,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `multi_az` (`bool`):  When `null`, the `multi_az` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `endpoint_options` (`list[obj]`):  When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-cloudsearch_domainendpoint_optionsnew) constructor.
-  - `index_field` (`list[obj]`):  When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-cloudsearch_domainindex_fieldnew) constructor.
-  - `scaling_parameters` (`list[obj]`):  When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-cloudsearch_domainscaling_parametersnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-cloudsearch_domaintimeoutsnew) constructor.
+  - `endpoint_options` (`list[obj]`):  When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-endpoint_optionsnew) constructor.
+  - `index_field` (`list[obj]`):  When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-index_fieldnew) constructor.
+  - `scaling_parameters` (`list[obj]`):  When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-scaling_parametersnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,7 +84,7 @@ newAttrs()
 `aws.cloudsearch_domain.newAttrs` constructs a new object with attributes and blocks configured for the `cloudsearch_domain`
 Terraform resource.
 
-Unlike [aws.cloudsearch_domain.new](#fn-cloudsearch_domainnew), this function will not inject the `resource`
+Unlike [aws.cloudsearch_domain.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,10 +94,10 @@ injecting into a complete block.
 **Args**:
   - `multi_az` (`bool`):  When `null`, the `multi_az` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `endpoint_options` (`list[obj]`):  When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-cloudsearch_domainendpoint_optionsnew) constructor.
-  - `index_field` (`list[obj]`):  When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-cloudsearch_domainindex_fieldnew) constructor.
-  - `scaling_parameters` (`list[obj]`):  When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-cloudsearch_domainscaling_parametersnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-cloudsearch_domaintimeoutsnew) constructor.
+  - `endpoint_options` (`list[obj]`):  When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-endpoint_optionsnew) constructor.
+  - `index_field` (`list[obj]`):  When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-index_fieldnew) constructor.
+  - `scaling_parameters` (`list[obj]`):  When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-scaling_parametersnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudsearch_domain` resource into the root Terraform configuration.

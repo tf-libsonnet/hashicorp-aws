@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `function_name` (`string`): 
   - `function_version` (`string`): 
   - `name` (`string`): 
-  - `routing_config` (`list[obj]`):  When `null`, the `routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_alias.routing_config.new](#fn-lambda_aliasrouting_confignew) constructor.
+  - `routing_config` (`list[obj]`):  When `null`, the `routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_alias.routing_config.new](#fn-routing_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.lambda_alias.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_alias`
 Terraform resource.
 
-Unlike [aws.lambda_alias.new](#fn-lambda_aliasnew), this function will not inject the `resource`
+Unlike [aws.lambda_alias.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `function_name` (`string`): 
   - `function_version` (`string`): 
   - `name` (`string`): 
-  - `routing_config` (`list[obj]`):  When `null`, the `routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_alias.routing_config.new](#fn-lambda_aliasrouting_confignew) constructor.
+  - `routing_config` (`list[obj]`):  When `null`, the `routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_alias.routing_config.new](#fn-routing_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_alias` resource into the root Terraform configuration.

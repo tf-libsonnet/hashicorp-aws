@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.cloudfront_log_delivery_canonical_user_id.newAttrs` constructs a new object with attributes and blocks configured for the `cloudfront_log_delivery_canonical_user_id`
 Terraform data source.
 
-Unlike [aws.data.cloudfront_log_delivery_canonical_user_id.new](#fn-cloudfront_log_delivery_canonical_user_idnew), this function will not inject the `data source`
+Unlike [aws.data.cloudfront_log_delivery_canonical_user_id.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

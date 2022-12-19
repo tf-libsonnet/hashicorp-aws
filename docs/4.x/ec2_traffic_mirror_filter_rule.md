@@ -69,8 +69,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `source_cidr_block` (`string`): 
   - `traffic_direction` (`string`): 
   - `traffic_mirror_filter_id` (`string`): 
-  - `destination_port_range` (`list[obj]`):  When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-ec2_traffic_mirror_filter_ruledestination_port_rangenew) constructor.
-  - `source_port_range` (`list[obj]`):  When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-ec2_traffic_mirror_filter_rulesource_port_rangenew) constructor.
+  - `destination_port_range` (`list[obj]`):  When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-destination_port_rangenew) constructor.
+  - `source_port_range` (`list[obj]`):  When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-source_port_rangenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,7 +86,7 @@ newAttrs()
 `aws.ec2_traffic_mirror_filter_rule.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_traffic_mirror_filter_rule`
 Terraform resource.
 
-Unlike [aws.ec2_traffic_mirror_filter_rule.new](#fn-ec2_traffic_mirror_filter_rulenew), this function will not inject the `resource`
+Unlike [aws.ec2_traffic_mirror_filter_rule.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -102,8 +102,8 @@ injecting into a complete block.
   - `source_cidr_block` (`string`): 
   - `traffic_direction` (`string`): 
   - `traffic_mirror_filter_id` (`string`): 
-  - `destination_port_range` (`list[obj]`):  When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-ec2_traffic_mirror_filter_ruledestination_port_rangenew) constructor.
-  - `source_port_range` (`list[obj]`):  When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-ec2_traffic_mirror_filter_rulesource_port_rangenew) constructor.
+  - `destination_port_range` (`list[obj]`):  When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-destination_port_rangenew) constructor.
+  - `source_port_range` (`list[obj]`):  When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-source_port_rangenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_traffic_mirror_filter_rule` resource into the root Terraform configuration.

@@ -103,8 +103,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `valid_user_list` (`list`):  When `null`, the `valid_user_list` field will be omitted from the resulting object.
   - `vpc_endpoint_dns_name` (`string`):  When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
-  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-storagegateway_smb_file_sharecache_attributesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-storagegateway_smb_file_sharetimeoutsnew) constructor.
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -120,7 +120,7 @@ newAttrs()
 `aws.storagegateway_smb_file_share.newAttrs` constructs a new object with attributes and blocks configured for the `storagegateway_smb_file_share`
 Terraform resource.
 
-Unlike [aws.storagegateway_smb_file_share.new](#fn-storagegateway_smb_file_sharenew), this function will not inject the `resource`
+Unlike [aws.storagegateway_smb_file_share.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -153,8 +153,8 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `valid_user_list` (`list`):  When `null`, the `valid_user_list` field will be omitted from the resulting object.
   - `vpc_endpoint_dns_name` (`string`):  When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
-  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-storagegateway_smb_file_sharecache_attributesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-storagegateway_smb_file_sharetimeoutsnew) constructor.
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_smb_file_share` resource into the root Terraform configuration.

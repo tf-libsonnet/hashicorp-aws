@@ -68,7 +68,7 @@ newAttrs()
 `aws.iam_user_login_profile.newAttrs` constructs a new object with attributes and blocks configured for the `iam_user_login_profile`
 Terraform resource.
 
-Unlike [aws.iam_user_login_profile.new](#fn-iam_user_login_profilenew), this function will not inject the `resource`
+Unlike [aws.iam_user_login_profile.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `human_task_ui_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `ui_template` (`list[obj]`):  When `null`, the `ui_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_human_task_ui.ui_template.new](#fn-sagemaker_human_task_uiui_templatenew) constructor.
+  - `ui_template` (`list[obj]`):  When `null`, the `ui_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_human_task_ui.ui_template.new](#fn-ui_templatenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.sagemaker_human_task_ui.newAttrs` constructs a new object with attributes and blocks configured for the `sagemaker_human_task_ui`
 Terraform resource.
 
-Unlike [aws.sagemaker_human_task_ui.new](#fn-sagemaker_human_task_uinew), this function will not inject the `resource`
+Unlike [aws.sagemaker_human_task_ui.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `human_task_ui_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `ui_template` (`list[obj]`):  When `null`, the `ui_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_human_task_ui.ui_template.new](#fn-sagemaker_human_task_uiui_templatenew) constructor.
+  - `ui_template` (`list[obj]`):  When `null`, the `ui_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_human_task_ui.ui_template.new](#fn-ui_templatenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_human_task_ui` resource into the root Terraform configuration.

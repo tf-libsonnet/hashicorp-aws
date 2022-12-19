@@ -71,10 +71,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `routing_rules` (`string`):  When `null`, the `routing_rules` field will be omitted from the resulting object.
-  - `error_document` (`list[obj]`):  When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-s3_bucket_website_configurationerror_documentnew) constructor.
-  - `index_document` (`list[obj]`):  When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-s3_bucket_website_configurationindex_documentnew) constructor.
-  - `redirect_all_requests_to` (`list[obj]`):  When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-s3_bucket_website_configurationredirect_all_requests_tonew) constructor.
-  - `routing_rule` (`list[obj]`):  When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-s3_bucket_website_configurationrouting_rulenew) constructor.
+  - `error_document` (`list[obj]`):  When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-error_documentnew) constructor.
+  - `index_document` (`list[obj]`):  When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-index_documentnew) constructor.
+  - `redirect_all_requests_to` (`list[obj]`):  When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-redirect_all_requests_tonew) constructor.
+  - `routing_rule` (`list[obj]`):  When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-routing_rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,7 +90,7 @@ newAttrs()
 `aws.s3_bucket_website_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_website_configuration`
 Terraform resource.
 
-Unlike [aws.s3_bucket_website_configuration.new](#fn-s3_bucket_website_configurationnew), this function will not inject the `resource`
+Unlike [aws.s3_bucket_website_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -101,10 +101,10 @@ injecting into a complete block.
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `routing_rules` (`string`):  When `null`, the `routing_rules` field will be omitted from the resulting object.
-  - `error_document` (`list[obj]`):  When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-s3_bucket_website_configurationerror_documentnew) constructor.
-  - `index_document` (`list[obj]`):  When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-s3_bucket_website_configurationindex_documentnew) constructor.
-  - `redirect_all_requests_to` (`list[obj]`):  When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-s3_bucket_website_configurationredirect_all_requests_tonew) constructor.
-  - `routing_rule` (`list[obj]`):  When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-s3_bucket_website_configurationrouting_rulenew) constructor.
+  - `error_document` (`list[obj]`):  When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-error_documentnew) constructor.
+  - `index_document` (`list[obj]`):  When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-index_documentnew) constructor.
+  - `redirect_all_requests_to` (`list[obj]`):  When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-redirect_all_requests_tonew) constructor.
+  - `routing_rule` (`list[obj]`):  When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-routing_rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_website_configuration` resource into the root Terraform configuration.
@@ -393,8 +393,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.condition.new](#fn-routing_ruleconditionnew) constructor.
-  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.redirect.new](#fn-routing_ruleredirectnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.condition.new](#fn-conditionnew) constructor.
+  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.redirect.new](#fn-redirectnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `routing_rule` sub block.

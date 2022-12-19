@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resource_owner` (`string`): 
   - `resource_share_status` (`string`):  When `null`, the `resource_share_status` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ram_resource_share.filter.new](#fn-ram_resource_sharefilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ram_resource_share.filter.new](#fn-filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.data.ram_resource_share.newAttrs` constructs a new object with attributes and blocks configured for the `ram_resource_share`
 Terraform data source.
 
-Unlike [aws.data.ram_resource_share.new](#fn-ram_resource_sharenew), this function will not inject the `data source`
+Unlike [aws.data.ram_resource_share.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `resource_owner` (`string`): 
   - `resource_share_status` (`string`):  When `null`, the `resource_share_status` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ram_resource_share.filter.new](#fn-ram_resource_sharefilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ram_resource_share.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ram_resource_share` data source into the root Terraform configuration.

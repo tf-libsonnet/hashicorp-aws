@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `auto_scaling_group_provider` (`list[obj]`):  When `null`, the `auto_scaling_group_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.new](#fn-ecs_capacity_providerauto_scaling_group_providernew) constructor.
+  - `auto_scaling_group_provider` (`list[obj]`):  When `null`, the `auto_scaling_group_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.new](#fn-auto_scaling_group_providernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.ecs_capacity_provider.newAttrs` constructs a new object with attributes and blocks configured for the `ecs_capacity_provider`
 Terraform resource.
 
-Unlike [aws.ecs_capacity_provider.new](#fn-ecs_capacity_providernew), this function will not inject the `resource`
+Unlike [aws.ecs_capacity_provider.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -84,7 +84,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `auto_scaling_group_provider` (`list[obj]`):  When `null`, the `auto_scaling_group_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.new](#fn-ecs_capacity_providerauto_scaling_group_providernew) constructor.
+  - `auto_scaling_group_provider` (`list[obj]`):  When `null`, the `auto_scaling_group_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.new](#fn-auto_scaling_group_providernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecs_capacity_provider` resource into the root Terraform configuration.
@@ -194,7 +194,7 @@ Terraform sub block.
 **Args**:
   - `auto_scaling_group_arn` (`string`): 
   - `managed_termination_protection` (`string`):  When `null`, the `managed_termination_protection` field will be omitted from the resulting object.
-  - `managed_scaling` (`list[obj]`):  When `null`, the `managed_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.managed_scaling.new](#fn-auto_scaling_group_providermanaged_scalingnew) constructor.
+  - `managed_scaling` (`list[obj]`):  When `null`, the `managed_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.managed_scaling.new](#fn-managed_scalingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_scaling_group_provider` sub block.

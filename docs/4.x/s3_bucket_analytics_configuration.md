@@ -63,8 +63,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `bucket` (`string`): 
   - `name` (`string`): 
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.filter.new](#fn-s3_bucket_analytics_configurationfilternew) constructor.
-  - `storage_class_analysis` (`list[obj]`):  When `null`, the `storage_class_analysis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.new](#fn-s3_bucket_analytics_configurationstorage_class_analysisnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.filter.new](#fn-filternew) constructor.
+  - `storage_class_analysis` (`list[obj]`):  When `null`, the `storage_class_analysis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.new](#fn-storage_class_analysisnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,7 +80,7 @@ newAttrs()
 `aws.s3_bucket_analytics_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_analytics_configuration`
 Terraform resource.
 
-Unlike [aws.s3_bucket_analytics_configuration.new](#fn-s3_bucket_analytics_configurationnew), this function will not inject the `resource`
+Unlike [aws.s3_bucket_analytics_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
 **Args**:
   - `bucket` (`string`): 
   - `name` (`string`): 
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.filter.new](#fn-s3_bucket_analytics_configurationfilternew) constructor.
-  - `storage_class_analysis` (`list[obj]`):  When `null`, the `storage_class_analysis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.new](#fn-s3_bucket_analytics_configurationstorage_class_analysisnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.filter.new](#fn-filternew) constructor.
+  - `storage_class_analysis` (`list[obj]`):  When `null`, the `storage_class_analysis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.new](#fn-storage_class_analysisnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_analytics_configuration` resource into the root Terraform configuration.
@@ -244,7 +244,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new](#fn-storage_class_analysisdata_exportnew) constructor.
+  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new](#fn-data_exportnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_class_analysis` sub block.
@@ -268,7 +268,7 @@ Terraform sub block.
 
 **Args**:
   - `output_schema_version` (`string`):  When `null`, the `output_schema_version` field will be omitted from the resulting object.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new](#fn-data_exportdestinationnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new](#fn-storage_class_analysisdestinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_export` sub block.
@@ -291,7 +291,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.s3_bucket_destination.new](#fn-destinations3_bucket_destinationnew) constructor.
+  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.s3_bucket_destination.new](#fn-storage_class_analysisdata_exports3_bucket_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.

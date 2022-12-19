@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `control_sets` (`list[obj]`):  When `null`, the `control_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.new](#fn-auditmanager_frameworkcontrol_setsnew) constructor.
+  - `control_sets` (`list[obj]`):  When `null`, the `control_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.new](#fn-control_setsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,7 +75,7 @@ newAttrs()
 `aws.auditmanager_framework.newAttrs` constructs a new object with attributes and blocks configured for the `auditmanager_framework`
 Terraform resource.
 
-Unlike [aws.auditmanager_framework.new](#fn-auditmanager_frameworknew), this function will not inject the `resource`
+Unlike [aws.auditmanager_framework.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,7 +87,7 @@ injecting into a complete block.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `control_sets` (`list[obj]`):  When `null`, the `control_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.new](#fn-auditmanager_frameworkcontrol_setsnew) constructor.
+  - `control_sets` (`list[obj]`):  When `null`, the `control_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.new](#fn-control_setsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `auditmanager_framework` resource into the root Terraform configuration.
@@ -212,7 +212,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `controls` (`list[obj]`):  When `null`, the `controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.controls.new](#fn-control_setscontrolsnew) constructor.
+  - `controls` (`list[obj]`):  When `null`, the `controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.controls.new](#fn-controlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `control_sets` sub block.

@@ -57,8 +57,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `owners` (`list`):  When `null`, the `owners` field will be omitted from the resulting object.
   - `restorable_by_user_ids` (`list`):  When `null`, the `restorable_by_user_ids` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.filter.new](#fn-ebs_snapshot_idsfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.timeouts.new](#fn-ebs_snapshot_idstimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -74,7 +74,7 @@ newAttrs()
 `aws.data.ebs_snapshot_ids.newAttrs` constructs a new object with attributes and blocks configured for the `ebs_snapshot_ids`
 Terraform data source.
 
-Unlike [aws.data.ebs_snapshot_ids.new](#fn-ebs_snapshot_idsnew), this function will not inject the `data source`
+Unlike [aws.data.ebs_snapshot_ids.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -84,8 +84,8 @@ injecting into a complete block.
 **Args**:
   - `owners` (`list`):  When `null`, the `owners` field will be omitted from the resulting object.
   - `restorable_by_user_ids` (`list`):  When `null`, the `restorable_by_user_ids` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.filter.new](#fn-ebs_snapshot_idsfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.timeouts.new](#fn-ebs_snapshot_idstimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot_ids.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ebs_snapshot_ids` data source into the root Terraform configuration.

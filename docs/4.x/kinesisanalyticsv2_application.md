@@ -155,9 +155,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `start_application` (`bool`):  When `null`, the `start_application` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `application_configuration` (`list[obj]`):  When `null`, the `application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.new](#fn-kinesisanalyticsv2_applicationapplication_configurationnew) constructor.
-  - `cloudwatch_logging_options` (`list[obj]`):  When `null`, the `cloudwatch_logging_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.cloudwatch_logging_options.new](#fn-kinesisanalyticsv2_applicationcloudwatch_logging_optionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.timeouts.new](#fn-kinesisanalyticsv2_applicationtimeoutsnew) constructor.
+  - `application_configuration` (`list[obj]`):  When `null`, the `application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.new](#fn-application_configurationnew) constructor.
+  - `cloudwatch_logging_options` (`list[obj]`):  When `null`, the `cloudwatch_logging_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.cloudwatch_logging_options.new](#fn-cloudwatch_logging_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -173,7 +173,7 @@ newAttrs()
 `aws.kinesisanalyticsv2_application.newAttrs` constructs a new object with attributes and blocks configured for the `kinesisanalyticsv2_application`
 Terraform resource.
 
-Unlike [aws.kinesisanalyticsv2_application.new](#fn-kinesisanalyticsv2_applicationnew), this function will not inject the `resource`
+Unlike [aws.kinesisanalyticsv2_application.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -189,9 +189,9 @@ injecting into a complete block.
   - `start_application` (`bool`):  When `null`, the `start_application` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `application_configuration` (`list[obj]`):  When `null`, the `application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.new](#fn-kinesisanalyticsv2_applicationapplication_configurationnew) constructor.
-  - `cloudwatch_logging_options` (`list[obj]`):  When `null`, the `cloudwatch_logging_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.cloudwatch_logging_options.new](#fn-kinesisanalyticsv2_applicationcloudwatch_logging_optionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.timeouts.new](#fn-kinesisanalyticsv2_applicationtimeoutsnew) constructor.
+  - `application_configuration` (`list[obj]`):  When `null`, the `application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.new](#fn-application_configurationnew) constructor.
+  - `cloudwatch_logging_options` (`list[obj]`):  When `null`, the `cloudwatch_logging_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.cloudwatch_logging_options.new](#fn-cloudwatch_logging_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kinesisanalyticsv2_application` resource into the root Terraform configuration.
@@ -452,13 +452,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `application_code_configuration` (`list[obj]`):  When `null`, the `application_code_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_code_configuration.new](#fn-application_configurationapplication_code_configurationnew) constructor.
-  - `application_snapshot_configuration` (`list[obj]`):  When `null`, the `application_snapshot_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_snapshot_configuration.new](#fn-application_configurationapplication_snapshot_configurationnew) constructor.
-  - `environment_properties` (`list[obj]`):  When `null`, the `environment_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.environment_properties.new](#fn-application_configurationenvironment_propertiesnew) constructor.
-  - `flink_application_configuration` (`list[obj]`):  When `null`, the `flink_application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.new](#fn-application_configurationflink_application_configurationnew) constructor.
-  - `run_configuration` (`list[obj]`):  When `null`, the `run_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.run_configuration.new](#fn-application_configurationrun_configurationnew) constructor.
-  - `sql_application_configuration` (`list[obj]`):  When `null`, the `sql_application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.new](#fn-application_configurationsql_application_configurationnew) constructor.
-  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.vpc_configuration.new](#fn-application_configurationvpc_configurationnew) constructor.
+  - `application_code_configuration` (`list[obj]`):  When `null`, the `application_code_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_code_configuration.new](#fn-application_code_configurationnew) constructor.
+  - `application_snapshot_configuration` (`list[obj]`):  When `null`, the `application_snapshot_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_snapshot_configuration.new](#fn-application_snapshot_configurationnew) constructor.
+  - `environment_properties` (`list[obj]`):  When `null`, the `environment_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.environment_properties.new](#fn-environment_propertiesnew) constructor.
+  - `flink_application_configuration` (`list[obj]`):  When `null`, the `flink_application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.new](#fn-flink_application_configurationnew) constructor.
+  - `run_configuration` (`list[obj]`):  When `null`, the `run_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.run_configuration.new](#fn-run_configurationnew) constructor.
+  - `sql_application_configuration` (`list[obj]`):  When `null`, the `sql_application_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.new](#fn-sql_application_configurationnew) constructor.
+  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `application_configuration` sub block.
@@ -482,7 +482,7 @@ Terraform sub block.
 
 **Args**:
   - `code_content_type` (`string`): 
-  - `code_content` (`list[obj]`):  When `null`, the `code_content` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_code_configuration.code_content.new](#fn-application_code_configurationcode_contentnew) constructor.
+  - `code_content` (`list[obj]`):  When `null`, the `code_content` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_code_configuration.code_content.new](#fn-application_configurationcode_contentnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `application_code_configuration` sub block.
@@ -506,7 +506,7 @@ Terraform sub block.
 
 **Args**:
   - `text_content` (`string`):  When `null`, the `text_content` field will be omitted from the resulting object.
-  - `s3_content_location` (`list[obj]`):  When `null`, the `s3_content_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_code_configuration.code_content.s3_content_location.new](#fn-code_contents3_content_locationnew) constructor.
+  - `s3_content_location` (`list[obj]`):  When `null`, the `s3_content_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.application_code_configuration.code_content.s3_content_location.new](#fn-application_configurationapplication_code_configurations3_content_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `code_content` sub block.
@@ -577,7 +577,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `property_group` (`list[obj]`):  When `null`, the `property_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.environment_properties.property_group.new](#fn-environment_propertiesproperty_groupnew) constructor.
+  - `property_group` (`list[obj]`):  When `null`, the `property_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.environment_properties.property_group.new](#fn-application_configurationproperty_groupnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `environment_properties` sub block.
@@ -624,9 +624,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `checkpoint_configuration` (`list[obj]`):  When `null`, the `checkpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.checkpoint_configuration.new](#fn-flink_application_configurationcheckpoint_configurationnew) constructor.
-  - `monitoring_configuration` (`list[obj]`):  When `null`, the `monitoring_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.monitoring_configuration.new](#fn-flink_application_configurationmonitoring_configurationnew) constructor.
-  - `parallelism_configuration` (`list[obj]`):  When `null`, the `parallelism_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.parallelism_configuration.new](#fn-flink_application_configurationparallelism_configurationnew) constructor.
+  - `checkpoint_configuration` (`list[obj]`):  When `null`, the `checkpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.checkpoint_configuration.new](#fn-application_configurationcheckpoint_configurationnew) constructor.
+  - `monitoring_configuration` (`list[obj]`):  When `null`, the `monitoring_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.monitoring_configuration.new](#fn-application_configurationmonitoring_configurationnew) constructor.
+  - `parallelism_configuration` (`list[obj]`):  When `null`, the `parallelism_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.flink_application_configuration.parallelism_configuration.new](#fn-application_configurationparallelism_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `flink_application_configuration` sub block.
@@ -726,8 +726,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `application_restore_configuration` (`list[obj]`):  When `null`, the `application_restore_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.run_configuration.application_restore_configuration.new](#fn-run_configurationapplication_restore_configurationnew) constructor.
-  - `flink_run_configuration` (`list[obj]`):  When `null`, the `flink_run_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.run_configuration.flink_run_configuration.new](#fn-run_configurationflink_run_configurationnew) constructor.
+  - `application_restore_configuration` (`list[obj]`):  When `null`, the `application_restore_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.run_configuration.application_restore_configuration.new](#fn-application_configurationapplication_restore_configurationnew) constructor.
+  - `flink_run_configuration` (`list[obj]`):  When `null`, the `flink_run_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.run_configuration.flink_run_configuration.new](#fn-application_configurationflink_run_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `run_configuration` sub block.
@@ -797,9 +797,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `input` (`list[obj]`):  When `null`, the `input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.new](#fn-sql_application_configurationinputnew) constructor.
-  - `output` (`list[obj]`):  When `null`, the `output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.new](#fn-sql_application_configurationoutputnew) constructor.
-  - `reference_data_source` (`list[obj]`):  When `null`, the `reference_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.new](#fn-sql_application_configurationreference_data_sourcenew) constructor.
+  - `input` (`list[obj]`):  When `null`, the `input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.new](#fn-application_configurationinputnew) constructor.
+  - `output` (`list[obj]`):  When `null`, the `output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.new](#fn-application_configurationoutputnew) constructor.
+  - `reference_data_source` (`list[obj]`):  When `null`, the `reference_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.new](#fn-application_configurationreference_data_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sql_application_configuration` sub block.
@@ -823,12 +823,12 @@ Terraform sub block.
 
 **Args**:
   - `name_prefix` (`string`): 
-  - `input_parallelism` (`list[obj]`):  When `null`, the `input_parallelism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_parallelism.new](#fn-inputinput_parallelismnew) constructor.
-  - `input_processing_configuration` (`list[obj]`):  When `null`, the `input_processing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_processing_configuration.new](#fn-inputinput_processing_configurationnew) constructor.
-  - `input_schema` (`list[obj]`):  When `null`, the `input_schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.new](#fn-inputinput_schemanew) constructor.
-  - `input_starting_position_configuration` (`list[obj]`):  When `null`, the `input_starting_position_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_starting_position_configuration.new](#fn-inputinput_starting_position_configurationnew) constructor.
-  - `kinesis_firehose_input` (`list[obj]`):  When `null`, the `kinesis_firehose_input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.kinesis_firehose_input.new](#fn-inputkinesis_firehose_inputnew) constructor.
-  - `kinesis_streams_input` (`list[obj]`):  When `null`, the `kinesis_streams_input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.kinesis_streams_input.new](#fn-inputkinesis_streams_inputnew) constructor.
+  - `input_parallelism` (`list[obj]`):  When `null`, the `input_parallelism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_parallelism.new](#fn-application_configurationsql_application_configurationinput_parallelismnew) constructor.
+  - `input_processing_configuration` (`list[obj]`):  When `null`, the `input_processing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_processing_configuration.new](#fn-application_configurationsql_application_configurationinput_processing_configurationnew) constructor.
+  - `input_schema` (`list[obj]`):  When `null`, the `input_schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.new](#fn-application_configurationsql_application_configurationinput_schemanew) constructor.
+  - `input_starting_position_configuration` (`list[obj]`):  When `null`, the `input_starting_position_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_starting_position_configuration.new](#fn-application_configurationsql_application_configurationinput_starting_position_configurationnew) constructor.
+  - `kinesis_firehose_input` (`list[obj]`):  When `null`, the `kinesis_firehose_input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.kinesis_firehose_input.new](#fn-application_configurationsql_application_configurationkinesis_firehose_inputnew) constructor.
+  - `kinesis_streams_input` (`list[obj]`):  When `null`, the `kinesis_streams_input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.kinesis_streams_input.new](#fn-application_configurationsql_application_configurationkinesis_streams_inputnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input` sub block.
@@ -874,7 +874,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `input_lambda_processor` (`list[obj]`):  When `null`, the `input_lambda_processor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_processing_configuration.input_lambda_processor.new](#fn-input_processing_configurationinput_lambda_processornew) constructor.
+  - `input_lambda_processor` (`list[obj]`):  When `null`, the `input_lambda_processor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_processing_configuration.input_lambda_processor.new](#fn-application_configurationsql_application_configurationinputinput_lambda_processornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input_processing_configuration` sub block.
@@ -921,8 +921,8 @@ Terraform sub block.
 
 **Args**:
   - `record_encoding` (`string`):  When `null`, the `record_encoding` field will be omitted from the resulting object.
-  - `record_column` (`list[obj]`):  When `null`, the `record_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_column.new](#fn-input_schemarecord_columnnew) constructor.
-  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.new](#fn-input_schemarecord_formatnew) constructor.
+  - `record_column` (`list[obj]`):  When `null`, the `record_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_column.new](#fn-application_configurationsql_application_configurationinputrecord_columnnew) constructor.
+  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.new](#fn-application_configurationsql_application_configurationinputrecord_formatnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input_schema` sub block.
@@ -971,7 +971,7 @@ Terraform sub block.
 
 **Args**:
   - `record_format_type` (`string`): 
-  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.mapping_parameters.new](#fn-record_formatmapping_parametersnew) constructor.
+  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.mapping_parameters.new](#fn-application_configurationsql_application_configurationinputinput_schemamapping_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `record_format` sub block.
@@ -994,8 +994,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `csv_mapping_parameters` (`list[obj]`):  When `null`, the `csv_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.mapping_parameters.csv_mapping_parameters.new](#fn-mapping_parameterscsv_mapping_parametersnew) constructor.
-  - `json_mapping_parameters` (`list[obj]`):  When `null`, the `json_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.mapping_parameters.json_mapping_parameters.new](#fn-mapping_parametersjson_mapping_parametersnew) constructor.
+  - `csv_mapping_parameters` (`list[obj]`):  When `null`, the `csv_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.mapping_parameters.csv_mapping_parameters.new](#fn-application_configurationsql_application_configurationinputinput_schemarecord_formatcsv_mapping_parametersnew) constructor.
+  - `json_mapping_parameters` (`list[obj]`):  When `null`, the `json_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.input.input_schema.record_format.mapping_parameters.json_mapping_parameters.new](#fn-application_configurationsql_application_configurationinputinput_schemarecord_formatjson_mapping_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `mapping_parameters` sub block.
@@ -1135,10 +1135,10 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `destination_schema` (`list[obj]`):  When `null`, the `destination_schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.destination_schema.new](#fn-outputdestination_schemanew) constructor.
-  - `kinesis_firehose_output` (`list[obj]`):  When `null`, the `kinesis_firehose_output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.kinesis_firehose_output.new](#fn-outputkinesis_firehose_outputnew) constructor.
-  - `kinesis_streams_output` (`list[obj]`):  When `null`, the `kinesis_streams_output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.kinesis_streams_output.new](#fn-outputkinesis_streams_outputnew) constructor.
-  - `lambda_output` (`list[obj]`):  When `null`, the `lambda_output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.lambda_output.new](#fn-outputlambda_outputnew) constructor.
+  - `destination_schema` (`list[obj]`):  When `null`, the `destination_schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.destination_schema.new](#fn-application_configurationsql_application_configurationdestination_schemanew) constructor.
+  - `kinesis_firehose_output` (`list[obj]`):  When `null`, the `kinesis_firehose_output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.kinesis_firehose_output.new](#fn-application_configurationsql_application_configurationkinesis_firehose_outputnew) constructor.
+  - `kinesis_streams_output` (`list[obj]`):  When `null`, the `kinesis_streams_output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.kinesis_streams_output.new](#fn-application_configurationsql_application_configurationkinesis_streams_outputnew) constructor.
+  - `lambda_output` (`list[obj]`):  When `null`, the `lambda_output` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.output.lambda_output.new](#fn-application_configurationsql_application_configurationlambda_outputnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `output` sub block.
@@ -1254,8 +1254,8 @@ Terraform sub block.
 
 **Args**:
   - `table_name` (`string`): 
-  - `reference_schema` (`list[obj]`):  When `null`, the `reference_schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.new](#fn-reference_data_sourcereference_schemanew) constructor.
-  - `s3_reference_data_source` (`list[obj]`):  When `null`, the `s3_reference_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.s3_reference_data_source.new](#fn-reference_data_sources3_reference_data_sourcenew) constructor.
+  - `reference_schema` (`list[obj]`):  When `null`, the `reference_schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.new](#fn-application_configurationsql_application_configurationreference_schemanew) constructor.
+  - `s3_reference_data_source` (`list[obj]`):  When `null`, the `s3_reference_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.s3_reference_data_source.new](#fn-application_configurationsql_application_configurations3_reference_data_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `reference_data_source` sub block.
@@ -1279,8 +1279,8 @@ Terraform sub block.
 
 **Args**:
   - `record_encoding` (`string`):  When `null`, the `record_encoding` field will be omitted from the resulting object.
-  - `record_column` (`list[obj]`):  When `null`, the `record_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_column.new](#fn-reference_schemarecord_columnnew) constructor.
-  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.new](#fn-reference_schemarecord_formatnew) constructor.
+  - `record_column` (`list[obj]`):  When `null`, the `record_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_column.new](#fn-application_configurationsql_application_configurationreference_data_sourcerecord_columnnew) constructor.
+  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.new](#fn-application_configurationsql_application_configurationreference_data_sourcerecord_formatnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `reference_schema` sub block.
@@ -1329,7 +1329,7 @@ Terraform sub block.
 
 **Args**:
   - `record_format_type` (`string`): 
-  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.mapping_parameters.new](#fn-record_formatmapping_parametersnew) constructor.
+  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.mapping_parameters.new](#fn-application_configurationsql_application_configurationreference_data_sourcereference_schemamapping_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `record_format` sub block.
@@ -1352,8 +1352,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `csv_mapping_parameters` (`list[obj]`):  When `null`, the `csv_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.mapping_parameters.csv_mapping_parameters.new](#fn-mapping_parameterscsv_mapping_parametersnew) constructor.
-  - `json_mapping_parameters` (`list[obj]`):  When `null`, the `json_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.mapping_parameters.json_mapping_parameters.new](#fn-mapping_parametersjson_mapping_parametersnew) constructor.
+  - `csv_mapping_parameters` (`list[obj]`):  When `null`, the `csv_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.mapping_parameters.csv_mapping_parameters.new](#fn-application_configurationsql_application_configurationreference_data_sourcereference_schemarecord_formatcsv_mapping_parametersnew) constructor.
+  - `json_mapping_parameters` (`list[obj]`):  When `null`, the `json_mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesisanalyticsv2_application.application_configuration.sql_application_configuration.reference_data_source.reference_schema.record_format.mapping_parameters.json_mapping_parameters.new](#fn-application_configurationsql_application_configurationreference_data_sourcereference_schemarecord_formatjson_mapping_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `mapping_parameters` sub block.

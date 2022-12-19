@@ -64,7 +64,7 @@ newAttrs()
 `aws.ecs_account_setting_default.newAttrs` constructs a new object with attributes and blocks configured for the `ecs_account_setting_default`
 Terraform resource.
 
-Unlike [aws.ecs_account_setting_default.new](#fn-ecs_account_setting_defaultnew), this function will not inject the `resource`
+Unlike [aws.ecs_account_setting_default.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

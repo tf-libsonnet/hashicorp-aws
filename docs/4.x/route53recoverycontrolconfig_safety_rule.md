@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `target_controls` (`list`):  When `null`, the `target_controls` field will be omitted from the resulting object.
   - `wait_period_ms` (`number`): 
-  - `rule_config` (`list[obj]`):  When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-route53recoverycontrolconfig_safety_rulerule_confignew) constructor.
+  - `rule_config` (`list[obj]`):  When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-rule_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.route53recoverycontrolconfig_safety_rule.newAttrs` constructs a new object with attributes and blocks configured for the `route53recoverycontrolconfig_safety_rule`
 Terraform resource.
 
-Unlike [aws.route53recoverycontrolconfig_safety_rule.new](#fn-route53recoverycontrolconfig_safety_rulenew), this function will not inject the `resource`
+Unlike [aws.route53recoverycontrolconfig_safety_rule.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `target_controls` (`list`):  When `null`, the `target_controls` field will be omitted from the resulting object.
   - `wait_period_ms` (`number`): 
-  - `rule_config` (`list[obj]`):  When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-route53recoverycontrolconfig_safety_rulerule_confignew) constructor.
+  - `rule_config` (`list[obj]`):  When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-rule_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53recoverycontrolconfig_safety_rule` resource into the root Terraform configuration.

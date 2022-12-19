@@ -66,7 +66,7 @@ newAttrs()
 `aws.ec2_transit_gateway_peering_attachment_accepter.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_transit_gateway_peering_attachment_accepter`
 Terraform resource.
 
-Unlike [aws.ec2_transit_gateway_peering_attachment_accepter.new](#fn-ec2_transit_gateway_peering_attachment_accepternew), this function will not inject the `resource`
+Unlike [aws.ec2_transit_gateway_peering_attachment_accepter.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

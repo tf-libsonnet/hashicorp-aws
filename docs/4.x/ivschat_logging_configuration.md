@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.new](#fn-ivschat_logging_configurationdestination_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.timeouts.new](#fn-ivschat_logging_configurationtimeoutsnew) constructor.
+  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.ivschat_logging_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `ivschat_logging_configuration`
 Terraform resource.
 
-Unlike [aws.ivschat_logging_configuration.new](#fn-ivschat_logging_configurationnew), this function will not inject the `resource`
+Unlike [aws.ivschat_logging_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -93,8 +93,8 @@ injecting into a complete block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.new](#fn-ivschat_logging_configurationdestination_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.timeouts.new](#fn-ivschat_logging_configurationtimeoutsnew) constructor.
+  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ivschat_logging_configuration` resource into the root Terraform configuration.
@@ -238,9 +238,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.cloudwatch_logs.new](#fn-destination_configurationcloudwatch_logsnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.firehose.new](#fn-destination_configurationfirehosenew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.s3.new](#fn-destination_configurations3new) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.cloudwatch_logs.new](#fn-cloudwatch_logsnew) constructor.
+  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.firehose.new](#fn-firehosenew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.s3.new](#fn-s3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_configuration` sub block.

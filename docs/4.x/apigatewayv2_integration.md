@@ -85,8 +85,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `request_templates` (`obj`):  When `null`, the `request_templates` field will be omitted from the resulting object.
   - `template_selection_expression` (`string`):  When `null`, the `template_selection_expression` field will be omitted from the resulting object.
   - `timeout_milliseconds` (`number`):  When `null`, the `timeout_milliseconds` field will be omitted from the resulting object.
-  - `response_parameters` (`list[obj]`):  When `null`, the `response_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.response_parameters.new](#fn-apigatewayv2_integrationresponse_parametersnew) constructor.
-  - `tls_config` (`list[obj]`):  When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.tls_config.new](#fn-apigatewayv2_integrationtls_confignew) constructor.
+  - `response_parameters` (`list[obj]`):  When `null`, the `response_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.response_parameters.new](#fn-response_parametersnew) constructor.
+  - `tls_config` (`list[obj]`):  When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.tls_config.new](#fn-tls_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,7 +102,7 @@ newAttrs()
 `aws.apigatewayv2_integration.newAttrs` constructs a new object with attributes and blocks configured for the `apigatewayv2_integration`
 Terraform resource.
 
-Unlike [aws.apigatewayv2_integration.new](#fn-apigatewayv2_integrationnew), this function will not inject the `resource`
+Unlike [aws.apigatewayv2_integration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -126,8 +126,8 @@ injecting into a complete block.
   - `request_templates` (`obj`):  When `null`, the `request_templates` field will be omitted from the resulting object.
   - `template_selection_expression` (`string`):  When `null`, the `template_selection_expression` field will be omitted from the resulting object.
   - `timeout_milliseconds` (`number`):  When `null`, the `timeout_milliseconds` field will be omitted from the resulting object.
-  - `response_parameters` (`list[obj]`):  When `null`, the `response_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.response_parameters.new](#fn-apigatewayv2_integrationresponse_parametersnew) constructor.
-  - `tls_config` (`list[obj]`):  When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.tls_config.new](#fn-apigatewayv2_integrationtls_confignew) constructor.
+  - `response_parameters` (`list[obj]`):  When `null`, the `response_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.response_parameters.new](#fn-response_parametersnew) constructor.
+  - `tls_config` (`list[obj]`):  When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_integration.tls_config.new](#fn-tls_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_integration` resource into the root Terraform configuration.

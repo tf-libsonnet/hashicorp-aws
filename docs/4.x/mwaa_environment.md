@@ -105,9 +105,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `webserver_access_mode` (`string`):  When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
   - `weekly_maintenance_window_start` (`string`):  When `null`, the `weekly_maintenance_window_start` field will be omitted from the resulting object.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-mwaa_environmentlogging_configurationnew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-mwaa_environmentnetwork_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-mwaa_environmenttimeoutsnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-logging_configurationnew) constructor.
+  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -123,7 +123,7 @@ newAttrs()
 `aws.mwaa_environment.newAttrs` constructs a new object with attributes and blocks configured for the `mwaa_environment`
 Terraform resource.
 
-Unlike [aws.mwaa_environment.new](#fn-mwaa_environmentnew), this function will not inject the `resource`
+Unlike [aws.mwaa_environment.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -150,9 +150,9 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `webserver_access_mode` (`string`):  When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
   - `weekly_maintenance_window_start` (`string`):  When `null`, the `weekly_maintenance_window_start` field will be omitted from the resulting object.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-mwaa_environmentlogging_configurationnew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-mwaa_environmentnetwork_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-mwaa_environmenttimeoutsnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-logging_configurationnew) constructor.
+  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `mwaa_environment` resource into the root Terraform configuration.
@@ -589,11 +589,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `dag_processing_logs` (`list[obj]`):  When `null`, the `dag_processing_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.dag_processing_logs.new](#fn-logging_configurationdag_processing_logsnew) constructor.
-  - `scheduler_logs` (`list[obj]`):  When `null`, the `scheduler_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.scheduler_logs.new](#fn-logging_configurationscheduler_logsnew) constructor.
-  - `task_logs` (`list[obj]`):  When `null`, the `task_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.task_logs.new](#fn-logging_configurationtask_logsnew) constructor.
-  - `webserver_logs` (`list[obj]`):  When `null`, the `webserver_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.webserver_logs.new](#fn-logging_configurationwebserver_logsnew) constructor.
-  - `worker_logs` (`list[obj]`):  When `null`, the `worker_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.worker_logs.new](#fn-logging_configurationworker_logsnew) constructor.
+  - `dag_processing_logs` (`list[obj]`):  When `null`, the `dag_processing_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.dag_processing_logs.new](#fn-dag_processing_logsnew) constructor.
+  - `scheduler_logs` (`list[obj]`):  When `null`, the `scheduler_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.scheduler_logs.new](#fn-scheduler_logsnew) constructor.
+  - `task_logs` (`list[obj]`):  When `null`, the `task_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.task_logs.new](#fn-task_logsnew) constructor.
+  - `webserver_logs` (`list[obj]`):  When `null`, the `webserver_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.webserver_logs.new](#fn-webserver_logsnew) constructor.
+  - `worker_logs` (`list[obj]`):  When `null`, the `worker_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.worker_logs.new](#fn-worker_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging_configuration` sub block.

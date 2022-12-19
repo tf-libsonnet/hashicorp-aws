@@ -70,7 +70,7 @@ newAttrs()
 `aws.service_discovery_private_dns_namespace.newAttrs` constructs a new object with attributes and blocks configured for the `service_discovery_private_dns_namespace`
 Terraform resource.
 
-Unlike [aws.service_discovery_private_dns_namespace.new](#fn-service_discovery_private_dns_namespacenew), this function will not inject the `resource`
+Unlike [aws.service_discovery_private_dns_namespace.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

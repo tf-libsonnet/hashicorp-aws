@@ -81,10 +81,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpc_subnets` (`list`):  When `null`, the `vpc_subnets` field will be omitted from the resulting object.
-  - `auto_scaling_policy` (`list[obj]`):  When `null`, the `auto_scaling_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.new](#fn-gamelift_game_server_groupauto_scaling_policynew) constructor.
-  - `instance_definition` (`list[obj]`):  When `null`, the `instance_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.instance_definition.new](#fn-gamelift_game_server_groupinstance_definitionnew) constructor.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.launch_template.new](#fn-gamelift_game_server_grouplaunch_templatenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.timeouts.new](#fn-gamelift_game_server_grouptimeoutsnew) constructor.
+  - `auto_scaling_policy` (`list[obj]`):  When `null`, the `auto_scaling_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.new](#fn-auto_scaling_policynew) constructor.
+  - `instance_definition` (`list[obj]`):  When `null`, the `instance_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.instance_definition.new](#fn-instance_definitionnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -100,7 +100,7 @@ newAttrs()
 `aws.gamelift_game_server_group.newAttrs` constructs a new object with attributes and blocks configured for the `gamelift_game_server_group`
 Terraform resource.
 
-Unlike [aws.gamelift_game_server_group.new](#fn-gamelift_game_server_groupnew), this function will not inject the `resource`
+Unlike [aws.gamelift_game_server_group.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -117,10 +117,10 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpc_subnets` (`list`):  When `null`, the `vpc_subnets` field will be omitted from the resulting object.
-  - `auto_scaling_policy` (`list[obj]`):  When `null`, the `auto_scaling_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.new](#fn-gamelift_game_server_groupauto_scaling_policynew) constructor.
-  - `instance_definition` (`list[obj]`):  When `null`, the `instance_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.instance_definition.new](#fn-gamelift_game_server_groupinstance_definitionnew) constructor.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.launch_template.new](#fn-gamelift_game_server_grouplaunch_templatenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.timeouts.new](#fn-gamelift_game_server_grouptimeoutsnew) constructor.
+  - `auto_scaling_policy` (`list[obj]`):  When `null`, the `auto_scaling_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.new](#fn-auto_scaling_policynew) constructor.
+  - `instance_definition` (`list[obj]`):  When `null`, the `instance_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.instance_definition.new](#fn-instance_definitionnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `gamelift_game_server_group` resource into the root Terraform configuration.
@@ -435,7 +435,7 @@ Terraform sub block.
 
 **Args**:
   - `estimated_instance_warmup` (`number`):  When `null`, the `estimated_instance_warmup` field will be omitted from the resulting object.
-  - `target_tracking_configuration` (`list[obj]`):  When `null`, the `target_tracking_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.target_tracking_configuration.new](#fn-auto_scaling_policytarget_tracking_configurationnew) constructor.
+  - `target_tracking_configuration` (`list[obj]`):  When `null`, the `target_tracking_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.target_tracking_configuration.new](#fn-target_tracking_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_scaling_policy` sub block.

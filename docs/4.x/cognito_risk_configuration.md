@@ -79,9 +79,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `client_id` (`string`):  When `null`, the `client_id` field will be omitted from the resulting object.
   - `user_pool_id` (`string`): 
-  - `account_takeover_risk_configuration` (`list[obj]`):  When `null`, the `account_takeover_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.new](#fn-cognito_risk_configurationaccount_takeover_risk_configurationnew) constructor.
-  - `compromised_credentials_risk_configuration` (`list[obj]`):  When `null`, the `compromised_credentials_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.compromised_credentials_risk_configuration.new](#fn-cognito_risk_configurationcompromised_credentials_risk_configurationnew) constructor.
-  - `risk_exception_configuration` (`list[obj]`):  When `null`, the `risk_exception_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.risk_exception_configuration.new](#fn-cognito_risk_configurationrisk_exception_configurationnew) constructor.
+  - `account_takeover_risk_configuration` (`list[obj]`):  When `null`, the `account_takeover_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.new](#fn-account_takeover_risk_configurationnew) constructor.
+  - `compromised_credentials_risk_configuration` (`list[obj]`):  When `null`, the `compromised_credentials_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.compromised_credentials_risk_configuration.new](#fn-compromised_credentials_risk_configurationnew) constructor.
+  - `risk_exception_configuration` (`list[obj]`):  When `null`, the `risk_exception_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.risk_exception_configuration.new](#fn-risk_exception_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -97,7 +97,7 @@ newAttrs()
 `aws.cognito_risk_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `cognito_risk_configuration`
 Terraform resource.
 
-Unlike [aws.cognito_risk_configuration.new](#fn-cognito_risk_configurationnew), this function will not inject the `resource`
+Unlike [aws.cognito_risk_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -107,9 +107,9 @@ injecting into a complete block.
 **Args**:
   - `client_id` (`string`):  When `null`, the `client_id` field will be omitted from the resulting object.
   - `user_pool_id` (`string`): 
-  - `account_takeover_risk_configuration` (`list[obj]`):  When `null`, the `account_takeover_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.new](#fn-cognito_risk_configurationaccount_takeover_risk_configurationnew) constructor.
-  - `compromised_credentials_risk_configuration` (`list[obj]`):  When `null`, the `compromised_credentials_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.compromised_credentials_risk_configuration.new](#fn-cognito_risk_configurationcompromised_credentials_risk_configurationnew) constructor.
-  - `risk_exception_configuration` (`list[obj]`):  When `null`, the `risk_exception_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.risk_exception_configuration.new](#fn-cognito_risk_configurationrisk_exception_configurationnew) constructor.
+  - `account_takeover_risk_configuration` (`list[obj]`):  When `null`, the `account_takeover_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.new](#fn-account_takeover_risk_configurationnew) constructor.
+  - `compromised_credentials_risk_configuration` (`list[obj]`):  When `null`, the `compromised_credentials_risk_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.compromised_credentials_risk_configuration.new](#fn-compromised_credentials_risk_configurationnew) constructor.
+  - `risk_exception_configuration` (`list[obj]`):  When `null`, the `risk_exception_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.risk_exception_configuration.new](#fn-risk_exception_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_risk_configuration` resource into the root Terraform configuration.
@@ -275,8 +275,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.new](#fn-account_takeover_risk_configurationactionsnew) constructor.
-  - `notify_configuration` (`list[obj]`):  When `null`, the `notify_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.new](#fn-account_takeover_risk_configurationnotify_configurationnew) constructor.
+  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.new](#fn-actionsnew) constructor.
+  - `notify_configuration` (`list[obj]`):  When `null`, the `notify_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.new](#fn-notify_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `account_takeover_risk_configuration` sub block.
@@ -299,9 +299,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `high_action` (`list[obj]`):  When `null`, the `high_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.high_action.new](#fn-actionshigh_actionnew) constructor.
-  - `low_action` (`list[obj]`):  When `null`, the `low_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.low_action.new](#fn-actionslow_actionnew) constructor.
-  - `medium_action` (`list[obj]`):  When `null`, the `medium_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.medium_action.new](#fn-actionsmedium_actionnew) constructor.
+  - `high_action` (`list[obj]`):  When `null`, the `high_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.high_action.new](#fn-account_takeover_risk_configurationhigh_actionnew) constructor.
+  - `low_action` (`list[obj]`):  When `null`, the `low_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.low_action.new](#fn-account_takeover_risk_configurationlow_actionnew) constructor.
+  - `medium_action` (`list[obj]`):  When `null`, the `medium_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.actions.medium_action.new](#fn-account_takeover_risk_configurationmedium_actionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `actions` sub block.
@@ -399,9 +399,9 @@ Terraform sub block.
   - `from` (`string`):  When `null`, the `from` field will be omitted from the resulting object.
   - `reply_to` (`string`):  When `null`, the `reply_to` field will be omitted from the resulting object.
   - `source_arn` (`string`): 
-  - `block_email` (`list[obj]`):  When `null`, the `block_email` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.block_email.new](#fn-notify_configurationblock_emailnew) constructor.
-  - `mfa_email` (`list[obj]`):  When `null`, the `mfa_email` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.mfa_email.new](#fn-notify_configurationmfa_emailnew) constructor.
-  - `no_action_email` (`list[obj]`):  When `null`, the `no_action_email` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.no_action_email.new](#fn-notify_configurationno_action_emailnew) constructor.
+  - `block_email` (`list[obj]`):  When `null`, the `block_email` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.block_email.new](#fn-account_takeover_risk_configurationblock_emailnew) constructor.
+  - `mfa_email` (`list[obj]`):  When `null`, the `mfa_email` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.mfa_email.new](#fn-account_takeover_risk_configurationmfa_emailnew) constructor.
+  - `no_action_email` (`list[obj]`):  When `null`, the `no_action_email` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.account_takeover_risk_configuration.notify_configuration.no_action_email.new](#fn-account_takeover_risk_configurationno_action_emailnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `notify_configuration` sub block.
@@ -500,7 +500,7 @@ Terraform sub block.
 
 **Args**:
   - `event_filter` (`list`):  When `null`, the `event_filter` field will be omitted from the resulting object.
-  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.compromised_credentials_risk_configuration.actions.new](#fn-compromised_credentials_risk_configurationactionsnew) constructor.
+  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_risk_configuration.compromised_credentials_risk_configuration.actions.new](#fn-actionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `compromised_credentials_risk_configuration` sub block.

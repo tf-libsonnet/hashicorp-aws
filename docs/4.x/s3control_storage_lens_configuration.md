@@ -89,7 +89,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `config_id` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `storage_lens_configuration` (`list[obj]`):  When `null`, the `storage_lens_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.new](#fn-s3control_storage_lens_configurationstorage_lens_configurationnew) constructor.
+  - `storage_lens_configuration` (`list[obj]`):  When `null`, the `storage_lens_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.new](#fn-storage_lens_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,7 +105,7 @@ newAttrs()
 `aws.s3control_storage_lens_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `s3control_storage_lens_configuration`
 Terraform resource.
 
-Unlike [aws.s3control_storage_lens_configuration.new](#fn-s3control_storage_lens_configurationnew), this function will not inject the `resource`
+Unlike [aws.s3control_storage_lens_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -117,7 +117,7 @@ injecting into a complete block.
   - `config_id` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `storage_lens_configuration` (`list[obj]`):  When `null`, the `storage_lens_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.new](#fn-s3control_storage_lens_configurationstorage_lens_configurationnew) constructor.
+  - `storage_lens_configuration` (`list[obj]`):  When `null`, the `storage_lens_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.new](#fn-storage_lens_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3control_storage_lens_configuration` resource into the root Terraform configuration.
@@ -242,11 +242,11 @@ Terraform sub block.
 
 **Args**:
   - `enabled` (`bool`): 
-  - `account_level` (`list[obj]`):  When `null`, the `account_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.new](#fn-storage_lens_configurationaccount_levelnew) constructor.
-  - `aws_org` (`list[obj]`):  When `null`, the `aws_org` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.aws_org.new](#fn-storage_lens_configurationaws_orgnew) constructor.
-  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.new](#fn-storage_lens_configurationdata_exportnew) constructor.
-  - `exclude` (`list[obj]`):  When `null`, the `exclude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.exclude.new](#fn-storage_lens_configurationexcludenew) constructor.
-  - `include` (`list[obj]`):  When `null`, the `include` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.include.new](#fn-storage_lens_configurationincludenew) constructor.
+  - `account_level` (`list[obj]`):  When `null`, the `account_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.new](#fn-account_levelnew) constructor.
+  - `aws_org` (`list[obj]`):  When `null`, the `aws_org` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.aws_org.new](#fn-aws_orgnew) constructor.
+  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.new](#fn-data_exportnew) constructor.
+  - `exclude` (`list[obj]`):  When `null`, the `exclude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.exclude.new](#fn-excludenew) constructor.
+  - `include` (`list[obj]`):  When `null`, the `include` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.include.new](#fn-includenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_lens_configuration` sub block.
@@ -269,8 +269,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `activity_metrics` (`list[obj]`):  When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.activity_metrics.new](#fn-account_levelactivity_metricsnew) constructor.
-  - `bucket_level` (`list[obj]`):  When `null`, the `bucket_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.new](#fn-account_levelbucket_levelnew) constructor.
+  - `activity_metrics` (`list[obj]`):  When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.activity_metrics.new](#fn-storage_lens_configurationactivity_metricsnew) constructor.
+  - `bucket_level` (`list[obj]`):  When `null`, the `bucket_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.new](#fn-storage_lens_configurationbucket_levelnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `account_level` sub block.
@@ -316,8 +316,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `activity_metrics` (`list[obj]`):  When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.activity_metrics.new](#fn-bucket_levelactivity_metricsnew) constructor.
-  - `prefix_level` (`list[obj]`):  When `null`, the `prefix_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.new](#fn-bucket_levelprefix_levelnew) constructor.
+  - `activity_metrics` (`list[obj]`):  When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.activity_metrics.new](#fn-storage_lens_configurationaccount_levelactivity_metricsnew) constructor.
+  - `prefix_level` (`list[obj]`):  When `null`, the `prefix_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.new](#fn-storage_lens_configurationaccount_levelprefix_levelnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `bucket_level` sub block.
@@ -363,7 +363,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `storage_metrics` (`list[obj]`):  When `null`, the `storage_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.storage_metrics.new](#fn-prefix_levelstorage_metricsnew) constructor.
+  - `storage_metrics` (`list[obj]`):  When `null`, the `storage_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.storage_metrics.new](#fn-storage_lens_configurationaccount_levelbucket_levelstorage_metricsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `prefix_level` sub block.
@@ -387,7 +387,7 @@ Terraform sub block.
 
 **Args**:
   - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `selection_criteria` (`list[obj]`):  When `null`, the `selection_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.storage_metrics.selection_criteria.new](#fn-storage_metricsselection_criterianew) constructor.
+  - `selection_criteria` (`list[obj]`):  When `null`, the `selection_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.storage_metrics.selection_criteria.new](#fn-storage_lens_configurationaccount_levelbucket_levelprefix_levelselection_criterianew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_metrics` sub block.
@@ -458,8 +458,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloud_watch_metrics` (`list[obj]`):  When `null`, the `cloud_watch_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.cloud_watch_metrics.new](#fn-data_exportcloud_watch_metricsnew) constructor.
-  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.new](#fn-data_exports3_bucket_destinationnew) constructor.
+  - `cloud_watch_metrics` (`list[obj]`):  When `null`, the `cloud_watch_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.cloud_watch_metrics.new](#fn-storage_lens_configurationcloud_watch_metricsnew) constructor.
+  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.new](#fn-storage_lens_configurations3_bucket_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_export` sub block.
@@ -510,7 +510,7 @@ Terraform sub block.
   - `format` (`string`): 
   - `output_schema_version` (`string`): 
   - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `encryption` (`list[obj]`):  When `null`, the `encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.encryption.new](#fn-s3_bucket_destinationencryptionnew) constructor.
+  - `encryption` (`list[obj]`):  When `null`, the `encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.encryption.new](#fn-storage_lens_configurationdata_exportencryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3_bucket_destination` sub block.
@@ -533,8 +533,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `sse_kms` (`list[obj]`):  When `null`, the `sse_kms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.encryption.sse_kms.new](#fn-encryptionsse_kmsnew) constructor.
-  - `sse_s3` (`list[obj]`):  When `null`, the `sse_s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.encryption.sse_s3.new](#fn-encryptionsse_s3new) constructor.
+  - `sse_kms` (`list[obj]`):  When `null`, the `sse_kms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.encryption.sse_kms.new](#fn-storage_lens_configurationdata_exports3_bucket_destinationsse_kmsnew) constructor.
+  - `sse_s3` (`list[obj]`):  When `null`, the `sse_s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.data_export.s3_bucket_destination.encryption.sse_s3.new](#fn-storage_lens_configurationdata_exports3_bucket_destinationsse_s3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption` sub block.

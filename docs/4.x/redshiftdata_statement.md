@@ -67,8 +67,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `sql` (`string`): 
   - `statement_name` (`string`):  When `null`, the `statement_name` field will be omitted from the resulting object.
   - `with_event` (`bool`):  When `null`, the `with_event` field will be omitted from the resulting object.
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-redshiftdata_statementparametersnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-redshiftdata_statementtimeoutsnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,7 +84,7 @@ newAttrs()
 `aws.redshiftdata_statement.newAttrs` constructs a new object with attributes and blocks configured for the `redshiftdata_statement`
 Terraform resource.
 
-Unlike [aws.redshiftdata_statement.new](#fn-redshiftdata_statementnew), this function will not inject the `resource`
+Unlike [aws.redshiftdata_statement.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -99,8 +99,8 @@ injecting into a complete block.
   - `sql` (`string`): 
   - `statement_name` (`string`):  When `null`, the `statement_name` field will be omitted from the resulting object.
   - `with_event` (`bool`):  When `null`, the `with_event` field will be omitted from the resulting object.
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-redshiftdata_statementparametersnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-redshiftdata_statementtimeoutsnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftdata_statement` resource into the root Terraform configuration.

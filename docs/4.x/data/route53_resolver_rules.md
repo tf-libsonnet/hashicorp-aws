@@ -70,7 +70,7 @@ newAttrs()
 `aws.data.route53_resolver_rules.newAttrs` constructs a new object with attributes and blocks configured for the `route53_resolver_rules`
 Terraform data source.
 
-Unlike [aws.data.route53_resolver_rules.new](#fn-route53_resolver_rulesnew), this function will not inject the `data source`
+Unlike [aws.data.route53_resolver_rules.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

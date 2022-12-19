@@ -87,10 +87,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `nlu_intent_confidence_threshold` (`number`):  When `null`, the `nlu_intent_confidence_threshold` field will be omitted from the resulting object.
   - `process_behavior` (`string`):  When `null`, the `process_behavior` field will be omitted from the resulting object.
   - `voice_id` (`string`):  When `null`, the `voice_id` field will be omitted from the resulting object.
-  - `abort_statement` (`list[obj]`):  When `null`, the `abort_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.new](#fn-lex_botabort_statementnew) constructor.
-  - `clarification_prompt` (`list[obj]`):  When `null`, the `clarification_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.new](#fn-lex_botclarification_promptnew) constructor.
-  - `intent` (`list[obj]`):  When `null`, the `intent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.intent.new](#fn-lex_botintentnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.timeouts.new](#fn-lex_bottimeoutsnew) constructor.
+  - `abort_statement` (`list[obj]`):  When `null`, the `abort_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.new](#fn-abort_statementnew) constructor.
+  - `clarification_prompt` (`list[obj]`):  When `null`, the `clarification_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.new](#fn-clarification_promptnew) constructor.
+  - `intent` (`list[obj]`):  When `null`, the `intent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.intent.new](#fn-intentnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -106,7 +106,7 @@ newAttrs()
 `aws.lex_bot.newAttrs` constructs a new object with attributes and blocks configured for the `lex_bot`
 Terraform resource.
 
-Unlike [aws.lex_bot.new](#fn-lex_botnew), this function will not inject the `resource`
+Unlike [aws.lex_bot.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -125,10 +125,10 @@ injecting into a complete block.
   - `nlu_intent_confidence_threshold` (`number`):  When `null`, the `nlu_intent_confidence_threshold` field will be omitted from the resulting object.
   - `process_behavior` (`string`):  When `null`, the `process_behavior` field will be omitted from the resulting object.
   - `voice_id` (`string`):  When `null`, the `voice_id` field will be omitted from the resulting object.
-  - `abort_statement` (`list[obj]`):  When `null`, the `abort_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.new](#fn-lex_botabort_statementnew) constructor.
-  - `clarification_prompt` (`list[obj]`):  When `null`, the `clarification_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.new](#fn-lex_botclarification_promptnew) constructor.
-  - `intent` (`list[obj]`):  When `null`, the `intent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.intent.new](#fn-lex_botintentnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.timeouts.new](#fn-lex_bottimeoutsnew) constructor.
+  - `abort_statement` (`list[obj]`):  When `null`, the `abort_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.new](#fn-abort_statementnew) constructor.
+  - `clarification_prompt` (`list[obj]`):  When `null`, the `clarification_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.new](#fn-clarification_promptnew) constructor.
+  - `intent` (`list[obj]`):  When `null`, the `intent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.intent.new](#fn-intentnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lex_bot` resource into the root Terraform configuration.
@@ -475,7 +475,7 @@ Terraform sub block.
 
 **Args**:
   - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.message.new](#fn-abort_statementmessagenew) constructor.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.message.new](#fn-messagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `abort_statement` sub block.
@@ -525,7 +525,7 @@ Terraform sub block.
 **Args**:
   - `max_attempts` (`number`): 
   - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.message.new](#fn-clarification_promptmessagenew) constructor.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.message.new](#fn-messagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `clarification_prompt` sub block.

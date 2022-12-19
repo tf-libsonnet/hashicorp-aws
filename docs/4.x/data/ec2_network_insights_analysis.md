@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `network_insights_analysis_id` (`string`):  When `null`, the `network_insights_analysis_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_network_insights_analysis.filter.new](#fn-ec2_network_insights_analysisfilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_network_insights_analysis.filter.new](#fn-filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.data.ec2_network_insights_analysis.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_network_insights_analysis`
 Terraform data source.
 
-Unlike [aws.data.ec2_network_insights_analysis.new](#fn-ec2_network_insights_analysisnew), this function will not inject the `data source`
+Unlike [aws.data.ec2_network_insights_analysis.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `network_insights_analysis_id` (`string`):  When `null`, the `network_insights_analysis_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_network_insights_analysis.filter.new](#fn-ec2_network_insights_analysisfilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_network_insights_analysis.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ec2_network_insights_analysis` data source into the root Terraform configuration.

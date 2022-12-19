@@ -97,8 +97,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `use_custom_cookbooks` (`bool`):  When `null`, the `use_custom_cookbooks` field will be omitted from the resulting object.
   - `use_opsworks_security_groups` (`bool`):  When `null`, the `use_opsworks_security_groups` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `custom_cookbooks_source` (`list[obj]`):  When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-opsworks_stackcustom_cookbooks_sourcenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-opsworks_stacktimeoutsnew) constructor.
+  - `custom_cookbooks_source` (`list[obj]`):  When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-custom_cookbooks_sourcenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -114,7 +114,7 @@ newAttrs()
 `aws.opsworks_stack.newAttrs` constructs a new object with attributes and blocks configured for the `opsworks_stack`
 Terraform resource.
 
-Unlike [aws.opsworks_stack.new](#fn-opsworks_stacknew), this function will not inject the `resource`
+Unlike [aws.opsworks_stack.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -144,8 +144,8 @@ injecting into a complete block.
   - `use_custom_cookbooks` (`bool`):  When `null`, the `use_custom_cookbooks` field will be omitted from the resulting object.
   - `use_opsworks_security_groups` (`bool`):  When `null`, the `use_opsworks_security_groups` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `custom_cookbooks_source` (`list[obj]`):  When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-opsworks_stackcustom_cookbooks_sourcenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-opsworks_stacktimeoutsnew) constructor.
+  - `custom_cookbooks_source` (`list[obj]`):  When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-custom_cookbooks_sourcenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_stack` resource into the root Terraform configuration.

@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `maximum_event_age_in_seconds` (`number`):  When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
   - `maximum_retry_attempts` (`number`):  When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
   - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-lambda_function_event_invoke_configdestination_confignew) constructor.
+  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-destination_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.lambda_function_event_invoke_config.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_function_event_invoke_config`
 Terraform resource.
 
-Unlike [aws.lambda_function_event_invoke_config.new](#fn-lambda_function_event_invoke_confignew), this function will not inject the `resource`
+Unlike [aws.lambda_function_event_invoke_config.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -89,7 +89,7 @@ injecting into a complete block.
   - `maximum_event_age_in_seconds` (`number`):  When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
   - `maximum_retry_attempts` (`number`):  When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
   - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-lambda_function_event_invoke_configdestination_confignew) constructor.
+  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-destination_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_function_event_invoke_config` resource into the root Terraform configuration.
@@ -213,8 +213,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.
-  - `on_success` (`list[obj]`):  When `null`, the `on_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_success.new](#fn-destination_configon_successnew) constructor.
+  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_failure.new](#fn-on_failurenew) constructor.
+  - `on_success` (`list[obj]`):  When `null`, the `on_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_success.new](#fn-on_successnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_config` sub block.

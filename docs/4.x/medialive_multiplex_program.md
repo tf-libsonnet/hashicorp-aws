@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `multiplex_id` (`string`): 
   - `program_name` (`string`): 
-  - `multiplex_program_settings` (`list[obj]`):  When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-medialive_multiplex_programmultiplex_program_settingsnew) constructor.
+  - `multiplex_program_settings` (`list[obj]`):  When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-multiplex_program_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.medialive_multiplex_program.newAttrs` constructs a new object with attributes and blocks configured for the `medialive_multiplex_program`
 Terraform resource.
 
-Unlike [aws.medialive_multiplex_program.new](#fn-medialive_multiplex_programnew), this function will not inject the `resource`
+Unlike [aws.medialive_multiplex_program.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,7 +87,7 @@ injecting into a complete block.
 **Args**:
   - `multiplex_id` (`string`): 
   - `program_name` (`string`): 
-  - `multiplex_program_settings` (`list[obj]`):  When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-medialive_multiplex_programmultiplex_program_settingsnew) constructor.
+  - `multiplex_program_settings` (`list[obj]`):  When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-multiplex_program_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `medialive_multiplex_program` resource into the root Terraform configuration.
@@ -181,8 +181,8 @@ Terraform sub block.
 **Args**:
   - `preferred_channel_pipeline` (`string`): 
   - `program_number` (`number`): 
-  - `service_descriptor` (`list[obj]`):  When `null`, the `service_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.service_descriptor.new](#fn-multiplex_program_settingsservice_descriptornew) constructor.
-  - `video_settings` (`list[obj]`):  When `null`, the `video_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new](#fn-multiplex_program_settingsvideo_settingsnew) constructor.
+  - `service_descriptor` (`list[obj]`):  When `null`, the `service_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.service_descriptor.new](#fn-service_descriptornew) constructor.
+  - `video_settings` (`list[obj]`):  When `null`, the `video_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new](#fn-video_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `multiplex_program_settings` sub block.
@@ -230,8 +230,8 @@ Terraform sub block.
 
 **Args**:
   - `constant_bitrate` (`number`):  When `null`, the `constant_bitrate` field will be omitted from the resulting object.
-  - `statemux_settings` (`list[obj]`):  When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-video_settingsstatemux_settingsnew) constructor.
-  - `statmux_settings` (`list[obj]`):  When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-video_settingsstatmux_settingsnew) constructor.
+  - `statemux_settings` (`list[obj]`):  When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-multiplex_program_settingsstatemux_settingsnew) constructor.
+  - `statmux_settings` (`list[obj]`):  When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-multiplex_program_settingsstatmux_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `video_settings` sub block.

@@ -65,7 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `global_cluster_identifier` (`string`): 
   - `source_db_cluster_identifier` (`string`):  When `null`, the `source_db_cluster_identifier` field will be omitted from the resulting object.
   - `storage_encrypted` (`bool`):  When `null`, the `storage_encrypted` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_global_cluster.timeouts.new](#fn-rds_global_clustertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_global_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,7 +81,7 @@ newAttrs()
 `aws.rds_global_cluster.newAttrs` constructs a new object with attributes and blocks configured for the `rds_global_cluster`
 Terraform resource.
 
-Unlike [aws.rds_global_cluster.new](#fn-rds_global_clusternew), this function will not inject the `resource`
+Unlike [aws.rds_global_cluster.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -97,7 +97,7 @@ injecting into a complete block.
   - `global_cluster_identifier` (`string`): 
   - `source_db_cluster_identifier` (`string`):  When `null`, the `source_db_cluster_identifier` field will be omitted from the resulting object.
   - `storage_encrypted` (`bool`):  When `null`, the `storage_encrypted` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_global_cluster.timeouts.new](#fn-rds_global_clustertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_global_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `rds_global_cluster` resource into the root Terraform configuration.

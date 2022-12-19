@@ -70,7 +70,7 @@ newAttrs()
 `aws.emr_studio_session_mapping.newAttrs` constructs a new object with attributes and blocks configured for the `emr_studio_session_mapping`
 Terraform resource.
 
-Unlike [aws.emr_studio_session_mapping.new](#fn-emr_studio_session_mappingnew), this function will not inject the `resource`
+Unlike [aws.emr_studio_session_mapping.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -85,9 +85,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): 
   - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-imagebuilder_container_recipecomponentnew) constructor.
-  - `instance_configuration` (`list[obj]`):  When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-imagebuilder_container_recipeinstance_configurationnew) constructor.
-  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-imagebuilder_container_recipetarget_repositorynew) constructor.
+  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-componentnew) constructor.
+  - `instance_configuration` (`list[obj]`):  When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-instance_configurationnew) constructor.
+  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-target_repositorynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,7 +103,7 @@ newAttrs()
 `aws.imagebuilder_container_recipe.newAttrs` constructs a new object with attributes and blocks configured for the `imagebuilder_container_recipe`
 Terraform resource.
 
-Unlike [aws.imagebuilder_container_recipe.new](#fn-imagebuilder_container_recipenew), this function will not inject the `resource`
+Unlike [aws.imagebuilder_container_recipe.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -122,9 +122,9 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): 
   - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-imagebuilder_container_recipecomponentnew) constructor.
-  - `instance_configuration` (`list[obj]`):  When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-imagebuilder_container_recipeinstance_configurationnew) constructor.
-  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-imagebuilder_container_recipetarget_repositorynew) constructor.
+  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-componentnew) constructor.
+  - `instance_configuration` (`list[obj]`):  When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-instance_configurationnew) constructor.
+  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-target_repositorynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_container_recipe` resource into the root Terraform configuration.
@@ -435,7 +435,7 @@ Terraform sub block.
 
 **Args**:
   - `component_arn` (`string`): 
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.parameter.new](#fn-componentparameternew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.parameter.new](#fn-parameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `component` sub block.
@@ -483,7 +483,7 @@ Terraform sub block.
 
 **Args**:
   - `image` (`string`):  When `null`, the `image` field will be omitted from the resulting object.
-  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.new](#fn-instance_configurationblock_device_mappingnew) constructor.
+  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.new](#fn-block_device_mappingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_configuration` sub block.
@@ -509,7 +509,7 @@ Terraform sub block.
   - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.
   - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.
   - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
-  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.ebs.new](#fn-block_device_mappingebsnew) constructor.
+  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.ebs.new](#fn-instance_configurationebsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `block_device_mapping` sub block.

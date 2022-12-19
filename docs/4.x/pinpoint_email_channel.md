@@ -72,7 +72,7 @@ newAttrs()
 `aws.pinpoint_email_channel.newAttrs` constructs a new object with attributes and blocks configured for the `pinpoint_email_channel`
 Terraform resource.
 
-Unlike [aws.pinpoint_email_channel.new](#fn-pinpoint_email_channelnew), this function will not inject the `resource`
+Unlike [aws.pinpoint_email_channel.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `firewall_arn` (`string`): 
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.new](#fn-networkfirewall_logging_configurationlogging_configurationnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.new](#fn-logging_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.networkfirewall_logging_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `networkfirewall_logging_configuration`
 Terraform resource.
 
-Unlike [aws.networkfirewall_logging_configuration.new](#fn-networkfirewall_logging_configurationnew), this function will not inject the `resource`
+Unlike [aws.networkfirewall_logging_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -78,7 +78,7 @@ injecting into a complete block.
 
 **Args**:
   - `firewall_arn` (`string`): 
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.new](#fn-networkfirewall_logging_configurationlogging_configurationnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.new](#fn-logging_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkfirewall_logging_configuration` resource into the root Terraform configuration.
@@ -154,7 +154,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `log_destination_config` (`list[obj]`):  When `null`, the `log_destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.log_destination_config.new](#fn-logging_configurationlog_destination_confignew) constructor.
+  - `log_destination_config` (`list[obj]`):  When `null`, the `log_destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.log_destination_config.new](#fn-log_destination_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging_configuration` sub block.

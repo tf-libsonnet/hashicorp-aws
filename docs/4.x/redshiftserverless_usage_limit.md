@@ -70,7 +70,7 @@ newAttrs()
 `aws.redshiftserverless_usage_limit.newAttrs` constructs a new object with attributes and blocks configured for the `redshiftserverless_usage_limit`
 Terraform resource.
 
-Unlike [aws.redshiftserverless_usage_limit.new](#fn-redshiftserverless_usage_limitnew), this function will not inject the `resource`
+Unlike [aws.redshiftserverless_usage_limit.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

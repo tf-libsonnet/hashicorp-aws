@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `selector` (`list[obj]`):  When `null`, the `selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.selector.new](#fn-eks_fargate_profileselectornew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.timeouts.new](#fn-eks_fargate_profiletimeoutsnew) constructor.
+  - `selector` (`list[obj]`):  When `null`, the `selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.selector.new](#fn-selectornew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.eks_fargate_profile.newAttrs` constructs a new object with attributes and blocks configured for the `eks_fargate_profile`
 Terraform resource.
 
-Unlike [aws.eks_fargate_profile.new](#fn-eks_fargate_profilenew), this function will not inject the `resource`
+Unlike [aws.eks_fargate_profile.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -96,8 +96,8 @@ injecting into a complete block.
   - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `selector` (`list[obj]`):  When `null`, the `selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.selector.new](#fn-eks_fargate_profileselectornew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.timeouts.new](#fn-eks_fargate_profiletimeoutsnew) constructor.
+  - `selector` (`list[obj]`):  When `null`, the `selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.selector.new](#fn-selectornew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_fargate_profile.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_fargate_profile` resource into the root Terraform configuration.

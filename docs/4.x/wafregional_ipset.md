@@ -51,7 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): 
-  - `ip_set_descriptor` (`list[obj]`):  When `null`, the `ip_set_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_ipset.ip_set_descriptor.new](#fn-wafregional_ipsetip_set_descriptornew) constructor.
+  - `ip_set_descriptor` (`list[obj]`):  When `null`, the `ip_set_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_ipset.ip_set_descriptor.new](#fn-ip_set_descriptornew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -67,7 +67,7 @@ newAttrs()
 `aws.wafregional_ipset.newAttrs` constructs a new object with attributes and blocks configured for the `wafregional_ipset`
 Terraform resource.
 
-Unlike [aws.wafregional_ipset.new](#fn-wafregional_ipsetnew), this function will not inject the `resource`
+Unlike [aws.wafregional_ipset.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -76,7 +76,7 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): 
-  - `ip_set_descriptor` (`list[obj]`):  When `null`, the `ip_set_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_ipset.ip_set_descriptor.new](#fn-wafregional_ipsetip_set_descriptornew) constructor.
+  - `ip_set_descriptor` (`list[obj]`):  When `null`, the `ip_set_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_ipset.ip_set_descriptor.new](#fn-ip_set_descriptornew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `wafregional_ipset` resource into the root Terraform configuration.

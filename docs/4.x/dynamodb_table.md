@@ -105,14 +105,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `write_capacity` (`number`):  When `null`, the `write_capacity` field will be omitted from the resulting object.
-  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-dynamodb_tableattributenew) constructor.
-  - `global_secondary_index` (`list[obj]`):  When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-dynamodb_tableglobal_secondary_indexnew) constructor.
-  - `local_secondary_index` (`list[obj]`):  When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-dynamodb_tablelocal_secondary_indexnew) constructor.
-  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-dynamodb_tablepoint_in_time_recoverynew) constructor.
-  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-dynamodb_tablereplicanew) constructor.
-  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-dynamodb_tableserver_side_encryptionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-dynamodb_tabletimeoutsnew) constructor.
-  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-dynamodb_tablettlnew) constructor.
+  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
+  - `global_secondary_index` (`list[obj]`):  When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
+  - `local_secondary_index` (`list[obj]`):  When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
+  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
+  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
+  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-ttlnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -128,7 +128,7 @@ newAttrs()
 `aws.dynamodb_table.newAttrs` constructs a new object with attributes and blocks configured for the `dynamodb_table`
 Terraform resource.
 
-Unlike [aws.dynamodb_table.new](#fn-dynamodb_tablenew), this function will not inject the `resource`
+Unlike [aws.dynamodb_table.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -150,14 +150,14 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `write_capacity` (`number`):  When `null`, the `write_capacity` field will be omitted from the resulting object.
-  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-dynamodb_tableattributenew) constructor.
-  - `global_secondary_index` (`list[obj]`):  When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-dynamodb_tableglobal_secondary_indexnew) constructor.
-  - `local_secondary_index` (`list[obj]`):  When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-dynamodb_tablelocal_secondary_indexnew) constructor.
-  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-dynamodb_tablepoint_in_time_recoverynew) constructor.
-  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-dynamodb_tablereplicanew) constructor.
-  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-dynamodb_tableserver_side_encryptionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-dynamodb_tabletimeoutsnew) constructor.
-  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-dynamodb_tablettlnew) constructor.
+  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
+  - `global_secondary_index` (`list[obj]`):  When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
+  - `local_secondary_index` (`list[obj]`):  When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
+  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
+  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
+  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-ttlnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `dynamodb_table` resource into the root Terraform configuration.

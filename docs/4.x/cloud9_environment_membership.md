@@ -66,7 +66,7 @@ newAttrs()
 `aws.cloud9_environment_membership.newAttrs` constructs a new object with attributes and blocks configured for the `cloud9_environment_membership`
 Terraform resource.
 
-Unlike [aws.cloud9_environment_membership.new](#fn-cloud9_environment_membershipnew), this function will not inject the `resource`
+Unlike [aws.cloud9_environment_membership.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

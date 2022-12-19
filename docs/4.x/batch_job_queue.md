@@ -74,7 +74,7 @@ newAttrs()
 `aws.batch_job_queue.newAttrs` constructs a new object with attributes and blocks configured for the `batch_job_queue`
 Terraform resource.
 
-Unlike [aws.batch_job_queue.new](#fn-batch_job_queuenew), this function will not inject the `resource`
+Unlike [aws.batch_job_queue.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

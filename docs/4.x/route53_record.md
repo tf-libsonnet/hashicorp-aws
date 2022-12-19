@@ -83,11 +83,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ttl` (`number`):  When `null`, the `ttl` field will be omitted from the resulting object.
   - `type` (`string`): 
   - `zone_id` (`string`): 
-  - `alias` (`list[obj]`):  When `null`, the `alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.alias.new](#fn-route53_recordaliasnew) constructor.
-  - `failover_routing_policy` (`list[obj]`):  When `null`, the `failover_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.failover_routing_policy.new](#fn-route53_recordfailover_routing_policynew) constructor.
-  - `geolocation_routing_policy` (`list[obj]`):  When `null`, the `geolocation_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.geolocation_routing_policy.new](#fn-route53_recordgeolocation_routing_policynew) constructor.
-  - `latency_routing_policy` (`list[obj]`):  When `null`, the `latency_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.latency_routing_policy.new](#fn-route53_recordlatency_routing_policynew) constructor.
-  - `weighted_routing_policy` (`list[obj]`):  When `null`, the `weighted_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.weighted_routing_policy.new](#fn-route53_recordweighted_routing_policynew) constructor.
+  - `alias` (`list[obj]`):  When `null`, the `alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.alias.new](#fn-aliasnew) constructor.
+  - `failover_routing_policy` (`list[obj]`):  When `null`, the `failover_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.failover_routing_policy.new](#fn-failover_routing_policynew) constructor.
+  - `geolocation_routing_policy` (`list[obj]`):  When `null`, the `geolocation_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.geolocation_routing_policy.new](#fn-geolocation_routing_policynew) constructor.
+  - `latency_routing_policy` (`list[obj]`):  When `null`, the `latency_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.latency_routing_policy.new](#fn-latency_routing_policynew) constructor.
+  - `weighted_routing_policy` (`list[obj]`):  When `null`, the `weighted_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.weighted_routing_policy.new](#fn-weighted_routing_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,7 +103,7 @@ newAttrs()
 `aws.route53_record.newAttrs` constructs a new object with attributes and blocks configured for the `route53_record`
 Terraform resource.
 
-Unlike [aws.route53_record.new](#fn-route53_recordnew), this function will not inject the `resource`
+Unlike [aws.route53_record.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -120,11 +120,11 @@ injecting into a complete block.
   - `ttl` (`number`):  When `null`, the `ttl` field will be omitted from the resulting object.
   - `type` (`string`): 
   - `zone_id` (`string`): 
-  - `alias` (`list[obj]`):  When `null`, the `alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.alias.new](#fn-route53_recordaliasnew) constructor.
-  - `failover_routing_policy` (`list[obj]`):  When `null`, the `failover_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.failover_routing_policy.new](#fn-route53_recordfailover_routing_policynew) constructor.
-  - `geolocation_routing_policy` (`list[obj]`):  When `null`, the `geolocation_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.geolocation_routing_policy.new](#fn-route53_recordgeolocation_routing_policynew) constructor.
-  - `latency_routing_policy` (`list[obj]`):  When `null`, the `latency_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.latency_routing_policy.new](#fn-route53_recordlatency_routing_policynew) constructor.
-  - `weighted_routing_policy` (`list[obj]`):  When `null`, the `weighted_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.weighted_routing_policy.new](#fn-route53_recordweighted_routing_policynew) constructor.
+  - `alias` (`list[obj]`):  When `null`, the `alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.alias.new](#fn-aliasnew) constructor.
+  - `failover_routing_policy` (`list[obj]`):  When `null`, the `failover_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.failover_routing_policy.new](#fn-failover_routing_policynew) constructor.
+  - `geolocation_routing_policy` (`list[obj]`):  When `null`, the `geolocation_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.geolocation_routing_policy.new](#fn-geolocation_routing_policynew) constructor.
+  - `latency_routing_policy` (`list[obj]`):  When `null`, the `latency_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.latency_routing_policy.new](#fn-latency_routing_policynew) constructor.
+  - `weighted_routing_policy` (`list[obj]`):  When `null`, the `weighted_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.weighted_routing_policy.new](#fn-weighted_routing_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_record` resource into the root Terraform configuration.

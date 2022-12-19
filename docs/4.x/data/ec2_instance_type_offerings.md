@@ -55,8 +55,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `location_type` (`string`):  When `null`, the `location_type` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.filter.new](#fn-ec2_instance_type_offeringsfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.timeouts.new](#fn-ec2_instance_type_offeringstimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -72,7 +72,7 @@ newAttrs()
 `aws.data.ec2_instance_type_offerings.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_instance_type_offerings`
 Terraform data source.
 
-Unlike [aws.data.ec2_instance_type_offerings.new](#fn-ec2_instance_type_offeringsnew), this function will not inject the `data source`
+Unlike [aws.data.ec2_instance_type_offerings.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -81,8 +81,8 @@ injecting into a complete block.
 
 **Args**:
   - `location_type` (`string`):  When `null`, the `location_type` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.filter.new](#fn-ec2_instance_type_offeringsfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.timeouts.new](#fn-ec2_instance_type_offeringstimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_instance_type_offerings.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ec2_instance_type_offerings` data source into the root Terraform configuration.

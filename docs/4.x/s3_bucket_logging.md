@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `target_bucket` (`string`): 
   - `target_prefix` (`string`): 
-  - `target_grant` (`list[obj]`):  When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-s3_bucket_loggingtarget_grantnew) constructor.
+  - `target_grant` (`list[obj]`):  When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,7 +75,7 @@ newAttrs()
 `aws.s3_bucket_logging.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_logging`
 Terraform resource.
 
-Unlike [aws.s3_bucket_logging.new](#fn-s3_bucket_loggingnew), this function will not inject the `resource`
+Unlike [aws.s3_bucket_logging.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,7 +87,7 @@ injecting into a complete block.
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `target_bucket` (`string`): 
   - `target_prefix` (`string`): 
-  - `target_grant` (`list[obj]`):  When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-s3_bucket_loggingtarget_grantnew) constructor.
+  - `target_grant` (`list[obj]`):  When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_logging` resource into the root Terraform configuration.
@@ -212,7 +212,7 @@ Terraform sub block.
 
 **Args**:
   - `permission` (`string`): 
-  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.grantee.new](#fn-target_grantgranteenew) constructor.
+  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.grantee.new](#fn-granteenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_grant` sub block.

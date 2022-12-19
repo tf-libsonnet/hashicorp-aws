@@ -87,10 +87,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `transport_protocol` (`string`):  When `null`, the `transport_protocol` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
   - `vpn_port` (`number`):  When `null`, the `vpn_port` field will be omitted from the resulting object.
-  - `authentication_options` (`list[obj]`):  When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-ec2_client_vpn_endpointauthentication_optionsnew) constructor.
-  - `client_connect_options` (`list[obj]`):  When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-ec2_client_vpn_endpointclient_connect_optionsnew) constructor.
-  - `client_login_banner_options` (`list[obj]`):  When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-ec2_client_vpn_endpointclient_login_banner_optionsnew) constructor.
-  - `connection_log_options` (`list[obj]`):  When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-ec2_client_vpn_endpointconnection_log_optionsnew) constructor.
+  - `authentication_options` (`list[obj]`):  When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-authentication_optionsnew) constructor.
+  - `client_connect_options` (`list[obj]`):  When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-client_connect_optionsnew) constructor.
+  - `client_login_banner_options` (`list[obj]`):  When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-client_login_banner_optionsnew) constructor.
+  - `connection_log_options` (`list[obj]`):  When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-connection_log_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -106,7 +106,7 @@ newAttrs()
 `aws.ec2_client_vpn_endpoint.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_client_vpn_endpoint`
 Terraform resource.
 
-Unlike [aws.ec2_client_vpn_endpoint.new](#fn-ec2_client_vpn_endpointnew), this function will not inject the `resource`
+Unlike [aws.ec2_client_vpn_endpoint.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -127,10 +127,10 @@ injecting into a complete block.
   - `transport_protocol` (`string`):  When `null`, the `transport_protocol` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
   - `vpn_port` (`number`):  When `null`, the `vpn_port` field will be omitted from the resulting object.
-  - `authentication_options` (`list[obj]`):  When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-ec2_client_vpn_endpointauthentication_optionsnew) constructor.
-  - `client_connect_options` (`list[obj]`):  When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-ec2_client_vpn_endpointclient_connect_optionsnew) constructor.
-  - `client_login_banner_options` (`list[obj]`):  When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-ec2_client_vpn_endpointclient_login_banner_optionsnew) constructor.
-  - `connection_log_options` (`list[obj]`):  When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-ec2_client_vpn_endpointconnection_log_optionsnew) constructor.
+  - `authentication_options` (`list[obj]`):  When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-authentication_optionsnew) constructor.
+  - `client_connect_options` (`list[obj]`):  When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-client_connect_optionsnew) constructor.
+  - `client_login_banner_options` (`list[obj]`):  When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-client_login_banner_optionsnew) constructor.
+  - `connection_log_options` (`list[obj]`):  When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-connection_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_client_vpn_endpoint` resource into the root Terraform configuration.

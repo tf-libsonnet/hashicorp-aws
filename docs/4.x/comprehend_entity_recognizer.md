@@ -85,9 +85,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
   - `version_name_prefix` (`string`):  When `null`, the `version_name_prefix` field will be omitted from the resulting object.
   - `volume_kms_key_id` (`string`):  When `null`, the `volume_kms_key_id` field will be omitted from the resulting object.
-  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.new](#fn-comprehend_entity_recognizerinput_data_confignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.timeouts.new](#fn-comprehend_entity_recognizertimeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.vpc_config.new](#fn-comprehend_entity_recognizervpc_confignew) constructor.
+  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.new](#fn-input_data_confignew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,7 +103,7 @@ newAttrs()
 `aws.comprehend_entity_recognizer.newAttrs` constructs a new object with attributes and blocks configured for the `comprehend_entity_recognizer`
 Terraform resource.
 
-Unlike [aws.comprehend_entity_recognizer.new](#fn-comprehend_entity_recognizernew), this function will not inject the `resource`
+Unlike [aws.comprehend_entity_recognizer.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -120,9 +120,9 @@ injecting into a complete block.
   - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
   - `version_name_prefix` (`string`):  When `null`, the `version_name_prefix` field will be omitted from the resulting object.
   - `volume_kms_key_id` (`string`):  When `null`, the `volume_kms_key_id` field will be omitted from the resulting object.
-  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.new](#fn-comprehend_entity_recognizerinput_data_confignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.timeouts.new](#fn-comprehend_entity_recognizertimeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.vpc_config.new](#fn-comprehend_entity_recognizervpc_confignew) constructor.
+  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.new](#fn-input_data_confignew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `comprehend_entity_recognizer` resource into the root Terraform configuration.
@@ -400,11 +400,11 @@ Terraform sub block.
 
 **Args**:
   - `data_format` (`string`):  When `null`, the `data_format` field will be omitted from the resulting object.
-  - `annotations` (`list[obj]`):  When `null`, the `annotations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.annotations.new](#fn-input_data_configannotationsnew) constructor.
-  - `augmented_manifests` (`list[obj]`):  When `null`, the `augmented_manifests` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.augmented_manifests.new](#fn-input_data_configaugmented_manifestsnew) constructor.
-  - `documents` (`list[obj]`):  When `null`, the `documents` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.documents.new](#fn-input_data_configdocumentsnew) constructor.
-  - `entity_list` (`list[obj]`):  When `null`, the `entity_list` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.entity_list.new](#fn-input_data_configentity_listnew) constructor.
-  - `entity_types` (`list[obj]`):  When `null`, the `entity_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.entity_types.new](#fn-input_data_configentity_typesnew) constructor.
+  - `annotations` (`list[obj]`):  When `null`, the `annotations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.annotations.new](#fn-annotationsnew) constructor.
+  - `augmented_manifests` (`list[obj]`):  When `null`, the `augmented_manifests` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.augmented_manifests.new](#fn-augmented_manifestsnew) constructor.
+  - `documents` (`list[obj]`):  When `null`, the `documents` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.documents.new](#fn-documentsnew) constructor.
+  - `entity_list` (`list[obj]`):  When `null`, the `entity_list` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.entity_list.new](#fn-entity_listnew) constructor.
+  - `entity_types` (`list[obj]`):  When `null`, the `entity_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_entity_recognizer.input_data_config.entity_types.new](#fn-entity_typesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input_data_config` sub block.

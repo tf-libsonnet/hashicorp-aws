@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.ecr_authorization_token.newAttrs` constructs a new object with attributes and blocks configured for the `ecr_authorization_token`
 Terraform data source.
 
-Unlike [aws.data.ecr_authorization_token.new](#fn-ecr_authorization_tokennew), this function will not inject the `data source`
+Unlike [aws.data.ecr_authorization_token.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

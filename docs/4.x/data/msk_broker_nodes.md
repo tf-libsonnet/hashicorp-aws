@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.msk_broker_nodes.newAttrs` constructs a new object with attributes and blocks configured for the `msk_broker_nodes`
 Terraform data source.
 
-Unlike [aws.data.msk_broker_nodes.new](#fn-msk_broker_nodesnew), this function will not inject the `data source`
+Unlike [aws.data.msk_broker_nodes.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

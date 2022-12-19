@@ -97,8 +97,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `schedule_expression_timezone` (`string`):  When `null`, the `schedule_expression_timezone` field will be omitted from the resulting object.
   - `start_date` (`string`):  When `null`, the `start_date` field will be omitted from the resulting object.
   - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `flexible_time_window` (`list[obj]`):  When `null`, the `flexible_time_window` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.flexible_time_window.new](#fn-scheduler_scheduleflexible_time_windownew) constructor.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.new](#fn-scheduler_scheduletargetnew) constructor.
+  - `flexible_time_window` (`list[obj]`):  When `null`, the `flexible_time_window` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.flexible_time_window.new](#fn-flexible_time_windownew) constructor.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.new](#fn-targetnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -114,7 +114,7 @@ newAttrs()
 `aws.scheduler_schedule.newAttrs` constructs a new object with attributes and blocks configured for the `scheduler_schedule`
 Terraform resource.
 
-Unlike [aws.scheduler_schedule.new](#fn-scheduler_schedulenew), this function will not inject the `resource`
+Unlike [aws.scheduler_schedule.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -132,8 +132,8 @@ injecting into a complete block.
   - `schedule_expression_timezone` (`string`):  When `null`, the `schedule_expression_timezone` field will be omitted from the resulting object.
   - `start_date` (`string`):  When `null`, the `start_date` field will be omitted from the resulting object.
   - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `flexible_time_window` (`list[obj]`):  When `null`, the `flexible_time_window` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.flexible_time_window.new](#fn-scheduler_scheduleflexible_time_windownew) constructor.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.new](#fn-scheduler_scheduletargetnew) constructor.
+  - `flexible_time_window` (`list[obj]`):  When `null`, the `flexible_time_window` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.flexible_time_window.new](#fn-flexible_time_windownew) constructor.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.new](#fn-targetnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `scheduler_schedule` resource into the root Terraform configuration.
@@ -417,13 +417,13 @@ Terraform sub block.
   - `arn` (`string`): 
   - `input` (`string`):  When `null`, the `input` field will be omitted from the resulting object.
   - `role_arn` (`string`): 
-  - `dead_letter_config` (`list[obj]`):  When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.dead_letter_config.new](#fn-targetdead_letter_confignew) constructor.
-  - `ecs_parameters` (`list[obj]`):  When `null`, the `ecs_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.new](#fn-targetecs_parametersnew) constructor.
-  - `eventbridge_parameters` (`list[obj]`):  When `null`, the `eventbridge_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.eventbridge_parameters.new](#fn-targeteventbridge_parametersnew) constructor.
-  - `kinesis_parameters` (`list[obj]`):  When `null`, the `kinesis_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.kinesis_parameters.new](#fn-targetkinesis_parametersnew) constructor.
-  - `retry_policy` (`list[obj]`):  When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.retry_policy.new](#fn-targetretry_policynew) constructor.
-  - `sagemaker_pipeline_parameters` (`list[obj]`):  When `null`, the `sagemaker_pipeline_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.sagemaker_pipeline_parameters.new](#fn-targetsagemaker_pipeline_parametersnew) constructor.
-  - `sqs_parameters` (`list[obj]`):  When `null`, the `sqs_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.sqs_parameters.new](#fn-targetsqs_parametersnew) constructor.
+  - `dead_letter_config` (`list[obj]`):  When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
+  - `ecs_parameters` (`list[obj]`):  When `null`, the `ecs_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.new](#fn-ecs_parametersnew) constructor.
+  - `eventbridge_parameters` (`list[obj]`):  When `null`, the `eventbridge_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.eventbridge_parameters.new](#fn-eventbridge_parametersnew) constructor.
+  - `kinesis_parameters` (`list[obj]`):  When `null`, the `kinesis_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.kinesis_parameters.new](#fn-kinesis_parametersnew) constructor.
+  - `retry_policy` (`list[obj]`):  When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.retry_policy.new](#fn-retry_policynew) constructor.
+  - `sagemaker_pipeline_parameters` (`list[obj]`):  When `null`, the `sagemaker_pipeline_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.sagemaker_pipeline_parameters.new](#fn-sagemaker_pipeline_parametersnew) constructor.
+  - `sqs_parameters` (`list[obj]`):  When `null`, the `sqs_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.sqs_parameters.new](#fn-sqs_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target` sub block.
@@ -479,10 +479,10 @@ Terraform sub block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `task_count` (`number`):  When `null`, the `task_count` field will be omitted from the resulting object.
   - `task_definition_arn` (`string`): 
-  - `capacity_provider_strategy` (`list[obj]`):  When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.capacity_provider_strategy.new](#fn-ecs_parameterscapacity_provider_strategynew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.network_configuration.new](#fn-ecs_parametersnetwork_configurationnew) constructor.
-  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.placement_constraints.new](#fn-ecs_parametersplacement_constraintsnew) constructor.
-  - `placement_strategy` (`list[obj]`):  When `null`, the `placement_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.placement_strategy.new](#fn-ecs_parametersplacement_strategynew) constructor.
+  - `capacity_provider_strategy` (`list[obj]`):  When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.capacity_provider_strategy.new](#fn-targetcapacity_provider_strategynew) constructor.
+  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.network_configuration.new](#fn-targetnetwork_configurationnew) constructor.
+  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.placement_constraints.new](#fn-targetplacement_constraintsnew) constructor.
+  - `placement_strategy` (`list[obj]`):  When `null`, the `placement_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.ecs_parameters.placement_strategy.new](#fn-targetplacement_strategynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ecs_parameters` sub block.
@@ -674,7 +674,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `pipeline_parameter` (`list[obj]`):  When `null`, the `pipeline_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.sagemaker_pipeline_parameters.pipeline_parameter.new](#fn-sagemaker_pipeline_parameterspipeline_parameternew) constructor.
+  - `pipeline_parameter` (`list[obj]`):  When `null`, the `pipeline_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.scheduler_schedule.target.sagemaker_pipeline_parameters.pipeline_parameter.new](#fn-targetpipeline_parameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sagemaker_pipeline_parameters` sub block.

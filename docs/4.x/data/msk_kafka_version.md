@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.msk_kafka_version.newAttrs` constructs a new object with attributes and blocks configured for the `msk_kafka_version`
 Terraform data source.
 
-Unlike [aws.data.msk_kafka_version.new](#fn-msk_kafka_versionnew), this function will not inject the `data source`
+Unlike [aws.data.msk_kafka_version.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

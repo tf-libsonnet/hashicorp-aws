@@ -63,10 +63,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `workforce_name` (`string`): 
-  - `cognito_config` (`list[obj]`):  When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-sagemaker_workforcecognito_confignew) constructor.
-  - `oidc_config` (`list[obj]`):  When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-sagemaker_workforceoidc_confignew) constructor.
-  - `source_ip_config` (`list[obj]`):  When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-sagemaker_workforcesource_ip_confignew) constructor.
-  - `workforce_vpc_config` (`list[obj]`):  When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-sagemaker_workforceworkforce_vpc_confignew) constructor.
+  - `cognito_config` (`list[obj]`):  When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-cognito_confignew) constructor.
+  - `oidc_config` (`list[obj]`):  When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-oidc_confignew) constructor.
+  - `source_ip_config` (`list[obj]`):  When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-source_ip_confignew) constructor.
+  - `workforce_vpc_config` (`list[obj]`):  When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-workforce_vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.sagemaker_workforce.newAttrs` constructs a new object with attributes and blocks configured for the `sagemaker_workforce`
 Terraform resource.
 
-Unlike [aws.sagemaker_workforce.new](#fn-sagemaker_workforcenew), this function will not inject the `resource`
+Unlike [aws.sagemaker_workforce.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -91,10 +91,10 @@ injecting into a complete block.
 
 **Args**:
   - `workforce_name` (`string`): 
-  - `cognito_config` (`list[obj]`):  When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-sagemaker_workforcecognito_confignew) constructor.
-  - `oidc_config` (`list[obj]`):  When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-sagemaker_workforceoidc_confignew) constructor.
-  - `source_ip_config` (`list[obj]`):  When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-sagemaker_workforcesource_ip_confignew) constructor.
-  - `workforce_vpc_config` (`list[obj]`):  When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-sagemaker_workforceworkforce_vpc_confignew) constructor.
+  - `cognito_config` (`list[obj]`):  When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-cognito_confignew) constructor.
+  - `oidc_config` (`list[obj]`):  When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-oidc_confignew) constructor.
+  - `source_ip_config` (`list[obj]`):  When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-source_ip_confignew) constructor.
+  - `workforce_vpc_config` (`list[obj]`):  When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-workforce_vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_workforce` resource into the root Terraform configuration.

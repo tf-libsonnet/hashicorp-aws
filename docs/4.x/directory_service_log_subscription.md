@@ -64,7 +64,7 @@ newAttrs()
 `aws.directory_service_log_subscription.newAttrs` constructs a new object with attributes and blocks configured for the `directory_service_log_subscription`
 Terraform resource.
 
-Unlike [aws.directory_service_log_subscription.new](#fn-directory_service_log_subscriptionnew), this function will not inject the `resource`
+Unlike [aws.directory_service_log_subscription.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

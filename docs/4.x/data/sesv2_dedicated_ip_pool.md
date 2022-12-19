@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.sesv2_dedicated_ip_pool.newAttrs` constructs a new object with attributes and blocks configured for the `sesv2_dedicated_ip_pool`
 Terraform data source.
 
-Unlike [aws.data.sesv2_dedicated_ip_pool.new](#fn-sesv2_dedicated_ip_poolnew), this function will not inject the `data source`
+Unlike [aws.data.sesv2_dedicated_ip_pool.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

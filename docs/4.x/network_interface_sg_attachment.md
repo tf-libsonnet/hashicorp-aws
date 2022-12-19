@@ -64,7 +64,7 @@ newAttrs()
 `aws.network_interface_sg_attachment.newAttrs` constructs a new object with attributes and blocks configured for the `network_interface_sg_attachment`
 Terraform resource.
 
-Unlike [aws.network_interface_sg_attachment.new](#fn-network_interface_sg_attachmentnew), this function will not inject the `resource`
+Unlike [aws.network_interface_sg_attachment.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

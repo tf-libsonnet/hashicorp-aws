@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `target_arn` (`string`): 
-  - `event_subscription` (`list[obj]`):  When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-inspector_assessment_templateevent_subscriptionnew) constructor.
+  - `event_subscription` (`list[obj]`):  When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-event_subscriptionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.inspector_assessment_template.newAttrs` constructs a new object with attributes and blocks configured for the `inspector_assessment_template`
 Terraform resource.
 
-Unlike [aws.inspector_assessment_template.new](#fn-inspector_assessment_templatenew), this function will not inject the `resource`
+Unlike [aws.inspector_assessment_template.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `target_arn` (`string`): 
-  - `event_subscription` (`list[obj]`):  When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-inspector_assessment_templateevent_subscriptionnew) constructor.
+  - `event_subscription` (`list[obj]`):  When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-event_subscriptionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `inspector_assessment_template` resource into the root Terraform configuration.

@@ -82,7 +82,7 @@ newAttrs()
 `aws.cur_report_definition.newAttrs` constructs a new object with attributes and blocks configured for the `cur_report_definition`
 Terraform resource.
 
-Unlike [aws.cur_report_definition.new](#fn-cur_report_definitionnew), this function will not inject the `resource`
+Unlike [aws.cur_report_definition.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -67,7 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `workgroup_name` (`string`): 
-  - `config_parameter` (`list[obj]`):  When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-redshiftserverless_workgroupconfig_parameternew) constructor.
+  - `config_parameter` (`list[obj]`):  When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,7 +83,7 @@ newAttrs()
 `aws.redshiftserverless_workgroup.newAttrs` constructs a new object with attributes and blocks configured for the `redshiftserverless_workgroup`
 Terraform resource.
 
-Unlike [aws.redshiftserverless_workgroup.new](#fn-redshiftserverless_workgroupnew), this function will not inject the `resource`
+Unlike [aws.redshiftserverless_workgroup.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,7 +100,7 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `workgroup_name` (`string`): 
-  - `config_parameter` (`list[obj]`):  When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-redshiftserverless_workgroupconfig_parameternew) constructor.
+  - `config_parameter` (`list[obj]`):  When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftserverless_workgroup` resource into the root Terraform configuration.

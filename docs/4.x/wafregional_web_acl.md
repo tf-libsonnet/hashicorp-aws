@@ -73,9 +73,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.default_action.new](#fn-wafregional_web_acldefault_actionnew) constructor.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.new](#fn-wafregional_web_acllogging_configurationnew) constructor.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.new](#fn-wafregional_web_aclrulenew) constructor.
+  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.default_action.new](#fn-default_actionnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.new](#fn-logging_configurationnew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,7 +91,7 @@ newAttrs()
 `aws.wafregional_web_acl.newAttrs` constructs a new object with attributes and blocks configured for the `wafregional_web_acl`
 Terraform resource.
 
-Unlike [aws.wafregional_web_acl.new](#fn-wafregional_web_aclnew), this function will not inject the `resource`
+Unlike [aws.wafregional_web_acl.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -103,9 +103,9 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.default_action.new](#fn-wafregional_web_acldefault_actionnew) constructor.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.new](#fn-wafregional_web_acllogging_configurationnew) constructor.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.new](#fn-wafregional_web_aclrulenew) constructor.
+  - `default_action` (`list[obj]`):  When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.default_action.new](#fn-default_actionnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.new](#fn-logging_configurationnew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `wafregional_web_acl` resource into the root Terraform configuration.
@@ -327,7 +327,7 @@ Terraform sub block.
 
 **Args**:
   - `log_destination` (`string`): 
-  - `redacted_fields` (`list[obj]`):  When `null`, the `redacted_fields` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.redacted_fields.new](#fn-logging_configurationredacted_fieldsnew) constructor.
+  - `redacted_fields` (`list[obj]`):  When `null`, the `redacted_fields` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.redacted_fields.new](#fn-redacted_fieldsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging_configuration` sub block.
@@ -350,7 +350,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.redacted_fields.field_to_match.new](#fn-redacted_fieldsfield_to_matchnew) constructor.
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.logging_configuration.redacted_fields.field_to_match.new](#fn-logging_configurationfield_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `redacted_fields` sub block.
@@ -400,8 +400,8 @@ Terraform sub block.
   - `priority` (`number`): 
   - `rule_id` (`string`): 
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.action.new](#fn-ruleactionnew) constructor.
-  - `override_action` (`list[obj]`):  When `null`, the `override_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.override_action.new](#fn-ruleoverride_actionnew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.action.new](#fn-actionnew) constructor.
+  - `override_action` (`list[obj]`):  When `null`, the `override_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_web_acl.rule.override_action.new](#fn-override_actionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

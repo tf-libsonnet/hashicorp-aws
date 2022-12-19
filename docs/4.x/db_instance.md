@@ -177,10 +177,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
   - `username` (`string`):  When `null`, the `username` field will be omitted from the resulting object.
   - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `blue_green_update` (`list[obj]`):  When `null`, the `blue_green_update` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.blue_green_update.new](#fn-db_instanceblue_green_updatenew) constructor.
-  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.restore_to_point_in_time.new](#fn-db_instancerestore_to_point_in_timenew) constructor.
-  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.s3_import.new](#fn-db_instances3_importnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.timeouts.new](#fn-db_instancetimeoutsnew) constructor.
+  - `blue_green_update` (`list[obj]`):  When `null`, the `blue_green_update` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.blue_green_update.new](#fn-blue_green_updatenew) constructor.
+  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
+  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.s3_import.new](#fn-s3_importnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -196,7 +196,7 @@ newAttrs()
 `aws.db_instance.newAttrs` constructs a new object with attributes and blocks configured for the `db_instance`
 Terraform resource.
 
-Unlike [aws.db_instance.new](#fn-db_instancenew), this function will not inject the `resource`
+Unlike [aws.db_instance.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -262,10 +262,10 @@ injecting into a complete block.
   - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
   - `username` (`string`):  When `null`, the `username` field will be omitted from the resulting object.
   - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `blue_green_update` (`list[obj]`):  When `null`, the `blue_green_update` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.blue_green_update.new](#fn-db_instanceblue_green_updatenew) constructor.
-  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.restore_to_point_in_time.new](#fn-db_instancerestore_to_point_in_timenew) constructor.
-  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.s3_import.new](#fn-db_instances3_importnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.timeouts.new](#fn-db_instancetimeoutsnew) constructor.
+  - `blue_green_update` (`list[obj]`):  When `null`, the `blue_green_update` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.blue_green_update.new](#fn-blue_green_updatenew) constructor.
+  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
+  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.s3_import.new](#fn-s3_importnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `db_instance` resource into the root Terraform configuration.

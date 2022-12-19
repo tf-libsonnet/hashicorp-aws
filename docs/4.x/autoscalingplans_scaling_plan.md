@@ -67,8 +67,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): 
-  - `application_source` (`list[obj]`):  When `null`, the `application_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.application_source.new](#fn-autoscalingplans_scaling_planapplication_sourcenew) constructor.
-  - `scaling_instruction` (`list[obj]`):  When `null`, the `scaling_instruction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.new](#fn-autoscalingplans_scaling_planscaling_instructionnew) constructor.
+  - `application_source` (`list[obj]`):  When `null`, the `application_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.application_source.new](#fn-application_sourcenew) constructor.
+  - `scaling_instruction` (`list[obj]`):  When `null`, the `scaling_instruction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.new](#fn-scaling_instructionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,7 +84,7 @@ newAttrs()
 `aws.autoscalingplans_scaling_plan.newAttrs` constructs a new object with attributes and blocks configured for the `autoscalingplans_scaling_plan`
 Terraform resource.
 
-Unlike [aws.autoscalingplans_scaling_plan.new](#fn-autoscalingplans_scaling_plannew), this function will not inject the `resource`
+Unlike [aws.autoscalingplans_scaling_plan.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -93,8 +93,8 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): 
-  - `application_source` (`list[obj]`):  When `null`, the `application_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.application_source.new](#fn-autoscalingplans_scaling_planapplication_sourcenew) constructor.
-  - `scaling_instruction` (`list[obj]`):  When `null`, the `scaling_instruction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.new](#fn-autoscalingplans_scaling_planscaling_instructionnew) constructor.
+  - `application_source` (`list[obj]`):  When `null`, the `application_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.application_source.new](#fn-application_sourcenew) constructor.
+  - `scaling_instruction` (`list[obj]`):  When `null`, the `scaling_instruction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.new](#fn-scaling_instructionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `autoscalingplans_scaling_plan` resource into the root Terraform configuration.
@@ -208,7 +208,7 @@ Terraform sub block.
 
 **Args**:
   - `cloudformation_stack_arn` (`string`):  When `null`, the `cloudformation_stack_arn` field will be omitted from the resulting object.
-  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.application_source.tag_filter.new](#fn-application_sourcetag_filternew) constructor.
+  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.application_source.tag_filter.new](#fn-tag_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `application_source` sub block.
@@ -266,9 +266,9 @@ Terraform sub block.
   - `scaling_policy_update_behavior` (`string`):  When `null`, the `scaling_policy_update_behavior` field will be omitted from the resulting object.
   - `scheduled_action_buffer_time` (`number`):  When `null`, the `scheduled_action_buffer_time` field will be omitted from the resulting object.
   - `service_namespace` (`string`): 
-  - `customized_load_metric_specification` (`list[obj]`):  When `null`, the `customized_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.customized_load_metric_specification.new](#fn-scaling_instructioncustomized_load_metric_specificationnew) constructor.
-  - `predefined_load_metric_specification` (`list[obj]`):  When `null`, the `predefined_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.predefined_load_metric_specification.new](#fn-scaling_instructionpredefined_load_metric_specificationnew) constructor.
-  - `target_tracking_configuration` (`list[obj]`):  When `null`, the `target_tracking_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.target_tracking_configuration.new](#fn-scaling_instructiontarget_tracking_configurationnew) constructor.
+  - `customized_load_metric_specification` (`list[obj]`):  When `null`, the `customized_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.customized_load_metric_specification.new](#fn-customized_load_metric_specificationnew) constructor.
+  - `predefined_load_metric_specification` (`list[obj]`):  When `null`, the `predefined_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.predefined_load_metric_specification.new](#fn-predefined_load_metric_specificationnew) constructor.
+  - `target_tracking_configuration` (`list[obj]`):  When `null`, the `target_tracking_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.target_tracking_configuration.new](#fn-target_tracking_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `scaling_instruction` sub block.
@@ -347,8 +347,8 @@ Terraform sub block.
   - `scale_in_cooldown` (`number`):  When `null`, the `scale_in_cooldown` field will be omitted from the resulting object.
   - `scale_out_cooldown` (`number`):  When `null`, the `scale_out_cooldown` field will be omitted from the resulting object.
   - `target_value` (`number`): 
-  - `customized_scaling_metric_specification` (`list[obj]`):  When `null`, the `customized_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.target_tracking_configuration.customized_scaling_metric_specification.new](#fn-target_tracking_configurationcustomized_scaling_metric_specificationnew) constructor.
-  - `predefined_scaling_metric_specification` (`list[obj]`):  When `null`, the `predefined_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.target_tracking_configuration.predefined_scaling_metric_specification.new](#fn-target_tracking_configurationpredefined_scaling_metric_specificationnew) constructor.
+  - `customized_scaling_metric_specification` (`list[obj]`):  When `null`, the `customized_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.target_tracking_configuration.customized_scaling_metric_specification.new](#fn-scaling_instructioncustomized_scaling_metric_specificationnew) constructor.
+  - `predefined_scaling_metric_specification` (`list[obj]`):  When `null`, the `predefined_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscalingplans_scaling_plan.scaling_instruction.target_tracking_configuration.predefined_scaling_metric_specification.new](#fn-scaling_instructionpredefined_scaling_metric_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_tracking_configuration` sub block.

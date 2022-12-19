@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `encryption_entities` (`list[obj]`):  When `null`, the `encryption_entities` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.new](#fn-cloudfront_field_level_encryption_profileencryption_entitiesnew) constructor.
+  - `encryption_entities` (`list[obj]`):  When `null`, the `encryption_entities` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.new](#fn-encryption_entitiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.cloudfront_field_level_encryption_profile.newAttrs` constructs a new object with attributes and blocks configured for the `cloudfront_field_level_encryption_profile`
 Terraform resource.
 
-Unlike [aws.cloudfront_field_level_encryption_profile.new](#fn-cloudfront_field_level_encryption_profilenew), this function will not inject the `resource`
+Unlike [aws.cloudfront_field_level_encryption_profile.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -83,7 +83,7 @@ injecting into a complete block.
 **Args**:
   - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `encryption_entities` (`list[obj]`):  When `null`, the `encryption_entities` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.new](#fn-cloudfront_field_level_encryption_profileencryption_entitiesnew) constructor.
+  - `encryption_entities` (`list[obj]`):  When `null`, the `encryption_entities` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.new](#fn-encryption_entitiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_field_level_encryption_profile` resource into the root Terraform configuration.
@@ -175,7 +175,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new](#fn-encryption_entitiesitemsnew) constructor.
+  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new](#fn-itemsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_entities` sub block.
@@ -200,7 +200,7 @@ Terraform sub block.
 **Args**:
   - `provider_id` (`string`): 
   - `public_key_id` (`string`): 
-  - `field_patterns` (`list[obj]`):  When `null`, the `field_patterns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.field_patterns.new](#fn-itemsfield_patternsnew) constructor.
+  - `field_patterns` (`list[obj]`):  When `null`, the `field_patterns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.field_patterns.new](#fn-encryption_entitiesfield_patternsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `items` sub block.

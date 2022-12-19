@@ -77,10 +77,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `role_arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `exclude_filter` (`list[obj]`):  When `null`, the `exclude_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.exclude_filter.new](#fn-cloudwatch_metric_streamexclude_filternew) constructor.
-  - `include_filter` (`list[obj]`):  When `null`, the `include_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.include_filter.new](#fn-cloudwatch_metric_streaminclude_filternew) constructor.
-  - `statistics_configuration` (`list[obj]`):  When `null`, the `statistics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.new](#fn-cloudwatch_metric_streamstatistics_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.timeouts.new](#fn-cloudwatch_metric_streamtimeoutsnew) constructor.
+  - `exclude_filter` (`list[obj]`):  When `null`, the `exclude_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.exclude_filter.new](#fn-exclude_filternew) constructor.
+  - `include_filter` (`list[obj]`):  When `null`, the `include_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.include_filter.new](#fn-include_filternew) constructor.
+  - `statistics_configuration` (`list[obj]`):  When `null`, the `statistics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.new](#fn-statistics_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,7 +96,7 @@ newAttrs()
 `aws.cloudwatch_metric_stream.newAttrs` constructs a new object with attributes and blocks configured for the `cloudwatch_metric_stream`
 Terraform resource.
 
-Unlike [aws.cloudwatch_metric_stream.new](#fn-cloudwatch_metric_streamnew), this function will not inject the `resource`
+Unlike [aws.cloudwatch_metric_stream.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -111,10 +111,10 @@ injecting into a complete block.
   - `role_arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `exclude_filter` (`list[obj]`):  When `null`, the `exclude_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.exclude_filter.new](#fn-cloudwatch_metric_streamexclude_filternew) constructor.
-  - `include_filter` (`list[obj]`):  When `null`, the `include_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.include_filter.new](#fn-cloudwatch_metric_streaminclude_filternew) constructor.
-  - `statistics_configuration` (`list[obj]`):  When `null`, the `statistics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.new](#fn-cloudwatch_metric_streamstatistics_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.timeouts.new](#fn-cloudwatch_metric_streamtimeoutsnew) constructor.
+  - `exclude_filter` (`list[obj]`):  When `null`, the `exclude_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.exclude_filter.new](#fn-exclude_filternew) constructor.
+  - `include_filter` (`list[obj]`):  When `null`, the `include_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.include_filter.new](#fn-include_filternew) constructor.
+  - `statistics_configuration` (`list[obj]`):  When `null`, the `statistics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.new](#fn-statistics_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_metric_stream` resource into the root Terraform configuration.
@@ -443,7 +443,7 @@ Terraform sub block.
 
 **Args**:
   - `additional_statistics` (`list`): 
-  - `include_metric` (`list[obj]`):  When `null`, the `include_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.include_metric.new](#fn-statistics_configurationinclude_metricnew) constructor.
+  - `include_metric` (`list[obj]`):  When `null`, the `include_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.include_metric.new](#fn-include_metricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `statistics_configuration` sub block.

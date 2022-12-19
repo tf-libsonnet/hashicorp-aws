@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
   - `role` (`string`):  When `null`, the `role` field will be omitted from the resulting object.
   - `server_id` (`string`): 
-  - `home_directory_mappings` (`list[obj]`):  When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-transfer_accesshome_directory_mappingsnew) constructor.
-  - `posix_profile` (`list[obj]`):  When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-transfer_accessposix_profilenew) constructor.
+  - `home_directory_mappings` (`list[obj]`):  When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-home_directory_mappingsnew) constructor.
+  - `posix_profile` (`list[obj]`):  When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-posix_profilenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.transfer_access.newAttrs` constructs a new object with attributes and blocks configured for the `transfer_access`
 Terraform resource.
 
-Unlike [aws.transfer_access.new](#fn-transfer_accessnew), this function will not inject the `resource`
+Unlike [aws.transfer_access.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -96,8 +96,8 @@ injecting into a complete block.
   - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
   - `role` (`string`):  When `null`, the `role` field will be omitted from the resulting object.
   - `server_id` (`string`): 
-  - `home_directory_mappings` (`list[obj]`):  When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-transfer_accesshome_directory_mappingsnew) constructor.
-  - `posix_profile` (`list[obj]`):  When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-transfer_accessposix_profilenew) constructor.
+  - `home_directory_mappings` (`list[obj]`):  When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-home_directory_mappingsnew) constructor.
+  - `posix_profile` (`list[obj]`):  When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-posix_profilenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transfer_access` resource into the root Terraform configuration.

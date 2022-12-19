@@ -77,8 +77,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
   - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `input_record_tables` (`list[obj]`):  When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-glue_ml_transforminput_record_tablesnew) constructor.
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-glue_ml_transformparametersnew) constructor.
+  - `input_record_tables` (`list[obj]`):  When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-input_record_tablesnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-parametersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,7 +94,7 @@ newAttrs()
 `aws.glue_ml_transform.newAttrs` constructs a new object with attributes and blocks configured for the `glue_ml_transform`
 Terraform resource.
 
-Unlike [aws.glue_ml_transform.new](#fn-glue_ml_transformnew), this function will not inject the `resource`
+Unlike [aws.glue_ml_transform.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -113,8 +113,8 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
   - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `input_record_tables` (`list[obj]`):  When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-glue_ml_transforminput_record_tablesnew) constructor.
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-glue_ml_transformparametersnew) constructor.
+  - `input_record_tables` (`list[obj]`):  When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-input_record_tablesnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-parametersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_ml_transform` resource into the root Terraform configuration.
@@ -414,7 +414,7 @@ Terraform sub block.
 
 **Args**:
   - `transform_type` (`string`): 
-  - `find_matches_parameters` (`list[obj]`):  When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-parametersfind_matches_parametersnew) constructor.
+  - `find_matches_parameters` (`list[obj]`):  When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-find_matches_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `parameters` sub block.

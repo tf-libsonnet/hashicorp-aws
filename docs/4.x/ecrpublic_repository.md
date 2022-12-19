@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `repository_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `catalog_data` (`list[obj]`):  When `null`, the `catalog_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.catalog_data.new](#fn-ecrpublic_repositorycatalog_datanew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.timeouts.new](#fn-ecrpublic_repositorytimeoutsnew) constructor.
+  - `catalog_data` (`list[obj]`):  When `null`, the `catalog_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.catalog_data.new](#fn-catalog_datanew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.ecrpublic_repository.newAttrs` constructs a new object with attributes and blocks configured for the `ecrpublic_repository`
 Terraform resource.
 
-Unlike [aws.ecrpublic_repository.new](#fn-ecrpublic_repositorynew), this function will not inject the `resource`
+Unlike [aws.ecrpublic_repository.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `repository_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `catalog_data` (`list[obj]`):  When `null`, the `catalog_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.catalog_data.new](#fn-ecrpublic_repositorycatalog_datanew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.timeouts.new](#fn-ecrpublic_repositorytimeoutsnew) constructor.
+  - `catalog_data` (`list[obj]`):  When `null`, the `catalog_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.catalog_data.new](#fn-catalog_datanew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecrpublic_repository.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecrpublic_repository` resource into the root Terraform configuration.

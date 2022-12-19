@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.filter.new](#fn-vpc_endpointfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.timeouts.new](#fn-vpc_endpointtimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.data.vpc_endpoint.newAttrs` constructs a new object with attributes and blocks configured for the `vpc_endpoint`
 Terraform data source.
 
-Unlike [aws.data.vpc_endpoint.new](#fn-vpc_endpointnew), this function will not inject the `data source`
+Unlike [aws.data.vpc_endpoint.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.filter.new](#fn-vpc_endpointfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.timeouts.new](#fn-vpc_endpointtimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_endpoint.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `vpc_endpoint` data source into the root Terraform configuration.

@@ -68,7 +68,7 @@ newAttrs()
 `aws.data.dynamodb_table_item.newAttrs` constructs a new object with attributes and blocks configured for the `dynamodb_table_item`
 Terraform data source.
 
-Unlike [aws.data.dynamodb_table_item.new](#fn-dynamodb_table_itemnew), this function will not inject the `data source`
+Unlike [aws.data.dynamodb_table_item.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

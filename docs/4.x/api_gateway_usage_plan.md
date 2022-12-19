@@ -69,9 +69,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `product_code` (`string`):  When `null`, the `product_code` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `api_stages` (`list[obj]`):  When `null`, the `api_stages` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.new](#fn-api_gateway_usage_planapi_stagesnew) constructor.
-  - `quota_settings` (`list[obj]`):  When `null`, the `quota_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.quota_settings.new](#fn-api_gateway_usage_planquota_settingsnew) constructor.
-  - `throttle_settings` (`list[obj]`):  When `null`, the `throttle_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.throttle_settings.new](#fn-api_gateway_usage_planthrottle_settingsnew) constructor.
+  - `api_stages` (`list[obj]`):  When `null`, the `api_stages` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.new](#fn-api_stagesnew) constructor.
+  - `quota_settings` (`list[obj]`):  When `null`, the `quota_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.quota_settings.new](#fn-quota_settingsnew) constructor.
+  - `throttle_settings` (`list[obj]`):  When `null`, the `throttle_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.throttle_settings.new](#fn-throttle_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,7 +87,7 @@ newAttrs()
 `aws.api_gateway_usage_plan.newAttrs` constructs a new object with attributes and blocks configured for the `api_gateway_usage_plan`
 Terraform resource.
 
-Unlike [aws.api_gateway_usage_plan.new](#fn-api_gateway_usage_plannew), this function will not inject the `resource`
+Unlike [aws.api_gateway_usage_plan.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,9 +100,9 @@ injecting into a complete block.
   - `product_code` (`string`):  When `null`, the `product_code` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `api_stages` (`list[obj]`):  When `null`, the `api_stages` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.new](#fn-api_gateway_usage_planapi_stagesnew) constructor.
-  - `quota_settings` (`list[obj]`):  When `null`, the `quota_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.quota_settings.new](#fn-api_gateway_usage_planquota_settingsnew) constructor.
-  - `throttle_settings` (`list[obj]`):  When `null`, the `throttle_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.throttle_settings.new](#fn-api_gateway_usage_planthrottle_settingsnew) constructor.
+  - `api_stages` (`list[obj]`):  When `null`, the `api_stages` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.new](#fn-api_stagesnew) constructor.
+  - `quota_settings` (`list[obj]`):  When `null`, the `quota_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.quota_settings.new](#fn-quota_settingsnew) constructor.
+  - `throttle_settings` (`list[obj]`):  When `null`, the `throttle_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.throttle_settings.new](#fn-throttle_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_usage_plan` resource into the root Terraform configuration.
@@ -318,7 +318,7 @@ Terraform sub block.
 **Args**:
   - `api_id` (`string`): 
   - `stage` (`string`): 
-  - `throttle` (`list[obj]`):  When `null`, the `throttle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.throttle.new](#fn-api_stagesthrottlenew) constructor.
+  - `throttle` (`list[obj]`):  When `null`, the `throttle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.throttle.new](#fn-throttlenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `api_stages` sub block.

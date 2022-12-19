@@ -71,7 +71,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `max_ttl` (`number`):  When `null`, the `max_ttl` field will be omitted from the resulting object.
   - `min_ttl` (`number`):  When `null`, the `min_ttl` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `parameters_in_cache_key_and_forwarded_to_origin` (`list[obj]`):  When `null`, the `parameters_in_cache_key_and_forwarded_to_origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.new](#fn-cloudfront_cache_policyparameters_in_cache_key_and_forwarded_to_originnew) constructor.
+  - `parameters_in_cache_key_and_forwarded_to_origin` (`list[obj]`):  When `null`, the `parameters_in_cache_key_and_forwarded_to_origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.new](#fn-parameters_in_cache_key_and_forwarded_to_originnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,7 +87,7 @@ newAttrs()
 `aws.cloudfront_cache_policy.newAttrs` constructs a new object with attributes and blocks configured for the `cloudfront_cache_policy`
 Terraform resource.
 
-Unlike [aws.cloudfront_cache_policy.new](#fn-cloudfront_cache_policynew), this function will not inject the `resource`
+Unlike [aws.cloudfront_cache_policy.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,7 +100,7 @@ injecting into a complete block.
   - `max_ttl` (`number`):  When `null`, the `max_ttl` field will be omitted from the resulting object.
   - `min_ttl` (`number`):  When `null`, the `min_ttl` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `parameters_in_cache_key_and_forwarded_to_origin` (`list[obj]`):  When `null`, the `parameters_in_cache_key_and_forwarded_to_origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.new](#fn-cloudfront_cache_policyparameters_in_cache_key_and_forwarded_to_originnew) constructor.
+  - `parameters_in_cache_key_and_forwarded_to_origin` (`list[obj]`):  When `null`, the `parameters_in_cache_key_and_forwarded_to_origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.new](#fn-parameters_in_cache_key_and_forwarded_to_originnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_cache_policy` resource into the root Terraform configuration.
@@ -242,9 +242,9 @@ Terraform sub block.
 **Args**:
   - `enable_accept_encoding_brotli` (`bool`):  When `null`, the `enable_accept_encoding_brotli` field will be omitted from the resulting object.
   - `enable_accept_encoding_gzip` (`bool`):  When `null`, the `enable_accept_encoding_gzip` field will be omitted from the resulting object.
-  - `cookies_config` (`list[obj]`):  When `null`, the `cookies_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.new](#fn-parameters_in_cache_key_and_forwarded_to_origincookies_confignew) constructor.
-  - `headers_config` (`list[obj]`):  When `null`, the `headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.new](#fn-parameters_in_cache_key_and_forwarded_to_originheaders_confignew) constructor.
-  - `query_strings_config` (`list[obj]`):  When `null`, the `query_strings_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.new](#fn-parameters_in_cache_key_and_forwarded_to_originquery_strings_confignew) constructor.
+  - `cookies_config` (`list[obj]`):  When `null`, the `cookies_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.new](#fn-cookies_confignew) constructor.
+  - `headers_config` (`list[obj]`):  When `null`, the `headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.new](#fn-headers_confignew) constructor.
+  - `query_strings_config` (`list[obj]`):  When `null`, the `query_strings_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.new](#fn-query_strings_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `parameters_in_cache_key_and_forwarded_to_origin` sub block.
@@ -268,7 +268,7 @@ Terraform sub block.
 
 **Args**:
   - `cookie_behavior` (`string`): 
-  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.cookies.new](#fn-cookies_configcookiesnew) constructor.
+  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.cookies.new](#fn-parameters_in_cache_key_and_forwarded_to_origincookiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cookies_config` sub block.
@@ -315,7 +315,7 @@ Terraform sub block.
 
 **Args**:
   - `header_behavior` (`string`):  When `null`, the `header_behavior` field will be omitted from the resulting object.
-  - `headers` (`list[obj]`):  When `null`, the `headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.headers.new](#fn-headers_configheadersnew) constructor.
+  - `headers` (`list[obj]`):  When `null`, the `headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.headers.new](#fn-parameters_in_cache_key_and_forwarded_to_originheadersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `headers_config` sub block.
@@ -362,7 +362,7 @@ Terraform sub block.
 
 **Args**:
   - `query_string_behavior` (`string`): 
-  - `query_strings` (`list[obj]`):  When `null`, the `query_strings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.query_strings.new](#fn-query_strings_configquery_stringsnew) constructor.
+  - `query_strings` (`list[obj]`):  When `null`, the `query_strings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.query_strings.new](#fn-parameters_in_cache_key_and_forwarded_to_originquery_stringsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `query_strings_config` sub block.

@@ -87,10 +87,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `async_inference_config` (`list[obj]`):  When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-sagemaker_endpoint_configurationasync_inference_confignew) constructor.
-  - `data_capture_config` (`list[obj]`):  When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-sagemaker_endpoint_configurationdata_capture_confignew) constructor.
-  - `production_variants` (`list[obj]`):  When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-sagemaker_endpoint_configurationproduction_variantsnew) constructor.
-  - `shadow_production_variants` (`list[obj]`):  When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-sagemaker_endpoint_configurationshadow_production_variantsnew) constructor.
+  - `async_inference_config` (`list[obj]`):  When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
+  - `data_capture_config` (`list[obj]`):  When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-data_capture_confignew) constructor.
+  - `production_variants` (`list[obj]`):  When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-production_variantsnew) constructor.
+  - `shadow_production_variants` (`list[obj]`):  When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-shadow_production_variantsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -106,7 +106,7 @@ newAttrs()
 `aws.sagemaker_endpoint_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `sagemaker_endpoint_configuration`
 Terraform resource.
 
-Unlike [aws.sagemaker_endpoint_configuration.new](#fn-sagemaker_endpoint_configurationnew), this function will not inject the `resource`
+Unlike [aws.sagemaker_endpoint_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -118,10 +118,10 @@ injecting into a complete block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `async_inference_config` (`list[obj]`):  When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-sagemaker_endpoint_configurationasync_inference_confignew) constructor.
-  - `data_capture_config` (`list[obj]`):  When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-sagemaker_endpoint_configurationdata_capture_confignew) constructor.
-  - `production_variants` (`list[obj]`):  When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-sagemaker_endpoint_configurationproduction_variantsnew) constructor.
-  - `shadow_production_variants` (`list[obj]`):  When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-sagemaker_endpoint_configurationshadow_production_variantsnew) constructor.
+  - `async_inference_config` (`list[obj]`):  When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
+  - `data_capture_config` (`list[obj]`):  When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-data_capture_confignew) constructor.
+  - `production_variants` (`list[obj]`):  When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-production_variantsnew) constructor.
+  - `shadow_production_variants` (`list[obj]`):  When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-shadow_production_variantsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_endpoint_configuration` resource into the root Terraform configuration.
@@ -356,8 +356,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_config` (`list[obj]`):  When `null`, the `client_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.client_config.new](#fn-async_inference_configclient_confignew) constructor.
-  - `output_config` (`list[obj]`):  When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.new](#fn-async_inference_configoutput_confignew) constructor.
+  - `client_config` (`list[obj]`):  When `null`, the `client_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.client_config.new](#fn-client_confignew) constructor.
+  - `output_config` (`list[obj]`):  When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.new](#fn-output_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `async_inference_config` sub block.
@@ -405,7 +405,7 @@ Terraform sub block.
 **Args**:
   - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `s3_output_path` (`string`): 
-  - `notification_config` (`list[obj]`):  When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new](#fn-output_confignotification_confignew) constructor.
+  - `notification_config` (`list[obj]`):  When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new](#fn-async_inference_confignotification_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `output_config` sub block.
@@ -456,8 +456,8 @@ Terraform sub block.
   - `enable_capture` (`bool`):  When `null`, the `enable_capture` field will be omitted from the resulting object.
   - `initial_sampling_percentage` (`number`): 
   - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `capture_content_type_header` (`list[obj]`):  When `null`, the `capture_content_type_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_content_type_header.new](#fn-data_capture_configcapture_content_type_headernew) constructor.
-  - `capture_options` (`list[obj]`):  When `null`, the `capture_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_options.new](#fn-data_capture_configcapture_optionsnew) constructor.
+  - `capture_content_type_header` (`list[obj]`):  When `null`, the `capture_content_type_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_content_type_header.new](#fn-capture_content_type_headernew) constructor.
+  - `capture_options` (`list[obj]`):  When `null`, the `capture_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_options.new](#fn-capture_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_capture_config` sub block.
@@ -536,8 +536,8 @@ Terraform sub block.
   - `model_name` (`string`): 
   - `variant_name` (`string`):  When `null`, the `variant_name` field will be omitted from the resulting object.
   - `volume_size_in_gb` (`number`):  When `null`, the `volume_size_in_gb` field will be omitted from the resulting object.
-  - `core_dump_config` (`list[obj]`):  When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.core_dump_config.new](#fn-production_variantscore_dump_confignew) constructor.
-  - `serverless_config` (`list[obj]`):  When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.serverless_config.new](#fn-production_variantsserverless_confignew) constructor.
+  - `core_dump_config` (`list[obj]`):  When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.core_dump_config.new](#fn-core_dump_confignew) constructor.
+  - `serverless_config` (`list[obj]`):  When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.serverless_config.new](#fn-serverless_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `production_variants` sub block.
@@ -617,8 +617,8 @@ Terraform sub block.
   - `model_name` (`string`): 
   - `variant_name` (`string`):  When `null`, the `variant_name` field will be omitted from the resulting object.
   - `volume_size_in_gb` (`number`):  When `null`, the `volume_size_in_gb` field will be omitted from the resulting object.
-  - `core_dump_config` (`list[obj]`):  When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.core_dump_config.new](#fn-shadow_production_variantscore_dump_confignew) constructor.
-  - `serverless_config` (`list[obj]`):  When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.serverless_config.new](#fn-shadow_production_variantsserverless_confignew) constructor.
+  - `core_dump_config` (`list[obj]`):  When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.core_dump_config.new](#fn-core_dump_confignew) constructor.
+  - `serverless_config` (`list[obj]`):  When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.serverless_config.new](#fn-serverless_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `shadow_production_variants` sub block.

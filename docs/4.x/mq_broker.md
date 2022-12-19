@@ -101,13 +101,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-mq_brokerconfigurationnew) constructor.
-  - `encryption_options` (`list[obj]`):  When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-mq_brokerencryption_optionsnew) constructor.
-  - `ldap_server_metadata` (`list[obj]`):  When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-mq_brokerldap_server_metadatanew) constructor.
-  - `logs` (`list[obj]`):  When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-mq_brokerlogsnew) constructor.
-  - `maintenance_window_start_time` (`list[obj]`):  When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-mq_brokermaintenance_window_start_timenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-mq_brokertimeoutsnew) constructor.
-  - `user` (`list[obj]`):  When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-mq_brokerusernew) constructor.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-configurationnew) constructor.
+  - `encryption_options` (`list[obj]`):  When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-encryption_optionsnew) constructor.
+  - `ldap_server_metadata` (`list[obj]`):  When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-ldap_server_metadatanew) constructor.
+  - `logs` (`list[obj]`):  When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-logsnew) constructor.
+  - `maintenance_window_start_time` (`list[obj]`):  When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-maintenance_window_start_timenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user` (`list[obj]`):  When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-usernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -123,7 +123,7 @@ newAttrs()
 `aws.mq_broker.newAttrs` constructs a new object with attributes and blocks configured for the `mq_broker`
 Terraform resource.
 
-Unlike [aws.mq_broker.new](#fn-mq_brokernew), this function will not inject the `resource`
+Unlike [aws.mq_broker.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -145,13 +145,13 @@ injecting into a complete block.
   - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-mq_brokerconfigurationnew) constructor.
-  - `encryption_options` (`list[obj]`):  When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-mq_brokerencryption_optionsnew) constructor.
-  - `ldap_server_metadata` (`list[obj]`):  When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-mq_brokerldap_server_metadatanew) constructor.
-  - `logs` (`list[obj]`):  When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-mq_brokerlogsnew) constructor.
-  - `maintenance_window_start_time` (`list[obj]`):  When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-mq_brokermaintenance_window_start_timenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-mq_brokertimeoutsnew) constructor.
-  - `user` (`list[obj]`):  When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-mq_brokerusernew) constructor.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-configurationnew) constructor.
+  - `encryption_options` (`list[obj]`):  When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-encryption_optionsnew) constructor.
+  - `ldap_server_metadata` (`list[obj]`):  When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-ldap_server_metadatanew) constructor.
+  - `logs` (`list[obj]`):  When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-logsnew) constructor.
+  - `maintenance_window_start_time` (`list[obj]`):  When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-maintenance_window_start_timenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user` (`list[obj]`):  When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-usernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `mq_broker` resource into the root Terraform configuration.

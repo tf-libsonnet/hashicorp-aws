@@ -93,8 +93,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `supported_identity_providers` (`list`):  When `null`, the `supported_identity_providers` field will be omitted from the resulting object.
   - `user_pool_id` (`string`): 
   - `write_attributes` (`list`):  When `null`, the `write_attributes` field will be omitted from the resulting object.
-  - `analytics_configuration` (`list[obj]`):  When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-cognito_user_pool_clientanalytics_configurationnew) constructor.
-  - `token_validity_units` (`list[obj]`):  When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-cognito_user_pool_clienttoken_validity_unitsnew) constructor.
+  - `analytics_configuration` (`list[obj]`):  When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-analytics_configurationnew) constructor.
+  - `token_validity_units` (`list[obj]`):  When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-token_validity_unitsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -110,7 +110,7 @@ newAttrs()
 `aws.cognito_user_pool_client.newAttrs` constructs a new object with attributes and blocks configured for the `cognito_user_pool_client`
 Terraform resource.
 
-Unlike [aws.cognito_user_pool_client.new](#fn-cognito_user_pool_clientnew), this function will not inject the `resource`
+Unlike [aws.cognito_user_pool_client.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -138,8 +138,8 @@ injecting into a complete block.
   - `supported_identity_providers` (`list`):  When `null`, the `supported_identity_providers` field will be omitted from the resulting object.
   - `user_pool_id` (`string`): 
   - `write_attributes` (`list`):  When `null`, the `write_attributes` field will be omitted from the resulting object.
-  - `analytics_configuration` (`list[obj]`):  When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-cognito_user_pool_clientanalytics_configurationnew) constructor.
-  - `token_validity_units` (`list[obj]`):  When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-cognito_user_pool_clienttoken_validity_unitsnew) constructor.
+  - `analytics_configuration` (`list[obj]`):  When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-analytics_configurationnew) constructor.
+  - `token_validity_units` (`list[obj]`):  When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-token_validity_unitsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_user_pool_client` resource into the root Terraform configuration.

@@ -91,8 +91,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `on_exception_steps` (`list[obj]`):  When `null`, the `on_exception_steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.new](#fn-transfer_workflowon_exception_stepsnew) constructor.
-  - `steps` (`list[obj]`):  When `null`, the `steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.new](#fn-transfer_workflowstepsnew) constructor.
+  - `on_exception_steps` (`list[obj]`):  When `null`, the `on_exception_steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.new](#fn-on_exception_stepsnew) constructor.
+  - `steps` (`list[obj]`):  When `null`, the `steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.new](#fn-stepsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -108,7 +108,7 @@ newAttrs()
 `aws.transfer_workflow.newAttrs` constructs a new object with attributes and blocks configured for the `transfer_workflow`
 Terraform resource.
 
-Unlike [aws.transfer_workflow.new](#fn-transfer_workflownew), this function will not inject the `resource`
+Unlike [aws.transfer_workflow.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -119,8 +119,8 @@ injecting into a complete block.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `on_exception_steps` (`list[obj]`):  When `null`, the `on_exception_steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.new](#fn-transfer_workflowon_exception_stepsnew) constructor.
-  - `steps` (`list[obj]`):  When `null`, the `steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.new](#fn-transfer_workflowstepsnew) constructor.
+  - `on_exception_steps` (`list[obj]`):  When `null`, the `on_exception_steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.new](#fn-on_exception_stepsnew) constructor.
+  - `steps` (`list[obj]`):  When `null`, the `steps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.new](#fn-stepsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transfer_workflow` resource into the root Terraform configuration.
@@ -266,10 +266,10 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`): 
-  - `copy_step_details` (`list[obj]`):  When `null`, the `copy_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.new](#fn-on_exception_stepscopy_step_detailsnew) constructor.
-  - `custom_step_details` (`list[obj]`):  When `null`, the `custom_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.custom_step_details.new](#fn-on_exception_stepscustom_step_detailsnew) constructor.
-  - `delete_step_details` (`list[obj]`):  When `null`, the `delete_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.delete_step_details.new](#fn-on_exception_stepsdelete_step_detailsnew) constructor.
-  - `tag_step_details` (`list[obj]`):  When `null`, the `tag_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.tag_step_details.new](#fn-on_exception_stepstag_step_detailsnew) constructor.
+  - `copy_step_details` (`list[obj]`):  When `null`, the `copy_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.new](#fn-copy_step_detailsnew) constructor.
+  - `custom_step_details` (`list[obj]`):  When `null`, the `custom_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.custom_step_details.new](#fn-custom_step_detailsnew) constructor.
+  - `delete_step_details` (`list[obj]`):  When `null`, the `delete_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.delete_step_details.new](#fn-delete_step_detailsnew) constructor.
+  - `tag_step_details` (`list[obj]`):  When `null`, the `tag_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.tag_step_details.new](#fn-tag_step_detailsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `on_exception_steps` sub block.
@@ -295,7 +295,7 @@ Terraform sub block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `overwrite_existing` (`string`):  When `null`, the `overwrite_existing` field will be omitted from the resulting object.
   - `source_file_location` (`string`):  When `null`, the `source_file_location` field will be omitted from the resulting object.
-  - `destination_file_location` (`list[obj]`):  When `null`, the `destination_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.destination_file_location.new](#fn-copy_step_detailsdestination_file_locationnew) constructor.
+  - `destination_file_location` (`list[obj]`):  When `null`, the `destination_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.destination_file_location.new](#fn-on_exception_stepsdestination_file_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `copy_step_details` sub block.
@@ -318,8 +318,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `efs_file_location` (`list[obj]`):  When `null`, the `efs_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.destination_file_location.efs_file_location.new](#fn-destination_file_locationefs_file_locationnew) constructor.
-  - `s3_file_location` (`list[obj]`):  When `null`, the `s3_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.destination_file_location.s3_file_location.new](#fn-destination_file_locations3_file_locationnew) constructor.
+  - `efs_file_location` (`list[obj]`):  When `null`, the `efs_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.destination_file_location.efs_file_location.new](#fn-on_exception_stepscopy_step_detailsefs_file_locationnew) constructor.
+  - `s3_file_location` (`list[obj]`):  When `null`, the `s3_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.destination_file_location.s3_file_location.new](#fn-on_exception_stepscopy_step_detailss3_file_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_file_location` sub block.
@@ -442,7 +442,7 @@ Terraform sub block.
 **Args**:
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `source_file_location` (`string`):  When `null`, the `source_file_location` field will be omitted from the resulting object.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.tag_step_details.tags.new](#fn-tag_step_detailstagsnew) constructor.
+  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.tag_step_details.tags.new](#fn-on_exception_stepstagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tag_step_details` sub block.
@@ -490,10 +490,10 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`): 
-  - `copy_step_details` (`list[obj]`):  When `null`, the `copy_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.new](#fn-stepscopy_step_detailsnew) constructor.
-  - `custom_step_details` (`list[obj]`):  When `null`, the `custom_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.custom_step_details.new](#fn-stepscustom_step_detailsnew) constructor.
-  - `delete_step_details` (`list[obj]`):  When `null`, the `delete_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.delete_step_details.new](#fn-stepsdelete_step_detailsnew) constructor.
-  - `tag_step_details` (`list[obj]`):  When `null`, the `tag_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.tag_step_details.new](#fn-stepstag_step_detailsnew) constructor.
+  - `copy_step_details` (`list[obj]`):  When `null`, the `copy_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.new](#fn-copy_step_detailsnew) constructor.
+  - `custom_step_details` (`list[obj]`):  When `null`, the `custom_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.custom_step_details.new](#fn-custom_step_detailsnew) constructor.
+  - `delete_step_details` (`list[obj]`):  When `null`, the `delete_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.delete_step_details.new](#fn-delete_step_detailsnew) constructor.
+  - `tag_step_details` (`list[obj]`):  When `null`, the `tag_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.tag_step_details.new](#fn-tag_step_detailsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `steps` sub block.
@@ -519,7 +519,7 @@ Terraform sub block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `overwrite_existing` (`string`):  When `null`, the `overwrite_existing` field will be omitted from the resulting object.
   - `source_file_location` (`string`):  When `null`, the `source_file_location` field will be omitted from the resulting object.
-  - `destination_file_location` (`list[obj]`):  When `null`, the `destination_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.destination_file_location.new](#fn-copy_step_detailsdestination_file_locationnew) constructor.
+  - `destination_file_location` (`list[obj]`):  When `null`, the `destination_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.destination_file_location.new](#fn-stepsdestination_file_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `copy_step_details` sub block.
@@ -542,8 +542,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `efs_file_location` (`list[obj]`):  When `null`, the `efs_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.destination_file_location.efs_file_location.new](#fn-destination_file_locationefs_file_locationnew) constructor.
-  - `s3_file_location` (`list[obj]`):  When `null`, the `s3_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.destination_file_location.s3_file_location.new](#fn-destination_file_locations3_file_locationnew) constructor.
+  - `efs_file_location` (`list[obj]`):  When `null`, the `efs_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.destination_file_location.efs_file_location.new](#fn-stepscopy_step_detailsefs_file_locationnew) constructor.
+  - `s3_file_location` (`list[obj]`):  When `null`, the `s3_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.destination_file_location.s3_file_location.new](#fn-stepscopy_step_detailss3_file_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_file_location` sub block.
@@ -666,7 +666,7 @@ Terraform sub block.
 **Args**:
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `source_file_location` (`string`):  When `null`, the `source_file_location` field will be omitted from the resulting object.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.tag_step_details.tags.new](#fn-tag_step_detailstagsnew) constructor.
+  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.tag_step_details.tags.new](#fn-stepstagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tag_step_details` sub block.

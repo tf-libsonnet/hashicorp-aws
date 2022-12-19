@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): 
-  - `sql_injection_match_tuples` (`list[obj]`):  When `null`, the `sql_injection_match_tuples` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.new](#fn-waf_sql_injection_match_setsql_injection_match_tuplesnew) constructor.
+  - `sql_injection_match_tuples` (`list[obj]`):  When `null`, the `sql_injection_match_tuples` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.new](#fn-sql_injection_match_tuplesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.waf_sql_injection_match_set.newAttrs` constructs a new object with attributes and blocks configured for the `waf_sql_injection_match_set`
 Terraform resource.
 
-Unlike [aws.waf_sql_injection_match_set.new](#fn-waf_sql_injection_match_setnew), this function will not inject the `resource`
+Unlike [aws.waf_sql_injection_match_set.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -78,7 +78,7 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): 
-  - `sql_injection_match_tuples` (`list[obj]`):  When `null`, the `sql_injection_match_tuples` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.new](#fn-waf_sql_injection_match_setsql_injection_match_tuplesnew) constructor.
+  - `sql_injection_match_tuples` (`list[obj]`):  When `null`, the `sql_injection_match_tuples` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.new](#fn-sql_injection_match_tuplesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `waf_sql_injection_match_set` resource into the root Terraform configuration.
@@ -155,7 +155,7 @@ Terraform sub block.
 
 **Args**:
   - `text_transformation` (`string`): 
-  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.field_to_match.new](#fn-sql_injection_match_tuplesfield_to_matchnew) constructor.
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.field_to_match.new](#fn-field_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sql_injection_match_tuples` sub block.

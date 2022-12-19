@@ -51,7 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `instance_id` (`string`): 
-  - `lex_bot` (`list[obj]`):  When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-connect_bot_associationlex_botnew) constructor.
+  - `lex_bot` (`list[obj]`):  When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-lex_botnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -67,7 +67,7 @@ newAttrs()
 `aws.connect_bot_association.newAttrs` constructs a new object with attributes and blocks configured for the `connect_bot_association`
 Terraform resource.
 
-Unlike [aws.connect_bot_association.new](#fn-connect_bot_associationnew), this function will not inject the `resource`
+Unlike [aws.connect_bot_association.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -76,7 +76,7 @@ injecting into a complete block.
 
 **Args**:
   - `instance_id` (`string`): 
-  - `lex_bot` (`list[obj]`):  When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-connect_bot_associationlex_botnew) constructor.
+  - `lex_bot` (`list[obj]`):  When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-lex_botnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_bot_association` resource into the root Terraform configuration.
