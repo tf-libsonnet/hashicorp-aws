@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `kafka_versions` (`list`):  When `null`, the `kafka_versions` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `server_properties` (`string`): 
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `kafka_versions` (`list`): Set the `kafka_versions` field on the resulting resource block. When `null`, the `kafka_versions` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `server_properties` (`string`): Set the `server_properties` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `kafka_versions` (`list`):  When `null`, the `kafka_versions` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `server_properties` (`string`): 
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `kafka_versions` (`list`): Set the `kafka_versions` field on the resulting object. When `null`, the `kafka_versions` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `server_properties` (`string`): Set the `server_properties` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `msk_configuration` resource into the root Terraform configuration.

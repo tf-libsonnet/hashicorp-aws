@@ -53,14 +53,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): 
-  - `hsm_configuration_identifier` (`string`): 
-  - `hsm_ip_address` (`string`): 
-  - `hsm_partition_name` (`string`): 
-  - `hsm_partition_password` (`string`): 
-  - `hsm_server_public_certificate` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block.
+  - `hsm_configuration_identifier` (`string`): Set the `hsm_configuration_identifier` field on the resulting resource block.
+  - `hsm_ip_address` (`string`): Set the `hsm_ip_address` field on the resulting resource block.
+  - `hsm_partition_name` (`string`): Set the `hsm_partition_name` field on the resulting resource block.
+  - `hsm_partition_password` (`string`): Set the `hsm_partition_password` field on the resulting resource block.
+  - `hsm_server_public_certificate` (`string`): Set the `hsm_server_public_certificate` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,14 +84,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): 
-  - `hsm_configuration_identifier` (`string`): 
-  - `hsm_ip_address` (`string`): 
-  - `hsm_partition_name` (`string`): 
-  - `hsm_partition_password` (`string`): 
-  - `hsm_server_public_certificate` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object.
+  - `hsm_configuration_identifier` (`string`): Set the `hsm_configuration_identifier` field on the resulting object.
+  - `hsm_ip_address` (`string`): Set the `hsm_ip_address` field on the resulting object.
+  - `hsm_partition_name` (`string`): Set the `hsm_partition_name` field on the resulting object.
+  - `hsm_partition_password` (`string`): Set the `hsm_partition_password` field on the resulting object.
+  - `hsm_server_public_certificate` (`string`): Set the `hsm_server_public_certificate` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_hsm_configuration` resource into the root Terraform configuration.

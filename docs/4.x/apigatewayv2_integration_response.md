@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): 
-  - `content_handling_strategy` (`string`):  When `null`, the `content_handling_strategy` field will be omitted from the resulting object.
-  - `integration_id` (`string`): 
-  - `integration_response_key` (`string`): 
-  - `response_templates` (`obj`):  When `null`, the `response_templates` field will be omitted from the resulting object.
-  - `template_selection_expression` (`string`):  When `null`, the `template_selection_expression` field will be omitted from the resulting object.
+  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
+  - `content_handling_strategy` (`string`): Set the `content_handling_strategy` field on the resulting resource block. When `null`, the `content_handling_strategy` field will be omitted from the resulting object.
+  - `integration_id` (`string`): Set the `integration_id` field on the resulting resource block.
+  - `integration_response_key` (`string`): Set the `integration_response_key` field on the resulting resource block.
+  - `response_templates` (`obj`): Set the `response_templates` field on the resulting resource block. When `null`, the `response_templates` field will be omitted from the resulting object.
+  - `template_selection_expression` (`string`): Set the `template_selection_expression` field on the resulting resource block. When `null`, the `template_selection_expression` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): 
-  - `content_handling_strategy` (`string`):  When `null`, the `content_handling_strategy` field will be omitted from the resulting object.
-  - `integration_id` (`string`): 
-  - `integration_response_key` (`string`): 
-  - `response_templates` (`obj`):  When `null`, the `response_templates` field will be omitted from the resulting object.
-  - `template_selection_expression` (`string`):  When `null`, the `template_selection_expression` field will be omitted from the resulting object.
+  - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `content_handling_strategy` (`string`): Set the `content_handling_strategy` field on the resulting object. When `null`, the `content_handling_strategy` field will be omitted from the resulting object.
+  - `integration_id` (`string`): Set the `integration_id` field on the resulting object.
+  - `integration_response_key` (`string`): Set the `integration_response_key` field on the resulting object.
+  - `response_templates` (`obj`): Set the `response_templates` field on the resulting object. When `null`, the `response_templates` field will be omitted from the resulting object.
+  - `template_selection_expression` (`string`): Set the `template_selection_expression` field on the resulting object. When `null`, the `template_selection_expression` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_integration_response` resource into the root Terraform configuration.

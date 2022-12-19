@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `change_description` (`string`):  When `null`, the `change_description` field will be omitted from the resulting object.
-  - `data` (`string`):  When `null`, the `data` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform` (`string`): 
-  - `supported_os_versions` (`list`):  When `null`, the `supported_os_versions` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `uri` (`string`):  When `null`, the `uri` field will be omitted from the resulting object.
-  - `version` (`string`): 
+  - `change_description` (`string`): Set the `change_description` field on the resulting resource block. When `null`, the `change_description` field will be omitted from the resulting object.
+  - `data` (`string`): Set the `data` field on the resulting resource block. When `null`, the `data` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `platform` (`string`): Set the `platform` field on the resulting resource block.
+  - `supported_os_versions` (`list`): Set the `supported_os_versions` field on the resulting resource block. When `null`, the `supported_os_versions` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `uri` (`string`): Set the `uri` field on the resulting resource block. When `null`, the `uri` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `change_description` (`string`):  When `null`, the `change_description` field will be omitted from the resulting object.
-  - `data` (`string`):  When `null`, the `data` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform` (`string`): 
-  - `supported_os_versions` (`list`):  When `null`, the `supported_os_versions` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `uri` (`string`):  When `null`, the `uri` field will be omitted from the resulting object.
-  - `version` (`string`): 
+  - `change_description` (`string`): Set the `change_description` field on the resulting object. When `null`, the `change_description` field will be omitted from the resulting object.
+  - `data` (`string`): Set the `data` field on the resulting object. When `null`, the `data` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `platform` (`string`): Set the `platform` field on the resulting object.
+  - `supported_os_versions` (`list`): Set the `supported_os_versions` field on the resulting object. When `null`, the `supported_os_versions` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `uri` (`string`): Set the `uri` field on the resulting object. When `null`, the `uri` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_component` resource into the root Terraform configuration.

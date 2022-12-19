@@ -62,15 +62,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `multi_region_enabled` (`bool`):  When `null`, the `multi_region_enabled` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `organization_enabled` (`bool`):  When `null`, the `organization_enabled` field will be omitted from the resulting object.
-  - `retention_period` (`number`):  When `null`, the `retention_period` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `termination_protection_enabled` (`bool`):  When `null`, the `termination_protection_enabled` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-timeoutsnew) constructor.
+  - `multi_region_enabled` (`bool`): Set the `multi_region_enabled` field on the resulting resource block. When `null`, the `multi_region_enabled` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `organization_enabled` (`bool`): Set the `organization_enabled` field on the resulting resource block. When `null`, the `organization_enabled` field will be omitted from the resulting object.
+  - `retention_period` (`number`): Set the `retention_period` field on the resulting resource block. When `null`, the `retention_period` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `termination_protection_enabled` (`bool`): Set the `termination_protection_enabled` field on the resulting resource block. When `null`, the `termination_protection_enabled` field will be omitted from the resulting object.
+  - `advanced_event_selector` (`list[obj]`): Set the `advanced_event_selector` field on the resulting resource block. When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,15 +94,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `multi_region_enabled` (`bool`):  When `null`, the `multi_region_enabled` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `organization_enabled` (`bool`):  When `null`, the `organization_enabled` field will be omitted from the resulting object.
-  - `retention_period` (`number`):  When `null`, the `retention_period` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `termination_protection_enabled` (`bool`):  When `null`, the `termination_protection_enabled` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-timeoutsnew) constructor.
+  - `multi_region_enabled` (`bool`): Set the `multi_region_enabled` field on the resulting object. When `null`, the `multi_region_enabled` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `organization_enabled` (`bool`): Set the `organization_enabled` field on the resulting object. When `null`, the `organization_enabled` field will be omitted from the resulting object.
+  - `retention_period` (`number`): Set the `retention_period` field on the resulting object. When `null`, the `retention_period` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `termination_protection_enabled` (`bool`): Set the `termination_protection_enabled` field on the resulting object. When `null`, the `termination_protection_enabled` field will be omitted from the resulting object.
+  - `advanced_event_selector` (`list[obj]`): Set the `advanced_event_selector` field on the resulting object. When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudtrail_event_data_store` resource into the root Terraform configuration.
@@ -310,8 +310,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.field_selector.new](#fn-advanced_event_selectorfield_selectornew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `field_selector` (`list[obj]`): Set the `field_selector` field on the resulting object. When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.field_selector.new](#fn-advanced_event_selectorfield_selectornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_event_selector` sub block.
@@ -334,13 +334,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `ends_with` (`list`):  When `null`, the `ends_with` field will be omitted from the resulting object.
-  - `equals` (`list`):  When `null`, the `equals` field will be omitted from the resulting object.
-  - `field` (`string`):  When `null`, the `field` field will be omitted from the resulting object.
-  - `not_ends_with` (`list`):  When `null`, the `not_ends_with` field will be omitted from the resulting object.
-  - `not_equals` (`list`):  When `null`, the `not_equals` field will be omitted from the resulting object.
-  - `not_starts_with` (`list`):  When `null`, the `not_starts_with` field will be omitted from the resulting object.
-  - `starts_with` (`list`):  When `null`, the `starts_with` field will be omitted from the resulting object.
+  - `ends_with` (`list`): Set the `ends_with` field on the resulting object. When `null`, the `ends_with` field will be omitted from the resulting object.
+  - `equals` (`list`): Set the `equals` field on the resulting object. When `null`, the `equals` field will be omitted from the resulting object.
+  - `field` (`string`): Set the `field` field on the resulting object. When `null`, the `field` field will be omitted from the resulting object.
+  - `not_ends_with` (`list`): Set the `not_ends_with` field on the resulting object. When `null`, the `not_ends_with` field will be omitted from the resulting object.
+  - `not_equals` (`list`): Set the `not_equals` field on the resulting object. When `null`, the `not_equals` field will be omitted from the resulting object.
+  - `not_starts_with` (`list`): Set the `not_starts_with` field on the resulting object. When `null`, the `not_starts_with` field will be omitted from the resulting object.
+  - `starts_with` (`list`): Set the `starts_with` field on the resulting object. When `null`, the `starts_with` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `field_selector` sub block.
@@ -363,9 +363,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

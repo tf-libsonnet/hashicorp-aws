@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action` (`string`): 
-  - `principal` (`string`): 
-  - `profile_name` (`string`): 
-  - `profile_version` (`string`):  When `null`, the `profile_version` field will be omitted from the resulting object.
-  - `statement_id` (`string`):  When `null`, the `statement_id` field will be omitted from the resulting object.
-  - `statement_id_prefix` (`string`):  When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
+  - `action` (`string`): Set the `action` field on the resulting resource block.
+  - `principal` (`string`): Set the `principal` field on the resulting resource block.
+  - `profile_name` (`string`): Set the `profile_name` field on the resulting resource block.
+  - `profile_version` (`string`): Set the `profile_version` field on the resulting resource block. When `null`, the `profile_version` field will be omitted from the resulting object.
+  - `statement_id` (`string`): Set the `statement_id` field on the resulting resource block. When `null`, the `statement_id` field will be omitted from the resulting object.
+  - `statement_id_prefix` (`string`): Set the `statement_id_prefix` field on the resulting resource block. When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action` (`string`): 
-  - `principal` (`string`): 
-  - `profile_name` (`string`): 
-  - `profile_version` (`string`):  When `null`, the `profile_version` field will be omitted from the resulting object.
-  - `statement_id` (`string`):  When `null`, the `statement_id` field will be omitted from the resulting object.
-  - `statement_id_prefix` (`string`):  When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
+  - `action` (`string`): Set the `action` field on the resulting object.
+  - `principal` (`string`): Set the `principal` field on the resulting object.
+  - `profile_name` (`string`): Set the `profile_name` field on the resulting object.
+  - `profile_version` (`string`): Set the `profile_version` field on the resulting object. When `null`, the `profile_version` field will be omitted from the resulting object.
+  - `statement_id` (`string`): Set the `statement_id` field on the resulting object. When `null`, the `statement_id` field will be omitted from the resulting object.
+  - `statement_id_prefix` (`string`): Set the `statement_id_prefix` field on the resulting object. When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `signer_signing_profile_permission` resource into the root Terraform configuration.

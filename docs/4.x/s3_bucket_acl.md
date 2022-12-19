@@ -58,10 +58,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `acl` (`string`):  When `null`, the `acl` field will be omitted from the resulting object.
-  - `bucket` (`string`): 
-  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `access_control_policy` (`list[obj]`):  When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-access_control_policynew) constructor.
+  - `acl` (`string`): Set the `acl` field on the resulting resource block. When `null`, the `acl` field will be omitted from the resulting object.
+  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
+  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `access_control_policy` (`list[obj]`): Set the `access_control_policy` field on the resulting resource block. When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-access_control_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,10 +85,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `acl` (`string`):  When `null`, the `acl` field will be omitted from the resulting object.
-  - `bucket` (`string`): 
-  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `access_control_policy` (`list[obj]`):  When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-access_control_policynew) constructor.
+  - `acl` (`string`): Set the `acl` field on the resulting object. When `null`, the `acl` field will be omitted from the resulting object.
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `access_control_policy` (`list[obj]`): Set the `access_control_policy` field on the resulting object. When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-access_control_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_acl` resource into the root Terraform configuration.
@@ -196,8 +196,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-access_control_policygrantnew) constructor.
-  - `owner` (`list[obj]`):  When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-access_control_policyownernew) constructor.
+  - `grant` (`list[obj]`): Set the `grant` field on the resulting object. When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-access_control_policygrantnew) constructor.
+  - `owner` (`list[obj]`): Set the `owner` field on the resulting object. When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-access_control_policyownernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `access_control_policy` sub block.
@@ -220,8 +220,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `permission` (`string`): 
-  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-access_control_policyaccess_control_policygranteenew) constructor.
+  - `permission` (`string`): Set the `permission` field on the resulting object.
+  - `grantee` (`list[obj]`): Set the `grantee` field on the resulting object. When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-access_control_policyaccess_control_policygranteenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `grant` sub block.
@@ -244,9 +244,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `email_address` (`string`):  When `null`, the `email_address` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `uri` (`string`):  When `null`, the `uri` field will be omitted from the resulting object.
+  - `email_address` (`string`): Set the `email_address` field on the resulting object. When `null`, the `email_address` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `uri` (`string`): Set the `uri` field on the resulting object. When `null`, the `uri` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `grantee` sub block.
@@ -269,7 +269,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
+  - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `owner` sub block.

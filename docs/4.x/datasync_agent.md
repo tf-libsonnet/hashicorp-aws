@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `activation_key` (`string`):  When `null`, the `activation_key` field will be omitted from the resulting object.
-  - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `private_link_endpoint` (`string`):  When `null`, the `private_link_endpoint` field will be omitted from the resulting object.
-  - `security_group_arns` (`list`):  When `null`, the `security_group_arns` field will be omitted from the resulting object.
-  - `subnet_arns` (`list`):  When `null`, the `subnet_arns` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_endpoint_id` (`string`):  When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_agent.timeouts.new](#fn-timeoutsnew) constructor.
+  - `activation_key` (`string`): Set the `activation_key` field on the resulting resource block. When `null`, the `activation_key` field will be omitted from the resulting object.
+  - `ip_address` (`string`): Set the `ip_address` field on the resulting resource block. When `null`, the `ip_address` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `private_link_endpoint` (`string`): Set the `private_link_endpoint` field on the resulting resource block. When `null`, the `private_link_endpoint` field will be omitted from the resulting object.
+  - `security_group_arns` (`list`): Set the `security_group_arns` field on the resulting resource block. When `null`, the `security_group_arns` field will be omitted from the resulting object.
+  - `subnet_arns` (`list`): Set the `subnet_arns` field on the resulting resource block. When `null`, the `subnet_arns` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_endpoint_id` (`string`): Set the `vpc_endpoint_id` field on the resulting resource block. When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_agent.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `activation_key` (`string`):  When `null`, the `activation_key` field will be omitted from the resulting object.
-  - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `private_link_endpoint` (`string`):  When `null`, the `private_link_endpoint` field will be omitted from the resulting object.
-  - `security_group_arns` (`list`):  When `null`, the `security_group_arns` field will be omitted from the resulting object.
-  - `subnet_arns` (`list`):  When `null`, the `subnet_arns` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_endpoint_id` (`string`):  When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_agent.timeouts.new](#fn-timeoutsnew) constructor.
+  - `activation_key` (`string`): Set the `activation_key` field on the resulting object. When `null`, the `activation_key` field will be omitted from the resulting object.
+  - `ip_address` (`string`): Set the `ip_address` field on the resulting object. When `null`, the `ip_address` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `private_link_endpoint` (`string`): Set the `private_link_endpoint` field on the resulting object. When `null`, the `private_link_endpoint` field will be omitted from the resulting object.
+  - `security_group_arns` (`list`): Set the `security_group_arns` field on the resulting object. When `null`, the `security_group_arns` field will be omitted from the resulting object.
+  - `subnet_arns` (`list`): Set the `subnet_arns` field on the resulting object. When `null`, the `subnet_arns` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_endpoint_id` (`string`): Set the `vpc_endpoint_id` field on the resulting object. When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_agent.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_agent` resource into the root Terraform configuration.
@@ -303,7 +303,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

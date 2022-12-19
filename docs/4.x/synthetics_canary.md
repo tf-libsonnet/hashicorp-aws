@@ -78,25 +78,25 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `artifact_s3_location` (`string`): 
-  - `delete_lambda` (`bool`):  When `null`, the `delete_lambda` field will be omitted from the resulting object.
-  - `execution_role_arn` (`string`): 
-  - `failure_retention_period` (`number`):  When `null`, the `failure_retention_period` field will be omitted from the resulting object.
-  - `handler` (`string`): 
-  - `name` (`string`): 
-  - `runtime_version` (`string`): 
-  - `s3_bucket` (`string`):  When `null`, the `s3_bucket` field will be omitted from the resulting object.
-  - `s3_key` (`string`):  When `null`, the `s3_key` field will be omitted from the resulting object.
-  - `s3_version` (`string`):  When `null`, the `s3_version` field will be omitted from the resulting object.
-  - `start_canary` (`bool`):  When `null`, the `start_canary` field will be omitted from the resulting object.
-  - `success_retention_period` (`number`):  When `null`, the `success_retention_period` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `zip_file` (`string`):  When `null`, the `zip_file` field will be omitted from the resulting object.
-  - `artifact_config` (`list[obj]`):  When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-artifact_confignew) constructor.
-  - `run_config` (`list[obj]`):  When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-run_confignew) constructor.
-  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-schedulenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `artifact_s3_location` (`string`): Set the `artifact_s3_location` field on the resulting resource block.
+  - `delete_lambda` (`bool`): Set the `delete_lambda` field on the resulting resource block. When `null`, the `delete_lambda` field will be omitted from the resulting object.
+  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting resource block.
+  - `failure_retention_period` (`number`): Set the `failure_retention_period` field on the resulting resource block. When `null`, the `failure_retention_period` field will be omitted from the resulting object.
+  - `handler` (`string`): Set the `handler` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `runtime_version` (`string`): Set the `runtime_version` field on the resulting resource block.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting resource block. When `null`, the `s3_bucket` field will be omitted from the resulting object.
+  - `s3_key` (`string`): Set the `s3_key` field on the resulting resource block. When `null`, the `s3_key` field will be omitted from the resulting object.
+  - `s3_version` (`string`): Set the `s3_version` field on the resulting resource block. When `null`, the `s3_version` field will be omitted from the resulting object.
+  - `start_canary` (`bool`): Set the `start_canary` field on the resulting resource block. When `null`, the `start_canary` field will be omitted from the resulting object.
+  - `success_retention_period` (`number`): Set the `success_retention_period` field on the resulting resource block. When `null`, the `success_retention_period` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `zip_file` (`string`): Set the `zip_file` field on the resulting resource block. When `null`, the `zip_file` field will be omitted from the resulting object.
+  - `artifact_config` (`list[obj]`): Set the `artifact_config` field on the resulting resource block. When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-artifact_confignew) constructor.
+  - `run_config` (`list[obj]`): Set the `run_config` field on the resulting resource block. When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-run_confignew) constructor.
+  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting resource block. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-schedulenew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting resource block. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -120,25 +120,25 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `artifact_s3_location` (`string`): 
-  - `delete_lambda` (`bool`):  When `null`, the `delete_lambda` field will be omitted from the resulting object.
-  - `execution_role_arn` (`string`): 
-  - `failure_retention_period` (`number`):  When `null`, the `failure_retention_period` field will be omitted from the resulting object.
-  - `handler` (`string`): 
-  - `name` (`string`): 
-  - `runtime_version` (`string`): 
-  - `s3_bucket` (`string`):  When `null`, the `s3_bucket` field will be omitted from the resulting object.
-  - `s3_key` (`string`):  When `null`, the `s3_key` field will be omitted from the resulting object.
-  - `s3_version` (`string`):  When `null`, the `s3_version` field will be omitted from the resulting object.
-  - `start_canary` (`bool`):  When `null`, the `start_canary` field will be omitted from the resulting object.
-  - `success_retention_period` (`number`):  When `null`, the `success_retention_period` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `zip_file` (`string`):  When `null`, the `zip_file` field will be omitted from the resulting object.
-  - `artifact_config` (`list[obj]`):  When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-artifact_confignew) constructor.
-  - `run_config` (`list[obj]`):  When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-run_confignew) constructor.
-  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-schedulenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `artifact_s3_location` (`string`): Set the `artifact_s3_location` field on the resulting object.
+  - `delete_lambda` (`bool`): Set the `delete_lambda` field on the resulting object. When `null`, the `delete_lambda` field will be omitted from the resulting object.
+  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting object.
+  - `failure_retention_period` (`number`): Set the `failure_retention_period` field on the resulting object. When `null`, the `failure_retention_period` field will be omitted from the resulting object.
+  - `handler` (`string`): Set the `handler` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `runtime_version` (`string`): Set the `runtime_version` field on the resulting object.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting object. When `null`, the `s3_bucket` field will be omitted from the resulting object.
+  - `s3_key` (`string`): Set the `s3_key` field on the resulting object. When `null`, the `s3_key` field will be omitted from the resulting object.
+  - `s3_version` (`string`): Set the `s3_version` field on the resulting object. When `null`, the `s3_version` field will be omitted from the resulting object.
+  - `start_canary` (`bool`): Set the `start_canary` field on the resulting object. When `null`, the `start_canary` field will be omitted from the resulting object.
+  - `success_retention_period` (`number`): Set the `success_retention_period` field on the resulting object. When `null`, the `success_retention_period` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `zip_file` (`string`): Set the `zip_file` field on the resulting object. When `null`, the `zip_file` field will be omitted from the resulting object.
+  - `artifact_config` (`list[obj]`): Set the `artifact_config` field on the resulting object. When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-artifact_confignew) constructor.
+  - `run_config` (`list[obj]`): Set the `run_config` field on the resulting object. When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-run_confignew) constructor.
+  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting object. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-schedulenew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `synthetics_canary` resource into the root Terraform configuration.
@@ -549,7 +549,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-artifact_configs3_encryptionnew) constructor.
+  - `s3_encryption` (`list[obj]`): Set the `s3_encryption` field on the resulting object. When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-artifact_configs3_encryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `artifact_config` sub block.
@@ -572,8 +572,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `encryption_mode` (`string`):  When `null`, the `encryption_mode` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `encryption_mode` (`string`): Set the `encryption_mode` field on the resulting object. When `null`, the `encryption_mode` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_encryption` sub block.
@@ -596,10 +596,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `active_tracing` (`bool`):  When `null`, the `active_tracing` field will be omitted from the resulting object.
-  - `environment_variables` (`obj`):  When `null`, the `environment_variables` field will be omitted from the resulting object.
-  - `memory_in_mb` (`number`):  When `null`, the `memory_in_mb` field will be omitted from the resulting object.
-  - `timeout_in_seconds` (`number`):  When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
+  - `active_tracing` (`bool`): Set the `active_tracing` field on the resulting object. When `null`, the `active_tracing` field will be omitted from the resulting object.
+  - `environment_variables` (`obj`): Set the `environment_variables` field on the resulting object. When `null`, the `environment_variables` field will be omitted from the resulting object.
+  - `memory_in_mb` (`number`): Set the `memory_in_mb` field on the resulting object. When `null`, the `memory_in_mb` field will be omitted from the resulting object.
+  - `timeout_in_seconds` (`number`): Set the `timeout_in_seconds` field on the resulting object. When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `run_config` sub block.
@@ -622,8 +622,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `duration_in_seconds` (`number`):  When `null`, the `duration_in_seconds` field will be omitted from the resulting object.
-  - `expression` (`string`): 
+  - `duration_in_seconds` (`number`): Set the `duration_in_seconds` field on the resulting object. When `null`, the `duration_in_seconds` field will be omitted from the resulting object.
+  - `expression` (`string`): Set the `expression` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `schedule` sub block.
@@ -646,8 +646,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc_config` sub block.

@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bandwidth` (`string`): 
-  - `connection_id` (`string`): 
-  - `name` (`string`): 
-  - `owner_account_id` (`string`): 
-  - `vlan` (`number`): 
+  - `bandwidth` (`string`): Set the `bandwidth` field on the resulting resource block.
+  - `connection_id` (`string`): Set the `connection_id` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `owner_account_id` (`string`): Set the `owner_account_id` field on the resulting resource block.
+  - `vlan` (`number`): Set the `vlan` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bandwidth` (`string`): 
-  - `connection_id` (`string`): 
-  - `name` (`string`): 
-  - `owner_account_id` (`string`): 
-  - `vlan` (`number`): 
+  - `bandwidth` (`string`): Set the `bandwidth` field on the resulting object.
+  - `connection_id` (`string`): Set the `connection_id` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `owner_account_id` (`string`): Set the `owner_account_id` field on the resulting object.
+  - `vlan` (`number`): Set the `vlan` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `dx_hosted_connection` resource into the root Terraform configuration.

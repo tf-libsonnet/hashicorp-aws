@@ -83,14 +83,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `async_inference_config` (`list[obj]`):  When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
-  - `data_capture_config` (`list[obj]`):  When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-data_capture_confignew) constructor.
-  - `production_variants` (`list[obj]`):  When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-production_variantsnew) constructor.
-  - `shadow_production_variants` (`list[obj]`):  When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-shadow_production_variantsnew) constructor.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `async_inference_config` (`list[obj]`): Set the `async_inference_config` field on the resulting resource block. When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
+  - `data_capture_config` (`list[obj]`): Set the `data_capture_config` field on the resulting resource block. When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-data_capture_confignew) constructor.
+  - `production_variants` (`list[obj]`): Set the `production_variants` field on the resulting resource block. When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-production_variantsnew) constructor.
+  - `shadow_production_variants` (`list[obj]`): Set the `shadow_production_variants` field on the resulting resource block. When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-shadow_production_variantsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -114,14 +114,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `async_inference_config` (`list[obj]`):  When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
-  - `data_capture_config` (`list[obj]`):  When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-data_capture_confignew) constructor.
-  - `production_variants` (`list[obj]`):  When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-production_variantsnew) constructor.
-  - `shadow_production_variants` (`list[obj]`):  When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-shadow_production_variantsnew) constructor.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `async_inference_config` (`list[obj]`): Set the `async_inference_config` field on the resulting object. When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
+  - `data_capture_config` (`list[obj]`): Set the `data_capture_config` field on the resulting object. When `null`, the `data_capture_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.new](#fn-data_capture_confignew) constructor.
+  - `production_variants` (`list[obj]`): Set the `production_variants` field on the resulting object. When `null`, the `production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.new](#fn-production_variantsnew) constructor.
+  - `shadow_production_variants` (`list[obj]`): Set the `shadow_production_variants` field on the resulting object. When `null`, the `shadow_production_variants` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.new](#fn-shadow_production_variantsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_endpoint_configuration` resource into the root Terraform configuration.
@@ -356,8 +356,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_config` (`list[obj]`):  When `null`, the `client_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.client_config.new](#fn-async_inference_configclient_confignew) constructor.
-  - `output_config` (`list[obj]`):  When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.new](#fn-async_inference_configoutput_confignew) constructor.
+  - `client_config` (`list[obj]`): Set the `client_config` field on the resulting object. When `null`, the `client_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.client_config.new](#fn-async_inference_configclient_confignew) constructor.
+  - `output_config` (`list[obj]`): Set the `output_config` field on the resulting object. When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.new](#fn-async_inference_configoutput_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `async_inference_config` sub block.
@@ -380,7 +380,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_concurrent_invocations_per_instance` (`number`):  When `null`, the `max_concurrent_invocations_per_instance` field will be omitted from the resulting object.
+  - `max_concurrent_invocations_per_instance` (`number`): Set the `max_concurrent_invocations_per_instance` field on the resulting object. When `null`, the `max_concurrent_invocations_per_instance` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `client_config` sub block.
@@ -403,9 +403,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `s3_output_path` (`string`): 
-  - `notification_config` (`list[obj]`):  When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new](#fn-async_inference_configasync_inference_confignotification_confignew) constructor.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `s3_output_path` (`string`): Set the `s3_output_path` field on the resulting object.
+  - `notification_config` (`list[obj]`): Set the `notification_config` field on the resulting object. When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new](#fn-async_inference_configasync_inference_confignotification_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `output_config` sub block.
@@ -428,8 +428,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `error_topic` (`string`):  When `null`, the `error_topic` field will be omitted from the resulting object.
-  - `success_topic` (`string`):  When `null`, the `success_topic` field will be omitted from the resulting object.
+  - `error_topic` (`string`): Set the `error_topic` field on the resulting object. When `null`, the `error_topic` field will be omitted from the resulting object.
+  - `success_topic` (`string`): Set the `success_topic` field on the resulting object. When `null`, the `success_topic` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `notification_config` sub block.
@@ -452,12 +452,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination_s3_uri` (`string`): 
-  - `enable_capture` (`bool`):  When `null`, the `enable_capture` field will be omitted from the resulting object.
-  - `initial_sampling_percentage` (`number`): 
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `capture_content_type_header` (`list[obj]`):  When `null`, the `capture_content_type_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_content_type_header.new](#fn-data_capture_configcapture_content_type_headernew) constructor.
-  - `capture_options` (`list[obj]`):  When `null`, the `capture_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_options.new](#fn-data_capture_configcapture_optionsnew) constructor.
+  - `destination_s3_uri` (`string`): Set the `destination_s3_uri` field on the resulting object.
+  - `enable_capture` (`bool`): Set the `enable_capture` field on the resulting object. When `null`, the `enable_capture` field will be omitted from the resulting object.
+  - `initial_sampling_percentage` (`number`): Set the `initial_sampling_percentage` field on the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `capture_content_type_header` (`list[obj]`): Set the `capture_content_type_header` field on the resulting object. When `null`, the `capture_content_type_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_content_type_header.new](#fn-data_capture_configcapture_content_type_headernew) constructor.
+  - `capture_options` (`list[obj]`): Set the `capture_options` field on the resulting object. When `null`, the `capture_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.data_capture_config.capture_options.new](#fn-data_capture_configcapture_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_capture_config` sub block.
@@ -480,8 +480,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `csv_content_types` (`list`):  When `null`, the `csv_content_types` field will be omitted from the resulting object.
-  - `json_content_types` (`list`):  When `null`, the `json_content_types` field will be omitted from the resulting object.
+  - `csv_content_types` (`list`): Set the `csv_content_types` field on the resulting object. When `null`, the `csv_content_types` field will be omitted from the resulting object.
+  - `json_content_types` (`list`): Set the `json_content_types` field on the resulting object. When `null`, the `json_content_types` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `capture_content_type_header` sub block.
@@ -504,7 +504,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `capture_mode` (`string`): 
+  - `capture_mode` (`string`): Set the `capture_mode` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `capture_options` sub block.
@@ -527,17 +527,17 @@ Terraform sub block.
 
 
 **Args**:
-  - `accelerator_type` (`string`):  When `null`, the `accelerator_type` field will be omitted from the resulting object.
-  - `container_startup_health_check_timeout_in_seconds` (`number`):  When `null`, the `container_startup_health_check_timeout_in_seconds` field will be omitted from the resulting object.
-  - `initial_instance_count` (`number`):  When `null`, the `initial_instance_count` field will be omitted from the resulting object.
-  - `initial_variant_weight` (`number`):  When `null`, the `initial_variant_weight` field will be omitted from the resulting object.
-  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `model_data_download_timeout_in_seconds` (`number`):  When `null`, the `model_data_download_timeout_in_seconds` field will be omitted from the resulting object.
-  - `model_name` (`string`): 
-  - `variant_name` (`string`):  When `null`, the `variant_name` field will be omitted from the resulting object.
-  - `volume_size_in_gb` (`number`):  When `null`, the `volume_size_in_gb` field will be omitted from the resulting object.
-  - `core_dump_config` (`list[obj]`):  When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.core_dump_config.new](#fn-production_variantscore_dump_confignew) constructor.
-  - `serverless_config` (`list[obj]`):  When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.serverless_config.new](#fn-production_variantsserverless_confignew) constructor.
+  - `accelerator_type` (`string`): Set the `accelerator_type` field on the resulting object. When `null`, the `accelerator_type` field will be omitted from the resulting object.
+  - `container_startup_health_check_timeout_in_seconds` (`number`): Set the `container_startup_health_check_timeout_in_seconds` field on the resulting object. When `null`, the `container_startup_health_check_timeout_in_seconds` field will be omitted from the resulting object.
+  - `initial_instance_count` (`number`): Set the `initial_instance_count` field on the resulting object. When `null`, the `initial_instance_count` field will be omitted from the resulting object.
+  - `initial_variant_weight` (`number`): Set the `initial_variant_weight` field on the resulting object. When `null`, the `initial_variant_weight` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `model_data_download_timeout_in_seconds` (`number`): Set the `model_data_download_timeout_in_seconds` field on the resulting object. When `null`, the `model_data_download_timeout_in_seconds` field will be omitted from the resulting object.
+  - `model_name` (`string`): Set the `model_name` field on the resulting object.
+  - `variant_name` (`string`): Set the `variant_name` field on the resulting object. When `null`, the `variant_name` field will be omitted from the resulting object.
+  - `volume_size_in_gb` (`number`): Set the `volume_size_in_gb` field on the resulting object. When `null`, the `volume_size_in_gb` field will be omitted from the resulting object.
+  - `core_dump_config` (`list[obj]`): Set the `core_dump_config` field on the resulting object. When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.core_dump_config.new](#fn-production_variantscore_dump_confignew) constructor.
+  - `serverless_config` (`list[obj]`): Set the `serverless_config` field on the resulting object. When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.production_variants.serverless_config.new](#fn-production_variantsserverless_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `production_variants` sub block.
@@ -560,8 +560,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination_s3_uri` (`string`): 
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `destination_s3_uri` (`string`): Set the `destination_s3_uri` field on the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `core_dump_config` sub block.
@@ -584,8 +584,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_concurrency` (`number`): 
-  - `memory_size_in_mb` (`number`): 
+  - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.
+  - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `serverless_config` sub block.
@@ -608,17 +608,17 @@ Terraform sub block.
 
 
 **Args**:
-  - `accelerator_type` (`string`):  When `null`, the `accelerator_type` field will be omitted from the resulting object.
-  - `container_startup_health_check_timeout_in_seconds` (`number`):  When `null`, the `container_startup_health_check_timeout_in_seconds` field will be omitted from the resulting object.
-  - `initial_instance_count` (`number`):  When `null`, the `initial_instance_count` field will be omitted from the resulting object.
-  - `initial_variant_weight` (`number`):  When `null`, the `initial_variant_weight` field will be omitted from the resulting object.
-  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `model_data_download_timeout_in_seconds` (`number`):  When `null`, the `model_data_download_timeout_in_seconds` field will be omitted from the resulting object.
-  - `model_name` (`string`): 
-  - `variant_name` (`string`):  When `null`, the `variant_name` field will be omitted from the resulting object.
-  - `volume_size_in_gb` (`number`):  When `null`, the `volume_size_in_gb` field will be omitted from the resulting object.
-  - `core_dump_config` (`list[obj]`):  When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.core_dump_config.new](#fn-shadow_production_variantscore_dump_confignew) constructor.
-  - `serverless_config` (`list[obj]`):  When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.serverless_config.new](#fn-shadow_production_variantsserverless_confignew) constructor.
+  - `accelerator_type` (`string`): Set the `accelerator_type` field on the resulting object. When `null`, the `accelerator_type` field will be omitted from the resulting object.
+  - `container_startup_health_check_timeout_in_seconds` (`number`): Set the `container_startup_health_check_timeout_in_seconds` field on the resulting object. When `null`, the `container_startup_health_check_timeout_in_seconds` field will be omitted from the resulting object.
+  - `initial_instance_count` (`number`): Set the `initial_instance_count` field on the resulting object. When `null`, the `initial_instance_count` field will be omitted from the resulting object.
+  - `initial_variant_weight` (`number`): Set the `initial_variant_weight` field on the resulting object. When `null`, the `initial_variant_weight` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `model_data_download_timeout_in_seconds` (`number`): Set the `model_data_download_timeout_in_seconds` field on the resulting object. When `null`, the `model_data_download_timeout_in_seconds` field will be omitted from the resulting object.
+  - `model_name` (`string`): Set the `model_name` field on the resulting object.
+  - `variant_name` (`string`): Set the `variant_name` field on the resulting object. When `null`, the `variant_name` field will be omitted from the resulting object.
+  - `volume_size_in_gb` (`number`): Set the `volume_size_in_gb` field on the resulting object. When `null`, the `volume_size_in_gb` field will be omitted from the resulting object.
+  - `core_dump_config` (`list[obj]`): Set the `core_dump_config` field on the resulting object. When `null`, the `core_dump_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.core_dump_config.new](#fn-shadow_production_variantscore_dump_confignew) constructor.
+  - `serverless_config` (`list[obj]`): Set the `serverless_config` field on the resulting object. When `null`, the `serverless_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.shadow_production_variants.serverless_config.new](#fn-shadow_production_variantsserverless_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `shadow_production_variants` sub block.
@@ -641,8 +641,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination_s3_uri` (`string`): 
-  - `kms_key_id` (`string`): 
+  - `destination_s3_uri` (`string`): Set the `destination_s3_uri` field on the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `core_dump_config` sub block.
@@ -665,8 +665,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_concurrency` (`number`): 
-  - `memory_size_in_mb` (`number`): 
+  - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.
+  - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `serverless_config` sub block.

@@ -51,9 +51,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_ids` (`list`): 
-  - `resource_types` (`list`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector2_enabler.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_ids` (`list`): Set the `account_ids` field on the resulting resource block.
+  - `resource_types` (`list`): Set the `resource_types` field on the resulting resource block.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector2_enabler.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,9 +77,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_ids` (`list`): 
-  - `resource_types` (`list`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector2_enabler.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_ids` (`list`): Set the `account_ids` field on the resulting object.
+  - `resource_types` (`list`): Set the `resource_types` field on the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector2_enabler.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `inspector2_enabler` resource into the root Terraform configuration.
@@ -170,9 +170,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `disallowed_cidrs` (`list`):  When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
-  - `ipam_pool_id` (`string`): 
-  - `netmask_length` (`number`):  When `null`, the `netmask_length` field will be omitted from the resulting object.
+  - `disallowed_cidrs` (`list`): Set the `disallowed_cidrs` field on the resulting resource block. When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
+  - `ipam_pool_id` (`string`): Set the `ipam_pool_id` field on the resulting resource block.
+  - `netmask_length` (`number`): Set the `netmask_length` field on the resulting resource block. When `null`, the `netmask_length` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `disallowed_cidrs` (`list`):  When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
-  - `ipam_pool_id` (`string`): 
-  - `netmask_length` (`number`):  When `null`, the `netmask_length` field will be omitted from the resulting object.
+  - `disallowed_cidrs` (`list`): Set the `disallowed_cidrs` field on the resulting object. When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
+  - `ipam_pool_id` (`string`): Set the `ipam_pool_id` field on the resulting object.
+  - `netmask_length` (`number`): Set the `netmask_length` field on the resulting object. When `null`, the `netmask_length` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_ipam_preview_next_cidr` resource into the root Terraform configuration.

@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `policy` (`string`): 
+  - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `policy` (`string`): Set the `policy` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `policy` (`string`): 
+  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3control_object_lambda_access_point_policy` resource into the root Terraform configuration.

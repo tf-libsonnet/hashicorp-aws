@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `origin_access_control_origin_type` (`string`): 
-  - `signing_behavior` (`string`): 
-  - `signing_protocol` (`string`): 
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `origin_access_control_origin_type` (`string`): Set the `origin_access_control_origin_type` field on the resulting resource block.
+  - `signing_behavior` (`string`): Set the `signing_behavior` field on the resulting resource block.
+  - `signing_protocol` (`string`): Set the `signing_protocol` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `origin_access_control_origin_type` (`string`): 
-  - `signing_behavior` (`string`): 
-  - `signing_protocol` (`string`): 
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `origin_access_control_origin_type` (`string`): Set the `origin_access_control_origin_type` field on the resulting object.
+  - `signing_behavior` (`string`): Set the `signing_behavior` field on the resulting object.
+  - `signing_protocol` (`string`): Set the `signing_protocol` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_origin_access_control` resource into the root Terraform configuration.

@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `close_on_deletion` (`bool`):  When `null`, the `close_on_deletion` field will be omitted from the resulting object.
-  - `create_govcloud` (`bool`):  When `null`, the `create_govcloud` field will be omitted from the resulting object.
-  - `email` (`string`): 
-  - `iam_user_access_to_billing` (`string`):  When `null`, the `iam_user_access_to_billing` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_id` (`string`):  When `null`, the `parent_id` field will be omitted from the resulting object.
-  - `role_name` (`string`):  When `null`, the `role_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `close_on_deletion` (`bool`): Set the `close_on_deletion` field on the resulting resource block. When `null`, the `close_on_deletion` field will be omitted from the resulting object.
+  - `create_govcloud` (`bool`): Set the `create_govcloud` field on the resulting resource block. When `null`, the `create_govcloud` field will be omitted from the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting resource block.
+  - `iam_user_access_to_billing` (`string`): Set the `iam_user_access_to_billing` field on the resulting resource block. When `null`, the `iam_user_access_to_billing` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `parent_id` (`string`): Set the `parent_id` field on the resulting resource block. When `null`, the `parent_id` field will be omitted from the resulting object.
+  - `role_name` (`string`): Set the `role_name` field on the resulting resource block. When `null`, the `role_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `close_on_deletion` (`bool`):  When `null`, the `close_on_deletion` field will be omitted from the resulting object.
-  - `create_govcloud` (`bool`):  When `null`, the `create_govcloud` field will be omitted from the resulting object.
-  - `email` (`string`): 
-  - `iam_user_access_to_billing` (`string`):  When `null`, the `iam_user_access_to_billing` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_id` (`string`):  When `null`, the `parent_id` field will be omitted from the resulting object.
-  - `role_name` (`string`):  When `null`, the `role_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `close_on_deletion` (`bool`): Set the `close_on_deletion` field on the resulting object. When `null`, the `close_on_deletion` field will be omitted from the resulting object.
+  - `create_govcloud` (`bool`): Set the `create_govcloud` field on the resulting object. When `null`, the `create_govcloud` field will be omitted from the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting object.
+  - `iam_user_access_to_billing` (`string`): Set the `iam_user_access_to_billing` field on the resulting object. When `null`, the `iam_user_access_to_billing` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `parent_id` (`string`): Set the `parent_id` field on the resulting object. When `null`, the `parent_id` field will be omitted from the resulting object.
+  - `role_name` (`string`): Set the `role_name` field on the resulting object. When `null`, the `role_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `organizations_account` resource into the root Terraform configuration.

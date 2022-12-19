@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `content` (`string`): 
-  - `document_format` (`string`):  When `null`, the `document_format` field will be omitted from the resulting object.
-  - `document_type` (`string`): 
-  - `name` (`string`): 
-  - `permissions` (`obj`):  When `null`, the `permissions` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
-  - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
-  - `attachments_source` (`list[obj]`):  When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-attachments_sourcenew) constructor.
+  - `content` (`string`): Set the `content` field on the resulting resource block.
+  - `document_format` (`string`): Set the `document_format` field on the resulting resource block. When `null`, the `document_format` field will be omitted from the resulting object.
+  - `document_type` (`string`): Set the `document_type` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `permissions` (`obj`): Set the `permissions` field on the resulting resource block. When `null`, the `permissions` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_type` (`string`): Set the `target_type` field on the resulting resource block. When `null`, the `target_type` field will be omitted from the resulting object.
+  - `version_name` (`string`): Set the `version_name` field on the resulting resource block. When `null`, the `version_name` field will be omitted from the resulting object.
+  - `attachments_source` (`list[obj]`): Set the `attachments_source` field on the resulting resource block. When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-attachments_sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `content` (`string`): 
-  - `document_format` (`string`):  When `null`, the `document_format` field will be omitted from the resulting object.
-  - `document_type` (`string`): 
-  - `name` (`string`): 
-  - `permissions` (`obj`):  When `null`, the `permissions` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
-  - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
-  - `attachments_source` (`list[obj]`):  When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-attachments_sourcenew) constructor.
+  - `content` (`string`): Set the `content` field on the resulting object.
+  - `document_format` (`string`): Set the `document_format` field on the resulting object. When `null`, the `document_format` field will be omitted from the resulting object.
+  - `document_type` (`string`): Set the `document_type` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `permissions` (`obj`): Set the `permissions` field on the resulting object. When `null`, the `permissions` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_type` (`string`): Set the `target_type` field on the resulting object. When `null`, the `target_type` field will be omitted from the resulting object.
+  - `version_name` (`string`): Set the `version_name` field on the resulting object. When `null`, the `version_name` field will be omitted from the resulting object.
+  - `attachments_source` (`list[obj]`): Set the `attachments_source` field on the resulting object. When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-attachments_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_document` resource into the root Terraform configuration.
@@ -304,9 +304,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `values` (`list`): 
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `attachments_source` sub block.

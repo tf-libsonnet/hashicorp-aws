@@ -63,24 +63,24 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `app_id` (`string`): 
-  - `backend_environment_arn` (`string`):  When `null`, the `backend_environment_arn` field will be omitted from the resulting object.
-  - `basic_auth_credentials` (`string`):  When `null`, the `basic_auth_credentials` field will be omitted from the resulting object.
-  - `branch_name` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
-  - `enable_auto_build` (`bool`):  When `null`, the `enable_auto_build` field will be omitted from the resulting object.
-  - `enable_basic_auth` (`bool`):  When `null`, the `enable_basic_auth` field will be omitted from the resulting object.
-  - `enable_notification` (`bool`):  When `null`, the `enable_notification` field will be omitted from the resulting object.
-  - `enable_performance_mode` (`bool`):  When `null`, the `enable_performance_mode` field will be omitted from the resulting object.
-  - `enable_pull_request_preview` (`bool`):  When `null`, the `enable_pull_request_preview` field will be omitted from the resulting object.
-  - `environment_variables` (`obj`):  When `null`, the `environment_variables` field will be omitted from the resulting object.
-  - `framework` (`string`):  When `null`, the `framework` field will be omitted from the resulting object.
-  - `pull_request_environment_name` (`string`):  When `null`, the `pull_request_environment_name` field will be omitted from the resulting object.
-  - `stage` (`string`):  When `null`, the `stage` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `ttl` (`string`):  When `null`, the `ttl` field will be omitted from the resulting object.
+  - `app_id` (`string`): Set the `app_id` field on the resulting resource block.
+  - `backend_environment_arn` (`string`): Set the `backend_environment_arn` field on the resulting resource block. When `null`, the `backend_environment_arn` field will be omitted from the resulting object.
+  - `basic_auth_credentials` (`string`): Set the `basic_auth_credentials` field on the resulting resource block. When `null`, the `basic_auth_credentials` field will be omitted from the resulting object.
+  - `branch_name` (`string`): Set the `branch_name` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `display_name` (`string`): Set the `display_name` field on the resulting resource block. When `null`, the `display_name` field will be omitted from the resulting object.
+  - `enable_auto_build` (`bool`): Set the `enable_auto_build` field on the resulting resource block. When `null`, the `enable_auto_build` field will be omitted from the resulting object.
+  - `enable_basic_auth` (`bool`): Set the `enable_basic_auth` field on the resulting resource block. When `null`, the `enable_basic_auth` field will be omitted from the resulting object.
+  - `enable_notification` (`bool`): Set the `enable_notification` field on the resulting resource block. When `null`, the `enable_notification` field will be omitted from the resulting object.
+  - `enable_performance_mode` (`bool`): Set the `enable_performance_mode` field on the resulting resource block. When `null`, the `enable_performance_mode` field will be omitted from the resulting object.
+  - `enable_pull_request_preview` (`bool`): Set the `enable_pull_request_preview` field on the resulting resource block. When `null`, the `enable_pull_request_preview` field will be omitted from the resulting object.
+  - `environment_variables` (`obj`): Set the `environment_variables` field on the resulting resource block. When `null`, the `environment_variables` field will be omitted from the resulting object.
+  - `framework` (`string`): Set the `framework` field on the resulting resource block. When `null`, the `framework` field will be omitted from the resulting object.
+  - `pull_request_environment_name` (`string`): Set the `pull_request_environment_name` field on the resulting resource block. When `null`, the `pull_request_environment_name` field will be omitted from the resulting object.
+  - `stage` (`string`): Set the `stage` field on the resulting resource block. When `null`, the `stage` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `ttl` (`string`): Set the `ttl` field on the resulting resource block. When `null`, the `ttl` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -104,24 +104,24 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `app_id` (`string`): 
-  - `backend_environment_arn` (`string`):  When `null`, the `backend_environment_arn` field will be omitted from the resulting object.
-  - `basic_auth_credentials` (`string`):  When `null`, the `basic_auth_credentials` field will be omitted from the resulting object.
-  - `branch_name` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
-  - `enable_auto_build` (`bool`):  When `null`, the `enable_auto_build` field will be omitted from the resulting object.
-  - `enable_basic_auth` (`bool`):  When `null`, the `enable_basic_auth` field will be omitted from the resulting object.
-  - `enable_notification` (`bool`):  When `null`, the `enable_notification` field will be omitted from the resulting object.
-  - `enable_performance_mode` (`bool`):  When `null`, the `enable_performance_mode` field will be omitted from the resulting object.
-  - `enable_pull_request_preview` (`bool`):  When `null`, the `enable_pull_request_preview` field will be omitted from the resulting object.
-  - `environment_variables` (`obj`):  When `null`, the `environment_variables` field will be omitted from the resulting object.
-  - `framework` (`string`):  When `null`, the `framework` field will be omitted from the resulting object.
-  - `pull_request_environment_name` (`string`):  When `null`, the `pull_request_environment_name` field will be omitted from the resulting object.
-  - `stage` (`string`):  When `null`, the `stage` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `ttl` (`string`):  When `null`, the `ttl` field will be omitted from the resulting object.
+  - `app_id` (`string`): Set the `app_id` field on the resulting object.
+  - `backend_environment_arn` (`string`): Set the `backend_environment_arn` field on the resulting object. When `null`, the `backend_environment_arn` field will be omitted from the resulting object.
+  - `basic_auth_credentials` (`string`): Set the `basic_auth_credentials` field on the resulting object. When `null`, the `basic_auth_credentials` field will be omitted from the resulting object.
+  - `branch_name` (`string`): Set the `branch_name` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
+  - `enable_auto_build` (`bool`): Set the `enable_auto_build` field on the resulting object. When `null`, the `enable_auto_build` field will be omitted from the resulting object.
+  - `enable_basic_auth` (`bool`): Set the `enable_basic_auth` field on the resulting object. When `null`, the `enable_basic_auth` field will be omitted from the resulting object.
+  - `enable_notification` (`bool`): Set the `enable_notification` field on the resulting object. When `null`, the `enable_notification` field will be omitted from the resulting object.
+  - `enable_performance_mode` (`bool`): Set the `enable_performance_mode` field on the resulting object. When `null`, the `enable_performance_mode` field will be omitted from the resulting object.
+  - `enable_pull_request_preview` (`bool`): Set the `enable_pull_request_preview` field on the resulting object. When `null`, the `enable_pull_request_preview` field will be omitted from the resulting object.
+  - `environment_variables` (`obj`): Set the `environment_variables` field on the resulting object. When `null`, the `environment_variables` field will be omitted from the resulting object.
+  - `framework` (`string`): Set the `framework` field on the resulting object. When `null`, the `framework` field will be omitted from the resulting object.
+  - `pull_request_environment_name` (`string`): Set the `pull_request_environment_name` field on the resulting object. When `null`, the `pull_request_environment_name` field will be omitted from the resulting object.
+  - `stage` (`string`): Set the `stage` field on the resulting object. When `null`, the `stage` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `ttl` (`string`): Set the `ttl` field on the resulting object. When `null`, the `ttl` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `amplify_branch` resource into the root Terraform configuration.

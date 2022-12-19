@@ -95,14 +95,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `default_value` (`string`):  When `null`, the `default_value` field will be omitted from the resulting object.
-  - `effective_start` (`string`):  When `null`, the `effective_start` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `rule_version` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.new](#fn-rulenew) constructor.
-  - `split_charge_rule` (`list[obj]`):  When `null`, the `split_charge_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.split_charge_rule.new](#fn-split_charge_rulenew) constructor.
+  - `default_value` (`string`): Set the `default_value` field on the resulting resource block. When `null`, the `default_value` field will be omitted from the resulting object.
+  - `effective_start` (`string`): Set the `effective_start` field on the resulting resource block. When `null`, the `effective_start` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `rule_version` (`string`): Set the `rule_version` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`): Set the `rule` field on the resulting resource block. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.new](#fn-rulenew) constructor.
+  - `split_charge_rule` (`list[obj]`): Set the `split_charge_rule` field on the resulting resource block. When `null`, the `split_charge_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.split_charge_rule.new](#fn-split_charge_rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -126,14 +126,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_value` (`string`):  When `null`, the `default_value` field will be omitted from the resulting object.
-  - `effective_start` (`string`):  When `null`, the `effective_start` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `rule_version` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.new](#fn-rulenew) constructor.
-  - `split_charge_rule` (`list[obj]`):  When `null`, the `split_charge_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.split_charge_rule.new](#fn-split_charge_rulenew) constructor.
+  - `default_value` (`string`): Set the `default_value` field on the resulting object. When `null`, the `default_value` field will be omitted from the resulting object.
+  - `effective_start` (`string`): Set the `effective_start` field on the resulting object. When `null`, the `effective_start` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `rule_version` (`string`): Set the `rule_version` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.new](#fn-rulenew) constructor.
+  - `split_charge_rule` (`list[obj]`): Set the `split_charge_rule` field on the resulting object. When `null`, the `split_charge_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.split_charge_rule.new](#fn-split_charge_rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ce_cost_category` resource into the root Terraform configuration.
@@ -326,10 +326,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
-  - `inherited_value` (`list[obj]`):  When `null`, the `inherited_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.inherited_value.new](#fn-ruleinherited_valuenew) constructor.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.new](#fn-rulerulenew) constructor.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `inherited_value` (`list[obj]`): Set the `inherited_value` field on the resulting object. When `null`, the `inherited_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.inherited_value.new](#fn-ruleinherited_valuenew) constructor.
+  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.new](#fn-rulerulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -352,8 +352,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `dimension_key` (`string`):  When `null`, the `dimension_key` field will be omitted from the resulting object.
-  - `dimension_name` (`string`):  When `null`, the `dimension_name` field will be omitted from the resulting object.
+  - `dimension_key` (`string`): Set the `dimension_key` field on the resulting object. When `null`, the `dimension_key` field will be omitted from the resulting object.
+  - `dimension_name` (`string`): Set the `dimension_name` field on the resulting object. When `null`, the `dimension_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `inherited_value` sub block.
@@ -376,12 +376,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.new](#fn-ruleruleandnew) constructor.
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.cost_category.new](#fn-rulerulecost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.dimension.new](#fn-ruleruledimensionnew) constructor.
-  - `not` (`list[obj]`):  When `null`, the `not` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.new](#fn-rulerulenotnew) constructor.
-  - `or` (`list[obj]`):  When `null`, the `or` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.new](#fn-ruleruleornew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.tags.new](#fn-ruleruletagsnew) constructor.
+  - `and` (`list[obj]`): Set the `and` field on the resulting object. When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.new](#fn-ruleruleandnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.cost_category.new](#fn-rulerulecost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.dimension.new](#fn-ruleruledimensionnew) constructor.
+  - `not` (`list[obj]`): Set the `not` field on the resulting object. When `null`, the `not` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.new](#fn-rulerulenotnew) constructor.
+  - `or` (`list[obj]`): Set the `or` field on the resulting object. When `null`, the `or` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.new](#fn-ruleruleornew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.tags.new](#fn-ruleruletagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -404,9 +404,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.cost_category.new](#fn-rulerulerulecost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.dimension.new](#fn-ruleruleruledimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.tags.new](#fn-ruleruleruletagsnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.cost_category.new](#fn-rulerulerulecost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.dimension.new](#fn-ruleruleruledimensionnew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.and.tags.new](#fn-ruleruleruletagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -429,9 +429,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -454,9 +454,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -479,9 +479,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -504,9 +504,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -529,9 +529,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -554,9 +554,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.cost_category.new](#fn-rulerulerulecost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.dimension.new](#fn-ruleruleruledimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.tags.new](#fn-ruleruleruletagsnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.cost_category.new](#fn-rulerulerulecost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.dimension.new](#fn-ruleruleruledimensionnew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.not.tags.new](#fn-ruleruleruletagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `not` sub block.
@@ -579,9 +579,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -604,9 +604,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -629,9 +629,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -654,9 +654,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.cost_category.new](#fn-rulerulerulecost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.dimension.new](#fn-ruleruleruledimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.tags.new](#fn-ruleruleruletagsnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.cost_category.new](#fn-rulerulerulecost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.dimension.new](#fn-ruleruleruledimensionnew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.rule.rule.or.tags.new](#fn-ruleruleruletagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `or` sub block.
@@ -679,9 +679,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -704,9 +704,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -729,9 +729,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -754,9 +754,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -779,10 +779,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `method` (`string`): 
-  - `source` (`string`): 
-  - `targets` (`list`): 
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.split_charge_rule.parameter.new](#fn-split_charge_ruleparameternew) constructor.
+  - `method` (`string`): Set the `method` field on the resulting object.
+  - `source` (`string`): Set the `source` field on the resulting object.
+  - `targets` (`list`): Set the `targets` field on the resulting object.
+  - `parameter` (`list[obj]`): Set the `parameter` field on the resulting object. When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_cost_category.split_charge_rule.parameter.new](#fn-split_charge_ruleparameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `split_charge_rule` sub block.
@@ -805,8 +805,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `parameter` sub block.

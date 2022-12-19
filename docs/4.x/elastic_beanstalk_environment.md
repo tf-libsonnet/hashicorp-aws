@@ -62,20 +62,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application` (`string`): 
-  - `cname_prefix` (`string`):  When `null`, the `cname_prefix` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform_arn` (`string`):  When `null`, the `platform_arn` field will be omitted from the resulting object.
-  - `poll_interval` (`string`):  When `null`, the `poll_interval` field will be omitted from the resulting object.
-  - `solution_stack_name` (`string`):  When `null`, the `solution_stack_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_name` (`string`):  When `null`, the `template_name` field will be omitted from the resulting object.
-  - `tier` (`string`):  When `null`, the `tier` field will be omitted from the resulting object.
-  - `version_label` (`string`):  When `null`, the `version_label` field will be omitted from the resulting object.
-  - `wait_for_ready_timeout` (`string`):  When `null`, the `wait_for_ready_timeout` field will be omitted from the resulting object.
-  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_environment.setting.new](#fn-settingnew) constructor.
+  - `application` (`string`): Set the `application` field on the resulting resource block.
+  - `cname_prefix` (`string`): Set the `cname_prefix` field on the resulting resource block. When `null`, the `cname_prefix` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `platform_arn` (`string`): Set the `platform_arn` field on the resulting resource block. When `null`, the `platform_arn` field will be omitted from the resulting object.
+  - `poll_interval` (`string`): Set the `poll_interval` field on the resulting resource block. When `null`, the `poll_interval` field will be omitted from the resulting object.
+  - `solution_stack_name` (`string`): Set the `solution_stack_name` field on the resulting resource block. When `null`, the `solution_stack_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_name` (`string`): Set the `template_name` field on the resulting resource block. When `null`, the `template_name` field will be omitted from the resulting object.
+  - `tier` (`string`): Set the `tier` field on the resulting resource block. When `null`, the `tier` field will be omitted from the resulting object.
+  - `version_label` (`string`): Set the `version_label` field on the resulting resource block. When `null`, the `version_label` field will be omitted from the resulting object.
+  - `wait_for_ready_timeout` (`string`): Set the `wait_for_ready_timeout` field on the resulting resource block. When `null`, the `wait_for_ready_timeout` field will be omitted from the resulting object.
+  - `setting` (`list[obj]`): Set the `setting` field on the resulting resource block. When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_environment.setting.new](#fn-settingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -99,20 +99,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application` (`string`): 
-  - `cname_prefix` (`string`):  When `null`, the `cname_prefix` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform_arn` (`string`):  When `null`, the `platform_arn` field will be omitted from the resulting object.
-  - `poll_interval` (`string`):  When `null`, the `poll_interval` field will be omitted from the resulting object.
-  - `solution_stack_name` (`string`):  When `null`, the `solution_stack_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_name` (`string`):  When `null`, the `template_name` field will be omitted from the resulting object.
-  - `tier` (`string`):  When `null`, the `tier` field will be omitted from the resulting object.
-  - `version_label` (`string`):  When `null`, the `version_label` field will be omitted from the resulting object.
-  - `wait_for_ready_timeout` (`string`):  When `null`, the `wait_for_ready_timeout` field will be omitted from the resulting object.
-  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_environment.setting.new](#fn-settingnew) constructor.
+  - `application` (`string`): Set the `application` field on the resulting object.
+  - `cname_prefix` (`string`): Set the `cname_prefix` field on the resulting object. When `null`, the `cname_prefix` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `platform_arn` (`string`): Set the `platform_arn` field on the resulting object. When `null`, the `platform_arn` field will be omitted from the resulting object.
+  - `poll_interval` (`string`): Set the `poll_interval` field on the resulting object. When `null`, the `poll_interval` field will be omitted from the resulting object.
+  - `solution_stack_name` (`string`): Set the `solution_stack_name` field on the resulting object. When `null`, the `solution_stack_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_name` (`string`): Set the `template_name` field on the resulting object. When `null`, the `template_name` field will be omitted from the resulting object.
+  - `tier` (`string`): Set the `tier` field on the resulting object. When `null`, the `tier` field will be omitted from the resulting object.
+  - `version_label` (`string`): Set the `version_label` field on the resulting object. When `null`, the `version_label` field will be omitted from the resulting object.
+  - `wait_for_ready_timeout` (`string`): Set the `wait_for_ready_timeout` field on the resulting object. When `null`, the `wait_for_ready_timeout` field will be omitted from the resulting object.
+  - `setting` (`list[obj]`): Set the `setting` field on the resulting object. When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_environment.setting.new](#fn-settingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastic_beanstalk_environment` resource into the root Terraform configuration.
@@ -380,10 +380,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `namespace` (`string`): 
-  - `resource` (`string`):  When `null`, the `resource` field will be omitted from the resulting object.
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `namespace` (`string`): Set the `namespace` field on the resulting object.
+  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `setting` sub block.

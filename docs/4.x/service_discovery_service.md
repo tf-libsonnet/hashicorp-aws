@@ -65,15 +65,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `namespace_id` (`string`):  When `null`, the `namespace_id` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `dns_config` (`list[obj]`):  When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-dns_confignew) constructor.
-  - `health_check_config` (`list[obj]`):  When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-health_check_confignew) constructor.
-  - `health_check_custom_config` (`list[obj]`):  When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-health_check_custom_confignew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting resource block. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `namespace_id` (`string`): Set the `namespace_id` field on the resulting resource block. When `null`, the `namespace_id` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `dns_config` (`list[obj]`): Set the `dns_config` field on the resulting resource block. When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-dns_confignew) constructor.
+  - `health_check_config` (`list[obj]`): Set the `health_check_config` field on the resulting resource block. When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-health_check_confignew) constructor.
+  - `health_check_custom_config` (`list[obj]`): Set the `health_check_custom_config` field on the resulting resource block. When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-health_check_custom_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -97,15 +97,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `namespace_id` (`string`):  When `null`, the `namespace_id` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `dns_config` (`list[obj]`):  When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-dns_confignew) constructor.
-  - `health_check_config` (`list[obj]`):  When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-health_check_confignew) constructor.
-  - `health_check_custom_config` (`list[obj]`):  When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-health_check_custom_confignew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting object. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `namespace_id` (`string`): Set the `namespace_id` field on the resulting object. When `null`, the `namespace_id` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `dns_config` (`list[obj]`): Set the `dns_config` field on the resulting object. When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-dns_confignew) constructor.
+  - `health_check_config` (`list[obj]`): Set the `health_check_config` field on the resulting object. When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-health_check_confignew) constructor.
+  - `health_check_custom_config` (`list[obj]`): Set the `health_check_custom_config` field on the resulting object. When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-health_check_custom_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `service_discovery_service` resource into the root Terraform configuration.
@@ -335,9 +335,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `namespace_id` (`string`): 
-  - `routing_policy` (`string`):  When `null`, the `routing_policy` field will be omitted from the resulting object.
-  - `dns_records` (`list[obj]`):  When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-dns_configdns_recordsnew) constructor.
+  - `namespace_id` (`string`): Set the `namespace_id` field on the resulting object.
+  - `routing_policy` (`string`): Set the `routing_policy` field on the resulting object. When `null`, the `routing_policy` field will be omitted from the resulting object.
+  - `dns_records` (`list[obj]`): Set the `dns_records` field on the resulting object. When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-dns_configdns_recordsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dns_config` sub block.
@@ -360,8 +360,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `ttl` (`number`): 
-  - `type` (`string`): 
+  - `ttl` (`number`): Set the `ttl` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dns_records` sub block.
@@ -384,9 +384,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `failure_threshold` (`number`):  When `null`, the `failure_threshold` field will be omitted from the resulting object.
-  - `resource_path` (`string`):  When `null`, the `resource_path` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `failure_threshold` (`number`): Set the `failure_threshold` field on the resulting object. When `null`, the `failure_threshold` field will be omitted from the resulting object.
+  - `resource_path` (`string`): Set the `resource_path` field on the resulting object. When `null`, the `resource_path` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `health_check_config` sub block.
@@ -409,7 +409,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `failure_threshold` (`number`):  When `null`, the `failure_threshold` field will be omitted from the resulting object.
+  - `failure_threshold` (`number`): Set the `failure_threshold` field on the resulting object. When `null`, the `failure_threshold` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `health_check_custom_config` sub block.

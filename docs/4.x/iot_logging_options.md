@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `default_log_level` (`string`): 
-  - `disable_all_logs` (`bool`):  When `null`, the `disable_all_logs` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
+  - `default_log_level` (`string`): Set the `default_log_level` field on the resulting resource block.
+  - `disable_all_logs` (`bool`): Set the `disable_all_logs` field on the resulting resource block. When `null`, the `disable_all_logs` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_log_level` (`string`): 
-  - `disable_all_logs` (`bool`):  When `null`, the `disable_all_logs` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
+  - `default_log_level` (`string`): Set the `default_log_level` field on the resulting object.
+  - `disable_all_logs` (`bool`): Set the `disable_all_logs` field on the resulting object. When `null`, the `disable_all_logs` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_logging_options` resource into the root Terraform configuration.

@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `gateway_id` (`string`):  When `null`, the `gateway_id` field will be omitted from the resulting object.
-  - `route_table_id` (`string`): 
-  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `gateway_id` (`string`): Set the `gateway_id` field on the resulting resource block. When `null`, the `gateway_id` field will be omitted from the resulting object.
+  - `route_table_id` (`string`): Set the `route_table_id` field on the resulting resource block.
+  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block. When `null`, the `subnet_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `gateway_id` (`string`):  When `null`, the `gateway_id` field will be omitted from the resulting object.
-  - `route_table_id` (`string`): 
-  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `gateway_id` (`string`): Set the `gateway_id` field on the resulting object. When `null`, the `gateway_id` field will be omitted from the resulting object.
+  - `route_table_id` (`string`): Set the `route_table_id` field on the resulting object.
+  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route_table_association` resource into the root Terraform configuration.

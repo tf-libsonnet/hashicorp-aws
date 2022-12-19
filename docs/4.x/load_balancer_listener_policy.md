@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `load_balancer_name` (`string`): 
-  - `load_balancer_port` (`number`): 
-  - `policy_names` (`list`):  When `null`, the `policy_names` field will be omitted from the resulting object.
+  - `load_balancer_name` (`string`): Set the `load_balancer_name` field on the resulting resource block.
+  - `load_balancer_port` (`number`): Set the `load_balancer_port` field on the resulting resource block.
+  - `policy_names` (`list`): Set the `policy_names` field on the resulting resource block. When `null`, the `policy_names` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `load_balancer_name` (`string`): 
-  - `load_balancer_port` (`number`): 
-  - `policy_names` (`list`):  When `null`, the `policy_names` field will be omitted from the resulting object.
+  - `load_balancer_name` (`string`): Set the `load_balancer_name` field on the resulting object.
+  - `load_balancer_port` (`number`): Set the `load_balancer_port` field on the resulting object.
+  - `policy_names` (`list`): Set the `policy_names` field on the resulting object. When `null`, the `policy_names` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `load_balancer_listener_policy` resource into the root Terraform configuration.

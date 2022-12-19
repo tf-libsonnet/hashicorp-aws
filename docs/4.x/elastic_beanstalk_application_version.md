@@ -53,14 +53,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application` (`string`): 
-  - `bucket` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_delete` (`bool`):  When `null`, the `force_delete` field will be omitted from the resulting object.
-  - `key` (`string`): 
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `application` (`string`): Set the `application` field on the resulting resource block.
+  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_delete` (`bool`): Set the `force_delete` field on the resulting resource block. When `null`, the `force_delete` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,14 +84,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application` (`string`): 
-  - `bucket` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_delete` (`bool`):  When `null`, the `force_delete` field will be omitted from the resulting object.
-  - `key` (`string`): 
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `application` (`string`): Set the `application` field on the resulting object.
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_delete` (`bool`): Set the `force_delete` field on the resulting object. When `null`, the `force_delete` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastic_beanstalk_application_version` resource into the root Terraform configuration.

@@ -96,27 +96,27 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `classifiers` (`list`):  When `null`, the `classifiers` field will be omitted from the resulting object.
-  - `configuration` (`string`):  When `null`, the `configuration` field will be omitted from the resulting object.
-  - `database_name` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `role` (`string`): 
-  - `schedule` (`string`):  When `null`, the `schedule` field will be omitted from the resulting object.
-  - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
-  - `table_prefix` (`string`):  When `null`, the `table_prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `catalog_target` (`list[obj]`):  When `null`, the `catalog_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.catalog_target.new](#fn-catalog_targetnew) constructor.
-  - `delta_target` (`list[obj]`):  When `null`, the `delta_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.delta_target.new](#fn-delta_targetnew) constructor.
-  - `dynamodb_target` (`list[obj]`):  When `null`, the `dynamodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.dynamodb_target.new](#fn-dynamodb_targetnew) constructor.
-  - `jdbc_target` (`list[obj]`):  When `null`, the `jdbc_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.jdbc_target.new](#fn-jdbc_targetnew) constructor.
-  - `lake_formation_configuration` (`list[obj]`):  When `null`, the `lake_formation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lake_formation_configuration.new](#fn-lake_formation_configurationnew) constructor.
-  - `lineage_configuration` (`list[obj]`):  When `null`, the `lineage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lineage_configuration.new](#fn-lineage_configurationnew) constructor.
-  - `mongodb_target` (`list[obj]`):  When `null`, the `mongodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.mongodb_target.new](#fn-mongodb_targetnew) constructor.
-  - `recrawl_policy` (`list[obj]`):  When `null`, the `recrawl_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.recrawl_policy.new](#fn-recrawl_policynew) constructor.
-  - `s3_target` (`list[obj]`):  When `null`, the `s3_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.s3_target.new](#fn-s3_targetnew) constructor.
-  - `schema_change_policy` (`list[obj]`):  When `null`, the `schema_change_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.schema_change_policy.new](#fn-schema_change_policynew) constructor.
+  - `classifiers` (`list`): Set the `classifiers` field on the resulting resource block. When `null`, the `classifiers` field will be omitted from the resulting object.
+  - `configuration` (`string`): Set the `configuration` field on the resulting resource block. When `null`, the `configuration` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `role` (`string`): Set the `role` field on the resulting resource block.
+  - `schedule` (`string`): Set the `schedule` field on the resulting resource block. When `null`, the `schedule` field will be omitted from the resulting object.
+  - `security_configuration` (`string`): Set the `security_configuration` field on the resulting resource block. When `null`, the `security_configuration` field will be omitted from the resulting object.
+  - `table_prefix` (`string`): Set the `table_prefix` field on the resulting resource block. When `null`, the `table_prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `catalog_target` (`list[obj]`): Set the `catalog_target` field on the resulting resource block. When `null`, the `catalog_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.catalog_target.new](#fn-catalog_targetnew) constructor.
+  - `delta_target` (`list[obj]`): Set the `delta_target` field on the resulting resource block. When `null`, the `delta_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.delta_target.new](#fn-delta_targetnew) constructor.
+  - `dynamodb_target` (`list[obj]`): Set the `dynamodb_target` field on the resulting resource block. When `null`, the `dynamodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.dynamodb_target.new](#fn-dynamodb_targetnew) constructor.
+  - `jdbc_target` (`list[obj]`): Set the `jdbc_target` field on the resulting resource block. When `null`, the `jdbc_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.jdbc_target.new](#fn-jdbc_targetnew) constructor.
+  - `lake_formation_configuration` (`list[obj]`): Set the `lake_formation_configuration` field on the resulting resource block. When `null`, the `lake_formation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lake_formation_configuration.new](#fn-lake_formation_configurationnew) constructor.
+  - `lineage_configuration` (`list[obj]`): Set the `lineage_configuration` field on the resulting resource block. When `null`, the `lineage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lineage_configuration.new](#fn-lineage_configurationnew) constructor.
+  - `mongodb_target` (`list[obj]`): Set the `mongodb_target` field on the resulting resource block. When `null`, the `mongodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.mongodb_target.new](#fn-mongodb_targetnew) constructor.
+  - `recrawl_policy` (`list[obj]`): Set the `recrawl_policy` field on the resulting resource block. When `null`, the `recrawl_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.recrawl_policy.new](#fn-recrawl_policynew) constructor.
+  - `s3_target` (`list[obj]`): Set the `s3_target` field on the resulting resource block. When `null`, the `s3_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.s3_target.new](#fn-s3_targetnew) constructor.
+  - `schema_change_policy` (`list[obj]`): Set the `schema_change_policy` field on the resulting resource block. When `null`, the `schema_change_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.schema_change_policy.new](#fn-schema_change_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -140,27 +140,27 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `classifiers` (`list`):  When `null`, the `classifiers` field will be omitted from the resulting object.
-  - `configuration` (`string`):  When `null`, the `configuration` field will be omitted from the resulting object.
-  - `database_name` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `role` (`string`): 
-  - `schedule` (`string`):  When `null`, the `schedule` field will be omitted from the resulting object.
-  - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
-  - `table_prefix` (`string`):  When `null`, the `table_prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `catalog_target` (`list[obj]`):  When `null`, the `catalog_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.catalog_target.new](#fn-catalog_targetnew) constructor.
-  - `delta_target` (`list[obj]`):  When `null`, the `delta_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.delta_target.new](#fn-delta_targetnew) constructor.
-  - `dynamodb_target` (`list[obj]`):  When `null`, the `dynamodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.dynamodb_target.new](#fn-dynamodb_targetnew) constructor.
-  - `jdbc_target` (`list[obj]`):  When `null`, the `jdbc_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.jdbc_target.new](#fn-jdbc_targetnew) constructor.
-  - `lake_formation_configuration` (`list[obj]`):  When `null`, the `lake_formation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lake_formation_configuration.new](#fn-lake_formation_configurationnew) constructor.
-  - `lineage_configuration` (`list[obj]`):  When `null`, the `lineage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lineage_configuration.new](#fn-lineage_configurationnew) constructor.
-  - `mongodb_target` (`list[obj]`):  When `null`, the `mongodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.mongodb_target.new](#fn-mongodb_targetnew) constructor.
-  - `recrawl_policy` (`list[obj]`):  When `null`, the `recrawl_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.recrawl_policy.new](#fn-recrawl_policynew) constructor.
-  - `s3_target` (`list[obj]`):  When `null`, the `s3_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.s3_target.new](#fn-s3_targetnew) constructor.
-  - `schema_change_policy` (`list[obj]`):  When `null`, the `schema_change_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.schema_change_policy.new](#fn-schema_change_policynew) constructor.
+  - `classifiers` (`list`): Set the `classifiers` field on the resulting object. When `null`, the `classifiers` field will be omitted from the resulting object.
+  - `configuration` (`string`): Set the `configuration` field on the resulting object. When `null`, the `configuration` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `role` (`string`): Set the `role` field on the resulting object.
+  - `schedule` (`string`): Set the `schedule` field on the resulting object. When `null`, the `schedule` field will be omitted from the resulting object.
+  - `security_configuration` (`string`): Set the `security_configuration` field on the resulting object. When `null`, the `security_configuration` field will be omitted from the resulting object.
+  - `table_prefix` (`string`): Set the `table_prefix` field on the resulting object. When `null`, the `table_prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `catalog_target` (`list[obj]`): Set the `catalog_target` field on the resulting object. When `null`, the `catalog_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.catalog_target.new](#fn-catalog_targetnew) constructor.
+  - `delta_target` (`list[obj]`): Set the `delta_target` field on the resulting object. When `null`, the `delta_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.delta_target.new](#fn-delta_targetnew) constructor.
+  - `dynamodb_target` (`list[obj]`): Set the `dynamodb_target` field on the resulting object. When `null`, the `dynamodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.dynamodb_target.new](#fn-dynamodb_targetnew) constructor.
+  - `jdbc_target` (`list[obj]`): Set the `jdbc_target` field on the resulting object. When `null`, the `jdbc_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.jdbc_target.new](#fn-jdbc_targetnew) constructor.
+  - `lake_formation_configuration` (`list[obj]`): Set the `lake_formation_configuration` field on the resulting object. When `null`, the `lake_formation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lake_formation_configuration.new](#fn-lake_formation_configurationnew) constructor.
+  - `lineage_configuration` (`list[obj]`): Set the `lineage_configuration` field on the resulting object. When `null`, the `lineage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lineage_configuration.new](#fn-lineage_configurationnew) constructor.
+  - `mongodb_target` (`list[obj]`): Set the `mongodb_target` field on the resulting object. When `null`, the `mongodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.mongodb_target.new](#fn-mongodb_targetnew) constructor.
+  - `recrawl_policy` (`list[obj]`): Set the `recrawl_policy` field on the resulting object. When `null`, the `recrawl_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.recrawl_policy.new](#fn-recrawl_policynew) constructor.
+  - `s3_target` (`list[obj]`): Set the `s3_target` field on the resulting object. When `null`, the `s3_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.s3_target.new](#fn-s3_targetnew) constructor.
+  - `schema_change_policy` (`list[obj]`): Set the `schema_change_policy` field on the resulting object. When `null`, the `schema_change_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.schema_change_policy.new](#fn-schema_change_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_crawler` resource into the root Terraform configuration.
@@ -729,11 +729,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_name` (`string`):  When `null`, the `connection_name` field will be omitted from the resulting object.
-  - `database_name` (`string`): 
-  - `dlq_event_queue_arn` (`string`):  When `null`, the `dlq_event_queue_arn` field will be omitted from the resulting object.
-  - `event_queue_arn` (`string`):  When `null`, the `event_queue_arn` field will be omitted from the resulting object.
-  - `tables` (`list`): 
+  - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `dlq_event_queue_arn` (`string`): Set the `dlq_event_queue_arn` field on the resulting object. When `null`, the `dlq_event_queue_arn` field will be omitted from the resulting object.
+  - `event_queue_arn` (`string`): Set the `event_queue_arn` field on the resulting object. When `null`, the `event_queue_arn` field will be omitted from the resulting object.
+  - `tables` (`list`): Set the `tables` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `catalog_target` sub block.
@@ -756,9 +756,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_name` (`string`):  When `null`, the `connection_name` field will be omitted from the resulting object.
-  - `delta_tables` (`list`): 
-  - `write_manifest` (`bool`): 
+  - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.
+  - `delta_tables` (`list`): Set the `delta_tables` field on the resulting object.
+  - `write_manifest` (`bool`): Set the `write_manifest` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `delta_target` sub block.
@@ -781,9 +781,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `path` (`string`): 
-  - `scan_all` (`bool`):  When `null`, the `scan_all` field will be omitted from the resulting object.
-  - `scan_rate` (`number`):  When `null`, the `scan_rate` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object.
+  - `scan_all` (`bool`): Set the `scan_all` field on the resulting object. When `null`, the `scan_all` field will be omitted from the resulting object.
+  - `scan_rate` (`number`): Set the `scan_rate` field on the resulting object. When `null`, the `scan_rate` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dynamodb_target` sub block.
@@ -806,10 +806,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_name` (`string`): 
-  - `enable_additional_metadata` (`list`):  When `null`, the `enable_additional_metadata` field will be omitted from the resulting object.
-  - `exclusions` (`list`):  When `null`, the `exclusions` field will be omitted from the resulting object.
-  - `path` (`string`): 
+  - `connection_name` (`string`): Set the `connection_name` field on the resulting object.
+  - `enable_additional_metadata` (`list`): Set the `enable_additional_metadata` field on the resulting object. When `null`, the `enable_additional_metadata` field will be omitted from the resulting object.
+  - `exclusions` (`list`): Set the `exclusions` field on the resulting object. When `null`, the `exclusions` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `jdbc_target` sub block.
@@ -832,8 +832,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `use_lake_formation_credentials` (`bool`):  When `null`, the `use_lake_formation_credentials` field will be omitted from the resulting object.
+  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `use_lake_formation_credentials` (`bool`): Set the `use_lake_formation_credentials` field on the resulting object. When `null`, the `use_lake_formation_credentials` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lake_formation_configuration` sub block.
@@ -856,7 +856,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `crawler_lineage_settings` (`string`):  When `null`, the `crawler_lineage_settings` field will be omitted from the resulting object.
+  - `crawler_lineage_settings` (`string`): Set the `crawler_lineage_settings` field on the resulting object. When `null`, the `crawler_lineage_settings` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lineage_configuration` sub block.
@@ -879,9 +879,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_name` (`string`): 
-  - `path` (`string`): 
-  - `scan_all` (`bool`):  When `null`, the `scan_all` field will be omitted from the resulting object.
+  - `connection_name` (`string`): Set the `connection_name` field on the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object.
+  - `scan_all` (`bool`): Set the `scan_all` field on the resulting object. When `null`, the `scan_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `mongodb_target` sub block.
@@ -904,7 +904,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `recrawl_behavior` (`string`):  When `null`, the `recrawl_behavior` field will be omitted from the resulting object.
+  - `recrawl_behavior` (`string`): Set the `recrawl_behavior` field on the resulting object. When `null`, the `recrawl_behavior` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `recrawl_policy` sub block.
@@ -927,12 +927,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_name` (`string`):  When `null`, the `connection_name` field will be omitted from the resulting object.
-  - `dlq_event_queue_arn` (`string`):  When `null`, the `dlq_event_queue_arn` field will be omitted from the resulting object.
-  - `event_queue_arn` (`string`):  When `null`, the `event_queue_arn` field will be omitted from the resulting object.
-  - `exclusions` (`list`):  When `null`, the `exclusions` field will be omitted from the resulting object.
-  - `path` (`string`): 
-  - `sample_size` (`number`):  When `null`, the `sample_size` field will be omitted from the resulting object.
+  - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.
+  - `dlq_event_queue_arn` (`string`): Set the `dlq_event_queue_arn` field on the resulting object. When `null`, the `dlq_event_queue_arn` field will be omitted from the resulting object.
+  - `event_queue_arn` (`string`): Set the `event_queue_arn` field on the resulting object. When `null`, the `event_queue_arn` field will be omitted from the resulting object.
+  - `exclusions` (`list`): Set the `exclusions` field on the resulting object. When `null`, the `exclusions` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object.
+  - `sample_size` (`number`): Set the `sample_size` field on the resulting object. When `null`, the `sample_size` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_target` sub block.
@@ -955,8 +955,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete_behavior` (`string`):  When `null`, the `delete_behavior` field will be omitted from the resulting object.
-  - `update_behavior` (`string`):  When `null`, the `update_behavior` field will be omitted from the resulting object.
+  - `delete_behavior` (`string`): Set the `delete_behavior` field on the resulting object. When `null`, the `delete_behavior` field will be omitted from the resulting object.
+  - `update_behavior` (`string`): Set the `update_behavior` field on the resulting object. When `null`, the `update_behavior` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `schema_change_policy` sub block.

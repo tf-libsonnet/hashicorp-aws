@@ -86,28 +86,28 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `airflow_configuration_options` (`obj`):  When `null`, the `airflow_configuration_options` field will be omitted from the resulting object.
-  - `airflow_version` (`string`):  When `null`, the `airflow_version` field will be omitted from the resulting object.
-  - `dag_s3_path` (`string`): 
-  - `environment_class` (`string`):  When `null`, the `environment_class` field will be omitted from the resulting object.
-  - `execution_role_arn` (`string`): 
-  - `kms_key` (`string`):  When `null`, the `kms_key` field will be omitted from the resulting object.
-  - `max_workers` (`number`):  When `null`, the `max_workers` field will be omitted from the resulting object.
-  - `min_workers` (`number`):  When `null`, the `min_workers` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `plugins_s3_object_version` (`string`):  When `null`, the `plugins_s3_object_version` field will be omitted from the resulting object.
-  - `plugins_s3_path` (`string`):  When `null`, the `plugins_s3_path` field will be omitted from the resulting object.
-  - `requirements_s3_object_version` (`string`):  When `null`, the `requirements_s3_object_version` field will be omitted from the resulting object.
-  - `requirements_s3_path` (`string`):  When `null`, the `requirements_s3_path` field will be omitted from the resulting object.
-  - `schedulers` (`number`):  When `null`, the `schedulers` field will be omitted from the resulting object.
-  - `source_bucket_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `webserver_access_mode` (`string`):  When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
-  - `weekly_maintenance_window_start` (`string`):  When `null`, the `weekly_maintenance_window_start` field will be omitted from the resulting object.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-logging_configurationnew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-network_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-timeoutsnew) constructor.
+  - `airflow_configuration_options` (`obj`): Set the `airflow_configuration_options` field on the resulting resource block. When `null`, the `airflow_configuration_options` field will be omitted from the resulting object.
+  - `airflow_version` (`string`): Set the `airflow_version` field on the resulting resource block. When `null`, the `airflow_version` field will be omitted from the resulting object.
+  - `dag_s3_path` (`string`): Set the `dag_s3_path` field on the resulting resource block.
+  - `environment_class` (`string`): Set the `environment_class` field on the resulting resource block. When `null`, the `environment_class` field will be omitted from the resulting object.
+  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting resource block.
+  - `kms_key` (`string`): Set the `kms_key` field on the resulting resource block. When `null`, the `kms_key` field will be omitted from the resulting object.
+  - `max_workers` (`number`): Set the `max_workers` field on the resulting resource block. When `null`, the `max_workers` field will be omitted from the resulting object.
+  - `min_workers` (`number`): Set the `min_workers` field on the resulting resource block. When `null`, the `min_workers` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `plugins_s3_object_version` (`string`): Set the `plugins_s3_object_version` field on the resulting resource block. When `null`, the `plugins_s3_object_version` field will be omitted from the resulting object.
+  - `plugins_s3_path` (`string`): Set the `plugins_s3_path` field on the resulting resource block. When `null`, the `plugins_s3_path` field will be omitted from the resulting object.
+  - `requirements_s3_object_version` (`string`): Set the `requirements_s3_object_version` field on the resulting resource block. When `null`, the `requirements_s3_object_version` field will be omitted from the resulting object.
+  - `requirements_s3_path` (`string`): Set the `requirements_s3_path` field on the resulting resource block. When `null`, the `requirements_s3_path` field will be omitted from the resulting object.
+  - `schedulers` (`number`): Set the `schedulers` field on the resulting resource block. When `null`, the `schedulers` field will be omitted from the resulting object.
+  - `source_bucket_arn` (`string`): Set the `source_bucket_arn` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `webserver_access_mode` (`string`): Set the `webserver_access_mode` field on the resulting resource block. When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
+  - `weekly_maintenance_window_start` (`string`): Set the `weekly_maintenance_window_start` field on the resulting resource block. When `null`, the `weekly_maintenance_window_start` field will be omitted from the resulting object.
+  - `logging_configuration` (`list[obj]`): Set the `logging_configuration` field on the resulting resource block. When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-logging_configurationnew) constructor.
+  - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting resource block. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -131,28 +131,28 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `airflow_configuration_options` (`obj`):  When `null`, the `airflow_configuration_options` field will be omitted from the resulting object.
-  - `airflow_version` (`string`):  When `null`, the `airflow_version` field will be omitted from the resulting object.
-  - `dag_s3_path` (`string`): 
-  - `environment_class` (`string`):  When `null`, the `environment_class` field will be omitted from the resulting object.
-  - `execution_role_arn` (`string`): 
-  - `kms_key` (`string`):  When `null`, the `kms_key` field will be omitted from the resulting object.
-  - `max_workers` (`number`):  When `null`, the `max_workers` field will be omitted from the resulting object.
-  - `min_workers` (`number`):  When `null`, the `min_workers` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `plugins_s3_object_version` (`string`):  When `null`, the `plugins_s3_object_version` field will be omitted from the resulting object.
-  - `plugins_s3_path` (`string`):  When `null`, the `plugins_s3_path` field will be omitted from the resulting object.
-  - `requirements_s3_object_version` (`string`):  When `null`, the `requirements_s3_object_version` field will be omitted from the resulting object.
-  - `requirements_s3_path` (`string`):  When `null`, the `requirements_s3_path` field will be omitted from the resulting object.
-  - `schedulers` (`number`):  When `null`, the `schedulers` field will be omitted from the resulting object.
-  - `source_bucket_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `webserver_access_mode` (`string`):  When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
-  - `weekly_maintenance_window_start` (`string`):  When `null`, the `weekly_maintenance_window_start` field will be omitted from the resulting object.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-logging_configurationnew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-network_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-timeoutsnew) constructor.
+  - `airflow_configuration_options` (`obj`): Set the `airflow_configuration_options` field on the resulting object. When `null`, the `airflow_configuration_options` field will be omitted from the resulting object.
+  - `airflow_version` (`string`): Set the `airflow_version` field on the resulting object. When `null`, the `airflow_version` field will be omitted from the resulting object.
+  - `dag_s3_path` (`string`): Set the `dag_s3_path` field on the resulting object.
+  - `environment_class` (`string`): Set the `environment_class` field on the resulting object. When `null`, the `environment_class` field will be omitted from the resulting object.
+  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting object.
+  - `kms_key` (`string`): Set the `kms_key` field on the resulting object. When `null`, the `kms_key` field will be omitted from the resulting object.
+  - `max_workers` (`number`): Set the `max_workers` field on the resulting object. When `null`, the `max_workers` field will be omitted from the resulting object.
+  - `min_workers` (`number`): Set the `min_workers` field on the resulting object. When `null`, the `min_workers` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `plugins_s3_object_version` (`string`): Set the `plugins_s3_object_version` field on the resulting object. When `null`, the `plugins_s3_object_version` field will be omitted from the resulting object.
+  - `plugins_s3_path` (`string`): Set the `plugins_s3_path` field on the resulting object. When `null`, the `plugins_s3_path` field will be omitted from the resulting object.
+  - `requirements_s3_object_version` (`string`): Set the `requirements_s3_object_version` field on the resulting object. When `null`, the `requirements_s3_object_version` field will be omitted from the resulting object.
+  - `requirements_s3_path` (`string`): Set the `requirements_s3_path` field on the resulting object. When `null`, the `requirements_s3_path` field will be omitted from the resulting object.
+  - `schedulers` (`number`): Set the `schedulers` field on the resulting object. When `null`, the `schedulers` field will be omitted from the resulting object.
+  - `source_bucket_arn` (`string`): Set the `source_bucket_arn` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `webserver_access_mode` (`string`): Set the `webserver_access_mode` field on the resulting object. When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
+  - `weekly_maintenance_window_start` (`string`): Set the `weekly_maintenance_window_start` field on the resulting object. When `null`, the `weekly_maintenance_window_start` field will be omitted from the resulting object.
+  - `logging_configuration` (`list[obj]`): Set the `logging_configuration` field on the resulting object. When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.new](#fn-logging_configurationnew) constructor.
+  - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting object. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `mwaa_environment` resource into the root Terraform configuration.
@@ -589,11 +589,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `dag_processing_logs` (`list[obj]`):  When `null`, the `dag_processing_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.dag_processing_logs.new](#fn-logging_configurationdag_processing_logsnew) constructor.
-  - `scheduler_logs` (`list[obj]`):  When `null`, the `scheduler_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.scheduler_logs.new](#fn-logging_configurationscheduler_logsnew) constructor.
-  - `task_logs` (`list[obj]`):  When `null`, the `task_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.task_logs.new](#fn-logging_configurationtask_logsnew) constructor.
-  - `webserver_logs` (`list[obj]`):  When `null`, the `webserver_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.webserver_logs.new](#fn-logging_configurationwebserver_logsnew) constructor.
-  - `worker_logs` (`list[obj]`):  When `null`, the `worker_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.worker_logs.new](#fn-logging_configurationworker_logsnew) constructor.
+  - `dag_processing_logs` (`list[obj]`): Set the `dag_processing_logs` field on the resulting object. When `null`, the `dag_processing_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.dag_processing_logs.new](#fn-logging_configurationdag_processing_logsnew) constructor.
+  - `scheduler_logs` (`list[obj]`): Set the `scheduler_logs` field on the resulting object. When `null`, the `scheduler_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.scheduler_logs.new](#fn-logging_configurationscheduler_logsnew) constructor.
+  - `task_logs` (`list[obj]`): Set the `task_logs` field on the resulting object. When `null`, the `task_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.task_logs.new](#fn-logging_configurationtask_logsnew) constructor.
+  - `webserver_logs` (`list[obj]`): Set the `webserver_logs` field on the resulting object. When `null`, the `webserver_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.webserver_logs.new](#fn-logging_configurationwebserver_logsnew) constructor.
+  - `worker_logs` (`list[obj]`): Set the `worker_logs` field on the resulting object. When `null`, the `worker_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mwaa_environment.logging_configuration.worker_logs.new](#fn-logging_configurationworker_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging_configuration` sub block.
@@ -616,8 +616,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_level` (`string`):  When `null`, the `log_level` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_level` (`string`): Set the `log_level` field on the resulting object. When `null`, the `log_level` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dag_processing_logs` sub block.
@@ -640,8 +640,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_level` (`string`):  When `null`, the `log_level` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_level` (`string`): Set the `log_level` field on the resulting object. When `null`, the `log_level` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scheduler_logs` sub block.
@@ -664,8 +664,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_level` (`string`):  When `null`, the `log_level` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_level` (`string`): Set the `log_level` field on the resulting object. When `null`, the `log_level` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `task_logs` sub block.
@@ -688,8 +688,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_level` (`string`):  When `null`, the `log_level` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_level` (`string`): Set the `log_level` field on the resulting object. When `null`, the `log_level` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `webserver_logs` sub block.
@@ -712,8 +712,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_level` (`string`):  When `null`, the `log_level` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_level` (`string`): Set the `log_level` field on the resulting object. When `null`, the `log_level` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `worker_logs` sub block.
@@ -736,8 +736,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): 
-  - `subnet_ids` (`list`): 
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `network_configuration` sub block.
@@ -760,9 +760,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

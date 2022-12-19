@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action` (`string`): 
-  - `event_source_token` (`string`):  When `null`, the `event_source_token` field will be omitted from the resulting object.
-  - `function_name` (`string`): 
-  - `function_url_auth_type` (`string`):  When `null`, the `function_url_auth_type` field will be omitted from the resulting object.
-  - `principal` (`string`): 
-  - `principal_org_id` (`string`):  When `null`, the `principal_org_id` field will be omitted from the resulting object.
-  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `source_account` (`string`):  When `null`, the `source_account` field will be omitted from the resulting object.
-  - `source_arn` (`string`):  When `null`, the `source_arn` field will be omitted from the resulting object.
-  - `statement_id` (`string`):  When `null`, the `statement_id` field will be omitted from the resulting object.
-  - `statement_id_prefix` (`string`):  When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
+  - `action` (`string`): Set the `action` field on the resulting resource block.
+  - `event_source_token` (`string`): Set the `event_source_token` field on the resulting resource block. When `null`, the `event_source_token` field will be omitted from the resulting object.
+  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
+  - `function_url_auth_type` (`string`): Set the `function_url_auth_type` field on the resulting resource block. When `null`, the `function_url_auth_type` field will be omitted from the resulting object.
+  - `principal` (`string`): Set the `principal` field on the resulting resource block.
+  - `principal_org_id` (`string`): Set the `principal_org_id` field on the resulting resource block. When `null`, the `principal_org_id` field will be omitted from the resulting object.
+  - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `source_account` (`string`): Set the `source_account` field on the resulting resource block. When `null`, the `source_account` field will be omitted from the resulting object.
+  - `source_arn` (`string`): Set the `source_arn` field on the resulting resource block. When `null`, the `source_arn` field will be omitted from the resulting object.
+  - `statement_id` (`string`): Set the `statement_id` field on the resulting resource block. When `null`, the `statement_id` field will be omitted from the resulting object.
+  - `statement_id_prefix` (`string`): Set the `statement_id_prefix` field on the resulting resource block. When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action` (`string`): 
-  - `event_source_token` (`string`):  When `null`, the `event_source_token` field will be omitted from the resulting object.
-  - `function_name` (`string`): 
-  - `function_url_auth_type` (`string`):  When `null`, the `function_url_auth_type` field will be omitted from the resulting object.
-  - `principal` (`string`): 
-  - `principal_org_id` (`string`):  When `null`, the `principal_org_id` field will be omitted from the resulting object.
-  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `source_account` (`string`):  When `null`, the `source_account` field will be omitted from the resulting object.
-  - `source_arn` (`string`):  When `null`, the `source_arn` field will be omitted from the resulting object.
-  - `statement_id` (`string`):  When `null`, the `statement_id` field will be omitted from the resulting object.
-  - `statement_id_prefix` (`string`):  When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
+  - `action` (`string`): Set the `action` field on the resulting object.
+  - `event_source_token` (`string`): Set the `event_source_token` field on the resulting object. When `null`, the `event_source_token` field will be omitted from the resulting object.
+  - `function_name` (`string`): Set the `function_name` field on the resulting object.
+  - `function_url_auth_type` (`string`): Set the `function_url_auth_type` field on the resulting object. When `null`, the `function_url_auth_type` field will be omitted from the resulting object.
+  - `principal` (`string`): Set the `principal` field on the resulting object.
+  - `principal_org_id` (`string`): Set the `principal_org_id` field on the resulting object. When `null`, the `principal_org_id` field will be omitted from the resulting object.
+  - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `source_account` (`string`): Set the `source_account` field on the resulting object. When `null`, the `source_account` field will be omitted from the resulting object.
+  - `source_arn` (`string`): Set the `source_arn` field on the resulting object. When `null`, the `source_arn` field will be omitted from the resulting object.
+  - `statement_id` (`string`): Set the `statement_id` field on the resulting object. When `null`, the `statement_id` field will be omitted from the resulting object.
+  - `statement_id_prefix` (`string`): Set the `statement_id_prefix` field on the resulting object. When `null`, the `statement_id_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_permission` resource into the root Terraform configuration.

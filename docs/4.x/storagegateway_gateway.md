@@ -73,25 +73,25 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `activation_key` (`string`):  When `null`, the `activation_key` field will be omitted from the resulting object.
-  - `average_download_rate_limit_in_bits_per_sec` (`number`):  When `null`, the `average_download_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
-  - `average_upload_rate_limit_in_bits_per_sec` (`number`):  When `null`, the `average_upload_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
-  - `cloudwatch_log_group_arn` (`string`):  When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.
-  - `gateway_ip_address` (`string`):  When `null`, the `gateway_ip_address` field will be omitted from the resulting object.
-  - `gateway_name` (`string`): 
-  - `gateway_timezone` (`string`): 
-  - `gateway_type` (`string`):  When `null`, the `gateway_type` field will be omitted from the resulting object.
-  - `gateway_vpc_endpoint` (`string`):  When `null`, the `gateway_vpc_endpoint` field will be omitted from the resulting object.
-  - `medium_changer_type` (`string`):  When `null`, the `medium_changer_type` field will be omitted from the resulting object.
-  - `smb_file_share_visibility` (`bool`):  When `null`, the `smb_file_share_visibility` field will be omitted from the resulting object.
-  - `smb_guest_password` (`string`):  When `null`, the `smb_guest_password` field will be omitted from the resulting object.
-  - `smb_security_strategy` (`string`):  When `null`, the `smb_security_strategy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tape_drive_type` (`string`):  When `null`, the `tape_drive_type` field will be omitted from the resulting object.
-  - `maintenance_start_time` (`list[obj]`):  When `null`, the `maintenance_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.maintenance_start_time.new](#fn-maintenance_start_timenew) constructor.
-  - `smb_active_directory_settings` (`list[obj]`):  When `null`, the `smb_active_directory_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.smb_active_directory_settings.new](#fn-smb_active_directory_settingsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.timeouts.new](#fn-timeoutsnew) constructor.
+  - `activation_key` (`string`): Set the `activation_key` field on the resulting resource block. When `null`, the `activation_key` field will be omitted from the resulting object.
+  - `average_download_rate_limit_in_bits_per_sec` (`number`): Set the `average_download_rate_limit_in_bits_per_sec` field on the resulting resource block. When `null`, the `average_download_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
+  - `average_upload_rate_limit_in_bits_per_sec` (`number`): Set the `average_upload_rate_limit_in_bits_per_sec` field on the resulting resource block. When `null`, the `average_upload_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
+  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting resource block. When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.
+  - `gateway_ip_address` (`string`): Set the `gateway_ip_address` field on the resulting resource block. When `null`, the `gateway_ip_address` field will be omitted from the resulting object.
+  - `gateway_name` (`string`): Set the `gateway_name` field on the resulting resource block.
+  - `gateway_timezone` (`string`): Set the `gateway_timezone` field on the resulting resource block.
+  - `gateway_type` (`string`): Set the `gateway_type` field on the resulting resource block. When `null`, the `gateway_type` field will be omitted from the resulting object.
+  - `gateway_vpc_endpoint` (`string`): Set the `gateway_vpc_endpoint` field on the resulting resource block. When `null`, the `gateway_vpc_endpoint` field will be omitted from the resulting object.
+  - `medium_changer_type` (`string`): Set the `medium_changer_type` field on the resulting resource block. When `null`, the `medium_changer_type` field will be omitted from the resulting object.
+  - `smb_file_share_visibility` (`bool`): Set the `smb_file_share_visibility` field on the resulting resource block. When `null`, the `smb_file_share_visibility` field will be omitted from the resulting object.
+  - `smb_guest_password` (`string`): Set the `smb_guest_password` field on the resulting resource block. When `null`, the `smb_guest_password` field will be omitted from the resulting object.
+  - `smb_security_strategy` (`string`): Set the `smb_security_strategy` field on the resulting resource block. When `null`, the `smb_security_strategy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tape_drive_type` (`string`): Set the `tape_drive_type` field on the resulting resource block. When `null`, the `tape_drive_type` field will be omitted from the resulting object.
+  - `maintenance_start_time` (`list[obj]`): Set the `maintenance_start_time` field on the resulting resource block. When `null`, the `maintenance_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.maintenance_start_time.new](#fn-maintenance_start_timenew) constructor.
+  - `smb_active_directory_settings` (`list[obj]`): Set the `smb_active_directory_settings` field on the resulting resource block. When `null`, the `smb_active_directory_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.smb_active_directory_settings.new](#fn-smb_active_directory_settingsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -115,25 +115,25 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `activation_key` (`string`):  When `null`, the `activation_key` field will be omitted from the resulting object.
-  - `average_download_rate_limit_in_bits_per_sec` (`number`):  When `null`, the `average_download_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
-  - `average_upload_rate_limit_in_bits_per_sec` (`number`):  When `null`, the `average_upload_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
-  - `cloudwatch_log_group_arn` (`string`):  When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.
-  - `gateway_ip_address` (`string`):  When `null`, the `gateway_ip_address` field will be omitted from the resulting object.
-  - `gateway_name` (`string`): 
-  - `gateway_timezone` (`string`): 
-  - `gateway_type` (`string`):  When `null`, the `gateway_type` field will be omitted from the resulting object.
-  - `gateway_vpc_endpoint` (`string`):  When `null`, the `gateway_vpc_endpoint` field will be omitted from the resulting object.
-  - `medium_changer_type` (`string`):  When `null`, the `medium_changer_type` field will be omitted from the resulting object.
-  - `smb_file_share_visibility` (`bool`):  When `null`, the `smb_file_share_visibility` field will be omitted from the resulting object.
-  - `smb_guest_password` (`string`):  When `null`, the `smb_guest_password` field will be omitted from the resulting object.
-  - `smb_security_strategy` (`string`):  When `null`, the `smb_security_strategy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tape_drive_type` (`string`):  When `null`, the `tape_drive_type` field will be omitted from the resulting object.
-  - `maintenance_start_time` (`list[obj]`):  When `null`, the `maintenance_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.maintenance_start_time.new](#fn-maintenance_start_timenew) constructor.
-  - `smb_active_directory_settings` (`list[obj]`):  When `null`, the `smb_active_directory_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.smb_active_directory_settings.new](#fn-smb_active_directory_settingsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.timeouts.new](#fn-timeoutsnew) constructor.
+  - `activation_key` (`string`): Set the `activation_key` field on the resulting object. When `null`, the `activation_key` field will be omitted from the resulting object.
+  - `average_download_rate_limit_in_bits_per_sec` (`number`): Set the `average_download_rate_limit_in_bits_per_sec` field on the resulting object. When `null`, the `average_download_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
+  - `average_upload_rate_limit_in_bits_per_sec` (`number`): Set the `average_upload_rate_limit_in_bits_per_sec` field on the resulting object. When `null`, the `average_upload_rate_limit_in_bits_per_sec` field will be omitted from the resulting object.
+  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting object. When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.
+  - `gateway_ip_address` (`string`): Set the `gateway_ip_address` field on the resulting object. When `null`, the `gateway_ip_address` field will be omitted from the resulting object.
+  - `gateway_name` (`string`): Set the `gateway_name` field on the resulting object.
+  - `gateway_timezone` (`string`): Set the `gateway_timezone` field on the resulting object.
+  - `gateway_type` (`string`): Set the `gateway_type` field on the resulting object. When `null`, the `gateway_type` field will be omitted from the resulting object.
+  - `gateway_vpc_endpoint` (`string`): Set the `gateway_vpc_endpoint` field on the resulting object. When `null`, the `gateway_vpc_endpoint` field will be omitted from the resulting object.
+  - `medium_changer_type` (`string`): Set the `medium_changer_type` field on the resulting object. When `null`, the `medium_changer_type` field will be omitted from the resulting object.
+  - `smb_file_share_visibility` (`bool`): Set the `smb_file_share_visibility` field on the resulting object. When `null`, the `smb_file_share_visibility` field will be omitted from the resulting object.
+  - `smb_guest_password` (`string`): Set the `smb_guest_password` field on the resulting object. When `null`, the `smb_guest_password` field will be omitted from the resulting object.
+  - `smb_security_strategy` (`string`): Set the `smb_security_strategy` field on the resulting object. When `null`, the `smb_security_strategy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tape_drive_type` (`string`): Set the `tape_drive_type` field on the resulting object. When `null`, the `tape_drive_type` field will be omitted from the resulting object.
+  - `maintenance_start_time` (`list[obj]`): Set the `maintenance_start_time` field on the resulting object. When `null`, the `maintenance_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.maintenance_start_time.new](#fn-maintenance_start_timenew) constructor.
+  - `smb_active_directory_settings` (`list[obj]`): Set the `smb_active_directory_settings` field on the resulting object. When `null`, the `smb_active_directory_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.smb_active_directory_settings.new](#fn-smb_active_directory_settingsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_gateway.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_gateway` resource into the root Terraform configuration.
@@ -522,10 +522,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `day_of_month` (`string`):  When `null`, the `day_of_month` field will be omitted from the resulting object.
-  - `day_of_week` (`string`):  When `null`, the `day_of_week` field will be omitted from the resulting object.
-  - `hour_of_day` (`number`): 
-  - `minute_of_hour` (`number`):  When `null`, the `minute_of_hour` field will be omitted from the resulting object.
+  - `day_of_month` (`string`): Set the `day_of_month` field on the resulting object. When `null`, the `day_of_month` field will be omitted from the resulting object.
+  - `day_of_week` (`string`): Set the `day_of_week` field on the resulting object. When `null`, the `day_of_week` field will be omitted from the resulting object.
+  - `hour_of_day` (`number`): Set the `hour_of_day` field on the resulting object.
+  - `minute_of_hour` (`number`): Set the `minute_of_hour` field on the resulting object. When `null`, the `minute_of_hour` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `maintenance_start_time` sub block.
@@ -548,12 +548,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `domain_controllers` (`list`):  When `null`, the `domain_controllers` field will be omitted from the resulting object.
-  - `domain_name` (`string`): 
-  - `organizational_unit` (`string`):  When `null`, the `organizational_unit` field will be omitted from the resulting object.
-  - `password` (`string`): 
-  - `timeout_in_seconds` (`number`):  When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
-  - `username` (`string`): 
+  - `domain_controllers` (`list`): Set the `domain_controllers` field on the resulting object. When `null`, the `domain_controllers` field will be omitted from the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `organizational_unit` (`string`): Set the `organizational_unit` field on the resulting object. When `null`, the `organizational_unit` field will be omitted from the resulting object.
+  - `password` (`string`): Set the `password` field on the resulting object.
+  - `timeout_in_seconds` (`number`): Set the `timeout_in_seconds` field on the resulting object. When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `smb_active_directory_settings` sub block.
@@ -576,7 +576,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

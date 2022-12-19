@@ -101,13 +101,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `mesh_name` (`string`): 
-  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `virtual_gateway_name` (`string`): 
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.new](#fn-specnew) constructor.
+  - `mesh_name` (`string`): Set the `mesh_name` field on the resulting resource block.
+  - `mesh_owner` (`string`): Set the `mesh_owner` field on the resulting resource block. When `null`, the `mesh_owner` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `virtual_gateway_name` (`string`): Set the `virtual_gateway_name` field on the resulting resource block.
+  - `spec` (`list[obj]`): Set the `spec` field on the resulting resource block. When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.new](#fn-specnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -131,13 +131,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `mesh_name` (`string`): 
-  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `virtual_gateway_name` (`string`): 
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.new](#fn-specnew) constructor.
+  - `mesh_name` (`string`): Set the `mesh_name` field on the resulting object.
+  - `mesh_owner` (`string`): Set the `mesh_owner` field on the resulting object. When `null`, the `mesh_owner` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `virtual_gateway_name` (`string`): Set the `virtual_gateway_name` field on the resulting object.
+  - `spec` (`list[obj]`): Set the `spec` field on the resulting object. When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.new](#fn-specnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appmesh_gateway_route` resource into the root Terraform configuration.
@@ -293,9 +293,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `grpc_route` (`list[obj]`):  When `null`, the `grpc_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.new](#fn-specgrpc_routenew) constructor.
-  - `http2_route` (`list[obj]`):  When `null`, the `http2_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.new](#fn-spechttp2_routenew) constructor.
-  - `http_route` (`list[obj]`):  When `null`, the `http_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.new](#fn-spechttp_routenew) constructor.
+  - `grpc_route` (`list[obj]`): Set the `grpc_route` field on the resulting object. When `null`, the `grpc_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.new](#fn-specgrpc_routenew) constructor.
+  - `http2_route` (`list[obj]`): Set the `http2_route` field on the resulting object. When `null`, the `http2_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.new](#fn-spechttp2_routenew) constructor.
+  - `http_route` (`list[obj]`): Set the `http_route` field on the resulting object. When `null`, the `http_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.new](#fn-spechttp_routenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.
@@ -318,8 +318,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.new](#fn-specspecactionnew) constructor.
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.match.new](#fn-specspecmatchnew) constructor.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.new](#fn-specspecactionnew) constructor.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.match.new](#fn-specspecmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `grpc_route` sub block.
@@ -342,7 +342,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.new](#fn-specspecgrpc_routetargetnew) constructor.
+  - `target` (`list[obj]`): Set the `target` field on the resulting object. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.new](#fn-specspecgrpc_routetargetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -365,7 +365,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_service` (`list[obj]`):  When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.virtual_service.new](#fn-specspecgrpc_routeactionvirtual_servicenew) constructor.
+  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.virtual_service.new](#fn-specspecgrpc_routeactionvirtual_servicenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target` sub block.
@@ -388,7 +388,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_service_name` (`string`): 
+  - `virtual_service_name` (`string`): Set the `virtual_service_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `virtual_service` sub block.
@@ -411,7 +411,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `service_name` (`string`): 
+  - `service_name` (`string`): Set the `service_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -434,8 +434,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.new](#fn-specspecactionnew) constructor.
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.new](#fn-specspecmatchnew) constructor.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.new](#fn-specspecactionnew) constructor.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.new](#fn-specspecmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http2_route` sub block.
@@ -458,8 +458,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `rewrite` (`list[obj]`):  When `null`, the `rewrite` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.new](#fn-specspechttp2_routerewritenew) constructor.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.new](#fn-specspechttp2_routetargetnew) constructor.
+  - `rewrite` (`list[obj]`): Set the `rewrite` field on the resulting object. When `null`, the `rewrite` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.new](#fn-specspechttp2_routerewritenew) constructor.
+  - `target` (`list[obj]`): Set the `target` field on the resulting object. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.new](#fn-specspechttp2_routetargetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -482,8 +482,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.hostname.new](#fn-specspechttp2_routeactionhostnamenew) constructor.
-  - `prefix` (`list[obj]`):  When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new](#fn-specspechttp2_routeactionprefixnew) constructor.
+  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.hostname.new](#fn-specspechttp2_routeactionhostnamenew) constructor.
+  - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new](#fn-specspechttp2_routeactionprefixnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rewrite` sub block.
@@ -506,7 +506,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_target_hostname` (`string`): 
+  - `default_target_hostname` (`string`): Set the `default_target_hostname` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `hostname` sub block.
@@ -529,8 +529,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_prefix` (`string`):  When `null`, the `default_prefix` field will be omitted from the resulting object.
-  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
+  - `default_prefix` (`string`): Set the `default_prefix` field on the resulting object. When `null`, the `default_prefix` field will be omitted from the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `prefix` sub block.
@@ -553,7 +553,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_service` (`list[obj]`):  When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.virtual_service.new](#fn-specspechttp2_routeactionvirtual_servicenew) constructor.
+  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.virtual_service.new](#fn-specspechttp2_routeactionvirtual_servicenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target` sub block.
@@ -576,7 +576,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_service_name` (`string`): 
+  - `virtual_service_name` (`string`): Set the `virtual_service_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `virtual_service` sub block.
@@ -599,8 +599,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.hostname.new](#fn-specspechttp2_routehostnamenew) constructor.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.hostname.new](#fn-specspechttp2_routehostnamenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -623,8 +623,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `exact` (`string`):  When `null`, the `exact` field will be omitted from the resulting object.
-  - `suffix` (`string`):  When `null`, the `suffix` field will be omitted from the resulting object.
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `hostname` sub block.
@@ -647,8 +647,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.new](#fn-specspecactionnew) constructor.
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.new](#fn-specspecmatchnew) constructor.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.new](#fn-specspecactionnew) constructor.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.new](#fn-specspecmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http_route` sub block.
@@ -671,8 +671,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `rewrite` (`list[obj]`):  When `null`, the `rewrite` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.new](#fn-specspechttp_routerewritenew) constructor.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.new](#fn-specspechttp_routetargetnew) constructor.
+  - `rewrite` (`list[obj]`): Set the `rewrite` field on the resulting object. When `null`, the `rewrite` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.new](#fn-specspechttp_routerewritenew) constructor.
+  - `target` (`list[obj]`): Set the `target` field on the resulting object. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.new](#fn-specspechttp_routetargetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -695,8 +695,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.hostname.new](#fn-specspechttp_routeactionhostnamenew) constructor.
-  - `prefix` (`list[obj]`):  When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new](#fn-specspechttp_routeactionprefixnew) constructor.
+  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.hostname.new](#fn-specspechttp_routeactionhostnamenew) constructor.
+  - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new](#fn-specspechttp_routeactionprefixnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rewrite` sub block.
@@ -719,7 +719,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_target_hostname` (`string`): 
+  - `default_target_hostname` (`string`): Set the `default_target_hostname` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `hostname` sub block.
@@ -742,8 +742,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_prefix` (`string`):  When `null`, the `default_prefix` field will be omitted from the resulting object.
-  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
+  - `default_prefix` (`string`): Set the `default_prefix` field on the resulting object. When `null`, the `default_prefix` field will be omitted from the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `prefix` sub block.
@@ -766,7 +766,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_service` (`list[obj]`):  When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.virtual_service.new](#fn-specspechttp_routeactionvirtual_servicenew) constructor.
+  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.virtual_service.new](#fn-specspechttp_routeactionvirtual_servicenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target` sub block.
@@ -789,7 +789,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_service_name` (`string`): 
+  - `virtual_service_name` (`string`): Set the `virtual_service_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `virtual_service` sub block.
@@ -812,8 +812,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `hostname` (`list[obj]`):  When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.hostname.new](#fn-specspechttp_routehostnamenew) constructor.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.hostname.new](#fn-specspechttp_routehostnamenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -836,8 +836,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `exact` (`string`):  When `null`, the `exact` field will be omitted from the resulting object.
-  - `suffix` (`string`):  When `null`, the `suffix` field will be omitted from the resulting object.
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `hostname` sub block.

@@ -103,37 +103,37 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `architectures` (`list`):  When `null`, the `architectures` field will be omitted from the resulting object.
-  - `code_signing_config_arn` (`string`):  When `null`, the `code_signing_config_arn` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `filename` (`string`):  When `null`, the `filename` field will be omitted from the resulting object.
-  - `function_name` (`string`): 
-  - `handler` (`string`):  When `null`, the `handler` field will be omitted from the resulting object.
-  - `image_uri` (`string`):  When `null`, the `image_uri` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `layers` (`list`):  When `null`, the `layers` field will be omitted from the resulting object.
-  - `memory_size` (`number`):  When `null`, the `memory_size` field will be omitted from the resulting object.
-  - `package_type` (`string`):  When `null`, the `package_type` field will be omitted from the resulting object.
-  - `publish` (`bool`):  When `null`, the `publish` field will be omitted from the resulting object.
-  - `reserved_concurrent_executions` (`number`):  When `null`, the `reserved_concurrent_executions` field will be omitted from the resulting object.
-  - `role` (`string`): 
-  - `runtime` (`string`):  When `null`, the `runtime` field will be omitted from the resulting object.
-  - `s3_bucket` (`string`):  When `null`, the `s3_bucket` field will be omitted from the resulting object.
-  - `s3_key` (`string`):  When `null`, the `s3_key` field will be omitted from the resulting object.
-  - `s3_object_version` (`string`):  When `null`, the `s3_object_version` field will be omitted from the resulting object.
-  - `source_code_hash` (`string`):  When `null`, the `source_code_hash` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
-  - `dead_letter_config` (`list[obj]`):  When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.environment.new](#fn-environmentnew) constructor.
-  - `ephemeral_storage` (`list[obj]`):  When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
-  - `file_system_config` (`list[obj]`):  When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.file_system_config.new](#fn-file_system_confignew) constructor.
-  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.image_config.new](#fn-image_confignew) constructor.
-  - `snap_start` (`list[obj]`):  When `null`, the `snap_start` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.snap_start.new](#fn-snap_startnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.timeouts.new](#fn-timeoutsnew) constructor.
-  - `tracing_config` (`list[obj]`):  When `null`, the `tracing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.tracing_config.new](#fn-tracing_confignew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `architectures` (`list`): Set the `architectures` field on the resulting resource block. When `null`, the `architectures` field will be omitted from the resulting object.
+  - `code_signing_config_arn` (`string`): Set the `code_signing_config_arn` field on the resulting resource block. When `null`, the `code_signing_config_arn` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `filename` (`string`): Set the `filename` field on the resulting resource block. When `null`, the `filename` field will be omitted from the resulting object.
+  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
+  - `handler` (`string`): Set the `handler` field on the resulting resource block. When `null`, the `handler` field will be omitted from the resulting object.
+  - `image_uri` (`string`): Set the `image_uri` field on the resulting resource block. When `null`, the `image_uri` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `layers` (`list`): Set the `layers` field on the resulting resource block. When `null`, the `layers` field will be omitted from the resulting object.
+  - `memory_size` (`number`): Set the `memory_size` field on the resulting resource block. When `null`, the `memory_size` field will be omitted from the resulting object.
+  - `package_type` (`string`): Set the `package_type` field on the resulting resource block. When `null`, the `package_type` field will be omitted from the resulting object.
+  - `publish` (`bool`): Set the `publish` field on the resulting resource block. When `null`, the `publish` field will be omitted from the resulting object.
+  - `reserved_concurrent_executions` (`number`): Set the `reserved_concurrent_executions` field on the resulting resource block. When `null`, the `reserved_concurrent_executions` field will be omitted from the resulting object.
+  - `role` (`string`): Set the `role` field on the resulting resource block.
+  - `runtime` (`string`): Set the `runtime` field on the resulting resource block. When `null`, the `runtime` field will be omitted from the resulting object.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting resource block. When `null`, the `s3_bucket` field will be omitted from the resulting object.
+  - `s3_key` (`string`): Set the `s3_key` field on the resulting resource block. When `null`, the `s3_key` field will be omitted from the resulting object.
+  - `s3_object_version` (`string`): Set the `s3_object_version` field on the resulting resource block. When `null`, the `s3_object_version` field will be omitted from the resulting object.
+  - `source_code_hash` (`string`): Set the `source_code_hash` field on the resulting resource block. When `null`, the `source_code_hash` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout` (`number`): Set the `timeout` field on the resulting resource block. When `null`, the `timeout` field will be omitted from the resulting object.
+  - `dead_letter_config` (`list[obj]`): Set the `dead_letter_config` field on the resulting resource block. When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
+  - `environment` (`list[obj]`): Set the `environment` field on the resulting resource block. When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.environment.new](#fn-environmentnew) constructor.
+  - `ephemeral_storage` (`list[obj]`): Set the `ephemeral_storage` field on the resulting resource block. When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
+  - `file_system_config` (`list[obj]`): Set the `file_system_config` field on the resulting resource block. When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.file_system_config.new](#fn-file_system_confignew) constructor.
+  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting resource block. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.image_config.new](#fn-image_confignew) constructor.
+  - `snap_start` (`list[obj]`): Set the `snap_start` field on the resulting resource block. When `null`, the `snap_start` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.snap_start.new](#fn-snap_startnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.timeouts.new](#fn-timeoutsnew) constructor.
+  - `tracing_config` (`list[obj]`): Set the `tracing_config` field on the resulting resource block. When `null`, the `tracing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.tracing_config.new](#fn-tracing_confignew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting resource block. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -157,37 +157,37 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `architectures` (`list`):  When `null`, the `architectures` field will be omitted from the resulting object.
-  - `code_signing_config_arn` (`string`):  When `null`, the `code_signing_config_arn` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `filename` (`string`):  When `null`, the `filename` field will be omitted from the resulting object.
-  - `function_name` (`string`): 
-  - `handler` (`string`):  When `null`, the `handler` field will be omitted from the resulting object.
-  - `image_uri` (`string`):  When `null`, the `image_uri` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `layers` (`list`):  When `null`, the `layers` field will be omitted from the resulting object.
-  - `memory_size` (`number`):  When `null`, the `memory_size` field will be omitted from the resulting object.
-  - `package_type` (`string`):  When `null`, the `package_type` field will be omitted from the resulting object.
-  - `publish` (`bool`):  When `null`, the `publish` field will be omitted from the resulting object.
-  - `reserved_concurrent_executions` (`number`):  When `null`, the `reserved_concurrent_executions` field will be omitted from the resulting object.
-  - `role` (`string`): 
-  - `runtime` (`string`):  When `null`, the `runtime` field will be omitted from the resulting object.
-  - `s3_bucket` (`string`):  When `null`, the `s3_bucket` field will be omitted from the resulting object.
-  - `s3_key` (`string`):  When `null`, the `s3_key` field will be omitted from the resulting object.
-  - `s3_object_version` (`string`):  When `null`, the `s3_object_version` field will be omitted from the resulting object.
-  - `source_code_hash` (`string`):  When `null`, the `source_code_hash` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
-  - `dead_letter_config` (`list[obj]`):  When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.environment.new](#fn-environmentnew) constructor.
-  - `ephemeral_storage` (`list[obj]`):  When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
-  - `file_system_config` (`list[obj]`):  When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.file_system_config.new](#fn-file_system_confignew) constructor.
-  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.image_config.new](#fn-image_confignew) constructor.
-  - `snap_start` (`list[obj]`):  When `null`, the `snap_start` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.snap_start.new](#fn-snap_startnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.timeouts.new](#fn-timeoutsnew) constructor.
-  - `tracing_config` (`list[obj]`):  When `null`, the `tracing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.tracing_config.new](#fn-tracing_confignew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `architectures` (`list`): Set the `architectures` field on the resulting object. When `null`, the `architectures` field will be omitted from the resulting object.
+  - `code_signing_config_arn` (`string`): Set the `code_signing_config_arn` field on the resulting object. When `null`, the `code_signing_config_arn` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `filename` (`string`): Set the `filename` field on the resulting object. When `null`, the `filename` field will be omitted from the resulting object.
+  - `function_name` (`string`): Set the `function_name` field on the resulting object.
+  - `handler` (`string`): Set the `handler` field on the resulting object. When `null`, the `handler` field will be omitted from the resulting object.
+  - `image_uri` (`string`): Set the `image_uri` field on the resulting object. When `null`, the `image_uri` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `layers` (`list`): Set the `layers` field on the resulting object. When `null`, the `layers` field will be omitted from the resulting object.
+  - `memory_size` (`number`): Set the `memory_size` field on the resulting object. When `null`, the `memory_size` field will be omitted from the resulting object.
+  - `package_type` (`string`): Set the `package_type` field on the resulting object. When `null`, the `package_type` field will be omitted from the resulting object.
+  - `publish` (`bool`): Set the `publish` field on the resulting object. When `null`, the `publish` field will be omitted from the resulting object.
+  - `reserved_concurrent_executions` (`number`): Set the `reserved_concurrent_executions` field on the resulting object. When `null`, the `reserved_concurrent_executions` field will be omitted from the resulting object.
+  - `role` (`string`): Set the `role` field on the resulting object.
+  - `runtime` (`string`): Set the `runtime` field on the resulting object. When `null`, the `runtime` field will be omitted from the resulting object.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting object. When `null`, the `s3_bucket` field will be omitted from the resulting object.
+  - `s3_key` (`string`): Set the `s3_key` field on the resulting object. When `null`, the `s3_key` field will be omitted from the resulting object.
+  - `s3_object_version` (`string`): Set the `s3_object_version` field on the resulting object. When `null`, the `s3_object_version` field will be omitted from the resulting object.
+  - `source_code_hash` (`string`): Set the `source_code_hash` field on the resulting object. When `null`, the `source_code_hash` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout` (`number`): Set the `timeout` field on the resulting object. When `null`, the `timeout` field will be omitted from the resulting object.
+  - `dead_letter_config` (`list[obj]`): Set the `dead_letter_config` field on the resulting object. When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
+  - `environment` (`list[obj]`): Set the `environment` field on the resulting object. When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.environment.new](#fn-environmentnew) constructor.
+  - `ephemeral_storage` (`list[obj]`): Set the `ephemeral_storage` field on the resulting object. When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
+  - `file_system_config` (`list[obj]`): Set the `file_system_config` field on the resulting object. When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.file_system_config.new](#fn-file_system_confignew) constructor.
+  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.image_config.new](#fn-image_confignew) constructor.
+  - `snap_start` (`list[obj]`): Set the `snap_start` field on the resulting object. When `null`, the `snap_start` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.snap_start.new](#fn-snap_startnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.timeouts.new](#fn-timeoutsnew) constructor.
+  - `tracing_config` (`list[obj]`): Set the `tracing_config` field on the resulting object. When `null`, the `tracing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.tracing_config.new](#fn-tracing_confignew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_function` resource into the root Terraform configuration.
@@ -894,7 +894,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `target_arn` (`string`): 
+  - `target_arn` (`string`): Set the `target_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dead_letter_config` sub block.
@@ -917,7 +917,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `variables` (`obj`):  When `null`, the `variables` field will be omitted from the resulting object.
+  - `variables` (`obj`): Set the `variables` field on the resulting object. When `null`, the `variables` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `environment` sub block.
@@ -940,7 +940,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `size` (`number`):  When `null`, the `size` field will be omitted from the resulting object.
+  - `size` (`number`): Set the `size` field on the resulting object. When `null`, the `size` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ephemeral_storage` sub block.
@@ -963,8 +963,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `arn` (`string`): 
-  - `local_mount_path` (`string`): 
+  - `arn` (`string`): Set the `arn` field on the resulting object.
+  - `local_mount_path` (`string`): Set the `local_mount_path` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `file_system_config` sub block.
@@ -987,9 +987,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `command` (`list`):  When `null`, the `command` field will be omitted from the resulting object.
-  - `entry_point` (`list`):  When `null`, the `entry_point` field will be omitted from the resulting object.
-  - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
+  - `command` (`list`): Set the `command` field on the resulting object. When `null`, the `command` field will be omitted from the resulting object.
+  - `entry_point` (`list`): Set the `entry_point` field on the resulting object. When `null`, the `entry_point` field will be omitted from the resulting object.
+  - `working_directory` (`string`): Set the `working_directory` field on the resulting object. When `null`, the `working_directory` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `image_config` sub block.
@@ -1012,7 +1012,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `apply_on` (`string`): 
+  - `apply_on` (`string`): Set the `apply_on` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `snap_start` sub block.
@@ -1035,7 +1035,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -1058,7 +1058,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `mode` (`string`): 
+  - `mode` (`string`): Set the `mode` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tracing_config` sub block.
@@ -1081,8 +1081,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): 
-  - `subnet_ids` (`list`): 
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc_config` sub block.

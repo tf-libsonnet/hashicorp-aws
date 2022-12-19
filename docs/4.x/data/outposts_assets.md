@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `arn` (`string`): 
-  - `host_id_filter` (`list`):  When `null`, the `host_id_filter` field will be omitted from the resulting object.
-  - `status_id_filter` (`list`):  When `null`, the `status_id_filter` field will be omitted from the resulting object.
+  - `arn` (`string`): Set the `arn` field on the resulting data source block.
+  - `host_id_filter` (`list`): Set the `host_id_filter` field on the resulting data source block. When `null`, the `host_id_filter` field will be omitted from the resulting object.
+  - `status_id_filter` (`list`): Set the `status_id_filter` field on the resulting data source block. When `null`, the `status_id_filter` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `arn` (`string`): 
-  - `host_id_filter` (`list`):  When `null`, the `host_id_filter` field will be omitted from the resulting object.
-  - `status_id_filter` (`list`):  When `null`, the `status_id_filter` field will be omitted from the resulting object.
+  - `arn` (`string`): Set the `arn` field on the resulting object.
+  - `host_id_filter` (`list`): Set the `host_id_filter` field on the resulting object. When `null`, the `host_id_filter` field will be omitted from the resulting object.
+  - `status_id_filter` (`list`): Set the `status_id_filter` field on the resulting object. When `null`, the `status_id_filter` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `outposts_assets` data source into the root Terraform configuration.

@@ -67,15 +67,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `is_disabled` (`bool`):  When `null`, the `is_disabled` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `power` (`string`): 
-  - `scale` (`number`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `private_registry_access` (`list[obj]`):  When `null`, the `private_registry_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.new](#fn-private_registry_accessnew) constructor.
-  - `public_domain_names` (`list[obj]`):  When `null`, the `public_domain_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.new](#fn-public_domain_namesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.timeouts.new](#fn-timeoutsnew) constructor.
+  - `is_disabled` (`bool`): Set the `is_disabled` field on the resulting resource block. When `null`, the `is_disabled` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `power` (`string`): Set the `power` field on the resulting resource block.
+  - `scale` (`number`): Set the `scale` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `private_registry_access` (`list[obj]`): Set the `private_registry_access` field on the resulting resource block. When `null`, the `private_registry_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.new](#fn-private_registry_accessnew) constructor.
+  - `public_domain_names` (`list[obj]`): Set the `public_domain_names` field on the resulting resource block. When `null`, the `public_domain_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.new](#fn-public_domain_namesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -99,15 +99,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `is_disabled` (`bool`):  When `null`, the `is_disabled` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `power` (`string`): 
-  - `scale` (`number`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `private_registry_access` (`list[obj]`):  When `null`, the `private_registry_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.new](#fn-private_registry_accessnew) constructor.
-  - `public_domain_names` (`list[obj]`):  When `null`, the `public_domain_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.new](#fn-public_domain_namesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.timeouts.new](#fn-timeoutsnew) constructor.
+  - `is_disabled` (`bool`): Set the `is_disabled` field on the resulting object. When `null`, the `is_disabled` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `power` (`string`): Set the `power` field on the resulting object.
+  - `scale` (`number`): Set the `scale` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `private_registry_access` (`list[obj]`): Set the `private_registry_access` field on the resulting object. When `null`, the `private_registry_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.new](#fn-private_registry_accessnew) constructor.
+  - `public_domain_names` (`list[obj]`): Set the `public_domain_names` field on the resulting object. When `null`, the `public_domain_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.new](#fn-public_domain_namesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_container_service` resource into the root Terraform configuration.
@@ -336,7 +336,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ecr_image_puller_role` (`list[obj]`):  When `null`, the `ecr_image_puller_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.ecr_image_puller_role.new](#fn-private_registry_accessecr_image_puller_rolenew) constructor.
+  - `ecr_image_puller_role` (`list[obj]`): Set the `ecr_image_puller_role` field on the resulting object. When `null`, the `ecr_image_puller_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.ecr_image_puller_role.new](#fn-private_registry_accessecr_image_puller_rolenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `private_registry_access` sub block.
@@ -359,7 +359,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `is_active` (`bool`):  When `null`, the `is_active` field will be omitted from the resulting object.
+  - `is_active` (`bool`): Set the `is_active` field on the resulting object. When `null`, the `is_active` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ecr_image_puller_role` sub block.
@@ -382,7 +382,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.certificate.new](#fn-public_domain_namescertificatenew) constructor.
+  - `certificate` (`list[obj]`): Set the `certificate` field on the resulting object. When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.certificate.new](#fn-public_domain_namescertificatenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `public_domain_names` sub block.
@@ -405,8 +405,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `certificate_name` (`string`): 
-  - `domain_names` (`list`): 
+  - `certificate_name` (`string`): Set the `certificate_name` field on the resulting object.
+  - `domain_names` (`list`): Set the `domain_names` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `certificate` sub block.
@@ -429,9 +429,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

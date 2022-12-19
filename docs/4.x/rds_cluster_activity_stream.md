@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `engine_native_audit_fields_included` (`bool`):  When `null`, the `engine_native_audit_fields_included` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): 
-  - `mode` (`string`): 
-  - `resource_arn` (`string`): 
+  - `engine_native_audit_fields_included` (`bool`): Set the `engine_native_audit_fields_included` field on the resulting resource block. When `null`, the `engine_native_audit_fields_included` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block.
+  - `mode` (`string`): Set the `mode` field on the resulting resource block.
+  - `resource_arn` (`string`): Set the `resource_arn` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `engine_native_audit_fields_included` (`bool`):  When `null`, the `engine_native_audit_fields_included` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): 
-  - `mode` (`string`): 
-  - `resource_arn` (`string`): 
+  - `engine_native_audit_fields_included` (`bool`): Set the `engine_native_audit_fields_included` field on the resulting object. When `null`, the `engine_native_audit_fields_included` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object.
+  - `mode` (`string`): Set the `mode` field on the resulting object.
+  - `resource_arn` (`string`): Set the `resource_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `rds_cluster_activity_stream` resource into the root Terraform configuration.

@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `domain` (`string`): 
-  - `domain_owner` (`string`):  When `null`, the `domain_owner` field will be omitted from the resulting object.
-  - `policy_document` (`string`): 
-  - `policy_revision` (`string`):  When `null`, the `policy_revision` field will be omitted from the resulting object.
-  - `repository` (`string`): 
+  - `domain` (`string`): Set the `domain` field on the resulting resource block.
+  - `domain_owner` (`string`): Set the `domain_owner` field on the resulting resource block. When `null`, the `domain_owner` field will be omitted from the resulting object.
+  - `policy_document` (`string`): Set the `policy_document` field on the resulting resource block.
+  - `policy_revision` (`string`): Set the `policy_revision` field on the resulting resource block. When `null`, the `policy_revision` field will be omitted from the resulting object.
+  - `repository` (`string`): Set the `repository` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `domain` (`string`): 
-  - `domain_owner` (`string`):  When `null`, the `domain_owner` field will be omitted from the resulting object.
-  - `policy_document` (`string`): 
-  - `policy_revision` (`string`):  When `null`, the `policy_revision` field will be omitted from the resulting object.
-  - `repository` (`string`): 
+  - `domain` (`string`): Set the `domain` field on the resulting object.
+  - `domain_owner` (`string`): Set the `domain_owner` field on the resulting object. When `null`, the `domain_owner` field will be omitted from the resulting object.
+  - `policy_document` (`string`): Set the `policy_document` field on the resulting object.
+  - `policy_revision` (`string`): Set the `policy_revision` field on the resulting object. When `null`, the `policy_revision` field will be omitted from the resulting object.
+  - `repository` (`string`): Set the `repository` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codeartifact_repository_permissions_policy` resource into the root Terraform configuration.

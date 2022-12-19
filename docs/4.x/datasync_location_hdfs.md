@@ -65,20 +65,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `agent_arns` (`list`): 
-  - `authentication_type` (`string`):  When `null`, the `authentication_type` field will be omitted from the resulting object.
-  - `block_size` (`number`):  When `null`, the `block_size` field will be omitted from the resulting object.
-  - `kerberos_keytab` (`string`):  When `null`, the `kerberos_keytab` field will be omitted from the resulting object.
-  - `kerberos_krb5_conf` (`string`):  When `null`, the `kerberos_krb5_conf` field will be omitted from the resulting object.
-  - `kerberos_principal` (`string`):  When `null`, the `kerberos_principal` field will be omitted from the resulting object.
-  - `kms_key_provider_uri` (`string`):  When `null`, the `kms_key_provider_uri` field will be omitted from the resulting object.
-  - `replication_factor` (`number`):  When `null`, the `replication_factor` field will be omitted from the resulting object.
-  - `simple_user` (`string`):  When `null`, the `simple_user` field will be omitted from the resulting object.
-  - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `name_node` (`list[obj]`):  When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-name_nodenew) constructor.
-  - `qop_configuration` (`list[obj]`):  When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-qop_configurationnew) constructor.
+  - `agent_arns` (`list`): Set the `agent_arns` field on the resulting resource block.
+  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting resource block. When `null`, the `authentication_type` field will be omitted from the resulting object.
+  - `block_size` (`number`): Set the `block_size` field on the resulting resource block. When `null`, the `block_size` field will be omitted from the resulting object.
+  - `kerberos_keytab` (`string`): Set the `kerberos_keytab` field on the resulting resource block. When `null`, the `kerberos_keytab` field will be omitted from the resulting object.
+  - `kerberos_krb5_conf` (`string`): Set the `kerberos_krb5_conf` field on the resulting resource block. When `null`, the `kerberos_krb5_conf` field will be omitted from the resulting object.
+  - `kerberos_principal` (`string`): Set the `kerberos_principal` field on the resulting resource block. When `null`, the `kerberos_principal` field will be omitted from the resulting object.
+  - `kms_key_provider_uri` (`string`): Set the `kms_key_provider_uri` field on the resulting resource block. When `null`, the `kms_key_provider_uri` field will be omitted from the resulting object.
+  - `replication_factor` (`number`): Set the `replication_factor` field on the resulting resource block. When `null`, the `replication_factor` field will be omitted from the resulting object.
+  - `simple_user` (`string`): Set the `simple_user` field on the resulting resource block. When `null`, the `simple_user` field will be omitted from the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting resource block. When `null`, the `subdirectory` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `name_node` (`list[obj]`): Set the `name_node` field on the resulting resource block. When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-name_nodenew) constructor.
+  - `qop_configuration` (`list[obj]`): Set the `qop_configuration` field on the resulting resource block. When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-qop_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,20 +102,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `agent_arns` (`list`): 
-  - `authentication_type` (`string`):  When `null`, the `authentication_type` field will be omitted from the resulting object.
-  - `block_size` (`number`):  When `null`, the `block_size` field will be omitted from the resulting object.
-  - `kerberos_keytab` (`string`):  When `null`, the `kerberos_keytab` field will be omitted from the resulting object.
-  - `kerberos_krb5_conf` (`string`):  When `null`, the `kerberos_krb5_conf` field will be omitted from the resulting object.
-  - `kerberos_principal` (`string`):  When `null`, the `kerberos_principal` field will be omitted from the resulting object.
-  - `kms_key_provider_uri` (`string`):  When `null`, the `kms_key_provider_uri` field will be omitted from the resulting object.
-  - `replication_factor` (`number`):  When `null`, the `replication_factor` field will be omitted from the resulting object.
-  - `simple_user` (`string`):  When `null`, the `simple_user` field will be omitted from the resulting object.
-  - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `name_node` (`list[obj]`):  When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-name_nodenew) constructor.
-  - `qop_configuration` (`list[obj]`):  When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-qop_configurationnew) constructor.
+  - `agent_arns` (`list`): Set the `agent_arns` field on the resulting object.
+  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting object. When `null`, the `authentication_type` field will be omitted from the resulting object.
+  - `block_size` (`number`): Set the `block_size` field on the resulting object. When `null`, the `block_size` field will be omitted from the resulting object.
+  - `kerberos_keytab` (`string`): Set the `kerberos_keytab` field on the resulting object. When `null`, the `kerberos_keytab` field will be omitted from the resulting object.
+  - `kerberos_krb5_conf` (`string`): Set the `kerberos_krb5_conf` field on the resulting object. When `null`, the `kerberos_krb5_conf` field will be omitted from the resulting object.
+  - `kerberos_principal` (`string`): Set the `kerberos_principal` field on the resulting object. When `null`, the `kerberos_principal` field will be omitted from the resulting object.
+  - `kms_key_provider_uri` (`string`): Set the `kms_key_provider_uri` field on the resulting object. When `null`, the `kms_key_provider_uri` field will be omitted from the resulting object.
+  - `replication_factor` (`number`): Set the `replication_factor` field on the resulting object. When `null`, the `replication_factor` field will be omitted from the resulting object.
+  - `simple_user` (`string`): Set the `simple_user` field on the resulting object. When `null`, the `simple_user` field will be omitted from the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting object. When `null`, the `subdirectory` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `name_node` (`list[obj]`): Set the `name_node` field on the resulting object. When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-name_nodenew) constructor.
+  - `qop_configuration` (`list[obj]`): Set the `qop_configuration` field on the resulting object. When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-qop_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_location_hdfs` resource into the root Terraform configuration.
@@ -404,8 +404,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `hostname` (`string`): 
-  - `port` (`number`): 
+  - `hostname` (`string`): Set the `hostname` field on the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `name_node` sub block.
@@ -428,8 +428,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_transfer_protection` (`string`):  When `null`, the `data_transfer_protection` field will be omitted from the resulting object.
-  - `rpc_protection` (`string`):  When `null`, the `rpc_protection` field will be omitted from the resulting object.
+  - `data_transfer_protection` (`string`): Set the `data_transfer_protection` field on the resulting object. When `null`, the `data_transfer_protection` field will be omitted from the resulting object.
+  - `rpc_protection` (`string`): Set the `rpc_protection` field on the resulting object. When `null`, the `rpc_protection` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `qop_configuration` sub block.

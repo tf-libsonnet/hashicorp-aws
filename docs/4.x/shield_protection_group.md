@@ -52,13 +52,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `aggregation` (`string`): 
-  - `members` (`list`):  When `null`, the `members` field will be omitted from the resulting object.
-  - `pattern` (`string`): 
-  - `protection_group_id` (`string`): 
-  - `resource_type` (`string`):  When `null`, the `resource_type` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `aggregation` (`string`): Set the `aggregation` field on the resulting resource block.
+  - `members` (`list`): Set the `members` field on the resulting resource block. When `null`, the `members` field will be omitted from the resulting object.
+  - `pattern` (`string`): Set the `pattern` field on the resulting resource block.
+  - `protection_group_id` (`string`): Set the `protection_group_id` field on the resulting resource block.
+  - `resource_type` (`string`): Set the `resource_type` field on the resulting resource block. When `null`, the `resource_type` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,13 +82,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `aggregation` (`string`): 
-  - `members` (`list`):  When `null`, the `members` field will be omitted from the resulting object.
-  - `pattern` (`string`): 
-  - `protection_group_id` (`string`): 
-  - `resource_type` (`string`):  When `null`, the `resource_type` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `aggregation` (`string`): Set the `aggregation` field on the resulting object.
+  - `members` (`list`): Set the `members` field on the resulting object. When `null`, the `members` field will be omitted from the resulting object.
+  - `pattern` (`string`): Set the `pattern` field on the resulting object.
+  - `protection_group_id` (`string`): Set the `protection_group_id` field on the resulting object.
+  - `resource_type` (`string`): Set the `resource_type` field on the resulting object. When `null`, the `resource_type` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `shield_protection_group` resource into the root Terraform configuration.

@@ -61,16 +61,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `availability_zone_id` (`string`):  When `null`, the `availability_zone_id` field will be omitted from the resulting object.
-  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `default_for_az` (`bool`):  When `null`, the `default_for_az` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.filter.new](#fn-filternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.timeouts.new](#fn-timeoutsnew) constructor.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting data source block. When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_id` (`string`): Set the `availability_zone_id` field on the resulting data source block. When `null`, the `availability_zone_id` field will be omitted from the resulting object.
+  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting data source block. When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `default_for_az` (`bool`): Set the `default_for_az` field on the resulting data source block. When `null`, the `default_for_az` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting data source block. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting data source block. When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting data source block. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -94,16 +94,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `availability_zone_id` (`string`):  When `null`, the `availability_zone_id` field will be omitted from the resulting object.
-  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `default_for_az` (`bool`):  When `null`, the `default_for_az` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.filter.new](#fn-filternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.timeouts.new](#fn-timeoutsnew) constructor.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_id` (`string`): Set the `availability_zone_id` field on the resulting object. When `null`, the `availability_zone_id` field will be omitted from the resulting object.
+  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `default_for_az` (`bool`): Set the `default_for_az` field on the resulting object. When `null`, the `default_for_az` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `subnet` data source into the root Terraform configuration.
@@ -327,8 +327,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `values` (`list`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -351,7 +351,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
+  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

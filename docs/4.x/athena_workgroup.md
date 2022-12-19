@@ -63,13 +63,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.new](#fn-configurationnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting resource block. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `state` (`string`): Set the `state` field on the resulting resource block. When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `configuration` (`list[obj]`): Set the `configuration` field on the resulting resource block. When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.new](#fn-configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,13 +93,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.new](#fn-configurationnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting object. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `configuration` (`list[obj]`): Set the `configuration` field on the resulting object. When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.new](#fn-configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `athena_workgroup` resource into the root Terraform configuration.
@@ -255,12 +255,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `bytes_scanned_cutoff_per_query` (`number`):  When `null`, the `bytes_scanned_cutoff_per_query` field will be omitted from the resulting object.
-  - `enforce_workgroup_configuration` (`bool`):  When `null`, the `enforce_workgroup_configuration` field will be omitted from the resulting object.
-  - `publish_cloudwatch_metrics_enabled` (`bool`):  When `null`, the `publish_cloudwatch_metrics_enabled` field will be omitted from the resulting object.
-  - `requester_pays_enabled` (`bool`):  When `null`, the `requester_pays_enabled` field will be omitted from the resulting object.
-  - `engine_version` (`list[obj]`):  When `null`, the `engine_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.engine_version.new](#fn-configurationengine_versionnew) constructor.
-  - `result_configuration` (`list[obj]`):  When `null`, the `result_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.new](#fn-configurationresult_configurationnew) constructor.
+  - `bytes_scanned_cutoff_per_query` (`number`): Set the `bytes_scanned_cutoff_per_query` field on the resulting object. When `null`, the `bytes_scanned_cutoff_per_query` field will be omitted from the resulting object.
+  - `enforce_workgroup_configuration` (`bool`): Set the `enforce_workgroup_configuration` field on the resulting object. When `null`, the `enforce_workgroup_configuration` field will be omitted from the resulting object.
+  - `publish_cloudwatch_metrics_enabled` (`bool`): Set the `publish_cloudwatch_metrics_enabled` field on the resulting object. When `null`, the `publish_cloudwatch_metrics_enabled` field will be omitted from the resulting object.
+  - `requester_pays_enabled` (`bool`): Set the `requester_pays_enabled` field on the resulting object. When `null`, the `requester_pays_enabled` field will be omitted from the resulting object.
+  - `engine_version` (`list[obj]`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.engine_version.new](#fn-configurationengine_versionnew) constructor.
+  - `result_configuration` (`list[obj]`): Set the `result_configuration` field on the resulting object. When `null`, the `result_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.new](#fn-configurationresult_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -283,7 +283,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `selected_engine_version` (`string`):  When `null`, the `selected_engine_version` field will be omitted from the resulting object.
+  - `selected_engine_version` (`string`): Set the `selected_engine_version` field on the resulting object. When `null`, the `selected_engine_version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `engine_version` sub block.
@@ -306,10 +306,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `output_location` (`string`):  When `null`, the `output_location` field will be omitted from the resulting object.
-  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.acl_configuration.new](#fn-configurationconfigurationacl_configurationnew) constructor.
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.encryption_configuration.new](#fn-configurationconfigurationencryption_configurationnew) constructor.
+  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `output_location` (`string`): Set the `output_location` field on the resulting object. When `null`, the `output_location` field will be omitted from the resulting object.
+  - `acl_configuration` (`list[obj]`): Set the `acl_configuration` field on the resulting object. When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.acl_configuration.new](#fn-configurationconfigurationacl_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting object. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.encryption_configuration.new](#fn-configurationconfigurationencryption_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `result_configuration` sub block.
@@ -332,7 +332,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_acl_option` (`string`): 
+  - `s3_acl_option` (`string`): Set the `s3_acl_option` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `acl_configuration` sub block.
@@ -355,8 +355,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `encryption_option` (`string`):  When `null`, the `encryption_option` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `encryption_option` (`string`): Set the `encryption_option` field on the resulting object. When `null`, the `encryption_option` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.

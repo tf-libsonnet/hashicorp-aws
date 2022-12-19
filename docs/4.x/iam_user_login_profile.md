@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `password_length` (`number`):  When `null`, the `password_length` field will be omitted from the resulting object.
-  - `password_reset_required` (`bool`):  When `null`, the `password_reset_required` field will be omitted from the resulting object.
-  - `pgp_key` (`string`):  When `null`, the `pgp_key` field will be omitted from the resulting object.
-  - `user` (`string`): 
+  - `password_length` (`number`): Set the `password_length` field on the resulting resource block. When `null`, the `password_length` field will be omitted from the resulting object.
+  - `password_reset_required` (`bool`): Set the `password_reset_required` field on the resulting resource block. When `null`, the `password_reset_required` field will be omitted from the resulting object.
+  - `pgp_key` (`string`): Set the `pgp_key` field on the resulting resource block. When `null`, the `pgp_key` field will be omitted from the resulting object.
+  - `user` (`string`): Set the `user` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `password_length` (`number`):  When `null`, the `password_length` field will be omitted from the resulting object.
-  - `password_reset_required` (`bool`):  When `null`, the `password_reset_required` field will be omitted from the resulting object.
-  - `pgp_key` (`string`):  When `null`, the `pgp_key` field will be omitted from the resulting object.
-  - `user` (`string`): 
+  - `password_length` (`number`): Set the `password_length` field on the resulting object. When `null`, the `password_length` field will be omitted from the resulting object.
+  - `password_reset_required` (`bool`): Set the `password_reset_required` field on the resulting object. When `null`, the `password_reset_required` field will be omitted from the resulting object.
+  - `pgp_key` (`string`): Set the `pgp_key` field on the resulting object. When `null`, the `pgp_key` field will be omitted from the resulting object.
+  - `user` (`string`): Set the `user` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iam_user_login_profile` resource into the root Terraform configuration.

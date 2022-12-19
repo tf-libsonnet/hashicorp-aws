@@ -70,16 +70,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `container` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `video_codec_options` (`obj`):  When `null`, the `video_codec_options` field will be omitted from the resulting object.
-  - `audio` (`list[obj]`):  When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-audionew) constructor.
-  - `audio_codec_options` (`list[obj]`):  When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-audio_codec_optionsnew) constructor.
-  - `thumbnails` (`list[obj]`):  When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-thumbnailsnew) constructor.
-  - `video` (`list[obj]`):  When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-videonew) constructor.
-  - `video_watermarks` (`list[obj]`):  When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-video_watermarksnew) constructor.
+  - `container` (`string`): Set the `container` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
+  - `video_codec_options` (`obj`): Set the `video_codec_options` field on the resulting resource block. When `null`, the `video_codec_options` field will be omitted from the resulting object.
+  - `audio` (`list[obj]`): Set the `audio` field on the resulting resource block. When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-audionew) constructor.
+  - `audio_codec_options` (`list[obj]`): Set the `audio_codec_options` field on the resulting resource block. When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-audio_codec_optionsnew) constructor.
+  - `thumbnails` (`list[obj]`): Set the `thumbnails` field on the resulting resource block. When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-thumbnailsnew) constructor.
+  - `video` (`list[obj]`): Set the `video` field on the resulting resource block. When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-videonew) constructor.
+  - `video_watermarks` (`list[obj]`): Set the `video_watermarks` field on the resulting resource block. When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-video_watermarksnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,16 +103,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `container` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `video_codec_options` (`obj`):  When `null`, the `video_codec_options` field will be omitted from the resulting object.
-  - `audio` (`list[obj]`):  When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-audionew) constructor.
-  - `audio_codec_options` (`list[obj]`):  When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-audio_codec_optionsnew) constructor.
-  - `thumbnails` (`list[obj]`):  When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-thumbnailsnew) constructor.
-  - `video` (`list[obj]`):  When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-videonew) constructor.
-  - `video_watermarks` (`list[obj]`):  When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-video_watermarksnew) constructor.
+  - `container` (`string`): Set the `container` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `video_codec_options` (`obj`): Set the `video_codec_options` field on the resulting object. When `null`, the `video_codec_options` field will be omitted from the resulting object.
+  - `audio` (`list[obj]`): Set the `audio` field on the resulting object. When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-audionew) constructor.
+  - `audio_codec_options` (`list[obj]`): Set the `audio_codec_options` field on the resulting object. When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-audio_codec_optionsnew) constructor.
+  - `thumbnails` (`list[obj]`): Set the `thumbnails` field on the resulting object. When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-thumbnailsnew) constructor.
+  - `video` (`list[obj]`): Set the `video` field on the resulting object. When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-videonew) constructor.
+  - `video_watermarks` (`list[obj]`): Set the `video_watermarks` field on the resulting object. When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-video_watermarksnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastictranscoder_preset` resource into the root Terraform configuration.
@@ -400,11 +400,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `audio_packing_mode` (`string`):  When `null`, the `audio_packing_mode` field will be omitted from the resulting object.
-  - `bit_rate` (`string`):  When `null`, the `bit_rate` field will be omitted from the resulting object.
-  - `channels` (`string`):  When `null`, the `channels` field will be omitted from the resulting object.
-  - `codec` (`string`):  When `null`, the `codec` field will be omitted from the resulting object.
-  - `sample_rate` (`string`):  When `null`, the `sample_rate` field will be omitted from the resulting object.
+  - `audio_packing_mode` (`string`): Set the `audio_packing_mode` field on the resulting object. When `null`, the `audio_packing_mode` field will be omitted from the resulting object.
+  - `bit_rate` (`string`): Set the `bit_rate` field on the resulting object. When `null`, the `bit_rate` field will be omitted from the resulting object.
+  - `channels` (`string`): Set the `channels` field on the resulting object. When `null`, the `channels` field will be omitted from the resulting object.
+  - `codec` (`string`): Set the `codec` field on the resulting object. When `null`, the `codec` field will be omitted from the resulting object.
+  - `sample_rate` (`string`): Set the `sample_rate` field on the resulting object. When `null`, the `sample_rate` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `audio` sub block.
@@ -427,10 +427,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bit_depth` (`string`):  When `null`, the `bit_depth` field will be omitted from the resulting object.
-  - `bit_order` (`string`):  When `null`, the `bit_order` field will be omitted from the resulting object.
-  - `profile` (`string`):  When `null`, the `profile` field will be omitted from the resulting object.
-  - `signed` (`string`):  When `null`, the `signed` field will be omitted from the resulting object.
+  - `bit_depth` (`string`): Set the `bit_depth` field on the resulting object. When `null`, the `bit_depth` field will be omitted from the resulting object.
+  - `bit_order` (`string`): Set the `bit_order` field on the resulting object. When `null`, the `bit_order` field will be omitted from the resulting object.
+  - `profile` (`string`): Set the `profile` field on the resulting object. When `null`, the `profile` field will be omitted from the resulting object.
+  - `signed` (`string`): Set the `signed` field on the resulting object. When `null`, the `signed` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `audio_codec_options` sub block.
@@ -453,14 +453,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `aspect_ratio` (`string`):  When `null`, the `aspect_ratio` field will be omitted from the resulting object.
-  - `format` (`string`):  When `null`, the `format` field will be omitted from the resulting object.
-  - `interval` (`string`):  When `null`, the `interval` field will be omitted from the resulting object.
-  - `max_height` (`string`):  When `null`, the `max_height` field will be omitted from the resulting object.
-  - `max_width` (`string`):  When `null`, the `max_width` field will be omitted from the resulting object.
-  - `padding_policy` (`string`):  When `null`, the `padding_policy` field will be omitted from the resulting object.
-  - `resolution` (`string`):  When `null`, the `resolution` field will be omitted from the resulting object.
-  - `sizing_policy` (`string`):  When `null`, the `sizing_policy` field will be omitted from the resulting object.
+  - `aspect_ratio` (`string`): Set the `aspect_ratio` field on the resulting object. When `null`, the `aspect_ratio` field will be omitted from the resulting object.
+  - `format` (`string`): Set the `format` field on the resulting object. When `null`, the `format` field will be omitted from the resulting object.
+  - `interval` (`string`): Set the `interval` field on the resulting object. When `null`, the `interval` field will be omitted from the resulting object.
+  - `max_height` (`string`): Set the `max_height` field on the resulting object. When `null`, the `max_height` field will be omitted from the resulting object.
+  - `max_width` (`string`): Set the `max_width` field on the resulting object. When `null`, the `max_width` field will be omitted from the resulting object.
+  - `padding_policy` (`string`): Set the `padding_policy` field on the resulting object. When `null`, the `padding_policy` field will be omitted from the resulting object.
+  - `resolution` (`string`): Set the `resolution` field on the resulting object. When `null`, the `resolution` field will be omitted from the resulting object.
+  - `sizing_policy` (`string`): Set the `sizing_policy` field on the resulting object. When `null`, the `sizing_policy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `thumbnails` sub block.
@@ -483,19 +483,19 @@ Terraform sub block.
 
 
 **Args**:
-  - `aspect_ratio` (`string`):  When `null`, the `aspect_ratio` field will be omitted from the resulting object.
-  - `bit_rate` (`string`):  When `null`, the `bit_rate` field will be omitted from the resulting object.
-  - `codec` (`string`):  When `null`, the `codec` field will be omitted from the resulting object.
-  - `display_aspect_ratio` (`string`):  When `null`, the `display_aspect_ratio` field will be omitted from the resulting object.
-  - `fixed_gop` (`string`):  When `null`, the `fixed_gop` field will be omitted from the resulting object.
-  - `frame_rate` (`string`):  When `null`, the `frame_rate` field will be omitted from the resulting object.
-  - `keyframes_max_dist` (`string`):  When `null`, the `keyframes_max_dist` field will be omitted from the resulting object.
-  - `max_frame_rate` (`string`):  When `null`, the `max_frame_rate` field will be omitted from the resulting object.
-  - `max_height` (`string`):  When `null`, the `max_height` field will be omitted from the resulting object.
-  - `max_width` (`string`):  When `null`, the `max_width` field will be omitted from the resulting object.
-  - `padding_policy` (`string`):  When `null`, the `padding_policy` field will be omitted from the resulting object.
-  - `resolution` (`string`):  When `null`, the `resolution` field will be omitted from the resulting object.
-  - `sizing_policy` (`string`):  When `null`, the `sizing_policy` field will be omitted from the resulting object.
+  - `aspect_ratio` (`string`): Set the `aspect_ratio` field on the resulting object. When `null`, the `aspect_ratio` field will be omitted from the resulting object.
+  - `bit_rate` (`string`): Set the `bit_rate` field on the resulting object. When `null`, the `bit_rate` field will be omitted from the resulting object.
+  - `codec` (`string`): Set the `codec` field on the resulting object. When `null`, the `codec` field will be omitted from the resulting object.
+  - `display_aspect_ratio` (`string`): Set the `display_aspect_ratio` field on the resulting object. When `null`, the `display_aspect_ratio` field will be omitted from the resulting object.
+  - `fixed_gop` (`string`): Set the `fixed_gop` field on the resulting object. When `null`, the `fixed_gop` field will be omitted from the resulting object.
+  - `frame_rate` (`string`): Set the `frame_rate` field on the resulting object. When `null`, the `frame_rate` field will be omitted from the resulting object.
+  - `keyframes_max_dist` (`string`): Set the `keyframes_max_dist` field on the resulting object. When `null`, the `keyframes_max_dist` field will be omitted from the resulting object.
+  - `max_frame_rate` (`string`): Set the `max_frame_rate` field on the resulting object. When `null`, the `max_frame_rate` field will be omitted from the resulting object.
+  - `max_height` (`string`): Set the `max_height` field on the resulting object. When `null`, the `max_height` field will be omitted from the resulting object.
+  - `max_width` (`string`): Set the `max_width` field on the resulting object. When `null`, the `max_width` field will be omitted from the resulting object.
+  - `padding_policy` (`string`): Set the `padding_policy` field on the resulting object. When `null`, the `padding_policy` field will be omitted from the resulting object.
+  - `resolution` (`string`): Set the `resolution` field on the resulting object. When `null`, the `resolution` field will be omitted from the resulting object.
+  - `sizing_policy` (`string`): Set the `sizing_policy` field on the resulting object. When `null`, the `sizing_policy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `video` sub block.
@@ -518,15 +518,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `horizontal_align` (`string`):  When `null`, the `horizontal_align` field will be omitted from the resulting object.
-  - `horizontal_offset` (`string`):  When `null`, the `horizontal_offset` field will be omitted from the resulting object.
-  - `max_height` (`string`):  When `null`, the `max_height` field will be omitted from the resulting object.
-  - `max_width` (`string`):  When `null`, the `max_width` field will be omitted from the resulting object.
-  - `opacity` (`string`):  When `null`, the `opacity` field will be omitted from the resulting object.
-  - `sizing_policy` (`string`):  When `null`, the `sizing_policy` field will be omitted from the resulting object.
-  - `target` (`string`):  When `null`, the `target` field will be omitted from the resulting object.
-  - `vertical_align` (`string`):  When `null`, the `vertical_align` field will be omitted from the resulting object.
-  - `vertical_offset` (`string`):  When `null`, the `vertical_offset` field will be omitted from the resulting object.
+  - `horizontal_align` (`string`): Set the `horizontal_align` field on the resulting object. When `null`, the `horizontal_align` field will be omitted from the resulting object.
+  - `horizontal_offset` (`string`): Set the `horizontal_offset` field on the resulting object. When `null`, the `horizontal_offset` field will be omitted from the resulting object.
+  - `max_height` (`string`): Set the `max_height` field on the resulting object. When `null`, the `max_height` field will be omitted from the resulting object.
+  - `max_width` (`string`): Set the `max_width` field on the resulting object. When `null`, the `max_width` field will be omitted from the resulting object.
+  - `opacity` (`string`): Set the `opacity` field on the resulting object. When `null`, the `opacity` field will be omitted from the resulting object.
+  - `sizing_policy` (`string`): Set the `sizing_policy` field on the resulting object. When `null`, the `sizing_policy` field will be omitted from the resulting object.
+  - `target` (`string`): Set the `target` field on the resulting object. When `null`, the `target` field will be omitted from the resulting object.
+  - `vertical_align` (`string`): Set the `vertical_align` field on the resulting object. When `null`, the `vertical_align` field will be omitted from the resulting object.
+  - `vertical_offset` (`string`): Set the `vertical_offset` field on the resulting object. When `null`, the `vertical_offset` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `video_watermarks` sub block.

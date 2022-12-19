@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `cluster_type` (`string`):  When `null`, the `cluster_type` field will be omitted from the resulting object.
-  - `cluster_version` (`string`):  When `null`, the `cluster_version` field will be omitted from the resulting object.
-  - `node_type` (`string`):  When `null`, the `node_type` field will be omitted from the resulting object.
-  - `preferred_node_types` (`list`):  When `null`, the `preferred_node_types` field will be omitted from the resulting object.
+  - `cluster_type` (`string`): Set the `cluster_type` field on the resulting data source block. When `null`, the `cluster_type` field will be omitted from the resulting object.
+  - `cluster_version` (`string`): Set the `cluster_version` field on the resulting data source block. When `null`, the `cluster_version` field will be omitted from the resulting object.
+  - `node_type` (`string`): Set the `node_type` field on the resulting data source block. When `null`, the `node_type` field will be omitted from the resulting object.
+  - `preferred_node_types` (`list`): Set the `preferred_node_types` field on the resulting data source block. When `null`, the `preferred_node_types` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_type` (`string`):  When `null`, the `cluster_type` field will be omitted from the resulting object.
-  - `cluster_version` (`string`):  When `null`, the `cluster_version` field will be omitted from the resulting object.
-  - `node_type` (`string`):  When `null`, the `node_type` field will be omitted from the resulting object.
-  - `preferred_node_types` (`list`):  When `null`, the `preferred_node_types` field will be omitted from the resulting object.
+  - `cluster_type` (`string`): Set the `cluster_type` field on the resulting object. When `null`, the `cluster_type` field will be omitted from the resulting object.
+  - `cluster_version` (`string`): Set the `cluster_version` field on the resulting object. When `null`, the `cluster_version` field will be omitted from the resulting object.
+  - `node_type` (`string`): Set the `node_type` field on the resulting object. When `null`, the `node_type` field will be omitted from the resulting object.
+  - `preferred_node_types` (`list`): Set the `preferred_node_types` field on the resulting object. When `null`, the `preferred_node_types` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `redshift_orderable_cluster` data source into the root Terraform configuration.

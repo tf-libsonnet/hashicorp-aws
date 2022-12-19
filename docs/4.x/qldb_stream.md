@@ -56,14 +56,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `exclusive_end_time` (`string`):  When `null`, the `exclusive_end_time` field will be omitted from the resulting object.
-  - `inclusive_start_time` (`string`): 
-  - `ledger_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `stream_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `kinesis_configuration` (`list[obj]`):  When `null`, the `kinesis_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.kinesis_configuration.new](#fn-kinesis_configurationnew) constructor.
+  - `exclusive_end_time` (`string`): Set the `exclusive_end_time` field on the resulting resource block. When `null`, the `exclusive_end_time` field will be omitted from the resulting object.
+  - `inclusive_start_time` (`string`): Set the `inclusive_start_time` field on the resulting resource block.
+  - `ledger_name` (`string`): Set the `ledger_name` field on the resulting resource block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
+  - `stream_name` (`string`): Set the `stream_name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `kinesis_configuration` (`list[obj]`): Set the `kinesis_configuration` field on the resulting resource block. When `null`, the `kinesis_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.kinesis_configuration.new](#fn-kinesis_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,14 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `exclusive_end_time` (`string`):  When `null`, the `exclusive_end_time` field will be omitted from the resulting object.
-  - `inclusive_start_time` (`string`): 
-  - `ledger_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `stream_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `kinesis_configuration` (`list[obj]`):  When `null`, the `kinesis_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.kinesis_configuration.new](#fn-kinesis_configurationnew) constructor.
+  - `exclusive_end_time` (`string`): Set the `exclusive_end_time` field on the resulting object. When `null`, the `exclusive_end_time` field will be omitted from the resulting object.
+  - `inclusive_start_time` (`string`): Set the `inclusive_start_time` field on the resulting object.
+  - `ledger_name` (`string`): Set the `ledger_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `stream_name` (`string`): Set the `stream_name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `kinesis_configuration` (`list[obj]`): Set the `kinesis_configuration` field on the resulting object. When `null`, the `kinesis_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.kinesis_configuration.new](#fn-kinesis_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `qldb_stream` resource into the root Terraform configuration.
@@ -266,8 +266,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `aggregation_enabled` (`bool`):  When `null`, the `aggregation_enabled` field will be omitted from the resulting object.
-  - `stream_arn` (`string`): 
+  - `aggregation_enabled` (`bool`): Set the `aggregation_enabled` field on the resulting object. When `null`, the `aggregation_enabled` field will be omitted from the resulting object.
+  - `stream_arn` (`string`): Set the `stream_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `kinesis_configuration` sub block.

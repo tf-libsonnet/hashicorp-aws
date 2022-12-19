@@ -84,27 +84,27 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `ami_type` (`string`):  When `null`, the `ami_type` field will be omitted from the resulting object.
-  - `capacity_type` (`string`):  When `null`, the `capacity_type` field will be omitted from the resulting object.
-  - `cluster_name` (`string`): 
-  - `disk_size` (`number`):  When `null`, the `disk_size` field will be omitted from the resulting object.
-  - `force_update_version` (`bool`):  When `null`, the `force_update_version` field will be omitted from the resulting object.
-  - `instance_types` (`list`):  When `null`, the `instance_types` field will be omitted from the resulting object.
-  - `labels` (`obj`):  When `null`, the `labels` field will be omitted from the resulting object.
-  - `node_group_name` (`string`):  When `null`, the `node_group_name` field will be omitted from the resulting object.
-  - `node_group_name_prefix` (`string`):  When `null`, the `node_group_name_prefix` field will be omitted from the resulting object.
-  - `node_role_arn` (`string`): 
-  - `release_version` (`string`):  When `null`, the `release_version` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-launch_templatenew) constructor.
-  - `remote_access` (`list[obj]`):  When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-remote_accessnew) constructor.
-  - `scaling_config` (`list[obj]`):  When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-scaling_confignew) constructor.
-  - `taint` (`list[obj]`):  When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-taintnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-timeoutsnew) constructor.
-  - `update_config` (`list[obj]`):  When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-update_confignew) constructor.
+  - `ami_type` (`string`): Set the `ami_type` field on the resulting resource block. When `null`, the `ami_type` field will be omitted from the resulting object.
+  - `capacity_type` (`string`): Set the `capacity_type` field on the resulting resource block. When `null`, the `capacity_type` field will be omitted from the resulting object.
+  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting resource block.
+  - `disk_size` (`number`): Set the `disk_size` field on the resulting resource block. When `null`, the `disk_size` field will be omitted from the resulting object.
+  - `force_update_version` (`bool`): Set the `force_update_version` field on the resulting resource block. When `null`, the `force_update_version` field will be omitted from the resulting object.
+  - `instance_types` (`list`): Set the `instance_types` field on the resulting resource block. When `null`, the `instance_types` field will be omitted from the resulting object.
+  - `labels` (`obj`): Set the `labels` field on the resulting resource block. When `null`, the `labels` field will be omitted from the resulting object.
+  - `node_group_name` (`string`): Set the `node_group_name` field on the resulting resource block. When `null`, the `node_group_name` field will be omitted from the resulting object.
+  - `node_group_name_prefix` (`string`): Set the `node_group_name_prefix` field on the resulting resource block. When `null`, the `node_group_name_prefix` field will be omitted from the resulting object.
+  - `node_role_arn` (`string`): Set the `node_role_arn` field on the resulting resource block.
+  - `release_version` (`string`): Set the `release_version` field on the resulting resource block. When `null`, the `release_version` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting resource block. When `null`, the `version` field will be omitted from the resulting object.
+  - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting resource block. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `remote_access` (`list[obj]`): Set the `remote_access` field on the resulting resource block. When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-remote_accessnew) constructor.
+  - `scaling_config` (`list[obj]`): Set the `scaling_config` field on the resulting resource block. When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-scaling_confignew) constructor.
+  - `taint` (`list[obj]`): Set the `taint` field on the resulting resource block. When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-taintnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `update_config` (`list[obj]`): Set the `update_config` field on the resulting resource block. When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-update_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -128,27 +128,27 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `ami_type` (`string`):  When `null`, the `ami_type` field will be omitted from the resulting object.
-  - `capacity_type` (`string`):  When `null`, the `capacity_type` field will be omitted from the resulting object.
-  - `cluster_name` (`string`): 
-  - `disk_size` (`number`):  When `null`, the `disk_size` field will be omitted from the resulting object.
-  - `force_update_version` (`bool`):  When `null`, the `force_update_version` field will be omitted from the resulting object.
-  - `instance_types` (`list`):  When `null`, the `instance_types` field will be omitted from the resulting object.
-  - `labels` (`obj`):  When `null`, the `labels` field will be omitted from the resulting object.
-  - `node_group_name` (`string`):  When `null`, the `node_group_name` field will be omitted from the resulting object.
-  - `node_group_name_prefix` (`string`):  When `null`, the `node_group_name_prefix` field will be omitted from the resulting object.
-  - `node_role_arn` (`string`): 
-  - `release_version` (`string`):  When `null`, the `release_version` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-launch_templatenew) constructor.
-  - `remote_access` (`list[obj]`):  When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-remote_accessnew) constructor.
-  - `scaling_config` (`list[obj]`):  When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-scaling_confignew) constructor.
-  - `taint` (`list[obj]`):  When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-taintnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-timeoutsnew) constructor.
-  - `update_config` (`list[obj]`):  When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-update_confignew) constructor.
+  - `ami_type` (`string`): Set the `ami_type` field on the resulting object. When `null`, the `ami_type` field will be omitted from the resulting object.
+  - `capacity_type` (`string`): Set the `capacity_type` field on the resulting object. When `null`, the `capacity_type` field will be omitted from the resulting object.
+  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting object.
+  - `disk_size` (`number`): Set the `disk_size` field on the resulting object. When `null`, the `disk_size` field will be omitted from the resulting object.
+  - `force_update_version` (`bool`): Set the `force_update_version` field on the resulting object. When `null`, the `force_update_version` field will be omitted from the resulting object.
+  - `instance_types` (`list`): Set the `instance_types` field on the resulting object. When `null`, the `instance_types` field will be omitted from the resulting object.
+  - `labels` (`obj`): Set the `labels` field on the resulting object. When `null`, the `labels` field will be omitted from the resulting object.
+  - `node_group_name` (`string`): Set the `node_group_name` field on the resulting object. When `null`, the `node_group_name` field will be omitted from the resulting object.
+  - `node_group_name_prefix` (`string`): Set the `node_group_name_prefix` field on the resulting object. When `null`, the `node_group_name_prefix` field will be omitted from the resulting object.
+  - `node_role_arn` (`string`): Set the `node_role_arn` field on the resulting object.
+  - `release_version` (`string`): Set the `release_version` field on the resulting object. When `null`, the `release_version` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting object. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `remote_access` (`list[obj]`): Set the `remote_access` field on the resulting object. When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-remote_accessnew) constructor.
+  - `scaling_config` (`list[obj]`): Set the `scaling_config` field on the resulting object. When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-scaling_confignew) constructor.
+  - `taint` (`list[obj]`): Set the `taint` field on the resulting object. When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-taintnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `update_config` (`list[obj]`): Set the `update_config` field on the resulting object. When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-update_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_node_group` resource into the root Terraform configuration.
@@ -632,8 +632,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `version` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `launch_template` sub block.
@@ -656,8 +656,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `ec2_ssh_key` (`string`):  When `null`, the `ec2_ssh_key` field will be omitted from the resulting object.
-  - `source_security_group_ids` (`list`):  When `null`, the `source_security_group_ids` field will be omitted from the resulting object.
+  - `ec2_ssh_key` (`string`): Set the `ec2_ssh_key` field on the resulting object. When `null`, the `ec2_ssh_key` field will be omitted from the resulting object.
+  - `source_security_group_ids` (`list`): Set the `source_security_group_ids` field on the resulting object. When `null`, the `source_security_group_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `remote_access` sub block.
@@ -680,9 +680,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `desired_size` (`number`): 
-  - `max_size` (`number`): 
-  - `min_size` (`number`): 
+  - `desired_size` (`number`): Set the `desired_size` field on the resulting object.
+  - `max_size` (`number`): Set the `max_size` field on the resulting object.
+  - `min_size` (`number`): Set the `min_size` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scaling_config` sub block.
@@ -705,9 +705,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `effect` (`string`): 
-  - `key` (`string`): 
-  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
+  - `effect` (`string`): Set the `effect` field on the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `taint` sub block.
@@ -730,9 +730,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -755,8 +755,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_unavailable` (`number`):  When `null`, the `max_unavailable` field will be omitted from the resulting object.
-  - `max_unavailable_percentage` (`number`):  When `null`, the `max_unavailable_percentage` field will be omitted from the resulting object.
+  - `max_unavailable` (`number`): Set the `max_unavailable` field on the resulting object. When `null`, the `max_unavailable` field will be omitted from the resulting object.
+  - `max_unavailable_percentage` (`number`): Set the `max_unavailable_percentage` field on the resulting object. When `null`, the `max_unavailable_percentage` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `update_config` sub block.

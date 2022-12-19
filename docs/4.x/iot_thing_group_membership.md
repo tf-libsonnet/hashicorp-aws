@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `override_dynamic_group` (`bool`):  When `null`, the `override_dynamic_group` field will be omitted from the resulting object.
-  - `thing_group_name` (`string`): 
-  - `thing_name` (`string`): 
+  - `override_dynamic_group` (`bool`): Set the `override_dynamic_group` field on the resulting resource block. When `null`, the `override_dynamic_group` field will be omitted from the resulting object.
+  - `thing_group_name` (`string`): Set the `thing_group_name` field on the resulting resource block.
+  - `thing_name` (`string`): Set the `thing_name` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `override_dynamic_group` (`bool`):  When `null`, the `override_dynamic_group` field will be omitted from the resulting object.
-  - `thing_group_name` (`string`): 
-  - `thing_name` (`string`): 
+  - `override_dynamic_group` (`bool`): Set the `override_dynamic_group` field on the resulting object. When `null`, the `override_dynamic_group` field will be omitted from the resulting object.
+  - `thing_group_name` (`string`): Set the `thing_group_name` field on the resulting object.
+  - `thing_name` (`string`): Set the `thing_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_thing_group_membership` resource into the root Terraform configuration.

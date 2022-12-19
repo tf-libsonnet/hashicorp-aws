@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `access_string` (`string`):  When `null`, the `access_string` field will be omitted from the resulting object.
-  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.
-  - `no_password_required` (`bool`):  When `null`, the `no_password_required` field will be omitted from the resulting object.
-  - `passwords` (`list`):  When `null`, the `passwords` field will be omitted from the resulting object.
-  - `user_id` (`string`): 
-  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
+  - `access_string` (`string`): Set the `access_string` field on the resulting data source block. When `null`, the `access_string` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting data source block. When `null`, the `engine` field will be omitted from the resulting object.
+  - `no_password_required` (`bool`): Set the `no_password_required` field on the resulting data source block. When `null`, the `no_password_required` field will be omitted from the resulting object.
+  - `passwords` (`list`): Set the `passwords` field on the resulting data source block. When `null`, the `passwords` field will be omitted from the resulting object.
+  - `user_id` (`string`): Set the `user_id` field on the resulting data source block.
+  - `user_name` (`string`): Set the `user_name` field on the resulting data source block. When `null`, the `user_name` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_string` (`string`):  When `null`, the `access_string` field will be omitted from the resulting object.
-  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.
-  - `no_password_required` (`bool`):  When `null`, the `no_password_required` field will be omitted from the resulting object.
-  - `passwords` (`list`):  When `null`, the `passwords` field will be omitted from the resulting object.
-  - `user_id` (`string`): 
-  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
+  - `access_string` (`string`): Set the `access_string` field on the resulting object. When `null`, the `access_string` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
+  - `no_password_required` (`bool`): Set the `no_password_required` field on the resulting object. When `null`, the `no_password_required` field will be omitted from the resulting object.
+  - `passwords` (`list`): Set the `passwords` field on the resulting object. When `null`, the `passwords` field will be omitted from the resulting object.
+  - `user_id` (`string`): Set the `user_id` field on the resulting object.
+  - `user_name` (`string`): Set the `user_name` field on the resulting object. When `null`, the `user_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `elasticache_user` data source into the root Terraform configuration.

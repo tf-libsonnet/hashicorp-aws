@@ -60,15 +60,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_identifier` (`string`): 
-  - `database` (`string`): 
-  - `db_user` (`string`):  When `null`, the `db_user` field will be omitted from the resulting object.
-  - `secret_arn` (`string`):  When `null`, the `secret_arn` field will be omitted from the resulting object.
-  - `sql` (`string`): 
-  - `statement_name` (`string`):  When `null`, the `statement_name` field will be omitted from the resulting object.
-  - `with_event` (`bool`):  When `null`, the `with_event` field will be omitted from the resulting object.
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.
+  - `database` (`string`): Set the `database` field on the resulting resource block.
+  - `db_user` (`string`): Set the `db_user` field on the resulting resource block. When `null`, the `db_user` field will be omitted from the resulting object.
+  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting resource block. When `null`, the `secret_arn` field will be omitted from the resulting object.
+  - `sql` (`string`): Set the `sql` field on the resulting resource block.
+  - `statement_name` (`string`): Set the `statement_name` field on the resulting resource block. When `null`, the `statement_name` field will be omitted from the resulting object.
+  - `with_event` (`bool`): Set the `with_event` field on the resulting resource block. When `null`, the `with_event` field will be omitted from the resulting object.
+  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -92,15 +92,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_identifier` (`string`): 
-  - `database` (`string`): 
-  - `db_user` (`string`):  When `null`, the `db_user` field will be omitted from the resulting object.
-  - `secret_arn` (`string`):  When `null`, the `secret_arn` field will be omitted from the resulting object.
-  - `sql` (`string`): 
-  - `statement_name` (`string`):  When `null`, the `statement_name` field will be omitted from the resulting object.
-  - `with_event` (`bool`):  When `null`, the `with_event` field will be omitted from the resulting object.
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
+  - `database` (`string`): Set the `database` field on the resulting object.
+  - `db_user` (`string`): Set the `db_user` field on the resulting object. When `null`, the `db_user` field will be omitted from the resulting object.
+  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.
+  - `sql` (`string`): Set the `sql` field on the resulting object.
+  - `statement_name` (`string`): Set the `statement_name` field on the resulting object. When `null`, the `statement_name` field will be omitted from the resulting object.
+  - `with_event` (`bool`): Set the `with_event` field on the resulting object. When `null`, the `with_event` field will be omitted from the resulting object.
+  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting object. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftdata_statement` resource into the root Terraform configuration.
@@ -308,8 +308,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `parameters` sub block.
@@ -332,7 +332,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

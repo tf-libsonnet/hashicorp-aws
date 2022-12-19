@@ -75,27 +75,27 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `active_directory_id` (`string`):  When `null`, the `active_directory_id` field will be omitted from the resulting object.
-  - `aliases` (`list`):  When `null`, the `aliases` field will be omitted from the resulting object.
-  - `automatic_backup_retention_days` (`number`):  When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
-  - `backup_id` (`string`):  When `null`, the `backup_id` field will be omitted from the resulting object.
-  - `copy_tags_to_backups` (`bool`):  When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
-  - `daily_automatic_backup_start_time` (`string`):  When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
-  - `deployment_type` (`string`):  When `null`, the `deployment_type` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `preferred_subnet_id` (`string`):  When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `skip_final_backup` (`bool`):  When `null`, the `skip_final_backup` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`):  When `null`, the `storage_capacity` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `throughput_capacity` (`number`): 
-  - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `audit_log_configuration` (`list[obj]`):  When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-audit_log_configurationnew) constructor.
-  - `self_managed_active_directory` (`list[obj]`):  When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-self_managed_active_directorynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-timeoutsnew) constructor.
+  - `active_directory_id` (`string`): Set the `active_directory_id` field on the resulting resource block. When `null`, the `active_directory_id` field will be omitted from the resulting object.
+  - `aliases` (`list`): Set the `aliases` field on the resulting resource block. When `null`, the `aliases` field will be omitted from the resulting object.
+  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting resource block. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
+  - `backup_id` (`string`): Set the `backup_id` field on the resulting resource block. When `null`, the `backup_id` field will be omitted from the resulting object.
+  - `copy_tags_to_backups` (`bool`): Set the `copy_tags_to_backups` field on the resulting resource block. When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
+  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting resource block. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
+  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting resource block. When `null`, the `deployment_type` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting resource block. When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `skip_final_backup` (`bool`): Set the `skip_final_backup` field on the resulting resource block. When `null`, the `skip_final_backup` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block. When `null`, the `storage_capacity` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting resource block.
+  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting resource block. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
+  - `audit_log_configuration` (`list[obj]`): Set the `audit_log_configuration` field on the resulting resource block. When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-audit_log_configurationnew) constructor.
+  - `self_managed_active_directory` (`list[obj]`): Set the `self_managed_active_directory` field on the resulting resource block. When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-self_managed_active_directorynew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -119,27 +119,27 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `active_directory_id` (`string`):  When `null`, the `active_directory_id` field will be omitted from the resulting object.
-  - `aliases` (`list`):  When `null`, the `aliases` field will be omitted from the resulting object.
-  - `automatic_backup_retention_days` (`number`):  When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
-  - `backup_id` (`string`):  When `null`, the `backup_id` field will be omitted from the resulting object.
-  - `copy_tags_to_backups` (`bool`):  When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
-  - `daily_automatic_backup_start_time` (`string`):  When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
-  - `deployment_type` (`string`):  When `null`, the `deployment_type` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `preferred_subnet_id` (`string`):  When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `skip_final_backup` (`bool`):  When `null`, the `skip_final_backup` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`):  When `null`, the `storage_capacity` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `throughput_capacity` (`number`): 
-  - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `audit_log_configuration` (`list[obj]`):  When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-audit_log_configurationnew) constructor.
-  - `self_managed_active_directory` (`list[obj]`):  When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-self_managed_active_directorynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-timeoutsnew) constructor.
+  - `active_directory_id` (`string`): Set the `active_directory_id` field on the resulting object. When `null`, the `active_directory_id` field will be omitted from the resulting object.
+  - `aliases` (`list`): Set the `aliases` field on the resulting object. When `null`, the `aliases` field will be omitted from the resulting object.
+  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting object. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
+  - `backup_id` (`string`): Set the `backup_id` field on the resulting object. When `null`, the `backup_id` field will be omitted from the resulting object.
+  - `copy_tags_to_backups` (`bool`): Set the `copy_tags_to_backups` field on the resulting object. When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
+  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting object. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
+  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting object. When `null`, the `deployment_type` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting object. When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `skip_final_backup` (`bool`): Set the `skip_final_backup` field on the resulting object. When `null`, the `skip_final_backup` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object. When `null`, the `storage_capacity` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting object.
+  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
+  - `audit_log_configuration` (`list[obj]`): Set the `audit_log_configuration` field on the resulting object. When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-audit_log_configurationnew) constructor.
+  - `self_managed_active_directory` (`list[obj]`): Set the `self_managed_active_directory` field on the resulting object. When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-self_managed_active_directorynew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_windows_file_system` resource into the root Terraform configuration.
@@ -560,9 +560,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `audit_log_destination` (`string`):  When `null`, the `audit_log_destination` field will be omitted from the resulting object.
-  - `file_access_audit_log_level` (`string`):  When `null`, the `file_access_audit_log_level` field will be omitted from the resulting object.
-  - `file_share_access_audit_log_level` (`string`):  When `null`, the `file_share_access_audit_log_level` field will be omitted from the resulting object.
+  - `audit_log_destination` (`string`): Set the `audit_log_destination` field on the resulting object. When `null`, the `audit_log_destination` field will be omitted from the resulting object.
+  - `file_access_audit_log_level` (`string`): Set the `file_access_audit_log_level` field on the resulting object. When `null`, the `file_access_audit_log_level` field will be omitted from the resulting object.
+  - `file_share_access_audit_log_level` (`string`): Set the `file_share_access_audit_log_level` field on the resulting object. When `null`, the `file_share_access_audit_log_level` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `audit_log_configuration` sub block.
@@ -585,12 +585,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `dns_ips` (`list`): 
-  - `domain_name` (`string`): 
-  - `file_system_administrators_group` (`string`):  When `null`, the `file_system_administrators_group` field will be omitted from the resulting object.
-  - `organizational_unit_distinguished_name` (`string`):  When `null`, the `organizational_unit_distinguished_name` field will be omitted from the resulting object.
-  - `password` (`string`): 
-  - `username` (`string`): 
+  - `dns_ips` (`list`): Set the `dns_ips` field on the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `file_system_administrators_group` (`string`): Set the `file_system_administrators_group` field on the resulting object. When `null`, the `file_system_administrators_group` field will be omitted from the resulting object.
+  - `organizational_unit_distinguished_name` (`string`): Set the `organizational_unit_distinguished_name` field on the resulting object. When `null`, the `organizational_unit_distinguished_name` field will be omitted from the resulting object.
+  - `password` (`string`): Set the `password` field on the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `self_managed_active_directory` sub block.
@@ -613,9 +613,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

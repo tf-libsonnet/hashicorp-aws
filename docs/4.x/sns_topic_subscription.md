@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `confirmation_timeout_in_minutes` (`number`):  When `null`, the `confirmation_timeout_in_minutes` field will be omitted from the resulting object.
-  - `delivery_policy` (`string`):  When `null`, the `delivery_policy` field will be omitted from the resulting object.
-  - `endpoint` (`string`): 
-  - `endpoint_auto_confirms` (`bool`):  When `null`, the `endpoint_auto_confirms` field will be omitted from the resulting object.
-  - `filter_policy` (`string`):  When `null`, the `filter_policy` field will be omitted from the resulting object.
-  - `filter_policy_scope` (`string`):  When `null`, the `filter_policy_scope` field will be omitted from the resulting object.
-  - `protocol` (`string`): 
-  - `raw_message_delivery` (`bool`):  When `null`, the `raw_message_delivery` field will be omitted from the resulting object.
-  - `redrive_policy` (`string`):  When `null`, the `redrive_policy` field will be omitted from the resulting object.
-  - `subscription_role_arn` (`string`):  When `null`, the `subscription_role_arn` field will be omitted from the resulting object.
-  - `topic_arn` (`string`): 
+  - `confirmation_timeout_in_minutes` (`number`): Set the `confirmation_timeout_in_minutes` field on the resulting resource block. When `null`, the `confirmation_timeout_in_minutes` field will be omitted from the resulting object.
+  - `delivery_policy` (`string`): Set the `delivery_policy` field on the resulting resource block. When `null`, the `delivery_policy` field will be omitted from the resulting object.
+  - `endpoint` (`string`): Set the `endpoint` field on the resulting resource block.
+  - `endpoint_auto_confirms` (`bool`): Set the `endpoint_auto_confirms` field on the resulting resource block. When `null`, the `endpoint_auto_confirms` field will be omitted from the resulting object.
+  - `filter_policy` (`string`): Set the `filter_policy` field on the resulting resource block. When `null`, the `filter_policy` field will be omitted from the resulting object.
+  - `filter_policy_scope` (`string`): Set the `filter_policy_scope` field on the resulting resource block. When `null`, the `filter_policy_scope` field will be omitted from the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting resource block.
+  - `raw_message_delivery` (`bool`): Set the `raw_message_delivery` field on the resulting resource block. When `null`, the `raw_message_delivery` field will be omitted from the resulting object.
+  - `redrive_policy` (`string`): Set the `redrive_policy` field on the resulting resource block. When `null`, the `redrive_policy` field will be omitted from the resulting object.
+  - `subscription_role_arn` (`string`): Set the `subscription_role_arn` field on the resulting resource block. When `null`, the `subscription_role_arn` field will be omitted from the resulting object.
+  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `confirmation_timeout_in_minutes` (`number`):  When `null`, the `confirmation_timeout_in_minutes` field will be omitted from the resulting object.
-  - `delivery_policy` (`string`):  When `null`, the `delivery_policy` field will be omitted from the resulting object.
-  - `endpoint` (`string`): 
-  - `endpoint_auto_confirms` (`bool`):  When `null`, the `endpoint_auto_confirms` field will be omitted from the resulting object.
-  - `filter_policy` (`string`):  When `null`, the `filter_policy` field will be omitted from the resulting object.
-  - `filter_policy_scope` (`string`):  When `null`, the `filter_policy_scope` field will be omitted from the resulting object.
-  - `protocol` (`string`): 
-  - `raw_message_delivery` (`bool`):  When `null`, the `raw_message_delivery` field will be omitted from the resulting object.
-  - `redrive_policy` (`string`):  When `null`, the `redrive_policy` field will be omitted from the resulting object.
-  - `subscription_role_arn` (`string`):  When `null`, the `subscription_role_arn` field will be omitted from the resulting object.
-  - `topic_arn` (`string`): 
+  - `confirmation_timeout_in_minutes` (`number`): Set the `confirmation_timeout_in_minutes` field on the resulting object. When `null`, the `confirmation_timeout_in_minutes` field will be omitted from the resulting object.
+  - `delivery_policy` (`string`): Set the `delivery_policy` field on the resulting object. When `null`, the `delivery_policy` field will be omitted from the resulting object.
+  - `endpoint` (`string`): Set the `endpoint` field on the resulting object.
+  - `endpoint_auto_confirms` (`bool`): Set the `endpoint_auto_confirms` field on the resulting object. When `null`, the `endpoint_auto_confirms` field will be omitted from the resulting object.
+  - `filter_policy` (`string`): Set the `filter_policy` field on the resulting object. When `null`, the `filter_policy` field will be omitted from the resulting object.
+  - `filter_policy_scope` (`string`): Set the `filter_policy_scope` field on the resulting object. When `null`, the `filter_policy_scope` field will be omitted from the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object.
+  - `raw_message_delivery` (`bool`): Set the `raw_message_delivery` field on the resulting object. When `null`, the `raw_message_delivery` field will be omitted from the resulting object.
+  - `redrive_policy` (`string`): Set the `redrive_policy` field on the resulting object. When `null`, the `redrive_policy` field will be omitted from the resulting object.
+  - `subscription_role_arn` (`string`): Set the `subscription_role_arn` field on the resulting object. When `null`, the `subscription_role_arn` field will be omitted from the resulting object.
+  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sns_topic_subscription` resource into the root Terraform configuration.

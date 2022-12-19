@@ -61,13 +61,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `override_json` (`string`):  When `null`, the `override_json` field will be omitted from the resulting object.
-  - `override_policy_documents` (`list`):  When `null`, the `override_policy_documents` field will be omitted from the resulting object.
-  - `policy_id` (`string`):  When `null`, the `policy_id` field will be omitted from the resulting object.
-  - `source_json` (`string`):  When `null`, the `source_json` field will be omitted from the resulting object.
-  - `source_policy_documents` (`list`):  When `null`, the `source_policy_documents` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `statement` (`list[obj]`):  When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.
+  - `override_json` (`string`): Set the `override_json` field on the resulting data source block. When `null`, the `override_json` field will be omitted from the resulting object.
+  - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting data source block. When `null`, the `override_policy_documents` field will be omitted from the resulting object.
+  - `policy_id` (`string`): Set the `policy_id` field on the resulting data source block. When `null`, the `policy_id` field will be omitted from the resulting object.
+  - `source_json` (`string`): Set the `source_json` field on the resulting data source block. When `null`, the `source_json` field will be omitted from the resulting object.
+  - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting data source block. When `null`, the `source_policy_documents` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting data source block. When `null`, the `version` field will be omitted from the resulting object.
+  - `statement` (`list[obj]`): Set the `statement` field on the resulting data source block. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -91,13 +91,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `override_json` (`string`):  When `null`, the `override_json` field will be omitted from the resulting object.
-  - `override_policy_documents` (`list`):  When `null`, the `override_policy_documents` field will be omitted from the resulting object.
-  - `policy_id` (`string`):  When `null`, the `policy_id` field will be omitted from the resulting object.
-  - `source_json` (`string`):  When `null`, the `source_json` field will be omitted from the resulting object.
-  - `source_policy_documents` (`list`):  When `null`, the `source_policy_documents` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `statement` (`list[obj]`):  When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.
+  - `override_json` (`string`): Set the `override_json` field on the resulting object. When `null`, the `override_json` field will be omitted from the resulting object.
+  - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting object. When `null`, the `override_policy_documents` field will be omitted from the resulting object.
+  - `policy_id` (`string`): Set the `policy_id` field on the resulting object. When `null`, the `policy_id` field will be omitted from the resulting object.
+  - `source_json` (`string`): Set the `source_json` field on the resulting object. When `null`, the `source_json` field will be omitted from the resulting object.
+  - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting object. When `null`, the `source_policy_documents` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `statement` (`list[obj]`): Set the `statement` field on the resulting object. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `iam_policy_document` data source into the root Terraform configuration.
@@ -253,15 +253,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `actions` (`list`):  When `null`, the `actions` field will be omitted from the resulting object.
-  - `effect` (`string`):  When `null`, the `effect` field will be omitted from the resulting object.
-  - `not_actions` (`list`):  When `null`, the `not_actions` field will be omitted from the resulting object.
-  - `not_resources` (`list`):  When `null`, the `not_resources` field will be omitted from the resulting object.
-  - `resources` (`list`):  When `null`, the `resources` field will be omitted from the resulting object.
-  - `sid` (`string`):  When `null`, the `sid` field will be omitted from the resulting object.
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.condition.new](#fn-statementconditionnew) constructor.
-  - `not_principals` (`list[obj]`):  When `null`, the `not_principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.not_principals.new](#fn-statementnot_principalsnew) constructor.
-  - `principals` (`list[obj]`):  When `null`, the `principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.principals.new](#fn-statementprincipalsnew) constructor.
+  - `actions` (`list`): Set the `actions` field on the resulting object. When `null`, the `actions` field will be omitted from the resulting object.
+  - `effect` (`string`): Set the `effect` field on the resulting object. When `null`, the `effect` field will be omitted from the resulting object.
+  - `not_actions` (`list`): Set the `not_actions` field on the resulting object. When `null`, the `not_actions` field will be omitted from the resulting object.
+  - `not_resources` (`list`): Set the `not_resources` field on the resulting object. When `null`, the `not_resources` field will be omitted from the resulting object.
+  - `resources` (`list`): Set the `resources` field on the resulting object. When `null`, the `resources` field will be omitted from the resulting object.
+  - `sid` (`string`): Set the `sid` field on the resulting object. When `null`, the `sid` field will be omitted from the resulting object.
+  - `condition` (`list[obj]`): Set the `condition` field on the resulting object. When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.condition.new](#fn-statementconditionnew) constructor.
+  - `not_principals` (`list[obj]`): Set the `not_principals` field on the resulting object. When `null`, the `not_principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.not_principals.new](#fn-statementnot_principalsnew) constructor.
+  - `principals` (`list[obj]`): Set the `principals` field on the resulting object. When `null`, the `principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.principals.new](#fn-statementprincipalsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `statement` sub block.
@@ -284,9 +284,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `test` (`string`): 
-  - `values` (`list`): 
-  - `variable` (`string`): 
+  - `test` (`string`): Set the `test` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
+  - `variable` (`string`): Set the `variable` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.
@@ -309,8 +309,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `identifiers` (`list`): 
-  - `type` (`string`): 
+  - `identifiers` (`list`): Set the `identifiers` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `not_principals` sub block.
@@ -333,8 +333,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `identifiers` (`list`): 
-  - `type` (`string`): 
+  - `identifiers` (`list`): Set the `identifiers` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `principals` sub block.

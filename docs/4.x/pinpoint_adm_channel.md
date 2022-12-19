@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application_id` (`string`): 
-  - `client_id` (`string`): 
-  - `client_secret` (`string`): 
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `application_id` (`string`): Set the `application_id` field on the resulting resource block.
+  - `client_id` (`string`): Set the `client_id` field on the resulting resource block.
+  - `client_secret` (`string`): Set the `client_secret` field on the resulting resource block.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application_id` (`string`): 
-  - `client_id` (`string`): 
-  - `client_secret` (`string`): 
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `application_id` (`string`): Set the `application_id` field on the resulting object.
+  - `client_id` (`string`): Set the `client_id` field on the resulting object.
+  - `client_secret` (`string`): Set the `client_secret` field on the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `pinpoint_adm_channel` resource into the root Terraform configuration.

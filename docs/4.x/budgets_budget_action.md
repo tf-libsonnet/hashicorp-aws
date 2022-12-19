@@ -69,15 +69,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `action_type` (`string`): 
-  - `approval_model` (`string`): 
-  - `budget_name` (`string`): 
-  - `execution_role_arn` (`string`): 
-  - `notification_type` (`string`): 
-  - `action_threshold` (`list[obj]`):  When `null`, the `action_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.action_threshold.new](#fn-action_thresholdnew) constructor.
-  - `definition` (`list[obj]`):  When `null`, the `definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.new](#fn-definitionnew) constructor.
-  - `subscriber` (`list[obj]`):  When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.subscriber.new](#fn-subscribernew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `action_type` (`string`): Set the `action_type` field on the resulting resource block.
+  - `approval_model` (`string`): Set the `approval_model` field on the resulting resource block.
+  - `budget_name` (`string`): Set the `budget_name` field on the resulting resource block.
+  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting resource block.
+  - `notification_type` (`string`): Set the `notification_type` field on the resulting resource block.
+  - `action_threshold` (`list[obj]`): Set the `action_threshold` field on the resulting resource block. When `null`, the `action_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.action_threshold.new](#fn-action_thresholdnew) constructor.
+  - `definition` (`list[obj]`): Set the `definition` field on the resulting resource block. When `null`, the `definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.new](#fn-definitionnew) constructor.
+  - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting resource block. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.subscriber.new](#fn-subscribernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,15 +101,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `action_type` (`string`): 
-  - `approval_model` (`string`): 
-  - `budget_name` (`string`): 
-  - `execution_role_arn` (`string`): 
-  - `notification_type` (`string`): 
-  - `action_threshold` (`list[obj]`):  When `null`, the `action_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.action_threshold.new](#fn-action_thresholdnew) constructor.
-  - `definition` (`list[obj]`):  When `null`, the `definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.new](#fn-definitionnew) constructor.
-  - `subscriber` (`list[obj]`):  When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.subscriber.new](#fn-subscribernew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `action_type` (`string`): Set the `action_type` field on the resulting object.
+  - `approval_model` (`string`): Set the `approval_model` field on the resulting object.
+  - `budget_name` (`string`): Set the `budget_name` field on the resulting object.
+  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting object.
+  - `notification_type` (`string`): Set the `notification_type` field on the resulting object.
+  - `action_threshold` (`list[obj]`): Set the `action_threshold` field on the resulting object. When `null`, the `action_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.action_threshold.new](#fn-action_thresholdnew) constructor.
+  - `definition` (`list[obj]`): Set the `definition` field on the resulting object. When `null`, the `definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.new](#fn-definitionnew) constructor.
+  - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting object. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.subscriber.new](#fn-subscribernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `budgets_budget_action` resource into the root Terraform configuration.
@@ -339,8 +339,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `action_threshold_type` (`string`): 
-  - `action_threshold_value` (`number`): 
+  - `action_threshold_type` (`string`): Set the `action_threshold_type` field on the resulting object.
+  - `action_threshold_value` (`number`): Set the `action_threshold_value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `action_threshold` sub block.
@@ -363,9 +363,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `iam_action_definition` (`list[obj]`):  When `null`, the `iam_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.iam_action_definition.new](#fn-definitioniam_action_definitionnew) constructor.
-  - `scp_action_definition` (`list[obj]`):  When `null`, the `scp_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.scp_action_definition.new](#fn-definitionscp_action_definitionnew) constructor.
-  - `ssm_action_definition` (`list[obj]`):  When `null`, the `ssm_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.ssm_action_definition.new](#fn-definitionssm_action_definitionnew) constructor.
+  - `iam_action_definition` (`list[obj]`): Set the `iam_action_definition` field on the resulting object. When `null`, the `iam_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.iam_action_definition.new](#fn-definitioniam_action_definitionnew) constructor.
+  - `scp_action_definition` (`list[obj]`): Set the `scp_action_definition` field on the resulting object. When `null`, the `scp_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.scp_action_definition.new](#fn-definitionscp_action_definitionnew) constructor.
+  - `ssm_action_definition` (`list[obj]`): Set the `ssm_action_definition` field on the resulting object. When `null`, the `ssm_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.ssm_action_definition.new](#fn-definitionssm_action_definitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `definition` sub block.
@@ -388,10 +388,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `groups` (`list`):  When `null`, the `groups` field will be omitted from the resulting object.
-  - `policy_arn` (`string`): 
-  - `roles` (`list`):  When `null`, the `roles` field will be omitted from the resulting object.
-  - `users` (`list`):  When `null`, the `users` field will be omitted from the resulting object.
+  - `groups` (`list`): Set the `groups` field on the resulting object. When `null`, the `groups` field will be omitted from the resulting object.
+  - `policy_arn` (`string`): Set the `policy_arn` field on the resulting object.
+  - `roles` (`list`): Set the `roles` field on the resulting object. When `null`, the `roles` field will be omitted from the resulting object.
+  - `users` (`list`): Set the `users` field on the resulting object. When `null`, the `users` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `iam_action_definition` sub block.
@@ -414,8 +414,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `policy_id` (`string`): 
-  - `target_ids` (`list`): 
+  - `policy_id` (`string`): Set the `policy_id` field on the resulting object.
+  - `target_ids` (`list`): Set the `target_ids` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scp_action_definition` sub block.
@@ -438,9 +438,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `action_sub_type` (`string`): 
-  - `instance_ids` (`list`): 
-  - `region` (`string`): 
+  - `action_sub_type` (`string`): Set the `action_sub_type` field on the resulting object.
+  - `instance_ids` (`list`): Set the `instance_ids` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ssm_action_definition` sub block.
@@ -463,8 +463,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `address` (`string`): 
-  - `subscription_type` (`string`): 
+  - `address` (`string`): Set the `address` field on the resulting object.
+  - `subscription_type` (`string`): Set the `subscription_type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `subscriber` sub block.

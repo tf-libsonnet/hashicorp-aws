@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): 
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_ownership_controls.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
+  - `rule` (`list[obj]`): Set the `rule` field on the resulting resource block. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_ownership_controls.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): 
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_ownership_controls.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_ownership_controls.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_ownership_controls` resource into the root Terraform configuration.
@@ -152,7 +152,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object_ownership` (`string`): 
+  - `object_ownership` (`string`): Set the `object_ownership` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

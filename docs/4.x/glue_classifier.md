@@ -62,11 +62,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): 
-  - `csv_classifier` (`list[obj]`):  When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-csv_classifiernew) constructor.
-  - `grok_classifier` (`list[obj]`):  When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-grok_classifiernew) constructor.
-  - `json_classifier` (`list[obj]`):  When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-json_classifiernew) constructor.
-  - `xml_classifier` (`list[obj]`):  When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-xml_classifiernew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `csv_classifier` (`list[obj]`): Set the `csv_classifier` field on the resulting resource block. When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-csv_classifiernew) constructor.
+  - `grok_classifier` (`list[obj]`): Set the `grok_classifier` field on the resulting resource block. When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-grok_classifiernew) constructor.
+  - `json_classifier` (`list[obj]`): Set the `json_classifier` field on the resulting resource block. When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-json_classifiernew) constructor.
+  - `xml_classifier` (`list[obj]`): Set the `xml_classifier` field on the resulting resource block. When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-xml_classifiernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,11 +90,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): 
-  - `csv_classifier` (`list[obj]`):  When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-csv_classifiernew) constructor.
-  - `grok_classifier` (`list[obj]`):  When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-grok_classifiernew) constructor.
-  - `json_classifier` (`list[obj]`):  When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-json_classifiernew) constructor.
-  - `xml_classifier` (`list[obj]`):  When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-xml_classifiernew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `csv_classifier` (`list[obj]`): Set the `csv_classifier` field on the resulting object. When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-csv_classifiernew) constructor.
+  - `grok_classifier` (`list[obj]`): Set the `grok_classifier` field on the resulting object. When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-grok_classifiernew) constructor.
+  - `json_classifier` (`list[obj]`): Set the `json_classifier` field on the resulting object. When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-json_classifiernew) constructor.
+  - `xml_classifier` (`list[obj]`): Set the `xml_classifier` field on the resulting object. When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-xml_classifiernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_classifier` resource into the root Terraform configuration.
@@ -281,14 +281,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_single_column` (`bool`):  When `null`, the `allow_single_column` field will be omitted from the resulting object.
-  - `contains_header` (`string`):  When `null`, the `contains_header` field will be omitted from the resulting object.
-  - `custom_datatype_configured` (`bool`):  When `null`, the `custom_datatype_configured` field will be omitted from the resulting object.
-  - `custom_datatypes` (`list`):  When `null`, the `custom_datatypes` field will be omitted from the resulting object.
-  - `delimiter` (`string`):  When `null`, the `delimiter` field will be omitted from the resulting object.
-  - `disable_value_trimming` (`bool`):  When `null`, the `disable_value_trimming` field will be omitted from the resulting object.
-  - `header` (`list`):  When `null`, the `header` field will be omitted from the resulting object.
-  - `quote_symbol` (`string`):  When `null`, the `quote_symbol` field will be omitted from the resulting object.
+  - `allow_single_column` (`bool`): Set the `allow_single_column` field on the resulting object. When `null`, the `allow_single_column` field will be omitted from the resulting object.
+  - `contains_header` (`string`): Set the `contains_header` field on the resulting object. When `null`, the `contains_header` field will be omitted from the resulting object.
+  - `custom_datatype_configured` (`bool`): Set the `custom_datatype_configured` field on the resulting object. When `null`, the `custom_datatype_configured` field will be omitted from the resulting object.
+  - `custom_datatypes` (`list`): Set the `custom_datatypes` field on the resulting object. When `null`, the `custom_datatypes` field will be omitted from the resulting object.
+  - `delimiter` (`string`): Set the `delimiter` field on the resulting object. When `null`, the `delimiter` field will be omitted from the resulting object.
+  - `disable_value_trimming` (`bool`): Set the `disable_value_trimming` field on the resulting object. When `null`, the `disable_value_trimming` field will be omitted from the resulting object.
+  - `header` (`list`): Set the `header` field on the resulting object. When `null`, the `header` field will be omitted from the resulting object.
+  - `quote_symbol` (`string`): Set the `quote_symbol` field on the resulting object. When `null`, the `quote_symbol` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `csv_classifier` sub block.
@@ -311,9 +311,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `classification` (`string`): 
-  - `custom_patterns` (`string`):  When `null`, the `custom_patterns` field will be omitted from the resulting object.
-  - `grok_pattern` (`string`): 
+  - `classification` (`string`): Set the `classification` field on the resulting object.
+  - `custom_patterns` (`string`): Set the `custom_patterns` field on the resulting object. When `null`, the `custom_patterns` field will be omitted from the resulting object.
+  - `grok_pattern` (`string`): Set the `grok_pattern` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `grok_classifier` sub block.
@@ -336,7 +336,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `json_path` (`string`): 
+  - `json_path` (`string`): Set the `json_path` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `json_classifier` sub block.
@@ -359,8 +359,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `classification` (`string`): 
-  - `row_tag` (`string`): 
+  - `classification` (`string`): Set the `classification` field on the resulting object.
+  - `row_tag` (`string`): Set the `row_tag` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `xml_classifier` sub block.

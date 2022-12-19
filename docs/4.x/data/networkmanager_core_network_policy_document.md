@@ -68,11 +68,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `attachment_policies` (`list[obj]`):  When `null`, the `attachment_policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.attachment_policies.new](#fn-attachment_policiesnew) constructor.
-  - `core_network_configuration` (`list[obj]`):  When `null`, the `core_network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.core_network_configuration.new](#fn-core_network_configurationnew) constructor.
-  - `segment_actions` (`list[obj]`):  When `null`, the `segment_actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segment_actions.new](#fn-segment_actionsnew) constructor.
-  - `segments` (`list[obj]`):  When `null`, the `segments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segments.new](#fn-segmentsnew) constructor.
+  - `version` (`string`): Set the `version` field on the resulting data source block. When `null`, the `version` field will be omitted from the resulting object.
+  - `attachment_policies` (`list[obj]`): Set the `attachment_policies` field on the resulting data source block. When `null`, the `attachment_policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.attachment_policies.new](#fn-attachment_policiesnew) constructor.
+  - `core_network_configuration` (`list[obj]`): Set the `core_network_configuration` field on the resulting data source block. When `null`, the `core_network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.core_network_configuration.new](#fn-core_network_configurationnew) constructor.
+  - `segment_actions` (`list[obj]`): Set the `segment_actions` field on the resulting data source block. When `null`, the `segment_actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segment_actions.new](#fn-segment_actionsnew) constructor.
+  - `segments` (`list[obj]`): Set the `segments` field on the resulting data source block. When `null`, the `segments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segments.new](#fn-segmentsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -96,11 +96,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `attachment_policies` (`list[obj]`):  When `null`, the `attachment_policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.attachment_policies.new](#fn-attachment_policiesnew) constructor.
-  - `core_network_configuration` (`list[obj]`):  When `null`, the `core_network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.core_network_configuration.new](#fn-core_network_configurationnew) constructor.
-  - `segment_actions` (`list[obj]`):  When `null`, the `segment_actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segment_actions.new](#fn-segment_actionsnew) constructor.
-  - `segments` (`list[obj]`):  When `null`, the `segments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segments.new](#fn-segmentsnew) constructor.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `attachment_policies` (`list[obj]`): Set the `attachment_policies` field on the resulting object. When `null`, the `attachment_policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.attachment_policies.new](#fn-attachment_policiesnew) constructor.
+  - `core_network_configuration` (`list[obj]`): Set the `core_network_configuration` field on the resulting object. When `null`, the `core_network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.core_network_configuration.new](#fn-core_network_configurationnew) constructor.
+  - `segment_actions` (`list[obj]`): Set the `segment_actions` field on the resulting object. When `null`, the `segment_actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segment_actions.new](#fn-segment_actionsnew) constructor.
+  - `segments` (`list[obj]`): Set the `segments` field on the resulting object. When `null`, the `segments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.networkmanager_core_network_policy_document.segments.new](#fn-segmentsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `networkmanager_core_network_policy_document` data source into the root Terraform configuration.
@@ -287,11 +287,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `condition_logic` (`string`):  When `null`, the `condition_logic` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `rule_number` (`number`): 
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.action.new](#fn-attachment_policiesactionnew) constructor.
-  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.conditions.new](#fn-attachment_policiesconditionsnew) constructor.
+  - `condition_logic` (`string`): Set the `condition_logic` field on the resulting object. When `null`, the `condition_logic` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `rule_number` (`number`): Set the `rule_number` field on the resulting object.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.action.new](#fn-attachment_policiesactionnew) constructor.
+  - `conditions` (`list[obj]`): Set the `conditions` field on the resulting object. When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.conditions.new](#fn-attachment_policiesconditionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `attachment_policies` sub block.
@@ -314,10 +314,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `association_method` (`string`): 
-  - `require_acceptance` (`bool`):  When `null`, the `require_acceptance` field will be omitted from the resulting object.
-  - `segment` (`string`):  When `null`, the `segment` field will be omitted from the resulting object.
-  - `tag_value_of_key` (`string`):  When `null`, the `tag_value_of_key` field will be omitted from the resulting object.
+  - `association_method` (`string`): Set the `association_method` field on the resulting object.
+  - `require_acceptance` (`bool`): Set the `require_acceptance` field on the resulting object. When `null`, the `require_acceptance` field will be omitted from the resulting object.
+  - `segment` (`string`): Set the `segment` field on the resulting object. When `null`, the `segment` field will be omitted from the resulting object.
+  - `tag_value_of_key` (`string`): Set the `tag_value_of_key` field on the resulting object. When `null`, the `tag_value_of_key` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -340,10 +340,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `operator` (`string`):  When `null`, the `operator` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `operator` (`string`): Set the `operator` field on the resulting object. When `null`, the `operator` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `conditions` sub block.
@@ -366,10 +366,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `asn_ranges` (`list`): 
-  - `inside_cidr_blocks` (`list`):  When `null`, the `inside_cidr_blocks` field will be omitted from the resulting object.
-  - `vpn_ecmp_support` (`bool`):  When `null`, the `vpn_ecmp_support` field will be omitted from the resulting object.
-  - `edge_locations` (`list[obj]`):  When `null`, the `edge_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.core_network_configuration.edge_locations.new](#fn-core_network_configurationedge_locationsnew) constructor.
+  - `asn_ranges` (`list`): Set the `asn_ranges` field on the resulting object.
+  - `inside_cidr_blocks` (`list`): Set the `inside_cidr_blocks` field on the resulting object. When `null`, the `inside_cidr_blocks` field will be omitted from the resulting object.
+  - `vpn_ecmp_support` (`bool`): Set the `vpn_ecmp_support` field on the resulting object. When `null`, the `vpn_ecmp_support` field will be omitted from the resulting object.
+  - `edge_locations` (`list[obj]`): Set the `edge_locations` field on the resulting object. When `null`, the `edge_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.core_network_configuration.edge_locations.new](#fn-core_network_configurationedge_locationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `core_network_configuration` sub block.
@@ -392,9 +392,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `asn` (`string`):  When `null`, the `asn` field will be omitted from the resulting object.
-  - `inside_cidr_blocks` (`list`):  When `null`, the `inside_cidr_blocks` field will be omitted from the resulting object.
-  - `location` (`string`): 
+  - `asn` (`string`): Set the `asn` field on the resulting object. When `null`, the `asn` field will be omitted from the resulting object.
+  - `inside_cidr_blocks` (`list`): Set the `inside_cidr_blocks` field on the resulting object. When `null`, the `inside_cidr_blocks` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `edge_locations` sub block.
@@ -417,14 +417,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `destination_cidr_blocks` (`list`):  When `null`, the `destination_cidr_blocks` field will be omitted from the resulting object.
-  - `destinations` (`list`):  When `null`, the `destinations` field will be omitted from the resulting object.
-  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
-  - `segment` (`string`): 
-  - `share_with` (`list`):  When `null`, the `share_with` field will be omitted from the resulting object.
-  - `share_with_except` (`list`):  When `null`, the `share_with_except` field will be omitted from the resulting object.
+  - `action` (`string`): Set the `action` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `destination_cidr_blocks` (`list`): Set the `destination_cidr_blocks` field on the resulting object. When `null`, the `destination_cidr_blocks` field will be omitted from the resulting object.
+  - `destinations` (`list`): Set the `destinations` field on the resulting object. When `null`, the `destinations` field will be omitted from the resulting object.
+  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
+  - `segment` (`string`): Set the `segment` field on the resulting object.
+  - `share_with` (`list`): Set the `share_with` field on the resulting object. When `null`, the `share_with` field will be omitted from the resulting object.
+  - `share_with_except` (`list`): Set the `share_with_except` field on the resulting object. When `null`, the `share_with_except` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `segment_actions` sub block.
@@ -447,13 +447,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_filter` (`list`):  When `null`, the `allow_filter` field will be omitted from the resulting object.
-  - `deny_filter` (`list`):  When `null`, the `deny_filter` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `edge_locations` (`list`):  When `null`, the `edge_locations` field will be omitted from the resulting object.
-  - `isolate_attachments` (`bool`):  When `null`, the `isolate_attachments` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `require_attachment_acceptance` (`bool`):  When `null`, the `require_attachment_acceptance` field will be omitted from the resulting object.
+  - `allow_filter` (`list`): Set the `allow_filter` field on the resulting object. When `null`, the `allow_filter` field will be omitted from the resulting object.
+  - `deny_filter` (`list`): Set the `deny_filter` field on the resulting object. When `null`, the `deny_filter` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `edge_locations` (`list`): Set the `edge_locations` field on the resulting object. When `null`, the `edge_locations` field will be omitted from the resulting object.
+  - `isolate_attachments` (`bool`): Set the `isolate_attachments` field on the resulting object. When `null`, the `isolate_attachments` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `require_attachment_acceptance` (`bool`): Set the `require_attachment_acceptance` field on the resulting object. When `null`, the `require_attachment_acceptance` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `segments` sub block.

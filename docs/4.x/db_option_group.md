@@ -62,15 +62,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `engine_name` (`string`): 
-  - `major_engine_version` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `option_group_description` (`string`):  When `null`, the `option_group_description` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `option` (`list[obj]`):  When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-optionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `engine_name` (`string`): Set the `engine_name` field on the resulting resource block.
+  - `major_engine_version` (`string`): Set the `major_engine_version` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `option_group_description` (`string`): Set the `option_group_description` field on the resulting resource block. When `null`, the `option_group_description` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `option` (`list[obj]`): Set the `option` field on the resulting resource block. When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-optionnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,15 +94,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `engine_name` (`string`): 
-  - `major_engine_version` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `option_group_description` (`string`):  When `null`, the `option_group_description` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `option` (`list[obj]`):  When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-optionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `engine_name` (`string`): Set the `engine_name` field on the resulting object.
+  - `major_engine_version` (`string`): Set the `major_engine_version` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `option_group_description` (`string`): Set the `option_group_description` field on the resulting object. When `null`, the `option_group_description` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `option` (`list[obj]`): Set the `option` field on the resulting object. When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-optionnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `db_option_group` resource into the root Terraform configuration.
@@ -310,12 +310,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `db_security_group_memberships` (`list`):  When `null`, the `db_security_group_memberships` field will be omitted from the resulting object.
-  - `option_name` (`string`): 
-  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `vpc_security_group_memberships` (`list`):  When `null`, the `vpc_security_group_memberships` field will be omitted from the resulting object.
-  - `option_settings` (`list[obj]`):  When `null`, the `option_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.option_settings.new](#fn-optionoption_settingsnew) constructor.
+  - `db_security_group_memberships` (`list`): Set the `db_security_group_memberships` field on the resulting object. When `null`, the `db_security_group_memberships` field will be omitted from the resulting object.
+  - `option_name` (`string`): Set the `option_name` field on the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `vpc_security_group_memberships` (`list`): Set the `vpc_security_group_memberships` field on the resulting object. When `null`, the `vpc_security_group_memberships` field will be omitted from the resulting object.
+  - `option_settings` (`list[obj]`): Set the `option_settings` field on the resulting object. When `null`, the `option_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.option_settings.new](#fn-optionoption_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `option` sub block.
@@ -338,8 +338,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `option_settings` sub block.
@@ -362,7 +362,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -62,11 +62,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `workforce_name` (`string`): 
-  - `cognito_config` (`list[obj]`):  When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-cognito_confignew) constructor.
-  - `oidc_config` (`list[obj]`):  When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-oidc_confignew) constructor.
-  - `source_ip_config` (`list[obj]`):  When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-source_ip_confignew) constructor.
-  - `workforce_vpc_config` (`list[obj]`):  When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-workforce_vpc_confignew) constructor.
+  - `workforce_name` (`string`): Set the `workforce_name` field on the resulting resource block.
+  - `cognito_config` (`list[obj]`): Set the `cognito_config` field on the resulting resource block. When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-cognito_confignew) constructor.
+  - `oidc_config` (`list[obj]`): Set the `oidc_config` field on the resulting resource block. When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-oidc_confignew) constructor.
+  - `source_ip_config` (`list[obj]`): Set the `source_ip_config` field on the resulting resource block. When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-source_ip_confignew) constructor.
+  - `workforce_vpc_config` (`list[obj]`): Set the `workforce_vpc_config` field on the resulting resource block. When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-workforce_vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,11 +90,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `workforce_name` (`string`): 
-  - `cognito_config` (`list[obj]`):  When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-cognito_confignew) constructor.
-  - `oidc_config` (`list[obj]`):  When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-oidc_confignew) constructor.
-  - `source_ip_config` (`list[obj]`):  When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-source_ip_confignew) constructor.
-  - `workforce_vpc_config` (`list[obj]`):  When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-workforce_vpc_confignew) constructor.
+  - `workforce_name` (`string`): Set the `workforce_name` field on the resulting object.
+  - `cognito_config` (`list[obj]`): Set the `cognito_config` field on the resulting object. When `null`, the `cognito_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.cognito_config.new](#fn-cognito_confignew) constructor.
+  - `oidc_config` (`list[obj]`): Set the `oidc_config` field on the resulting object. When `null`, the `oidc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.oidc_config.new](#fn-oidc_confignew) constructor.
+  - `source_ip_config` (`list[obj]`): Set the `source_ip_config` field on the resulting object. When `null`, the `source_ip_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.source_ip_config.new](#fn-source_ip_confignew) constructor.
+  - `workforce_vpc_config` (`list[obj]`): Set the `workforce_vpc_config` field on the resulting object. When `null`, the `workforce_vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workforce.workforce_vpc_config.new](#fn-workforce_vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_workforce` resource into the root Terraform configuration.
@@ -281,8 +281,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_id` (`string`): 
-  - `user_pool` (`string`): 
+  - `client_id` (`string`): Set the `client_id` field on the resulting object.
+  - `user_pool` (`string`): Set the `user_pool` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cognito_config` sub block.
@@ -305,14 +305,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `authorization_endpoint` (`string`): 
-  - `client_id` (`string`): 
-  - `client_secret` (`string`): 
-  - `issuer` (`string`): 
-  - `jwks_uri` (`string`): 
-  - `logout_endpoint` (`string`): 
-  - `token_endpoint` (`string`): 
-  - `user_info_endpoint` (`string`): 
+  - `authorization_endpoint` (`string`): Set the `authorization_endpoint` field on the resulting object.
+  - `client_id` (`string`): Set the `client_id` field on the resulting object.
+  - `client_secret` (`string`): Set the `client_secret` field on the resulting object.
+  - `issuer` (`string`): Set the `issuer` field on the resulting object.
+  - `jwks_uri` (`string`): Set the `jwks_uri` field on the resulting object.
+  - `logout_endpoint` (`string`): Set the `logout_endpoint` field on the resulting object.
+  - `token_endpoint` (`string`): Set the `token_endpoint` field on the resulting object.
+  - `user_info_endpoint` (`string`): Set the `user_info_endpoint` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `oidc_config` sub block.
@@ -335,7 +335,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidrs` (`list`): 
+  - `cidrs` (`list`): Set the `cidrs` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `source_ip_config` sub block.
@@ -358,9 +358,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnets` (`list`):  When `null`, the `subnets` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnets` (`list`): Set the `subnets` field on the resulting object. When `null`, the `subnets` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `workforce_vpc_config` sub block.

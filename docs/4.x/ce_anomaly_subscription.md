@@ -56,14 +56,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `frequency` (`string`): 
-  - `monitor_arn_list` (`list`): 
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `threshold` (`number`): 
-  - `subscriber` (`list[obj]`):  When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.subscriber.new](#fn-subscribernew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `frequency` (`string`): Set the `frequency` field on the resulting resource block.
+  - `monitor_arn_list` (`list`): Set the `monitor_arn_list` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `threshold` (`number`): Set the `threshold` field on the resulting resource block.
+  - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting resource block. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.subscriber.new](#fn-subscribernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,14 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `frequency` (`string`): 
-  - `monitor_arn_list` (`list`): 
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `threshold` (`number`): 
-  - `subscriber` (`list[obj]`):  When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.subscriber.new](#fn-subscribernew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `frequency` (`string`): Set the `frequency` field on the resulting object.
+  - `monitor_arn_list` (`list`): Set the `monitor_arn_list` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `threshold` (`number`): Set the `threshold` field on the resulting object.
+  - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting object. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.subscriber.new](#fn-subscribernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ce_anomaly_subscription` resource into the root Terraform configuration.
@@ -266,8 +266,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `address` (`string`): 
-  - `type` (`string`): 
+  - `address` (`string`): Set the `address` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `subscriber` sub block.

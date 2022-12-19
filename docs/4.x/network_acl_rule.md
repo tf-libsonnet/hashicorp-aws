@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `egress` (`bool`):  When `null`, the `egress` field will be omitted from the resulting object.
-  - `from_port` (`number`):  When `null`, the `from_port` field will be omitted from the resulting object.
-  - `icmp_code` (`number`):  When `null`, the `icmp_code` field will be omitted from the resulting object.
-  - `icmp_type` (`number`):  When `null`, the `icmp_type` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `network_acl_id` (`string`): 
-  - `protocol` (`string`): 
-  - `rule_action` (`string`): 
-  - `rule_number` (`number`): 
-  - `to_port` (`number`):  When `null`, the `to_port` field will be omitted from the resulting object.
+  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting resource block. When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `egress` (`bool`): Set the `egress` field on the resulting resource block. When `null`, the `egress` field will be omitted from the resulting object.
+  - `from_port` (`number`): Set the `from_port` field on the resulting resource block. When `null`, the `from_port` field will be omitted from the resulting object.
+  - `icmp_code` (`number`): Set the `icmp_code` field on the resulting resource block. When `null`, the `icmp_code` field will be omitted from the resulting object.
+  - `icmp_type` (`number`): Set the `icmp_type` field on the resulting resource block. When `null`, the `icmp_type` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting resource block. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `network_acl_id` (`string`): Set the `network_acl_id` field on the resulting resource block.
+  - `protocol` (`string`): Set the `protocol` field on the resulting resource block.
+  - `rule_action` (`string`): Set the `rule_action` field on the resulting resource block.
+  - `rule_number` (`number`): Set the `rule_number` field on the resulting resource block.
+  - `to_port` (`number`): Set the `to_port` field on the resulting resource block. When `null`, the `to_port` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `egress` (`bool`):  When `null`, the `egress` field will be omitted from the resulting object.
-  - `from_port` (`number`):  When `null`, the `from_port` field will be omitted from the resulting object.
-  - `icmp_code` (`number`):  When `null`, the `icmp_code` field will be omitted from the resulting object.
-  - `icmp_type` (`number`):  When `null`, the `icmp_type` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `network_acl_id` (`string`): 
-  - `protocol` (`string`): 
-  - `rule_action` (`string`): 
-  - `rule_number` (`number`): 
-  - `to_port` (`number`):  When `null`, the `to_port` field will be omitted from the resulting object.
+  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `egress` (`bool`): Set the `egress` field on the resulting object. When `null`, the `egress` field will be omitted from the resulting object.
+  - `from_port` (`number`): Set the `from_port` field on the resulting object. When `null`, the `from_port` field will be omitted from the resulting object.
+  - `icmp_code` (`number`): Set the `icmp_code` field on the resulting object. When `null`, the `icmp_code` field will be omitted from the resulting object.
+  - `icmp_type` (`number`): Set the `icmp_type` field on the resulting object. When `null`, the `icmp_type` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `network_acl_id` (`string`): Set the `network_acl_id` field on the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object.
+  - `rule_action` (`string`): Set the `rule_action` field on the resulting object.
+  - `rule_number` (`number`): Set the `rule_number` field on the resulting object.
+  - `to_port` (`number`): Set the `to_port` field on the resulting object. When `null`, the `to_port` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `network_acl_rule` resource into the root Terraform configuration.

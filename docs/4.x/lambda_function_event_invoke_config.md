@@ -57,11 +57,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `function_name` (`string`): 
-  - `maximum_event_age_in_seconds` (`number`):  When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
-  - `maximum_retry_attempts` (`number`):  When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
-  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-destination_confignew) constructor.
+  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
+  - `maximum_event_age_in_seconds` (`number`): Set the `maximum_event_age_in_seconds` field on the resulting resource block. When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
+  - `maximum_retry_attempts` (`number`): Set the `maximum_retry_attempts` field on the resulting resource block. When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
+  - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting resource block. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-destination_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,11 +85,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `function_name` (`string`): 
-  - `maximum_event_age_in_seconds` (`number`):  When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
-  - `maximum_retry_attempts` (`number`):  When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
-  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-destination_confignew) constructor.
+  - `function_name` (`string`): Set the `function_name` field on the resulting object.
+  - `maximum_event_age_in_seconds` (`number`): Set the `maximum_event_age_in_seconds` field on the resulting object. When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
+  - `maximum_retry_attempts` (`number`): Set the `maximum_retry_attempts` field on the resulting object. When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
+  - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting object. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.new](#fn-destination_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_function_event_invoke_config` resource into the root Terraform configuration.
@@ -213,8 +213,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.
-  - `on_success` (`list[obj]`):  When `null`, the `on_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_success.new](#fn-destination_configon_successnew) constructor.
+  - `on_failure` (`list[obj]`): Set the `on_failure` field on the resulting object. When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.
+  - `on_success` (`list[obj]`): Set the `on_success` field on the resulting object. When `null`, the `on_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_success.new](#fn-destination_configon_successnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_config` sub block.
@@ -237,7 +237,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`string`): 
+  - `destination` (`string`): Set the `destination` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `on_failure` sub block.
@@ -260,7 +260,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`string`): 
+  - `destination` (`string`): Set the `destination` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `on_success` sub block.

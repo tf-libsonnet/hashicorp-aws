@@ -186,33 +186,33 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `enabled` (`bool`): 
-  - `name` (`string`): 
-  - `sql` (`string`): 
-  - `sql_version` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `cloudwatch_alarm` (`list[obj]`):  When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_alarm.new](#fn-cloudwatch_alarmnew) constructor.
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_logs.new](#fn-cloudwatch_logsnew) constructor.
-  - `cloudwatch_metric` (`list[obj]`):  When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_metric.new](#fn-cloudwatch_metricnew) constructor.
-  - `dynamodb` (`list[obj]`):  When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodb.new](#fn-dynamodbnew) constructor.
-  - `dynamodbv2` (`list[obj]`):  When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.new](#fn-dynamodbv2new) constructor.
-  - `elasticsearch` (`list[obj]`):  When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.elasticsearch.new](#fn-elasticsearchnew) constructor.
-  - `error_action` (`list[obj]`):  When `null`, the `error_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.new](#fn-error_actionnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.firehose.new](#fn-firehosenew) constructor.
-  - `http` (`list[obj]`):  When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.new](#fn-httpnew) constructor.
-  - `iot_analytics` (`list[obj]`):  When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_analytics.new](#fn-iot_analyticsnew) constructor.
-  - `iot_events` (`list[obj]`):  When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_events.new](#fn-iot_eventsnew) constructor.
-  - `kafka` (`list[obj]`):  When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kafka.new](#fn-kafkanew) constructor.
-  - `kinesis` (`list[obj]`):  When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kinesis.new](#fn-kinesisnew) constructor.
-  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.lambda.new](#fn-lambdanew) constructor.
-  - `republish` (`list[obj]`):  When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.republish.new](#fn-republishnew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.s3.new](#fn-s3new) constructor.
-  - `sns` (`list[obj]`):  When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sns.new](#fn-snsnew) constructor.
-  - `sqs` (`list[obj]`):  When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sqs.new](#fn-sqsnew) constructor.
-  - `step_functions` (`list[obj]`):  When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.step_functions.new](#fn-step_functionsnew) constructor.
-  - `timestream` (`list[obj]`):  When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.new](#fn-timestreamnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `sql` (`string`): Set the `sql` field on the resulting resource block.
+  - `sql_version` (`string`): Set the `sql_version` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `cloudwatch_alarm` (`list[obj]`): Set the `cloudwatch_alarm` field on the resulting resource block. When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_alarm.new](#fn-cloudwatch_alarmnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`): Set the `cloudwatch_logs` field on the resulting resource block. When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_logs.new](#fn-cloudwatch_logsnew) constructor.
+  - `cloudwatch_metric` (`list[obj]`): Set the `cloudwatch_metric` field on the resulting resource block. When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_metric.new](#fn-cloudwatch_metricnew) constructor.
+  - `dynamodb` (`list[obj]`): Set the `dynamodb` field on the resulting resource block. When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodb.new](#fn-dynamodbnew) constructor.
+  - `dynamodbv2` (`list[obj]`): Set the `dynamodbv2` field on the resulting resource block. When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.new](#fn-dynamodbv2new) constructor.
+  - `elasticsearch` (`list[obj]`): Set the `elasticsearch` field on the resulting resource block. When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.elasticsearch.new](#fn-elasticsearchnew) constructor.
+  - `error_action` (`list[obj]`): Set the `error_action` field on the resulting resource block. When `null`, the `error_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.new](#fn-error_actionnew) constructor.
+  - `firehose` (`list[obj]`): Set the `firehose` field on the resulting resource block. When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.firehose.new](#fn-firehosenew) constructor.
+  - `http` (`list[obj]`): Set the `http` field on the resulting resource block. When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.new](#fn-httpnew) constructor.
+  - `iot_analytics` (`list[obj]`): Set the `iot_analytics` field on the resulting resource block. When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_analytics.new](#fn-iot_analyticsnew) constructor.
+  - `iot_events` (`list[obj]`): Set the `iot_events` field on the resulting resource block. When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_events.new](#fn-iot_eventsnew) constructor.
+  - `kafka` (`list[obj]`): Set the `kafka` field on the resulting resource block. When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kafka.new](#fn-kafkanew) constructor.
+  - `kinesis` (`list[obj]`): Set the `kinesis` field on the resulting resource block. When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kinesis.new](#fn-kinesisnew) constructor.
+  - `lambda` (`list[obj]`): Set the `lambda` field on the resulting resource block. When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.lambda.new](#fn-lambdanew) constructor.
+  - `republish` (`list[obj]`): Set the `republish` field on the resulting resource block. When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.republish.new](#fn-republishnew) constructor.
+  - `s3` (`list[obj]`): Set the `s3` field on the resulting resource block. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.s3.new](#fn-s3new) constructor.
+  - `sns` (`list[obj]`): Set the `sns` field on the resulting resource block. When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sns.new](#fn-snsnew) constructor.
+  - `sqs` (`list[obj]`): Set the `sqs` field on the resulting resource block. When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sqs.new](#fn-sqsnew) constructor.
+  - `step_functions` (`list[obj]`): Set the `step_functions` field on the resulting resource block. When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.step_functions.new](#fn-step_functionsnew) constructor.
+  - `timestream` (`list[obj]`): Set the `timestream` field on the resulting resource block. When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.new](#fn-timestreamnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -236,33 +236,33 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `enabled` (`bool`): 
-  - `name` (`string`): 
-  - `sql` (`string`): 
-  - `sql_version` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `cloudwatch_alarm` (`list[obj]`):  When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_alarm.new](#fn-cloudwatch_alarmnew) constructor.
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_logs.new](#fn-cloudwatch_logsnew) constructor.
-  - `cloudwatch_metric` (`list[obj]`):  When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_metric.new](#fn-cloudwatch_metricnew) constructor.
-  - `dynamodb` (`list[obj]`):  When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodb.new](#fn-dynamodbnew) constructor.
-  - `dynamodbv2` (`list[obj]`):  When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.new](#fn-dynamodbv2new) constructor.
-  - `elasticsearch` (`list[obj]`):  When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.elasticsearch.new](#fn-elasticsearchnew) constructor.
-  - `error_action` (`list[obj]`):  When `null`, the `error_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.new](#fn-error_actionnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.firehose.new](#fn-firehosenew) constructor.
-  - `http` (`list[obj]`):  When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.new](#fn-httpnew) constructor.
-  - `iot_analytics` (`list[obj]`):  When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_analytics.new](#fn-iot_analyticsnew) constructor.
-  - `iot_events` (`list[obj]`):  When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_events.new](#fn-iot_eventsnew) constructor.
-  - `kafka` (`list[obj]`):  When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kafka.new](#fn-kafkanew) constructor.
-  - `kinesis` (`list[obj]`):  When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kinesis.new](#fn-kinesisnew) constructor.
-  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.lambda.new](#fn-lambdanew) constructor.
-  - `republish` (`list[obj]`):  When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.republish.new](#fn-republishnew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.s3.new](#fn-s3new) constructor.
-  - `sns` (`list[obj]`):  When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sns.new](#fn-snsnew) constructor.
-  - `sqs` (`list[obj]`):  When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sqs.new](#fn-sqsnew) constructor.
-  - `step_functions` (`list[obj]`):  When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.step_functions.new](#fn-step_functionsnew) constructor.
-  - `timestream` (`list[obj]`):  When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.new](#fn-timestreamnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `sql` (`string`): Set the `sql` field on the resulting object.
+  - `sql_version` (`string`): Set the `sql_version` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `cloudwatch_alarm` (`list[obj]`): Set the `cloudwatch_alarm` field on the resulting object. When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_alarm.new](#fn-cloudwatch_alarmnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`): Set the `cloudwatch_logs` field on the resulting object. When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_logs.new](#fn-cloudwatch_logsnew) constructor.
+  - `cloudwatch_metric` (`list[obj]`): Set the `cloudwatch_metric` field on the resulting object. When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.cloudwatch_metric.new](#fn-cloudwatch_metricnew) constructor.
+  - `dynamodb` (`list[obj]`): Set the `dynamodb` field on the resulting object. When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodb.new](#fn-dynamodbnew) constructor.
+  - `dynamodbv2` (`list[obj]`): Set the `dynamodbv2` field on the resulting object. When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.new](#fn-dynamodbv2new) constructor.
+  - `elasticsearch` (`list[obj]`): Set the `elasticsearch` field on the resulting object. When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.elasticsearch.new](#fn-elasticsearchnew) constructor.
+  - `error_action` (`list[obj]`): Set the `error_action` field on the resulting object. When `null`, the `error_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.new](#fn-error_actionnew) constructor.
+  - `firehose` (`list[obj]`): Set the `firehose` field on the resulting object. When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.firehose.new](#fn-firehosenew) constructor.
+  - `http` (`list[obj]`): Set the `http` field on the resulting object. When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.new](#fn-httpnew) constructor.
+  - `iot_analytics` (`list[obj]`): Set the `iot_analytics` field on the resulting object. When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_analytics.new](#fn-iot_analyticsnew) constructor.
+  - `iot_events` (`list[obj]`): Set the `iot_events` field on the resulting object. When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.iot_events.new](#fn-iot_eventsnew) constructor.
+  - `kafka` (`list[obj]`): Set the `kafka` field on the resulting object. When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kafka.new](#fn-kafkanew) constructor.
+  - `kinesis` (`list[obj]`): Set the `kinesis` field on the resulting object. When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kinesis.new](#fn-kinesisnew) constructor.
+  - `lambda` (`list[obj]`): Set the `lambda` field on the resulting object. When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.lambda.new](#fn-lambdanew) constructor.
+  - `republish` (`list[obj]`): Set the `republish` field on the resulting object. When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.republish.new](#fn-republishnew) constructor.
+  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.s3.new](#fn-s3new) constructor.
+  - `sns` (`list[obj]`): Set the `sns` field on the resulting object. When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sns.new](#fn-snsnew) constructor.
+  - `sqs` (`list[obj]`): Set the `sqs` field on the resulting object. When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.sqs.new](#fn-sqsnew) constructor.
+  - `step_functions` (`list[obj]`): Set the `step_functions` field on the resulting object. When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.step_functions.new](#fn-step_functionsnew) constructor.
+  - `timestream` (`list[obj]`): Set the `timestream` field on the resulting object. When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.new](#fn-timestreamnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_topic_rule` resource into the root Terraform configuration.
@@ -1137,10 +1137,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `alarm_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `state_reason` (`string`): 
-  - `state_value` (`string`): 
+  - `alarm_name` (`string`): Set the `alarm_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `state_reason` (`string`): Set the `state_reason` field on the resulting object.
+  - `state_value` (`string`): Set the `state_value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_alarm` sub block.
@@ -1163,8 +1163,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `log_group_name` (`string`): 
-  - `role_arn` (`string`): 
+  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_logs` sub block.
@@ -1187,12 +1187,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_name` (`string`): 
-  - `metric_namespace` (`string`): 
-  - `metric_timestamp` (`string`):  When `null`, the `metric_timestamp` field will be omitted from the resulting object.
-  - `metric_unit` (`string`): 
-  - `metric_value` (`string`): 
-  - `role_arn` (`string`): 
+  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.
+  - `metric_namespace` (`string`): Set the `metric_namespace` field on the resulting object.
+  - `metric_timestamp` (`string`): Set the `metric_timestamp` field on the resulting object. When `null`, the `metric_timestamp` field will be omitted from the resulting object.
+  - `metric_unit` (`string`): Set the `metric_unit` field on the resulting object.
+  - `metric_value` (`string`): Set the `metric_value` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_metric` sub block.
@@ -1215,16 +1215,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `hash_key_field` (`string`): 
-  - `hash_key_type` (`string`):  When `null`, the `hash_key_type` field will be omitted from the resulting object.
-  - `hash_key_value` (`string`): 
-  - `operation` (`string`):  When `null`, the `operation` field will be omitted from the resulting object.
-  - `payload_field` (`string`):  When `null`, the `payload_field` field will be omitted from the resulting object.
-  - `range_key_field` (`string`):  When `null`, the `range_key_field` field will be omitted from the resulting object.
-  - `range_key_type` (`string`):  When `null`, the `range_key_type` field will be omitted from the resulting object.
-  - `range_key_value` (`string`):  When `null`, the `range_key_value` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `table_name` (`string`): 
+  - `hash_key_field` (`string`): Set the `hash_key_field` field on the resulting object.
+  - `hash_key_type` (`string`): Set the `hash_key_type` field on the resulting object. When `null`, the `hash_key_type` field will be omitted from the resulting object.
+  - `hash_key_value` (`string`): Set the `hash_key_value` field on the resulting object.
+  - `operation` (`string`): Set the `operation` field on the resulting object. When `null`, the `operation` field will be omitted from the resulting object.
+  - `payload_field` (`string`): Set the `payload_field` field on the resulting object. When `null`, the `payload_field` field will be omitted from the resulting object.
+  - `range_key_field` (`string`): Set the `range_key_field` field on the resulting object. When `null`, the `range_key_field` field will be omitted from the resulting object.
+  - `range_key_type` (`string`): Set the `range_key_type` field on the resulting object. When `null`, the `range_key_type` field will be omitted from the resulting object.
+  - `range_key_value` (`string`): Set the `range_key_value` field on the resulting object. When `null`, the `range_key_value` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `table_name` (`string`): Set the `table_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dynamodb` sub block.
@@ -1247,8 +1247,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `role_arn` (`string`): 
-  - `put_item` (`list[obj]`):  When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.put_item.new](#fn-dynamodbv2put_itemnew) constructor.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `put_item` (`list[obj]`): Set the `put_item` field on the resulting object. When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.put_item.new](#fn-dynamodbv2put_itemnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dynamodbv2` sub block.
@@ -1271,7 +1271,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `table_name` (`string`): 
+  - `table_name` (`string`): Set the `table_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `put_item` sub block.
@@ -1294,10 +1294,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint` (`string`): 
-  - `index` (`string`): 
-  - `role_arn` (`string`): 
-  - `type` (`string`): 
+  - `endpoint` (`string`): Set the `endpoint` field on the resulting object.
+  - `index` (`string`): Set the `index` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `elasticsearch` sub block.
@@ -1320,25 +1320,25 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_alarm` (`list[obj]`):  When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_alarm.new](#fn-error_actioncloudwatch_alarmnew) constructor.
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_logs.new](#fn-error_actioncloudwatch_logsnew) constructor.
-  - `cloudwatch_metric` (`list[obj]`):  When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_metric.new](#fn-error_actioncloudwatch_metricnew) constructor.
-  - `dynamodb` (`list[obj]`):  When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodb.new](#fn-error_actiondynamodbnew) constructor.
-  - `dynamodbv2` (`list[obj]`):  When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.new](#fn-error_actiondynamodbv2new) constructor.
-  - `elasticsearch` (`list[obj]`):  When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.elasticsearch.new](#fn-error_actionelasticsearchnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.firehose.new](#fn-error_actionfirehosenew) constructor.
-  - `http` (`list[obj]`):  When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.new](#fn-error_actionhttpnew) constructor.
-  - `iot_analytics` (`list[obj]`):  When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_analytics.new](#fn-error_actioniot_analyticsnew) constructor.
-  - `iot_events` (`list[obj]`):  When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_events.new](#fn-error_actioniot_eventsnew) constructor.
-  - `kafka` (`list[obj]`):  When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kafka.new](#fn-error_actionkafkanew) constructor.
-  - `kinesis` (`list[obj]`):  When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kinesis.new](#fn-error_actionkinesisnew) constructor.
-  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.lambda.new](#fn-error_actionlambdanew) constructor.
-  - `republish` (`list[obj]`):  When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.republish.new](#fn-error_actionrepublishnew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.s3.new](#fn-error_actions3new) constructor.
-  - `sns` (`list[obj]`):  When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sns.new](#fn-error_actionsnsnew) constructor.
-  - `sqs` (`list[obj]`):  When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sqs.new](#fn-error_actionsqsnew) constructor.
-  - `step_functions` (`list[obj]`):  When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.step_functions.new](#fn-error_actionstep_functionsnew) constructor.
-  - `timestream` (`list[obj]`):  When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.new](#fn-error_actiontimestreamnew) constructor.
+  - `cloudwatch_alarm` (`list[obj]`): Set the `cloudwatch_alarm` field on the resulting object. When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_alarm.new](#fn-error_actioncloudwatch_alarmnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`): Set the `cloudwatch_logs` field on the resulting object. When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_logs.new](#fn-error_actioncloudwatch_logsnew) constructor.
+  - `cloudwatch_metric` (`list[obj]`): Set the `cloudwatch_metric` field on the resulting object. When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_metric.new](#fn-error_actioncloudwatch_metricnew) constructor.
+  - `dynamodb` (`list[obj]`): Set the `dynamodb` field on the resulting object. When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodb.new](#fn-error_actiondynamodbnew) constructor.
+  - `dynamodbv2` (`list[obj]`): Set the `dynamodbv2` field on the resulting object. When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.new](#fn-error_actiondynamodbv2new) constructor.
+  - `elasticsearch` (`list[obj]`): Set the `elasticsearch` field on the resulting object. When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.elasticsearch.new](#fn-error_actionelasticsearchnew) constructor.
+  - `firehose` (`list[obj]`): Set the `firehose` field on the resulting object. When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.firehose.new](#fn-error_actionfirehosenew) constructor.
+  - `http` (`list[obj]`): Set the `http` field on the resulting object. When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.new](#fn-error_actionhttpnew) constructor.
+  - `iot_analytics` (`list[obj]`): Set the `iot_analytics` field on the resulting object. When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_analytics.new](#fn-error_actioniot_analyticsnew) constructor.
+  - `iot_events` (`list[obj]`): Set the `iot_events` field on the resulting object. When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_events.new](#fn-error_actioniot_eventsnew) constructor.
+  - `kafka` (`list[obj]`): Set the `kafka` field on the resulting object. When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kafka.new](#fn-error_actionkafkanew) constructor.
+  - `kinesis` (`list[obj]`): Set the `kinesis` field on the resulting object. When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kinesis.new](#fn-error_actionkinesisnew) constructor.
+  - `lambda` (`list[obj]`): Set the `lambda` field on the resulting object. When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.lambda.new](#fn-error_actionlambdanew) constructor.
+  - `republish` (`list[obj]`): Set the `republish` field on the resulting object. When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.republish.new](#fn-error_actionrepublishnew) constructor.
+  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.s3.new](#fn-error_actions3new) constructor.
+  - `sns` (`list[obj]`): Set the `sns` field on the resulting object. When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sns.new](#fn-error_actionsnsnew) constructor.
+  - `sqs` (`list[obj]`): Set the `sqs` field on the resulting object. When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sqs.new](#fn-error_actionsqsnew) constructor.
+  - `step_functions` (`list[obj]`): Set the `step_functions` field on the resulting object. When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.step_functions.new](#fn-error_actionstep_functionsnew) constructor.
+  - `timestream` (`list[obj]`): Set the `timestream` field on the resulting object. When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.new](#fn-error_actiontimestreamnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `error_action` sub block.
@@ -1361,10 +1361,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `alarm_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `state_reason` (`string`): 
-  - `state_value` (`string`): 
+  - `alarm_name` (`string`): Set the `alarm_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `state_reason` (`string`): Set the `state_reason` field on the resulting object.
+  - `state_value` (`string`): Set the `state_value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_alarm` sub block.
@@ -1387,8 +1387,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `log_group_name` (`string`): 
-  - `role_arn` (`string`): 
+  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_logs` sub block.
@@ -1411,12 +1411,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_name` (`string`): 
-  - `metric_namespace` (`string`): 
-  - `metric_timestamp` (`string`):  When `null`, the `metric_timestamp` field will be omitted from the resulting object.
-  - `metric_unit` (`string`): 
-  - `metric_value` (`string`): 
-  - `role_arn` (`string`): 
+  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.
+  - `metric_namespace` (`string`): Set the `metric_namespace` field on the resulting object.
+  - `metric_timestamp` (`string`): Set the `metric_timestamp` field on the resulting object. When `null`, the `metric_timestamp` field will be omitted from the resulting object.
+  - `metric_unit` (`string`): Set the `metric_unit` field on the resulting object.
+  - `metric_value` (`string`): Set the `metric_value` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_metric` sub block.
@@ -1439,16 +1439,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `hash_key_field` (`string`): 
-  - `hash_key_type` (`string`):  When `null`, the `hash_key_type` field will be omitted from the resulting object.
-  - `hash_key_value` (`string`): 
-  - `operation` (`string`):  When `null`, the `operation` field will be omitted from the resulting object.
-  - `payload_field` (`string`):  When `null`, the `payload_field` field will be omitted from the resulting object.
-  - `range_key_field` (`string`):  When `null`, the `range_key_field` field will be omitted from the resulting object.
-  - `range_key_type` (`string`):  When `null`, the `range_key_type` field will be omitted from the resulting object.
-  - `range_key_value` (`string`):  When `null`, the `range_key_value` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `table_name` (`string`): 
+  - `hash_key_field` (`string`): Set the `hash_key_field` field on the resulting object.
+  - `hash_key_type` (`string`): Set the `hash_key_type` field on the resulting object. When `null`, the `hash_key_type` field will be omitted from the resulting object.
+  - `hash_key_value` (`string`): Set the `hash_key_value` field on the resulting object.
+  - `operation` (`string`): Set the `operation` field on the resulting object. When `null`, the `operation` field will be omitted from the resulting object.
+  - `payload_field` (`string`): Set the `payload_field` field on the resulting object. When `null`, the `payload_field` field will be omitted from the resulting object.
+  - `range_key_field` (`string`): Set the `range_key_field` field on the resulting object. When `null`, the `range_key_field` field will be omitted from the resulting object.
+  - `range_key_type` (`string`): Set the `range_key_type` field on the resulting object. When `null`, the `range_key_type` field will be omitted from the resulting object.
+  - `range_key_value` (`string`): Set the `range_key_value` field on the resulting object. When `null`, the `range_key_value` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `table_name` (`string`): Set the `table_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dynamodb` sub block.
@@ -1471,8 +1471,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `role_arn` (`string`): 
-  - `put_item` (`list[obj]`):  When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.put_item.new](#fn-error_actionerror_actionput_itemnew) constructor.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `put_item` (`list[obj]`): Set the `put_item` field on the resulting object. When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.put_item.new](#fn-error_actionerror_actionput_itemnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dynamodbv2` sub block.
@@ -1495,7 +1495,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `table_name` (`string`): 
+  - `table_name` (`string`): Set the `table_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `put_item` sub block.
@@ -1518,10 +1518,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint` (`string`): 
-  - `index` (`string`): 
-  - `role_arn` (`string`): 
-  - `type` (`string`): 
+  - `endpoint` (`string`): Set the `endpoint` field on the resulting object.
+  - `index` (`string`): Set the `index` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `elasticsearch` sub block.
@@ -1544,9 +1544,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `delivery_stream_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `separator` (`string`):  When `null`, the `separator` field will be omitted from the resulting object.
+  - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `firehose` sub block.
@@ -1569,9 +1569,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `confirmation_url` (`string`):  When `null`, the `confirmation_url` field will be omitted from the resulting object.
-  - `url` (`string`): 
-  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.http_header.new](#fn-error_actionerror_actionhttp_headernew) constructor.
+  - `confirmation_url` (`string`): Set the `confirmation_url` field on the resulting object. When `null`, the `confirmation_url` field will be omitted from the resulting object.
+  - `url` (`string`): Set the `url` field on the resulting object.
+  - `http_header` (`list[obj]`): Set the `http_header` field on the resulting object. When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.http_header.new](#fn-error_actionerror_actionhttp_headernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http` sub block.
@@ -1594,8 +1594,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `value` (`string`): 
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `http_header` sub block.
@@ -1618,8 +1618,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `channel_name` (`string`): 
-  - `role_arn` (`string`): 
+  - `channel_name` (`string`): Set the `channel_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `iot_analytics` sub block.
@@ -1642,9 +1642,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `input_name` (`string`): 
-  - `message_id` (`string`):  When `null`, the `message_id` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
+  - `input_name` (`string`): Set the `input_name` field on the resulting object.
+  - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `iot_events` sub block.
@@ -1667,11 +1667,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_properties` (`obj`): 
-  - `destination_arn` (`string`): 
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `partition` (`string`):  When `null`, the `partition` field will be omitted from the resulting object.
-  - `topic` (`string`): 
+  - `client_properties` (`obj`): Set the `client_properties` field on the resulting object.
+  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.
+  - `topic` (`string`): Set the `topic` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `kafka` sub block.
@@ -1694,9 +1694,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `partition_key` (`string`):  When `null`, the `partition_key` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `stream_name` (`string`): 
+  - `partition_key` (`string`): Set the `partition_key` field on the resulting object. When `null`, the `partition_key` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `stream_name` (`string`): Set the `stream_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `kinesis` sub block.
@@ -1719,7 +1719,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `function_arn` (`string`): 
+  - `function_arn` (`string`): Set the `function_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda` sub block.
@@ -1742,9 +1742,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `qos` (`number`):  When `null`, the `qos` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `topic` (`string`): 
+  - `qos` (`number`): Set the `qos` field on the resulting object. When `null`, the `qos` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `topic` (`string`): Set the `topic` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `republish` sub block.
@@ -1767,10 +1767,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): 
-  - `canned_acl` (`string`):  When `null`, the `canned_acl` field will be omitted from the resulting object.
-  - `key` (`string`): 
-  - `role_arn` (`string`): 
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `canned_acl` (`string`): Set the `canned_acl` field on the resulting object. When `null`, the `canned_acl` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -1793,9 +1793,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `message_format` (`string`):  When `null`, the `message_format` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `target_arn` (`string`): 
+  - `message_format` (`string`): Set the `message_format` field on the resulting object. When `null`, the `message_format` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `target_arn` (`string`): Set the `target_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sns` sub block.
@@ -1818,9 +1818,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `queue_url` (`string`): 
-  - `role_arn` (`string`): 
-  - `use_base64` (`bool`): 
+  - `queue_url` (`string`): Set the `queue_url` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `use_base64` (`bool`): Set the `use_base64` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sqs` sub block.
@@ -1843,9 +1843,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `execution_name_prefix` (`string`):  When `null`, the `execution_name_prefix` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `state_machine_name` (`string`): 
+  - `execution_name_prefix` (`string`): Set the `execution_name_prefix` field on the resulting object. When `null`, the `execution_name_prefix` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `state_machine_name` (`string`): Set the `state_machine_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `step_functions` sub block.
@@ -1868,11 +1868,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `database_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `table_name` (`string`): 
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.dimension.new](#fn-error_actionerror_actiondimensionnew) constructor.
-  - `timestamp` (`list[obj]`):  When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.timestamp.new](#fn-error_actionerror_actiontimestampnew) constructor.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `table_name` (`string`): Set the `table_name` field on the resulting object.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.dimension.new](#fn-error_actionerror_actiondimensionnew) constructor.
+  - `timestamp` (`list[obj]`): Set the `timestamp` field on the resulting object. When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.timestamp.new](#fn-error_actionerror_actiontimestampnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timestream` sub block.
@@ -1895,8 +1895,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -1919,8 +1919,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`string`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timestamp` sub block.
@@ -1943,9 +1943,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `delivery_stream_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `separator` (`string`):  When `null`, the `separator` field will be omitted from the resulting object.
+  - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `firehose` sub block.
@@ -1968,9 +1968,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `confirmation_url` (`string`):  When `null`, the `confirmation_url` field will be omitted from the resulting object.
-  - `url` (`string`): 
-  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.http_header.new](#fn-httphttp_headernew) constructor.
+  - `confirmation_url` (`string`): Set the `confirmation_url` field on the resulting object. When `null`, the `confirmation_url` field will be omitted from the resulting object.
+  - `url` (`string`): Set the `url` field on the resulting object.
+  - `http_header` (`list[obj]`): Set the `http_header` field on the resulting object. When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.http_header.new](#fn-httphttp_headernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http` sub block.
@@ -1993,8 +1993,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `value` (`string`): 
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `http_header` sub block.
@@ -2017,8 +2017,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `channel_name` (`string`): 
-  - `role_arn` (`string`): 
+  - `channel_name` (`string`): Set the `channel_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `iot_analytics` sub block.
@@ -2041,9 +2041,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `input_name` (`string`): 
-  - `message_id` (`string`):  When `null`, the `message_id` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
+  - `input_name` (`string`): Set the `input_name` field on the resulting object.
+  - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `iot_events` sub block.
@@ -2066,11 +2066,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_properties` (`obj`): 
-  - `destination_arn` (`string`): 
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `partition` (`string`):  When `null`, the `partition` field will be omitted from the resulting object.
-  - `topic` (`string`): 
+  - `client_properties` (`obj`): Set the `client_properties` field on the resulting object.
+  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.
+  - `topic` (`string`): Set the `topic` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `kafka` sub block.
@@ -2093,9 +2093,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `partition_key` (`string`):  When `null`, the `partition_key` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `stream_name` (`string`): 
+  - `partition_key` (`string`): Set the `partition_key` field on the resulting object. When `null`, the `partition_key` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `stream_name` (`string`): Set the `stream_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `kinesis` sub block.
@@ -2118,7 +2118,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `function_arn` (`string`): 
+  - `function_arn` (`string`): Set the `function_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda` sub block.
@@ -2141,9 +2141,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `qos` (`number`):  When `null`, the `qos` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `topic` (`string`): 
+  - `qos` (`number`): Set the `qos` field on the resulting object. When `null`, the `qos` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `topic` (`string`): Set the `topic` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `republish` sub block.
@@ -2166,10 +2166,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): 
-  - `canned_acl` (`string`):  When `null`, the `canned_acl` field will be omitted from the resulting object.
-  - `key` (`string`): 
-  - `role_arn` (`string`): 
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `canned_acl` (`string`): Set the `canned_acl` field on the resulting object. When `null`, the `canned_acl` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -2192,9 +2192,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `message_format` (`string`):  When `null`, the `message_format` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `target_arn` (`string`): 
+  - `message_format` (`string`): Set the `message_format` field on the resulting object. When `null`, the `message_format` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `target_arn` (`string`): Set the `target_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sns` sub block.
@@ -2217,9 +2217,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `queue_url` (`string`): 
-  - `role_arn` (`string`): 
-  - `use_base64` (`bool`): 
+  - `queue_url` (`string`): Set the `queue_url` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `use_base64` (`bool`): Set the `use_base64` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sqs` sub block.
@@ -2242,9 +2242,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `execution_name_prefix` (`string`):  When `null`, the `execution_name_prefix` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `state_machine_name` (`string`): 
+  - `execution_name_prefix` (`string`): Set the `execution_name_prefix` field on the resulting object. When `null`, the `execution_name_prefix` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `state_machine_name` (`string`): Set the `state_machine_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `step_functions` sub block.
@@ -2267,11 +2267,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `database_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `table_name` (`string`): 
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.dimension.new](#fn-timestreamdimensionnew) constructor.
-  - `timestamp` (`list[obj]`):  When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.timestamp.new](#fn-timestreamtimestampnew) constructor.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `table_name` (`string`): Set the `table_name` field on the resulting object.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.dimension.new](#fn-timestreamdimensionnew) constructor.
+  - `timestamp` (`list[obj]`): Set the `timestamp` field on the resulting object. When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.timestamp.new](#fn-timestreamtimestampnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timestream` sub block.
@@ -2294,8 +2294,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -2318,8 +2318,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`string`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timestamp` sub block.

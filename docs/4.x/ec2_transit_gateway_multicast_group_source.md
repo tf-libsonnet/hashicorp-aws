@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `group_ip_address` (`string`): 
-  - `network_interface_id` (`string`): 
-  - `transit_gateway_multicast_domain_id` (`string`): 
+  - `group_ip_address` (`string`): Set the `group_ip_address` field on the resulting resource block.
+  - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting resource block.
+  - `transit_gateway_multicast_domain_id` (`string`): Set the `transit_gateway_multicast_domain_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `group_ip_address` (`string`): 
-  - `network_interface_id` (`string`): 
-  - `transit_gateway_multicast_domain_id` (`string`): 
+  - `group_ip_address` (`string`): Set the `group_ip_address` field on the resulting object.
+  - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting object.
+  - `transit_gateway_multicast_domain_id` (`string`): Set the `transit_gateway_multicast_domain_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_transit_gateway_multicast_group_source` resource into the root Terraform configuration.

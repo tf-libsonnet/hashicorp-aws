@@ -59,14 +59,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `ip_addresses` (`list`):  When `null`, the `ip_addresses` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `attributes` (`list[obj]`):  When `null`, the `attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.attributes.new](#fn-attributesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.timeouts.new](#fn-timeoutsnew) constructor.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `ip_addresses` (`list`): Set the `ip_addresses` field on the resulting resource block. When `null`, the `ip_addresses` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `attributes` (`list[obj]`): Set the `attributes` field on the resulting resource block. When `null`, the `attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.attributes.new](#fn-attributesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,14 +90,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `ip_addresses` (`list`):  When `null`, the `ip_addresses` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `attributes` (`list[obj]`):  When `null`, the `attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.attributes.new](#fn-attributesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.timeouts.new](#fn-timeoutsnew) constructor.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `ip_addresses` (`list`): Set the `ip_addresses` field on the resulting object. When `null`, the `ip_addresses` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `attributes` (`list[obj]`): Set the `attributes` field on the resulting object. When `null`, the `attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.attributes.new](#fn-attributesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_accelerator.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `globalaccelerator_accelerator` resource into the root Terraform configuration.
@@ -289,9 +289,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `flow_logs_enabled` (`bool`):  When `null`, the `flow_logs_enabled` field will be omitted from the resulting object.
-  - `flow_logs_s3_bucket` (`string`):  When `null`, the `flow_logs_s3_bucket` field will be omitted from the resulting object.
-  - `flow_logs_s3_prefix` (`string`):  When `null`, the `flow_logs_s3_prefix` field will be omitted from the resulting object.
+  - `flow_logs_enabled` (`bool`): Set the `flow_logs_enabled` field on the resulting object. When `null`, the `flow_logs_enabled` field will be omitted from the resulting object.
+  - `flow_logs_s3_bucket` (`string`): Set the `flow_logs_s3_bucket` field on the resulting object. When `null`, the `flow_logs_s3_bucket` field will be omitted from the resulting object.
+  - `flow_logs_s3_prefix` (`string`): Set the `flow_logs_s3_prefix` field on the resulting object. When `null`, the `flow_logs_s3_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `attributes` sub block.
@@ -314,8 +314,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

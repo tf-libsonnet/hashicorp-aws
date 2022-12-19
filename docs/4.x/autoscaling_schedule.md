@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `autoscaling_group_name` (`string`): 
-  - `desired_capacity` (`number`):  When `null`, the `desired_capacity` field will be omitted from the resulting object.
-  - `end_time` (`string`):  When `null`, the `end_time` field will be omitted from the resulting object.
-  - `max_size` (`number`):  When `null`, the `max_size` field will be omitted from the resulting object.
-  - `min_size` (`number`):  When `null`, the `min_size` field will be omitted from the resulting object.
-  - `recurrence` (`string`):  When `null`, the `recurrence` field will be omitted from the resulting object.
-  - `scheduled_action_name` (`string`): 
-  - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
-  - `time_zone` (`string`):  When `null`, the `time_zone` field will be omitted from the resulting object.
+  - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting resource block.
+  - `desired_capacity` (`number`): Set the `desired_capacity` field on the resulting resource block. When `null`, the `desired_capacity` field will be omitted from the resulting object.
+  - `end_time` (`string`): Set the `end_time` field on the resulting resource block. When `null`, the `end_time` field will be omitted from the resulting object.
+  - `max_size` (`number`): Set the `max_size` field on the resulting resource block. When `null`, the `max_size` field will be omitted from the resulting object.
+  - `min_size` (`number`): Set the `min_size` field on the resulting resource block. When `null`, the `min_size` field will be omitted from the resulting object.
+  - `recurrence` (`string`): Set the `recurrence` field on the resulting resource block. When `null`, the `recurrence` field will be omitted from the resulting object.
+  - `scheduled_action_name` (`string`): Set the `scheduled_action_name` field on the resulting resource block.
+  - `start_time` (`string`): Set the `start_time` field on the resulting resource block. When `null`, the `start_time` field will be omitted from the resulting object.
+  - `time_zone` (`string`): Set the `time_zone` field on the resulting resource block. When `null`, the `time_zone` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `autoscaling_group_name` (`string`): 
-  - `desired_capacity` (`number`):  When `null`, the `desired_capacity` field will be omitted from the resulting object.
-  - `end_time` (`string`):  When `null`, the `end_time` field will be omitted from the resulting object.
-  - `max_size` (`number`):  When `null`, the `max_size` field will be omitted from the resulting object.
-  - `min_size` (`number`):  When `null`, the `min_size` field will be omitted from the resulting object.
-  - `recurrence` (`string`):  When `null`, the `recurrence` field will be omitted from the resulting object.
-  - `scheduled_action_name` (`string`): 
-  - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
-  - `time_zone` (`string`):  When `null`, the `time_zone` field will be omitted from the resulting object.
+  - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting object.
+  - `desired_capacity` (`number`): Set the `desired_capacity` field on the resulting object. When `null`, the `desired_capacity` field will be omitted from the resulting object.
+  - `end_time` (`string`): Set the `end_time` field on the resulting object. When `null`, the `end_time` field will be omitted from the resulting object.
+  - `max_size` (`number`): Set the `max_size` field on the resulting object. When `null`, the `max_size` field will be omitted from the resulting object.
+  - `min_size` (`number`): Set the `min_size` field on the resulting object. When `null`, the `min_size` field will be omitted from the resulting object.
+  - `recurrence` (`string`): Set the `recurrence` field on the resulting object. When `null`, the `recurrence` field will be omitted from the resulting object.
+  - `scheduled_action_name` (`string`): Set the `scheduled_action_name` field on the resulting object.
+  - `start_time` (`string`): Set the `start_time` field on the resulting object. When `null`, the `start_time` field will be omitted from the resulting object.
+  - `time_zone` (`string`): Set the `time_zone` field on the resulting object. When `null`, the `time_zone` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `autoscaling_schedule` resource into the root Terraform configuration.

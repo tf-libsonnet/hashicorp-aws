@@ -54,12 +54,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `zip_file` (`string`):  When `null`, the `zip_file` field will be omitted from the resulting object.
-  - `storage_location` (`list[obj]`):  When `null`, the `storage_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_script.storage_location.new](#fn-storage_locationnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting resource block. When `null`, the `version` field will be omitted from the resulting object.
+  - `zip_file` (`string`): Set the `zip_file` field on the resulting resource block. When `null`, the `zip_file` field will be omitted from the resulting object.
+  - `storage_location` (`list[obj]`): Set the `storage_location` field on the resulting resource block. When `null`, the `storage_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_script.storage_location.new](#fn-storage_locationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,12 +83,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `zip_file` (`string`):  When `null`, the `zip_file` field will be omitted from the resulting object.
-  - `storage_location` (`list[obj]`):  When `null`, the `storage_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_script.storage_location.new](#fn-storage_locationnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `zip_file` (`string`): Set the `zip_file` field on the resulting object. When `null`, the `zip_file` field will be omitted from the resulting object.
+  - `storage_location` (`list[obj]`): Set the `storage_location` field on the resulting object. When `null`, the `storage_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_script.storage_location.new](#fn-storage_locationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `gamelift_script` resource into the root Terraform configuration.
@@ -228,10 +228,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): 
-  - `key` (`string`): 
-  - `object_version` (`string`):  When `null`, the `object_version` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `object_version` (`string`): Set the `object_version` field on the resulting object. When `null`, the `object_version` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `storage_location` sub block.

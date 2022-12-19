@@ -74,21 +74,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `copy_tags_to_snapshots` (`bool`):  When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
-  - `data_compression_type` (`string`):  When `null`, the `data_compression_type` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_volume_id` (`string`): 
-  - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
-  - `record_size_kib` (`number`):  When `null`, the `record_size_kib` field will be omitted from the resulting object.
-  - `storage_capacity_quota_gib` (`number`):  When `null`, the `storage_capacity_quota_gib` field will be omitted from the resulting object.
-  - `storage_capacity_reservation_gib` (`number`):  When `null`, the `storage_capacity_reservation_gib` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
-  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-nfs_exportsnew) constructor.
-  - `origin_snapshot` (`list[obj]`):  When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-origin_snapshotnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-timeoutsnew) constructor.
-  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-user_and_group_quotasnew) constructor.
+  - `copy_tags_to_snapshots` (`bool`): Set the `copy_tags_to_snapshots` field on the resulting resource block. When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
+  - `data_compression_type` (`string`): Set the `data_compression_type` field on the resulting resource block. When `null`, the `data_compression_type` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `parent_volume_id` (`string`): Set the `parent_volume_id` field on the resulting resource block.
+  - `read_only` (`bool`): Set the `read_only` field on the resulting resource block. When `null`, the `read_only` field will be omitted from the resulting object.
+  - `record_size_kib` (`number`): Set the `record_size_kib` field on the resulting resource block. When `null`, the `record_size_kib` field will be omitted from the resulting object.
+  - `storage_capacity_quota_gib` (`number`): Set the `storage_capacity_quota_gib` field on the resulting resource block. When `null`, the `storage_capacity_quota_gib` field will be omitted from the resulting object.
+  - `storage_capacity_reservation_gib` (`number`): Set the `storage_capacity_reservation_gib` field on the resulting resource block. When `null`, the `storage_capacity_reservation_gib` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `volume_type` (`string`): Set the `volume_type` field on the resulting resource block. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `nfs_exports` (`list[obj]`): Set the `nfs_exports` field on the resulting resource block. When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-nfs_exportsnew) constructor.
+  - `origin_snapshot` (`list[obj]`): Set the `origin_snapshot` field on the resulting resource block. When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-origin_snapshotnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user_and_group_quotas` (`list[obj]`): Set the `user_and_group_quotas` field on the resulting resource block. When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-user_and_group_quotasnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -112,21 +112,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `copy_tags_to_snapshots` (`bool`):  When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
-  - `data_compression_type` (`string`):  When `null`, the `data_compression_type` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_volume_id` (`string`): 
-  - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
-  - `record_size_kib` (`number`):  When `null`, the `record_size_kib` field will be omitted from the resulting object.
-  - `storage_capacity_quota_gib` (`number`):  When `null`, the `storage_capacity_quota_gib` field will be omitted from the resulting object.
-  - `storage_capacity_reservation_gib` (`number`):  When `null`, the `storage_capacity_reservation_gib` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
-  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-nfs_exportsnew) constructor.
-  - `origin_snapshot` (`list[obj]`):  When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-origin_snapshotnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-timeoutsnew) constructor.
-  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-user_and_group_quotasnew) constructor.
+  - `copy_tags_to_snapshots` (`bool`): Set the `copy_tags_to_snapshots` field on the resulting object. When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
+  - `data_compression_type` (`string`): Set the `data_compression_type` field on the resulting object. When `null`, the `data_compression_type` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `parent_volume_id` (`string`): Set the `parent_volume_id` field on the resulting object.
+  - `read_only` (`bool`): Set the `read_only` field on the resulting object. When `null`, the `read_only` field will be omitted from the resulting object.
+  - `record_size_kib` (`number`): Set the `record_size_kib` field on the resulting object. When `null`, the `record_size_kib` field will be omitted from the resulting object.
+  - `storage_capacity_quota_gib` (`number`): Set the `storage_capacity_quota_gib` field on the resulting object. When `null`, the `storage_capacity_quota_gib` field will be omitted from the resulting object.
+  - `storage_capacity_reservation_gib` (`number`): Set the `storage_capacity_reservation_gib` field on the resulting object. When `null`, the `storage_capacity_reservation_gib` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `nfs_exports` (`list[obj]`): Set the `nfs_exports` field on the resulting object. When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-nfs_exportsnew) constructor.
+  - `origin_snapshot` (`list[obj]`): Set the `origin_snapshot` field on the resulting object. When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-origin_snapshotnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user_and_group_quotas` (`list[obj]`): Set the `user_and_group_quotas` field on the resulting object. When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-user_and_group_quotasnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_openzfs_volume` resource into the root Terraform configuration.
@@ -472,7 +472,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-nfs_exportsclient_configurationsnew) constructor.
+  - `client_configurations` (`list[obj]`): Set the `client_configurations` field on the resulting object. When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-nfs_exportsclient_configurationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs_exports` sub block.
@@ -495,8 +495,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `clients` (`string`): 
-  - `options` (`list`): 
+  - `clients` (`string`): Set the `clients` field on the resulting object.
+  - `options` (`list`): Set the `options` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `client_configurations` sub block.
@@ -519,8 +519,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `copy_strategy` (`string`): 
-  - `snapshot_arn` (`string`): 
+  - `copy_strategy` (`string`): Set the `copy_strategy` field on the resulting object.
+  - `snapshot_arn` (`string`): Set the `snapshot_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `origin_snapshot` sub block.
@@ -543,9 +543,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -568,8 +568,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `storage_capacity_quota_gib` (`number`): 
-  - `type` (`string`): 
+  - `storage_capacity_quota_gib` (`number`): Set the `storage_capacity_quota_gib` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `user_and_group_quotas` sub block.

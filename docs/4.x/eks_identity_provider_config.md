@@ -56,11 +56,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `oidc` (`list[obj]`):  When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-oidcnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `oidc` (`list[obj]`): Set the `oidc` field on the resulting resource block. When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-oidcnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,11 +84,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `oidc` (`list[obj]`):  When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-oidcnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `oidc` (`list[obj]`): Set the `oidc` field on the resulting object. When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-oidcnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_identity_provider_config` resource into the root Terraform configuration.
@@ -232,14 +232,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_id` (`string`): 
-  - `groups_claim` (`string`):  When `null`, the `groups_claim` field will be omitted from the resulting object.
-  - `groups_prefix` (`string`):  When `null`, the `groups_prefix` field will be omitted from the resulting object.
-  - `identity_provider_config_name` (`string`): 
-  - `issuer_url` (`string`): 
-  - `required_claims` (`obj`):  When `null`, the `required_claims` field will be omitted from the resulting object.
-  - `username_claim` (`string`):  When `null`, the `username_claim` field will be omitted from the resulting object.
-  - `username_prefix` (`string`):  When `null`, the `username_prefix` field will be omitted from the resulting object.
+  - `client_id` (`string`): Set the `client_id` field on the resulting object.
+  - `groups_claim` (`string`): Set the `groups_claim` field on the resulting object. When `null`, the `groups_claim` field will be omitted from the resulting object.
+  - `groups_prefix` (`string`): Set the `groups_prefix` field on the resulting object. When `null`, the `groups_prefix` field will be omitted from the resulting object.
+  - `identity_provider_config_name` (`string`): Set the `identity_provider_config_name` field on the resulting object.
+  - `issuer_url` (`string`): Set the `issuer_url` field on the resulting object.
+  - `required_claims` (`obj`): Set the `required_claims` field on the resulting object. When `null`, the `required_claims` field will be omitted from the resulting object.
+  - `username_claim` (`string`): Set the `username_claim` field on the resulting object. When `null`, the `username_claim` field will be omitted from the resulting object.
+  - `username_prefix` (`string`): Set the `username_prefix` field on the resulting object. When `null`, the `username_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `oidc` sub block.
@@ -262,8 +262,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

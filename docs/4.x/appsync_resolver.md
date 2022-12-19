@@ -67,17 +67,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): 
-  - `data_source` (`string`):  When `null`, the `data_source` field will be omitted from the resulting object.
-  - `field` (`string`): 
-  - `kind` (`string`):  When `null`, the `kind` field will be omitted from the resulting object.
-  - `max_batch_size` (`number`):  When `null`, the `max_batch_size` field will be omitted from the resulting object.
-  - `request_template` (`string`):  When `null`, the `request_template` field will be omitted from the resulting object.
-  - `response_template` (`string`):  When `null`, the `response_template` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `caching_config` (`list[obj]`):  When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-caching_confignew) constructor.
-  - `pipeline_config` (`list[obj]`):  When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-pipeline_confignew) constructor.
-  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-sync_confignew) constructor.
+  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
+  - `data_source` (`string`): Set the `data_source` field on the resulting resource block. When `null`, the `data_source` field will be omitted from the resulting object.
+  - `field` (`string`): Set the `field` field on the resulting resource block.
+  - `kind` (`string`): Set the `kind` field on the resulting resource block. When `null`, the `kind` field will be omitted from the resulting object.
+  - `max_batch_size` (`number`): Set the `max_batch_size` field on the resulting resource block. When `null`, the `max_batch_size` field will be omitted from the resulting object.
+  - `request_template` (`string`): Set the `request_template` field on the resulting resource block. When `null`, the `request_template` field will be omitted from the resulting object.
+  - `response_template` (`string`): Set the `response_template` field on the resulting resource block. When `null`, the `response_template` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting resource block.
+  - `caching_config` (`list[obj]`): Set the `caching_config` field on the resulting resource block. When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-caching_confignew) constructor.
+  - `pipeline_config` (`list[obj]`): Set the `pipeline_config` field on the resulting resource block. When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-pipeline_confignew) constructor.
+  - `sync_config` (`list[obj]`): Set the `sync_config` field on the resulting resource block. When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-sync_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,17 +101,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): 
-  - `data_source` (`string`):  When `null`, the `data_source` field will be omitted from the resulting object.
-  - `field` (`string`): 
-  - `kind` (`string`):  When `null`, the `kind` field will be omitted from the resulting object.
-  - `max_batch_size` (`number`):  When `null`, the `max_batch_size` field will be omitted from the resulting object.
-  - `request_template` (`string`):  When `null`, the `request_template` field will be omitted from the resulting object.
-  - `response_template` (`string`):  When `null`, the `response_template` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `caching_config` (`list[obj]`):  When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-caching_confignew) constructor.
-  - `pipeline_config` (`list[obj]`):  When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-pipeline_confignew) constructor.
-  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-sync_confignew) constructor.
+  - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `data_source` (`string`): Set the `data_source` field on the resulting object. When `null`, the `data_source` field will be omitted from the resulting object.
+  - `field` (`string`): Set the `field` field on the resulting object.
+  - `kind` (`string`): Set the `kind` field on the resulting object. When `null`, the `kind` field will be omitted from the resulting object.
+  - `max_batch_size` (`number`): Set the `max_batch_size` field on the resulting object. When `null`, the `max_batch_size` field will be omitted from the resulting object.
+  - `request_template` (`string`): Set the `request_template` field on the resulting object. When `null`, the `request_template` field will be omitted from the resulting object.
+  - `response_template` (`string`): Set the `response_template` field on the resulting object. When `null`, the `response_template` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `caching_config` (`list[obj]`): Set the `caching_config` field on the resulting object. When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-caching_confignew) constructor.
+  - `pipeline_config` (`list[obj]`): Set the `pipeline_config` field on the resulting object. When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-pipeline_confignew) constructor.
+  - `sync_config` (`list[obj]`): Set the `sync_config` field on the resulting object. When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-sync_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appsync_resolver` resource into the root Terraform configuration.
@@ -373,8 +373,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `caching_keys` (`list`):  When `null`, the `caching_keys` field will be omitted from the resulting object.
-  - `ttl` (`number`):  When `null`, the `ttl` field will be omitted from the resulting object.
+  - `caching_keys` (`list`): Set the `caching_keys` field on the resulting object. When `null`, the `caching_keys` field will be omitted from the resulting object.
+  - `ttl` (`number`): Set the `ttl` field on the resulting object. When `null`, the `ttl` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `caching_config` sub block.
@@ -397,7 +397,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `functions` (`list`):  When `null`, the `functions` field will be omitted from the resulting object.
+  - `functions` (`list`): Set the `functions` field on the resulting object. When `null`, the `functions` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `pipeline_config` sub block.
@@ -420,9 +420,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `conflict_detection` (`string`):  When `null`, the `conflict_detection` field will be omitted from the resulting object.
-  - `conflict_handler` (`string`):  When `null`, the `conflict_handler` field will be omitted from the resulting object.
-  - `lambda_conflict_handler_config` (`list[obj]`):  When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.lambda_conflict_handler_config.new](#fn-sync_configlambda_conflict_handler_confignew) constructor.
+  - `conflict_detection` (`string`): Set the `conflict_detection` field on the resulting object. When `null`, the `conflict_detection` field will be omitted from the resulting object.
+  - `conflict_handler` (`string`): Set the `conflict_handler` field on the resulting object. When `null`, the `conflict_handler` field will be omitted from the resulting object.
+  - `lambda_conflict_handler_config` (`list[obj]`): Set the `lambda_conflict_handler_config` field on the resulting object. When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.lambda_conflict_handler_config.new](#fn-sync_configlambda_conflict_handler_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sync_config` sub block.
@@ -445,7 +445,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `lambda_conflict_handler_arn` (`string`):  When `null`, the `lambda_conflict_handler_arn` field will be omitted from the resulting object.
+  - `lambda_conflict_handler_arn` (`string`): Set the `lambda_conflict_handler_arn` field on the resulting object. When `null`, the `lambda_conflict_handler_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda_conflict_handler_config` sub block.

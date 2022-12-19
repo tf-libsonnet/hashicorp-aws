@@ -112,35 +112,35 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster` (`string`):  When `null`, the `cluster` field will be omitted from the resulting object.
-  - `deployment_maximum_percent` (`number`):  When `null`, the `deployment_maximum_percent` field will be omitted from the resulting object.
-  - `deployment_minimum_healthy_percent` (`number`):  When `null`, the `deployment_minimum_healthy_percent` field will be omitted from the resulting object.
-  - `desired_count` (`number`):  When `null`, the `desired_count` field will be omitted from the resulting object.
-  - `enable_ecs_managed_tags` (`bool`):  When `null`, the `enable_ecs_managed_tags` field will be omitted from the resulting object.
-  - `enable_execute_command` (`bool`):  When `null`, the `enable_execute_command` field will be omitted from the resulting object.
-  - `force_new_deployment` (`bool`):  When `null`, the `force_new_deployment` field will be omitted from the resulting object.
-  - `health_check_grace_period_seconds` (`number`):  When `null`, the `health_check_grace_period_seconds` field will be omitted from the resulting object.
-  - `iam_role` (`string`):  When `null`, the `iam_role` field will be omitted from the resulting object.
-  - `launch_type` (`string`):  When `null`, the `launch_type` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform_version` (`string`):  When `null`, the `platform_version` field will be omitted from the resulting object.
-  - `propagate_tags` (`string`):  When `null`, the `propagate_tags` field will be omitted from the resulting object.
-  - `scheduling_strategy` (`string`):  When `null`, the `scheduling_strategy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `task_definition` (`string`):  When `null`, the `task_definition` field will be omitted from the resulting object.
-  - `triggers` (`obj`):  When `null`, the `triggers` field will be omitted from the resulting object.
-  - `wait_for_steady_state` (`bool`):  When `null`, the `wait_for_steady_state` field will be omitted from the resulting object.
-  - `capacity_provider_strategy` (`list[obj]`):  When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.capacity_provider_strategy.new](#fn-capacity_provider_strategynew) constructor.
-  - `deployment_circuit_breaker` (`list[obj]`):  When `null`, the `deployment_circuit_breaker` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_circuit_breaker.new](#fn-deployment_circuit_breakernew) constructor.
-  - `deployment_controller` (`list[obj]`):  When `null`, the `deployment_controller` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_controller.new](#fn-deployment_controllernew) constructor.
-  - `load_balancer` (`list[obj]`):  When `null`, the `load_balancer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.load_balancer.new](#fn-load_balancernew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.network_configuration.new](#fn-network_configurationnew) constructor.
-  - `ordered_placement_strategy` (`list[obj]`):  When `null`, the `ordered_placement_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.ordered_placement_strategy.new](#fn-ordered_placement_strategynew) constructor.
-  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.placement_constraints.new](#fn-placement_constraintsnew) constructor.
-  - `service_connect_configuration` (`list[obj]`):  When `null`, the `service_connect_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.new](#fn-service_connect_configurationnew) constructor.
-  - `service_registries` (`list[obj]`):  When `null`, the `service_registries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_registries.new](#fn-service_registriesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cluster` (`string`): Set the `cluster` field on the resulting resource block. When `null`, the `cluster` field will be omitted from the resulting object.
+  - `deployment_maximum_percent` (`number`): Set the `deployment_maximum_percent` field on the resulting resource block. When `null`, the `deployment_maximum_percent` field will be omitted from the resulting object.
+  - `deployment_minimum_healthy_percent` (`number`): Set the `deployment_minimum_healthy_percent` field on the resulting resource block. When `null`, the `deployment_minimum_healthy_percent` field will be omitted from the resulting object.
+  - `desired_count` (`number`): Set the `desired_count` field on the resulting resource block. When `null`, the `desired_count` field will be omitted from the resulting object.
+  - `enable_ecs_managed_tags` (`bool`): Set the `enable_ecs_managed_tags` field on the resulting resource block. When `null`, the `enable_ecs_managed_tags` field will be omitted from the resulting object.
+  - `enable_execute_command` (`bool`): Set the `enable_execute_command` field on the resulting resource block. When `null`, the `enable_execute_command` field will be omitted from the resulting object.
+  - `force_new_deployment` (`bool`): Set the `force_new_deployment` field on the resulting resource block. When `null`, the `force_new_deployment` field will be omitted from the resulting object.
+  - `health_check_grace_period_seconds` (`number`): Set the `health_check_grace_period_seconds` field on the resulting resource block. When `null`, the `health_check_grace_period_seconds` field will be omitted from the resulting object.
+  - `iam_role` (`string`): Set the `iam_role` field on the resulting resource block. When `null`, the `iam_role` field will be omitted from the resulting object.
+  - `launch_type` (`string`): Set the `launch_type` field on the resulting resource block. When `null`, the `launch_type` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `platform_version` (`string`): Set the `platform_version` field on the resulting resource block. When `null`, the `platform_version` field will be omitted from the resulting object.
+  - `propagate_tags` (`string`): Set the `propagate_tags` field on the resulting resource block. When `null`, the `propagate_tags` field will be omitted from the resulting object.
+  - `scheduling_strategy` (`string`): Set the `scheduling_strategy` field on the resulting resource block. When `null`, the `scheduling_strategy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `task_definition` (`string`): Set the `task_definition` field on the resulting resource block. When `null`, the `task_definition` field will be omitted from the resulting object.
+  - `triggers` (`obj`): Set the `triggers` field on the resulting resource block. When `null`, the `triggers` field will be omitted from the resulting object.
+  - `wait_for_steady_state` (`bool`): Set the `wait_for_steady_state` field on the resulting resource block. When `null`, the `wait_for_steady_state` field will be omitted from the resulting object.
+  - `capacity_provider_strategy` (`list[obj]`): Set the `capacity_provider_strategy` field on the resulting resource block. When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.capacity_provider_strategy.new](#fn-capacity_provider_strategynew) constructor.
+  - `deployment_circuit_breaker` (`list[obj]`): Set the `deployment_circuit_breaker` field on the resulting resource block. When `null`, the `deployment_circuit_breaker` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_circuit_breaker.new](#fn-deployment_circuit_breakernew) constructor.
+  - `deployment_controller` (`list[obj]`): Set the `deployment_controller` field on the resulting resource block. When `null`, the `deployment_controller` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_controller.new](#fn-deployment_controllernew) constructor.
+  - `load_balancer` (`list[obj]`): Set the `load_balancer` field on the resulting resource block. When `null`, the `load_balancer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.load_balancer.new](#fn-load_balancernew) constructor.
+  - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting resource block. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `ordered_placement_strategy` (`list[obj]`): Set the `ordered_placement_strategy` field on the resulting resource block. When `null`, the `ordered_placement_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.ordered_placement_strategy.new](#fn-ordered_placement_strategynew) constructor.
+  - `placement_constraints` (`list[obj]`): Set the `placement_constraints` field on the resulting resource block. When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.placement_constraints.new](#fn-placement_constraintsnew) constructor.
+  - `service_connect_configuration` (`list[obj]`): Set the `service_connect_configuration` field on the resulting resource block. When `null`, the `service_connect_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.new](#fn-service_connect_configurationnew) constructor.
+  - `service_registries` (`list[obj]`): Set the `service_registries` field on the resulting resource block. When `null`, the `service_registries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_registries.new](#fn-service_registriesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -164,35 +164,35 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster` (`string`):  When `null`, the `cluster` field will be omitted from the resulting object.
-  - `deployment_maximum_percent` (`number`):  When `null`, the `deployment_maximum_percent` field will be omitted from the resulting object.
-  - `deployment_minimum_healthy_percent` (`number`):  When `null`, the `deployment_minimum_healthy_percent` field will be omitted from the resulting object.
-  - `desired_count` (`number`):  When `null`, the `desired_count` field will be omitted from the resulting object.
-  - `enable_ecs_managed_tags` (`bool`):  When `null`, the `enable_ecs_managed_tags` field will be omitted from the resulting object.
-  - `enable_execute_command` (`bool`):  When `null`, the `enable_execute_command` field will be omitted from the resulting object.
-  - `force_new_deployment` (`bool`):  When `null`, the `force_new_deployment` field will be omitted from the resulting object.
-  - `health_check_grace_period_seconds` (`number`):  When `null`, the `health_check_grace_period_seconds` field will be omitted from the resulting object.
-  - `iam_role` (`string`):  When `null`, the `iam_role` field will be omitted from the resulting object.
-  - `launch_type` (`string`):  When `null`, the `launch_type` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform_version` (`string`):  When `null`, the `platform_version` field will be omitted from the resulting object.
-  - `propagate_tags` (`string`):  When `null`, the `propagate_tags` field will be omitted from the resulting object.
-  - `scheduling_strategy` (`string`):  When `null`, the `scheduling_strategy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `task_definition` (`string`):  When `null`, the `task_definition` field will be omitted from the resulting object.
-  - `triggers` (`obj`):  When `null`, the `triggers` field will be omitted from the resulting object.
-  - `wait_for_steady_state` (`bool`):  When `null`, the `wait_for_steady_state` field will be omitted from the resulting object.
-  - `capacity_provider_strategy` (`list[obj]`):  When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.capacity_provider_strategy.new](#fn-capacity_provider_strategynew) constructor.
-  - `deployment_circuit_breaker` (`list[obj]`):  When `null`, the `deployment_circuit_breaker` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_circuit_breaker.new](#fn-deployment_circuit_breakernew) constructor.
-  - `deployment_controller` (`list[obj]`):  When `null`, the `deployment_controller` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_controller.new](#fn-deployment_controllernew) constructor.
-  - `load_balancer` (`list[obj]`):  When `null`, the `load_balancer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.load_balancer.new](#fn-load_balancernew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.network_configuration.new](#fn-network_configurationnew) constructor.
-  - `ordered_placement_strategy` (`list[obj]`):  When `null`, the `ordered_placement_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.ordered_placement_strategy.new](#fn-ordered_placement_strategynew) constructor.
-  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.placement_constraints.new](#fn-placement_constraintsnew) constructor.
-  - `service_connect_configuration` (`list[obj]`):  When `null`, the `service_connect_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.new](#fn-service_connect_configurationnew) constructor.
-  - `service_registries` (`list[obj]`):  When `null`, the `service_registries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_registries.new](#fn-service_registriesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cluster` (`string`): Set the `cluster` field on the resulting object. When `null`, the `cluster` field will be omitted from the resulting object.
+  - `deployment_maximum_percent` (`number`): Set the `deployment_maximum_percent` field on the resulting object. When `null`, the `deployment_maximum_percent` field will be omitted from the resulting object.
+  - `deployment_minimum_healthy_percent` (`number`): Set the `deployment_minimum_healthy_percent` field on the resulting object. When `null`, the `deployment_minimum_healthy_percent` field will be omitted from the resulting object.
+  - `desired_count` (`number`): Set the `desired_count` field on the resulting object. When `null`, the `desired_count` field will be omitted from the resulting object.
+  - `enable_ecs_managed_tags` (`bool`): Set the `enable_ecs_managed_tags` field on the resulting object. When `null`, the `enable_ecs_managed_tags` field will be omitted from the resulting object.
+  - `enable_execute_command` (`bool`): Set the `enable_execute_command` field on the resulting object. When `null`, the `enable_execute_command` field will be omitted from the resulting object.
+  - `force_new_deployment` (`bool`): Set the `force_new_deployment` field on the resulting object. When `null`, the `force_new_deployment` field will be omitted from the resulting object.
+  - `health_check_grace_period_seconds` (`number`): Set the `health_check_grace_period_seconds` field on the resulting object. When `null`, the `health_check_grace_period_seconds` field will be omitted from the resulting object.
+  - `iam_role` (`string`): Set the `iam_role` field on the resulting object. When `null`, the `iam_role` field will be omitted from the resulting object.
+  - `launch_type` (`string`): Set the `launch_type` field on the resulting object. When `null`, the `launch_type` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `platform_version` (`string`): Set the `platform_version` field on the resulting object. When `null`, the `platform_version` field will be omitted from the resulting object.
+  - `propagate_tags` (`string`): Set the `propagate_tags` field on the resulting object. When `null`, the `propagate_tags` field will be omitted from the resulting object.
+  - `scheduling_strategy` (`string`): Set the `scheduling_strategy` field on the resulting object. When `null`, the `scheduling_strategy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `task_definition` (`string`): Set the `task_definition` field on the resulting object. When `null`, the `task_definition` field will be omitted from the resulting object.
+  - `triggers` (`obj`): Set the `triggers` field on the resulting object. When `null`, the `triggers` field will be omitted from the resulting object.
+  - `wait_for_steady_state` (`bool`): Set the `wait_for_steady_state` field on the resulting object. When `null`, the `wait_for_steady_state` field will be omitted from the resulting object.
+  - `capacity_provider_strategy` (`list[obj]`): Set the `capacity_provider_strategy` field on the resulting object. When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.capacity_provider_strategy.new](#fn-capacity_provider_strategynew) constructor.
+  - `deployment_circuit_breaker` (`list[obj]`): Set the `deployment_circuit_breaker` field on the resulting object. When `null`, the `deployment_circuit_breaker` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_circuit_breaker.new](#fn-deployment_circuit_breakernew) constructor.
+  - `deployment_controller` (`list[obj]`): Set the `deployment_controller` field on the resulting object. When `null`, the `deployment_controller` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_controller.new](#fn-deployment_controllernew) constructor.
+  - `load_balancer` (`list[obj]`): Set the `load_balancer` field on the resulting object. When `null`, the `load_balancer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.load_balancer.new](#fn-load_balancernew) constructor.
+  - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting object. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `ordered_placement_strategy` (`list[obj]`): Set the `ordered_placement_strategy` field on the resulting object. When `null`, the `ordered_placement_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.ordered_placement_strategy.new](#fn-ordered_placement_strategynew) constructor.
+  - `placement_constraints` (`list[obj]`): Set the `placement_constraints` field on the resulting object. When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.placement_constraints.new](#fn-placement_constraintsnew) constructor.
+  - `service_connect_configuration` (`list[obj]`): Set the `service_connect_configuration` field on the resulting object. When `null`, the `service_connect_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.new](#fn-service_connect_configurationnew) constructor.
+  - `service_registries` (`list[obj]`): Set the `service_registries` field on the resulting object. When `null`, the `service_registries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_registries.new](#fn-service_registriesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecs_service` resource into the root Terraform configuration.
@@ -888,9 +888,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `base` (`number`):  When `null`, the `base` field will be omitted from the resulting object.
-  - `capacity_provider` (`string`): 
-  - `weight` (`number`):  When `null`, the `weight` field will be omitted from the resulting object.
+  - `base` (`number`): Set the `base` field on the resulting object. When `null`, the `base` field will be omitted from the resulting object.
+  - `capacity_provider` (`string`): Set the `capacity_provider` field on the resulting object.
+  - `weight` (`number`): Set the `weight` field on the resulting object. When `null`, the `weight` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `capacity_provider_strategy` sub block.
@@ -913,8 +913,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable` (`bool`): 
-  - `rollback` (`bool`): 
+  - `enable` (`bool`): Set the `enable` field on the resulting object.
+  - `rollback` (`bool`): Set the `rollback` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `deployment_circuit_breaker` sub block.
@@ -937,7 +937,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `deployment_controller` sub block.
@@ -960,10 +960,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `container_name` (`string`): 
-  - `container_port` (`number`): 
-  - `elb_name` (`string`):  When `null`, the `elb_name` field will be omitted from the resulting object.
-  - `target_group_arn` (`string`):  When `null`, the `target_group_arn` field will be omitted from the resulting object.
+  - `container_name` (`string`): Set the `container_name` field on the resulting object.
+  - `container_port` (`number`): Set the `container_port` field on the resulting object.
+  - `elb_name` (`string`): Set the `elb_name` field on the resulting object. When `null`, the `elb_name` field will be omitted from the resulting object.
+  - `target_group_arn` (`string`): Set the `target_group_arn` field on the resulting object. When `null`, the `target_group_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `load_balancer` sub block.
@@ -986,9 +986,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `assign_public_ip` (`bool`):  When `null`, the `assign_public_ip` field will be omitted from the resulting object.
-  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnets` (`list`): 
+  - `assign_public_ip` (`bool`): Set the `assign_public_ip` field on the resulting object. When `null`, the `assign_public_ip` field will be omitted from the resulting object.
+  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnets` (`list`): Set the `subnets` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `network_configuration` sub block.
@@ -1011,8 +1011,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `field` (`string`):  When `null`, the `field` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `field` (`string`): Set the `field` field on the resulting object. When `null`, the `field` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ordered_placement_strategy` sub block.
@@ -1035,8 +1035,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `expression` (`string`): Set the `expression` field on the resulting object. When `null`, the `expression` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `placement_constraints` sub block.
@@ -1059,10 +1059,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): 
-  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
-  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.new](#fn-service_connect_configurationlog_configurationnew) constructor.
-  - `service` (`list[obj]`):  When `null`, the `service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.new](#fn-service_connect_configurationservicenew) constructor.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.
+  - `log_configuration` (`list[obj]`): Set the `log_configuration` field on the resulting object. When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.new](#fn-service_connect_configurationlog_configurationnew) constructor.
+  - `service` (`list[obj]`): Set the `service` field on the resulting object. When `null`, the `service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.new](#fn-service_connect_configurationservicenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `service_connect_configuration` sub block.
@@ -1085,9 +1085,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `log_driver` (`string`):  When `null`, the `log_driver` field will be omitted from the resulting object.
-  - `options` (`obj`):  When `null`, the `options` field will be omitted from the resulting object.
-  - `secret_option` (`list[obj]`):  When `null`, the `secret_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.secret_option.new](#fn-service_connect_configurationservice_connect_configurationsecret_optionnew) constructor.
+  - `log_driver` (`string`): Set the `log_driver` field on the resulting object. When `null`, the `log_driver` field will be omitted from the resulting object.
+  - `options` (`obj`): Set the `options` field on the resulting object. When `null`, the `options` field will be omitted from the resulting object.
+  - `secret_option` (`list[obj]`): Set the `secret_option` field on the resulting object. When `null`, the `secret_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.secret_option.new](#fn-service_connect_configurationservice_connect_configurationsecret_optionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `log_configuration` sub block.
@@ -1110,8 +1110,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value_from` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value_from` (`string`): Set the `value_from` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `secret_option` sub block.
@@ -1134,10 +1134,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `discovery_name` (`string`):  When `null`, the `discovery_name` field will be omitted from the resulting object.
-  - `ingress_port_override` (`number`):  When `null`, the `ingress_port_override` field will be omitted from the resulting object.
-  - `port_name` (`string`): 
-  - `client_alias` (`list[obj]`):  When `null`, the `client_alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.client_alias.new](#fn-service_connect_configurationservice_connect_configurationclient_aliasnew) constructor.
+  - `discovery_name` (`string`): Set the `discovery_name` field on the resulting object. When `null`, the `discovery_name` field will be omitted from the resulting object.
+  - `ingress_port_override` (`number`): Set the `ingress_port_override` field on the resulting object. When `null`, the `ingress_port_override` field will be omitted from the resulting object.
+  - `port_name` (`string`): Set the `port_name` field on the resulting object.
+  - `client_alias` (`list[obj]`): Set the `client_alias` field on the resulting object. When `null`, the `client_alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.client_alias.new](#fn-service_connect_configurationservice_connect_configurationclient_aliasnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `service` sub block.
@@ -1160,8 +1160,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `dns_name` (`string`):  When `null`, the `dns_name` field will be omitted from the resulting object.
-  - `port` (`number`): 
+  - `dns_name` (`string`): Set the `dns_name` field on the resulting object. When `null`, the `dns_name` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `client_alias` sub block.
@@ -1184,10 +1184,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `container_name` (`string`):  When `null`, the `container_name` field will be omitted from the resulting object.
-  - `container_port` (`number`):  When `null`, the `container_port` field will be omitted from the resulting object.
-  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
-  - `registry_arn` (`string`): 
+  - `container_name` (`string`): Set the `container_name` field on the resulting object. When `null`, the `container_name` field will be omitted from the resulting object.
+  - `container_port` (`number`): Set the `container_port` field on the resulting object. When `null`, the `container_port` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+  - `registry_arn` (`string`): Set the `registry_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `service_registries` sub block.
@@ -1210,9 +1210,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

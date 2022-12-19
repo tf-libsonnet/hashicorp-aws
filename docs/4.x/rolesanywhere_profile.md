@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `duration_seconds` (`number`):  When `null`, the `duration_seconds` field will be omitted from the resulting object.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `managed_policy_arns` (`list`):  When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `require_instance_properties` (`bool`):  When `null`, the `require_instance_properties` field will be omitted from the resulting object.
-  - `role_arns` (`list`): 
-  - `session_policy` (`string`):  When `null`, the `session_policy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `duration_seconds` (`number`): Set the `duration_seconds` field on the resulting resource block. When `null`, the `duration_seconds` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `managed_policy_arns` (`list`): Set the `managed_policy_arns` field on the resulting resource block. When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `require_instance_properties` (`bool`): Set the `require_instance_properties` field on the resulting resource block. When `null`, the `require_instance_properties` field will be omitted from the resulting object.
+  - `role_arns` (`list`): Set the `role_arns` field on the resulting resource block.
+  - `session_policy` (`string`): Set the `session_policy` field on the resulting resource block. When `null`, the `session_policy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `duration_seconds` (`number`):  When `null`, the `duration_seconds` field will be omitted from the resulting object.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `managed_policy_arns` (`list`):  When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `require_instance_properties` (`bool`):  When `null`, the `require_instance_properties` field will be omitted from the resulting object.
-  - `role_arns` (`list`): 
-  - `session_policy` (`string`):  When `null`, the `session_policy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `duration_seconds` (`number`): Set the `duration_seconds` field on the resulting object. When `null`, the `duration_seconds` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `managed_policy_arns` (`list`): Set the `managed_policy_arns` field on the resulting object. When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `require_instance_properties` (`bool`): Set the `require_instance_properties` field on the resulting object. When `null`, the `require_instance_properties` field will be omitted from the resulting object.
+  - `role_arns` (`list`): Set the `role_arns` field on the resulting object.
+  - `session_policy` (`string`): Set the `session_policy` field on the resulting object. When `null`, the `session_policy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `rolesanywhere_profile` resource into the root Terraform configuration.

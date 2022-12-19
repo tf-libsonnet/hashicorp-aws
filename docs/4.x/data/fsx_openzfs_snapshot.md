@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `snapshot_ids` (`list`):  When `null`, the `snapshot_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.fsx_openzfs_snapshot.filter.new](#fn-filternew) constructor.
+  - `most_recent` (`bool`): Set the `most_recent` field on the resulting data source block. When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting data source block. When `null`, the `name` field will be omitted from the resulting object.
+  - `snapshot_ids` (`list`): Set the `snapshot_ids` field on the resulting data source block. When `null`, the `snapshot_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.fsx_openzfs_snapshot.filter.new](#fn-filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `snapshot_ids` (`list`):  When `null`, the `snapshot_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.fsx_openzfs_snapshot.filter.new](#fn-filternew) constructor.
+  - `most_recent` (`bool`): Set the `most_recent` field on the resulting object. When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `snapshot_ids` (`list`): Set the `snapshot_ids` field on the resulting object. When `null`, the `snapshot_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.fsx_openzfs_snapshot.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `fsx_openzfs_snapshot` data source into the root Terraform configuration.
@@ -209,8 +209,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `values` (`list`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.

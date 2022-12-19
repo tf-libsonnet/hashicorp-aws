@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `domain` (`string`): 
-  - `key_types` (`list`):  When `null`, the `key_types` field will be omitted from the resulting object.
-  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `statuses` (`list`):  When `null`, the `statuses` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `types` (`list`):  When `null`, the `types` field will be omitted from the resulting object.
+  - `domain` (`string`): Set the `domain` field on the resulting data source block.
+  - `key_types` (`list`): Set the `key_types` field on the resulting data source block. When `null`, the `key_types` field will be omitted from the resulting object.
+  - `most_recent` (`bool`): Set the `most_recent` field on the resulting data source block. When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `statuses` (`list`): Set the `statuses` field on the resulting data source block. When `null`, the `statuses` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `types` (`list`): Set the `types` field on the resulting data source block. When `null`, the `types` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `domain` (`string`): 
-  - `key_types` (`list`):  When `null`, the `key_types` field will be omitted from the resulting object.
-  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `statuses` (`list`):  When `null`, the `statuses` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `types` (`list`):  When `null`, the `types` field will be omitted from the resulting object.
+  - `domain` (`string`): Set the `domain` field on the resulting object.
+  - `key_types` (`list`): Set the `key_types` field on the resulting object. When `null`, the `key_types` field will be omitted from the resulting object.
+  - `most_recent` (`bool`): Set the `most_recent` field on the resulting object. When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `statuses` (`list`): Set the `statuses` field on the resulting object. When `null`, the `statuses` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `types` (`list`): Set the `types` field on the resulting object. When `null`, the `types` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `acm_certificate` data source into the root Terraform configuration.

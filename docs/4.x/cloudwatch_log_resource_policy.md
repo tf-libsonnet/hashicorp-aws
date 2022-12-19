@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `policy_document` (`string`): 
-  - `policy_name` (`string`): 
+  - `policy_document` (`string`): Set the `policy_document` field on the resulting resource block.
+  - `policy_name` (`string`): Set the `policy_name` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `policy_document` (`string`): 
-  - `policy_name` (`string`): 
+  - `policy_document` (`string`): Set the `policy_document` field on the resulting object.
+  - `policy_name` (`string`): Set the `policy_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_log_resource_policy` resource into the root Terraform configuration.

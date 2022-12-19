@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `default_sender_id` (`string`):  When `null`, the `default_sender_id` field will be omitted from the resulting object.
-  - `default_sms_type` (`string`):  When `null`, the `default_sms_type` field will be omitted from the resulting object.
-  - `delivery_status_iam_role_arn` (`string`):  When `null`, the `delivery_status_iam_role_arn` field will be omitted from the resulting object.
-  - `delivery_status_success_sampling_rate` (`string`):  When `null`, the `delivery_status_success_sampling_rate` field will be omitted from the resulting object.
-  - `monthly_spend_limit` (`number`):  When `null`, the `monthly_spend_limit` field will be omitted from the resulting object.
-  - `usage_report_s3_bucket` (`string`):  When `null`, the `usage_report_s3_bucket` field will be omitted from the resulting object.
+  - `default_sender_id` (`string`): Set the `default_sender_id` field on the resulting resource block. When `null`, the `default_sender_id` field will be omitted from the resulting object.
+  - `default_sms_type` (`string`): Set the `default_sms_type` field on the resulting resource block. When `null`, the `default_sms_type` field will be omitted from the resulting object.
+  - `delivery_status_iam_role_arn` (`string`): Set the `delivery_status_iam_role_arn` field on the resulting resource block. When `null`, the `delivery_status_iam_role_arn` field will be omitted from the resulting object.
+  - `delivery_status_success_sampling_rate` (`string`): Set the `delivery_status_success_sampling_rate` field on the resulting resource block. When `null`, the `delivery_status_success_sampling_rate` field will be omitted from the resulting object.
+  - `monthly_spend_limit` (`number`): Set the `monthly_spend_limit` field on the resulting resource block. When `null`, the `monthly_spend_limit` field will be omitted from the resulting object.
+  - `usage_report_s3_bucket` (`string`): Set the `usage_report_s3_bucket` field on the resulting resource block. When `null`, the `usage_report_s3_bucket` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_sender_id` (`string`):  When `null`, the `default_sender_id` field will be omitted from the resulting object.
-  - `default_sms_type` (`string`):  When `null`, the `default_sms_type` field will be omitted from the resulting object.
-  - `delivery_status_iam_role_arn` (`string`):  When `null`, the `delivery_status_iam_role_arn` field will be omitted from the resulting object.
-  - `delivery_status_success_sampling_rate` (`string`):  When `null`, the `delivery_status_success_sampling_rate` field will be omitted from the resulting object.
-  - `monthly_spend_limit` (`number`):  When `null`, the `monthly_spend_limit` field will be omitted from the resulting object.
-  - `usage_report_s3_bucket` (`string`):  When `null`, the `usage_report_s3_bucket` field will be omitted from the resulting object.
+  - `default_sender_id` (`string`): Set the `default_sender_id` field on the resulting object. When `null`, the `default_sender_id` field will be omitted from the resulting object.
+  - `default_sms_type` (`string`): Set the `default_sms_type` field on the resulting object. When `null`, the `default_sms_type` field will be omitted from the resulting object.
+  - `delivery_status_iam_role_arn` (`string`): Set the `delivery_status_iam_role_arn` field on the resulting object. When `null`, the `delivery_status_iam_role_arn` field will be omitted from the resulting object.
+  - `delivery_status_success_sampling_rate` (`string`): Set the `delivery_status_success_sampling_rate` field on the resulting object. When `null`, the `delivery_status_success_sampling_rate` field will be omitted from the resulting object.
+  - `monthly_spend_limit` (`number`): Set the `monthly_spend_limit` field on the resulting object. When `null`, the `monthly_spend_limit` field will be omitted from the resulting object.
+  - `usage_report_s3_bucket` (`string`): Set the `usage_report_s3_bucket` field on the resulting object. When `null`, the `usage_report_s3_bucket` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sns_sms_preferences` resource into the root Terraform configuration.

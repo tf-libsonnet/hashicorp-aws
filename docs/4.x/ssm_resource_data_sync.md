@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): 
-  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_resource_data_sync.s3_destination.new](#fn-s3_destinationnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `s3_destination` (`list[obj]`): Set the `s3_destination` field on the resulting resource block. When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_resource_data_sync.s3_destination.new](#fn-s3_destinationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): 
-  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_resource_data_sync.s3_destination.new](#fn-s3_destinationnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `s3_destination` (`list[obj]`): Set the `s3_destination` field on the resulting object. When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_resource_data_sync.s3_destination.new](#fn-s3_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_resource_data_sync` resource into the root Terraform configuration.
@@ -152,11 +152,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): 
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `region` (`string`): 
-  - `sync_format` (`string`):  When `null`, the `sync_format` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object.
+  - `sync_format` (`string`): Set the `sync_format` field on the resulting object. When `null`, the `sync_format` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_destination` sub block.

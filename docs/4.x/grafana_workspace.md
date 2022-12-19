@@ -66,21 +66,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_access_type` (`string`): 
-  - `authentication_providers` (`list`): 
-  - `data_sources` (`list`):  When `null`, the `data_sources` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `notification_destinations` (`list`):  When `null`, the `notification_destinations` field will be omitted from the resulting object.
-  - `organization_role_name` (`string`):  When `null`, the `organization_role_name` field will be omitted from the resulting object.
-  - `organizational_units` (`list`):  When `null`, the `organizational_units` field will be omitted from the resulting object.
-  - `permission_type` (`string`): 
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `stack_set_name` (`string`):  When `null`, the `stack_set_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
+  - `account_access_type` (`string`): Set the `account_access_type` field on the resulting resource block.
+  - `authentication_providers` (`list`): Set the `authentication_providers` field on the resulting resource block.
+  - `data_sources` (`list`): Set the `data_sources` field on the resulting resource block. When `null`, the `data_sources` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `notification_destinations` (`list`): Set the `notification_destinations` field on the resulting resource block. When `null`, the `notification_destinations` field will be omitted from the resulting object.
+  - `organization_role_name` (`string`): Set the `organization_role_name` field on the resulting resource block. When `null`, the `organization_role_name` field will be omitted from the resulting object.
+  - `organizational_units` (`list`): Set the `organizational_units` field on the resulting resource block. When `null`, the `organizational_units` field will be omitted from the resulting object.
+  - `permission_type` (`string`): Set the `permission_type` field on the resulting resource block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `stack_set_name` (`string`): Set the `stack_set_name` field on the resulting resource block. When `null`, the `stack_set_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting resource block. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -104,21 +104,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_access_type` (`string`): 
-  - `authentication_providers` (`list`): 
-  - `data_sources` (`list`):  When `null`, the `data_sources` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `notification_destinations` (`list`):  When `null`, the `notification_destinations` field will be omitted from the resulting object.
-  - `organization_role_name` (`string`):  When `null`, the `organization_role_name` field will be omitted from the resulting object.
-  - `organizational_units` (`list`):  When `null`, the `organizational_units` field will be omitted from the resulting object.
-  - `permission_type` (`string`): 
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `stack_set_name` (`string`):  When `null`, the `stack_set_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
+  - `account_access_type` (`string`): Set the `account_access_type` field on the resulting object.
+  - `authentication_providers` (`list`): Set the `authentication_providers` field on the resulting object.
+  - `data_sources` (`list`): Set the `data_sources` field on the resulting object. When `null`, the `data_sources` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `notification_destinations` (`list`): Set the `notification_destinations` field on the resulting object. When `null`, the `notification_destinations` field will be omitted from the resulting object.
+  - `organization_role_name` (`string`): Set the `organization_role_name` field on the resulting object. When `null`, the `organization_role_name` field will be omitted from the resulting object.
+  - `organizational_units` (`list`): Set the `organizational_units` field on the resulting object. When `null`, the `organizational_units` field will be omitted from the resulting object.
+  - `permission_type` (`string`): Set the `permission_type` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `stack_set_name` (`string`): Set the `stack_set_name` field on the resulting object. When `null`, the `stack_set_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting object. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `grafana_workspace` resource into the root Terraform configuration.
@@ -422,8 +422,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -446,8 +446,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): 
-  - `subnet_ids` (`list`): 
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc_configuration` sub block.

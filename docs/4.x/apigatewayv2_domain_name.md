@@ -60,12 +60,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `domain_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `domain_name_configuration` (`list[obj]`):  When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-domain_name_configurationnew) constructor.
-  - `mutual_tls_authentication` (`list[obj]`):  When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-mutual_tls_authenticationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-timeoutsnew) constructor.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `domain_name_configuration` (`list[obj]`): Set the `domain_name_configuration` field on the resulting resource block. When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-domain_name_configurationnew) constructor.
+  - `mutual_tls_authentication` (`list[obj]`): Set the `mutual_tls_authentication` field on the resulting resource block. When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-mutual_tls_authenticationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,12 +89,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `domain_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `domain_name_configuration` (`list[obj]`):  When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-domain_name_configurationnew) constructor.
-  - `mutual_tls_authentication` (`list[obj]`):  When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-mutual_tls_authenticationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-timeoutsnew) constructor.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `domain_name_configuration` (`list[obj]`): Set the `domain_name_configuration` field on the resulting object. When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-domain_name_configurationnew) constructor.
+  - `mutual_tls_authentication` (`list[obj]`): Set the `mutual_tls_authentication` field on the resulting object. When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-mutual_tls_authenticationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_domain_name` resource into the root Terraform configuration.
@@ -275,10 +275,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `certificate_arn` (`string`): 
-  - `endpoint_type` (`string`): 
-  - `ownership_verification_certificate_arn` (`string`):  When `null`, the `ownership_verification_certificate_arn` field will be omitted from the resulting object.
-  - `security_policy` (`string`): 
+  - `certificate_arn` (`string`): Set the `certificate_arn` field on the resulting object.
+  - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting object.
+  - `ownership_verification_certificate_arn` (`string`): Set the `ownership_verification_certificate_arn` field on the resulting object. When `null`, the `ownership_verification_certificate_arn` field will be omitted from the resulting object.
+  - `security_policy` (`string`): Set the `security_policy` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `domain_name_configuration` sub block.
@@ -301,8 +301,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `truststore_uri` (`string`): 
-  - `truststore_version` (`string`):  When `null`, the `truststore_version` field will be omitted from the resulting object.
+  - `truststore_uri` (`string`): Set the `truststore_uri` field on the resulting object.
+  - `truststore_version` (`string`): Set the `truststore_version` field on the resulting object. When `null`, the `truststore_version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `mutual_tls_authentication` sub block.
@@ -325,8 +325,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

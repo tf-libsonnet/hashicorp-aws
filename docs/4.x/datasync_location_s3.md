@@ -55,13 +55,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `agent_arns` (`list`):  When `null`, the `agent_arns` field will be omitted from the resulting object.
-  - `s3_bucket_arn` (`string`): 
-  - `s3_storage_class` (`string`):  When `null`, the `s3_storage_class` field will be omitted from the resulting object.
-  - `subdirectory` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `s3_config` (`list[obj]`):  When `null`, the `s3_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_s3.s3_config.new](#fn-s3_confignew) constructor.
+  - `agent_arns` (`list`): Set the `agent_arns` field on the resulting resource block. When `null`, the `agent_arns` field will be omitted from the resulting object.
+  - `s3_bucket_arn` (`string`): Set the `s3_bucket_arn` field on the resulting resource block.
+  - `s3_storage_class` (`string`): Set the `s3_storage_class` field on the resulting resource block. When `null`, the `s3_storage_class` field will be omitted from the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `s3_config` (`list[obj]`): Set the `s3_config` field on the resulting resource block. When `null`, the `s3_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_s3.s3_config.new](#fn-s3_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,13 +85,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `agent_arns` (`list`):  When `null`, the `agent_arns` field will be omitted from the resulting object.
-  - `s3_bucket_arn` (`string`): 
-  - `s3_storage_class` (`string`):  When `null`, the `s3_storage_class` field will be omitted from the resulting object.
-  - `subdirectory` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `s3_config` (`list[obj]`):  When `null`, the `s3_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_s3.s3_config.new](#fn-s3_confignew) constructor.
+  - `agent_arns` (`list`): Set the `agent_arns` field on the resulting object. When `null`, the `agent_arns` field will be omitted from the resulting object.
+  - `s3_bucket_arn` (`string`): Set the `s3_bucket_arn` field on the resulting object.
+  - `s3_storage_class` (`string`): Set the `s3_storage_class` field on the resulting object. When `null`, the `s3_storage_class` field will be omitted from the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `s3_config` (`list[obj]`): Set the `s3_config` field on the resulting object. When `null`, the `s3_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_s3.s3_config.new](#fn-s3_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_location_s3` resource into the root Terraform configuration.
@@ -247,7 +247,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_access_role_arn` (`string`): 
+  - `bucket_access_role_arn` (`string`): Set the `bucket_access_role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_config` sub block.

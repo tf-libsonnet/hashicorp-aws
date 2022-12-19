@@ -63,16 +63,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `automatic` (`bool`):  When `null`, the `automatic` field will be omitted from the resulting object.
-  - `config_rule_name` (`string`): 
-  - `maximum_automatic_attempts` (`number`):  When `null`, the `maximum_automatic_attempts` field will be omitted from the resulting object.
-  - `resource_type` (`string`):  When `null`, the `resource_type` field will be omitted from the resulting object.
-  - `retry_attempt_seconds` (`number`):  When `null`, the `retry_attempt_seconds` field will be omitted from the resulting object.
-  - `target_id` (`string`): 
-  - `target_type` (`string`): 
-  - `target_version` (`string`):  When `null`, the `target_version` field will be omitted from the resulting object.
-  - `execution_controls` (`list[obj]`):  When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-execution_controlsnew) constructor.
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-parameternew) constructor.
+  - `automatic` (`bool`): Set the `automatic` field on the resulting resource block. When `null`, the `automatic` field will be omitted from the resulting object.
+  - `config_rule_name` (`string`): Set the `config_rule_name` field on the resulting resource block.
+  - `maximum_automatic_attempts` (`number`): Set the `maximum_automatic_attempts` field on the resulting resource block. When `null`, the `maximum_automatic_attempts` field will be omitted from the resulting object.
+  - `resource_type` (`string`): Set the `resource_type` field on the resulting resource block. When `null`, the `resource_type` field will be omitted from the resulting object.
+  - `retry_attempt_seconds` (`number`): Set the `retry_attempt_seconds` field on the resulting resource block. When `null`, the `retry_attempt_seconds` field will be omitted from the resulting object.
+  - `target_id` (`string`): Set the `target_id` field on the resulting resource block.
+  - `target_type` (`string`): Set the `target_type` field on the resulting resource block.
+  - `target_version` (`string`): Set the `target_version` field on the resulting resource block. When `null`, the `target_version` field will be omitted from the resulting object.
+  - `execution_controls` (`list[obj]`): Set the `execution_controls` field on the resulting resource block. When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-execution_controlsnew) constructor.
+  - `parameter` (`list[obj]`): Set the `parameter` field on the resulting resource block. When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-parameternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,16 +96,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `automatic` (`bool`):  When `null`, the `automatic` field will be omitted from the resulting object.
-  - `config_rule_name` (`string`): 
-  - `maximum_automatic_attempts` (`number`):  When `null`, the `maximum_automatic_attempts` field will be omitted from the resulting object.
-  - `resource_type` (`string`):  When `null`, the `resource_type` field will be omitted from the resulting object.
-  - `retry_attempt_seconds` (`number`):  When `null`, the `retry_attempt_seconds` field will be omitted from the resulting object.
-  - `target_id` (`string`): 
-  - `target_type` (`string`): 
-  - `target_version` (`string`):  When `null`, the `target_version` field will be omitted from the resulting object.
-  - `execution_controls` (`list[obj]`):  When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-execution_controlsnew) constructor.
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-parameternew) constructor.
+  - `automatic` (`bool`): Set the `automatic` field on the resulting object. When `null`, the `automatic` field will be omitted from the resulting object.
+  - `config_rule_name` (`string`): Set the `config_rule_name` field on the resulting object.
+  - `maximum_automatic_attempts` (`number`): Set the `maximum_automatic_attempts` field on the resulting object. When `null`, the `maximum_automatic_attempts` field will be omitted from the resulting object.
+  - `resource_type` (`string`): Set the `resource_type` field on the resulting object. When `null`, the `resource_type` field will be omitted from the resulting object.
+  - `retry_attempt_seconds` (`number`): Set the `retry_attempt_seconds` field on the resulting object. When `null`, the `retry_attempt_seconds` field will be omitted from the resulting object.
+  - `target_id` (`string`): Set the `target_id` field on the resulting object.
+  - `target_type` (`string`): Set the `target_type` field on the resulting object.
+  - `target_version` (`string`): Set the `target_version` field on the resulting object. When `null`, the `target_version` field will be omitted from the resulting object.
+  - `execution_controls` (`list[obj]`): Set the `execution_controls` field on the resulting object. When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-execution_controlsnew) constructor.
+  - `parameter` (`list[obj]`): Set the `parameter` field on the resulting object. When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-parameternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_remediation_configuration` resource into the root Terraform configuration.
@@ -330,7 +330,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ssm_controls` (`list[obj]`):  When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-execution_controlsssm_controlsnew) constructor.
+  - `ssm_controls` (`list[obj]`): Set the `ssm_controls` field on the resulting object. When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-execution_controlsssm_controlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `execution_controls` sub block.
@@ -353,8 +353,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `concurrent_execution_rate_percentage` (`number`):  When `null`, the `concurrent_execution_rate_percentage` field will be omitted from the resulting object.
-  - `error_percentage` (`number`):  When `null`, the `error_percentage` field will be omitted from the resulting object.
+  - `concurrent_execution_rate_percentage` (`number`): Set the `concurrent_execution_rate_percentage` field on the resulting object. When `null`, the `concurrent_execution_rate_percentage` field will be omitted from the resulting object.
+  - `error_percentage` (`number`): Set the `error_percentage` field on the resulting object. When `null`, the `error_percentage` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ssm_controls` sub block.
@@ -377,10 +377,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `resource_value` (`string`):  When `null`, the `resource_value` field will be omitted from the resulting object.
-  - `static_value` (`string`):  When `null`, the `static_value` field will be omitted from the resulting object.
-  - `static_values` (`list`):  When `null`, the `static_values` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `resource_value` (`string`): Set the `resource_value` field on the resulting object. When `null`, the `resource_value` field will be omitted from the resulting object.
+  - `static_value` (`string`): Set the `static_value` field on the resulting object. When `null`, the `static_value` field will be omitted from the resulting object.
+  - `static_values` (`list`): Set the `static_values` field on the resulting object. When `null`, the `static_values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `parameter` sub block.

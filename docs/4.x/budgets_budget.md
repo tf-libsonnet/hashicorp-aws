@@ -77,21 +77,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `budget_type` (`string`): 
-  - `cost_filters` (`obj`):  When `null`, the `cost_filters` field will be omitted from the resulting object.
-  - `limit_amount` (`string`):  When `null`, the `limit_amount` field will be omitted from the resulting object.
-  - `limit_unit` (`string`):  When `null`, the `limit_unit` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `time_period_end` (`string`):  When `null`, the `time_period_end` field will be omitted from the resulting object.
-  - `time_period_start` (`string`):  When `null`, the `time_period_start` field will be omitted from the resulting object.
-  - `time_unit` (`string`): 
-  - `auto_adjust_data` (`list[obj]`):  When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-auto_adjust_datanew) constructor.
-  - `cost_filter` (`list[obj]`):  When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-cost_filternew) constructor.
-  - `cost_types` (`list[obj]`):  When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-cost_typesnew) constructor.
-  - `notification` (`list[obj]`):  When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-notificationnew) constructor.
-  - `planned_limit` (`list[obj]`):  When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-planned_limitnew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `budget_type` (`string`): Set the `budget_type` field on the resulting resource block.
+  - `cost_filters` (`obj`): Set the `cost_filters` field on the resulting resource block. When `null`, the `cost_filters` field will be omitted from the resulting object.
+  - `limit_amount` (`string`): Set the `limit_amount` field on the resulting resource block. When `null`, the `limit_amount` field will be omitted from the resulting object.
+  - `limit_unit` (`string`): Set the `limit_unit` field on the resulting resource block. When `null`, the `limit_unit` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `time_period_end` (`string`): Set the `time_period_end` field on the resulting resource block. When `null`, the `time_period_end` field will be omitted from the resulting object.
+  - `time_period_start` (`string`): Set the `time_period_start` field on the resulting resource block. When `null`, the `time_period_start` field will be omitted from the resulting object.
+  - `time_unit` (`string`): Set the `time_unit` field on the resulting resource block.
+  - `auto_adjust_data` (`list[obj]`): Set the `auto_adjust_data` field on the resulting resource block. When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-auto_adjust_datanew) constructor.
+  - `cost_filter` (`list[obj]`): Set the `cost_filter` field on the resulting resource block. When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-cost_filternew) constructor.
+  - `cost_types` (`list[obj]`): Set the `cost_types` field on the resulting resource block. When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-cost_typesnew) constructor.
+  - `notification` (`list[obj]`): Set the `notification` field on the resulting resource block. When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-notificationnew) constructor.
+  - `planned_limit` (`list[obj]`): Set the `planned_limit` field on the resulting resource block. When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-planned_limitnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -115,21 +115,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
-  - `budget_type` (`string`): 
-  - `cost_filters` (`obj`):  When `null`, the `cost_filters` field will be omitted from the resulting object.
-  - `limit_amount` (`string`):  When `null`, the `limit_amount` field will be omitted from the resulting object.
-  - `limit_unit` (`string`):  When `null`, the `limit_unit` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `time_period_end` (`string`):  When `null`, the `time_period_end` field will be omitted from the resulting object.
-  - `time_period_start` (`string`):  When `null`, the `time_period_start` field will be omitted from the resulting object.
-  - `time_unit` (`string`): 
-  - `auto_adjust_data` (`list[obj]`):  When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-auto_adjust_datanew) constructor.
-  - `cost_filter` (`list[obj]`):  When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-cost_filternew) constructor.
-  - `cost_types` (`list[obj]`):  When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-cost_typesnew) constructor.
-  - `notification` (`list[obj]`):  When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-notificationnew) constructor.
-  - `planned_limit` (`list[obj]`):  When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-planned_limitnew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `budget_type` (`string`): Set the `budget_type` field on the resulting object.
+  - `cost_filters` (`obj`): Set the `cost_filters` field on the resulting object. When `null`, the `cost_filters` field will be omitted from the resulting object.
+  - `limit_amount` (`string`): Set the `limit_amount` field on the resulting object. When `null`, the `limit_amount` field will be omitted from the resulting object.
+  - `limit_unit` (`string`): Set the `limit_unit` field on the resulting object. When `null`, the `limit_unit` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `time_period_end` (`string`): Set the `time_period_end` field on the resulting object. When `null`, the `time_period_end` field will be omitted from the resulting object.
+  - `time_period_start` (`string`): Set the `time_period_start` field on the resulting object. When `null`, the `time_period_start` field will be omitted from the resulting object.
+  - `time_unit` (`string`): Set the `time_unit` field on the resulting object.
+  - `auto_adjust_data` (`list[obj]`): Set the `auto_adjust_data` field on the resulting object. When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-auto_adjust_datanew) constructor.
+  - `cost_filter` (`list[obj]`): Set the `cost_filter` field on the resulting object. When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-cost_filternew) constructor.
+  - `cost_types` (`list[obj]`): Set the `cost_types` field on the resulting object. When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-cost_typesnew) constructor.
+  - `notification` (`list[obj]`): Set the `notification` field on the resulting object. When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-notificationnew) constructor.
+  - `planned_limit` (`list[obj]`): Set the `planned_limit` field on the resulting object. When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-planned_limitnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `budgets_budget` resource into the root Terraform configuration.
@@ -497,8 +497,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `auto_adjust_type` (`string`): 
-  - `historical_options` (`list[obj]`):  When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-auto_adjust_datahistorical_optionsnew) constructor.
+  - `auto_adjust_type` (`string`): Set the `auto_adjust_type` field on the resulting object.
+  - `historical_options` (`list[obj]`): Set the `historical_options` field on the resulting object. When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-auto_adjust_datahistorical_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_adjust_data` sub block.
@@ -521,7 +521,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `budget_adjustment_period` (`number`): 
+  - `budget_adjustment_period` (`number`): Set the `budget_adjustment_period` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `historical_options` sub block.
@@ -544,8 +544,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `values` (`list`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_filter` sub block.
@@ -568,17 +568,17 @@ Terraform sub block.
 
 
 **Args**:
-  - `include_credit` (`bool`):  When `null`, the `include_credit` field will be omitted from the resulting object.
-  - `include_discount` (`bool`):  When `null`, the `include_discount` field will be omitted from the resulting object.
-  - `include_other_subscription` (`bool`):  When `null`, the `include_other_subscription` field will be omitted from the resulting object.
-  - `include_recurring` (`bool`):  When `null`, the `include_recurring` field will be omitted from the resulting object.
-  - `include_refund` (`bool`):  When `null`, the `include_refund` field will be omitted from the resulting object.
-  - `include_subscription` (`bool`):  When `null`, the `include_subscription` field will be omitted from the resulting object.
-  - `include_support` (`bool`):  When `null`, the `include_support` field will be omitted from the resulting object.
-  - `include_tax` (`bool`):  When `null`, the `include_tax` field will be omitted from the resulting object.
-  - `include_upfront` (`bool`):  When `null`, the `include_upfront` field will be omitted from the resulting object.
-  - `use_amortized` (`bool`):  When `null`, the `use_amortized` field will be omitted from the resulting object.
-  - `use_blended` (`bool`):  When `null`, the `use_blended` field will be omitted from the resulting object.
+  - `include_credit` (`bool`): Set the `include_credit` field on the resulting object. When `null`, the `include_credit` field will be omitted from the resulting object.
+  - `include_discount` (`bool`): Set the `include_discount` field on the resulting object. When `null`, the `include_discount` field will be omitted from the resulting object.
+  - `include_other_subscription` (`bool`): Set the `include_other_subscription` field on the resulting object. When `null`, the `include_other_subscription` field will be omitted from the resulting object.
+  - `include_recurring` (`bool`): Set the `include_recurring` field on the resulting object. When `null`, the `include_recurring` field will be omitted from the resulting object.
+  - `include_refund` (`bool`): Set the `include_refund` field on the resulting object. When `null`, the `include_refund` field will be omitted from the resulting object.
+  - `include_subscription` (`bool`): Set the `include_subscription` field on the resulting object. When `null`, the `include_subscription` field will be omitted from the resulting object.
+  - `include_support` (`bool`): Set the `include_support` field on the resulting object. When `null`, the `include_support` field will be omitted from the resulting object.
+  - `include_tax` (`bool`): Set the `include_tax` field on the resulting object. When `null`, the `include_tax` field will be omitted from the resulting object.
+  - `include_upfront` (`bool`): Set the `include_upfront` field on the resulting object. When `null`, the `include_upfront` field will be omitted from the resulting object.
+  - `use_amortized` (`bool`): Set the `use_amortized` field on the resulting object. When `null`, the `use_amortized` field will be omitted from the resulting object.
+  - `use_blended` (`bool`): Set the `use_blended` field on the resulting object. When `null`, the `use_blended` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_types` sub block.
@@ -601,12 +601,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison_operator` (`string`): 
-  - `notification_type` (`string`): 
-  - `subscriber_email_addresses` (`list`):  When `null`, the `subscriber_email_addresses` field will be omitted from the resulting object.
-  - `subscriber_sns_topic_arns` (`list`):  When `null`, the `subscriber_sns_topic_arns` field will be omitted from the resulting object.
-  - `threshold` (`number`): 
-  - `threshold_type` (`string`): 
+  - `comparison_operator` (`string`): Set the `comparison_operator` field on the resulting object.
+  - `notification_type` (`string`): Set the `notification_type` field on the resulting object.
+  - `subscriber_email_addresses` (`list`): Set the `subscriber_email_addresses` field on the resulting object. When `null`, the `subscriber_email_addresses` field will be omitted from the resulting object.
+  - `subscriber_sns_topic_arns` (`list`): Set the `subscriber_sns_topic_arns` field on the resulting object. When `null`, the `subscriber_sns_topic_arns` field will be omitted from the resulting object.
+  - `threshold` (`number`): Set the `threshold` field on the resulting object.
+  - `threshold_type` (`string`): Set the `threshold_type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `notification` sub block.
@@ -629,9 +629,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `amount` (`string`): 
-  - `start_time` (`string`): 
-  - `unit` (`string`): 
+  - `amount` (`string`): Set the `amount` field on the resulting object.
+  - `start_time` (`string`): Set the `start_time` field on the resulting object.
+  - `unit` (`string`): Set the `unit` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `planned_limit` sub block.

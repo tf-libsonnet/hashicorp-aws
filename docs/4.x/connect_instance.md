@@ -59,17 +59,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auto_resolve_best_voices_enabled` (`bool`):  When `null`, the `auto_resolve_best_voices_enabled` field will be omitted from the resulting object.
-  - `contact_flow_logs_enabled` (`bool`):  When `null`, the `contact_flow_logs_enabled` field will be omitted from the resulting object.
-  - `contact_lens_enabled` (`bool`):  When `null`, the `contact_lens_enabled` field will be omitted from the resulting object.
-  - `directory_id` (`string`):  When `null`, the `directory_id` field will be omitted from the resulting object.
-  - `early_media_enabled` (`bool`):  When `null`, the `early_media_enabled` field will be omitted from the resulting object.
-  - `identity_management_type` (`string`): 
-  - `inbound_calls_enabled` (`bool`): 
-  - `instance_alias` (`string`):  When `null`, the `instance_alias` field will be omitted from the resulting object.
-  - `multi_party_conference_enabled` (`bool`):  When `null`, the `multi_party_conference_enabled` field will be omitted from the resulting object.
-  - `outbound_calls_enabled` (`bool`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_resolve_best_voices_enabled` (`bool`): Set the `auto_resolve_best_voices_enabled` field on the resulting resource block. When `null`, the `auto_resolve_best_voices_enabled` field will be omitted from the resulting object.
+  - `contact_flow_logs_enabled` (`bool`): Set the `contact_flow_logs_enabled` field on the resulting resource block. When `null`, the `contact_flow_logs_enabled` field will be omitted from the resulting object.
+  - `contact_lens_enabled` (`bool`): Set the `contact_lens_enabled` field on the resulting resource block. When `null`, the `contact_lens_enabled` field will be omitted from the resulting object.
+  - `directory_id` (`string`): Set the `directory_id` field on the resulting resource block. When `null`, the `directory_id` field will be omitted from the resulting object.
+  - `early_media_enabled` (`bool`): Set the `early_media_enabled` field on the resulting resource block. When `null`, the `early_media_enabled` field will be omitted from the resulting object.
+  - `identity_management_type` (`string`): Set the `identity_management_type` field on the resulting resource block.
+  - `inbound_calls_enabled` (`bool`): Set the `inbound_calls_enabled` field on the resulting resource block.
+  - `instance_alias` (`string`): Set the `instance_alias` field on the resulting resource block. When `null`, the `instance_alias` field will be omitted from the resulting object.
+  - `multi_party_conference_enabled` (`bool`): Set the `multi_party_conference_enabled` field on the resulting resource block. When `null`, the `multi_party_conference_enabled` field will be omitted from the resulting object.
+  - `outbound_calls_enabled` (`bool`): Set the `outbound_calls_enabled` field on the resulting resource block.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,17 +93,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_resolve_best_voices_enabled` (`bool`):  When `null`, the `auto_resolve_best_voices_enabled` field will be omitted from the resulting object.
-  - `contact_flow_logs_enabled` (`bool`):  When `null`, the `contact_flow_logs_enabled` field will be omitted from the resulting object.
-  - `contact_lens_enabled` (`bool`):  When `null`, the `contact_lens_enabled` field will be omitted from the resulting object.
-  - `directory_id` (`string`):  When `null`, the `directory_id` field will be omitted from the resulting object.
-  - `early_media_enabled` (`bool`):  When `null`, the `early_media_enabled` field will be omitted from the resulting object.
-  - `identity_management_type` (`string`): 
-  - `inbound_calls_enabled` (`bool`): 
-  - `instance_alias` (`string`):  When `null`, the `instance_alias` field will be omitted from the resulting object.
-  - `multi_party_conference_enabled` (`bool`):  When `null`, the `multi_party_conference_enabled` field will be omitted from the resulting object.
-  - `outbound_calls_enabled` (`bool`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_resolve_best_voices_enabled` (`bool`): Set the `auto_resolve_best_voices_enabled` field on the resulting object. When `null`, the `auto_resolve_best_voices_enabled` field will be omitted from the resulting object.
+  - `contact_flow_logs_enabled` (`bool`): Set the `contact_flow_logs_enabled` field on the resulting object. When `null`, the `contact_flow_logs_enabled` field will be omitted from the resulting object.
+  - `contact_lens_enabled` (`bool`): Set the `contact_lens_enabled` field on the resulting object. When `null`, the `contact_lens_enabled` field will be omitted from the resulting object.
+  - `directory_id` (`string`): Set the `directory_id` field on the resulting object. When `null`, the `directory_id` field will be omitted from the resulting object.
+  - `early_media_enabled` (`bool`): Set the `early_media_enabled` field on the resulting object. When `null`, the `early_media_enabled` field will be omitted from the resulting object.
+  - `identity_management_type` (`string`): Set the `identity_management_type` field on the resulting object.
+  - `inbound_calls_enabled` (`bool`): Set the `inbound_calls_enabled` field on the resulting object.
+  - `instance_alias` (`string`): Set the `instance_alias` field on the resulting object. When `null`, the `instance_alias` field will be omitted from the resulting object.
+  - `multi_party_conference_enabled` (`bool`): Set the `multi_party_conference_enabled` field on the resulting object. When `null`, the `multi_party_conference_enabled` field will be omitted from the resulting object.
+  - `outbound_calls_enabled` (`bool`): Set the `outbound_calls_enabled` field on the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_instance` resource into the root Terraform configuration.
@@ -322,8 +322,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

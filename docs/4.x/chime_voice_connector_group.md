@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): 
-  - `connector` (`list[obj]`):  When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-connectornew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `connector` (`list[obj]`): Set the `connector` field on the resulting resource block. When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-connectornew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): 
-  - `connector` (`list[obj]`):  When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-connectornew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `connector` (`list[obj]`): Set the `connector` field on the resulting object. When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-connectornew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `chime_voice_connector_group` resource into the root Terraform configuration.
@@ -152,8 +152,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `priority` (`number`): 
-  - `voice_connector_id` (`string`): 
+  - `priority` (`number`): Set the `priority` field on the resulting object.
+  - `voice_connector_id` (`string`): Set the `voice_connector_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `connector` sub block.

@@ -73,28 +73,28 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `access_token_validity` (`number`):  When `null`, the `access_token_validity` field will be omitted from the resulting object.
-  - `allowed_oauth_flows` (`list`):  When `null`, the `allowed_oauth_flows` field will be omitted from the resulting object.
-  - `allowed_oauth_flows_user_pool_client` (`bool`):  When `null`, the `allowed_oauth_flows_user_pool_client` field will be omitted from the resulting object.
-  - `allowed_oauth_scopes` (`list`):  When `null`, the `allowed_oauth_scopes` field will be omitted from the resulting object.
-  - `auth_session_validity` (`number`):  When `null`, the `auth_session_validity` field will be omitted from the resulting object.
-  - `callback_urls` (`list`):  When `null`, the `callback_urls` field will be omitted from the resulting object.
-  - `default_redirect_uri` (`string`):  When `null`, the `default_redirect_uri` field will be omitted from the resulting object.
-  - `enable_propagate_additional_user_context_data` (`bool`):  When `null`, the `enable_propagate_additional_user_context_data` field will be omitted from the resulting object.
-  - `enable_token_revocation` (`bool`):  When `null`, the `enable_token_revocation` field will be omitted from the resulting object.
-  - `explicit_auth_flows` (`list`):  When `null`, the `explicit_auth_flows` field will be omitted from the resulting object.
-  - `generate_secret` (`bool`):  When `null`, the `generate_secret` field will be omitted from the resulting object.
-  - `id_token_validity` (`number`):  When `null`, the `id_token_validity` field will be omitted from the resulting object.
-  - `logout_urls` (`list`):  When `null`, the `logout_urls` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `prevent_user_existence_errors` (`string`):  When `null`, the `prevent_user_existence_errors` field will be omitted from the resulting object.
-  - `read_attributes` (`list`):  When `null`, the `read_attributes` field will be omitted from the resulting object.
-  - `refresh_token_validity` (`number`):  When `null`, the `refresh_token_validity` field will be omitted from the resulting object.
-  - `supported_identity_providers` (`list`):  When `null`, the `supported_identity_providers` field will be omitted from the resulting object.
-  - `user_pool_id` (`string`): 
-  - `write_attributes` (`list`):  When `null`, the `write_attributes` field will be omitted from the resulting object.
-  - `analytics_configuration` (`list[obj]`):  When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-analytics_configurationnew) constructor.
-  - `token_validity_units` (`list[obj]`):  When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-token_validity_unitsnew) constructor.
+  - `access_token_validity` (`number`): Set the `access_token_validity` field on the resulting resource block. When `null`, the `access_token_validity` field will be omitted from the resulting object.
+  - `allowed_oauth_flows` (`list`): Set the `allowed_oauth_flows` field on the resulting resource block. When `null`, the `allowed_oauth_flows` field will be omitted from the resulting object.
+  - `allowed_oauth_flows_user_pool_client` (`bool`): Set the `allowed_oauth_flows_user_pool_client` field on the resulting resource block. When `null`, the `allowed_oauth_flows_user_pool_client` field will be omitted from the resulting object.
+  - `allowed_oauth_scopes` (`list`): Set the `allowed_oauth_scopes` field on the resulting resource block. When `null`, the `allowed_oauth_scopes` field will be omitted from the resulting object.
+  - `auth_session_validity` (`number`): Set the `auth_session_validity` field on the resulting resource block. When `null`, the `auth_session_validity` field will be omitted from the resulting object.
+  - `callback_urls` (`list`): Set the `callback_urls` field on the resulting resource block. When `null`, the `callback_urls` field will be omitted from the resulting object.
+  - `default_redirect_uri` (`string`): Set the `default_redirect_uri` field on the resulting resource block. When `null`, the `default_redirect_uri` field will be omitted from the resulting object.
+  - `enable_propagate_additional_user_context_data` (`bool`): Set the `enable_propagate_additional_user_context_data` field on the resulting resource block. When `null`, the `enable_propagate_additional_user_context_data` field will be omitted from the resulting object.
+  - `enable_token_revocation` (`bool`): Set the `enable_token_revocation` field on the resulting resource block. When `null`, the `enable_token_revocation` field will be omitted from the resulting object.
+  - `explicit_auth_flows` (`list`): Set the `explicit_auth_flows` field on the resulting resource block. When `null`, the `explicit_auth_flows` field will be omitted from the resulting object.
+  - `generate_secret` (`bool`): Set the `generate_secret` field on the resulting resource block. When `null`, the `generate_secret` field will be omitted from the resulting object.
+  - `id_token_validity` (`number`): Set the `id_token_validity` field on the resulting resource block. When `null`, the `id_token_validity` field will be omitted from the resulting object.
+  - `logout_urls` (`list`): Set the `logout_urls` field on the resulting resource block. When `null`, the `logout_urls` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `prevent_user_existence_errors` (`string`): Set the `prevent_user_existence_errors` field on the resulting resource block. When `null`, the `prevent_user_existence_errors` field will be omitted from the resulting object.
+  - `read_attributes` (`list`): Set the `read_attributes` field on the resulting resource block. When `null`, the `read_attributes` field will be omitted from the resulting object.
+  - `refresh_token_validity` (`number`): Set the `refresh_token_validity` field on the resulting resource block. When `null`, the `refresh_token_validity` field will be omitted from the resulting object.
+  - `supported_identity_providers` (`list`): Set the `supported_identity_providers` field on the resulting resource block. When `null`, the `supported_identity_providers` field will be omitted from the resulting object.
+  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting resource block.
+  - `write_attributes` (`list`): Set the `write_attributes` field on the resulting resource block. When `null`, the `write_attributes` field will be omitted from the resulting object.
+  - `analytics_configuration` (`list[obj]`): Set the `analytics_configuration` field on the resulting resource block. When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-analytics_configurationnew) constructor.
+  - `token_validity_units` (`list[obj]`): Set the `token_validity_units` field on the resulting resource block. When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-token_validity_unitsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -118,28 +118,28 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_token_validity` (`number`):  When `null`, the `access_token_validity` field will be omitted from the resulting object.
-  - `allowed_oauth_flows` (`list`):  When `null`, the `allowed_oauth_flows` field will be omitted from the resulting object.
-  - `allowed_oauth_flows_user_pool_client` (`bool`):  When `null`, the `allowed_oauth_flows_user_pool_client` field will be omitted from the resulting object.
-  - `allowed_oauth_scopes` (`list`):  When `null`, the `allowed_oauth_scopes` field will be omitted from the resulting object.
-  - `auth_session_validity` (`number`):  When `null`, the `auth_session_validity` field will be omitted from the resulting object.
-  - `callback_urls` (`list`):  When `null`, the `callback_urls` field will be omitted from the resulting object.
-  - `default_redirect_uri` (`string`):  When `null`, the `default_redirect_uri` field will be omitted from the resulting object.
-  - `enable_propagate_additional_user_context_data` (`bool`):  When `null`, the `enable_propagate_additional_user_context_data` field will be omitted from the resulting object.
-  - `enable_token_revocation` (`bool`):  When `null`, the `enable_token_revocation` field will be omitted from the resulting object.
-  - `explicit_auth_flows` (`list`):  When `null`, the `explicit_auth_flows` field will be omitted from the resulting object.
-  - `generate_secret` (`bool`):  When `null`, the `generate_secret` field will be omitted from the resulting object.
-  - `id_token_validity` (`number`):  When `null`, the `id_token_validity` field will be omitted from the resulting object.
-  - `logout_urls` (`list`):  When `null`, the `logout_urls` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `prevent_user_existence_errors` (`string`):  When `null`, the `prevent_user_existence_errors` field will be omitted from the resulting object.
-  - `read_attributes` (`list`):  When `null`, the `read_attributes` field will be omitted from the resulting object.
-  - `refresh_token_validity` (`number`):  When `null`, the `refresh_token_validity` field will be omitted from the resulting object.
-  - `supported_identity_providers` (`list`):  When `null`, the `supported_identity_providers` field will be omitted from the resulting object.
-  - `user_pool_id` (`string`): 
-  - `write_attributes` (`list`):  When `null`, the `write_attributes` field will be omitted from the resulting object.
-  - `analytics_configuration` (`list[obj]`):  When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-analytics_configurationnew) constructor.
-  - `token_validity_units` (`list[obj]`):  When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-token_validity_unitsnew) constructor.
+  - `access_token_validity` (`number`): Set the `access_token_validity` field on the resulting object. When `null`, the `access_token_validity` field will be omitted from the resulting object.
+  - `allowed_oauth_flows` (`list`): Set the `allowed_oauth_flows` field on the resulting object. When `null`, the `allowed_oauth_flows` field will be omitted from the resulting object.
+  - `allowed_oauth_flows_user_pool_client` (`bool`): Set the `allowed_oauth_flows_user_pool_client` field on the resulting object. When `null`, the `allowed_oauth_flows_user_pool_client` field will be omitted from the resulting object.
+  - `allowed_oauth_scopes` (`list`): Set the `allowed_oauth_scopes` field on the resulting object. When `null`, the `allowed_oauth_scopes` field will be omitted from the resulting object.
+  - `auth_session_validity` (`number`): Set the `auth_session_validity` field on the resulting object. When `null`, the `auth_session_validity` field will be omitted from the resulting object.
+  - `callback_urls` (`list`): Set the `callback_urls` field on the resulting object. When `null`, the `callback_urls` field will be omitted from the resulting object.
+  - `default_redirect_uri` (`string`): Set the `default_redirect_uri` field on the resulting object. When `null`, the `default_redirect_uri` field will be omitted from the resulting object.
+  - `enable_propagate_additional_user_context_data` (`bool`): Set the `enable_propagate_additional_user_context_data` field on the resulting object. When `null`, the `enable_propagate_additional_user_context_data` field will be omitted from the resulting object.
+  - `enable_token_revocation` (`bool`): Set the `enable_token_revocation` field on the resulting object. When `null`, the `enable_token_revocation` field will be omitted from the resulting object.
+  - `explicit_auth_flows` (`list`): Set the `explicit_auth_flows` field on the resulting object. When `null`, the `explicit_auth_flows` field will be omitted from the resulting object.
+  - `generate_secret` (`bool`): Set the `generate_secret` field on the resulting object. When `null`, the `generate_secret` field will be omitted from the resulting object.
+  - `id_token_validity` (`number`): Set the `id_token_validity` field on the resulting object. When `null`, the `id_token_validity` field will be omitted from the resulting object.
+  - `logout_urls` (`list`): Set the `logout_urls` field on the resulting object. When `null`, the `logout_urls` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `prevent_user_existence_errors` (`string`): Set the `prevent_user_existence_errors` field on the resulting object. When `null`, the `prevent_user_existence_errors` field will be omitted from the resulting object.
+  - `read_attributes` (`list`): Set the `read_attributes` field on the resulting object. When `null`, the `read_attributes` field will be omitted from the resulting object.
+  - `refresh_token_validity` (`number`): Set the `refresh_token_validity` field on the resulting object. When `null`, the `refresh_token_validity` field will be omitted from the resulting object.
+  - `supported_identity_providers` (`list`): Set the `supported_identity_providers` field on the resulting object. When `null`, the `supported_identity_providers` field will be omitted from the resulting object.
+  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
+  - `write_attributes` (`list`): Set the `write_attributes` field on the resulting object. When `null`, the `write_attributes` field will be omitted from the resulting object.
+  - `analytics_configuration` (`list[obj]`): Set the `analytics_configuration` field on the resulting object. When `null`, the `analytics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.analytics_configuration.new](#fn-analytics_configurationnew) constructor.
+  - `token_validity_units` (`list[obj]`): Set the `token_validity_units` field on the resulting object. When `null`, the `token_validity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool_client.token_validity_units.new](#fn-token_validity_unitsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_user_pool_client` resource into the root Terraform configuration.
@@ -556,11 +556,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `application_arn` (`string`):  When `null`, the `application_arn` field will be omitted from the resulting object.
-  - `application_id` (`string`):  When `null`, the `application_id` field will be omitted from the resulting object.
-  - `external_id` (`string`):  When `null`, the `external_id` field will be omitted from the resulting object.
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `user_data_shared` (`bool`):  When `null`, the `user_data_shared` field will be omitted from the resulting object.
+  - `application_arn` (`string`): Set the `application_arn` field on the resulting object. When `null`, the `application_arn` field will be omitted from the resulting object.
+  - `application_id` (`string`): Set the `application_id` field on the resulting object. When `null`, the `application_id` field will be omitted from the resulting object.
+  - `external_id` (`string`): Set the `external_id` field on the resulting object. When `null`, the `external_id` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `user_data_shared` (`bool`): Set the `user_data_shared` field on the resulting object. When `null`, the `user_data_shared` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `analytics_configuration` sub block.
@@ -583,9 +583,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `access_token` (`string`):  When `null`, the `access_token` field will be omitted from the resulting object.
-  - `id_token` (`string`):  When `null`, the `id_token` field will be omitted from the resulting object.
-  - `refresh_token` (`string`):  When `null`, the `refresh_token` field will be omitted from the resulting object.
+  - `access_token` (`string`): Set the `access_token` field on the resulting object. When `null`, the `access_token` field will be omitted from the resulting object.
+  - `id_token` (`string`): Set the `id_token` field on the resulting object. When `null`, the `id_token` field will be omitted from the resulting object.
+  - `refresh_token` (`string`): Set the `refresh_token` field on the resulting object. When `null`, the `refresh_token` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `token_validity_units` sub block.

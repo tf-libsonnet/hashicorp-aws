@@ -57,12 +57,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `report_delivery_channel` (`list[obj]`):  When `null`, the `report_delivery_channel` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_delivery_channel.new](#fn-report_delivery_channelnew) constructor.
-  - `report_setting` (`list[obj]`):  When `null`, the `report_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_setting.new](#fn-report_settingnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `report_delivery_channel` (`list[obj]`): Set the `report_delivery_channel` field on the resulting resource block. When `null`, the `report_delivery_channel` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_delivery_channel.new](#fn-report_delivery_channelnew) constructor.
+  - `report_setting` (`list[obj]`): Set the `report_setting` field on the resulting resource block. When `null`, the `report_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_setting.new](#fn-report_settingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,12 +86,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `report_delivery_channel` (`list[obj]`):  When `null`, the `report_delivery_channel` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_delivery_channel.new](#fn-report_delivery_channelnew) constructor.
-  - `report_setting` (`list[obj]`):  When `null`, the `report_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_setting.new](#fn-report_settingnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `report_delivery_channel` (`list[obj]`): Set the `report_delivery_channel` field on the resulting object. When `null`, the `report_delivery_channel` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_delivery_channel.new](#fn-report_delivery_channelnew) constructor.
+  - `report_setting` (`list[obj]`): Set the `report_setting` field on the resulting object. When `null`, the `report_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_report_plan.report_setting.new](#fn-report_settingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `backup_report_plan` resource into the root Terraform configuration.
@@ -252,9 +252,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `formats` (`list`):  When `null`, the `formats` field will be omitted from the resulting object.
-  - `s3_bucket_name` (`string`): 
-  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+  - `formats` (`list`): Set the `formats` field on the resulting object. When `null`, the `formats` field will be omitted from the resulting object.
+  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object.
+  - `s3_key_prefix` (`string`): Set the `s3_key_prefix` field on the resulting object. When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `report_delivery_channel` sub block.
@@ -277,9 +277,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `framework_arns` (`list`):  When `null`, the `framework_arns` field will be omitted from the resulting object.
-  - `number_of_frameworks` (`number`):  When `null`, the `number_of_frameworks` field will be omitted from the resulting object.
-  - `report_template` (`string`): 
+  - `framework_arns` (`list`): Set the `framework_arns` field on the resulting object. When `null`, the `framework_arns` field will be omitted from the resulting object.
+  - `number_of_frameworks` (`number`): Set the `number_of_frameworks` field on the resulting object. When `null`, the `number_of_frameworks` field will be omitted from the resulting object.
+  - `report_template` (`string`): Set the `report_template` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `report_setting` sub block.

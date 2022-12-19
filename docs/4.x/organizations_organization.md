@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `aws_service_access_principals` (`list`):  When `null`, the `aws_service_access_principals` field will be omitted from the resulting object.
-  - `enabled_policy_types` (`list`):  When `null`, the `enabled_policy_types` field will be omitted from the resulting object.
-  - `feature_set` (`string`):  When `null`, the `feature_set` field will be omitted from the resulting object.
+  - `aws_service_access_principals` (`list`): Set the `aws_service_access_principals` field on the resulting resource block. When `null`, the `aws_service_access_principals` field will be omitted from the resulting object.
+  - `enabled_policy_types` (`list`): Set the `enabled_policy_types` field on the resulting resource block. When `null`, the `enabled_policy_types` field will be omitted from the resulting object.
+  - `feature_set` (`string`): Set the `feature_set` field on the resulting resource block. When `null`, the `feature_set` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `aws_service_access_principals` (`list`):  When `null`, the `aws_service_access_principals` field will be omitted from the resulting object.
-  - `enabled_policy_types` (`list`):  When `null`, the `enabled_policy_types` field will be omitted from the resulting object.
-  - `feature_set` (`string`):  When `null`, the `feature_set` field will be omitted from the resulting object.
+  - `aws_service_access_principals` (`list`): Set the `aws_service_access_principals` field on the resulting object. When `null`, the `aws_service_access_principals` field will be omitted from the resulting object.
+  - `enabled_policy_types` (`list`): Set the `enabled_policy_types` field on the resulting object. When `null`, the `enabled_policy_types` field will be omitted from the resulting object.
+  - `feature_set` (`string`): Set the `feature_set` field on the resulting object. When `null`, the `feature_set` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `organizations_organization` resource into the root Terraform configuration.

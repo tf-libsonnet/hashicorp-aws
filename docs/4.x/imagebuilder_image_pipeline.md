@@ -63,18 +63,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `container_recipe_arn` (`string`):  When `null`, the `container_recipe_arn` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `distribution_configuration_arn` (`string`):  When `null`, the `distribution_configuration_arn` field will be omitted from the resulting object.
-  - `enhanced_image_metadata_enabled` (`bool`):  When `null`, the `enhanced_image_metadata_enabled` field will be omitted from the resulting object.
-  - `image_recipe_arn` (`string`):  When `null`, the `image_recipe_arn` field will be omitted from the resulting object.
-  - `infrastructure_configuration_arn` (`string`): 
-  - `name` (`string`): 
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `image_tests_configuration` (`list[obj]`):  When `null`, the `image_tests_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.image_tests_configuration.new](#fn-image_tests_configurationnew) constructor.
-  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.schedule.new](#fn-schedulenew) constructor.
+  - `container_recipe_arn` (`string`): Set the `container_recipe_arn` field on the resulting resource block. When `null`, the `container_recipe_arn` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `distribution_configuration_arn` (`string`): Set the `distribution_configuration_arn` field on the resulting resource block. When `null`, the `distribution_configuration_arn` field will be omitted from the resulting object.
+  - `enhanced_image_metadata_enabled` (`bool`): Set the `enhanced_image_metadata_enabled` field on the resulting resource block. When `null`, the `enhanced_image_metadata_enabled` field will be omitted from the resulting object.
+  - `image_recipe_arn` (`string`): Set the `image_recipe_arn` field on the resulting resource block. When `null`, the `image_recipe_arn` field will be omitted from the resulting object.
+  - `infrastructure_configuration_arn` (`string`): Set the `infrastructure_configuration_arn` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `status` (`string`): Set the `status` field on the resulting resource block. When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `image_tests_configuration` (`list[obj]`): Set the `image_tests_configuration` field on the resulting resource block. When `null`, the `image_tests_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.image_tests_configuration.new](#fn-image_tests_configurationnew) constructor.
+  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting resource block. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.schedule.new](#fn-schedulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -98,18 +98,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `container_recipe_arn` (`string`):  When `null`, the `container_recipe_arn` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `distribution_configuration_arn` (`string`):  When `null`, the `distribution_configuration_arn` field will be omitted from the resulting object.
-  - `enhanced_image_metadata_enabled` (`bool`):  When `null`, the `enhanced_image_metadata_enabled` field will be omitted from the resulting object.
-  - `image_recipe_arn` (`string`):  When `null`, the `image_recipe_arn` field will be omitted from the resulting object.
-  - `infrastructure_configuration_arn` (`string`): 
-  - `name` (`string`): 
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `image_tests_configuration` (`list[obj]`):  When `null`, the `image_tests_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.image_tests_configuration.new](#fn-image_tests_configurationnew) constructor.
-  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.schedule.new](#fn-schedulenew) constructor.
+  - `container_recipe_arn` (`string`): Set the `container_recipe_arn` field on the resulting object. When `null`, the `container_recipe_arn` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `distribution_configuration_arn` (`string`): Set the `distribution_configuration_arn` field on the resulting object. When `null`, the `distribution_configuration_arn` field will be omitted from the resulting object.
+  - `enhanced_image_metadata_enabled` (`bool`): Set the `enhanced_image_metadata_enabled` field on the resulting object. When `null`, the `enhanced_image_metadata_enabled` field will be omitted from the resulting object.
+  - `image_recipe_arn` (`string`): Set the `image_recipe_arn` field on the resulting object. When `null`, the `image_recipe_arn` field will be omitted from the resulting object.
+  - `infrastructure_configuration_arn` (`string`): Set the `infrastructure_configuration_arn` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `image_tests_configuration` (`list[obj]`): Set the `image_tests_configuration` field on the resulting object. When `null`, the `image_tests_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.image_tests_configuration.new](#fn-image_tests_configurationnew) constructor.
+  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting object. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_pipeline.schedule.new](#fn-schedulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_image_pipeline` resource into the root Terraform configuration.
@@ -366,8 +366,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `image_tests_enabled` (`bool`):  When `null`, the `image_tests_enabled` field will be omitted from the resulting object.
-  - `timeout_minutes` (`number`):  When `null`, the `timeout_minutes` field will be omitted from the resulting object.
+  - `image_tests_enabled` (`bool`): Set the `image_tests_enabled` field on the resulting object. When `null`, the `image_tests_enabled` field will be omitted from the resulting object.
+  - `timeout_minutes` (`number`): Set the `timeout_minutes` field on the resulting object. When `null`, the `timeout_minutes` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `image_tests_configuration` sub block.
@@ -390,9 +390,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `pipeline_execution_start_condition` (`string`):  When `null`, the `pipeline_execution_start_condition` field will be omitted from the resulting object.
-  - `schedule_expression` (`string`): 
-  - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
+  - `pipeline_execution_start_condition` (`string`): Set the `pipeline_execution_start_condition` field on the resulting object. When `null`, the `pipeline_execution_start_condition` field will be omitted from the resulting object.
+  - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object.
+  - `timezone` (`string`): Set the `timezone` field on the resulting object. When `null`, the `timezone` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `schedule` sub block.

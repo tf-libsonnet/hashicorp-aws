@@ -137,13 +137,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `mesh_name` (`string`): 
-  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `virtual_router_name` (`string`): 
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.new](#fn-specnew) constructor.
+  - `mesh_name` (`string`): Set the `mesh_name` field on the resulting resource block.
+  - `mesh_owner` (`string`): Set the `mesh_owner` field on the resulting resource block. When `null`, the `mesh_owner` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `virtual_router_name` (`string`): Set the `virtual_router_name` field on the resulting resource block.
+  - `spec` (`list[obj]`): Set the `spec` field on the resulting resource block. When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.new](#fn-specnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -167,13 +167,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `mesh_name` (`string`): 
-  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `virtual_router_name` (`string`): 
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.new](#fn-specnew) constructor.
+  - `mesh_name` (`string`): Set the `mesh_name` field on the resulting object.
+  - `mesh_owner` (`string`): Set the `mesh_owner` field on the resulting object. When `null`, the `mesh_owner` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `virtual_router_name` (`string`): Set the `virtual_router_name` field on the resulting object.
+  - `spec` (`list[obj]`): Set the `spec` field on the resulting object. When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.new](#fn-specnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appmesh_route` resource into the root Terraform configuration.
@@ -329,11 +329,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
-  - `grpc_route` (`list[obj]`):  When `null`, the `grpc_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.new](#fn-specgrpc_routenew) constructor.
-  - `http2_route` (`list[obj]`):  When `null`, the `http2_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.new](#fn-spechttp2_routenew) constructor.
-  - `http_route` (`list[obj]`):  When `null`, the `http_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.new](#fn-spechttp_routenew) constructor.
-  - `tcp_route` (`list[obj]`):  When `null`, the `tcp_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.new](#fn-spectcp_routenew) constructor.
+  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.
+  - `grpc_route` (`list[obj]`): Set the `grpc_route` field on the resulting object. When `null`, the `grpc_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.new](#fn-specgrpc_routenew) constructor.
+  - `http2_route` (`list[obj]`): Set the `http2_route` field on the resulting object. When `null`, the `http2_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.new](#fn-spechttp2_routenew) constructor.
+  - `http_route` (`list[obj]`): Set the `http_route` field on the resulting object. When `null`, the `http_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.new](#fn-spechttp_routenew) constructor.
+  - `tcp_route` (`list[obj]`): Set the `tcp_route` field on the resulting object. When `null`, the `tcp_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.new](#fn-spectcp_routenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.
@@ -356,10 +356,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.action.new](#fn-specspecactionnew) constructor.
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.new](#fn-specspecmatchnew) constructor.
-  - `retry_policy` (`list[obj]`):  When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.retry_policy.new](#fn-specspecretry_policynew) constructor.
-  - `timeout` (`list[obj]`):  When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.timeout.new](#fn-specspectimeoutnew) constructor.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.action.new](#fn-specspecactionnew) constructor.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.new](#fn-specspecmatchnew) constructor.
+  - `retry_policy` (`list[obj]`): Set the `retry_policy` field on the resulting object. When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.retry_policy.new](#fn-specspecretry_policynew) constructor.
+  - `timeout` (`list[obj]`): Set the `timeout` field on the resulting object. When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.timeout.new](#fn-specspectimeoutnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `grpc_route` sub block.
@@ -382,7 +382,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `weighted_target` (`list[obj]`):  When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.action.weighted_target.new](#fn-specspecgrpc_routeweighted_targetnew) constructor.
+  - `weighted_target` (`list[obj]`): Set the `weighted_target` field on the resulting object. When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.action.weighted_target.new](#fn-specspecgrpc_routeweighted_targetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -405,8 +405,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_node` (`string`): 
-  - `weight` (`number`): 
+  - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
+  - `weight` (`number`): Set the `weight` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `weighted_target` sub block.
@@ -429,10 +429,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `method_name` (`string`):  When `null`, the `method_name` field will be omitted from the resulting object.
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `service_name` (`string`):  When `null`, the `service_name` field will be omitted from the resulting object.
-  - `metadata` (`list[obj]`):  When `null`, the `metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.metadata.new](#fn-specspecgrpc_routemetadatanew) constructor.
+  - `method_name` (`string`): Set the `method_name` field on the resulting object. When `null`, the `method_name` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `service_name` (`string`): Set the `service_name` field on the resulting object. When `null`, the `service_name` field will be omitted from the resulting object.
+  - `metadata` (`list[obj]`): Set the `metadata` field on the resulting object. When `null`, the `metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.metadata.new](#fn-specspecgrpc_routemetadatanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -455,9 +455,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `invert` (`bool`):  When `null`, the `invert` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.metadata.match.new](#fn-specspecgrpc_routematchmatchnew) constructor.
+  - `invert` (`bool`): Set the `invert` field on the resulting object. When `null`, the `invert` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.metadata.match.new](#fn-specspecgrpc_routematchmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metadata` sub block.
@@ -480,11 +480,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `exact` (`string`):  When `null`, the `exact` field will be omitted from the resulting object.
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `regex` (`string`):  When `null`, the `regex` field will be omitted from the resulting object.
-  - `suffix` (`string`):  When `null`, the `suffix` field will be omitted from the resulting object.
-  - `range` (`list[obj]`):  When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.metadata.match.range.new](#fn-specspecgrpc_routematchmetadatarangenew) constructor.
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.
+  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.
+  - `range` (`list[obj]`): Set the `range` field on the resulting object. When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.metadata.match.range.new](#fn-specspecgrpc_routematchmetadatarangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -507,8 +507,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`number`): 
-  - `start` (`number`): 
+  - `end` (`number`): Set the `end` field on the resulting object.
+  - `start` (`number`): Set the `start` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `range` sub block.
@@ -531,11 +531,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `grpc_retry_events` (`list`):  When `null`, the `grpc_retry_events` field will be omitted from the resulting object.
-  - `http_retry_events` (`list`):  When `null`, the `http_retry_events` field will be omitted from the resulting object.
-  - `max_retries` (`number`): 
-  - `tcp_retry_events` (`list`):  When `null`, the `tcp_retry_events` field will be omitted from the resulting object.
-  - `per_retry_timeout` (`list[obj]`):  When `null`, the `per_retry_timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.retry_policy.per_retry_timeout.new](#fn-specspecgrpc_routeper_retry_timeoutnew) constructor.
+  - `grpc_retry_events` (`list`): Set the `grpc_retry_events` field on the resulting object. When `null`, the `grpc_retry_events` field will be omitted from the resulting object.
+  - `http_retry_events` (`list`): Set the `http_retry_events` field on the resulting object. When `null`, the `http_retry_events` field will be omitted from the resulting object.
+  - `max_retries` (`number`): Set the `max_retries` field on the resulting object.
+  - `tcp_retry_events` (`list`): Set the `tcp_retry_events` field on the resulting object. When `null`, the `tcp_retry_events` field will be omitted from the resulting object.
+  - `per_retry_timeout` (`list[obj]`): Set the `per_retry_timeout` field on the resulting object. When `null`, the `per_retry_timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.retry_policy.per_retry_timeout.new](#fn-specspecgrpc_routeper_retry_timeoutnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `retry_policy` sub block.
@@ -558,8 +558,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `per_retry_timeout` sub block.
@@ -582,8 +582,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `idle` (`list[obj]`):  When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.timeout.idle.new](#fn-specspecgrpc_routeidlenew) constructor.
-  - `per_request` (`list[obj]`):  When `null`, the `per_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.timeout.per_request.new](#fn-specspecgrpc_routeper_requestnew) constructor.
+  - `idle` (`list[obj]`): Set the `idle` field on the resulting object. When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.timeout.idle.new](#fn-specspecgrpc_routeidlenew) constructor.
+  - `per_request` (`list[obj]`): Set the `per_request` field on the resulting object. When `null`, the `per_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.timeout.per_request.new](#fn-specspecgrpc_routeper_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timeout` sub block.
@@ -606,8 +606,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `idle` sub block.
@@ -630,8 +630,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `per_request` sub block.
@@ -654,10 +654,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.action.new](#fn-specspecactionnew) constructor.
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.new](#fn-specspecmatchnew) constructor.
-  - `retry_policy` (`list[obj]`):  When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.retry_policy.new](#fn-specspecretry_policynew) constructor.
-  - `timeout` (`list[obj]`):  When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.timeout.new](#fn-specspectimeoutnew) constructor.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.action.new](#fn-specspecactionnew) constructor.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.new](#fn-specspecmatchnew) constructor.
+  - `retry_policy` (`list[obj]`): Set the `retry_policy` field on the resulting object. When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.retry_policy.new](#fn-specspecretry_policynew) constructor.
+  - `timeout` (`list[obj]`): Set the `timeout` field on the resulting object. When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.timeout.new](#fn-specspectimeoutnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http2_route` sub block.
@@ -680,7 +680,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `weighted_target` (`list[obj]`):  When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.action.weighted_target.new](#fn-specspechttp2_routeweighted_targetnew) constructor.
+  - `weighted_target` (`list[obj]`): Set the `weighted_target` field on the resulting object. When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.action.weighted_target.new](#fn-specspechttp2_routeweighted_targetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -703,8 +703,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_node` (`string`): 
-  - `weight` (`number`): 
+  - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
+  - `weight` (`number`): Set the `weight` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `weighted_target` sub block.
@@ -727,10 +727,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `method` (`string`):  When `null`, the `method` field will be omitted from the resulting object.
-  - `prefix` (`string`): 
-  - `scheme` (`string`):  When `null`, the `scheme` field will be omitted from the resulting object.
-  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.new](#fn-specspechttp2_routeheadernew) constructor.
+  - `method` (`string`): Set the `method` field on the resulting object. When `null`, the `method` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object.
+  - `scheme` (`string`): Set the `scheme` field on the resulting object. When `null`, the `scheme` field will be omitted from the resulting object.
+  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.new](#fn-specspechttp2_routeheadernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -753,9 +753,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `invert` (`bool`):  When `null`, the `invert` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.match.new](#fn-specspechttp2_routematchmatchnew) constructor.
+  - `invert` (`bool`): Set the `invert` field on the resulting object. When `null`, the `invert` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.match.new](#fn-specspechttp2_routematchmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `header` sub block.
@@ -778,11 +778,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `exact` (`string`):  When `null`, the `exact` field will be omitted from the resulting object.
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `regex` (`string`):  When `null`, the `regex` field will be omitted from the resulting object.
-  - `suffix` (`string`):  When `null`, the `suffix` field will be omitted from the resulting object.
-  - `range` (`list[obj]`):  When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.match.range.new](#fn-specspechttp2_routematchheaderrangenew) constructor.
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.
+  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.
+  - `range` (`list[obj]`): Set the `range` field on the resulting object. When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.match.range.new](#fn-specspechttp2_routematchheaderrangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -805,8 +805,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`number`): 
-  - `start` (`number`): 
+  - `end` (`number`): Set the `end` field on the resulting object.
+  - `start` (`number`): Set the `start` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `range` sub block.
@@ -829,10 +829,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `http_retry_events` (`list`):  When `null`, the `http_retry_events` field will be omitted from the resulting object.
-  - `max_retries` (`number`): 
-  - `tcp_retry_events` (`list`):  When `null`, the `tcp_retry_events` field will be omitted from the resulting object.
-  - `per_retry_timeout` (`list[obj]`):  When `null`, the `per_retry_timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.retry_policy.per_retry_timeout.new](#fn-specspechttp2_routeper_retry_timeoutnew) constructor.
+  - `http_retry_events` (`list`): Set the `http_retry_events` field on the resulting object. When `null`, the `http_retry_events` field will be omitted from the resulting object.
+  - `max_retries` (`number`): Set the `max_retries` field on the resulting object.
+  - `tcp_retry_events` (`list`): Set the `tcp_retry_events` field on the resulting object. When `null`, the `tcp_retry_events` field will be omitted from the resulting object.
+  - `per_retry_timeout` (`list[obj]`): Set the `per_retry_timeout` field on the resulting object. When `null`, the `per_retry_timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.retry_policy.per_retry_timeout.new](#fn-specspechttp2_routeper_retry_timeoutnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `retry_policy` sub block.
@@ -855,8 +855,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `per_retry_timeout` sub block.
@@ -879,8 +879,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `idle` (`list[obj]`):  When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.timeout.idle.new](#fn-specspechttp2_routeidlenew) constructor.
-  - `per_request` (`list[obj]`):  When `null`, the `per_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.timeout.per_request.new](#fn-specspechttp2_routeper_requestnew) constructor.
+  - `idle` (`list[obj]`): Set the `idle` field on the resulting object. When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.timeout.idle.new](#fn-specspechttp2_routeidlenew) constructor.
+  - `per_request` (`list[obj]`): Set the `per_request` field on the resulting object. When `null`, the `per_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.timeout.per_request.new](#fn-specspechttp2_routeper_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timeout` sub block.
@@ -903,8 +903,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `idle` sub block.
@@ -927,8 +927,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `per_request` sub block.
@@ -951,10 +951,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.action.new](#fn-specspecactionnew) constructor.
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.new](#fn-specspecmatchnew) constructor.
-  - `retry_policy` (`list[obj]`):  When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.retry_policy.new](#fn-specspecretry_policynew) constructor.
-  - `timeout` (`list[obj]`):  When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.timeout.new](#fn-specspectimeoutnew) constructor.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.action.new](#fn-specspecactionnew) constructor.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.new](#fn-specspecmatchnew) constructor.
+  - `retry_policy` (`list[obj]`): Set the `retry_policy` field on the resulting object. When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.retry_policy.new](#fn-specspecretry_policynew) constructor.
+  - `timeout` (`list[obj]`): Set the `timeout` field on the resulting object. When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.timeout.new](#fn-specspectimeoutnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http_route` sub block.
@@ -977,7 +977,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `weighted_target` (`list[obj]`):  When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.action.weighted_target.new](#fn-specspechttp_routeweighted_targetnew) constructor.
+  - `weighted_target` (`list[obj]`): Set the `weighted_target` field on the resulting object. When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.action.weighted_target.new](#fn-specspechttp_routeweighted_targetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -1000,8 +1000,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_node` (`string`): 
-  - `weight` (`number`): 
+  - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
+  - `weight` (`number`): Set the `weight` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `weighted_target` sub block.
@@ -1024,10 +1024,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `method` (`string`):  When `null`, the `method` field will be omitted from the resulting object.
-  - `prefix` (`string`): 
-  - `scheme` (`string`):  When `null`, the `scheme` field will be omitted from the resulting object.
-  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.new](#fn-specspechttp_routeheadernew) constructor.
+  - `method` (`string`): Set the `method` field on the resulting object. When `null`, the `method` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object.
+  - `scheme` (`string`): Set the `scheme` field on the resulting object. When `null`, the `scheme` field will be omitted from the resulting object.
+  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.new](#fn-specspechttp_routeheadernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -1050,9 +1050,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `invert` (`bool`):  When `null`, the `invert` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.match.new](#fn-specspechttp_routematchmatchnew) constructor.
+  - `invert` (`bool`): Set the `invert` field on the resulting object. When `null`, the `invert` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.match.new](#fn-specspechttp_routematchmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `header` sub block.
@@ -1075,11 +1075,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `exact` (`string`):  When `null`, the `exact` field will be omitted from the resulting object.
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `regex` (`string`):  When `null`, the `regex` field will be omitted from the resulting object.
-  - `suffix` (`string`):  When `null`, the `suffix` field will be omitted from the resulting object.
-  - `range` (`list[obj]`):  When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.match.range.new](#fn-specspechttp_routematchheaderrangenew) constructor.
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.
+  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.
+  - `range` (`list[obj]`): Set the `range` field on the resulting object. When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.match.range.new](#fn-specspechttp_routematchheaderrangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -1102,8 +1102,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`number`): 
-  - `start` (`number`): 
+  - `end` (`number`): Set the `end` field on the resulting object.
+  - `start` (`number`): Set the `start` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `range` sub block.
@@ -1126,10 +1126,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `http_retry_events` (`list`):  When `null`, the `http_retry_events` field will be omitted from the resulting object.
-  - `max_retries` (`number`): 
-  - `tcp_retry_events` (`list`):  When `null`, the `tcp_retry_events` field will be omitted from the resulting object.
-  - `per_retry_timeout` (`list[obj]`):  When `null`, the `per_retry_timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.retry_policy.per_retry_timeout.new](#fn-specspechttp_routeper_retry_timeoutnew) constructor.
+  - `http_retry_events` (`list`): Set the `http_retry_events` field on the resulting object. When `null`, the `http_retry_events` field will be omitted from the resulting object.
+  - `max_retries` (`number`): Set the `max_retries` field on the resulting object.
+  - `tcp_retry_events` (`list`): Set the `tcp_retry_events` field on the resulting object. When `null`, the `tcp_retry_events` field will be omitted from the resulting object.
+  - `per_retry_timeout` (`list[obj]`): Set the `per_retry_timeout` field on the resulting object. When `null`, the `per_retry_timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.retry_policy.per_retry_timeout.new](#fn-specspechttp_routeper_retry_timeoutnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `retry_policy` sub block.
@@ -1152,8 +1152,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `per_retry_timeout` sub block.
@@ -1176,8 +1176,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `idle` (`list[obj]`):  When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.timeout.idle.new](#fn-specspechttp_routeidlenew) constructor.
-  - `per_request` (`list[obj]`):  When `null`, the `per_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.timeout.per_request.new](#fn-specspechttp_routeper_requestnew) constructor.
+  - `idle` (`list[obj]`): Set the `idle` field on the resulting object. When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.timeout.idle.new](#fn-specspechttp_routeidlenew) constructor.
+  - `per_request` (`list[obj]`): Set the `per_request` field on the resulting object. When `null`, the `per_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.timeout.per_request.new](#fn-specspechttp_routeper_requestnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timeout` sub block.
@@ -1200,8 +1200,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `idle` sub block.
@@ -1224,8 +1224,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `per_request` sub block.
@@ -1248,8 +1248,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.action.new](#fn-specspecactionnew) constructor.
-  - `timeout` (`list[obj]`):  When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.timeout.new](#fn-specspectimeoutnew) constructor.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.action.new](#fn-specspecactionnew) constructor.
+  - `timeout` (`list[obj]`): Set the `timeout` field on the resulting object. When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.timeout.new](#fn-specspectimeoutnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tcp_route` sub block.
@@ -1272,7 +1272,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `weighted_target` (`list[obj]`):  When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.action.weighted_target.new](#fn-specspectcp_routeweighted_targetnew) constructor.
+  - `weighted_target` (`list[obj]`): Set the `weighted_target` field on the resulting object. When `null`, the `weighted_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.action.weighted_target.new](#fn-specspectcp_routeweighted_targetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -1295,8 +1295,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_node` (`string`): 
-  - `weight` (`number`): 
+  - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
+  - `weight` (`number`): Set the `weight` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `weighted_target` sub block.
@@ -1319,7 +1319,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `idle` (`list[obj]`):  When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.timeout.idle.new](#fn-specspectcp_routeidlenew) constructor.
+  - `idle` (`list[obj]`): Set the `idle` field on the resulting object. When `null`, the `idle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.timeout.idle.new](#fn-specspectcp_routeidlenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timeout` sub block.
@@ -1342,8 +1342,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): 
-  - `value` (`number`): 
+  - `unit` (`string`): Set the `unit` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `idle` sub block.

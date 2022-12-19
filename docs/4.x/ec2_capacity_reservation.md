@@ -59,20 +59,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `availability_zone` (`string`): 
-  - `ebs_optimized` (`bool`):  When `null`, the `ebs_optimized` field will be omitted from the resulting object.
-  - `end_date` (`string`):  When `null`, the `end_date` field will be omitted from the resulting object.
-  - `end_date_type` (`string`):  When `null`, the `end_date_type` field will be omitted from the resulting object.
-  - `ephemeral_storage` (`bool`):  When `null`, the `ephemeral_storage` field will be omitted from the resulting object.
-  - `instance_count` (`number`): 
-  - `instance_match_criteria` (`string`):  When `null`, the `instance_match_criteria` field will be omitted from the resulting object.
-  - `instance_platform` (`string`): 
-  - `instance_type` (`string`): 
-  - `outpost_arn` (`string`):  When `null`, the `outpost_arn` field will be omitted from the resulting object.
-  - `placement_group_arn` (`string`):  When `null`, the `placement_group_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tenancy` (`string`):  When `null`, the `tenancy` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block.
+  - `ebs_optimized` (`bool`): Set the `ebs_optimized` field on the resulting resource block. When `null`, the `ebs_optimized` field will be omitted from the resulting object.
+  - `end_date` (`string`): Set the `end_date` field on the resulting resource block. When `null`, the `end_date` field will be omitted from the resulting object.
+  - `end_date_type` (`string`): Set the `end_date_type` field on the resulting resource block. When `null`, the `end_date_type` field will be omitted from the resulting object.
+  - `ephemeral_storage` (`bool`): Set the `ephemeral_storage` field on the resulting resource block. When `null`, the `ephemeral_storage` field will be omitted from the resulting object.
+  - `instance_count` (`number`): Set the `instance_count` field on the resulting resource block.
+  - `instance_match_criteria` (`string`): Set the `instance_match_criteria` field on the resulting resource block. When `null`, the `instance_match_criteria` field will be omitted from the resulting object.
+  - `instance_platform` (`string`): Set the `instance_platform` field on the resulting resource block.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block.
+  - `outpost_arn` (`string`): Set the `outpost_arn` field on the resulting resource block. When `null`, the `outpost_arn` field will be omitted from the resulting object.
+  - `placement_group_arn` (`string`): Set the `placement_group_arn` field on the resulting resource block. When `null`, the `placement_group_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tenancy` (`string`): Set the `tenancy` field on the resulting resource block. When `null`, the `tenancy` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,20 +96,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `availability_zone` (`string`): 
-  - `ebs_optimized` (`bool`):  When `null`, the `ebs_optimized` field will be omitted from the resulting object.
-  - `end_date` (`string`):  When `null`, the `end_date` field will be omitted from the resulting object.
-  - `end_date_type` (`string`):  When `null`, the `end_date_type` field will be omitted from the resulting object.
-  - `ephemeral_storage` (`bool`):  When `null`, the `ephemeral_storage` field will be omitted from the resulting object.
-  - `instance_count` (`number`): 
-  - `instance_match_criteria` (`string`):  When `null`, the `instance_match_criteria` field will be omitted from the resulting object.
-  - `instance_platform` (`string`): 
-  - `instance_type` (`string`): 
-  - `outpost_arn` (`string`):  When `null`, the `outpost_arn` field will be omitted from the resulting object.
-  - `placement_group_arn` (`string`):  When `null`, the `placement_group_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tenancy` (`string`):  When `null`, the `tenancy` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object.
+  - `ebs_optimized` (`bool`): Set the `ebs_optimized` field on the resulting object. When `null`, the `ebs_optimized` field will be omitted from the resulting object.
+  - `end_date` (`string`): Set the `end_date` field on the resulting object. When `null`, the `end_date` field will be omitted from the resulting object.
+  - `end_date_type` (`string`): Set the `end_date_type` field on the resulting object. When `null`, the `end_date_type` field will be omitted from the resulting object.
+  - `ephemeral_storage` (`bool`): Set the `ephemeral_storage` field on the resulting object. When `null`, the `ephemeral_storage` field will be omitted from the resulting object.
+  - `instance_count` (`number`): Set the `instance_count` field on the resulting object.
+  - `instance_match_criteria` (`string`): Set the `instance_match_criteria` field on the resulting object. When `null`, the `instance_match_criteria` field will be omitted from the resulting object.
+  - `instance_platform` (`string`): Set the `instance_platform` field on the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
+  - `outpost_arn` (`string`): Set the `outpost_arn` field on the resulting object. When `null`, the `outpost_arn` field will be omitted from the resulting object.
+  - `placement_group_arn` (`string`): Set the `placement_group_arn` field on the resulting object. When `null`, the `placement_group_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tenancy` (`string`): Set the `tenancy` field on the resulting object. When `null`, the `tenancy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_capacity_reservation` resource into the root Terraform configuration.

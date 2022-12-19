@@ -61,12 +61,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): 
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifact_store` (`list[obj]`):  When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.
-  - `stage` (`list[obj]`):  When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting resource block. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.
+  - `stage` (`list[obj]`): Set the `stage` field on the resulting resource block. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,12 +90,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): 
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifact_store` (`list[obj]`):  When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.
-  - `stage` (`list[obj]`):  When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting object. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.
+  - `stage` (`list[obj]`): Set the `stage` field on the resulting object. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codepipeline` resource into the root Terraform configuration.
@@ -256,10 +256,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `location` (`string`): 
-  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `encryption_key` (`list[obj]`):  When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-artifact_storeencryption_keynew) constructor.
+  - `location` (`string`): Set the `location` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `encryption_key` (`list[obj]`): Set the `encryption_key` field on the resulting object. When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-artifact_storeencryption_keynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `artifact_store` sub block.
@@ -282,7 +282,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): 
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encryption_key` sub block.
@@ -305,8 +305,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.action.new](#fn-stageactionnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.action.new](#fn-stageactionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `stage` sub block.
@@ -329,18 +329,18 @@ Terraform sub block.
 
 
 **Args**:
-  - `category` (`string`): 
-  - `configuration` (`obj`):  When `null`, the `configuration` field will be omitted from the resulting object.
-  - `input_artifacts` (`list`):  When `null`, the `input_artifacts` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
-  - `output_artifacts` (`list`):  When `null`, the `output_artifacts` field will be omitted from the resulting object.
-  - `owner` (`string`): 
-  - `provider` (`string`): 
-  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `run_order` (`number`):  When `null`, the `run_order` field will be omitted from the resulting object.
-  - `version` (`string`): 
+  - `category` (`string`): Set the `category` field on the resulting object.
+  - `configuration` (`obj`): Set the `configuration` field on the resulting object. When `null`, the `configuration` field will be omitted from the resulting object.
+  - `input_artifacts` (`list`): Set the `input_artifacts` field on the resulting object. When `null`, the `input_artifacts` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.
+  - `output_artifacts` (`list`): Set the `output_artifacts` field on the resulting object. When `null`, the `output_artifacts` field will be omitted from the resulting object.
+  - `owner` (`string`): Set the `owner` field on the resulting object.
+  - `provider` (`string`): Set the `provider` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `run_order` (`number`): Set the `run_order` field on the resulting object. When `null`, the `run_order` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.

@@ -65,23 +65,23 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `accelerator_types` (`list`):  When `null`, the `accelerator_types` field will be omitted from the resulting object.
-  - `additional_code_repositories` (`list`):  When `null`, the `additional_code_repositories` field will be omitted from the resulting object.
-  - `default_code_repository` (`string`):  When `null`, the `default_code_repository` field will be omitted from the resulting object.
-  - `direct_internet_access` (`string`):  When `null`, the `direct_internet_access` field will be omitted from the resulting object.
-  - `instance_type` (`string`): 
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `lifecycle_config_name` (`string`):  When `null`, the `lifecycle_config_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform_identifier` (`string`):  When `null`, the `platform_identifier` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `root_access` (`string`):  When `null`, the `root_access` field will be omitted from the resulting object.
-  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `instance_metadata_service_configuration` (`list[obj]`):  When `null`, the `instance_metadata_service_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_notebook_instance.instance_metadata_service_configuration.new](#fn-instance_metadata_service_configurationnew) constructor.
+  - `accelerator_types` (`list`): Set the `accelerator_types` field on the resulting resource block. When `null`, the `accelerator_types` field will be omitted from the resulting object.
+  - `additional_code_repositories` (`list`): Set the `additional_code_repositories` field on the resulting resource block. When `null`, the `additional_code_repositories` field will be omitted from the resulting object.
+  - `default_code_repository` (`string`): Set the `default_code_repository` field on the resulting resource block. When `null`, the `default_code_repository` field will be omitted from the resulting object.
+  - `direct_internet_access` (`string`): Set the `direct_internet_access` field on the resulting resource block. When `null`, the `direct_internet_access` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `lifecycle_config_name` (`string`): Set the `lifecycle_config_name` field on the resulting resource block. When `null`, the `lifecycle_config_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `platform_identifier` (`string`): Set the `platform_identifier` field on the resulting resource block. When `null`, the `platform_identifier` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
+  - `root_access` (`string`): Set the `root_access` field on the resulting resource block. When `null`, the `root_access` field will be omitted from the resulting object.
+  - `security_groups` (`list`): Set the `security_groups` field on the resulting resource block. When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block. When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `volume_size` (`number`): Set the `volume_size` field on the resulting resource block. When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `instance_metadata_service_configuration` (`list[obj]`): Set the `instance_metadata_service_configuration` field on the resulting resource block. When `null`, the `instance_metadata_service_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_notebook_instance.instance_metadata_service_configuration.new](#fn-instance_metadata_service_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,23 +105,23 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `accelerator_types` (`list`):  When `null`, the `accelerator_types` field will be omitted from the resulting object.
-  - `additional_code_repositories` (`list`):  When `null`, the `additional_code_repositories` field will be omitted from the resulting object.
-  - `default_code_repository` (`string`):  When `null`, the `default_code_repository` field will be omitted from the resulting object.
-  - `direct_internet_access` (`string`):  When `null`, the `direct_internet_access` field will be omitted from the resulting object.
-  - `instance_type` (`string`): 
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `lifecycle_config_name` (`string`):  When `null`, the `lifecycle_config_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform_identifier` (`string`):  When `null`, the `platform_identifier` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `root_access` (`string`):  When `null`, the `root_access` field will be omitted from the resulting object.
-  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `instance_metadata_service_configuration` (`list[obj]`):  When `null`, the `instance_metadata_service_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_notebook_instance.instance_metadata_service_configuration.new](#fn-instance_metadata_service_configurationnew) constructor.
+  - `accelerator_types` (`list`): Set the `accelerator_types` field on the resulting object. When `null`, the `accelerator_types` field will be omitted from the resulting object.
+  - `additional_code_repositories` (`list`): Set the `additional_code_repositories` field on the resulting object. When `null`, the `additional_code_repositories` field will be omitted from the resulting object.
+  - `default_code_repository` (`string`): Set the `default_code_repository` field on the resulting object. When `null`, the `default_code_repository` field will be omitted from the resulting object.
+  - `direct_internet_access` (`string`): Set the `direct_internet_access` field on the resulting object. When `null`, the `direct_internet_access` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `lifecycle_config_name` (`string`): Set the `lifecycle_config_name` field on the resulting object. When `null`, the `lifecycle_config_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `platform_identifier` (`string`): Set the `platform_identifier` field on the resulting object. When `null`, the `platform_identifier` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `root_access` (`string`): Set the `root_access` field on the resulting object. When `null`, the `root_access` field will be omitted from the resulting object.
+  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `volume_size` (`number`): Set the `volume_size` field on the resulting object. When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `instance_metadata_service_configuration` (`list[obj]`): Set the `instance_metadata_service_configuration` field on the resulting object. When `null`, the `instance_metadata_service_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_notebook_instance.instance_metadata_service_configuration.new](#fn-instance_metadata_service_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_notebook_instance` resource into the root Terraform configuration.
@@ -437,7 +437,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `minimum_instance_metadata_service_version` (`string`):  When `null`, the `minimum_instance_metadata_service_version` field will be omitted from the resulting object.
+  - `minimum_instance_metadata_service_version` (`string`): Set the `minimum_instance_metadata_service_version` field on the resulting object. When `null`, the `minimum_instance_metadata_service_version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `instance_metadata_service_configuration` sub block.

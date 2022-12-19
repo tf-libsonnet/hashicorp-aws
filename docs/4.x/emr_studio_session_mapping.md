@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `identity_id` (`string`):  When `null`, the `identity_id` field will be omitted from the resulting object.
-  - `identity_name` (`string`):  When `null`, the `identity_name` field will be omitted from the resulting object.
-  - `identity_type` (`string`): 
-  - `session_policy_arn` (`string`): 
-  - `studio_id` (`string`): 
+  - `identity_id` (`string`): Set the `identity_id` field on the resulting resource block. When `null`, the `identity_id` field will be omitted from the resulting object.
+  - `identity_name` (`string`): Set the `identity_name` field on the resulting resource block. When `null`, the `identity_name` field will be omitted from the resulting object.
+  - `identity_type` (`string`): Set the `identity_type` field on the resulting resource block.
+  - `session_policy_arn` (`string`): Set the `session_policy_arn` field on the resulting resource block.
+  - `studio_id` (`string`): Set the `studio_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `identity_id` (`string`):  When `null`, the `identity_id` field will be omitted from the resulting object.
-  - `identity_name` (`string`):  When `null`, the `identity_name` field will be omitted from the resulting object.
-  - `identity_type` (`string`): 
-  - `session_policy_arn` (`string`): 
-  - `studio_id` (`string`): 
+  - `identity_id` (`string`): Set the `identity_id` field on the resulting object. When `null`, the `identity_id` field will be omitted from the resulting object.
+  - `identity_name` (`string`): Set the `identity_name` field on the resulting object. When `null`, the `identity_name` field will be omitted from the resulting object.
+  - `identity_type` (`string`): Set the `identity_type` field on the resulting object.
+  - `session_policy_arn` (`string`): Set the `session_policy_arn` field on the resulting object.
+  - `studio_id` (`string`): Set the `studio_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emr_studio_session_mapping` resource into the root Terraform configuration.

@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_caching_behavior` (`string`): 
-  - `api_id` (`string`): 
-  - `at_rest_encryption_enabled` (`bool`):  When `null`, the `at_rest_encryption_enabled` field will be omitted from the resulting object.
-  - `transit_encryption_enabled` (`bool`):  When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
-  - `ttl` (`number`): 
-  - `type` (`string`): 
+  - `api_caching_behavior` (`string`): Set the `api_caching_behavior` field on the resulting resource block.
+  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
+  - `at_rest_encryption_enabled` (`bool`): Set the `at_rest_encryption_enabled` field on the resulting resource block. When `null`, the `at_rest_encryption_enabled` field will be omitted from the resulting object.
+  - `transit_encryption_enabled` (`bool`): Set the `transit_encryption_enabled` field on the resulting resource block. When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
+  - `ttl` (`number`): Set the `ttl` field on the resulting resource block.
+  - `type` (`string`): Set the `type` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_caching_behavior` (`string`): 
-  - `api_id` (`string`): 
-  - `at_rest_encryption_enabled` (`bool`):  When `null`, the `at_rest_encryption_enabled` field will be omitted from the resulting object.
-  - `transit_encryption_enabled` (`bool`):  When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
-  - `ttl` (`number`): 
-  - `type` (`string`): 
+  - `api_caching_behavior` (`string`): Set the `api_caching_behavior` field on the resulting object.
+  - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `at_rest_encryption_enabled` (`bool`): Set the `at_rest_encryption_enabled` field on the resulting object. When `null`, the `at_rest_encryption_enabled` field will be omitted from the resulting object.
+  - `transit_encryption_enabled` (`bool`): Set the `transit_encryption_enabled` field on the resulting object. When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
+  - `ttl` (`number`): Set the `ttl` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appsync_api_cache` resource into the root Terraform configuration.

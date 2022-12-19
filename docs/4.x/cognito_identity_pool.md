@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `allow_classic_flow` (`bool`):  When `null`, the `allow_classic_flow` field will be omitted from the resulting object.
-  - `allow_unauthenticated_identities` (`bool`):  When `null`, the `allow_unauthenticated_identities` field will be omitted from the resulting object.
-  - `developer_provider_name` (`string`):  When `null`, the `developer_provider_name` field will be omitted from the resulting object.
-  - `identity_pool_name` (`string`): 
-  - `openid_connect_provider_arns` (`list`):  When `null`, the `openid_connect_provider_arns` field will be omitted from the resulting object.
-  - `saml_provider_arns` (`list`):  When `null`, the `saml_provider_arns` field will be omitted from the resulting object.
-  - `supported_login_providers` (`obj`):  When `null`, the `supported_login_providers` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `cognito_identity_providers` (`list[obj]`):  When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_providersnew) constructor.
+  - `allow_classic_flow` (`bool`): Set the `allow_classic_flow` field on the resulting resource block. When `null`, the `allow_classic_flow` field will be omitted from the resulting object.
+  - `allow_unauthenticated_identities` (`bool`): Set the `allow_unauthenticated_identities` field on the resulting resource block. When `null`, the `allow_unauthenticated_identities` field will be omitted from the resulting object.
+  - `developer_provider_name` (`string`): Set the `developer_provider_name` field on the resulting resource block. When `null`, the `developer_provider_name` field will be omitted from the resulting object.
+  - `identity_pool_name` (`string`): Set the `identity_pool_name` field on the resulting resource block.
+  - `openid_connect_provider_arns` (`list`): Set the `openid_connect_provider_arns` field on the resulting resource block. When `null`, the `openid_connect_provider_arns` field will be omitted from the resulting object.
+  - `saml_provider_arns` (`list`): Set the `saml_provider_arns` field on the resulting resource block. When `null`, the `saml_provider_arns` field will be omitted from the resulting object.
+  - `supported_login_providers` (`obj`): Set the `supported_login_providers` field on the resulting resource block. When `null`, the `supported_login_providers` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `cognito_identity_providers` (`list[obj]`): Set the `cognito_identity_providers` field on the resulting resource block. When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_providersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `allow_classic_flow` (`bool`):  When `null`, the `allow_classic_flow` field will be omitted from the resulting object.
-  - `allow_unauthenticated_identities` (`bool`):  When `null`, the `allow_unauthenticated_identities` field will be omitted from the resulting object.
-  - `developer_provider_name` (`string`):  When `null`, the `developer_provider_name` field will be omitted from the resulting object.
-  - `identity_pool_name` (`string`): 
-  - `openid_connect_provider_arns` (`list`):  When `null`, the `openid_connect_provider_arns` field will be omitted from the resulting object.
-  - `saml_provider_arns` (`list`):  When `null`, the `saml_provider_arns` field will be omitted from the resulting object.
-  - `supported_login_providers` (`obj`):  When `null`, the `supported_login_providers` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `cognito_identity_providers` (`list[obj]`):  When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_providersnew) constructor.
+  - `allow_classic_flow` (`bool`): Set the `allow_classic_flow` field on the resulting object. When `null`, the `allow_classic_flow` field will be omitted from the resulting object.
+  - `allow_unauthenticated_identities` (`bool`): Set the `allow_unauthenticated_identities` field on the resulting object. When `null`, the `allow_unauthenticated_identities` field will be omitted from the resulting object.
+  - `developer_provider_name` (`string`): Set the `developer_provider_name` field on the resulting object. When `null`, the `developer_provider_name` field will be omitted from the resulting object.
+  - `identity_pool_name` (`string`): Set the `identity_pool_name` field on the resulting object.
+  - `openid_connect_provider_arns` (`list`): Set the `openid_connect_provider_arns` field on the resulting object. When `null`, the `openid_connect_provider_arns` field will be omitted from the resulting object.
+  - `saml_provider_arns` (`list`): Set the `saml_provider_arns` field on the resulting object. When `null`, the `saml_provider_arns` field will be omitted from the resulting object.
+  - `supported_login_providers` (`obj`): Set the `supported_login_providers` field on the resulting object. When `null`, the `supported_login_providers` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `cognito_identity_providers` (`list[obj]`): Set the `cognito_identity_providers` field on the resulting object. When `null`, the `cognito_identity_providers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool.cognito_identity_providers.new](#fn-cognito_identity_providersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_identity_pool` resource into the root Terraform configuration.
@@ -304,9 +304,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_id` (`string`):  When `null`, the `client_id` field will be omitted from the resulting object.
-  - `provider_name` (`string`):  When `null`, the `provider_name` field will be omitted from the resulting object.
-  - `server_side_token_check` (`bool`):  When `null`, the `server_side_token_check` field will be omitted from the resulting object.
+  - `client_id` (`string`): Set the `client_id` field on the resulting object. When `null`, the `client_id` field will be omitted from the resulting object.
+  - `provider_name` (`string`): Set the `provider_name` field on the resulting object. When `null`, the `provider_name` field will be omitted from the resulting object.
+  - `server_side_token_check` (`bool`): Set the `server_side_token_check` field on the resulting object. When `null`, the `server_side_token_check` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cognito_identity_providers` sub block.

@@ -91,28 +91,28 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `billing_mode` (`string`):  When `null`, the `billing_mode` field will be omitted from the resulting object.
-  - `hash_key` (`string`):  When `null`, the `hash_key` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `range_key` (`string`):  When `null`, the `range_key` field will be omitted from the resulting object.
-  - `read_capacity` (`number`):  When `null`, the `read_capacity` field will be omitted from the resulting object.
-  - `restore_date_time` (`string`):  When `null`, the `restore_date_time` field will be omitted from the resulting object.
-  - `restore_source_name` (`string`):  When `null`, the `restore_source_name` field will be omitted from the resulting object.
-  - `restore_to_latest_time` (`bool`):  When `null`, the `restore_to_latest_time` field will be omitted from the resulting object.
-  - `stream_enabled` (`bool`):  When `null`, the `stream_enabled` field will be omitted from the resulting object.
-  - `stream_view_type` (`string`):  When `null`, the `stream_view_type` field will be omitted from the resulting object.
-  - `table_class` (`string`):  When `null`, the `table_class` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `write_capacity` (`number`):  When `null`, the `write_capacity` field will be omitted from the resulting object.
-  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
-  - `global_secondary_index` (`list[obj]`):  When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
-  - `local_secondary_index` (`list[obj]`):  When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
-  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
-  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
-  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-timeoutsnew) constructor.
-  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-ttlnew) constructor.
+  - `billing_mode` (`string`): Set the `billing_mode` field on the resulting resource block. When `null`, the `billing_mode` field will be omitted from the resulting object.
+  - `hash_key` (`string`): Set the `hash_key` field on the resulting resource block. When `null`, the `hash_key` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `range_key` (`string`): Set the `range_key` field on the resulting resource block. When `null`, the `range_key` field will be omitted from the resulting object.
+  - `read_capacity` (`number`): Set the `read_capacity` field on the resulting resource block. When `null`, the `read_capacity` field will be omitted from the resulting object.
+  - `restore_date_time` (`string`): Set the `restore_date_time` field on the resulting resource block. When `null`, the `restore_date_time` field will be omitted from the resulting object.
+  - `restore_source_name` (`string`): Set the `restore_source_name` field on the resulting resource block. When `null`, the `restore_source_name` field will be omitted from the resulting object.
+  - `restore_to_latest_time` (`bool`): Set the `restore_to_latest_time` field on the resulting resource block. When `null`, the `restore_to_latest_time` field will be omitted from the resulting object.
+  - `stream_enabled` (`bool`): Set the `stream_enabled` field on the resulting resource block. When `null`, the `stream_enabled` field will be omitted from the resulting object.
+  - `stream_view_type` (`string`): Set the `stream_view_type` field on the resulting resource block. When `null`, the `stream_view_type` field will be omitted from the resulting object.
+  - `table_class` (`string`): Set the `table_class` field on the resulting resource block. When `null`, the `table_class` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `write_capacity` (`number`): Set the `write_capacity` field on the resulting resource block. When `null`, the `write_capacity` field will be omitted from the resulting object.
+  - `attribute` (`list[obj]`): Set the `attribute` field on the resulting resource block. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
+  - `global_secondary_index` (`list[obj]`): Set the `global_secondary_index` field on the resulting resource block. When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
+  - `local_secondary_index` (`list[obj]`): Set the `local_secondary_index` field on the resulting resource block. When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
+  - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting resource block. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
+  - `replica` (`list[obj]`): Set the `replica` field on the resulting resource block. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
+  - `server_side_encryption` (`list[obj]`): Set the `server_side_encryption` field on the resulting resource block. When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ttl` (`list[obj]`): Set the `ttl` field on the resulting resource block. When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-ttlnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -136,28 +136,28 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `billing_mode` (`string`):  When `null`, the `billing_mode` field will be omitted from the resulting object.
-  - `hash_key` (`string`):  When `null`, the `hash_key` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `range_key` (`string`):  When `null`, the `range_key` field will be omitted from the resulting object.
-  - `read_capacity` (`number`):  When `null`, the `read_capacity` field will be omitted from the resulting object.
-  - `restore_date_time` (`string`):  When `null`, the `restore_date_time` field will be omitted from the resulting object.
-  - `restore_source_name` (`string`):  When `null`, the `restore_source_name` field will be omitted from the resulting object.
-  - `restore_to_latest_time` (`bool`):  When `null`, the `restore_to_latest_time` field will be omitted from the resulting object.
-  - `stream_enabled` (`bool`):  When `null`, the `stream_enabled` field will be omitted from the resulting object.
-  - `stream_view_type` (`string`):  When `null`, the `stream_view_type` field will be omitted from the resulting object.
-  - `table_class` (`string`):  When `null`, the `table_class` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `write_capacity` (`number`):  When `null`, the `write_capacity` field will be omitted from the resulting object.
-  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
-  - `global_secondary_index` (`list[obj]`):  When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
-  - `local_secondary_index` (`list[obj]`):  When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
-  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
-  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
-  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-timeoutsnew) constructor.
-  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-ttlnew) constructor.
+  - `billing_mode` (`string`): Set the `billing_mode` field on the resulting object. When `null`, the `billing_mode` field will be omitted from the resulting object.
+  - `hash_key` (`string`): Set the `hash_key` field on the resulting object. When `null`, the `hash_key` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `range_key` (`string`): Set the `range_key` field on the resulting object. When `null`, the `range_key` field will be omitted from the resulting object.
+  - `read_capacity` (`number`): Set the `read_capacity` field on the resulting object. When `null`, the `read_capacity` field will be omitted from the resulting object.
+  - `restore_date_time` (`string`): Set the `restore_date_time` field on the resulting object. When `null`, the `restore_date_time` field will be omitted from the resulting object.
+  - `restore_source_name` (`string`): Set the `restore_source_name` field on the resulting object. When `null`, the `restore_source_name` field will be omitted from the resulting object.
+  - `restore_to_latest_time` (`bool`): Set the `restore_to_latest_time` field on the resulting object. When `null`, the `restore_to_latest_time` field will be omitted from the resulting object.
+  - `stream_enabled` (`bool`): Set the `stream_enabled` field on the resulting object. When `null`, the `stream_enabled` field will be omitted from the resulting object.
+  - `stream_view_type` (`string`): Set the `stream_view_type` field on the resulting object. When `null`, the `stream_view_type` field will be omitted from the resulting object.
+  - `table_class` (`string`): Set the `table_class` field on the resulting object. When `null`, the `table_class` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `write_capacity` (`number`): Set the `write_capacity` field on the resulting object. When `null`, the `write_capacity` field will be omitted from the resulting object.
+  - `attribute` (`list[obj]`): Set the `attribute` field on the resulting object. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
+  - `global_secondary_index` (`list[obj]`): Set the `global_secondary_index` field on the resulting object. When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
+  - `local_secondary_index` (`list[obj]`): Set the `local_secondary_index` field on the resulting object. When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
+  - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting object. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
+  - `replica` (`list[obj]`): Set the `replica` field on the resulting object. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
+  - `server_side_encryption` (`list[obj]`): Set the `server_side_encryption` field on the resulting object. When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ttl` (`list[obj]`): Set the `ttl` field on the resulting object. When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.ttl.new](#fn-ttlnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `dynamodb_table` resource into the root Terraform configuration.
@@ -699,8 +699,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `type` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `attribute` sub block.
@@ -723,13 +723,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `hash_key` (`string`): 
-  - `name` (`string`): 
-  - `non_key_attributes` (`list`):  When `null`, the `non_key_attributes` field will be omitted from the resulting object.
-  - `projection_type` (`string`): 
-  - `range_key` (`string`):  When `null`, the `range_key` field will be omitted from the resulting object.
-  - `read_capacity` (`number`):  When `null`, the `read_capacity` field will be omitted from the resulting object.
-  - `write_capacity` (`number`):  When `null`, the `write_capacity` field will be omitted from the resulting object.
+  - `hash_key` (`string`): Set the `hash_key` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `non_key_attributes` (`list`): Set the `non_key_attributes` field on the resulting object. When `null`, the `non_key_attributes` field will be omitted from the resulting object.
+  - `projection_type` (`string`): Set the `projection_type` field on the resulting object.
+  - `range_key` (`string`): Set the `range_key` field on the resulting object. When `null`, the `range_key` field will be omitted from the resulting object.
+  - `read_capacity` (`number`): Set the `read_capacity` field on the resulting object. When `null`, the `read_capacity` field will be omitted from the resulting object.
+  - `write_capacity` (`number`): Set the `write_capacity` field on the resulting object. When `null`, the `write_capacity` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `global_secondary_index` sub block.
@@ -752,10 +752,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `non_key_attributes` (`list`):  When `null`, the `non_key_attributes` field will be omitted from the resulting object.
-  - `projection_type` (`string`): 
-  - `range_key` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `non_key_attributes` (`list`): Set the `non_key_attributes` field on the resulting object. When `null`, the `non_key_attributes` field will be omitted from the resulting object.
+  - `projection_type` (`string`): Set the `projection_type` field on the resulting object.
+  - `range_key` (`string`): Set the `range_key` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `local_secondary_index` sub block.
@@ -778,7 +778,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): 
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `point_in_time_recovery` sub block.
@@ -801,10 +801,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `point_in_time_recovery` (`bool`):  When `null`, the `point_in_time_recovery` field will be omitted from the resulting object.
-  - `propagate_tags` (`bool`):  When `null`, the `propagate_tags` field will be omitted from the resulting object.
-  - `region_name` (`string`): 
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `point_in_time_recovery` (`bool`): Set the `point_in_time_recovery` field on the resulting object. When `null`, the `point_in_time_recovery` field will be omitted from the resulting object.
+  - `propagate_tags` (`bool`): Set the `propagate_tags` field on the resulting object. When `null`, the `propagate_tags` field will be omitted from the resulting object.
+  - `region_name` (`string`): Set the `region_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `replica` sub block.
@@ -827,8 +827,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): 
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `server_side_encryption` sub block.
@@ -851,9 +851,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -876,8 +876,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `attribute_name` (`string`): 
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `attribute_name` (`string`): Set the `attribute_name` field on the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ttl` sub block.

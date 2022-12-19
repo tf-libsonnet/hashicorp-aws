@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application_id` (`string`): 
-  - `destination_stream_arn` (`string`): 
-  - `role_arn` (`string`): 
+  - `application_id` (`string`): Set the `application_id` field on the resulting resource block.
+  - `destination_stream_arn` (`string`): Set the `destination_stream_arn` field on the resulting resource block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application_id` (`string`): 
-  - `destination_stream_arn` (`string`): 
-  - `role_arn` (`string`): 
+  - `application_id` (`string`): Set the `application_id` field on the resulting object.
+  - `destination_stream_arn` (`string`): Set the `destination_stream_arn` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `pinpoint_event_stream` resource into the root Terraform configuration.

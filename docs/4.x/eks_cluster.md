@@ -75,17 +75,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `enabled_cluster_log_types` (`list`):  When `null`, the `enabled_cluster_log_types` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `encryption_config` (`list[obj]`):  When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.new](#fn-encryption_confignew) constructor.
-  - `kubernetes_network_config` (`list[obj]`):  When `null`, the `kubernetes_network_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.kubernetes_network_config.new](#fn-kubernetes_network_confignew) constructor.
-  - `outpost_config` (`list[obj]`):  When `null`, the `outpost_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.new](#fn-outpost_confignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `enabled_cluster_log_types` (`list`): Set the `enabled_cluster_log_types` field on the resulting resource block. When `null`, the `enabled_cluster_log_types` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting resource block. When `null`, the `version` field will be omitted from the resulting object.
+  - `encryption_config` (`list[obj]`): Set the `encryption_config` field on the resulting resource block. When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.new](#fn-encryption_confignew) constructor.
+  - `kubernetes_network_config` (`list[obj]`): Set the `kubernetes_network_config` field on the resulting resource block. When `null`, the `kubernetes_network_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.kubernetes_network_config.new](#fn-kubernetes_network_confignew) constructor.
+  - `outpost_config` (`list[obj]`): Set the `outpost_config` field on the resulting resource block. When `null`, the `outpost_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.new](#fn-outpost_confignew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting resource block. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -109,17 +109,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `enabled_cluster_log_types` (`list`):  When `null`, the `enabled_cluster_log_types` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `encryption_config` (`list[obj]`):  When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.new](#fn-encryption_confignew) constructor.
-  - `kubernetes_network_config` (`list[obj]`):  When `null`, the `kubernetes_network_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.kubernetes_network_config.new](#fn-kubernetes_network_confignew) constructor.
-  - `outpost_config` (`list[obj]`):  When `null`, the `outpost_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.new](#fn-outpost_confignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `enabled_cluster_log_types` (`list`): Set the `enabled_cluster_log_types` field on the resulting object. When `null`, the `enabled_cluster_log_types` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `encryption_config` (`list[obj]`): Set the `encryption_config` field on the resulting object. When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.new](#fn-encryption_confignew) constructor.
+  - `kubernetes_network_config` (`list[obj]`): Set the `kubernetes_network_config` field on the resulting object. When `null`, the `kubernetes_network_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.kubernetes_network_config.new](#fn-kubernetes_network_confignew) constructor.
+  - `outpost_config` (`list[obj]`): Set the `outpost_config` field on the resulting object. When `null`, the `outpost_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.new](#fn-outpost_confignew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_cluster` resource into the root Terraform configuration.
@@ -422,8 +422,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `resources` (`list`): 
-  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.provider.new](#fn-encryption_configprovidernew) constructor.
+  - `resources` (`list`): Set the `resources` field on the resulting object.
+  - `provider` (`list[obj]`): Set the `provider` field on the resulting object. When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.provider.new](#fn-encryption_configprovidernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_config` sub block.
@@ -446,7 +446,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `key_arn` (`string`): 
+  - `key_arn` (`string`): Set the `key_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `provider` sub block.
@@ -469,8 +469,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `ip_family` (`string`):  When `null`, the `ip_family` field will be omitted from the resulting object.
-  - `service_ipv4_cidr` (`string`):  When `null`, the `service_ipv4_cidr` field will be omitted from the resulting object.
+  - `ip_family` (`string`): Set the `ip_family` field on the resulting object. When `null`, the `ip_family` field will be omitted from the resulting object.
+  - `service_ipv4_cidr` (`string`): Set the `service_ipv4_cidr` field on the resulting object. When `null`, the `service_ipv4_cidr` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `kubernetes_network_config` sub block.
@@ -493,9 +493,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `control_plane_instance_type` (`string`): 
-  - `outpost_arns` (`list`): 
-  - `control_plane_placement` (`list[obj]`):  When `null`, the `control_plane_placement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.control_plane_placement.new](#fn-outpost_configcontrol_plane_placementnew) constructor.
+  - `control_plane_instance_type` (`string`): Set the `control_plane_instance_type` field on the resulting object.
+  - `outpost_arns` (`list`): Set the `outpost_arns` field on the resulting object.
+  - `control_plane_placement` (`list[obj]`): Set the `control_plane_placement` field on the resulting object. When `null`, the `control_plane_placement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.control_plane_placement.new](#fn-outpost_configcontrol_plane_placementnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `outpost_config` sub block.
@@ -518,7 +518,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `group_name` (`string`): 
+  - `group_name` (`string`): Set the `group_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `control_plane_placement` sub block.
@@ -541,9 +541,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -566,11 +566,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint_private_access` (`bool`):  When `null`, the `endpoint_private_access` field will be omitted from the resulting object.
-  - `endpoint_public_access` (`bool`):  When `null`, the `endpoint_public_access` field will be omitted from the resulting object.
-  - `public_access_cidrs` (`list`):  When `null`, the `public_access_cidrs` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
+  - `endpoint_private_access` (`bool`): Set the `endpoint_private_access` field on the resulting object. When `null`, the `endpoint_private_access` field will be omitted from the resulting object.
+  - `endpoint_public_access` (`bool`): Set the `endpoint_public_access` field on the resulting object. When `null`, the `endpoint_public_access` field will be omitted from the resulting object.
+  - `public_access_cidrs` (`list`): Set the `public_access_cidrs` field on the resulting object. When `null`, the `public_access_cidrs` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc_config` sub block.

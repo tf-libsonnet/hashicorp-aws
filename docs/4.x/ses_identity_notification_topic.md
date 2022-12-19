@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `identity` (`string`): 
-  - `include_original_headers` (`bool`):  When `null`, the `include_original_headers` field will be omitted from the resulting object.
-  - `notification_type` (`string`): 
-  - `topic_arn` (`string`):  When `null`, the `topic_arn` field will be omitted from the resulting object.
+  - `identity` (`string`): Set the `identity` field on the resulting resource block.
+  - `include_original_headers` (`bool`): Set the `include_original_headers` field on the resulting resource block. When `null`, the `include_original_headers` field will be omitted from the resulting object.
+  - `notification_type` (`string`): Set the `notification_type` field on the resulting resource block.
+  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting resource block. When `null`, the `topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `identity` (`string`): 
-  - `include_original_headers` (`bool`):  When `null`, the `include_original_headers` field will be omitted from the resulting object.
-  - `notification_type` (`string`): 
-  - `topic_arn` (`string`):  When `null`, the `topic_arn` field will be omitted from the resulting object.
+  - `identity` (`string`): Set the `identity` field on the resulting object.
+  - `include_original_headers` (`bool`): Set the `include_original_headers` field on the resulting object. When `null`, the `include_original_headers` field will be omitted from the resulting object.
+  - `notification_type` (`string`): Set the `notification_type` field on the resulting object.
+  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object. When `null`, the `topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ses_identity_notification_topic` resource into the root Terraform configuration.

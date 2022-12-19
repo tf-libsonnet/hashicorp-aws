@@ -57,15 +57,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `end_time` (`string`):  When `null`, the `end_time` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `resource_id` (`string`): 
-  - `scalable_dimension` (`string`): 
-  - `schedule` (`string`): 
-  - `service_namespace` (`string`): 
-  - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
-  - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
-  - `scalable_target_action` (`list[obj]`):  When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-scalable_target_actionnew) constructor.
+  - `end_time` (`string`): Set the `end_time` field on the resulting resource block. When `null`, the `end_time` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
+  - `scalable_dimension` (`string`): Set the `scalable_dimension` field on the resulting resource block.
+  - `schedule` (`string`): Set the `schedule` field on the resulting resource block.
+  - `service_namespace` (`string`): Set the `service_namespace` field on the resulting resource block.
+  - `start_time` (`string`): Set the `start_time` field on the resulting resource block. When `null`, the `start_time` field will be omitted from the resulting object.
+  - `timezone` (`string`): Set the `timezone` field on the resulting resource block. When `null`, the `timezone` field will be omitted from the resulting object.
+  - `scalable_target_action` (`list[obj]`): Set the `scalable_target_action` field on the resulting resource block. When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-scalable_target_actionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,15 +89,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `end_time` (`string`):  When `null`, the `end_time` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `resource_id` (`string`): 
-  - `scalable_dimension` (`string`): 
-  - `schedule` (`string`): 
-  - `service_namespace` (`string`): 
-  - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
-  - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
-  - `scalable_target_action` (`list[obj]`):  When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-scalable_target_actionnew) constructor.
+  - `end_time` (`string`): Set the `end_time` field on the resulting object. When `null`, the `end_time` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
+  - `scalable_dimension` (`string`): Set the `scalable_dimension` field on the resulting object.
+  - `schedule` (`string`): Set the `schedule` field on the resulting object.
+  - `service_namespace` (`string`): Set the `service_namespace` field on the resulting object.
+  - `start_time` (`string`): Set the `start_time` field on the resulting object. When `null`, the `start_time` field will be omitted from the resulting object.
+  - `timezone` (`string`): Set the `timezone` field on the resulting object. When `null`, the `timezone` field will be omitted from the resulting object.
+  - `scalable_target_action` (`list[obj]`): Set the `scalable_target_action` field on the resulting object. When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-scalable_target_actionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appautoscaling_scheduled_action` resource into the root Terraform configuration.
@@ -285,8 +285,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_capacity` (`string`):  When `null`, the `max_capacity` field will be omitted from the resulting object.
-  - `min_capacity` (`string`):  When `null`, the `min_capacity` field will be omitted from the resulting object.
+  - `max_capacity` (`string`): Set the `max_capacity` field on the resulting object. When `null`, the `max_capacity` field will be omitted from the resulting object.
+  - `min_capacity` (`string`): Set the `min_capacity` field on the resulting object. When `null`, the `min_capacity` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scalable_target_action` sub block.

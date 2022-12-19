@@ -170,15 +170,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `kms_arn` (`string`):  When `null`, the `kms_arn` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_flow_config` (`list[obj]`):  When `null`, the `destination_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.new](#fn-destination_flow_confignew) constructor.
-  - `source_flow_config` (`list[obj]`):  When `null`, the `source_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.new](#fn-source_flow_confignew) constructor.
-  - `task` (`list[obj]`):  When `null`, the `task` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.task.new](#fn-tasknew) constructor.
-  - `trigger_config` (`list[obj]`):  When `null`, the `trigger_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.new](#fn-trigger_confignew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `kms_arn` (`string`): Set the `kms_arn` field on the resulting resource block. When `null`, the `kms_arn` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `destination_flow_config` (`list[obj]`): Set the `destination_flow_config` field on the resulting resource block. When `null`, the `destination_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.new](#fn-destination_flow_confignew) constructor.
+  - `source_flow_config` (`list[obj]`): Set the `source_flow_config` field on the resulting resource block. When `null`, the `source_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.new](#fn-source_flow_confignew) constructor.
+  - `task` (`list[obj]`): Set the `task` field on the resulting resource block. When `null`, the `task` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.task.new](#fn-tasknew) constructor.
+  - `trigger_config` (`list[obj]`): Set the `trigger_config` field on the resulting resource block. When `null`, the `trigger_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.new](#fn-trigger_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -202,15 +202,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `kms_arn` (`string`):  When `null`, the `kms_arn` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_flow_config` (`list[obj]`):  When `null`, the `destination_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.new](#fn-destination_flow_confignew) constructor.
-  - `source_flow_config` (`list[obj]`):  When `null`, the `source_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.new](#fn-source_flow_confignew) constructor.
-  - `task` (`list[obj]`):  When `null`, the `task` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.task.new](#fn-tasknew) constructor.
-  - `trigger_config` (`list[obj]`):  When `null`, the `trigger_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.new](#fn-trigger_confignew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `kms_arn` (`string`): Set the `kms_arn` field on the resulting object. When `null`, the `kms_arn` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `destination_flow_config` (`list[obj]`): Set the `destination_flow_config` field on the resulting object. When `null`, the `destination_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.new](#fn-destination_flow_confignew) constructor.
+  - `source_flow_config` (`list[obj]`): Set the `source_flow_config` field on the resulting object. When `null`, the `source_flow_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.new](#fn-source_flow_confignew) constructor.
+  - `task` (`list[obj]`): Set the `task` field on the resulting object. When `null`, the `task` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.task.new](#fn-tasknew) constructor.
+  - `trigger_config` (`list[obj]`): Set the `trigger_config` field on the resulting object. When `null`, the `trigger_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.new](#fn-trigger_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appflow_flow` resource into the root Terraform configuration.
@@ -461,10 +461,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `api_version` (`string`):  When `null`, the `api_version` field will be omitted from the resulting object.
-  - `connector_profile_name` (`string`):  When `null`, the `connector_profile_name` field will be omitted from the resulting object.
-  - `connector_type` (`string`): 
-  - `destination_connector_properties` (`list[obj]`):  When `null`, the `destination_connector_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.new](#fn-destination_flow_configdestination_connector_propertiesnew) constructor.
+  - `api_version` (`string`): Set the `api_version` field on the resulting object. When `null`, the `api_version` field will be omitted from the resulting object.
+  - `connector_profile_name` (`string`): Set the `connector_profile_name` field on the resulting object. When `null`, the `connector_profile_name` field will be omitted from the resulting object.
+  - `connector_type` (`string`): Set the `connector_type` field on the resulting object.
+  - `destination_connector_properties` (`list[obj]`): Set the `destination_connector_properties` field on the resulting object. When `null`, the `destination_connector_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.new](#fn-destination_flow_configdestination_connector_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_flow_config` sub block.
@@ -487,19 +487,19 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_connector` (`list[obj]`):  When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.custom_connector.new](#fn-destination_flow_configdestination_flow_configcustom_connectornew) constructor.
-  - `customer_profiles` (`list[obj]`):  When `null`, the `customer_profiles` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.customer_profiles.new](#fn-destination_flow_configdestination_flow_configcustomer_profilesnew) constructor.
-  - `event_bridge` (`list[obj]`):  When `null`, the `event_bridge` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.event_bridge.new](#fn-destination_flow_configdestination_flow_configevent_bridgenew) constructor.
-  - `honeycode` (`list[obj]`):  When `null`, the `honeycode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.honeycode.new](#fn-destination_flow_configdestination_flow_confighoneycodenew) constructor.
-  - `lookout_metrics` (`list[obj]`):  When `null`, the `lookout_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.lookout_metrics.new](#fn-destination_flow_configdestination_flow_configlookout_metricsnew) constructor.
-  - `marketo` (`list[obj]`):  When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.marketo.new](#fn-destination_flow_configdestination_flow_configmarketonew) constructor.
-  - `redshift` (`list[obj]`):  When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.redshift.new](#fn-destination_flow_configdestination_flow_configredshiftnew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.new](#fn-destination_flow_configdestination_flow_configs3new) constructor.
-  - `salesforce` (`list[obj]`):  When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.salesforce.new](#fn-destination_flow_configdestination_flow_configsalesforcenew) constructor.
-  - `sapo_data` (`list[obj]`):  When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.sapo_data.new](#fn-destination_flow_configdestination_flow_configsapo_datanew) constructor.
-  - `snowflake` (`list[obj]`):  When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.snowflake.new](#fn-destination_flow_configdestination_flow_configsnowflakenew) constructor.
-  - `upsolver` (`list[obj]`):  When `null`, the `upsolver` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.new](#fn-destination_flow_configdestination_flow_configupsolvernew) constructor.
-  - `zendesk` (`list[obj]`):  When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.zendesk.new](#fn-destination_flow_configdestination_flow_configzendesknew) constructor.
+  - `custom_connector` (`list[obj]`): Set the `custom_connector` field on the resulting object. When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.custom_connector.new](#fn-destination_flow_configdestination_flow_configcustom_connectornew) constructor.
+  - `customer_profiles` (`list[obj]`): Set the `customer_profiles` field on the resulting object. When `null`, the `customer_profiles` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.customer_profiles.new](#fn-destination_flow_configdestination_flow_configcustomer_profilesnew) constructor.
+  - `event_bridge` (`list[obj]`): Set the `event_bridge` field on the resulting object. When `null`, the `event_bridge` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.event_bridge.new](#fn-destination_flow_configdestination_flow_configevent_bridgenew) constructor.
+  - `honeycode` (`list[obj]`): Set the `honeycode` field on the resulting object. When `null`, the `honeycode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.honeycode.new](#fn-destination_flow_configdestination_flow_confighoneycodenew) constructor.
+  - `lookout_metrics` (`list[obj]`): Set the `lookout_metrics` field on the resulting object. When `null`, the `lookout_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.lookout_metrics.new](#fn-destination_flow_configdestination_flow_configlookout_metricsnew) constructor.
+  - `marketo` (`list[obj]`): Set the `marketo` field on the resulting object. When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.marketo.new](#fn-destination_flow_configdestination_flow_configmarketonew) constructor.
+  - `redshift` (`list[obj]`): Set the `redshift` field on the resulting object. When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.redshift.new](#fn-destination_flow_configdestination_flow_configredshiftnew) constructor.
+  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.new](#fn-destination_flow_configdestination_flow_configs3new) constructor.
+  - `salesforce` (`list[obj]`): Set the `salesforce` field on the resulting object. When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.salesforce.new](#fn-destination_flow_configdestination_flow_configsalesforcenew) constructor.
+  - `sapo_data` (`list[obj]`): Set the `sapo_data` field on the resulting object. When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.sapo_data.new](#fn-destination_flow_configdestination_flow_configsapo_datanew) constructor.
+  - `snowflake` (`list[obj]`): Set the `snowflake` field on the resulting object. When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.snowflake.new](#fn-destination_flow_configdestination_flow_configsnowflakenew) constructor.
+  - `upsolver` (`list[obj]`): Set the `upsolver` field on the resulting object. When `null`, the `upsolver` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.new](#fn-destination_flow_configdestination_flow_configupsolvernew) constructor.
+  - `zendesk` (`list[obj]`): Set the `zendesk` field on the resulting object. When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.zendesk.new](#fn-destination_flow_configdestination_flow_configzendesknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_connector_properties` sub block.
@@ -522,11 +522,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_properties` (`obj`):  When `null`, the `custom_properties` field will be omitted from the resulting object.
-  - `entity_name` (`string`): 
-  - `id_field_names` (`list`):  When `null`, the `id_field_names` field will be omitted from the resulting object.
-  - `write_operation_type` (`string`):  When `null`, the `write_operation_type` field will be omitted from the resulting object.
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.custom_connector.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `custom_properties` (`obj`): Set the `custom_properties` field on the resulting object. When `null`, the `custom_properties` field will be omitted from the resulting object.
+  - `entity_name` (`string`): Set the `entity_name` field on the resulting object.
+  - `id_field_names` (`list`): Set the `id_field_names` field on the resulting object. When `null`, the `id_field_names` field will be omitted from the resulting object.
+  - `write_operation_type` (`string`): Set the `write_operation_type` field on the resulting object. When `null`, the `write_operation_type` field will be omitted from the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.custom_connector.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `custom_connector` sub block.
@@ -549,9 +549,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -574,8 +574,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `domain_name` (`string`): 
-  - `object_type_name` (`string`):  When `null`, the `object_type_name` field will be omitted from the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `object_type_name` (`string`): Set the `object_type_name` field on the resulting object. When `null`, the `object_type_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `customer_profiles` sub block.
@@ -598,8 +598,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.event_bridge.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `object` (`string`): Set the `object` field on the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.event_bridge.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `event_bridge` sub block.
@@ -622,9 +622,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -647,8 +647,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.honeycode.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `object` (`string`): Set the `object` field on the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.honeycode.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `honeycode` sub block.
@@ -671,9 +671,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -716,8 +716,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.marketo.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `object` (`string`): Set the `object` field on the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.marketo.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `marketo` sub block.
@@ -740,9 +740,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -765,10 +765,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `intermediate_bucket_name` (`string`): 
-  - `object` (`string`): 
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.redshift.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `intermediate_bucket_name` (`string`): Set the `intermediate_bucket_name` field on the resulting object.
+  - `object` (`string`): Set the `object` field on the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.redshift.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `redshift` sub block.
@@ -791,9 +791,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -816,9 +816,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): 
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `s3_output_format_config` (`list[obj]`):  When `null`, the `s3_output_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3_output_format_confignew) constructor.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `s3_output_format_config` (`list[obj]`): Set the `s3_output_format_config` field on the resulting object. When `null`, the `s3_output_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3_output_format_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -841,9 +841,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `file_type` (`string`):  When `null`, the `file_type` field will be omitted from the resulting object.
-  - `aggregation_config` (`list[obj]`):  When `null`, the `aggregation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3aggregation_confignew) constructor.
-  - `prefix_config` (`list[obj]`):  When `null`, the `prefix_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3prefix_confignew) constructor.
+  - `file_type` (`string`): Set the `file_type` field on the resulting object. When `null`, the `file_type` field will be omitted from the resulting object.
+  - `aggregation_config` (`list[obj]`): Set the `aggregation_config` field on the resulting object. When `null`, the `aggregation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3aggregation_confignew) constructor.
+  - `prefix_config` (`list[obj]`): Set the `prefix_config` field on the resulting object. When `null`, the `prefix_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3prefix_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3_output_format_config` sub block.
@@ -866,7 +866,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `aggregation_type` (`string`):  When `null`, the `aggregation_type` field will be omitted from the resulting object.
+  - `aggregation_type` (`string`): Set the `aggregation_type` field on the resulting object. When `null`, the `aggregation_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `aggregation_config` sub block.
@@ -889,8 +889,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix_format` (`string`):  When `null`, the `prefix_format` field will be omitted from the resulting object.
-  - `prefix_type` (`string`):  When `null`, the `prefix_type` field will be omitted from the resulting object.
+  - `prefix_format` (`string`): Set the `prefix_format` field on the resulting object. When `null`, the `prefix_format` field will be omitted from the resulting object.
+  - `prefix_type` (`string`): Set the `prefix_type` field on the resulting object. When `null`, the `prefix_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `prefix_config` sub block.
@@ -913,10 +913,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `id_field_names` (`list`):  When `null`, the `id_field_names` field will be omitted from the resulting object.
-  - `object` (`string`): 
-  - `write_operation_type` (`string`):  When `null`, the `write_operation_type` field will be omitted from the resulting object.
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.salesforce.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `id_field_names` (`list`): Set the `id_field_names` field on the resulting object. When `null`, the `id_field_names` field will be omitted from the resulting object.
+  - `object` (`string`): Set the `object` field on the resulting object.
+  - `write_operation_type` (`string`): Set the `write_operation_type` field on the resulting object. When `null`, the `write_operation_type` field will be omitted from the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.salesforce.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `salesforce` sub block.
@@ -939,9 +939,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -964,11 +964,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `id_field_names` (`list`):  When `null`, the `id_field_names` field will be omitted from the resulting object.
-  - `object_path` (`string`): 
-  - `write_operation_type` (`string`):  When `null`, the `write_operation_type` field will be omitted from the resulting object.
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.sapo_data.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
-  - `success_response_handling_config` (`list[obj]`):  When `null`, the `success_response_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiessuccess_response_handling_confignew) constructor.
+  - `id_field_names` (`list`): Set the `id_field_names` field on the resulting object. When `null`, the `id_field_names` field will be omitted from the resulting object.
+  - `object_path` (`string`): Set the `object_path` field on the resulting object.
+  - `write_operation_type` (`string`): Set the `write_operation_type` field on the resulting object. When `null`, the `write_operation_type` field will be omitted from the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.sapo_data.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `success_response_handling_config` (`list[obj]`): Set the `success_response_handling_config` field on the resulting object. When `null`, the `success_response_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiessuccess_response_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sapo_data` sub block.
@@ -991,9 +991,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -1016,8 +1016,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `success_response_handling_config` sub block.
@@ -1040,10 +1040,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `intermediate_bucket_name` (`string`): 
-  - `object` (`string`): 
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.snowflake.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `intermediate_bucket_name` (`string`): Set the `intermediate_bucket_name` field on the resulting object.
+  - `object` (`string`): Set the `object` field on the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.snowflake.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `snowflake` sub block.
@@ -1066,9 +1066,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -1091,9 +1091,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): 
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `s3_output_format_config` (`list[obj]`):  When `null`, the `s3_output_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3_output_format_confignew) constructor.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `s3_output_format_config` (`list[obj]`): Set the `s3_output_format_config` field on the resulting object. When `null`, the `s3_output_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3_output_format_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `upsolver` sub block.
@@ -1116,9 +1116,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `file_type` (`string`):  When `null`, the `file_type` field will be omitted from the resulting object.
-  - `aggregation_config` (`list[obj]`):  When `null`, the `aggregation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiesupsolveraggregation_confignew) constructor.
-  - `prefix_config` (`list[obj]`):  When `null`, the `prefix_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiesupsolverprefix_confignew) constructor.
+  - `file_type` (`string`): Set the `file_type` field on the resulting object. When `null`, the `file_type` field will be omitted from the resulting object.
+  - `aggregation_config` (`list[obj]`): Set the `aggregation_config` field on the resulting object. When `null`, the `aggregation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiesupsolveraggregation_confignew) constructor.
+  - `prefix_config` (`list[obj]`): Set the `prefix_config` field on the resulting object. When `null`, the `prefix_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiesupsolverprefix_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3_output_format_config` sub block.
@@ -1141,7 +1141,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `aggregation_type` (`string`):  When `null`, the `aggregation_type` field will be omitted from the resulting object.
+  - `aggregation_type` (`string`): Set the `aggregation_type` field on the resulting object. When `null`, the `aggregation_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `aggregation_config` sub block.
@@ -1164,8 +1164,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix_format` (`string`):  When `null`, the `prefix_format` field will be omitted from the resulting object.
-  - `prefix_type` (`string`): 
+  - `prefix_format` (`string`): Set the `prefix_format` field on the resulting object. When `null`, the `prefix_format` field will be omitted from the resulting object.
+  - `prefix_type` (`string`): Set the `prefix_type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `prefix_config` sub block.
@@ -1188,10 +1188,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `id_field_names` (`list`):  When `null`, the `id_field_names` field will be omitted from the resulting object.
-  - `object` (`string`): 
-  - `write_operation_type` (`string`):  When `null`, the `write_operation_type` field will be omitted from the resulting object.
-  - `error_handling_config` (`list[obj]`):  When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.zendesk.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
+  - `id_field_names` (`list`): Set the `id_field_names` field on the resulting object. When `null`, the `id_field_names` field will be omitted from the resulting object.
+  - `object` (`string`): Set the `object` field on the resulting object.
+  - `write_operation_type` (`string`): Set the `write_operation_type` field on the resulting object. When `null`, the `write_operation_type` field will be omitted from the resulting object.
+  - `error_handling_config` (`list[obj]`): Set the `error_handling_config` field on the resulting object. When `null`, the `error_handling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.zendesk.error_handling_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertieserror_handling_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `zendesk` sub block.
@@ -1214,9 +1214,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `fail_on_first_destination_error` (`bool`):  When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `fail_on_first_destination_error` (`bool`): Set the `fail_on_first_destination_error` field on the resulting object. When `null`, the `fail_on_first_destination_error` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_handling_config` sub block.
@@ -1239,11 +1239,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `api_version` (`string`):  When `null`, the `api_version` field will be omitted from the resulting object.
-  - `connector_profile_name` (`string`):  When `null`, the `connector_profile_name` field will be omitted from the resulting object.
-  - `connector_type` (`string`): 
-  - `incremental_pull_config` (`list[obj]`):  When `null`, the `incremental_pull_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.incremental_pull_config.new](#fn-source_flow_configincremental_pull_confignew) constructor.
-  - `source_connector_properties` (`list[obj]`):  When `null`, the `source_connector_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.new](#fn-source_flow_configsource_connector_propertiesnew) constructor.
+  - `api_version` (`string`): Set the `api_version` field on the resulting object. When `null`, the `api_version` field will be omitted from the resulting object.
+  - `connector_profile_name` (`string`): Set the `connector_profile_name` field on the resulting object. When `null`, the `connector_profile_name` field will be omitted from the resulting object.
+  - `connector_type` (`string`): Set the `connector_type` field on the resulting object.
+  - `incremental_pull_config` (`list[obj]`): Set the `incremental_pull_config` field on the resulting object. When `null`, the `incremental_pull_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.incremental_pull_config.new](#fn-source_flow_configincremental_pull_confignew) constructor.
+  - `source_connector_properties` (`list[obj]`): Set the `source_connector_properties` field on the resulting object. When `null`, the `source_connector_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.new](#fn-source_flow_configsource_connector_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source_flow_config` sub block.
@@ -1266,7 +1266,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `datetime_type_field_name` (`string`):  When `null`, the `datetime_type_field_name` field will be omitted from the resulting object.
+  - `datetime_type_field_name` (`string`): Set the `datetime_type_field_name` field on the resulting object. When `null`, the `datetime_type_field_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `incremental_pull_config` sub block.
@@ -1289,22 +1289,22 @@ Terraform sub block.
 
 
 **Args**:
-  - `amplitude` (`list[obj]`):  When `null`, the `amplitude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.amplitude.new](#fn-source_flow_configsource_flow_configamplitudenew) constructor.
-  - `custom_connector` (`list[obj]`):  When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.custom_connector.new](#fn-source_flow_configsource_flow_configcustom_connectornew) constructor.
-  - `datadog` (`list[obj]`):  When `null`, the `datadog` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.datadog.new](#fn-source_flow_configsource_flow_configdatadognew) constructor.
-  - `dynatrace` (`list[obj]`):  When `null`, the `dynatrace` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.dynatrace.new](#fn-source_flow_configsource_flow_configdynatracenew) constructor.
-  - `google_analytics` (`list[obj]`):  When `null`, the `google_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.google_analytics.new](#fn-source_flow_configsource_flow_configgoogle_analyticsnew) constructor.
-  - `infor_nexus` (`list[obj]`):  When `null`, the `infor_nexus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.infor_nexus.new](#fn-source_flow_configsource_flow_configinfor_nexusnew) constructor.
-  - `marketo` (`list[obj]`):  When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.marketo.new](#fn-source_flow_configsource_flow_configmarketonew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.s3.new](#fn-source_flow_configsource_flow_configs3new) constructor.
-  - `salesforce` (`list[obj]`):  When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.salesforce.new](#fn-source_flow_configsource_flow_configsalesforcenew) constructor.
-  - `sapo_data` (`list[obj]`):  When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.sapo_data.new](#fn-source_flow_configsource_flow_configsapo_datanew) constructor.
-  - `service_now` (`list[obj]`):  When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.service_now.new](#fn-source_flow_configsource_flow_configservice_nownew) constructor.
-  - `singular` (`list[obj]`):  When `null`, the `singular` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.singular.new](#fn-source_flow_configsource_flow_configsingularnew) constructor.
-  - `slack` (`list[obj]`):  When `null`, the `slack` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.slack.new](#fn-source_flow_configsource_flow_configslacknew) constructor.
-  - `trendmicro` (`list[obj]`):  When `null`, the `trendmicro` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.trendmicro.new](#fn-source_flow_configsource_flow_configtrendmicronew) constructor.
-  - `veeva` (`list[obj]`):  When `null`, the `veeva` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.veeva.new](#fn-source_flow_configsource_flow_configveevanew) constructor.
-  - `zendesk` (`list[obj]`):  When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.zendesk.new](#fn-source_flow_configsource_flow_configzendesknew) constructor.
+  - `amplitude` (`list[obj]`): Set the `amplitude` field on the resulting object. When `null`, the `amplitude` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.amplitude.new](#fn-source_flow_configsource_flow_configamplitudenew) constructor.
+  - `custom_connector` (`list[obj]`): Set the `custom_connector` field on the resulting object. When `null`, the `custom_connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.custom_connector.new](#fn-source_flow_configsource_flow_configcustom_connectornew) constructor.
+  - `datadog` (`list[obj]`): Set the `datadog` field on the resulting object. When `null`, the `datadog` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.datadog.new](#fn-source_flow_configsource_flow_configdatadognew) constructor.
+  - `dynatrace` (`list[obj]`): Set the `dynatrace` field on the resulting object. When `null`, the `dynatrace` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.dynatrace.new](#fn-source_flow_configsource_flow_configdynatracenew) constructor.
+  - `google_analytics` (`list[obj]`): Set the `google_analytics` field on the resulting object. When `null`, the `google_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.google_analytics.new](#fn-source_flow_configsource_flow_configgoogle_analyticsnew) constructor.
+  - `infor_nexus` (`list[obj]`): Set the `infor_nexus` field on the resulting object. When `null`, the `infor_nexus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.infor_nexus.new](#fn-source_flow_configsource_flow_configinfor_nexusnew) constructor.
+  - `marketo` (`list[obj]`): Set the `marketo` field on the resulting object. When `null`, the `marketo` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.marketo.new](#fn-source_flow_configsource_flow_configmarketonew) constructor.
+  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.s3.new](#fn-source_flow_configsource_flow_configs3new) constructor.
+  - `salesforce` (`list[obj]`): Set the `salesforce` field on the resulting object. When `null`, the `salesforce` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.salesforce.new](#fn-source_flow_configsource_flow_configsalesforcenew) constructor.
+  - `sapo_data` (`list[obj]`): Set the `sapo_data` field on the resulting object. When `null`, the `sapo_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.sapo_data.new](#fn-source_flow_configsource_flow_configsapo_datanew) constructor.
+  - `service_now` (`list[obj]`): Set the `service_now` field on the resulting object. When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.service_now.new](#fn-source_flow_configsource_flow_configservice_nownew) constructor.
+  - `singular` (`list[obj]`): Set the `singular` field on the resulting object. When `null`, the `singular` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.singular.new](#fn-source_flow_configsource_flow_configsingularnew) constructor.
+  - `slack` (`list[obj]`): Set the `slack` field on the resulting object. When `null`, the `slack` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.slack.new](#fn-source_flow_configsource_flow_configslacknew) constructor.
+  - `trendmicro` (`list[obj]`): Set the `trendmicro` field on the resulting object. When `null`, the `trendmicro` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.trendmicro.new](#fn-source_flow_configsource_flow_configtrendmicronew) constructor.
+  - `veeva` (`list[obj]`): Set the `veeva` field on the resulting object. When `null`, the `veeva` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.veeva.new](#fn-source_flow_configsource_flow_configveevanew) constructor.
+  - `zendesk` (`list[obj]`): Set the `zendesk` field on the resulting object. When `null`, the `zendesk` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.zendesk.new](#fn-source_flow_configsource_flow_configzendesknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source_connector_properties` sub block.
@@ -1327,7 +1327,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `amplitude` sub block.
@@ -1350,8 +1350,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_properties` (`obj`):  When `null`, the `custom_properties` field will be omitted from the resulting object.
-  - `entity_name` (`string`): 
+  - `custom_properties` (`obj`): Set the `custom_properties` field on the resulting object. When `null`, the `custom_properties` field will be omitted from the resulting object.
+  - `entity_name` (`string`): Set the `entity_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_connector` sub block.
@@ -1374,7 +1374,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `datadog` sub block.
@@ -1397,7 +1397,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dynatrace` sub block.
@@ -1420,7 +1420,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `google_analytics` sub block.
@@ -1443,7 +1443,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `infor_nexus` sub block.
@@ -1466,7 +1466,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `marketo` sub block.
@@ -1489,9 +1489,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): 
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `s3_input_format_config` (`list[obj]`):  When `null`, the `s3_input_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.s3.s3_input_format_config.new](#fn-source_flow_configsource_flow_configsource_connector_propertiess3_input_format_confignew) constructor.
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `s3_input_format_config` (`list[obj]`): Set the `s3_input_format_config` field on the resulting object. When `null`, the `s3_input_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.s3.s3_input_format_config.new](#fn-source_flow_configsource_flow_configsource_connector_propertiess3_input_format_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -1514,7 +1514,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_input_file_type` (`string`):  When `null`, the `s3_input_file_type` field will be omitted from the resulting object.
+  - `s3_input_file_type` (`string`): Set the `s3_input_file_type` field on the resulting object. When `null`, the `s3_input_file_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_input_format_config` sub block.
@@ -1537,9 +1537,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable_dynamic_field_update` (`bool`):  When `null`, the `enable_dynamic_field_update` field will be omitted from the resulting object.
-  - `include_deleted_records` (`bool`):  When `null`, the `include_deleted_records` field will be omitted from the resulting object.
-  - `object` (`string`): 
+  - `enable_dynamic_field_update` (`bool`): Set the `enable_dynamic_field_update` field on the resulting object. When `null`, the `enable_dynamic_field_update` field will be omitted from the resulting object.
+  - `include_deleted_records` (`bool`): Set the `include_deleted_records` field on the resulting object. When `null`, the `include_deleted_records` field will be omitted from the resulting object.
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `salesforce` sub block.
@@ -1562,7 +1562,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sapo_data` sub block.
@@ -1585,7 +1585,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `service_now` sub block.
@@ -1608,7 +1608,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `singular` sub block.
@@ -1631,7 +1631,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `slack` sub block.
@@ -1654,7 +1654,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `trendmicro` sub block.
@@ -1677,11 +1677,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `document_type` (`string`):  When `null`, the `document_type` field will be omitted from the resulting object.
-  - `include_all_versions` (`bool`):  When `null`, the `include_all_versions` field will be omitted from the resulting object.
-  - `include_renditions` (`bool`):  When `null`, the `include_renditions` field will be omitted from the resulting object.
-  - `include_source_files` (`bool`):  When `null`, the `include_source_files` field will be omitted from the resulting object.
-  - `object` (`string`): 
+  - `document_type` (`string`): Set the `document_type` field on the resulting object. When `null`, the `document_type` field will be omitted from the resulting object.
+  - `include_all_versions` (`bool`): Set the `include_all_versions` field on the resulting object. When `null`, the `include_all_versions` field will be omitted from the resulting object.
+  - `include_renditions` (`bool`): Set the `include_renditions` field on the resulting object. When `null`, the `include_renditions` field will be omitted from the resulting object.
+  - `include_source_files` (`bool`): Set the `include_source_files` field on the resulting object. When `null`, the `include_source_files` field will be omitted from the resulting object.
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `veeva` sub block.
@@ -1704,7 +1704,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): 
+  - `object` (`string`): Set the `object` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `zendesk` sub block.
@@ -1727,11 +1727,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination_field` (`string`):  When `null`, the `destination_field` field will be omitted from the resulting object.
-  - `source_fields` (`list`): 
-  - `task_properties` (`obj`):  When `null`, the `task_properties` field will be omitted from the resulting object.
-  - `task_type` (`string`): 
-  - `connector_operator` (`list[obj]`):  When `null`, the `connector_operator` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.task.connector_operator.new](#fn-taskconnector_operatornew) constructor.
+  - `destination_field` (`string`): Set the `destination_field` field on the resulting object. When `null`, the `destination_field` field will be omitted from the resulting object.
+  - `source_fields` (`list`): Set the `source_fields` field on the resulting object.
+  - `task_properties` (`obj`): Set the `task_properties` field on the resulting object. When `null`, the `task_properties` field will be omitted from the resulting object.
+  - `task_type` (`string`): Set the `task_type` field on the resulting object.
+  - `connector_operator` (`list[obj]`): Set the `connector_operator` field on the resulting object. When `null`, the `connector_operator` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.task.connector_operator.new](#fn-taskconnector_operatornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `task` sub block.
@@ -1754,22 +1754,22 @@ Terraform sub block.
 
 
 **Args**:
-  - `amplitude` (`string`):  When `null`, the `amplitude` field will be omitted from the resulting object.
-  - `custom_connector` (`string`):  When `null`, the `custom_connector` field will be omitted from the resulting object.
-  - `datadog` (`string`):  When `null`, the `datadog` field will be omitted from the resulting object.
-  - `dynatrace` (`string`):  When `null`, the `dynatrace` field will be omitted from the resulting object.
-  - `google_analytics` (`string`):  When `null`, the `google_analytics` field will be omitted from the resulting object.
-  - `infor_nexus` (`string`):  When `null`, the `infor_nexus` field will be omitted from the resulting object.
-  - `marketo` (`string`):  When `null`, the `marketo` field will be omitted from the resulting object.
-  - `s3` (`string`):  When `null`, the `s3` field will be omitted from the resulting object.
-  - `salesforce` (`string`):  When `null`, the `salesforce` field will be omitted from the resulting object.
-  - `sapo_data` (`string`):  When `null`, the `sapo_data` field will be omitted from the resulting object.
-  - `service_now` (`string`):  When `null`, the `service_now` field will be omitted from the resulting object.
-  - `singular` (`string`):  When `null`, the `singular` field will be omitted from the resulting object.
-  - `slack` (`string`):  When `null`, the `slack` field will be omitted from the resulting object.
-  - `trendmicro` (`string`):  When `null`, the `trendmicro` field will be omitted from the resulting object.
-  - `veeva` (`string`):  When `null`, the `veeva` field will be omitted from the resulting object.
-  - `zendesk` (`string`):  When `null`, the `zendesk` field will be omitted from the resulting object.
+  - `amplitude` (`string`): Set the `amplitude` field on the resulting object. When `null`, the `amplitude` field will be omitted from the resulting object.
+  - `custom_connector` (`string`): Set the `custom_connector` field on the resulting object. When `null`, the `custom_connector` field will be omitted from the resulting object.
+  - `datadog` (`string`): Set the `datadog` field on the resulting object. When `null`, the `datadog` field will be omitted from the resulting object.
+  - `dynatrace` (`string`): Set the `dynatrace` field on the resulting object. When `null`, the `dynatrace` field will be omitted from the resulting object.
+  - `google_analytics` (`string`): Set the `google_analytics` field on the resulting object. When `null`, the `google_analytics` field will be omitted from the resulting object.
+  - `infor_nexus` (`string`): Set the `infor_nexus` field on the resulting object. When `null`, the `infor_nexus` field will be omitted from the resulting object.
+  - `marketo` (`string`): Set the `marketo` field on the resulting object. When `null`, the `marketo` field will be omitted from the resulting object.
+  - `s3` (`string`): Set the `s3` field on the resulting object. When `null`, the `s3` field will be omitted from the resulting object.
+  - `salesforce` (`string`): Set the `salesforce` field on the resulting object. When `null`, the `salesforce` field will be omitted from the resulting object.
+  - `sapo_data` (`string`): Set the `sapo_data` field on the resulting object. When `null`, the `sapo_data` field will be omitted from the resulting object.
+  - `service_now` (`string`): Set the `service_now` field on the resulting object. When `null`, the `service_now` field will be omitted from the resulting object.
+  - `singular` (`string`): Set the `singular` field on the resulting object. When `null`, the `singular` field will be omitted from the resulting object.
+  - `slack` (`string`): Set the `slack` field on the resulting object. When `null`, the `slack` field will be omitted from the resulting object.
+  - `trendmicro` (`string`): Set the `trendmicro` field on the resulting object. When `null`, the `trendmicro` field will be omitted from the resulting object.
+  - `veeva` (`string`): Set the `veeva` field on the resulting object. When `null`, the `veeva` field will be omitted from the resulting object.
+  - `zendesk` (`string`): Set the `zendesk` field on the resulting object. When `null`, the `zendesk` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `connector_operator` sub block.
@@ -1792,8 +1792,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `trigger_type` (`string`): 
-  - `trigger_properties` (`list[obj]`):  When `null`, the `trigger_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.trigger_properties.new](#fn-trigger_configtrigger_propertiesnew) constructor.
+  - `trigger_type` (`string`): Set the `trigger_type` field on the resulting object.
+  - `trigger_properties` (`list[obj]`): Set the `trigger_properties` field on the resulting object. When `null`, the `trigger_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.trigger_properties.new](#fn-trigger_configtrigger_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `trigger_config` sub block.
@@ -1816,7 +1816,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `scheduled` (`list[obj]`):  When `null`, the `scheduled` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.trigger_properties.scheduled.new](#fn-trigger_configtrigger_configschedulednew) constructor.
+  - `scheduled` (`list[obj]`): Set the `scheduled` field on the resulting object. When `null`, the `scheduled` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.trigger_config.trigger_properties.scheduled.new](#fn-trigger_configtrigger_configschedulednew) constructor.
 
 **Returns**:
   - An attribute object that represents the `trigger_properties` sub block.
@@ -1839,13 +1839,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_pull_mode` (`string`):  When `null`, the `data_pull_mode` field will be omitted from the resulting object.
-  - `first_execution_from` (`string`):  When `null`, the `first_execution_from` field will be omitted from the resulting object.
-  - `schedule_end_time` (`string`):  When `null`, the `schedule_end_time` field will be omitted from the resulting object.
-  - `schedule_expression` (`string`): 
-  - `schedule_offset` (`number`):  When `null`, the `schedule_offset` field will be omitted from the resulting object.
-  - `schedule_start_time` (`string`):  When `null`, the `schedule_start_time` field will be omitted from the resulting object.
-  - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
+  - `data_pull_mode` (`string`): Set the `data_pull_mode` field on the resulting object. When `null`, the `data_pull_mode` field will be omitted from the resulting object.
+  - `first_execution_from` (`string`): Set the `first_execution_from` field on the resulting object. When `null`, the `first_execution_from` field will be omitted from the resulting object.
+  - `schedule_end_time` (`string`): Set the `schedule_end_time` field on the resulting object. When `null`, the `schedule_end_time` field will be omitted from the resulting object.
+  - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object.
+  - `schedule_offset` (`number`): Set the `schedule_offset` field on the resulting object. When `null`, the `schedule_offset` field will be omitted from the resulting object.
+  - `schedule_start_time` (`string`): Set the `schedule_start_time` field on the resulting object. When `null`, the `schedule_start_time` field will be omitted from the resulting object.
+  - `timezone` (`string`): Set the `timezone` field on the resulting object. When `null`, the `timezone` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scheduled` sub block.

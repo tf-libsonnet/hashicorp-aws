@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `name_regex` (`string`):  When `null`, the `name_regex` field will be omitted from the resulting object.
-  - `owner_id` (`string`):  When `null`, the `owner_id` field will be omitted from the resulting object.
-  - `resolver_endpoint_id` (`string`):  When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
-  - `rule_type` (`string`):  When `null`, the `rule_type` field will be omitted from the resulting object.
-  - `share_status` (`string`):  When `null`, the `share_status` field will be omitted from the resulting object.
+  - `name_regex` (`string`): Set the `name_regex` field on the resulting data source block. When `null`, the `name_regex` field will be omitted from the resulting object.
+  - `owner_id` (`string`): Set the `owner_id` field on the resulting data source block. When `null`, the `owner_id` field will be omitted from the resulting object.
+  - `resolver_endpoint_id` (`string`): Set the `resolver_endpoint_id` field on the resulting data source block. When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
+  - `rule_type` (`string`): Set the `rule_type` field on the resulting data source block. When `null`, the `rule_type` field will be omitted from the resulting object.
+  - `share_status` (`string`): Set the `share_status` field on the resulting data source block. When `null`, the `share_status` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name_regex` (`string`):  When `null`, the `name_regex` field will be omitted from the resulting object.
-  - `owner_id` (`string`):  When `null`, the `owner_id` field will be omitted from the resulting object.
-  - `resolver_endpoint_id` (`string`):  When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
-  - `rule_type` (`string`):  When `null`, the `rule_type` field will be omitted from the resulting object.
-  - `share_status` (`string`):  When `null`, the `share_status` field will be omitted from the resulting object.
+  - `name_regex` (`string`): Set the `name_regex` field on the resulting object. When `null`, the `name_regex` field will be omitted from the resulting object.
+  - `owner_id` (`string`): Set the `owner_id` field on the resulting object. When `null`, the `owner_id` field will be omitted from the resulting object.
+  - `resolver_endpoint_id` (`string`): Set the `resolver_endpoint_id` field on the resulting object. When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
+  - `rule_type` (`string`): Set the `rule_type` field on the resulting object. When `null`, the `rule_type` field will be omitted from the resulting object.
+  - `share_status` (`string`): Set the `share_status` field on the resulting object. When `null`, the `share_status` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `route53_resolver_rules` data source into the root Terraform configuration.

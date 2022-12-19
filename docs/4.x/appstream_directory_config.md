@@ -51,9 +51,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `directory_name` (`string`): 
-  - `organizational_unit_distinguished_names` (`list`): 
-  - `service_account_credentials` (`list[obj]`):  When `null`, the `service_account_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_directory_config.service_account_credentials.new](#fn-service_account_credentialsnew) constructor.
+  - `directory_name` (`string`): Set the `directory_name` field on the resulting resource block.
+  - `organizational_unit_distinguished_names` (`list`): Set the `organizational_unit_distinguished_names` field on the resulting resource block.
+  - `service_account_credentials` (`list[obj]`): Set the `service_account_credentials` field on the resulting resource block. When `null`, the `service_account_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_directory_config.service_account_credentials.new](#fn-service_account_credentialsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,9 +77,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `directory_name` (`string`): 
-  - `organizational_unit_distinguished_names` (`list`): 
-  - `service_account_credentials` (`list[obj]`):  When `null`, the `service_account_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_directory_config.service_account_credentials.new](#fn-service_account_credentialsnew) constructor.
+  - `directory_name` (`string`): Set the `directory_name` field on the resulting object.
+  - `organizational_unit_distinguished_names` (`list`): Set the `organizational_unit_distinguished_names` field on the resulting object.
+  - `service_account_credentials` (`list[obj]`): Set the `service_account_credentials` field on the resulting object. When `null`, the `service_account_credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_directory_config.service_account_credentials.new](#fn-service_account_credentialsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appstream_directory_config` resource into the root Terraform configuration.
@@ -171,8 +171,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `account_name` (`string`): 
-  - `account_password` (`string`): 
+  - `account_name` (`string`): Set the `account_name` field on the resulting object.
+  - `account_password` (`string`): Set the `account_password` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `service_account_credentials` sub block.

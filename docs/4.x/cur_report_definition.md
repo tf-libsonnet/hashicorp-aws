@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `additional_artifacts` (`list`):  When `null`, the `additional_artifacts` field will be omitted from the resulting object.
-  - `additional_schema_elements` (`list`): 
-  - `compression` (`string`): 
-  - `format` (`string`): 
-  - `refresh_closed_reports` (`bool`):  When `null`, the `refresh_closed_reports` field will be omitted from the resulting object.
-  - `report_name` (`string`): 
-  - `report_versioning` (`string`):  When `null`, the `report_versioning` field will be omitted from the resulting object.
-  - `s3_bucket` (`string`): 
-  - `s3_prefix` (`string`):  When `null`, the `s3_prefix` field will be omitted from the resulting object.
-  - `s3_region` (`string`): 
-  - `time_unit` (`string`): 
+  - `additional_artifacts` (`list`): Set the `additional_artifacts` field on the resulting resource block. When `null`, the `additional_artifacts` field will be omitted from the resulting object.
+  - `additional_schema_elements` (`list`): Set the `additional_schema_elements` field on the resulting resource block.
+  - `compression` (`string`): Set the `compression` field on the resulting resource block.
+  - `format` (`string`): Set the `format` field on the resulting resource block.
+  - `refresh_closed_reports` (`bool`): Set the `refresh_closed_reports` field on the resulting resource block. When `null`, the `refresh_closed_reports` field will be omitted from the resulting object.
+  - `report_name` (`string`): Set the `report_name` field on the resulting resource block.
+  - `report_versioning` (`string`): Set the `report_versioning` field on the resulting resource block. When `null`, the `report_versioning` field will be omitted from the resulting object.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting resource block.
+  - `s3_prefix` (`string`): Set the `s3_prefix` field on the resulting resource block. When `null`, the `s3_prefix` field will be omitted from the resulting object.
+  - `s3_region` (`string`): Set the `s3_region` field on the resulting resource block.
+  - `time_unit` (`string`): Set the `time_unit` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `additional_artifacts` (`list`):  When `null`, the `additional_artifacts` field will be omitted from the resulting object.
-  - `additional_schema_elements` (`list`): 
-  - `compression` (`string`): 
-  - `format` (`string`): 
-  - `refresh_closed_reports` (`bool`):  When `null`, the `refresh_closed_reports` field will be omitted from the resulting object.
-  - `report_name` (`string`): 
-  - `report_versioning` (`string`):  When `null`, the `report_versioning` field will be omitted from the resulting object.
-  - `s3_bucket` (`string`): 
-  - `s3_prefix` (`string`):  When `null`, the `s3_prefix` field will be omitted from the resulting object.
-  - `s3_region` (`string`): 
-  - `time_unit` (`string`): 
+  - `additional_artifacts` (`list`): Set the `additional_artifacts` field on the resulting object. When `null`, the `additional_artifacts` field will be omitted from the resulting object.
+  - `additional_schema_elements` (`list`): Set the `additional_schema_elements` field on the resulting object.
+  - `compression` (`string`): Set the `compression` field on the resulting object.
+  - `format` (`string`): Set the `format` field on the resulting object.
+  - `refresh_closed_reports` (`bool`): Set the `refresh_closed_reports` field on the resulting object. When `null`, the `refresh_closed_reports` field will be omitted from the resulting object.
+  - `report_name` (`string`): Set the `report_name` field on the resulting object.
+  - `report_versioning` (`string`): Set the `report_versioning` field on the resulting object. When `null`, the `report_versioning` field will be omitted from the resulting object.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting object.
+  - `s3_prefix` (`string`): Set the `s3_prefix` field on the resulting object. When `null`, the `s3_prefix` field will be omitted from the resulting object.
+  - `s3_region` (`string`): Set the `s3_region` field on the resulting object.
+  - `time_unit` (`string`): Set the `time_unit` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cur_report_definition` resource into the root Terraform configuration.

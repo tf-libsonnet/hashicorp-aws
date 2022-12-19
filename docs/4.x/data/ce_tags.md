@@ -89,11 +89,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `search_string` (`string`):  When `null`, the `search_string` field will be omitted from the resulting object.
-  - `tag_key` (`string`):  When `null`, the `tag_key` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.filter.new](#fn-filternew) constructor.
-  - `sort_by` (`list[obj]`):  When `null`, the `sort_by` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.sort_by.new](#fn-sort_bynew) constructor.
-  - `time_period` (`list[obj]`):  When `null`, the `time_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.time_period.new](#fn-time_periodnew) constructor.
+  - `search_string` (`string`): Set the `search_string` field on the resulting data source block. When `null`, the `search_string` field will be omitted from the resulting object.
+  - `tag_key` (`string`): Set the `tag_key` field on the resulting data source block. When `null`, the `tag_key` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.filter.new](#fn-filternew) constructor.
+  - `sort_by` (`list[obj]`): Set the `sort_by` field on the resulting data source block. When `null`, the `sort_by` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.sort_by.new](#fn-sort_bynew) constructor.
+  - `time_period` (`list[obj]`): Set the `time_period` field on the resulting data source block. When `null`, the `time_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.time_period.new](#fn-time_periodnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -117,11 +117,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `search_string` (`string`):  When `null`, the `search_string` field will be omitted from the resulting object.
-  - `tag_key` (`string`):  When `null`, the `tag_key` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.filter.new](#fn-filternew) constructor.
-  - `sort_by` (`list[obj]`):  When `null`, the `sort_by` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.sort_by.new](#fn-sort_bynew) constructor.
-  - `time_period` (`list[obj]`):  When `null`, the `time_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.time_period.new](#fn-time_periodnew) constructor.
+  - `search_string` (`string`): Set the `search_string` field on the resulting object. When `null`, the `search_string` field will be omitted from the resulting object.
+  - `tag_key` (`string`): Set the `tag_key` field on the resulting object. When `null`, the `tag_key` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.filter.new](#fn-filternew) constructor.
+  - `sort_by` (`list[obj]`): Set the `sort_by` field on the resulting object. When `null`, the `sort_by` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.sort_by.new](#fn-sort_bynew) constructor.
+  - `time_period` (`list[obj]`): Set the `time_period` field on the resulting object. When `null`, the `time_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ce_tags.time_period.new](#fn-time_periodnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ce_tags` data source into the root Terraform configuration.
@@ -287,12 +287,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.new](#fn-filterandnew) constructor.
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.cost_category.new](#fn-filtercost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.dimension.new](#fn-filterdimensionnew) constructor.
-  - `not` (`list[obj]`):  When `null`, the `not` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.new](#fn-filternotnew) constructor.
-  - `or` (`list[obj]`):  When `null`, the `or` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.new](#fn-filterornew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.tags.new](#fn-filtertagsnew) constructor.
+  - `and` (`list[obj]`): Set the `and` field on the resulting object. When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.new](#fn-filterandnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.cost_category.new](#fn-filtercost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.dimension.new](#fn-filterdimensionnew) constructor.
+  - `not` (`list[obj]`): Set the `not` field on the resulting object. When `null`, the `not` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.new](#fn-filternotnew) constructor.
+  - `or` (`list[obj]`): Set the `or` field on the resulting object. When `null`, the `or` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.new](#fn-filterornew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.tags.new](#fn-filtertagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -315,9 +315,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.cost_category.new](#fn-filterfiltercost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.dimension.new](#fn-filterfilterdimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.tags.new](#fn-filterfiltertagsnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.cost_category.new](#fn-filterfiltercost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.dimension.new](#fn-filterfilterdimensionnew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.tags.new](#fn-filterfiltertagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -340,9 +340,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -365,9 +365,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -390,9 +390,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -415,9 +415,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -440,9 +440,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -465,9 +465,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.cost_category.new](#fn-filterfiltercost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.dimension.new](#fn-filterfilterdimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.tags.new](#fn-filterfiltertagsnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.cost_category.new](#fn-filterfiltercost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.dimension.new](#fn-filterfilterdimensionnew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.tags.new](#fn-filterfiltertagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `not` sub block.
@@ -490,9 +490,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -515,9 +515,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -540,9 +540,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -565,9 +565,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.cost_category.new](#fn-filterfiltercost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.dimension.new](#fn-filterfilterdimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.tags.new](#fn-filterfiltertagsnew) constructor.
+  - `cost_category` (`list[obj]`): Set the `cost_category` field on the resulting object. When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.cost_category.new](#fn-filterfiltercost_categorynew) constructor.
+  - `dimension` (`list[obj]`): Set the `dimension` field on the resulting object. When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.dimension.new](#fn-filterfilterdimensionnew) constructor.
+  - `tags` (`list[obj]`): Set the `tags` field on the resulting object. When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.tags.new](#fn-filterfiltertagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `or` sub block.
@@ -590,9 +590,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cost_category` sub block.
@@ -615,9 +615,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dimension` sub block.
@@ -640,9 +640,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -665,9 +665,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `match_options` (`list`):  When `null`, the `match_options` field will be omitted from the resulting object.
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `match_options` (`list`): Set the `match_options` field on the resulting object. When `null`, the `match_options` field will be omitted from the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tags` sub block.
@@ -690,8 +690,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
-  - `sort_order` (`string`):  When `null`, the `sort_order` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+  - `sort_order` (`string`): Set the `sort_order` field on the resulting object. When `null`, the `sort_order` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sort_by` sub block.
@@ -714,8 +714,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): 
-  - `start` (`string`): 
+  - `end` (`string`): Set the `end` field on the resulting object.
+  - `start` (`string`): Set the `start` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `time_period` sub block.
