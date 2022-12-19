@@ -558,8 +558,8 @@ Terraform sub block.
   - `ebs_volume_size` (`number`):  When `null`, the `ebs_volume_size` field will be omitted from the resulting object.
   - `instance_type` (`string`): 
   - `security_groups` (`list`): 
-  - `connectivity_info` (`list[obj]`):  When `null`, the `connectivity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.new](#fn-msk_clusterconnectivity_infonew) constructor.
-  - `storage_info` (`list[obj]`):  When `null`, the `storage_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.new](#fn-msk_clusterstorage_infonew) constructor.
+  - `connectivity_info` (`list[obj]`):  When `null`, the `connectivity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.new](#fn-broker_node_group_infoconnectivity_infonew) constructor.
+  - `storage_info` (`list[obj]`):  When `null`, the `storage_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.new](#fn-broker_node_group_infostorage_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `broker_node_group_info` sub block.
@@ -582,7 +582,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `public_access` (`list[obj]`):  When `null`, the `public_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.public_access.new](#fn-msk_clusterbroker_node_group_infopublic_accessnew) constructor.
+  - `public_access` (`list[obj]`):  When `null`, the `public_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.public_access.new](#fn-broker_node_group_infobroker_node_group_infopublic_accessnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `connectivity_info` sub block.
@@ -628,7 +628,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ebs_storage_info` (`list[obj]`):  When `null`, the `ebs_storage_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.ebs_storage_info.new](#fn-msk_clusterbroker_node_group_infoebs_storage_infonew) constructor.
+  - `ebs_storage_info` (`list[obj]`):  When `null`, the `ebs_storage_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.ebs_storage_info.new](#fn-broker_node_group_infobroker_node_group_infoebs_storage_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_info` sub block.
@@ -652,7 +652,7 @@ Terraform sub block.
 
 **Args**:
   - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `provisioned_throughput` (`list[obj]`):  When `null`, the `provisioned_throughput` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.ebs_storage_info.provisioned_throughput.new](#fn-msk_clusterbroker_node_group_infostorage_infoprovisioned_throughputnew) constructor.
+  - `provisioned_throughput` (`list[obj]`):  When `null`, the `provisioned_throughput` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.ebs_storage_info.provisioned_throughput.new](#fn-broker_node_group_infobroker_node_group_infostorage_infoprovisioned_throughputnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ebs_storage_info` sub block.
@@ -700,8 +700,8 @@ Terraform sub block.
 
 **Args**:
   - `unauthenticated` (`bool`):  When `null`, the `unauthenticated` field will be omitted from the resulting object.
-  - `sasl` (`list[obj]`):  When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.client_authentication.sasl.new](#fn-msk_clustersaslnew) constructor.
-  - `tls` (`list[obj]`):  When `null`, the `tls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.client_authentication.tls.new](#fn-msk_clustertlsnew) constructor.
+  - `sasl` (`list[obj]`):  When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.client_authentication.sasl.new](#fn-client_authenticationsaslnew) constructor.
+  - `tls` (`list[obj]`):  When `null`, the `tls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.client_authentication.tls.new](#fn-client_authenticationtlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `client_authentication` sub block.
@@ -796,7 +796,7 @@ Terraform sub block.
 
 **Args**:
   - `encryption_at_rest_kms_key_arn` (`string`):  When `null`, the `encryption_at_rest_kms_key_arn` field will be omitted from the resulting object.
-  - `encryption_in_transit` (`list[obj]`):  When `null`, the `encryption_in_transit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.encryption_info.encryption_in_transit.new](#fn-msk_clusterencryption_in_transitnew) constructor.
+  - `encryption_in_transit` (`list[obj]`):  When `null`, the `encryption_in_transit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.encryption_info.encryption_in_transit.new](#fn-encryption_infoencryption_in_transitnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_info` sub block.
@@ -843,7 +843,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `broker_logs` (`list[obj]`):  When `null`, the `broker_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.new](#fn-msk_clusterbroker_logsnew) constructor.
+  - `broker_logs` (`list[obj]`):  When `null`, the `broker_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.new](#fn-logging_infobroker_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging_info` sub block.
@@ -866,9 +866,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.cloudwatch_logs.new](#fn-msk_clusterlogging_infocloudwatch_logsnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.firehose.new](#fn-msk_clusterlogging_infofirehosenew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.s3.new](#fn-msk_clusterlogging_infos3new) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.cloudwatch_logs.new](#fn-logging_infologging_infocloudwatch_logsnew) constructor.
+  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.firehose.new](#fn-logging_infologging_infofirehosenew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.logging_info.broker_logs.s3.new](#fn-logging_infologging_infos3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `broker_logs` sub block.
@@ -964,7 +964,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `prometheus` (`list[obj]`):  When `null`, the `prometheus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.open_monitoring.prometheus.new](#fn-msk_clusterprometheusnew) constructor.
+  - `prometheus` (`list[obj]`):  When `null`, the `prometheus` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.open_monitoring.prometheus.new](#fn-open_monitoringprometheusnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `open_monitoring` sub block.
@@ -987,8 +987,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `jmx_exporter` (`list[obj]`):  When `null`, the `jmx_exporter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.open_monitoring.prometheus.jmx_exporter.new](#fn-msk_clusteropen_monitoringjmx_exporternew) constructor.
-  - `node_exporter` (`list[obj]`):  When `null`, the `node_exporter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.open_monitoring.prometheus.node_exporter.new](#fn-msk_clusteropen_monitoringnode_exporternew) constructor.
+  - `jmx_exporter` (`list[obj]`):  When `null`, the `jmx_exporter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.open_monitoring.prometheus.jmx_exporter.new](#fn-open_monitoringopen_monitoringjmx_exporternew) constructor.
+  - `node_exporter` (`list[obj]`):  When `null`, the `node_exporter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.open_monitoring.prometheus.node_exporter.new](#fn-open_monitoringopen_monitoringnode_exporternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `prometheus` sub block.

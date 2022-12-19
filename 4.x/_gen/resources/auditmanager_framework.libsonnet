@@ -9,7 +9,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 
       ):: std.prune(a={}),
     },
-    '#new':: d.fn(help='\n`aws.auditmanager_framework.control_sets.new` constructs a new object with attributes and blocks configured for the `control_sets`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `controls` (`list[obj]`):  When `null`, the `controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.controls.new](#fn-auditmanager_frameworkcontrolsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `control_sets` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.auditmanager_framework.control_sets.new` constructs a new object with attributes and blocks configured for the `control_sets`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `controls` (`list[obj]`):  When `null`, the `controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.controls.new](#fn-control_setscontrolsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `control_sets` sub block.\n', args=[]),
     new(
       name,
       controls=null

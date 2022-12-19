@@ -423,7 +423,7 @@ Terraform sub block.
 
 **Args**:
   - `resources` (`list`): 
-  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.provider.new](#fn-eks_clusterprovidernew) constructor.
+  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.provider.new](#fn-encryption_configprovidernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_config` sub block.
@@ -495,7 +495,7 @@ Terraform sub block.
 **Args**:
   - `control_plane_instance_type` (`string`): 
   - `outpost_arns` (`list`): 
-  - `control_plane_placement` (`list[obj]`):  When `null`, the `control_plane_placement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.control_plane_placement.new](#fn-eks_clustercontrol_plane_placementnew) constructor.
+  - `control_plane_placement` (`list[obj]`):  When `null`, the `control_plane_placement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.control_plane_placement.new](#fn-outpost_configcontrol_plane_placementnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `outpost_config` sub block.

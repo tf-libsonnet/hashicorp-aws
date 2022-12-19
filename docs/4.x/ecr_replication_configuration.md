@@ -139,7 +139,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.new](#fn-ecr_replication_configurationrulenew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.new](#fn-replication_configurationrulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `replication_configuration` sub block.
@@ -162,8 +162,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.destination.new](#fn-ecr_replication_configurationreplication_configurationdestinationnew) constructor.
-  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.repository_filter.new](#fn-ecr_replication_configurationreplication_configurationrepository_filternew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.destination.new](#fn-replication_configurationreplication_configurationdestinationnew) constructor.
+  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.repository_filter.new](#fn-replication_configurationreplication_configurationrepository_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

@@ -38,7 +38,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags_all: tags_all,
   }),
   source:: {
-    '#new':: d.fn(help='\n`aws.rolesanywhere_trust_anchor.source.new` constructs a new object with attributes and blocks configured for the `source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `source_type` (`string`): \n  - `source_data` (`list[obj]`):  When `null`, the `source_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.source_data.new](#fn-rolesanywhere_trust_anchorsource_datanew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `source` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.rolesanywhere_trust_anchor.source.new` constructs a new object with attributes and blocks configured for the `source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `source_type` (`string`): \n  - `source_data` (`list[obj]`):  When `null`, the `source_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.source_data.new](#fn-sourcesource_datanew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `source` sub block.\n', args=[]),
     new(
       source_type,
       source_data=null

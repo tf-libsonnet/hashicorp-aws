@@ -157,7 +157,7 @@ Terraform sub block.
   - `comparison_operator` (`string`): 
   - `size` (`number`): 
   - `text_transformation` (`string`): 
-  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.field_to_match.new](#fn-waf_size_constraint_setfield_to_matchnew) constructor.
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.field_to_match.new](#fn-size_constraintsfield_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `size_constraints` sub block.

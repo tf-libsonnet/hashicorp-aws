@@ -42,7 +42,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags_all: tags_all,
   }),
   protocol:: {
-    '#new':: d.fn(help='\n`aws.datasync_location_fsx_openzfs_file_system.protocol.new` constructs a new object with attributes and blocks configured for the `protocol`\nTerraform sub block.\n\n\n\n**Args**:\n  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new](#fn-datasync_location_fsx_openzfs_file_systemnfsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `protocol` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.datasync_location_fsx_openzfs_file_system.protocol.new` constructs a new object with attributes and blocks configured for the `protocol`\nTerraform sub block.\n\n\n\n**Args**:\n  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new](#fn-protocolnfsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `protocol` sub block.\n', args=[]),
     new(
       nfs=null
     ):: std.prune(a={
@@ -57,7 +57,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           version: version,
         }),
       },
-      '#new':: d.fn(help='\n`aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new` constructs a new object with attributes and blocks configured for the `nfs`\nTerraform sub block.\n\n\n\n**Args**:\n  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.mount_options.new](#fn-datasync_location_fsx_openzfs_file_systemprotocolmount_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `nfs` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new` constructs a new object with attributes and blocks configured for the `nfs`\nTerraform sub block.\n\n\n\n**Args**:\n  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.mount_options.new](#fn-protocolprotocolmount_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `nfs` sub block.\n', args=[]),
       new(
         mount_options=null
       ):: std.prune(a={

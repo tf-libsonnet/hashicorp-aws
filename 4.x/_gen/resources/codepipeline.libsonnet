@@ -11,7 +11,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.codepipeline.artifact_store.new` constructs a new object with attributes and blocks configured for the `artifact_store`\nTerraform sub block.\n\n\n\n**Args**:\n  - `location` (`string`): \n  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.\n  - `type` (`string`): \n  - `encryption_key` (`list[obj]`):  When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-codepipelineencryption_keynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `artifact_store` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.codepipeline.artifact_store.new` constructs a new object with attributes and blocks configured for the `artifact_store`\nTerraform sub block.\n\n\n\n**Args**:\n  - `location` (`string`): \n  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.\n  - `type` (`string`): \n  - `encryption_key` (`list[obj]`):  When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-artifact_storeencryption_keynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `artifact_store` sub block.\n', args=[]),
     new(
       location,
       type,
@@ -94,7 +94,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         version: version,
       }),
     },
-    '#new':: d.fn(help='\n`aws.codepipeline.stage.new` constructs a new object with attributes and blocks configured for the `stage`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.action.new](#fn-codepipelineactionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `stage` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.codepipeline.stage.new` constructs a new object with attributes and blocks configured for the `stage`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.action.new](#fn-stageactionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `stage` sub block.\n', args=[]),
     new(
       name,
       action=null

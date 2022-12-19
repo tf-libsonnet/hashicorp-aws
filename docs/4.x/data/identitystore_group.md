@@ -218,8 +218,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `external_id` (`list[obj]`):  When `null`, the `external_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.external_id.new](#fn-identitystore_groupexternal_idnew) constructor.
-  - `unique_attribute` (`list[obj]`):  When `null`, the `unique_attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.unique_attribute.new](#fn-identitystore_groupunique_attributenew) constructor.
+  - `external_id` (`list[obj]`):  When `null`, the `external_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.external_id.new](#fn-alternate_identifierexternal_idnew) constructor.
+  - `unique_attribute` (`list[obj]`):  When `null`, the `unique_attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.unique_attribute.new](#fn-alternate_identifierunique_attributenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `alternate_identifier` sub block.

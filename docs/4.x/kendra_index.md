@@ -514,8 +514,8 @@ Terraform sub block.
 **Args**:
   - `name` (`string`): 
   - `type` (`string`): 
-  - `relevance` (`list[obj]`):  When `null`, the `relevance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.relevance.new](#fn-kendra_indexrelevancenew) constructor.
-  - `search` (`list[obj]`):  When `null`, the `search` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.search.new](#fn-kendra_indexsearchnew) constructor.
+  - `relevance` (`list[obj]`):  When `null`, the `relevance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.relevance.new](#fn-document_metadata_configuration_updatesrelevancenew) constructor.
+  - `search` (`list[obj]`):  When `null`, the `search` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.search.new](#fn-document_metadata_configuration_updatessearchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `document_metadata_configuration_updates` sub block.
@@ -662,8 +662,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `json_token_type_configuration` (`list[obj]`):  When `null`, the `json_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.json_token_type_configuration.new](#fn-kendra_indexjson_token_type_configurationnew) constructor.
-  - `jwt_token_type_configuration` (`list[obj]`):  When `null`, the `jwt_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.jwt_token_type_configuration.new](#fn-kendra_indexjwt_token_type_configurationnew) constructor.
+  - `json_token_type_configuration` (`list[obj]`):  When `null`, the `json_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.json_token_type_configuration.new](#fn-user_token_configurationsjson_token_type_configurationnew) constructor.
+  - `jwt_token_type_configuration` (`list[obj]`):  When `null`, the `jwt_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.jwt_token_type_configuration.new](#fn-user_token_configurationsjwt_token_type_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `user_token_configurations` sub block.

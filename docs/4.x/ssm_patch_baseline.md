@@ -415,7 +415,7 @@ Terraform sub block.
   - `approve_until_date` (`string`):  When `null`, the `approve_until_date` field will be omitted from the resulting object.
   - `compliance_level` (`string`):  When `null`, the `compliance_level` field will be omitted from the resulting object.
   - `enable_non_security` (`bool`):  When `null`, the `enable_non_security` field will be omitted from the resulting object.
-  - `patch_filter` (`list[obj]`):  When `null`, the `patch_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.patch_filter.new](#fn-ssm_patch_baselinepatch_filternew) constructor.
+  - `patch_filter` (`list[obj]`):  When `null`, the `patch_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.patch_filter.new](#fn-approval_rulepatch_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `approval_rule` sub block.

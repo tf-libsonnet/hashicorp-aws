@@ -422,7 +422,7 @@ Terraform sub block.
 **Args**:
   - `conflict_detection` (`string`):  When `null`, the `conflict_detection` field will be omitted from the resulting object.
   - `conflict_handler` (`string`):  When `null`, the `conflict_handler` field will be omitted from the resulting object.
-  - `lambda_conflict_handler_config` (`list[obj]`):  When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.lambda_conflict_handler_config.new](#fn-appsync_resolverlambda_conflict_handler_confignew) constructor.
+  - `lambda_conflict_handler_config` (`list[obj]`):  When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.lambda_conflict_handler_config.new](#fn-sync_configlambda_conflict_handler_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sync_config` sub block.

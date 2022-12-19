@@ -155,7 +155,7 @@ Terraform sub block.
 
 **Args**:
   - `text_transformation` (`string`): 
-  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.field_to_match.new](#fn-waf_sql_injection_match_setfield_to_matchnew) constructor.
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_sql_injection_match_set.sql_injection_match_tuples.field_to_match.new](#fn-sql_injection_match_tuplesfield_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sql_injection_match_tuples` sub block.

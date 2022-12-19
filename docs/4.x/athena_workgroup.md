@@ -259,8 +259,8 @@ Terraform sub block.
   - `enforce_workgroup_configuration` (`bool`):  When `null`, the `enforce_workgroup_configuration` field will be omitted from the resulting object.
   - `publish_cloudwatch_metrics_enabled` (`bool`):  When `null`, the `publish_cloudwatch_metrics_enabled` field will be omitted from the resulting object.
   - `requester_pays_enabled` (`bool`):  When `null`, the `requester_pays_enabled` field will be omitted from the resulting object.
-  - `engine_version` (`list[obj]`):  When `null`, the `engine_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.engine_version.new](#fn-athena_workgroupengine_versionnew) constructor.
-  - `result_configuration` (`list[obj]`):  When `null`, the `result_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.new](#fn-athena_workgroupresult_configurationnew) constructor.
+  - `engine_version` (`list[obj]`):  When `null`, the `engine_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.engine_version.new](#fn-configurationengine_versionnew) constructor.
+  - `result_configuration` (`list[obj]`):  When `null`, the `result_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.new](#fn-configurationresult_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -308,8 +308,8 @@ Terraform sub block.
 **Args**:
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `output_location` (`string`):  When `null`, the `output_location` field will be omitted from the resulting object.
-  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.acl_configuration.new](#fn-athena_workgroupconfigurationacl_configurationnew) constructor.
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.encryption_configuration.new](#fn-athena_workgroupconfigurationencryption_configurationnew) constructor.
+  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.acl_configuration.new](#fn-configurationconfigurationacl_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.result_configuration.encryption_configuration.new](#fn-configurationconfigurationencryption_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `result_configuration` sub block.

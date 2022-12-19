@@ -13,7 +13,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.service_discovery_service.dns_config.new` constructs a new object with attributes and blocks configured for the `dns_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `namespace_id` (`string`): \n  - `routing_policy` (`string`):  When `null`, the `routing_policy` field will be omitted from the resulting object.\n  - `dns_records` (`list[obj]`):  When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-service_discovery_servicedns_recordsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `dns_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.service_discovery_service.dns_config.new` constructs a new object with attributes and blocks configured for the `dns_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `namespace_id` (`string`): \n  - `routing_policy` (`string`):  When `null`, the `routing_policy` field will be omitted from the resulting object.\n  - `dns_records` (`list[obj]`):  When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-dns_configdns_recordsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `dns_config` sub block.\n', args=[]),
     new(
       namespace_id,
       dns_records=null,

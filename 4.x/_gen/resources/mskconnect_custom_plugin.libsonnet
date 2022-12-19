@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='mskconnect_custom_plugin', url='', help='`mskconnect_custom_plugin` represents the `aws_mskconnect_custom_plugin` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   location:: {
-    '#new':: d.fn(help='\n`aws.mskconnect_custom_plugin.location.new` constructs a new object with attributes and blocks configured for the `location`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_custom_plugin.location.s3.new](#fn-mskconnect_custom_plugins3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `location` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.mskconnect_custom_plugin.location.new` constructs a new object with attributes and blocks configured for the `location`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_custom_plugin.location.s3.new](#fn-locations3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `location` sub block.\n', args=[]),
     new(
       s3=null
     ):: std.prune(a={

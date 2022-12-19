@@ -296,9 +296,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `backend_defaults` (`list[obj]`):  When `null`, the `backend_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.new](#fn-appmesh_virtual_gatewaybackend_defaultsnew) constructor.
-  - `listener` (`list[obj]`):  When `null`, the `listener` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.new](#fn-appmesh_virtual_gatewaylistenernew) constructor.
-  - `logging` (`list[obj]`):  When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.new](#fn-appmesh_virtual_gatewayloggingnew) constructor.
+  - `backend_defaults` (`list[obj]`):  When `null`, the `backend_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.new](#fn-specbackend_defaultsnew) constructor.
+  - `listener` (`list[obj]`):  When `null`, the `listener` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.new](#fn-speclistenernew) constructor.
+  - `logging` (`list[obj]`):  When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.new](#fn-specloggingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.
@@ -321,7 +321,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_policy` (`list[obj]`):  When `null`, the `client_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.new](#fn-appmesh_virtual_gatewayspecclient_policynew) constructor.
+  - `client_policy` (`list[obj]`):  When `null`, the `client_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.new](#fn-specspecclient_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `backend_defaults` sub block.
@@ -344,7 +344,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `tls` (`list[obj]`):  When `null`, the `tls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.new](#fn-appmesh_virtual_gatewayspecbackend_defaultstlsnew) constructor.
+  - `tls` (`list[obj]`):  When `null`, the `tls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.new](#fn-specspecbackend_defaultstlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `client_policy` sub block.
@@ -369,8 +369,8 @@ Terraform sub block.
 **Args**:
   - `enforce` (`bool`):  When `null`, the `enforce` field will be omitted from the resulting object.
   - `ports` (`list`):  When `null`, the `ports` field will be omitted from the resulting object.
-  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.certificate.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policycertificatenew) constructor.
-  - `validation` (`list[obj]`):  When `null`, the `validation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policyvalidationnew) constructor.
+  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.certificate.new](#fn-specspecbackend_defaultsclient_policycertificatenew) constructor.
+  - `validation` (`list[obj]`):  When `null`, the `validation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.new](#fn-specspecbackend_defaultsclient_policyvalidationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tls` sub block.
@@ -393,8 +393,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.certificate.file.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlsfilenew) constructor.
-  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.certificate.sds.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlssdsnew) constructor.
+  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.certificate.file.new](#fn-specspecbackend_defaultsclient_policytlsfilenew) constructor.
+  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.certificate.sds.new](#fn-specspecbackend_defaultsclient_policytlssdsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `certificate` sub block.
@@ -464,8 +464,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `subject_alternative_names` (`list[obj]`):  When `null`, the `subject_alternative_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.subject_alternative_names.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlssubject_alternative_namesnew) constructor.
-  - `trust` (`list[obj]`):  When `null`, the `trust` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlstrustnew) constructor.
+  - `subject_alternative_names` (`list[obj]`):  When `null`, the `subject_alternative_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.subject_alternative_names.new](#fn-specspecbackend_defaultsclient_policytlssubject_alternative_namesnew) constructor.
+  - `trust` (`list[obj]`):  When `null`, the `trust` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.new](#fn-specspecbackend_defaultsclient_policytlstrustnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `validation` sub block.
@@ -488,7 +488,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.subject_alternative_names.match.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlsvalidationmatchnew) constructor.
+  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.subject_alternative_names.match.new](#fn-specspecbackend_defaultsclient_policytlsvalidationmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `subject_alternative_names` sub block.
@@ -534,9 +534,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `acm` (`list[obj]`):  When `null`, the `acm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.acm.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlsvalidationacmnew) constructor.
-  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.file.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlsvalidationfilenew) constructor.
-  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.sds.new](#fn-appmesh_virtual_gatewayspecbackend_defaultsclient_policytlsvalidationsdsnew) constructor.
+  - `acm` (`list[obj]`):  When `null`, the `acm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.acm.new](#fn-specspecbackend_defaultsclient_policytlsvalidationacmnew) constructor.
+  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.file.new](#fn-specspecbackend_defaultsclient_policytlsvalidationfilenew) constructor.
+  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.backend_defaults.client_policy.tls.validation.trust.sds.new](#fn-specspecbackend_defaultsclient_policytlsvalidationsdsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `trust` sub block.
@@ -628,10 +628,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_pool` (`list[obj]`):  When `null`, the `connection_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.new](#fn-appmesh_virtual_gatewayspecconnection_poolnew) constructor.
-  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.health_check.new](#fn-appmesh_virtual_gatewayspechealth_checknew) constructor.
-  - `port_mapping` (`list[obj]`):  When `null`, the `port_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.port_mapping.new](#fn-appmesh_virtual_gatewayspecport_mappingnew) constructor.
-  - `tls` (`list[obj]`):  When `null`, the `tls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.new](#fn-appmesh_virtual_gatewayspectlsnew) constructor.
+  - `connection_pool` (`list[obj]`):  When `null`, the `connection_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.new](#fn-specspecconnection_poolnew) constructor.
+  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.health_check.new](#fn-specspechealth_checknew) constructor.
+  - `port_mapping` (`list[obj]`):  When `null`, the `port_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.port_mapping.new](#fn-specspecport_mappingnew) constructor.
+  - `tls` (`list[obj]`):  When `null`, the `tls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.new](#fn-specspectlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `listener` sub block.
@@ -654,9 +654,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `grpc` (`list[obj]`):  When `null`, the `grpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.grpc.new](#fn-appmesh_virtual_gatewayspeclistenergrpcnew) constructor.
-  - `http` (`list[obj]`):  When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.http.new](#fn-appmesh_virtual_gatewayspeclistenerhttpnew) constructor.
-  - `http2` (`list[obj]`):  When `null`, the `http2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.http2.new](#fn-appmesh_virtual_gatewayspeclistenerhttp2new) constructor.
+  - `grpc` (`list[obj]`):  When `null`, the `grpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.grpc.new](#fn-specspeclistenergrpcnew) constructor.
+  - `http` (`list[obj]`):  When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.http.new](#fn-specspeclistenerhttpnew) constructor.
+  - `http2` (`list[obj]`):  When `null`, the `http2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.connection_pool.http2.new](#fn-specspeclistenerhttp2new) constructor.
 
 **Returns**:
   - An attribute object that represents the `connection_pool` sub block.
@@ -803,8 +803,8 @@ Terraform sub block.
 
 **Args**:
   - `mode` (`string`): 
-  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.new](#fn-appmesh_virtual_gatewayspeclistenercertificatenew) constructor.
-  - `validation` (`list[obj]`):  When `null`, the `validation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.new](#fn-appmesh_virtual_gatewayspeclistenervalidationnew) constructor.
+  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.new](#fn-specspeclistenercertificatenew) constructor.
+  - `validation` (`list[obj]`):  When `null`, the `validation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.new](#fn-specspeclistenervalidationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tls` sub block.
@@ -827,9 +827,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `acm` (`list[obj]`):  When `null`, the `acm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.acm.new](#fn-appmesh_virtual_gatewayspeclistenertlsacmnew) constructor.
-  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.file.new](#fn-appmesh_virtual_gatewayspeclistenertlsfilenew) constructor.
-  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.sds.new](#fn-appmesh_virtual_gatewayspeclistenertlssdsnew) constructor.
+  - `acm` (`list[obj]`):  When `null`, the `acm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.acm.new](#fn-specspeclistenertlsacmnew) constructor.
+  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.file.new](#fn-specspeclistenertlsfilenew) constructor.
+  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.certificate.sds.new](#fn-specspeclistenertlssdsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `certificate` sub block.
@@ -922,8 +922,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `subject_alternative_names` (`list[obj]`):  When `null`, the `subject_alternative_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.subject_alternative_names.new](#fn-appmesh_virtual_gatewayspeclistenertlssubject_alternative_namesnew) constructor.
-  - `trust` (`list[obj]`):  When `null`, the `trust` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.trust.new](#fn-appmesh_virtual_gatewayspeclistenertlstrustnew) constructor.
+  - `subject_alternative_names` (`list[obj]`):  When `null`, the `subject_alternative_names` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.subject_alternative_names.new](#fn-specspeclistenertlssubject_alternative_namesnew) constructor.
+  - `trust` (`list[obj]`):  When `null`, the `trust` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.trust.new](#fn-specspeclistenertlstrustnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `validation` sub block.
@@ -946,7 +946,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.subject_alternative_names.match.new](#fn-appmesh_virtual_gatewayspeclistenertlsvalidationmatchnew) constructor.
+  - `match` (`list[obj]`):  When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.subject_alternative_names.match.new](#fn-specspeclistenertlsvalidationmatchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `subject_alternative_names` sub block.
@@ -992,8 +992,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.trust.file.new](#fn-appmesh_virtual_gatewayspeclistenertlsvalidationfilenew) constructor.
-  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.trust.sds.new](#fn-appmesh_virtual_gatewayspeclistenertlsvalidationsdsnew) constructor.
+  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.trust.file.new](#fn-specspeclistenertlsvalidationfilenew) constructor.
+  - `sds` (`list[obj]`):  When `null`, the `sds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.listener.tls.validation.trust.sds.new](#fn-specspeclistenertlsvalidationsdsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `trust` sub block.
@@ -1062,7 +1062,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `access_log` (`list[obj]`):  When `null`, the `access_log` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.new](#fn-appmesh_virtual_gatewayspecaccess_lognew) constructor.
+  - `access_log` (`list[obj]`):  When `null`, the `access_log` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.new](#fn-specspecaccess_lognew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging` sub block.
@@ -1085,7 +1085,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.file.new](#fn-appmesh_virtual_gatewayspecloggingfilenew) constructor.
+  - `file` (`list[obj]`):  When `null`, the `file` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.file.new](#fn-specspecloggingfilenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `access_log` sub block.

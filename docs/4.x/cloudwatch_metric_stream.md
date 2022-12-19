@@ -443,7 +443,7 @@ Terraform sub block.
 
 **Args**:
   - `additional_statistics` (`list`): 
-  - `include_metric` (`list[obj]`):  When `null`, the `include_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.include_metric.new](#fn-cloudwatch_metric_streaminclude_metricnew) constructor.
+  - `include_metric` (`list[obj]`):  When `null`, the `include_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_stream.statistics_configuration.include_metric.new](#fn-statistics_configurationinclude_metricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `statistics_configuration` sub block.

@@ -720,7 +720,7 @@ Terraform sub block.
 
 **Args**:
   - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_streams` (`list[obj]`):  When `null`, the `log_streams` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.log_streams.new](#fn-opsworks_java_app_layerlog_streamsnew) constructor.
+  - `log_streams` (`list[obj]`):  When `null`, the `log_streams` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.log_streams.new](#fn-cloudwatch_configurationlog_streamsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_configuration` sub block.
@@ -806,8 +806,8 @@ Terraform sub block.
 
 **Args**:
   - `enable` (`bool`):  When `null`, the `enable` field will be omitted from the resulting object.
-  - `downscaling` (`list[obj]`):  When `null`, the `downscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.downscaling.new](#fn-opsworks_java_app_layerdownscalingnew) constructor.
-  - `upscaling` (`list[obj]`):  When `null`, the `upscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.upscaling.new](#fn-opsworks_java_app_layerupscalingnew) constructor.
+  - `downscaling` (`list[obj]`):  When `null`, the `downscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.downscaling.new](#fn-load_based_auto_scalingdownscalingnew) constructor.
+  - `upscaling` (`list[obj]`):  When `null`, the `upscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.upscaling.new](#fn-load_based_auto_scalingupscalingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `load_based_auto_scaling` sub block.

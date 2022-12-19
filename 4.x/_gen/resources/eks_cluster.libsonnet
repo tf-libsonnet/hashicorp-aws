@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='eks_cluster', url='', help='`eks_cluster` represents the `aws_eks_cluster` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   encryption_config:: {
-    '#new':: d.fn(help='\n`aws.eks_cluster.encryption_config.new` constructs a new object with attributes and blocks configured for the `encryption_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `resources` (`list`): \n  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.provider.new](#fn-eks_clusterprovidernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `encryption_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.eks_cluster.encryption_config.new` constructs a new object with attributes and blocks configured for the `encryption_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `resources` (`list`): \n  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.provider.new](#fn-encryption_configprovidernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `encryption_config` sub block.\n', args=[]),
     new(
       resources,
       provider=null
@@ -98,7 +98,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         group_name: group_name,
       }),
     },
-    '#new':: d.fn(help='\n`aws.eks_cluster.outpost_config.new` constructs a new object with attributes and blocks configured for the `outpost_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `control_plane_instance_type` (`string`): \n  - `outpost_arns` (`list`): \n  - `control_plane_placement` (`list[obj]`):  When `null`, the `control_plane_placement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.control_plane_placement.new](#fn-eks_clustercontrol_plane_placementnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `outpost_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.eks_cluster.outpost_config.new` constructs a new object with attributes and blocks configured for the `outpost_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `control_plane_instance_type` (`string`): \n  - `outpost_arns` (`list`): \n  - `control_plane_placement` (`list[obj]`):  When `null`, the `control_plane_placement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.control_plane_placement.new](#fn-outpost_configcontrol_plane_placementnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `outpost_config` sub block.\n', args=[]),
     new(
       control_plane_instance_type,
       outpost_arns,

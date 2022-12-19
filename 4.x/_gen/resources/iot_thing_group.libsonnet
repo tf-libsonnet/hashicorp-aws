@@ -46,7 +46,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         attributes: attributes,
       }),
     },
-    '#new':: d.fn(help='\n`aws.iot_thing_group.properties.new` constructs a new object with attributes and blocks configured for the `properties`\nTerraform sub block.\n\n\n\n**Args**:\n  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.\n  - `attribute_payload` (`list[obj]`):  When `null`, the `attribute_payload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.attribute_payload.new](#fn-iot_thing_groupattribute_payloadnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `properties` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.iot_thing_group.properties.new` constructs a new object with attributes and blocks configured for the `properties`\nTerraform sub block.\n\n\n\n**Args**:\n  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.\n  - `attribute_payload` (`list[obj]`):  When `null`, the `attribute_payload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.attribute_payload.new](#fn-propertiesattribute_payloadnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `properties` sub block.\n', args=[]),
     new(
       attribute_payload=null,
       description=null

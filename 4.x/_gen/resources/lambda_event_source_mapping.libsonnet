@@ -11,7 +11,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   destination_config:: {
-    '#new':: d.fn(help='\n`aws.lambda_event_source_mapping.destination_config.new` constructs a new object with attributes and blocks configured for the `destination_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-lambda_event_source_mappingon_failurenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lambda_event_source_mapping.destination_config.new` constructs a new object with attributes and blocks configured for the `destination_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination_config` sub block.\n', args=[]),
     new(
       on_failure=null
     ):: std.prune(a={
@@ -35,7 +35,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         pattern: pattern,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lambda_event_source_mapping.filter_criteria.new` constructs a new object with attributes and blocks configured for the `filter_criteria`\nTerraform sub block.\n\n\n\n**Args**:\n  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-lambda_event_source_mappingfilternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `filter_criteria` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lambda_event_source_mapping.filter_criteria.new` constructs a new object with attributes and blocks configured for the `filter_criteria`\nTerraform sub block.\n\n\n\n**Args**:\n  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-filter_criteriafilternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `filter_criteria` sub block.\n', args=[]),
     new(
       filter=null
     ):: std.prune(a={

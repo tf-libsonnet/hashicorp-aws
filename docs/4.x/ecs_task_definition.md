@@ -727,9 +727,9 @@ Terraform sub block.
 **Args**:
   - `host_path` (`string`):  When `null`, the `host_path` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `docker_volume_configuration` (`list[obj]`):  When `null`, the `docker_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.docker_volume_configuration.new](#fn-ecs_task_definitiondocker_volume_configurationnew) constructor.
-  - `efs_volume_configuration` (`list[obj]`):  When `null`, the `efs_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.new](#fn-ecs_task_definitionefs_volume_configurationnew) constructor.
-  - `fsx_windows_file_server_volume_configuration` (`list[obj]`):  When `null`, the `fsx_windows_file_server_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.new](#fn-ecs_task_definitionfsx_windows_file_server_volume_configurationnew) constructor.
+  - `docker_volume_configuration` (`list[obj]`):  When `null`, the `docker_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.docker_volume_configuration.new](#fn-volumedocker_volume_configurationnew) constructor.
+  - `efs_volume_configuration` (`list[obj]`):  When `null`, the `efs_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.new](#fn-volumeefs_volume_configurationnew) constructor.
+  - `fsx_windows_file_server_volume_configuration` (`list[obj]`):  When `null`, the `fsx_windows_file_server_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.new](#fn-volumefsx_windows_file_server_volume_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `volume` sub block.
@@ -783,7 +783,7 @@ Terraform sub block.
   - `root_directory` (`string`):  When `null`, the `root_directory` field will be omitted from the resulting object.
   - `transit_encryption` (`string`):  When `null`, the `transit_encryption` field will be omitted from the resulting object.
   - `transit_encryption_port` (`number`):  When `null`, the `transit_encryption_port` field will be omitted from the resulting object.
-  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.authorization_config.new](#fn-ecs_task_definitionvolumeauthorization_confignew) constructor.
+  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.authorization_config.new](#fn-volumevolumeauthorization_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `efs_volume_configuration` sub block.
@@ -832,7 +832,7 @@ Terraform sub block.
 **Args**:
   - `file_system_id` (`string`): 
   - `root_directory` (`string`): 
-  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.authorization_config.new](#fn-ecs_task_definitionvolumeauthorization_confignew) constructor.
+  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.authorization_config.new](#fn-volumevolumeauthorization_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `fsx_windows_file_server_volume_configuration` sub block.

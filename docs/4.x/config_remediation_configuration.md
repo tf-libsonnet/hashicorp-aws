@@ -330,7 +330,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ssm_controls` (`list[obj]`):  When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-config_remediation_configurationssm_controlsnew) constructor.
+  - `ssm_controls` (`list[obj]`):  When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-execution_controlsssm_controlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `execution_controls` sub block.

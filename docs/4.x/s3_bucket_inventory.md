@@ -322,7 +322,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`list[obj]`):  When `null`, the `bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.new](#fn-s3_bucket_inventorybucketnew) constructor.
+  - `bucket` (`list[obj]`):  When `null`, the `bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.new](#fn-destinationbucketnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.
@@ -349,7 +349,7 @@ Terraform sub block.
   - `bucket_arn` (`string`): 
   - `format` (`string`): 
   - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `encryption` (`list[obj]`):  When `null`, the `encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.new](#fn-s3_bucket_inventorydestinationencryptionnew) constructor.
+  - `encryption` (`list[obj]`):  When `null`, the `encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.new](#fn-destinationdestinationencryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `bucket` sub block.
@@ -372,8 +372,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `sse_kms` (`list[obj]`):  When `null`, the `sse_kms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_kms.new](#fn-s3_bucket_inventorydestinationbucketsse_kmsnew) constructor.
-  - `sse_s3` (`list[obj]`):  When `null`, the `sse_s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_s3.new](#fn-s3_bucket_inventorydestinationbucketsse_s3new) constructor.
+  - `sse_kms` (`list[obj]`):  When `null`, the `sse_kms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_kms.new](#fn-destinationdestinationbucketsse_kmsnew) constructor.
+  - `sse_s3` (`list[obj]`):  When `null`, the `sse_s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_s3.new](#fn-destinationdestinationbucketsse_s3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption` sub block.

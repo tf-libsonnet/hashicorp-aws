@@ -342,7 +342,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `execute_command_configuration` (`list[obj]`):  When `null`, the `execute_command_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.new](#fn-ecs_clusterexecute_command_configurationnew) constructor.
+  - `execute_command_configuration` (`list[obj]`):  When `null`, the `execute_command_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.new](#fn-configurationexecute_command_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -367,7 +367,7 @@ Terraform sub block.
 **Args**:
   - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `logging` (`string`):  When `null`, the `logging` field will be omitted from the resulting object.
-  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.log_configuration.new](#fn-ecs_clusterconfigurationlog_configurationnew) constructor.
+  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.log_configuration.new](#fn-configurationconfigurationlog_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `execute_command_configuration` sub block.

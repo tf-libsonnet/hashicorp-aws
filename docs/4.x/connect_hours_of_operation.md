@@ -252,8 +252,8 @@ Terraform sub block.
 
 **Args**:
   - `day` (`string`): 
-  - `end_time` (`list[obj]`):  When `null`, the `end_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.end_time.new](#fn-connect_hours_of_operationend_timenew) constructor.
-  - `start_time` (`list[obj]`):  When `null`, the `start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.start_time.new](#fn-connect_hours_of_operationstart_timenew) constructor.
+  - `end_time` (`list[obj]`):  When `null`, the `end_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.end_time.new](#fn-configend_timenew) constructor.
+  - `start_time` (`list[obj]`):  When `null`, the `start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_hours_of_operation.config.start_time.new](#fn-configstart_timenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `config` sub block.

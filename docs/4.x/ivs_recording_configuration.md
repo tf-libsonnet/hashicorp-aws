@@ -296,7 +296,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-ivs_recording_configurations3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-destination_configurations3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_configuration` sub block.

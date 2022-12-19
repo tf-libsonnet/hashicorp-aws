@@ -426,9 +426,9 @@ Terraform sub block.
 
 **Args**:
   - `authentication_type` (`string`): 
-  - `lambda_authorizer_config` (`list[obj]`):  When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.lambda_authorizer_config.new](#fn-appsync_graphql_apilambda_authorizer_confignew) constructor.
-  - `openid_connect_config` (`list[obj]`):  When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.openid_connect_config.new](#fn-appsync_graphql_apiopenid_connect_confignew) constructor.
-  - `user_pool_config` (`list[obj]`):  When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.user_pool_config.new](#fn-appsync_graphql_apiuser_pool_confignew) constructor.
+  - `lambda_authorizer_config` (`list[obj]`):  When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.lambda_authorizer_config.new](#fn-additional_authentication_providerlambda_authorizer_confignew) constructor.
+  - `openid_connect_config` (`list[obj]`):  When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.openid_connect_config.new](#fn-additional_authentication_provideropenid_connect_confignew) constructor.
+  - `user_pool_config` (`list[obj]`):  When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.user_pool_config.new](#fn-additional_authentication_provideruser_pool_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `additional_authentication_provider` sub block.

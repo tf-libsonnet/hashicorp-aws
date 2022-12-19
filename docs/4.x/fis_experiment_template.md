@@ -349,8 +349,8 @@ Terraform sub block.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `start_after` (`list`):  When `null`, the `start_after` field will be omitted from the resulting object.
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.parameter.new](#fn-fis_experiment_templateparameternew) constructor.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.target.new](#fn-fis_experiment_templatetargetnew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.parameter.new](#fn-actionparameternew) constructor.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.target.new](#fn-actiontargetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -449,8 +449,8 @@ Terraform sub block.
   - `resource_arns` (`list`):  When `null`, the `resource_arns` field will be omitted from the resulting object.
   - `resource_type` (`string`): 
   - `selection_mode` (`string`): 
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.filter.new](#fn-fis_experiment_templatefilternew) constructor.
-  - `resource_tag` (`list[obj]`):  When `null`, the `resource_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.resource_tag.new](#fn-fis_experiment_templateresource_tagnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.filter.new](#fn-targetfilternew) constructor.
+  - `resource_tag` (`list[obj]`):  When `null`, the `resource_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.resource_tag.new](#fn-targetresource_tagnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target` sub block.

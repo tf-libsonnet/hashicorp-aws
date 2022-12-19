@@ -154,7 +154,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `realtime_metrics_subscription_config` (`list[obj]`):  When `null`, the `realtime_metrics_subscription_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.realtime_metrics_subscription_config.new](#fn-cloudfront_monitoring_subscriptionrealtime_metrics_subscription_confignew) constructor.
+  - `realtime_metrics_subscription_config` (`list[obj]`):  When `null`, the `realtime_metrics_subscription_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.realtime_metrics_subscription_config.new](#fn-monitoring_subscriptionrealtime_metrics_subscription_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `monitoring_subscription` sub block.

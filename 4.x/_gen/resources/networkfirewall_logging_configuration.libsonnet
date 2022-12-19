@@ -15,7 +15,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         log_type: log_type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.networkfirewall_logging_configuration.logging_configuration.new` constructs a new object with attributes and blocks configured for the `logging_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_destination_config` (`list[obj]`):  When `null`, the `log_destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.log_destination_config.new](#fn-networkfirewall_logging_configurationlog_destination_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `logging_configuration` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.networkfirewall_logging_configuration.logging_configuration.new` constructs a new object with attributes and blocks configured for the `logging_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_destination_config` (`list[obj]`):  When `null`, the `log_destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_logging_configuration.logging_configuration.log_destination_config.new](#fn-logging_configurationlog_destination_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `logging_configuration` sub block.\n', args=[]),
     new(
       log_destination_config=null
     ):: std.prune(a={

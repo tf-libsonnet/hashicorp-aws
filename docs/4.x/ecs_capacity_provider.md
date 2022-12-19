@@ -194,7 +194,7 @@ Terraform sub block.
 **Args**:
   - `auto_scaling_group_arn` (`string`): 
   - `managed_termination_protection` (`string`):  When `null`, the `managed_termination_protection` field will be omitted from the resulting object.
-  - `managed_scaling` (`list[obj]`):  When `null`, the `managed_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.managed_scaling.new](#fn-ecs_capacity_providermanaged_scalingnew) constructor.
+  - `managed_scaling` (`list[obj]`):  When `null`, the `managed_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.managed_scaling.new](#fn-auto_scaling_group_providermanaged_scalingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_scaling_group_provider` sub block.

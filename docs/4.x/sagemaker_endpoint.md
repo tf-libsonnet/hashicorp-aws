@@ -221,8 +221,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `auto_rollback_configuration` (`list[obj]`):  When `null`, the `auto_rollback_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.auto_rollback_configuration.new](#fn-sagemaker_endpointauto_rollback_configurationnew) constructor.
-  - `blue_green_update_policy` (`list[obj]`):  When `null`, the `blue_green_update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.new](#fn-sagemaker_endpointblue_green_update_policynew) constructor.
+  - `auto_rollback_configuration` (`list[obj]`):  When `null`, the `auto_rollback_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.auto_rollback_configuration.new](#fn-deployment_configauto_rollback_configurationnew) constructor.
+  - `blue_green_update_policy` (`list[obj]`):  When `null`, the `blue_green_update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.new](#fn-deployment_configblue_green_update_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `deployment_config` sub block.
@@ -245,7 +245,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `alarms` (`list[obj]`):  When `null`, the `alarms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.auto_rollback_configuration.alarms.new](#fn-sagemaker_endpointdeployment_configalarmsnew) constructor.
+  - `alarms` (`list[obj]`):  When `null`, the `alarms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.auto_rollback_configuration.alarms.new](#fn-deployment_configdeployment_configalarmsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_rollback_configuration` sub block.
@@ -293,7 +293,7 @@ Terraform sub block.
 **Args**:
   - `maximum_execution_timeout_in_seconds` (`number`):  When `null`, the `maximum_execution_timeout_in_seconds` field will be omitted from the resulting object.
   - `termination_wait_in_seconds` (`number`):  When `null`, the `termination_wait_in_seconds` field will be omitted from the resulting object.
-  - `traffic_routing_configuration` (`list[obj]`):  When `null`, the `traffic_routing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.traffic_routing_configuration.new](#fn-sagemaker_endpointdeployment_configtraffic_routing_configurationnew) constructor.
+  - `traffic_routing_configuration` (`list[obj]`):  When `null`, the `traffic_routing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.traffic_routing_configuration.new](#fn-deployment_configdeployment_configtraffic_routing_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `blue_green_update_policy` sub block.
@@ -318,8 +318,8 @@ Terraform sub block.
 **Args**:
   - `type` (`string`): 
   - `wait_interval_in_seconds` (`number`): 
-  - `canary_size` (`list[obj]`):  When `null`, the `canary_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.traffic_routing_configuration.canary_size.new](#fn-sagemaker_endpointdeployment_configblue_green_update_policycanary_sizenew) constructor.
-  - `linear_step_size` (`list[obj]`):  When `null`, the `linear_step_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.traffic_routing_configuration.linear_step_size.new](#fn-sagemaker_endpointdeployment_configblue_green_update_policylinear_step_sizenew) constructor.
+  - `canary_size` (`list[obj]`):  When `null`, the `canary_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.traffic_routing_configuration.canary_size.new](#fn-deployment_configdeployment_configblue_green_update_policycanary_sizenew) constructor.
+  - `linear_step_size` (`list[obj]`):  When `null`, the `linear_step_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.traffic_routing_configuration.linear_step_size.new](#fn-deployment_configdeployment_configblue_green_update_policylinear_step_sizenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `traffic_routing_configuration` sub block.

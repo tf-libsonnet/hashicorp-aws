@@ -13,7 +13,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   logging:: {
-    '#new':: d.fn(help='\n`aws.imagebuilder_infrastructure_configuration.logging.new` constructs a new object with attributes and blocks configured for the `logging`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.s3_logs.new](#fn-imagebuilder_infrastructure_configurations3_logsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `logging` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.imagebuilder_infrastructure_configuration.logging.new` constructs a new object with attributes and blocks configured for the `logging`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.s3_logs.new](#fn-loggings3_logsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `logging` sub block.\n', args=[]),
     new(
       s3_logs=null
     ):: std.prune(a={

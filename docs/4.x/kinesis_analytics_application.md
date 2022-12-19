@@ -447,12 +447,12 @@ Terraform sub block.
 
 **Args**:
   - `name_prefix` (`string`): 
-  - `kinesis_firehose` (`list[obj]`):  When `null`, the `kinesis_firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.kinesis_firehose.new](#fn-kinesis_analytics_applicationkinesis_firehosenew) constructor.
-  - `kinesis_stream` (`list[obj]`):  When `null`, the `kinesis_stream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.kinesis_stream.new](#fn-kinesis_analytics_applicationkinesis_streamnew) constructor.
-  - `parallelism` (`list[obj]`):  When `null`, the `parallelism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.parallelism.new](#fn-kinesis_analytics_applicationparallelismnew) constructor.
-  - `processing_configuration` (`list[obj]`):  When `null`, the `processing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.processing_configuration.new](#fn-kinesis_analytics_applicationprocessing_configurationnew) constructor.
-  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.new](#fn-kinesis_analytics_applicationschemanew) constructor.
-  - `starting_position_configuration` (`list[obj]`):  When `null`, the `starting_position_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.starting_position_configuration.new](#fn-kinesis_analytics_applicationstarting_position_configurationnew) constructor.
+  - `kinesis_firehose` (`list[obj]`):  When `null`, the `kinesis_firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.kinesis_firehose.new](#fn-inputskinesis_firehosenew) constructor.
+  - `kinesis_stream` (`list[obj]`):  When `null`, the `kinesis_stream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.kinesis_stream.new](#fn-inputskinesis_streamnew) constructor.
+  - `parallelism` (`list[obj]`):  When `null`, the `parallelism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.parallelism.new](#fn-inputsparallelismnew) constructor.
+  - `processing_configuration` (`list[obj]`):  When `null`, the `processing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.processing_configuration.new](#fn-inputsprocessing_configurationnew) constructor.
+  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.new](#fn-inputsschemanew) constructor.
+  - `starting_position_configuration` (`list[obj]`):  When `null`, the `starting_position_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.starting_position_configuration.new](#fn-inputsstarting_position_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `inputs` sub block.
@@ -546,7 +546,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.processing_configuration.lambda.new](#fn-kinesis_analytics_applicationinputslambdanew) constructor.
+  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.processing_configuration.lambda.new](#fn-inputsinputslambdanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `processing_configuration` sub block.
@@ -594,8 +594,8 @@ Terraform sub block.
 
 **Args**:
   - `record_encoding` (`string`):  When `null`, the `record_encoding` field will be omitted from the resulting object.
-  - `record_columns` (`list[obj]`):  When `null`, the `record_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_columns.new](#fn-kinesis_analytics_applicationinputsrecord_columnsnew) constructor.
-  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.new](#fn-kinesis_analytics_applicationinputsrecord_formatnew) constructor.
+  - `record_columns` (`list[obj]`):  When `null`, the `record_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_columns.new](#fn-inputsinputsrecord_columnsnew) constructor.
+  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.new](#fn-inputsinputsrecord_formatnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema` sub block.
@@ -643,7 +643,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.mapping_parameters.new](#fn-kinesis_analytics_applicationinputsschemamapping_parametersnew) constructor.
+  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.mapping_parameters.new](#fn-inputsinputsschemamapping_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `record_format` sub block.
@@ -666,8 +666,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `csv` (`list[obj]`):  When `null`, the `csv` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.mapping_parameters.csv.new](#fn-kinesis_analytics_applicationinputsschemarecord_formatcsvnew) constructor.
-  - `json` (`list[obj]`):  When `null`, the `json` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.mapping_parameters.json.new](#fn-kinesis_analytics_applicationinputsschemarecord_formatjsonnew) constructor.
+  - `csv` (`list[obj]`):  When `null`, the `csv` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.mapping_parameters.csv.new](#fn-inputsinputsschemarecord_formatcsvnew) constructor.
+  - `json` (`list[obj]`):  When `null`, the `json` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.inputs.schema.record_format.mapping_parameters.json.new](#fn-inputsinputsschemarecord_formatjsonnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `mapping_parameters` sub block.
@@ -761,10 +761,10 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `kinesis_firehose` (`list[obj]`):  When `null`, the `kinesis_firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.kinesis_firehose.new](#fn-kinesis_analytics_applicationkinesis_firehosenew) constructor.
-  - `kinesis_stream` (`list[obj]`):  When `null`, the `kinesis_stream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.kinesis_stream.new](#fn-kinesis_analytics_applicationkinesis_streamnew) constructor.
-  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.lambda.new](#fn-kinesis_analytics_applicationlambdanew) constructor.
-  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.schema.new](#fn-kinesis_analytics_applicationschemanew) constructor.
+  - `kinesis_firehose` (`list[obj]`):  When `null`, the `kinesis_firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.kinesis_firehose.new](#fn-outputskinesis_firehosenew) constructor.
+  - `kinesis_stream` (`list[obj]`):  When `null`, the `kinesis_stream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.kinesis_stream.new](#fn-outputskinesis_streamnew) constructor.
+  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.lambda.new](#fn-outputslambdanew) constructor.
+  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.outputs.schema.new](#fn-outputsschemanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `outputs` sub block.
@@ -883,8 +883,8 @@ Terraform sub block.
 
 **Args**:
   - `table_name` (`string`): 
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.s3.new](#fn-kinesis_analytics_applications3new) constructor.
-  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.new](#fn-kinesis_analytics_applicationschemanew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.s3.new](#fn-reference_data_sourcess3new) constructor.
+  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.new](#fn-reference_data_sourcesschemanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `reference_data_sources` sub block.
@@ -933,8 +933,8 @@ Terraform sub block.
 
 **Args**:
   - `record_encoding` (`string`):  When `null`, the `record_encoding` field will be omitted from the resulting object.
-  - `record_columns` (`list[obj]`):  When `null`, the `record_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_columns.new](#fn-kinesis_analytics_applicationreference_data_sourcesrecord_columnsnew) constructor.
-  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.new](#fn-kinesis_analytics_applicationreference_data_sourcesrecord_formatnew) constructor.
+  - `record_columns` (`list[obj]`):  When `null`, the `record_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_columns.new](#fn-reference_data_sourcesreference_data_sourcesrecord_columnsnew) constructor.
+  - `record_format` (`list[obj]`):  When `null`, the `record_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.new](#fn-reference_data_sourcesreference_data_sourcesrecord_formatnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema` sub block.
@@ -982,7 +982,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.mapping_parameters.new](#fn-kinesis_analytics_applicationreference_data_sourcesschemamapping_parametersnew) constructor.
+  - `mapping_parameters` (`list[obj]`):  When `null`, the `mapping_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.mapping_parameters.new](#fn-reference_data_sourcesreference_data_sourcesschemamapping_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `record_format` sub block.
@@ -1005,8 +1005,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `csv` (`list[obj]`):  When `null`, the `csv` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.mapping_parameters.csv.new](#fn-kinesis_analytics_applicationreference_data_sourcesschemarecord_formatcsvnew) constructor.
-  - `json` (`list[obj]`):  When `null`, the `json` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.mapping_parameters.json.new](#fn-kinesis_analytics_applicationreference_data_sourcesschemarecord_formatjsonnew) constructor.
+  - `csv` (`list[obj]`):  When `null`, the `csv` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.mapping_parameters.csv.new](#fn-reference_data_sourcesreference_data_sourcesschemarecord_formatcsvnew) constructor.
+  - `json` (`list[obj]`):  When `null`, the `json` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_analytics_application.reference_data_sources.schema.record_format.mapping_parameters.json.new](#fn-reference_data_sourcesreference_data_sourcesschemarecord_formatjsonnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `mapping_parameters` sub block.

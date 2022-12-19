@@ -498,7 +498,7 @@ Terraform sub block.
 
 **Args**:
   - `auto_adjust_type` (`string`): 
-  - `historical_options` (`list[obj]`):  When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-budgets_budgethistorical_optionsnew) constructor.
+  - `historical_options` (`list[obj]`):  When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-auto_adjust_datahistorical_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_adjust_data` sub block.

@@ -255,8 +255,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.cloudwatch_logs.new](#fn-evidently_projectcloudwatch_logsnew) constructor.
-  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.s3_destination.new](#fn-evidently_projects3_destinationnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.cloudwatch_logs.new](#fn-data_deliverycloudwatch_logsnew) constructor.
+  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_project.data_delivery.s3_destination.new](#fn-data_deliverys3_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_delivery` sub block.

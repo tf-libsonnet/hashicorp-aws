@@ -518,8 +518,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `egress_configuration` (`list[obj]`):  When `null`, the `egress_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.network_configuration.egress_configuration.new](#fn-apprunner_serviceegress_configurationnew) constructor.
-  - `ingress_configuration` (`list[obj]`):  When `null`, the `ingress_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.network_configuration.ingress_configuration.new](#fn-apprunner_serviceingress_configurationnew) constructor.
+  - `egress_configuration` (`list[obj]`):  When `null`, the `egress_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.network_configuration.egress_configuration.new](#fn-network_configurationegress_configurationnew) constructor.
+  - `ingress_configuration` (`list[obj]`):  When `null`, the `ingress_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.network_configuration.ingress_configuration.new](#fn-network_configurationingress_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `network_configuration` sub block.
@@ -614,9 +614,9 @@ Terraform sub block.
 
 **Args**:
   - `auto_deployments_enabled` (`bool`):  When `null`, the `auto_deployments_enabled` field will be omitted from the resulting object.
-  - `authentication_configuration` (`list[obj]`):  When `null`, the `authentication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.authentication_configuration.new](#fn-apprunner_serviceauthentication_configurationnew) constructor.
-  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.new](#fn-apprunner_servicecode_repositorynew) constructor.
-  - `image_repository` (`list[obj]`):  When `null`, the `image_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.image_repository.new](#fn-apprunner_serviceimage_repositorynew) constructor.
+  - `authentication_configuration` (`list[obj]`):  When `null`, the `authentication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.authentication_configuration.new](#fn-source_configurationauthentication_configurationnew) constructor.
+  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.new](#fn-source_configurationcode_repositorynew) constructor.
+  - `image_repository` (`list[obj]`):  When `null`, the `image_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.image_repository.new](#fn-source_configurationimage_repositorynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source_configuration` sub block.
@@ -664,8 +664,8 @@ Terraform sub block.
 
 **Args**:
   - `repository_url` (`string`): 
-  - `code_configuration` (`list[obj]`):  When `null`, the `code_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.code_configuration.new](#fn-apprunner_servicesource_configurationcode_configurationnew) constructor.
-  - `source_code_version` (`list[obj]`):  When `null`, the `source_code_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.source_code_version.new](#fn-apprunner_servicesource_configurationsource_code_versionnew) constructor.
+  - `code_configuration` (`list[obj]`):  When `null`, the `code_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.code_configuration.new](#fn-source_configurationsource_configurationcode_configurationnew) constructor.
+  - `source_code_version` (`list[obj]`):  When `null`, the `source_code_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.source_code_version.new](#fn-source_configurationsource_configurationsource_code_versionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `code_repository` sub block.
@@ -689,7 +689,7 @@ Terraform sub block.
 
 **Args**:
   - `configuration_source` (`string`): 
-  - `code_configuration_values` (`list[obj]`):  When `null`, the `code_configuration_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.code_configuration.code_configuration_values.new](#fn-apprunner_servicesource_configurationcode_repositorycode_configuration_valuesnew) constructor.
+  - `code_configuration_values` (`list[obj]`):  When `null`, the `code_configuration_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.code_configuration.code_configuration_values.new](#fn-source_configurationsource_configurationcode_repositorycode_configuration_valuesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `code_configuration` sub block.
@@ -765,7 +765,7 @@ Terraform sub block.
 **Args**:
   - `image_identifier` (`string`): 
   - `image_repository_type` (`string`): 
-  - `image_configuration` (`list[obj]`):  When `null`, the `image_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.image_repository.image_configuration.new](#fn-apprunner_servicesource_configurationimage_configurationnew) constructor.
+  - `image_configuration` (`list[obj]`):  When `null`, the `image_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.image_repository.image_configuration.new](#fn-source_configurationsource_configurationimage_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `image_repository` sub block.

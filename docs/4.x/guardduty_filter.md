@@ -268,7 +268,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `criterion` (`list[obj]`):  When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.criterion.new](#fn-guardduty_filtercriterionnew) constructor.
+  - `criterion` (`list[obj]`):  When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.criterion.new](#fn-finding_criteriacriterionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `finding_criteria` sub block.

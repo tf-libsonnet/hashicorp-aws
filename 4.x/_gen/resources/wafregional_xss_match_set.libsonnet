@@ -63,7 +63,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.wafregional_xss_match_set.xss_match_tuple.new` constructs a new object with attributes and blocks configured for the `xss_match_tuple`\nTerraform sub block.\n\n\n\n**Args**:\n  - `text_transformation` (`string`): \n  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_xss_match_set.xss_match_tuple.field_to_match.new](#fn-wafregional_xss_match_setfield_to_matchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `xss_match_tuple` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.wafregional_xss_match_set.xss_match_tuple.new` constructs a new object with attributes and blocks configured for the `xss_match_tuple`\nTerraform sub block.\n\n\n\n**Args**:\n  - `text_transformation` (`string`): \n  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_xss_match_set.xss_match_tuple.field_to_match.new](#fn-xss_match_tuplefield_to_matchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `xss_match_tuple` sub block.\n', args=[]),
     new(
       text_transformation,
       field_to_match=null

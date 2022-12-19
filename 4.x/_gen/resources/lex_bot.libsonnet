@@ -15,7 +15,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         group_number: group_number,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lex_bot.abort_statement.new` constructs a new object with attributes and blocks configured for the `abort_statement`\nTerraform sub block.\n\n\n\n**Args**:\n  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.\n  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.message.new](#fn-lex_botmessagenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `abort_statement` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lex_bot.abort_statement.new` constructs a new object with attributes and blocks configured for the `abort_statement`\nTerraform sub block.\n\n\n\n**Args**:\n  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.\n  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.message.new](#fn-abort_statementmessagenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `abort_statement` sub block.\n', args=[]),
     new(
       message=null,
       response_card=null
@@ -37,7 +37,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         group_number: group_number,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lex_bot.clarification_prompt.new` constructs a new object with attributes and blocks configured for the `clarification_prompt`\nTerraform sub block.\n\n\n\n**Args**:\n  - `max_attempts` (`number`): \n  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.\n  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.message.new](#fn-lex_botmessagenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `clarification_prompt` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lex_bot.clarification_prompt.new` constructs a new object with attributes and blocks configured for the `clarification_prompt`\nTerraform sub block.\n\n\n\n**Args**:\n  - `max_attempts` (`number`): \n  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.\n  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.message.new](#fn-clarification_promptmessagenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `clarification_prompt` sub block.\n', args=[]),
     new(
       max_attempts,
       message=null,

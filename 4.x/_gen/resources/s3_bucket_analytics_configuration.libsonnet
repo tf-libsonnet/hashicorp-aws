@@ -46,7 +46,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   storage_class_analysis:: {
     data_export:: {
       destination:: {
-        '#new':: d.fn(help='\n`aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new` constructs a new object with attributes and blocks configured for the `destination`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.s3_bucket_destination.new](#fn-s3_bucket_analytics_configurationstorage_class_analysisdata_exports3_bucket_destinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new` constructs a new object with attributes and blocks configured for the `destination`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.s3_bucket_destination.new](#fn-storage_class_analysisstorage_class_analysisdata_exports3_bucket_destinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination` sub block.\n', args=[]),
         new(
           s3_bucket_destination=null
         ):: std.prune(a={
@@ -67,7 +67,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           }),
         },
       },
-      '#new':: d.fn(help='\n`aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new` constructs a new object with attributes and blocks configured for the `data_export`\nTerraform sub block.\n\n\n\n**Args**:\n  - `output_schema_version` (`string`):  When `null`, the `output_schema_version` field will be omitted from the resulting object.\n  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new](#fn-s3_bucket_analytics_configurationstorage_class_analysisdestinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `data_export` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new` constructs a new object with attributes and blocks configured for the `data_export`\nTerraform sub block.\n\n\n\n**Args**:\n  - `output_schema_version` (`string`):  When `null`, the `output_schema_version` field will be omitted from the resulting object.\n  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new](#fn-storage_class_analysisstorage_class_analysisdestinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `data_export` sub block.\n', args=[]),
       new(
         destination=null,
         output_schema_version=null
@@ -76,7 +76,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         output_schema_version: output_schema_version,
       }),
     },
-    '#new':: d.fn(help='\n`aws.s3_bucket_analytics_configuration.storage_class_analysis.new` constructs a new object with attributes and blocks configured for the `storage_class_analysis`\nTerraform sub block.\n\n\n\n**Args**:\n  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new](#fn-s3_bucket_analytics_configurationdata_exportnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `storage_class_analysis` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.s3_bucket_analytics_configuration.storage_class_analysis.new` constructs a new object with attributes and blocks configured for the `storage_class_analysis`\nTerraform sub block.\n\n\n\n**Args**:\n  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new](#fn-storage_class_analysisdata_exportnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `storage_class_analysis` sub block.\n', args=[]),
     new(
       data_export=null
     ):: std.prune(a={

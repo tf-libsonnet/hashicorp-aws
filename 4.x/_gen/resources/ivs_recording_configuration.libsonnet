@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='ivs_recording_configuration', url='', help='`ivs_recording_configuration` represents the `aws_ivs_recording_configuration` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   destination_configuration:: {
-    '#new':: d.fn(help='\n`aws.ivs_recording_configuration.destination_configuration.new` constructs a new object with attributes and blocks configured for the `destination_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-ivs_recording_configurations3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination_configuration` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.ivs_recording_configuration.destination_configuration.new` constructs a new object with attributes and blocks configured for the `destination_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-destination_configurations3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination_configuration` sub block.\n', args=[]),
     new(
       s3=null
     ):: std.prune(a={

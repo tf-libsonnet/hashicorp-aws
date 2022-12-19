@@ -211,7 +211,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_retention` (`list[obj]`):  When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.default_retention.new](#fn-s3_bucket_object_lock_configurationdefault_retentionnew) constructor.
+  - `default_retention` (`list[obj]`):  When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.default_retention.new](#fn-ruledefault_retentionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

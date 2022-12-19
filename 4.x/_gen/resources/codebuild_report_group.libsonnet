@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='codebuild_report_group', url='', help='`codebuild_report_group` represents the `aws_codebuild_report_group` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   export_config:: {
-    '#new':: d.fn(help='\n`aws.codebuild_report_group.export_config.new` constructs a new object with attributes and blocks configured for the `export_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `type` (`string`): \n  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-codebuild_report_groups3_destinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `export_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.codebuild_report_group.export_config.new` constructs a new object with attributes and blocks configured for the `export_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `type` (`string`): \n  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-export_configs3_destinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `export_config` sub block.\n', args=[]),
     new(
       type,
       s3_destination=null

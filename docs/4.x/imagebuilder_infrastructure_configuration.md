@@ -430,7 +430,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.s3_logs.new](#fn-imagebuilder_infrastructure_configurations3_logsnew) constructor.
+  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.s3_logs.new](#fn-loggings3_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging` sub block.

@@ -344,11 +344,11 @@ Terraform sub block.
   - `order` (`number`):  When `null`, the `order` field will be omitted from the resulting object.
   - `target_group_arn` (`string`):  When `null`, the `target_group_arn` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `authenticate_cognito` (`list[obj]`):  When `null`, the `authenticate_cognito` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.authenticate_cognito.new](#fn-alb_listenerauthenticate_cognitonew) constructor.
-  - `authenticate_oidc` (`list[obj]`):  When `null`, the `authenticate_oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.authenticate_oidc.new](#fn-alb_listenerauthenticate_oidcnew) constructor.
-  - `fixed_response` (`list[obj]`):  When `null`, the `fixed_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.fixed_response.new](#fn-alb_listenerfixed_responsenew) constructor.
-  - `forward` (`list[obj]`):  When `null`, the `forward` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.forward.new](#fn-alb_listenerforwardnew) constructor.
-  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.redirect.new](#fn-alb_listenerredirectnew) constructor.
+  - `authenticate_cognito` (`list[obj]`):  When `null`, the `authenticate_cognito` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.authenticate_cognito.new](#fn-default_actionauthenticate_cognitonew) constructor.
+  - `authenticate_oidc` (`list[obj]`):  When `null`, the `authenticate_oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.authenticate_oidc.new](#fn-default_actionauthenticate_oidcnew) constructor.
+  - `fixed_response` (`list[obj]`):  When `null`, the `fixed_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.fixed_response.new](#fn-default_actionfixed_responsenew) constructor.
+  - `forward` (`list[obj]`):  When `null`, the `forward` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.forward.new](#fn-default_actionforwardnew) constructor.
+  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.redirect.new](#fn-default_actionredirectnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `default_action` sub block.
@@ -459,8 +459,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `stickiness` (`list[obj]`):  When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.forward.stickiness.new](#fn-alb_listenerdefault_actionstickinessnew) constructor.
-  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.forward.target_group.new](#fn-alb_listenerdefault_actiontarget_groupnew) constructor.
+  - `stickiness` (`list[obj]`):  When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.forward.stickiness.new](#fn-default_actiondefault_actionstickinessnew) constructor.
+  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.forward.target_group.new](#fn-default_actiondefault_actiontarget_groupnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `forward` sub block.

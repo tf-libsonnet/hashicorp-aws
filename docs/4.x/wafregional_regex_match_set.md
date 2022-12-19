@@ -156,7 +156,7 @@ Terraform sub block.
 **Args**:
   - `regex_pattern_set_id` (`string`): 
   - `text_transformation` (`string`): 
-  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_regex_match_set.regex_match_tuple.field_to_match.new](#fn-wafregional_regex_match_setfield_to_matchnew) constructor.
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_regex_match_set.regex_match_tuple.field_to_match.new](#fn-regex_match_tuplefield_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `regex_match_tuple` sub block.

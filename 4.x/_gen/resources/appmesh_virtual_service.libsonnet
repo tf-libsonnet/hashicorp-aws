@@ -42,14 +42,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags_all: tags_all,
   }),
   spec:: {
-    '#new':: d.fn(help='\n`aws.appmesh_virtual_service.spec.new` constructs a new object with attributes and blocks configured for the `spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.new](#fn-appmesh_virtual_serviceprovidernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `spec` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.appmesh_virtual_service.spec.new` constructs a new object with attributes and blocks configured for the `spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.new](#fn-specprovidernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `spec` sub block.\n', args=[]),
     new(
       provider=null
     ):: std.prune(a={
       provider: provider,
     }),
     provider:: {
-      '#new':: d.fn(help='\n`aws.appmesh_virtual_service.spec.provider.new` constructs a new object with attributes and blocks configured for the `provider`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_node` (`list[obj]`):  When `null`, the `virtual_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_node.new](#fn-appmesh_virtual_servicespecvirtual_nodenew) constructor.\n  - `virtual_router` (`list[obj]`):  When `null`, the `virtual_router` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_router.new](#fn-appmesh_virtual_servicespecvirtual_routernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `provider` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.appmesh_virtual_service.spec.provider.new` constructs a new object with attributes and blocks configured for the `provider`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_node` (`list[obj]`):  When `null`, the `virtual_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_node.new](#fn-specspecvirtual_nodenew) constructor.\n  - `virtual_router` (`list[obj]`):  When `null`, the `virtual_router` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_router.new](#fn-specspecvirtual_routernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `provider` sub block.\n', args=[]),
       new(
         virtual_node=null,
         virtual_router=null

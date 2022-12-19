@@ -414,7 +414,7 @@ Terraform sub block.
 
 **Args**:
   - `transform_type` (`string`): 
-  - `find_matches_parameters` (`list[obj]`):  When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-glue_ml_transformfind_matches_parametersnew) constructor.
+  - `find_matches_parameters` (`list[obj]`):  When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-parametersfind_matches_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `parameters` sub block.

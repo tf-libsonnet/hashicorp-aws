@@ -16,7 +16,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           uri: uri,
         }),
       },
-      '#new':: d.fn(help='\n`aws.s3_bucket_acl.access_control_policy.grant.new` constructs a new object with attributes and blocks configured for the `grant`\nTerraform sub block.\n\n\n\n**Args**:\n  - `permission` (`string`): \n  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-s3_bucket_aclaccess_control_policygranteenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `grant` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.s3_bucket_acl.access_control_policy.grant.new` constructs a new object with attributes and blocks configured for the `grant`\nTerraform sub block.\n\n\n\n**Args**:\n  - `permission` (`string`): \n  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-access_control_policyaccess_control_policygranteenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `grant` sub block.\n', args=[]),
       new(
         permission,
         grantee=null
@@ -25,7 +25,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         permission: permission,
       }),
     },
-    '#new':: d.fn(help='\n`aws.s3_bucket_acl.access_control_policy.new` constructs a new object with attributes and blocks configured for the `access_control_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-s3_bucket_aclgrantnew) constructor.\n  - `owner` (`list[obj]`):  When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-s3_bucket_aclownernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `access_control_policy` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.s3_bucket_acl.access_control_policy.new` constructs a new object with attributes and blocks configured for the `access_control_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-access_control_policygrantnew) constructor.\n  - `owner` (`list[obj]`):  When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-access_control_policyownernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `access_control_policy` sub block.\n', args=[]),
     new(
       grant=null,
       owner=null

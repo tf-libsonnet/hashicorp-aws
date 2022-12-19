@@ -722,9 +722,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `deployment_ready_option` (`list[obj]`):  When `null`, the `deployment_ready_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.blue_green_deployment_config.deployment_ready_option.new](#fn-codedeploy_deployment_groupdeployment_ready_optionnew) constructor.
-  - `green_fleet_provisioning_option` (`list[obj]`):  When `null`, the `green_fleet_provisioning_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.blue_green_deployment_config.green_fleet_provisioning_option.new](#fn-codedeploy_deployment_groupgreen_fleet_provisioning_optionnew) constructor.
-  - `terminate_blue_instances_on_deployment_success` (`list[obj]`):  When `null`, the `terminate_blue_instances_on_deployment_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.blue_green_deployment_config.terminate_blue_instances_on_deployment_success.new](#fn-codedeploy_deployment_groupterminate_blue_instances_on_deployment_successnew) constructor.
+  - `deployment_ready_option` (`list[obj]`):  When `null`, the `deployment_ready_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.blue_green_deployment_config.deployment_ready_option.new](#fn-blue_green_deployment_configdeployment_ready_optionnew) constructor.
+  - `green_fleet_provisioning_option` (`list[obj]`):  When `null`, the `green_fleet_provisioning_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.blue_green_deployment_config.green_fleet_provisioning_option.new](#fn-blue_green_deployment_configgreen_fleet_provisioning_optionnew) constructor.
+  - `terminate_blue_instances_on_deployment_success` (`list[obj]`):  When `null`, the `terminate_blue_instances_on_deployment_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.blue_green_deployment_config.terminate_blue_instances_on_deployment_success.new](#fn-blue_green_deployment_configterminate_blue_instances_on_deployment_successnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `blue_green_deployment_config` sub block.
@@ -867,7 +867,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ec2_tag_filter` (`list[obj]`):  When `null`, the `ec2_tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.ec2_tag_set.ec2_tag_filter.new](#fn-codedeploy_deployment_groupec2_tag_filternew) constructor.
+  - `ec2_tag_filter` (`list[obj]`):  When `null`, the `ec2_tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.ec2_tag_set.ec2_tag_filter.new](#fn-ec2_tag_setec2_tag_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ec2_tag_set` sub block.
@@ -939,9 +939,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `elb_info` (`list[obj]`):  When `null`, the `elb_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.elb_info.new](#fn-codedeploy_deployment_groupelb_infonew) constructor.
-  - `target_group_info` (`list[obj]`):  When `null`, the `target_group_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_info.new](#fn-codedeploy_deployment_grouptarget_group_infonew) constructor.
-  - `target_group_pair_info` (`list[obj]`):  When `null`, the `target_group_pair_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.new](#fn-codedeploy_deployment_grouptarget_group_pair_infonew) constructor.
+  - `elb_info` (`list[obj]`):  When `null`, the `elb_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.elb_info.new](#fn-load_balancer_infoelb_infonew) constructor.
+  - `target_group_info` (`list[obj]`):  When `null`, the `target_group_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_info.new](#fn-load_balancer_infotarget_group_infonew) constructor.
+  - `target_group_pair_info` (`list[obj]`):  When `null`, the `target_group_pair_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.new](#fn-load_balancer_infotarget_group_pair_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `load_balancer_info` sub block.
@@ -1010,9 +1010,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `prod_traffic_route` (`list[obj]`):  When `null`, the `prod_traffic_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.prod_traffic_route.new](#fn-codedeploy_deployment_groupload_balancer_infoprod_traffic_routenew) constructor.
-  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.target_group.new](#fn-codedeploy_deployment_groupload_balancer_infotarget_groupnew) constructor.
-  - `test_traffic_route` (`list[obj]`):  When `null`, the `test_traffic_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.test_traffic_route.new](#fn-codedeploy_deployment_groupload_balancer_infotest_traffic_routenew) constructor.
+  - `prod_traffic_route` (`list[obj]`):  When `null`, the `prod_traffic_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.prod_traffic_route.new](#fn-load_balancer_infoload_balancer_infoprod_traffic_routenew) constructor.
+  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.target_group.new](#fn-load_balancer_infoload_balancer_infotarget_groupnew) constructor.
+  - `test_traffic_route` (`list[obj]`):  When `null`, the `test_traffic_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_group.load_balancer_info.target_group_pair_info.test_traffic_route.new](#fn-load_balancer_infoload_balancer_infotest_traffic_routenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_group_pair_info` sub block.

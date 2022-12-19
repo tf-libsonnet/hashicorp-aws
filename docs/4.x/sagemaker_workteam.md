@@ -275,8 +275,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cognito_member_definition` (`list[obj]`):  When `null`, the `cognito_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.cognito_member_definition.new](#fn-sagemaker_workteamcognito_member_definitionnew) constructor.
-  - `oidc_member_definition` (`list[obj]`):  When `null`, the `oidc_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.oidc_member_definition.new](#fn-sagemaker_workteamoidc_member_definitionnew) constructor.
+  - `cognito_member_definition` (`list[obj]`):  When `null`, the `cognito_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.cognito_member_definition.new](#fn-member_definitioncognito_member_definitionnew) constructor.
+  - `oidc_member_definition` (`list[obj]`):  When `null`, the `oidc_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.oidc_member_definition.new](#fn-member_definitionoidc_member_definitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `member_definition` sub block.

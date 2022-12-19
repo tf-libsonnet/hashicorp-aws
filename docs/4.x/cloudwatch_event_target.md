@@ -717,9 +717,9 @@ Terraform sub block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `task_count` (`number`):  When `null`, the `task_count` field will be omitted from the resulting object.
   - `task_definition_arn` (`string`): 
-  - `capacity_provider_strategy` (`list[obj]`):  When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.capacity_provider_strategy.new](#fn-cloudwatch_event_targetcapacity_provider_strategynew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.network_configuration.new](#fn-cloudwatch_event_targetnetwork_configurationnew) constructor.
-  - `placement_constraint` (`list[obj]`):  When `null`, the `placement_constraint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.placement_constraint.new](#fn-cloudwatch_event_targetplacement_constraintnew) constructor.
+  - `capacity_provider_strategy` (`list[obj]`):  When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.capacity_provider_strategy.new](#fn-ecs_targetcapacity_provider_strategynew) constructor.
+  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.network_configuration.new](#fn-ecs_targetnetwork_configurationnew) constructor.
+  - `placement_constraint` (`list[obj]`):  When `null`, the `placement_constraint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.placement_constraint.new](#fn-ecs_targetplacement_constraintnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ecs_target` sub block.

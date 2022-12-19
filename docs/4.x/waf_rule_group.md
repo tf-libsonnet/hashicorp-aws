@@ -214,7 +214,7 @@ Terraform sub block.
   - `priority` (`number`): 
   - `rule_id` (`string`): 
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.action.new](#fn-waf_rule_groupactionnew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.action.new](#fn-activated_ruleactionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `activated_rule` sub block.

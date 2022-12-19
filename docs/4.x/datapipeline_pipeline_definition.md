@@ -242,7 +242,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.attribute.new](#fn-datapipeline_pipeline_definitionattributenew) constructor.
+  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.attribute.new](#fn-parameter_objectattributenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `parameter_object` sub block.
@@ -313,7 +313,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `field` (`list[obj]`):  When `null`, the `field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.field.new](#fn-datapipeline_pipeline_definitionfieldnew) constructor.
+  - `field` (`list[obj]`):  When `null`, the `field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.field.new](#fn-pipeline_objectfieldnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `pipeline_object` sub block.

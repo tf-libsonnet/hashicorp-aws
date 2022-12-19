@@ -181,8 +181,8 @@ Terraform sub block.
 **Args**:
   - `preferred_channel_pipeline` (`string`): 
   - `program_number` (`number`): 
-  - `service_descriptor` (`list[obj]`):  When `null`, the `service_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.service_descriptor.new](#fn-medialive_multiplex_programservice_descriptornew) constructor.
-  - `video_settings` (`list[obj]`):  When `null`, the `video_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new](#fn-medialive_multiplex_programvideo_settingsnew) constructor.
+  - `service_descriptor` (`list[obj]`):  When `null`, the `service_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.service_descriptor.new](#fn-multiplex_program_settingsservice_descriptornew) constructor.
+  - `video_settings` (`list[obj]`):  When `null`, the `video_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new](#fn-multiplex_program_settingsvideo_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `multiplex_program_settings` sub block.
@@ -230,8 +230,8 @@ Terraform sub block.
 
 **Args**:
   - `constant_bitrate` (`number`):  When `null`, the `constant_bitrate` field will be omitted from the resulting object.
-  - `statemux_settings` (`list[obj]`):  When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-medialive_multiplex_programmultiplex_program_settingsstatemux_settingsnew) constructor.
-  - `statmux_settings` (`list[obj]`):  When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-medialive_multiplex_programmultiplex_program_settingsstatmux_settingsnew) constructor.
+  - `statemux_settings` (`list[obj]`):  When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatemux_settingsnew) constructor.
+  - `statmux_settings` (`list[obj]`):  When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatmux_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `video_settings` sub block.

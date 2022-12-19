@@ -412,9 +412,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_criteria` (`list[obj]`):  When `null`, the `bucket_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.new](#fn-macie2_classification_jobbucket_criterianew) constructor.
-  - `bucket_definitions` (`list[obj]`):  When `null`, the `bucket_definitions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_definitions.new](#fn-macie2_classification_jobbucket_definitionsnew) constructor.
-  - `scoping` (`list[obj]`):  When `null`, the `scoping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.new](#fn-macie2_classification_jobscopingnew) constructor.
+  - `bucket_criteria` (`list[obj]`):  When `null`, the `bucket_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.new](#fn-s3_job_definitionbucket_criterianew) constructor.
+  - `bucket_definitions` (`list[obj]`):  When `null`, the `bucket_definitions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_definitions.new](#fn-s3_job_definitionbucket_definitionsnew) constructor.
+  - `scoping` (`list[obj]`):  When `null`, the `scoping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.new](#fn-s3_job_definitionscopingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3_job_definition` sub block.
@@ -437,8 +437,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `excludes` (`list[obj]`):  When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.new](#fn-macie2_classification_jobs3_job_definitionexcludesnew) constructor.
-  - `includes` (`list[obj]`):  When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.new](#fn-macie2_classification_jobs3_job_definitionincludesnew) constructor.
+  - `excludes` (`list[obj]`):  When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.new](#fn-s3_job_definitions3_job_definitionexcludesnew) constructor.
+  - `includes` (`list[obj]`):  When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.new](#fn-s3_job_definitions3_job_definitionincludesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `bucket_criteria` sub block.
@@ -461,7 +461,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaandnew) constructor.
+  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaandnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `excludes` sub block.
@@ -484,8 +484,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `simple_criterion` (`list[obj]`):  When `null`, the `simple_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.simple_criterion.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaexcludessimple_criterionnew) constructor.
-  - `tag_criterion` (`list[obj]`):  When `null`, the `tag_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.tag_criterion.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaexcludestag_criterionnew) constructor.
+  - `simple_criterion` (`list[obj]`):  When `null`, the `simple_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.simple_criterion.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaexcludessimple_criterionnew) constructor.
+  - `tag_criterion` (`list[obj]`):  When `null`, the `tag_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.tag_criterion.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaexcludestag_criterionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -534,7 +534,7 @@ Terraform sub block.
 
 **Args**:
   - `comparator` (`string`):  When `null`, the `comparator` field will be omitted from the resulting object.
-  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.tag_criterion.tag_values.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaexcludesandtag_valuesnew) constructor.
+  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.excludes.and.tag_criterion.tag_values.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaexcludesandtag_valuesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tag_criterion` sub block.
@@ -581,7 +581,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaandnew) constructor.
+  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaandnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `includes` sub block.
@@ -604,8 +604,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `simple_criterion` (`list[obj]`):  When `null`, the `simple_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.simple_criterion.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaincludessimple_criterionnew) constructor.
-  - `tag_criterion` (`list[obj]`):  When `null`, the `tag_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.tag_criterion.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaincludestag_criterionnew) constructor.
+  - `simple_criterion` (`list[obj]`):  When `null`, the `simple_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.simple_criterion.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaincludessimple_criterionnew) constructor.
+  - `tag_criterion` (`list[obj]`):  When `null`, the `tag_criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.tag_criterion.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaincludestag_criterionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -654,7 +654,7 @@ Terraform sub block.
 
 **Args**:
   - `comparator` (`string`):  When `null`, the `comparator` field will be omitted from the resulting object.
-  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.tag_criterion.tag_values.new](#fn-macie2_classification_jobs3_job_definitionbucket_criteriaincludesandtag_valuesnew) constructor.
+  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.bucket_criteria.includes.and.tag_criterion.tag_values.new](#fn-s3_job_definitions3_job_definitionbucket_criteriaincludesandtag_valuesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tag_criterion` sub block.
@@ -725,8 +725,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `excludes` (`list[obj]`):  When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.new](#fn-macie2_classification_jobs3_job_definitionexcludesnew) constructor.
-  - `includes` (`list[obj]`):  When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.new](#fn-macie2_classification_jobs3_job_definitionincludesnew) constructor.
+  - `excludes` (`list[obj]`):  When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.new](#fn-s3_job_definitions3_job_definitionexcludesnew) constructor.
+  - `includes` (`list[obj]`):  When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.new](#fn-s3_job_definitions3_job_definitionincludesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `scoping` sub block.
@@ -749,7 +749,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.new](#fn-macie2_classification_jobs3_job_definitionscopingandnew) constructor.
+  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.new](#fn-s3_job_definitions3_job_definitionscopingandnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `excludes` sub block.
@@ -772,8 +772,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `simple_scope_term` (`list[obj]`):  When `null`, the `simple_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.simple_scope_term.new](#fn-macie2_classification_jobs3_job_definitionscopingexcludessimple_scope_termnew) constructor.
-  - `tag_scope_term` (`list[obj]`):  When `null`, the `tag_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.tag_scope_term.new](#fn-macie2_classification_jobs3_job_definitionscopingexcludestag_scope_termnew) constructor.
+  - `simple_scope_term` (`list[obj]`):  When `null`, the `simple_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.simple_scope_term.new](#fn-s3_job_definitions3_job_definitionscopingexcludessimple_scope_termnew) constructor.
+  - `tag_scope_term` (`list[obj]`):  When `null`, the `tag_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.tag_scope_term.new](#fn-s3_job_definitions3_job_definitionscopingexcludestag_scope_termnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -824,7 +824,7 @@ Terraform sub block.
   - `comparator` (`string`):  When `null`, the `comparator` field will be omitted from the resulting object.
   - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
   - `target` (`string`):  When `null`, the `target` field will be omitted from the resulting object.
-  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.tag_scope_term.tag_values.new](#fn-macie2_classification_jobs3_job_definitionscopingexcludesandtag_valuesnew) constructor.
+  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.excludes.and.tag_scope_term.tag_values.new](#fn-s3_job_definitions3_job_definitionscopingexcludesandtag_valuesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tag_scope_term` sub block.
@@ -871,7 +871,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.new](#fn-macie2_classification_jobs3_job_definitionscopingandnew) constructor.
+  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.new](#fn-s3_job_definitions3_job_definitionscopingandnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `includes` sub block.
@@ -894,8 +894,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `simple_scope_term` (`list[obj]`):  When `null`, the `simple_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.simple_scope_term.new](#fn-macie2_classification_jobs3_job_definitionscopingincludessimple_scope_termnew) constructor.
-  - `tag_scope_term` (`list[obj]`):  When `null`, the `tag_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.tag_scope_term.new](#fn-macie2_classification_jobs3_job_definitionscopingincludestag_scope_termnew) constructor.
+  - `simple_scope_term` (`list[obj]`):  When `null`, the `simple_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.simple_scope_term.new](#fn-s3_job_definitions3_job_definitionscopingincludessimple_scope_termnew) constructor.
+  - `tag_scope_term` (`list[obj]`):  When `null`, the `tag_scope_term` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.tag_scope_term.new](#fn-s3_job_definitions3_job_definitionscopingincludestag_scope_termnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -946,7 +946,7 @@ Terraform sub block.
   - `comparator` (`string`):  When `null`, the `comparator` field will be omitted from the resulting object.
   - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
   - `target` (`string`):  When `null`, the `target` field will be omitted from the resulting object.
-  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.tag_scope_term.tag_values.new](#fn-macie2_classification_jobs3_job_definitionscopingincludesandtag_valuesnew) constructor.
+  - `tag_values` (`list[obj]`):  When `null`, the `tag_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_classification_job.s3_job_definition.scoping.includes.and.tag_scope_term.tag_values.new](#fn-s3_job_definitions3_job_definitionscopingincludesandtag_valuesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tag_scope_term` sub block.

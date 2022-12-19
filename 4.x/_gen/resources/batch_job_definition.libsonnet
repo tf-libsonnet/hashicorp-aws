@@ -72,7 +72,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         on_status_reason: on_status_reason,
       }),
     },
-    '#new':: d.fn(help='\n`aws.batch_job_definition.retry_strategy.new` constructs a new object with attributes and blocks configured for the `retry_strategy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `attempts` (`number`):  When `null`, the `attempts` field will be omitted from the resulting object.\n  - `evaluate_on_exit` (`list[obj]`):  When `null`, the `evaluate_on_exit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.evaluate_on_exit.new](#fn-batch_job_definitionevaluate_on_exitnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `retry_strategy` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.batch_job_definition.retry_strategy.new` constructs a new object with attributes and blocks configured for the `retry_strategy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `attempts` (`number`):  When `null`, the `attempts` field will be omitted from the resulting object.\n  - `evaluate_on_exit` (`list[obj]`):  When `null`, the `evaluate_on_exit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.evaluate_on_exit.new](#fn-retry_strategyevaluate_on_exitnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `retry_strategy` sub block.\n', args=[]),
     new(
       attempts=null,
       evaluate_on_exit=null

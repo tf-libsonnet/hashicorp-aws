@@ -331,8 +331,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `auto_export_policy` (`list[obj]`):  When `null`, the `auto_export_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_export_policy.new](#fn-fsx_data_repository_associationauto_export_policynew) constructor.
-  - `auto_import_policy` (`list[obj]`):  When `null`, the `auto_import_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_import_policy.new](#fn-fsx_data_repository_associationauto_import_policynew) constructor.
+  - `auto_export_policy` (`list[obj]`):  When `null`, the `auto_export_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_export_policy.new](#fn-s3auto_export_policynew) constructor.
+  - `auto_import_policy` (`list[obj]`):  When `null`, the `auto_import_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_import_policy.new](#fn-s3auto_import_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.

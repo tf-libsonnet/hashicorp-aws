@@ -340,7 +340,7 @@ Terraform sub block.
 **Args**:
   - `key_algorithm` (`string`): 
   - `signing_algorithm` (`string`): 
-  - `subject` (`list[obj]`):  When `null`, the `subject` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.subject.new](#fn-acmpca_certificate_authoritysubjectnew) constructor.
+  - `subject` (`list[obj]`):  When `null`, the `subject` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.subject.new](#fn-certificate_authority_configurationsubjectnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `certificate_authority_configuration` sub block.
@@ -398,8 +398,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `crl_configuration` (`list[obj]`):  When `null`, the `crl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new](#fn-acmpca_certificate_authoritycrl_configurationnew) constructor.
-  - `ocsp_configuration` (`list[obj]`):  When `null`, the `ocsp_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.ocsp_configuration.new](#fn-acmpca_certificate_authorityocsp_configurationnew) constructor.
+  - `crl_configuration` (`list[obj]`):  When `null`, the `crl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new](#fn-revocation_configurationcrl_configurationnew) constructor.
+  - `ocsp_configuration` (`list[obj]`):  When `null`, the `ocsp_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.ocsp_configuration.new](#fn-revocation_configurationocsp_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `revocation_configuration` sub block.

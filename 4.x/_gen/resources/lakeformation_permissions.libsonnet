@@ -45,7 +45,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         values: values,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lakeformation_permissions.lf_tag_policy.new` constructs a new object with attributes and blocks configured for the `lf_tag_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.\n  - `resource_type` (`string`): \n  - `expression` (`list[obj]`):  When `null`, the `expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_permissions.lf_tag_policy.expression.new](#fn-lakeformation_permissionsexpressionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `lf_tag_policy` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lakeformation_permissions.lf_tag_policy.new` constructs a new object with attributes and blocks configured for the `lf_tag_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.\n  - `resource_type` (`string`): \n  - `expression` (`list[obj]`):  When `null`, the `expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_permissions.lf_tag_policy.expression.new](#fn-lf_tag_policyexpressionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `lf_tag_policy` sub block.\n', args=[]),
     new(
       resource_type,
       catalog_id=null,

@@ -397,7 +397,7 @@ Terraform sub block.
   - `data_repository_subdirectories` (`list`):  When `null`, the `data_repository_subdirectories` field will be omitted from the resulting object.
   - `file_cache_path` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.nfs.new](#fn-fsx_file_cachenfsnew) constructor.
+  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.nfs.new](#fn-data_repository_associationnfsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_repository_association` sub block.
@@ -447,7 +447,7 @@ Terraform sub block.
   - `deployment_type` (`string`): 
   - `per_unit_storage_throughput` (`number`): 
   - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `metadata_configuration` (`list[obj]`):  When `null`, the `metadata_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.metadata_configuration.new](#fn-fsx_file_cachemetadata_configurationnew) constructor.
+  - `metadata_configuration` (`list[obj]`):  When `null`, the `metadata_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.metadata_configuration.new](#fn-lustre_configurationmetadata_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `lustre_configuration` sub block.

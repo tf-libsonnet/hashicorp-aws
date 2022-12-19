@@ -268,7 +268,7 @@ Terraform sub block.
 **Args**:
   - `container_name` (`string`): 
   - `container_port` (`number`): 
-  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.health_check.new](#fn-lightsail_container_service_deployment_versionhealth_checknew) constructor.
+  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.health_check.new](#fn-public_endpointhealth_checknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `public_endpoint` sub block.

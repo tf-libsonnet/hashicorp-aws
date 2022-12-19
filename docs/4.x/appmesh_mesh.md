@@ -192,7 +192,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `egress_filter` (`list[obj]`):  When `null`, the `egress_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.egress_filter.new](#fn-appmesh_meshegress_filternew) constructor.
+  - `egress_filter` (`list[obj]`):  When `null`, the `egress_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.egress_filter.new](#fn-specegress_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.

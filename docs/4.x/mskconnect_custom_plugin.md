@@ -234,7 +234,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_custom_plugin.location.s3.new](#fn-mskconnect_custom_plugins3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mskconnect_custom_plugin.location.s3.new](#fn-locations3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `location` sub block.

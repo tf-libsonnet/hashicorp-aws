@@ -290,8 +290,8 @@ Terraform sub block.
   - `condition_logic` (`string`):  When `null`, the `condition_logic` field will be omitted from the resulting object.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `rule_number` (`number`): 
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.action.new](#fn-networkmanager_core_network_policy_documentactionnew) constructor.
-  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.conditions.new](#fn-networkmanager_core_network_policy_documentconditionsnew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.action.new](#fn-attachment_policiesactionnew) constructor.
+  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.attachment_policies.conditions.new](#fn-attachment_policiesconditionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `attachment_policies` sub block.
@@ -369,7 +369,7 @@ Terraform sub block.
   - `asn_ranges` (`list`): 
   - `inside_cidr_blocks` (`list`):  When `null`, the `inside_cidr_blocks` field will be omitted from the resulting object.
   - `vpn_ecmp_support` (`bool`):  When `null`, the `vpn_ecmp_support` field will be omitted from the resulting object.
-  - `edge_locations` (`list[obj]`):  When `null`, the `edge_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.core_network_configuration.edge_locations.new](#fn-networkmanager_core_network_policy_documentedge_locationsnew) constructor.
+  - `edge_locations` (`list[obj]`):  When `null`, the `edge_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network_policy_document.core_network_configuration.edge_locations.new](#fn-core_network_configurationedge_locationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `core_network_configuration` sub block.

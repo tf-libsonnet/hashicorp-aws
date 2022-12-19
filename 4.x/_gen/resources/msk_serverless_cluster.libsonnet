@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='msk_serverless_cluster', url='', help='`msk_serverless_cluster` represents the `aws_msk_serverless_cluster` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   client_authentication:: {
-    '#new':: d.fn(help='\n`aws.msk_serverless_cluster.client_authentication.new` constructs a new object with attributes and blocks configured for the `client_authentication`\nTerraform sub block.\n\n\n\n**Args**:\n  - `sasl` (`list[obj]`):  When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.new](#fn-msk_serverless_clustersaslnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `client_authentication` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.msk_serverless_cluster.client_authentication.new` constructs a new object with attributes and blocks configured for the `client_authentication`\nTerraform sub block.\n\n\n\n**Args**:\n  - `sasl` (`list[obj]`):  When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.new](#fn-client_authenticationsaslnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `client_authentication` sub block.\n', args=[]),
     new(
       sasl=null
     ):: std.prune(a={
@@ -18,7 +18,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           enabled: enabled,
         }),
       },
-      '#new':: d.fn(help='\n`aws.msk_serverless_cluster.client_authentication.sasl.new` constructs a new object with attributes and blocks configured for the `sasl`\nTerraform sub block.\n\n\n\n**Args**:\n  - `iam` (`list[obj]`):  When `null`, the `iam` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.iam.new](#fn-msk_serverless_clusterclient_authenticationiamnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `sasl` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.msk_serverless_cluster.client_authentication.sasl.new` constructs a new object with attributes and blocks configured for the `sasl`\nTerraform sub block.\n\n\n\n**Args**:\n  - `iam` (`list[obj]`):  When `null`, the `iam` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.iam.new](#fn-client_authenticationclient_authenticationiamnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `sasl` sub block.\n', args=[]),
       new(
         iam=null
       ):: std.prune(a={

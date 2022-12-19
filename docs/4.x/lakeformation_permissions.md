@@ -520,7 +520,7 @@ Terraform sub block.
 **Args**:
   - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `resource_type` (`string`): 
-  - `expression` (`list[obj]`):  When `null`, the `expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_permissions.lf_tag_policy.expression.new](#fn-lakeformation_permissionsexpressionnew) constructor.
+  - `expression` (`list[obj]`):  When `null`, the `expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_permissions.lf_tag_policy.expression.new](#fn-lf_tag_policyexpressionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `lf_tag_policy` sub block.

@@ -42,7 +42,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.appmesh_mesh.spec.new` constructs a new object with attributes and blocks configured for the `spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `egress_filter` (`list[obj]`):  When `null`, the `egress_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.egress_filter.new](#fn-appmesh_meshegress_filternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `spec` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.appmesh_mesh.spec.new` constructs a new object with attributes and blocks configured for the `spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `egress_filter` (`list[obj]`):  When `null`, the `egress_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.egress_filter.new](#fn-specegress_filternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `spec` sub block.\n', args=[]),
     new(
       egress_filter=null
     ):: std.prune(a={

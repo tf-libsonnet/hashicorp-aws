@@ -237,7 +237,7 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`): 
-  - `info` (`list[obj]`):  When `null`, the `info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.new](#fn-emrcontainers_virtual_clusterinfonew) constructor.
+  - `info` (`list[obj]`):  When `null`, the `info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.new](#fn-container_providerinfonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container_provider` sub block.
@@ -260,7 +260,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `eks_info` (`list[obj]`):  When `null`, the `eks_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.eks_info.new](#fn-emrcontainers_virtual_clustercontainer_providereks_infonew) constructor.
+  - `eks_info` (`list[obj]`):  When `null`, the `eks_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.eks_info.new](#fn-container_providercontainer_providereks_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `info` sub block.

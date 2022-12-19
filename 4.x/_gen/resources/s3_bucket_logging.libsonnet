@@ -50,7 +50,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         uri: uri,
       }),
     },
-    '#new':: d.fn(help='\n`aws.s3_bucket_logging.target_grant.new` constructs a new object with attributes and blocks configured for the `target_grant`\nTerraform sub block.\n\n\n\n**Args**:\n  - `permission` (`string`): \n  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.grantee.new](#fn-s3_bucket_logginggranteenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target_grant` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.s3_bucket_logging.target_grant.new` constructs a new object with attributes and blocks configured for the `target_grant`\nTerraform sub block.\n\n\n\n**Args**:\n  - `permission` (`string`): \n  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.grantee.new](#fn-target_grantgranteenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target_grant` sub block.\n', args=[]),
     new(
       permission,
       grantee=null

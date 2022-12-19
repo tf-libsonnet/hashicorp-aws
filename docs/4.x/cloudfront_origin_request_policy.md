@@ -264,7 +264,7 @@ Terraform sub block.
 
 **Args**:
   - `cookie_behavior` (`string`): 
-  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.cookies_config.cookies.new](#fn-cloudfront_origin_request_policycookiesnew) constructor.
+  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.cookies_config.cookies.new](#fn-cookies_configcookiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cookies_config` sub block.
@@ -311,7 +311,7 @@ Terraform sub block.
 
 **Args**:
   - `header_behavior` (`string`):  When `null`, the `header_behavior` field will be omitted from the resulting object.
-  - `headers` (`list[obj]`):  When `null`, the `headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.headers_config.headers.new](#fn-cloudfront_origin_request_policyheadersnew) constructor.
+  - `headers` (`list[obj]`):  When `null`, the `headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.headers_config.headers.new](#fn-headers_configheadersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `headers_config` sub block.
@@ -358,7 +358,7 @@ Terraform sub block.
 
 **Args**:
   - `query_string_behavior` (`string`): 
-  - `query_strings` (`list[obj]`):  When `null`, the `query_strings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.query_strings_config.query_strings.new](#fn-cloudfront_origin_request_policyquery_stringsnew) constructor.
+  - `query_strings` (`list[obj]`):  When `null`, the `query_strings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.query_strings_config.query_strings.new](#fn-query_strings_configquery_stringsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `query_strings_config` sub block.

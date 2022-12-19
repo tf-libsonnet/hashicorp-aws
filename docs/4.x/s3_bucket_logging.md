@@ -212,7 +212,7 @@ Terraform sub block.
 
 **Args**:
   - `permission` (`string`): 
-  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.grantee.new](#fn-s3_bucket_logginggranteenew) constructor.
+  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.grantee.new](#fn-target_grantgranteenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_grant` sub block.

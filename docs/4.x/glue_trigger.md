@@ -441,7 +441,7 @@ Terraform sub block.
   - `job_name` (`string`):  When `null`, the `job_name` field will be omitted from the resulting object.
   - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
   - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
-  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.notification_property.new](#fn-glue_triggernotification_propertynew) constructor.
+  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.notification_property.new](#fn-actionsnotification_propertynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `actions` sub block.
@@ -512,7 +512,7 @@ Terraform sub block.
 
 **Args**:
   - `logical` (`string`):  When `null`, the `logical` field will be omitted from the resulting object.
-  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.predicate.conditions.new](#fn-glue_triggerconditionsnew) constructor.
+  - `conditions` (`list[obj]`):  When `null`, the `conditions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.predicate.conditions.new](#fn-predicateconditionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `predicate` sub block.

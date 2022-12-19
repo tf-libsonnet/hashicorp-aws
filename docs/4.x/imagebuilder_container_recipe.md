@@ -435,7 +435,7 @@ Terraform sub block.
 
 **Args**:
   - `component_arn` (`string`): 
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.parameter.new](#fn-imagebuilder_container_recipeparameternew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.parameter.new](#fn-componentparameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `component` sub block.
@@ -483,7 +483,7 @@ Terraform sub block.
 
 **Args**:
   - `image` (`string`):  When `null`, the `image` field will be omitted from the resulting object.
-  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.new](#fn-imagebuilder_container_recipeblock_device_mappingnew) constructor.
+  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.new](#fn-instance_configurationblock_device_mappingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_configuration` sub block.
@@ -509,7 +509,7 @@ Terraform sub block.
   - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.
   - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.
   - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
-  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.ebs.new](#fn-imagebuilder_container_recipeinstance_configurationebsnew) constructor.
+  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.ebs.new](#fn-instance_configurationinstance_configurationebsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `block_device_mapping` sub block.

@@ -62,7 +62,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         is_active: is_active,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lightsail_container_service.private_registry_access.new` constructs a new object with attributes and blocks configured for the `private_registry_access`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ecr_image_puller_role` (`list[obj]`):  When `null`, the `ecr_image_puller_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.ecr_image_puller_role.new](#fn-lightsail_container_serviceecr_image_puller_rolenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `private_registry_access` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lightsail_container_service.private_registry_access.new` constructs a new object with attributes and blocks configured for the `private_registry_access`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ecr_image_puller_role` (`list[obj]`):  When `null`, the `ecr_image_puller_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.ecr_image_puller_role.new](#fn-private_registry_accessecr_image_puller_rolenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `private_registry_access` sub block.\n', args=[]),
     new(
       ecr_image_puller_role=null
     ):: std.prune(a={
@@ -80,7 +80,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         domain_names: domain_names,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lightsail_container_service.public_domain_names.new` constructs a new object with attributes and blocks configured for the `public_domain_names`\nTerraform sub block.\n\n\n\n**Args**:\n  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.certificate.new](#fn-lightsail_container_servicecertificatenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `public_domain_names` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lightsail_container_service.public_domain_names.new` constructs a new object with attributes and blocks configured for the `public_domain_names`\nTerraform sub block.\n\n\n\n**Args**:\n  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.certificate.new](#fn-public_domain_namescertificatenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `public_domain_names` sub block.\n', args=[]),
     new(
       certificate=null
     ):: std.prune(a={

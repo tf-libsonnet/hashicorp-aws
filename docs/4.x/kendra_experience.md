@@ -255,8 +255,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `content_source_configuration` (`list[obj]`):  When `null`, the `content_source_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.content_source_configuration.new](#fn-kendra_experiencecontent_source_configurationnew) constructor.
-  - `user_identity_configuration` (`list[obj]`):  When `null`, the `user_identity_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.user_identity_configuration.new](#fn-kendra_experienceuser_identity_configurationnew) constructor.
+  - `content_source_configuration` (`list[obj]`):  When `null`, the `content_source_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.content_source_configuration.new](#fn-configurationcontent_source_configurationnew) constructor.
+  - `user_identity_configuration` (`list[obj]`):  When `null`, the `user_identity_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.user_identity_configuration.new](#fn-configurationuser_identity_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.

@@ -471,7 +471,7 @@ Terraform sub block.
 
 **Args**:
   - `initial_capacity_type` (`string`): 
-  - `initial_capacity_config` (`list[obj]`):  When `null`, the `initial_capacity_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.new](#fn-emrserverless_applicationinitial_capacity_confignew) constructor.
+  - `initial_capacity_config` (`list[obj]`):  When `null`, the `initial_capacity_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.new](#fn-initial_capacityinitial_capacity_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `initial_capacity` sub block.
@@ -495,7 +495,7 @@ Terraform sub block.
 
 **Args**:
   - `worker_count` (`number`): 
-  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.worker_configuration.new](#fn-emrserverless_applicationinitial_capacityworker_configurationnew) constructor.
+  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.worker_configuration.new](#fn-initial_capacityinitial_capacityworker_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `initial_capacity_config` sub block.

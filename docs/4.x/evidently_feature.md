@@ -355,7 +355,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `value` (`list[obj]`):  When `null`, the `value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.value.new](#fn-evidently_featurevaluenew) constructor.
+  - `value` (`list[obj]`):  When `null`, the `value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.value.new](#fn-variationsvaluenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `variations` sub block.

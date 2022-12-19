@@ -590,7 +590,7 @@ Terraform sub block.
 **Args**:
   - `game_session_activation_timeout_seconds` (`number`):  When `null`, the `game_session_activation_timeout_seconds` field will be omitted from the resulting object.
   - `max_concurrent_game_session_activations` (`number`):  When `null`, the `max_concurrent_game_session_activations` field will be omitted from the resulting object.
-  - `server_process` (`list[obj]`):  When `null`, the `server_process` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.server_process.new](#fn-gamelift_fleetserver_processnew) constructor.
+  - `server_process` (`list[obj]`):  When `null`, the `server_process` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.server_process.new](#fn-runtime_configurationserver_processnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `runtime_configuration` sub block.

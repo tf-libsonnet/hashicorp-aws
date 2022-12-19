@@ -221,8 +221,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `jupyter_server_app_settings` (`list[obj]`):  When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.jupyter_server_app_settings.new](#fn-sagemaker_spacejupyter_server_app_settingsnew) constructor.
-  - `kernel_gateway_app_settings` (`list[obj]`):  When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.kernel_gateway_app_settings.new](#fn-sagemaker_spacekernel_gateway_app_settingsnew) constructor.
+  - `jupyter_server_app_settings` (`list[obj]`):  When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.jupyter_server_app_settings.new](#fn-space_settingsjupyter_server_app_settingsnew) constructor.
+  - `kernel_gateway_app_settings` (`list[obj]`):  When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.kernel_gateway_app_settings.new](#fn-space_settingskernel_gateway_app_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `space_settings` sub block.
@@ -246,8 +246,8 @@ Terraform sub block.
 
 **Args**:
   - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.jupyter_server_app_settings.code_repository.new](#fn-sagemaker_spacespace_settingscode_repositorynew) constructor.
-  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-sagemaker_spacespace_settingsdefault_resource_specnew) constructor.
+  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.jupyter_server_app_settings.code_repository.new](#fn-space_settingsspace_settingscode_repositorynew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-space_settingsspace_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `jupyter_server_app_settings` sub block.
@@ -320,8 +320,8 @@ Terraform sub block.
 
 **Args**:
   - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.kernel_gateway_app_settings.custom_image.new](#fn-sagemaker_spacespace_settingscustom_imagenew) constructor.
-  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-sagemaker_spacespace_settingsdefault_resource_specnew) constructor.
+  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.kernel_gateway_app_settings.custom_image.new](#fn-space_settingsspace_settingscustom_imagenew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-space_settingsspace_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kernel_gateway_app_settings` sub block.

@@ -98,7 +98,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         primary_key_column_name: primary_key_column_name,
       }),
     },
-    '#new':: d.fn(help='\n`aws.glue_ml_transform.parameters.new` constructs a new object with attributes and blocks configured for the `parameters`\nTerraform sub block.\n\n\n\n**Args**:\n  - `transform_type` (`string`): \n  - `find_matches_parameters` (`list[obj]`):  When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-glue_ml_transformfind_matches_parametersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `parameters` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.glue_ml_transform.parameters.new` constructs a new object with attributes and blocks configured for the `parameters`\nTerraform sub block.\n\n\n\n**Args**:\n  - `transform_type` (`string`): \n  - `find_matches_parameters` (`list[obj]`):  When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-parametersfind_matches_parametersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `parameters` sub block.\n', args=[]),
     new(
       transform_type,
       find_matches_parameters=null

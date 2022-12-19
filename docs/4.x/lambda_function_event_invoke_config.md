@@ -213,8 +213,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_failure.new](#fn-lambda_function_event_invoke_configon_failurenew) constructor.
-  - `on_success` (`list[obj]`):  When `null`, the `on_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_success.new](#fn-lambda_function_event_invoke_configon_successnew) constructor.
+  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.
+  - `on_success` (`list[obj]`):  When `null`, the `on_success` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_event_invoke_config.destination_config.on_success.new](#fn-destination_configon_successnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_config` sub block.

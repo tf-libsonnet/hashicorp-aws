@@ -180,7 +180,7 @@ Terraform sub block.
   - `allowed_features` (`list`):  When `null`, the `allowed_features` field will be omitted from the resulting object.
   - `cloud_watch_metrics_enabled` (`bool`):  When `null`, the `cloud_watch_metrics_enabled` field will be omitted from the resulting object.
   - `supporting_access_point` (`string`): 
-  - `transformation_configuration` (`list[obj]`):  When `null`, the `transformation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.new](#fn-s3control_object_lambda_access_pointtransformation_configurationnew) constructor.
+  - `transformation_configuration` (`list[obj]`):  When `null`, the `transformation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.new](#fn-configurationtransformation_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -204,7 +204,7 @@ Terraform sub block.
 
 **Args**:
   - `actions` (`list`): 
-  - `content_transformation` (`list[obj]`):  When `null`, the `content_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.new](#fn-s3control_object_lambda_access_pointconfigurationcontent_transformationnew) constructor.
+  - `content_transformation` (`list[obj]`):  When `null`, the `content_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.new](#fn-configurationconfigurationcontent_transformationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `transformation_configuration` sub block.
@@ -227,7 +227,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `aws_lambda` (`list[obj]`):  When `null`, the `aws_lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.aws_lambda.new](#fn-s3control_object_lambda_access_pointconfigurationtransformation_configurationaws_lambdanew) constructor.
+  - `aws_lambda` (`list[obj]`):  When `null`, the `aws_lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.aws_lambda.new](#fn-configurationconfigurationtransformation_configurationaws_lambdanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `content_transformation` sub block.

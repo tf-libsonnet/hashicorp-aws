@@ -279,7 +279,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `sasl` (`list[obj]`):  When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.new](#fn-msk_serverless_clustersaslnew) constructor.
+  - `sasl` (`list[obj]`):  When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.new](#fn-client_authenticationsaslnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `client_authentication` sub block.
@@ -302,7 +302,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `iam` (`list[obj]`):  When `null`, the `iam` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.iam.new](#fn-msk_serverless_clusterclient_authenticationiamnew) constructor.
+  - `iam` (`list[obj]`):  When `null`, the `iam` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.iam.new](#fn-client_authenticationclient_authenticationiamnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sasl` sub block.

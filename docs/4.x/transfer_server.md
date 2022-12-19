@@ -528,7 +528,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_upload` (`list[obj]`):  When `null`, the `on_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_upload.new](#fn-transfer_serveron_uploadnew) constructor.
+  - `on_upload` (`list[obj]`):  When `null`, the `on_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_upload.new](#fn-workflow_detailson_uploadnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `workflow_details` sub block.

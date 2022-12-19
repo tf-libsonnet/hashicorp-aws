@@ -292,7 +292,7 @@ Terraform sub block.
 
 **Args**:
   - `netbios_name` (`string`):  When `null`, the `netbios_name` field will be omitted from the resulting object.
-  - `self_managed_active_directory_configuration` (`list[obj]`):  When `null`, the `self_managed_active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.self_managed_active_directory_configuration.new](#fn-fsx_ontap_storage_virtual_machineself_managed_active_directory_configurationnew) constructor.
+  - `self_managed_active_directory_configuration` (`list[obj]`):  When `null`, the `self_managed_active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.self_managed_active_directory_configuration.new](#fn-active_directory_configurationself_managed_active_directory_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `active_directory_configuration` sub block.

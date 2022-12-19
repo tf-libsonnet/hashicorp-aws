@@ -283,7 +283,7 @@ Terraform sub block.
   - `cooldown` (`number`):  When `null`, the `cooldown` field will be omitted from the resulting object.
   - `metric_aggregation_type` (`string`):  When `null`, the `metric_aggregation_type` field will be omitted from the resulting object.
   - `min_adjustment_magnitude` (`number`):  When `null`, the `min_adjustment_magnitude` field will be omitted from the resulting object.
-  - `step_adjustment` (`list[obj]`):  When `null`, the `step_adjustment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.step_adjustment.new](#fn-appautoscaling_policystep_adjustmentnew) constructor.
+  - `step_adjustment` (`list[obj]`):  When `null`, the `step_adjustment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.step_adjustment.new](#fn-step_scaling_policy_configurationstep_adjustmentnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `step_scaling_policy_configuration` sub block.
@@ -335,8 +335,8 @@ Terraform sub block.
   - `scale_in_cooldown` (`number`):  When `null`, the `scale_in_cooldown` field will be omitted from the resulting object.
   - `scale_out_cooldown` (`number`):  When `null`, the `scale_out_cooldown` field will be omitted from the resulting object.
   - `target_value` (`number`): 
-  - `customized_metric_specification` (`list[obj]`):  When `null`, the `customized_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.new](#fn-appautoscaling_policycustomized_metric_specificationnew) constructor.
-  - `predefined_metric_specification` (`list[obj]`):  When `null`, the `predefined_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.predefined_metric_specification.new](#fn-appautoscaling_policypredefined_metric_specificationnew) constructor.
+  - `customized_metric_specification` (`list[obj]`):  When `null`, the `customized_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.new](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationnew) constructor.
+  - `predefined_metric_specification` (`list[obj]`):  When `null`, the `predefined_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.predefined_metric_specification.new](#fn-target_tracking_scaling_policy_configurationpredefined_metric_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_tracking_scaling_policy_configuration` sub block.
@@ -363,7 +363,7 @@ Terraform sub block.
   - `namespace` (`string`): 
   - `statistic` (`string`): 
   - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
-  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions.new](#fn-appautoscaling_policytarget_tracking_scaling_policy_configurationdimensionsnew) constructor.
+  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationdimensionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `customized_metric_specification` sub block.

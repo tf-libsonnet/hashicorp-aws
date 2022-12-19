@@ -270,8 +270,8 @@ Terraform sub block.
   - `schedule` (`string`):  When `null`, the `schedule` field will be omitted from the resulting object.
   - `start_window` (`number`):  When `null`, the `start_window` field will be omitted from the resulting object.
   - `target_vault_name` (`string`): 
-  - `copy_action` (`list[obj]`):  When `null`, the `copy_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.new](#fn-backup_plancopy_actionnew) constructor.
-  - `lifecycle` (`list[obj]`):  When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.lifecycle.new](#fn-backup_planlifecyclenew) constructor.
+  - `copy_action` (`list[obj]`):  When `null`, the `copy_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.new](#fn-rulecopy_actionnew) constructor.
+  - `lifecycle` (`list[obj]`):  When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.lifecycle.new](#fn-rulelifecyclenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -295,7 +295,7 @@ Terraform sub block.
 
 **Args**:
   - `destination_vault_arn` (`string`): 
-  - `lifecycle` (`list[obj]`):  When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.lifecycle.new](#fn-backup_planrulelifecyclenew) constructor.
+  - `lifecycle` (`list[obj]`):  When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.lifecycle.new](#fn-rulerulelifecyclenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `copy_action` sub block.

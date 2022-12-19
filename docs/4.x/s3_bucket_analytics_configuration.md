@@ -244,7 +244,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new](#fn-s3_bucket_analytics_configurationdata_exportnew) constructor.
+  - `data_export` (`list[obj]`):  When `null`, the `data_export` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.new](#fn-storage_class_analysisdata_exportnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_class_analysis` sub block.
@@ -268,7 +268,7 @@ Terraform sub block.
 
 **Args**:
   - `output_schema_version` (`string`):  When `null`, the `output_schema_version` field will be omitted from the resulting object.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new](#fn-s3_bucket_analytics_configurationstorage_class_analysisdestinationnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.new](#fn-storage_class_analysisstorage_class_analysisdestinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_export` sub block.
@@ -291,7 +291,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.s3_bucket_destination.new](#fn-s3_bucket_analytics_configurationstorage_class_analysisdata_exports3_bucket_destinationnew) constructor.
+  - `s3_bucket_destination` (`list[obj]`):  When `null`, the `s3_bucket_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_analytics_configuration.storage_class_analysis.data_export.destination.s3_bucket_destination.new](#fn-storage_class_analysisstorage_class_analysisdata_exports3_bucket_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.

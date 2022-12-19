@@ -11,7 +11,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         budget_adjustment_period: budget_adjustment_period,
       }),
     },
-    '#new':: d.fn(help='\n`aws.budgets_budget.auto_adjust_data.new` constructs a new object with attributes and blocks configured for the `auto_adjust_data`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auto_adjust_type` (`string`): \n  - `historical_options` (`list[obj]`):  When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-budgets_budgethistorical_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `auto_adjust_data` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.budgets_budget.auto_adjust_data.new` constructs a new object with attributes and blocks configured for the `auto_adjust_data`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auto_adjust_type` (`string`): \n  - `historical_options` (`list[obj]`):  When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-auto_adjust_datahistorical_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `auto_adjust_data` sub block.\n', args=[]),
     new(
       auto_adjust_type,
       historical_options=null

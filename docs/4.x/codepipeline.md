@@ -259,7 +259,7 @@ Terraform sub block.
   - `location` (`string`): 
   - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `encryption_key` (`list[obj]`):  When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-codepipelineencryption_keynew) constructor.
+  - `encryption_key` (`list[obj]`):  When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-artifact_storeencryption_keynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `artifact_store` sub block.
@@ -306,7 +306,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.action.new](#fn-codepipelineactionnew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.action.new](#fn-stageactionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `stage` sub block.

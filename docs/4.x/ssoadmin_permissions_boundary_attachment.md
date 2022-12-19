@@ -174,7 +174,7 @@ Terraform sub block.
 
 **Args**:
   - `managed_policy_arn` (`string`):  When `null`, the `managed_policy_arn` field will be omitted from the resulting object.
-  - `customer_managed_policy_reference` (`list[obj]`):  When `null`, the `customer_managed_policy_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.customer_managed_policy_reference.new](#fn-ssoadmin_permissions_boundary_attachmentcustomer_managed_policy_referencenew) constructor.
+  - `customer_managed_policy_reference` (`list[obj]`):  When `null`, the `customer_managed_policy_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.customer_managed_policy_reference.new](#fn-permissions_boundarycustomer_managed_policy_referencenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `permissions_boundary` sub block.

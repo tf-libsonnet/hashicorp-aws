@@ -88,7 +88,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         options: options,
       }),
     },
-    '#new':: d.fn(help='\n`aws.fsx_openzfs_volume.nfs_exports.new` constructs a new object with attributes and blocks configured for the `nfs_exports`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-fsx_openzfs_volumeclient_configurationsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `nfs_exports` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.fsx_openzfs_volume.nfs_exports.new` constructs a new object with attributes and blocks configured for the `nfs_exports`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-nfs_exportsclient_configurationsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `nfs_exports` sub block.\n', args=[]),
     new(
       client_configurations=null
     ):: std.prune(a={

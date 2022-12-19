@@ -159,9 +159,9 @@ Terraform sub block.
 
 **Args**:
   - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `abort_incomplete_multipart_upload` (`list[obj]`):  When `null`, the `abort_incomplete_multipart_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.abort_incomplete_multipart_upload.new](#fn-s3control_bucket_lifecycle_configurationabort_incomplete_multipart_uploadnew) constructor.
-  - `expiration` (`list[obj]`):  When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.expiration.new](#fn-s3control_bucket_lifecycle_configurationexpirationnew) constructor.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.filter.new](#fn-s3control_bucket_lifecycle_configurationfilternew) constructor.
+  - `abort_incomplete_multipart_upload` (`list[obj]`):  When `null`, the `abort_incomplete_multipart_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.abort_incomplete_multipart_upload.new](#fn-ruleabort_incomplete_multipart_uploadnew) constructor.
+  - `expiration` (`list[obj]`):  When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.expiration.new](#fn-ruleexpirationnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.filter.new](#fn-rulefilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

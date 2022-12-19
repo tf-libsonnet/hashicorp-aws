@@ -12,7 +12,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           items: items,
         }),
       },
-      '#new':: d.fn(help='\n`aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new` constructs a new object with attributes and blocks configured for the `items`\nTerraform sub block.\n\n\n\n**Args**:\n  - `provider_id` (`string`): \n  - `public_key_id` (`string`): \n  - `field_patterns` (`list[obj]`):  When `null`, the `field_patterns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.field_patterns.new](#fn-cloudfront_field_level_encryption_profileencryption_entitiesfield_patternsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `items` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new` constructs a new object with attributes and blocks configured for the `items`\nTerraform sub block.\n\n\n\n**Args**:\n  - `provider_id` (`string`): \n  - `public_key_id` (`string`): \n  - `field_patterns` (`list[obj]`):  When `null`, the `field_patterns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.field_patterns.new](#fn-encryption_entitiesencryption_entitiesfield_patternsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `items` sub block.\n', args=[]),
       new(
         provider_id,
         public_key_id,
@@ -23,7 +23,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         public_key_id: public_key_id,
       }),
     },
-    '#new':: d.fn(help='\n`aws.cloudfront_field_level_encryption_profile.encryption_entities.new` constructs a new object with attributes and blocks configured for the `encryption_entities`\nTerraform sub block.\n\n\n\n**Args**:\n  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new](#fn-cloudfront_field_level_encryption_profileitemsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `encryption_entities` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudfront_field_level_encryption_profile.encryption_entities.new` constructs a new object with attributes and blocks configured for the `encryption_entities`\nTerraform sub block.\n\n\n\n**Args**:\n  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new](#fn-encryption_entitiesitemsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `encryption_entities` sub block.\n', args=[]),
     new(
       items=null
     ):: std.prune(a={

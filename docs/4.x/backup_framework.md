@@ -256,8 +256,8 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `input_parameter` (`list[obj]`):  When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.input_parameter.new](#fn-backup_frameworkinput_parameternew) constructor.
-  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.scope.new](#fn-backup_frameworkscopenew) constructor.
+  - `input_parameter` (`list[obj]`):  When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.input_parameter.new](#fn-controlinput_parameternew) constructor.
+  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.scope.new](#fn-controlscopenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `control` sub block.

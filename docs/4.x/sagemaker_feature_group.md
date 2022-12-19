@@ -383,8 +383,8 @@ Terraform sub block.
 
 **Args**:
   - `disable_glue_table_creation` (`bool`):  When `null`, the `disable_glue_table_creation` field will be omitted from the resulting object.
-  - `data_catalog_config` (`list[obj]`):  When `null`, the `data_catalog_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.data_catalog_config.new](#fn-sagemaker_feature_groupdata_catalog_confignew) constructor.
-  - `s3_storage_config` (`list[obj]`):  When `null`, the `s3_storage_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.s3_storage_config.new](#fn-sagemaker_feature_groups3_storage_confignew) constructor.
+  - `data_catalog_config` (`list[obj]`):  When `null`, the `data_catalog_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.data_catalog_config.new](#fn-offline_store_configdata_catalog_confignew) constructor.
+  - `s3_storage_config` (`list[obj]`):  When `null`, the `s3_storage_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.s3_storage_config.new](#fn-offline_store_configs3_storage_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `offline_store_config` sub block.
@@ -457,7 +457,7 @@ Terraform sub block.
 
 **Args**:
   - `enable_online_store` (`bool`):  When `null`, the `enable_online_store` field will be omitted from the resulting object.
-  - `security_config` (`list[obj]`):  When `null`, the `security_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.security_config.new](#fn-sagemaker_feature_groupsecurity_confignew) constructor.
+  - `security_config` (`list[obj]`):  When `null`, the `security_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.security_config.new](#fn-online_store_configsecurity_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `online_store_config` sub block.

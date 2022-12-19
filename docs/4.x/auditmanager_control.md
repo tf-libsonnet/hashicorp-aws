@@ -255,7 +255,7 @@ Terraform sub block.
   - `source_set_up_option` (`string`): 
   - `source_type` (`string`): 
   - `troubleshooting_text` (`string`):  When `null`, the `troubleshooting_text` field will be omitted from the resulting object.
-  - `source_keyword` (`list[obj]`):  When `null`, the `source_keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.source_keyword.new](#fn-auditmanager_controlsource_keywordnew) constructor.
+  - `source_keyword` (`list[obj]`):  When `null`, the `source_keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.source_keyword.new](#fn-control_mapping_sourcessource_keywordnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `control_mapping_sources` sub block.

@@ -1248,7 +1248,7 @@ Terraform sub block.
 
 **Args**:
   - `role_arn` (`string`): 
-  - `put_item` (`list[obj]`):  When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.put_item.new](#fn-iot_topic_ruleput_itemnew) constructor.
+  - `put_item` (`list[obj]`):  When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.dynamodbv2.put_item.new](#fn-dynamodbv2put_itemnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dynamodbv2` sub block.
@@ -1320,25 +1320,25 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_alarm` (`list[obj]`):  When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_alarm.new](#fn-iot_topic_rulecloudwatch_alarmnew) constructor.
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_logs.new](#fn-iot_topic_rulecloudwatch_logsnew) constructor.
-  - `cloudwatch_metric` (`list[obj]`):  When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_metric.new](#fn-iot_topic_rulecloudwatch_metricnew) constructor.
-  - `dynamodb` (`list[obj]`):  When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodb.new](#fn-iot_topic_ruledynamodbnew) constructor.
-  - `dynamodbv2` (`list[obj]`):  When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.new](#fn-iot_topic_ruledynamodbv2new) constructor.
-  - `elasticsearch` (`list[obj]`):  When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.elasticsearch.new](#fn-iot_topic_ruleelasticsearchnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.firehose.new](#fn-iot_topic_rulefirehosenew) constructor.
-  - `http` (`list[obj]`):  When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.new](#fn-iot_topic_rulehttpnew) constructor.
-  - `iot_analytics` (`list[obj]`):  When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_analytics.new](#fn-iot_topic_ruleiot_analyticsnew) constructor.
-  - `iot_events` (`list[obj]`):  When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_events.new](#fn-iot_topic_ruleiot_eventsnew) constructor.
-  - `kafka` (`list[obj]`):  When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kafka.new](#fn-iot_topic_rulekafkanew) constructor.
-  - `kinesis` (`list[obj]`):  When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kinesis.new](#fn-iot_topic_rulekinesisnew) constructor.
-  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.lambda.new](#fn-iot_topic_rulelambdanew) constructor.
-  - `republish` (`list[obj]`):  When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.republish.new](#fn-iot_topic_rulerepublishnew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.s3.new](#fn-iot_topic_rules3new) constructor.
-  - `sns` (`list[obj]`):  When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sns.new](#fn-iot_topic_rulesnsnew) constructor.
-  - `sqs` (`list[obj]`):  When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sqs.new](#fn-iot_topic_rulesqsnew) constructor.
-  - `step_functions` (`list[obj]`):  When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.step_functions.new](#fn-iot_topic_rulestep_functionsnew) constructor.
-  - `timestream` (`list[obj]`):  When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.new](#fn-iot_topic_ruletimestreamnew) constructor.
+  - `cloudwatch_alarm` (`list[obj]`):  When `null`, the `cloudwatch_alarm` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_alarm.new](#fn-error_actioncloudwatch_alarmnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_logs.new](#fn-error_actioncloudwatch_logsnew) constructor.
+  - `cloudwatch_metric` (`list[obj]`):  When `null`, the `cloudwatch_metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.cloudwatch_metric.new](#fn-error_actioncloudwatch_metricnew) constructor.
+  - `dynamodb` (`list[obj]`):  When `null`, the `dynamodb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodb.new](#fn-error_actiondynamodbnew) constructor.
+  - `dynamodbv2` (`list[obj]`):  When `null`, the `dynamodbv2` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.new](#fn-error_actiondynamodbv2new) constructor.
+  - `elasticsearch` (`list[obj]`):  When `null`, the `elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.elasticsearch.new](#fn-error_actionelasticsearchnew) constructor.
+  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.firehose.new](#fn-error_actionfirehosenew) constructor.
+  - `http` (`list[obj]`):  When `null`, the `http` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.new](#fn-error_actionhttpnew) constructor.
+  - `iot_analytics` (`list[obj]`):  When `null`, the `iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_analytics.new](#fn-error_actioniot_analyticsnew) constructor.
+  - `iot_events` (`list[obj]`):  When `null`, the `iot_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.iot_events.new](#fn-error_actioniot_eventsnew) constructor.
+  - `kafka` (`list[obj]`):  When `null`, the `kafka` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kafka.new](#fn-error_actionkafkanew) constructor.
+  - `kinesis` (`list[obj]`):  When `null`, the `kinesis` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kinesis.new](#fn-error_actionkinesisnew) constructor.
+  - `lambda` (`list[obj]`):  When `null`, the `lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.lambda.new](#fn-error_actionlambdanew) constructor.
+  - `republish` (`list[obj]`):  When `null`, the `republish` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.republish.new](#fn-error_actionrepublishnew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.s3.new](#fn-error_actions3new) constructor.
+  - `sns` (`list[obj]`):  When `null`, the `sns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sns.new](#fn-error_actionsnsnew) constructor.
+  - `sqs` (`list[obj]`):  When `null`, the `sqs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.sqs.new](#fn-error_actionsqsnew) constructor.
+  - `step_functions` (`list[obj]`):  When `null`, the `step_functions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.step_functions.new](#fn-error_actionstep_functionsnew) constructor.
+  - `timestream` (`list[obj]`):  When `null`, the `timestream` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.new](#fn-error_actiontimestreamnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `error_action` sub block.
@@ -1472,7 +1472,7 @@ Terraform sub block.
 
 **Args**:
   - `role_arn` (`string`): 
-  - `put_item` (`list[obj]`):  When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.put_item.new](#fn-iot_topic_ruleerror_actionput_itemnew) constructor.
+  - `put_item` (`list[obj]`):  When `null`, the `put_item` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.dynamodbv2.put_item.new](#fn-error_actionerror_actionput_itemnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dynamodbv2` sub block.
@@ -1571,7 +1571,7 @@ Terraform sub block.
 **Args**:
   - `confirmation_url` (`string`):  When `null`, the `confirmation_url` field will be omitted from the resulting object.
   - `url` (`string`): 
-  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.http_header.new](#fn-iot_topic_ruleerror_actionhttp_headernew) constructor.
+  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.http.http_header.new](#fn-error_actionerror_actionhttp_headernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http` sub block.
@@ -1871,8 +1871,8 @@ Terraform sub block.
   - `database_name` (`string`): 
   - `role_arn` (`string`): 
   - `table_name` (`string`): 
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.dimension.new](#fn-iot_topic_ruleerror_actiondimensionnew) constructor.
-  - `timestamp` (`list[obj]`):  When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.timestamp.new](#fn-iot_topic_ruleerror_actiontimestampnew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.dimension.new](#fn-error_actionerror_actiondimensionnew) constructor.
+  - `timestamp` (`list[obj]`):  When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.timestream.timestamp.new](#fn-error_actionerror_actiontimestampnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timestream` sub block.
@@ -1970,7 +1970,7 @@ Terraform sub block.
 **Args**:
   - `confirmation_url` (`string`):  When `null`, the `confirmation_url` field will be omitted from the resulting object.
   - `url` (`string`): 
-  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.http_header.new](#fn-iot_topic_rulehttp_headernew) constructor.
+  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.http.http_header.new](#fn-httphttp_headernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http` sub block.
@@ -2270,8 +2270,8 @@ Terraform sub block.
   - `database_name` (`string`): 
   - `role_arn` (`string`): 
   - `table_name` (`string`): 
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.dimension.new](#fn-iot_topic_ruledimensionnew) constructor.
-  - `timestamp` (`list[obj]`):  When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.timestamp.new](#fn-iot_topic_ruletimestampnew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.dimension.new](#fn-timestreamdimensionnew) constructor.
+  - `timestamp` (`list[obj]`):  When `null`, the `timestamp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.timestream.timestamp.new](#fn-timestreamtimestampnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `timestream` sub block.

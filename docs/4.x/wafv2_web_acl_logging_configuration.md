@@ -237,7 +237,7 @@ Terraform sub block.
 
 **Args**:
   - `default_behavior` (`string`): 
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.new](#fn-wafv2_web_acl_logging_configurationfilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.new](#fn-logging_filterfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging_filter` sub block.
@@ -262,7 +262,7 @@ Terraform sub block.
 **Args**:
   - `behavior` (`string`): 
   - `requirement` (`string`): 
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.condition.new](#fn-wafv2_web_acl_logging_configurationlogging_filterconditionnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.condition.new](#fn-logging_filterlogging_filterconditionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -285,8 +285,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `action_condition` (`list[obj]`):  When `null`, the `action_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.condition.action_condition.new](#fn-wafv2_web_acl_logging_configurationlogging_filterfilteraction_conditionnew) constructor.
-  - `label_name_condition` (`list[obj]`):  When `null`, the `label_name_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.condition.label_name_condition.new](#fn-wafv2_web_acl_logging_configurationlogging_filterfilterlabel_name_conditionnew) constructor.
+  - `action_condition` (`list[obj]`):  When `null`, the `action_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.condition.action_condition.new](#fn-logging_filterlogging_filterfilteraction_conditionnew) constructor.
+  - `label_name_condition` (`list[obj]`):  When `null`, the `label_name_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.logging_filter.filter.condition.label_name_condition.new](#fn-logging_filterlogging_filterfilterlabel_name_conditionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.
@@ -355,13 +355,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `all_query_arguments` (`list[obj]`):  When `null`, the `all_query_arguments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.all_query_arguments.new](#fn-wafv2_web_acl_logging_configurationall_query_argumentsnew) constructor.
-  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.body.new](#fn-wafv2_web_acl_logging_configurationbodynew) constructor.
-  - `method` (`list[obj]`):  When `null`, the `method` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.method.new](#fn-wafv2_web_acl_logging_configurationmethodnew) constructor.
-  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.query_string.new](#fn-wafv2_web_acl_logging_configurationquery_stringnew) constructor.
-  - `single_header` (`list[obj]`):  When `null`, the `single_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_header.new](#fn-wafv2_web_acl_logging_configurationsingle_headernew) constructor.
-  - `single_query_argument` (`list[obj]`):  When `null`, the `single_query_argument` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_query_argument.new](#fn-wafv2_web_acl_logging_configurationsingle_query_argumentnew) constructor.
-  - `uri_path` (`list[obj]`):  When `null`, the `uri_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.uri_path.new](#fn-wafv2_web_acl_logging_configurationuri_pathnew) constructor.
+  - `all_query_arguments` (`list[obj]`):  When `null`, the `all_query_arguments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.all_query_arguments.new](#fn-redacted_fieldsall_query_argumentsnew) constructor.
+  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.body.new](#fn-redacted_fieldsbodynew) constructor.
+  - `method` (`list[obj]`):  When `null`, the `method` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.method.new](#fn-redacted_fieldsmethodnew) constructor.
+  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.query_string.new](#fn-redacted_fieldsquery_stringnew) constructor.
+  - `single_header` (`list[obj]`):  When `null`, the `single_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_header.new](#fn-redacted_fieldssingle_headernew) constructor.
+  - `single_query_argument` (`list[obj]`):  When `null`, the `single_query_argument` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_query_argument.new](#fn-redacted_fieldssingle_query_argumentnew) constructor.
+  - `uri_path` (`list[obj]`):  When `null`, the `uri_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.uri_path.new](#fn-redacted_fieldsuri_pathnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `redacted_fields` sub block.

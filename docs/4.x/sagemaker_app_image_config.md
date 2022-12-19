@@ -194,8 +194,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `file_system_config` (`list[obj]`):  When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.kernel_gateway_image_config.file_system_config.new](#fn-sagemaker_app_image_configfile_system_confignew) constructor.
-  - `kernel_spec` (`list[obj]`):  When `null`, the `kernel_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.kernel_gateway_image_config.kernel_spec.new](#fn-sagemaker_app_image_configkernel_specnew) constructor.
+  - `file_system_config` (`list[obj]`):  When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.kernel_gateway_image_config.file_system_config.new](#fn-kernel_gateway_image_configfile_system_confignew) constructor.
+  - `kernel_spec` (`list[obj]`):  When `null`, the `kernel_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.kernel_gateway_image_config.kernel_spec.new](#fn-kernel_gateway_image_configkernel_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kernel_gateway_image_config` sub block.

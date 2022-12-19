@@ -336,7 +336,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ecr_image_puller_role` (`list[obj]`):  When `null`, the `ecr_image_puller_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.ecr_image_puller_role.new](#fn-lightsail_container_serviceecr_image_puller_rolenew) constructor.
+  - `ecr_image_puller_role` (`list[obj]`):  When `null`, the `ecr_image_puller_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.private_registry_access.ecr_image_puller_role.new](#fn-private_registry_accessecr_image_puller_rolenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `private_registry_access` sub block.
@@ -382,7 +382,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.certificate.new](#fn-lightsail_container_servicecertificatenew) constructor.
+  - `certificate` (`list[obj]`):  When `null`, the `certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service.public_domain_names.certificate.new](#fn-public_domain_namescertificatenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `public_domain_names` sub block.

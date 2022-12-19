@@ -1061,8 +1061,8 @@ Terraform sub block.
 **Args**:
   - `enabled` (`bool`): 
   - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
-  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.new](#fn-ecs_servicelog_configurationnew) constructor.
-  - `service` (`list[obj]`):  When `null`, the `service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.new](#fn-ecs_serviceservicenew) constructor.
+  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.new](#fn-service_connect_configurationlog_configurationnew) constructor.
+  - `service` (`list[obj]`):  When `null`, the `service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.new](#fn-service_connect_configurationservicenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `service_connect_configuration` sub block.
@@ -1087,7 +1087,7 @@ Terraform sub block.
 **Args**:
   - `log_driver` (`string`):  When `null`, the `log_driver` field will be omitted from the resulting object.
   - `options` (`obj`):  When `null`, the `options` field will be omitted from the resulting object.
-  - `secret_option` (`list[obj]`):  When `null`, the `secret_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.secret_option.new](#fn-ecs_serviceservice_connect_configurationsecret_optionnew) constructor.
+  - `secret_option` (`list[obj]`):  When `null`, the `secret_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.secret_option.new](#fn-service_connect_configurationservice_connect_configurationsecret_optionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `log_configuration` sub block.
@@ -1137,7 +1137,7 @@ Terraform sub block.
   - `discovery_name` (`string`):  When `null`, the `discovery_name` field will be omitted from the resulting object.
   - `ingress_port_override` (`number`):  When `null`, the `ingress_port_override` field will be omitted from the resulting object.
   - `port_name` (`string`): 
-  - `client_alias` (`list[obj]`):  When `null`, the `client_alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.client_alias.new](#fn-ecs_serviceservice_connect_configurationclient_aliasnew) constructor.
+  - `client_alias` (`list[obj]`):  When `null`, the `client_alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.service.client_alias.new](#fn-service_connect_configurationservice_connect_configurationclient_aliasnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `service` sub block.

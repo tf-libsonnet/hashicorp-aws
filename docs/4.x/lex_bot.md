@@ -475,7 +475,7 @@ Terraform sub block.
 
 **Args**:
   - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.message.new](#fn-lex_botmessagenew) constructor.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.abort_statement.message.new](#fn-abort_statementmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `abort_statement` sub block.
@@ -525,7 +525,7 @@ Terraform sub block.
 **Args**:
   - `max_attempts` (`number`): 
   - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.message.new](#fn-lex_botmessagenew) constructor.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot.clarification_prompt.message.new](#fn-clarification_promptmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `clarification_prompt` sub block.

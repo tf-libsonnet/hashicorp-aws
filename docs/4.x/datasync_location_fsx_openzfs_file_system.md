@@ -232,7 +232,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new](#fn-datasync_location_fsx_openzfs_file_systemnfsnew) constructor.
+  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new](#fn-protocolnfsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `protocol` sub block.
@@ -255,7 +255,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.mount_options.new](#fn-datasync_location_fsx_openzfs_file_systemprotocolmount_optionsnew) constructor.
+  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.mount_options.new](#fn-protocolprotocolmount_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs` sub block.

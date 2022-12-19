@@ -264,8 +264,8 @@ Terraform sub block.
   - `bid_price_as_percentage_of_on_demand_price` (`number`):  When `null`, the `bid_price_as_percentage_of_on_demand_price` field will be omitted from the resulting object.
   - `instance_type` (`string`): 
   - `weighted_capacity` (`number`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.configurations.new](#fn-emr_instance_fleetconfigurationsnew) constructor.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.ebs_config.new](#fn-emr_instance_fleetebs_confignew) constructor.
+  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.configurations.new](#fn-instance_type_configsconfigurationsnew) constructor.
+  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.ebs_config.new](#fn-instance_type_configsebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_type_configs` sub block.
@@ -338,8 +338,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.on_demand_specification.new](#fn-emr_instance_fleeton_demand_specificationnew) constructor.
-  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.spot_specification.new](#fn-emr_instance_fleetspot_specificationnew) constructor.
+  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.on_demand_specification.new](#fn-launch_specificationson_demand_specificationnew) constructor.
+  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.spot_specification.new](#fn-launch_specificationsspot_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_specifications` sub block.

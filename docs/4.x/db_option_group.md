@@ -315,7 +315,7 @@ Terraform sub block.
   - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
   - `vpc_security_group_memberships` (`list`):  When `null`, the `vpc_security_group_memberships` field will be omitted from the resulting object.
-  - `option_settings` (`list[obj]`):  When `null`, the `option_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.option_settings.new](#fn-db_option_groupoption_settingsnew) constructor.
+  - `option_settings` (`list[obj]`):  When `null`, the `option_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.option_settings.new](#fn-optionoption_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `option` sub block.

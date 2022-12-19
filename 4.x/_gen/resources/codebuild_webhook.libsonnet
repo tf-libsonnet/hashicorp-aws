@@ -15,7 +15,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.codebuild_webhook.filter_group.new` constructs a new object with attributes and blocks configured for the `filter_group`\nTerraform sub block.\n\n\n\n**Args**:\n  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-codebuild_webhookfilternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `filter_group` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.codebuild_webhook.filter_group.new` constructs a new object with attributes and blocks configured for the `filter_group`\nTerraform sub block.\n\n\n\n**Args**:\n  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-filter_groupfilternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `filter_group` sub block.\n', args=[]),
     new(
       filter=null
     ):: std.prune(a={

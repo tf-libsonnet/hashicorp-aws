@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='api_gateway_usage_plan', url='', help='`api_gateway_usage_plan` represents the `aws_api_gateway_usage_plan` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   api_stages:: {
-    '#new':: d.fn(help='\n`aws.api_gateway_usage_plan.api_stages.new` constructs a new object with attributes and blocks configured for the `api_stages`\nTerraform sub block.\n\n\n\n**Args**:\n  - `api_id` (`string`): \n  - `stage` (`string`): \n  - `throttle` (`list[obj]`):  When `null`, the `throttle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.throttle.new](#fn-api_gateway_usage_planthrottlenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `api_stages` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.api_gateway_usage_plan.api_stages.new` constructs a new object with attributes and blocks configured for the `api_stages`\nTerraform sub block.\n\n\n\n**Args**:\n  - `api_id` (`string`): \n  - `stage` (`string`): \n  - `throttle` (`list[obj]`):  When `null`, the `throttle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_usage_plan.api_stages.throttle.new](#fn-api_stagesthrottlenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `api_stages` sub block.\n', args=[]),
     new(
       api_id,
       stage,
