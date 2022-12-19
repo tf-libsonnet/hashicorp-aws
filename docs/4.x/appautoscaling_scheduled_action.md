@@ -65,7 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `service_namespace` (`string`): 
   - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
   - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
-  - `scalable_target_action` (`list[obj]`):  When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-appautoscalingscheduledactionscalabletargetactionnew) constructor.
+  - `scalable_target_action` (`list[obj]`):  When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-appautoscaling_scheduled_actionscalable_target_actionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,7 +81,7 @@ newAttrs()
 `aws.appautoscaling_scheduled_action.newAttrs` constructs a new object with attributes and blocks configured for the `appautoscaling_scheduled_action`
 Terraform resource.
 
-Unlike [aws.appautoscaling_scheduled_action.new](#fn-appautoscalingscheduledactionnew), this function will not inject the `resource`
+Unlike [aws.appautoscaling_scheduled_action.new](#fn-appautoscaling_scheduled_actionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -97,7 +97,7 @@ injecting into a complete block.
   - `service_namespace` (`string`): 
   - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
   - `timezone` (`string`):  When `null`, the `timezone` field will be omitted from the resulting object.
-  - `scalable_target_action` (`list[obj]`):  When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-appautoscalingscheduledactionscalabletargetactionnew) constructor.
+  - `scalable_target_action` (`list[obj]`):  When `null`, the `scalable_target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_scheduled_action.scalable_target_action.new](#fn-appautoscaling_scheduled_actionscalable_target_actionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appautoscaling_scheduled_action` resource into the root Terraform configuration.

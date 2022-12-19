@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
   - `zone_id` (`string`):  When `null`, the `zone_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.filter.new](#fn-availabilityzonefilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.timeouts.new](#fn-availabilityzonetimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.filter.new](#fn-availability_zonefilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.timeouts.new](#fn-availability_zonetimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.data.availability_zone.newAttrs` constructs a new object with attributes and blocks configured for the `availability_zone`
 Terraform data source.
 
-Unlike [aws.data.availability_zone.new](#fn-availabilityzonenew), this function will not inject the `data source`
+Unlike [aws.data.availability_zone.new](#fn-availability_zonenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
   - `zone_id` (`string`):  When `null`, the `zone_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.filter.new](#fn-availabilityzonefilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.timeouts.new](#fn-availabilityzonetimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.filter.new](#fn-availability_zonefilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.availability_zone.timeouts.new](#fn-availability_zonetimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `availability_zone` data source into the root Terraform configuration.

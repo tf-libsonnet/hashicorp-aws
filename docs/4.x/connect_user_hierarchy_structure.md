@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `instance_id` (`string`): 
-  - `hierarchy_structure` (`list[obj]`):  When `null`, the `hierarchy_structure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.new](#fn-connectuserhierarchystructurehierarchystructurenew) constructor.
+  - `hierarchy_structure` (`list[obj]`):  When `null`, the `hierarchy_structure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.new](#fn-connect_user_hierarchy_structurehierarchy_structurenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.connect_user_hierarchy_structure.newAttrs` constructs a new object with attributes and blocks configured for the `connect_user_hierarchy_structure`
 Terraform resource.
 
-Unlike [aws.connect_user_hierarchy_structure.new](#fn-connectuserhierarchystructurenew), this function will not inject the `resource`
+Unlike [aws.connect_user_hierarchy_structure.new](#fn-connect_user_hierarchy_structurenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -86,7 +86,7 @@ injecting into a complete block.
 
 **Args**:
   - `instance_id` (`string`): 
-  - `hierarchy_structure` (`list[obj]`):  When `null`, the `hierarchy_structure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.new](#fn-connectuserhierarchystructurehierarchystructurenew) constructor.
+  - `hierarchy_structure` (`list[obj]`):  When `null`, the `hierarchy_structure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.new](#fn-connect_user_hierarchy_structurehierarchy_structurenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_user_hierarchy_structure` resource into the root Terraform configuration.
@@ -162,11 +162,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `level_five` (`list[obj]`):  When `null`, the `level_five` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_five.new](#fn-hierarchystructurelevelfivenew) constructor.
-  - `level_four` (`list[obj]`):  When `null`, the `level_four` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_four.new](#fn-hierarchystructurelevelfournew) constructor.
-  - `level_one` (`list[obj]`):  When `null`, the `level_one` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_one.new](#fn-hierarchystructurelevelonenew) constructor.
-  - `level_three` (`list[obj]`):  When `null`, the `level_three` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_three.new](#fn-hierarchystructurelevelthreenew) constructor.
-  - `level_two` (`list[obj]`):  When `null`, the `level_two` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_two.new](#fn-hierarchystructureleveltwonew) constructor.
+  - `level_five` (`list[obj]`):  When `null`, the `level_five` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_five.new](#fn-hierarchy_structurelevel_fivenew) constructor.
+  - `level_four` (`list[obj]`):  When `null`, the `level_four` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_four.new](#fn-hierarchy_structurelevel_fournew) constructor.
+  - `level_one` (`list[obj]`):  When `null`, the `level_one` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_one.new](#fn-hierarchy_structurelevel_onenew) constructor.
+  - `level_three` (`list[obj]`):  When `null`, the `level_three` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_three.new](#fn-hierarchy_structurelevel_threenew) constructor.
+  - `level_two` (`list[obj]`):  When `null`, the `level_two` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user_hierarchy_structure.hierarchy_structure.level_two.new](#fn-hierarchy_structurelevel_twonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `hierarchy_structure` sub block.

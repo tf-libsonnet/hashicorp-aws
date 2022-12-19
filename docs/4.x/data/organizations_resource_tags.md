@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.organizations_resource_tags.newAttrs` constructs a new object with attributes and blocks configured for the `organizations_resource_tags`
 Terraform data source.
 
-Unlike [aws.data.organizations_resource_tags.new](#fn-organizationsresourcetagsnew), this function will not inject the `data source`
+Unlike [aws.data.organizations_resource_tags.new](#fn-organizations_resource_tagsnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

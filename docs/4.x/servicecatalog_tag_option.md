@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `active` (`bool`):  When `null`, the `active` field will be omitted from the resulting object.
   - `key` (`string`): 
   - `value` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_tag_option.timeouts.new](#fn-servicecatalogtagoptiontimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_tag_option.timeouts.new](#fn-servicecatalog_tag_optiontimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.servicecatalog_tag_option.newAttrs` constructs a new object with attributes and blocks configured for the `servicecatalog_tag_option`
 Terraform resource.
 
-Unlike [aws.servicecatalog_tag_option.new](#fn-servicecatalogtagoptionnew), this function will not inject the `resource`
+Unlike [aws.servicecatalog_tag_option.new](#fn-servicecatalog_tag_optionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `active` (`bool`):  When `null`, the `active` field will be omitted from the resulting object.
   - `key` (`string`): 
   - `value` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_tag_option.timeouts.new](#fn-servicecatalogtagoptiontimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_tag_option.timeouts.new](#fn-servicecatalog_tag_optiontimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `servicecatalog_tag_option` resource into the root Terraform configuration.

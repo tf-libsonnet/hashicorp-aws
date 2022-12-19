@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `role_arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `source_s3_path` (`list[obj]`):  When `null`, the `source_s3_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.source_s3_path.new](#fn-kendraquerysuggestionsblocklistsources3pathnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.timeouts.new](#fn-kendraquerysuggestionsblocklisttimeoutsnew) constructor.
+  - `source_s3_path` (`list[obj]`):  When `null`, the `source_s3_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.source_s3_path.new](#fn-kendra_query_suggestions_block_listsource_s3_pathnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.timeouts.new](#fn-kendra_query_suggestions_block_listtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.kendra_query_suggestions_block_list.newAttrs` constructs a new object with attributes and blocks configured for the `kendra_query_suggestions_block_list`
 Terraform resource.
 
-Unlike [aws.kendra_query_suggestions_block_list.new](#fn-kendraquerysuggestionsblocklistnew), this function will not inject the `resource`
+Unlike [aws.kendra_query_suggestions_block_list.new](#fn-kendra_query_suggestions_block_listnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -96,8 +96,8 @@ injecting into a complete block.
   - `role_arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `source_s3_path` (`list[obj]`):  When `null`, the `source_s3_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.source_s3_path.new](#fn-kendraquerysuggestionsblocklistsources3pathnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.timeouts.new](#fn-kendraquerysuggestionsblocklisttimeoutsnew) constructor.
+  - `source_s3_path` (`list[obj]`):  When `null`, the `source_s3_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.source_s3_path.new](#fn-kendra_query_suggestions_block_listsource_s3_pathnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_query_suggestions_block_list.timeouts.new](#fn-kendra_query_suggestions_block_listtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kendra_query_suggestions_block_list` resource into the root Terraform configuration.

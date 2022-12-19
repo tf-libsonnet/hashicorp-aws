@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.waf_web_acl.newAttrs` constructs a new object with attributes and blocks configured for the `waf_web_acl`
 Terraform data source.
 
-Unlike [aws.data.waf_web_acl.new](#fn-wafwebaclnew), this function will not inject the `data source`
+Unlike [aws.data.waf_web_acl.new](#fn-waf_web_aclnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

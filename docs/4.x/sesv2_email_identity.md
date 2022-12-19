@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `email_identity` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `dkim_signing_attributes` (`list[obj]`):  When `null`, the `dkim_signing_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_email_identity.dkim_signing_attributes.new](#fn-sesv2emailidentitydkimsigningattributesnew) constructor.
+  - `dkim_signing_attributes` (`list[obj]`):  When `null`, the `dkim_signing_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_email_identity.dkim_signing_attributes.new](#fn-sesv2_email_identitydkim_signing_attributesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.sesv2_email_identity.newAttrs` constructs a new object with attributes and blocks configured for the `sesv2_email_identity`
 Terraform resource.
 
-Unlike [aws.sesv2_email_identity.new](#fn-sesv2emailidentitynew), this function will not inject the `resource`
+Unlike [aws.sesv2_email_identity.new](#fn-sesv2_email_identitynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `email_identity` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `dkim_signing_attributes` (`list[obj]`):  When `null`, the `dkim_signing_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_email_identity.dkim_signing_attributes.new](#fn-sesv2emailidentitydkimsigningattributesnew) constructor.
+  - `dkim_signing_attributes` (`list[obj]`):  When `null`, the `dkim_signing_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_email_identity.dkim_signing_attributes.new](#fn-sesv2_email_identitydkim_signing_attributesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sesv2_email_identity` resource into the root Terraform configuration.

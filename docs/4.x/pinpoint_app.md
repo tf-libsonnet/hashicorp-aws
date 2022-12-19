@@ -65,9 +65,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `campaign_hook` (`list[obj]`):  When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-pinpointappcampaignhooknew) constructor.
-  - `limits` (`list[obj]`):  When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-pinpointapplimitsnew) constructor.
-  - `quiet_time` (`list[obj]`):  When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-pinpointappquiettimenew) constructor.
+  - `campaign_hook` (`list[obj]`):  When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-pinpoint_appcampaign_hooknew) constructor.
+  - `limits` (`list[obj]`):  When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-pinpoint_applimitsnew) constructor.
+  - `quiet_time` (`list[obj]`):  When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-pinpoint_appquiet_timenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,7 +83,7 @@ newAttrs()
 `aws.pinpoint_app.newAttrs` constructs a new object with attributes and blocks configured for the `pinpoint_app`
 Terraform resource.
 
-Unlike [aws.pinpoint_app.new](#fn-pinpointappnew), this function will not inject the `resource`
+Unlike [aws.pinpoint_app.new](#fn-pinpoint_appnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -95,9 +95,9 @@ injecting into a complete block.
   - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `campaign_hook` (`list[obj]`):  When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-pinpointappcampaignhooknew) constructor.
-  - `limits` (`list[obj]`):  When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-pinpointapplimitsnew) constructor.
-  - `quiet_time` (`list[obj]`):  When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-pinpointappquiettimenew) constructor.
+  - `campaign_hook` (`list[obj]`):  When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-pinpoint_appcampaign_hooknew) constructor.
+  - `limits` (`list[obj]`):  When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-pinpoint_applimitsnew) constructor.
+  - `quiet_time` (`list[obj]`):  When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-pinpoint_appquiet_timenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `pinpoint_app` resource into the root Terraform configuration.

@@ -66,7 +66,7 @@ newAttrs()
 `aws.ec2_carrier_gateway.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_carrier_gateway`
 Terraform resource.
 
-Unlike [aws.ec2_carrier_gateway.new](#fn-ec2carriergatewaynew), this function will not inject the `resource`
+Unlike [aws.ec2_carrier_gateway.new](#fn-ec2_carrier_gatewaynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

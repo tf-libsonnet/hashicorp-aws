@@ -104,7 +104,7 @@ newAttrs()
 `aws.route53_health_check.newAttrs` constructs a new object with attributes and blocks configured for the `route53_health_check`
 Terraform resource.
 
-Unlike [aws.route53_health_check.new](#fn-route53healthchecknew), this function will not inject the `resource`
+Unlike [aws.route53_health_check.new](#fn-route53_health_checknew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

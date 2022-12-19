@@ -63,7 +63,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `semantic_version` (`string`):  When `null`, the `semantic_version` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.serverlessapplicationrepository_cloudformation_stack.timeouts.new](#fn-serverlessapplicationrepositorycloudformationstacktimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.serverlessapplicationrepository_cloudformation_stack.timeouts.new](#fn-serverlessapplicationrepository_cloudformation_stacktimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,7 +79,7 @@ newAttrs()
 `aws.serverlessapplicationrepository_cloudformation_stack.newAttrs` constructs a new object with attributes and blocks configured for the `serverlessapplicationrepository_cloudformation_stack`
 Terraform resource.
 
-Unlike [aws.serverlessapplicationrepository_cloudformation_stack.new](#fn-serverlessapplicationrepositorycloudformationstacknew), this function will not inject the `resource`
+Unlike [aws.serverlessapplicationrepository_cloudformation_stack.new](#fn-serverlessapplicationrepository_cloudformation_stacknew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,7 +94,7 @@ injecting into a complete block.
   - `semantic_version` (`string`):  When `null`, the `semantic_version` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.serverlessapplicationrepository_cloudformation_stack.timeouts.new](#fn-serverlessapplicationrepositorycloudformationstacktimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.serverlessapplicationrepository_cloudformation_stack.timeouts.new](#fn-serverlessapplicationrepository_cloudformation_stacktimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `serverlessapplicationrepository_cloudformation_stack` resource into the root Terraform configuration.

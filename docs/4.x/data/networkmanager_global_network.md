@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.networkmanager_global_network.newAttrs` constructs a new object with attributes and blocks configured for the `networkmanager_global_network`
 Terraform data source.
 
-Unlike [aws.data.networkmanager_global_network.new](#fn-networkmanagerglobalnetworknew), this function will not inject the `data source`
+Unlike [aws.data.networkmanager_global_network.new](#fn-networkmanager_global_networknew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

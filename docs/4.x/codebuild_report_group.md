@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `export_config` (`list[obj]`):  When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-codebuildreportgroupexportconfignew) constructor.
+  - `export_config` (`list[obj]`):  When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-codebuild_report_groupexport_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.codebuild_report_group.newAttrs` constructs a new object with attributes and blocks configured for the `codebuild_report_group`
 Terraform resource.
 
-Unlike [aws.codebuild_report_group.new](#fn-codebuildreportgroupnew), this function will not inject the `resource`
+Unlike [aws.codebuild_report_group.new](#fn-codebuild_report_groupnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -90,7 +90,7 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `export_config` (`list[obj]`):  When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-codebuildreportgroupexportconfignew) constructor.
+  - `export_config` (`list[obj]`):  When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-codebuild_report_groupexport_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codebuild_report_group` resource into the root Terraform configuration.
@@ -231,7 +231,7 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`): 
-  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-exportconfigs3destinationnew) constructor.
+  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-export_configs3_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `export_config` sub block.

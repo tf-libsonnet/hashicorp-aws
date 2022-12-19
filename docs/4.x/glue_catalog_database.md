@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `location_uri` (`string`):  When `null`, the `location_uri` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
-  - `create_table_default_permission` (`list[obj]`):  When `null`, the `create_table_default_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.new](#fn-gluecatalogdatabasecreatetabledefaultpermissionnew) constructor.
-  - `target_database` (`list[obj]`):  When `null`, the `target_database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.target_database.new](#fn-gluecatalogdatabasetargetdatabasenew) constructor.
+  - `create_table_default_permission` (`list[obj]`):  When `null`, the `create_table_default_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.new](#fn-glue_catalog_databasecreate_table_default_permissionnew) constructor.
+  - `target_database` (`list[obj]`):  When `null`, the `target_database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.target_database.new](#fn-glue_catalog_databasetarget_databasenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.glue_catalog_database.newAttrs` constructs a new object with attributes and blocks configured for the `glue_catalog_database`
 Terraform resource.
 
-Unlike [aws.glue_catalog_database.new](#fn-gluecatalogdatabasenew), this function will not inject the `resource`
+Unlike [aws.glue_catalog_database.new](#fn-glue_catalog_databasenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -95,8 +95,8 @@ injecting into a complete block.
   - `location_uri` (`string`):  When `null`, the `location_uri` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
-  - `create_table_default_permission` (`list[obj]`):  When `null`, the `create_table_default_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.new](#fn-gluecatalogdatabasecreatetabledefaultpermissionnew) constructor.
-  - `target_database` (`list[obj]`):  When `null`, the `target_database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.target_database.new](#fn-gluecatalogdatabasetargetdatabasenew) constructor.
+  - `create_table_default_permission` (`list[obj]`):  When `null`, the `create_table_default_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.new](#fn-glue_catalog_databasecreate_table_default_permissionnew) constructor.
+  - `target_database` (`list[obj]`):  When `null`, the `target_database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.target_database.new](#fn-glue_catalog_databasetarget_databasenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_catalog_database` resource into the root Terraform configuration.
@@ -274,7 +274,7 @@ Terraform sub block.
 
 **Args**:
   - `permissions` (`list`):  When `null`, the `permissions` field will be omitted from the resulting object.
-  - `principal` (`list[obj]`):  When `null`, the `principal` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.principal.new](#fn-createtabledefaultpermissionprincipalnew) constructor.
+  - `principal` (`list[obj]`):  When `null`, the `principal` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.principal.new](#fn-create_table_default_permissionprincipalnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `create_table_default_permission` sub block.

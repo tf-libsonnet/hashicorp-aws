@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `control` (`list[obj]`):  When `null`, the `control` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.new](#fn-backupframeworkcontrolnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.timeouts.new](#fn-backupframeworktimeoutsnew) constructor.
+  - `control` (`list[obj]`):  When `null`, the `control` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.new](#fn-backup_frameworkcontrolnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.timeouts.new](#fn-backup_frameworktimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.backup_framework.newAttrs` constructs a new object with attributes and blocks configured for the `backup_framework`
 Terraform resource.
 
-Unlike [aws.backup_framework.new](#fn-backupframeworknew), this function will not inject the `resource`
+Unlike [aws.backup_framework.new](#fn-backup_frameworknew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,8 +94,8 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `control` (`list[obj]`):  When `null`, the `control` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.new](#fn-backupframeworkcontrolnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.timeouts.new](#fn-backupframeworktimeoutsnew) constructor.
+  - `control` (`list[obj]`):  When `null`, the `control` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.new](#fn-backup_frameworkcontrolnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.timeouts.new](#fn-backup_frameworktimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `backup_framework` resource into the root Terraform configuration.
@@ -256,7 +256,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `input_parameter` (`list[obj]`):  When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.input_parameter.new](#fn-controlinputparameternew) constructor.
+  - `input_parameter` (`list[obj]`):  When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.input_parameter.new](#fn-controlinput_parameternew) constructor.
   - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_framework.control.scope.new](#fn-controlscopenew) constructor.
 
 **Returns**:

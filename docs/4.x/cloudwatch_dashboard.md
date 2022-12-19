@@ -64,7 +64,7 @@ newAttrs()
 `aws.cloudwatch_dashboard.newAttrs` constructs a new object with attributes and blocks configured for the `cloudwatch_dashboard`
 Terraform resource.
 
-Unlike [aws.cloudwatch_dashboard.new](#fn-cloudwatchdashboardnew), this function will not inject the `resource`
+Unlike [aws.cloudwatch_dashboard.new](#fn-cloudwatch_dashboardnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

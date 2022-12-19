@@ -64,7 +64,7 @@ newAttrs()
 `aws.ram_resource_association.newAttrs` constructs a new object with attributes and blocks configured for the `ram_resource_association`
 Terraform resource.
 
-Unlike [aws.ram_resource_association.new](#fn-ramresourceassociationnew), this function will not inject the `resource`
+Unlike [aws.ram_resource_association.new](#fn-ram_resource_associationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

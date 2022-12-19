@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.signer_signing_profile.newAttrs` constructs a new object with attributes and blocks configured for the `signer_signing_profile`
 Terraform data source.
 
-Unlike [aws.data.signer_signing_profile.new](#fn-signersigningprofilenew), this function will not inject the `data source`
+Unlike [aws.data.signer_signing_profile.new](#fn-signer_signing_profilenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

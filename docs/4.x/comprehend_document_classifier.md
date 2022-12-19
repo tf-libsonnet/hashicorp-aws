@@ -83,10 +83,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
   - `version_name_prefix` (`string`):  When `null`, the `version_name_prefix` field will be omitted from the resulting object.
   - `volume_kms_key_id` (`string`):  When `null`, the `volume_kms_key_id` field will be omitted from the resulting object.
-  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.new](#fn-comprehenddocumentclassifierinputdataconfignew) constructor.
-  - `output_data_config` (`list[obj]`):  When `null`, the `output_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.output_data_config.new](#fn-comprehenddocumentclassifieroutputdataconfignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.timeouts.new](#fn-comprehenddocumentclassifiertimeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.vpc_config.new](#fn-comprehenddocumentclassifiervpcconfignew) constructor.
+  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.new](#fn-comprehend_document_classifierinput_data_confignew) constructor.
+  - `output_data_config` (`list[obj]`):  When `null`, the `output_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.output_data_config.new](#fn-comprehend_document_classifieroutput_data_confignew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.timeouts.new](#fn-comprehend_document_classifiertimeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.vpc_config.new](#fn-comprehend_document_classifiervpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,7 +102,7 @@ newAttrs()
 `aws.comprehend_document_classifier.newAttrs` constructs a new object with attributes and blocks configured for the `comprehend_document_classifier`
 Terraform resource.
 
-Unlike [aws.comprehend_document_classifier.new](#fn-comprehenddocumentclassifiernew), this function will not inject the `resource`
+Unlike [aws.comprehend_document_classifier.new](#fn-comprehend_document_classifiernew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -120,10 +120,10 @@ injecting into a complete block.
   - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
   - `version_name_prefix` (`string`):  When `null`, the `version_name_prefix` field will be omitted from the resulting object.
   - `volume_kms_key_id` (`string`):  When `null`, the `volume_kms_key_id` field will be omitted from the resulting object.
-  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.new](#fn-comprehenddocumentclassifierinputdataconfignew) constructor.
-  - `output_data_config` (`list[obj]`):  When `null`, the `output_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.output_data_config.new](#fn-comprehenddocumentclassifieroutputdataconfignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.timeouts.new](#fn-comprehenddocumentclassifiertimeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.vpc_config.new](#fn-comprehenddocumentclassifiervpcconfignew) constructor.
+  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.new](#fn-comprehend_document_classifierinput_data_confignew) constructor.
+  - `output_data_config` (`list[obj]`):  When `null`, the `output_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.output_data_config.new](#fn-comprehend_document_classifieroutput_data_confignew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.timeouts.new](#fn-comprehend_document_classifiertimeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.vpc_config.new](#fn-comprehend_document_classifiervpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `comprehend_document_classifier` resource into the root Terraform configuration.
@@ -457,7 +457,7 @@ Terraform sub block.
   - `label_delimiter` (`string`):  When `null`, the `label_delimiter` field will be omitted from the resulting object.
   - `s3_uri` (`string`):  When `null`, the `s3_uri` field will be omitted from the resulting object.
   - `test_s3_uri` (`string`):  When `null`, the `test_s3_uri` field will be omitted from the resulting object.
-  - `augmented_manifests` (`list[obj]`):  When `null`, the `augmented_manifests` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.augmented_manifests.new](#fn-inputdataconfigaugmentedmanifestsnew) constructor.
+  - `augmented_manifests` (`list[obj]`):  When `null`, the `augmented_manifests` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.augmented_manifests.new](#fn-input_data_configaugmented_manifestsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input_data_config` sub block.

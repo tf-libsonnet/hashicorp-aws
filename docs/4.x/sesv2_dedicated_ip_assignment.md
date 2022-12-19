@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `destination_pool_name` (`string`): 
   - `ip` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_dedicated_ip_assignment.timeouts.new](#fn-sesv2dedicatedipassignmenttimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_dedicated_ip_assignment.timeouts.new](#fn-sesv2_dedicated_ip_assignmenttimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.sesv2_dedicated_ip_assignment.newAttrs` constructs a new object with attributes and blocks configured for the `sesv2_dedicated_ip_assignment`
 Terraform resource.
 
-Unlike [aws.sesv2_dedicated_ip_assignment.new](#fn-sesv2dedicatedipassignmentnew), this function will not inject the `resource`
+Unlike [aws.sesv2_dedicated_ip_assignment.new](#fn-sesv2_dedicated_ip_assignmentnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `destination_pool_name` (`string`): 
   - `ip` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_dedicated_ip_assignment.timeouts.new](#fn-sesv2dedicatedipassignmenttimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_dedicated_ip_assignment.timeouts.new](#fn-sesv2_dedicated_ip_assignmenttimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sesv2_dedicated_ip_assignment` resource into the root Terraform configuration.

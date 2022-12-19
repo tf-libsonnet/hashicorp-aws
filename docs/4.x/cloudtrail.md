@@ -89,9 +89,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `sns_topic_name` (`string`):  When `null`, the `sns_topic_name` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-cloudtrailadvancedeventselectornew) constructor.
-  - `event_selector` (`list[obj]`):  When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-cloudtraileventselectornew) constructor.
-  - `insight_selector` (`list[obj]`):  When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-cloudtrailinsightselectornew) constructor.
+  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-cloudtrailadvanced_event_selectornew) constructor.
+  - `event_selector` (`list[obj]`):  When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-cloudtrailevent_selectornew) constructor.
+  - `insight_selector` (`list[obj]`):  When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-cloudtrailinsight_selectornew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -129,9 +129,9 @@ injecting into a complete block.
   - `sns_topic_name` (`string`):  When `null`, the `sns_topic_name` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-cloudtrailadvancedeventselectornew) constructor.
-  - `event_selector` (`list[obj]`):  When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-cloudtraileventselectornew) constructor.
-  - `insight_selector` (`list[obj]`):  When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-cloudtrailinsightselectornew) constructor.
+  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-cloudtrailadvanced_event_selectornew) constructor.
+  - `event_selector` (`list[obj]`):  When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-cloudtrailevent_selectornew) constructor.
+  - `insight_selector` (`list[obj]`):  When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-cloudtrailinsight_selectornew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudtrail` resource into the root Terraform configuration.
@@ -490,7 +490,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.field_selector.new](#fn-advancedeventselectorfieldselectornew) constructor.
+  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.field_selector.new](#fn-advanced_event_selectorfield_selectornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_event_selector` sub block.
@@ -545,7 +545,7 @@ Terraform sub block.
   - `exclude_management_event_sources` (`list`):  When `null`, the `exclude_management_event_sources` field will be omitted from the resulting object.
   - `include_management_events` (`bool`):  When `null`, the `include_management_events` field will be omitted from the resulting object.
   - `read_write_type` (`string`):  When `null`, the `read_write_type` field will be omitted from the resulting object.
-  - `data_resource` (`list[obj]`):  When `null`, the `data_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.data_resource.new](#fn-eventselectordataresourcenew) constructor.
+  - `data_resource` (`list[obj]`):  When `null`, the `data_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.data_resource.new](#fn-event_selectordata_resourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `event_selector` sub block.

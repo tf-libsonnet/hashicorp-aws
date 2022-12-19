@@ -51,7 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `file_system_id` (`string`): 
-  - `backup_policy` (`list[obj]`):  When `null`, the `backup_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_backup_policy.backup_policy.new](#fn-efsbackuppolicybackuppolicynew) constructor.
+  - `backup_policy` (`list[obj]`):  When `null`, the `backup_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_backup_policy.backup_policy.new](#fn-efs_backup_policybackup_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -67,7 +67,7 @@ newAttrs()
 `aws.efs_backup_policy.newAttrs` constructs a new object with attributes and blocks configured for the `efs_backup_policy`
 Terraform resource.
 
-Unlike [aws.efs_backup_policy.new](#fn-efsbackuppolicynew), this function will not inject the `resource`
+Unlike [aws.efs_backup_policy.new](#fn-efs_backup_policynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -76,7 +76,7 @@ injecting into a complete block.
 
 **Args**:
   - `file_system_id` (`string`): 
-  - `backup_policy` (`list[obj]`):  When `null`, the `backup_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_backup_policy.backup_policy.new](#fn-efsbackuppolicybackuppolicynew) constructor.
+  - `backup_policy` (`list[obj]`):  When `null`, the `backup_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_backup_policy.backup_policy.new](#fn-efs_backup_policybackup_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `efs_backup_policy` resource into the root Terraform configuration.

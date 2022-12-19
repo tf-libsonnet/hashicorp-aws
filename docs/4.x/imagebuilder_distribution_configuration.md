@@ -73,7 +73,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `distribution` (`list[obj]`):  When `null`, the `distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.new](#fn-imagebuilderdistributionconfigurationdistributionnew) constructor.
+  - `distribution` (`list[obj]`):  When `null`, the `distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.new](#fn-imagebuilder_distribution_configurationdistributionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,7 +89,7 @@ newAttrs()
 `aws.imagebuilder_distribution_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `imagebuilder_distribution_configuration`
 Terraform resource.
 
-Unlike [aws.imagebuilder_distribution_configuration.new](#fn-imagebuilderdistributionconfigurationnew), this function will not inject the `resource`
+Unlike [aws.imagebuilder_distribution_configuration.new](#fn-imagebuilder_distribution_configurationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -101,7 +101,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `distribution` (`list[obj]`):  When `null`, the `distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.new](#fn-imagebuilderdistributionconfigurationdistributionnew) constructor.
+  - `distribution` (`list[obj]`):  When `null`, the `distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.new](#fn-imagebuilder_distribution_configurationdistributionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_distribution_configuration` resource into the root Terraform configuration.
@@ -227,10 +227,10 @@ Terraform sub block.
 **Args**:
   - `license_configuration_arns` (`list`):  When `null`, the `license_configuration_arns` field will be omitted from the resulting object.
   - `region` (`string`): 
-  - `ami_distribution_configuration` (`list[obj]`):  When `null`, the `ami_distribution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.ami_distribution_configuration.new](#fn-distributionamidistributionconfigurationnew) constructor.
-  - `container_distribution_configuration` (`list[obj]`):  When `null`, the `container_distribution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.container_distribution_configuration.new](#fn-distributioncontainerdistributionconfigurationnew) constructor.
-  - `fast_launch_configuration` (`list[obj]`):  When `null`, the `fast_launch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.fast_launch_configuration.new](#fn-distributionfastlaunchconfigurationnew) constructor.
-  - `launch_template_configuration` (`list[obj]`):  When `null`, the `launch_template_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.launch_template_configuration.new](#fn-distributionlaunchtemplateconfigurationnew) constructor.
+  - `ami_distribution_configuration` (`list[obj]`):  When `null`, the `ami_distribution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.ami_distribution_configuration.new](#fn-distributionami_distribution_configurationnew) constructor.
+  - `container_distribution_configuration` (`list[obj]`):  When `null`, the `container_distribution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.container_distribution_configuration.new](#fn-distributioncontainer_distribution_configurationnew) constructor.
+  - `fast_launch_configuration` (`list[obj]`):  When `null`, the `fast_launch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.fast_launch_configuration.new](#fn-distributionfast_launch_configurationnew) constructor.
+  - `launch_template_configuration` (`list[obj]`):  When `null`, the `launch_template_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.launch_template_configuration.new](#fn-distributionlaunch_template_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `distribution` sub block.
@@ -258,7 +258,7 @@ Terraform sub block.
   - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `target_account_ids` (`list`):  When `null`, the `target_account_ids` field will be omitted from the resulting object.
-  - `launch_permission` (`list[obj]`):  When `null`, the `launch_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.ami_distribution_configuration.launch_permission.new](#fn-amidistributionconfigurationlaunchpermissionnew) constructor.
+  - `launch_permission` (`list[obj]`):  When `null`, the `launch_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.ami_distribution_configuration.launch_permission.new](#fn-ami_distribution_configurationlaunch_permissionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ami_distribution_configuration` sub block.
@@ -309,7 +309,7 @@ Terraform sub block.
 **Args**:
   - `container_tags` (`list`):  When `null`, the `container_tags` field will be omitted from the resulting object.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.container_distribution_configuration.target_repository.new](#fn-containerdistributionconfigurationtargetrepositorynew) constructor.
+  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.container_distribution_configuration.target_repository.new](#fn-container_distribution_configurationtarget_repositorynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container_distribution_configuration` sub block.
@@ -359,8 +359,8 @@ Terraform sub block.
   - `account_id` (`string`): 
   - `enabled` (`bool`): 
   - `max_parallel_launches` (`number`):  When `null`, the `max_parallel_launches` field will be omitted from the resulting object.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.fast_launch_configuration.launch_template.new](#fn-fastlaunchconfigurationlaunchtemplatenew) constructor.
-  - `snapshot_configuration` (`list[obj]`):  When `null`, the `snapshot_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.fast_launch_configuration.snapshot_configuration.new](#fn-fastlaunchconfigurationsnapshotconfigurationnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.fast_launch_configuration.launch_template.new](#fn-fast_launch_configurationlaunch_templatenew) constructor.
+  - `snapshot_configuration` (`list[obj]`):  When `null`, the `snapshot_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_distribution_configuration.distribution.fast_launch_configuration.snapshot_configuration.new](#fn-fast_launch_configurationsnapshot_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `fast_launch_configuration` sub block.

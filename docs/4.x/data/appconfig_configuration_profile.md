@@ -66,7 +66,7 @@ newAttrs()
 `aws.data.appconfig_configuration_profile.newAttrs` constructs a new object with attributes and blocks configured for the `appconfig_configuration_profile`
 Terraform data source.
 
-Unlike [aws.data.appconfig_configuration_profile.new](#fn-appconfigconfigurationprofilenew), this function will not inject the `data source`
+Unlike [aws.data.appconfig_configuration_profile.new](#fn-appconfig_configuration_profilenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

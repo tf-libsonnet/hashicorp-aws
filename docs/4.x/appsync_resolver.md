@@ -75,9 +75,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `request_template` (`string`):  When `null`, the `request_template` field will be omitted from the resulting object.
   - `response_template` (`string`):  When `null`, the `response_template` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `caching_config` (`list[obj]`):  When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-appsyncresolvercachingconfignew) constructor.
-  - `pipeline_config` (`list[obj]`):  When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-appsyncresolverpipelineconfignew) constructor.
-  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-appsyncresolversyncconfignew) constructor.
+  - `caching_config` (`list[obj]`):  When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-appsync_resolvercaching_confignew) constructor.
+  - `pipeline_config` (`list[obj]`):  When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-appsync_resolverpipeline_confignew) constructor.
+  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-appsync_resolversync_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,7 +93,7 @@ newAttrs()
 `aws.appsync_resolver.newAttrs` constructs a new object with attributes and blocks configured for the `appsync_resolver`
 Terraform resource.
 
-Unlike [aws.appsync_resolver.new](#fn-appsyncresolvernew), this function will not inject the `resource`
+Unlike [aws.appsync_resolver.new](#fn-appsync_resolvernew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -109,9 +109,9 @@ injecting into a complete block.
   - `request_template` (`string`):  When `null`, the `request_template` field will be omitted from the resulting object.
   - `response_template` (`string`):  When `null`, the `response_template` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `caching_config` (`list[obj]`):  When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-appsyncresolvercachingconfignew) constructor.
-  - `pipeline_config` (`list[obj]`):  When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-appsyncresolverpipelineconfignew) constructor.
-  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-appsyncresolversyncconfignew) constructor.
+  - `caching_config` (`list[obj]`):  When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-appsync_resolvercaching_confignew) constructor.
+  - `pipeline_config` (`list[obj]`):  When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-appsync_resolverpipeline_confignew) constructor.
+  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-appsync_resolversync_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appsync_resolver` resource into the root Terraform configuration.
@@ -422,7 +422,7 @@ Terraform sub block.
 **Args**:
   - `conflict_detection` (`string`):  When `null`, the `conflict_detection` field will be omitted from the resulting object.
   - `conflict_handler` (`string`):  When `null`, the `conflict_handler` field will be omitted from the resulting object.
-  - `lambda_conflict_handler_config` (`list[obj]`):  When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.lambda_conflict_handler_config.new](#fn-syncconfiglambdaconflicthandlerconfignew) constructor.
+  - `lambda_conflict_handler_config` (`list[obj]`):  When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.lambda_conflict_handler_config.new](#fn-sync_configlambda_conflict_handler_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sync_config` sub block.

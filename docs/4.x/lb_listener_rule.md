@@ -87,8 +87,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.new](#fn-lblistenerruleactionnew) constructor.
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.new](#fn-lblistenerruleconditionnew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.new](#fn-lb_listener_ruleactionnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.new](#fn-lb_listener_ruleconditionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -104,7 +104,7 @@ newAttrs()
 `aws.lb_listener_rule.newAttrs` constructs a new object with attributes and blocks configured for the `lb_listener_rule`
 Terraform resource.
 
-Unlike [aws.lb_listener_rule.new](#fn-lblistenerrulenew), this function will not inject the `resource`
+Unlike [aws.lb_listener_rule.new](#fn-lb_listener_rulenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -116,8 +116,8 @@ injecting into a complete block.
   - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.new](#fn-lblistenerruleactionnew) constructor.
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.new](#fn-lblistenerruleconditionnew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.new](#fn-lb_listener_ruleactionnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.new](#fn-lb_listener_ruleconditionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lb_listener_rule` resource into the root Terraform configuration.
@@ -281,9 +281,9 @@ Terraform sub block.
   - `order` (`number`):  When `null`, the `order` field will be omitted from the resulting object.
   - `target_group_arn` (`string`):  When `null`, the `target_group_arn` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `authenticate_cognito` (`list[obj]`):  When `null`, the `authenticate_cognito` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.authenticate_cognito.new](#fn-actionauthenticatecognitonew) constructor.
-  - `authenticate_oidc` (`list[obj]`):  When `null`, the `authenticate_oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.authenticate_oidc.new](#fn-actionauthenticateoidcnew) constructor.
-  - `fixed_response` (`list[obj]`):  When `null`, the `fixed_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.fixed_response.new](#fn-actionfixedresponsenew) constructor.
+  - `authenticate_cognito` (`list[obj]`):  When `null`, the `authenticate_cognito` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.authenticate_cognito.new](#fn-actionauthenticate_cognitonew) constructor.
+  - `authenticate_oidc` (`list[obj]`):  When `null`, the `authenticate_oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.authenticate_oidc.new](#fn-actionauthenticate_oidcnew) constructor.
+  - `fixed_response` (`list[obj]`):  When `null`, the `fixed_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.fixed_response.new](#fn-actionfixed_responsenew) constructor.
   - `forward` (`list[obj]`):  When `null`, the `forward` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.forward.new](#fn-actionforwardnew) constructor.
   - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.redirect.new](#fn-actionredirectnew) constructor.
 
@@ -397,7 +397,7 @@ Terraform sub block.
 
 **Args**:
   - `stickiness` (`list[obj]`):  When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.forward.stickiness.new](#fn-forwardstickinessnew) constructor.
-  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.forward.target_group.new](#fn-forwardtargetgroupnew) constructor.
+  - `target_group` (`list[obj]`):  When `null`, the `target_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.action.forward.target_group.new](#fn-forwardtarget_groupnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `forward` sub block.
@@ -496,12 +496,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `host_header` (`list[obj]`):  When `null`, the `host_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.host_header.new](#fn-conditionhostheadernew) constructor.
-  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.http_header.new](#fn-conditionhttpheadernew) constructor.
-  - `http_request_method` (`list[obj]`):  When `null`, the `http_request_method` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.http_request_method.new](#fn-conditionhttprequestmethodnew) constructor.
-  - `path_pattern` (`list[obj]`):  When `null`, the `path_pattern` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.path_pattern.new](#fn-conditionpathpatternnew) constructor.
-  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.query_string.new](#fn-conditionquerystringnew) constructor.
-  - `source_ip` (`list[obj]`):  When `null`, the `source_ip` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.source_ip.new](#fn-conditionsourceipnew) constructor.
+  - `host_header` (`list[obj]`):  When `null`, the `host_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.host_header.new](#fn-conditionhost_headernew) constructor.
+  - `http_header` (`list[obj]`):  When `null`, the `http_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.http_header.new](#fn-conditionhttp_headernew) constructor.
+  - `http_request_method` (`list[obj]`):  When `null`, the `http_request_method` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.http_request_method.new](#fn-conditionhttp_request_methodnew) constructor.
+  - `path_pattern` (`list[obj]`):  When `null`, the `path_pattern` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.path_pattern.new](#fn-conditionpath_patternnew) constructor.
+  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.query_string.new](#fn-conditionquery_stringnew) constructor.
+  - `source_ip` (`list[obj]`):  When `null`, the `source_ip` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener_rule.condition.source_ip.new](#fn-conditionsource_ipnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.

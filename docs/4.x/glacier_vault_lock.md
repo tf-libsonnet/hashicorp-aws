@@ -68,7 +68,7 @@ newAttrs()
 `aws.glacier_vault_lock.newAttrs` constructs a new object with attributes and blocks configured for the `glacier_vault_lock`
 Terraform resource.
 
-Unlike [aws.glacier_vault_lock.new](#fn-glaciervaultlocknew), this function will not inject the `resource`
+Unlike [aws.glacier_vault_lock.new](#fn-glacier_vault_locknew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

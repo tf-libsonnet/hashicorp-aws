@@ -93,9 +93,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `throughput_capacity` (`number`): 
   - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `audit_log_configuration` (`list[obj]`):  When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-fsxwindowsfilesystemauditlogconfigurationnew) constructor.
-  - `self_managed_active_directory` (`list[obj]`):  When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-fsxwindowsfilesystemselfmanagedactivedirectorynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-fsxwindowsfilesystemtimeoutsnew) constructor.
+  - `audit_log_configuration` (`list[obj]`):  When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-fsx_windows_file_systemaudit_log_configurationnew) constructor.
+  - `self_managed_active_directory` (`list[obj]`):  When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-fsx_windows_file_systemself_managed_active_directorynew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-fsx_windows_file_systemtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -111,7 +111,7 @@ newAttrs()
 `aws.fsx_windows_file_system.newAttrs` constructs a new object with attributes and blocks configured for the `fsx_windows_file_system`
 Terraform resource.
 
-Unlike [aws.fsx_windows_file_system.new](#fn-fsxwindowsfilesystemnew), this function will not inject the `resource`
+Unlike [aws.fsx_windows_file_system.new](#fn-fsx_windows_file_systemnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -137,9 +137,9 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `throughput_capacity` (`number`): 
   - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `audit_log_configuration` (`list[obj]`):  When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-fsxwindowsfilesystemauditlogconfigurationnew) constructor.
-  - `self_managed_active_directory` (`list[obj]`):  When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-fsxwindowsfilesystemselfmanagedactivedirectorynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-fsxwindowsfilesystemtimeoutsnew) constructor.
+  - `audit_log_configuration` (`list[obj]`):  When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-fsx_windows_file_systemaudit_log_configurationnew) constructor.
+  - `self_managed_active_directory` (`list[obj]`):  When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-fsx_windows_file_systemself_managed_active_directorynew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-fsx_windows_file_systemtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_windows_file_system` resource into the root Terraform configuration.

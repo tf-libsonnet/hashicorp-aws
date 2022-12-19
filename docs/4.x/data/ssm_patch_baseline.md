@@ -68,7 +68,7 @@ newAttrs()
 `aws.data.ssm_patch_baseline.newAttrs` constructs a new object with attributes and blocks configured for the `ssm_patch_baseline`
 Terraform data source.
 
-Unlike [aws.data.ssm_patch_baseline.new](#fn-ssmpatchbaselinenew), this function will not inject the `data source`
+Unlike [aws.data.ssm_patch_baseline.new](#fn-ssm_patch_baselinenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

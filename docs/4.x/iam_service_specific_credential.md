@@ -66,7 +66,7 @@ newAttrs()
 `aws.iam_service_specific_credential.newAttrs` constructs a new object with attributes and blocks configured for the `iam_service_specific_credential`
 Terraform resource.
 
-Unlike [aws.iam_service_specific_credential.new](#fn-iamservicespecificcredentialnew), this function will not inject the `resource`
+Unlike [aws.iam_service_specific_credential.new](#fn-iam_service_specific_credentialnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

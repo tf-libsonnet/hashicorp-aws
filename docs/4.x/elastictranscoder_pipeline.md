@@ -75,11 +75,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `output_bucket` (`string`):  When `null`, the `output_bucket` field will be omitted from the resulting object.
   - `role` (`string`): 
-  - `content_config` (`list[obj]`):  When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-elastictranscoderpipelinecontentconfignew) constructor.
-  - `content_config_permissions` (`list[obj]`):  When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-elastictranscoderpipelinecontentconfigpermissionsnew) constructor.
-  - `notifications` (`list[obj]`):  When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-elastictranscoderpipelinenotificationsnew) constructor.
-  - `thumbnail_config` (`list[obj]`):  When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-elastictranscoderpipelinethumbnailconfignew) constructor.
-  - `thumbnail_config_permissions` (`list[obj]`):  When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-elastictranscoderpipelinethumbnailconfigpermissionsnew) constructor.
+  - `content_config` (`list[obj]`):  When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-elastictranscoder_pipelinecontent_confignew) constructor.
+  - `content_config_permissions` (`list[obj]`):  When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-elastictranscoder_pipelinecontent_config_permissionsnew) constructor.
+  - `notifications` (`list[obj]`):  When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-elastictranscoder_pipelinenotificationsnew) constructor.
+  - `thumbnail_config` (`list[obj]`):  When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-elastictranscoder_pipelinethumbnail_confignew) constructor.
+  - `thumbnail_config_permissions` (`list[obj]`):  When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-elastictranscoder_pipelinethumbnail_config_permissionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,7 +95,7 @@ newAttrs()
 `aws.elastictranscoder_pipeline.newAttrs` constructs a new object with attributes and blocks configured for the `elastictranscoder_pipeline`
 Terraform resource.
 
-Unlike [aws.elastictranscoder_pipeline.new](#fn-elastictranscoderpipelinenew), this function will not inject the `resource`
+Unlike [aws.elastictranscoder_pipeline.new](#fn-elastictranscoder_pipelinenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -108,11 +108,11 @@ injecting into a complete block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `output_bucket` (`string`):  When `null`, the `output_bucket` field will be omitted from the resulting object.
   - `role` (`string`): 
-  - `content_config` (`list[obj]`):  When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-elastictranscoderpipelinecontentconfignew) constructor.
-  - `content_config_permissions` (`list[obj]`):  When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-elastictranscoderpipelinecontentconfigpermissionsnew) constructor.
-  - `notifications` (`list[obj]`):  When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-elastictranscoderpipelinenotificationsnew) constructor.
-  - `thumbnail_config` (`list[obj]`):  When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-elastictranscoderpipelinethumbnailconfignew) constructor.
-  - `thumbnail_config_permissions` (`list[obj]`):  When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-elastictranscoderpipelinethumbnailconfigpermissionsnew) constructor.
+  - `content_config` (`list[obj]`):  When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-elastictranscoder_pipelinecontent_confignew) constructor.
+  - `content_config_permissions` (`list[obj]`):  When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-elastictranscoder_pipelinecontent_config_permissionsnew) constructor.
+  - `notifications` (`list[obj]`):  When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-elastictranscoder_pipelinenotificationsnew) constructor.
+  - `thumbnail_config` (`list[obj]`):  When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-elastictranscoder_pipelinethumbnail_confignew) constructor.
+  - `thumbnail_config_permissions` (`list[obj]`):  When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-elastictranscoder_pipelinethumbnail_config_permissionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastictranscoder_pipeline` resource into the root Terraform configuration.

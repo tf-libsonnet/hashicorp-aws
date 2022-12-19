@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.route53_resolver_firewall_domain_list.newAttrs` constructs a new object with attributes and blocks configured for the `route53_resolver_firewall_domain_list`
 Terraform data source.
 
-Unlike [aws.data.route53_resolver_firewall_domain_list.new](#fn-route53resolverfirewalldomainlistnew), this function will not inject the `data source`
+Unlike [aws.data.route53_resolver_firewall_domain_list.new](#fn-route53_resolver_firewall_domain_listnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

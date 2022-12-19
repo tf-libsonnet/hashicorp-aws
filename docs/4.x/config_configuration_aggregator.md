@@ -59,8 +59,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `account_aggregation_source` (`list[obj]`):  When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-configconfigurationaggregatoraccountaggregationsourcenew) constructor.
-  - `organization_aggregation_source` (`list[obj]`):  When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-configconfigurationaggregatororganizationaggregationsourcenew) constructor.
+  - `account_aggregation_source` (`list[obj]`):  When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-config_configuration_aggregatoraccount_aggregation_sourcenew) constructor.
+  - `organization_aggregation_source` (`list[obj]`):  When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-config_configuration_aggregatororganization_aggregation_sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,7 +76,7 @@ newAttrs()
 `aws.config_configuration_aggregator.newAttrs` constructs a new object with attributes and blocks configured for the `config_configuration_aggregator`
 Terraform resource.
 
-Unlike [aws.config_configuration_aggregator.new](#fn-configconfigurationaggregatornew), this function will not inject the `resource`
+Unlike [aws.config_configuration_aggregator.new](#fn-config_configuration_aggregatornew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,8 +87,8 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `account_aggregation_source` (`list[obj]`):  When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-configconfigurationaggregatoraccountaggregationsourcenew) constructor.
-  - `organization_aggregation_source` (`list[obj]`):  When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-configconfigurationaggregatororganizationaggregationsourcenew) constructor.
+  - `account_aggregation_source` (`list[obj]`):  When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-config_configuration_aggregatoraccount_aggregation_sourcenew) constructor.
+  - `organization_aggregation_source` (`list[obj]`):  When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-config_configuration_aggregatororganization_aggregation_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_configuration_aggregator` resource into the root Terraform configuration.

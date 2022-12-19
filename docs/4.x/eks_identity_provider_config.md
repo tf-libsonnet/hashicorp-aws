@@ -59,8 +59,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `cluster_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `oidc` (`list[obj]`):  When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-eksidentityproviderconfigoidcnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-eksidentityproviderconfigtimeoutsnew) constructor.
+  - `oidc` (`list[obj]`):  When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-eks_identity_provider_configoidcnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-eks_identity_provider_configtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,7 +76,7 @@ newAttrs()
 `aws.eks_identity_provider_config.newAttrs` constructs a new object with attributes and blocks configured for the `eks_identity_provider_config`
 Terraform resource.
 
-Unlike [aws.eks_identity_provider_config.new](#fn-eksidentityproviderconfignew), this function will not inject the `resource`
+Unlike [aws.eks_identity_provider_config.new](#fn-eks_identity_provider_confignew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,8 +87,8 @@ injecting into a complete block.
   - `cluster_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `oidc` (`list[obj]`):  When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-eksidentityproviderconfigoidcnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-eksidentityproviderconfigtimeoutsnew) constructor.
+  - `oidc` (`list[obj]`):  When `null`, the `oidc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.oidc.new](#fn-eks_identity_provider_configoidcnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_identity_provider_config.timeouts.new](#fn-eks_identity_provider_configtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_identity_provider_config` resource into the root Terraform configuration.

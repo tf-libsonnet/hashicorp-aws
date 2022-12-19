@@ -66,7 +66,7 @@ newAttrs()
 `aws.egress_only_internet_gateway.newAttrs` constructs a new object with attributes and blocks configured for the `egress_only_internet_gateway`
 Terraform resource.
 
-Unlike [aws.egress_only_internet_gateway.new](#fn-egressonlyinternetgatewaynew), this function will not inject the `resource`
+Unlike [aws.egress_only_internet_gateway.new](#fn-egress_only_internet_gatewaynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

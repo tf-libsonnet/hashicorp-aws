@@ -65,7 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `quick_connect_config` (`list[obj]`):  When `null`, the `quick_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.new](#fn-connectquickconnectquickconnectconfignew) constructor.
+  - `quick_connect_config` (`list[obj]`):  When `null`, the `quick_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.new](#fn-connect_quick_connectquick_connect_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,7 +81,7 @@ newAttrs()
 `aws.connect_quick_connect.newAttrs` constructs a new object with attributes and blocks configured for the `connect_quick_connect`
 Terraform resource.
 
-Unlike [aws.connect_quick_connect.new](#fn-connectquickconnectnew), this function will not inject the `resource`
+Unlike [aws.connect_quick_connect.new](#fn-connect_quick_connectnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,7 +94,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `quick_connect_config` (`list[obj]`):  When `null`, the `quick_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.new](#fn-connectquickconnectquickconnectconfignew) constructor.
+  - `quick_connect_config` (`list[obj]`):  When `null`, the `quick_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.new](#fn-connect_quick_connectquick_connect_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_quick_connect` resource into the root Terraform configuration.
@@ -235,9 +235,9 @@ Terraform sub block.
 
 **Args**:
   - `quick_connect_type` (`string`): 
-  - `phone_config` (`list[obj]`):  When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.phone_config.new](#fn-quickconnectconfigphoneconfignew) constructor.
-  - `queue_config` (`list[obj]`):  When `null`, the `queue_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.queue_config.new](#fn-quickconnectconfigqueueconfignew) constructor.
-  - `user_config` (`list[obj]`):  When `null`, the `user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.user_config.new](#fn-quickconnectconfiguserconfignew) constructor.
+  - `phone_config` (`list[obj]`):  When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.phone_config.new](#fn-quick_connect_configphone_confignew) constructor.
+  - `queue_config` (`list[obj]`):  When `null`, the `queue_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.queue_config.new](#fn-quick_connect_configqueue_confignew) constructor.
+  - `user_config` (`list[obj]`):  When `null`, the `user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.user_config.new](#fn-quick_connect_configuser_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `quick_connect_config` sub block.

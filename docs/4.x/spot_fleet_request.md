@@ -135,10 +135,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `valid_from` (`string`):  When `null`, the `valid_from` field will be omitted from the resulting object.
   - `valid_until` (`string`):  When `null`, the `valid_until` field will be omitted from the resulting object.
   - `wait_for_fulfillment` (`bool`):  When `null`, the `wait_for_fulfillment` field will be omitted from the resulting object.
-  - `launch_specification` (`list[obj]`):  When `null`, the `launch_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.new](#fn-spotfleetrequestlaunchspecificationnew) constructor.
-  - `launch_template_config` (`list[obj]`):  When `null`, the `launch_template_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.new](#fn-spotfleetrequestlaunchtemplateconfignew) constructor.
-  - `spot_maintenance_strategies` (`list[obj]`):  When `null`, the `spot_maintenance_strategies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.spot_maintenance_strategies.new](#fn-spotfleetrequestspotmaintenancestrategiesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.timeouts.new](#fn-spotfleetrequesttimeoutsnew) constructor.
+  - `launch_specification` (`list[obj]`):  When `null`, the `launch_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.new](#fn-spot_fleet_requestlaunch_specificationnew) constructor.
+  - `launch_template_config` (`list[obj]`):  When `null`, the `launch_template_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.new](#fn-spot_fleet_requestlaunch_template_confignew) constructor.
+  - `spot_maintenance_strategies` (`list[obj]`):  When `null`, the `spot_maintenance_strategies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.spot_maintenance_strategies.new](#fn-spot_fleet_requestspot_maintenance_strategiesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.timeouts.new](#fn-spot_fleet_requesttimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -154,7 +154,7 @@ newAttrs()
 `aws.spot_fleet_request.newAttrs` constructs a new object with attributes and blocks configured for the `spot_fleet_request`
 Terraform resource.
 
-Unlike [aws.spot_fleet_request.new](#fn-spotfleetrequestnew), this function will not inject the `resource`
+Unlike [aws.spot_fleet_request.new](#fn-spot_fleet_requestnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -184,10 +184,10 @@ injecting into a complete block.
   - `valid_from` (`string`):  When `null`, the `valid_from` field will be omitted from the resulting object.
   - `valid_until` (`string`):  When `null`, the `valid_until` field will be omitted from the resulting object.
   - `wait_for_fulfillment` (`bool`):  When `null`, the `wait_for_fulfillment` field will be omitted from the resulting object.
-  - `launch_specification` (`list[obj]`):  When `null`, the `launch_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.new](#fn-spotfleetrequestlaunchspecificationnew) constructor.
-  - `launch_template_config` (`list[obj]`):  When `null`, the `launch_template_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.new](#fn-spotfleetrequestlaunchtemplateconfignew) constructor.
-  - `spot_maintenance_strategies` (`list[obj]`):  When `null`, the `spot_maintenance_strategies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.spot_maintenance_strategies.new](#fn-spotfleetrequestspotmaintenancestrategiesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.timeouts.new](#fn-spotfleetrequesttimeoutsnew) constructor.
+  - `launch_specification` (`list[obj]`):  When `null`, the `launch_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.new](#fn-spot_fleet_requestlaunch_specificationnew) constructor.
+  - `launch_template_config` (`list[obj]`):  When `null`, the `launch_template_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.new](#fn-spot_fleet_requestlaunch_template_confignew) constructor.
+  - `spot_maintenance_strategies` (`list[obj]`):  When `null`, the `spot_maintenance_strategies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.spot_maintenance_strategies.new](#fn-spot_fleet_requestspot_maintenance_strategiesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.timeouts.new](#fn-spot_fleet_requesttimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `spot_fleet_request` resource into the root Terraform configuration.
@@ -726,9 +726,9 @@ Terraform sub block.
   - `user_data` (`string`):  When `null`, the `user_data` field will be omitted from the resulting object.
   - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
   - `weighted_capacity` (`string`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.ebs_block_device.new](#fn-launchspecificationebsblockdevicenew) constructor.
-  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.ephemeral_block_device.new](#fn-launchspecificationephemeralblockdevicenew) constructor.
-  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.root_block_device.new](#fn-launchspecificationrootblockdevicenew) constructor.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.ebs_block_device.new](#fn-launch_specificationebs_block_devicenew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.ephemeral_block_device.new](#fn-launch_specificationephemeral_block_devicenew) constructor.
+  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_specification.root_block_device.new](#fn-launch_specificationroot_block_devicenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_specification` sub block.
@@ -835,8 +835,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.launch_template_specification.new](#fn-launchtemplateconfiglaunchtemplatespecificationnew) constructor.
-  - `overrides` (`list[obj]`):  When `null`, the `overrides` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.new](#fn-launchtemplateconfigoverridesnew) constructor.
+  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.launch_template_specification.new](#fn-launch_template_configlaunch_template_specificationnew) constructor.
+  - `overrides` (`list[obj]`):  When `null`, the `overrides` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.new](#fn-launch_template_configoverridesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_template_config` sub block.
@@ -889,7 +889,7 @@ Terraform sub block.
   - `spot_price` (`string`):  When `null`, the `spot_price` field will be omitted from the resulting object.
   - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
   - `weighted_capacity` (`number`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `instance_requirements` (`list[obj]`):  When `null`, the `instance_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.new](#fn-overridesinstancerequirementsnew) constructor.
+  - `instance_requirements` (`list[obj]`):  When `null`, the `instance_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.new](#fn-overridesinstance_requirementsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `overrides` sub block.
@@ -925,14 +925,14 @@ Terraform sub block.
   - `on_demand_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `on_demand_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
   - `require_hibernate_support` (`bool`):  When `null`, the `require_hibernate_support` field will be omitted from the resulting object.
   - `spot_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `spot_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
-  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.accelerator_count.new](#fn-instancerequirementsacceleratorcountnew) constructor.
-  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.accelerator_total_memory_mib.new](#fn-instancerequirementsacceleratortotalmemorymibnew) constructor.
-  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-instancerequirementsbaselineebsbandwidthmbpsnew) constructor.
-  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.memory_gib_per_vcpu.new](#fn-instancerequirementsmemorygibpervcpunew) constructor.
-  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.memory_mib.new](#fn-instancerequirementsmemorymibnew) constructor.
-  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.network_interface_count.new](#fn-instancerequirementsnetworkinterfacecountnew) constructor.
-  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.total_local_storage_gb.new](#fn-instancerequirementstotallocalstoragegbnew) constructor.
-  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.vcpu_count.new](#fn-instancerequirementsvcpucountnew) constructor.
+  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.accelerator_count.new](#fn-instance_requirementsaccelerator_countnew) constructor.
+  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.accelerator_total_memory_mib.new](#fn-instance_requirementsaccelerator_total_memory_mibnew) constructor.
+  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-instance_requirementsbaseline_ebs_bandwidth_mbpsnew) constructor.
+  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.memory_gib_per_vcpu.new](#fn-instance_requirementsmemory_gib_per_vcpunew) constructor.
+  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.memory_mib.new](#fn-instance_requirementsmemory_mibnew) constructor.
+  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.network_interface_count.new](#fn-instance_requirementsnetwork_interface_countnew) constructor.
+  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.total_local_storage_gb.new](#fn-instance_requirementstotal_local_storage_gbnew) constructor.
+  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.launch_template_config.overrides.instance_requirements.vcpu_count.new](#fn-instance_requirementsvcpu_countnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_requirements` sub block.
@@ -1147,7 +1147,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `capacity_rebalance` (`list[obj]`):  When `null`, the `capacity_rebalance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.spot_maintenance_strategies.capacity_rebalance.new](#fn-spotmaintenancestrategiescapacityrebalancenew) constructor.
+  - `capacity_rebalance` (`list[obj]`):  When `null`, the `capacity_rebalance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_fleet_request.spot_maintenance_strategies.capacity_rebalance.new](#fn-spot_maintenance_strategiescapacity_rebalancenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spot_maintenance_strategies` sub block.

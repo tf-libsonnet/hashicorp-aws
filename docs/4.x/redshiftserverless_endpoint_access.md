@@ -68,7 +68,7 @@ newAttrs()
 `aws.redshiftserverless_endpoint_access.newAttrs` constructs a new object with attributes and blocks configured for the `redshiftserverless_endpoint_access`
 Terraform resource.
 
-Unlike [aws.redshiftserverless_endpoint_access.new](#fn-redshiftserverlessendpointaccessnew), this function will not inject the `resource`
+Unlike [aws.redshiftserverless_endpoint_access.new](#fn-redshiftserverless_endpoint_accessnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `bucket` (`string`): 
   - `name` (`string`): 
   - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `public_access_block_configuration` (`list[obj]`):  When `null`, the `public_access_block_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.public_access_block_configuration.new](#fn-s3accesspointpublicaccessblockconfigurationnew) constructor.
-  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.vpc_configuration.new](#fn-s3accesspointvpcconfigurationnew) constructor.
+  - `public_access_block_configuration` (`list[obj]`):  When `null`, the `public_access_block_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.public_access_block_configuration.new](#fn-s3_access_pointpublic_access_block_configurationnew) constructor.
+  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.vpc_configuration.new](#fn-s3_access_pointvpc_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.s3_access_point.newAttrs` constructs a new object with attributes and blocks configured for the `s3_access_point`
 Terraform resource.
 
-Unlike [aws.s3_access_point.new](#fn-s3accesspointnew), this function will not inject the `resource`
+Unlike [aws.s3_access_point.new](#fn-s3_access_pointnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `bucket` (`string`): 
   - `name` (`string`): 
   - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `public_access_block_configuration` (`list[obj]`):  When `null`, the `public_access_block_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.public_access_block_configuration.new](#fn-s3accesspointpublicaccessblockconfigurationnew) constructor.
-  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.vpc_configuration.new](#fn-s3accesspointvpcconfigurationnew) constructor.
+  - `public_access_block_configuration` (`list[obj]`):  When `null`, the `public_access_block_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.public_access_block_configuration.new](#fn-s3_access_pointpublic_access_block_configurationnew) constructor.
+  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.vpc_configuration.new](#fn-s3_access_pointvpc_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_access_point` resource into the root Terraform configuration.

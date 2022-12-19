@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `cluster_id` (`string`): 
   - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
   - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudhsm_v2_hsm.timeouts.new](#fn-cloudhsmv2hsmtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudhsm_v2_hsm.timeouts.new](#fn-cloudhsm_v2_hsmtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.cloudhsm_v2_hsm.newAttrs` constructs a new object with attributes and blocks configured for the `cloudhsm_v2_hsm`
 Terraform resource.
 
-Unlike [aws.cloudhsm_v2_hsm.new](#fn-cloudhsmv2hsmnew), this function will not inject the `resource`
+Unlike [aws.cloudhsm_v2_hsm.new](#fn-cloudhsm_v2_hsmnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `cluster_id` (`string`): 
   - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
   - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudhsm_v2_hsm.timeouts.new](#fn-cloudhsmv2hsmtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudhsm_v2_hsm.timeouts.new](#fn-cloudhsm_v2_hsmtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudhsm_v2_hsm` resource into the root Terraform configuration.

@@ -70,7 +70,7 @@ newAttrs()
 `aws.data.glue_catalog_table.newAttrs` constructs a new object with attributes and blocks configured for the `glue_catalog_table`
 Terraform data source.
 
-Unlike [aws.data.glue_catalog_table.new](#fn-gluecatalogtablenew), this function will not inject the `data source`
+Unlike [aws.data.glue_catalog_table.new](#fn-glue_catalog_tablenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

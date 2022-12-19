@@ -67,11 +67,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-lakeformationresourcelftagsdatabasenew) constructor.
-  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lakeformationresourcelftagslftagnew) constructor.
-  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-lakeformationresourcelftagstablenew) constructor.
-  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-lakeformationresourcelftagstablewithcolumnsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-lakeformationresourcelftagstimeoutsnew) constructor.
+  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-lakeformation_resource_lf_tagsdatabasenew) constructor.
+  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lakeformation_resource_lf_tagslf_tagnew) constructor.
+  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-lakeformation_resource_lf_tagstablenew) constructor.
+  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-lakeformation_resource_lf_tagstable_with_columnsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-lakeformation_resource_lf_tagstimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,7 +87,7 @@ newAttrs()
 `aws.lakeformation_resource_lf_tags.newAttrs` constructs a new object with attributes and blocks configured for the `lakeformation_resource_lf_tags`
 Terraform resource.
 
-Unlike [aws.lakeformation_resource_lf_tags.new](#fn-lakeformationresourcelftagsnew), this function will not inject the `resource`
+Unlike [aws.lakeformation_resource_lf_tags.new](#fn-lakeformation_resource_lf_tagsnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -96,11 +96,11 @@ injecting into a complete block.
 
 **Args**:
   - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-lakeformationresourcelftagsdatabasenew) constructor.
-  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lakeformationresourcelftagslftagnew) constructor.
-  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-lakeformationresourcelftagstablenew) constructor.
-  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-lakeformationresourcelftagstablewithcolumnsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-lakeformationresourcelftagstimeoutsnew) constructor.
+  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-lakeformation_resource_lf_tagsdatabasenew) constructor.
+  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lakeformation_resource_lf_tagslf_tagnew) constructor.
+  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-lakeformation_resource_lf_tagstablenew) constructor.
+  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-lakeformation_resource_lf_tagstable_with_columnsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-lakeformation_resource_lf_tagstimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lakeformation_resource_lf_tags` resource into the root Terraform configuration.

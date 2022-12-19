@@ -87,13 +87,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `rule_set_name` (`string`): 
   - `scan_enabled` (`bool`):  When `null`, the `scan_enabled` field will be omitted from the resulting object.
   - `tls_policy` (`string`):  When `null`, the `tls_policy` field will be omitted from the resulting object.
-  - `add_header_action` (`list[obj]`):  When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-sesreceiptruleaddheaderactionnew) constructor.
-  - `bounce_action` (`list[obj]`):  When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-sesreceiptrulebounceactionnew) constructor.
-  - `lambda_action` (`list[obj]`):  When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-sesreceiptrulelambdaactionnew) constructor.
-  - `s3_action` (`list[obj]`):  When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-sesreceiptrules3actionnew) constructor.
-  - `sns_action` (`list[obj]`):  When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-sesreceiptrulesnsactionnew) constructor.
-  - `stop_action` (`list[obj]`):  When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-sesreceiptrulestopactionnew) constructor.
-  - `workmail_action` (`list[obj]`):  When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-sesreceiptruleworkmailactionnew) constructor.
+  - `add_header_action` (`list[obj]`):  When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-ses_receipt_ruleadd_header_actionnew) constructor.
+  - `bounce_action` (`list[obj]`):  When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-ses_receipt_rulebounce_actionnew) constructor.
+  - `lambda_action` (`list[obj]`):  When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-ses_receipt_rulelambda_actionnew) constructor.
+  - `s3_action` (`list[obj]`):  When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-ses_receipt_rules3_actionnew) constructor.
+  - `sns_action` (`list[obj]`):  When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-ses_receipt_rulesns_actionnew) constructor.
+  - `stop_action` (`list[obj]`):  When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-ses_receipt_rulestop_actionnew) constructor.
+  - `workmail_action` (`list[obj]`):  When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-ses_receipt_ruleworkmail_actionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -109,7 +109,7 @@ newAttrs()
 `aws.ses_receipt_rule.newAttrs` constructs a new object with attributes and blocks configured for the `ses_receipt_rule`
 Terraform resource.
 
-Unlike [aws.ses_receipt_rule.new](#fn-sesreceiptrulenew), this function will not inject the `resource`
+Unlike [aws.ses_receipt_rule.new](#fn-ses_receipt_rulenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -124,13 +124,13 @@ injecting into a complete block.
   - `rule_set_name` (`string`): 
   - `scan_enabled` (`bool`):  When `null`, the `scan_enabled` field will be omitted from the resulting object.
   - `tls_policy` (`string`):  When `null`, the `tls_policy` field will be omitted from the resulting object.
-  - `add_header_action` (`list[obj]`):  When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-sesreceiptruleaddheaderactionnew) constructor.
-  - `bounce_action` (`list[obj]`):  When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-sesreceiptrulebounceactionnew) constructor.
-  - `lambda_action` (`list[obj]`):  When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-sesreceiptrulelambdaactionnew) constructor.
-  - `s3_action` (`list[obj]`):  When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-sesreceiptrules3actionnew) constructor.
-  - `sns_action` (`list[obj]`):  When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-sesreceiptrulesnsactionnew) constructor.
-  - `stop_action` (`list[obj]`):  When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-sesreceiptrulestopactionnew) constructor.
-  - `workmail_action` (`list[obj]`):  When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-sesreceiptruleworkmailactionnew) constructor.
+  - `add_header_action` (`list[obj]`):  When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-ses_receipt_ruleadd_header_actionnew) constructor.
+  - `bounce_action` (`list[obj]`):  When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-ses_receipt_rulebounce_actionnew) constructor.
+  - `lambda_action` (`list[obj]`):  When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-ses_receipt_rulelambda_actionnew) constructor.
+  - `s3_action` (`list[obj]`):  When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-ses_receipt_rules3_actionnew) constructor.
+  - `sns_action` (`list[obj]`):  When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-ses_receipt_rulesns_actionnew) constructor.
+  - `stop_action` (`list[obj]`):  When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-ses_receipt_rulestop_actionnew) constructor.
+  - `workmail_action` (`list[obj]`):  When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-ses_receipt_ruleworkmail_actionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ses_receipt_rule` resource into the root Terraform configuration.

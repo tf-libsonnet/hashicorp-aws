@@ -67,8 +67,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.logging_configuration.new](#fn-sfnstatemachineloggingconfigurationnew) constructor.
-  - `tracing_configuration` (`list[obj]`):  When `null`, the `tracing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.tracing_configuration.new](#fn-sfnstatemachinetracingconfigurationnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.logging_configuration.new](#fn-sfn_state_machinelogging_configurationnew) constructor.
+  - `tracing_configuration` (`list[obj]`):  When `null`, the `tracing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.tracing_configuration.new](#fn-sfn_state_machinetracing_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,7 +84,7 @@ newAttrs()
 `aws.sfn_state_machine.newAttrs` constructs a new object with attributes and blocks configured for the `sfn_state_machine`
 Terraform resource.
 
-Unlike [aws.sfn_state_machine.new](#fn-sfnstatemachinenew), this function will not inject the `resource`
+Unlike [aws.sfn_state_machine.new](#fn-sfn_state_machinenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -99,8 +99,8 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.logging_configuration.new](#fn-sfnstatemachineloggingconfigurationnew) constructor.
-  - `tracing_configuration` (`list[obj]`):  When `null`, the `tracing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.tracing_configuration.new](#fn-sfnstatemachinetracingconfigurationnew) constructor.
+  - `logging_configuration` (`list[obj]`):  When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.logging_configuration.new](#fn-sfn_state_machinelogging_configurationnew) constructor.
+  - `tracing_configuration` (`list[obj]`):  When `null`, the `tracing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sfn_state_machine.tracing_configuration.new](#fn-sfn_state_machinetracing_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sfn_state_machine` resource into the root Terraform configuration.

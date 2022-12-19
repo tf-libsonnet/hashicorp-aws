@@ -69,7 +69,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `template_physical_id` (`string`):  When `null`, the `template_physical_id` field will be omitted from the resulting object.
   - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-servicecatalogprovisioningartifacttimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-servicecatalog_provisioning_artifacttimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,7 +85,7 @@ newAttrs()
 `aws.servicecatalog_provisioning_artifact.newAttrs` constructs a new object with attributes and blocks configured for the `servicecatalog_provisioning_artifact`
 Terraform resource.
 
-Unlike [aws.servicecatalog_provisioning_artifact.new](#fn-servicecatalogprovisioningartifactnew), this function will not inject the `resource`
+Unlike [aws.servicecatalog_provisioning_artifact.new](#fn-servicecatalog_provisioning_artifactnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -103,7 +103,7 @@ injecting into a complete block.
   - `template_physical_id` (`string`):  When `null`, the `template_physical_id` field will be omitted from the resulting object.
   - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-servicecatalogprovisioningartifacttimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-servicecatalog_provisioning_artifacttimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `servicecatalog_provisioning_artifact` resource into the root Terraform configuration.

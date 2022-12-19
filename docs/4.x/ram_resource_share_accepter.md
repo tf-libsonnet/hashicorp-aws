@@ -51,7 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `share_arn` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ram_resource_share_accepter.timeouts.new](#fn-ramresourceshareacceptertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ram_resource_share_accepter.timeouts.new](#fn-ram_resource_share_acceptertimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -67,7 +67,7 @@ newAttrs()
 `aws.ram_resource_share_accepter.newAttrs` constructs a new object with attributes and blocks configured for the `ram_resource_share_accepter`
 Terraform resource.
 
-Unlike [aws.ram_resource_share_accepter.new](#fn-ramresourceshareaccepternew), this function will not inject the `resource`
+Unlike [aws.ram_resource_share_accepter.new](#fn-ram_resource_share_accepternew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -76,7 +76,7 @@ injecting into a complete block.
 
 **Args**:
   - `share_arn` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ram_resource_share_accepter.timeouts.new](#fn-ramresourceshareacceptertimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ram_resource_share_accepter.timeouts.new](#fn-ram_resource_share_acceptertimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ram_resource_share_accepter` resource into the root Terraform configuration.

@@ -68,7 +68,7 @@ newAttrs()
 `aws.ses_template.newAttrs` constructs a new object with attributes and blocks configured for the `ses_template`
 Terraform resource.
 
-Unlike [aws.ses_template.new](#fn-sestemplatenew), this function will not inject the `resource`
+Unlike [aws.ses_template.new](#fn-ses_templatenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `properties` (`obj`):  When `null`, the `properties` field will be omitted from the resulting object.
-  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-athenadatabaseaclconfigurationnew) constructor.
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-athenadatabaseencryptionconfigurationnew) constructor.
+  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-athena_databaseacl_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-athena_databaseencryption_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.athena_database.newAttrs` constructs a new object with attributes and blocks configured for the `athena_database`
 Terraform resource.
 
-Unlike [aws.athena_database.new](#fn-athenadatabasenew), this function will not inject the `resource`
+Unlike [aws.athena_database.new](#fn-athena_databasenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -96,8 +96,8 @@ injecting into a complete block.
   - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `properties` (`obj`):  When `null`, the `properties` field will be omitted from the resulting object.
-  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-athenadatabaseaclconfigurationnew) constructor.
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-athenadatabaseencryptionconfigurationnew) constructor.
+  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-athena_databaseacl_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-athena_databaseencryption_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `athena_database` resource into the root Terraform configuration.

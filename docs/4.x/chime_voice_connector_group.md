@@ -51,7 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): 
-  - `connector` (`list[obj]`):  When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-chimevoiceconnectorgroupconnectornew) constructor.
+  - `connector` (`list[obj]`):  When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-chime_voice_connector_groupconnectornew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -67,7 +67,7 @@ newAttrs()
 `aws.chime_voice_connector_group.newAttrs` constructs a new object with attributes and blocks configured for the `chime_voice_connector_group`
 Terraform resource.
 
-Unlike [aws.chime_voice_connector_group.new](#fn-chimevoiceconnectorgroupnew), this function will not inject the `resource`
+Unlike [aws.chime_voice_connector_group.new](#fn-chime_voice_connector_groupnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -76,7 +76,7 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): 
-  - `connector` (`list[obj]`):  When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-chimevoiceconnectorgroupconnectornew) constructor.
+  - `connector` (`list[obj]`):  When `null`, the `connector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_group.connector.new](#fn-chime_voice_connector_groupconnectornew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `chime_voice_connector_group` resource into the root Terraform configuration.

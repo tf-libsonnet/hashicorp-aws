@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.dynamodb_table.server_side_encryption.new](#fn-dynamodbtableserversideencryptionnew) constructor.
+  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.dynamodb_table.server_side_encryption.new](#fn-dynamodb_tableserver_side_encryptionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.data.dynamodb_table.newAttrs` constructs a new object with attributes and blocks configured for the `dynamodb_table`
 Terraform data source.
 
-Unlike [aws.data.dynamodb_table.new](#fn-dynamodbtablenew), this function will not inject the `data source`
+Unlike [aws.data.dynamodb_table.new](#fn-dynamodb_tablenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.dynamodb_table.server_side_encryption.new](#fn-dynamodbtableserversideencryptionnew) constructor.
+  - `server_side_encryption` (`list[obj]`):  When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.dynamodb_table.server_side_encryption.new](#fn-dynamodb_tableserver_side_encryptionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `dynamodb_table` data source into the root Terraform configuration.

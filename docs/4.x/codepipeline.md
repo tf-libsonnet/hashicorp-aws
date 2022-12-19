@@ -65,7 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `role_arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifact_store` (`list[obj]`):  When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-codepipelineartifactstorenew) constructor.
+  - `artifact_store` (`list[obj]`):  When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-codepipelineartifact_storenew) constructor.
   - `stage` (`list[obj]`):  When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-codepipelinestagenew) constructor.
 
 **Returns**:
@@ -94,7 +94,7 @@ injecting into a complete block.
   - `role_arn` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifact_store` (`list[obj]`):  When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-codepipelineartifactstorenew) constructor.
+  - `artifact_store` (`list[obj]`):  When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-codepipelineartifact_storenew) constructor.
   - `stage` (`list[obj]`):  When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-codepipelinestagenew) constructor.
 
 **Returns**:
@@ -259,7 +259,7 @@ Terraform sub block.
   - `location` (`string`): 
   - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `encryption_key` (`list[obj]`):  When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-artifactstoreencryptionkeynew) constructor.
+  - `encryption_key` (`list[obj]`):  When `null`, the `encryption_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.encryption_key.new](#fn-artifact_storeencryption_keynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `artifact_store` sub block.

@@ -93,9 +93,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `throughput_capacity` (`number`): 
   - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `disk_iops_configuration` (`list[obj]`):  When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-fsxopenzfsfilesystemdiskiopsconfigurationnew) constructor.
-  - `root_volume_configuration` (`list[obj]`):  When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-fsxopenzfsfilesystemrootvolumeconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-fsxopenzfsfilesystemtimeoutsnew) constructor.
+  - `disk_iops_configuration` (`list[obj]`):  When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-fsx_openzfs_file_systemdisk_iops_configurationnew) constructor.
+  - `root_volume_configuration` (`list[obj]`):  When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-fsx_openzfs_file_systemroot_volume_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-fsx_openzfs_file_systemtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -111,7 +111,7 @@ newAttrs()
 `aws.fsx_openzfs_file_system.newAttrs` constructs a new object with attributes and blocks configured for the `fsx_openzfs_file_system`
 Terraform resource.
 
-Unlike [aws.fsx_openzfs_file_system.new](#fn-fsxopenzfsfilesystemnew), this function will not inject the `resource`
+Unlike [aws.fsx_openzfs_file_system.new](#fn-fsx_openzfs_file_systemnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -134,9 +134,9 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `throughput_capacity` (`number`): 
   - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `disk_iops_configuration` (`list[obj]`):  When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-fsxopenzfsfilesystemdiskiopsconfigurationnew) constructor.
-  - `root_volume_configuration` (`list[obj]`):  When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-fsxopenzfsfilesystemrootvolumeconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-fsxopenzfsfilesystemtimeoutsnew) constructor.
+  - `disk_iops_configuration` (`list[obj]`):  When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-fsx_openzfs_file_systemdisk_iops_configurationnew) constructor.
+  - `root_volume_configuration` (`list[obj]`):  When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-fsx_openzfs_file_systemroot_volume_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-fsx_openzfs_file_systemtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_openzfs_file_system` resource into the root Terraform configuration.
@@ -537,8 +537,8 @@ Terraform sub block.
   - `data_compression_type` (`string`):  When `null`, the `data_compression_type` field will be omitted from the resulting object.
   - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
   - `record_size_kib` (`number`):  When `null`, the `record_size_kib` field will be omitted from the resulting object.
-  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.new](#fn-rootvolumeconfigurationnfsexportsnew) constructor.
-  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.user_and_group_quotas.new](#fn-rootvolumeconfigurationuserandgroupquotasnew) constructor.
+  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.new](#fn-root_volume_configurationnfs_exportsnew) constructor.
+  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.user_and_group_quotas.new](#fn-root_volume_configurationuser_and_group_quotasnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `root_volume_configuration` sub block.
@@ -561,7 +561,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.client_configurations.new](#fn-nfsexportsclientconfigurationsnew) constructor.
+  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.client_configurations.new](#fn-nfs_exportsclient_configurationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs_exports` sub block.

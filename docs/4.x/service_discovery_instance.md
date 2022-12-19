@@ -66,7 +66,7 @@ newAttrs()
 `aws.service_discovery_instance.newAttrs` constructs a new object with attributes and blocks configured for the `service_discovery_instance`
 Terraform resource.
 
-Unlike [aws.service_discovery_instance.new](#fn-servicediscoveryinstancenew), this function will not inject the `resource`
+Unlike [aws.service_discovery_instance.new](#fn-service_discovery_instancenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

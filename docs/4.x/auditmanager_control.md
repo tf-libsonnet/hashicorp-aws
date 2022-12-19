@@ -63,7 +63,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `testing_information` (`string`):  When `null`, the `testing_information` field will be omitted from the resulting object.
-  - `control_mapping_sources` (`list[obj]`):  When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-auditmanagercontrolcontrolmappingsourcesnew) constructor.
+  - `control_mapping_sources` (`list[obj]`):  When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-auditmanager_controlcontrol_mapping_sourcesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,7 +79,7 @@ newAttrs()
 `aws.auditmanager_control.newAttrs` constructs a new object with attributes and blocks configured for the `auditmanager_control`
 Terraform resource.
 
-Unlike [aws.auditmanager_control.new](#fn-auditmanagercontrolnew), this function will not inject the `resource`
+Unlike [aws.auditmanager_control.new](#fn-auditmanager_controlnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -93,7 +93,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `testing_information` (`string`):  When `null`, the `testing_information` field will be omitted from the resulting object.
-  - `control_mapping_sources` (`list[obj]`):  When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-auditmanagercontrolcontrolmappingsourcesnew) constructor.
+  - `control_mapping_sources` (`list[obj]`):  When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-auditmanager_controlcontrol_mapping_sourcesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `auditmanager_control` resource into the root Terraform configuration.
@@ -255,7 +255,7 @@ Terraform sub block.
   - `source_set_up_option` (`string`): 
   - `source_type` (`string`): 
   - `troubleshooting_text` (`string`):  When `null`, the `troubleshooting_text` field will be omitted from the resulting object.
-  - `source_keyword` (`list[obj]`):  When `null`, the `source_keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.source_keyword.new](#fn-controlmappingsourcessourcekeywordnew) constructor.
+  - `source_keyword` (`list[obj]`):  When `null`, the `source_keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.source_keyword.new](#fn-control_mapping_sourcessource_keywordnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `control_mapping_sources` sub block.

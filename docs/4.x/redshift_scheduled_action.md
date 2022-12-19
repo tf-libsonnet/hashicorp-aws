@@ -69,7 +69,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `schedule` (`string`): 
   - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
-  - `target_action` (`list[obj]`):  When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-redshiftscheduledactiontargetactionnew) constructor.
+  - `target_action` (`list[obj]`):  When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-redshift_scheduled_actiontarget_actionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,7 +85,7 @@ newAttrs()
 `aws.redshift_scheduled_action.newAttrs` constructs a new object with attributes and blocks configured for the `redshift_scheduled_action`
 Terraform resource.
 
-Unlike [aws.redshift_scheduled_action.new](#fn-redshiftscheduledactionnew), this function will not inject the `resource`
+Unlike [aws.redshift_scheduled_action.new](#fn-redshift_scheduled_actionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,7 +100,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `schedule` (`string`): 
   - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
-  - `target_action` (`list[obj]`):  When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-redshiftscheduledactiontargetactionnew) constructor.
+  - `target_action` (`list[obj]`):  When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-redshift_scheduled_actiontarget_actionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_scheduled_action` resource into the root Terraform configuration.
@@ -272,9 +272,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `pause_cluster` (`list[obj]`):  When `null`, the `pause_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.pause_cluster.new](#fn-targetactionpauseclusternew) constructor.
-  - `resize_cluster` (`list[obj]`):  When `null`, the `resize_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resize_cluster.new](#fn-targetactionresizeclusternew) constructor.
-  - `resume_cluster` (`list[obj]`):  When `null`, the `resume_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resume_cluster.new](#fn-targetactionresumeclusternew) constructor.
+  - `pause_cluster` (`list[obj]`):  When `null`, the `pause_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.pause_cluster.new](#fn-target_actionpause_clusternew) constructor.
+  - `resize_cluster` (`list[obj]`):  When `null`, the `resize_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resize_cluster.new](#fn-target_actionresize_clusternew) constructor.
+  - `resume_cluster` (`list[obj]`):  When `null`, the `resume_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resume_cluster.new](#fn-target_actionresume_clusternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_action` sub block.

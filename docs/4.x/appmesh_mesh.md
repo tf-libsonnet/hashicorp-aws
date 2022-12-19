@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.new](#fn-appmeshmeshspecnew) constructor.
+  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.new](#fn-appmesh_meshspecnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.appmesh_mesh.newAttrs` constructs a new object with attributes and blocks configured for the `appmesh_mesh`
 Terraform resource.
 
-Unlike [aws.appmesh_mesh.new](#fn-appmeshmeshnew), this function will not inject the `resource`
+Unlike [aws.appmesh_mesh.new](#fn-appmesh_meshnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -84,7 +84,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.new](#fn-appmeshmeshspecnew) constructor.
+  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.new](#fn-appmesh_meshspecnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appmesh_mesh` resource into the root Terraform configuration.
@@ -192,7 +192,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `egress_filter` (`list[obj]`):  When `null`, the `egress_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.egress_filter.new](#fn-specegressfilternew) constructor.
+  - `egress_filter` (`list[obj]`):  When `null`, the `egress_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_mesh.spec.egress_filter.new](#fn-specegress_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.

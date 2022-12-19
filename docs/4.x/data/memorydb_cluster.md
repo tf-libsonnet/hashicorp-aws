@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.memorydb_cluster.newAttrs` constructs a new object with attributes and blocks configured for the `memorydb_cluster`
 Terraform data source.
 
-Unlike [aws.data.memorydb_cluster.new](#fn-memorydbclusternew), this function will not inject the `data source`
+Unlike [aws.data.memorydb_cluster.new](#fn-memorydb_clusternew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

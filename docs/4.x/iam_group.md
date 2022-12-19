@@ -64,7 +64,7 @@ newAttrs()
 `aws.iam_group.newAttrs` constructs a new object with attributes and blocks configured for the `iam_group`
 Terraform resource.
 
-Unlike [aws.iam_group.new](#fn-iamgroupnew), this function will not inject the `resource`
+Unlike [aws.iam_group.new](#fn-iam_groupnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_name` (`string`): 
-  - `authentication_mode` (`list[obj]`):  When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.memorydb_user.authentication_mode.new](#fn-memorydbuserauthenticationmodenew) constructor.
+  - `authentication_mode` (`list[obj]`):  When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.memorydb_user.authentication_mode.new](#fn-memorydb_userauthentication_modenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.memorydb_user.newAttrs` constructs a new object with attributes and blocks configured for the `memorydb_user`
 Terraform resource.
 
-Unlike [aws.memorydb_user.new](#fn-memorydbusernew), this function will not inject the `resource`
+Unlike [aws.memorydb_user.new](#fn-memorydb_usernew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_name` (`string`): 
-  - `authentication_mode` (`list[obj]`):  When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.memorydb_user.authentication_mode.new](#fn-memorydbuserauthenticationmodenew) constructor.
+  - `authentication_mode` (`list[obj]`):  When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.memorydb_user.authentication_mode.new](#fn-memorydb_userauthentication_modenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `memorydb_user` resource into the root Terraform configuration.

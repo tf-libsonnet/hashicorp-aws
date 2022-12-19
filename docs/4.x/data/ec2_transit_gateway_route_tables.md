@@ -55,8 +55,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.filter.new](#fn-ec2transitgatewayroutetablesfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.timeouts.new](#fn-ec2transitgatewayroutetablestimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.filter.new](#fn-ec2_transit_gateway_route_tablesfilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.timeouts.new](#fn-ec2_transit_gateway_route_tablestimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -72,7 +72,7 @@ newAttrs()
 `aws.data.ec2_transit_gateway_route_tables.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_transit_gateway_route_tables`
 Terraform data source.
 
-Unlike [aws.data.ec2_transit_gateway_route_tables.new](#fn-ec2transitgatewayroutetablesnew), this function will not inject the `data source`
+Unlike [aws.data.ec2_transit_gateway_route_tables.new](#fn-ec2_transit_gateway_route_tablesnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -81,8 +81,8 @@ injecting into a complete block.
 
 **Args**:
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.filter.new](#fn-ec2transitgatewayroutetablesfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.timeouts.new](#fn-ec2transitgatewayroutetablestimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.filter.new](#fn-ec2_transit_gateway_route_tablesfilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ec2_transit_gateway_route_tables.timeouts.new](#fn-ec2_transit_gateway_route_tablestimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ec2_transit_gateway_route_tables` data source into the root Terraform configuration.

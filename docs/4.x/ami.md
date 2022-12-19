@@ -89,8 +89,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `tpm_support` (`string`):  When `null`, the `tpm_support` field will be omitted from the resulting object.
   - `virtualization_type` (`string`):  When `null`, the `virtualization_type` field will be omitted from the resulting object.
-  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-amiebsblockdevicenew) constructor.
-  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-amiephemeralblockdevicenew) constructor.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-amiebs_block_devicenew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-amiephemeral_block_devicenew) constructor.
   - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.timeouts.new](#fn-amitimeoutsnew) constructor.
 
 **Returns**:
@@ -131,8 +131,8 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `tpm_support` (`string`):  When `null`, the `tpm_support` field will be omitted from the resulting object.
   - `virtualization_type` (`string`):  When `null`, the `virtualization_type` field will be omitted from the resulting object.
-  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-amiebsblockdevicenew) constructor.
-  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-amiephemeralblockdevicenew) constructor.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-amiebs_block_devicenew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-amiephemeral_block_devicenew) constructor.
   - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.timeouts.new](#fn-amitimeoutsnew) constructor.
 
 **Returns**:

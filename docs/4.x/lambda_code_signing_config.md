@@ -55,8 +55,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `allowed_publishers` (`list[obj]`):  When `null`, the `allowed_publishers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.allowed_publishers.new](#fn-lambdacodesigningconfigallowedpublishersnew) constructor.
-  - `policies` (`list[obj]`):  When `null`, the `policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.policies.new](#fn-lambdacodesigningconfigpoliciesnew) constructor.
+  - `allowed_publishers` (`list[obj]`):  When `null`, the `allowed_publishers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.allowed_publishers.new](#fn-lambda_code_signing_configallowed_publishersnew) constructor.
+  - `policies` (`list[obj]`):  When `null`, the `policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.policies.new](#fn-lambda_code_signing_configpoliciesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,7 +72,7 @@ newAttrs()
 `aws.lambda_code_signing_config.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_code_signing_config`
 Terraform resource.
 
-Unlike [aws.lambda_code_signing_config.new](#fn-lambdacodesigningconfignew), this function will not inject the `resource`
+Unlike [aws.lambda_code_signing_config.new](#fn-lambda_code_signing_confignew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -81,8 +81,8 @@ injecting into a complete block.
 
 **Args**:
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `allowed_publishers` (`list[obj]`):  When `null`, the `allowed_publishers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.allowed_publishers.new](#fn-lambdacodesigningconfigallowedpublishersnew) constructor.
-  - `policies` (`list[obj]`):  When `null`, the `policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.policies.new](#fn-lambdacodesigningconfigpoliciesnew) constructor.
+  - `allowed_publishers` (`list[obj]`):  When `null`, the `allowed_publishers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.allowed_publishers.new](#fn-lambda_code_signing_configallowed_publishersnew) constructor.
+  - `policies` (`list[obj]`):  When `null`, the `policies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_code_signing_config.policies.new](#fn-lambda_code_signing_configpoliciesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_code_signing_config` resource into the root Terraform configuration.

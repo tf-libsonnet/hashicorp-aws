@@ -91,12 +91,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_context_policy` (`string`):  When `null`, the `user_context_policy` field will be omitted from the resulting object.
-  - `capacity_units` (`list[obj]`):  When `null`, the `capacity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.capacity_units.new](#fn-kendraindexcapacityunitsnew) constructor.
-  - `document_metadata_configuration_updates` (`list[obj]`):  When `null`, the `document_metadata_configuration_updates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.new](#fn-kendraindexdocumentmetadataconfigurationupdatesnew) constructor.
-  - `server_side_encryption_configuration` (`list[obj]`):  When `null`, the `server_side_encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.server_side_encryption_configuration.new](#fn-kendraindexserversideencryptionconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.timeouts.new](#fn-kendraindextimeoutsnew) constructor.
-  - `user_group_resolution_configuration` (`list[obj]`):  When `null`, the `user_group_resolution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_group_resolution_configuration.new](#fn-kendraindexusergroupresolutionconfigurationnew) constructor.
-  - `user_token_configurations` (`list[obj]`):  When `null`, the `user_token_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.new](#fn-kendraindexusertokenconfigurationsnew) constructor.
+  - `capacity_units` (`list[obj]`):  When `null`, the `capacity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.capacity_units.new](#fn-kendra_indexcapacity_unitsnew) constructor.
+  - `document_metadata_configuration_updates` (`list[obj]`):  When `null`, the `document_metadata_configuration_updates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.new](#fn-kendra_indexdocument_metadata_configuration_updatesnew) constructor.
+  - `server_side_encryption_configuration` (`list[obj]`):  When `null`, the `server_side_encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.server_side_encryption_configuration.new](#fn-kendra_indexserver_side_encryption_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.timeouts.new](#fn-kendra_indextimeoutsnew) constructor.
+  - `user_group_resolution_configuration` (`list[obj]`):  When `null`, the `user_group_resolution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_group_resolution_configuration.new](#fn-kendra_indexuser_group_resolution_configurationnew) constructor.
+  - `user_token_configurations` (`list[obj]`):  When `null`, the `user_token_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.new](#fn-kendra_indexuser_token_configurationsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -112,7 +112,7 @@ newAttrs()
 `aws.kendra_index.newAttrs` constructs a new object with attributes and blocks configured for the `kendra_index`
 Terraform resource.
 
-Unlike [aws.kendra_index.new](#fn-kendraindexnew), this function will not inject the `resource`
+Unlike [aws.kendra_index.new](#fn-kendra_indexnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -127,12 +127,12 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_context_policy` (`string`):  When `null`, the `user_context_policy` field will be omitted from the resulting object.
-  - `capacity_units` (`list[obj]`):  When `null`, the `capacity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.capacity_units.new](#fn-kendraindexcapacityunitsnew) constructor.
-  - `document_metadata_configuration_updates` (`list[obj]`):  When `null`, the `document_metadata_configuration_updates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.new](#fn-kendraindexdocumentmetadataconfigurationupdatesnew) constructor.
-  - `server_side_encryption_configuration` (`list[obj]`):  When `null`, the `server_side_encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.server_side_encryption_configuration.new](#fn-kendraindexserversideencryptionconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.timeouts.new](#fn-kendraindextimeoutsnew) constructor.
-  - `user_group_resolution_configuration` (`list[obj]`):  When `null`, the `user_group_resolution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_group_resolution_configuration.new](#fn-kendraindexusergroupresolutionconfigurationnew) constructor.
-  - `user_token_configurations` (`list[obj]`):  When `null`, the `user_token_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.new](#fn-kendraindexusertokenconfigurationsnew) constructor.
+  - `capacity_units` (`list[obj]`):  When `null`, the `capacity_units` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.capacity_units.new](#fn-kendra_indexcapacity_unitsnew) constructor.
+  - `document_metadata_configuration_updates` (`list[obj]`):  When `null`, the `document_metadata_configuration_updates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.new](#fn-kendra_indexdocument_metadata_configuration_updatesnew) constructor.
+  - `server_side_encryption_configuration` (`list[obj]`):  When `null`, the `server_side_encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.server_side_encryption_configuration.new](#fn-kendra_indexserver_side_encryption_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.timeouts.new](#fn-kendra_indextimeoutsnew) constructor.
+  - `user_group_resolution_configuration` (`list[obj]`):  When `null`, the `user_group_resolution_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_group_resolution_configuration.new](#fn-kendra_indexuser_group_resolution_configurationnew) constructor.
+  - `user_token_configurations` (`list[obj]`):  When `null`, the `user_token_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.new](#fn-kendra_indexuser_token_configurationsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kendra_index` resource into the root Terraform configuration.
@@ -514,8 +514,8 @@ Terraform sub block.
 **Args**:
   - `name` (`string`): 
   - `type` (`string`): 
-  - `relevance` (`list[obj]`):  When `null`, the `relevance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.relevance.new](#fn-documentmetadataconfigurationupdatesrelevancenew) constructor.
-  - `search` (`list[obj]`):  When `null`, the `search` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.search.new](#fn-documentmetadataconfigurationupdatessearchnew) constructor.
+  - `relevance` (`list[obj]`):  When `null`, the `relevance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.relevance.new](#fn-document_metadata_configuration_updatesrelevancenew) constructor.
+  - `search` (`list[obj]`):  When `null`, the `search` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.document_metadata_configuration_updates.search.new](#fn-document_metadata_configuration_updatessearchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `document_metadata_configuration_updates` sub block.
@@ -662,8 +662,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `json_token_type_configuration` (`list[obj]`):  When `null`, the `json_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.json_token_type_configuration.new](#fn-usertokenconfigurationsjsontokentypeconfigurationnew) constructor.
-  - `jwt_token_type_configuration` (`list[obj]`):  When `null`, the `jwt_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.jwt_token_type_configuration.new](#fn-usertokenconfigurationsjwttokentypeconfigurationnew) constructor.
+  - `json_token_type_configuration` (`list[obj]`):  When `null`, the `json_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.json_token_type_configuration.new](#fn-user_token_configurationsjson_token_type_configurationnew) constructor.
+  - `jwt_token_type_configuration` (`list[obj]`):  When `null`, the `jwt_token_type_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_index.user_token_configurations.jwt_token_type_configuration.new](#fn-user_token_configurationsjwt_token_type_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `user_token_configurations` sub block.

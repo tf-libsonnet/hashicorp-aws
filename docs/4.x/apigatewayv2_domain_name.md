@@ -63,9 +63,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `domain_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `domain_name_configuration` (`list[obj]`):  When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-apigatewayv2domainnamedomainnameconfigurationnew) constructor.
-  - `mutual_tls_authentication` (`list[obj]`):  When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-apigatewayv2domainnamemutualtlsauthenticationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-apigatewayv2domainnametimeoutsnew) constructor.
+  - `domain_name_configuration` (`list[obj]`):  When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-apigatewayv2_domain_namedomain_name_configurationnew) constructor.
+  - `mutual_tls_authentication` (`list[obj]`):  When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-apigatewayv2_domain_namemutual_tls_authenticationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-apigatewayv2_domain_nametimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,7 +81,7 @@ newAttrs()
 `aws.apigatewayv2_domain_name.newAttrs` constructs a new object with attributes and blocks configured for the `apigatewayv2_domain_name`
 Terraform resource.
 
-Unlike [aws.apigatewayv2_domain_name.new](#fn-apigatewayv2domainnamenew), this function will not inject the `resource`
+Unlike [aws.apigatewayv2_domain_name.new](#fn-apigatewayv2_domain_namenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -92,9 +92,9 @@ injecting into a complete block.
   - `domain_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `domain_name_configuration` (`list[obj]`):  When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-apigatewayv2domainnamedomainnameconfigurationnew) constructor.
-  - `mutual_tls_authentication` (`list[obj]`):  When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-apigatewayv2domainnamemutualtlsauthenticationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-apigatewayv2domainnametimeoutsnew) constructor.
+  - `domain_name_configuration` (`list[obj]`):  When `null`, the `domain_name_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.domain_name_configuration.new](#fn-apigatewayv2_domain_namedomain_name_configurationnew) constructor.
+  - `mutual_tls_authentication` (`list[obj]`):  When `null`, the `mutual_tls_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.mutual_tls_authentication.new](#fn-apigatewayv2_domain_namemutual_tls_authenticationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_domain_name.timeouts.new](#fn-apigatewayv2_domain_nametimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_domain_name` resource into the root Terraform configuration.

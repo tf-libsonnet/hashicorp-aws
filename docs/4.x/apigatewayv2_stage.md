@@ -75,9 +75,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `stage_variables` (`obj`):  When `null`, the `stage_variables` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-apigatewayv2stageaccesslogsettingsnew) constructor.
-  - `default_route_settings` (`list[obj]`):  When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-apigatewayv2stagedefaultroutesettingsnew) constructor.
-  - `route_settings` (`list[obj]`):  When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-apigatewayv2stageroutesettingsnew) constructor.
+  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-apigatewayv2_stageaccess_log_settingsnew) constructor.
+  - `default_route_settings` (`list[obj]`):  When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-apigatewayv2_stagedefault_route_settingsnew) constructor.
+  - `route_settings` (`list[obj]`):  When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-apigatewayv2_stageroute_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,7 +93,7 @@ newAttrs()
 `aws.apigatewayv2_stage.newAttrs` constructs a new object with attributes and blocks configured for the `apigatewayv2_stage`
 Terraform resource.
 
-Unlike [aws.apigatewayv2_stage.new](#fn-apigatewayv2stagenew), this function will not inject the `resource`
+Unlike [aws.apigatewayv2_stage.new](#fn-apigatewayv2_stagenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -110,9 +110,9 @@ injecting into a complete block.
   - `stage_variables` (`obj`):  When `null`, the `stage_variables` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-apigatewayv2stageaccesslogsettingsnew) constructor.
-  - `default_route_settings` (`list[obj]`):  When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-apigatewayv2stagedefaultroutesettingsnew) constructor.
-  - `route_settings` (`list[obj]`):  When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-apigatewayv2stageroutesettingsnew) constructor.
+  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-apigatewayv2_stageaccess_log_settingsnew) constructor.
+  - `default_route_settings` (`list[obj]`):  When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-apigatewayv2_stagedefault_route_settingsnew) constructor.
+  - `route_settings` (`list[obj]`):  When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-apigatewayv2_stageroute_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_stage` resource into the root Terraform configuration.

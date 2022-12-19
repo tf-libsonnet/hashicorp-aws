@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subdirectory` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.mount_options.new](#fn-datasynclocationnfsmountoptionsnew) constructor.
-  - `on_prem_config` (`list[obj]`):  When `null`, the `on_prem_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.on_prem_config.new](#fn-datasynclocationnfsonpremconfignew) constructor.
+  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.mount_options.new](#fn-datasync_location_nfsmount_optionsnew) constructor.
+  - `on_prem_config` (`list[obj]`):  When `null`, the `on_prem_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.on_prem_config.new](#fn-datasync_location_nfson_prem_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.datasync_location_nfs.newAttrs` constructs a new object with attributes and blocks configured for the `datasync_location_nfs`
 Terraform resource.
 
-Unlike [aws.datasync_location_nfs.new](#fn-datasynclocationnfsnew), this function will not inject the `resource`
+Unlike [aws.datasync_location_nfs.new](#fn-datasync_location_nfsnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `subdirectory` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.mount_options.new](#fn-datasynclocationnfsmountoptionsnew) constructor.
-  - `on_prem_config` (`list[obj]`):  When `null`, the `on_prem_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.on_prem_config.new](#fn-datasynclocationnfsonpremconfignew) constructor.
+  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.mount_options.new](#fn-datasync_location_nfsmount_optionsnew) constructor.
+  - `on_prem_config` (`list[obj]`):  When `null`, the `on_prem_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_nfs.on_prem_config.new](#fn-datasync_location_nfson_prem_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_location_nfs` resource into the root Terraform configuration.

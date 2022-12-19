@@ -143,7 +143,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `timestamp_column_name` (`string`):  When `null`, the `timestamp_column_name` field will be omitted from the resulting object.
   - `use_csv_no_sup_value` (`bool`):  When `null`, the `use_csv_no_sup_value` field will be omitted from the resulting object.
   - `use_task_start_time_for_full_load_timestamp` (`bool`):  When `null`, the `use_task_start_time_for_full_load_timestamp` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_s3_endpoint.timeouts.new](#fn-dmss3endpointtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_s3_endpoint.timeouts.new](#fn-dms_s3_endpointtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -159,7 +159,7 @@ newAttrs()
 `aws.dms_s3_endpoint.newAttrs` constructs a new object with attributes and blocks configured for the `dms_s3_endpoint`
 Terraform resource.
 
-Unlike [aws.dms_s3_endpoint.new](#fn-dmss3endpointnew), this function will not inject the `resource`
+Unlike [aws.dms_s3_endpoint.new](#fn-dms_s3_endpointnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -214,7 +214,7 @@ injecting into a complete block.
   - `timestamp_column_name` (`string`):  When `null`, the `timestamp_column_name` field will be omitted from the resulting object.
   - `use_csv_no_sup_value` (`bool`):  When `null`, the `use_csv_no_sup_value` field will be omitted from the resulting object.
   - `use_task_start_time_for_full_load_timestamp` (`bool`):  When `null`, the `use_task_start_time_for_full_load_timestamp` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_s3_endpoint.timeouts.new](#fn-dmss3endpointtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_s3_endpoint.timeouts.new](#fn-dms_s3_endpointtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `dms_s3_endpoint` resource into the root Terraform configuration.

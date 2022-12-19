@@ -137,17 +137,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `source_version` (`string`):  When `null`, the `source_version` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifacts` (`list[obj]`):  When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-codebuildprojectartifactsnew) constructor.
-  - `build_batch_config` (`list[obj]`):  When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-codebuildprojectbuildbatchconfignew) constructor.
-  - `cache` (`list[obj]`):  When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-codebuildprojectcachenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-codebuildprojectenvironmentnew) constructor.
-  - `file_system_locations` (`list[obj]`):  When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-codebuildprojectfilesystemlocationsnew) constructor.
-  - `logs_config` (`list[obj]`):  When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-codebuildprojectlogsconfignew) constructor.
-  - `secondary_artifacts` (`list[obj]`):  When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-codebuildprojectsecondaryartifactsnew) constructor.
-  - `secondary_source_version` (`list[obj]`):  When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-codebuildprojectsecondarysourceversionnew) constructor.
-  - `secondary_sources` (`list[obj]`):  When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-codebuildprojectsecondarysourcesnew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-codebuildprojectsourcenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-codebuildprojectvpcconfignew) constructor.
+  - `artifacts` (`list[obj]`):  When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-codebuild_projectartifactsnew) constructor.
+  - `build_batch_config` (`list[obj]`):  When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-codebuild_projectbuild_batch_confignew) constructor.
+  - `cache` (`list[obj]`):  When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-codebuild_projectcachenew) constructor.
+  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-codebuild_projectenvironmentnew) constructor.
+  - `file_system_locations` (`list[obj]`):  When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-codebuild_projectfile_system_locationsnew) constructor.
+  - `logs_config` (`list[obj]`):  When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-codebuild_projectlogs_confignew) constructor.
+  - `secondary_artifacts` (`list[obj]`):  When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-codebuild_projectsecondary_artifactsnew) constructor.
+  - `secondary_source_version` (`list[obj]`):  When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-codebuild_projectsecondary_source_versionnew) constructor.
+  - `secondary_sources` (`list[obj]`):  When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-codebuild_projectsecondary_sourcesnew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-codebuild_projectsourcenew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-codebuild_projectvpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -163,7 +163,7 @@ newAttrs()
 `aws.codebuild_project.newAttrs` constructs a new object with attributes and blocks configured for the `codebuild_project`
 Terraform resource.
 
-Unlike [aws.codebuild_project.new](#fn-codebuildprojectnew), this function will not inject the `resource`
+Unlike [aws.codebuild_project.new](#fn-codebuild_projectnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -184,17 +184,17 @@ injecting into a complete block.
   - `source_version` (`string`):  When `null`, the `source_version` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifacts` (`list[obj]`):  When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-codebuildprojectartifactsnew) constructor.
-  - `build_batch_config` (`list[obj]`):  When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-codebuildprojectbuildbatchconfignew) constructor.
-  - `cache` (`list[obj]`):  When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-codebuildprojectcachenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-codebuildprojectenvironmentnew) constructor.
-  - `file_system_locations` (`list[obj]`):  When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-codebuildprojectfilesystemlocationsnew) constructor.
-  - `logs_config` (`list[obj]`):  When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-codebuildprojectlogsconfignew) constructor.
-  - `secondary_artifacts` (`list[obj]`):  When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-codebuildprojectsecondaryartifactsnew) constructor.
-  - `secondary_source_version` (`list[obj]`):  When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-codebuildprojectsecondarysourceversionnew) constructor.
-  - `secondary_sources` (`list[obj]`):  When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-codebuildprojectsecondarysourcesnew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-codebuildprojectsourcenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-codebuildprojectvpcconfignew) constructor.
+  - `artifacts` (`list[obj]`):  When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-codebuild_projectartifactsnew) constructor.
+  - `build_batch_config` (`list[obj]`):  When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-codebuild_projectbuild_batch_confignew) constructor.
+  - `cache` (`list[obj]`):  When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-codebuild_projectcachenew) constructor.
+  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-codebuild_projectenvironmentnew) constructor.
+  - `file_system_locations` (`list[obj]`):  When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-codebuild_projectfile_system_locationsnew) constructor.
+  - `logs_config` (`list[obj]`):  When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-codebuild_projectlogs_confignew) constructor.
+  - `secondary_artifacts` (`list[obj]`):  When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-codebuild_projectsecondary_artifactsnew) constructor.
+  - `secondary_source_version` (`list[obj]`):  When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-codebuild_projectsecondary_source_versionnew) constructor.
+  - `secondary_sources` (`list[obj]`):  When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-codebuild_projectsecondary_sourcesnew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-codebuild_projectsourcenew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-codebuild_projectvpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codebuild_project` resource into the root Terraform configuration.
@@ -867,7 +867,7 @@ Terraform sub block.
   - `combine_artifacts` (`bool`):  When `null`, the `combine_artifacts` field will be omitted from the resulting object.
   - `service_role` (`string`): 
   - `timeout_in_mins` (`number`):  When `null`, the `timeout_in_mins` field will be omitted from the resulting object.
-  - `restrictions` (`list[obj]`):  When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.restrictions.new](#fn-buildbatchconfigrestrictionsnew) constructor.
+  - `restrictions` (`list[obj]`):  When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.restrictions.new](#fn-build_batch_configrestrictionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `build_batch_config` sub block.
@@ -945,8 +945,8 @@ Terraform sub block.
   - `image_pull_credentials_type` (`string`):  When `null`, the `image_pull_credentials_type` field will be omitted from the resulting object.
   - `privileged_mode` (`bool`):  When `null`, the `privileged_mode` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `environment_variable` (`list[obj]`):  When `null`, the `environment_variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.environment_variable.new](#fn-environmentenvironmentvariablenew) constructor.
-  - `registry_credential` (`list[obj]`):  When `null`, the `registry_credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.registry_credential.new](#fn-environmentregistrycredentialnew) constructor.
+  - `environment_variable` (`list[obj]`):  When `null`, the `environment_variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.environment_variable.new](#fn-environmentenvironment_variablenew) constructor.
+  - `registry_credential` (`list[obj]`):  When `null`, the `registry_credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.registry_credential.new](#fn-environmentregistry_credentialnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `environment` sub block.
@@ -1045,8 +1045,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.cloudwatch_logs.new](#fn-logsconfigcloudwatchlogsnew) constructor.
-  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.s3_logs.new](#fn-logsconfigs3logsnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.cloudwatch_logs.new](#fn-logs_configcloudwatch_logsnew) constructor.
+  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.s3_logs.new](#fn-logs_configs3_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logs_config` sub block.
@@ -1183,9 +1183,9 @@ Terraform sub block.
   - `report_build_status` (`bool`):  When `null`, the `report_build_status` field will be omitted from the resulting object.
   - `source_identifier` (`string`): 
   - `type` (`string`): 
-  - `auth` (`list[obj]`):  When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.auth.new](#fn-secondarysourcesauthnew) constructor.
-  - `build_status_config` (`list[obj]`):  When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.build_status_config.new](#fn-secondarysourcesbuildstatusconfignew) constructor.
-  - `git_submodules_config` (`list[obj]`):  When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.git_submodules_config.new](#fn-secondarysourcesgitsubmodulesconfignew) constructor.
+  - `auth` (`list[obj]`):  When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.auth.new](#fn-secondary_sourcesauthnew) constructor.
+  - `build_status_config` (`list[obj]`):  When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.build_status_config.new](#fn-secondary_sourcesbuild_status_confignew) constructor.
+  - `git_submodules_config` (`list[obj]`):  When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.git_submodules_config.new](#fn-secondary_sourcesgit_submodules_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `secondary_sources` sub block.
@@ -1286,8 +1286,8 @@ Terraform sub block.
   - `report_build_status` (`bool`):  When `null`, the `report_build_status` field will be omitted from the resulting object.
   - `type` (`string`): 
   - `auth` (`list[obj]`):  When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.auth.new](#fn-sourceauthnew) constructor.
-  - `build_status_config` (`list[obj]`):  When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.build_status_config.new](#fn-sourcebuildstatusconfignew) constructor.
-  - `git_submodules_config` (`list[obj]`):  When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.git_submodules_config.new](#fn-sourcegitsubmodulesconfignew) constructor.
+  - `build_status_config` (`list[obj]`):  When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.build_status_config.new](#fn-sourcebuild_status_confignew) constructor.
+  - `git_submodules_config` (`list[obj]`):  When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.git_submodules_config.new](#fn-sourcegit_submodules_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.

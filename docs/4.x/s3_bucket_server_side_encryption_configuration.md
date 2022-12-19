@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.new](#fn-s3bucketserversideencryptionconfigurationrulenew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.new](#fn-s3_bucket_server_side_encryption_configurationrulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.s3_bucket_server_side_encryption_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_server_side_encryption_configuration`
 Terraform resource.
 
-Unlike [aws.s3_bucket_server_side_encryption_configuration.new](#fn-s3bucketserversideencryptionconfigurationnew), this function will not inject the `resource`
+Unlike [aws.s3_bucket_server_side_encryption_configuration.new](#fn-s3_bucket_server_side_encryption_configurationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -81,7 +81,7 @@ injecting into a complete block.
 **Args**:
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.new](#fn-s3bucketserversideencryptionconfigurationrulenew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.new](#fn-s3_bucket_server_side_encryption_configurationrulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_server_side_encryption_configuration` resource into the root Terraform configuration.
@@ -174,7 +174,7 @@ Terraform sub block.
 
 **Args**:
   - `bucket_key_enabled` (`bool`):  When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
-  - `apply_server_side_encryption_by_default` (`list[obj]`):  When `null`, the `apply_server_side_encryption_by_default` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.apply_server_side_encryption_by_default.new](#fn-ruleapplyserversideencryptionbydefaultnew) constructor.
+  - `apply_server_side_encryption_by_default` (`list[obj]`):  When `null`, the `apply_server_side_encryption_by_default` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.apply_server_side_encryption_by_default.new](#fn-ruleapply_server_side_encryption_by_defaultnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

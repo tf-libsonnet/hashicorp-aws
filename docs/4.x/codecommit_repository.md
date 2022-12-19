@@ -70,7 +70,7 @@ newAttrs()
 `aws.codecommit_repository.newAttrs` constructs a new object with attributes and blocks configured for the `codecommit_repository`
 Terraform resource.
 
-Unlike [aws.codecommit_repository.new](#fn-codecommitrepositorynew), this function will not inject the `resource`
+Unlike [aws.codecommit_repository.new](#fn-codecommit_repositorynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

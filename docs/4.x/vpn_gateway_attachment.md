@@ -64,7 +64,7 @@ newAttrs()
 `aws.vpn_gateway_attachment.newAttrs` constructs a new object with attributes and blocks configured for the `vpn_gateway_attachment`
 Terraform resource.
 
-Unlike [aws.vpn_gateway_attachment.new](#fn-vpngatewayattachmentnew), this function will not inject the `resource`
+Unlike [aws.vpn_gateway_attachment.new](#fn-vpn_gateway_attachmentnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

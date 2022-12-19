@@ -69,8 +69,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `target_on_demand_capacity` (`number`):  When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
   - `target_spot_capacity` (`number`):  When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
-  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-emrinstancefleetinstancetypeconfigsnew) constructor.
-  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-emrinstancefleetlaunchspecificationsnew) constructor.
+  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-emr_instance_fleetinstance_type_configsnew) constructor.
+  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-emr_instance_fleetlaunch_specificationsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,7 +86,7 @@ newAttrs()
 `aws.emr_instance_fleet.newAttrs` constructs a new object with attributes and blocks configured for the `emr_instance_fleet`
 Terraform resource.
 
-Unlike [aws.emr_instance_fleet.new](#fn-emrinstancefleetnew), this function will not inject the `resource`
+Unlike [aws.emr_instance_fleet.new](#fn-emr_instance_fleetnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -98,8 +98,8 @@ injecting into a complete block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `target_on_demand_capacity` (`number`):  When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
   - `target_spot_capacity` (`number`):  When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
-  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-emrinstancefleetinstancetypeconfigsnew) constructor.
-  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-emrinstancefleetlaunchspecificationsnew) constructor.
+  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-emr_instance_fleetinstance_type_configsnew) constructor.
+  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-emr_instance_fleetlaunch_specificationsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emr_instance_fleet` resource into the root Terraform configuration.
@@ -264,8 +264,8 @@ Terraform sub block.
   - `bid_price_as_percentage_of_on_demand_price` (`number`):  When `null`, the `bid_price_as_percentage_of_on_demand_price` field will be omitted from the resulting object.
   - `instance_type` (`string`): 
   - `weighted_capacity` (`number`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.configurations.new](#fn-instancetypeconfigsconfigurationsnew) constructor.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.ebs_config.new](#fn-instancetypeconfigsebsconfignew) constructor.
+  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.configurations.new](#fn-instance_type_configsconfigurationsnew) constructor.
+  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.ebs_config.new](#fn-instance_type_configsebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_type_configs` sub block.
@@ -338,8 +338,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.on_demand_specification.new](#fn-launchspecificationsondemandspecificationnew) constructor.
-  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.spot_specification.new](#fn-launchspecificationsspotspecificationnew) constructor.
+  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.on_demand_specification.new](#fn-launch_specificationson_demand_specificationnew) constructor.
+  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.spot_specification.new](#fn-launch_specificationsspot_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_specifications` sub block.

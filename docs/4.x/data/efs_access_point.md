@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.efs_access_point.newAttrs` constructs a new object with attributes and blocks configured for the `efs_access_point`
 Terraform data source.
 
-Unlike [aws.data.efs_access_point.new](#fn-efsaccesspointnew), this function will not inject the `data source`
+Unlike [aws.data.efs_access_point.new](#fn-efs_access_pointnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

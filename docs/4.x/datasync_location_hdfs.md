@@ -77,8 +77,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `name_node` (`list[obj]`):  When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-datasynclocationhdfsnamenodenew) constructor.
-  - `qop_configuration` (`list[obj]`):  When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-datasynclocationhdfsqopconfigurationnew) constructor.
+  - `name_node` (`list[obj]`):  When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-datasync_location_hdfsname_nodenew) constructor.
+  - `qop_configuration` (`list[obj]`):  When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-datasync_location_hdfsqop_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,7 +94,7 @@ newAttrs()
 `aws.datasync_location_hdfs.newAttrs` constructs a new object with attributes and blocks configured for the `datasync_location_hdfs`
 Terraform resource.
 
-Unlike [aws.datasync_location_hdfs.new](#fn-datasynclocationhdfsnew), this function will not inject the `resource`
+Unlike [aws.datasync_location_hdfs.new](#fn-datasync_location_hdfsnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -114,8 +114,8 @@ injecting into a complete block.
   - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `name_node` (`list[obj]`):  When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-datasynclocationhdfsnamenodenew) constructor.
-  - `qop_configuration` (`list[obj]`):  When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-datasynclocationhdfsqopconfigurationnew) constructor.
+  - `name_node` (`list[obj]`):  When `null`, the `name_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.name_node.new](#fn-datasync_location_hdfsname_nodenew) constructor.
+  - `qop_configuration` (`list[obj]`):  When `null`, the `qop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_hdfs.qop_configuration.new](#fn-datasync_location_hdfsqop_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_location_hdfs` resource into the root Terraform configuration.

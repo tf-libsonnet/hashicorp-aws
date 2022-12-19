@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `accept_language` (`string`):  When `null`, the `accept_language` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.servicecatalog_portfolio.timeouts.new](#fn-servicecatalogportfoliotimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.servicecatalog_portfolio.timeouts.new](#fn-servicecatalog_portfoliotimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.data.servicecatalog_portfolio.newAttrs` constructs a new object with attributes and blocks configured for the `servicecatalog_portfolio`
 Terraform data source.
 
-Unlike [aws.data.servicecatalog_portfolio.new](#fn-servicecatalogportfolionew), this function will not inject the `data source`
+Unlike [aws.data.servicecatalog_portfolio.new](#fn-servicecatalog_portfolionew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `accept_language` (`string`):  When `null`, the `accept_language` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.servicecatalog_portfolio.timeouts.new](#fn-servicecatalogportfoliotimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.servicecatalog_portfolio.timeouts.new](#fn-servicecatalog_portfoliotimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `servicecatalog_portfolio` data source into the root Terraform configuration.

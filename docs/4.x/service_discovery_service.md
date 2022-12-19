@@ -71,9 +71,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `namespace_id` (`string`):  When `null`, the `namespace_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `dns_config` (`list[obj]`):  When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-servicediscoveryservicednsconfignew) constructor.
-  - `health_check_config` (`list[obj]`):  When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-servicediscoveryservicehealthcheckconfignew) constructor.
-  - `health_check_custom_config` (`list[obj]`):  When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-servicediscoveryservicehealthcheckcustomconfignew) constructor.
+  - `dns_config` (`list[obj]`):  When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-service_discovery_servicedns_confignew) constructor.
+  - `health_check_config` (`list[obj]`):  When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-service_discovery_servicehealth_check_confignew) constructor.
+  - `health_check_custom_config` (`list[obj]`):  When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-service_discovery_servicehealth_check_custom_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,7 +89,7 @@ newAttrs()
 `aws.service_discovery_service.newAttrs` constructs a new object with attributes and blocks configured for the `service_discovery_service`
 Terraform resource.
 
-Unlike [aws.service_discovery_service.new](#fn-servicediscoveryservicenew), this function will not inject the `resource`
+Unlike [aws.service_discovery_service.new](#fn-service_discovery_servicenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -103,9 +103,9 @@ injecting into a complete block.
   - `namespace_id` (`string`):  When `null`, the `namespace_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `dns_config` (`list[obj]`):  When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-servicediscoveryservicednsconfignew) constructor.
-  - `health_check_config` (`list[obj]`):  When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-servicediscoveryservicehealthcheckconfignew) constructor.
-  - `health_check_custom_config` (`list[obj]`):  When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-servicediscoveryservicehealthcheckcustomconfignew) constructor.
+  - `dns_config` (`list[obj]`):  When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-service_discovery_servicedns_confignew) constructor.
+  - `health_check_config` (`list[obj]`):  When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-service_discovery_servicehealth_check_confignew) constructor.
+  - `health_check_custom_config` (`list[obj]`):  When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-service_discovery_servicehealth_check_custom_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `service_discovery_service` resource into the root Terraform configuration.
@@ -337,7 +337,7 @@ Terraform sub block.
 **Args**:
   - `namespace_id` (`string`): 
   - `routing_policy` (`string`):  When `null`, the `routing_policy` field will be omitted from the resulting object.
-  - `dns_records` (`list[obj]`):  When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-dnsconfigdnsrecordsnew) constructor.
+  - `dns_records` (`list[obj]`):  When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-dns_configdns_recordsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dns_config` sub block.

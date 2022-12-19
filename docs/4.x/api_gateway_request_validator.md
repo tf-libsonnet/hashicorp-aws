@@ -68,7 +68,7 @@ newAttrs()
 `aws.api_gateway_request_validator.newAttrs` constructs a new object with attributes and blocks configured for the `api_gateway_request_validator`
 Terraform resource.
 
-Unlike [aws.api_gateway_request_validator.new](#fn-apigatewayrequestvalidatornew), this function will not inject the `resource`
+Unlike [aws.api_gateway_request_validator.new](#fn-api_gateway_request_validatornew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

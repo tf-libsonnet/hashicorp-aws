@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.dx_gateway.newAttrs` constructs a new object with attributes and blocks configured for the `dx_gateway`
 Terraform data source.
 
-Unlike [aws.data.dx_gateway.new](#fn-dxgatewaynew), this function will not inject the `data source`
+Unlike [aws.data.dx_gateway.new](#fn-dx_gatewaynew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

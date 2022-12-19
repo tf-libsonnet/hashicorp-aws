@@ -60,7 +60,7 @@ newAttrs()
 `aws.data.ses_active_receipt_rule_set.newAttrs` constructs a new object with attributes and blocks configured for the `ses_active_receipt_rule_set`
 Terraform data source.
 
-Unlike [aws.data.ses_active_receipt_rule_set.new](#fn-sesactivereceiptrulesetnew), this function will not inject the `data source`
+Unlike [aws.data.ses_active_receipt_rule_set.new](#fn-ses_active_receipt_rule_setnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

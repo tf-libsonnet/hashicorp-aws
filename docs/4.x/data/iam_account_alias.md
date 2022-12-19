@@ -60,7 +60,7 @@ newAttrs()
 `aws.data.iam_account_alias.newAttrs` constructs a new object with attributes and blocks configured for the `iam_account_alias`
 Terraform data source.
 
-Unlike [aws.data.iam_account_alias.new](#fn-iamaccountaliasnew), this function will not inject the `data source`
+Unlike [aws.data.iam_account_alias.new](#fn-iam_account_aliasnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

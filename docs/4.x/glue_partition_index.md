@@ -59,8 +59,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `database_name` (`string`): 
   - `table_name` (`string`): 
-  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-gluepartitionindexpartitionindexnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-gluepartitionindextimeoutsnew) constructor.
+  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-glue_partition_indexpartition_indexnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-glue_partition_indextimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,7 +76,7 @@ newAttrs()
 `aws.glue_partition_index.newAttrs` constructs a new object with attributes and blocks configured for the `glue_partition_index`
 Terraform resource.
 
-Unlike [aws.glue_partition_index.new](#fn-gluepartitionindexnew), this function will not inject the `resource`
+Unlike [aws.glue_partition_index.new](#fn-glue_partition_indexnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,8 +87,8 @@ injecting into a complete block.
   - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `database_name` (`string`): 
   - `table_name` (`string`): 
-  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-gluepartitionindexpartitionindexnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-gluepartitionindextimeoutsnew) constructor.
+  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-glue_partition_indexpartition_indexnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-glue_partition_indextimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_partition_index` resource into the root Terraform configuration.

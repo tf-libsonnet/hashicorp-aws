@@ -69,7 +69,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `rule_identifier` (`string`): 
   - `tag_key_scope` (`string`):  When `null`, the `tag_key_scope` field will be omitted from the resulting object.
   - `tag_value_scope` (`string`):  When `null`, the `tag_value_scope` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-configorganizationmanagedruletimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-config_organization_managed_ruletimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,7 +85,7 @@ newAttrs()
 `aws.config_organization_managed_rule.newAttrs` constructs a new object with attributes and blocks configured for the `config_organization_managed_rule`
 Terraform resource.
 
-Unlike [aws.config_organization_managed_rule.new](#fn-configorganizationmanagedrulenew), this function will not inject the `resource`
+Unlike [aws.config_organization_managed_rule.new](#fn-config_organization_managed_rulenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -103,7 +103,7 @@ injecting into a complete block.
   - `rule_identifier` (`string`): 
   - `tag_key_scope` (`string`):  When `null`, the `tag_key_scope` field will be omitted from the resulting object.
   - `tag_value_scope` (`string`):  When `null`, the `tag_value_scope` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-configorganizationmanagedruletimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-config_organization_managed_ruletimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_organization_managed_rule` resource into the root Terraform configuration.

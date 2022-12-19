@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `instance_arn` (`string`): 
   - `permission_set_arn` (`string`): 
-  - `permissions_boundary` (`list[obj]`):  When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-ssoadminpermissionsboundaryattachmentpermissionsboundarynew) constructor.
+  - `permissions_boundary` (`list[obj]`):  When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-ssoadmin_permissions_boundary_attachmentpermissions_boundarynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.ssoadmin_permissions_boundary_attachment.newAttrs` constructs a new object with attributes and blocks configured for the `ssoadmin_permissions_boundary_attachment`
 Terraform resource.
 
-Unlike [aws.ssoadmin_permissions_boundary_attachment.new](#fn-ssoadminpermissionsboundaryattachmentnew), this function will not inject the `resource`
+Unlike [aws.ssoadmin_permissions_boundary_attachment.new](#fn-ssoadmin_permissions_boundary_attachmentnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -81,7 +81,7 @@ injecting into a complete block.
 **Args**:
   - `instance_arn` (`string`): 
   - `permission_set_arn` (`string`): 
-  - `permissions_boundary` (`list[obj]`):  When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-ssoadminpermissionsboundaryattachmentpermissionsboundarynew) constructor.
+  - `permissions_boundary` (`list[obj]`):  When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-ssoadmin_permissions_boundary_attachmentpermissions_boundarynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssoadmin_permissions_boundary_attachment` resource into the root Terraform configuration.
@@ -174,7 +174,7 @@ Terraform sub block.
 
 **Args**:
   - `managed_policy_arn` (`string`):  When `null`, the `managed_policy_arn` field will be omitted from the resulting object.
-  - `customer_managed_policy_reference` (`list[obj]`):  When `null`, the `customer_managed_policy_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.customer_managed_policy_reference.new](#fn-permissionsboundarycustomermanagedpolicyreferencenew) constructor.
+  - `customer_managed_policy_reference` (`list[obj]`):  When `null`, the `customer_managed_policy_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.customer_managed_policy_reference.new](#fn-permissions_boundarycustomer_managed_policy_referencenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `permissions_boundary` sub block.

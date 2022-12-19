@@ -59,9 +59,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `connection_alias` (`string`): 
-  - `local_domain_info` (`list[obj]`):  When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-opensearchoutboundconnectionlocaldomaininfonew) constructor.
-  - `remote_domain_info` (`list[obj]`):  When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-opensearchoutboundconnectionremotedomaininfonew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-opensearchoutboundconnectiontimeoutsnew) constructor.
+  - `local_domain_info` (`list[obj]`):  When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-opensearch_outbound_connectionlocal_domain_infonew) constructor.
+  - `remote_domain_info` (`list[obj]`):  When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-opensearch_outbound_connectionremote_domain_infonew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-opensearch_outbound_connectiontimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.opensearch_outbound_connection.newAttrs` constructs a new object with attributes and blocks configured for the `opensearch_outbound_connection`
 Terraform resource.
 
-Unlike [aws.opensearch_outbound_connection.new](#fn-opensearchoutboundconnectionnew), this function will not inject the `resource`
+Unlike [aws.opensearch_outbound_connection.new](#fn-opensearch_outbound_connectionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -86,9 +86,9 @@ injecting into a complete block.
 
 **Args**:
   - `connection_alias` (`string`): 
-  - `local_domain_info` (`list[obj]`):  When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-opensearchoutboundconnectionlocaldomaininfonew) constructor.
-  - `remote_domain_info` (`list[obj]`):  When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-opensearchoutboundconnectionremotedomaininfonew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-opensearchoutboundconnectiontimeoutsnew) constructor.
+  - `local_domain_info` (`list[obj]`):  When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-opensearch_outbound_connectionlocal_domain_infonew) constructor.
+  - `remote_domain_info` (`list[obj]`):  When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-opensearch_outbound_connectionremote_domain_infonew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-opensearch_outbound_connectiontimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opensearch_outbound_connection` resource into the root Terraform configuration.

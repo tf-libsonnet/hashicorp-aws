@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.workspaces_directory.newAttrs` constructs a new object with attributes and blocks configured for the `workspaces_directory`
 Terraform data source.
 
-Unlike [aws.data.workspaces_directory.new](#fn-workspacesdirectorynew), this function will not inject the `data source`
+Unlike [aws.data.workspaces_directory.new](#fn-workspaces_directorynew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

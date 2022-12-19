@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.lex_bot_alias.newAttrs` constructs a new object with attributes and blocks configured for the `lex_bot_alias`
 Terraform data source.
 
-Unlike [aws.data.lex_bot_alias.new](#fn-lexbotaliasnew), this function will not inject the `data source`
+Unlike [aws.data.lex_bot_alias.new](#fn-lex_bot_aliasnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

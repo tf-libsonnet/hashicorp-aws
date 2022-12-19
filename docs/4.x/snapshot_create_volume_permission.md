@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `account_id` (`string`): 
   - `snapshot_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.snapshot_create_volume_permission.timeouts.new](#fn-snapshotcreatevolumepermissiontimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.snapshot_create_volume_permission.timeouts.new](#fn-snapshot_create_volume_permissiontimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.snapshot_create_volume_permission.newAttrs` constructs a new object with attributes and blocks configured for the `snapshot_create_volume_permission`
 Terraform resource.
 
-Unlike [aws.snapshot_create_volume_permission.new](#fn-snapshotcreatevolumepermissionnew), this function will not inject the `resource`
+Unlike [aws.snapshot_create_volume_permission.new](#fn-snapshot_create_volume_permissionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `account_id` (`string`): 
   - `snapshot_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.snapshot_create_volume_permission.timeouts.new](#fn-snapshotcreatevolumepermissiontimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.snapshot_create_volume_permission.timeouts.new](#fn-snapshot_create_volume_permissiontimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `snapshot_create_volume_permission` resource into the root Terraform configuration.

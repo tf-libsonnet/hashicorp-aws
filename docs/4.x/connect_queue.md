@@ -67,7 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `outbound_caller_config` (`list[obj]`):  When `null`, the `outbound_caller_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_queue.outbound_caller_config.new](#fn-connectqueueoutboundcallerconfignew) constructor.
+  - `outbound_caller_config` (`list[obj]`):  When `null`, the `outbound_caller_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_queue.outbound_caller_config.new](#fn-connect_queueoutbound_caller_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,7 +83,7 @@ newAttrs()
 `aws.connect_queue.newAttrs` constructs a new object with attributes and blocks configured for the `connect_queue`
 Terraform resource.
 
-Unlike [aws.connect_queue.new](#fn-connectqueuenew), this function will not inject the `resource`
+Unlike [aws.connect_queue.new](#fn-connect_queuenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,7 +100,7 @@ injecting into a complete block.
   - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `outbound_caller_config` (`list[obj]`):  When `null`, the `outbound_caller_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_queue.outbound_caller_config.new](#fn-connectqueueoutboundcallerconfignew) constructor.
+  - `outbound_caller_config` (`list[obj]`):  When `null`, the `outbound_caller_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_queue.outbound_caller_config.new](#fn-connect_queueoutbound_caller_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_queue` resource into the root Terraform configuration.

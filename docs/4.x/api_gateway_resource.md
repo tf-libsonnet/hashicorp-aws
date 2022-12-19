@@ -66,7 +66,7 @@ newAttrs()
 `aws.api_gateway_resource.newAttrs` constructs a new object with attributes and blocks configured for the `api_gateway_resource`
 Terraform resource.
 
-Unlike [aws.api_gateway_resource.new](#fn-apigatewayresourcenew), this function will not inject the `resource`
+Unlike [aws.api_gateway_resource.new](#fn-api_gateway_resourcenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

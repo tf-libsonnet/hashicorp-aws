@@ -59,8 +59,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `authorization_type` (`string`): 
   - `function_name` (`string`): 
   - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `cors` (`list[obj]`):  When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-lambdafunctionurlcorsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-lambdafunctionurltimeoutsnew) constructor.
+  - `cors` (`list[obj]`):  When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-lambda_function_urlcorsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-lambda_function_urltimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,7 +76,7 @@ newAttrs()
 `aws.lambda_function_url.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_function_url`
 Terraform resource.
 
-Unlike [aws.lambda_function_url.new](#fn-lambdafunctionurlnew), this function will not inject the `resource`
+Unlike [aws.lambda_function_url.new](#fn-lambda_function_urlnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,8 +87,8 @@ injecting into a complete block.
   - `authorization_type` (`string`): 
   - `function_name` (`string`): 
   - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `cors` (`list[obj]`):  When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-lambdafunctionurlcorsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-lambdafunctionurltimeoutsnew) constructor.
+  - `cors` (`list[obj]`):  When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-lambda_function_urlcorsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-lambda_function_urltimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_function_url` resource into the root Terraform configuration.

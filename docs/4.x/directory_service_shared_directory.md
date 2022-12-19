@@ -59,8 +59,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `directory_id` (`string`): 
   - `method` (`string`):  When `null`, the `method` field will be omitted from the resulting object.
   - `notes` (`string`):  When `null`, the `notes` field will be omitted from the resulting object.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.target.new](#fn-directoryserviceshareddirectorytargetnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.timeouts.new](#fn-directoryserviceshareddirectorytimeoutsnew) constructor.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.target.new](#fn-directory_service_shared_directorytargetnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.timeouts.new](#fn-directory_service_shared_directorytimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,7 +76,7 @@ newAttrs()
 `aws.directory_service_shared_directory.newAttrs` constructs a new object with attributes and blocks configured for the `directory_service_shared_directory`
 Terraform resource.
 
-Unlike [aws.directory_service_shared_directory.new](#fn-directoryserviceshareddirectorynew), this function will not inject the `resource`
+Unlike [aws.directory_service_shared_directory.new](#fn-directory_service_shared_directorynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,8 +87,8 @@ injecting into a complete block.
   - `directory_id` (`string`): 
   - `method` (`string`):  When `null`, the `method` field will be omitted from the resulting object.
   - `notes` (`string`):  When `null`, the `notes` field will be omitted from the resulting object.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.target.new](#fn-directoryserviceshareddirectorytargetnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.timeouts.new](#fn-directoryserviceshareddirectorytimeoutsnew) constructor.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.target.new](#fn-directory_service_shared_directorytargetnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_shared_directory.timeouts.new](#fn-directory_service_shared_directorytimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_service_shared_directory` resource into the root Terraform configuration.

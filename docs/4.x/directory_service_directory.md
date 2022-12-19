@@ -81,9 +81,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-directoryservicedirectoryconnectsettingsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-directoryservicedirectorytimeoutsnew) constructor.
-  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-directoryservicedirectoryvpcsettingsnew) constructor.
+  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-directory_service_directoryconnect_settingsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-directory_service_directorytimeoutsnew) constructor.
+  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-directory_service_directoryvpc_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -99,7 +99,7 @@ newAttrs()
 `aws.directory_service_directory.newAttrs` constructs a new object with attributes and blocks configured for the `directory_service_directory`
 Terraform resource.
 
-Unlike [aws.directory_service_directory.new](#fn-directoryservicedirectorynew), this function will not inject the `resource`
+Unlike [aws.directory_service_directory.new](#fn-directory_service_directorynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -119,9 +119,9 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-directoryservicedirectoryconnectsettingsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-directoryservicedirectorytimeoutsnew) constructor.
-  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-directoryservicedirectoryvpcsettingsnew) constructor.
+  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-directory_service_directoryconnect_settingsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-directory_service_directorytimeoutsnew) constructor.
+  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-directory_service_directoryvpc_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_service_directory` resource into the root Terraform configuration.

@@ -77,9 +77,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
   - `version` (`string`): 
   - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-imagebuilderimagerecipeblockdevicemappingnew) constructor.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-imagebuilderimagerecipecomponentnew) constructor.
-  - `systems_manager_agent` (`list[obj]`):  When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-imagebuilderimagerecipesystemsmanageragentnew) constructor.
+  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-imagebuilder_image_recipeblock_device_mappingnew) constructor.
+  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-imagebuilder_image_recipecomponentnew) constructor.
+  - `systems_manager_agent` (`list[obj]`):  When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-imagebuilder_image_recipesystems_manager_agentnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,7 +95,7 @@ newAttrs()
 `aws.imagebuilder_image_recipe.newAttrs` constructs a new object with attributes and blocks configured for the `imagebuilder_image_recipe`
 Terraform resource.
 
-Unlike [aws.imagebuilder_image_recipe.new](#fn-imagebuilderimagerecipenew), this function will not inject the `resource`
+Unlike [aws.imagebuilder_image_recipe.new](#fn-imagebuilder_image_recipenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -111,9 +111,9 @@ injecting into a complete block.
   - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
   - `version` (`string`): 
   - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-imagebuilderimagerecipeblockdevicemappingnew) constructor.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-imagebuilderimagerecipecomponentnew) constructor.
-  - `systems_manager_agent` (`list[obj]`):  When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-imagebuilderimagerecipesystemsmanageragentnew) constructor.
+  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-imagebuilder_image_recipeblock_device_mappingnew) constructor.
+  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-imagebuilder_image_recipecomponentnew) constructor.
+  - `systems_manager_agent` (`list[obj]`):  When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-imagebuilder_image_recipesystems_manager_agentnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_image_recipe` resource into the root Terraform configuration.
@@ -378,7 +378,7 @@ Terraform sub block.
   - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.
   - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.
   - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
-  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-blockdevicemappingebsnew) constructor.
+  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-block_device_mappingebsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `block_device_mapping` sub block.

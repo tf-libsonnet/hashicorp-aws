@@ -93,8 +93,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subnets` (`list`):  When `null`, the `subnets` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_logs` (`list[obj]`):  When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-lbaccesslogsnew) constructor.
-  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-lbsubnetmappingnew) constructor.
+  - `access_logs` (`list[obj]`):  When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-lbaccess_logsnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-lbsubnet_mappingnew) constructor.
   - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-lbtimeoutsnew) constructor.
 
 **Returns**:
@@ -137,8 +137,8 @@ injecting into a complete block.
   - `subnets` (`list`):  When `null`, the `subnets` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_logs` (`list[obj]`):  When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-lbaccesslogsnew) constructor.
-  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-lbsubnetmappingnew) constructor.
+  - `access_logs` (`list[obj]`):  When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-lbaccess_logsnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-lbsubnet_mappingnew) constructor.
   - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-lbtimeoutsnew) constructor.
 
 **Returns**:

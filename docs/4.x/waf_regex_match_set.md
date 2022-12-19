@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): 
-  - `regex_match_tuple` (`list[obj]`):  When `null`, the `regex_match_tuple` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_regex_match_set.regex_match_tuple.new](#fn-wafregexmatchsetregexmatchtuplenew) constructor.
+  - `regex_match_tuple` (`list[obj]`):  When `null`, the `regex_match_tuple` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_regex_match_set.regex_match_tuple.new](#fn-waf_regex_match_setregex_match_tuplenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.waf_regex_match_set.newAttrs` constructs a new object with attributes and blocks configured for the `waf_regex_match_set`
 Terraform resource.
 
-Unlike [aws.waf_regex_match_set.new](#fn-wafregexmatchsetnew), this function will not inject the `resource`
+Unlike [aws.waf_regex_match_set.new](#fn-waf_regex_match_setnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -78,7 +78,7 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): 
-  - `regex_match_tuple` (`list[obj]`):  When `null`, the `regex_match_tuple` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_regex_match_set.regex_match_tuple.new](#fn-wafregexmatchsetregexmatchtuplenew) constructor.
+  - `regex_match_tuple` (`list[obj]`):  When `null`, the `regex_match_tuple` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_regex_match_set.regex_match_tuple.new](#fn-waf_regex_match_setregex_match_tuplenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `waf_regex_match_set` resource into the root Terraform configuration.
@@ -156,7 +156,7 @@ Terraform sub block.
 **Args**:
   - `regex_pattern_set_id` (`string`): 
   - `text_transformation` (`string`): 
-  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_regex_match_set.regex_match_tuple.field_to_match.new](#fn-regexmatchtuplefieldtomatchnew) constructor.
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_regex_match_set.regex_match_tuple.field_to_match.new](#fn-regex_match_tuplefield_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `regex_match_tuple` sub block.

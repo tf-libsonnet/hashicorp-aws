@@ -70,7 +70,7 @@ newAttrs()
 `aws.lightsail_disk.newAttrs` constructs a new object with attributes and blocks configured for the `lightsail_disk`
 Terraform resource.
 
-Unlike [aws.lightsail_disk.new](#fn-lightsaildisknew), this function will not inject the `resource`
+Unlike [aws.lightsail_disk.new](#fn-lightsail_disknew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

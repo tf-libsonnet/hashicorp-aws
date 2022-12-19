@@ -72,7 +72,7 @@ newAttrs()
 `aws.data.neptune_orderable_db_instance.newAttrs` constructs a new object with attributes and blocks configured for the `neptune_orderable_db_instance`
 Terraform data source.
 
-Unlike [aws.data.neptune_orderable_db_instance.new](#fn-neptuneorderabledbinstancenew), this function will not inject the `data source`
+Unlike [aws.data.neptune_orderable_db_instance.new](#fn-neptune_orderable_db_instancenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

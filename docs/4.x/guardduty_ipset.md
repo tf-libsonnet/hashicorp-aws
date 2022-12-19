@@ -74,7 +74,7 @@ newAttrs()
 `aws.guardduty_ipset.newAttrs` constructs a new object with attributes and blocks configured for the `guardduty_ipset`
 Terraform resource.
 
-Unlike [aws.guardduty_ipset.new](#fn-guarddutyipsetnew), this function will not inject the `resource`
+Unlike [aws.guardduty_ipset.new](#fn-guardduty_ipsetnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

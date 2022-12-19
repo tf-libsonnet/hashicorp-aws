@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.connect_prompt.newAttrs` constructs a new object with attributes and blocks configured for the `connect_prompt`
 Terraform data source.
 
-Unlike [aws.data.connect_prompt.new](#fn-connectpromptnew), this function will not inject the `data source`
+Unlike [aws.data.connect_prompt.new](#fn-connect_promptnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

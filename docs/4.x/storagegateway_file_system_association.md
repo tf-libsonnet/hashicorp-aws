@@ -63,7 +63,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `username` (`string`): 
-  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-storagegatewayfilesystemassociationcacheattributesnew) constructor.
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-storagegateway_file_system_associationcache_attributesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,7 +79,7 @@ newAttrs()
 `aws.storagegateway_file_system_association.newAttrs` constructs a new object with attributes and blocks configured for the `storagegateway_file_system_association`
 Terraform resource.
 
-Unlike [aws.storagegateway_file_system_association.new](#fn-storagegatewayfilesystemassociationnew), this function will not inject the `resource`
+Unlike [aws.storagegateway_file_system_association.new](#fn-storagegateway_file_system_associationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,7 +94,7 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `username` (`string`): 
-  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-storagegatewayfilesystemassociationcacheattributesnew) constructor.
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-storagegateway_file_system_associationcache_attributesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_file_system_association` resource into the root Terraform configuration.

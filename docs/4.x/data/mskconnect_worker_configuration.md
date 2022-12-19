@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.mskconnect_worker_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `mskconnect_worker_configuration`
 Terraform data source.
 
-Unlike [aws.data.mskconnect_worker_configuration.new](#fn-mskconnectworkerconfigurationnew), this function will not inject the `data source`
+Unlike [aws.data.mskconnect_worker_configuration.new](#fn-mskconnect_worker_configurationnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

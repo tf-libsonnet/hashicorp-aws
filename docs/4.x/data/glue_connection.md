@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.glue_connection.newAttrs` constructs a new object with attributes and blocks configured for the `glue_connection`
 Terraform data source.
 
-Unlike [aws.data.glue_connection.new](#fn-glueconnectionnew), this function will not inject the `data source`
+Unlike [aws.data.glue_connection.new](#fn-glue_connectionnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

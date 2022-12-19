@@ -64,7 +64,7 @@ newAttrs()
 `aws.data.imagebuilder_container_recipe.newAttrs` constructs a new object with attributes and blocks configured for the `imagebuilder_container_recipe`
 Terraform data source.
 
-Unlike [aws.data.imagebuilder_container_recipe.new](#fn-imagebuildercontainerrecipenew), this function will not inject the `data source`
+Unlike [aws.data.imagebuilder_container_recipe.new](#fn-imagebuilder_container_recipenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

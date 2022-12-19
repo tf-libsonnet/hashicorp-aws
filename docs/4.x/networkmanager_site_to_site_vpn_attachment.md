@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpn_connection_arn` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_site_to_site_vpn_attachment.timeouts.new](#fn-networkmanagersitetositevpnattachmenttimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_site_to_site_vpn_attachment.timeouts.new](#fn-networkmanager_site_to_site_vpn_attachmenttimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.networkmanager_site_to_site_vpn_attachment.newAttrs` constructs a new object with attributes and blocks configured for the `networkmanager_site_to_site_vpn_attachment`
 Terraform resource.
 
-Unlike [aws.networkmanager_site_to_site_vpn_attachment.new](#fn-networkmanagersitetositevpnattachmentnew), this function will not inject the `resource`
+Unlike [aws.networkmanager_site_to_site_vpn_attachment.new](#fn-networkmanager_site_to_site_vpn_attachmentnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `vpn_connection_arn` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_site_to_site_vpn_attachment.timeouts.new](#fn-networkmanagersitetositevpnattachmenttimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_site_to_site_vpn_attachment.timeouts.new](#fn-networkmanager_site_to_site_vpn_attachmenttimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkmanager_site_to_site_vpn_attachment` resource into the root Terraform configuration.

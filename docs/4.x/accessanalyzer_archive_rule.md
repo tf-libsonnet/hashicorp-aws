@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `analyzer_name` (`string`): 
   - `rule_name` (`string`): 
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-accessanalyzerarchiverulefilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-accessanalyzer_archive_rulefilternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.accessanalyzer_archive_rule.newAttrs` constructs a new object with attributes and blocks configured for the `accessanalyzer_archive_rule`
 Terraform resource.
 
-Unlike [aws.accessanalyzer_archive_rule.new](#fn-accessanalyzerarchiverulenew), this function will not inject the `resource`
+Unlike [aws.accessanalyzer_archive_rule.new](#fn-accessanalyzer_archive_rulenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `analyzer_name` (`string`): 
   - `rule_name` (`string`): 
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-accessanalyzerarchiverulefilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-accessanalyzer_archive_rulefilternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `accessanalyzer_archive_rule` resource into the root Terraform configuration.

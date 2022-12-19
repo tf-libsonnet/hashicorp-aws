@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.new](#fn-rolesanywheretrustanchorsourcenew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.new](#fn-rolesanywhere_trust_anchorsourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,7 +75,7 @@ newAttrs()
 `aws.rolesanywhere_trust_anchor.newAttrs` constructs a new object with attributes and blocks configured for the `rolesanywhere_trust_anchor`
 Terraform resource.
 
-Unlike [aws.rolesanywhere_trust_anchor.new](#fn-rolesanywheretrustanchornew), this function will not inject the `resource`
+Unlike [aws.rolesanywhere_trust_anchor.new](#fn-rolesanywhere_trust_anchornew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,7 +87,7 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.new](#fn-rolesanywheretrustanchorsourcenew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.new](#fn-rolesanywhere_trust_anchorsourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `rolesanywhere_trust_anchor` resource into the root Terraform configuration.
@@ -212,7 +212,7 @@ Terraform sub block.
 
 **Args**:
   - `source_type` (`string`): 
-  - `source_data` (`list[obj]`):  When `null`, the `source_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.source_data.new](#fn-sourcesourcedatanew) constructor.
+  - `source_data` (`list[obj]`):  When `null`, the `source_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.source_data.new](#fn-sourcesource_datanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.

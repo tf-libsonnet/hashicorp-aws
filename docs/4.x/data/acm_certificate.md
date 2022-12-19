@@ -72,7 +72,7 @@ newAttrs()
 `aws.data.acm_certificate.newAttrs` constructs a new object with attributes and blocks configured for the `acm_certificate`
 Terraform data source.
 
-Unlike [aws.data.acm_certificate.new](#fn-acmcertificatenew), this function will not inject the `data source`
+Unlike [aws.data.acm_certificate.new](#fn-acm_certificatenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

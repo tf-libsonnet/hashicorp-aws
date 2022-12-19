@@ -115,18 +115,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `elasticsearch_version` (`string`):  When `null`, the `elasticsearch_version` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_security_options` (`list[obj]`):  When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.advanced_security_options.new](#fn-elasticsearchdomainadvancedsecurityoptionsnew) constructor.
-  - `auto_tune_options` (`list[obj]`):  When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.new](#fn-elasticsearchdomainautotuneoptionsnew) constructor.
-  - `cluster_config` (`list[obj]`):  When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.new](#fn-elasticsearchdomainclusterconfignew) constructor.
-  - `cognito_options` (`list[obj]`):  When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cognito_options.new](#fn-elasticsearchdomaincognitooptionsnew) constructor.
-  - `domain_endpoint_options` (`list[obj]`):  When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.domain_endpoint_options.new](#fn-elasticsearchdomaindomainendpointoptionsnew) constructor.
-  - `ebs_options` (`list[obj]`):  When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.ebs_options.new](#fn-elasticsearchdomainebsoptionsnew) constructor.
-  - `encrypt_at_rest` (`list[obj]`):  When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.encrypt_at_rest.new](#fn-elasticsearchdomainencryptatrestnew) constructor.
-  - `log_publishing_options` (`list[obj]`):  When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.log_publishing_options.new](#fn-elasticsearchdomainlogpublishingoptionsnew) constructor.
-  - `node_to_node_encryption` (`list[obj]`):  When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.node_to_node_encryption.new](#fn-elasticsearchdomainnodetonodeencryptionnew) constructor.
-  - `snapshot_options` (`list[obj]`):  When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.snapshot_options.new](#fn-elasticsearchdomainsnapshotoptionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.timeouts.new](#fn-elasticsearchdomaintimeoutsnew) constructor.
-  - `vpc_options` (`list[obj]`):  When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.vpc_options.new](#fn-elasticsearchdomainvpcoptionsnew) constructor.
+  - `advanced_security_options` (`list[obj]`):  When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.advanced_security_options.new](#fn-elasticsearch_domainadvanced_security_optionsnew) constructor.
+  - `auto_tune_options` (`list[obj]`):  When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.new](#fn-elasticsearch_domainauto_tune_optionsnew) constructor.
+  - `cluster_config` (`list[obj]`):  When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.new](#fn-elasticsearch_domaincluster_confignew) constructor.
+  - `cognito_options` (`list[obj]`):  When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cognito_options.new](#fn-elasticsearch_domaincognito_optionsnew) constructor.
+  - `domain_endpoint_options` (`list[obj]`):  When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.domain_endpoint_options.new](#fn-elasticsearch_domaindomain_endpoint_optionsnew) constructor.
+  - `ebs_options` (`list[obj]`):  When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.ebs_options.new](#fn-elasticsearch_domainebs_optionsnew) constructor.
+  - `encrypt_at_rest` (`list[obj]`):  When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.encrypt_at_rest.new](#fn-elasticsearch_domainencrypt_at_restnew) constructor.
+  - `log_publishing_options` (`list[obj]`):  When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.log_publishing_options.new](#fn-elasticsearch_domainlog_publishing_optionsnew) constructor.
+  - `node_to_node_encryption` (`list[obj]`):  When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.node_to_node_encryption.new](#fn-elasticsearch_domainnode_to_node_encryptionnew) constructor.
+  - `snapshot_options` (`list[obj]`):  When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.snapshot_options.new](#fn-elasticsearch_domainsnapshot_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.timeouts.new](#fn-elasticsearch_domaintimeoutsnew) constructor.
+  - `vpc_options` (`list[obj]`):  When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.vpc_options.new](#fn-elasticsearch_domainvpc_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -142,7 +142,7 @@ newAttrs()
 `aws.elasticsearch_domain.newAttrs` constructs a new object with attributes and blocks configured for the `elasticsearch_domain`
 Terraform resource.
 
-Unlike [aws.elasticsearch_domain.new](#fn-elasticsearchdomainnew), this function will not inject the `resource`
+Unlike [aws.elasticsearch_domain.new](#fn-elasticsearch_domainnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -156,18 +156,18 @@ injecting into a complete block.
   - `elasticsearch_version` (`string`):  When `null`, the `elasticsearch_version` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_security_options` (`list[obj]`):  When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.advanced_security_options.new](#fn-elasticsearchdomainadvancedsecurityoptionsnew) constructor.
-  - `auto_tune_options` (`list[obj]`):  When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.new](#fn-elasticsearchdomainautotuneoptionsnew) constructor.
-  - `cluster_config` (`list[obj]`):  When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.new](#fn-elasticsearchdomainclusterconfignew) constructor.
-  - `cognito_options` (`list[obj]`):  When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cognito_options.new](#fn-elasticsearchdomaincognitooptionsnew) constructor.
-  - `domain_endpoint_options` (`list[obj]`):  When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.domain_endpoint_options.new](#fn-elasticsearchdomaindomainendpointoptionsnew) constructor.
-  - `ebs_options` (`list[obj]`):  When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.ebs_options.new](#fn-elasticsearchdomainebsoptionsnew) constructor.
-  - `encrypt_at_rest` (`list[obj]`):  When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.encrypt_at_rest.new](#fn-elasticsearchdomainencryptatrestnew) constructor.
-  - `log_publishing_options` (`list[obj]`):  When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.log_publishing_options.new](#fn-elasticsearchdomainlogpublishingoptionsnew) constructor.
-  - `node_to_node_encryption` (`list[obj]`):  When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.node_to_node_encryption.new](#fn-elasticsearchdomainnodetonodeencryptionnew) constructor.
-  - `snapshot_options` (`list[obj]`):  When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.snapshot_options.new](#fn-elasticsearchdomainsnapshotoptionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.timeouts.new](#fn-elasticsearchdomaintimeoutsnew) constructor.
-  - `vpc_options` (`list[obj]`):  When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.vpc_options.new](#fn-elasticsearchdomainvpcoptionsnew) constructor.
+  - `advanced_security_options` (`list[obj]`):  When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.advanced_security_options.new](#fn-elasticsearch_domainadvanced_security_optionsnew) constructor.
+  - `auto_tune_options` (`list[obj]`):  When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.new](#fn-elasticsearch_domainauto_tune_optionsnew) constructor.
+  - `cluster_config` (`list[obj]`):  When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.new](#fn-elasticsearch_domaincluster_confignew) constructor.
+  - `cognito_options` (`list[obj]`):  When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cognito_options.new](#fn-elasticsearch_domaincognito_optionsnew) constructor.
+  - `domain_endpoint_options` (`list[obj]`):  When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.domain_endpoint_options.new](#fn-elasticsearch_domaindomain_endpoint_optionsnew) constructor.
+  - `ebs_options` (`list[obj]`):  When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.ebs_options.new](#fn-elasticsearch_domainebs_optionsnew) constructor.
+  - `encrypt_at_rest` (`list[obj]`):  When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.encrypt_at_rest.new](#fn-elasticsearch_domainencrypt_at_restnew) constructor.
+  - `log_publishing_options` (`list[obj]`):  When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.log_publishing_options.new](#fn-elasticsearch_domainlog_publishing_optionsnew) constructor.
+  - `node_to_node_encryption` (`list[obj]`):  When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.node_to_node_encryption.new](#fn-elasticsearch_domainnode_to_node_encryptionnew) constructor.
+  - `snapshot_options` (`list[obj]`):  When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.snapshot_options.new](#fn-elasticsearch_domainsnapshot_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.timeouts.new](#fn-elasticsearch_domaintimeoutsnew) constructor.
+  - `vpc_options` (`list[obj]`):  When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.vpc_options.new](#fn-elasticsearch_domainvpc_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elasticsearch_domain` resource into the root Terraform configuration.
@@ -731,7 +731,7 @@ Terraform sub block.
 **Args**:
   - `enabled` (`bool`): 
   - `internal_user_database_enabled` (`bool`):  When `null`, the `internal_user_database_enabled` field will be omitted from the resulting object.
-  - `master_user_options` (`list[obj]`):  When `null`, the `master_user_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.advanced_security_options.master_user_options.new](#fn-advancedsecurityoptionsmasteruseroptionsnew) constructor.
+  - `master_user_options` (`list[obj]`):  When `null`, the `master_user_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.advanced_security_options.master_user_options.new](#fn-advanced_security_optionsmaster_user_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_security_options` sub block.
@@ -781,7 +781,7 @@ Terraform sub block.
 **Args**:
   - `desired_state` (`string`): 
   - `rollback_on_disable` (`string`):  When `null`, the `rollback_on_disable` field will be omitted from the resulting object.
-  - `maintenance_schedule` (`list[obj]`):  When `null`, the `maintenance_schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.maintenance_schedule.new](#fn-autotuneoptionsmaintenanceschedulenew) constructor.
+  - `maintenance_schedule` (`list[obj]`):  When `null`, the `maintenance_schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.maintenance_schedule.new](#fn-auto_tune_optionsmaintenance_schedulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_tune_options` sub block.
@@ -806,7 +806,7 @@ Terraform sub block.
 **Args**:
   - `cron_expression_for_recurrence` (`string`): 
   - `start_at` (`string`): 
-  - `duration` (`list[obj]`):  When `null`, the `duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.maintenance_schedule.duration.new](#fn-maintenancescheduledurationnew) constructor.
+  - `duration` (`list[obj]`):  When `null`, the `duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.auto_tune_options.maintenance_schedule.duration.new](#fn-maintenance_scheduledurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `maintenance_schedule` sub block.
@@ -862,8 +862,8 @@ Terraform sub block.
   - `warm_enabled` (`bool`):  When `null`, the `warm_enabled` field will be omitted from the resulting object.
   - `warm_type` (`string`):  When `null`, the `warm_type` field will be omitted from the resulting object.
   - `zone_awareness_enabled` (`bool`):  When `null`, the `zone_awareness_enabled` field will be omitted from the resulting object.
-  - `cold_storage_options` (`list[obj]`):  When `null`, the `cold_storage_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.cold_storage_options.new](#fn-clusterconfigcoldstorageoptionsnew) constructor.
-  - `zone_awareness_config` (`list[obj]`):  When `null`, the `zone_awareness_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.zone_awareness_config.new](#fn-clusterconfigzoneawarenessconfignew) constructor.
+  - `cold_storage_options` (`list[obj]`):  When `null`, the `cold_storage_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.cold_storage_options.new](#fn-cluster_configcold_storage_optionsnew) constructor.
+  - `zone_awareness_config` (`list[obj]`):  When `null`, the `zone_awareness_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain.cluster_config.zone_awareness_config.new](#fn-cluster_configzone_awareness_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cluster_config` sub block.

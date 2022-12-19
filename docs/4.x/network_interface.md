@@ -89,7 +89,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subnet_id` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `attachment` (`list[obj]`):  When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-networkinterfaceattachmentnew) constructor.
+  - `attachment` (`list[obj]`):  When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-network_interfaceattachmentnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,7 +105,7 @@ newAttrs()
 `aws.network_interface.newAttrs` constructs a new object with attributes and blocks configured for the `network_interface`
 Terraform resource.
 
-Unlike [aws.network_interface.new](#fn-networkinterfacenew), this function will not inject the `resource`
+Unlike [aws.network_interface.new](#fn-network_interfacenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -133,7 +133,7 @@ injecting into a complete block.
   - `subnet_id` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `attachment` (`list[obj]`):  When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-networkinterfaceattachmentnew) constructor.
+  - `attachment` (`list[obj]`):  When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-network_interfaceattachmentnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `network_interface` resource into the root Terraform configuration.

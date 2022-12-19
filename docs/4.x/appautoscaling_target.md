@@ -72,7 +72,7 @@ newAttrs()
 `aws.appautoscaling_target.newAttrs` constructs a new object with attributes and blocks configured for the `appautoscaling_target`
 Terraform resource.
 
-Unlike [aws.appautoscaling_target.new](#fn-appautoscalingtargetnew), this function will not inject the `resource`
+Unlike [aws.appautoscaling_target.new](#fn-appautoscaling_targetnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

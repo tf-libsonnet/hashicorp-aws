@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `thing_group_indexing_configuration` (`list[obj]`):  When `null`, the `thing_group_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.new](#fn-iotindexingconfigurationthinggroupindexingconfigurationnew) constructor.
-  - `thing_indexing_configuration` (`list[obj]`):  When `null`, the `thing_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.new](#fn-iotindexingconfigurationthingindexingconfigurationnew) constructor.
+  - `thing_group_indexing_configuration` (`list[obj]`):  When `null`, the `thing_group_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.new](#fn-iot_indexing_configurationthing_group_indexing_configurationnew) constructor.
+  - `thing_indexing_configuration` (`list[obj]`):  When `null`, the `thing_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.new](#fn-iot_indexing_configurationthing_indexing_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.iot_indexing_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `iot_indexing_configuration`
 Terraform resource.
 
-Unlike [aws.iot_indexing_configuration.new](#fn-iotindexingconfigurationnew), this function will not inject the `resource`
+Unlike [aws.iot_indexing_configuration.new](#fn-iot_indexing_configurationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -86,8 +86,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `thing_group_indexing_configuration` (`list[obj]`):  When `null`, the `thing_group_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.new](#fn-iotindexingconfigurationthinggroupindexingconfigurationnew) constructor.
-  - `thing_indexing_configuration` (`list[obj]`):  When `null`, the `thing_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.new](#fn-iotindexingconfigurationthingindexingconfigurationnew) constructor.
+  - `thing_group_indexing_configuration` (`list[obj]`):  When `null`, the `thing_group_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.new](#fn-iot_indexing_configurationthing_group_indexing_configurationnew) constructor.
+  - `thing_indexing_configuration` (`list[obj]`):  When `null`, the `thing_indexing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.new](#fn-iot_indexing_configurationthing_indexing_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_indexing_configuration` resource into the root Terraform configuration.
@@ -185,8 +185,8 @@ Terraform sub block.
 
 **Args**:
   - `thing_group_indexing_mode` (`string`): 
-  - `custom_field` (`list[obj]`):  When `null`, the `custom_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.custom_field.new](#fn-thinggroupindexingconfigurationcustomfieldnew) constructor.
-  - `managed_field` (`list[obj]`):  When `null`, the `managed_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.managed_field.new](#fn-thinggroupindexingconfigurationmanagedfieldnew) constructor.
+  - `custom_field` (`list[obj]`):  When `null`, the `custom_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.custom_field.new](#fn-thing_group_indexing_configurationcustom_fieldnew) constructor.
+  - `managed_field` (`list[obj]`):  When `null`, the `managed_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_group_indexing_configuration.managed_field.new](#fn-thing_group_indexing_configurationmanaged_fieldnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `thing_group_indexing_configuration` sub block.
@@ -261,8 +261,8 @@ Terraform sub block.
   - `named_shadow_indexing_mode` (`string`):  When `null`, the `named_shadow_indexing_mode` field will be omitted from the resulting object.
   - `thing_connectivity_indexing_mode` (`string`):  When `null`, the `thing_connectivity_indexing_mode` field will be omitted from the resulting object.
   - `thing_indexing_mode` (`string`): 
-  - `custom_field` (`list[obj]`):  When `null`, the `custom_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.custom_field.new](#fn-thingindexingconfigurationcustomfieldnew) constructor.
-  - `managed_field` (`list[obj]`):  When `null`, the `managed_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.managed_field.new](#fn-thingindexingconfigurationmanagedfieldnew) constructor.
+  - `custom_field` (`list[obj]`):  When `null`, the `custom_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.custom_field.new](#fn-thing_indexing_configurationcustom_fieldnew) constructor.
+  - `managed_field` (`list[obj]`):  When `null`, the `managed_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.managed_field.new](#fn-thing_indexing_configurationmanaged_fieldnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `thing_indexing_configuration` sub block.

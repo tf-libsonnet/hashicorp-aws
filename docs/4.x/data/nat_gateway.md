@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.filter.new](#fn-natgatewayfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.timeouts.new](#fn-natgatewaytimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.filter.new](#fn-nat_gatewayfilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.timeouts.new](#fn-nat_gatewaytimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.data.nat_gateway.newAttrs` constructs a new object with attributes and blocks configured for the `nat_gateway`
 Terraform data source.
 
-Unlike [aws.data.nat_gateway.new](#fn-natgatewaynew), this function will not inject the `data source`
+Unlike [aws.data.nat_gateway.new](#fn-nat_gatewaynew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.filter.new](#fn-natgatewayfilternew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.timeouts.new](#fn-natgatewaytimeoutsnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.filter.new](#fn-nat_gatewayfilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.nat_gateway.timeouts.new](#fn-nat_gatewaytimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `nat_gateway` data source into the root Terraform configuration.

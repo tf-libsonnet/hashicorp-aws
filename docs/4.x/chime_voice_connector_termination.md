@@ -72,7 +72,7 @@ newAttrs()
 `aws.chime_voice_connector_termination.newAttrs` constructs a new object with attributes and blocks configured for the `chime_voice_connector_termination`
 Terraform resource.
 
-Unlike [aws.chime_voice_connector_termination.new](#fn-chimevoiceconnectorterminationnew), this function will not inject the `resource`
+Unlike [aws.chime_voice_connector_termination.new](#fn-chime_voice_connector_terminationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

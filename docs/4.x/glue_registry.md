@@ -68,7 +68,7 @@ newAttrs()
 `aws.glue_registry.newAttrs` constructs a new object with attributes and blocks configured for the `glue_registry`
 Terraform resource.
 
-Unlike [aws.glue_registry.new](#fn-glueregistrynew), this function will not inject the `resource`
+Unlike [aws.glue_registry.new](#fn-glue_registrynew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

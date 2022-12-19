@@ -69,8 +69,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `user_name` (`string`): 
   - `user_volume_encryption_enabled` (`bool`):  When `null`, the `user_volume_encryption_enabled` field will be omitted from the resulting object.
   - `volume_encryption_key` (`string`):  When `null`, the `volume_encryption_key` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-workspacesworkspacetimeoutsnew) constructor.
-  - `workspace_properties` (`list[obj]`):  When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspacesworkspaceworkspacepropertiesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-workspaces_workspacetimeoutsnew) constructor.
+  - `workspace_properties` (`list[obj]`):  When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspaces_workspaceworkspace_propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,7 +86,7 @@ newAttrs()
 `aws.workspaces_workspace.newAttrs` constructs a new object with attributes and blocks configured for the `workspaces_workspace`
 Terraform resource.
 
-Unlike [aws.workspaces_workspace.new](#fn-workspacesworkspacenew), this function will not inject the `resource`
+Unlike [aws.workspaces_workspace.new](#fn-workspaces_workspacenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -102,8 +102,8 @@ injecting into a complete block.
   - `user_name` (`string`): 
   - `user_volume_encryption_enabled` (`bool`):  When `null`, the `user_volume_encryption_enabled` field will be omitted from the resulting object.
   - `volume_encryption_key` (`string`):  When `null`, the `volume_encryption_key` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-workspacesworkspacetimeoutsnew) constructor.
-  - `workspace_properties` (`list[obj]`):  When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspacesworkspaceworkspacepropertiesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-workspaces_workspacetimeoutsnew) constructor.
+  - `workspace_properties` (`list[obj]`):  When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspaces_workspaceworkspace_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `workspaces_workspace` resource into the root Terraform configuration.

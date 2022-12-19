@@ -72,7 +72,7 @@ newAttrs()
 `aws.storagegateway_tape_pool.newAttrs` constructs a new object with attributes and blocks configured for the `storagegateway_tape_pool`
 Terraform resource.
 
-Unlike [aws.storagegateway_tape_pool.new](#fn-storagegatewaytapepoolnew), this function will not inject the `resource`
+Unlike [aws.storagegateway_tape_pool.new](#fn-storagegateway_tape_poolnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.lakeformation_resource.newAttrs` constructs a new object with attributes and blocks configured for the `lakeformation_resource`
 Terraform data source.
 
-Unlike [aws.data.lakeformation_resource.new](#fn-lakeformationresourcenew), this function will not inject the `data source`
+Unlike [aws.data.lakeformation_resource.new](#fn-lakeformation_resourcenew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

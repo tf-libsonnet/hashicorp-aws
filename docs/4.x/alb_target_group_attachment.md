@@ -68,7 +68,7 @@ newAttrs()
 `aws.alb_target_group_attachment.newAttrs` constructs a new object with attributes and blocks configured for the `alb_target_group_attachment`
 Terraform resource.
 
-Unlike [aws.alb_target_group_attachment.new](#fn-albtargetgroupattachmentnew), this function will not inject the `resource`
+Unlike [aws.alb_target_group_attachment.new](#fn-alb_target_group_attachmentnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

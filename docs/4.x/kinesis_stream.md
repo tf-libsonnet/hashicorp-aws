@@ -73,8 +73,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `shard_level_metrics` (`list`):  When `null`, the `shard_level_metrics` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `stream_mode_details` (`list[obj]`):  When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-kinesisstreamstreammodedetailsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-kinesisstreamtimeoutsnew) constructor.
+  - `stream_mode_details` (`list[obj]`):  When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-kinesis_streamstream_mode_detailsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-kinesis_streamtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,7 +90,7 @@ newAttrs()
 `aws.kinesis_stream.newAttrs` constructs a new object with attributes and blocks configured for the `kinesis_stream`
 Terraform resource.
 
-Unlike [aws.kinesis_stream.new](#fn-kinesisstreamnew), this function will not inject the `resource`
+Unlike [aws.kinesis_stream.new](#fn-kinesis_streamnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -108,8 +108,8 @@ injecting into a complete block.
   - `shard_level_metrics` (`list`):  When `null`, the `shard_level_metrics` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `stream_mode_details` (`list[obj]`):  When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-kinesisstreamstreammodedetailsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-kinesisstreamtimeoutsnew) constructor.
+  - `stream_mode_details` (`list[obj]`):  When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-kinesis_streamstream_mode_detailsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-kinesis_streamtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kinesis_stream` resource into the root Terraform configuration.

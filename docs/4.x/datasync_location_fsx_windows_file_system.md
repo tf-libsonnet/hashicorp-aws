@@ -76,7 +76,7 @@ newAttrs()
 `aws.datasync_location_fsx_windows_file_system.newAttrs` constructs a new object with attributes and blocks configured for the `datasync_location_fsx_windows_file_system`
 Terraform resource.
 
-Unlike [aws.datasync_location_fsx_windows_file_system.new](#fn-datasynclocationfsxwindowsfilesystemnew), this function will not inject the `resource`
+Unlike [aws.datasync_location_fsx_windows_file_system.new](#fn-datasync_location_fsx_windows_file_systemnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -73,8 +73,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `imported_file_chunk_size` (`number`):  When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-fsxdatarepositoryassociations3new) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-fsxdatarepositoryassociationtimeoutsnew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-fsx_data_repository_associations3new) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-fsx_data_repository_associationtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,7 +90,7 @@ newAttrs()
 `aws.fsx_data_repository_association.newAttrs` constructs a new object with attributes and blocks configured for the `fsx_data_repository_association`
 Terraform resource.
 
-Unlike [aws.fsx_data_repository_association.new](#fn-fsxdatarepositoryassociationnew), this function will not inject the `resource`
+Unlike [aws.fsx_data_repository_association.new](#fn-fsx_data_repository_associationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -106,8 +106,8 @@ injecting into a complete block.
   - `imported_file_chunk_size` (`number`):  When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-fsxdatarepositoryassociations3new) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-fsxdatarepositoryassociationtimeoutsnew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-fsx_data_repository_associations3new) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-fsx_data_repository_associationtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_data_repository_association` resource into the root Terraform configuration.
@@ -331,8 +331,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `auto_export_policy` (`list[obj]`):  When `null`, the `auto_export_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_export_policy.new](#fn-s3autoexportpolicynew) constructor.
-  - `auto_import_policy` (`list[obj]`):  When `null`, the `auto_import_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_import_policy.new](#fn-s3autoimportpolicynew) constructor.
+  - `auto_export_policy` (`list[obj]`):  When `null`, the `auto_export_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_export_policy.new](#fn-s3auto_export_policynew) constructor.
+  - `auto_import_policy` (`list[obj]`):  When `null`, the `auto_import_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_import_policy.new](#fn-s3auto_import_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.

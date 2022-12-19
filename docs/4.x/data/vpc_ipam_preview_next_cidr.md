@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `disallowed_cidrs` (`list`):  When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
   - `ipam_pool_id` (`string`): 
   - `netmask_length` (`number`):  When `null`, the `netmask_length` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_ipam_preview_next_cidr.timeouts.new](#fn-vpcipampreviewnextcidrtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_ipam_preview_next_cidr.timeouts.new](#fn-vpc_ipam_preview_next_cidrtimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.data.vpc_ipam_preview_next_cidr.newAttrs` constructs a new object with attributes and blocks configured for the `vpc_ipam_preview_next_cidr`
 Terraform data source.
 
-Unlike [aws.data.vpc_ipam_preview_next_cidr.new](#fn-vpcipampreviewnextcidrnew), this function will not inject the `data source`
+Unlike [aws.data.vpc_ipam_preview_next_cidr.new](#fn-vpc_ipam_preview_next_cidrnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `disallowed_cidrs` (`list`):  When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
   - `ipam_pool_id` (`string`): 
   - `netmask_length` (`number`):  When `null`, the `netmask_length` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_ipam_preview_next_cidr.timeouts.new](#fn-vpcipampreviewnextcidrtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_ipam_preview_next_cidr.timeouts.new](#fn-vpc_ipam_preview_next_cidrtimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `vpc_ipam_preview_next_cidr` data source into the root Terraform configuration.

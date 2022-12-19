@@ -68,7 +68,7 @@ newAttrs()
 `aws.opsworks_user_profile.newAttrs` constructs a new object with attributes and blocks configured for the `opsworks_user_profile`
 Terraform resource.
 
-Unlike [aws.opsworks_user_profile.new](#fn-opsworksuserprofilenew), this function will not inject the `resource`
+Unlike [aws.opsworks_user_profile.new](#fn-opsworks_user_profilenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

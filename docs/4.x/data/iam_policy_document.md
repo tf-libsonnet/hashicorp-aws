@@ -67,7 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `source_json` (`string`):  When `null`, the `source_json` field will be omitted from the resulting object.
   - `source_policy_documents` (`list`):  When `null`, the `source_policy_documents` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `statement` (`list[obj]`):  When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-iampolicydocumentstatementnew) constructor.
+  - `statement` (`list[obj]`):  When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-iam_policy_documentstatementnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -83,7 +83,7 @@ newAttrs()
 `aws.data.iam_policy_document.newAttrs` constructs a new object with attributes and blocks configured for the `iam_policy_document`
 Terraform data source.
 
-Unlike [aws.data.iam_policy_document.new](#fn-iampolicydocumentnew), this function will not inject the `data source`
+Unlike [aws.data.iam_policy_document.new](#fn-iam_policy_documentnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -97,7 +97,7 @@ injecting into a complete block.
   - `source_json` (`string`):  When `null`, the `source_json` field will be omitted from the resulting object.
   - `source_policy_documents` (`list`):  When `null`, the `source_policy_documents` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `statement` (`list[obj]`):  When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-iampolicydocumentstatementnew) constructor.
+  - `statement` (`list[obj]`):  When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-iam_policy_documentstatementnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `iam_policy_document` data source into the root Terraform configuration.
@@ -260,7 +260,7 @@ Terraform sub block.
   - `resources` (`list`):  When `null`, the `resources` field will be omitted from the resulting object.
   - `sid` (`string`):  When `null`, the `sid` field will be omitted from the resulting object.
   - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.condition.new](#fn-statementconditionnew) constructor.
-  - `not_principals` (`list[obj]`):  When `null`, the `not_principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.not_principals.new](#fn-statementnotprincipalsnew) constructor.
+  - `not_principals` (`list[obj]`):  When `null`, the `not_principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.not_principals.new](#fn-statementnot_principalsnew) constructor.
   - `principals` (`list[obj]`):  When `null`, the `principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.principals.new](#fn-statementprincipalsnew) constructor.
 
 **Returns**:

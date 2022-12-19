@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `mfa` (`string`):  When `null`, the `mfa` field will be omitted from the resulting object.
-  - `versioning_configuration` (`list[obj]`):  When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-s3bucketversioningversioningconfigurationnew) constructor.
+  - `versioning_configuration` (`list[obj]`):  When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-s3_bucket_versioningversioning_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,7 +71,7 @@ newAttrs()
 `aws.s3_bucket_versioning.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_versioning`
 Terraform resource.
 
-Unlike [aws.s3_bucket_versioning.new](#fn-s3bucketversioningnew), this function will not inject the `resource`
+Unlike [aws.s3_bucket_versioning.new](#fn-s3_bucket_versioningnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -82,7 +82,7 @@ injecting into a complete block.
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `mfa` (`string`):  When `null`, the `mfa` field will be omitted from the resulting object.
-  - `versioning_configuration` (`list[obj]`):  When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-s3bucketversioningversioningconfigurationnew) constructor.
+  - `versioning_configuration` (`list[obj]`):  When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-s3_bucket_versioningversioning_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_versioning` resource into the root Terraform configuration.

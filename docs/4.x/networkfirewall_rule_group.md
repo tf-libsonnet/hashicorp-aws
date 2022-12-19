@@ -115,8 +115,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.encryption_configuration.new](#fn-networkfirewallrulegroupencryptionconfigurationnew) constructor.
-  - `rule_group` (`list[obj]`):  When `null`, the `rule_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.new](#fn-networkfirewallrulegrouprulegroupnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.encryption_configuration.new](#fn-networkfirewall_rule_groupencryption_configurationnew) constructor.
+  - `rule_group` (`list[obj]`):  When `null`, the `rule_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.new](#fn-networkfirewall_rule_grouprule_groupnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -132,7 +132,7 @@ newAttrs()
 `aws.networkfirewall_rule_group.newAttrs` constructs a new object with attributes and blocks configured for the `networkfirewall_rule_group`
 Terraform resource.
 
-Unlike [aws.networkfirewall_rule_group.new](#fn-networkfirewallrulegroupnew), this function will not inject the `resource`
+Unlike [aws.networkfirewall_rule_group.new](#fn-networkfirewall_rule_groupnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -147,8 +147,8 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.encryption_configuration.new](#fn-networkfirewallrulegroupencryptionconfigurationnew) constructor.
-  - `rule_group` (`list[obj]`):  When `null`, the `rule_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.new](#fn-networkfirewallrulegrouprulegroupnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.encryption_configuration.new](#fn-networkfirewall_rule_groupencryption_configurationnew) constructor.
+  - `rule_group` (`list[obj]`):  When `null`, the `rule_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.new](#fn-networkfirewall_rule_grouprule_groupnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkfirewall_rule_group` resource into the root Terraform configuration.
@@ -381,9 +381,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `rule_variables` (`list[obj]`):  When `null`, the `rule_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.new](#fn-rulegrouprulevariablesnew) constructor.
-  - `rules_source` (`list[obj]`):  When `null`, the `rules_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.new](#fn-rulegrouprulessourcenew) constructor.
-  - `stateful_rule_options` (`list[obj]`):  When `null`, the `stateful_rule_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.stateful_rule_options.new](#fn-rulegroupstatefulruleoptionsnew) constructor.
+  - `rule_variables` (`list[obj]`):  When `null`, the `rule_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.new](#fn-rule_grouprule_variablesnew) constructor.
+  - `rules_source` (`list[obj]`):  When `null`, the `rules_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.new](#fn-rule_grouprules_sourcenew) constructor.
+  - `stateful_rule_options` (`list[obj]`):  When `null`, the `stateful_rule_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.stateful_rule_options.new](#fn-rule_groupstateful_rule_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule_group` sub block.
@@ -406,8 +406,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `ip_sets` (`list[obj]`):  When `null`, the `ip_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.ip_sets.new](#fn-rulevariablesipsetsnew) constructor.
-  - `port_sets` (`list[obj]`):  When `null`, the `port_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.port_sets.new](#fn-rulevariablesportsetsnew) constructor.
+  - `ip_sets` (`list[obj]`):  When `null`, the `ip_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.ip_sets.new](#fn-rule_variablesip_setsnew) constructor.
+  - `port_sets` (`list[obj]`):  When `null`, the `port_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.port_sets.new](#fn-rule_variablesport_setsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule_variables` sub block.
@@ -431,7 +431,7 @@ Terraform sub block.
 
 **Args**:
   - `key` (`string`): 
-  - `ip_set` (`list[obj]`):  When `null`, the `ip_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.ip_sets.ip_set.new](#fn-ipsetsipsetnew) constructor.
+  - `ip_set` (`list[obj]`):  When `null`, the `ip_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.ip_sets.ip_set.new](#fn-ip_setsip_setnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ip_sets` sub block.
@@ -478,7 +478,7 @@ Terraform sub block.
 
 **Args**:
   - `key` (`string`): 
-  - `port_set` (`list[obj]`):  When `null`, the `port_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.port_sets.port_set.new](#fn-portsetsportsetnew) constructor.
+  - `port_set` (`list[obj]`):  When `null`, the `port_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.port_sets.port_set.new](#fn-port_setsport_setnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `port_sets` sub block.
@@ -525,9 +525,9 @@ Terraform sub block.
 
 **Args**:
   - `rules_string` (`string`):  When `null`, the `rules_string` field will be omitted from the resulting object.
-  - `rules_source_list` (`list[obj]`):  When `null`, the `rules_source_list` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.rules_source_list.new](#fn-rulessourcerulessourcelistnew) constructor.
-  - `stateful_rule` (`list[obj]`):  When `null`, the `stateful_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateful_rule.new](#fn-rulessourcestatefulrulenew) constructor.
-  - `stateless_rules_and_custom_actions` (`list[obj]`):  When `null`, the `stateless_rules_and_custom_actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.new](#fn-rulessourcestatelessrulesandcustomactionsnew) constructor.
+  - `rules_source_list` (`list[obj]`):  When `null`, the `rules_source_list` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.rules_source_list.new](#fn-rules_sourcerules_source_listnew) constructor.
+  - `stateful_rule` (`list[obj]`):  When `null`, the `stateful_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateful_rule.new](#fn-rules_sourcestateful_rulenew) constructor.
+  - `stateless_rules_and_custom_actions` (`list[obj]`):  When `null`, the `stateless_rules_and_custom_actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.new](#fn-rules_sourcestateless_rules_and_custom_actionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rules_source` sub block.
@@ -576,8 +576,8 @@ Terraform sub block.
 
 **Args**:
   - `action` (`string`): 
-  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateful_rule.header.new](#fn-statefulruleheadernew) constructor.
-  - `rule_option` (`list[obj]`):  When `null`, the `rule_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateful_rule.rule_option.new](#fn-statefulruleruleoptionnew) constructor.
+  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateful_rule.header.new](#fn-stateful_ruleheadernew) constructor.
+  - `rule_option` (`list[obj]`):  When `null`, the `rule_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateful_rule.rule_option.new](#fn-stateful_rulerule_optionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `stateful_rule` sub block.
@@ -652,8 +652,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_action` (`list[obj]`):  When `null`, the `custom_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.new](#fn-statelessrulesandcustomactionscustomactionnew) constructor.
-  - `stateless_rule` (`list[obj]`):  When `null`, the `stateless_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.new](#fn-statelessrulesandcustomactionsstatelessrulenew) constructor.
+  - `custom_action` (`list[obj]`):  When `null`, the `custom_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.new](#fn-stateless_rules_and_custom_actionscustom_actionnew) constructor.
+  - `stateless_rule` (`list[obj]`):  When `null`, the `stateless_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.new](#fn-stateless_rules_and_custom_actionsstateless_rulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `stateless_rules_and_custom_actions` sub block.
@@ -677,7 +677,7 @@ Terraform sub block.
 
 **Args**:
   - `action_name` (`string`): 
-  - `action_definition` (`list[obj]`):  When `null`, the `action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.action_definition.new](#fn-customactionactiondefinitionnew) constructor.
+  - `action_definition` (`list[obj]`):  When `null`, the `action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.action_definition.new](#fn-custom_actionaction_definitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `custom_action` sub block.
@@ -700,7 +700,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `publish_metric_action` (`list[obj]`):  When `null`, the `publish_metric_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.action_definition.publish_metric_action.new](#fn-actiondefinitionpublishmetricactionnew) constructor.
+  - `publish_metric_action` (`list[obj]`):  When `null`, the `publish_metric_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.action_definition.publish_metric_action.new](#fn-action_definitionpublish_metric_actionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action_definition` sub block.
@@ -723,7 +723,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.action_definition.publish_metric_action.dimension.new](#fn-publishmetricactiondimensionnew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.custom_action.action_definition.publish_metric_action.dimension.new](#fn-publish_metric_actiondimensionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `publish_metric_action` sub block.
@@ -770,7 +770,7 @@ Terraform sub block.
 
 **Args**:
   - `priority` (`number`): 
-  - `rule_definition` (`list[obj]`):  When `null`, the `rule_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.new](#fn-statelessruleruledefinitionnew) constructor.
+  - `rule_definition` (`list[obj]`):  When `null`, the `rule_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.new](#fn-stateless_rulerule_definitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `stateless_rule` sub block.
@@ -794,7 +794,7 @@ Terraform sub block.
 
 **Args**:
   - `actions` (`list`): 
-  - `match_attributes` (`list[obj]`):  When `null`, the `match_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.new](#fn-ruledefinitionmatchattributesnew) constructor.
+  - `match_attributes` (`list[obj]`):  When `null`, the `match_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.new](#fn-rule_definitionmatch_attributesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule_definition` sub block.
@@ -818,11 +818,11 @@ Terraform sub block.
 
 **Args**:
   - `protocols` (`list`):  When `null`, the `protocols` field will be omitted from the resulting object.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.destination.new](#fn-matchattributesdestinationnew) constructor.
-  - `destination_port` (`list[obj]`):  When `null`, the `destination_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.destination_port.new](#fn-matchattributesdestinationportnew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.source.new](#fn-matchattributessourcenew) constructor.
-  - `source_port` (`list[obj]`):  When `null`, the `source_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.source_port.new](#fn-matchattributessourceportnew) constructor.
-  - `tcp_flag` (`list[obj]`):  When `null`, the `tcp_flag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.tcp_flag.new](#fn-matchattributestcpflagnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.destination.new](#fn-match_attributesdestinationnew) constructor.
+  - `destination_port` (`list[obj]`):  When `null`, the `destination_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.destination_port.new](#fn-match_attributesdestination_portnew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.source.new](#fn-match_attributessourcenew) constructor.
+  - `source_port` (`list[obj]`):  When `null`, the `source_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.source_port.new](#fn-match_attributessource_portnew) constructor.
+  - `tcp_flag` (`list[obj]`):  When `null`, the `tcp_flag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.stateless_rules_and_custom_actions.stateless_rule.rule_definition.match_attributes.tcp_flag.new](#fn-match_attributestcp_flagnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match_attributes` sub block.

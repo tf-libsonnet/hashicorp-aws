@@ -68,7 +68,7 @@ newAttrs()
 `aws.chime_voice_connector_streaming.newAttrs` constructs a new object with attributes and blocks configured for the `chime_voice_connector_streaming`
 Terraform resource.
 
-Unlike [aws.chime_voice_connector_streaming.new](#fn-chimevoiceconnectorstreamingnew), this function will not inject the `resource`
+Unlike [aws.chime_voice_connector_streaming.new](#fn-chime_voice_connector_streamingnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

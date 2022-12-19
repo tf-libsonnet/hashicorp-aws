@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `destination_cidr_block` (`string`): 
   - `target_vpc_subnet_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_route.timeouts.new](#fn-ec2clientvpnroutetimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_route.timeouts.new](#fn-ec2_client_vpn_routetimeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.ec2_client_vpn_route.newAttrs` constructs a new object with attributes and blocks configured for the `ec2_client_vpn_route`
 Terraform resource.
 
-Unlike [aws.ec2_client_vpn_route.new](#fn-ec2clientvpnroutenew), this function will not inject the `resource`
+Unlike [aws.ec2_client_vpn_route.new](#fn-ec2_client_vpn_routenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `destination_cidr_block` (`string`): 
   - `target_vpc_subnet_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_route.timeouts.new](#fn-ec2clientvpnroutetimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_route.timeouts.new](#fn-ec2_client_vpn_routetimeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_client_vpn_route` resource into the root Terraform configuration.

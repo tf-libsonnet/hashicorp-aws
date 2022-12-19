@@ -73,8 +73,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `request_mapping_template` (`string`):  When `null`, the `request_mapping_template` field will be omitted from the resulting object.
   - `response_mapping_template` (`string`):  When `null`, the `response_mapping_template` field will be omitted from the resulting object.
-  - `runtime` (`list[obj]`):  When `null`, the `runtime` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.runtime.new](#fn-appsyncfunctionruntimenew) constructor.
-  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.sync_config.new](#fn-appsyncfunctionsyncconfignew) constructor.
+  - `runtime` (`list[obj]`):  When `null`, the `runtime` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.runtime.new](#fn-appsync_functionruntimenew) constructor.
+  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.sync_config.new](#fn-appsync_functionsync_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,7 +90,7 @@ newAttrs()
 `aws.appsync_function.newAttrs` constructs a new object with attributes and blocks configured for the `appsync_function`
 Terraform resource.
 
-Unlike [aws.appsync_function.new](#fn-appsyncfunctionnew), this function will not inject the `resource`
+Unlike [aws.appsync_function.new](#fn-appsync_functionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -107,8 +107,8 @@ injecting into a complete block.
   - `name` (`string`): 
   - `request_mapping_template` (`string`):  When `null`, the `request_mapping_template` field will be omitted from the resulting object.
   - `response_mapping_template` (`string`):  When `null`, the `response_mapping_template` field will be omitted from the resulting object.
-  - `runtime` (`list[obj]`):  When `null`, the `runtime` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.runtime.new](#fn-appsyncfunctionruntimenew) constructor.
-  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.sync_config.new](#fn-appsyncfunctionsyncconfignew) constructor.
+  - `runtime` (`list[obj]`):  When `null`, the `runtime` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.runtime.new](#fn-appsync_functionruntimenew) constructor.
+  - `sync_config` (`list[obj]`):  When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.sync_config.new](#fn-appsync_functionsync_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appsync_function` resource into the root Terraform configuration.
@@ -375,7 +375,7 @@ Terraform sub block.
 **Args**:
   - `conflict_detection` (`string`):  When `null`, the `conflict_detection` field will be omitted from the resulting object.
   - `conflict_handler` (`string`):  When `null`, the `conflict_handler` field will be omitted from the resulting object.
-  - `lambda_conflict_handler_config` (`list[obj]`):  When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.sync_config.lambda_conflict_handler_config.new](#fn-syncconfiglambdaconflicthandlerconfignew) constructor.
+  - `lambda_conflict_handler_config` (`list[obj]`):  When `null`, the `lambda_conflict_handler_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_function.sync_config.lambda_conflict_handler_config.new](#fn-sync_configlambda_conflict_handler_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sync_config` sub block.

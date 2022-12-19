@@ -67,7 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
   - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
-  - `attachments_source` (`list[obj]`):  When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-ssmdocumentattachmentssourcenew) constructor.
+  - `attachments_source` (`list[obj]`):  When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-ssm_documentattachments_sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,7 +83,7 @@ newAttrs()
 `aws.ssm_document.newAttrs` constructs a new object with attributes and blocks configured for the `ssm_document`
 Terraform resource.
 
-Unlike [aws.ssm_document.new](#fn-ssmdocumentnew), this function will not inject the `resource`
+Unlike [aws.ssm_document.new](#fn-ssm_documentnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -100,7 +100,7 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
   - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.
-  - `attachments_source` (`list[obj]`):  When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-ssmdocumentattachmentssourcenew) constructor.
+  - `attachments_source` (`list[obj]`):  When `null`, the `attachments_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_document.attachments_source.new](#fn-ssm_documentattachments_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_document` resource into the root Terraform configuration.

@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `group_id` (`string`):  When `null`, the `group_id` field will be omitted from the resulting object.
   - `identity_store_id` (`string`): 
-  - `alternate_identifier` (`list[obj]`):  When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-identitystoregroupalternateidentifiernew) constructor.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-identitystoregroupfilternew) constructor.
+  - `alternate_identifier` (`list[obj]`):  When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-identitystore_groupalternate_identifiernew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-identitystore_groupfilternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.data.identitystore_group.newAttrs` constructs a new object with attributes and blocks configured for the `identitystore_group`
 Terraform data source.
 
-Unlike [aws.data.identitystore_group.new](#fn-identitystoregroupnew), this function will not inject the `data source`
+Unlike [aws.data.identitystore_group.new](#fn-identitystore_groupnew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -88,8 +88,8 @@ injecting into a complete block.
 **Args**:
   - `group_id` (`string`):  When `null`, the `group_id` field will be omitted from the resulting object.
   - `identity_store_id` (`string`): 
-  - `alternate_identifier` (`list[obj]`):  When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-identitystoregroupalternateidentifiernew) constructor.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-identitystoregroupfilternew) constructor.
+  - `alternate_identifier` (`list[obj]`):  When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-identitystore_groupalternate_identifiernew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-identitystore_groupfilternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `identitystore_group` data source into the root Terraform configuration.
@@ -218,8 +218,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `external_id` (`list[obj]`):  When `null`, the `external_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.external_id.new](#fn-alternateidentifierexternalidnew) constructor.
-  - `unique_attribute` (`list[obj]`):  When `null`, the `unique_attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.unique_attribute.new](#fn-alternateidentifieruniqueattributenew) constructor.
+  - `external_id` (`list[obj]`):  When `null`, the `external_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.external_id.new](#fn-alternate_identifierexternal_idnew) constructor.
+  - `unique_attribute` (`list[obj]`):  When `null`, the `unique_attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.unique_attribute.new](#fn-alternate_identifierunique_attributenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `alternate_identifier` sub block.

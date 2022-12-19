@@ -82,7 +82,7 @@ newAttrs()
 `aws.sns_topic_subscription.newAttrs` constructs a new object with attributes and blocks configured for the `sns_topic_subscription`
 Terraform resource.
 
-Unlike [aws.sns_topic_subscription.new](#fn-snstopicsubscriptionnew), this function will not inject the `resource`
+Unlike [aws.sns_topic_subscription.new](#fn-sns_topic_subscriptionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

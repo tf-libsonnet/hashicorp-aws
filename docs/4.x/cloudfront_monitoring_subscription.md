@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `distribution_id` (`string`): 
-  - `monitoring_subscription` (`list[obj]`):  When `null`, the `monitoring_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.new](#fn-cloudfrontmonitoringsubscriptionmonitoringsubscriptionnew) constructor.
+  - `monitoring_subscription` (`list[obj]`):  When `null`, the `monitoring_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.new](#fn-cloudfront_monitoring_subscriptionmonitoring_subscriptionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.cloudfront_monitoring_subscription.newAttrs` constructs a new object with attributes and blocks configured for the `cloudfront_monitoring_subscription`
 Terraform resource.
 
-Unlike [aws.cloudfront_monitoring_subscription.new](#fn-cloudfrontmonitoringsubscriptionnew), this function will not inject the `resource`
+Unlike [aws.cloudfront_monitoring_subscription.new](#fn-cloudfront_monitoring_subscriptionnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -78,7 +78,7 @@ injecting into a complete block.
 
 **Args**:
   - `distribution_id` (`string`): 
-  - `monitoring_subscription` (`list[obj]`):  When `null`, the `monitoring_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.new](#fn-cloudfrontmonitoringsubscriptionmonitoringsubscriptionnew) constructor.
+  - `monitoring_subscription` (`list[obj]`):  When `null`, the `monitoring_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.new](#fn-cloudfront_monitoring_subscriptionmonitoring_subscriptionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_monitoring_subscription` resource into the root Terraform configuration.
@@ -154,7 +154,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `realtime_metrics_subscription_config` (`list[obj]`):  When `null`, the `realtime_metrics_subscription_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.realtime_metrics_subscription_config.new](#fn-monitoringsubscriptionrealtimemetricssubscriptionconfignew) constructor.
+  - `realtime_metrics_subscription_config` (`list[obj]`):  When `null`, the `realtime_metrics_subscription_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_monitoring_subscription.monitoring_subscription.realtime_metrics_subscription_config.new](#fn-monitoring_subscriptionrealtime_metrics_subscription_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `monitoring_subscription` sub block.

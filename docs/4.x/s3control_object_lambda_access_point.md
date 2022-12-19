@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.new](#fn-s3controlobjectlambdaaccesspointconfigurationnew) constructor.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.new](#fn-s3control_object_lambda_access_pointconfigurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,7 +75,7 @@ newAttrs()
 `aws.s3control_object_lambda_access_point.newAttrs` constructs a new object with attributes and blocks configured for the `s3control_object_lambda_access_point`
 Terraform resource.
 
-Unlike [aws.s3control_object_lambda_access_point.new](#fn-s3controlobjectlambdaaccesspointnew), this function will not inject the `resource`
+Unlike [aws.s3control_object_lambda_access_point.new](#fn-s3control_object_lambda_access_pointnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
 **Args**:
   - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.new](#fn-s3controlobjectlambdaaccesspointconfigurationnew) constructor.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.new](#fn-s3control_object_lambda_access_pointconfigurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3control_object_lambda_access_point` resource into the root Terraform configuration.
@@ -180,7 +180,7 @@ Terraform sub block.
   - `allowed_features` (`list`):  When `null`, the `allowed_features` field will be omitted from the resulting object.
   - `cloud_watch_metrics_enabled` (`bool`):  When `null`, the `cloud_watch_metrics_enabled` field will be omitted from the resulting object.
   - `supporting_access_point` (`string`): 
-  - `transformation_configuration` (`list[obj]`):  When `null`, the `transformation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.new](#fn-configurationtransformationconfigurationnew) constructor.
+  - `transformation_configuration` (`list[obj]`):  When `null`, the `transformation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.new](#fn-configurationtransformation_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -204,7 +204,7 @@ Terraform sub block.
 
 **Args**:
   - `actions` (`list`): 
-  - `content_transformation` (`list[obj]`):  When `null`, the `content_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.new](#fn-transformationconfigurationcontenttransformationnew) constructor.
+  - `content_transformation` (`list[obj]`):  When `null`, the `content_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.new](#fn-transformation_configurationcontent_transformationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `transformation_configuration` sub block.
@@ -227,7 +227,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `aws_lambda` (`list[obj]`):  When `null`, the `aws_lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.aws_lambda.new](#fn-contenttransformationawslambdanew) constructor.
+  - `aws_lambda` (`list[obj]`):  When `null`, the `aws_lambda` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_object_lambda_access_point.configuration.transformation_configuration.content_transformation.aws_lambda.new](#fn-content_transformationaws_lambdanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `content_transformation` sub block.

@@ -68,7 +68,7 @@ newAttrs()
 `aws.config_aggregate_authorization.newAttrs` constructs a new object with attributes and blocks configured for the `config_aggregate_authorization`
 Terraform resource.
 
-Unlike [aws.config_aggregate_authorization.new](#fn-configaggregateauthorizationnew), this function will not inject the `resource`
+Unlike [aws.config_aggregate_authorization.new](#fn-config_aggregate_authorizationnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

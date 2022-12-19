@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.cloudfront_response_headers_policy.newAttrs` constructs a new object with attributes and blocks configured for the `cloudfront_response_headers_policy`
 Terraform data source.
 
-Unlike [aws.data.cloudfront_response_headers_policy.new](#fn-cloudfrontresponseheaderspolicynew), this function will not inject the `data source`
+Unlike [aws.data.cloudfront_response_headers_policy.new](#fn-cloudfront_response_headers_policynew), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

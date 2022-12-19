@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `table_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `magnetic_store_write_properties` (`list[obj]`):  When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-timestreamwritetablemagneticstorewritepropertiesnew) constructor.
-  - `retention_properties` (`list[obj]`):  When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-timestreamwritetableretentionpropertiesnew) constructor.
+  - `magnetic_store_write_properties` (`list[obj]`):  When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-timestreamwrite_tablemagnetic_store_write_propertiesnew) constructor.
+  - `retention_properties` (`list[obj]`):  When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-timestreamwrite_tableretention_propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.timestreamwrite_table.newAttrs` constructs a new object with attributes and blocks configured for the `timestreamwrite_table`
 Terraform resource.
 
-Unlike [aws.timestreamwrite_table.new](#fn-timestreamwritetablenew), this function will not inject the `resource`
+Unlike [aws.timestreamwrite_table.new](#fn-timestreamwrite_tablenew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -94,8 +94,8 @@ injecting into a complete block.
   - `table_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `magnetic_store_write_properties` (`list[obj]`):  When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-timestreamwritetablemagneticstorewritepropertiesnew) constructor.
-  - `retention_properties` (`list[obj]`):  When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-timestreamwritetableretentionpropertiesnew) constructor.
+  - `magnetic_store_write_properties` (`list[obj]`):  When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-timestreamwrite_tablemagnetic_store_write_propertiesnew) constructor.
+  - `retention_properties` (`list[obj]`):  When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-timestreamwrite_tableretention_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `timestreamwrite_table` resource into the root Terraform configuration.
@@ -257,7 +257,7 @@ Terraform sub block.
 
 **Args**:
   - `enable_magnetic_store_writes` (`bool`):  When `null`, the `enable_magnetic_store_writes` field will be omitted from the resulting object.
-  - `magnetic_store_rejected_data_location` (`list[obj]`):  When `null`, the `magnetic_store_rejected_data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.new](#fn-magneticstorewritepropertiesmagneticstorerejecteddatalocationnew) constructor.
+  - `magnetic_store_rejected_data_location` (`list[obj]`):  When `null`, the `magnetic_store_rejected_data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.new](#fn-magnetic_store_write_propertiesmagnetic_store_rejected_data_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `magnetic_store_write_properties` sub block.
@@ -280,7 +280,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_configuration` (`list[obj]`):  When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.s3_configuration.new](#fn-magneticstorerejecteddatalocations3configurationnew) constructor.
+  - `s3_configuration` (`list[obj]`):  When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.s3_configuration.new](#fn-magnetic_store_rejected_data_locations3_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `magnetic_store_rejected_data_location` sub block.

@@ -87,11 +87,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `time_period_end` (`string`):  When `null`, the `time_period_end` field will be omitted from the resulting object.
   - `time_period_start` (`string`):  When `null`, the `time_period_start` field will be omitted from the resulting object.
   - `time_unit` (`string`): 
-  - `auto_adjust_data` (`list[obj]`):  When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-budgetsbudgetautoadjustdatanew) constructor.
-  - `cost_filter` (`list[obj]`):  When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-budgetsbudgetcostfilternew) constructor.
-  - `cost_types` (`list[obj]`):  When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-budgetsbudgetcosttypesnew) constructor.
-  - `notification` (`list[obj]`):  When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-budgetsbudgetnotificationnew) constructor.
-  - `planned_limit` (`list[obj]`):  When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-budgetsbudgetplannedlimitnew) constructor.
+  - `auto_adjust_data` (`list[obj]`):  When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-budgets_budgetauto_adjust_datanew) constructor.
+  - `cost_filter` (`list[obj]`):  When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-budgets_budgetcost_filternew) constructor.
+  - `cost_types` (`list[obj]`):  When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-budgets_budgetcost_typesnew) constructor.
+  - `notification` (`list[obj]`):  When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-budgets_budgetnotificationnew) constructor.
+  - `planned_limit` (`list[obj]`):  When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-budgets_budgetplanned_limitnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -107,7 +107,7 @@ newAttrs()
 `aws.budgets_budget.newAttrs` constructs a new object with attributes and blocks configured for the `budgets_budget`
 Terraform resource.
 
-Unlike [aws.budgets_budget.new](#fn-budgetsbudgetnew), this function will not inject the `resource`
+Unlike [aws.budgets_budget.new](#fn-budgets_budgetnew), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -125,11 +125,11 @@ injecting into a complete block.
   - `time_period_end` (`string`):  When `null`, the `time_period_end` field will be omitted from the resulting object.
   - `time_period_start` (`string`):  When `null`, the `time_period_start` field will be omitted from the resulting object.
   - `time_unit` (`string`): 
-  - `auto_adjust_data` (`list[obj]`):  When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-budgetsbudgetautoadjustdatanew) constructor.
-  - `cost_filter` (`list[obj]`):  When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-budgetsbudgetcostfilternew) constructor.
-  - `cost_types` (`list[obj]`):  When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-budgetsbudgetcosttypesnew) constructor.
-  - `notification` (`list[obj]`):  When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-budgetsbudgetnotificationnew) constructor.
-  - `planned_limit` (`list[obj]`):  When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-budgetsbudgetplannedlimitnew) constructor.
+  - `auto_adjust_data` (`list[obj]`):  When `null`, the `auto_adjust_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.new](#fn-budgets_budgetauto_adjust_datanew) constructor.
+  - `cost_filter` (`list[obj]`):  When `null`, the `cost_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_filter.new](#fn-budgets_budgetcost_filternew) constructor.
+  - `cost_types` (`list[obj]`):  When `null`, the `cost_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.cost_types.new](#fn-budgets_budgetcost_typesnew) constructor.
+  - `notification` (`list[obj]`):  When `null`, the `notification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.notification.new](#fn-budgets_budgetnotificationnew) constructor.
+  - `planned_limit` (`list[obj]`):  When `null`, the `planned_limit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.planned_limit.new](#fn-budgets_budgetplanned_limitnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `budgets_budget` resource into the root Terraform configuration.
@@ -498,7 +498,7 @@ Terraform sub block.
 
 **Args**:
   - `auto_adjust_type` (`string`): 
-  - `historical_options` (`list[obj]`):  When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-autoadjustdatahistoricaloptionsnew) constructor.
+  - `historical_options` (`list[obj]`):  When `null`, the `historical_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget.auto_adjust_data.historical_options.new](#fn-auto_adjust_datahistorical_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_adjust_data` sub block.
