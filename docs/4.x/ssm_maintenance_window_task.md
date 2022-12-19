@@ -406,10 +406,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `automation_parameters` (`list[obj]`):  When `null`, the `automation_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.automation_parameters.new](#fn-automation_parametersnew) constructor.
-  - `lambda_parameters` (`list[obj]`):  When `null`, the `lambda_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.lambda_parameters.new](#fn-lambda_parametersnew) constructor.
-  - `run_command_parameters` (`list[obj]`):  When `null`, the `run_command_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.new](#fn-run_command_parametersnew) constructor.
-  - `step_functions_parameters` (`list[obj]`):  When `null`, the `step_functions_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.step_functions_parameters.new](#fn-step_functions_parametersnew) constructor.
+  - `automation_parameters` (`list[obj]`):  When `null`, the `automation_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.automation_parameters.new](#fn-ssm_maintenance_window_taskautomation_parametersnew) constructor.
+  - `lambda_parameters` (`list[obj]`):  When `null`, the `lambda_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.lambda_parameters.new](#fn-ssm_maintenance_window_tasklambda_parametersnew) constructor.
+  - `run_command_parameters` (`list[obj]`):  When `null`, the `run_command_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.new](#fn-ssm_maintenance_window_taskrun_command_parametersnew) constructor.
+  - `step_functions_parameters` (`list[obj]`):  When `null`, the `step_functions_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.step_functions_parameters.new](#fn-ssm_maintenance_window_taskstep_functions_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `task_invocation_parameters` sub block.
@@ -433,7 +433,7 @@ Terraform sub block.
 
 **Args**:
   - `document_version` (`string`):  When `null`, the `document_version` field will be omitted from the resulting object.
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.automation_parameters.parameter.new](#fn-task_invocation_parametersparameternew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.automation_parameters.parameter.new](#fn-ssm_maintenance_window_tasktask_invocation_parametersparameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `automation_parameters` sub block.
@@ -513,9 +513,9 @@ Terraform sub block.
   - `output_s3_key_prefix` (`string`):  When `null`, the `output_s3_key_prefix` field will be omitted from the resulting object.
   - `service_role_arn` (`string`):  When `null`, the `service_role_arn` field will be omitted from the resulting object.
   - `timeout_seconds` (`number`):  When `null`, the `timeout_seconds` field will be omitted from the resulting object.
-  - `cloudwatch_config` (`list[obj]`):  When `null`, the `cloudwatch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.cloudwatch_config.new](#fn-task_invocation_parameterscloudwatch_confignew) constructor.
-  - `notification_config` (`list[obj]`):  When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.notification_config.new](#fn-task_invocation_parametersnotification_confignew) constructor.
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.parameter.new](#fn-task_invocation_parametersparameternew) constructor.
+  - `cloudwatch_config` (`list[obj]`):  When `null`, the `cloudwatch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.cloudwatch_config.new](#fn-ssm_maintenance_window_tasktask_invocation_parameterscloudwatch_confignew) constructor.
+  - `notification_config` (`list[obj]`):  When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.notification_config.new](#fn-ssm_maintenance_window_tasktask_invocation_parametersnotification_confignew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_task.task_invocation_parameters.run_command_parameters.parameter.new](#fn-ssm_maintenance_window_tasktask_invocation_parametersparameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `run_command_parameters` sub block.

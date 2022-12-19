@@ -157,7 +157,7 @@ Terraform sub block.
   - `positional_constraint` (`string`): 
   - `target_string` (`string`):  When `null`, the `target_string` field will be omitted from the resulting object.
   - `text_transformation` (`string`): 
-  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_byte_match_set.byte_match_tuples.field_to_match.new](#fn-field_to_matchnew) constructor.
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_byte_match_set.byte_match_tuples.field_to_match.new](#fn-wafregional_byte_match_setfield_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `byte_match_tuples` sub block.

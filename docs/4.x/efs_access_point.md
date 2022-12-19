@@ -261,7 +261,7 @@ Terraform sub block.
 
 **Args**:
   - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
-  - `creation_info` (`list[obj]`):  When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-creation_infonew) constructor.
+  - `creation_info` (`list[obj]`):  When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-efs_access_pointcreation_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `root_directory` sub block.

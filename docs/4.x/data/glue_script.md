@@ -224,7 +224,7 @@ Terraform sub block.
 **Args**:
   - `line_number` (`number`):  When `null`, the `line_number` field will be omitted from the resulting object.
   - `node_type` (`string`): 
-  - `args` (`list[obj]`):  When `null`, the `args` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_script.dag_node.args.new](#fn-argsnew) constructor.
+  - `args` (`list[obj]`):  When `null`, the `args` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_script.dag_node.args.new](#fn-glue_scriptargsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dag_node` sub block.

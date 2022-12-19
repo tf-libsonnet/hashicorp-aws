@@ -261,7 +261,7 @@ Terraform sub block.
 **Args**:
   - `readiness_scopes` (`list`):  When `null`, the `readiness_scopes` field will be omitted from the resulting object.
   - `resource_arn` (`string`):  When `null`, the `resource_arn` field will be omitted from the resulting object.
-  - `dns_target_resource` (`list[obj]`):  When `null`, the `dns_target_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.new](#fn-dns_target_resourcenew) constructor.
+  - `dns_target_resource` (`list[obj]`):  When `null`, the `dns_target_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.new](#fn-route53recoveryreadiness_resource_setdns_target_resourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `resources` sub block.
@@ -288,7 +288,7 @@ Terraform sub block.
   - `hosted_zone_arn` (`string`):  When `null`, the `hosted_zone_arn` field will be omitted from the resulting object.
   - `record_set_id` (`string`):  When `null`, the `record_set_id` field will be omitted from the resulting object.
   - `record_type` (`string`):  When `null`, the `record_type` field will be omitted from the resulting object.
-  - `target_resource` (`list[obj]`):  When `null`, the `target_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.target_resource.new](#fn-resourcestarget_resourcenew) constructor.
+  - `target_resource` (`list[obj]`):  When `null`, the `target_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.target_resource.new](#fn-route53recoveryreadiness_resource_setresourcestarget_resourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dns_target_resource` sub block.
@@ -311,8 +311,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `nlb_resource` (`list[obj]`):  When `null`, the `nlb_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.target_resource.nlb_resource.new](#fn-resourcesdns_target_resourcenlb_resourcenew) constructor.
-  - `r53_resource` (`list[obj]`):  When `null`, the `r53_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.target_resource.r53_resource.new](#fn-resourcesdns_target_resourcer53_resourcenew) constructor.
+  - `nlb_resource` (`list[obj]`):  When `null`, the `nlb_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.target_resource.nlb_resource.new](#fn-route53recoveryreadiness_resource_setresourcesdns_target_resourcenlb_resourcenew) constructor.
+  - `r53_resource` (`list[obj]`):  When `null`, the `r53_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoveryreadiness_resource_set.resources.dns_target_resource.target_resource.r53_resource.new](#fn-route53recoveryreadiness_resource_setresourcesdns_target_resourcer53_resourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_resource` sub block.

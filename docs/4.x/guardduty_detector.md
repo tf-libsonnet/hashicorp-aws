@@ -221,9 +221,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `kubernetes` (`list[obj]`):  When `null`, the `kubernetes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.new](#fn-kubernetesnew) constructor.
-  - `malware_protection` (`list[obj]`):  When `null`, the `malware_protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.new](#fn-malware_protectionnew) constructor.
-  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.s3_logs.new](#fn-s3_logsnew) constructor.
+  - `kubernetes` (`list[obj]`):  When `null`, the `kubernetes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.new](#fn-guardduty_detectorkubernetesnew) constructor.
+  - `malware_protection` (`list[obj]`):  When `null`, the `malware_protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.new](#fn-guardduty_detectormalware_protectionnew) constructor.
+  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.s3_logs.new](#fn-guardduty_detectors3_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `datasources` sub block.
@@ -246,7 +246,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `audit_logs` (`list[obj]`):  When `null`, the `audit_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.audit_logs.new](#fn-datasourcesaudit_logsnew) constructor.
+  - `audit_logs` (`list[obj]`):  When `null`, the `audit_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.audit_logs.new](#fn-guardduty_detectordatasourcesaudit_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kubernetes` sub block.
@@ -292,7 +292,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `scan_ec2_instance_with_findings` (`list[obj]`):  When `null`, the `scan_ec2_instance_with_findings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.new](#fn-datasourcesscan_ec2_instance_with_findingsnew) constructor.
+  - `scan_ec2_instance_with_findings` (`list[obj]`):  When `null`, the `scan_ec2_instance_with_findings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.new](#fn-guardduty_detectordatasourcesscan_ec2_instance_with_findingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `malware_protection` sub block.
@@ -315,7 +315,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ebs_volumes` (`list[obj]`):  When `null`, the `ebs_volumes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.ebs_volumes.new](#fn-datasourcesmalware_protectionebs_volumesnew) constructor.
+  - `ebs_volumes` (`list[obj]`):  When `null`, the `ebs_volumes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.ebs_volumes.new](#fn-guardduty_detectordatasourcesmalware_protectionebs_volumesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `scan_ec2_instance_with_findings` sub block.

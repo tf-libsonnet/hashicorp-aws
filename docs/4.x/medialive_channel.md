@@ -821,9 +821,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `media_package_settings` (`list[obj]`):  When `null`, the `media_package_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.destinations.media_package_settings.new](#fn-media_package_settingsnew) constructor.
-  - `multiplex_settings` (`list[obj]`):  When `null`, the `multiplex_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.destinations.multiplex_settings.new](#fn-multiplex_settingsnew) constructor.
-  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.destinations.settings.new](#fn-settingsnew) constructor.
+  - `media_package_settings` (`list[obj]`):  When `null`, the `media_package_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.destinations.media_package_settings.new](#fn-medialive_channelmedia_package_settingsnew) constructor.
+  - `multiplex_settings` (`list[obj]`):  When `null`, the `multiplex_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.destinations.multiplex_settings.new](#fn-medialive_channelmultiplex_settingsnew) constructor.
+  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.destinations.settings.new](#fn-medialive_channelsettingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destinations` sub block.
@@ -919,11 +919,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `audio_descriptions` (`list[obj]`):  When `null`, the `audio_descriptions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.new](#fn-audio_descriptionsnew) constructor.
-  - `avail_blanking` (`list[obj]`):  When `null`, the `avail_blanking` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.avail_blanking.new](#fn-avail_blankingnew) constructor.
-  - `output_groups` (`list[obj]`):  When `null`, the `output_groups` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.new](#fn-output_groupsnew) constructor.
-  - `timecode_config` (`list[obj]`):  When `null`, the `timecode_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.timecode_config.new](#fn-timecode_confignew) constructor.
-  - `video_descriptions` (`list[obj]`):  When `null`, the `video_descriptions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.new](#fn-video_descriptionsnew) constructor.
+  - `audio_descriptions` (`list[obj]`):  When `null`, the `audio_descriptions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.new](#fn-medialive_channelaudio_descriptionsnew) constructor.
+  - `avail_blanking` (`list[obj]`):  When `null`, the `avail_blanking` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.avail_blanking.new](#fn-medialive_channelavail_blankingnew) constructor.
+  - `output_groups` (`list[obj]`):  When `null`, the `output_groups` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.new](#fn-medialive_channeloutput_groupsnew) constructor.
+  - `timecode_config` (`list[obj]`):  When `null`, the `timecode_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.timecode_config.new](#fn-medialive_channeltimecode_confignew) constructor.
+  - `video_descriptions` (`list[obj]`):  When `null`, the `video_descriptions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.new](#fn-medialive_channelvideo_descriptionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encoder_settings` sub block.
@@ -953,10 +953,10 @@ Terraform sub block.
   - `language_code_control` (`string`):  When `null`, the `language_code_control` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `stream_name` (`string`):  When `null`, the `stream_name` field will be omitted from the resulting object.
-  - `audio_normalization_settings` (`list[obj]`):  When `null`, the `audio_normalization_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_normalization_settings.new](#fn-encoder_settingsaudio_normalization_settingsnew) constructor.
-  - `audio_watermark_settings` (`list[obj]`):  When `null`, the `audio_watermark_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.new](#fn-encoder_settingsaudio_watermark_settingsnew) constructor.
-  - `codec_settings` (`list[obj]`):  When `null`, the `codec_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.new](#fn-encoder_settingscodec_settingsnew) constructor.
-  - `remix_settings` (`list[obj]`):  When `null`, the `remix_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.remix_settings.new](#fn-encoder_settingsremix_settingsnew) constructor.
+  - `audio_normalization_settings` (`list[obj]`):  When `null`, the `audio_normalization_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_normalization_settings.new](#fn-medialive_channelencoder_settingsaudio_normalization_settingsnew) constructor.
+  - `audio_watermark_settings` (`list[obj]`):  When `null`, the `audio_watermark_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.new](#fn-medialive_channelencoder_settingsaudio_watermark_settingsnew) constructor.
+  - `codec_settings` (`list[obj]`):  When `null`, the `codec_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.new](#fn-medialive_channelencoder_settingscodec_settingsnew) constructor.
+  - `remix_settings` (`list[obj]`):  When `null`, the `remix_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.remix_settings.new](#fn-medialive_channelencoder_settingsremix_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `audio_descriptions` sub block.
@@ -1004,7 +1004,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `nielsen_watermarks_settings` (`list[obj]`):  When `null`, the `nielsen_watermarks_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.nielsen_watermarks_settings.new](#fn-encoder_settingsaudio_descriptionsnielsen_watermarks_settingsnew) constructor.
+  - `nielsen_watermarks_settings` (`list[obj]`):  When `null`, the `nielsen_watermarks_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.nielsen_watermarks_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionsnielsen_watermarks_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `audio_watermark_settings` sub block.
@@ -1028,8 +1028,8 @@ Terraform sub block.
 
 **Args**:
   - `nielsen_distribution_type` (`string`):  When `null`, the `nielsen_distribution_type` field will be omitted from the resulting object.
-  - `nielsen_cbet_settings` (`list[obj]`):  When `null`, the `nielsen_cbet_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.nielsen_watermarks_settings.nielsen_cbet_settings.new](#fn-encoder_settingsaudio_descriptionsaudio_watermark_settingsnielsen_cbet_settingsnew) constructor.
-  - `nielsen_naes_ii_nw_settings` (`list[obj]`):  When `null`, the `nielsen_naes_ii_nw_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.nielsen_watermarks_settings.nielsen_naes_ii_nw_settings.new](#fn-encoder_settingsaudio_descriptionsaudio_watermark_settingsnielsen_naes_ii_nw_settingsnew) constructor.
+  - `nielsen_cbet_settings` (`list[obj]`):  When `null`, the `nielsen_cbet_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.nielsen_watermarks_settings.nielsen_cbet_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionsaudio_watermark_settingsnielsen_cbet_settingsnew) constructor.
+  - `nielsen_naes_ii_nw_settings` (`list[obj]`):  When `null`, the `nielsen_naes_ii_nw_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.audio_watermark_settings.nielsen_watermarks_settings.nielsen_naes_ii_nw_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionsaudio_watermark_settingsnielsen_naes_ii_nw_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nielsen_watermarks_settings` sub block.
@@ -1101,13 +1101,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `aac_settings` (`list[obj]`):  When `null`, the `aac_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.aac_settings.new](#fn-encoder_settingsaudio_descriptionsaac_settingsnew) constructor.
-  - `ac3_settings` (`list[obj]`):  When `null`, the `ac3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.ac3_settings.new](#fn-encoder_settingsaudio_descriptionsac3_settingsnew) constructor.
-  - `eac3_atmos_settings` (`list[obj]`):  When `null`, the `eac3_atmos_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.eac3_atmos_settings.new](#fn-encoder_settingsaudio_descriptionseac3_atmos_settingsnew) constructor.
-  - `eac3_settings` (`list[obj]`):  When `null`, the `eac3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.eac3_settings.new](#fn-encoder_settingsaudio_descriptionseac3_settingsnew) constructor.
-  - `mp2_settings` (`list[obj]`):  When `null`, the `mp2_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.mp2_settings.new](#fn-encoder_settingsaudio_descriptionsmp2_settingsnew) constructor.
-  - `pass_through_settings` (`list[obj]`):  When `null`, the `pass_through_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.pass_through_settings.new](#fn-encoder_settingsaudio_descriptionspass_through_settingsnew) constructor.
-  - `wav_settings` (`list[obj]`):  When `null`, the `wav_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.wav_settings.new](#fn-encoder_settingsaudio_descriptionswav_settingsnew) constructor.
+  - `aac_settings` (`list[obj]`):  When `null`, the `aac_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.aac_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionsaac_settingsnew) constructor.
+  - `ac3_settings` (`list[obj]`):  When `null`, the `ac3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.ac3_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionsac3_settingsnew) constructor.
+  - `eac3_atmos_settings` (`list[obj]`):  When `null`, the `eac3_atmos_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.eac3_atmos_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionseac3_atmos_settingsnew) constructor.
+  - `eac3_settings` (`list[obj]`):  When `null`, the `eac3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.eac3_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionseac3_settingsnew) constructor.
+  - `mp2_settings` (`list[obj]`):  When `null`, the `mp2_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.mp2_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionsmp2_settingsnew) constructor.
+  - `pass_through_settings` (`list[obj]`):  When `null`, the `pass_through_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.pass_through_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionspass_through_settingsnew) constructor.
+  - `wav_settings` (`list[obj]`):  When `null`, the `wav_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.wav_settings.new](#fn-medialive_channelencoder_settingsaudio_descriptionswav_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `codec_settings` sub block.
@@ -1332,7 +1332,7 @@ Terraform sub block.
 **Args**:
   - `channels_in` (`number`):  When `null`, the `channels_in` field will be omitted from the resulting object.
   - `channels_out` (`number`):  When `null`, the `channels_out` field will be omitted from the resulting object.
-  - `channel_mappings` (`list[obj]`):  When `null`, the `channel_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.remix_settings.channel_mappings.new](#fn-encoder_settingsaudio_descriptionschannel_mappingsnew) constructor.
+  - `channel_mappings` (`list[obj]`):  When `null`, the `channel_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.remix_settings.channel_mappings.new](#fn-medialive_channelencoder_settingsaudio_descriptionschannel_mappingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `remix_settings` sub block.
@@ -1356,7 +1356,7 @@ Terraform sub block.
 
 **Args**:
   - `output_channel` (`number`): 
-  - `input_channel_levels` (`list[obj]`):  When `null`, the `input_channel_levels` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.remix_settings.channel_mappings.input_channel_levels.new](#fn-encoder_settingsaudio_descriptionsremix_settingsinput_channel_levelsnew) constructor.
+  - `input_channel_levels` (`list[obj]`):  When `null`, the `input_channel_levels` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.remix_settings.channel_mappings.input_channel_levels.new](#fn-medialive_channelencoder_settingsaudio_descriptionsremix_settingsinput_channel_levelsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `channel_mappings` sub block.
@@ -1404,7 +1404,7 @@ Terraform sub block.
 
 **Args**:
   - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `avail_blanking_image` (`list[obj]`):  When `null`, the `avail_blanking_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.avail_blanking.avail_blanking_image.new](#fn-encoder_settingsavail_blanking_imagenew) constructor.
+  - `avail_blanking_image` (`list[obj]`):  When `null`, the `avail_blanking_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.avail_blanking.avail_blanking_image.new](#fn-medialive_channelencoder_settingsavail_blanking_imagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `avail_blanking` sub block.
@@ -1453,8 +1453,8 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `output_group_settings` (`list[obj]`):  When `null`, the `output_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.new](#fn-encoder_settingsoutput_group_settingsnew) constructor.
-  - `outputs` (`list[obj]`):  When `null`, the `outputs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.new](#fn-encoder_settingsoutputsnew) constructor.
+  - `output_group_settings` (`list[obj]`):  When `null`, the `output_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.new](#fn-medialive_channelencoder_settingsoutput_group_settingsnew) constructor.
+  - `outputs` (`list[obj]`):  When `null`, the `outputs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.new](#fn-medialive_channelencoder_settingsoutputsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `output_groups` sub block.
@@ -1477,14 +1477,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `archive_group_settings` (`list[obj]`):  When `null`, the `archive_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.new](#fn-encoder_settingsoutput_groupsarchive_group_settingsnew) constructor.
-  - `frame_capture_group_settings` (`list[obj]`):  When `null`, the `frame_capture_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.new](#fn-encoder_settingsoutput_groupsframe_capture_group_settingsnew) constructor.
-  - `hls_group_settings` (`list[obj]`):  When `null`, the `hls_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.new](#fn-encoder_settingsoutput_groupshls_group_settingsnew) constructor.
-  - `media_package_group_settings` (`list[obj]`):  When `null`, the `media_package_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.media_package_group_settings.new](#fn-encoder_settingsoutput_groupsmedia_package_group_settingsnew) constructor.
-  - `ms_smooth_group_settings` (`list[obj]`):  When `null`, the `ms_smooth_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.ms_smooth_group_settings.new](#fn-encoder_settingsoutput_groupsms_smooth_group_settingsnew) constructor.
-  - `multiplex_group_settings` (`list[obj]`):  When `null`, the `multiplex_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.multiplex_group_settings.new](#fn-encoder_settingsoutput_groupsmultiplex_group_settingsnew) constructor.
-  - `rtmp_group_settings` (`list[obj]`):  When `null`, the `rtmp_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.rtmp_group_settings.new](#fn-encoder_settingsoutput_groupsrtmp_group_settingsnew) constructor.
-  - `udp_group_settings` (`list[obj]`):  When `null`, the `udp_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.udp_group_settings.new](#fn-encoder_settingsoutput_groupsudp_group_settingsnew) constructor.
+  - `archive_group_settings` (`list[obj]`):  When `null`, the `archive_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsarchive_group_settingsnew) constructor.
+  - `frame_capture_group_settings` (`list[obj]`):  When `null`, the `frame_capture_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsframe_capture_group_settingsnew) constructor.
+  - `hls_group_settings` (`list[obj]`):  When `null`, the `hls_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupshls_group_settingsnew) constructor.
+  - `media_package_group_settings` (`list[obj]`):  When `null`, the `media_package_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.media_package_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsmedia_package_group_settingsnew) constructor.
+  - `ms_smooth_group_settings` (`list[obj]`):  When `null`, the `ms_smooth_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.ms_smooth_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsms_smooth_group_settingsnew) constructor.
+  - `multiplex_group_settings` (`list[obj]`):  When `null`, the `multiplex_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.multiplex_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsmultiplex_group_settingsnew) constructor.
+  - `rtmp_group_settings` (`list[obj]`):  When `null`, the `rtmp_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.rtmp_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsrtmp_group_settingsnew) constructor.
+  - `udp_group_settings` (`list[obj]`):  When `null`, the `udp_group_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.udp_group_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsudp_group_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `output_group_settings` sub block.
@@ -1508,8 +1508,8 @@ Terraform sub block.
 
 **Args**:
   - `rollover_interval` (`number`):  When `null`, the `rollover_interval` field will be omitted from the resulting object.
-  - `archive_cdn_settings` (`list[obj]`):  When `null`, the `archive_cdn_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.archive_cdn_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsarchive_cdn_settingsnew) constructor.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.destination.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
+  - `archive_cdn_settings` (`list[obj]`):  When `null`, the `archive_cdn_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.archive_cdn_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsarchive_cdn_settingsnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `archive_group_settings` sub block.
@@ -1532,7 +1532,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `archive_s3_settings` (`list[obj]`):  When `null`, the `archive_s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.archive_cdn_settings.archive_s3_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsarchive_group_settingsarchive_s3_settingsnew) constructor.
+  - `archive_s3_settings` (`list[obj]`):  When `null`, the `archive_s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.archive_group_settings.archive_cdn_settings.archive_s3_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsarchive_group_settingsarchive_s3_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `archive_cdn_settings` sub block.
@@ -1601,8 +1601,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.destination.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
-  - `frame_capture_cdn_settings` (`list[obj]`):  When `null`, the `frame_capture_cdn_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.frame_capture_cdn_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsframe_capture_cdn_settingsnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
+  - `frame_capture_cdn_settings` (`list[obj]`):  When `null`, the `frame_capture_cdn_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.frame_capture_cdn_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsframe_capture_cdn_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `frame_capture_group_settings` sub block.
@@ -1648,7 +1648,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `frame_capture_s3_settings` (`list[obj]`):  When `null`, the `frame_capture_s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.frame_capture_cdn_settings.frame_capture_s3_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsframe_capture_group_settingsframe_capture_s3_settingsnew) constructor.
+  - `frame_capture_s3_settings` (`list[obj]`):  When `null`, the `frame_capture_s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.frame_capture_group_settings.frame_capture_cdn_settings.frame_capture_s3_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsframe_capture_group_settingsframe_capture_s3_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `frame_capture_cdn_settings` sub block.
@@ -1732,10 +1732,10 @@ Terraform sub block.
   - `timed_metadata_id3_period` (`number`):  When `null`, the `timed_metadata_id3_period` field will be omitted from the resulting object.
   - `timestamp_delta_milliseconds` (`number`):  When `null`, the `timestamp_delta_milliseconds` field will be omitted from the resulting object.
   - `ts_file_mode` (`string`):  When `null`, the `ts_file_mode` field will be omitted from the resulting object.
-  - `caption_language_mappings` (`list[obj]`):  When `null`, the `caption_language_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.caption_language_mappings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingscaption_language_mappingsnew) constructor.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.destination.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
-  - `hls_cdn_settings` (`list[obj]`):  When `null`, the `hls_cdn_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_cdn_settingsnew) constructor.
-  - `key_provider_settings` (`list[obj]`):  When `null`, the `key_provider_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.key_provider_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingskey_provider_settingsnew) constructor.
+  - `caption_language_mappings` (`list[obj]`):  When `null`, the `caption_language_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.caption_language_mappings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingscaption_language_mappingsnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
+  - `hls_cdn_settings` (`list[obj]`):  When `null`, the `hls_cdn_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_cdn_settingsnew) constructor.
+  - `key_provider_settings` (`list[obj]`):  When `null`, the `key_provider_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.key_provider_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingskey_provider_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `hls_group_settings` sub block.
@@ -1806,11 +1806,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `hls_akamai_settings` (`list[obj]`):  When `null`, the `hls_akamai_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_akamai_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_akamai_settingsnew) constructor.
-  - `hls_basic_put_settings` (`list[obj]`):  When `null`, the `hls_basic_put_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_basic_put_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_basic_put_settingsnew) constructor.
-  - `hls_media_store_settings` (`list[obj]`):  When `null`, the `hls_media_store_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_media_store_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_media_store_settingsnew) constructor.
-  - `hls_s3_settings` (`list[obj]`):  When `null`, the `hls_s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_s3_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_s3_settingsnew) constructor.
-  - `hls_webdav_settings` (`list[obj]`):  When `null`, the `hls_webdav_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_webdav_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_webdav_settingsnew) constructor.
+  - `hls_akamai_settings` (`list[obj]`):  When `null`, the `hls_akamai_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_akamai_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_akamai_settingsnew) constructor.
+  - `hls_basic_put_settings` (`list[obj]`):  When `null`, the `hls_basic_put_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_basic_put_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_basic_put_settingsnew) constructor.
+  - `hls_media_store_settings` (`list[obj]`):  When `null`, the `hls_media_store_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_media_store_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_media_store_settingsnew) constructor.
+  - `hls_s3_settings` (`list[obj]`):  When `null`, the `hls_s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_s3_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_s3_settingsnew) constructor.
+  - `hls_webdav_settings` (`list[obj]`):  When `null`, the `hls_webdav_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.hls_cdn_settings.hls_webdav_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_group_settingshls_webdav_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `hls_cdn_settings` sub block.
@@ -1965,7 +1965,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `static_key_settings` (`list[obj]`):  When `null`, the `static_key_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.key_provider_settings.static_key_settings.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_group_settingsstatic_key_settingsnew) constructor.
+  - `static_key_settings` (`list[obj]`):  When `null`, the `static_key_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.key_provider_settings.static_key_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_group_settingsstatic_key_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `key_provider_settings` sub block.
@@ -1989,7 +1989,7 @@ Terraform sub block.
 
 **Args**:
   - `static_key_value` (`string`): 
-  - `key_provider_server` (`list[obj]`):  When `null`, the `key_provider_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.key_provider_settings.static_key_settings.key_provider_server.new](#fn-encoder_settingsoutput_groupsoutput_group_settingshls_group_settingskey_provider_settingskey_provider_servernew) constructor.
+  - `key_provider_server` (`list[obj]`):  When `null`, the `key_provider_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.hls_group_settings.key_provider_settings.static_key_settings.key_provider_server.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingshls_group_settingskey_provider_settingskey_provider_servernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `static_key_settings` sub block.
@@ -2037,7 +2037,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.media_package_group_settings.destination.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.media_package_group_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `media_package_group_settings` sub block.
@@ -2101,7 +2101,7 @@ Terraform sub block.
   - `stream_manifest_behavior` (`string`):  When `null`, the `stream_manifest_behavior` field will be omitted from the resulting object.
   - `timestamp_offset` (`string`):  When `null`, the `timestamp_offset` field will be omitted from the resulting object.
   - `timestamp_offset_mode` (`string`):  When `null`, the `timestamp_offset_mode` field will be omitted from the resulting object.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.ms_smooth_group_settings.destination.new](#fn-encoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.output_group_settings.ms_smooth_group_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_group_settingsdestinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ms_smooth_group_settings` sub block.
@@ -2225,7 +2225,7 @@ Terraform sub block.
   - `caption_description_names` (`list`):  When `null`, the `caption_description_names` field will be omitted from the resulting object.
   - `output_name` (`string`):  When `null`, the `output_name` field will be omitted from the resulting object.
   - `video_description_name` (`string`):  When `null`, the `video_description_name` field will be omitted from the resulting object.
-  - `output_settings` (`list[obj]`):  When `null`, the `output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.new](#fn-encoder_settingsoutput_groupsoutput_settingsnew) constructor.
+  - `output_settings` (`list[obj]`):  When `null`, the `output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutput_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `outputs` sub block.
@@ -2248,14 +2248,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `archive_output_settings` (`list[obj]`):  When `null`, the `archive_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsarchive_output_settingsnew) constructor.
-  - `frame_capture_output_settings` (`list[obj]`):  When `null`, the `frame_capture_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.frame_capture_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsframe_capture_output_settingsnew) constructor.
-  - `hls_output_settings` (`list[obj]`):  When `null`, the `hls_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.new](#fn-encoder_settingsoutput_groupsoutputshls_output_settingsnew) constructor.
-  - `media_package_output_settings` (`list[obj]`):  When `null`, the `media_package_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.media_package_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsmedia_package_output_settingsnew) constructor.
-  - `ms_smooth_output_settings` (`list[obj]`):  When `null`, the `ms_smooth_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.ms_smooth_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsms_smooth_output_settingsnew) constructor.
-  - `multiplex_output_settings` (`list[obj]`):  When `null`, the `multiplex_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.multiplex_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsmultiplex_output_settingsnew) constructor.
-  - `rtmp_output_settings` (`list[obj]`):  When `null`, the `rtmp_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsrtmp_output_settingsnew) constructor.
-  - `udp_output_settings` (`list[obj]`):  When `null`, the `udp_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsudp_output_settingsnew) constructor.
+  - `archive_output_settings` (`list[obj]`):  When `null`, the `archive_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsarchive_output_settingsnew) constructor.
+  - `frame_capture_output_settings` (`list[obj]`):  When `null`, the `frame_capture_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.frame_capture_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsframe_capture_output_settingsnew) constructor.
+  - `hls_output_settings` (`list[obj]`):  When `null`, the `hls_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputshls_output_settingsnew) constructor.
+  - `media_package_output_settings` (`list[obj]`):  When `null`, the `media_package_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.media_package_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsmedia_package_output_settingsnew) constructor.
+  - `ms_smooth_output_settings` (`list[obj]`):  When `null`, the `ms_smooth_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.ms_smooth_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsms_smooth_output_settingsnew) constructor.
+  - `multiplex_output_settings` (`list[obj]`):  When `null`, the `multiplex_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.multiplex_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsmultiplex_output_settingsnew) constructor.
+  - `rtmp_output_settings` (`list[obj]`):  When `null`, the `rtmp_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsrtmp_output_settingsnew) constructor.
+  - `udp_output_settings` (`list[obj]`):  When `null`, the `udp_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsudp_output_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `output_settings` sub block.
@@ -2280,7 +2280,7 @@ Terraform sub block.
 **Args**:
   - `extension` (`string`):  When `null`, the `extension` field will be omitted from the resulting object.
   - `name_modifier` (`string`):  When `null`, the `name_modifier` field will be omitted from the resulting object.
-  - `container_settings` (`list[obj]`):  When `null`, the `container_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingscontainer_settingsnew) constructor.
+  - `container_settings` (`list[obj]`):  When `null`, the `container_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingscontainer_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `archive_output_settings` sub block.
@@ -2303,8 +2303,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `m2ts_settings` (`list[obj]`):  When `null`, the `m2ts_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingsm2ts_settingsnew) constructor.
-  - `raw_settings` (`list[obj]`):  When `null`, the `raw_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.raw_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingsraw_settingsnew) constructor.
+  - `m2ts_settings` (`list[obj]`):  When `null`, the `m2ts_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingsm2ts_settingsnew) constructor.
+  - `raw_settings` (`list[obj]`):  When `null`, the `raw_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.raw_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingsraw_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container_settings` sub block.
@@ -2371,9 +2371,9 @@ Terraform sub block.
   - `timed_metadata_pid` (`string`):  When `null`, the `timed_metadata_pid` field will be omitted from the resulting object.
   - `transport_stream_id` (`number`):  When `null`, the `transport_stream_id` field will be omitted from the resulting object.
   - `video_pid` (`string`):  When `null`, the `video_pid` field will be omitted from the resulting object.
-  - `dvb_nit_settings` (`list[obj]`):  When `null`, the `dvb_nit_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.dvb_nit_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingscontainer_settingsdvb_nit_settingsnew) constructor.
-  - `dvb_sdt_settings` (`list[obj]`):  When `null`, the `dvb_sdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.dvb_sdt_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingscontainer_settingsdvb_sdt_settingsnew) constructor.
-  - `dvb_tdt_settings` (`list[obj]`):  When `null`, the `dvb_tdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.dvb_tdt_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingscontainer_settingsdvb_tdt_settingsnew) constructor.
+  - `dvb_nit_settings` (`list[obj]`):  When `null`, the `dvb_nit_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.dvb_nit_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingscontainer_settingsdvb_nit_settingsnew) constructor.
+  - `dvb_sdt_settings` (`list[obj]`):  When `null`, the `dvb_sdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.dvb_sdt_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingscontainer_settingsdvb_sdt_settingsnew) constructor.
+  - `dvb_tdt_settings` (`list[obj]`):  When `null`, the `dvb_tdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.archive_output_settings.container_settings.m2ts_settings.dvb_tdt_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsarchive_output_settingscontainer_settingsdvb_tdt_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `m2ts_settings` sub block.
@@ -2516,7 +2516,7 @@ Terraform sub block.
   - `h265_packaging_type` (`string`):  When `null`, the `h265_packaging_type` field will be omitted from the resulting object.
   - `name_modifier` (`string`):  When `null`, the `name_modifier` field will be omitted from the resulting object.
   - `segment_modifier` (`string`):  When `null`, the `segment_modifier` field will be omitted from the resulting object.
-  - `hls_settings` (`list[obj]`):  When `null`, the `hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingshls_settingsnew) constructor.
+  - `hls_settings` (`list[obj]`):  When `null`, the `hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingshls_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `hls_output_settings` sub block.
@@ -2539,10 +2539,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `audio_only_hls_settings` (`list[obj]`):  When `null`, the `audio_only_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.audio_only_hls_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsaudio_only_hls_settingsnew) constructor.
-  - `fmp4_hls_settings` (`list[obj]`):  When `null`, the `fmp4_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.fmp4_hls_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsfmp4_hls_settingsnew) constructor.
-  - `frame_capture_hls_settings` (`list[obj]`):  When `null`, the `frame_capture_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.frame_capture_hls_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsframe_capture_hls_settingsnew) constructor.
-  - `standard_hls_settings` (`list[obj]`):  When `null`, the `standard_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.standard_hls_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsstandard_hls_settingsnew) constructor.
+  - `audio_only_hls_settings` (`list[obj]`):  When `null`, the `audio_only_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.audio_only_hls_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsaudio_only_hls_settingsnew) constructor.
+  - `fmp4_hls_settings` (`list[obj]`):  When `null`, the `fmp4_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.fmp4_hls_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsfmp4_hls_settingsnew) constructor.
+  - `frame_capture_hls_settings` (`list[obj]`):  When `null`, the `frame_capture_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.frame_capture_hls_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsframe_capture_hls_settingsnew) constructor.
+  - `standard_hls_settings` (`list[obj]`):  When `null`, the `standard_hls_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.standard_hls_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingsstandard_hls_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `hls_settings` sub block.
@@ -2568,7 +2568,7 @@ Terraform sub block.
   - `audio_group_id` (`string`):  When `null`, the `audio_group_id` field will be omitted from the resulting object.
   - `audio_track_type` (`string`):  When `null`, the `audio_track_type` field will be omitted from the resulting object.
   - `segment_type` (`string`):  When `null`, the `segment_type` field will be omitted from the resulting object.
-  - `audio_only_image` (`list[obj]`):  When `null`, the `audio_only_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.audio_only_hls_settings.audio_only_image.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingshls_settingsaudio_only_imagenew) constructor.
+  - `audio_only_image` (`list[obj]`):  When `null`, the `audio_only_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.audio_only_hls_settings.audio_only_image.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingshls_settingsaudio_only_imagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `audio_only_hls_settings` sub block.
@@ -2662,7 +2662,7 @@ Terraform sub block.
 
 **Args**:
   - `audio_rendition_sets` (`string`):  When `null`, the `audio_rendition_sets` field will be omitted from the resulting object.
-  - `m3u8_settings` (`list[obj]`):  When `null`, the `m3u8_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.standard_hls_settings.m3u8_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingshls_settingsm3u8_settingsnew) constructor.
+  - `m3u8_settings` (`list[obj]`):  When `null`, the `m3u8_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.hls_output_settings.hls_settings.standard_hls_settings.m3u8_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingshls_output_settingshls_settingsm3u8_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `standard_hls_settings` sub block.
@@ -2768,7 +2768,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.multiplex_output_settings.destination.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.multiplex_output_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `multiplex_output_settings` sub block.
@@ -2817,7 +2817,7 @@ Terraform sub block.
   - `certficate_mode` (`string`):  When `null`, the `certficate_mode` field will be omitted from the resulting object.
   - `connection_retry_interval` (`number`):  When `null`, the `connection_retry_interval` field will be omitted from the resulting object.
   - `num_retries` (`number`):  When `null`, the `num_retries` field will be omitted from the resulting object.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.destination.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rtmp_output_settings` sub block.
@@ -2864,9 +2864,9 @@ Terraform sub block.
 
 **Args**:
   - `buffer_msec` (`number`):  When `null`, the `buffer_msec` field will be omitted from the resulting object.
-  - `container_settings` (`list[obj]`):  When `null`, the `container_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingscontainer_settingsnew) constructor.
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.destination.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.
-  - `fec_output_settings` (`list[obj]`):  When `null`, the `fec_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.fec_output_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsfec_output_settingsnew) constructor.
+  - `container_settings` (`list[obj]`):  When `null`, the `container_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingscontainer_settingsnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.destination.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.
+  - `fec_output_settings` (`list[obj]`):  When `null`, the `fec_output_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.fec_output_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsfec_output_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `udp_output_settings` sub block.
@@ -2889,7 +2889,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `m2ts_settings` (`list[obj]`):  When `null`, the `m2ts_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingsm2ts_settingsnew) constructor.
+  - `m2ts_settings` (`list[obj]`):  When `null`, the `m2ts_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingsm2ts_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container_settings` sub block.
@@ -2956,9 +2956,9 @@ Terraform sub block.
   - `timed_metadata_pid` (`string`):  When `null`, the `timed_metadata_pid` field will be omitted from the resulting object.
   - `transport_stream_id` (`number`):  When `null`, the `transport_stream_id` field will be omitted from the resulting object.
   - `video_pid` (`string`):  When `null`, the `video_pid` field will be omitted from the resulting object.
-  - `dvb_nit_settings` (`list[obj]`):  When `null`, the `dvb_nit_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.dvb_nit_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingscontainer_settingsdvb_nit_settingsnew) constructor.
-  - `dvb_sdt_settings` (`list[obj]`):  When `null`, the `dvb_sdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.dvb_sdt_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingscontainer_settingsdvb_sdt_settingsnew) constructor.
-  - `dvb_tdt_settings` (`list[obj]`):  When `null`, the `dvb_tdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.dvb_tdt_settings.new](#fn-encoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingscontainer_settingsdvb_tdt_settingsnew) constructor.
+  - `dvb_nit_settings` (`list[obj]`):  When `null`, the `dvb_nit_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.dvb_nit_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingscontainer_settingsdvb_nit_settingsnew) constructor.
+  - `dvb_sdt_settings` (`list[obj]`):  When `null`, the `dvb_sdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.dvb_sdt_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingscontainer_settingsdvb_sdt_settingsnew) constructor.
+  - `dvb_tdt_settings` (`list[obj]`):  When `null`, the `dvb_tdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.udp_output_settings.container_settings.m2ts_settings.dvb_tdt_settings.new](#fn-medialive_channelencoder_settingsoutput_groupsoutputsoutput_settingsudp_output_settingscontainer_settingsdvb_tdt_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `m2ts_settings` sub block.
@@ -3133,7 +3133,7 @@ Terraform sub block.
   - `scaling_behavior` (`string`):  When `null`, the `scaling_behavior` field will be omitted from the resulting object.
   - `sharpness` (`number`):  When `null`, the `sharpness` field will be omitted from the resulting object.
   - `width` (`number`):  When `null`, the `width` field will be omitted from the resulting object.
-  - `codec_settings` (`list[obj]`):  When `null`, the `codec_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.new](#fn-encoder_settingscodec_settingsnew) constructor.
+  - `codec_settings` (`list[obj]`):  When `null`, the `codec_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.new](#fn-medialive_channelencoder_settingscodec_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `video_descriptions` sub block.
@@ -3156,8 +3156,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `frame_capture_settings` (`list[obj]`):  When `null`, the `frame_capture_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.frame_capture_settings.new](#fn-encoder_settingsvideo_descriptionsframe_capture_settingsnew) constructor.
-  - `h264_settings` (`list[obj]`):  When `null`, the `h264_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h264_settings.new](#fn-encoder_settingsvideo_descriptionsh264_settingsnew) constructor.
+  - `frame_capture_settings` (`list[obj]`):  When `null`, the `frame_capture_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.frame_capture_settings.new](#fn-medialive_channelencoder_settingsvideo_descriptionsframe_capture_settingsnew) constructor.
+  - `h264_settings` (`list[obj]`):  When `null`, the `h264_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h264_settings.new](#fn-medialive_channelencoder_settingsvideo_descriptionsh264_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `codec_settings` sub block.
@@ -3243,7 +3243,7 @@ Terraform sub block.
   - `syntax` (`string`):  When `null`, the `syntax` field will be omitted from the resulting object.
   - `temporal_aq` (`string`):  When `null`, the `temporal_aq` field will be omitted from the resulting object.
   - `timecode_insertion` (`string`):  When `null`, the `timecode_insertion` field will be omitted from the resulting object.
-  - `filter_settings` (`list[obj]`):  When `null`, the `filter_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h264_settings.filter_settings.new](#fn-encoder_settingsvideo_descriptionscodec_settingsfilter_settingsnew) constructor.
+  - `filter_settings` (`list[obj]`):  When `null`, the `filter_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h264_settings.filter_settings.new](#fn-medialive_channelencoder_settingsvideo_descriptionscodec_settingsfilter_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `h264_settings` sub block.
@@ -3266,7 +3266,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `temporal_filter_settings` (`list[obj]`):  When `null`, the `temporal_filter_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h264_settings.filter_settings.temporal_filter_settings.new](#fn-encoder_settingsvideo_descriptionscodec_settingsh264_settingstemporal_filter_settingsnew) constructor.
+  - `temporal_filter_settings` (`list[obj]`):  When `null`, the `temporal_filter_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h264_settings.filter_settings.temporal_filter_settings.new](#fn-medialive_channelencoder_settingsvideo_descriptionscodec_settingsh264_settingstemporal_filter_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter_settings` sub block.
@@ -3315,8 +3315,8 @@ Terraform sub block.
 **Args**:
   - `input_attachment_name` (`string`): 
   - `input_id` (`string`): 
-  - `automatic_input_failover_settings` (`list[obj]`):  When `null`, the `automatic_input_failover_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.new](#fn-automatic_input_failover_settingsnew) constructor.
-  - `input_settings` (`list[obj]`):  When `null`, the `input_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.new](#fn-input_settingsnew) constructor.
+  - `automatic_input_failover_settings` (`list[obj]`):  When `null`, the `automatic_input_failover_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.new](#fn-medialive_channelautomatic_input_failover_settingsnew) constructor.
+  - `input_settings` (`list[obj]`):  When `null`, the `input_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.new](#fn-medialive_channelinput_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input_attachments` sub block.
@@ -3342,7 +3342,7 @@ Terraform sub block.
   - `error_clear_time_msec` (`number`):  When `null`, the `error_clear_time_msec` field will be omitted from the resulting object.
   - `input_preference` (`string`):  When `null`, the `input_preference` field will be omitted from the resulting object.
   - `secondary_input_id` (`string`): 
-  - `failover_condition` (`list[obj]`):  When `null`, the `failover_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.new](#fn-input_attachmentsfailover_conditionnew) constructor.
+  - `failover_condition` (`list[obj]`):  When `null`, the `failover_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.new](#fn-medialive_channelinput_attachmentsfailover_conditionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `automatic_input_failover_settings` sub block.
@@ -3365,7 +3365,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `failover_condition_settings` (`list[obj]`):  When `null`, the `failover_condition_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.new](#fn-input_attachmentsautomatic_input_failover_settingsfailover_condition_settingsnew) constructor.
+  - `failover_condition_settings` (`list[obj]`):  When `null`, the `failover_condition_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.new](#fn-medialive_channelinput_attachmentsautomatic_input_failover_settingsfailover_condition_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `failover_condition` sub block.
@@ -3388,9 +3388,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `audio_silence_settings` (`list[obj]`):  When `null`, the `audio_silence_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.audio_silence_settings.new](#fn-input_attachmentsautomatic_input_failover_settingsfailover_conditionaudio_silence_settingsnew) constructor.
-  - `input_loss_settings` (`list[obj]`):  When `null`, the `input_loss_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.input_loss_settings.new](#fn-input_attachmentsautomatic_input_failover_settingsfailover_conditioninput_loss_settingsnew) constructor.
-  - `video_black_settings` (`list[obj]`):  When `null`, the `video_black_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.video_black_settings.new](#fn-input_attachmentsautomatic_input_failover_settingsfailover_conditionvideo_black_settingsnew) constructor.
+  - `audio_silence_settings` (`list[obj]`):  When `null`, the `audio_silence_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.audio_silence_settings.new](#fn-medialive_channelinput_attachmentsautomatic_input_failover_settingsfailover_conditionaudio_silence_settingsnew) constructor.
+  - `input_loss_settings` (`list[obj]`):  When `null`, the `input_loss_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.input_loss_settings.new](#fn-medialive_channelinput_attachmentsautomatic_input_failover_settingsfailover_conditioninput_loss_settingsnew) constructor.
+  - `video_black_settings` (`list[obj]`):  When `null`, the `video_black_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.automatic_input_failover_settings.failover_condition.failover_condition_settings.video_black_settings.new](#fn-medialive_channelinput_attachmentsautomatic_input_failover_settingsfailover_conditionvideo_black_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `failover_condition_settings` sub block.
@@ -3491,10 +3491,10 @@ Terraform sub block.
   - `scte35_pid` (`number`):  When `null`, the `scte35_pid` field will be omitted from the resulting object.
   - `smpte2038_data_preference` (`string`):  When `null`, the `smpte2038_data_preference` field will be omitted from the resulting object.
   - `source_end_behavior` (`string`):  When `null`, the `source_end_behavior` field will be omitted from the resulting object.
-  - `audio_selector` (`list[obj]`):  When `null`, the `audio_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.new](#fn-input_attachmentsaudio_selectornew) constructor.
-  - `caption_selector` (`list[obj]`):  When `null`, the `caption_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.new](#fn-input_attachmentscaption_selectornew) constructor.
-  - `network_input_settings` (`list[obj]`):  When `null`, the `network_input_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.network_input_settings.new](#fn-input_attachmentsnetwork_input_settingsnew) constructor.
-  - `video_selector` (`list[obj]`):  When `null`, the `video_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.video_selector.new](#fn-input_attachmentsvideo_selectornew) constructor.
+  - `audio_selector` (`list[obj]`):  When `null`, the `audio_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.new](#fn-medialive_channelinput_attachmentsaudio_selectornew) constructor.
+  - `caption_selector` (`list[obj]`):  When `null`, the `caption_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.new](#fn-medialive_channelinput_attachmentscaption_selectornew) constructor.
+  - `network_input_settings` (`list[obj]`):  When `null`, the `network_input_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.network_input_settings.new](#fn-medialive_channelinput_attachmentsnetwork_input_settingsnew) constructor.
+  - `video_selector` (`list[obj]`):  When `null`, the `video_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.video_selector.new](#fn-medialive_channelinput_attachmentsvideo_selectornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input_settings` sub block.
@@ -3518,7 +3518,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `selector_settings` (`list[obj]`):  When `null`, the `selector_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.new](#fn-input_attachmentsinput_settingsselector_settingsnew) constructor.
+  - `selector_settings` (`list[obj]`):  When `null`, the `selector_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.new](#fn-medialive_channelinput_attachmentsinput_settingsselector_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `audio_selector` sub block.
@@ -3541,10 +3541,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `audio_hls_rendition_selection` (`list[obj]`):  When `null`, the `audio_hls_rendition_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_hls_rendition_selection.new](#fn-input_attachmentsinput_settingsaudio_selectoraudio_hls_rendition_selectionnew) constructor.
-  - `audio_language_selection` (`list[obj]`):  When `null`, the `audio_language_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_language_selection.new](#fn-input_attachmentsinput_settingsaudio_selectoraudio_language_selectionnew) constructor.
-  - `audio_pid_selection` (`list[obj]`):  When `null`, the `audio_pid_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_pid_selection.new](#fn-input_attachmentsinput_settingsaudio_selectoraudio_pid_selectionnew) constructor.
-  - `audio_track_selection` (`list[obj]`):  When `null`, the `audio_track_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.new](#fn-input_attachmentsinput_settingsaudio_selectoraudio_track_selectionnew) constructor.
+  - `audio_hls_rendition_selection` (`list[obj]`):  When `null`, the `audio_hls_rendition_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_hls_rendition_selection.new](#fn-medialive_channelinput_attachmentsinput_settingsaudio_selectoraudio_hls_rendition_selectionnew) constructor.
+  - `audio_language_selection` (`list[obj]`):  When `null`, the `audio_language_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_language_selection.new](#fn-medialive_channelinput_attachmentsinput_settingsaudio_selectoraudio_language_selectionnew) constructor.
+  - `audio_pid_selection` (`list[obj]`):  When `null`, the `audio_pid_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_pid_selection.new](#fn-medialive_channelinput_attachmentsinput_settingsaudio_selectoraudio_pid_selectionnew) constructor.
+  - `audio_track_selection` (`list[obj]`):  When `null`, the `audio_track_selection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.new](#fn-medialive_channelinput_attachmentsinput_settingsaudio_selectoraudio_track_selectionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `selector_settings` sub block.
@@ -3638,7 +3638,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `track` (`list[obj]`):  When `null`, the `track` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.track.new](#fn-input_attachmentsinput_settingsaudio_selectorselector_settingstracknew) constructor.
+  - `track` (`list[obj]`):  When `null`, the `track` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.track.new](#fn-medialive_channelinput_attachmentsinput_settingsaudio_selectorselector_settingstracknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `audio_track_selection` sub block.
@@ -3686,7 +3686,7 @@ Terraform sub block.
 **Args**:
   - `language_code` (`string`):  When `null`, the `language_code` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `selector_settings` (`list[obj]`):  When `null`, the `selector_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.new](#fn-input_attachmentsinput_settingsselector_settingsnew) constructor.
+  - `selector_settings` (`list[obj]`):  When `null`, the `selector_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.new](#fn-medialive_channelinput_attachmentsinput_settingsselector_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `caption_selector` sub block.
@@ -3709,12 +3709,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `ancillary_source_settings` (`list[obj]`):  When `null`, the `ancillary_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.ancillary_source_settings.new](#fn-input_attachmentsinput_settingscaption_selectorancillary_source_settingsnew) constructor.
-  - `dvb_tdt_settings` (`list[obj]`):  When `null`, the `dvb_tdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.dvb_tdt_settings.new](#fn-input_attachmentsinput_settingscaption_selectordvb_tdt_settingsnew) constructor.
-  - `embedded_source_settings` (`list[obj]`):  When `null`, the `embedded_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.embedded_source_settings.new](#fn-input_attachmentsinput_settingscaption_selectorembedded_source_settingsnew) constructor.
-  - `scte20_source_settings` (`list[obj]`):  When `null`, the `scte20_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.scte20_source_settings.new](#fn-input_attachmentsinput_settingscaption_selectorscte20_source_settingsnew) constructor.
-  - `scte27_source_settings` (`list[obj]`):  When `null`, the `scte27_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.scte27_source_settings.new](#fn-input_attachmentsinput_settingscaption_selectorscte27_source_settingsnew) constructor.
-  - `teletext_source_settings` (`list[obj]`):  When `null`, the `teletext_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.teletext_source_settings.new](#fn-input_attachmentsinput_settingscaption_selectorteletext_source_settingsnew) constructor.
+  - `ancillary_source_settings` (`list[obj]`):  When `null`, the `ancillary_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.ancillary_source_settings.new](#fn-medialive_channelinput_attachmentsinput_settingscaption_selectorancillary_source_settingsnew) constructor.
+  - `dvb_tdt_settings` (`list[obj]`):  When `null`, the `dvb_tdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.dvb_tdt_settings.new](#fn-medialive_channelinput_attachmentsinput_settingscaption_selectordvb_tdt_settingsnew) constructor.
+  - `embedded_source_settings` (`list[obj]`):  When `null`, the `embedded_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.embedded_source_settings.new](#fn-medialive_channelinput_attachmentsinput_settingscaption_selectorembedded_source_settingsnew) constructor.
+  - `scte20_source_settings` (`list[obj]`):  When `null`, the `scte20_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.scte20_source_settings.new](#fn-medialive_channelinput_attachmentsinput_settingscaption_selectorscte20_source_settingsnew) constructor.
+  - `scte27_source_settings` (`list[obj]`):  When `null`, the `scte27_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.scte27_source_settings.new](#fn-medialive_channelinput_attachmentsinput_settingscaption_selectorscte27_source_settingsnew) constructor.
+  - `teletext_source_settings` (`list[obj]`):  When `null`, the `teletext_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.teletext_source_settings.new](#fn-medialive_channelinput_attachmentsinput_settingscaption_selectorteletext_source_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `selector_settings` sub block.
@@ -3859,7 +3859,7 @@ Terraform sub block.
 
 **Args**:
   - `page_number` (`string`):  When `null`, the `page_number` field will be omitted from the resulting object.
-  - `output_rectangle` (`list[obj]`):  When `null`, the `output_rectangle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.teletext_source_settings.output_rectangle.new](#fn-input_attachmentsinput_settingscaption_selectorselector_settingsoutput_rectanglenew) constructor.
+  - `output_rectangle` (`list[obj]`):  When `null`, the `output_rectangle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.teletext_source_settings.output_rectangle.new](#fn-medialive_channelinput_attachmentsinput_settingscaption_selectorselector_settingsoutput_rectanglenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `teletext_source_settings` sub block.
@@ -3909,7 +3909,7 @@ Terraform sub block.
 
 **Args**:
   - `server_validation` (`string`):  When `null`, the `server_validation` field will be omitted from the resulting object.
-  - `hls_input_settings` (`list[obj]`):  When `null`, the `hls_input_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.network_input_settings.hls_input_settings.new](#fn-input_attachmentsinput_settingshls_input_settingsnew) constructor.
+  - `hls_input_settings` (`list[obj]`):  When `null`, the `hls_input_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.network_input_settings.hls_input_settings.new](#fn-medialive_channelinput_attachmentsinput_settingshls_input_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `network_input_settings` sub block.

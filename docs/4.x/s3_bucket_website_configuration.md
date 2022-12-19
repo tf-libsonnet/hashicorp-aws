@@ -393,8 +393,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.condition.new](#fn-conditionnew) constructor.
-  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.redirect.new](#fn-redirectnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.condition.new](#fn-s3_bucket_website_configurationconditionnew) constructor.
+  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.redirect.new](#fn-s3_bucket_website_configurationredirectnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `routing_rule` sub block.

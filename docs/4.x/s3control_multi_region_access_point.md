@@ -199,8 +199,8 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `public_access_block` (`list[obj]`):  When `null`, the `public_access_block` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.public_access_block.new](#fn-public_access_blocknew) constructor.
-  - `region` (`list[obj]`):  When `null`, the `region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.region.new](#fn-regionnew) constructor.
+  - `public_access_block` (`list[obj]`):  When `null`, the `public_access_block` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.public_access_block.new](#fn-s3control_multi_region_access_pointpublic_access_blocknew) constructor.
+  - `region` (`list[obj]`):  When `null`, the `region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.region.new](#fn-s3control_multi_region_access_pointregionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `details` sub block.

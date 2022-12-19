@@ -370,7 +370,7 @@ Terraform sub block.
   - `image` (`string`): 
   - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
   - `model_data_url` (`string`):  When `null`, the `model_data_url` field will be omitted from the resulting object.
-  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-image_confignew) constructor.
+  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-sagemaker_modelimage_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container` sub block.
@@ -394,7 +394,7 @@ Terraform sub block.
 
 **Args**:
   - `repository_access_mode` (`string`): 
-  - `repository_auth_config` (`list[obj]`):  When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.repository_auth_config.new](#fn-containerrepository_auth_confignew) constructor.
+  - `repository_auth_config` (`list[obj]`):  When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.repository_auth_config.new](#fn-sagemaker_modelcontainerrepository_auth_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `image_config` sub block.
@@ -468,7 +468,7 @@ Terraform sub block.
   - `image` (`string`): 
   - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
   - `model_data_url` (`string`):  When `null`, the `model_data_url` field will be omitted from the resulting object.
-  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-image_confignew) constructor.
+  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-sagemaker_modelimage_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `primary_container` sub block.
@@ -492,7 +492,7 @@ Terraform sub block.
 
 **Args**:
   - `repository_access_mode` (`string`): 
-  - `repository_auth_config` (`list[obj]`):  When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.repository_auth_config.new](#fn-primary_containerrepository_auth_confignew) constructor.
+  - `repository_auth_config` (`list[obj]`):  When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.repository_auth_config.new](#fn-sagemaker_modelprimary_containerrepository_auth_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `image_config` sub block.

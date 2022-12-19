@@ -732,7 +732,7 @@ Terraform sub block.
   - `anonymous_auth_enabled` (`bool`):  When `null`, the `anonymous_auth_enabled` field will be omitted from the resulting object.
   - `enabled` (`bool`): 
   - `internal_user_database_enabled` (`bool`):  When `null`, the `internal_user_database_enabled` field will be omitted from the resulting object.
-  - `master_user_options` (`list[obj]`):  When `null`, the `master_user_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.master_user_options.new](#fn-master_user_optionsnew) constructor.
+  - `master_user_options` (`list[obj]`):  When `null`, the `master_user_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.master_user_options.new](#fn-opensearch_domainmaster_user_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_security_options` sub block.
@@ -782,7 +782,7 @@ Terraform sub block.
 **Args**:
   - `desired_state` (`string`): 
   - `rollback_on_disable` (`string`):  When `null`, the `rollback_on_disable` field will be omitted from the resulting object.
-  - `maintenance_schedule` (`list[obj]`):  When `null`, the `maintenance_schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.new](#fn-maintenance_schedulenew) constructor.
+  - `maintenance_schedule` (`list[obj]`):  When `null`, the `maintenance_schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.new](#fn-opensearch_domainmaintenance_schedulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_tune_options` sub block.
@@ -807,7 +807,7 @@ Terraform sub block.
 **Args**:
   - `cron_expression_for_recurrence` (`string`): 
   - `start_at` (`string`): 
-  - `duration` (`list[obj]`):  When `null`, the `duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.duration.new](#fn-auto_tune_optionsdurationnew) constructor.
+  - `duration` (`list[obj]`):  When `null`, the `duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.duration.new](#fn-opensearch_domainauto_tune_optionsdurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `maintenance_schedule` sub block.
@@ -863,8 +863,8 @@ Terraform sub block.
   - `warm_enabled` (`bool`):  When `null`, the `warm_enabled` field will be omitted from the resulting object.
   - `warm_type` (`string`):  When `null`, the `warm_type` field will be omitted from the resulting object.
   - `zone_awareness_enabled` (`bool`):  When `null`, the `zone_awareness_enabled` field will be omitted from the resulting object.
-  - `cold_storage_options` (`list[obj]`):  When `null`, the `cold_storage_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.cold_storage_options.new](#fn-cold_storage_optionsnew) constructor.
-  - `zone_awareness_config` (`list[obj]`):  When `null`, the `zone_awareness_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.zone_awareness_config.new](#fn-zone_awareness_confignew) constructor.
+  - `cold_storage_options` (`list[obj]`):  When `null`, the `cold_storage_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.cold_storage_options.new](#fn-opensearch_domaincold_storage_optionsnew) constructor.
+  - `zone_awareness_config` (`list[obj]`):  When `null`, the `zone_awareness_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.zone_awareness_config.new](#fn-opensearch_domainzone_awareness_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cluster_config` sub block.

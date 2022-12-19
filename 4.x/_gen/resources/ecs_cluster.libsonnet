@@ -20,7 +20,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           s3_key_prefix: s3_key_prefix,
         }),
       },
-      '#new':: d.fn(help='\n`aws.ecs_cluster.configuration.execute_command_configuration.new` constructs a new object with attributes and blocks configured for the `execute_command_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `logging` (`string`):  When `null`, the `logging` field will be omitted from the resulting object.\n  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.log_configuration.new](#fn-configurationlog_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `execute_command_configuration` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.ecs_cluster.configuration.execute_command_configuration.new` constructs a new object with attributes and blocks configured for the `execute_command_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `logging` (`string`):  When `null`, the `logging` field will be omitted from the resulting object.\n  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.log_configuration.new](#fn-ecs_clusterconfigurationlog_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `execute_command_configuration` sub block.\n', args=[]),
       new(
         kms_key_id=null,
         log_configuration=null,
@@ -31,7 +31,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         logging: logging,
       }),
     },
-    '#new':: d.fn(help='\n`aws.ecs_cluster.configuration.new` constructs a new object with attributes and blocks configured for the `configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `execute_command_configuration` (`list[obj]`):  When `null`, the `execute_command_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.new](#fn-execute_command_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `configuration` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.ecs_cluster.configuration.new` constructs a new object with attributes and blocks configured for the `configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `execute_command_configuration` (`list[obj]`):  When `null`, the `execute_command_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.new](#fn-ecs_clusterexecute_command_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `configuration` sub block.\n', args=[]),
     new(
       execute_command_configuration=null
     ):: std.prune(a={

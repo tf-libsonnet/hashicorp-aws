@@ -264,10 +264,10 @@ Terraform sub block.
   - `resource_locations` (`list`):  When `null`, the `resource_locations` field will be omitted from the resulting object.
   - `resource_types` (`list`):  When `null`, the `resource_types` field will be omitted from the resulting object.
   - `target_tags` (`obj`):  When `null`, the `target_tags` field will be omitted from the resulting object.
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.new](#fn-actionnew) constructor.
-  - `event_source` (`list[obj]`):  When `null`, the `event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.event_source.new](#fn-event_sourcenew) constructor.
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.parameters.new](#fn-parametersnew) constructor.
-  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.new](#fn-schedulenew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.new](#fn-dlm_lifecycle_policyactionnew) constructor.
+  - `event_source` (`list[obj]`):  When `null`, the `event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.event_source.new](#fn-dlm_lifecycle_policyevent_sourcenew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.parameters.new](#fn-dlm_lifecycle_policyparametersnew) constructor.
+  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.new](#fn-dlm_lifecycle_policyschedulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `policy_details` sub block.
@@ -291,7 +291,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `cross_region_copy` (`list[obj]`):  When `null`, the `cross_region_copy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.cross_region_copy.new](#fn-policy_detailscross_region_copynew) constructor.
+  - `cross_region_copy` (`list[obj]`):  When `null`, the `cross_region_copy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.cross_region_copy.new](#fn-dlm_lifecycle_policypolicy_detailscross_region_copynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
@@ -315,8 +315,8 @@ Terraform sub block.
 
 **Args**:
   - `target` (`string`): 
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.cross_region_copy.encryption_configuration.new](#fn-policy_detailsactionencryption_configurationnew) constructor.
-  - `retain_rule` (`list[obj]`):  When `null`, the `retain_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.cross_region_copy.retain_rule.new](#fn-policy_detailsactionretain_rulenew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.cross_region_copy.encryption_configuration.new](#fn-dlm_lifecycle_policypolicy_detailsactionencryption_configurationnew) constructor.
+  - `retain_rule` (`list[obj]`):  When `null`, the `retain_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.action.cross_region_copy.retain_rule.new](#fn-dlm_lifecycle_policypolicy_detailsactionretain_rulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cross_region_copy` sub block.
@@ -388,7 +388,7 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`): 
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.event_source.parameters.new](#fn-policy_detailsparametersnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.event_source.parameters.new](#fn-dlm_lifecycle_policypolicy_detailsparametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `event_source` sub block.
@@ -464,12 +464,12 @@ Terraform sub block.
   - `name` (`string`): 
   - `tags_to_add` (`obj`):  When `null`, the `tags_to_add` field will be omitted from the resulting object.
   - `variable_tags` (`obj`):  When `null`, the `variable_tags` field will be omitted from the resulting object.
-  - `create_rule` (`list[obj]`):  When `null`, the `create_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.create_rule.new](#fn-policy_detailscreate_rulenew) constructor.
-  - `cross_region_copy_rule` (`list[obj]`):  When `null`, the `cross_region_copy_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.cross_region_copy_rule.new](#fn-policy_detailscross_region_copy_rulenew) constructor.
-  - `deprecate_rule` (`list[obj]`):  When `null`, the `deprecate_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.deprecate_rule.new](#fn-policy_detailsdeprecate_rulenew) constructor.
-  - `fast_restore_rule` (`list[obj]`):  When `null`, the `fast_restore_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.fast_restore_rule.new](#fn-policy_detailsfast_restore_rulenew) constructor.
-  - `retain_rule` (`list[obj]`):  When `null`, the `retain_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.retain_rule.new](#fn-policy_detailsretain_rulenew) constructor.
-  - `share_rule` (`list[obj]`):  When `null`, the `share_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.share_rule.new](#fn-policy_detailsshare_rulenew) constructor.
+  - `create_rule` (`list[obj]`):  When `null`, the `create_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.create_rule.new](#fn-dlm_lifecycle_policypolicy_detailscreate_rulenew) constructor.
+  - `cross_region_copy_rule` (`list[obj]`):  When `null`, the `cross_region_copy_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.cross_region_copy_rule.new](#fn-dlm_lifecycle_policypolicy_detailscross_region_copy_rulenew) constructor.
+  - `deprecate_rule` (`list[obj]`):  When `null`, the `deprecate_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.deprecate_rule.new](#fn-dlm_lifecycle_policypolicy_detailsdeprecate_rulenew) constructor.
+  - `fast_restore_rule` (`list[obj]`):  When `null`, the `fast_restore_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.fast_restore_rule.new](#fn-dlm_lifecycle_policypolicy_detailsfast_restore_rulenew) constructor.
+  - `retain_rule` (`list[obj]`):  When `null`, the `retain_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.retain_rule.new](#fn-dlm_lifecycle_policypolicy_detailsretain_rulenew) constructor.
+  - `share_rule` (`list[obj]`):  When `null`, the `share_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.share_rule.new](#fn-dlm_lifecycle_policypolicy_detailsshare_rulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schedule` sub block.
@@ -523,8 +523,8 @@ Terraform sub block.
   - `copy_tags` (`bool`):  When `null`, the `copy_tags` field will be omitted from the resulting object.
   - `encrypted` (`bool`): 
   - `target` (`string`): 
-  - `deprecate_rule` (`list[obj]`):  When `null`, the `deprecate_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.cross_region_copy_rule.deprecate_rule.new](#fn-policy_detailsscheduledeprecate_rulenew) constructor.
-  - `retain_rule` (`list[obj]`):  When `null`, the `retain_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.cross_region_copy_rule.retain_rule.new](#fn-policy_detailsscheduleretain_rulenew) constructor.
+  - `deprecate_rule` (`list[obj]`):  When `null`, the `deprecate_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.cross_region_copy_rule.deprecate_rule.new](#fn-dlm_lifecycle_policypolicy_detailsscheduledeprecate_rulenew) constructor.
+  - `retain_rule` (`list[obj]`):  When `null`, the `retain_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dlm_lifecycle_policy.policy_details.schedule.cross_region_copy_rule.retain_rule.new](#fn-dlm_lifecycle_policypolicy_detailsscheduleretain_rulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cross_region_copy_rule` sub block.

@@ -457,7 +457,7 @@ Terraform sub block.
   - `max_capacity_buffer` (`string`):  When `null`, the `max_capacity_buffer` field will be omitted from the resulting object.
   - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
   - `scheduling_buffer_time` (`string`):  When `null`, the `scheduling_buffer_time` field will be omitted from the resulting object.
-  - `metric_specification` (`list[obj]`):  When `null`, the `metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.new](#fn-metric_specificationnew) constructor.
+  - `metric_specification` (`list[obj]`):  When `null`, the `metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.new](#fn-autoscaling_policymetric_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `predictive_scaling_configuration` sub block.
@@ -481,12 +481,12 @@ Terraform sub block.
 
 **Args**:
   - `target_value` (`number`): 
-  - `customized_capacity_metric_specification` (`list[obj]`):  When `null`, the `customized_capacity_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.new](#fn-predictive_scaling_configurationcustomized_capacity_metric_specificationnew) constructor.
-  - `customized_load_metric_specification` (`list[obj]`):  When `null`, the `customized_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.new](#fn-predictive_scaling_configurationcustomized_load_metric_specificationnew) constructor.
-  - `customized_scaling_metric_specification` (`list[obj]`):  When `null`, the `customized_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.new](#fn-predictive_scaling_configurationcustomized_scaling_metric_specificationnew) constructor.
-  - `predefined_load_metric_specification` (`list[obj]`):  When `null`, the `predefined_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_load_metric_specification.new](#fn-predictive_scaling_configurationpredefined_load_metric_specificationnew) constructor.
-  - `predefined_metric_pair_specification` (`list[obj]`):  When `null`, the `predefined_metric_pair_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_metric_pair_specification.new](#fn-predictive_scaling_configurationpredefined_metric_pair_specificationnew) constructor.
-  - `predefined_scaling_metric_specification` (`list[obj]`):  When `null`, the `predefined_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_scaling_metric_specification.new](#fn-predictive_scaling_configurationpredefined_scaling_metric_specificationnew) constructor.
+  - `customized_capacity_metric_specification` (`list[obj]`):  When `null`, the `customized_capacity_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.new](#fn-autoscaling_policypredictive_scaling_configurationcustomized_capacity_metric_specificationnew) constructor.
+  - `customized_load_metric_specification` (`list[obj]`):  When `null`, the `customized_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.new](#fn-autoscaling_policypredictive_scaling_configurationcustomized_load_metric_specificationnew) constructor.
+  - `customized_scaling_metric_specification` (`list[obj]`):  When `null`, the `customized_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.new](#fn-autoscaling_policypredictive_scaling_configurationcustomized_scaling_metric_specificationnew) constructor.
+  - `predefined_load_metric_specification` (`list[obj]`):  When `null`, the `predefined_load_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_load_metric_specification.new](#fn-autoscaling_policypredictive_scaling_configurationpredefined_load_metric_specificationnew) constructor.
+  - `predefined_metric_pair_specification` (`list[obj]`):  When `null`, the `predefined_metric_pair_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_metric_pair_specification.new](#fn-autoscaling_policypredictive_scaling_configurationpredefined_metric_pair_specificationnew) constructor.
+  - `predefined_scaling_metric_specification` (`list[obj]`):  When `null`, the `predefined_scaling_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_scaling_metric_specification.new](#fn-autoscaling_policypredictive_scaling_configurationpredefined_scaling_metric_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_specification` sub block.
@@ -509,7 +509,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_data_queries` (`list[obj]`):  When `null`, the `metric_data_queries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.new](#fn-predictive_scaling_configurationmetric_specificationmetric_data_queriesnew) constructor.
+  - `metric_data_queries` (`list[obj]`):  When `null`, the `metric_data_queries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationmetric_data_queriesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `customized_capacity_metric_specification` sub block.
@@ -535,7 +535,7 @@ Terraform sub block.
   - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
   - `label` (`string`):  When `null`, the `label` field will be omitted from the resulting object.
   - `return_data` (`bool`):  When `null`, the `return_data` field will be omitted from the resulting object.
-  - `metric_stat` (`list[obj]`):  When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.metric_stat.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_capacity_metric_specificationmetric_statnew) constructor.
+  - `metric_stat` (`list[obj]`):  When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.metric_stat.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_capacity_metric_specificationmetric_statnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_data_queries` sub block.
@@ -560,7 +560,7 @@ Terraform sub block.
 **Args**:
   - `stat` (`string`): 
   - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.metric_stat.metric.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_capacity_metric_specificationmetric_data_queriesmetricnew) constructor.
+  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.metric_stat.metric.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_capacity_metric_specificationmetric_data_queriesmetricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_stat` sub block.
@@ -585,7 +585,7 @@ Terraform sub block.
 **Args**:
   - `metric_name` (`string`): 
   - `namespace` (`string`): 
-  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.metric_stat.metric.dimensions.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_capacity_metric_specificationmetric_data_queriesmetric_statdimensionsnew) constructor.
+  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_capacity_metric_specification.metric_data_queries.metric_stat.metric.dimensions.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_capacity_metric_specificationmetric_data_queriesmetric_statdimensionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric` sub block.
@@ -632,7 +632,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_data_queries` (`list[obj]`):  When `null`, the `metric_data_queries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.new](#fn-predictive_scaling_configurationmetric_specificationmetric_data_queriesnew) constructor.
+  - `metric_data_queries` (`list[obj]`):  When `null`, the `metric_data_queries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationmetric_data_queriesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `customized_load_metric_specification` sub block.
@@ -658,7 +658,7 @@ Terraform sub block.
   - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
   - `label` (`string`):  When `null`, the `label` field will be omitted from the resulting object.
   - `return_data` (`bool`):  When `null`, the `return_data` field will be omitted from the resulting object.
-  - `metric_stat` (`list[obj]`):  When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.metric_stat.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_load_metric_specificationmetric_statnew) constructor.
+  - `metric_stat` (`list[obj]`):  When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.metric_stat.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_load_metric_specificationmetric_statnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_data_queries` sub block.
@@ -683,7 +683,7 @@ Terraform sub block.
 **Args**:
   - `stat` (`string`): 
   - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.metric_stat.metric.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_load_metric_specificationmetric_data_queriesmetricnew) constructor.
+  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.metric_stat.metric.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_load_metric_specificationmetric_data_queriesmetricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_stat` sub block.
@@ -708,7 +708,7 @@ Terraform sub block.
 **Args**:
   - `metric_name` (`string`): 
   - `namespace` (`string`): 
-  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.metric_stat.metric.dimensions.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_load_metric_specificationmetric_data_queriesmetric_statdimensionsnew) constructor.
+  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_load_metric_specification.metric_data_queries.metric_stat.metric.dimensions.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_load_metric_specificationmetric_data_queriesmetric_statdimensionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric` sub block.
@@ -755,7 +755,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_data_queries` (`list[obj]`):  When `null`, the `metric_data_queries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.new](#fn-predictive_scaling_configurationmetric_specificationmetric_data_queriesnew) constructor.
+  - `metric_data_queries` (`list[obj]`):  When `null`, the `metric_data_queries` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationmetric_data_queriesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `customized_scaling_metric_specification` sub block.
@@ -781,7 +781,7 @@ Terraform sub block.
   - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
   - `label` (`string`):  When `null`, the `label` field will be omitted from the resulting object.
   - `return_data` (`bool`):  When `null`, the `return_data` field will be omitted from the resulting object.
-  - `metric_stat` (`list[obj]`):  When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.metric_stat.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_scaling_metric_specificationmetric_statnew) constructor.
+  - `metric_stat` (`list[obj]`):  When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.metric_stat.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_scaling_metric_specificationmetric_statnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_data_queries` sub block.
@@ -806,7 +806,7 @@ Terraform sub block.
 **Args**:
   - `stat` (`string`): 
   - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.metric_stat.metric.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_scaling_metric_specificationmetric_data_queriesmetricnew) constructor.
+  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.metric_stat.metric.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_scaling_metric_specificationmetric_data_queriesmetricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_stat` sub block.
@@ -831,7 +831,7 @@ Terraform sub block.
 **Args**:
   - `metric_name` (`string`): 
   - `namespace` (`string`): 
-  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.metric_stat.metric.dimensions.new](#fn-predictive_scaling_configurationmetric_specificationcustomized_scaling_metric_specificationmetric_data_queriesmetric_statdimensionsnew) constructor.
+  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.customized_scaling_metric_specification.metric_data_queries.metric_stat.metric.dimensions.new](#fn-autoscaling_policypredictive_scaling_configurationmetric_specificationcustomized_scaling_metric_specificationmetric_data_queriesmetric_statdimensionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric` sub block.
@@ -977,8 +977,8 @@ Terraform sub block.
 **Args**:
   - `disable_scale_in` (`bool`):  When `null`, the `disable_scale_in` field will be omitted from the resulting object.
   - `target_value` (`number`): 
-  - `customized_metric_specification` (`list[obj]`):  When `null`, the `customized_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.new](#fn-customized_metric_specificationnew) constructor.
-  - `predefined_metric_specification` (`list[obj]`):  When `null`, the `predefined_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.predefined_metric_specification.new](#fn-predefined_metric_specificationnew) constructor.
+  - `customized_metric_specification` (`list[obj]`):  When `null`, the `customized_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.new](#fn-autoscaling_policycustomized_metric_specificationnew) constructor.
+  - `predefined_metric_specification` (`list[obj]`):  When `null`, the `predefined_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.predefined_metric_specification.new](#fn-autoscaling_policypredefined_metric_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_tracking_configuration` sub block.
@@ -1005,7 +1005,7 @@ Terraform sub block.
   - `namespace` (`string`): 
   - `statistic` (`string`): 
   - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric_dimension` (`list[obj]`):  When `null`, the `metric_dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metric_dimension.new](#fn-target_tracking_configurationmetric_dimensionnew) constructor.
+  - `metric_dimension` (`list[obj]`):  When `null`, the `metric_dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metric_dimension.new](#fn-autoscaling_policytarget_tracking_configurationmetric_dimensionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `customized_metric_specification` sub block.

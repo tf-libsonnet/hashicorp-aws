@@ -70,7 +70,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   variations:: {
-    '#new':: d.fn(help='\n`aws.evidently_feature.variations.new` constructs a new object with attributes and blocks configured for the `variations`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `value` (`list[obj]`):  When `null`, the `value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.value.new](#fn-valuenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `variations` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.evidently_feature.variations.new` constructs a new object with attributes and blocks configured for the `variations`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `value` (`list[obj]`):  When `null`, the `value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.value.new](#fn-evidently_featurevaluenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `variations` sub block.\n', args=[]),
     new(
       name,
       value=null

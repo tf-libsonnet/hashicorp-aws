@@ -797,10 +797,10 @@ Terraform sub block.
   - `enabled` (`bool`): 
   - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `expiration` (`list[obj]`):  When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.expiration.new](#fn-expirationnew) constructor.
-  - `noncurrent_version_expiration` (`list[obj]`):  When `null`, the `noncurrent_version_expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.noncurrent_version_expiration.new](#fn-noncurrent_version_expirationnew) constructor.
-  - `noncurrent_version_transition` (`list[obj]`):  When `null`, the `noncurrent_version_transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.noncurrent_version_transition.new](#fn-noncurrent_version_transitionnew) constructor.
-  - `transition` (`list[obj]`):  When `null`, the `transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.transition.new](#fn-transitionnew) constructor.
+  - `expiration` (`list[obj]`):  When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.expiration.new](#fn-s3_bucketexpirationnew) constructor.
+  - `noncurrent_version_expiration` (`list[obj]`):  When `null`, the `noncurrent_version_expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.noncurrent_version_expiration.new](#fn-s3_bucketnoncurrent_version_expirationnew) constructor.
+  - `noncurrent_version_transition` (`list[obj]`):  When `null`, the `noncurrent_version_transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.noncurrent_version_transition.new](#fn-s3_bucketnoncurrent_version_transitionnew) constructor.
+  - `transition` (`list[obj]`):  When `null`, the `transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.lifecycle_rule.transition.new](#fn-s3_buckettransitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `lifecycle_rule` sub block.
@@ -945,7 +945,7 @@ Terraform sub block.
 
 **Args**:
   - `object_lock_enabled` (`string`):  When `null`, the `object_lock_enabled` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.object_lock_configuration.rule.new](#fn-rulenew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.object_lock_configuration.rule.new](#fn-s3_bucketrulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `object_lock_configuration` sub block.
@@ -968,7 +968,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_retention` (`list[obj]`):  When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.object_lock_configuration.rule.default_retention.new](#fn-object_lock_configurationdefault_retentionnew) constructor.
+  - `default_retention` (`list[obj]`):  When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.object_lock_configuration.rule.default_retention.new](#fn-s3_bucketobject_lock_configurationdefault_retentionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -1017,7 +1017,7 @@ Terraform sub block.
 
 **Args**:
   - `role` (`string`): 
-  - `rules` (`list[obj]`):  When `null`, the `rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.new](#fn-rulesnew) constructor.
+  - `rules` (`list[obj]`):  When `null`, the `rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.new](#fn-s3_bucketrulesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `replication_configuration` sub block.
@@ -1044,9 +1044,9 @@ Terraform sub block.
   - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
   - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
   - `status` (`string`): 
-  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.new](#fn-replication_configurationdestinationnew) constructor.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.filter.new](#fn-replication_configurationfilternew) constructor.
-  - `source_selection_criteria` (`list[obj]`):  When `null`, the `source_selection_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.source_selection_criteria.new](#fn-replication_configurationsource_selection_criterianew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.new](#fn-s3_bucketreplication_configurationdestinationnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.filter.new](#fn-s3_bucketreplication_configurationfilternew) constructor.
+  - `source_selection_criteria` (`list[obj]`):  When `null`, the `source_selection_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.source_selection_criteria.new](#fn-s3_bucketreplication_configurationsource_selection_criterianew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rules` sub block.
@@ -1073,9 +1073,9 @@ Terraform sub block.
   - `bucket` (`string`): 
   - `replica_kms_key_id` (`string`):  When `null`, the `replica_kms_key_id` field will be omitted from the resulting object.
   - `storage_class` (`string`):  When `null`, the `storage_class` field will be omitted from the resulting object.
-  - `access_control_translation` (`list[obj]`):  When `null`, the `access_control_translation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.access_control_translation.new](#fn-replication_configurationrulesaccess_control_translationnew) constructor.
-  - `metrics` (`list[obj]`):  When `null`, the `metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.metrics.new](#fn-replication_configurationrulesmetricsnew) constructor.
-  - `replication_time` (`list[obj]`):  When `null`, the `replication_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.replication_time.new](#fn-replication_configurationrulesreplication_timenew) constructor.
+  - `access_control_translation` (`list[obj]`):  When `null`, the `access_control_translation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.access_control_translation.new](#fn-s3_bucketreplication_configurationrulesaccess_control_translationnew) constructor.
+  - `metrics` (`list[obj]`):  When `null`, the `metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.metrics.new](#fn-s3_bucketreplication_configurationrulesmetricsnew) constructor.
+  - `replication_time` (`list[obj]`):  When `null`, the `replication_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.destination.replication_time.new](#fn-s3_bucketreplication_configurationrulesreplication_timenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.
@@ -1193,7 +1193,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `sse_kms_encrypted_objects` (`list[obj]`):  When `null`, the `sse_kms_encrypted_objects` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.source_selection_criteria.sse_kms_encrypted_objects.new](#fn-replication_configurationrulessse_kms_encrypted_objectsnew) constructor.
+  - `sse_kms_encrypted_objects` (`list[obj]`):  When `null`, the `sse_kms_encrypted_objects` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.replication_configuration.rules.source_selection_criteria.sse_kms_encrypted_objects.new](#fn-s3_bucketreplication_configurationrulessse_kms_encrypted_objectsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source_selection_criteria` sub block.
@@ -1239,7 +1239,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.server_side_encryption_configuration.rule.new](#fn-rulenew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.server_side_encryption_configuration.rule.new](#fn-s3_bucketrulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `server_side_encryption_configuration` sub block.
@@ -1263,7 +1263,7 @@ Terraform sub block.
 
 **Args**:
   - `bucket_key_enabled` (`bool`):  When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
-  - `apply_server_side_encryption_by_default` (`list[obj]`):  When `null`, the `apply_server_side_encryption_by_default` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.server_side_encryption_configuration.rule.apply_server_side_encryption_by_default.new](#fn-server_side_encryption_configurationapply_server_side_encryption_by_defaultnew) constructor.
+  - `apply_server_side_encryption_by_default` (`list[obj]`):  When `null`, the `apply_server_side_encryption_by_default` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket.server_side_encryption_configuration.rule.apply_server_side_encryption_by_default.new](#fn-s3_bucketserver_side_encryption_configurationapply_server_side_encryption_by_defaultnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

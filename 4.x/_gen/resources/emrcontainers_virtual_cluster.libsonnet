@@ -12,14 +12,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           namespace: namespace,
         }),
       },
-      '#new':: d.fn(help='\n`aws.emrcontainers_virtual_cluster.container_provider.info.new` constructs a new object with attributes and blocks configured for the `info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `eks_info` (`list[obj]`):  When `null`, the `eks_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.eks_info.new](#fn-container_providereks_infonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `info` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.emrcontainers_virtual_cluster.container_provider.info.new` constructs a new object with attributes and blocks configured for the `info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `eks_info` (`list[obj]`):  When `null`, the `eks_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.eks_info.new](#fn-emrcontainers_virtual_clustercontainer_providereks_infonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `info` sub block.\n', args=[]),
       new(
         eks_info=null
       ):: std.prune(a={
         eks_info: eks_info,
       }),
     },
-    '#new':: d.fn(help='\n`aws.emrcontainers_virtual_cluster.container_provider.new` constructs a new object with attributes and blocks configured for the `container_provider`\nTerraform sub block.\n\n\n\n**Args**:\n  - `type` (`string`): \n  - `info` (`list[obj]`):  When `null`, the `info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.new](#fn-infonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `container_provider` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.emrcontainers_virtual_cluster.container_provider.new` constructs a new object with attributes and blocks configured for the `container_provider`\nTerraform sub block.\n\n\n\n**Args**:\n  - `type` (`string`): \n  - `info` (`list[obj]`):  When `null`, the `info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.new](#fn-emrcontainers_virtual_clusterinfonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `container_provider` sub block.\n', args=[]),
     new(
       type,
       info=null

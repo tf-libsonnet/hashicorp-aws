@@ -44,7 +44,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         string_value: string_value,
       }),
     },
-    '#new':: d.fn(help='\n`aws.datapipeline_pipeline_definition.parameter_object.new` constructs a new object with attributes and blocks configured for the `parameter_object`\nTerraform sub block.\n\n\n\n**Args**:\n  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.attribute.new](#fn-attributenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `parameter_object` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.datapipeline_pipeline_definition.parameter_object.new` constructs a new object with attributes and blocks configured for the `parameter_object`\nTerraform sub block.\n\n\n\n**Args**:\n  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.attribute.new](#fn-datapipeline_pipeline_definitionattributenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `parameter_object` sub block.\n', args=[]),
     new(
       attribute=null
     ):: std.prune(a={
@@ -72,7 +72,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         string_value: string_value,
       }),
     },
-    '#new':: d.fn(help='\n`aws.datapipeline_pipeline_definition.pipeline_object.new` constructs a new object with attributes and blocks configured for the `pipeline_object`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `field` (`list[obj]`):  When `null`, the `field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.field.new](#fn-fieldnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `pipeline_object` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.datapipeline_pipeline_definition.pipeline_object.new` constructs a new object with attributes and blocks configured for the `pipeline_object`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): \n  - `field` (`list[obj]`):  When `null`, the `field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.field.new](#fn-datapipeline_pipeline_definitionfieldnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `pipeline_object` sub block.\n', args=[]),
     new(
       name,
       field=null

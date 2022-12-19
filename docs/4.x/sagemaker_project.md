@@ -214,7 +214,7 @@ Terraform sub block.
   - `path_id` (`string`):  When `null`, the `path_id` field will be omitted from the resulting object.
   - `product_id` (`string`): 
   - `provisioning_artifact_id` (`string`):  When `null`, the `provisioning_artifact_id` field will be omitted from the resulting object.
-  - `provisioning_parameter` (`list[obj]`):  When `null`, the `provisioning_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.provisioning_parameter.new](#fn-provisioning_parameternew) constructor.
+  - `provisioning_parameter` (`list[obj]`):  When `null`, the `provisioning_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.provisioning_parameter.new](#fn-sagemaker_projectprovisioning_parameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `service_catalog_provisioning_details` sub block.

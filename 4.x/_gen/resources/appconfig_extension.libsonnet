@@ -17,7 +17,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         uri: uri,
       }),
     },
-    '#new':: d.fn(help='\n`aws.appconfig_extension.action_point.new` constructs a new object with attributes and blocks configured for the `action_point`\nTerraform sub block.\n\n\n\n**Args**:\n  - `point` (`string`): \n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appconfig_extension.action_point.action.new](#fn-actionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `action_point` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.appconfig_extension.action_point.new` constructs a new object with attributes and blocks configured for the `action_point`\nTerraform sub block.\n\n\n\n**Args**:\n  - `point` (`string`): \n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appconfig_extension.action_point.action.new](#fn-appconfig_extensionactionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `action_point` sub block.\n', args=[]),
     new(
       point,
       action=null

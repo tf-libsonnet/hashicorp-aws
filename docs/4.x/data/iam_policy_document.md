@@ -259,9 +259,9 @@ Terraform sub block.
   - `not_resources` (`list`):  When `null`, the `not_resources` field will be omitted from the resulting object.
   - `resources` (`list`):  When `null`, the `resources` field will be omitted from the resulting object.
   - `sid` (`string`):  When `null`, the `sid` field will be omitted from the resulting object.
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.condition.new](#fn-conditionnew) constructor.
-  - `not_principals` (`list[obj]`):  When `null`, the `not_principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.not_principals.new](#fn-not_principalsnew) constructor.
-  - `principals` (`list[obj]`):  When `null`, the `principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.principals.new](#fn-principalsnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.condition.new](#fn-iam_policy_documentconditionnew) constructor.
+  - `not_principals` (`list[obj]`):  When `null`, the `not_principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.not_principals.new](#fn-iam_policy_documentnot_principalsnew) constructor.
+  - `principals` (`list[obj]`):  When `null`, the `principals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_policy_document.statement.principals.new](#fn-iam_policy_documentprincipalsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `statement` sub block.

@@ -50,7 +50,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         years: years,
       }),
     },
-    '#new':: d.fn(help='\n`aws.s3_bucket_object_lock_configuration.rule.new` constructs a new object with attributes and blocks configured for the `rule`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_retention` (`list[obj]`):  When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.default_retention.new](#fn-default_retentionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.s3_bucket_object_lock_configuration.rule.new` constructs a new object with attributes and blocks configured for the `rule`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_retention` (`list[obj]`):  When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.default_retention.new](#fn-s3_bucket_object_lock_configurationdefault_retentionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule` sub block.\n', args=[]),
     new(
       default_retention=null
     ):: std.prune(a={

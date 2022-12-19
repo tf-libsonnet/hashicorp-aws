@@ -311,7 +311,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.field_selector.new](#fn-field_selectornew) constructor.
+  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.field_selector.new](#fn-cloudtrail_event_data_storefield_selectornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_event_selector` sub block.

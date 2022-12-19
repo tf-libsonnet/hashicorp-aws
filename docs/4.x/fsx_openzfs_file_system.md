@@ -537,8 +537,8 @@ Terraform sub block.
   - `data_compression_type` (`string`):  When `null`, the `data_compression_type` field will be omitted from the resulting object.
   - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
   - `record_size_kib` (`number`):  When `null`, the `record_size_kib` field will be omitted from the resulting object.
-  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.new](#fn-nfs_exportsnew) constructor.
-  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.user_and_group_quotas.new](#fn-user_and_group_quotasnew) constructor.
+  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.new](#fn-fsx_openzfs_file_systemnfs_exportsnew) constructor.
+  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.user_and_group_quotas.new](#fn-fsx_openzfs_file_systemuser_and_group_quotasnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `root_volume_configuration` sub block.
@@ -561,7 +561,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.client_configurations.new](#fn-root_volume_configurationclient_configurationsnew) constructor.
+  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.client_configurations.new](#fn-fsx_openzfs_file_systemroot_volume_configurationclient_configurationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs_exports` sub block.

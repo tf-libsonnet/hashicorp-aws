@@ -295,10 +295,10 @@ Terraform sub block.
   - `stateful_default_actions` (`list`):  When `null`, the `stateful_default_actions` field will be omitted from the resulting object.
   - `stateless_default_actions` (`list`): 
   - `stateless_fragment_default_actions` (`list`): 
-  - `stateful_engine_options` (`list[obj]`):  When `null`, the `stateful_engine_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new](#fn-stateful_engine_optionsnew) constructor.
-  - `stateful_rule_group_reference` (`list[obj]`):  When `null`, the `stateful_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_rule_group_reference.new](#fn-stateful_rule_group_referencenew) constructor.
-  - `stateless_custom_action` (`list[obj]`):  When `null`, the `stateless_custom_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.new](#fn-stateless_custom_actionnew) constructor.
-  - `stateless_rule_group_reference` (`list[obj]`):  When `null`, the `stateless_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_rule_group_reference.new](#fn-stateless_rule_group_referencenew) constructor.
+  - `stateful_engine_options` (`list[obj]`):  When `null`, the `stateful_engine_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new](#fn-networkfirewall_firewall_policystateful_engine_optionsnew) constructor.
+  - `stateful_rule_group_reference` (`list[obj]`):  When `null`, the `stateful_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_rule_group_reference.new](#fn-networkfirewall_firewall_policystateful_rule_group_referencenew) constructor.
+  - `stateless_custom_action` (`list[obj]`):  When `null`, the `stateless_custom_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.new](#fn-networkfirewall_firewall_policystateless_custom_actionnew) constructor.
+  - `stateless_rule_group_reference` (`list[obj]`):  When `null`, the `stateless_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_rule_group_reference.new](#fn-networkfirewall_firewall_policystateless_rule_group_referencenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `firewall_policy` sub block.
@@ -346,7 +346,7 @@ Terraform sub block.
 **Args**:
   - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
   - `resource_arn` (`string`): 
-  - `override` (`list[obj]`):  When `null`, the `override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_rule_group_reference.override.new](#fn-firewall_policyoverridenew) constructor.
+  - `override` (`list[obj]`):  When `null`, the `override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_rule_group_reference.override.new](#fn-networkfirewall_firewall_policyfirewall_policyoverridenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `stateful_rule_group_reference` sub block.
@@ -393,7 +393,7 @@ Terraform sub block.
 
 **Args**:
   - `action_name` (`string`): 
-  - `action_definition` (`list[obj]`):  When `null`, the `action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.action_definition.new](#fn-firewall_policyaction_definitionnew) constructor.
+  - `action_definition` (`list[obj]`):  When `null`, the `action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.action_definition.new](#fn-networkfirewall_firewall_policyfirewall_policyaction_definitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `stateless_custom_action` sub block.
@@ -416,7 +416,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `publish_metric_action` (`list[obj]`):  When `null`, the `publish_metric_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.action_definition.publish_metric_action.new](#fn-firewall_policystateless_custom_actionpublish_metric_actionnew) constructor.
+  - `publish_metric_action` (`list[obj]`):  When `null`, the `publish_metric_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.action_definition.publish_metric_action.new](#fn-networkfirewall_firewall_policyfirewall_policystateless_custom_actionpublish_metric_actionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action_definition` sub block.
@@ -439,7 +439,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.action_definition.publish_metric_action.dimension.new](#fn-firewall_policystateless_custom_actionaction_definitiondimensionnew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.action_definition.publish_metric_action.dimension.new](#fn-networkfirewall_firewall_policyfirewall_policystateless_custom_actionaction_definitiondimensionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `publish_metric_action` sub block.

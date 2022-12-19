@@ -549,7 +549,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-s3_encryptionnew) constructor.
+  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-synthetics_canarys3_encryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `artifact_config` sub block.

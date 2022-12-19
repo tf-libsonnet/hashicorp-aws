@@ -68,7 +68,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         unhealthy_threshold: unhealthy_threshold,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lightsail_container_service_deployment_version.public_endpoint.new` constructs a new object with attributes and blocks configured for the `public_endpoint`\nTerraform sub block.\n\n\n\n**Args**:\n  - `container_name` (`string`): \n  - `container_port` (`number`): \n  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.health_check.new](#fn-health_checknew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `public_endpoint` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lightsail_container_service_deployment_version.public_endpoint.new` constructs a new object with attributes and blocks configured for the `public_endpoint`\nTerraform sub block.\n\n\n\n**Args**:\n  - `container_name` (`string`): \n  - `container_port` (`number`): \n  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.health_check.new](#fn-lightsail_container_service_deployment_versionhealth_checknew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `public_endpoint` sub block.\n', args=[]),
     new(
       container_name,
       container_port,

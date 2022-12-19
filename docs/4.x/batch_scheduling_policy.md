@@ -194,7 +194,7 @@ Terraform sub block.
 **Args**:
   - `compute_reservation` (`number`):  When `null`, the `compute_reservation` field will be omitted from the resulting object.
   - `share_decay_seconds` (`number`):  When `null`, the `share_decay_seconds` field will be omitted from the resulting object.
-  - `share_distribution` (`list[obj]`):  When `null`, the `share_distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_scheduling_policy.fair_share_policy.share_distribution.new](#fn-share_distributionnew) constructor.
+  - `share_distribution` (`list[obj]`):  When `null`, the `share_distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_scheduling_policy.fair_share_policy.share_distribution.new](#fn-batch_scheduling_policyshare_distributionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `fair_share_policy` sub block.

@@ -27,7 +27,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         value: value,
       }),
     },
-    '#new':: d.fn(help='\n`aws.glue_script.dag_node.new` constructs a new object with attributes and blocks configured for the `dag_node`\nTerraform sub block.\n\n\n\n**Args**:\n  - `line_number` (`number`):  When `null`, the `line_number` field will be omitted from the resulting object.\n  - `node_type` (`string`): \n  - `args` (`list[obj]`):  When `null`, the `args` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_script.dag_node.args.new](#fn-argsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `dag_node` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.glue_script.dag_node.new` constructs a new object with attributes and blocks configured for the `dag_node`\nTerraform sub block.\n\n\n\n**Args**:\n  - `line_number` (`number`):  When `null`, the `line_number` field will be omitted from the resulting object.\n  - `node_type` (`string`): \n  - `args` (`list[obj]`):  When `null`, the `args` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_script.dag_node.args.new](#fn-glue_scriptargsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `dag_node` sub block.\n', args=[]),
     new(
       node_type,
       args=null,

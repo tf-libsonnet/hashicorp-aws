@@ -322,8 +322,8 @@ Terraform sub block.
 **Args**:
   - `owner` (`string`): 
   - `source_identifier` (`string`):  When `null`, the `source_identifier` field will be omitted from the resulting object.
-  - `custom_policy_details` (`list[obj]`):  When `null`, the `custom_policy_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.custom_policy_details.new](#fn-custom_policy_detailsnew) constructor.
-  - `source_detail` (`list[obj]`):  When `null`, the `source_detail` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.source_detail.new](#fn-source_detailnew) constructor.
+  - `custom_policy_details` (`list[obj]`):  When `null`, the `custom_policy_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.custom_policy_details.new](#fn-config_config_rulecustom_policy_detailsnew) constructor.
+  - `source_detail` (`list[obj]`):  When `null`, the `source_detail` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.source_detail.new](#fn-config_config_rulesource_detailnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.

@@ -482,8 +482,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.launch_template_specification.new](#fn-launch_template_specificationnew) constructor.
-  - `override` (`list[obj]`):  When `null`, the `override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.new](#fn-overridenew) constructor.
+  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.launch_template_specification.new](#fn-ec2_fleetlaunch_template_specificationnew) constructor.
+  - `override` (`list[obj]`):  When `null`, the `override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.new](#fn-ec2_fleetoverridenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_template_config` sub block.
@@ -537,7 +537,7 @@ Terraform sub block.
   - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
   - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
   - `weighted_capacity` (`number`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `instance_requirements` (`list[obj]`):  When `null`, the `instance_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.new](#fn-launch_template_configinstance_requirementsnew) constructor.
+  - `instance_requirements` (`list[obj]`):  When `null`, the `instance_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.new](#fn-ec2_fleetlaunch_template_configinstance_requirementsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `override` sub block.
@@ -573,14 +573,14 @@ Terraform sub block.
   - `on_demand_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `on_demand_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
   - `require_hibernate_support` (`bool`):  When `null`, the `require_hibernate_support` field will be omitted from the resulting object.
   - `spot_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `spot_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
-  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.accelerator_count.new](#fn-launch_template_configoverrideaccelerator_countnew) constructor.
-  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.accelerator_total_memory_mib.new](#fn-launch_template_configoverrideaccelerator_total_memory_mibnew) constructor.
-  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-launch_template_configoverridebaseline_ebs_bandwidth_mbpsnew) constructor.
-  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.memory_gib_per_vcpu.new](#fn-launch_template_configoverridememory_gib_per_vcpunew) constructor.
-  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.memory_mib.new](#fn-launch_template_configoverridememory_mibnew) constructor.
-  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.network_interface_count.new](#fn-launch_template_configoverridenetwork_interface_countnew) constructor.
-  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.total_local_storage_gb.new](#fn-launch_template_configoverridetotal_local_storage_gbnew) constructor.
-  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.vcpu_count.new](#fn-launch_template_configoverridevcpu_countnew) constructor.
+  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.accelerator_count.new](#fn-ec2_fleetlaunch_template_configoverrideaccelerator_countnew) constructor.
+  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.accelerator_total_memory_mib.new](#fn-ec2_fleetlaunch_template_configoverrideaccelerator_total_memory_mibnew) constructor.
+  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-ec2_fleetlaunch_template_configoverridebaseline_ebs_bandwidth_mbpsnew) constructor.
+  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.memory_gib_per_vcpu.new](#fn-ec2_fleetlaunch_template_configoverridememory_gib_per_vcpunew) constructor.
+  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.memory_mib.new](#fn-ec2_fleetlaunch_template_configoverridememory_mibnew) constructor.
+  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.network_interface_count.new](#fn-ec2_fleetlaunch_template_configoverridenetwork_interface_countnew) constructor.
+  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.total_local_storage_gb.new](#fn-ec2_fleetlaunch_template_configoverridetotal_local_storage_gbnew) constructor.
+  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.vcpu_count.new](#fn-ec2_fleetlaunch_template_configoverridevcpu_countnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_requirements` sub block.
@@ -821,7 +821,7 @@ Terraform sub block.
   - `allocation_strategy` (`string`):  When `null`, the `allocation_strategy` field will be omitted from the resulting object.
   - `instance_interruption_behavior` (`string`):  When `null`, the `instance_interruption_behavior` field will be omitted from the resulting object.
   - `instance_pools_to_use_count` (`number`):  When `null`, the `instance_pools_to_use_count` field will be omitted from the resulting object.
-  - `maintenance_strategies` (`list[obj]`):  When `null`, the `maintenance_strategies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.spot_options.maintenance_strategies.new](#fn-maintenance_strategiesnew) constructor.
+  - `maintenance_strategies` (`list[obj]`):  When `null`, the `maintenance_strategies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.spot_options.maintenance_strategies.new](#fn-ec2_fleetmaintenance_strategiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spot_options` sub block.
@@ -844,7 +844,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `capacity_rebalance` (`list[obj]`):  When `null`, the `capacity_rebalance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.spot_options.maintenance_strategies.capacity_rebalance.new](#fn-spot_optionscapacity_rebalancenew) constructor.
+  - `capacity_rebalance` (`list[obj]`):  When `null`, the `capacity_rebalance` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.spot_options.maintenance_strategies.capacity_rebalance.new](#fn-ec2_fleetspot_optionscapacity_rebalancenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `maintenance_strategies` sub block.

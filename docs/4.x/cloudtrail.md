@@ -490,7 +490,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.field_selector.new](#fn-field_selectornew) constructor.
+  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.field_selector.new](#fn-cloudtrailfield_selectornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_event_selector` sub block.
@@ -545,7 +545,7 @@ Terraform sub block.
   - `exclude_management_event_sources` (`list`):  When `null`, the `exclude_management_event_sources` field will be omitted from the resulting object.
   - `include_management_events` (`bool`):  When `null`, the `include_management_events` field will be omitted from the resulting object.
   - `read_write_type` (`string`):  When `null`, the `read_write_type` field will be omitted from the resulting object.
-  - `data_resource` (`list[obj]`):  When `null`, the `data_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.data_resource.new](#fn-data_resourcenew) constructor.
+  - `data_resource` (`list[obj]`):  When `null`, the `data_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.data_resource.new](#fn-cloudtraildata_resourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `event_selector` sub block.

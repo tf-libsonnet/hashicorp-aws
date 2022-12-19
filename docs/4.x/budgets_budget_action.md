@@ -363,9 +363,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `iam_action_definition` (`list[obj]`):  When `null`, the `iam_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.iam_action_definition.new](#fn-iam_action_definitionnew) constructor.
-  - `scp_action_definition` (`list[obj]`):  When `null`, the `scp_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.scp_action_definition.new](#fn-scp_action_definitionnew) constructor.
-  - `ssm_action_definition` (`list[obj]`):  When `null`, the `ssm_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.ssm_action_definition.new](#fn-ssm_action_definitionnew) constructor.
+  - `iam_action_definition` (`list[obj]`):  When `null`, the `iam_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.iam_action_definition.new](#fn-budgets_budget_actioniam_action_definitionnew) constructor.
+  - `scp_action_definition` (`list[obj]`):  When `null`, the `scp_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.scp_action_definition.new](#fn-budgets_budget_actionscp_action_definitionnew) constructor.
+  - `ssm_action_definition` (`list[obj]`):  When `null`, the `ssm_action_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.ssm_action_definition.new](#fn-budgets_budget_actionssm_action_definitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `definition` sub block.

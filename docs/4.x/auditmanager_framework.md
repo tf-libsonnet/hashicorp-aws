@@ -212,7 +212,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`): 
-  - `controls` (`list[obj]`):  When `null`, the `controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.controls.new](#fn-controlsnew) constructor.
+  - `controls` (`list[obj]`):  When `null`, the `controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_framework.control_sets.controls.new](#fn-auditmanager_frameworkcontrolsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `control_sets` sub block.

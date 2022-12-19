@@ -17,7 +17,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         resource_arn: resource_arn,
       }),
     },
-    '#new':: d.fn(help='\n`aws.lex_bot_alias.conversation_logs.new` constructs a new object with attributes and blocks configured for the `conversation_logs`\nTerraform sub block.\n\n\n\n**Args**:\n  - `iam_role_arn` (`string`): \n  - `log_settings` (`list[obj]`):  When `null`, the `log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.log_settings.new](#fn-log_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `conversation_logs` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lex_bot_alias.conversation_logs.new` constructs a new object with attributes and blocks configured for the `conversation_logs`\nTerraform sub block.\n\n\n\n**Args**:\n  - `iam_role_arn` (`string`): \n  - `log_settings` (`list[obj]`):  When `null`, the `log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.log_settings.new](#fn-lex_bot_aliaslog_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `conversation_logs` sub block.\n', args=[]),
     new(
       iam_role_arn,
       log_settings=null

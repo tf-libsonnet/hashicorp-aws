@@ -274,7 +274,7 @@ Terraform sub block.
 
 **Args**:
   - `permissions` (`list`):  When `null`, the `permissions` field will be omitted from the resulting object.
-  - `principal` (`list[obj]`):  When `null`, the `principal` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.principal.new](#fn-principalnew) constructor.
+  - `principal` (`list[obj]`):  When `null`, the `principal` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.principal.new](#fn-glue_catalog_databaseprincipalnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `create_table_default_permission` sub block.

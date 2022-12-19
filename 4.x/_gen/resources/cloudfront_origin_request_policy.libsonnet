@@ -11,7 +11,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         items: items,
       }),
     },
-    '#new':: d.fn(help='\n`aws.cloudfront_origin_request_policy.cookies_config.new` constructs a new object with attributes and blocks configured for the `cookies_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cookie_behavior` (`string`): \n  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.cookies_config.cookies.new](#fn-cookiesnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `cookies_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudfront_origin_request_policy.cookies_config.new` constructs a new object with attributes and blocks configured for the `cookies_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cookie_behavior` (`string`): \n  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.cookies_config.cookies.new](#fn-cloudfront_origin_request_policycookiesnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `cookies_config` sub block.\n', args=[]),
     new(
       cookie_behavior,
       cookies=null
@@ -29,7 +29,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         items: items,
       }),
     },
-    '#new':: d.fn(help='\n`aws.cloudfront_origin_request_policy.headers_config.new` constructs a new object with attributes and blocks configured for the `headers_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `header_behavior` (`string`):  When `null`, the `header_behavior` field will be omitted from the resulting object.\n  - `headers` (`list[obj]`):  When `null`, the `headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.headers_config.headers.new](#fn-headersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `headers_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudfront_origin_request_policy.headers_config.new` constructs a new object with attributes and blocks configured for the `headers_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `header_behavior` (`string`):  When `null`, the `header_behavior` field will be omitted from the resulting object.\n  - `headers` (`list[obj]`):  When `null`, the `headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.headers_config.headers.new](#fn-cloudfront_origin_request_policyheadersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `headers_config` sub block.\n', args=[]),
     new(
       header_behavior=null,
       headers=null
@@ -74,7 +74,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     query_strings_config: query_strings_config,
   }),
   query_strings_config:: {
-    '#new':: d.fn(help='\n`aws.cloudfront_origin_request_policy.query_strings_config.new` constructs a new object with attributes and blocks configured for the `query_strings_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `query_string_behavior` (`string`): \n  - `query_strings` (`list[obj]`):  When `null`, the `query_strings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.query_strings_config.query_strings.new](#fn-query_stringsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `query_strings_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudfront_origin_request_policy.query_strings_config.new` constructs a new object with attributes and blocks configured for the `query_strings_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `query_string_behavior` (`string`): \n  - `query_strings` (`list[obj]`):  When `null`, the `query_strings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_origin_request_policy.query_strings_config.query_strings.new](#fn-cloudfront_origin_request_policyquery_stringsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `query_strings_config` sub block.\n', args=[]),
     new(
       query_string_behavior,
       query_strings=null

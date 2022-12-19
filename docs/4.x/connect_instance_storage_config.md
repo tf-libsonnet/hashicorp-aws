@@ -184,10 +184,10 @@ Terraform sub block.
 
 **Args**:
   - `storage_type` (`string`): 
-  - `kinesis_firehose_config` (`list[obj]`):  When `null`, the `kinesis_firehose_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_firehose_config.new](#fn-kinesis_firehose_confignew) constructor.
-  - `kinesis_stream_config` (`list[obj]`):  When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_stream_config.new](#fn-kinesis_stream_confignew) constructor.
-  - `kinesis_video_stream_config` (`list[obj]`):  When `null`, the `kinesis_video_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_video_stream_config.new](#fn-kinesis_video_stream_confignew) constructor.
-  - `s3_config` (`list[obj]`):  When `null`, the `s3_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.s3_config.new](#fn-s3_confignew) constructor.
+  - `kinesis_firehose_config` (`list[obj]`):  When `null`, the `kinesis_firehose_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_firehose_config.new](#fn-connect_instance_storage_configkinesis_firehose_confignew) constructor.
+  - `kinesis_stream_config` (`list[obj]`):  When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_stream_config.new](#fn-connect_instance_storage_configkinesis_stream_confignew) constructor.
+  - `kinesis_video_stream_config` (`list[obj]`):  When `null`, the `kinesis_video_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_video_stream_config.new](#fn-connect_instance_storage_configkinesis_video_stream_confignew) constructor.
+  - `s3_config` (`list[obj]`):  When `null`, the `s3_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.s3_config.new](#fn-connect_instance_storage_configs3_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_config` sub block.
@@ -258,7 +258,7 @@ Terraform sub block.
 **Args**:
   - `prefix` (`string`): 
   - `retention_period_hours` (`number`): 
-  - `encryption_config` (`list[obj]`):  When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_video_stream_config.encryption_config.new](#fn-storage_configencryption_confignew) constructor.
+  - `encryption_config` (`list[obj]`):  When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.kinesis_video_stream_config.encryption_config.new](#fn-connect_instance_storage_configstorage_configencryption_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kinesis_video_stream_config` sub block.
@@ -307,7 +307,7 @@ Terraform sub block.
 **Args**:
   - `bucket_name` (`string`): 
   - `bucket_prefix` (`string`): 
-  - `encryption_config` (`list[obj]`):  When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.s3_config.encryption_config.new](#fn-storage_configencryption_confignew) constructor.
+  - `encryption_config` (`list[obj]`):  When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_instance_storage_config.storage_config.s3_config.encryption_config.new](#fn-connect_instance_storage_configstorage_configencryption_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3_config` sub block.

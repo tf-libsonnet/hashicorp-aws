@@ -279,10 +279,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `string_equals` (`list[obj]`):  When `null`, the `string_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_equals.new](#fn-string_equalsnew) constructor.
-  - `string_like` (`list[obj]`):  When `null`, the `string_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_like.new](#fn-string_likenew) constructor.
-  - `string_not_equals` (`list[obj]`):  When `null`, the `string_not_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_equals.new](#fn-string_not_equalsnew) constructor.
-  - `string_not_like` (`list[obj]`):  When `null`, the `string_not_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_like.new](#fn-string_not_likenew) constructor.
+  - `string_equals` (`list[obj]`):  When `null`, the `string_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_equals.new](#fn-backup_selectionstring_equalsnew) constructor.
+  - `string_like` (`list[obj]`):  When `null`, the `string_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_like.new](#fn-backup_selectionstring_likenew) constructor.
+  - `string_not_equals` (`list[obj]`):  When `null`, the `string_not_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_equals.new](#fn-backup_selectionstring_not_equalsnew) constructor.
+  - `string_not_like` (`list[obj]`):  When `null`, the `string_not_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_like.new](#fn-backup_selectionstring_not_likenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.

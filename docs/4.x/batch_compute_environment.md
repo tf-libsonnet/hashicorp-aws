@@ -327,8 +327,8 @@ Terraform sub block.
   - `subnets` (`list`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `type` (`string`): 
-  - `ec2_configuration` (`list[obj]`):  When `null`, the `ec2_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.ec2_configuration.new](#fn-ec2_configurationnew) constructor.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.launch_template.new](#fn-launch_templatenew) constructor.
+  - `ec2_configuration` (`list[obj]`):  When `null`, the `ec2_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.ec2_configuration.new](#fn-batch_compute_environmentec2_configurationnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.launch_template.new](#fn-batch_compute_environmentlaunch_templatenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `compute_resources` sub block.

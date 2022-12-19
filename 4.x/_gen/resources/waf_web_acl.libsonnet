@@ -11,7 +11,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   logging_configuration:: {
-    '#new':: d.fn(help='\n`aws.waf_web_acl.logging_configuration.new` constructs a new object with attributes and blocks configured for the `logging_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_destination` (`string`): \n  - `redacted_fields` (`list[obj]`):  When `null`, the `redacted_fields` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.logging_configuration.redacted_fields.new](#fn-redacted_fieldsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `logging_configuration` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.waf_web_acl.logging_configuration.new` constructs a new object with attributes and blocks configured for the `logging_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_destination` (`string`): \n  - `redacted_fields` (`list[obj]`):  When `null`, the `redacted_fields` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.logging_configuration.redacted_fields.new](#fn-waf_web_aclredacted_fieldsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `logging_configuration` sub block.\n', args=[]),
     new(
       log_destination,
       redacted_fields=null
@@ -30,7 +30,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           type: type,
         }),
       },
-      '#new':: d.fn(help='\n`aws.waf_web_acl.logging_configuration.redacted_fields.new` constructs a new object with attributes and blocks configured for the `redacted_fields`\nTerraform sub block.\n\n\n\n**Args**:\n  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.logging_configuration.redacted_fields.field_to_match.new](#fn-logging_configurationfield_to_matchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `redacted_fields` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.waf_web_acl.logging_configuration.redacted_fields.new` constructs a new object with attributes and blocks configured for the `redacted_fields`\nTerraform sub block.\n\n\n\n**Args**:\n  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.logging_configuration.redacted_fields.field_to_match.new](#fn-waf_web_acllogging_configurationfield_to_matchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `redacted_fields` sub block.\n', args=[]),
       new(
         field_to_match=null
       ):: std.prune(a={
@@ -90,7 +90,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.waf_web_acl.rules.new` constructs a new object with attributes and blocks configured for the `rules`\nTerraform sub block.\n\n\n\n**Args**:\n  - `priority` (`number`): \n  - `rule_id` (`string`): \n  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.\n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.rules.action.new](#fn-actionnew) constructor.\n  - `override_action` (`list[obj]`):  When `null`, the `override_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.rules.override_action.new](#fn-override_actionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rules` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.waf_web_acl.rules.new` constructs a new object with attributes and blocks configured for the `rules`\nTerraform sub block.\n\n\n\n**Args**:\n  - `priority` (`number`): \n  - `rule_id` (`string`): \n  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.\n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.rules.action.new](#fn-waf_web_aclactionnew) constructor.\n  - `override_action` (`list[obj]`):  When `null`, the `override_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_web_acl.rules.override_action.new](#fn-waf_web_acloverride_actionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rules` sub block.\n', args=[]),
     new(
       priority,
       rule_id,

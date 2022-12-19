@@ -238,9 +238,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.cloudwatch_logs.new](#fn-cloudwatch_logsnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.firehose.new](#fn-firehosenew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.s3.new](#fn-s3new) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.cloudwatch_logs.new](#fn-ivschat_logging_configurationcloudwatch_logsnew) constructor.
+  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.firehose.new](#fn-ivschat_logging_configurationfirehosenew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_logging_configuration.destination_configuration.s3.new](#fn-ivschat_logging_configurations3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_configuration` sub block.

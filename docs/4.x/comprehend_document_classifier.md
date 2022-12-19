@@ -457,7 +457,7 @@ Terraform sub block.
   - `label_delimiter` (`string`):  When `null`, the `label_delimiter` field will be omitted from the resulting object.
   - `s3_uri` (`string`):  When `null`, the `s3_uri` field will be omitted from the resulting object.
   - `test_s3_uri` (`string`):  When `null`, the `test_s3_uri` field will be omitted from the resulting object.
-  - `augmented_manifests` (`list[obj]`):  When `null`, the `augmented_manifests` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.augmented_manifests.new](#fn-augmented_manifestsnew) constructor.
+  - `augmented_manifests` (`list[obj]`):  When `null`, the `augmented_manifests` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.augmented_manifests.new](#fn-comprehend_document_classifieraugmented_manifestsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `input_data_config` sub block.

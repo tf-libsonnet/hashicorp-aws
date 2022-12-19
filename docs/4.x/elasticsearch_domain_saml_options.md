@@ -202,7 +202,7 @@ Terraform sub block.
   - `roles_key` (`string`):  When `null`, the `roles_key` field will be omitted from the resulting object.
   - `session_timeout_minutes` (`number`):  When `null`, the `session_timeout_minutes` field will be omitted from the resulting object.
   - `subject_key` (`string`):  When `null`, the `subject_key` field will be omitted from the resulting object.
-  - `idp` (`list[obj]`):  When `null`, the `idp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.idp.new](#fn-idpnew) constructor.
+  - `idp` (`list[obj]`):  When `null`, the `idp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.idp.new](#fn-elasticsearch_domain_saml_optionsidpnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `saml_options` sub block.

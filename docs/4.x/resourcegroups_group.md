@@ -297,7 +297,7 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`): 
-  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.resourcegroups_group.configuration.parameters.new](#fn-parametersnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.resourcegroups_group.configuration.parameters.new](#fn-resourcegroups_groupparametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.

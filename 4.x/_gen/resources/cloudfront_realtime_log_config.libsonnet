@@ -13,7 +13,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         stream_arn: stream_arn,
       }),
     },
-    '#new':: d.fn(help='\n`aws.cloudfront_realtime_log_config.endpoint.new` constructs a new object with attributes and blocks configured for the `endpoint`\nTerraform sub block.\n\n\n\n**Args**:\n  - `stream_type` (`string`): \n  - `kinesis_stream_config` (`list[obj]`):  When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.kinesis_stream_config.new](#fn-kinesis_stream_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `endpoint` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudfront_realtime_log_config.endpoint.new` constructs a new object with attributes and blocks configured for the `endpoint`\nTerraform sub block.\n\n\n\n**Args**:\n  - `stream_type` (`string`): \n  - `kinesis_stream_config` (`list[obj]`):  When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.kinesis_stream_config.new](#fn-cloudfront_realtime_log_configkinesis_stream_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `endpoint` sub block.\n', args=[]),
     new(
       stream_type,
       kinesis_stream_config=null

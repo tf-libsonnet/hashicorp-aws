@@ -22,7 +22,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   },
   initial_capacity:: {
     initial_capacity_config:: {
-      '#new':: d.fn(help='\n`aws.emrserverless_application.initial_capacity.initial_capacity_config.new` constructs a new object with attributes and blocks configured for the `initial_capacity_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `worker_count` (`number`): \n  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.worker_configuration.new](#fn-initial_capacityworker_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `initial_capacity_config` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.emrserverless_application.initial_capacity.initial_capacity_config.new` constructs a new object with attributes and blocks configured for the `initial_capacity_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `worker_count` (`number`): \n  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.worker_configuration.new](#fn-emrserverless_applicationinitial_capacityworker_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `initial_capacity_config` sub block.\n', args=[]),
       new(
         worker_count,
         worker_configuration=null
@@ -43,7 +43,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
     },
-    '#new':: d.fn(help='\n`aws.emrserverless_application.initial_capacity.new` constructs a new object with attributes and blocks configured for the `initial_capacity`\nTerraform sub block.\n\n\n\n**Args**:\n  - `initial_capacity_type` (`string`): \n  - `initial_capacity_config` (`list[obj]`):  When `null`, the `initial_capacity_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.new](#fn-initial_capacity_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `initial_capacity` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.emrserverless_application.initial_capacity.new` constructs a new object with attributes and blocks configured for the `initial_capacity`\nTerraform sub block.\n\n\n\n**Args**:\n  - `initial_capacity_type` (`string`): \n  - `initial_capacity_config` (`list[obj]`):  When `null`, the `initial_capacity_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.new](#fn-emrserverless_applicationinitial_capacity_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `initial_capacity` sub block.\n', args=[]),
     new(
       initial_capacity_type,
       initial_capacity_config=null

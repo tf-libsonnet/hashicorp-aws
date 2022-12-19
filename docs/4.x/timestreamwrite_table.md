@@ -257,7 +257,7 @@ Terraform sub block.
 
 **Args**:
   - `enable_magnetic_store_writes` (`bool`):  When `null`, the `enable_magnetic_store_writes` field will be omitted from the resulting object.
-  - `magnetic_store_rejected_data_location` (`list[obj]`):  When `null`, the `magnetic_store_rejected_data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.new](#fn-magnetic_store_rejected_data_locationnew) constructor.
+  - `magnetic_store_rejected_data_location` (`list[obj]`):  When `null`, the `magnetic_store_rejected_data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.new](#fn-timestreamwrite_tablemagnetic_store_rejected_data_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `magnetic_store_write_properties` sub block.
@@ -280,7 +280,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_configuration` (`list[obj]`):  When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.s3_configuration.new](#fn-magnetic_store_write_propertiess3_configurationnew) constructor.
+  - `s3_configuration` (`list[obj]`):  When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.s3_configuration.new](#fn-timestreamwrite_tablemagnetic_store_write_propertiess3_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `magnetic_store_rejected_data_location` sub block.

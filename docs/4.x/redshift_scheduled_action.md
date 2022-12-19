@@ -272,9 +272,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `pause_cluster` (`list[obj]`):  When `null`, the `pause_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.pause_cluster.new](#fn-pause_clusternew) constructor.
-  - `resize_cluster` (`list[obj]`):  When `null`, the `resize_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resize_cluster.new](#fn-resize_clusternew) constructor.
-  - `resume_cluster` (`list[obj]`):  When `null`, the `resume_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resume_cluster.new](#fn-resume_clusternew) constructor.
+  - `pause_cluster` (`list[obj]`):  When `null`, the `pause_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.pause_cluster.new](#fn-redshift_scheduled_actionpause_clusternew) constructor.
+  - `resize_cluster` (`list[obj]`):  When `null`, the `resize_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resize_cluster.new](#fn-redshift_scheduled_actionresize_clusternew) constructor.
+  - `resume_cluster` (`list[obj]`):  When `null`, the `resume_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resume_cluster.new](#fn-redshift_scheduled_actionresume_clusternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_action` sub block.

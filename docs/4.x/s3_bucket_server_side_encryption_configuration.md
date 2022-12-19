@@ -174,7 +174,7 @@ Terraform sub block.
 
 **Args**:
   - `bucket_key_enabled` (`bool`):  When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
-  - `apply_server_side_encryption_by_default` (`list[obj]`):  When `null`, the `apply_server_side_encryption_by_default` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.apply_server_side_encryption_by_default.new](#fn-apply_server_side_encryption_by_defaultnew) constructor.
+  - `apply_server_side_encryption_by_default` (`list[obj]`):  When `null`, the `apply_server_side_encryption_by_default` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_server_side_encryption_configuration.rule.apply_server_side_encryption_by_default.new](#fn-s3_bucket_server_side_encryption_configurationapply_server_side_encryption_by_defaultnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

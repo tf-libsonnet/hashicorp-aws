@@ -277,12 +277,12 @@ Terraform sub block.
 **Args**:
   - `execution_role` (`string`): 
   - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `canvas_app_settings` (`list[obj]`):  When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.new](#fn-canvas_app_settingsnew) constructor.
-  - `jupyter_server_app_settings` (`list[obj]`):  When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.new](#fn-jupyter_server_app_settingsnew) constructor.
-  - `kernel_gateway_app_settings` (`list[obj]`):  When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.new](#fn-kernel_gateway_app_settingsnew) constructor.
-  - `r_session_app_settings` (`list[obj]`):  When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.new](#fn-r_session_app_settingsnew) constructor.
-  - `sharing_settings` (`list[obj]`):  When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.sharing_settings.new](#fn-sharing_settingsnew) constructor.
-  - `tensor_board_app_settings` (`list[obj]`):  When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.tensor_board_app_settings.new](#fn-tensor_board_app_settingsnew) constructor.
+  - `canvas_app_settings` (`list[obj]`):  When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.new](#fn-sagemaker_user_profilecanvas_app_settingsnew) constructor.
+  - `jupyter_server_app_settings` (`list[obj]`):  When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.new](#fn-sagemaker_user_profilejupyter_server_app_settingsnew) constructor.
+  - `kernel_gateway_app_settings` (`list[obj]`):  When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.new](#fn-sagemaker_user_profilekernel_gateway_app_settingsnew) constructor.
+  - `r_session_app_settings` (`list[obj]`):  When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.new](#fn-sagemaker_user_profiler_session_app_settingsnew) constructor.
+  - `sharing_settings` (`list[obj]`):  When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.sharing_settings.new](#fn-sagemaker_user_profilesharing_settingsnew) constructor.
+  - `tensor_board_app_settings` (`list[obj]`):  When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.tensor_board_app_settings.new](#fn-sagemaker_user_profiletensor_board_app_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `user_settings` sub block.
@@ -305,7 +305,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `time_series_forecasting_settings` (`list[obj]`):  When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-user_settingstime_series_forecasting_settingsnew) constructor.
+  - `time_series_forecasting_settings` (`list[obj]`):  When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-sagemaker_user_profileuser_settingstime_series_forecasting_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `canvas_app_settings` sub block.
@@ -353,8 +353,8 @@ Terraform sub block.
 
 **Args**:
   - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.code_repository.new](#fn-user_settingscode_repositorynew) constructor.
-  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-user_settingsdefault_resource_specnew) constructor.
+  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.code_repository.new](#fn-sagemaker_user_profileuser_settingscode_repositorynew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-sagemaker_user_profileuser_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `jupyter_server_app_settings` sub block.
@@ -427,8 +427,8 @@ Terraform sub block.
 
 **Args**:
   - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.custom_image.new](#fn-user_settingscustom_imagenew) constructor.
-  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-user_settingsdefault_resource_specnew) constructor.
+  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.custom_image.new](#fn-sagemaker_user_profileuser_settingscustom_imagenew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-sagemaker_user_profileuser_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kernel_gateway_app_settings` sub block.
@@ -502,8 +502,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.custom_image.new](#fn-user_settingscustom_imagenew) constructor.
-  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.default_resource_spec.new](#fn-user_settingsdefault_resource_specnew) constructor.
+  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.custom_image.new](#fn-sagemaker_user_profileuser_settingscustom_imagenew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.default_resource_spec.new](#fn-sagemaker_user_profileuser_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `r_session_app_settings` sub block.
@@ -602,7 +602,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.tensor_board_app_settings.default_resource_spec.new](#fn-user_settingsdefault_resource_specnew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.tensor_board_app_settings.default_resource_spec.new](#fn-sagemaker_user_profileuser_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tensor_board_app_settings` sub block.

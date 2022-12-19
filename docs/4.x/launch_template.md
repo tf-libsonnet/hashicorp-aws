@@ -1293,7 +1293,7 @@ Terraform sub block.
   - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.
   - `no_device` (`string`):  When `null`, the `no_device` field will be omitted from the resulting object.
   - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
-  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.block_device_mappings.ebs.new](#fn-ebsnew) constructor.
+  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.block_device_mappings.ebs.new](#fn-launch_templateebsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `block_device_mappings` sub block.
@@ -1347,7 +1347,7 @@ Terraform sub block.
 
 **Args**:
   - `capacity_reservation_preference` (`string`):  When `null`, the `capacity_reservation_preference` field will be omitted from the resulting object.
-  - `capacity_reservation_target` (`list[obj]`):  When `null`, the `capacity_reservation_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.capacity_reservation_specification.capacity_reservation_target.new](#fn-capacity_reservation_targetnew) constructor.
+  - `capacity_reservation_target` (`list[obj]`):  When `null`, the `capacity_reservation_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.capacity_reservation_specification.capacity_reservation_target.new](#fn-launch_templatecapacity_reservation_targetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `capacity_reservation_specification` sub block.
@@ -1558,7 +1558,7 @@ Terraform sub block.
 
 **Args**:
   - `market_type` (`string`):  When `null`, the `market_type` field will be omitted from the resulting object.
-  - `spot_options` (`list[obj]`):  When `null`, the `spot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_market_options.spot_options.new](#fn-spot_optionsnew) constructor.
+  - `spot_options` (`list[obj]`):  When `null`, the `spot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_market_options.spot_options.new](#fn-launch_templatespot_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_market_options` sub block.
@@ -1621,14 +1621,14 @@ Terraform sub block.
   - `on_demand_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `on_demand_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
   - `require_hibernate_support` (`bool`):  When `null`, the `require_hibernate_support` field will be omitted from the resulting object.
   - `spot_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `spot_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
-  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.accelerator_count.new](#fn-accelerator_countnew) constructor.
-  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.accelerator_total_memory_mib.new](#fn-accelerator_total_memory_mibnew) constructor.
-  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-baseline_ebs_bandwidth_mbpsnew) constructor.
-  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.memory_gib_per_vcpu.new](#fn-memory_gib_per_vcpunew) constructor.
-  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.memory_mib.new](#fn-memory_mibnew) constructor.
-  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.network_interface_count.new](#fn-network_interface_countnew) constructor.
-  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.total_local_storage_gb.new](#fn-total_local_storage_gbnew) constructor.
-  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.vcpu_count.new](#fn-vcpu_countnew) constructor.
+  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.accelerator_count.new](#fn-launch_templateaccelerator_countnew) constructor.
+  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.accelerator_total_memory_mib.new](#fn-launch_templateaccelerator_total_memory_mibnew) constructor.
+  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-launch_templatebaseline_ebs_bandwidth_mbpsnew) constructor.
+  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.memory_gib_per_vcpu.new](#fn-launch_templatememory_gib_per_vcpunew) constructor.
+  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.memory_mib.new](#fn-launch_templatememory_mibnew) constructor.
+  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.network_interface_count.new](#fn-launch_templatenetwork_interface_countnew) constructor.
+  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.total_local_storage_gb.new](#fn-launch_templatetotal_local_storage_gbnew) constructor.
+  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.vcpu_count.new](#fn-launch_templatevcpu_countnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_requirements` sub block.

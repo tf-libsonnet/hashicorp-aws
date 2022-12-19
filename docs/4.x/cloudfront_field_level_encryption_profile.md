@@ -175,7 +175,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new](#fn-itemsnew) constructor.
+  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.new](#fn-cloudfront_field_level_encryption_profileitemsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_entities` sub block.
@@ -200,7 +200,7 @@ Terraform sub block.
 **Args**:
   - `provider_id` (`string`): 
   - `public_key_id` (`string`): 
-  - `field_patterns` (`list[obj]`):  When `null`, the `field_patterns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.field_patterns.new](#fn-encryption_entitiesfield_patternsnew) constructor.
+  - `field_patterns` (`list[obj]`):  When `null`, the `field_patterns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_profile.encryption_entities.items.field_patterns.new](#fn-cloudfront_field_level_encryption_profileencryption_entitiesfield_patternsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `items` sub block.

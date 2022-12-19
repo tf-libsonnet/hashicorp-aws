@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='synthetics_canary', url='', help='`synthetics_canary` represents the `aws_synthetics_canary` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   artifact_config:: {
-    '#new':: d.fn(help='\n`aws.synthetics_canary.artifact_config.new` constructs a new object with attributes and blocks configured for the `artifact_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-s3_encryptionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `artifact_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.synthetics_canary.artifact_config.new` constructs a new object with attributes and blocks configured for the `artifact_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-synthetics_canarys3_encryptionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `artifact_config` sub block.\n', args=[]),
     new(
       s3_encryption=null
     ):: std.prune(a={

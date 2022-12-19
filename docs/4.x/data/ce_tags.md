@@ -287,12 +287,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.new](#fn-andnew) constructor.
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.cost_category.new](#fn-cost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.dimension.new](#fn-dimensionnew) constructor.
-  - `not` (`list[obj]`):  When `null`, the `not` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.new](#fn-notnew) constructor.
-  - `or` (`list[obj]`):  When `null`, the `or` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.new](#fn-ornew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.tags.new](#fn-tagsnew) constructor.
+  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.new](#fn-ce_tagsandnew) constructor.
+  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.cost_category.new](#fn-ce_tagscost_categorynew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.dimension.new](#fn-ce_tagsdimensionnew) constructor.
+  - `not` (`list[obj]`):  When `null`, the `not` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.new](#fn-ce_tagsnotnew) constructor.
+  - `or` (`list[obj]`):  When `null`, the `or` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.new](#fn-ce_tagsornew) constructor.
+  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.tags.new](#fn-ce_tagstagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -315,9 +315,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.cost_category.new](#fn-filtercost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.dimension.new](#fn-filterdimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.tags.new](#fn-filtertagsnew) constructor.
+  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.cost_category.new](#fn-ce_tagsfiltercost_categorynew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.dimension.new](#fn-ce_tagsfilterdimensionnew) constructor.
+  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.and.tags.new](#fn-ce_tagsfiltertagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -465,9 +465,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.cost_category.new](#fn-filtercost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.dimension.new](#fn-filterdimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.tags.new](#fn-filtertagsnew) constructor.
+  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.cost_category.new](#fn-ce_tagsfiltercost_categorynew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.dimension.new](#fn-ce_tagsfilterdimensionnew) constructor.
+  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.not.tags.new](#fn-ce_tagsfiltertagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `not` sub block.
@@ -565,9 +565,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.cost_category.new](#fn-filtercost_categorynew) constructor.
-  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.dimension.new](#fn-filterdimensionnew) constructor.
-  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.tags.new](#fn-filtertagsnew) constructor.
+  - `cost_category` (`list[obj]`):  When `null`, the `cost_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.cost_category.new](#fn-ce_tagsfiltercost_categorynew) constructor.
+  - `dimension` (`list[obj]`):  When `null`, the `dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.dimension.new](#fn-ce_tagsfilterdimensionnew) constructor.
+  - `tags` (`list[obj]`):  When `null`, the `tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_tags.filter.or.tags.new](#fn-ce_tagsfiltertagsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `or` sub block.

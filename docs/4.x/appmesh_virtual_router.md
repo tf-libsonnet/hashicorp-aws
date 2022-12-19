@@ -232,7 +232,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `listener` (`list[obj]`):  When `null`, the `listener` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_router.spec.listener.new](#fn-listenernew) constructor.
+  - `listener` (`list[obj]`):  When `null`, the `listener` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_router.spec.listener.new](#fn-appmesh_virtual_routerlistenernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.
@@ -255,7 +255,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `port_mapping` (`list[obj]`):  When `null`, the `port_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_router.spec.listener.port_mapping.new](#fn-specport_mappingnew) constructor.
+  - `port_mapping` (`list[obj]`):  When `null`, the `port_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_router.spec.listener.port_mapping.new](#fn-appmesh_virtual_routerspecport_mappingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `listener` sub block.

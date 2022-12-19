@@ -193,7 +193,7 @@ Terraform sub block.
 
 **Args**:
   - `stream_type` (`string`): 
-  - `kinesis_stream_config` (`list[obj]`):  When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.kinesis_stream_config.new](#fn-kinesis_stream_confignew) constructor.
+  - `kinesis_stream_config` (`list[obj]`):  When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.kinesis_stream_config.new](#fn-cloudfront_realtime_log_configkinesis_stream_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `endpoint` sub block.

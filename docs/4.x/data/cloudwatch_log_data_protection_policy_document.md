@@ -208,7 +208,7 @@ Terraform sub block.
 **Args**:
   - `data_identifiers` (`list`): 
   - `sid` (`string`):  When `null`, the `sid` field will be omitted from the resulting object.
-  - `operation` (`list[obj]`):  When `null`, the `operation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.new](#fn-operationnew) constructor.
+  - `operation` (`list[obj]`):  When `null`, the `operation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.new](#fn-cloudwatch_log_data_protection_policy_documentoperationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `statement` sub block.
@@ -231,8 +231,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `audit` (`list[obj]`):  When `null`, the `audit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.new](#fn-statementauditnew) constructor.
-  - `deidentify` (`list[obj]`):  When `null`, the `deidentify` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.deidentify.new](#fn-statementdeidentifynew) constructor.
+  - `audit` (`list[obj]`):  When `null`, the `audit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.new](#fn-cloudwatch_log_data_protection_policy_documentstatementauditnew) constructor.
+  - `deidentify` (`list[obj]`):  When `null`, the `deidentify` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.deidentify.new](#fn-cloudwatch_log_data_protection_policy_documentstatementdeidentifynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `operation` sub block.
@@ -255,7 +255,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `findings_destination` (`list[obj]`):  When `null`, the `findings_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.new](#fn-statementoperationfindings_destinationnew) constructor.
+  - `findings_destination` (`list[obj]`):  When `null`, the `findings_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.new](#fn-cloudwatch_log_data_protection_policy_documentstatementoperationfindings_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `audit` sub block.
@@ -278,9 +278,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.cloudwatch_logs.new](#fn-statementoperationauditcloudwatch_logsnew) constructor.
-  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.firehose.new](#fn-statementoperationauditfirehosenew) constructor.
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.s3.new](#fn-statementoperationaudits3new) constructor.
+  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.cloudwatch_logs.new](#fn-cloudwatch_log_data_protection_policy_documentstatementoperationauditcloudwatch_logsnew) constructor.
+  - `firehose` (`list[obj]`):  When `null`, the `firehose` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.firehose.new](#fn-cloudwatch_log_data_protection_policy_documentstatementoperationauditfirehosenew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.audit.findings_destination.s3.new](#fn-cloudwatch_log_data_protection_policy_documentstatementoperationaudits3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `findings_destination` sub block.
@@ -372,7 +372,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `mask_config` (`list[obj]`):  When `null`, the `mask_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.deidentify.mask_config.new](#fn-statementoperationmask_confignew) constructor.
+  - `mask_config` (`list[obj]`):  When `null`, the `mask_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_data_protection_policy_document.statement.operation.deidentify.mask_config.new](#fn-cloudwatch_log_data_protection_policy_documentstatementoperationmask_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `deidentify` sub block.

@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='config_remediation_configuration', url='', help='`config_remediation_configuration` represents the `aws_config_remediation_configuration` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   execution_controls:: {
-    '#new':: d.fn(help='\n`aws.config_remediation_configuration.execution_controls.new` constructs a new object with attributes and blocks configured for the `execution_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ssm_controls` (`list[obj]`):  When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-ssm_controlsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `execution_controls` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.config_remediation_configuration.execution_controls.new` constructs a new object with attributes and blocks configured for the `execution_controls`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ssm_controls` (`list[obj]`):  When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-config_remediation_configurationssm_controlsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `execution_controls` sub block.\n', args=[]),
     new(
       ssm_controls=null
     ):: std.prune(a={

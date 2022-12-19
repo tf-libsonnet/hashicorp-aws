@@ -196,8 +196,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-grantnew) constructor.
-  - `owner` (`list[obj]`):  When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-ownernew) constructor.
+  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-s3_bucket_aclgrantnew) constructor.
+  - `owner` (`list[obj]`):  When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-s3_bucket_aclownernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `access_control_policy` sub block.
@@ -221,7 +221,7 @@ Terraform sub block.
 
 **Args**:
   - `permission` (`string`): 
-  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-access_control_policygranteenew) constructor.
+  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-s3_bucket_aclaccess_control_policygranteenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `grant` sub block.

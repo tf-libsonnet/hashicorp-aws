@@ -62,7 +62,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         permissions: permissions,
       }),
     },
-    '#new':: d.fn(help='\n`aws.efs_access_point.root_directory.new` constructs a new object with attributes and blocks configured for the `root_directory`\nTerraform sub block.\n\n\n\n**Args**:\n  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.\n  - `creation_info` (`list[obj]`):  When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-creation_infonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `root_directory` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.efs_access_point.root_directory.new` constructs a new object with attributes and blocks configured for the `root_directory`\nTerraform sub block.\n\n\n\n**Args**:\n  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.\n  - `creation_info` (`list[obj]`):  When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-efs_access_pointcreation_infonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `root_directory` sub block.\n', args=[]),
     new(
       creation_info=null,
       path=null

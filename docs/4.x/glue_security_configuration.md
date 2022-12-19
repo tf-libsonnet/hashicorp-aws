@@ -158,9 +158,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_encryption` (`list[obj]`):  When `null`, the `cloudwatch_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.cloudwatch_encryption.new](#fn-cloudwatch_encryptionnew) constructor.
-  - `job_bookmarks_encryption` (`list[obj]`):  When `null`, the `job_bookmarks_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.job_bookmarks_encryption.new](#fn-job_bookmarks_encryptionnew) constructor.
-  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.s3_encryption.new](#fn-s3_encryptionnew) constructor.
+  - `cloudwatch_encryption` (`list[obj]`):  When `null`, the `cloudwatch_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.cloudwatch_encryption.new](#fn-glue_security_configurationcloudwatch_encryptionnew) constructor.
+  - `job_bookmarks_encryption` (`list[obj]`):  When `null`, the `job_bookmarks_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.job_bookmarks_encryption.new](#fn-glue_security_configurationjob_bookmarks_encryptionnew) constructor.
+  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.s3_encryption.new](#fn-glue_security_configurations3_encryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.

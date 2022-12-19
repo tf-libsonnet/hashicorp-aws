@@ -155,7 +155,7 @@ Terraform sub block.
 
 **Args**:
   - `scan_frequency` (`string`): 
-  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.repository_filter.new](#fn-repository_filternew) constructor.
+  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.repository_filter.new](#fn-ecr_registry_scanning_configurationrepository_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.

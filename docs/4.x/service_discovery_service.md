@@ -337,7 +337,7 @@ Terraform sub block.
 **Args**:
   - `namespace_id` (`string`): 
   - `routing_policy` (`string`):  When `null`, the `routing_policy` field will be omitted from the resulting object.
-  - `dns_records` (`list[obj]`):  When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-dns_recordsnew) constructor.
+  - `dns_records` (`list[obj]`):  When `null`, the `dns_records` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.dns_records.new](#fn-service_discovery_servicedns_recordsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dns_config` sub block.

@@ -734,9 +734,9 @@ Terraform sub block.
   - `trusted_key_groups` (`list`):  When `null`, the `trusted_key_groups` field will be omitted from the resulting object.
   - `trusted_signers` (`list`):  When `null`, the `trusted_signers` field will be omitted from the resulting object.
   - `viewer_protocol_policy` (`string`): 
-  - `forwarded_values` (`list[obj]`):  When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.new](#fn-forwarded_valuesnew) constructor.
-  - `function_association` (`list[obj]`):  When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.function_association.new](#fn-function_associationnew) constructor.
-  - `lambda_function_association` (`list[obj]`):  When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.lambda_function_association.new](#fn-lambda_function_associationnew) constructor.
+  - `forwarded_values` (`list[obj]`):  When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.new](#fn-cloudfront_distributionforwarded_valuesnew) constructor.
+  - `function_association` (`list[obj]`):  When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.function_association.new](#fn-cloudfront_distributionfunction_associationnew) constructor.
+  - `lambda_function_association` (`list[obj]`):  When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.lambda_function_association.new](#fn-cloudfront_distributionlambda_function_associationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `default_cache_behavior` sub block.
@@ -762,7 +762,7 @@ Terraform sub block.
   - `headers` (`list`):  When `null`, the `headers` field will be omitted from the resulting object.
   - `query_string` (`bool`): 
   - `query_string_cache_keys` (`list`):  When `null`, the `query_string_cache_keys` field will be omitted from the resulting object.
-  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.cookies.new](#fn-default_cache_behaviorcookiesnew) constructor.
+  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.cookies.new](#fn-cloudfront_distributiondefault_cache_behaviorcookiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `forwarded_values` sub block.
@@ -900,9 +900,9 @@ Terraform sub block.
   - `trusted_key_groups` (`list`):  When `null`, the `trusted_key_groups` field will be omitted from the resulting object.
   - `trusted_signers` (`list`):  When `null`, the `trusted_signers` field will be omitted from the resulting object.
   - `viewer_protocol_policy` (`string`): 
-  - `forwarded_values` (`list[obj]`):  When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.new](#fn-forwarded_valuesnew) constructor.
-  - `function_association` (`list[obj]`):  When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.function_association.new](#fn-function_associationnew) constructor.
-  - `lambda_function_association` (`list[obj]`):  When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.lambda_function_association.new](#fn-lambda_function_associationnew) constructor.
+  - `forwarded_values` (`list[obj]`):  When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.new](#fn-cloudfront_distributionforwarded_valuesnew) constructor.
+  - `function_association` (`list[obj]`):  When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.function_association.new](#fn-cloudfront_distributionfunction_associationnew) constructor.
+  - `lambda_function_association` (`list[obj]`):  When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.lambda_function_association.new](#fn-cloudfront_distributionlambda_function_associationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ordered_cache_behavior` sub block.
@@ -928,7 +928,7 @@ Terraform sub block.
   - `headers` (`list`):  When `null`, the `headers` field will be omitted from the resulting object.
   - `query_string` (`bool`): 
   - `query_string_cache_keys` (`list`):  When `null`, the `query_string_cache_keys` field will be omitted from the resulting object.
-  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.cookies.new](#fn-ordered_cache_behaviorcookiesnew) constructor.
+  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.cookies.new](#fn-cloudfront_distributionordered_cache_behaviorcookiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `forwarded_values` sub block.
@@ -1030,10 +1030,10 @@ Terraform sub block.
   - `origin_access_control_id` (`string`):  When `null`, the `origin_access_control_id` field will be omitted from the resulting object.
   - `origin_id` (`string`): 
   - `origin_path` (`string`):  When `null`, the `origin_path` field will be omitted from the resulting object.
-  - `custom_header` (`list[obj]`):  When `null`, the `custom_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_header.new](#fn-custom_headernew) constructor.
-  - `custom_origin_config` (`list[obj]`):  When `null`, the `custom_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_origin_config.new](#fn-custom_origin_confignew) constructor.
-  - `origin_shield` (`list[obj]`):  When `null`, the `origin_shield` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.origin_shield.new](#fn-origin_shieldnew) constructor.
-  - `s3_origin_config` (`list[obj]`):  When `null`, the `s3_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.s3_origin_config.new](#fn-s3_origin_confignew) constructor.
+  - `custom_header` (`list[obj]`):  When `null`, the `custom_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_header.new](#fn-cloudfront_distributioncustom_headernew) constructor.
+  - `custom_origin_config` (`list[obj]`):  When `null`, the `custom_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_origin_config.new](#fn-cloudfront_distributioncustom_origin_confignew) constructor.
+  - `origin_shield` (`list[obj]`):  When `null`, the `origin_shield` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.origin_shield.new](#fn-cloudfront_distributionorigin_shieldnew) constructor.
+  - `s3_origin_config` (`list[obj]`):  When `null`, the `s3_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.s3_origin_config.new](#fn-cloudfront_distributions3_origin_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `origin` sub block.
@@ -1156,8 +1156,8 @@ Terraform sub block.
 
 **Args**:
   - `origin_id` (`string`): 
-  - `failover_criteria` (`list[obj]`):  When `null`, the `failover_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.failover_criteria.new](#fn-failover_criterianew) constructor.
-  - `member` (`list[obj]`):  When `null`, the `member` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.member.new](#fn-membernew) constructor.
+  - `failover_criteria` (`list[obj]`):  When `null`, the `failover_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.failover_criteria.new](#fn-cloudfront_distributionfailover_criterianew) constructor.
+  - `member` (`list[obj]`):  When `null`, the `member` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.member.new](#fn-cloudfront_distributionmembernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `origin_group` sub block.
@@ -1226,7 +1226,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `geo_restriction` (`list[obj]`):  When `null`, the `geo_restriction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.geo_restriction.new](#fn-geo_restrictionnew) constructor.
+  - `geo_restriction` (`list[obj]`):  When `null`, the `geo_restriction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.geo_restriction.new](#fn-cloudfront_distributiongeo_restrictionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `restrictions` sub block.

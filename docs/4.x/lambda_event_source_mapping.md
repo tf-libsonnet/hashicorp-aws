@@ -660,7 +660,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-on_failurenew) constructor.
+  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-lambda_event_source_mappingon_failurenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_config` sub block.
@@ -706,7 +706,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-filternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-lambda_event_source_mappingfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter_criteria` sub block.

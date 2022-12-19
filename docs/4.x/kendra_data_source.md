@@ -431,8 +431,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_configuration` (`list[obj]`):  When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.s3_configuration.new](#fn-s3_configurationnew) constructor.
-  - `web_crawler_configuration` (`list[obj]`):  When `null`, the `web_crawler_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.new](#fn-web_crawler_configurationnew) constructor.
+  - `s3_configuration` (`list[obj]`):  When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.s3_configuration.new](#fn-kendra_data_sources3_configurationnew) constructor.
+  - `web_crawler_configuration` (`list[obj]`):  When `null`, the `web_crawler_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.new](#fn-kendra_data_sourceweb_crawler_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -459,8 +459,8 @@ Terraform sub block.
   - `exclusion_patterns` (`list`):  When `null`, the `exclusion_patterns` field will be omitted from the resulting object.
   - `inclusion_patterns` (`list`):  When `null`, the `inclusion_patterns` field will be omitted from the resulting object.
   - `inclusion_prefixes` (`list`):  When `null`, the `inclusion_prefixes` field will be omitted from the resulting object.
-  - `access_control_list_configuration` (`list[obj]`):  When `null`, the `access_control_list_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.s3_configuration.access_control_list_configuration.new](#fn-configurationaccess_control_list_configurationnew) constructor.
-  - `documents_metadata_configuration` (`list[obj]`):  When `null`, the `documents_metadata_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.s3_configuration.documents_metadata_configuration.new](#fn-configurationdocuments_metadata_configurationnew) constructor.
+  - `access_control_list_configuration` (`list[obj]`):  When `null`, the `access_control_list_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.s3_configuration.access_control_list_configuration.new](#fn-kendra_data_sourceconfigurationaccess_control_list_configurationnew) constructor.
+  - `documents_metadata_configuration` (`list[obj]`):  When `null`, the `documents_metadata_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.s3_configuration.documents_metadata_configuration.new](#fn-kendra_data_sourceconfigurationdocuments_metadata_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3_configuration` sub block.
@@ -535,9 +535,9 @@ Terraform sub block.
   - `max_urls_per_minute_crawl_rate` (`number`):  When `null`, the `max_urls_per_minute_crawl_rate` field will be omitted from the resulting object.
   - `url_exclusion_patterns` (`list`):  When `null`, the `url_exclusion_patterns` field will be omitted from the resulting object.
   - `url_inclusion_patterns` (`list`):  When `null`, the `url_inclusion_patterns` field will be omitted from the resulting object.
-  - `authentication_configuration` (`list[obj]`):  When `null`, the `authentication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.authentication_configuration.new](#fn-configurationauthentication_configurationnew) constructor.
-  - `proxy_configuration` (`list[obj]`):  When `null`, the `proxy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.proxy_configuration.new](#fn-configurationproxy_configurationnew) constructor.
-  - `urls` (`list[obj]`):  When `null`, the `urls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.urls.new](#fn-configurationurlsnew) constructor.
+  - `authentication_configuration` (`list[obj]`):  When `null`, the `authentication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.authentication_configuration.new](#fn-kendra_data_sourceconfigurationauthentication_configurationnew) constructor.
+  - `proxy_configuration` (`list[obj]`):  When `null`, the `proxy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.proxy_configuration.new](#fn-kendra_data_sourceconfigurationproxy_configurationnew) constructor.
+  - `urls` (`list[obj]`):  When `null`, the `urls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.urls.new](#fn-kendra_data_sourceconfigurationurlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `web_crawler_configuration` sub block.
@@ -560,7 +560,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `basic_authentication` (`list[obj]`):  When `null`, the `basic_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.authentication_configuration.basic_authentication.new](#fn-configurationweb_crawler_configurationbasic_authenticationnew) constructor.
+  - `basic_authentication` (`list[obj]`):  When `null`, the `basic_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.authentication_configuration.basic_authentication.new](#fn-kendra_data_sourceconfigurationweb_crawler_configurationbasic_authenticationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `authentication_configuration` sub block.
@@ -633,8 +633,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `seed_url_configuration` (`list[obj]`):  When `null`, the `seed_url_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.urls.seed_url_configuration.new](#fn-configurationweb_crawler_configurationseed_url_configurationnew) constructor.
-  - `site_maps_configuration` (`list[obj]`):  When `null`, the `site_maps_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.urls.site_maps_configuration.new](#fn-configurationweb_crawler_configurationsite_maps_configurationnew) constructor.
+  - `seed_url_configuration` (`list[obj]`):  When `null`, the `seed_url_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.urls.seed_url_configuration.new](#fn-kendra_data_sourceconfigurationweb_crawler_configurationseed_url_configurationnew) constructor.
+  - `site_maps_configuration` (`list[obj]`):  When `null`, the `site_maps_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.configuration.web_crawler_configuration.urls.site_maps_configuration.new](#fn-kendra_data_sourceconfigurationweb_crawler_configurationsite_maps_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `urls` sub block.
@@ -705,9 +705,9 @@ Terraform sub block.
 
 **Args**:
   - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `inline_configurations` (`list[obj]`):  When `null`, the `inline_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.new](#fn-inline_configurationsnew) constructor.
-  - `post_extraction_hook_configuration` (`list[obj]`):  When `null`, the `post_extraction_hook_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.post_extraction_hook_configuration.new](#fn-post_extraction_hook_configurationnew) constructor.
-  - `pre_extraction_hook_configuration` (`list[obj]`):  When `null`, the `pre_extraction_hook_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.pre_extraction_hook_configuration.new](#fn-pre_extraction_hook_configurationnew) constructor.
+  - `inline_configurations` (`list[obj]`):  When `null`, the `inline_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.new](#fn-kendra_data_sourceinline_configurationsnew) constructor.
+  - `post_extraction_hook_configuration` (`list[obj]`):  When `null`, the `post_extraction_hook_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.post_extraction_hook_configuration.new](#fn-kendra_data_sourcepost_extraction_hook_configurationnew) constructor.
+  - `pre_extraction_hook_configuration` (`list[obj]`):  When `null`, the `pre_extraction_hook_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.pre_extraction_hook_configuration.new](#fn-kendra_data_sourcepre_extraction_hook_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `custom_document_enrichment_configuration` sub block.
@@ -731,8 +731,8 @@ Terraform sub block.
 
 **Args**:
   - `document_content_deletion` (`bool`):  When `null`, the `document_content_deletion` field will be omitted from the resulting object.
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.condition.new](#fn-custom_document_enrichment_configurationconditionnew) constructor.
-  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.target.new](#fn-custom_document_enrichment_configurationtargetnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.condition.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationconditionnew) constructor.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.target.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationtargetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `inline_configurations` sub block.
@@ -757,7 +757,7 @@ Terraform sub block.
 **Args**:
   - `condition_document_attribute_key` (`string`): 
   - `operator` (`string`): 
-  - `condition_on_value` (`list[obj]`):  When `null`, the `condition_on_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.condition.condition_on_value.new](#fn-custom_document_enrichment_configurationinline_configurationscondition_on_valuenew) constructor.
+  - `condition_on_value` (`list[obj]`):  When `null`, the `condition_on_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.condition.condition_on_value.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationinline_configurationscondition_on_valuenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.
@@ -808,7 +808,7 @@ Terraform sub block.
 **Args**:
   - `target_document_attribute_key` (`string`):  When `null`, the `target_document_attribute_key` field will be omitted from the resulting object.
   - `target_document_attribute_value_deletion` (`bool`):  When `null`, the `target_document_attribute_value_deletion` field will be omitted from the resulting object.
-  - `target_document_attribute_value` (`list[obj]`):  When `null`, the `target_document_attribute_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.target.target_document_attribute_value.new](#fn-custom_document_enrichment_configurationinline_configurationstarget_document_attribute_valuenew) constructor.
+  - `target_document_attribute_value` (`list[obj]`):  When `null`, the `target_document_attribute_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.inline_configurations.target.target_document_attribute_value.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationinline_configurationstarget_document_attribute_valuenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target` sub block.
@@ -859,7 +859,7 @@ Terraform sub block.
 **Args**:
   - `lambda_arn` (`string`): 
   - `s3_bucket` (`string`): 
-  - `invocation_condition` (`list[obj]`):  When `null`, the `invocation_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.post_extraction_hook_configuration.invocation_condition.new](#fn-custom_document_enrichment_configurationinvocation_conditionnew) constructor.
+  - `invocation_condition` (`list[obj]`):  When `null`, the `invocation_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.post_extraction_hook_configuration.invocation_condition.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationinvocation_conditionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `post_extraction_hook_configuration` sub block.
@@ -884,7 +884,7 @@ Terraform sub block.
 **Args**:
   - `condition_document_attribute_key` (`string`): 
   - `operator` (`string`): 
-  - `condition_on_value` (`list[obj]`):  When `null`, the `condition_on_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.post_extraction_hook_configuration.invocation_condition.condition_on_value.new](#fn-custom_document_enrichment_configurationpost_extraction_hook_configurationcondition_on_valuenew) constructor.
+  - `condition_on_value` (`list[obj]`):  When `null`, the `condition_on_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.post_extraction_hook_configuration.invocation_condition.condition_on_value.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationpost_extraction_hook_configurationcondition_on_valuenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `invocation_condition` sub block.
@@ -935,7 +935,7 @@ Terraform sub block.
 **Args**:
   - `lambda_arn` (`string`): 
   - `s3_bucket` (`string`): 
-  - `invocation_condition` (`list[obj]`):  When `null`, the `invocation_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.pre_extraction_hook_configuration.invocation_condition.new](#fn-custom_document_enrichment_configurationinvocation_conditionnew) constructor.
+  - `invocation_condition` (`list[obj]`):  When `null`, the `invocation_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.pre_extraction_hook_configuration.invocation_condition.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationinvocation_conditionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `pre_extraction_hook_configuration` sub block.
@@ -960,7 +960,7 @@ Terraform sub block.
 **Args**:
   - `condition_document_attribute_key` (`string`): 
   - `operator` (`string`): 
-  - `condition_on_value` (`list[obj]`):  When `null`, the `condition_on_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.pre_extraction_hook_configuration.invocation_condition.condition_on_value.new](#fn-custom_document_enrichment_configurationpre_extraction_hook_configurationcondition_on_valuenew) constructor.
+  - `condition_on_value` (`list[obj]`):  When `null`, the `condition_on_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_data_source.custom_document_enrichment_configuration.pre_extraction_hook_configuration.invocation_condition.condition_on_value.new](#fn-kendra_data_sourcecustom_document_enrichment_configurationpre_extraction_hook_configurationcondition_on_valuenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `invocation_condition` sub block.

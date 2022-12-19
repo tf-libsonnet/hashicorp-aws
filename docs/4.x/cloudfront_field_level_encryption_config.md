@@ -204,7 +204,7 @@ Terraform sub block.
 
 **Args**:
   - `forward_when_content_type_is_unknown` (`bool`): 
-  - `content_type_profiles` (`list[obj]`):  When `null`, the `content_type_profiles` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.content_type_profile_config.content_type_profiles.new](#fn-content_type_profilesnew) constructor.
+  - `content_type_profiles` (`list[obj]`):  When `null`, the `content_type_profiles` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.content_type_profile_config.content_type_profiles.new](#fn-cloudfront_field_level_encryption_configcontent_type_profilesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `content_type_profile_config` sub block.
@@ -227,7 +227,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.content_type_profile_config.content_type_profiles.items.new](#fn-content_type_profile_configitemsnew) constructor.
+  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.content_type_profile_config.content_type_profiles.items.new](#fn-cloudfront_field_level_encryption_configcontent_type_profile_configitemsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `content_type_profiles` sub block.
@@ -276,7 +276,7 @@ Terraform sub block.
 
 **Args**:
   - `forward_when_query_arg_profile_is_unknown` (`bool`): 
-  - `query_arg_profiles` (`list[obj]`):  When `null`, the `query_arg_profiles` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.query_arg_profile_config.query_arg_profiles.new](#fn-query_arg_profilesnew) constructor.
+  - `query_arg_profiles` (`list[obj]`):  When `null`, the `query_arg_profiles` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.query_arg_profile_config.query_arg_profiles.new](#fn-cloudfront_field_level_encryption_configquery_arg_profilesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `query_arg_profile_config` sub block.
@@ -299,7 +299,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.query_arg_profile_config.query_arg_profiles.items.new](#fn-query_arg_profile_configitemsnew) constructor.
+  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_field_level_encryption_config.query_arg_profile_config.query_arg_profiles.items.new](#fn-cloudfront_field_level_encryption_configquery_arg_profile_configitemsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `query_arg_profiles` sub block.

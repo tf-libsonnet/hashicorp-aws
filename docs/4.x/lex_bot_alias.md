@@ -254,7 +254,7 @@ Terraform sub block.
 
 **Args**:
   - `iam_role_arn` (`string`): 
-  - `log_settings` (`list[obj]`):  When `null`, the `log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.log_settings.new](#fn-log_settingsnew) constructor.
+  - `log_settings` (`list[obj]`):  When `null`, the `log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.log_settings.new](#fn-lex_bot_aliaslog_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `conversation_logs` sub block.

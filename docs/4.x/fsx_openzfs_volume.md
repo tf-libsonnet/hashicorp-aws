@@ -472,7 +472,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-client_configurationsnew) constructor.
+  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-fsx_openzfs_volumeclient_configurationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs_exports` sub block.

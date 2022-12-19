@@ -235,9 +235,9 @@ Terraform sub block.
 
 **Args**:
   - `quick_connect_type` (`string`): 
-  - `phone_config` (`list[obj]`):  When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.phone_config.new](#fn-phone_confignew) constructor.
-  - `queue_config` (`list[obj]`):  When `null`, the `queue_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.queue_config.new](#fn-queue_confignew) constructor.
-  - `user_config` (`list[obj]`):  When `null`, the `user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.user_config.new](#fn-user_confignew) constructor.
+  - `phone_config` (`list[obj]`):  When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.phone_config.new](#fn-connect_quick_connectphone_confignew) constructor.
+  - `queue_config` (`list[obj]`):  When `null`, the `queue_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.queue_config.new](#fn-connect_quick_connectqueue_confignew) constructor.
+  - `user_config` (`list[obj]`):  When `null`, the `user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_quick_connect.quick_connect_config.user_config.new](#fn-connect_quick_connectuser_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `quick_connect_config` sub block.

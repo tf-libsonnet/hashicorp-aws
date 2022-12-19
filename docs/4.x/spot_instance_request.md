@@ -1406,7 +1406,7 @@ Terraform sub block.
 
 **Args**:
   - `capacity_reservation_preference` (`string`):  When `null`, the `capacity_reservation_preference` field will be omitted from the resulting object.
-  - `capacity_reservation_target` (`list[obj]`):  When `null`, the `capacity_reservation_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_instance_request.capacity_reservation_specification.capacity_reservation_target.new](#fn-capacity_reservation_targetnew) constructor.
+  - `capacity_reservation_target` (`list[obj]`):  When `null`, the `capacity_reservation_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.spot_instance_request.capacity_reservation_specification.capacity_reservation_target.new](#fn-spot_instance_requestcapacity_reservation_targetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `capacity_reservation_specification` sub block.

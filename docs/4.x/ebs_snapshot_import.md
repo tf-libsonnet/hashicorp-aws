@@ -420,7 +420,7 @@ Terraform sub block.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `format` (`string`): 
   - `url` (`string`):  When `null`, the `url` field will be omitted from the resulting object.
-  - `user_bucket` (`list[obj]`):  When `null`, the `user_bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.user_bucket.new](#fn-user_bucketnew) constructor.
+  - `user_bucket` (`list[obj]`):  When `null`, the `user_bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.user_bucket.new](#fn-ebs_snapshot_importuser_bucketnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `disk_container` sub block.

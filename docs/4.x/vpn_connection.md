@@ -1149,7 +1149,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.cloudwatch_log_options.new](#fn-cloudwatch_log_optionsnew) constructor.
+  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.cloudwatch_log_options.new](#fn-vpn_connectioncloudwatch_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tunnel1_log_options` sub block.
@@ -1197,7 +1197,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.cloudwatch_log_options.new](#fn-cloudwatch_log_optionsnew) constructor.
+  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.cloudwatch_log_options.new](#fn-vpn_connectioncloudwatch_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tunnel2_log_options` sub block.

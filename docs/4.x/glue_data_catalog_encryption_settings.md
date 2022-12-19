@@ -156,8 +156,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_password_encryption` (`list[obj]`):  When `null`, the `connection_password_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.connection_password_encryption.new](#fn-connection_password_encryptionnew) constructor.
-  - `encryption_at_rest` (`list[obj]`):  When `null`, the `encryption_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.encryption_at_rest.new](#fn-encryption_at_restnew) constructor.
+  - `connection_password_encryption` (`list[obj]`):  When `null`, the `connection_password_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.connection_password_encryption.new](#fn-glue_data_catalog_encryption_settingsconnection_password_encryptionnew) constructor.
+  - `encryption_at_rest` (`list[obj]`):  When `null`, the `encryption_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.encryption_at_rest.new](#fn-glue_data_catalog_encryption_settingsencryption_at_restnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_catalog_encryption_settings` sub block.

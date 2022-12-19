@@ -588,10 +588,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `clustering_key` (`list[obj]`):  When `null`, the `clustering_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.clustering_key.new](#fn-clustering_keynew) constructor.
-  - `column` (`list[obj]`):  When `null`, the `column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.column.new](#fn-columnnew) constructor.
-  - `partition_key` (`list[obj]`):  When `null`, the `partition_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.partition_key.new](#fn-partition_keynew) constructor.
-  - `static_column` (`list[obj]`):  When `null`, the `static_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.static_column.new](#fn-static_columnnew) constructor.
+  - `clustering_key` (`list[obj]`):  When `null`, the `clustering_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.clustering_key.new](#fn-keyspaces_tableclustering_keynew) constructor.
+  - `column` (`list[obj]`):  When `null`, the `column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.column.new](#fn-keyspaces_tablecolumnnew) constructor.
+  - `partition_key` (`list[obj]`):  When `null`, the `partition_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.partition_key.new](#fn-keyspaces_tablepartition_keynew) constructor.
+  - `static_column` (`list[obj]`):  When `null`, the `static_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.static_column.new](#fn-keyspaces_tablestatic_columnnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema_definition` sub block.

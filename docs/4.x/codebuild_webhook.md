@@ -192,7 +192,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-filternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-codebuild_webhookfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter_group` sub block.

@@ -243,8 +243,8 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `time_based_canary` (`list[obj]`):  When `null`, the `time_based_canary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_canary.new](#fn-time_based_canarynew) constructor.
-  - `time_based_linear` (`list[obj]`):  When `null`, the `time_based_linear` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_linear.new](#fn-time_based_linearnew) constructor.
+  - `time_based_canary` (`list[obj]`):  When `null`, the `time_based_canary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_canary.new](#fn-codedeploy_deployment_configtime_based_canarynew) constructor.
+  - `time_based_linear` (`list[obj]`):  When `null`, the `time_based_linear` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_linear.new](#fn-codedeploy_deployment_configtime_based_linearnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `traffic_routing_config` sub block.

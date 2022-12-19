@@ -218,7 +218,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.s3.new](#fn-s3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.s3.new](#fn-signer_signing_jobs3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.
@@ -265,7 +265,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.s3.new](#fn-s3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.s3.new](#fn-signer_signing_jobs3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.

@@ -11,7 +11,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.wafregional_rule_group.activated_rule.new` constructs a new object with attributes and blocks configured for the `activated_rule`\nTerraform sub block.\n\n\n\n**Args**:\n  - `priority` (`number`): \n  - `rule_id` (`string`): \n  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.\n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_rule_group.activated_rule.action.new](#fn-actionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `activated_rule` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.wafregional_rule_group.activated_rule.new` constructs a new object with attributes and blocks configured for the `activated_rule`\nTerraform sub block.\n\n\n\n**Args**:\n  - `priority` (`number`): \n  - `rule_id` (`string`): \n  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.\n  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafregional_rule_group.activated_rule.action.new](#fn-wafregional_rule_groupactionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `activated_rule` sub block.\n', args=[]),
     new(
       priority,
       rule_id,

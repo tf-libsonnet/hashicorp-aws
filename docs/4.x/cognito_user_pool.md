@@ -889,7 +889,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `recovery_mechanism` (`list[obj]`):  When `null`, the `recovery_mechanism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.recovery_mechanism.new](#fn-recovery_mechanismnew) constructor.
+  - `recovery_mechanism` (`list[obj]`):  When `null`, the `recovery_mechanism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.recovery_mechanism.new](#fn-cognito_user_poolrecovery_mechanismnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `account_recovery_setting` sub block.
@@ -937,7 +937,7 @@ Terraform sub block.
 
 **Args**:
   - `allow_admin_create_user_only` (`bool`):  When `null`, the `allow_admin_create_user_only` field will be omitted from the resulting object.
-  - `invite_message_template` (`list[obj]`):  When `null`, the `invite_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.invite_message_template.new](#fn-invite_message_templatenew) constructor.
+  - `invite_message_template` (`list[obj]`):  When `null`, the `invite_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.invite_message_template.new](#fn-cognito_user_poolinvite_message_templatenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `admin_create_user_config` sub block.
@@ -1047,8 +1047,8 @@ Terraform sub block.
   - `pre_token_generation` (`string`):  When `null`, the `pre_token_generation` field will be omitted from the resulting object.
   - `user_migration` (`string`):  When `null`, the `user_migration` field will be omitted from the resulting object.
   - `verify_auth_challenge_response` (`string`):  When `null`, the `verify_auth_challenge_response` field will be omitted from the resulting object.
-  - `custom_email_sender` (`list[obj]`):  When `null`, the `custom_email_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_email_sender.new](#fn-custom_email_sendernew) constructor.
-  - `custom_sms_sender` (`list[obj]`):  When `null`, the `custom_sms_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_sms_sender.new](#fn-custom_sms_sendernew) constructor.
+  - `custom_email_sender` (`list[obj]`):  When `null`, the `custom_email_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_email_sender.new](#fn-cognito_user_poolcustom_email_sendernew) constructor.
+  - `custom_sms_sender` (`list[obj]`):  When `null`, the `custom_sms_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_sms_sender.new](#fn-cognito_user_poolcustom_sms_sendernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `lambda_config` sub block.
@@ -1152,8 +1152,8 @@ Terraform sub block.
   - `mutable` (`bool`):  When `null`, the `mutable` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `required` (`bool`):  When `null`, the `required` field will be omitted from the resulting object.
-  - `number_attribute_constraints` (`list[obj]`):  When `null`, the `number_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.number_attribute_constraints.new](#fn-number_attribute_constraintsnew) constructor.
-  - `string_attribute_constraints` (`list[obj]`):  When `null`, the `string_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.string_attribute_constraints.new](#fn-string_attribute_constraintsnew) constructor.
+  - `number_attribute_constraints` (`list[obj]`):  When `null`, the `number_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.number_attribute_constraints.new](#fn-cognito_user_poolnumber_attribute_constraintsnew) constructor.
+  - `string_attribute_constraints` (`list[obj]`):  When `null`, the `string_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.string_attribute_constraints.new](#fn-cognito_user_poolstring_attribute_constraintsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema` sub block.

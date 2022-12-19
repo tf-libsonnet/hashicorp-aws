@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='signer_signing_job', url='', help='`signer_signing_job` represents the `aws_signer_signing_job` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   destination:: {
-    '#new':: d.fn(help='\n`aws.signer_signing_job.destination.new` constructs a new object with attributes and blocks configured for the `destination`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.s3.new](#fn-s3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.signer_signing_job.destination.new` constructs a new object with attributes and blocks configured for the `destination`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.s3.new](#fn-signer_signing_jobs3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `destination` sub block.\n', args=[]),
     new(
       s3=null
     ):: std.prune(a={
@@ -52,7 +52,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     source: source,
   }),
   source:: {
-    '#new':: d.fn(help='\n`aws.signer_signing_job.source.new` constructs a new object with attributes and blocks configured for the `source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.s3.new](#fn-s3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `source` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.signer_signing_job.source.new` constructs a new object with attributes and blocks configured for the `source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.s3.new](#fn-signer_signing_jobs3new) constructor.\n\n**Returns**:\n  - An attribute object that represents the `source` sub block.\n', args=[]),
     new(
       s3=null
     ):: std.prune(a={

@@ -378,7 +378,7 @@ Terraform sub block.
   - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.
   - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.
   - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
-  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-ebsnew) constructor.
+  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-imagebuilder_image_recipeebsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `block_device_mapping` sub block.
@@ -432,7 +432,7 @@ Terraform sub block.
 
 **Args**:
   - `component_arn` (`string`): 
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.parameter.new](#fn-parameternew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.parameter.new](#fn-imagebuilder_image_recipeparameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `component` sub block.

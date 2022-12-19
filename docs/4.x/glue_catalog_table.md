@@ -521,11 +521,11 @@ Terraform sub block.
   - `output_format` (`string`):  When `null`, the `output_format` field will be omitted from the resulting object.
   - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
   - `stored_as_sub_directories` (`bool`):  When `null`, the `stored_as_sub_directories` field will be omitted from the resulting object.
-  - `columns` (`list[obj]`):  When `null`, the `columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.columns.new](#fn-columnsnew) constructor.
-  - `schema_reference` (`list[obj]`):  When `null`, the `schema_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.new](#fn-schema_referencenew) constructor.
-  - `ser_de_info` (`list[obj]`):  When `null`, the `ser_de_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.ser_de_info.new](#fn-ser_de_infonew) constructor.
-  - `skewed_info` (`list[obj]`):  When `null`, the `skewed_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.skewed_info.new](#fn-skewed_infonew) constructor.
-  - `sort_columns` (`list[obj]`):  When `null`, the `sort_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.sort_columns.new](#fn-sort_columnsnew) constructor.
+  - `columns` (`list[obj]`):  When `null`, the `columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.columns.new](#fn-glue_catalog_tablecolumnsnew) constructor.
+  - `schema_reference` (`list[obj]`):  When `null`, the `schema_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.new](#fn-glue_catalog_tableschema_referencenew) constructor.
+  - `ser_de_info` (`list[obj]`):  When `null`, the `ser_de_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.ser_de_info.new](#fn-glue_catalog_tableser_de_infonew) constructor.
+  - `skewed_info` (`list[obj]`):  When `null`, the `skewed_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.skewed_info.new](#fn-glue_catalog_tableskewed_infonew) constructor.
+  - `sort_columns` (`list[obj]`):  When `null`, the `sort_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.sort_columns.new](#fn-glue_catalog_tablesort_columnsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_descriptor` sub block.
@@ -576,7 +576,7 @@ Terraform sub block.
 **Args**:
   - `schema_version_id` (`string`):  When `null`, the `schema_version_id` field will be omitted from the resulting object.
   - `schema_version_number` (`number`): 
-  - `schema_id` (`list[obj]`):  When `null`, the `schema_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.schema_id.new](#fn-storage_descriptorschema_idnew) constructor.
+  - `schema_id` (`list[obj]`):  When `null`, the `schema_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.schema_id.new](#fn-glue_catalog_tablestorage_descriptorschema_idnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema_reference` sub block.

@@ -25,7 +25,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         volume_type: volume_type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.imagebuilder_image_recipe.block_device_mapping.new` constructs a new object with attributes and blocks configured for the `block_device_mapping`\nTerraform sub block.\n\n\n\n**Args**:\n  - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.\n  - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.\n  - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.\n  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-ebsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `block_device_mapping` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.imagebuilder_image_recipe.block_device_mapping.new` constructs a new object with attributes and blocks configured for the `block_device_mapping`\nTerraform sub block.\n\n\n\n**Args**:\n  - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.\n  - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.\n  - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.\n  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-imagebuilder_image_recipeebsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `block_device_mapping` sub block.\n', args=[]),
     new(
       device_name=null,
       ebs=null,
@@ -39,7 +39,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   component:: {
-    '#new':: d.fn(help='\n`aws.imagebuilder_image_recipe.component.new` constructs a new object with attributes and blocks configured for the `component`\nTerraform sub block.\n\n\n\n**Args**:\n  - `component_arn` (`string`): \n  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.parameter.new](#fn-parameternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `component` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.imagebuilder_image_recipe.component.new` constructs a new object with attributes and blocks configured for the `component`\nTerraform sub block.\n\n\n\n**Args**:\n  - `component_arn` (`string`): \n  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.parameter.new](#fn-imagebuilder_image_recipeparameternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `component` sub block.\n', args=[]),
     new(
       component_arn,
       parameter=null

@@ -255,7 +255,7 @@ Terraform sub block.
 
 **Args**:
   - `point` (`string`): 
-  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appconfig_extension.action_point.action.new](#fn-actionnew) constructor.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appconfig_extension.action_point.action.new](#fn-appconfig_extensionactionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `action_point` sub block.

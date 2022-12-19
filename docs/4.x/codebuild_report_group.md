@@ -231,7 +231,7 @@ Terraform sub block.
 
 **Args**:
   - `type` (`string`): 
-  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-s3_destinationnew) constructor.
+  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-codebuild_report_groups3_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `export_config` sub block.

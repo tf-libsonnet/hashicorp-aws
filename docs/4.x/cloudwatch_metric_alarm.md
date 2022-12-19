@@ -557,7 +557,7 @@ Terraform sub block.
   - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
   - `label` (`string`):  When `null`, the `label` field will be omitted from the resulting object.
   - `return_data` (`bool`):  When `null`, the `return_data` field will be omitted from the resulting object.
-  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-metricnew) constructor.
+  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-cloudwatch_metric_alarmmetricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_query` sub block.

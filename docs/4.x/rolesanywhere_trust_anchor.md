@@ -212,7 +212,7 @@ Terraform sub block.
 
 **Args**:
   - `source_type` (`string`): 
-  - `source_data` (`list[obj]`):  When `null`, the `source_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.source_data.new](#fn-source_datanew) constructor.
+  - `source_data` (`list[obj]`):  When `null`, the `source_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rolesanywhere_trust_anchor.source.source_data.new](#fn-rolesanywhere_trust_anchorsource_datanew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.

@@ -435,7 +435,7 @@ Terraform sub block.
 
 **Args**:
   - `estimated_instance_warmup` (`number`):  When `null`, the `estimated_instance_warmup` field will be omitted from the resulting object.
-  - `target_tracking_configuration` (`list[obj]`):  When `null`, the `target_tracking_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.target_tracking_configuration.new](#fn-target_tracking_configurationnew) constructor.
+  - `target_tracking_configuration` (`list[obj]`):  When `null`, the `target_tracking_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_server_group.auto_scaling_policy.target_tracking_configuration.new](#fn-gamelift_game_server_grouptarget_tracking_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_scaling_policy` sub block.

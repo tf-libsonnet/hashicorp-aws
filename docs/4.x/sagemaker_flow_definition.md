@@ -344,7 +344,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `human_loop_activation_conditions_config` (`list[obj]`):  When `null`, the `human_loop_activation_conditions_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.human_loop_activation_conditions_config.new](#fn-human_loop_activation_conditions_confignew) constructor.
+  - `human_loop_activation_conditions_config` (`list[obj]`):  When `null`, the `human_loop_activation_conditions_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.human_loop_activation_conditions_config.new](#fn-sagemaker_flow_definitionhuman_loop_activation_conditions_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `human_loop_activation_config` sub block.
@@ -398,7 +398,7 @@ Terraform sub block.
   - `task_time_limit_in_seconds` (`number`):  When `null`, the `task_time_limit_in_seconds` field will be omitted from the resulting object.
   - `task_title` (`string`): 
   - `workteam_arn` (`string`): 
-  - `public_workforce_task_price` (`list[obj]`):  When `null`, the `public_workforce_task_price` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.new](#fn-public_workforce_task_pricenew) constructor.
+  - `public_workforce_task_price` (`list[obj]`):  When `null`, the `public_workforce_task_price` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.new](#fn-sagemaker_flow_definitionpublic_workforce_task_pricenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `human_loop_config` sub block.
@@ -421,7 +421,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `amount_in_usd` (`list[obj]`):  When `null`, the `amount_in_usd` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.amount_in_usd.new](#fn-human_loop_configamount_in_usdnew) constructor.
+  - `amount_in_usd` (`list[obj]`):  When `null`, the `amount_in_usd` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.amount_in_usd.new](#fn-sagemaker_flow_definitionhuman_loop_configamount_in_usdnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `public_workforce_task_price` sub block.

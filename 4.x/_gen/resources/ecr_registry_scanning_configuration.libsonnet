@@ -23,7 +23,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     scan_type: scan_type,
   }),
   rule:: {
-    '#new':: d.fn(help='\n`aws.ecr_registry_scanning_configuration.rule.new` constructs a new object with attributes and blocks configured for the `rule`\nTerraform sub block.\n\n\n\n**Args**:\n  - `scan_frequency` (`string`): \n  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.repository_filter.new](#fn-repository_filternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.ecr_registry_scanning_configuration.rule.new` constructs a new object with attributes and blocks configured for the `rule`\nTerraform sub block.\n\n\n\n**Args**:\n  - `scan_frequency` (`string`): \n  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.repository_filter.new](#fn-ecr_registry_scanning_configurationrepository_filternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule` sub block.\n', args=[]),
     new(
       scan_frequency,
       repository_filter=null
