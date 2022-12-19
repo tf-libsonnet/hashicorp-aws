@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `file_system_id` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `posix_user` (`list[obj]`):  When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-efsaccesspointposixusernew) constructor.
-  - `root_directory` (`list[obj]`):  When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-efsaccesspointrootdirectorynew) constructor.
+  - `posix_user` (`list[obj]`):  When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-posix_usernew) constructor.
+  - `root_directory` (`list[obj]`):  When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-root_directorynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.efs_access_point.newAttrs` constructs a new object with attributes and blocks configured for the `efs_access_point`
 Terraform resource.
 
-Unlike [aws.efs_access_point.new](#fn-efsaccesspointnew), this function will not inject the `resource`
+Unlike [aws.efs_access_point.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -89,8 +89,8 @@ injecting into a complete block.
   - `file_system_id` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `posix_user` (`list[obj]`):  When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-efsaccesspointposixusernew) constructor.
-  - `root_directory` (`list[obj]`):  When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-efsaccesspointrootdirectorynew) constructor.
+  - `posix_user` (`list[obj]`):  When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-posix_usernew) constructor.
+  - `root_directory` (`list[obj]`):  When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-root_directorynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `efs_access_point` resource into the root Terraform configuration.
@@ -261,7 +261,7 @@ Terraform sub block.
 
 **Args**:
   - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
-  - `creation_info` (`list[obj]`):  When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-rootdirectorycreationinfonew) constructor.
+  - `creation_info` (`list[obj]`):  When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-root_directorycreation_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `root_directory` sub block.

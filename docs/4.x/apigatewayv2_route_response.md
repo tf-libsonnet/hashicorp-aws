@@ -70,7 +70,7 @@ newAttrs()
 `aws.apigatewayv2_route_response.newAttrs` constructs a new object with attributes and blocks configured for the `apigatewayv2_route_response`
 Terraform resource.
 
-Unlike [aws.apigatewayv2_route_response.new](#fn-apigatewayv2routeresponsenew), this function will not inject the `resource`
+Unlike [aws.apigatewayv2_route_response.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

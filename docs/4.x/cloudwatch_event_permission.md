@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `event_bus_name` (`string`):  When `null`, the `event_bus_name` field will be omitted from the resulting object.
   - `principal` (`string`): 
   - `statement_id` (`string`): 
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-cloudwatcheventpermissionconditionnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-conditionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.cloudwatch_event_permission.newAttrs` constructs a new object with attributes and blocks configured for the `cloudwatch_event_permission`
 Terraform resource.
 
-Unlike [aws.cloudwatch_event_permission.new](#fn-cloudwatcheventpermissionnew), this function will not inject the `resource`
+Unlike [aws.cloudwatch_event_permission.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `event_bus_name` (`string`):  When `null`, the `event_bus_name` field will be omitted from the resulting object.
   - `principal` (`string`): 
   - `statement_id` (`string`): 
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-cloudwatcheventpermissionconditionnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-conditionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_event_permission` resource into the root Terraform configuration.

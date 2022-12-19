@@ -65,7 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `position` (`number`):  When `null`, the `position` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-macie2findingsfilterfindingcriterianew) constructor.
+  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,7 +81,7 @@ newAttrs()
 `aws.macie2_findings_filter.newAttrs` constructs a new object with attributes and blocks configured for the `macie2_findings_filter`
 Terraform resource.
 
-Unlike [aws.macie2_findings_filter.new](#fn-macie2findingsfilternew), this function will not inject the `resource`
+Unlike [aws.macie2_findings_filter.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -96,7 +96,7 @@ injecting into a complete block.
   - `position` (`number`):  When `null`, the `position` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-macie2findingsfilterfindingcriterianew) constructor.
+  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `macie2_findings_filter` resource into the root Terraform configuration.
@@ -268,7 +268,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `criterion` (`list[obj]`):  When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.criterion.new](#fn-findingcriteriacriterionnew) constructor.
+  - `criterion` (`list[obj]`):  When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.criterion.new](#fn-finding_criteriacriterionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `finding_criteria` sub block.

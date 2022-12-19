@@ -71,8 +71,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `not_resources` (`list`):  When `null`, the `not_resources` field will be omitted from the resulting object.
   - `plan_id` (`string`): 
   - `resources` (`list`):  When `null`, the `resources` field will be omitted from the resulting object.
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-backupselectionconditionnew) constructor.
-  - `selection_tag` (`list[obj]`):  When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-backupselectionselectiontagnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-conditionnew) constructor.
+  - `selection_tag` (`list[obj]`):  When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-selection_tagnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,7 +88,7 @@ newAttrs()
 `aws.backup_selection.newAttrs` constructs a new object with attributes and blocks configured for the `backup_selection`
 Terraform resource.
 
-Unlike [aws.backup_selection.new](#fn-backupselectionnew), this function will not inject the `resource`
+Unlike [aws.backup_selection.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -101,8 +101,8 @@ injecting into a complete block.
   - `not_resources` (`list`):  When `null`, the `not_resources` field will be omitted from the resulting object.
   - `plan_id` (`string`): 
   - `resources` (`list`):  When `null`, the `resources` field will be omitted from the resulting object.
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-backupselectionconditionnew) constructor.
-  - `selection_tag` (`list[obj]`):  When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-backupselectionselectiontagnew) constructor.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-conditionnew) constructor.
+  - `selection_tag` (`list[obj]`):  When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-selection_tagnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `backup_selection` resource into the root Terraform configuration.
@@ -279,10 +279,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `string_equals` (`list[obj]`):  When `null`, the `string_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_equals.new](#fn-conditionstringequalsnew) constructor.
-  - `string_like` (`list[obj]`):  When `null`, the `string_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_like.new](#fn-conditionstringlikenew) constructor.
-  - `string_not_equals` (`list[obj]`):  When `null`, the `string_not_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_equals.new](#fn-conditionstringnotequalsnew) constructor.
-  - `string_not_like` (`list[obj]`):  When `null`, the `string_not_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_like.new](#fn-conditionstringnotlikenew) constructor.
+  - `string_equals` (`list[obj]`):  When `null`, the `string_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_equals.new](#fn-conditionstring_equalsnew) constructor.
+  - `string_like` (`list[obj]`):  When `null`, the `string_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_like.new](#fn-conditionstring_likenew) constructor.
+  - `string_not_equals` (`list[obj]`):  When `null`, the `string_not_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_equals.new](#fn-conditionstring_not_equalsnew) constructor.
+  - `string_not_like` (`list[obj]`):  When `null`, the `string_not_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_like.new](#fn-conditionstring_not_likenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.

@@ -69,8 +69,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `option_group_description` (`string`):  When `null`, the `option_group_description` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `option` (`list[obj]`):  When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-dboptiongroupoptionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-dboptiongrouptimeoutsnew) constructor.
+  - `option` (`list[obj]`):  When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-optionnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,7 +86,7 @@ newAttrs()
 `aws.db_option_group.newAttrs` constructs a new object with attributes and blocks configured for the `db_option_group`
 Terraform resource.
 
-Unlike [aws.db_option_group.new](#fn-dboptiongroupnew), this function will not inject the `resource`
+Unlike [aws.db_option_group.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -101,8 +101,8 @@ injecting into a complete block.
   - `option_group_description` (`string`):  When `null`, the `option_group_description` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `option` (`list[obj]`):  When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-dboptiongroupoptionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-dboptiongrouptimeoutsnew) constructor.
+  - `option` (`list[obj]`):  When `null`, the `option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.new](#fn-optionnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `db_option_group` resource into the root Terraform configuration.
@@ -315,7 +315,7 @@ Terraform sub block.
   - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
   - `vpc_security_group_memberships` (`list`):  When `null`, the `vpc_security_group_memberships` field will be omitted from the resulting object.
-  - `option_settings` (`list[obj]`):  When `null`, the `option_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.option_settings.new](#fn-optionoptionsettingsnew) constructor.
+  - `option_settings` (`list[obj]`):  When `null`, the `option_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_option_group.option.option_settings.new](#fn-optionoption_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `option` sub block.

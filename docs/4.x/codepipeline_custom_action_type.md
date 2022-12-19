@@ -71,10 +71,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): 
-  - `configuration_property` (`list[obj]`):  When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-codepipelinecustomactiontypeconfigurationpropertynew) constructor.
-  - `input_artifact_details` (`list[obj]`):  When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-codepipelinecustomactiontypeinputartifactdetailsnew) constructor.
-  - `output_artifact_details` (`list[obj]`):  When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-codepipelinecustomactiontypeoutputartifactdetailsnew) constructor.
-  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-codepipelinecustomactiontypesettingsnew) constructor.
+  - `configuration_property` (`list[obj]`):  When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-configuration_propertynew) constructor.
+  - `input_artifact_details` (`list[obj]`):  When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-input_artifact_detailsnew) constructor.
+  - `output_artifact_details` (`list[obj]`):  When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-output_artifact_detailsnew) constructor.
+  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,7 +90,7 @@ newAttrs()
 `aws.codepipeline_custom_action_type.newAttrs` constructs a new object with attributes and blocks configured for the `codepipeline_custom_action_type`
 Terraform resource.
 
-Unlike [aws.codepipeline_custom_action_type.new](#fn-codepipelinecustomactiontypenew), this function will not inject the `resource`
+Unlike [aws.codepipeline_custom_action_type.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -103,10 +103,10 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): 
-  - `configuration_property` (`list[obj]`):  When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-codepipelinecustomactiontypeconfigurationpropertynew) constructor.
-  - `input_artifact_details` (`list[obj]`):  When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-codepipelinecustomactiontypeinputartifactdetailsnew) constructor.
-  - `output_artifact_details` (`list[obj]`):  When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-codepipelinecustomactiontypeoutputartifactdetailsnew) constructor.
-  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-codepipelinecustomactiontypesettingsnew) constructor.
+  - `configuration_property` (`list[obj]`):  When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-configuration_propertynew) constructor.
+  - `input_artifact_details` (`list[obj]`):  When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-input_artifact_detailsnew) constructor.
+  - `output_artifact_details` (`list[obj]`):  When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-output_artifact_detailsnew) constructor.
+  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codepipeline_custom_action_type` resource into the root Terraform configuration.

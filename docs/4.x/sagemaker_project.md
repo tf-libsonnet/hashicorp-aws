@@ -59,7 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `project_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `service_catalog_provisioning_details` (`list[obj]`):  When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-sagemakerprojectservicecatalogprovisioningdetailsnew) constructor.
+  - `service_catalog_provisioning_details` (`list[obj]`):  When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-service_catalog_provisioning_detailsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,7 +75,7 @@ newAttrs()
 `aws.sagemaker_project.newAttrs` constructs a new object with attributes and blocks configured for the `sagemaker_project`
 Terraform resource.
 
-Unlike [aws.sagemaker_project.new](#fn-sagemakerprojectnew), this function will not inject the `resource`
+Unlike [aws.sagemaker_project.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -87,7 +87,7 @@ injecting into a complete block.
   - `project_name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `service_catalog_provisioning_details` (`list[obj]`):  When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-sagemakerprojectservicecatalogprovisioningdetailsnew) constructor.
+  - `service_catalog_provisioning_details` (`list[obj]`):  When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-service_catalog_provisioning_detailsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_project` resource into the root Terraform configuration.
@@ -214,7 +214,7 @@ Terraform sub block.
   - `path_id` (`string`):  When `null`, the `path_id` field will be omitted from the resulting object.
   - `product_id` (`string`): 
   - `provisioning_artifact_id` (`string`):  When `null`, the `provisioning_artifact_id` field will be omitted from the resulting object.
-  - `provisioning_parameter` (`list[obj]`):  When `null`, the `provisioning_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.provisioning_parameter.new](#fn-servicecatalogprovisioningdetailsprovisioningparameternew) constructor.
+  - `provisioning_parameter` (`list[obj]`):  When `null`, the `provisioning_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.provisioning_parameter.new](#fn-service_catalog_provisioning_detailsprovisioning_parameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `service_catalog_provisioning_details` sub block.

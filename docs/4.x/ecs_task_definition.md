@@ -105,12 +105,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `task_role_arn` (`string`):  When `null`, the `task_role_arn` field will be omitted from the resulting object.
-  - `ephemeral_storage` (`list[obj]`):  When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.ephemeral_storage.new](#fn-ecstaskdefinitionephemeralstoragenew) constructor.
-  - `inference_accelerator` (`list[obj]`):  When `null`, the `inference_accelerator` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.inference_accelerator.new](#fn-ecstaskdefinitioninferenceacceleratornew) constructor.
-  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.placement_constraints.new](#fn-ecstaskdefinitionplacementconstraintsnew) constructor.
-  - `proxy_configuration` (`list[obj]`):  When `null`, the `proxy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.proxy_configuration.new](#fn-ecstaskdefinitionproxyconfigurationnew) constructor.
-  - `runtime_platform` (`list[obj]`):  When `null`, the `runtime_platform` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.runtime_platform.new](#fn-ecstaskdefinitionruntimeplatformnew) constructor.
-  - `volume` (`list[obj]`):  When `null`, the `volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.new](#fn-ecstaskdefinitionvolumenew) constructor.
+  - `ephemeral_storage` (`list[obj]`):  When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
+  - `inference_accelerator` (`list[obj]`):  When `null`, the `inference_accelerator` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.inference_accelerator.new](#fn-inference_acceleratornew) constructor.
+  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.placement_constraints.new](#fn-placement_constraintsnew) constructor.
+  - `proxy_configuration` (`list[obj]`):  When `null`, the `proxy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.proxy_configuration.new](#fn-proxy_configurationnew) constructor.
+  - `runtime_platform` (`list[obj]`):  When `null`, the `runtime_platform` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.runtime_platform.new](#fn-runtime_platformnew) constructor.
+  - `volume` (`list[obj]`):  When `null`, the `volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.new](#fn-volumenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -126,7 +126,7 @@ newAttrs()
 `aws.ecs_task_definition.newAttrs` constructs a new object with attributes and blocks configured for the `ecs_task_definition`
 Terraform resource.
 
-Unlike [aws.ecs_task_definition.new](#fn-ecstaskdefinitionnew), this function will not inject the `resource`
+Unlike [aws.ecs_task_definition.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -147,12 +147,12 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `task_role_arn` (`string`):  When `null`, the `task_role_arn` field will be omitted from the resulting object.
-  - `ephemeral_storage` (`list[obj]`):  When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.ephemeral_storage.new](#fn-ecstaskdefinitionephemeralstoragenew) constructor.
-  - `inference_accelerator` (`list[obj]`):  When `null`, the `inference_accelerator` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.inference_accelerator.new](#fn-ecstaskdefinitioninferenceacceleratornew) constructor.
-  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.placement_constraints.new](#fn-ecstaskdefinitionplacementconstraintsnew) constructor.
-  - `proxy_configuration` (`list[obj]`):  When `null`, the `proxy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.proxy_configuration.new](#fn-ecstaskdefinitionproxyconfigurationnew) constructor.
-  - `runtime_platform` (`list[obj]`):  When `null`, the `runtime_platform` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.runtime_platform.new](#fn-ecstaskdefinitionruntimeplatformnew) constructor.
-  - `volume` (`list[obj]`):  When `null`, the `volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.new](#fn-ecstaskdefinitionvolumenew) constructor.
+  - `ephemeral_storage` (`list[obj]`):  When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
+  - `inference_accelerator` (`list[obj]`):  When `null`, the `inference_accelerator` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.inference_accelerator.new](#fn-inference_acceleratornew) constructor.
+  - `placement_constraints` (`list[obj]`):  When `null`, the `placement_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.placement_constraints.new](#fn-placement_constraintsnew) constructor.
+  - `proxy_configuration` (`list[obj]`):  When `null`, the `proxy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.proxy_configuration.new](#fn-proxy_configurationnew) constructor.
+  - `runtime_platform` (`list[obj]`):  When `null`, the `runtime_platform` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.runtime_platform.new](#fn-runtime_platformnew) constructor.
+  - `volume` (`list[obj]`):  When `null`, the `volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.new](#fn-volumenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecs_task_definition` resource into the root Terraform configuration.
@@ -727,9 +727,9 @@ Terraform sub block.
 **Args**:
   - `host_path` (`string`):  When `null`, the `host_path` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `docker_volume_configuration` (`list[obj]`):  When `null`, the `docker_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.docker_volume_configuration.new](#fn-volumedockervolumeconfigurationnew) constructor.
-  - `efs_volume_configuration` (`list[obj]`):  When `null`, the `efs_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.new](#fn-volumeefsvolumeconfigurationnew) constructor.
-  - `fsx_windows_file_server_volume_configuration` (`list[obj]`):  When `null`, the `fsx_windows_file_server_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.new](#fn-volumefsxwindowsfileservervolumeconfigurationnew) constructor.
+  - `docker_volume_configuration` (`list[obj]`):  When `null`, the `docker_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.docker_volume_configuration.new](#fn-volumedocker_volume_configurationnew) constructor.
+  - `efs_volume_configuration` (`list[obj]`):  When `null`, the `efs_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.new](#fn-volumeefs_volume_configurationnew) constructor.
+  - `fsx_windows_file_server_volume_configuration` (`list[obj]`):  When `null`, the `fsx_windows_file_server_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.new](#fn-volumefsx_windows_file_server_volume_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `volume` sub block.
@@ -783,7 +783,7 @@ Terraform sub block.
   - `root_directory` (`string`):  When `null`, the `root_directory` field will be omitted from the resulting object.
   - `transit_encryption` (`string`):  When `null`, the `transit_encryption` field will be omitted from the resulting object.
   - `transit_encryption_port` (`number`):  When `null`, the `transit_encryption_port` field will be omitted from the resulting object.
-  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.authorization_config.new](#fn-efsvolumeconfigurationauthorizationconfignew) constructor.
+  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.efs_volume_configuration.authorization_config.new](#fn-volumevolumeauthorization_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `efs_volume_configuration` sub block.
@@ -832,7 +832,7 @@ Terraform sub block.
 **Args**:
   - `file_system_id` (`string`): 
   - `root_directory` (`string`): 
-  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.authorization_config.new](#fn-fsxwindowsfileservervolumeconfigurationauthorizationconfignew) constructor.
+  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_task_definition.volume.fsx_windows_file_server_volume_configuration.authorization_config.new](#fn-volumevolumeauthorization_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `fsx_windows_file_server_volume_configuration` sub block.

@@ -95,7 +95,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `threshold_metric_id` (`string`):  When `null`, the `threshold_metric_id` field will be omitted from the resulting object.
   - `treat_missing_data` (`string`):  When `null`, the `treat_missing_data` field will be omitted from the resulting object.
   - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric_query` (`list[obj]`):  When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-cloudwatchmetricalarmmetricquerynew) constructor.
+  - `metric_query` (`list[obj]`):  When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-metric_querynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -111,7 +111,7 @@ newAttrs()
 `aws.cloudwatch_metric_alarm.newAttrs` constructs a new object with attributes and blocks configured for the `cloudwatch_metric_alarm`
 Terraform resource.
 
-Unlike [aws.cloudwatch_metric_alarm.new](#fn-cloudwatchmetricalarmnew), this function will not inject the `resource`
+Unlike [aws.cloudwatch_metric_alarm.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -141,7 +141,7 @@ injecting into a complete block.
   - `threshold_metric_id` (`string`):  When `null`, the `threshold_metric_id` field will be omitted from the resulting object.
   - `treat_missing_data` (`string`):  When `null`, the `treat_missing_data` field will be omitted from the resulting object.
   - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric_query` (`list[obj]`):  When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-cloudwatchmetricalarmmetricquerynew) constructor.
+  - `metric_query` (`list[obj]`):  When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-metric_querynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_metric_alarm` resource into the root Terraform configuration.
@@ -557,7 +557,7 @@ Terraform sub block.
   - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
   - `label` (`string`):  When `null`, the `label` field will be omitted from the resulting object.
   - `return_data` (`bool`):  When `null`, the `return_data` field will be omitted from the resulting object.
-  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-metricquerymetricnew) constructor.
+  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-metric_querymetricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_query` sub block.

@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `acl` (`string`):  When `null`, the `acl` field will be omitted from the resulting object.
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `access_control_policy` (`list[obj]`):  When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-s3bucketaclaccesscontrolpolicynew) constructor.
+  - `access_control_policy` (`list[obj]`):  When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-access_control_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.s3_bucket_acl.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_acl`
 Terraform resource.
 
-Unlike [aws.s3_bucket_acl.new](#fn-s3bucketaclnew), this function will not inject the `resource`
+Unlike [aws.s3_bucket_acl.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -88,7 +88,7 @@ injecting into a complete block.
   - `acl` (`string`):  When `null`, the `acl` field will be omitted from the resulting object.
   - `bucket` (`string`): 
   - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `access_control_policy` (`list[obj]`):  When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-s3bucketaclaccesscontrolpolicynew) constructor.
+  - `access_control_policy` (`list[obj]`):  When `null`, the `access_control_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.new](#fn-access_control_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_acl` resource into the root Terraform configuration.
@@ -196,8 +196,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-accesscontrolpolicygrantnew) constructor.
-  - `owner` (`list[obj]`):  When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-accesscontrolpolicyownernew) constructor.
+  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.new](#fn-access_control_policygrantnew) constructor.
+  - `owner` (`list[obj]`):  When `null`, the `owner` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.owner.new](#fn-access_control_policyownernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `access_control_policy` sub block.
@@ -221,7 +221,7 @@ Terraform sub block.
 
 **Args**:
   - `permission` (`string`): 
-  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-grantgranteenew) constructor.
+  - `grantee` (`list[obj]`):  When `null`, the `grantee` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_acl.access_control_policy.grant.grantee.new](#fn-access_control_policyaccess_control_policygranteenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `grant` sub block.

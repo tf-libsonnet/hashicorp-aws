@@ -65,8 +65,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_backup_setting` (`list[obj]`):  When `null`, the `advanced_backup_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.advanced_backup_setting.new](#fn-backupplanadvancedbackupsettingnew) constructor.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.new](#fn-backupplanrulenew) constructor.
+  - `advanced_backup_setting` (`list[obj]`):  When `null`, the `advanced_backup_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.advanced_backup_setting.new](#fn-advanced_backup_settingnew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.backup_plan.newAttrs` constructs a new object with attributes and blocks configured for the `backup_plan`
 Terraform resource.
 
-Unlike [aws.backup_plan.new](#fn-backupplannew), this function will not inject the `resource`
+Unlike [aws.backup_plan.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -93,8 +93,8 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_backup_setting` (`list[obj]`):  When `null`, the `advanced_backup_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.advanced_backup_setting.new](#fn-backupplanadvancedbackupsettingnew) constructor.
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.new](#fn-backupplanrulenew) constructor.
+  - `advanced_backup_setting` (`list[obj]`):  When `null`, the `advanced_backup_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.advanced_backup_setting.new](#fn-advanced_backup_settingnew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `backup_plan` resource into the root Terraform configuration.
@@ -270,7 +270,7 @@ Terraform sub block.
   - `schedule` (`string`):  When `null`, the `schedule` field will be omitted from the resulting object.
   - `start_window` (`number`):  When `null`, the `start_window` field will be omitted from the resulting object.
   - `target_vault_name` (`string`): 
-  - `copy_action` (`list[obj]`):  When `null`, the `copy_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.new](#fn-rulecopyactionnew) constructor.
+  - `copy_action` (`list[obj]`):  When `null`, the `copy_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.new](#fn-rulecopy_actionnew) constructor.
   - `lifecycle` (`list[obj]`):  When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.lifecycle.new](#fn-rulelifecyclenew) constructor.
 
 **Returns**:
@@ -295,7 +295,7 @@ Terraform sub block.
 
 **Args**:
   - `destination_vault_arn` (`string`): 
-  - `lifecycle` (`list[obj]`):  When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.lifecycle.new](#fn-copyactionlifecyclenew) constructor.
+  - `lifecycle` (`list[obj]`):  When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.lifecycle.new](#fn-rulerulelifecyclenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `copy_action` sub block.

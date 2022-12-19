@@ -149,14 +149,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `termination_protection` (`bool`):  When `null`, the `termination_protection` field will be omitted from the resulting object.
   - `visible_to_all_users` (`bool`):  When `null`, the `visible_to_all_users` field will be omitted from the resulting object.
-  - `auto_termination_policy` (`list[obj]`):  When `null`, the `auto_termination_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.auto_termination_policy.new](#fn-emrclusterautoterminationpolicynew) constructor.
-  - `bootstrap_action` (`list[obj]`):  When `null`, the `bootstrap_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.bootstrap_action.new](#fn-emrclusterbootstrapactionnew) constructor.
-  - `core_instance_fleet` (`list[obj]`):  When `null`, the `core_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.new](#fn-emrclustercoreinstancefleetnew) constructor.
-  - `core_instance_group` (`list[obj]`):  When `null`, the `core_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_group.new](#fn-emrclustercoreinstancegroupnew) constructor.
-  - `ec2_attributes` (`list[obj]`):  When `null`, the `ec2_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.ec2_attributes.new](#fn-emrclusterec2attributesnew) constructor.
-  - `kerberos_attributes` (`list[obj]`):  When `null`, the `kerberos_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.kerberos_attributes.new](#fn-emrclusterkerberosattributesnew) constructor.
-  - `master_instance_fleet` (`list[obj]`):  When `null`, the `master_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.new](#fn-emrclustermasterinstancefleetnew) constructor.
-  - `master_instance_group` (`list[obj]`):  When `null`, the `master_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_group.new](#fn-emrclustermasterinstancegroupnew) constructor.
+  - `auto_termination_policy` (`list[obj]`):  When `null`, the `auto_termination_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.auto_termination_policy.new](#fn-auto_termination_policynew) constructor.
+  - `bootstrap_action` (`list[obj]`):  When `null`, the `bootstrap_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.bootstrap_action.new](#fn-bootstrap_actionnew) constructor.
+  - `core_instance_fleet` (`list[obj]`):  When `null`, the `core_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.new](#fn-core_instance_fleetnew) constructor.
+  - `core_instance_group` (`list[obj]`):  When `null`, the `core_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_group.new](#fn-core_instance_groupnew) constructor.
+  - `ec2_attributes` (`list[obj]`):  When `null`, the `ec2_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.ec2_attributes.new](#fn-ec2_attributesnew) constructor.
+  - `kerberos_attributes` (`list[obj]`):  When `null`, the `kerberos_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.kerberos_attributes.new](#fn-kerberos_attributesnew) constructor.
+  - `master_instance_fleet` (`list[obj]`):  When `null`, the `master_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.new](#fn-master_instance_fleetnew) constructor.
+  - `master_instance_group` (`list[obj]`):  When `null`, the `master_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_group.new](#fn-master_instance_groupnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -172,7 +172,7 @@ newAttrs()
 `aws.emr_cluster.newAttrs` constructs a new object with attributes and blocks configured for the `emr_cluster`
 Terraform resource.
 
-Unlike [aws.emr_cluster.new](#fn-emrclusternew), this function will not inject the `resource`
+Unlike [aws.emr_cluster.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -202,14 +202,14 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `termination_protection` (`bool`):  When `null`, the `termination_protection` field will be omitted from the resulting object.
   - `visible_to_all_users` (`bool`):  When `null`, the `visible_to_all_users` field will be omitted from the resulting object.
-  - `auto_termination_policy` (`list[obj]`):  When `null`, the `auto_termination_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.auto_termination_policy.new](#fn-emrclusterautoterminationpolicynew) constructor.
-  - `bootstrap_action` (`list[obj]`):  When `null`, the `bootstrap_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.bootstrap_action.new](#fn-emrclusterbootstrapactionnew) constructor.
-  - `core_instance_fleet` (`list[obj]`):  When `null`, the `core_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.new](#fn-emrclustercoreinstancefleetnew) constructor.
-  - `core_instance_group` (`list[obj]`):  When `null`, the `core_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_group.new](#fn-emrclustercoreinstancegroupnew) constructor.
-  - `ec2_attributes` (`list[obj]`):  When `null`, the `ec2_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.ec2_attributes.new](#fn-emrclusterec2attributesnew) constructor.
-  - `kerberos_attributes` (`list[obj]`):  When `null`, the `kerberos_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.kerberos_attributes.new](#fn-emrclusterkerberosattributesnew) constructor.
-  - `master_instance_fleet` (`list[obj]`):  When `null`, the `master_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.new](#fn-emrclustermasterinstancefleetnew) constructor.
-  - `master_instance_group` (`list[obj]`):  When `null`, the `master_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_group.new](#fn-emrclustermasterinstancegroupnew) constructor.
+  - `auto_termination_policy` (`list[obj]`):  When `null`, the `auto_termination_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.auto_termination_policy.new](#fn-auto_termination_policynew) constructor.
+  - `bootstrap_action` (`list[obj]`):  When `null`, the `bootstrap_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.bootstrap_action.new](#fn-bootstrap_actionnew) constructor.
+  - `core_instance_fleet` (`list[obj]`):  When `null`, the `core_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.new](#fn-core_instance_fleetnew) constructor.
+  - `core_instance_group` (`list[obj]`):  When `null`, the `core_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_group.new](#fn-core_instance_groupnew) constructor.
+  - `ec2_attributes` (`list[obj]`):  When `null`, the `ec2_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.ec2_attributes.new](#fn-ec2_attributesnew) constructor.
+  - `kerberos_attributes` (`list[obj]`):  When `null`, the `kerberos_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.kerberos_attributes.new](#fn-kerberos_attributesnew) constructor.
+  - `master_instance_fleet` (`list[obj]`):  When `null`, the `master_instance_fleet` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.new](#fn-master_instance_fleetnew) constructor.
+  - `master_instance_group` (`list[obj]`):  When `null`, the `master_instance_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_group.new](#fn-master_instance_groupnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emr_cluster` resource into the root Terraform configuration.
@@ -931,8 +931,8 @@ Terraform sub block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `target_on_demand_capacity` (`number`):  When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
   - `target_spot_capacity` (`number`):  When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
-  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.instance_type_configs.new](#fn-coreinstancefleetinstancetypeconfigsnew) constructor.
-  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.launch_specifications.new](#fn-coreinstancefleetlaunchspecificationsnew) constructor.
+  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.instance_type_configs.new](#fn-core_instance_fleetinstance_type_configsnew) constructor.
+  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.launch_specifications.new](#fn-core_instance_fleetlaunch_specificationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `core_instance_fleet` sub block.
@@ -959,8 +959,8 @@ Terraform sub block.
   - `bid_price_as_percentage_of_on_demand_price` (`number`):  When `null`, the `bid_price_as_percentage_of_on_demand_price` field will be omitted from the resulting object.
   - `instance_type` (`string`): 
   - `weighted_capacity` (`number`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.instance_type_configs.configurations.new](#fn-instancetypeconfigsconfigurationsnew) constructor.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.instance_type_configs.ebs_config.new](#fn-instancetypeconfigsebsconfignew) constructor.
+  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.instance_type_configs.configurations.new](#fn-core_instance_fleetcore_instance_fleetconfigurationsnew) constructor.
+  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.instance_type_configs.ebs_config.new](#fn-core_instance_fleetcore_instance_fleetebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_type_configs` sub block.
@@ -1033,8 +1033,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.launch_specifications.on_demand_specification.new](#fn-launchspecificationsondemandspecificationnew) constructor.
-  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.launch_specifications.spot_specification.new](#fn-launchspecificationsspotspecificationnew) constructor.
+  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.launch_specifications.on_demand_specification.new](#fn-core_instance_fleetcore_instance_fleeton_demand_specificationnew) constructor.
+  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_fleet.launch_specifications.spot_specification.new](#fn-core_instance_fleetcore_instance_fleetspot_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_specifications` sub block.
@@ -1111,7 +1111,7 @@ Terraform sub block.
   - `instance_count` (`number`):  When `null`, the `instance_count` field will be omitted from the resulting object.
   - `instance_type` (`string`): 
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_group.ebs_config.new](#fn-coreinstancegroupebsconfignew) constructor.
+  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.core_instance_group.ebs_config.new](#fn-core_instance_groupebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `core_instance_group` sub block.
@@ -1222,8 +1222,8 @@ Terraform sub block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `target_on_demand_capacity` (`number`):  When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
   - `target_spot_capacity` (`number`):  When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
-  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.instance_type_configs.new](#fn-masterinstancefleetinstancetypeconfigsnew) constructor.
-  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.launch_specifications.new](#fn-masterinstancefleetlaunchspecificationsnew) constructor.
+  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.instance_type_configs.new](#fn-master_instance_fleetinstance_type_configsnew) constructor.
+  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.launch_specifications.new](#fn-master_instance_fleetlaunch_specificationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `master_instance_fleet` sub block.
@@ -1250,8 +1250,8 @@ Terraform sub block.
   - `bid_price_as_percentage_of_on_demand_price` (`number`):  When `null`, the `bid_price_as_percentage_of_on_demand_price` field will be omitted from the resulting object.
   - `instance_type` (`string`): 
   - `weighted_capacity` (`number`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.instance_type_configs.configurations.new](#fn-instancetypeconfigsconfigurationsnew) constructor.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.instance_type_configs.ebs_config.new](#fn-instancetypeconfigsebsconfignew) constructor.
+  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.instance_type_configs.configurations.new](#fn-master_instance_fleetmaster_instance_fleetconfigurationsnew) constructor.
+  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.instance_type_configs.ebs_config.new](#fn-master_instance_fleetmaster_instance_fleetebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_type_configs` sub block.
@@ -1324,8 +1324,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.launch_specifications.on_demand_specification.new](#fn-launchspecificationsondemandspecificationnew) constructor.
-  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.launch_specifications.spot_specification.new](#fn-launchspecificationsspotspecificationnew) constructor.
+  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.launch_specifications.on_demand_specification.new](#fn-master_instance_fleetmaster_instance_fleeton_demand_specificationnew) constructor.
+  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_fleet.launch_specifications.spot_specification.new](#fn-master_instance_fleetmaster_instance_fleetspot_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_specifications` sub block.
@@ -1401,7 +1401,7 @@ Terraform sub block.
   - `instance_count` (`number`):  When `null`, the `instance_count` field will be omitted from the resulting object.
   - `instance_type` (`string`): 
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_group.ebs_config.new](#fn-masterinstancegroupebsconfignew) constructor.
+  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_cluster.master_instance_group.ebs_config.new](#fn-master_instance_groupebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `master_instance_group` sub block.

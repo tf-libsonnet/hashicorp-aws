@@ -75,8 +75,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `validation_method` (`string`):  When `null`, the `validation_method` field will be omitted from the resulting object.
-  - `options` (`list[obj]`):  When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.options.new](#fn-acmcertificateoptionsnew) constructor.
-  - `validation_option` (`list[obj]`):  When `null`, the `validation_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.validation_option.new](#fn-acmcertificatevalidationoptionnew) constructor.
+  - `options` (`list[obj]`):  When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.options.new](#fn-optionsnew) constructor.
+  - `validation_option` (`list[obj]`):  When `null`, the `validation_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.validation_option.new](#fn-validation_optionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -92,7 +92,7 @@ newAttrs()
 `aws.acm_certificate.newAttrs` constructs a new object with attributes and blocks configured for the `acm_certificate`
 Terraform resource.
 
-Unlike [aws.acm_certificate.new](#fn-acmcertificatenew), this function will not inject the `resource`
+Unlike [aws.acm_certificate.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -111,8 +111,8 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `validation_method` (`string`):  When `null`, the `validation_method` field will be omitted from the resulting object.
-  - `options` (`list[obj]`):  When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.options.new](#fn-acmcertificateoptionsnew) constructor.
-  - `validation_option` (`list[obj]`):  When `null`, the `validation_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.validation_option.new](#fn-acmcertificatevalidationoptionnew) constructor.
+  - `options` (`list[obj]`):  When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.options.new](#fn-optionsnew) constructor.
+  - `validation_option` (`list[obj]`):  When `null`, the `validation_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acm_certificate.validation_option.new](#fn-validation_optionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `acm_certificate` resource into the root Terraform configuration.

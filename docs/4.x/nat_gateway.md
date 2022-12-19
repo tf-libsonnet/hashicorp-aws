@@ -72,7 +72,7 @@ newAttrs()
 `aws.nat_gateway.newAttrs` constructs a new object with attributes and blocks configured for the `nat_gateway`
 Terraform resource.
 
-Unlike [aws.nat_gateway.new](#fn-natgatewaynew), this function will not inject the `resource`
+Unlike [aws.nat_gateway.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

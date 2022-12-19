@@ -61,7 +61,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `rate_limit` (`number`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `predicates` (`list[obj]`):  When `null`, the `predicates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rate_based_rule.predicates.new](#fn-wafratebasedrulepredicatesnew) constructor.
+  - `predicates` (`list[obj]`):  When `null`, the `predicates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rate_based_rule.predicates.new](#fn-predicatesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,7 +77,7 @@ newAttrs()
 `aws.waf_rate_based_rule.newAttrs` constructs a new object with attributes and blocks configured for the `waf_rate_based_rule`
 Terraform resource.
 
-Unlike [aws.waf_rate_based_rule.new](#fn-wafratebasedrulenew), this function will not inject the `resource`
+Unlike [aws.waf_rate_based_rule.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `rate_limit` (`number`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `predicates` (`list[obj]`):  When `null`, the `predicates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rate_based_rule.predicates.new](#fn-wafratebasedrulepredicatesnew) constructor.
+  - `predicates` (`list[obj]`):  When `null`, the `predicates` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rate_based_rule.predicates.new](#fn-predicatesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `waf_rate_based_rule` resource into the root Terraform configuration.

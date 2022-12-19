@@ -72,7 +72,7 @@ newAttrs()
 `aws.cloudwatch_event_api_destination.newAttrs` constructs a new object with attributes and blocks configured for the `cloudwatch_event_api_destination`
 Terraform resource.
 
-Unlike [aws.cloudwatch_event_api_destination.new](#fn-cloudwatcheventapidestinationnew), this function will not inject the `resource`
+Unlike [aws.cloudwatch_event_api_destination.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

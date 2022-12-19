@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
   - `voice_connector_id` (`string`): 
-  - `route` (`list[obj]`):  When `null`, the `route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_origination.route.new](#fn-chimevoiceconnectororiginationroutenew) constructor.
+  - `route` (`list[obj]`):  When `null`, the `route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_origination.route.new](#fn-routenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.chime_voice_connector_origination.newAttrs` constructs a new object with attributes and blocks configured for the `chime_voice_connector_origination`
 Terraform resource.
 
-Unlike [aws.chime_voice_connector_origination.new](#fn-chimevoiceconnectororiginationnew), this function will not inject the `resource`
+Unlike [aws.chime_voice_connector_origination.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
   - `voice_connector_id` (`string`): 
-  - `route` (`list[obj]`):  When `null`, the `route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_origination.route.new](#fn-chimevoiceconnectororiginationroutenew) constructor.
+  - `route` (`list[obj]`):  When `null`, the `route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.chime_voice_connector_origination.route.new](#fn-routenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `chime_voice_connector_origination` resource into the root Terraform configuration.

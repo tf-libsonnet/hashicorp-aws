@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `value_selection_strategy` (`string`):  When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
-  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-lexslottypeenumerationvaluenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-lexslottypetimeoutsnew) constructor.
+  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-enumeration_valuenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,7 +78,7 @@ newAttrs()
 `aws.lex_slot_type.newAttrs` constructs a new object with attributes and blocks configured for the `lex_slot_type`
 Terraform resource.
 
-Unlike [aws.lex_slot_type.new](#fn-lexslottypenew), this function will not inject the `resource`
+Unlike [aws.lex_slot_type.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -90,8 +90,8 @@ injecting into a complete block.
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
   - `value_selection_strategy` (`string`):  When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
-  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-lexslottypeenumerationvaluenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-lexslottypetimeoutsnew) constructor.
+  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-enumeration_valuenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lex_slot_type` resource into the root Terraform configuration.

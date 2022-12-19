@@ -75,11 +75,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
   - `video_codec_options` (`obj`):  When `null`, the `video_codec_options` field will be omitted from the resulting object.
-  - `audio` (`list[obj]`):  When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-elastictranscoderpresetaudionew) constructor.
-  - `audio_codec_options` (`list[obj]`):  When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-elastictranscoderpresetaudiocodecoptionsnew) constructor.
-  - `thumbnails` (`list[obj]`):  When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-elastictranscoderpresetthumbnailsnew) constructor.
-  - `video` (`list[obj]`):  When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-elastictranscoderpresetvideonew) constructor.
-  - `video_watermarks` (`list[obj]`):  When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-elastictranscoderpresetvideowatermarksnew) constructor.
+  - `audio` (`list[obj]`):  When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-audionew) constructor.
+  - `audio_codec_options` (`list[obj]`):  When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-audio_codec_optionsnew) constructor.
+  - `thumbnails` (`list[obj]`):  When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-thumbnailsnew) constructor.
+  - `video` (`list[obj]`):  When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-videonew) constructor.
+  - `video_watermarks` (`list[obj]`):  When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-video_watermarksnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,7 +95,7 @@ newAttrs()
 `aws.elastictranscoder_preset.newAttrs` constructs a new object with attributes and blocks configured for the `elastictranscoder_preset`
 Terraform resource.
 
-Unlike [aws.elastictranscoder_preset.new](#fn-elastictranscoderpresetnew), this function will not inject the `resource`
+Unlike [aws.elastictranscoder_preset.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -108,11 +108,11 @@ injecting into a complete block.
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
   - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
   - `video_codec_options` (`obj`):  When `null`, the `video_codec_options` field will be omitted from the resulting object.
-  - `audio` (`list[obj]`):  When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-elastictranscoderpresetaudionew) constructor.
-  - `audio_codec_options` (`list[obj]`):  When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-elastictranscoderpresetaudiocodecoptionsnew) constructor.
-  - `thumbnails` (`list[obj]`):  When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-elastictranscoderpresetthumbnailsnew) constructor.
-  - `video` (`list[obj]`):  When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-elastictranscoderpresetvideonew) constructor.
-  - `video_watermarks` (`list[obj]`):  When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-elastictranscoderpresetvideowatermarksnew) constructor.
+  - `audio` (`list[obj]`):  When `null`, the `audio` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio.new](#fn-audionew) constructor.
+  - `audio_codec_options` (`list[obj]`):  When `null`, the `audio_codec_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.audio_codec_options.new](#fn-audio_codec_optionsnew) constructor.
+  - `thumbnails` (`list[obj]`):  When `null`, the `thumbnails` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.thumbnails.new](#fn-thumbnailsnew) constructor.
+  - `video` (`list[obj]`):  When `null`, the `video` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video.new](#fn-videonew) constructor.
+  - `video_watermarks` (`list[obj]`):  When `null`, the `video_watermarks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_preset.video_watermarks.new](#fn-video_watermarksnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastictranscoder_preset` resource into the root Terraform configuration.

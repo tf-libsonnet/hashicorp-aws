@@ -75,7 +75,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `org_assertion` (`string`):  When `null`, the `org_assertion` field will be omitted from the resulting object.
   - `role_assertion` (`string`):  When `null`, the `role_assertion` field will be omitted from the resulting object.
   - `workspace_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-grafanaworkspacesamlconfigurationtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,7 +91,7 @@ newAttrs()
 `aws.grafana_workspace_saml_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `grafana_workspace_saml_configuration`
 Terraform resource.
 
-Unlike [aws.grafana_workspace_saml_configuration.new](#fn-grafanaworkspacesamlconfigurationnew), this function will not inject the `resource`
+Unlike [aws.grafana_workspace_saml_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -112,7 +112,7 @@ injecting into a complete block.
   - `org_assertion` (`string`):  When `null`, the `org_assertion` field will be omitted from the resulting object.
   - `role_assertion` (`string`):  When `null`, the `role_assertion` field will be omitted from the resulting object.
   - `workspace_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-grafanaworkspacesamlconfigurationtimeoutsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `grafana_workspace_saml_configuration` resource into the root Terraform configuration.

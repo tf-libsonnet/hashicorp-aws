@@ -115,9 +115,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `use_ebs_optimized_instances` (`bool`):  When `null`, the `use_ebs_optimized_instances` field will be omitted from the resulting object.
-  - `cloudwatch_configuration` (`list[obj]`):  When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.new](#fn-opsworksjavaapplayercloudwatchconfigurationnew) constructor.
-  - `ebs_volume` (`list[obj]`):  When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.ebs_volume.new](#fn-opsworksjavaapplayerebsvolumenew) constructor.
-  - `load_based_auto_scaling` (`list[obj]`):  When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.new](#fn-opsworksjavaapplayerloadbasedautoscalingnew) constructor.
+  - `cloudwatch_configuration` (`list[obj]`):  When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.new](#fn-cloudwatch_configurationnew) constructor.
+  - `ebs_volume` (`list[obj]`):  When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.ebs_volume.new](#fn-ebs_volumenew) constructor.
+  - `load_based_auto_scaling` (`list[obj]`):  When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.new](#fn-load_based_auto_scalingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -133,7 +133,7 @@ newAttrs()
 `aws.opsworks_java_app_layer.newAttrs` constructs a new object with attributes and blocks configured for the `opsworks_java_app_layer`
 Terraform resource.
 
-Unlike [aws.opsworks_java_app_layer.new](#fn-opsworksjavaapplayernew), this function will not inject the `resource`
+Unlike [aws.opsworks_java_app_layer.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -167,9 +167,9 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `use_ebs_optimized_instances` (`bool`):  When `null`, the `use_ebs_optimized_instances` field will be omitted from the resulting object.
-  - `cloudwatch_configuration` (`list[obj]`):  When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.new](#fn-opsworksjavaapplayercloudwatchconfigurationnew) constructor.
-  - `ebs_volume` (`list[obj]`):  When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.ebs_volume.new](#fn-opsworksjavaapplayerebsvolumenew) constructor.
-  - `load_based_auto_scaling` (`list[obj]`):  When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.new](#fn-opsworksjavaapplayerloadbasedautoscalingnew) constructor.
+  - `cloudwatch_configuration` (`list[obj]`):  When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.new](#fn-cloudwatch_configurationnew) constructor.
+  - `ebs_volume` (`list[obj]`):  When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.ebs_volume.new](#fn-ebs_volumenew) constructor.
+  - `load_based_auto_scaling` (`list[obj]`):  When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.new](#fn-load_based_auto_scalingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_java_app_layer` resource into the root Terraform configuration.
@@ -720,7 +720,7 @@ Terraform sub block.
 
 **Args**:
   - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_streams` (`list[obj]`):  When `null`, the `log_streams` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.log_streams.new](#fn-cloudwatchconfigurationlogstreamsnew) constructor.
+  - `log_streams` (`list[obj]`):  When `null`, the `log_streams` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.cloudwatch_configuration.log_streams.new](#fn-cloudwatch_configurationlog_streamsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_configuration` sub block.
@@ -806,8 +806,8 @@ Terraform sub block.
 
 **Args**:
   - `enable` (`bool`):  When `null`, the `enable` field will be omitted from the resulting object.
-  - `downscaling` (`list[obj]`):  When `null`, the `downscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.downscaling.new](#fn-loadbasedautoscalingdownscalingnew) constructor.
-  - `upscaling` (`list[obj]`):  When `null`, the `upscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.upscaling.new](#fn-loadbasedautoscalingupscalingnew) constructor.
+  - `downscaling` (`list[obj]`):  When `null`, the `downscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.downscaling.new](#fn-load_based_auto_scalingdownscalingnew) constructor.
+  - `upscaling` (`list[obj]`):  When `null`, the `upscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_java_app_layer.load_based_auto_scaling.upscaling.new](#fn-load_based_auto_scalingupscalingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `load_based_auto_scaling` sub block.

@@ -159,8 +159,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tunnel_inside_ip_version` (`string`):  When `null`, the `tunnel_inside_ip_version` field will be omitted from the resulting object.
   - `type` (`string`): 
   - `vpn_gateway_id` (`string`):  When `null`, the `vpn_gateway_id` field will be omitted from the resulting object.
-  - `tunnel1_log_options` (`list[obj]`):  When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-vpnconnectiontunnel1logoptionsnew) constructor.
-  - `tunnel2_log_options` (`list[obj]`):  When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-vpnconnectiontunnel2logoptionsnew) constructor.
+  - `tunnel1_log_options` (`list[obj]`):  When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-tunnel1_log_optionsnew) constructor.
+  - `tunnel2_log_options` (`list[obj]`):  When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-tunnel2_log_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -176,7 +176,7 @@ newAttrs()
 `aws.vpn_connection.newAttrs` constructs a new object with attributes and blocks configured for the `vpn_connection`
 Terraform resource.
 
-Unlike [aws.vpn_connection.new](#fn-vpnconnectionnew), this function will not inject the `resource`
+Unlike [aws.vpn_connection.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -235,8 +235,8 @@ injecting into a complete block.
   - `tunnel_inside_ip_version` (`string`):  When `null`, the `tunnel_inside_ip_version` field will be omitted from the resulting object.
   - `type` (`string`): 
   - `vpn_gateway_id` (`string`):  When `null`, the `vpn_gateway_id` field will be omitted from the resulting object.
-  - `tunnel1_log_options` (`list[obj]`):  When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-vpnconnectiontunnel1logoptionsnew) constructor.
-  - `tunnel2_log_options` (`list[obj]`):  When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-vpnconnectiontunnel2logoptionsnew) constructor.
+  - `tunnel1_log_options` (`list[obj]`):  When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-tunnel1_log_optionsnew) constructor.
+  - `tunnel2_log_options` (`list[obj]`):  When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-tunnel2_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpn_connection` resource into the root Terraform configuration.
@@ -1149,7 +1149,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.cloudwatch_log_options.new](#fn-tunnel1logoptionscloudwatchlogoptionsnew) constructor.
+  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.cloudwatch_log_options.new](#fn-tunnel1_log_optionscloudwatch_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tunnel1_log_options` sub block.
@@ -1197,7 +1197,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.cloudwatch_log_options.new](#fn-tunnel2logoptionscloudwatchlogoptionsnew) constructor.
+  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.cloudwatch_log_options.new](#fn-tunnel2_log_optionscloudwatch_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tunnel2_log_options` sub block.

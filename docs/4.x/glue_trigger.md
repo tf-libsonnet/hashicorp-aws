@@ -83,10 +83,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`): 
   - `workflow_name` (`string`):  When `null`, the `workflow_name` field will be omitted from the resulting object.
-  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.new](#fn-gluetriggeractionsnew) constructor.
-  - `event_batching_condition` (`list[obj]`):  When `null`, the `event_batching_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.event_batching_condition.new](#fn-gluetriggereventbatchingconditionnew) constructor.
-  - `predicate` (`list[obj]`):  When `null`, the `predicate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.predicate.new](#fn-gluetriggerpredicatenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.timeouts.new](#fn-gluetriggertimeoutsnew) constructor.
+  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.new](#fn-actionsnew) constructor.
+  - `event_batching_condition` (`list[obj]`):  When `null`, the `event_batching_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.event_batching_condition.new](#fn-event_batching_conditionnew) constructor.
+  - `predicate` (`list[obj]`):  When `null`, the `predicate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.predicate.new](#fn-predicatenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,7 +102,7 @@ newAttrs()
 `aws.glue_trigger.newAttrs` constructs a new object with attributes and blocks configured for the `glue_trigger`
 Terraform resource.
 
-Unlike [aws.glue_trigger.new](#fn-gluetriggernew), this function will not inject the `resource`
+Unlike [aws.glue_trigger.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -119,10 +119,10 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `type` (`string`): 
   - `workflow_name` (`string`):  When `null`, the `workflow_name` field will be omitted from the resulting object.
-  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.new](#fn-gluetriggeractionsnew) constructor.
-  - `event_batching_condition` (`list[obj]`):  When `null`, the `event_batching_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.event_batching_condition.new](#fn-gluetriggereventbatchingconditionnew) constructor.
-  - `predicate` (`list[obj]`):  When `null`, the `predicate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.predicate.new](#fn-gluetriggerpredicatenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.timeouts.new](#fn-gluetriggertimeoutsnew) constructor.
+  - `actions` (`list[obj]`):  When `null`, the `actions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.new](#fn-actionsnew) constructor.
+  - `event_batching_condition` (`list[obj]`):  When `null`, the `event_batching_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.event_batching_condition.new](#fn-event_batching_conditionnew) constructor.
+  - `predicate` (`list[obj]`):  When `null`, the `predicate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.predicate.new](#fn-predicatenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_trigger` resource into the root Terraform configuration.
@@ -441,7 +441,7 @@ Terraform sub block.
   - `job_name` (`string`):  When `null`, the `job_name` field will be omitted from the resulting object.
   - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
   - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
-  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.notification_property.new](#fn-actionsnotificationpropertynew) constructor.
+  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_trigger.actions.notification_property.new](#fn-actionsnotification_propertynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `actions` sub block.

@@ -62,7 +62,7 @@ newAttrs()
 `aws.ebs_encryption_by_default.newAttrs` constructs a new object with attributes and blocks configured for the `ebs_encryption_by_default`
 Terraform resource.
 
-Unlike [aws.ebs_encryption_by_default.new](#fn-ebsencryptionbydefaultnew), this function will not inject the `resource`
+Unlike [aws.ebs_encryption_by_default.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

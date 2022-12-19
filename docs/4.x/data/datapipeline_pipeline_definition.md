@@ -51,7 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `pipeline_id` (`string`): 
-  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-datapipelinepipelinedefinitionparametervaluenew) constructor.
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -67,7 +67,7 @@ newAttrs()
 `aws.data.datapipeline_pipeline_definition.newAttrs` constructs a new object with attributes and blocks configured for the `datapipeline_pipeline_definition`
 Terraform data source.
 
-Unlike [aws.data.datapipeline_pipeline_definition.new](#fn-datapipelinepipelinedefinitionnew), this function will not inject the `data source`
+Unlike [aws.data.datapipeline_pipeline_definition.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 
@@ -76,7 +76,7 @@ injecting into a complete block.
 
 **Args**:
   - `pipeline_id` (`string`): 
-  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-datapipelinepipelinedefinitionparametervaluenew) constructor.
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `datapipeline_pipeline_definition` data source into the root Terraform configuration.

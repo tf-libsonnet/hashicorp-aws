@@ -64,7 +64,7 @@ newAttrs()
 `aws.vpc_endpoint_service_allowed_principal.newAttrs` constructs a new object with attributes and blocks configured for the `vpc_endpoint_service_allowed_principal`
 Terraform resource.
 
-Unlike [aws.vpc_endpoint_service_allowed_principal.new](#fn-vpcendpointserviceallowedprincipalnew), this function will not inject the `resource`
+Unlike [aws.vpc_endpoint_service_allowed_principal.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

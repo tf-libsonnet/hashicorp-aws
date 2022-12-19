@@ -79,9 +79,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `rejected_patches_action` (`string`):  When `null`, the `rejected_patches_action` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `approval_rule` (`list[obj]`):  When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-ssmpatchbaselineapprovalrulenew) constructor.
-  - `global_filter` (`list[obj]`):  When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-ssmpatchbaselineglobalfilternew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-ssmpatchbaselinesourcenew) constructor.
+  - `approval_rule` (`list[obj]`):  When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-approval_rulenew) constructor.
+  - `global_filter` (`list[obj]`):  When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-global_filternew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -97,7 +97,7 @@ newAttrs()
 `aws.ssm_patch_baseline.newAttrs` constructs a new object with attributes and blocks configured for the `ssm_patch_baseline`
 Terraform resource.
 
-Unlike [aws.ssm_patch_baseline.new](#fn-ssmpatchbaselinenew), this function will not inject the `resource`
+Unlike [aws.ssm_patch_baseline.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -115,9 +115,9 @@ injecting into a complete block.
   - `rejected_patches_action` (`string`):  When `null`, the `rejected_patches_action` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `approval_rule` (`list[obj]`):  When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-ssmpatchbaselineapprovalrulenew) constructor.
-  - `global_filter` (`list[obj]`):  When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-ssmpatchbaselineglobalfilternew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-ssmpatchbaselinesourcenew) constructor.
+  - `approval_rule` (`list[obj]`):  When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-approval_rulenew) constructor.
+  - `global_filter` (`list[obj]`):  When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-global_filternew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_patch_baseline` resource into the root Terraform configuration.
@@ -415,7 +415,7 @@ Terraform sub block.
   - `approve_until_date` (`string`):  When `null`, the `approve_until_date` field will be omitted from the resulting object.
   - `compliance_level` (`string`):  When `null`, the `compliance_level` field will be omitted from the resulting object.
   - `enable_non_security` (`bool`):  When `null`, the `enable_non_security` field will be omitted from the resulting object.
-  - `patch_filter` (`list[obj]`):  When `null`, the `patch_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.patch_filter.new](#fn-approvalrulepatchfilternew) constructor.
+  - `patch_filter` (`list[obj]`):  When `null`, the `patch_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.patch_filter.new](#fn-approval_rulepatch_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `approval_rule` sub block.

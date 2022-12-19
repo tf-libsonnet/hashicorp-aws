@@ -71,7 +71,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `permissions_boundary` (`string`):  When `null`, the `permissions_boundary` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `inline_policy` (`list[obj]`):  When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-iamroleinlinepolicynew) constructor.
+  - `inline_policy` (`list[obj]`):  When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-inline_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,7 +87,7 @@ newAttrs()
 `aws.iam_role.newAttrs` constructs a new object with attributes and blocks configured for the `iam_role`
 Terraform resource.
 
-Unlike [aws.iam_role.new](#fn-iamrolenew), this function will not inject the `resource`
+Unlike [aws.iam_role.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -106,7 +106,7 @@ injecting into a complete block.
   - `permissions_boundary` (`string`):  When `null`, the `permissions_boundary` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `inline_policy` (`list[obj]`):  When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-iamroleinlinepolicynew) constructor.
+  - `inline_policy` (`list[obj]`):  When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-inline_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iam_role` resource into the root Terraform configuration.

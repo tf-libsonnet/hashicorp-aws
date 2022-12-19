@@ -93,10 +93,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `zip_file` (`string`):  When `null`, the `zip_file` field will be omitted from the resulting object.
-  - `artifact_config` (`list[obj]`):  When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-syntheticscanaryartifactconfignew) constructor.
-  - `run_config` (`list[obj]`):  When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-syntheticscanaryrunconfignew) constructor.
-  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-syntheticscanaryschedulenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-syntheticscanaryvpcconfignew) constructor.
+  - `artifact_config` (`list[obj]`):  When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-artifact_confignew) constructor.
+  - `run_config` (`list[obj]`):  When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-run_confignew) constructor.
+  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-schedulenew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -112,7 +112,7 @@ newAttrs()
 `aws.synthetics_canary.newAttrs` constructs a new object with attributes and blocks configured for the `synthetics_canary`
 Terraform resource.
 
-Unlike [aws.synthetics_canary.new](#fn-syntheticscanarynew), this function will not inject the `resource`
+Unlike [aws.synthetics_canary.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -135,10 +135,10 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `zip_file` (`string`):  When `null`, the `zip_file` field will be omitted from the resulting object.
-  - `artifact_config` (`list[obj]`):  When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-syntheticscanaryartifactconfignew) constructor.
-  - `run_config` (`list[obj]`):  When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-syntheticscanaryrunconfignew) constructor.
-  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-syntheticscanaryschedulenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-syntheticscanaryvpcconfignew) constructor.
+  - `artifact_config` (`list[obj]`):  When `null`, the `artifact_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.new](#fn-artifact_confignew) constructor.
+  - `run_config` (`list[obj]`):  When `null`, the `run_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.run_config.new](#fn-run_confignew) constructor.
+  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.schedule.new](#fn-schedulenew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `synthetics_canary` resource into the root Terraform configuration.
@@ -549,7 +549,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-artifactconfigs3encryptionnew) constructor.
+  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.synthetics_canary.artifact_config.s3_encryption.new](#fn-artifact_configs3_encryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `artifact_config` sub block.

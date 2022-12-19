@@ -67,8 +67,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `svm_admin_password` (`string`):  When `null`, the `svm_admin_password` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `active_directory_configuration` (`list[obj]`):  When `null`, the `active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.new](#fn-fsxontapstoragevirtualmachineactivedirectoryconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.timeouts.new](#fn-fsxontapstoragevirtualmachinetimeoutsnew) constructor.
+  - `active_directory_configuration` (`list[obj]`):  When `null`, the `active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.new](#fn-active_directory_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,7 +84,7 @@ newAttrs()
 `aws.fsx_ontap_storage_virtual_machine.newAttrs` constructs a new object with attributes and blocks configured for the `fsx_ontap_storage_virtual_machine`
 Terraform resource.
 
-Unlike [aws.fsx_ontap_storage_virtual_machine.new](#fn-fsxontapstoragevirtualmachinenew), this function will not inject the `resource`
+Unlike [aws.fsx_ontap_storage_virtual_machine.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -98,8 +98,8 @@ injecting into a complete block.
   - `svm_admin_password` (`string`):  When `null`, the `svm_admin_password` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `active_directory_configuration` (`list[obj]`):  When `null`, the `active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.new](#fn-fsxontapstoragevirtualmachineactivedirectoryconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.timeouts.new](#fn-fsxontapstoragevirtualmachinetimeoutsnew) constructor.
+  - `active_directory_configuration` (`list[obj]`):  When `null`, the `active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.new](#fn-active_directory_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_ontap_storage_virtual_machine` resource into the root Terraform configuration.
@@ -292,7 +292,7 @@ Terraform sub block.
 
 **Args**:
   - `netbios_name` (`string`):  When `null`, the `netbios_name` field will be omitted from the resulting object.
-  - `self_managed_active_directory_configuration` (`list[obj]`):  When `null`, the `self_managed_active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.self_managed_active_directory_configuration.new](#fn-activedirectoryconfigurationselfmanagedactivedirectoryconfigurationnew) constructor.
+  - `self_managed_active_directory_configuration` (`list[obj]`):  When `null`, the `self_managed_active_directory_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_storage_virtual_machine.active_directory_configuration.self_managed_active_directory_configuration.new](#fn-active_directory_configurationself_managed_active_directory_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `active_directory_configuration` sub block.

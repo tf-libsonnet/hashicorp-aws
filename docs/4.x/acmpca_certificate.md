@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `certificate_signing_request` (`string`): 
   - `signing_algorithm` (`string`): 
   - `template_arn` (`string`):  When `null`, the `template_arn` field will be omitted from the resulting object.
-  - `validity` (`list[obj]`):  When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-acmpcacertificatevaliditynew) constructor.
+  - `validity` (`list[obj]`):  When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-validitynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.acmpca_certificate.newAttrs` constructs a new object with attributes and blocks configured for the `acmpca_certificate`
 Terraform resource.
 
-Unlike [aws.acmpca_certificate.new](#fn-acmpcacertificatenew), this function will not inject the `resource`
+Unlike [aws.acmpca_certificate.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -85,7 +85,7 @@ injecting into a complete block.
   - `certificate_signing_request` (`string`): 
   - `signing_algorithm` (`string`): 
   - `template_arn` (`string`):  When `null`, the `template_arn` field will be omitted from the resulting object.
-  - `validity` (`list[obj]`):  When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-acmpcacertificatevaliditynew) constructor.
+  - `validity` (`list[obj]`):  When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-validitynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `acmpca_certificate` resource into the root Terraform configuration.

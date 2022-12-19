@@ -71,8 +71,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `target_id` (`string`): 
   - `target_type` (`string`): 
   - `target_version` (`string`):  When `null`, the `target_version` field will be omitted from the resulting object.
-  - `execution_controls` (`list[obj]`):  When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-configremediationconfigurationexecutioncontrolsnew) constructor.
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-configremediationconfigurationparameternew) constructor.
+  - `execution_controls` (`list[obj]`):  When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-execution_controlsnew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-parameternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,7 +88,7 @@ newAttrs()
 `aws.config_remediation_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `config_remediation_configuration`
 Terraform resource.
 
-Unlike [aws.config_remediation_configuration.new](#fn-configremediationconfigurationnew), this function will not inject the `resource`
+Unlike [aws.config_remediation_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -104,8 +104,8 @@ injecting into a complete block.
   - `target_id` (`string`): 
   - `target_type` (`string`): 
   - `target_version` (`string`):  When `null`, the `target_version` field will be omitted from the resulting object.
-  - `execution_controls` (`list[obj]`):  When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-configremediationconfigurationexecutioncontrolsnew) constructor.
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-configremediationconfigurationparameternew) constructor.
+  - `execution_controls` (`list[obj]`):  When `null`, the `execution_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.new](#fn-execution_controlsnew) constructor.
+  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.parameter.new](#fn-parameternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_remediation_configuration` resource into the root Terraform configuration.
@@ -330,7 +330,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ssm_controls` (`list[obj]`):  When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-executioncontrolsssmcontrolsnew) constructor.
+  - `ssm_controls` (`list[obj]`):  When `null`, the `ssm_controls` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_remediation_configuration.execution_controls.ssm_controls.new](#fn-execution_controlsssm_controlsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `execution_controls` sub block.

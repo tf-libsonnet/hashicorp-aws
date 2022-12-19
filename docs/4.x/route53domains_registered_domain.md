@@ -81,11 +81,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `tech_privacy` (`bool`):  When `null`, the `tech_privacy` field will be omitted from the resulting object.
   - `transfer_lock` (`bool`):  When `null`, the `transfer_lock` field will be omitted from the resulting object.
-  - `admin_contact` (`list[obj]`):  When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-route53domainsregistereddomainadmincontactnew) constructor.
-  - `name_server` (`list[obj]`):  When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-route53domainsregistereddomainnameservernew) constructor.
-  - `registrant_contact` (`list[obj]`):  When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-route53domainsregistereddomainregistrantcontactnew) constructor.
-  - `tech_contact` (`list[obj]`):  When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-route53domainsregistereddomaintechcontactnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-route53domainsregistereddomaintimeoutsnew) constructor.
+  - `admin_contact` (`list[obj]`):  When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-admin_contactnew) constructor.
+  - `name_server` (`list[obj]`):  When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-name_servernew) constructor.
+  - `registrant_contact` (`list[obj]`):  When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-registrant_contactnew) constructor.
+  - `tech_contact` (`list[obj]`):  When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-tech_contactnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,7 +101,7 @@ newAttrs()
 `aws.route53domains_registered_domain.newAttrs` constructs a new object with attributes and blocks configured for the `route53domains_registered_domain`
 Terraform resource.
 
-Unlike [aws.route53domains_registered_domain.new](#fn-route53domainsregistereddomainnew), this function will not inject the `resource`
+Unlike [aws.route53domains_registered_domain.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -117,11 +117,11 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `tech_privacy` (`bool`):  When `null`, the `tech_privacy` field will be omitted from the resulting object.
   - `transfer_lock` (`bool`):  When `null`, the `transfer_lock` field will be omitted from the resulting object.
-  - `admin_contact` (`list[obj]`):  When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-route53domainsregistereddomainadmincontactnew) constructor.
-  - `name_server` (`list[obj]`):  When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-route53domainsregistereddomainnameservernew) constructor.
-  - `registrant_contact` (`list[obj]`):  When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-route53domainsregistereddomainregistrantcontactnew) constructor.
-  - `tech_contact` (`list[obj]`):  When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-route53domainsregistereddomaintechcontactnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-route53domainsregistereddomaintimeoutsnew) constructor.
+  - `admin_contact` (`list[obj]`):  When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-admin_contactnew) constructor.
+  - `name_server` (`list[obj]`):  When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-name_servernew) constructor.
+  - `registrant_contact` (`list[obj]`):  When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-registrant_contactnew) constructor.
+  - `tech_contact` (`list[obj]`):  When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-tech_contactnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53domains_registered_domain` resource into the root Terraform configuration.

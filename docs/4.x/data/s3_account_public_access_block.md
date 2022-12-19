@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.s3_account_public_access_block.newAttrs` constructs a new object with attributes and blocks configured for the `s3_account_public_access_block`
 Terraform data source.
 
-Unlike [aws.data.s3_account_public_access_block.new](#fn-s3accountpublicaccessblocknew), this function will not inject the `data source`
+Unlike [aws.data.s3_account_public_access_block.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

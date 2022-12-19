@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `capacity_providers` (`list`):  When `null`, the `capacity_providers` field will be omitted from the resulting object.
   - `cluster_name` (`string`): 
-  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster_capacity_providers.default_capacity_provider_strategy.new](#fn-ecsclustercapacityprovidersdefaultcapacityproviderstrategynew) constructor.
+  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster_capacity_providers.default_capacity_provider_strategy.new](#fn-default_capacity_provider_strategynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,7 +69,7 @@ newAttrs()
 `aws.ecs_cluster_capacity_providers.newAttrs` constructs a new object with attributes and blocks configured for the `ecs_cluster_capacity_providers`
 Terraform resource.
 
-Unlike [aws.ecs_cluster_capacity_providers.new](#fn-ecsclustercapacityprovidersnew), this function will not inject the `resource`
+Unlike [aws.ecs_cluster_capacity_providers.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -79,7 +79,7 @@ injecting into a complete block.
 **Args**:
   - `capacity_providers` (`list`):  When `null`, the `capacity_providers` field will be omitted from the resulting object.
   - `cluster_name` (`string`): 
-  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster_capacity_providers.default_capacity_provider_strategy.new](#fn-ecsclustercapacityprovidersdefaultcapacityproviderstrategynew) constructor.
+  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster_capacity_providers.default_capacity_provider_strategy.new](#fn-default_capacity_provider_strategynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecs_cluster_capacity_providers` resource into the root Terraform configuration.

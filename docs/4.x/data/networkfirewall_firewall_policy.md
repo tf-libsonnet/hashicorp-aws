@@ -66,7 +66,7 @@ newAttrs()
 `aws.data.networkfirewall_firewall_policy.newAttrs` constructs a new object with attributes and blocks configured for the `networkfirewall_firewall_policy`
 Terraform data source.
 
-Unlike [aws.data.networkfirewall_firewall_policy.new](#fn-networkfirewallfirewallpolicynew), this function will not inject the `data source`
+Unlike [aws.data.networkfirewall_firewall_policy.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

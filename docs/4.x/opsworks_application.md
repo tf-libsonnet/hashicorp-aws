@@ -85,9 +85,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
   - `stack_id` (`string`): 
   - `type` (`string`): 
-  - `app_source` (`list[obj]`):  When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-opsworksapplicationappsourcenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-opsworksapplicationenvironmentnew) constructor.
-  - `ssl_configuration` (`list[obj]`):  When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-opsworksapplicationsslconfigurationnew) constructor.
+  - `app_source` (`list[obj]`):  When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-app_sourcenew) constructor.
+  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-environmentnew) constructor.
+  - `ssl_configuration` (`list[obj]`):  When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-ssl_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,7 +103,7 @@ newAttrs()
 `aws.opsworks_application.newAttrs` constructs a new object with attributes and blocks configured for the `opsworks_application`
 Terraform resource.
 
-Unlike [aws.opsworks_application.new](#fn-opsworksapplicationnew), this function will not inject the `resource`
+Unlike [aws.opsworks_application.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -125,9 +125,9 @@ injecting into a complete block.
   - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
   - `stack_id` (`string`): 
   - `type` (`string`): 
-  - `app_source` (`list[obj]`):  When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-opsworksapplicationappsourcenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-opsworksapplicationenvironmentnew) constructor.
-  - `ssl_configuration` (`list[obj]`):  When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-opsworksapplicationsslconfigurationnew) constructor.
+  - `app_source` (`list[obj]`):  When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-app_sourcenew) constructor.
+  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-environmentnew) constructor.
+  - `ssl_configuration` (`list[obj]`):  When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-ssl_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_application` resource into the root Terraform configuration.

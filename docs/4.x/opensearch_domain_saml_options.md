@@ -57,8 +57,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `domain_name` (`string`): 
-  - `saml_options` (`list[obj]`):  When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.saml_options.new](#fn-opensearchdomainsamloptionssamloptionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.timeouts.new](#fn-opensearchdomainsamloptionstimeoutsnew) constructor.
+  - `saml_options` (`list[obj]`):  When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.saml_options.new](#fn-saml_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,7 +74,7 @@ newAttrs()
 `aws.opensearch_domain_saml_options.newAttrs` constructs a new object with attributes and blocks configured for the `opensearch_domain_saml_options`
 Terraform resource.
 
-Unlike [aws.opensearch_domain_saml_options.new](#fn-opensearchdomainsamloptionsnew), this function will not inject the `resource`
+Unlike [aws.opensearch_domain_saml_options.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -83,8 +83,8 @@ injecting into a complete block.
 
 **Args**:
   - `domain_name` (`string`): 
-  - `saml_options` (`list[obj]`):  When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.saml_options.new](#fn-opensearchdomainsamloptionssamloptionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.timeouts.new](#fn-opensearchdomainsamloptionstimeoutsnew) constructor.
+  - `saml_options` (`list[obj]`):  When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.saml_options.new](#fn-saml_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opensearch_domain_saml_options` resource into the root Terraform configuration.
@@ -202,7 +202,7 @@ Terraform sub block.
   - `roles_key` (`string`):  When `null`, the `roles_key` field will be omitted from the resulting object.
   - `session_timeout_minutes` (`number`):  When `null`, the `session_timeout_minutes` field will be omitted from the resulting object.
   - `subject_key` (`string`):  When `null`, the `subject_key` field will be omitted from the resulting object.
-  - `idp` (`list[obj]`):  When `null`, the `idp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.saml_options.idp.new](#fn-samloptionsidpnew) constructor.
+  - `idp` (`list[obj]`):  When `null`, the `idp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain_saml_options.saml_options.idp.new](#fn-saml_optionsidpnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `saml_options` sub block.

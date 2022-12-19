@@ -69,8 +69,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `termination_protection_enabled` (`bool`):  When `null`, the `termination_protection_enabled` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-cloudtraileventdatastoreadvancedeventselectornew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-cloudtraileventdatastoretimeoutsnew) constructor.
+  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,7 +86,7 @@ newAttrs()
 `aws.cloudtrail_event_data_store.newAttrs` constructs a new object with attributes and blocks configured for the `cloudtrail_event_data_store`
 Terraform resource.
 
-Unlike [aws.cloudtrail_event_data_store.new](#fn-cloudtraileventdatastorenew), this function will not inject the `resource`
+Unlike [aws.cloudtrail_event_data_store.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -101,8 +101,8 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `termination_protection_enabled` (`bool`):  When `null`, the `termination_protection_enabled` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-cloudtraileventdatastoreadvancedeventselectornew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-cloudtraileventdatastoretimeoutsnew) constructor.
+  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudtrail_event_data_store` resource into the root Terraform configuration.
@@ -311,7 +311,7 @@ Terraform sub block.
 
 **Args**:
   - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.field_selector.new](#fn-advancedeventselectorfieldselectornew) constructor.
+  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail_event_data_store.advanced_event_selector.field_selector.new](#fn-advanced_event_selectorfield_selectornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_event_selector` sub block.

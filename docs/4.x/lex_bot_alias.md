@@ -63,8 +63,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `bot_version` (`string`): 
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `conversation_logs` (`list[obj]`):  When `null`, the `conversation_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.new](#fn-lexbotaliasconversationlogsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.timeouts.new](#fn-lexbotaliastimeoutsnew) constructor.
+  - `conversation_logs` (`list[obj]`):  When `null`, the `conversation_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.new](#fn-conversation_logsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,7 +80,7 @@ newAttrs()
 `aws.lex_bot_alias.newAttrs` constructs a new object with attributes and blocks configured for the `lex_bot_alias`
 Terraform resource.
 
-Unlike [aws.lex_bot_alias.new](#fn-lexbotaliasnew), this function will not inject the `resource`
+Unlike [aws.lex_bot_alias.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -92,8 +92,8 @@ injecting into a complete block.
   - `bot_version` (`string`): 
   - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): 
-  - `conversation_logs` (`list[obj]`):  When `null`, the `conversation_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.new](#fn-lexbotaliasconversationlogsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.timeouts.new](#fn-lexbotaliastimeoutsnew) constructor.
+  - `conversation_logs` (`list[obj]`):  When `null`, the `conversation_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.new](#fn-conversation_logsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lex_bot_alias` resource into the root Terraform configuration.
@@ -254,7 +254,7 @@ Terraform sub block.
 
 **Args**:
   - `iam_role_arn` (`string`): 
-  - `log_settings` (`list[obj]`):  When `null`, the `log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.log_settings.new](#fn-conversationlogslogsettingsnew) constructor.
+  - `log_settings` (`list[obj]`):  When `null`, the `log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_bot_alias.conversation_logs.log_settings.new](#fn-conversation_logslog_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `conversation_logs` sub block.

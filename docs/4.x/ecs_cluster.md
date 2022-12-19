@@ -73,10 +73,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.new](#fn-ecsclusterconfigurationnew) constructor.
-  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.default_capacity_provider_strategy.new](#fn-ecsclusterdefaultcapacityproviderstrategynew) constructor.
-  - `service_connect_defaults` (`list[obj]`):  When `null`, the `service_connect_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.service_connect_defaults.new](#fn-ecsclusterserviceconnectdefaultsnew) constructor.
-  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.setting.new](#fn-ecsclustersettingnew) constructor.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.new](#fn-configurationnew) constructor.
+  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.default_capacity_provider_strategy.new](#fn-default_capacity_provider_strategynew) constructor.
+  - `service_connect_defaults` (`list[obj]`):  When `null`, the `service_connect_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.service_connect_defaults.new](#fn-service_connect_defaultsnew) constructor.
+  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.setting.new](#fn-settingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -92,7 +92,7 @@ newAttrs()
 `aws.ecs_cluster.newAttrs` constructs a new object with attributes and blocks configured for the `ecs_cluster`
 Terraform resource.
 
-Unlike [aws.ecs_cluster.new](#fn-ecsclusternew), this function will not inject the `resource`
+Unlike [aws.ecs_cluster.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -104,10 +104,10 @@ injecting into a complete block.
   - `name` (`string`): 
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.new](#fn-ecsclusterconfigurationnew) constructor.
-  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.default_capacity_provider_strategy.new](#fn-ecsclusterdefaultcapacityproviderstrategynew) constructor.
-  - `service_connect_defaults` (`list[obj]`):  When `null`, the `service_connect_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.service_connect_defaults.new](#fn-ecsclusterserviceconnectdefaultsnew) constructor.
-  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.setting.new](#fn-ecsclustersettingnew) constructor.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.new](#fn-configurationnew) constructor.
+  - `default_capacity_provider_strategy` (`list[obj]`):  When `null`, the `default_capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.default_capacity_provider_strategy.new](#fn-default_capacity_provider_strategynew) constructor.
+  - `service_connect_defaults` (`list[obj]`):  When `null`, the `service_connect_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.service_connect_defaults.new](#fn-service_connect_defaultsnew) constructor.
+  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.setting.new](#fn-settingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecs_cluster` resource into the root Terraform configuration.
@@ -342,7 +342,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `execute_command_configuration` (`list[obj]`):  When `null`, the `execute_command_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.new](#fn-configurationexecutecommandconfigurationnew) constructor.
+  - `execute_command_configuration` (`list[obj]`):  When `null`, the `execute_command_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.new](#fn-configurationexecute_command_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -367,7 +367,7 @@ Terraform sub block.
 **Args**:
   - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `logging` (`string`):  When `null`, the `logging` field will be omitted from the resulting object.
-  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.log_configuration.new](#fn-executecommandconfigurationlogconfigurationnew) constructor.
+  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_cluster.configuration.execute_command_configuration.log_configuration.new](#fn-configurationconfigurationlog_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `execute_command_configuration` sub block.

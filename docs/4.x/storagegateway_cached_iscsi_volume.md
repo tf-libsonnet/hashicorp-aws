@@ -80,7 +80,7 @@ newAttrs()
 `aws.storagegateway_cached_iscsi_volume.newAttrs` constructs a new object with attributes and blocks configured for the `storagegateway_cached_iscsi_volume`
 Terraform resource.
 
-Unlike [aws.storagegateway_cached_iscsi_volume.new](#fn-storagegatewaycachediscsivolumenew), this function will not inject the `resource`
+Unlike [aws.storagegateway_cached_iscsi_volume.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

@@ -64,7 +64,7 @@ newAttrs()
 `aws.ecr_pull_through_cache_rule.newAttrs` constructs a new object with attributes and blocks configured for the `ecr_pull_through_cache_rule`
 Terraform resource.
 
-Unlike [aws.ecr_pull_through_cache_rule.new](#fn-ecrpullthroughcacherulenew), this function will not inject the `resource`
+Unlike [aws.ecr_pull_through_cache_rule.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

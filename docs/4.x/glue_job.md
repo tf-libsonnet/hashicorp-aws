@@ -89,9 +89,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
   - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `command` (`list[obj]`):  When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-gluejobcommandnew) constructor.
-  - `execution_property` (`list[obj]`):  When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-gluejobexecutionpropertynew) constructor.
-  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-gluejobnotificationpropertynew) constructor.
+  - `command` (`list[obj]`):  When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-commandnew) constructor.
+  - `execution_property` (`list[obj]`):  When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-execution_propertynew) constructor.
+  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-notification_propertynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -107,7 +107,7 @@ newAttrs()
 `aws.glue_job.newAttrs` constructs a new object with attributes and blocks configured for the `glue_job`
 Terraform resource.
 
-Unlike [aws.glue_job.new](#fn-gluejobnew), this function will not inject the `resource`
+Unlike [aws.glue_job.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -131,9 +131,9 @@ injecting into a complete block.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
   - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `command` (`list[obj]`):  When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-gluejobcommandnew) constructor.
-  - `execution_property` (`list[obj]`):  When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-gluejobexecutionpropertynew) constructor.
-  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-gluejobnotificationpropertynew) constructor.
+  - `command` (`list[obj]`):  When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-commandnew) constructor.
+  - `execution_property` (`list[obj]`):  When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-execution_propertynew) constructor.
+  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-notification_propertynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_job` resource into the root Terraform configuration.

@@ -66,7 +66,7 @@ newAttrs()
 `aws.transfer_ssh_key.newAttrs` constructs a new object with attributes and blocks configured for the `transfer_ssh_key`
 Terraform resource.
 
-Unlike [aws.transfer_ssh_key.new](#fn-transfersshkeynew), this function will not inject the `resource`
+Unlike [aws.transfer_ssh_key.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

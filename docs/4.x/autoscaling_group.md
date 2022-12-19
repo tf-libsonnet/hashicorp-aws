@@ -165,13 +165,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `vpc_zone_identifier` (`list`):  When `null`, the `vpc_zone_identifier` field will be omitted from the resulting object.
   - `wait_for_capacity_timeout` (`string`):  When `null`, the `wait_for_capacity_timeout` field will be omitted from the resulting object.
   - `wait_for_elb_capacity` (`number`):  When `null`, the `wait_for_elb_capacity` field will be omitted from the resulting object.
-  - `initial_lifecycle_hook` (`list[obj]`):  When `null`, the `initial_lifecycle_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.initial_lifecycle_hook.new](#fn-autoscalinggroupinitiallifecyclehooknew) constructor.
-  - `instance_refresh` (`list[obj]`):  When `null`, the `instance_refresh` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.new](#fn-autoscalinggroupinstancerefreshnew) constructor.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.launch_template.new](#fn-autoscalinggrouplaunchtemplatenew) constructor.
-  - `mixed_instances_policy` (`list[obj]`):  When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-autoscalinggroupmixedinstancespolicynew) constructor.
-  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.tag.new](#fn-autoscalinggrouptagnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.timeouts.new](#fn-autoscalinggrouptimeoutsnew) constructor.
-  - `warm_pool` (`list[obj]`):  When `null`, the `warm_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.new](#fn-autoscalinggroupwarmpoolnew) constructor.
+  - `initial_lifecycle_hook` (`list[obj]`):  When `null`, the `initial_lifecycle_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.initial_lifecycle_hook.new](#fn-initial_lifecycle_hooknew) constructor.
+  - `instance_refresh` (`list[obj]`):  When `null`, the `instance_refresh` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.new](#fn-instance_refreshnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `mixed_instances_policy` (`list[obj]`):  When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-mixed_instances_policynew) constructor.
+  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.tag.new](#fn-tagnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `warm_pool` (`list[obj]`):  When `null`, the `warm_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.new](#fn-warm_poolnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -187,7 +187,7 @@ newAttrs()
 `aws.autoscaling_group.newAttrs` constructs a new object with attributes and blocks configured for the `autoscaling_group`
 Terraform resource.
 
-Unlike [aws.autoscaling_group.new](#fn-autoscalinggroupnew), this function will not inject the `resource`
+Unlike [aws.autoscaling_group.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -225,13 +225,13 @@ injecting into a complete block.
   - `vpc_zone_identifier` (`list`):  When `null`, the `vpc_zone_identifier` field will be omitted from the resulting object.
   - `wait_for_capacity_timeout` (`string`):  When `null`, the `wait_for_capacity_timeout` field will be omitted from the resulting object.
   - `wait_for_elb_capacity` (`number`):  When `null`, the `wait_for_elb_capacity` field will be omitted from the resulting object.
-  - `initial_lifecycle_hook` (`list[obj]`):  When `null`, the `initial_lifecycle_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.initial_lifecycle_hook.new](#fn-autoscalinggroupinitiallifecyclehooknew) constructor.
-  - `instance_refresh` (`list[obj]`):  When `null`, the `instance_refresh` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.new](#fn-autoscalinggroupinstancerefreshnew) constructor.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.launch_template.new](#fn-autoscalinggrouplaunchtemplatenew) constructor.
-  - `mixed_instances_policy` (`list[obj]`):  When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-autoscalinggroupmixedinstancespolicynew) constructor.
-  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.tag.new](#fn-autoscalinggrouptagnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.timeouts.new](#fn-autoscalinggrouptimeoutsnew) constructor.
-  - `warm_pool` (`list[obj]`):  When `null`, the `warm_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.new](#fn-autoscalinggroupwarmpoolnew) constructor.
+  - `initial_lifecycle_hook` (`list[obj]`):  When `null`, the `initial_lifecycle_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.initial_lifecycle_hook.new](#fn-initial_lifecycle_hooknew) constructor.
+  - `instance_refresh` (`list[obj]`):  When `null`, the `instance_refresh` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.new](#fn-instance_refreshnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `mixed_instances_policy` (`list[obj]`):  When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-mixed_instances_policynew) constructor.
+  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.tag.new](#fn-tagnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `warm_pool` (`list[obj]`):  When `null`, the `warm_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.new](#fn-warm_poolnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `autoscaling_group` resource into the root Terraform configuration.
@@ -1023,7 +1023,7 @@ Terraform sub block.
 **Args**:
   - `strategy` (`string`): 
   - `triggers` (`list`):  When `null`, the `triggers` field will be omitted from the resulting object.
-  - `preferences` (`list[obj]`):  When `null`, the `preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.preferences.new](#fn-instancerefreshpreferencesnew) constructor.
+  - `preferences` (`list[obj]`):  When `null`, the `preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.preferences.new](#fn-instance_refreshpreferencesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_refresh` sub block.
@@ -1097,8 +1097,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `instances_distribution` (`list[obj]`):  When `null`, the `instances_distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.instances_distribution.new](#fn-mixedinstancespolicyinstancesdistributionnew) constructor.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.new](#fn-mixedinstancespolicylaunchtemplatenew) constructor.
+  - `instances_distribution` (`list[obj]`):  When `null`, the `instances_distribution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.instances_distribution.new](#fn-mixed_instances_policyinstances_distributionnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.new](#fn-mixed_instances_policylaunch_templatenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `mixed_instances_policy` sub block.
@@ -1149,8 +1149,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.launch_template_specification.new](#fn-launchtemplatelaunchtemplatespecificationnew) constructor.
-  - `override` (`list[obj]`):  When `null`, the `override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.new](#fn-launchtemplateoverridenew) constructor.
+  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.launch_template_specification.new](#fn-mixed_instances_policymixed_instances_policylaunch_template_specificationnew) constructor.
+  - `override` (`list[obj]`):  When `null`, the `override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.new](#fn-mixed_instances_policymixed_instances_policyoverridenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_template` sub block.
@@ -1200,8 +1200,8 @@ Terraform sub block.
 **Args**:
   - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
   - `weighted_capacity` (`string`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `instance_requirements` (`list[obj]`):  When `null`, the `instance_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.new](#fn-overrideinstancerequirementsnew) constructor.
-  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.launch_template_specification.new](#fn-overridelaunchtemplatespecificationnew) constructor.
+  - `instance_requirements` (`list[obj]`):  When `null`, the `instance_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateinstance_requirementsnew) constructor.
+  - `launch_template_specification` (`list[obj]`):  When `null`, the `launch_template_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.launch_template_specification.new](#fn-mixed_instances_policymixed_instances_policylaunch_templatelaunch_template_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `override` sub block.
@@ -1237,14 +1237,14 @@ Terraform sub block.
   - `on_demand_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `on_demand_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
   - `require_hibernate_support` (`bool`):  When `null`, the `require_hibernate_support` field will be omitted from the resulting object.
   - `spot_max_price_percentage_over_lowest_price` (`number`):  When `null`, the `spot_max_price_percentage_over_lowest_price` field will be omitted from the resulting object.
-  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.accelerator_count.new](#fn-instancerequirementsacceleratorcountnew) constructor.
-  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.accelerator_total_memory_mib.new](#fn-instancerequirementsacceleratortotalmemorymibnew) constructor.
-  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-instancerequirementsbaselineebsbandwidthmbpsnew) constructor.
-  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.memory_gib_per_vcpu.new](#fn-instancerequirementsmemorygibpervcpunew) constructor.
-  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.memory_mib.new](#fn-instancerequirementsmemorymibnew) constructor.
-  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.network_interface_count.new](#fn-instancerequirementsnetworkinterfacecountnew) constructor.
-  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.total_local_storage_gb.new](#fn-instancerequirementstotallocalstoragegbnew) constructor.
-  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.vcpu_count.new](#fn-instancerequirementsvcpucountnew) constructor.
+  - `accelerator_count` (`list[obj]`):  When `null`, the `accelerator_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.accelerator_count.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverrideaccelerator_countnew) constructor.
+  - `accelerator_total_memory_mib` (`list[obj]`):  When `null`, the `accelerator_total_memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.accelerator_total_memory_mib.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverrideaccelerator_total_memory_mibnew) constructor.
+  - `baseline_ebs_bandwidth_mbps` (`list[obj]`):  When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverridebaseline_ebs_bandwidth_mbpsnew) constructor.
+  - `memory_gib_per_vcpu` (`list[obj]`):  When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.memory_gib_per_vcpu.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverridememory_gib_per_vcpunew) constructor.
+  - `memory_mib` (`list[obj]`):  When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.memory_mib.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverridememory_mibnew) constructor.
+  - `network_interface_count` (`list[obj]`):  When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.network_interface_count.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverridenetwork_interface_countnew) constructor.
+  - `total_local_storage_gb` (`list[obj]`):  When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.total_local_storage_gb.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverridetotal_local_storage_gbnew) constructor.
+  - `vcpu_count` (`list[obj]`):  When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.launch_template.override.instance_requirements.vcpu_count.new](#fn-mixed_instances_policymixed_instances_policylaunch_templateoverridevcpu_countnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_requirements` sub block.
@@ -1536,7 +1536,7 @@ Terraform sub block.
   - `max_group_prepared_capacity` (`number`):  When `null`, the `max_group_prepared_capacity` field will be omitted from the resulting object.
   - `min_size` (`number`):  When `null`, the `min_size` field will be omitted from the resulting object.
   - `pool_state` (`string`):  When `null`, the `pool_state` field will be omitted from the resulting object.
-  - `instance_reuse_policy` (`list[obj]`):  When `null`, the `instance_reuse_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.instance_reuse_policy.new](#fn-warmpoolinstancereusepolicynew) constructor.
+  - `instance_reuse_policy` (`list[obj]`):  When `null`, the `instance_reuse_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.instance_reuse_policy.new](#fn-warm_poolinstance_reuse_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `warm_pool` sub block.

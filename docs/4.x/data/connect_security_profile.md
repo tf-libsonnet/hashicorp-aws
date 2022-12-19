@@ -68,7 +68,7 @@ newAttrs()
 `aws.data.connect_security_profile.newAttrs` constructs a new object with attributes and blocks configured for the `connect_security_profile`
 Terraform data source.
 
-Unlike [aws.data.connect_security_profile.new](#fn-connectsecurityprofilenew), this function will not inject the `data source`
+Unlike [aws.data.connect_security_profile.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

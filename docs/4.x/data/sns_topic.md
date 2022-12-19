@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.sns_topic.newAttrs` constructs a new object with attributes and blocks configured for the `sns_topic`
 Terraform data source.
 
-Unlike [aws.data.sns_topic.new](#fn-snstopicnew), this function will not inject the `data source`
+Unlike [aws.data.sns_topic.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

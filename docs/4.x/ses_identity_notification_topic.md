@@ -68,7 +68,7 @@ newAttrs()
 `aws.ses_identity_notification_topic.newAttrs` constructs a new object with attributes and blocks configured for the `ses_identity_notification_topic`
 Terraform resource.
 
-Unlike [aws.ses_identity_notification_topic.new](#fn-sesidentitynotificationtopicnew), this function will not inject the `resource`
+Unlike [aws.ses_identity_notification_topic.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

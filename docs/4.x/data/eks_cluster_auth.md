@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.eks_cluster_auth.newAttrs` constructs a new object with attributes and blocks configured for the `eks_cluster_auth`
 Terraform data source.
 
-Unlike [aws.data.eks_cluster_auth.new](#fn-eksclusterauthnew), this function will not inject the `data source`
+Unlike [aws.data.eks_cluster_auth.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

@@ -85,10 +85,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
-  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-fsxopenzfsvolumenfsexportsnew) constructor.
-  - `origin_snapshot` (`list[obj]`):  When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-fsxopenzfsvolumeoriginsnapshotnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-fsxopenzfsvolumetimeoutsnew) constructor.
-  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-fsxopenzfsvolumeuserandgroupquotasnew) constructor.
+  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-nfs_exportsnew) constructor.
+  - `origin_snapshot` (`list[obj]`):  When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-origin_snapshotnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-user_and_group_quotasnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -104,7 +104,7 @@ newAttrs()
 `aws.fsx_openzfs_volume.newAttrs` constructs a new object with attributes and blocks configured for the `fsx_openzfs_volume`
 Terraform resource.
 
-Unlike [aws.fsx_openzfs_volume.new](#fn-fsxopenzfsvolumenew), this function will not inject the `resource`
+Unlike [aws.fsx_openzfs_volume.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -123,10 +123,10 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
-  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-fsxopenzfsvolumenfsexportsnew) constructor.
-  - `origin_snapshot` (`list[obj]`):  When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-fsxopenzfsvolumeoriginsnapshotnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-fsxopenzfsvolumetimeoutsnew) constructor.
-  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-fsxopenzfsvolumeuserandgroupquotasnew) constructor.
+  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.new](#fn-nfs_exportsnew) constructor.
+  - `origin_snapshot` (`list[obj]`):  When `null`, the `origin_snapshot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.origin_snapshot.new](#fn-origin_snapshotnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.user_and_group_quotas.new](#fn-user_and_group_quotasnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_openzfs_volume` resource into the root Terraform configuration.
@@ -472,7 +472,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-nfsexportsclientconfigurationsnew) constructor.
+  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_volume.nfs_exports.client_configurations.new](#fn-nfs_exportsclient_configurationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs_exports` sub block.

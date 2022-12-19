@@ -72,7 +72,7 @@ newAttrs()
 `aws.ssoadmin_account_assignment.newAttrs` constructs a new object with attributes and blocks configured for the `ssoadmin_account_assignment`
 Terraform resource.
 
-Unlike [aws.ssoadmin_account_assignment.new](#fn-ssoadminaccountassignmentnew), this function will not inject the `resource`
+Unlike [aws.ssoadmin_account_assignment.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

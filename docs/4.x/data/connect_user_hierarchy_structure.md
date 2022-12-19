@@ -62,7 +62,7 @@ newAttrs()
 `aws.data.connect_user_hierarchy_structure.newAttrs` constructs a new object with attributes and blocks configured for the `connect_user_hierarchy_structure`
 Terraform data source.
 
-Unlike [aws.data.connect_user_hierarchy_structure.new](#fn-connectuserhierarchystructurenew), this function will not inject the `data source`
+Unlike [aws.data.connect_user_hierarchy_structure.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

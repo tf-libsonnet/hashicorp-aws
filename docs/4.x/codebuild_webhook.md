@@ -57,7 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `branch_filter` (`string`):  When `null`, the `branch_filter` field will be omitted from the resulting object.
   - `build_type` (`string`):  When `null`, the `build_type` field will be omitted from the resulting object.
   - `project_name` (`string`): 
-  - `filter_group` (`list[obj]`):  When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-codebuildwebhookfiltergroupnew) constructor.
+  - `filter_group` (`list[obj]`):  When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-filter_groupnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -73,7 +73,7 @@ newAttrs()
 `aws.codebuild_webhook.newAttrs` constructs a new object with attributes and blocks configured for the `codebuild_webhook`
 Terraform resource.
 
-Unlike [aws.codebuild_webhook.new](#fn-codebuildwebhooknew), this function will not inject the `resource`
+Unlike [aws.codebuild_webhook.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -84,7 +84,7 @@ injecting into a complete block.
   - `branch_filter` (`string`):  When `null`, the `branch_filter` field will be omitted from the resulting object.
   - `build_type` (`string`):  When `null`, the `build_type` field will be omitted from the resulting object.
   - `project_name` (`string`): 
-  - `filter_group` (`list[obj]`):  When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-codebuildwebhookfiltergroupnew) constructor.
+  - `filter_group` (`list[obj]`):  When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-filter_groupnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codebuild_webhook` resource into the root Terraform configuration.
@@ -192,7 +192,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-filtergroupfilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-filter_groupfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter_group` sub block.

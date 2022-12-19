@@ -63,10 +63,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): 
-  - `csv_classifier` (`list[obj]`):  When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-glueclassifiercsvclassifiernew) constructor.
-  - `grok_classifier` (`list[obj]`):  When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-glueclassifiergrokclassifiernew) constructor.
-  - `json_classifier` (`list[obj]`):  When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-glueclassifierjsonclassifiernew) constructor.
-  - `xml_classifier` (`list[obj]`):  When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-glueclassifierxmlclassifiernew) constructor.
+  - `csv_classifier` (`list[obj]`):  When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-csv_classifiernew) constructor.
+  - `grok_classifier` (`list[obj]`):  When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-grok_classifiernew) constructor.
+  - `json_classifier` (`list[obj]`):  When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-json_classifiernew) constructor.
+  - `xml_classifier` (`list[obj]`):  When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-xml_classifiernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,7 +82,7 @@ newAttrs()
 `aws.glue_classifier.newAttrs` constructs a new object with attributes and blocks configured for the `glue_classifier`
 Terraform resource.
 
-Unlike [aws.glue_classifier.new](#fn-glueclassifiernew), this function will not inject the `resource`
+Unlike [aws.glue_classifier.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -91,10 +91,10 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): 
-  - `csv_classifier` (`list[obj]`):  When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-glueclassifiercsvclassifiernew) constructor.
-  - `grok_classifier` (`list[obj]`):  When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-glueclassifiergrokclassifiernew) constructor.
-  - `json_classifier` (`list[obj]`):  When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-glueclassifierjsonclassifiernew) constructor.
-  - `xml_classifier` (`list[obj]`):  When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-glueclassifierxmlclassifiernew) constructor.
+  - `csv_classifier` (`list[obj]`):  When `null`, the `csv_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.csv_classifier.new](#fn-csv_classifiernew) constructor.
+  - `grok_classifier` (`list[obj]`):  When `null`, the `grok_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.grok_classifier.new](#fn-grok_classifiernew) constructor.
+  - `json_classifier` (`list[obj]`):  When `null`, the `json_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.json_classifier.new](#fn-json_classifiernew) constructor.
+  - `xml_classifier` (`list[obj]`):  When `null`, the `xml_classifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_classifier.xml_classifier.new](#fn-xml_classifiernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_classifier` resource into the root Terraform configuration.

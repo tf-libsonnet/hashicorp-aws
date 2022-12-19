@@ -66,7 +66,7 @@ newAttrs()
 `aws.data.mq_broker_instance_type_offerings.newAttrs` constructs a new object with attributes and blocks configured for the `mq_broker_instance_type_offerings`
 Terraform data source.
 
-Unlike [aws.data.mq_broker_instance_type_offerings.new](#fn-mqbrokerinstancetypeofferingsnew), this function will not inject the `data source`
+Unlike [aws.data.mq_broker_instance_type_offerings.new](#fn-new), this function will not inject the `data source`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
 

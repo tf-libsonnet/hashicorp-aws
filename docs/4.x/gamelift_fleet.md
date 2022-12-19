@@ -89,11 +89,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `script_id` (`string`):  When `null`, the `script_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `certificate_configuration` (`list[obj]`):  When `null`, the `certificate_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.certificate_configuration.new](#fn-gameliftfleetcertificateconfigurationnew) constructor.
-  - `ec2_inbound_permission` (`list[obj]`):  When `null`, the `ec2_inbound_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.ec2_inbound_permission.new](#fn-gameliftfleetec2inboundpermissionnew) constructor.
-  - `resource_creation_limit_policy` (`list[obj]`):  When `null`, the `resource_creation_limit_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.resource_creation_limit_policy.new](#fn-gameliftfleetresourcecreationlimitpolicynew) constructor.
-  - `runtime_configuration` (`list[obj]`):  When `null`, the `runtime_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.new](#fn-gameliftfleetruntimeconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.timeouts.new](#fn-gameliftfleettimeoutsnew) constructor.
+  - `certificate_configuration` (`list[obj]`):  When `null`, the `certificate_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.certificate_configuration.new](#fn-certificate_configurationnew) constructor.
+  - `ec2_inbound_permission` (`list[obj]`):  When `null`, the `ec2_inbound_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.ec2_inbound_permission.new](#fn-ec2_inbound_permissionnew) constructor.
+  - `resource_creation_limit_policy` (`list[obj]`):  When `null`, the `resource_creation_limit_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.resource_creation_limit_policy.new](#fn-resource_creation_limit_policynew) constructor.
+  - `runtime_configuration` (`list[obj]`):  When `null`, the `runtime_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.new](#fn-runtime_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -109,7 +109,7 @@ newAttrs()
 `aws.gamelift_fleet.newAttrs` constructs a new object with attributes and blocks configured for the `gamelift_fleet`
 Terraform resource.
 
-Unlike [aws.gamelift_fleet.new](#fn-gameliftfleetnew), this function will not inject the `resource`
+Unlike [aws.gamelift_fleet.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -128,11 +128,11 @@ injecting into a complete block.
   - `script_id` (`string`):  When `null`, the `script_id` field will be omitted from the resulting object.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `certificate_configuration` (`list[obj]`):  When `null`, the `certificate_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.certificate_configuration.new](#fn-gameliftfleetcertificateconfigurationnew) constructor.
-  - `ec2_inbound_permission` (`list[obj]`):  When `null`, the `ec2_inbound_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.ec2_inbound_permission.new](#fn-gameliftfleetec2inboundpermissionnew) constructor.
-  - `resource_creation_limit_policy` (`list[obj]`):  When `null`, the `resource_creation_limit_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.resource_creation_limit_policy.new](#fn-gameliftfleetresourcecreationlimitpolicynew) constructor.
-  - `runtime_configuration` (`list[obj]`):  When `null`, the `runtime_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.new](#fn-gameliftfleetruntimeconfigurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.timeouts.new](#fn-gameliftfleettimeoutsnew) constructor.
+  - `certificate_configuration` (`list[obj]`):  When `null`, the `certificate_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.certificate_configuration.new](#fn-certificate_configurationnew) constructor.
+  - `ec2_inbound_permission` (`list[obj]`):  When `null`, the `ec2_inbound_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.ec2_inbound_permission.new](#fn-ec2_inbound_permissionnew) constructor.
+  - `resource_creation_limit_policy` (`list[obj]`):  When `null`, the `resource_creation_limit_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.resource_creation_limit_policy.new](#fn-resource_creation_limit_policynew) constructor.
+  - `runtime_configuration` (`list[obj]`):  When `null`, the `runtime_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.new](#fn-runtime_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `gamelift_fleet` resource into the root Terraform configuration.
@@ -590,7 +590,7 @@ Terraform sub block.
 **Args**:
   - `game_session_activation_timeout_seconds` (`number`):  When `null`, the `game_session_activation_timeout_seconds` field will be omitted from the resulting object.
   - `max_concurrent_game_session_activations` (`number`):  When `null`, the `max_concurrent_game_session_activations` field will be omitted from the resulting object.
-  - `server_process` (`list[obj]`):  When `null`, the `server_process` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.server_process.new](#fn-runtimeconfigurationserverprocessnew) constructor.
+  - `server_process` (`list[obj]`):  When `null`, the `server_process` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_fleet.runtime_configuration.server_process.new](#fn-runtime_configurationserver_processnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `runtime_configuration` sub block.

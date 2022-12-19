@@ -66,7 +66,7 @@ newAttrs()
 `aws.sagemaker_notebook_instance_lifecycle_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `sagemaker_notebook_instance_lifecycle_configuration`
 Terraform resource.
 
-Unlike [aws.sagemaker_notebook_instance_lifecycle_configuration.new](#fn-sagemakernotebookinstancelifecycleconfigurationnew), this function will not inject the `resource`
+Unlike [aws.sagemaker_notebook_instance_lifecycle_configuration.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 

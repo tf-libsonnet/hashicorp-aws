@@ -67,7 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
   - `partition_values` (`list`): 
   - `table_name` (`string`): 
-  - `storage_descriptor` (`list[obj]`):  When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.new](#fn-gluepartitionstoragedescriptornew) constructor.
+  - `storage_descriptor` (`list[obj]`):  When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.new](#fn-storage_descriptornew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,7 +83,7 @@ newAttrs()
 `aws.glue_partition.newAttrs` constructs a new object with attributes and blocks configured for the `glue_partition`
 Terraform resource.
 
-Unlike [aws.glue_partition.new](#fn-gluepartitionnew), this function will not inject the `resource`
+Unlike [aws.glue_partition.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -96,7 +96,7 @@ injecting into a complete block.
   - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
   - `partition_values` (`list`): 
   - `table_name` (`string`): 
-  - `storage_descriptor` (`list[obj]`):  When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.new](#fn-gluepartitionstoragedescriptornew) constructor.
+  - `storage_descriptor` (`list[obj]`):  When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.new](#fn-storage_descriptornew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_partition` resource into the root Terraform configuration.
@@ -244,10 +244,10 @@ Terraform sub block.
   - `output_format` (`string`):  When `null`, the `output_format` field will be omitted from the resulting object.
   - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
   - `stored_as_sub_directories` (`bool`):  When `null`, the `stored_as_sub_directories` field will be omitted from the resulting object.
-  - `columns` (`list[obj]`):  When `null`, the `columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.columns.new](#fn-storagedescriptorcolumnsnew) constructor.
-  - `ser_de_info` (`list[obj]`):  When `null`, the `ser_de_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.ser_de_info.new](#fn-storagedescriptorserdeinfonew) constructor.
-  - `skewed_info` (`list[obj]`):  When `null`, the `skewed_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.skewed_info.new](#fn-storagedescriptorskewedinfonew) constructor.
-  - `sort_columns` (`list[obj]`):  When `null`, the `sort_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.sort_columns.new](#fn-storagedescriptorsortcolumnsnew) constructor.
+  - `columns` (`list[obj]`):  When `null`, the `columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.columns.new](#fn-storage_descriptorcolumnsnew) constructor.
+  - `ser_de_info` (`list[obj]`):  When `null`, the `ser_de_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.ser_de_info.new](#fn-storage_descriptorser_de_infonew) constructor.
+  - `skewed_info` (`list[obj]`):  When `null`, the `skewed_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.skewed_info.new](#fn-storage_descriptorskewed_infonew) constructor.
+  - `sort_columns` (`list[obj]`):  When `null`, the `sort_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition.storage_descriptor.sort_columns.new](#fn-storage_descriptorsort_columnsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_descriptor` sub block.

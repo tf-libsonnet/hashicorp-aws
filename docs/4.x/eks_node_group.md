@@ -99,12 +99,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-eksnodegrouplaunchtemplatenew) constructor.
-  - `remote_access` (`list[obj]`):  When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-eksnodegroupremoteaccessnew) constructor.
-  - `scaling_config` (`list[obj]`):  When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-eksnodegroupscalingconfignew) constructor.
-  - `taint` (`list[obj]`):  When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-eksnodegrouptaintnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-eksnodegrouptimeoutsnew) constructor.
-  - `update_config` (`list[obj]`):  When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-eksnodegroupupdateconfignew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `remote_access` (`list[obj]`):  When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-remote_accessnew) constructor.
+  - `scaling_config` (`list[obj]`):  When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-scaling_confignew) constructor.
+  - `taint` (`list[obj]`):  When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-taintnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `update_config` (`list[obj]`):  When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-update_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -120,7 +120,7 @@ newAttrs()
 `aws.eks_node_group.newAttrs` constructs a new object with attributes and blocks configured for the `eks_node_group`
 Terraform resource.
 
-Unlike [aws.eks_node_group.new](#fn-eksnodegroupnew), this function will not inject the `resource`
+Unlike [aws.eks_node_group.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -143,12 +143,12 @@ injecting into a complete block.
   - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-eksnodegrouplaunchtemplatenew) constructor.
-  - `remote_access` (`list[obj]`):  When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-eksnodegroupremoteaccessnew) constructor.
-  - `scaling_config` (`list[obj]`):  When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-eksnodegroupscalingconfignew) constructor.
-  - `taint` (`list[obj]`):  When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-eksnodegrouptaintnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-eksnodegrouptimeoutsnew) constructor.
-  - `update_config` (`list[obj]`):  When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-eksnodegroupupdateconfignew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.launch_template.new](#fn-launch_templatenew) constructor.
+  - `remote_access` (`list[obj]`):  When `null`, the `remote_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.remote_access.new](#fn-remote_accessnew) constructor.
+  - `scaling_config` (`list[obj]`):  When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.scaling_config.new](#fn-scaling_confignew) constructor.
+  - `taint` (`list[obj]`):  When `null`, the `taint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.taint.new](#fn-taintnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `update_config` (`list[obj]`):  When `null`, the `update_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_node_group.update_config.new](#fn-update_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_node_group` resource into the root Terraform configuration.
