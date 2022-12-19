@@ -59,20 +59,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auth_mode` (`string`): 
-  - `default_s3_location` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `engine_security_group_id` (`string`): 
-  - `idp_auth_url` (`string`):  When `null`, the `idp_auth_url` field will be omitted from the resulting object.
-  - `idp_relay_state_parameter_name` (`string`):  When `null`, the `idp_relay_state_parameter_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `service_role` (`string`): 
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_role` (`string`):  When `null`, the `user_role` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): 
-  - `workspace_security_group_id` (`string`): 
+  - `auth_mode` (`string`): Set the `auth_mode` field on the resulting resource block.
+  - `default_s3_location` (`string`): Set the `default_s3_location` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `engine_security_group_id` (`string`): Set the `engine_security_group_id` field on the resulting resource block.
+  - `idp_auth_url` (`string`): Set the `idp_auth_url` field on the resulting resource block. When `null`, the `idp_auth_url` field will be omitted from the resulting object.
+  - `idp_relay_state_parameter_name` (`string`): Set the `idp_relay_state_parameter_name` field on the resulting resource block. When `null`, the `idp_relay_state_parameter_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `service_role` (`string`): Set the `service_role` field on the resulting resource block.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_role` (`string`): Set the `user_role` field on the resulting resource block. When `null`, the `user_role` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
+  - `workspace_security_group_id` (`string`): Set the `workspace_security_group_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,20 +96,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auth_mode` (`string`): 
-  - `default_s3_location` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `engine_security_group_id` (`string`): 
-  - `idp_auth_url` (`string`):  When `null`, the `idp_auth_url` field will be omitted from the resulting object.
-  - `idp_relay_state_parameter_name` (`string`):  When `null`, the `idp_relay_state_parameter_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `service_role` (`string`): 
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_role` (`string`):  When `null`, the `user_role` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): 
-  - `workspace_security_group_id` (`string`): 
+  - `auth_mode` (`string`): Set the `auth_mode` field on the resulting object.
+  - `default_s3_location` (`string`): Set the `default_s3_location` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `engine_security_group_id` (`string`): Set the `engine_security_group_id` field on the resulting object.
+  - `idp_auth_url` (`string`): Set the `idp_auth_url` field on the resulting object. When `null`, the `idp_auth_url` field will be omitted from the resulting object.
+  - `idp_relay_state_parameter_name` (`string`): Set the `idp_relay_state_parameter_name` field on the resulting object. When `null`, the `idp_relay_state_parameter_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `service_role` (`string`): Set the `service_role` field on the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_role` (`string`): Set the `user_role` field on the resulting object. When `null`, the `user_role` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `workspace_security_group_id` (`string`): Set the `workspace_security_group_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emr_studio` resource into the root Terraform configuration.

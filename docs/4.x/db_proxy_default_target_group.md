@@ -54,9 +54,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `db_proxy_name` (`string`): 
-  - `connection_pool_config` (`list[obj]`):  When `null`, the `connection_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.connection_pool_config.new](#fn-connection_pool_confignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `db_proxy_name` (`string`): Set the `db_proxy_name` field on the resulting resource block.
+  - `connection_pool_config` (`list[obj]`): Set the `connection_pool_config` field on the resulting resource block. When `null`, the `connection_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.connection_pool_config.new](#fn-connection_pool_confignew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,9 +80,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `db_proxy_name` (`string`): 
-  - `connection_pool_config` (`list[obj]`):  When `null`, the `connection_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.connection_pool_config.new](#fn-connection_pool_confignew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `db_proxy_name` (`string`): Set the `db_proxy_name` field on the resulting object.
+  - `connection_pool_config` (`list[obj]`): Set the `connection_pool_config` field on the resulting object. When `null`, the `connection_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.connection_pool_config.new](#fn-connection_pool_confignew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy_default_target_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `db_proxy_default_target_group` resource into the root Terraform configuration.
@@ -194,11 +194,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_borrow_timeout` (`number`):  When `null`, the `connection_borrow_timeout` field will be omitted from the resulting object.
-  - `init_query` (`string`):  When `null`, the `init_query` field will be omitted from the resulting object.
-  - `max_connections_percent` (`number`):  When `null`, the `max_connections_percent` field will be omitted from the resulting object.
-  - `max_idle_connections_percent` (`number`):  When `null`, the `max_idle_connections_percent` field will be omitted from the resulting object.
-  - `session_pinning_filters` (`list`):  When `null`, the `session_pinning_filters` field will be omitted from the resulting object.
+  - `connection_borrow_timeout` (`number`): Set the `connection_borrow_timeout` field on the resulting object. When `null`, the `connection_borrow_timeout` field will be omitted from the resulting object.
+  - `init_query` (`string`): Set the `init_query` field on the resulting object. When `null`, the `init_query` field will be omitted from the resulting object.
+  - `max_connections_percent` (`number`): Set the `max_connections_percent` field on the resulting object. When `null`, the `max_connections_percent` field will be omitted from the resulting object.
+  - `max_idle_connections_percent` (`number`): Set the `max_idle_connections_percent` field on the resulting object. When `null`, the `max_idle_connections_percent` field will be omitted from the resulting object.
+  - `session_pinning_filters` (`list`): Set the `session_pinning_filters` field on the resulting object. When `null`, the `session_pinning_filters` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `connection_pool_config` sub block.
@@ -221,8 +221,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

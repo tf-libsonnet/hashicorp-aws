@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `block_public_policy` (`bool`):  When `null`, the `block_public_policy` field will be omitted from the resulting object.
-  - `policy` (`string`): 
-  - `secret_arn` (`string`): 
+  - `block_public_policy` (`bool`): Set the `block_public_policy` field on the resulting resource block. When `null`, the `block_public_policy` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting resource block.
+  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `block_public_policy` (`bool`):  When `null`, the `block_public_policy` field will be omitted from the resulting object.
-  - `policy` (`string`): 
-  - `secret_arn` (`string`): 
+  - `block_public_policy` (`bool`): Set the `block_public_policy` field on the resulting object. When `null`, the `block_public_policy` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting object.
+  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `secretsmanager_secret_policy` resource into the root Terraform configuration.

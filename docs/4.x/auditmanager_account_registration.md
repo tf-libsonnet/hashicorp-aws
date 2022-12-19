@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `delegated_admin_account` (`string`):  When `null`, the `delegated_admin_account` field will be omitted from the resulting object.
-  - `deregister_on_destroy` (`bool`):  When `null`, the `deregister_on_destroy` field will be omitted from the resulting object.
-  - `kms_key` (`string`):  When `null`, the `kms_key` field will be omitted from the resulting object.
+  - `delegated_admin_account` (`string`): Set the `delegated_admin_account` field on the resulting resource block. When `null`, the `delegated_admin_account` field will be omitted from the resulting object.
+  - `deregister_on_destroy` (`bool`): Set the `deregister_on_destroy` field on the resulting resource block. When `null`, the `deregister_on_destroy` field will be omitted from the resulting object.
+  - `kms_key` (`string`): Set the `kms_key` field on the resulting resource block. When `null`, the `kms_key` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `delegated_admin_account` (`string`):  When `null`, the `delegated_admin_account` field will be omitted from the resulting object.
-  - `deregister_on_destroy` (`bool`):  When `null`, the `deregister_on_destroy` field will be omitted from the resulting object.
-  - `kms_key` (`string`):  When `null`, the `kms_key` field will be omitted from the resulting object.
+  - `delegated_admin_account` (`string`): Set the `delegated_admin_account` field on the resulting object. When `null`, the `delegated_admin_account` field will be omitted from the resulting object.
+  - `deregister_on_destroy` (`bool`): Set the `deregister_on_destroy` field on the resulting object. When `null`, the `deregister_on_destroy` field will be omitted from the resulting object.
+  - `kms_key` (`string`): Set the `kms_key` field on the resulting object. When `null`, the `kms_key` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `auditmanager_account_registration` resource into the root Terraform configuration.

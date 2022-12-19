@@ -54,12 +54,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `eventbridge_bus` (`string`): 
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `event_filter` (`list[obj]`):  When `null`, the `event_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appintegrations_event_integration.event_filter.new](#fn-event_filternew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `eventbridge_bus` (`string`): Set the `eventbridge_bus` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `event_filter` (`list[obj]`): Set the `event_filter` field on the resulting resource block. When `null`, the `event_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appintegrations_event_integration.event_filter.new](#fn-event_filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,12 +83,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `eventbridge_bus` (`string`): 
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `event_filter` (`list[obj]`):  When `null`, the `event_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appintegrations_event_integration.event_filter.new](#fn-event_filternew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `eventbridge_bus` (`string`): Set the `eventbridge_bus` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `event_filter` (`list[obj]`): Set the `event_filter` field on the resulting object. When `null`, the `event_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appintegrations_event_integration.event_filter.new](#fn-event_filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appintegrations_event_integration` resource into the root Terraform configuration.
@@ -228,7 +228,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `source` (`string`): 
+  - `source` (`string`): Set the `source` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `event_filter` sub block.

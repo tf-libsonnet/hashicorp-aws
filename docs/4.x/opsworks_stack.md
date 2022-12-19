@@ -75,30 +75,30 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `agent_version` (`string`):  When `null`, the `agent_version` field will be omitted from the resulting object.
-  - `berkshelf_version` (`string`):  When `null`, the `berkshelf_version` field will be omitted from the resulting object.
-  - `color` (`string`):  When `null`, the `color` field will be omitted from the resulting object.
-  - `configuration_manager_name` (`string`):  When `null`, the `configuration_manager_name` field will be omitted from the resulting object.
-  - `configuration_manager_version` (`string`):  When `null`, the `configuration_manager_version` field will be omitted from the resulting object.
-  - `custom_json` (`string`):  When `null`, the `custom_json` field will be omitted from the resulting object.
-  - `default_availability_zone` (`string`):  When `null`, the `default_availability_zone` field will be omitted from the resulting object.
-  - `default_instance_profile_arn` (`string`): 
-  - `default_os` (`string`):  When `null`, the `default_os` field will be omitted from the resulting object.
-  - `default_root_device_type` (`string`):  When `null`, the `default_root_device_type` field will be omitted from the resulting object.
-  - `default_ssh_key_name` (`string`):  When `null`, the `default_ssh_key_name` field will be omitted from the resulting object.
-  - `default_subnet_id` (`string`):  When `null`, the `default_subnet_id` field will be omitted from the resulting object.
-  - `hostname_theme` (`string`):  When `null`, the `hostname_theme` field will be omitted from the resulting object.
-  - `manage_berkshelf` (`bool`):  When `null`, the `manage_berkshelf` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `region` (`string`): 
-  - `service_role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `use_custom_cookbooks` (`bool`):  When `null`, the `use_custom_cookbooks` field will be omitted from the resulting object.
-  - `use_opsworks_security_groups` (`bool`):  When `null`, the `use_opsworks_security_groups` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `custom_cookbooks_source` (`list[obj]`):  When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-custom_cookbooks_sourcenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-timeoutsnew) constructor.
+  - `agent_version` (`string`): Set the `agent_version` field on the resulting resource block. When `null`, the `agent_version` field will be omitted from the resulting object.
+  - `berkshelf_version` (`string`): Set the `berkshelf_version` field on the resulting resource block. When `null`, the `berkshelf_version` field will be omitted from the resulting object.
+  - `color` (`string`): Set the `color` field on the resulting resource block. When `null`, the `color` field will be omitted from the resulting object.
+  - `configuration_manager_name` (`string`): Set the `configuration_manager_name` field on the resulting resource block. When `null`, the `configuration_manager_name` field will be omitted from the resulting object.
+  - `configuration_manager_version` (`string`): Set the `configuration_manager_version` field on the resulting resource block. When `null`, the `configuration_manager_version` field will be omitted from the resulting object.
+  - `custom_json` (`string`): Set the `custom_json` field on the resulting resource block. When `null`, the `custom_json` field will be omitted from the resulting object.
+  - `default_availability_zone` (`string`): Set the `default_availability_zone` field on the resulting resource block. When `null`, the `default_availability_zone` field will be omitted from the resulting object.
+  - `default_instance_profile_arn` (`string`): Set the `default_instance_profile_arn` field on the resulting resource block.
+  - `default_os` (`string`): Set the `default_os` field on the resulting resource block. When `null`, the `default_os` field will be omitted from the resulting object.
+  - `default_root_device_type` (`string`): Set the `default_root_device_type` field on the resulting resource block. When `null`, the `default_root_device_type` field will be omitted from the resulting object.
+  - `default_ssh_key_name` (`string`): Set the `default_ssh_key_name` field on the resulting resource block. When `null`, the `default_ssh_key_name` field will be omitted from the resulting object.
+  - `default_subnet_id` (`string`): Set the `default_subnet_id` field on the resulting resource block. When `null`, the `default_subnet_id` field will be omitted from the resulting object.
+  - `hostname_theme` (`string`): Set the `hostname_theme` field on the resulting resource block. When `null`, the `hostname_theme` field will be omitted from the resulting object.
+  - `manage_berkshelf` (`bool`): Set the `manage_berkshelf` field on the resulting resource block. When `null`, the `manage_berkshelf` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `region` (`string`): Set the `region` field on the resulting resource block.
+  - `service_role_arn` (`string`): Set the `service_role_arn` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `use_custom_cookbooks` (`bool`): Set the `use_custom_cookbooks` field on the resulting resource block. When `null`, the `use_custom_cookbooks` field will be omitted from the resulting object.
+  - `use_opsworks_security_groups` (`bool`): Set the `use_opsworks_security_groups` field on the resulting resource block. When `null`, the `use_opsworks_security_groups` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `custom_cookbooks_source` (`list[obj]`): Set the `custom_cookbooks_source` field on the resulting resource block. When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-custom_cookbooks_sourcenew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -122,30 +122,30 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `agent_version` (`string`):  When `null`, the `agent_version` field will be omitted from the resulting object.
-  - `berkshelf_version` (`string`):  When `null`, the `berkshelf_version` field will be omitted from the resulting object.
-  - `color` (`string`):  When `null`, the `color` field will be omitted from the resulting object.
-  - `configuration_manager_name` (`string`):  When `null`, the `configuration_manager_name` field will be omitted from the resulting object.
-  - `configuration_manager_version` (`string`):  When `null`, the `configuration_manager_version` field will be omitted from the resulting object.
-  - `custom_json` (`string`):  When `null`, the `custom_json` field will be omitted from the resulting object.
-  - `default_availability_zone` (`string`):  When `null`, the `default_availability_zone` field will be omitted from the resulting object.
-  - `default_instance_profile_arn` (`string`): 
-  - `default_os` (`string`):  When `null`, the `default_os` field will be omitted from the resulting object.
-  - `default_root_device_type` (`string`):  When `null`, the `default_root_device_type` field will be omitted from the resulting object.
-  - `default_ssh_key_name` (`string`):  When `null`, the `default_ssh_key_name` field will be omitted from the resulting object.
-  - `default_subnet_id` (`string`):  When `null`, the `default_subnet_id` field will be omitted from the resulting object.
-  - `hostname_theme` (`string`):  When `null`, the `hostname_theme` field will be omitted from the resulting object.
-  - `manage_berkshelf` (`bool`):  When `null`, the `manage_berkshelf` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `region` (`string`): 
-  - `service_role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `use_custom_cookbooks` (`bool`):  When `null`, the `use_custom_cookbooks` field will be omitted from the resulting object.
-  - `use_opsworks_security_groups` (`bool`):  When `null`, the `use_opsworks_security_groups` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `custom_cookbooks_source` (`list[obj]`):  When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-custom_cookbooks_sourcenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-timeoutsnew) constructor.
+  - `agent_version` (`string`): Set the `agent_version` field on the resulting object. When `null`, the `agent_version` field will be omitted from the resulting object.
+  - `berkshelf_version` (`string`): Set the `berkshelf_version` field on the resulting object. When `null`, the `berkshelf_version` field will be omitted from the resulting object.
+  - `color` (`string`): Set the `color` field on the resulting object. When `null`, the `color` field will be omitted from the resulting object.
+  - `configuration_manager_name` (`string`): Set the `configuration_manager_name` field on the resulting object. When `null`, the `configuration_manager_name` field will be omitted from the resulting object.
+  - `configuration_manager_version` (`string`): Set the `configuration_manager_version` field on the resulting object. When `null`, the `configuration_manager_version` field will be omitted from the resulting object.
+  - `custom_json` (`string`): Set the `custom_json` field on the resulting object. When `null`, the `custom_json` field will be omitted from the resulting object.
+  - `default_availability_zone` (`string`): Set the `default_availability_zone` field on the resulting object. When `null`, the `default_availability_zone` field will be omitted from the resulting object.
+  - `default_instance_profile_arn` (`string`): Set the `default_instance_profile_arn` field on the resulting object.
+  - `default_os` (`string`): Set the `default_os` field on the resulting object. When `null`, the `default_os` field will be omitted from the resulting object.
+  - `default_root_device_type` (`string`): Set the `default_root_device_type` field on the resulting object. When `null`, the `default_root_device_type` field will be omitted from the resulting object.
+  - `default_ssh_key_name` (`string`): Set the `default_ssh_key_name` field on the resulting object. When `null`, the `default_ssh_key_name` field will be omitted from the resulting object.
+  - `default_subnet_id` (`string`): Set the `default_subnet_id` field on the resulting object. When `null`, the `default_subnet_id` field will be omitted from the resulting object.
+  - `hostname_theme` (`string`): Set the `hostname_theme` field on the resulting object. When `null`, the `hostname_theme` field will be omitted from the resulting object.
+  - `manage_berkshelf` (`bool`): Set the `manage_berkshelf` field on the resulting object. When `null`, the `manage_berkshelf` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object.
+  - `service_role_arn` (`string`): Set the `service_role_arn` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `use_custom_cookbooks` (`bool`): Set the `use_custom_cookbooks` field on the resulting object. When `null`, the `use_custom_cookbooks` field will be omitted from the resulting object.
+  - `use_opsworks_security_groups` (`bool`): Set the `use_opsworks_security_groups` field on the resulting object. When `null`, the `use_opsworks_security_groups` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `custom_cookbooks_source` (`list[obj]`): Set the `custom_cookbooks_source` field on the resulting object. When `null`, the `custom_cookbooks_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.custom_cookbooks_source.new](#fn-custom_cookbooks_sourcenew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_stack.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_stack` resource into the root Terraform configuration.
@@ -593,12 +593,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `password` (`string`):  When `null`, the `password` field will be omitted from the resulting object.
-  - `revision` (`string`):  When `null`, the `revision` field will be omitted from the resulting object.
-  - `ssh_key` (`string`):  When `null`, the `ssh_key` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `url` (`string`): 
-  - `username` (`string`):  When `null`, the `username` field will be omitted from the resulting object.
+  - `password` (`string`): Set the `password` field on the resulting object. When `null`, the `password` field will be omitted from the resulting object.
+  - `revision` (`string`): Set the `revision` field on the resulting object. When `null`, the `revision` field will be omitted from the resulting object.
+  - `ssh_key` (`string`): Set the `ssh_key` field on the resulting object. When `null`, the `ssh_key` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `url` (`string`): Set the `url` field on the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_cookbooks_source` sub block.
@@ -621,7 +621,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

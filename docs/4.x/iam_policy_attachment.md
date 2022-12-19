@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `groups` (`list`):  When `null`, the `groups` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `policy_arn` (`string`): 
-  - `roles` (`list`):  When `null`, the `roles` field will be omitted from the resulting object.
-  - `users` (`list`):  When `null`, the `users` field will be omitted from the resulting object.
+  - `groups` (`list`): Set the `groups` field on the resulting resource block. When `null`, the `groups` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `policy_arn` (`string`): Set the `policy_arn` field on the resulting resource block.
+  - `roles` (`list`): Set the `roles` field on the resulting resource block. When `null`, the `roles` field will be omitted from the resulting object.
+  - `users` (`list`): Set the `users` field on the resulting resource block. When `null`, the `users` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `groups` (`list`):  When `null`, the `groups` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `policy_arn` (`string`): 
-  - `roles` (`list`):  When `null`, the `roles` field will be omitted from the resulting object.
-  - `users` (`list`):  When `null`, the `users` field will be omitted from the resulting object.
+  - `groups` (`list`): Set the `groups` field on the resulting object. When `null`, the `groups` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `policy_arn` (`string`): Set the `policy_arn` field on the resulting object.
+  - `roles` (`list`): Set the `roles` field on the resulting object. When `null`, the `roles` field will be omitted from the resulting object.
+  - `users` (`list`): Set the `users` field on the resulting object. When `null`, the `users` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iam_policy_attachment` resource into the root Terraform configuration.

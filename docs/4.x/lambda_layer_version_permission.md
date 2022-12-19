@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action` (`string`): 
-  - `layer_name` (`string`): 
-  - `organization_id` (`string`):  When `null`, the `organization_id` field will be omitted from the resulting object.
-  - `principal` (`string`): 
-  - `statement_id` (`string`): 
-  - `version_number` (`number`): 
+  - `action` (`string`): Set the `action` field on the resulting resource block.
+  - `layer_name` (`string`): Set the `layer_name` field on the resulting resource block.
+  - `organization_id` (`string`): Set the `organization_id` field on the resulting resource block. When `null`, the `organization_id` field will be omitted from the resulting object.
+  - `principal` (`string`): Set the `principal` field on the resulting resource block.
+  - `statement_id` (`string`): Set the `statement_id` field on the resulting resource block.
+  - `version_number` (`number`): Set the `version_number` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action` (`string`): 
-  - `layer_name` (`string`): 
-  - `organization_id` (`string`):  When `null`, the `organization_id` field will be omitted from the resulting object.
-  - `principal` (`string`): 
-  - `statement_id` (`string`): 
-  - `version_number` (`number`): 
+  - `action` (`string`): Set the `action` field on the resulting object.
+  - `layer_name` (`string`): Set the `layer_name` field on the resulting object.
+  - `organization_id` (`string`): Set the `organization_id` field on the resulting object. When `null`, the `organization_id` field will be omitted from the resulting object.
+  - `principal` (`string`): Set the `principal` field on the resulting object.
+  - `statement_id` (`string`): Set the `statement_id` field on the resulting object.
+  - `version_number` (`number`): Set the `version_number` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_layer_version_permission` resource into the root Terraform configuration.

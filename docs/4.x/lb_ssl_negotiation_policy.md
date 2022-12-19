@@ -52,10 +52,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `lb_port` (`number`): 
-  - `load_balancer` (`string`): 
-  - `name` (`string`): 
-  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_ssl_negotiation_policy.attribute.new](#fn-attributenew) constructor.
+  - `lb_port` (`number`): Set the `lb_port` field on the resulting resource block.
+  - `load_balancer` (`string`): Set the `load_balancer` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `attribute` (`list[obj]`): Set the `attribute` field on the resulting resource block. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_ssl_negotiation_policy.attribute.new](#fn-attributenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,10 +79,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `lb_port` (`number`): 
-  - `load_balancer` (`string`): 
-  - `name` (`string`): 
-  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_ssl_negotiation_policy.attribute.new](#fn-attributenew) constructor.
+  - `lb_port` (`number`): Set the `lb_port` field on the resulting object.
+  - `load_balancer` (`string`): Set the `load_balancer` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `attribute` (`list[obj]`): Set the `attribute` field on the resulting object. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_ssl_negotiation_policy.attribute.new](#fn-attributenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lb_ssl_negotiation_policy` resource into the root Terraform configuration.
@@ -190,8 +190,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `attribute` sub block.

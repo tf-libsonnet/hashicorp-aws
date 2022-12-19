@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `identity_pool_id` (`string`): 
-  - `identity_provider_name` (`string`): 
-  - `principal_tags` (`obj`):  When `null`, the `principal_tags` field will be omitted from the resulting object.
-  - `use_defaults` (`bool`):  When `null`, the `use_defaults` field will be omitted from the resulting object.
+  - `identity_pool_id` (`string`): Set the `identity_pool_id` field on the resulting resource block.
+  - `identity_provider_name` (`string`): Set the `identity_provider_name` field on the resulting resource block.
+  - `principal_tags` (`obj`): Set the `principal_tags` field on the resulting resource block. When `null`, the `principal_tags` field will be omitted from the resulting object.
+  - `use_defaults` (`bool`): Set the `use_defaults` field on the resulting resource block. When `null`, the `use_defaults` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `identity_pool_id` (`string`): 
-  - `identity_provider_name` (`string`): 
-  - `principal_tags` (`obj`):  When `null`, the `principal_tags` field will be omitted from the resulting object.
-  - `use_defaults` (`bool`):  When `null`, the `use_defaults` field will be omitted from the resulting object.
+  - `identity_pool_id` (`string`): Set the `identity_pool_id` field on the resulting object.
+  - `identity_provider_name` (`string`): Set the `identity_provider_name` field on the resulting object.
+  - `principal_tags` (`obj`): Set the `principal_tags` field on the resulting object. When `null`, the `principal_tags` field will be omitted from the resulting object.
+  - `use_defaults` (`bool`): Set the `use_defaults` field on the resulting object. When `null`, the `use_defaults` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_identity_pool_provider_principal_tag` resource into the root Terraform configuration.

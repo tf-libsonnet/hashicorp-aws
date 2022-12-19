@@ -54,12 +54,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `s3_bucket_name` (`string`): 
-  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
-  - `s3_kms_key_arn` (`string`):  When `null`, the `s3_kms_key_arn` field will be omitted from the resulting object.
-  - `sns_topic_arn` (`string`):  When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
-  - `snapshot_delivery_properties` (`list[obj]`):  When `null`, the `snapshot_delivery_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_delivery_channel.snapshot_delivery_properties.new](#fn-snapshot_delivery_propertiesnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting resource block.
+  - `s3_key_prefix` (`string`): Set the `s3_key_prefix` field on the resulting resource block. When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+  - `s3_kms_key_arn` (`string`): Set the `s3_kms_key_arn` field on the resulting resource block. When `null`, the `s3_kms_key_arn` field will be omitted from the resulting object.
+  - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting resource block. When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
+  - `snapshot_delivery_properties` (`list[obj]`): Set the `snapshot_delivery_properties` field on the resulting resource block. When `null`, the `snapshot_delivery_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_delivery_channel.snapshot_delivery_properties.new](#fn-snapshot_delivery_propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,12 +83,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `s3_bucket_name` (`string`): 
-  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
-  - `s3_kms_key_arn` (`string`):  When `null`, the `s3_kms_key_arn` field will be omitted from the resulting object.
-  - `sns_topic_arn` (`string`):  When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
-  - `snapshot_delivery_properties` (`list[obj]`):  When `null`, the `snapshot_delivery_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_delivery_channel.snapshot_delivery_properties.new](#fn-snapshot_delivery_propertiesnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object.
+  - `s3_key_prefix` (`string`): Set the `s3_key_prefix` field on the resulting object. When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+  - `s3_kms_key_arn` (`string`): Set the `s3_kms_key_arn` field on the resulting object. When `null`, the `s3_kms_key_arn` field will be omitted from the resulting object.
+  - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting object. When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
+  - `snapshot_delivery_properties` (`list[obj]`): Set the `snapshot_delivery_properties` field on the resulting object. When `null`, the `snapshot_delivery_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_delivery_channel.snapshot_delivery_properties.new](#fn-snapshot_delivery_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_delivery_channel` resource into the root Terraform configuration.
@@ -228,7 +228,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `delivery_frequency` (`string`):  When `null`, the `delivery_frequency` field will be omitted from the resulting object.
+  - `delivery_frequency` (`string`): Set the `delivery_frequency` field on the resulting object. When `null`, the `delivery_frequency` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `snapshot_delivery_properties` sub block.

@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authentication_type` (`string`): 
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `first_name` (`string`):  When `null`, the `first_name` field will be omitted from the resulting object.
-  - `last_name` (`string`):  When `null`, the `last_name` field will be omitted from the resulting object.
-  - `send_email_notification` (`bool`):  When `null`, the `send_email_notification` field will be omitted from the resulting object.
-  - `user_name` (`string`): 
+  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting resource block.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `first_name` (`string`): Set the `first_name` field on the resulting resource block. When `null`, the `first_name` field will be omitted from the resulting object.
+  - `last_name` (`string`): Set the `last_name` field on the resulting resource block. When `null`, the `last_name` field will be omitted from the resulting object.
+  - `send_email_notification` (`bool`): Set the `send_email_notification` field on the resulting resource block. When `null`, the `send_email_notification` field will be omitted from the resulting object.
+  - `user_name` (`string`): Set the `user_name` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authentication_type` (`string`): 
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `first_name` (`string`):  When `null`, the `first_name` field will be omitted from the resulting object.
-  - `last_name` (`string`):  When `null`, the `last_name` field will be omitted from the resulting object.
-  - `send_email_notification` (`bool`):  When `null`, the `send_email_notification` field will be omitted from the resulting object.
-  - `user_name` (`string`): 
+  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `first_name` (`string`): Set the `first_name` field on the resulting object. When `null`, the `first_name` field will be omitted from the resulting object.
+  - `last_name` (`string`): Set the `last_name` field on the resulting object. When `null`, the `last_name` field will be omitted from the resulting object.
+  - `send_email_notification` (`bool`): Set the `send_email_notification` field on the resulting object. When `null`, the `send_email_notification` field will be omitted from the resulting object.
+  - `user_name` (`string`): Set the `user_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appstream_user` resource into the root Terraform configuration.

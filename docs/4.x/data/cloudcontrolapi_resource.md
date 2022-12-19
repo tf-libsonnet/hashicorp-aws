@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `identifier` (`string`): 
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `type_name` (`string`): 
-  - `type_version_id` (`string`):  When `null`, the `type_version_id` field will be omitted from the resulting object.
+  - `identifier` (`string`): Set the `identifier` field on the resulting data source block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting data source block. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `type_name` (`string`): Set the `type_name` field on the resulting data source block.
+  - `type_version_id` (`string`): Set the `type_version_id` field on the resulting data source block. When `null`, the `type_version_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `identifier` (`string`): 
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `type_name` (`string`): 
-  - `type_version_id` (`string`):  When `null`, the `type_version_id` field will be omitted from the resulting object.
+  - `identifier` (`string`): Set the `identifier` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `type_name` (`string`): Set the `type_name` field on the resulting object.
+  - `type_version_id` (`string`): Set the `type_version_id` field on the resulting object. When `null`, the `type_version_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `cloudcontrolapi_resource` data source into the root Terraform configuration.

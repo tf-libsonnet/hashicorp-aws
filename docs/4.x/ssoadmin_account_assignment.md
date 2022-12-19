@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `instance_arn` (`string`): 
-  - `permission_set_arn` (`string`): 
-  - `principal_id` (`string`): 
-  - `principal_type` (`string`): 
-  - `target_id` (`string`): 
-  - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
+  - `instance_arn` (`string`): Set the `instance_arn` field on the resulting resource block.
+  - `permission_set_arn` (`string`): Set the `permission_set_arn` field on the resulting resource block.
+  - `principal_id` (`string`): Set the `principal_id` field on the resulting resource block.
+  - `principal_type` (`string`): Set the `principal_type` field on the resulting resource block.
+  - `target_id` (`string`): Set the `target_id` field on the resulting resource block.
+  - `target_type` (`string`): Set the `target_type` field on the resulting resource block. When `null`, the `target_type` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `instance_arn` (`string`): 
-  - `permission_set_arn` (`string`): 
-  - `principal_id` (`string`): 
-  - `principal_type` (`string`): 
-  - `target_id` (`string`): 
-  - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
+  - `instance_arn` (`string`): Set the `instance_arn` field on the resulting object.
+  - `permission_set_arn` (`string`): Set the `permission_set_arn` field on the resulting object.
+  - `principal_id` (`string`): Set the `principal_id` field on the resulting object.
+  - `principal_type` (`string`): Set the `principal_type` field on the resulting object.
+  - `target_id` (`string`): Set the `target_id` field on the resulting object.
+  - `target_type` (`string`): Set the `target_type` field on the resulting object. When `null`, the `target_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssoadmin_account_assignment` resource into the root Terraform configuration.

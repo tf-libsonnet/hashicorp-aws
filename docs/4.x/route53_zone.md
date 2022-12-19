@@ -55,13 +55,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `delegation_set_id` (`string`):  When `null`, the `delegation_set_id` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc` (`list[obj]`):  When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_zone.vpc.new](#fn-vpcnew) constructor.
+  - `comment` (`string`): Set the `comment` field on the resulting resource block. When `null`, the `comment` field will be omitted from the resulting object.
+  - `delegation_set_id` (`string`): Set the `delegation_set_id` field on the resulting resource block. When `null`, the `delegation_set_id` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting resource block. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc` (`list[obj]`): Set the `vpc` field on the resulting resource block. When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_zone.vpc.new](#fn-vpcnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,13 +85,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `delegation_set_id` (`string`):  When `null`, the `delegation_set_id` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc` (`list[obj]`):  When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_zone.vpc.new](#fn-vpcnew) constructor.
+  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
+  - `delegation_set_id` (`string`): Set the `delegation_set_id` field on the resulting object. When `null`, the `delegation_set_id` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting object. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc` (`list[obj]`): Set the `vpc` field on the resulting object. When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_zone.vpc.new](#fn-vpcnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_zone` resource into the root Terraform configuration.
@@ -247,8 +247,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `vpc_id` (`string`): 
-  - `vpc_region` (`string`):  When `null`, the `vpc_region` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `vpc_region` (`string`): Set the `vpc_region` field on the resulting object. When `null`, the `vpc_region` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc` sub block.

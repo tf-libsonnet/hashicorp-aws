@@ -63,18 +63,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `debug_logging` (`bool`):  When `null`, the `debug_logging` field will be omitted from the resulting object.
-  - `engine_family` (`string`): 
-  - `idle_client_timeout` (`number`):  When `null`, the `idle_client_timeout` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `require_tls` (`bool`):  When `null`, the `require_tls` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `vpc_subnet_ids` (`list`): 
-  - `auth` (`list[obj]`):  When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.auth.new](#fn-authnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.timeouts.new](#fn-timeoutsnew) constructor.
+  - `debug_logging` (`bool`): Set the `debug_logging` field on the resulting resource block. When `null`, the `debug_logging` field will be omitted from the resulting object.
+  - `engine_family` (`string`): Set the `engine_family` field on the resulting resource block.
+  - `idle_client_timeout` (`number`): Set the `idle_client_timeout` field on the resulting resource block. When `null`, the `idle_client_timeout` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `require_tls` (`bool`): Set the `require_tls` field on the resulting resource block. When `null`, the `require_tls` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting resource block. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `vpc_subnet_ids` (`list`): Set the `vpc_subnet_ids` field on the resulting resource block.
+  - `auth` (`list[obj]`): Set the `auth` field on the resulting resource block. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.auth.new](#fn-authnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -98,18 +98,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `debug_logging` (`bool`):  When `null`, the `debug_logging` field will be omitted from the resulting object.
-  - `engine_family` (`string`): 
-  - `idle_client_timeout` (`number`):  When `null`, the `idle_client_timeout` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `require_tls` (`bool`):  When `null`, the `require_tls` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `vpc_subnet_ids` (`list`): 
-  - `auth` (`list[obj]`):  When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.auth.new](#fn-authnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.timeouts.new](#fn-timeoutsnew) constructor.
+  - `debug_logging` (`bool`): Set the `debug_logging` field on the resulting object. When `null`, the `debug_logging` field will be omitted from the resulting object.
+  - `engine_family` (`string`): Set the `engine_family` field on the resulting object.
+  - `idle_client_timeout` (`number`): Set the `idle_client_timeout` field on the resulting object. When `null`, the `idle_client_timeout` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `require_tls` (`bool`): Set the `require_tls` field on the resulting object. When `null`, the `require_tls` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting object. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `vpc_subnet_ids` (`list`): Set the `vpc_subnet_ids` field on the resulting object.
+  - `auth` (`list[obj]`): Set the `auth` field on the resulting object. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.auth.new](#fn-authnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_proxy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `db_proxy` resource into the root Terraform configuration.
@@ -365,11 +365,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `auth_scheme` (`string`):  When `null`, the `auth_scheme` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `iam_auth` (`string`):  When `null`, the `iam_auth` field will be omitted from the resulting object.
-  - `secret_arn` (`string`):  When `null`, the `secret_arn` field will be omitted from the resulting object.
-  - `username` (`string`):  When `null`, the `username` field will be omitted from the resulting object.
+  - `auth_scheme` (`string`): Set the `auth_scheme` field on the resulting object. When `null`, the `auth_scheme` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `iam_auth` (`string`): Set the `iam_auth` field on the resulting object. When `null`, the `iam_auth` field will be omitted from the resulting object.
+  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auth` sub block.
@@ -392,9 +392,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

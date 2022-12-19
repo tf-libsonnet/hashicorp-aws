@@ -74,29 +74,29 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auto_import_policy` (`string`):  When `null`, the `auto_import_policy` field will be omitted from the resulting object.
-  - `automatic_backup_retention_days` (`number`):  When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
-  - `backup_id` (`string`):  When `null`, the `backup_id` field will be omitted from the resulting object.
-  - `copy_tags_to_backups` (`bool`):  When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
-  - `daily_automatic_backup_start_time` (`string`):  When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
-  - `data_compression_type` (`string`):  When `null`, the `data_compression_type` field will be omitted from the resulting object.
-  - `deployment_type` (`string`):  When `null`, the `deployment_type` field will be omitted from the resulting object.
-  - `drive_cache_type` (`string`):  When `null`, the `drive_cache_type` field will be omitted from the resulting object.
-  - `export_path` (`string`):  When `null`, the `export_path` field will be omitted from the resulting object.
-  - `file_system_type_version` (`string`):  When `null`, the `file_system_type_version` field will be omitted from the resulting object.
-  - `import_path` (`string`):  When `null`, the `import_path` field will be omitted from the resulting object.
-  - `imported_file_chunk_size` (`number`):  When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `per_unit_storage_throughput` (`number`):  When `null`, the `per_unit_storage_throughput` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`):  When `null`, the `storage_capacity` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.log_configuration.new](#fn-log_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_import_policy` (`string`): Set the `auto_import_policy` field on the resulting resource block. When `null`, the `auto_import_policy` field will be omitted from the resulting object.
+  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting resource block. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
+  - `backup_id` (`string`): Set the `backup_id` field on the resulting resource block. When `null`, the `backup_id` field will be omitted from the resulting object.
+  - `copy_tags_to_backups` (`bool`): Set the `copy_tags_to_backups` field on the resulting resource block. When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
+  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting resource block. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
+  - `data_compression_type` (`string`): Set the `data_compression_type` field on the resulting resource block. When `null`, the `data_compression_type` field will be omitted from the resulting object.
+  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting resource block. When `null`, the `deployment_type` field will be omitted from the resulting object.
+  - `drive_cache_type` (`string`): Set the `drive_cache_type` field on the resulting resource block. When `null`, the `drive_cache_type` field will be omitted from the resulting object.
+  - `export_path` (`string`): Set the `export_path` field on the resulting resource block. When `null`, the `export_path` field will be omitted from the resulting object.
+  - `file_system_type_version` (`string`): Set the `file_system_type_version` field on the resulting resource block. When `null`, the `file_system_type_version` field will be omitted from the resulting object.
+  - `import_path` (`string`): Set the `import_path` field on the resulting resource block. When `null`, the `import_path` field will be omitted from the resulting object.
+  - `imported_file_chunk_size` (`number`): Set the `imported_file_chunk_size` field on the resulting resource block. When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `per_unit_storage_throughput` (`number`): Set the `per_unit_storage_throughput` field on the resulting resource block. When `null`, the `per_unit_storage_throughput` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block. When `null`, the `storage_capacity` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting resource block. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
+  - `log_configuration` (`list[obj]`): Set the `log_configuration` field on the resulting resource block. When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.log_configuration.new](#fn-log_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -120,29 +120,29 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_import_policy` (`string`):  When `null`, the `auto_import_policy` field will be omitted from the resulting object.
-  - `automatic_backup_retention_days` (`number`):  When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
-  - `backup_id` (`string`):  When `null`, the `backup_id` field will be omitted from the resulting object.
-  - `copy_tags_to_backups` (`bool`):  When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
-  - `daily_automatic_backup_start_time` (`string`):  When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
-  - `data_compression_type` (`string`):  When `null`, the `data_compression_type` field will be omitted from the resulting object.
-  - `deployment_type` (`string`):  When `null`, the `deployment_type` field will be omitted from the resulting object.
-  - `drive_cache_type` (`string`):  When `null`, the `drive_cache_type` field will be omitted from the resulting object.
-  - `export_path` (`string`):  When `null`, the `export_path` field will be omitted from the resulting object.
-  - `file_system_type_version` (`string`):  When `null`, the `file_system_type_version` field will be omitted from the resulting object.
-  - `import_path` (`string`):  When `null`, the `import_path` field will be omitted from the resulting object.
-  - `imported_file_chunk_size` (`number`):  When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `per_unit_storage_throughput` (`number`):  When `null`, the `per_unit_storage_throughput` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`):  When `null`, the `storage_capacity` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `log_configuration` (`list[obj]`):  When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.log_configuration.new](#fn-log_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_import_policy` (`string`): Set the `auto_import_policy` field on the resulting object. When `null`, the `auto_import_policy` field will be omitted from the resulting object.
+  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting object. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
+  - `backup_id` (`string`): Set the `backup_id` field on the resulting object. When `null`, the `backup_id` field will be omitted from the resulting object.
+  - `copy_tags_to_backups` (`bool`): Set the `copy_tags_to_backups` field on the resulting object. When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
+  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting object. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
+  - `data_compression_type` (`string`): Set the `data_compression_type` field on the resulting object. When `null`, the `data_compression_type` field will be omitted from the resulting object.
+  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting object. When `null`, the `deployment_type` field will be omitted from the resulting object.
+  - `drive_cache_type` (`string`): Set the `drive_cache_type` field on the resulting object. When `null`, the `drive_cache_type` field will be omitted from the resulting object.
+  - `export_path` (`string`): Set the `export_path` field on the resulting object. When `null`, the `export_path` field will be omitted from the resulting object.
+  - `file_system_type_version` (`string`): Set the `file_system_type_version` field on the resulting object. When `null`, the `file_system_type_version` field will be omitted from the resulting object.
+  - `import_path` (`string`): Set the `import_path` field on the resulting object. When `null`, the `import_path` field will be omitted from the resulting object.
+  - `imported_file_chunk_size` (`number`): Set the `imported_file_chunk_size` field on the resulting object. When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `per_unit_storage_throughput` (`number`): Set the `per_unit_storage_throughput` field on the resulting object. When `null`, the `per_unit_storage_throughput` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object. When `null`, the `storage_capacity` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
+  - `log_configuration` (`list[obj]`): Set the `log_configuration` field on the resulting object. When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.log_configuration.new](#fn-log_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_lustre_file_system` resource into the root Terraform configuration.
@@ -574,8 +574,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`string`):  When `null`, the `destination` field will be omitted from the resulting object.
-  - `level` (`string`):  When `null`, the `level` field will be omitted from the resulting object.
+  - `destination` (`string`): Set the `destination` field on the resulting object. When `null`, the `destination` field will be omitted from the resulting object.
+  - `level` (`string`): Set the `level` field on the resulting object. When `null`, the `level` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `log_configuration` sub block.
@@ -598,9 +598,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

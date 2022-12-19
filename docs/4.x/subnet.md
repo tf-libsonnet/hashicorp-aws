@@ -66,24 +66,24 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `assign_ipv6_address_on_creation` (`bool`):  When `null`, the `assign_ipv6_address_on_creation` field will be omitted from the resulting object.
-  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `availability_zone_id` (`string`):  When `null`, the `availability_zone_id` field will be omitted from the resulting object.
-  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `customer_owned_ipv4_pool` (`string`):  When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
-  - `enable_dns64` (`bool`):  When `null`, the `enable_dns64` field will be omitted from the resulting object.
-  - `enable_resource_name_dns_a_record_on_launch` (`bool`):  When `null`, the `enable_resource_name_dns_a_record_on_launch` field will be omitted from the resulting object.
-  - `enable_resource_name_dns_aaaa_record_on_launch` (`bool`):  When `null`, the `enable_resource_name_dns_aaaa_record_on_launch` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `ipv6_native` (`bool`):  When `null`, the `ipv6_native` field will be omitted from the resulting object.
-  - `map_customer_owned_ip_on_launch` (`bool`):  When `null`, the `map_customer_owned_ip_on_launch` field will be omitted from the resulting object.
-  - `map_public_ip_on_launch` (`bool`):  When `null`, the `map_public_ip_on_launch` field will be omitted from the resulting object.
-  - `outpost_arn` (`string`):  When `null`, the `outpost_arn` field will be omitted from the resulting object.
-  - `private_dns_hostname_type_on_launch` (`string`):  When `null`, the `private_dns_hostname_type_on_launch` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.subnet.timeouts.new](#fn-timeoutsnew) constructor.
+  - `assign_ipv6_address_on_creation` (`bool`): Set the `assign_ipv6_address_on_creation` field on the resulting resource block. When `null`, the `assign_ipv6_address_on_creation` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block. When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_id` (`string`): Set the `availability_zone_id` field on the resulting resource block. When `null`, the `availability_zone_id` field will be omitted from the resulting object.
+  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting resource block. When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting resource block. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
+  - `enable_dns64` (`bool`): Set the `enable_dns64` field on the resulting resource block. When `null`, the `enable_dns64` field will be omitted from the resulting object.
+  - `enable_resource_name_dns_a_record_on_launch` (`bool`): Set the `enable_resource_name_dns_a_record_on_launch` field on the resulting resource block. When `null`, the `enable_resource_name_dns_a_record_on_launch` field will be omitted from the resulting object.
+  - `enable_resource_name_dns_aaaa_record_on_launch` (`bool`): Set the `enable_resource_name_dns_aaaa_record_on_launch` field on the resulting resource block. When `null`, the `enable_resource_name_dns_aaaa_record_on_launch` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting resource block. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `ipv6_native` (`bool`): Set the `ipv6_native` field on the resulting resource block. When `null`, the `ipv6_native` field will be omitted from the resulting object.
+  - `map_customer_owned_ip_on_launch` (`bool`): Set the `map_customer_owned_ip_on_launch` field on the resulting resource block. When `null`, the `map_customer_owned_ip_on_launch` field will be omitted from the resulting object.
+  - `map_public_ip_on_launch` (`bool`): Set the `map_public_ip_on_launch` field on the resulting resource block. When `null`, the `map_public_ip_on_launch` field will be omitted from the resulting object.
+  - `outpost_arn` (`string`): Set the `outpost_arn` field on the resulting resource block. When `null`, the `outpost_arn` field will be omitted from the resulting object.
+  - `private_dns_hostname_type_on_launch` (`string`): Set the `private_dns_hostname_type_on_launch` field on the resulting resource block. When `null`, the `private_dns_hostname_type_on_launch` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.subnet.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -107,24 +107,24 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `assign_ipv6_address_on_creation` (`bool`):  When `null`, the `assign_ipv6_address_on_creation` field will be omitted from the resulting object.
-  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `availability_zone_id` (`string`):  When `null`, the `availability_zone_id` field will be omitted from the resulting object.
-  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `customer_owned_ipv4_pool` (`string`):  When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
-  - `enable_dns64` (`bool`):  When `null`, the `enable_dns64` field will be omitted from the resulting object.
-  - `enable_resource_name_dns_a_record_on_launch` (`bool`):  When `null`, the `enable_resource_name_dns_a_record_on_launch` field will be omitted from the resulting object.
-  - `enable_resource_name_dns_aaaa_record_on_launch` (`bool`):  When `null`, the `enable_resource_name_dns_aaaa_record_on_launch` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `ipv6_native` (`bool`):  When `null`, the `ipv6_native` field will be omitted from the resulting object.
-  - `map_customer_owned_ip_on_launch` (`bool`):  When `null`, the `map_customer_owned_ip_on_launch` field will be omitted from the resulting object.
-  - `map_public_ip_on_launch` (`bool`):  When `null`, the `map_public_ip_on_launch` field will be omitted from the resulting object.
-  - `outpost_arn` (`string`):  When `null`, the `outpost_arn` field will be omitted from the resulting object.
-  - `private_dns_hostname_type_on_launch` (`string`):  When `null`, the `private_dns_hostname_type_on_launch` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.subnet.timeouts.new](#fn-timeoutsnew) constructor.
+  - `assign_ipv6_address_on_creation` (`bool`): Set the `assign_ipv6_address_on_creation` field on the resulting object. When `null`, the `assign_ipv6_address_on_creation` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_id` (`string`): Set the `availability_zone_id` field on the resulting object. When `null`, the `availability_zone_id` field will be omitted from the resulting object.
+  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting object. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
+  - `enable_dns64` (`bool`): Set the `enable_dns64` field on the resulting object. When `null`, the `enable_dns64` field will be omitted from the resulting object.
+  - `enable_resource_name_dns_a_record_on_launch` (`bool`): Set the `enable_resource_name_dns_a_record_on_launch` field on the resulting object. When `null`, the `enable_resource_name_dns_a_record_on_launch` field will be omitted from the resulting object.
+  - `enable_resource_name_dns_aaaa_record_on_launch` (`bool`): Set the `enable_resource_name_dns_aaaa_record_on_launch` field on the resulting object. When `null`, the `enable_resource_name_dns_aaaa_record_on_launch` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `ipv6_native` (`bool`): Set the `ipv6_native` field on the resulting object. When `null`, the `ipv6_native` field will be omitted from the resulting object.
+  - `map_customer_owned_ip_on_launch` (`bool`): Set the `map_customer_owned_ip_on_launch` field on the resulting object. When `null`, the `map_customer_owned_ip_on_launch` field will be omitted from the resulting object.
+  - `map_public_ip_on_launch` (`bool`): Set the `map_public_ip_on_launch` field on the resulting object. When `null`, the `map_public_ip_on_launch` field will be omitted from the resulting object.
+  - `outpost_arn` (`string`): Set the `outpost_arn` field on the resulting object. When `null`, the `outpost_arn` field will be omitted from the resulting object.
+  - `private_dns_hostname_type_on_launch` (`string`): Set the `private_dns_hostname_type_on_launch` field on the resulting object. When `null`, the `private_dns_hostname_type_on_launch` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.subnet.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `subnet` resource into the root Terraform configuration.
@@ -455,8 +455,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

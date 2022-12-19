@@ -58,12 +58,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `fsx_filesystem_arn` (`string`): 
-  - `security_group_arns` (`list`): 
-  - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `protocol` (`list[obj]`):  When `null`, the `protocol` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.new](#fn-protocolnew) constructor.
+  - `fsx_filesystem_arn` (`string`): Set the `fsx_filesystem_arn` field on the resulting resource block.
+  - `security_group_arns` (`list`): Set the `security_group_arns` field on the resulting resource block.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting resource block. When `null`, the `subdirectory` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `protocol` (`list[obj]`): Set the `protocol` field on the resulting resource block. When `null`, the `protocol` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.new](#fn-protocolnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,12 +87,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `fsx_filesystem_arn` (`string`): 
-  - `security_group_arns` (`list`): 
-  - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `protocol` (`list[obj]`):  When `null`, the `protocol` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.new](#fn-protocolnew) constructor.
+  - `fsx_filesystem_arn` (`string`): Set the `fsx_filesystem_arn` field on the resulting object.
+  - `security_group_arns` (`list`): Set the `security_group_arns` field on the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting object. When `null`, the `subdirectory` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `protocol` (`list[obj]`): Set the `protocol` field on the resulting object. When `null`, the `protocol` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.new](#fn-protocolnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_location_fsx_openzfs_file_system` resource into the root Terraform configuration.
@@ -232,7 +232,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new](#fn-protocolnfsnew) constructor.
+  - `nfs` (`list[obj]`): Set the `nfs` field on the resulting object. When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.new](#fn-protocolnfsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `protocol` sub block.
@@ -255,7 +255,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.mount_options.new](#fn-protocolprotocolmount_optionsnew) constructor.
+  - `mount_options` (`list[obj]`): Set the `mount_options` field on the resulting object. When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_fsx_openzfs_file_system.protocol.nfs.mount_options.new](#fn-protocolprotocolmount_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs` sub block.
@@ -278,7 +278,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `mount_options` sub block.

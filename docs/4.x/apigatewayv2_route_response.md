@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): 
-  - `model_selection_expression` (`string`):  When `null`, the `model_selection_expression` field will be omitted from the resulting object.
-  - `response_models` (`obj`):  When `null`, the `response_models` field will be omitted from the resulting object.
-  - `route_id` (`string`): 
-  - `route_response_key` (`string`): 
+  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
+  - `model_selection_expression` (`string`): Set the `model_selection_expression` field on the resulting resource block. When `null`, the `model_selection_expression` field will be omitted from the resulting object.
+  - `response_models` (`obj`): Set the `response_models` field on the resulting resource block. When `null`, the `response_models` field will be omitted from the resulting object.
+  - `route_id` (`string`): Set the `route_id` field on the resulting resource block.
+  - `route_response_key` (`string`): Set the `route_response_key` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): 
-  - `model_selection_expression` (`string`):  When `null`, the `model_selection_expression` field will be omitted from the resulting object.
-  - `response_models` (`obj`):  When `null`, the `response_models` field will be omitted from the resulting object.
-  - `route_id` (`string`): 
-  - `route_response_key` (`string`): 
+  - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `model_selection_expression` (`string`): Set the `model_selection_expression` field on the resulting object. When `null`, the `model_selection_expression` field will be omitted from the resulting object.
+  - `response_models` (`obj`): Set the `response_models` field on the resulting object. When `null`, the `response_models` field will be omitted from the resulting object.
+  - `route_id` (`string`): Set the `route_id` field on the resulting object.
+  - `route_response_key` (`string`): Set the `route_response_key` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_route_response` resource into the root Terraform configuration.

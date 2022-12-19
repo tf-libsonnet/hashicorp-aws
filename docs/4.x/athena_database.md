@@ -59,14 +59,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`):  When `null`, the `bucket` field will be omitted from the resulting object.
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `properties` (`obj`):  When `null`, the `properties` field will be omitted from the resulting object.
-  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-acl_configurationnew) constructor.
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting resource block. When `null`, the `bucket` field will be omitted from the resulting object.
+  - `comment` (`string`): Set the `comment` field on the resulting resource block. When `null`, the `comment` field will be omitted from the resulting object.
+  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting resource block. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `properties` (`obj`): Set the `properties` field on the resulting resource block. When `null`, the `properties` field will be omitted from the resulting object.
+  - `acl_configuration` (`list[obj]`): Set the `acl_configuration` field on the resulting resource block. When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-acl_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting resource block. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,14 +90,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`):  When `null`, the `bucket` field will be omitted from the resulting object.
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `properties` (`obj`):  When `null`, the `properties` field will be omitted from the resulting object.
-  - `acl_configuration` (`list[obj]`):  When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-acl_configurationnew) constructor.
-  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting object. When `null`, the `bucket` field will be omitted from the resulting object.
+  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
+  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting object. When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `properties` (`obj`): Set the `properties` field on the resulting object. When `null`, the `properties` field will be omitted from the resulting object.
+  - `acl_configuration` (`list[obj]`): Set the `acl_configuration` field on the resulting object. When `null`, the `acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.acl_configuration.new](#fn-acl_configurationnew) constructor.
+  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting object. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_database.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `athena_database` resource into the root Terraform configuration.
@@ -290,7 +290,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_acl_option` (`string`): 
+  - `s3_acl_option` (`string`): Set the `s3_acl_option` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `acl_configuration` sub block.
@@ -313,8 +313,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `encryption_option` (`string`): 
-  - `kms_key` (`string`):  When `null`, the `kms_key` field will be omitted from the resulting object.
+  - `encryption_option` (`string`): Set the `encryption_option` field on the resulting object.
+  - `kms_key` (`string`): Set the `kms_key` field on the resulting object. When `null`, the `kms_key` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.

@@ -65,20 +65,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cache_cluster_enabled` (`bool`):  When `null`, the `cache_cluster_enabled` field will be omitted from the resulting object.
-  - `cache_cluster_size` (`string`):  When `null`, the `cache_cluster_size` field will be omitted from the resulting object.
-  - `client_certificate_id` (`string`):  When `null`, the `client_certificate_id` field will be omitted from the resulting object.
-  - `deployment_id` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `documentation_version` (`string`):  When `null`, the `documentation_version` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): 
-  - `stage_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `variables` (`obj`):  When `null`, the `variables` field will be omitted from the resulting object.
-  - `xray_tracing_enabled` (`bool`):  When `null`, the `xray_tracing_enabled` field will be omitted from the resulting object.
-  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
-  - `canary_settings` (`list[obj]`):  When `null`, the `canary_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.canary_settings.new](#fn-canary_settingsnew) constructor.
+  - `cache_cluster_enabled` (`bool`): Set the `cache_cluster_enabled` field on the resulting resource block. When `null`, the `cache_cluster_enabled` field will be omitted from the resulting object.
+  - `cache_cluster_size` (`string`): Set the `cache_cluster_size` field on the resulting resource block. When `null`, the `cache_cluster_size` field will be omitted from the resulting object.
+  - `client_certificate_id` (`string`): Set the `client_certificate_id` field on the resulting resource block. When `null`, the `client_certificate_id` field will be omitted from the resulting object.
+  - `deployment_id` (`string`): Set the `deployment_id` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `documentation_version` (`string`): Set the `documentation_version` field on the resulting resource block. When `null`, the `documentation_version` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
+  - `stage_name` (`string`): Set the `stage_name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `variables` (`obj`): Set the `variables` field on the resulting resource block. When `null`, the `variables` field will be omitted from the resulting object.
+  - `xray_tracing_enabled` (`bool`): Set the `xray_tracing_enabled` field on the resulting resource block. When `null`, the `xray_tracing_enabled` field will be omitted from the resulting object.
+  - `access_log_settings` (`list[obj]`): Set the `access_log_settings` field on the resulting resource block. When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
+  - `canary_settings` (`list[obj]`): Set the `canary_settings` field on the resulting resource block. When `null`, the `canary_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.canary_settings.new](#fn-canary_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,20 +102,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cache_cluster_enabled` (`bool`):  When `null`, the `cache_cluster_enabled` field will be omitted from the resulting object.
-  - `cache_cluster_size` (`string`):  When `null`, the `cache_cluster_size` field will be omitted from the resulting object.
-  - `client_certificate_id` (`string`):  When `null`, the `client_certificate_id` field will be omitted from the resulting object.
-  - `deployment_id` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `documentation_version` (`string`):  When `null`, the `documentation_version` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): 
-  - `stage_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `variables` (`obj`):  When `null`, the `variables` field will be omitted from the resulting object.
-  - `xray_tracing_enabled` (`bool`):  When `null`, the `xray_tracing_enabled` field will be omitted from the resulting object.
-  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
-  - `canary_settings` (`list[obj]`):  When `null`, the `canary_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.canary_settings.new](#fn-canary_settingsnew) constructor.
+  - `cache_cluster_enabled` (`bool`): Set the `cache_cluster_enabled` field on the resulting object. When `null`, the `cache_cluster_enabled` field will be omitted from the resulting object.
+  - `cache_cluster_size` (`string`): Set the `cache_cluster_size` field on the resulting object. When `null`, the `cache_cluster_size` field will be omitted from the resulting object.
+  - `client_certificate_id` (`string`): Set the `client_certificate_id` field on the resulting object. When `null`, the `client_certificate_id` field will be omitted from the resulting object.
+  - `deployment_id` (`string`): Set the `deployment_id` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `documentation_version` (`string`): Set the `documentation_version` field on the resulting object. When `null`, the `documentation_version` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
+  - `stage_name` (`string`): Set the `stage_name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `variables` (`obj`): Set the `variables` field on the resulting object. When `null`, the `variables` field will be omitted from the resulting object.
+  - `xray_tracing_enabled` (`bool`): Set the `xray_tracing_enabled` field on the resulting object. When `null`, the `xray_tracing_enabled` field will be omitted from the resulting object.
+  - `access_log_settings` (`list[obj]`): Set the `access_log_settings` field on the resulting object. When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
+  - `canary_settings` (`list[obj]`): Set the `canary_settings` field on the resulting object. When `null`, the `canary_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_stage.canary_settings.new](#fn-canary_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_stage` resource into the root Terraform configuration.
@@ -404,8 +404,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination_arn` (`string`): 
-  - `format` (`string`): 
+  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.
+  - `format` (`string`): Set the `format` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_log_settings` sub block.
@@ -428,9 +428,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `percent_traffic` (`number`):  When `null`, the `percent_traffic` field will be omitted from the resulting object.
-  - `stage_variable_overrides` (`obj`):  When `null`, the `stage_variable_overrides` field will be omitted from the resulting object.
-  - `use_stage_cache` (`bool`):  When `null`, the `use_stage_cache` field will be omitted from the resulting object.
+  - `percent_traffic` (`number`): Set the `percent_traffic` field on the resulting object. When `null`, the `percent_traffic` field will be omitted from the resulting object.
+  - `stage_variable_overrides` (`obj`): Set the `stage_variable_overrides` field on the resulting object. When `null`, the `stage_variable_overrides` field will be omitted from the resulting object.
+  - `use_stage_cache` (`bool`): Set the `use_stage_cache` field on the resulting object. When `null`, the `use_stage_cache` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `canary_settings` sub block.

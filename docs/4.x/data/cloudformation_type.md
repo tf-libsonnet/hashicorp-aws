@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `arn` (`string`):  When `null`, the `arn` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `type_name` (`string`):  When `null`, the `type_name` field will be omitted from the resulting object.
-  - `version_id` (`string`):  When `null`, the `version_id` field will be omitted from the resulting object.
+  - `arn` (`string`): Set the `arn` field on the resulting data source block. When `null`, the `arn` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting data source block. When `null`, the `type` field will be omitted from the resulting object.
+  - `type_name` (`string`): Set the `type_name` field on the resulting data source block. When `null`, the `type_name` field will be omitted from the resulting object.
+  - `version_id` (`string`): Set the `version_id` field on the resulting data source block. When `null`, the `version_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `arn` (`string`):  When `null`, the `arn` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `type_name` (`string`):  When `null`, the `type_name` field will be omitted from the resulting object.
-  - `version_id` (`string`):  When `null`, the `version_id` field will be omitted from the resulting object.
+  - `arn` (`string`): Set the `arn` field on the resulting object. When `null`, the `arn` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `type_name` (`string`): Set the `type_name` field on the resulting object. When `null`, the `type_name` field will be omitted from the resulting object.
+  - `version_id` (`string`): Set the `version_id` field on the resulting object. When `null`, the `version_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `cloudformation_type` data source into the root Terraform configuration.

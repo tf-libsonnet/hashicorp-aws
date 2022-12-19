@@ -58,10 +58,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `connection_alias` (`string`): 
-  - `local_domain_info` (`list[obj]`):  When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-local_domain_infonew) constructor.
-  - `remote_domain_info` (`list[obj]`):  When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-remote_domain_infonew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-timeoutsnew) constructor.
+  - `connection_alias` (`string`): Set the `connection_alias` field on the resulting resource block.
+  - `local_domain_info` (`list[obj]`): Set the `local_domain_info` field on the resulting resource block. When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-local_domain_infonew) constructor.
+  - `remote_domain_info` (`list[obj]`): Set the `remote_domain_info` field on the resulting resource block. When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-remote_domain_infonew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,10 +85,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `connection_alias` (`string`): 
-  - `local_domain_info` (`list[obj]`):  When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-local_domain_infonew) constructor.
-  - `remote_domain_info` (`list[obj]`):  When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-remote_domain_infonew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-timeoutsnew) constructor.
+  - `connection_alias` (`string`): Set the `connection_alias` field on the resulting object.
+  - `local_domain_info` (`list[obj]`): Set the `local_domain_info` field on the resulting object. When `null`, the `local_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.local_domain_info.new](#fn-local_domain_infonew) constructor.
+  - `remote_domain_info` (`list[obj]`): Set the `remote_domain_info` field on the resulting object. When `null`, the `remote_domain_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.remote_domain_info.new](#fn-remote_domain_infonew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_outbound_connection.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opensearch_outbound_connection` resource into the root Terraform configuration.
@@ -237,9 +237,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `domain_name` (`string`): 
-  - `owner_id` (`string`): 
-  - `region` (`string`): 
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `owner_id` (`string`): Set the `owner_id` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `local_domain_info` sub block.
@@ -262,9 +262,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `domain_name` (`string`): 
-  - `owner_id` (`string`): 
-  - `region` (`string`): 
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `owner_id` (`string`): Set the `owner_id` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `remote_domain_info` sub block.
@@ -287,8 +287,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

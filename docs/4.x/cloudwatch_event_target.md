@@ -98,23 +98,23 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `arn` (`string`): 
-  - `event_bus_name` (`string`):  When `null`, the `event_bus_name` field will be omitted from the resulting object.
-  - `input` (`string`):  When `null`, the `input` field will be omitted from the resulting object.
-  - `input_path` (`string`):  When `null`, the `input_path` field will be omitted from the resulting object.
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `rule` (`string`): 
-  - `target_id` (`string`):  When `null`, the `target_id` field will be omitted from the resulting object.
-  - `batch_target` (`list[obj]`):  When `null`, the `batch_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.batch_target.new](#fn-batch_targetnew) constructor.
-  - `dead_letter_config` (`list[obj]`):  When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
-  - `ecs_target` (`list[obj]`):  When `null`, the `ecs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.new](#fn-ecs_targetnew) constructor.
-  - `http_target` (`list[obj]`):  When `null`, the `http_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.http_target.new](#fn-http_targetnew) constructor.
-  - `input_transformer` (`list[obj]`):  When `null`, the `input_transformer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.input_transformer.new](#fn-input_transformernew) constructor.
-  - `kinesis_target` (`list[obj]`):  When `null`, the `kinesis_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.kinesis_target.new](#fn-kinesis_targetnew) constructor.
-  - `redshift_target` (`list[obj]`):  When `null`, the `redshift_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.redshift_target.new](#fn-redshift_targetnew) constructor.
-  - `retry_policy` (`list[obj]`):  When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.retry_policy.new](#fn-retry_policynew) constructor.
-  - `run_command_targets` (`list[obj]`):  When `null`, the `run_command_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.run_command_targets.new](#fn-run_command_targetsnew) constructor.
-  - `sqs_target` (`list[obj]`):  When `null`, the `sqs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sqs_target.new](#fn-sqs_targetnew) constructor.
+  - `arn` (`string`): Set the `arn` field on the resulting resource block.
+  - `event_bus_name` (`string`): Set the `event_bus_name` field on the resulting resource block. When `null`, the `event_bus_name` field will be omitted from the resulting object.
+  - `input` (`string`): Set the `input` field on the resulting resource block. When `null`, the `input` field will be omitted from the resulting object.
+  - `input_path` (`string`): Set the `input_path` field on the resulting resource block. When `null`, the `input_path` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `rule` (`string`): Set the `rule` field on the resulting resource block.
+  - `target_id` (`string`): Set the `target_id` field on the resulting resource block. When `null`, the `target_id` field will be omitted from the resulting object.
+  - `batch_target` (`list[obj]`): Set the `batch_target` field on the resulting resource block. When `null`, the `batch_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.batch_target.new](#fn-batch_targetnew) constructor.
+  - `dead_letter_config` (`list[obj]`): Set the `dead_letter_config` field on the resulting resource block. When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
+  - `ecs_target` (`list[obj]`): Set the `ecs_target` field on the resulting resource block. When `null`, the `ecs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.new](#fn-ecs_targetnew) constructor.
+  - `http_target` (`list[obj]`): Set the `http_target` field on the resulting resource block. When `null`, the `http_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.http_target.new](#fn-http_targetnew) constructor.
+  - `input_transformer` (`list[obj]`): Set the `input_transformer` field on the resulting resource block. When `null`, the `input_transformer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.input_transformer.new](#fn-input_transformernew) constructor.
+  - `kinesis_target` (`list[obj]`): Set the `kinesis_target` field on the resulting resource block. When `null`, the `kinesis_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.kinesis_target.new](#fn-kinesis_targetnew) constructor.
+  - `redshift_target` (`list[obj]`): Set the `redshift_target` field on the resulting resource block. When `null`, the `redshift_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.redshift_target.new](#fn-redshift_targetnew) constructor.
+  - `retry_policy` (`list[obj]`): Set the `retry_policy` field on the resulting resource block. When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.retry_policy.new](#fn-retry_policynew) constructor.
+  - `run_command_targets` (`list[obj]`): Set the `run_command_targets` field on the resulting resource block. When `null`, the `run_command_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.run_command_targets.new](#fn-run_command_targetsnew) constructor.
+  - `sqs_target` (`list[obj]`): Set the `sqs_target` field on the resulting resource block. When `null`, the `sqs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sqs_target.new](#fn-sqs_targetnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -138,23 +138,23 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `arn` (`string`): 
-  - `event_bus_name` (`string`):  When `null`, the `event_bus_name` field will be omitted from the resulting object.
-  - `input` (`string`):  When `null`, the `input` field will be omitted from the resulting object.
-  - `input_path` (`string`):  When `null`, the `input_path` field will be omitted from the resulting object.
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `rule` (`string`): 
-  - `target_id` (`string`):  When `null`, the `target_id` field will be omitted from the resulting object.
-  - `batch_target` (`list[obj]`):  When `null`, the `batch_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.batch_target.new](#fn-batch_targetnew) constructor.
-  - `dead_letter_config` (`list[obj]`):  When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
-  - `ecs_target` (`list[obj]`):  When `null`, the `ecs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.new](#fn-ecs_targetnew) constructor.
-  - `http_target` (`list[obj]`):  When `null`, the `http_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.http_target.new](#fn-http_targetnew) constructor.
-  - `input_transformer` (`list[obj]`):  When `null`, the `input_transformer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.input_transformer.new](#fn-input_transformernew) constructor.
-  - `kinesis_target` (`list[obj]`):  When `null`, the `kinesis_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.kinesis_target.new](#fn-kinesis_targetnew) constructor.
-  - `redshift_target` (`list[obj]`):  When `null`, the `redshift_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.redshift_target.new](#fn-redshift_targetnew) constructor.
-  - `retry_policy` (`list[obj]`):  When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.retry_policy.new](#fn-retry_policynew) constructor.
-  - `run_command_targets` (`list[obj]`):  When `null`, the `run_command_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.run_command_targets.new](#fn-run_command_targetsnew) constructor.
-  - `sqs_target` (`list[obj]`):  When `null`, the `sqs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sqs_target.new](#fn-sqs_targetnew) constructor.
+  - `arn` (`string`): Set the `arn` field on the resulting object.
+  - `event_bus_name` (`string`): Set the `event_bus_name` field on the resulting object. When `null`, the `event_bus_name` field will be omitted from the resulting object.
+  - `input` (`string`): Set the `input` field on the resulting object. When `null`, the `input` field will be omitted from the resulting object.
+  - `input_path` (`string`): Set the `input_path` field on the resulting object. When `null`, the `input_path` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `rule` (`string`): Set the `rule` field on the resulting object.
+  - `target_id` (`string`): Set the `target_id` field on the resulting object. When `null`, the `target_id` field will be omitted from the resulting object.
+  - `batch_target` (`list[obj]`): Set the `batch_target` field on the resulting object. When `null`, the `batch_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.batch_target.new](#fn-batch_targetnew) constructor.
+  - `dead_letter_config` (`list[obj]`): Set the `dead_letter_config` field on the resulting object. When `null`, the `dead_letter_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.dead_letter_config.new](#fn-dead_letter_confignew) constructor.
+  - `ecs_target` (`list[obj]`): Set the `ecs_target` field on the resulting object. When `null`, the `ecs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.new](#fn-ecs_targetnew) constructor.
+  - `http_target` (`list[obj]`): Set the `http_target` field on the resulting object. When `null`, the `http_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.http_target.new](#fn-http_targetnew) constructor.
+  - `input_transformer` (`list[obj]`): Set the `input_transformer` field on the resulting object. When `null`, the `input_transformer` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.input_transformer.new](#fn-input_transformernew) constructor.
+  - `kinesis_target` (`list[obj]`): Set the `kinesis_target` field on the resulting object. When `null`, the `kinesis_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.kinesis_target.new](#fn-kinesis_targetnew) constructor.
+  - `redshift_target` (`list[obj]`): Set the `redshift_target` field on the resulting object. When `null`, the `redshift_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.redshift_target.new](#fn-redshift_targetnew) constructor.
+  - `retry_policy` (`list[obj]`): Set the `retry_policy` field on the resulting object. When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.retry_policy.new](#fn-retry_policynew) constructor.
+  - `run_command_targets` (`list[obj]`): Set the `run_command_targets` field on the resulting object. When `null`, the `run_command_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.run_command_targets.new](#fn-run_command_targetsnew) constructor.
+  - `sqs_target` (`list[obj]`): Set the `sqs_target` field on the resulting object. When `null`, the `sqs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sqs_target.new](#fn-sqs_targetnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_event_target` resource into the root Terraform configuration.
@@ -659,10 +659,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `array_size` (`number`):  When `null`, the `array_size` field will be omitted from the resulting object.
-  - `job_attempts` (`number`):  When `null`, the `job_attempts` field will be omitted from the resulting object.
-  - `job_definition` (`string`): 
-  - `job_name` (`string`): 
+  - `array_size` (`number`): Set the `array_size` field on the resulting object. When `null`, the `array_size` field will be omitted from the resulting object.
+  - `job_attempts` (`number`): Set the `job_attempts` field on the resulting object. When `null`, the `job_attempts` field will be omitted from the resulting object.
+  - `job_definition` (`string`): Set the `job_definition` field on the resulting object.
+  - `job_name` (`string`): Set the `job_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `batch_target` sub block.
@@ -685,7 +685,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `arn` (`string`):  When `null`, the `arn` field will be omitted from the resulting object.
+  - `arn` (`string`): Set the `arn` field on the resulting object. When `null`, the `arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dead_letter_config` sub block.
@@ -708,18 +708,18 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable_ecs_managed_tags` (`bool`):  When `null`, the `enable_ecs_managed_tags` field will be omitted from the resulting object.
-  - `enable_execute_command` (`bool`):  When `null`, the `enable_execute_command` field will be omitted from the resulting object.
-  - `group` (`string`):  When `null`, the `group` field will be omitted from the resulting object.
-  - `launch_type` (`string`):  When `null`, the `launch_type` field will be omitted from the resulting object.
-  - `platform_version` (`string`):  When `null`, the `platform_version` field will be omitted from the resulting object.
-  - `propagate_tags` (`string`):  When `null`, the `propagate_tags` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `task_count` (`number`):  When `null`, the `task_count` field will be omitted from the resulting object.
-  - `task_definition_arn` (`string`): 
-  - `capacity_provider_strategy` (`list[obj]`):  When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.capacity_provider_strategy.new](#fn-ecs_targetcapacity_provider_strategynew) constructor.
-  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.network_configuration.new](#fn-ecs_targetnetwork_configurationnew) constructor.
-  - `placement_constraint` (`list[obj]`):  When `null`, the `placement_constraint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.placement_constraint.new](#fn-ecs_targetplacement_constraintnew) constructor.
+  - `enable_ecs_managed_tags` (`bool`): Set the `enable_ecs_managed_tags` field on the resulting object. When `null`, the `enable_ecs_managed_tags` field will be omitted from the resulting object.
+  - `enable_execute_command` (`bool`): Set the `enable_execute_command` field on the resulting object. When `null`, the `enable_execute_command` field will be omitted from the resulting object.
+  - `group` (`string`): Set the `group` field on the resulting object. When `null`, the `group` field will be omitted from the resulting object.
+  - `launch_type` (`string`): Set the `launch_type` field on the resulting object. When `null`, the `launch_type` field will be omitted from the resulting object.
+  - `platform_version` (`string`): Set the `platform_version` field on the resulting object. When `null`, the `platform_version` field will be omitted from the resulting object.
+  - `propagate_tags` (`string`): Set the `propagate_tags` field on the resulting object. When `null`, the `propagate_tags` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `task_count` (`number`): Set the `task_count` field on the resulting object. When `null`, the `task_count` field will be omitted from the resulting object.
+  - `task_definition_arn` (`string`): Set the `task_definition_arn` field on the resulting object.
+  - `capacity_provider_strategy` (`list[obj]`): Set the `capacity_provider_strategy` field on the resulting object. When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.capacity_provider_strategy.new](#fn-ecs_targetcapacity_provider_strategynew) constructor.
+  - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting object. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.network_configuration.new](#fn-ecs_targetnetwork_configurationnew) constructor.
+  - `placement_constraint` (`list[obj]`): Set the `placement_constraint` field on the resulting object. When `null`, the `placement_constraint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.placement_constraint.new](#fn-ecs_targetplacement_constraintnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ecs_target` sub block.
@@ -742,9 +742,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `base` (`number`):  When `null`, the `base` field will be omitted from the resulting object.
-  - `capacity_provider` (`string`): 
-  - `weight` (`number`):  When `null`, the `weight` field will be omitted from the resulting object.
+  - `base` (`number`): Set the `base` field on the resulting object. When `null`, the `base` field will be omitted from the resulting object.
+  - `capacity_provider` (`string`): Set the `capacity_provider` field on the resulting object.
+  - `weight` (`number`): Set the `weight` field on the resulting object. When `null`, the `weight` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `capacity_provider_strategy` sub block.
@@ -767,9 +767,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `assign_public_ip` (`bool`):  When `null`, the `assign_public_ip` field will be omitted from the resulting object.
-  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnets` (`list`): 
+  - `assign_public_ip` (`bool`): Set the `assign_public_ip` field on the resulting object. When `null`, the `assign_public_ip` field will be omitted from the resulting object.
+  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnets` (`list`): Set the `subnets` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `network_configuration` sub block.
@@ -792,8 +792,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `expression` (`string`): Set the `expression` field on the resulting object. When `null`, the `expression` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `placement_constraint` sub block.
@@ -816,9 +816,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `header_parameters` (`obj`):  When `null`, the `header_parameters` field will be omitted from the resulting object.
-  - `path_parameter_values` (`list`):  When `null`, the `path_parameter_values` field will be omitted from the resulting object.
-  - `query_string_parameters` (`obj`):  When `null`, the `query_string_parameters` field will be omitted from the resulting object.
+  - `header_parameters` (`obj`): Set the `header_parameters` field on the resulting object. When `null`, the `header_parameters` field will be omitted from the resulting object.
+  - `path_parameter_values` (`list`): Set the `path_parameter_values` field on the resulting object. When `null`, the `path_parameter_values` field will be omitted from the resulting object.
+  - `query_string_parameters` (`obj`): Set the `query_string_parameters` field on the resulting object. When `null`, the `query_string_parameters` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `http_target` sub block.
@@ -841,8 +841,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `input_paths` (`obj`):  When `null`, the `input_paths` field will be omitted from the resulting object.
-  - `input_template` (`string`): 
+  - `input_paths` (`obj`): Set the `input_paths` field on the resulting object. When `null`, the `input_paths` field will be omitted from the resulting object.
+  - `input_template` (`string`): Set the `input_template` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `input_transformer` sub block.
@@ -865,7 +865,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `partition_key_path` (`string`):  When `null`, the `partition_key_path` field will be omitted from the resulting object.
+  - `partition_key_path` (`string`): Set the `partition_key_path` field on the resulting object. When `null`, the `partition_key_path` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `kinesis_target` sub block.
@@ -888,12 +888,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): 
-  - `db_user` (`string`):  When `null`, the `db_user` field will be omitted from the resulting object.
-  - `secrets_manager_arn` (`string`):  When `null`, the `secrets_manager_arn` field will be omitted from the resulting object.
-  - `sql` (`string`):  When `null`, the `sql` field will be omitted from the resulting object.
-  - `statement_name` (`string`):  When `null`, the `statement_name` field will be omitted from the resulting object.
-  - `with_event` (`bool`):  When `null`, the `with_event` field will be omitted from the resulting object.
+  - `database` (`string`): Set the `database` field on the resulting object.
+  - `db_user` (`string`): Set the `db_user` field on the resulting object. When `null`, the `db_user` field will be omitted from the resulting object.
+  - `secrets_manager_arn` (`string`): Set the `secrets_manager_arn` field on the resulting object. When `null`, the `secrets_manager_arn` field will be omitted from the resulting object.
+  - `sql` (`string`): Set the `sql` field on the resulting object. When `null`, the `sql` field will be omitted from the resulting object.
+  - `statement_name` (`string`): Set the `statement_name` field on the resulting object. When `null`, the `statement_name` field will be omitted from the resulting object.
+  - `with_event` (`bool`): Set the `with_event` field on the resulting object. When `null`, the `with_event` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `redshift_target` sub block.
@@ -916,8 +916,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `maximum_event_age_in_seconds` (`number`):  When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
-  - `maximum_retry_attempts` (`number`):  When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
+  - `maximum_event_age_in_seconds` (`number`): Set the `maximum_event_age_in_seconds` field on the resulting object. When `null`, the `maximum_event_age_in_seconds` field will be omitted from the resulting object.
+  - `maximum_retry_attempts` (`number`): Set the `maximum_retry_attempts` field on the resulting object. When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `retry_policy` sub block.
@@ -940,8 +940,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `values` (`list`): 
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `run_command_targets` sub block.
@@ -964,7 +964,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `message_group_id` (`string`):  When `null`, the `message_group_id` field will be omitted from the resulting object.
+  - `message_group_id` (`string`): Set the `message_group_id` field on the resulting object. When `null`, the `message_group_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sqs_target` sub block.

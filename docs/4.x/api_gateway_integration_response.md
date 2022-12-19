@@ -53,14 +53,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `content_handling` (`string`):  When `null`, the `content_handling` field will be omitted from the resulting object.
-  - `http_method` (`string`): 
-  - `resource_id` (`string`): 
-  - `response_parameters` (`obj`):  When `null`, the `response_parameters` field will be omitted from the resulting object.
-  - `response_templates` (`obj`):  When `null`, the `response_templates` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): 
-  - `selection_pattern` (`string`):  When `null`, the `selection_pattern` field will be omitted from the resulting object.
-  - `status_code` (`string`): 
+  - `content_handling` (`string`): Set the `content_handling` field on the resulting resource block. When `null`, the `content_handling` field will be omitted from the resulting object.
+  - `http_method` (`string`): Set the `http_method` field on the resulting resource block.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
+  - `response_parameters` (`obj`): Set the `response_parameters` field on the resulting resource block. When `null`, the `response_parameters` field will be omitted from the resulting object.
+  - `response_templates` (`obj`): Set the `response_templates` field on the resulting resource block. When `null`, the `response_templates` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
+  - `selection_pattern` (`string`): Set the `selection_pattern` field on the resulting resource block. When `null`, the `selection_pattern` field will be omitted from the resulting object.
+  - `status_code` (`string`): Set the `status_code` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,14 +84,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `content_handling` (`string`):  When `null`, the `content_handling` field will be omitted from the resulting object.
-  - `http_method` (`string`): 
-  - `resource_id` (`string`): 
-  - `response_parameters` (`obj`):  When `null`, the `response_parameters` field will be omitted from the resulting object.
-  - `response_templates` (`obj`):  When `null`, the `response_templates` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): 
-  - `selection_pattern` (`string`):  When `null`, the `selection_pattern` field will be omitted from the resulting object.
-  - `status_code` (`string`): 
+  - `content_handling` (`string`): Set the `content_handling` field on the resulting object. When `null`, the `content_handling` field will be omitted from the resulting object.
+  - `http_method` (`string`): Set the `http_method` field on the resulting object.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
+  - `response_parameters` (`obj`): Set the `response_parameters` field on the resulting object. When `null`, the `response_parameters` field will be omitted from the resulting object.
+  - `response_templates` (`obj`): Set the `response_templates` field on the resulting object. When `null`, the `response_templates` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
+  - `selection_pattern` (`string`): Set the `selection_pattern` field on the resulting object. When `null`, the `selection_pattern` field will be omitted from the resulting object.
+  - `status_code` (`string`): Set the `status_code` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_integration_response` resource into the root Terraform configuration.

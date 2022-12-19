@@ -53,9 +53,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `instance_arn` (`string`): 
-  - `permission_set_arn` (`string`): 
-  - `permissions_boundary` (`list[obj]`):  When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-permissions_boundarynew) constructor.
+  - `instance_arn` (`string`): Set the `instance_arn` field on the resulting resource block.
+  - `permission_set_arn` (`string`): Set the `permission_set_arn` field on the resulting resource block.
+  - `permissions_boundary` (`list[obj]`): Set the `permissions_boundary` field on the resulting resource block. When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-permissions_boundarynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,9 +79,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `instance_arn` (`string`): 
-  - `permission_set_arn` (`string`): 
-  - `permissions_boundary` (`list[obj]`):  When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-permissions_boundarynew) constructor.
+  - `instance_arn` (`string`): Set the `instance_arn` field on the resulting object.
+  - `permission_set_arn` (`string`): Set the `permission_set_arn` field on the resulting object.
+  - `permissions_boundary` (`list[obj]`): Set the `permissions_boundary` field on the resulting object. When `null`, the `permissions_boundary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.new](#fn-permissions_boundarynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssoadmin_permissions_boundary_attachment` resource into the root Terraform configuration.
@@ -173,8 +173,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `managed_policy_arn` (`string`):  When `null`, the `managed_policy_arn` field will be omitted from the resulting object.
-  - `customer_managed_policy_reference` (`list[obj]`):  When `null`, the `customer_managed_policy_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.customer_managed_policy_reference.new](#fn-permissions_boundarycustomer_managed_policy_referencenew) constructor.
+  - `managed_policy_arn` (`string`): Set the `managed_policy_arn` field on the resulting object. When `null`, the `managed_policy_arn` field will be omitted from the resulting object.
+  - `customer_managed_policy_reference` (`list[obj]`): Set the `customer_managed_policy_reference` field on the resulting object. When `null`, the `customer_managed_policy_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssoadmin_permissions_boundary_attachment.permissions_boundary.customer_managed_policy_reference.new](#fn-permissions_boundarycustomer_managed_policy_referencenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `permissions_boundary` sub block.
@@ -197,8 +197,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `customer_managed_policy_reference` sub block.

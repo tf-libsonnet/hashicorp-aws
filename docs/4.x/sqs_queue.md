@@ -64,25 +64,25 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `content_based_deduplication` (`bool`):  When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
-  - `deduplication_scope` (`string`):  When `null`, the `deduplication_scope` field will be omitted from the resulting object.
-  - `delay_seconds` (`number`):  When `null`, the `delay_seconds` field will be omitted from the resulting object.
-  - `fifo_queue` (`bool`):  When `null`, the `fifo_queue` field will be omitted from the resulting object.
-  - `fifo_throughput_limit` (`string`):  When `null`, the `fifo_throughput_limit` field will be omitted from the resulting object.
-  - `kms_data_key_reuse_period_seconds` (`number`):  When `null`, the `kms_data_key_reuse_period_seconds` field will be omitted from the resulting object.
-  - `kms_master_key_id` (`string`):  When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
-  - `max_message_size` (`number`):  When `null`, the `max_message_size` field will be omitted from the resulting object.
-  - `message_retention_seconds` (`number`):  When `null`, the `message_retention_seconds` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `receive_wait_time_seconds` (`number`):  When `null`, the `receive_wait_time_seconds` field will be omitted from the resulting object.
-  - `redrive_allow_policy` (`string`):  When `null`, the `redrive_allow_policy` field will be omitted from the resulting object.
-  - `redrive_policy` (`string`):  When `null`, the `redrive_policy` field will be omitted from the resulting object.
-  - `sqs_managed_sse_enabled` (`bool`):  When `null`, the `sqs_managed_sse_enabled` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `visibility_timeout_seconds` (`number`):  When `null`, the `visibility_timeout_seconds` field will be omitted from the resulting object.
+  - `content_based_deduplication` (`bool`): Set the `content_based_deduplication` field on the resulting resource block. When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
+  - `deduplication_scope` (`string`): Set the `deduplication_scope` field on the resulting resource block. When `null`, the `deduplication_scope` field will be omitted from the resulting object.
+  - `delay_seconds` (`number`): Set the `delay_seconds` field on the resulting resource block. When `null`, the `delay_seconds` field will be omitted from the resulting object.
+  - `fifo_queue` (`bool`): Set the `fifo_queue` field on the resulting resource block. When `null`, the `fifo_queue` field will be omitted from the resulting object.
+  - `fifo_throughput_limit` (`string`): Set the `fifo_throughput_limit` field on the resulting resource block. When `null`, the `fifo_throughput_limit` field will be omitted from the resulting object.
+  - `kms_data_key_reuse_period_seconds` (`number`): Set the `kms_data_key_reuse_period_seconds` field on the resulting resource block. When `null`, the `kms_data_key_reuse_period_seconds` field will be omitted from the resulting object.
+  - `kms_master_key_id` (`string`): Set the `kms_master_key_id` field on the resulting resource block. When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
+  - `max_message_size` (`number`): Set the `max_message_size` field on the resulting resource block. When `null`, the `max_message_size` field will be omitted from the resulting object.
+  - `message_retention_seconds` (`number`): Set the `message_retention_seconds` field on the resulting resource block. When `null`, the `message_retention_seconds` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
+  - `receive_wait_time_seconds` (`number`): Set the `receive_wait_time_seconds` field on the resulting resource block. When `null`, the `receive_wait_time_seconds` field will be omitted from the resulting object.
+  - `redrive_allow_policy` (`string`): Set the `redrive_allow_policy` field on the resulting resource block. When `null`, the `redrive_allow_policy` field will be omitted from the resulting object.
+  - `redrive_policy` (`string`): Set the `redrive_policy` field on the resulting resource block. When `null`, the `redrive_policy` field will be omitted from the resulting object.
+  - `sqs_managed_sse_enabled` (`bool`): Set the `sqs_managed_sse_enabled` field on the resulting resource block. When `null`, the `sqs_managed_sse_enabled` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `visibility_timeout_seconds` (`number`): Set the `visibility_timeout_seconds` field on the resulting resource block. When `null`, the `visibility_timeout_seconds` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -106,25 +106,25 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `content_based_deduplication` (`bool`):  When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
-  - `deduplication_scope` (`string`):  When `null`, the `deduplication_scope` field will be omitted from the resulting object.
-  - `delay_seconds` (`number`):  When `null`, the `delay_seconds` field will be omitted from the resulting object.
-  - `fifo_queue` (`bool`):  When `null`, the `fifo_queue` field will be omitted from the resulting object.
-  - `fifo_throughput_limit` (`string`):  When `null`, the `fifo_throughput_limit` field will be omitted from the resulting object.
-  - `kms_data_key_reuse_period_seconds` (`number`):  When `null`, the `kms_data_key_reuse_period_seconds` field will be omitted from the resulting object.
-  - `kms_master_key_id` (`string`):  When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
-  - `max_message_size` (`number`):  When `null`, the `max_message_size` field will be omitted from the resulting object.
-  - `message_retention_seconds` (`number`):  When `null`, the `message_retention_seconds` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `receive_wait_time_seconds` (`number`):  When `null`, the `receive_wait_time_seconds` field will be omitted from the resulting object.
-  - `redrive_allow_policy` (`string`):  When `null`, the `redrive_allow_policy` field will be omitted from the resulting object.
-  - `redrive_policy` (`string`):  When `null`, the `redrive_policy` field will be omitted from the resulting object.
-  - `sqs_managed_sse_enabled` (`bool`):  When `null`, the `sqs_managed_sse_enabled` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `visibility_timeout_seconds` (`number`):  When `null`, the `visibility_timeout_seconds` field will be omitted from the resulting object.
+  - `content_based_deduplication` (`bool`): Set the `content_based_deduplication` field on the resulting object. When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
+  - `deduplication_scope` (`string`): Set the `deduplication_scope` field on the resulting object. When `null`, the `deduplication_scope` field will be omitted from the resulting object.
+  - `delay_seconds` (`number`): Set the `delay_seconds` field on the resulting object. When `null`, the `delay_seconds` field will be omitted from the resulting object.
+  - `fifo_queue` (`bool`): Set the `fifo_queue` field on the resulting object. When `null`, the `fifo_queue` field will be omitted from the resulting object.
+  - `fifo_throughput_limit` (`string`): Set the `fifo_throughput_limit` field on the resulting object. When `null`, the `fifo_throughput_limit` field will be omitted from the resulting object.
+  - `kms_data_key_reuse_period_seconds` (`number`): Set the `kms_data_key_reuse_period_seconds` field on the resulting object. When `null`, the `kms_data_key_reuse_period_seconds` field will be omitted from the resulting object.
+  - `kms_master_key_id` (`string`): Set the `kms_master_key_id` field on the resulting object. When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
+  - `max_message_size` (`number`): Set the `max_message_size` field on the resulting object. When `null`, the `max_message_size` field will be omitted from the resulting object.
+  - `message_retention_seconds` (`number`): Set the `message_retention_seconds` field on the resulting object. When `null`, the `message_retention_seconds` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
+  - `receive_wait_time_seconds` (`number`): Set the `receive_wait_time_seconds` field on the resulting object. When `null`, the `receive_wait_time_seconds` field will be omitted from the resulting object.
+  - `redrive_allow_policy` (`string`): Set the `redrive_allow_policy` field on the resulting object. When `null`, the `redrive_allow_policy` field will be omitted from the resulting object.
+  - `redrive_policy` (`string`): Set the `redrive_policy` field on the resulting object. When `null`, the `redrive_policy` field will be omitted from the resulting object.
+  - `sqs_managed_sse_enabled` (`bool`): Set the `sqs_managed_sse_enabled` field on the resulting object. When `null`, the `sqs_managed_sse_enabled` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `visibility_timeout_seconds` (`number`): Set the `visibility_timeout_seconds` field on the resulting object. When `null`, the `visibility_timeout_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sqs_queue` resource into the root Terraform configuration.

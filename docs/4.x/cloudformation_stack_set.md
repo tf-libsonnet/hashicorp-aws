@@ -69,21 +69,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `administration_role_arn` (`string`):  When `null`, the `administration_role_arn` field will be omitted from the resulting object.
-  - `call_as` (`string`):  When `null`, the `call_as` field will be omitted from the resulting object.
-  - `capabilities` (`list`):  When `null`, the `capabilities` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `execution_role_name` (`string`):  When `null`, the `execution_role_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
-  - `permission_model` (`string`):  When `null`, the `permission_model` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_body` (`string`):  When `null`, the `template_body` field will be omitted from the resulting object.
-  - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
-  - `auto_deployment` (`list[obj]`):  When `null`, the `auto_deployment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.auto_deployment.new](#fn-auto_deploymentnew) constructor.
-  - `operation_preferences` (`list[obj]`):  When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.operation_preferences.new](#fn-operation_preferencesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.timeouts.new](#fn-timeoutsnew) constructor.
+  - `administration_role_arn` (`string`): Set the `administration_role_arn` field on the resulting resource block. When `null`, the `administration_role_arn` field will be omitted from the resulting object.
+  - `call_as` (`string`): Set the `call_as` field on the resulting resource block. When `null`, the `call_as` field will be omitted from the resulting object.
+  - `capabilities` (`list`): Set the `capabilities` field on the resulting resource block. When `null`, the `capabilities` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `execution_role_name` (`string`): Set the `execution_role_name` field on the resulting resource block. When `null`, the `execution_role_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
+  - `permission_model` (`string`): Set the `permission_model` field on the resulting resource block. When `null`, the `permission_model` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_body` (`string`): Set the `template_body` field on the resulting resource block. When `null`, the `template_body` field will be omitted from the resulting object.
+  - `template_url` (`string`): Set the `template_url` field on the resulting resource block. When `null`, the `template_url` field will be omitted from the resulting object.
+  - `auto_deployment` (`list[obj]`): Set the `auto_deployment` field on the resulting resource block. When `null`, the `auto_deployment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.auto_deployment.new](#fn-auto_deploymentnew) constructor.
+  - `operation_preferences` (`list[obj]`): Set the `operation_preferences` field on the resulting resource block. When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.operation_preferences.new](#fn-operation_preferencesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -107,21 +107,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `administration_role_arn` (`string`):  When `null`, the `administration_role_arn` field will be omitted from the resulting object.
-  - `call_as` (`string`):  When `null`, the `call_as` field will be omitted from the resulting object.
-  - `capabilities` (`list`):  When `null`, the `capabilities` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `execution_role_name` (`string`):  When `null`, the `execution_role_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
-  - `permission_model` (`string`):  When `null`, the `permission_model` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_body` (`string`):  When `null`, the `template_body` field will be omitted from the resulting object.
-  - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
-  - `auto_deployment` (`list[obj]`):  When `null`, the `auto_deployment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.auto_deployment.new](#fn-auto_deploymentnew) constructor.
-  - `operation_preferences` (`list[obj]`):  When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.operation_preferences.new](#fn-operation_preferencesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.timeouts.new](#fn-timeoutsnew) constructor.
+  - `administration_role_arn` (`string`): Set the `administration_role_arn` field on the resulting object. When `null`, the `administration_role_arn` field will be omitted from the resulting object.
+  - `call_as` (`string`): Set the `call_as` field on the resulting object. When `null`, the `call_as` field will be omitted from the resulting object.
+  - `capabilities` (`list`): Set the `capabilities` field on the resulting object. When `null`, the `capabilities` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `execution_role_name` (`string`): Set the `execution_role_name` field on the resulting object. When `null`, the `execution_role_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
+  - `permission_model` (`string`): Set the `permission_model` field on the resulting object. When `null`, the `permission_model` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_body` (`string`): Set the `template_body` field on the resulting object. When `null`, the `template_body` field will be omitted from the resulting object.
+  - `template_url` (`string`): Set the `template_url` field on the resulting object. When `null`, the `template_url` field will be omitted from the resulting object.
+  - `auto_deployment` (`list[obj]`): Set the `auto_deployment` field on the resulting object. When `null`, the `auto_deployment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.auto_deployment.new](#fn-auto_deploymentnew) constructor.
+  - `operation_preferences` (`list[obj]`): Set the `operation_preferences` field on the resulting object. When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.operation_preferences.new](#fn-operation_preferencesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudformation_stack_set` resource into the root Terraform configuration.
@@ -446,8 +446,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `retain_stacks_on_account_removal` (`bool`):  When `null`, the `retain_stacks_on_account_removal` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `retain_stacks_on_account_removal` (`bool`): Set the `retain_stacks_on_account_removal` field on the resulting object. When `null`, the `retain_stacks_on_account_removal` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auto_deployment` sub block.
@@ -470,12 +470,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `failure_tolerance_count` (`number`):  When `null`, the `failure_tolerance_count` field will be omitted from the resulting object.
-  - `failure_tolerance_percentage` (`number`):  When `null`, the `failure_tolerance_percentage` field will be omitted from the resulting object.
-  - `max_concurrent_count` (`number`):  When `null`, the `max_concurrent_count` field will be omitted from the resulting object.
-  - `max_concurrent_percentage` (`number`):  When `null`, the `max_concurrent_percentage` field will be omitted from the resulting object.
-  - `region_concurrency_type` (`string`):  When `null`, the `region_concurrency_type` field will be omitted from the resulting object.
-  - `region_order` (`list`):  When `null`, the `region_order` field will be omitted from the resulting object.
+  - `failure_tolerance_count` (`number`): Set the `failure_tolerance_count` field on the resulting object. When `null`, the `failure_tolerance_count` field will be omitted from the resulting object.
+  - `failure_tolerance_percentage` (`number`): Set the `failure_tolerance_percentage` field on the resulting object. When `null`, the `failure_tolerance_percentage` field will be omitted from the resulting object.
+  - `max_concurrent_count` (`number`): Set the `max_concurrent_count` field on the resulting object. When `null`, the `max_concurrent_count` field will be omitted from the resulting object.
+  - `max_concurrent_percentage` (`number`): Set the `max_concurrent_percentage` field on the resulting object. When `null`, the `max_concurrent_percentage` field will be omitted from the resulting object.
+  - `region_concurrency_type` (`string`): Set the `region_concurrency_type` field on the resulting object. When `null`, the `region_concurrency_type` field will be omitted from the resulting object.
+  - `region_order` (`list`): Set the `region_order` field on the resulting object. When `null`, the `region_order` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `operation_preferences` sub block.
@@ -498,7 +498,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

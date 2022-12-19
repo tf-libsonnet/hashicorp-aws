@@ -90,36 +90,36 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `app_server` (`string`):  When `null`, the `app_server` field will be omitted from the resulting object.
-  - `auto_assign_elastic_ips` (`bool`):  When `null`, the `auto_assign_elastic_ips` field will be omitted from the resulting object.
-  - `auto_assign_public_ips` (`bool`):  When `null`, the `auto_assign_public_ips` field will be omitted from the resulting object.
-  - `auto_healing` (`bool`):  When `null`, the `auto_healing` field will be omitted from the resulting object.
-  - `bundler_version` (`string`):  When `null`, the `bundler_version` field will be omitted from the resulting object.
-  - `custom_configure_recipes` (`list`):  When `null`, the `custom_configure_recipes` field will be omitted from the resulting object.
-  - `custom_deploy_recipes` (`list`):  When `null`, the `custom_deploy_recipes` field will be omitted from the resulting object.
-  - `custom_instance_profile_arn` (`string`):  When `null`, the `custom_instance_profile_arn` field will be omitted from the resulting object.
-  - `custom_json` (`string`):  When `null`, the `custom_json` field will be omitted from the resulting object.
-  - `custom_security_group_ids` (`list`):  When `null`, the `custom_security_group_ids` field will be omitted from the resulting object.
-  - `custom_setup_recipes` (`list`):  When `null`, the `custom_setup_recipes` field will be omitted from the resulting object.
-  - `custom_shutdown_recipes` (`list`):  When `null`, the `custom_shutdown_recipes` field will be omitted from the resulting object.
-  - `custom_undeploy_recipes` (`list`):  When `null`, the `custom_undeploy_recipes` field will be omitted from the resulting object.
-  - `drain_elb_on_shutdown` (`bool`):  When `null`, the `drain_elb_on_shutdown` field will be omitted from the resulting object.
-  - `elastic_load_balancer` (`string`):  When `null`, the `elastic_load_balancer` field will be omitted from the resulting object.
-  - `install_updates_on_boot` (`bool`):  When `null`, the `install_updates_on_boot` field will be omitted from the resulting object.
-  - `instance_shutdown_timeout` (`number`):  When `null`, the `instance_shutdown_timeout` field will be omitted from the resulting object.
-  - `manage_bundler` (`bool`):  When `null`, the `manage_bundler` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `passenger_version` (`string`):  When `null`, the `passenger_version` field will be omitted from the resulting object.
-  - `ruby_version` (`string`):  When `null`, the `ruby_version` field will be omitted from the resulting object.
-  - `rubygems_version` (`string`):  When `null`, the `rubygems_version` field will be omitted from the resulting object.
-  - `stack_id` (`string`): 
-  - `system_packages` (`list`):  When `null`, the `system_packages` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `use_ebs_optimized_instances` (`bool`):  When `null`, the `use_ebs_optimized_instances` field will be omitted from the resulting object.
-  - `cloudwatch_configuration` (`list[obj]`):  When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.cloudwatch_configuration.new](#fn-cloudwatch_configurationnew) constructor.
-  - `ebs_volume` (`list[obj]`):  When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.ebs_volume.new](#fn-ebs_volumenew) constructor.
-  - `load_based_auto_scaling` (`list[obj]`):  When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.new](#fn-load_based_auto_scalingnew) constructor.
+  - `app_server` (`string`): Set the `app_server` field on the resulting resource block. When `null`, the `app_server` field will be omitted from the resulting object.
+  - `auto_assign_elastic_ips` (`bool`): Set the `auto_assign_elastic_ips` field on the resulting resource block. When `null`, the `auto_assign_elastic_ips` field will be omitted from the resulting object.
+  - `auto_assign_public_ips` (`bool`): Set the `auto_assign_public_ips` field on the resulting resource block. When `null`, the `auto_assign_public_ips` field will be omitted from the resulting object.
+  - `auto_healing` (`bool`): Set the `auto_healing` field on the resulting resource block. When `null`, the `auto_healing` field will be omitted from the resulting object.
+  - `bundler_version` (`string`): Set the `bundler_version` field on the resulting resource block. When `null`, the `bundler_version` field will be omitted from the resulting object.
+  - `custom_configure_recipes` (`list`): Set the `custom_configure_recipes` field on the resulting resource block. When `null`, the `custom_configure_recipes` field will be omitted from the resulting object.
+  - `custom_deploy_recipes` (`list`): Set the `custom_deploy_recipes` field on the resulting resource block. When `null`, the `custom_deploy_recipes` field will be omitted from the resulting object.
+  - `custom_instance_profile_arn` (`string`): Set the `custom_instance_profile_arn` field on the resulting resource block. When `null`, the `custom_instance_profile_arn` field will be omitted from the resulting object.
+  - `custom_json` (`string`): Set the `custom_json` field on the resulting resource block. When `null`, the `custom_json` field will be omitted from the resulting object.
+  - `custom_security_group_ids` (`list`): Set the `custom_security_group_ids` field on the resulting resource block. When `null`, the `custom_security_group_ids` field will be omitted from the resulting object.
+  - `custom_setup_recipes` (`list`): Set the `custom_setup_recipes` field on the resulting resource block. When `null`, the `custom_setup_recipes` field will be omitted from the resulting object.
+  - `custom_shutdown_recipes` (`list`): Set the `custom_shutdown_recipes` field on the resulting resource block. When `null`, the `custom_shutdown_recipes` field will be omitted from the resulting object.
+  - `custom_undeploy_recipes` (`list`): Set the `custom_undeploy_recipes` field on the resulting resource block. When `null`, the `custom_undeploy_recipes` field will be omitted from the resulting object.
+  - `drain_elb_on_shutdown` (`bool`): Set the `drain_elb_on_shutdown` field on the resulting resource block. When `null`, the `drain_elb_on_shutdown` field will be omitted from the resulting object.
+  - `elastic_load_balancer` (`string`): Set the `elastic_load_balancer` field on the resulting resource block. When `null`, the `elastic_load_balancer` field will be omitted from the resulting object.
+  - `install_updates_on_boot` (`bool`): Set the `install_updates_on_boot` field on the resulting resource block. When `null`, the `install_updates_on_boot` field will be omitted from the resulting object.
+  - `instance_shutdown_timeout` (`number`): Set the `instance_shutdown_timeout` field on the resulting resource block. When `null`, the `instance_shutdown_timeout` field will be omitted from the resulting object.
+  - `manage_bundler` (`bool`): Set the `manage_bundler` field on the resulting resource block. When `null`, the `manage_bundler` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `passenger_version` (`string`): Set the `passenger_version` field on the resulting resource block. When `null`, the `passenger_version` field will be omitted from the resulting object.
+  - `ruby_version` (`string`): Set the `ruby_version` field on the resulting resource block. When `null`, the `ruby_version` field will be omitted from the resulting object.
+  - `rubygems_version` (`string`): Set the `rubygems_version` field on the resulting resource block. When `null`, the `rubygems_version` field will be omitted from the resulting object.
+  - `stack_id` (`string`): Set the `stack_id` field on the resulting resource block.
+  - `system_packages` (`list`): Set the `system_packages` field on the resulting resource block. When `null`, the `system_packages` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `use_ebs_optimized_instances` (`bool`): Set the `use_ebs_optimized_instances` field on the resulting resource block. When `null`, the `use_ebs_optimized_instances` field will be omitted from the resulting object.
+  - `cloudwatch_configuration` (`list[obj]`): Set the `cloudwatch_configuration` field on the resulting resource block. When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.cloudwatch_configuration.new](#fn-cloudwatch_configurationnew) constructor.
+  - `ebs_volume` (`list[obj]`): Set the `ebs_volume` field on the resulting resource block. When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.ebs_volume.new](#fn-ebs_volumenew) constructor.
+  - `load_based_auto_scaling` (`list[obj]`): Set the `load_based_auto_scaling` field on the resulting resource block. When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.new](#fn-load_based_auto_scalingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -143,36 +143,36 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `app_server` (`string`):  When `null`, the `app_server` field will be omitted from the resulting object.
-  - `auto_assign_elastic_ips` (`bool`):  When `null`, the `auto_assign_elastic_ips` field will be omitted from the resulting object.
-  - `auto_assign_public_ips` (`bool`):  When `null`, the `auto_assign_public_ips` field will be omitted from the resulting object.
-  - `auto_healing` (`bool`):  When `null`, the `auto_healing` field will be omitted from the resulting object.
-  - `bundler_version` (`string`):  When `null`, the `bundler_version` field will be omitted from the resulting object.
-  - `custom_configure_recipes` (`list`):  When `null`, the `custom_configure_recipes` field will be omitted from the resulting object.
-  - `custom_deploy_recipes` (`list`):  When `null`, the `custom_deploy_recipes` field will be omitted from the resulting object.
-  - `custom_instance_profile_arn` (`string`):  When `null`, the `custom_instance_profile_arn` field will be omitted from the resulting object.
-  - `custom_json` (`string`):  When `null`, the `custom_json` field will be omitted from the resulting object.
-  - `custom_security_group_ids` (`list`):  When `null`, the `custom_security_group_ids` field will be omitted from the resulting object.
-  - `custom_setup_recipes` (`list`):  When `null`, the `custom_setup_recipes` field will be omitted from the resulting object.
-  - `custom_shutdown_recipes` (`list`):  When `null`, the `custom_shutdown_recipes` field will be omitted from the resulting object.
-  - `custom_undeploy_recipes` (`list`):  When `null`, the `custom_undeploy_recipes` field will be omitted from the resulting object.
-  - `drain_elb_on_shutdown` (`bool`):  When `null`, the `drain_elb_on_shutdown` field will be omitted from the resulting object.
-  - `elastic_load_balancer` (`string`):  When `null`, the `elastic_load_balancer` field will be omitted from the resulting object.
-  - `install_updates_on_boot` (`bool`):  When `null`, the `install_updates_on_boot` field will be omitted from the resulting object.
-  - `instance_shutdown_timeout` (`number`):  When `null`, the `instance_shutdown_timeout` field will be omitted from the resulting object.
-  - `manage_bundler` (`bool`):  When `null`, the `manage_bundler` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `passenger_version` (`string`):  When `null`, the `passenger_version` field will be omitted from the resulting object.
-  - `ruby_version` (`string`):  When `null`, the `ruby_version` field will be omitted from the resulting object.
-  - `rubygems_version` (`string`):  When `null`, the `rubygems_version` field will be omitted from the resulting object.
-  - `stack_id` (`string`): 
-  - `system_packages` (`list`):  When `null`, the `system_packages` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `use_ebs_optimized_instances` (`bool`):  When `null`, the `use_ebs_optimized_instances` field will be omitted from the resulting object.
-  - `cloudwatch_configuration` (`list[obj]`):  When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.cloudwatch_configuration.new](#fn-cloudwatch_configurationnew) constructor.
-  - `ebs_volume` (`list[obj]`):  When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.ebs_volume.new](#fn-ebs_volumenew) constructor.
-  - `load_based_auto_scaling` (`list[obj]`):  When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.new](#fn-load_based_auto_scalingnew) constructor.
+  - `app_server` (`string`): Set the `app_server` field on the resulting object. When `null`, the `app_server` field will be omitted from the resulting object.
+  - `auto_assign_elastic_ips` (`bool`): Set the `auto_assign_elastic_ips` field on the resulting object. When `null`, the `auto_assign_elastic_ips` field will be omitted from the resulting object.
+  - `auto_assign_public_ips` (`bool`): Set the `auto_assign_public_ips` field on the resulting object. When `null`, the `auto_assign_public_ips` field will be omitted from the resulting object.
+  - `auto_healing` (`bool`): Set the `auto_healing` field on the resulting object. When `null`, the `auto_healing` field will be omitted from the resulting object.
+  - `bundler_version` (`string`): Set the `bundler_version` field on the resulting object. When `null`, the `bundler_version` field will be omitted from the resulting object.
+  - `custom_configure_recipes` (`list`): Set the `custom_configure_recipes` field on the resulting object. When `null`, the `custom_configure_recipes` field will be omitted from the resulting object.
+  - `custom_deploy_recipes` (`list`): Set the `custom_deploy_recipes` field on the resulting object. When `null`, the `custom_deploy_recipes` field will be omitted from the resulting object.
+  - `custom_instance_profile_arn` (`string`): Set the `custom_instance_profile_arn` field on the resulting object. When `null`, the `custom_instance_profile_arn` field will be omitted from the resulting object.
+  - `custom_json` (`string`): Set the `custom_json` field on the resulting object. When `null`, the `custom_json` field will be omitted from the resulting object.
+  - `custom_security_group_ids` (`list`): Set the `custom_security_group_ids` field on the resulting object. When `null`, the `custom_security_group_ids` field will be omitted from the resulting object.
+  - `custom_setup_recipes` (`list`): Set the `custom_setup_recipes` field on the resulting object. When `null`, the `custom_setup_recipes` field will be omitted from the resulting object.
+  - `custom_shutdown_recipes` (`list`): Set the `custom_shutdown_recipes` field on the resulting object. When `null`, the `custom_shutdown_recipes` field will be omitted from the resulting object.
+  - `custom_undeploy_recipes` (`list`): Set the `custom_undeploy_recipes` field on the resulting object. When `null`, the `custom_undeploy_recipes` field will be omitted from the resulting object.
+  - `drain_elb_on_shutdown` (`bool`): Set the `drain_elb_on_shutdown` field on the resulting object. When `null`, the `drain_elb_on_shutdown` field will be omitted from the resulting object.
+  - `elastic_load_balancer` (`string`): Set the `elastic_load_balancer` field on the resulting object. When `null`, the `elastic_load_balancer` field will be omitted from the resulting object.
+  - `install_updates_on_boot` (`bool`): Set the `install_updates_on_boot` field on the resulting object. When `null`, the `install_updates_on_boot` field will be omitted from the resulting object.
+  - `instance_shutdown_timeout` (`number`): Set the `instance_shutdown_timeout` field on the resulting object. When `null`, the `instance_shutdown_timeout` field will be omitted from the resulting object.
+  - `manage_bundler` (`bool`): Set the `manage_bundler` field on the resulting object. When `null`, the `manage_bundler` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `passenger_version` (`string`): Set the `passenger_version` field on the resulting object. When `null`, the `passenger_version` field will be omitted from the resulting object.
+  - `ruby_version` (`string`): Set the `ruby_version` field on the resulting object. When `null`, the `ruby_version` field will be omitted from the resulting object.
+  - `rubygems_version` (`string`): Set the `rubygems_version` field on the resulting object. When `null`, the `rubygems_version` field will be omitted from the resulting object.
+  - `stack_id` (`string`): Set the `stack_id` field on the resulting object.
+  - `system_packages` (`list`): Set the `system_packages` field on the resulting object. When `null`, the `system_packages` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `use_ebs_optimized_instances` (`bool`): Set the `use_ebs_optimized_instances` field on the resulting object. When `null`, the `use_ebs_optimized_instances` field will be omitted from the resulting object.
+  - `cloudwatch_configuration` (`list[obj]`): Set the `cloudwatch_configuration` field on the resulting object. When `null`, the `cloudwatch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.cloudwatch_configuration.new](#fn-cloudwatch_configurationnew) constructor.
+  - `ebs_volume` (`list[obj]`): Set the `ebs_volume` field on the resulting object. When `null`, the `ebs_volume` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.ebs_volume.new](#fn-ebs_volumenew) constructor.
+  - `load_based_auto_scaling` (`list[obj]`): Set the `load_based_auto_scaling` field on the resulting object. When `null`, the `load_based_auto_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.new](#fn-load_based_auto_scalingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_rails_app_layer` resource into the root Terraform configuration.
@@ -738,8 +738,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_streams` (`list[obj]`):  When `null`, the `log_streams` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.cloudwatch_configuration.log_streams.new](#fn-cloudwatch_configurationlog_streamsnew) constructor.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_streams` (`list[obj]`): Set the `log_streams` field on the resulting object. When `null`, the `log_streams` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.cloudwatch_configuration.log_streams.new](#fn-cloudwatch_configurationlog_streamsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_configuration` sub block.
@@ -762,17 +762,17 @@ Terraform sub block.
 
 
 **Args**:
-  - `batch_count` (`number`):  When `null`, the `batch_count` field will be omitted from the resulting object.
-  - `batch_size` (`number`):  When `null`, the `batch_size` field will be omitted from the resulting object.
-  - `buffer_duration` (`number`):  When `null`, the `buffer_duration` field will be omitted from the resulting object.
-  - `datetime_format` (`string`):  When `null`, the `datetime_format` field will be omitted from the resulting object.
-  - `encoding` (`string`):  When `null`, the `encoding` field will be omitted from the resulting object.
-  - `file` (`string`): 
-  - `file_fingerprint_lines` (`string`):  When `null`, the `file_fingerprint_lines` field will be omitted from the resulting object.
-  - `initial_position` (`string`):  When `null`, the `initial_position` field will be omitted from the resulting object.
-  - `log_group_name` (`string`): 
-  - `multiline_start_pattern` (`string`):  When `null`, the `multiline_start_pattern` field will be omitted from the resulting object.
-  - `time_zone` (`string`):  When `null`, the `time_zone` field will be omitted from the resulting object.
+  - `batch_count` (`number`): Set the `batch_count` field on the resulting object. When `null`, the `batch_count` field will be omitted from the resulting object.
+  - `batch_size` (`number`): Set the `batch_size` field on the resulting object. When `null`, the `batch_size` field will be omitted from the resulting object.
+  - `buffer_duration` (`number`): Set the `buffer_duration` field on the resulting object. When `null`, the `buffer_duration` field will be omitted from the resulting object.
+  - `datetime_format` (`string`): Set the `datetime_format` field on the resulting object. When `null`, the `datetime_format` field will be omitted from the resulting object.
+  - `encoding` (`string`): Set the `encoding` field on the resulting object. When `null`, the `encoding` field will be omitted from the resulting object.
+  - `file` (`string`): Set the `file` field on the resulting object.
+  - `file_fingerprint_lines` (`string`): Set the `file_fingerprint_lines` field on the resulting object. When `null`, the `file_fingerprint_lines` field will be omitted from the resulting object.
+  - `initial_position` (`string`): Set the `initial_position` field on the resulting object. When `null`, the `initial_position` field will be omitted from the resulting object.
+  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting object.
+  - `multiline_start_pattern` (`string`): Set the `multiline_start_pattern` field on the resulting object. When `null`, the `multiline_start_pattern` field will be omitted from the resulting object.
+  - `time_zone` (`string`): Set the `time_zone` field on the resulting object. When `null`, the `time_zone` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `log_streams` sub block.
@@ -795,13 +795,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
-  - `mount_point` (`string`): 
-  - `number_of_disks` (`number`): 
-  - `raid_level` (`string`):  When `null`, the `raid_level` field will be omitted from the resulting object.
-  - `size` (`number`): 
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `encrypted` (`bool`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
+  - `mount_point` (`string`): Set the `mount_point` field on the resulting object.
+  - `number_of_disks` (`number`): Set the `number_of_disks` field on the resulting object.
+  - `raid_level` (`string`): Set the `raid_level` field on the resulting object. When `null`, the `raid_level` field will be omitted from the resulting object.
+  - `size` (`number`): Set the `size` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs_volume` sub block.
@@ -824,9 +824,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable` (`bool`):  When `null`, the `enable` field will be omitted from the resulting object.
-  - `downscaling` (`list[obj]`):  When `null`, the `downscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.downscaling.new](#fn-load_based_auto_scalingdownscalingnew) constructor.
-  - `upscaling` (`list[obj]`):  When `null`, the `upscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.upscaling.new](#fn-load_based_auto_scalingupscalingnew) constructor.
+  - `enable` (`bool`): Set the `enable` field on the resulting object. When `null`, the `enable` field will be omitted from the resulting object.
+  - `downscaling` (`list[obj]`): Set the `downscaling` field on the resulting object. When `null`, the `downscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.downscaling.new](#fn-load_based_auto_scalingdownscalingnew) constructor.
+  - `upscaling` (`list[obj]`): Set the `upscaling` field on the resulting object. When `null`, the `upscaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_rails_app_layer.load_based_auto_scaling.upscaling.new](#fn-load_based_auto_scalingupscalingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `load_based_auto_scaling` sub block.
@@ -849,13 +849,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `alarms` (`list`):  When `null`, the `alarms` field will be omitted from the resulting object.
-  - `cpu_threshold` (`number`):  When `null`, the `cpu_threshold` field will be omitted from the resulting object.
-  - `ignore_metrics_time` (`number`):  When `null`, the `ignore_metrics_time` field will be omitted from the resulting object.
-  - `instance_count` (`number`):  When `null`, the `instance_count` field will be omitted from the resulting object.
-  - `load_threshold` (`number`):  When `null`, the `load_threshold` field will be omitted from the resulting object.
-  - `memory_threshold` (`number`):  When `null`, the `memory_threshold` field will be omitted from the resulting object.
-  - `thresholds_wait_time` (`number`):  When `null`, the `thresholds_wait_time` field will be omitted from the resulting object.
+  - `alarms` (`list`): Set the `alarms` field on the resulting object. When `null`, the `alarms` field will be omitted from the resulting object.
+  - `cpu_threshold` (`number`): Set the `cpu_threshold` field on the resulting object. When `null`, the `cpu_threshold` field will be omitted from the resulting object.
+  - `ignore_metrics_time` (`number`): Set the `ignore_metrics_time` field on the resulting object. When `null`, the `ignore_metrics_time` field will be omitted from the resulting object.
+  - `instance_count` (`number`): Set the `instance_count` field on the resulting object. When `null`, the `instance_count` field will be omitted from the resulting object.
+  - `load_threshold` (`number`): Set the `load_threshold` field on the resulting object. When `null`, the `load_threshold` field will be omitted from the resulting object.
+  - `memory_threshold` (`number`): Set the `memory_threshold` field on the resulting object. When `null`, the `memory_threshold` field will be omitted from the resulting object.
+  - `thresholds_wait_time` (`number`): Set the `thresholds_wait_time` field on the resulting object. When `null`, the `thresholds_wait_time` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `downscaling` sub block.
@@ -878,13 +878,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `alarms` (`list`):  When `null`, the `alarms` field will be omitted from the resulting object.
-  - `cpu_threshold` (`number`):  When `null`, the `cpu_threshold` field will be omitted from the resulting object.
-  - `ignore_metrics_time` (`number`):  When `null`, the `ignore_metrics_time` field will be omitted from the resulting object.
-  - `instance_count` (`number`):  When `null`, the `instance_count` field will be omitted from the resulting object.
-  - `load_threshold` (`number`):  When `null`, the `load_threshold` field will be omitted from the resulting object.
-  - `memory_threshold` (`number`):  When `null`, the `memory_threshold` field will be omitted from the resulting object.
-  - `thresholds_wait_time` (`number`):  When `null`, the `thresholds_wait_time` field will be omitted from the resulting object.
+  - `alarms` (`list`): Set the `alarms` field on the resulting object. When `null`, the `alarms` field will be omitted from the resulting object.
+  - `cpu_threshold` (`number`): Set the `cpu_threshold` field on the resulting object. When `null`, the `cpu_threshold` field will be omitted from the resulting object.
+  - `ignore_metrics_time` (`number`): Set the `ignore_metrics_time` field on the resulting object. When `null`, the `ignore_metrics_time` field will be omitted from the resulting object.
+  - `instance_count` (`number`): Set the `instance_count` field on the resulting object. When `null`, the `instance_count` field will be omitted from the resulting object.
+  - `load_threshold` (`number`): Set the `load_threshold` field on the resulting object. When `null`, the `load_threshold` field will be omitted from the resulting object.
+  - `memory_threshold` (`number`): Set the `memory_threshold` field on the resulting object. When `null`, the `memory_threshold` field will be omitted from the resulting object.
+  - `thresholds_wait_time` (`number`): Set the `thresholds_wait_time` field on the resulting object. When `null`, the `thresholds_wait_time` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `upscaling` sub block.

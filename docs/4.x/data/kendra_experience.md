@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `experience_id` (`string`): 
-  - `index_id` (`string`): 
+  - `experience_id` (`string`): Set the `experience_id` field on the resulting data source block.
+  - `index_id` (`string`): Set the `index_id` field on the resulting data source block.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `experience_id` (`string`): 
-  - `index_id` (`string`): 
+  - `experience_id` (`string`): Set the `experience_id` field on the resulting object.
+  - `index_id` (`string`): Set the `index_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `kendra_experience` data source into the root Terraform configuration.

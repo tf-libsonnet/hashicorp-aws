@@ -52,10 +52,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `app_id` (`string`): 
-  - `domain_name` (`string`): 
-  - `wait_for_verification` (`bool`):  When `null`, the `wait_for_verification` field will be omitted from the resulting object.
-  - `sub_domain` (`list[obj]`):  When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
+  - `app_id` (`string`): Set the `app_id` field on the resulting resource block.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
+  - `wait_for_verification` (`bool`): Set the `wait_for_verification` field on the resulting resource block. When `null`, the `wait_for_verification` field will be omitted from the resulting object.
+  - `sub_domain` (`list[obj]`): Set the `sub_domain` field on the resulting resource block. When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,10 +79,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `app_id` (`string`): 
-  - `domain_name` (`string`): 
-  - `wait_for_verification` (`bool`):  When `null`, the `wait_for_verification` field will be omitted from the resulting object.
-  - `sub_domain` (`list[obj]`):  When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
+  - `app_id` (`string`): Set the `app_id` field on the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `wait_for_verification` (`bool`): Set the `wait_for_verification` field on the resulting object. When `null`, the `wait_for_verification` field will be omitted from the resulting object.
+  - `sub_domain` (`list[obj]`): Set the `sub_domain` field on the resulting object. When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `amplify_domain_association` resource into the root Terraform configuration.
@@ -190,8 +190,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `branch_name` (`string`): 
-  - `prefix` (`string`): 
+  - `branch_name` (`string`): Set the `branch_name` field on the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sub_domain` sub block.

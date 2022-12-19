@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `base_capacity` (`number`):  When `null`, the `base_capacity` field will be omitted from the resulting object.
-  - `enhanced_vpc_routing` (`bool`):  When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
-  - `namespace_name` (`string`): 
-  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `workgroup_name` (`string`): 
-  - `config_parameter` (`list[obj]`):  When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
+  - `base_capacity` (`number`): Set the `base_capacity` field on the resulting resource block. When `null`, the `base_capacity` field will be omitted from the resulting object.
+  - `enhanced_vpc_routing` (`bool`): Set the `enhanced_vpc_routing` field on the resulting resource block. When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
+  - `namespace_name` (`string`): Set the `namespace_name` field on the resulting resource block.
+  - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting resource block. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting resource block.
+  - `config_parameter` (`list[obj]`): Set the `config_parameter` field on the resulting resource block. When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `base_capacity` (`number`):  When `null`, the `base_capacity` field will be omitted from the resulting object.
-  - `enhanced_vpc_routing` (`bool`):  When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
-  - `namespace_name` (`string`): 
-  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `workgroup_name` (`string`): 
-  - `config_parameter` (`list[obj]`):  When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
+  - `base_capacity` (`number`): Set the `base_capacity` field on the resulting object. When `null`, the `base_capacity` field will be omitted from the resulting object.
+  - `enhanced_vpc_routing` (`bool`): Set the `enhanced_vpc_routing` field on the resulting object. When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
+  - `namespace_name` (`string`): Set the `namespace_name` field on the resulting object.
+  - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting object. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting object.
+  - `config_parameter` (`list[obj]`): Set the `config_parameter` field on the resulting object. When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftserverless_workgroup` resource into the root Terraform configuration.
@@ -304,8 +304,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `parameter_key` (`string`): 
-  - `parameter_value` (`string`): 
+  - `parameter_key` (`string`): Set the `parameter_key` field on the resulting object.
+  - `parameter_value` (`string`): Set the `parameter_value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `config_parameter` sub block.

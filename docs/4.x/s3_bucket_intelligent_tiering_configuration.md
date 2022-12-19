@@ -56,11 +56,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): 
-  - `name` (`string`): 
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.filter.new](#fn-filternew) constructor.
-  - `tiering` (`list[obj]`):  When `null`, the `tiering` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.tiering.new](#fn-tieringnew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `status` (`string`): Set the `status` field on the resulting resource block. When `null`, the `status` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting resource block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.filter.new](#fn-filternew) constructor.
+  - `tiering` (`list[obj]`): Set the `tiering` field on the resulting resource block. When `null`, the `tiering` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.tiering.new](#fn-tieringnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,11 +84,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): 
-  - `name` (`string`): 
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.filter.new](#fn-filternew) constructor.
-  - `tiering` (`list[obj]`):  When `null`, the `tiering` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.tiering.new](#fn-tieringnew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.filter.new](#fn-filternew) constructor.
+  - `tiering` (`list[obj]`): Set the `tiering` field on the resulting object. When `null`, the `tiering` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_intelligent_tiering_configuration.tiering.new](#fn-tieringnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_intelligent_tiering_configuration` resource into the root Terraform configuration.
@@ -233,8 +233,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -257,8 +257,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `access_tier` (`string`): 
-  - `days` (`number`): 
+  - `access_tier` (`string`): Set the `access_tier` field on the resulting object.
+  - `days` (`number`): Set the `days` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tiering` sub block.

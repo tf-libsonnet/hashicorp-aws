@@ -71,14 +71,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `flow_definition_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `human_loop_activation_config` (`list[obj]`):  When `null`, the `human_loop_activation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.new](#fn-human_loop_activation_confignew) constructor.
-  - `human_loop_config` (`list[obj]`):  When `null`, the `human_loop_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.new](#fn-human_loop_confignew) constructor.
-  - `human_loop_request_source` (`list[obj]`):  When `null`, the `human_loop_request_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_request_source.new](#fn-human_loop_request_sourcenew) constructor.
-  - `output_config` (`list[obj]`):  When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.output_config.new](#fn-output_confignew) constructor.
+  - `flow_definition_name` (`string`): Set the `flow_definition_name` field on the resulting resource block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `human_loop_activation_config` (`list[obj]`): Set the `human_loop_activation_config` field on the resulting resource block. When `null`, the `human_loop_activation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.new](#fn-human_loop_activation_confignew) constructor.
+  - `human_loop_config` (`list[obj]`): Set the `human_loop_config` field on the resulting resource block. When `null`, the `human_loop_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.new](#fn-human_loop_confignew) constructor.
+  - `human_loop_request_source` (`list[obj]`): Set the `human_loop_request_source` field on the resulting resource block. When `null`, the `human_loop_request_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_request_source.new](#fn-human_loop_request_sourcenew) constructor.
+  - `output_config` (`list[obj]`): Set the `output_config` field on the resulting resource block. When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.output_config.new](#fn-output_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,14 +102,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `flow_definition_name` (`string`): 
-  - `role_arn` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `human_loop_activation_config` (`list[obj]`):  When `null`, the `human_loop_activation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.new](#fn-human_loop_activation_confignew) constructor.
-  - `human_loop_config` (`list[obj]`):  When `null`, the `human_loop_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.new](#fn-human_loop_confignew) constructor.
-  - `human_loop_request_source` (`list[obj]`):  When `null`, the `human_loop_request_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_request_source.new](#fn-human_loop_request_sourcenew) constructor.
-  - `output_config` (`list[obj]`):  When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.output_config.new](#fn-output_confignew) constructor.
+  - `flow_definition_name` (`string`): Set the `flow_definition_name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `human_loop_activation_config` (`list[obj]`): Set the `human_loop_activation_config` field on the resulting object. When `null`, the `human_loop_activation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.new](#fn-human_loop_activation_confignew) constructor.
+  - `human_loop_config` (`list[obj]`): Set the `human_loop_config` field on the resulting object. When `null`, the `human_loop_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.new](#fn-human_loop_confignew) constructor.
+  - `human_loop_request_source` (`list[obj]`): Set the `human_loop_request_source` field on the resulting object. When `null`, the `human_loop_request_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_request_source.new](#fn-human_loop_request_sourcenew) constructor.
+  - `output_config` (`list[obj]`): Set the `output_config` field on the resulting object. When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.output_config.new](#fn-output_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_flow_definition` resource into the root Terraform configuration.
@@ -344,7 +344,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `human_loop_activation_conditions_config` (`list[obj]`):  When `null`, the `human_loop_activation_conditions_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.human_loop_activation_conditions_config.new](#fn-human_loop_activation_confighuman_loop_activation_conditions_confignew) constructor.
+  - `human_loop_activation_conditions_config` (`list[obj]`): Set the `human_loop_activation_conditions_config` field on the resulting object. When `null`, the `human_loop_activation_conditions_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_activation_config.human_loop_activation_conditions_config.new](#fn-human_loop_activation_confighuman_loop_activation_conditions_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `human_loop_activation_config` sub block.
@@ -367,7 +367,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `human_loop_activation_conditions` (`string`): 
+  - `human_loop_activation_conditions` (`string`): Set the `human_loop_activation_conditions` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `human_loop_activation_conditions_config` sub block.
@@ -390,15 +390,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `human_task_ui_arn` (`string`): 
-  - `task_availability_lifetime_in_seconds` (`number`):  When `null`, the `task_availability_lifetime_in_seconds` field will be omitted from the resulting object.
-  - `task_count` (`number`): 
-  - `task_description` (`string`): 
-  - `task_keywords` (`list`):  When `null`, the `task_keywords` field will be omitted from the resulting object.
-  - `task_time_limit_in_seconds` (`number`):  When `null`, the `task_time_limit_in_seconds` field will be omitted from the resulting object.
-  - `task_title` (`string`): 
-  - `workteam_arn` (`string`): 
-  - `public_workforce_task_price` (`list[obj]`):  When `null`, the `public_workforce_task_price` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.new](#fn-human_loop_configpublic_workforce_task_pricenew) constructor.
+  - `human_task_ui_arn` (`string`): Set the `human_task_ui_arn` field on the resulting object.
+  - `task_availability_lifetime_in_seconds` (`number`): Set the `task_availability_lifetime_in_seconds` field on the resulting object. When `null`, the `task_availability_lifetime_in_seconds` field will be omitted from the resulting object.
+  - `task_count` (`number`): Set the `task_count` field on the resulting object.
+  - `task_description` (`string`): Set the `task_description` field on the resulting object.
+  - `task_keywords` (`list`): Set the `task_keywords` field on the resulting object. When `null`, the `task_keywords` field will be omitted from the resulting object.
+  - `task_time_limit_in_seconds` (`number`): Set the `task_time_limit_in_seconds` field on the resulting object. When `null`, the `task_time_limit_in_seconds` field will be omitted from the resulting object.
+  - `task_title` (`string`): Set the `task_title` field on the resulting object.
+  - `workteam_arn` (`string`): Set the `workteam_arn` field on the resulting object.
+  - `public_workforce_task_price` (`list[obj]`): Set the `public_workforce_task_price` field on the resulting object. When `null`, the `public_workforce_task_price` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.new](#fn-human_loop_configpublic_workforce_task_pricenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `human_loop_config` sub block.
@@ -421,7 +421,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `amount_in_usd` (`list[obj]`):  When `null`, the `amount_in_usd` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.amount_in_usd.new](#fn-human_loop_confighuman_loop_configamount_in_usdnew) constructor.
+  - `amount_in_usd` (`list[obj]`): Set the `amount_in_usd` field on the resulting object. When `null`, the `amount_in_usd` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_flow_definition.human_loop_config.public_workforce_task_price.amount_in_usd.new](#fn-human_loop_confighuman_loop_configamount_in_usdnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `public_workforce_task_price` sub block.
@@ -444,9 +444,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cents` (`number`):  When `null`, the `cents` field will be omitted from the resulting object.
-  - `dollars` (`number`):  When `null`, the `dollars` field will be omitted from the resulting object.
-  - `tenth_fractions_of_a_cent` (`number`):  When `null`, the `tenth_fractions_of_a_cent` field will be omitted from the resulting object.
+  - `cents` (`number`): Set the `cents` field on the resulting object. When `null`, the `cents` field will be omitted from the resulting object.
+  - `dollars` (`number`): Set the `dollars` field on the resulting object. When `null`, the `dollars` field will be omitted from the resulting object.
+  - `tenth_fractions_of_a_cent` (`number`): Set the `tenth_fractions_of_a_cent` field on the resulting object. When `null`, the `tenth_fractions_of_a_cent` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `amount_in_usd` sub block.
@@ -469,7 +469,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `aws_managed_human_loop_request_source` (`string`): 
+  - `aws_managed_human_loop_request_source` (`string`): Set the `aws_managed_human_loop_request_source` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `human_loop_request_source` sub block.
@@ -492,8 +492,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `s3_output_path` (`string`): 
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `s3_output_path` (`string`): Set the `s3_output_path` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `output_config` sub block.

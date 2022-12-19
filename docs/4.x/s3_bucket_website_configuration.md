@@ -68,13 +68,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): 
-  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `routing_rules` (`string`):  When `null`, the `routing_rules` field will be omitted from the resulting object.
-  - `error_document` (`list[obj]`):  When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-error_documentnew) constructor.
-  - `index_document` (`list[obj]`):  When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-index_documentnew) constructor.
-  - `redirect_all_requests_to` (`list[obj]`):  When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-redirect_all_requests_tonew) constructor.
-  - `routing_rule` (`list[obj]`):  When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-routing_rulenew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
+  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `routing_rules` (`string`): Set the `routing_rules` field on the resulting resource block. When `null`, the `routing_rules` field will be omitted from the resulting object.
+  - `error_document` (`list[obj]`): Set the `error_document` field on the resulting resource block. When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-error_documentnew) constructor.
+  - `index_document` (`list[obj]`): Set the `index_document` field on the resulting resource block. When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-index_documentnew) constructor.
+  - `redirect_all_requests_to` (`list[obj]`): Set the `redirect_all_requests_to` field on the resulting resource block. When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-redirect_all_requests_tonew) constructor.
+  - `routing_rule` (`list[obj]`): Set the `routing_rule` field on the resulting resource block. When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-routing_rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -98,13 +98,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): 
-  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `routing_rules` (`string`):  When `null`, the `routing_rules` field will be omitted from the resulting object.
-  - `error_document` (`list[obj]`):  When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-error_documentnew) constructor.
-  - `index_document` (`list[obj]`):  When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-index_documentnew) constructor.
-  - `redirect_all_requests_to` (`list[obj]`):  When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-redirect_all_requests_tonew) constructor.
-  - `routing_rule` (`list[obj]`):  When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-routing_rulenew) constructor.
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `routing_rules` (`string`): Set the `routing_rules` field on the resulting object. When `null`, the `routing_rules` field will be omitted from the resulting object.
+  - `error_document` (`list[obj]`): Set the `error_document` field on the resulting object. When `null`, the `error_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.error_document.new](#fn-error_documentnew) constructor.
+  - `index_document` (`list[obj]`): Set the `index_document` field on the resulting object. When `null`, the `index_document` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.index_document.new](#fn-index_documentnew) constructor.
+  - `redirect_all_requests_to` (`list[obj]`): Set the `redirect_all_requests_to` field on the resulting object. When `null`, the `redirect_all_requests_to` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.redirect_all_requests_to.new](#fn-redirect_all_requests_tonew) constructor.
+  - `routing_rule` (`list[obj]`): Set the `routing_rule` field on the resulting object. When `null`, the `routing_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.new](#fn-routing_rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_website_configuration` resource into the root Terraform configuration.
@@ -323,7 +323,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
+  - `key` (`string`): Set the `key` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `error_document` sub block.
@@ -346,7 +346,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `suffix` (`string`): 
+  - `suffix` (`string`): Set the `suffix` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `index_document` sub block.
@@ -369,8 +369,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `host_name` (`string`): 
-  - `protocol` (`string`):  When `null`, the `protocol` field will be omitted from the resulting object.
+  - `host_name` (`string`): Set the `host_name` field on the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `redirect_all_requests_to` sub block.
@@ -393,8 +393,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.condition.new](#fn-routing_ruleconditionnew) constructor.
-  - `redirect` (`list[obj]`):  When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.redirect.new](#fn-routing_ruleredirectnew) constructor.
+  - `condition` (`list[obj]`): Set the `condition` field on the resulting object. When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.condition.new](#fn-routing_ruleconditionnew) constructor.
+  - `redirect` (`list[obj]`): Set the `redirect` field on the resulting object. When `null`, the `redirect` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_website_configuration.routing_rule.redirect.new](#fn-routing_ruleredirectnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `routing_rule` sub block.
@@ -417,8 +417,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `http_error_code_returned_equals` (`string`):  When `null`, the `http_error_code_returned_equals` field will be omitted from the resulting object.
-  - `key_prefix_equals` (`string`):  When `null`, the `key_prefix_equals` field will be omitted from the resulting object.
+  - `http_error_code_returned_equals` (`string`): Set the `http_error_code_returned_equals` field on the resulting object. When `null`, the `http_error_code_returned_equals` field will be omitted from the resulting object.
+  - `key_prefix_equals` (`string`): Set the `key_prefix_equals` field on the resulting object. When `null`, the `key_prefix_equals` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.
@@ -441,11 +441,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `host_name` (`string`):  When `null`, the `host_name` field will be omitted from the resulting object.
-  - `http_redirect_code` (`string`):  When `null`, the `http_redirect_code` field will be omitted from the resulting object.
-  - `protocol` (`string`):  When `null`, the `protocol` field will be omitted from the resulting object.
-  - `replace_key_prefix_with` (`string`):  When `null`, the `replace_key_prefix_with` field will be omitted from the resulting object.
-  - `replace_key_with` (`string`):  When `null`, the `replace_key_with` field will be omitted from the resulting object.
+  - `host_name` (`string`): Set the `host_name` field on the resulting object. When `null`, the `host_name` field will be omitted from the resulting object.
+  - `http_redirect_code` (`string`): Set the `http_redirect_code` field on the resulting object. When `null`, the `http_redirect_code` field will be omitted from the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.
+  - `replace_key_prefix_with` (`string`): Set the `replace_key_prefix_with` field on the resulting object. When `null`, the `replace_key_prefix_with` field will be omitted from the resulting object.
+  - `replace_key_with` (`string`): Set the `replace_key_with` field on the resulting object. When `null`, the `replace_key_with` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `redirect` sub block.

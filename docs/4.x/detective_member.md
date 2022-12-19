@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`): 
-  - `disable_email_notification` (`bool`):  When `null`, the `disable_email_notification` field will be omitted from the resulting object.
-  - `email_address` (`string`): 
-  - `graph_arn` (`string`): 
-  - `message` (`string`):  When `null`, the `message` field will be omitted from the resulting object.
+  - `account_id` (`string`): Set the `account_id` field on the resulting resource block.
+  - `disable_email_notification` (`bool`): Set the `disable_email_notification` field on the resulting resource block. When `null`, the `disable_email_notification` field will be omitted from the resulting object.
+  - `email_address` (`string`): Set the `email_address` field on the resulting resource block.
+  - `graph_arn` (`string`): Set the `graph_arn` field on the resulting resource block.
+  - `message` (`string`): Set the `message` field on the resulting resource block. When `null`, the `message` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`): 
-  - `disable_email_notification` (`bool`):  When `null`, the `disable_email_notification` field will be omitted from the resulting object.
-  - `email_address` (`string`): 
-  - `graph_arn` (`string`): 
-  - `message` (`string`):  When `null`, the `message` field will be omitted from the resulting object.
+  - `account_id` (`string`): Set the `account_id` field on the resulting object.
+  - `disable_email_notification` (`bool`): Set the `disable_email_notification` field on the resulting object. When `null`, the `disable_email_notification` field will be omitted from the resulting object.
+  - `email_address` (`string`): Set the `email_address` field on the resulting object.
+  - `graph_arn` (`string`): Set the `graph_arn` field on the resulting object.
+  - `message` (`string`): Set the `message` field on the resulting object. When `null`, the `message` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `detective_member` resource into the root Terraform configuration.

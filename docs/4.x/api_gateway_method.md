@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_key_required` (`bool`):  When `null`, the `api_key_required` field will be omitted from the resulting object.
-  - `authorization` (`string`): 
-  - `authorization_scopes` (`list`):  When `null`, the `authorization_scopes` field will be omitted from the resulting object.
-  - `authorizer_id` (`string`):  When `null`, the `authorizer_id` field will be omitted from the resulting object.
-  - `http_method` (`string`): 
-  - `operation_name` (`string`):  When `null`, the `operation_name` field will be omitted from the resulting object.
-  - `request_models` (`obj`):  When `null`, the `request_models` field will be omitted from the resulting object.
-  - `request_parameters` (`obj`):  When `null`, the `request_parameters` field will be omitted from the resulting object.
-  - `request_validator_id` (`string`):  When `null`, the `request_validator_id` field will be omitted from the resulting object.
-  - `resource_id` (`string`): 
-  - `rest_api_id` (`string`): 
+  - `api_key_required` (`bool`): Set the `api_key_required` field on the resulting resource block. When `null`, the `api_key_required` field will be omitted from the resulting object.
+  - `authorization` (`string`): Set the `authorization` field on the resulting resource block.
+  - `authorization_scopes` (`list`): Set the `authorization_scopes` field on the resulting resource block. When `null`, the `authorization_scopes` field will be omitted from the resulting object.
+  - `authorizer_id` (`string`): Set the `authorizer_id` field on the resulting resource block. When `null`, the `authorizer_id` field will be omitted from the resulting object.
+  - `http_method` (`string`): Set the `http_method` field on the resulting resource block.
+  - `operation_name` (`string`): Set the `operation_name` field on the resulting resource block. When `null`, the `operation_name` field will be omitted from the resulting object.
+  - `request_models` (`obj`): Set the `request_models` field on the resulting resource block. When `null`, the `request_models` field will be omitted from the resulting object.
+  - `request_parameters` (`obj`): Set the `request_parameters` field on the resulting resource block. When `null`, the `request_parameters` field will be omitted from the resulting object.
+  - `request_validator_id` (`string`): Set the `request_validator_id` field on the resulting resource block. When `null`, the `request_validator_id` field will be omitted from the resulting object.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
+  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_key_required` (`bool`):  When `null`, the `api_key_required` field will be omitted from the resulting object.
-  - `authorization` (`string`): 
-  - `authorization_scopes` (`list`):  When `null`, the `authorization_scopes` field will be omitted from the resulting object.
-  - `authorizer_id` (`string`):  When `null`, the `authorizer_id` field will be omitted from the resulting object.
-  - `http_method` (`string`): 
-  - `operation_name` (`string`):  When `null`, the `operation_name` field will be omitted from the resulting object.
-  - `request_models` (`obj`):  When `null`, the `request_models` field will be omitted from the resulting object.
-  - `request_parameters` (`obj`):  When `null`, the `request_parameters` field will be omitted from the resulting object.
-  - `request_validator_id` (`string`):  When `null`, the `request_validator_id` field will be omitted from the resulting object.
-  - `resource_id` (`string`): 
-  - `rest_api_id` (`string`): 
+  - `api_key_required` (`bool`): Set the `api_key_required` field on the resulting object. When `null`, the `api_key_required` field will be omitted from the resulting object.
+  - `authorization` (`string`): Set the `authorization` field on the resulting object.
+  - `authorization_scopes` (`list`): Set the `authorization_scopes` field on the resulting object. When `null`, the `authorization_scopes` field will be omitted from the resulting object.
+  - `authorizer_id` (`string`): Set the `authorizer_id` field on the resulting object. When `null`, the `authorizer_id` field will be omitted from the resulting object.
+  - `http_method` (`string`): Set the `http_method` field on the resulting object.
+  - `operation_name` (`string`): Set the `operation_name` field on the resulting object. When `null`, the `operation_name` field will be omitted from the resulting object.
+  - `request_models` (`obj`): Set the `request_models` field on the resulting object. When `null`, the `request_models` field will be omitted from the resulting object.
+  - `request_parameters` (`obj`): Set the `request_parameters` field on the resulting object. When `null`, the `request_parameters` field will be omitted from the resulting object.
+  - `request_validator_id` (`string`): Set the `request_validator_id` field on the resulting object. When `null`, the `request_validator_id` field will be omitted from the resulting object.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
+  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_method` resource into the root Terraform configuration.

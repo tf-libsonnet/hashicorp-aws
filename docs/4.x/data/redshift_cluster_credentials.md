@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `auto_create` (`bool`):  When `null`, the `auto_create` field will be omitted from the resulting object.
-  - `cluster_identifier` (`string`): 
-  - `db_groups` (`list`):  When `null`, the `db_groups` field will be omitted from the resulting object.
-  - `db_name` (`string`):  When `null`, the `db_name` field will be omitted from the resulting object.
-  - `db_user` (`string`): 
-  - `duration_seconds` (`number`):  When `null`, the `duration_seconds` field will be omitted from the resulting object.
+  - `auto_create` (`bool`): Set the `auto_create` field on the resulting data source block. When `null`, the `auto_create` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting data source block.
+  - `db_groups` (`list`): Set the `db_groups` field on the resulting data source block. When `null`, the `db_groups` field will be omitted from the resulting object.
+  - `db_name` (`string`): Set the `db_name` field on the resulting data source block. When `null`, the `db_name` field will be omitted from the resulting object.
+  - `db_user` (`string`): Set the `db_user` field on the resulting data source block.
+  - `duration_seconds` (`number`): Set the `duration_seconds` field on the resulting data source block. When `null`, the `duration_seconds` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_create` (`bool`):  When `null`, the `auto_create` field will be omitted from the resulting object.
-  - `cluster_identifier` (`string`): 
-  - `db_groups` (`list`):  When `null`, the `db_groups` field will be omitted from the resulting object.
-  - `db_name` (`string`):  When `null`, the `db_name` field will be omitted from the resulting object.
-  - `db_user` (`string`): 
-  - `duration_seconds` (`number`):  When `null`, the `duration_seconds` field will be omitted from the resulting object.
+  - `auto_create` (`bool`): Set the `auto_create` field on the resulting object. When `null`, the `auto_create` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
+  - `db_groups` (`list`): Set the `db_groups` field on the resulting object. When `null`, the `db_groups` field will be omitted from the resulting object.
+  - `db_name` (`string`): Set the `db_name` field on the resulting object. When `null`, the `db_name` field will be omitted from the resulting object.
+  - `db_user` (`string`): Set the `db_user` field on the resulting object.
+  - `duration_seconds` (`number`): Set the `duration_seconds` field on the resulting object. When `null`, the `duration_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `redshift_cluster_credentials` data source into the root Terraform configuration.

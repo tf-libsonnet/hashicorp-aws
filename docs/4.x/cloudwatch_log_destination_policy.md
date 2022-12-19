@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `access_policy` (`string`): 
-  - `destination_name` (`string`): 
-  - `force_update` (`bool`):  When `null`, the `force_update` field will be omitted from the resulting object.
+  - `access_policy` (`string`): Set the `access_policy` field on the resulting resource block.
+  - `destination_name` (`string`): Set the `destination_name` field on the resulting resource block.
+  - `force_update` (`bool`): Set the `force_update` field on the resulting resource block. When `null`, the `force_update` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_policy` (`string`): 
-  - `destination_name` (`string`): 
-  - `force_update` (`bool`):  When `null`, the `force_update` field will be omitted from the resulting object.
+  - `access_policy` (`string`): Set the `access_policy` field on the resulting object.
+  - `destination_name` (`string`): Set the `destination_name` field on the resulting object.
+  - `force_update` (`bool`): Set the `force_update` field on the resulting object. When `null`, the `force_update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_log_destination_policy` resource into the root Terraform configuration.

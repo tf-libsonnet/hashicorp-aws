@@ -65,12 +65,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_id` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `target_on_demand_capacity` (`number`):  When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
-  - `target_spot_capacity` (`number`):  When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
-  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-instance_type_configsnew) constructor.
-  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-launch_specificationsnew) constructor.
+  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `target_on_demand_capacity` (`number`): Set the `target_on_demand_capacity` field on the resulting resource block. When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
+  - `target_spot_capacity` (`number`): Set the `target_spot_capacity` field on the resulting resource block. When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
+  - `instance_type_configs` (`list[obj]`): Set the `instance_type_configs` field on the resulting resource block. When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-instance_type_configsnew) constructor.
+  - `launch_specifications` (`list[obj]`): Set the `launch_specifications` field on the resulting resource block. When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-launch_specificationsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,12 +94,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_id` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `target_on_demand_capacity` (`number`):  When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
-  - `target_spot_capacity` (`number`):  When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
-  - `instance_type_configs` (`list[obj]`):  When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-instance_type_configsnew) constructor.
-  - `launch_specifications` (`list[obj]`):  When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-launch_specificationsnew) constructor.
+  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `target_on_demand_capacity` (`number`): Set the `target_on_demand_capacity` field on the resulting object. When `null`, the `target_on_demand_capacity` field will be omitted from the resulting object.
+  - `target_spot_capacity` (`number`): Set the `target_spot_capacity` field on the resulting object. When `null`, the `target_spot_capacity` field will be omitted from the resulting object.
+  - `instance_type_configs` (`list[obj]`): Set the `instance_type_configs` field on the resulting object. When `null`, the `instance_type_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.new](#fn-instance_type_configsnew) constructor.
+  - `launch_specifications` (`list[obj]`): Set the `launch_specifications` field on the resulting object. When `null`, the `launch_specifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.new](#fn-launch_specificationsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emr_instance_fleet` resource into the root Terraform configuration.
@@ -260,12 +260,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `bid_price` (`string`):  When `null`, the `bid_price` field will be omitted from the resulting object.
-  - `bid_price_as_percentage_of_on_demand_price` (`number`):  When `null`, the `bid_price_as_percentage_of_on_demand_price` field will be omitted from the resulting object.
-  - `instance_type` (`string`): 
-  - `weighted_capacity` (`number`):  When `null`, the `weighted_capacity` field will be omitted from the resulting object.
-  - `configurations` (`list[obj]`):  When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.configurations.new](#fn-instance_type_configsconfigurationsnew) constructor.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.ebs_config.new](#fn-instance_type_configsebs_confignew) constructor.
+  - `bid_price` (`string`): Set the `bid_price` field on the resulting object. When `null`, the `bid_price` field will be omitted from the resulting object.
+  - `bid_price_as_percentage_of_on_demand_price` (`number`): Set the `bid_price_as_percentage_of_on_demand_price` field on the resulting object. When `null`, the `bid_price_as_percentage_of_on_demand_price` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
+  - `weighted_capacity` (`number`): Set the `weighted_capacity` field on the resulting object. When `null`, the `weighted_capacity` field will be omitted from the resulting object.
+  - `configurations` (`list[obj]`): Set the `configurations` field on the resulting object. When `null`, the `configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.configurations.new](#fn-instance_type_configsconfigurationsnew) constructor.
+  - `ebs_config` (`list[obj]`): Set the `ebs_config` field on the resulting object. When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.instance_type_configs.ebs_config.new](#fn-instance_type_configsebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_type_configs` sub block.
@@ -288,8 +288,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `classification` (`string`):  When `null`, the `classification` field will be omitted from the resulting object.
-  - `properties` (`obj`):  When `null`, the `properties` field will be omitted from the resulting object.
+  - `classification` (`string`): Set the `classification` field on the resulting object. When `null`, the `classification` field will be omitted from the resulting object.
+  - `properties` (`obj`): Set the `properties` field on the resulting object. When `null`, the `properties` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `configurations` sub block.
@@ -312,10 +312,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
-  - `size` (`number`): 
-  - `type` (`string`): 
-  - `volumes_per_instance` (`number`):  When `null`, the `volumes_per_instance` field will be omitted from the resulting object.
+  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
+  - `size` (`number`): Set the `size` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `volumes_per_instance` (`number`): Set the `volumes_per_instance` field on the resulting object. When `null`, the `volumes_per_instance` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs_config` sub block.
@@ -338,8 +338,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_demand_specification` (`list[obj]`):  When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.on_demand_specification.new](#fn-launch_specificationson_demand_specificationnew) constructor.
-  - `spot_specification` (`list[obj]`):  When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.spot_specification.new](#fn-launch_specificationsspot_specificationnew) constructor.
+  - `on_demand_specification` (`list[obj]`): Set the `on_demand_specification` field on the resulting object. When `null`, the `on_demand_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.on_demand_specification.new](#fn-launch_specificationson_demand_specificationnew) constructor.
+  - `spot_specification` (`list[obj]`): Set the `spot_specification` field on the resulting object. When `null`, the `spot_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_fleet.launch_specifications.spot_specification.new](#fn-launch_specificationsspot_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `launch_specifications` sub block.
@@ -362,7 +362,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `allocation_strategy` (`string`): 
+  - `allocation_strategy` (`string`): Set the `allocation_strategy` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `on_demand_specification` sub block.
@@ -385,10 +385,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `allocation_strategy` (`string`): 
-  - `block_duration_minutes` (`number`):  When `null`, the `block_duration_minutes` field will be omitted from the resulting object.
-  - `timeout_action` (`string`): 
-  - `timeout_duration_minutes` (`number`): 
+  - `allocation_strategy` (`string`): Set the `allocation_strategy` field on the resulting object.
+  - `block_duration_minutes` (`number`): Set the `block_duration_minutes` field on the resulting object. When `null`, the `block_duration_minutes` field will be omitted from the resulting object.
+  - `timeout_action` (`string`): Set the `timeout_action` field on the resulting object.
+  - `timeout_duration_minutes` (`number`): Set the `timeout_duration_minutes` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `spot_specification` sub block.

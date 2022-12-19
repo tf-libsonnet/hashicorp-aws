@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `autodefined_reverse_flag` (`string`): 
-  - `resource_id` (`string`): 
+  - `autodefined_reverse_flag` (`string`): Set the `autodefined_reverse_flag` field on the resulting resource block.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `autodefined_reverse_flag` (`string`): 
-  - `resource_id` (`string`): 
+  - `autodefined_reverse_flag` (`string`): Set the `autodefined_reverse_flag` field on the resulting object.
+  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_resolver_config` resource into the root Terraform configuration.

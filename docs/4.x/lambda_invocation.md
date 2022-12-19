@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `function_name` (`string`): 
-  - `input` (`string`): 
-  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `triggers` (`obj`):  When `null`, the `triggers` field will be omitted from the resulting object.
+  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
+  - `input` (`string`): Set the `input` field on the resulting resource block.
+  - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `triggers` (`obj`): Set the `triggers` field on the resulting resource block. When `null`, the `triggers` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `function_name` (`string`): 
-  - `input` (`string`): 
-  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `triggers` (`obj`):  When `null`, the `triggers` field will be omitted from the resulting object.
+  - `function_name` (`string`): Set the `function_name` field on the resulting object.
+  - `input` (`string`): Set the `input` field on the resulting object.
+  - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `triggers` (`obj`): Set the `triggers` field on the resulting object. When `null`, the `triggers` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_invocation` resource into the root Terraform configuration.

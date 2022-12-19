@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `domain_name` (`string`):  When `null`, the `domain_name` field will be omitted from the resulting object.
-  - `lb_name` (`string`): 
-  - `name` (`string`): 
-  - `subject_alternative_names` (`list`):  When `null`, the `subject_alternative_names` field will be omitted from the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block. When `null`, the `domain_name` field will be omitted from the resulting object.
+  - `lb_name` (`string`): Set the `lb_name` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `subject_alternative_names` (`list`): Set the `subject_alternative_names` field on the resulting resource block. When `null`, the `subject_alternative_names` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `domain_name` (`string`):  When `null`, the `domain_name` field will be omitted from the resulting object.
-  - `lb_name` (`string`): 
-  - `name` (`string`): 
-  - `subject_alternative_names` (`list`):  When `null`, the `subject_alternative_names` field will be omitted from the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object. When `null`, the `domain_name` field will be omitted from the resulting object.
+  - `lb_name` (`string`): Set the `lb_name` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `subject_alternative_names` (`list`): Set the `subject_alternative_names` field on the resulting object. When `null`, the `subject_alternative_names` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_lb_certificate` resource into the root Terraform configuration.

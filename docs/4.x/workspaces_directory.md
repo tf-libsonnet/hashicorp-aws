@@ -62,14 +62,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `directory_id` (`string`): 
-  - `ip_group_ids` (`list`):  When `null`, the `ip_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `self_service_permissions` (`list[obj]`):  When `null`, the `self_service_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.self_service_permissions.new](#fn-self_service_permissionsnew) constructor.
-  - `workspace_access_properties` (`list[obj]`):  When `null`, the `workspace_access_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_access_properties.new](#fn-workspace_access_propertiesnew) constructor.
-  - `workspace_creation_properties` (`list[obj]`):  When `null`, the `workspace_creation_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_creation_properties.new](#fn-workspace_creation_propertiesnew) constructor.
+  - `directory_id` (`string`): Set the `directory_id` field on the resulting resource block.
+  - `ip_group_ids` (`list`): Set the `ip_group_ids` field on the resulting resource block. When `null`, the `ip_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `self_service_permissions` (`list[obj]`): Set the `self_service_permissions` field on the resulting resource block. When `null`, the `self_service_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.self_service_permissions.new](#fn-self_service_permissionsnew) constructor.
+  - `workspace_access_properties` (`list[obj]`): Set the `workspace_access_properties` field on the resulting resource block. When `null`, the `workspace_access_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_access_properties.new](#fn-workspace_access_propertiesnew) constructor.
+  - `workspace_creation_properties` (`list[obj]`): Set the `workspace_creation_properties` field on the resulting resource block. When `null`, the `workspace_creation_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_creation_properties.new](#fn-workspace_creation_propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,14 +93,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `directory_id` (`string`): 
-  - `ip_group_ids` (`list`):  When `null`, the `ip_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `self_service_permissions` (`list[obj]`):  When `null`, the `self_service_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.self_service_permissions.new](#fn-self_service_permissionsnew) constructor.
-  - `workspace_access_properties` (`list[obj]`):  When `null`, the `workspace_access_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_access_properties.new](#fn-workspace_access_propertiesnew) constructor.
-  - `workspace_creation_properties` (`list[obj]`):  When `null`, the `workspace_creation_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_creation_properties.new](#fn-workspace_creation_propertiesnew) constructor.
+  - `directory_id` (`string`): Set the `directory_id` field on the resulting object.
+  - `ip_group_ids` (`list`): Set the `ip_group_ids` field on the resulting object. When `null`, the `ip_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `self_service_permissions` (`list[obj]`): Set the `self_service_permissions` field on the resulting object. When `null`, the `self_service_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.self_service_permissions.new](#fn-self_service_permissionsnew) constructor.
+  - `workspace_access_properties` (`list[obj]`): Set the `workspace_access_properties` field on the resulting object. When `null`, the `workspace_access_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_access_properties.new](#fn-workspace_access_propertiesnew) constructor.
+  - `workspace_creation_properties` (`list[obj]`): Set the `workspace_creation_properties` field on the resulting object. When `null`, the `workspace_creation_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_directory.workspace_creation_properties.new](#fn-workspace_creation_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `workspaces_directory` resource into the root Terraform configuration.
@@ -314,11 +314,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `change_compute_type` (`bool`):  When `null`, the `change_compute_type` field will be omitted from the resulting object.
-  - `increase_volume_size` (`bool`):  When `null`, the `increase_volume_size` field will be omitted from the resulting object.
-  - `rebuild_workspace` (`bool`):  When `null`, the `rebuild_workspace` field will be omitted from the resulting object.
-  - `restart_workspace` (`bool`):  When `null`, the `restart_workspace` field will be omitted from the resulting object.
-  - `switch_running_mode` (`bool`):  When `null`, the `switch_running_mode` field will be omitted from the resulting object.
+  - `change_compute_type` (`bool`): Set the `change_compute_type` field on the resulting object. When `null`, the `change_compute_type` field will be omitted from the resulting object.
+  - `increase_volume_size` (`bool`): Set the `increase_volume_size` field on the resulting object. When `null`, the `increase_volume_size` field will be omitted from the resulting object.
+  - `rebuild_workspace` (`bool`): Set the `rebuild_workspace` field on the resulting object. When `null`, the `rebuild_workspace` field will be omitted from the resulting object.
+  - `restart_workspace` (`bool`): Set the `restart_workspace` field on the resulting object. When `null`, the `restart_workspace` field will be omitted from the resulting object.
+  - `switch_running_mode` (`bool`): Set the `switch_running_mode` field on the resulting object. When `null`, the `switch_running_mode` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `self_service_permissions` sub block.
@@ -341,14 +341,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `device_type_android` (`string`):  When `null`, the `device_type_android` field will be omitted from the resulting object.
-  - `device_type_chromeos` (`string`):  When `null`, the `device_type_chromeos` field will be omitted from the resulting object.
-  - `device_type_ios` (`string`):  When `null`, the `device_type_ios` field will be omitted from the resulting object.
-  - `device_type_linux` (`string`):  When `null`, the `device_type_linux` field will be omitted from the resulting object.
-  - `device_type_osx` (`string`):  When `null`, the `device_type_osx` field will be omitted from the resulting object.
-  - `device_type_web` (`string`):  When `null`, the `device_type_web` field will be omitted from the resulting object.
-  - `device_type_windows` (`string`):  When `null`, the `device_type_windows` field will be omitted from the resulting object.
-  - `device_type_zeroclient` (`string`):  When `null`, the `device_type_zeroclient` field will be omitted from the resulting object.
+  - `device_type_android` (`string`): Set the `device_type_android` field on the resulting object. When `null`, the `device_type_android` field will be omitted from the resulting object.
+  - `device_type_chromeos` (`string`): Set the `device_type_chromeos` field on the resulting object. When `null`, the `device_type_chromeos` field will be omitted from the resulting object.
+  - `device_type_ios` (`string`): Set the `device_type_ios` field on the resulting object. When `null`, the `device_type_ios` field will be omitted from the resulting object.
+  - `device_type_linux` (`string`): Set the `device_type_linux` field on the resulting object. When `null`, the `device_type_linux` field will be omitted from the resulting object.
+  - `device_type_osx` (`string`): Set the `device_type_osx` field on the resulting object. When `null`, the `device_type_osx` field will be omitted from the resulting object.
+  - `device_type_web` (`string`): Set the `device_type_web` field on the resulting object. When `null`, the `device_type_web` field will be omitted from the resulting object.
+  - `device_type_windows` (`string`): Set the `device_type_windows` field on the resulting object. When `null`, the `device_type_windows` field will be omitted from the resulting object.
+  - `device_type_zeroclient` (`string`): Set the `device_type_zeroclient` field on the resulting object. When `null`, the `device_type_zeroclient` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `workspace_access_properties` sub block.
@@ -371,11 +371,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_security_group_id` (`string`):  When `null`, the `custom_security_group_id` field will be omitted from the resulting object.
-  - `default_ou` (`string`):  When `null`, the `default_ou` field will be omitted from the resulting object.
-  - `enable_internet_access` (`bool`):  When `null`, the `enable_internet_access` field will be omitted from the resulting object.
-  - `enable_maintenance_mode` (`bool`):  When `null`, the `enable_maintenance_mode` field will be omitted from the resulting object.
-  - `user_enabled_as_local_administrator` (`bool`):  When `null`, the `user_enabled_as_local_administrator` field will be omitted from the resulting object.
+  - `custom_security_group_id` (`string`): Set the `custom_security_group_id` field on the resulting object. When `null`, the `custom_security_group_id` field will be omitted from the resulting object.
+  - `default_ou` (`string`): Set the `default_ou` field on the resulting object. When `null`, the `default_ou` field will be omitted from the resulting object.
+  - `enable_internet_access` (`bool`): Set the `enable_internet_access` field on the resulting object. When `null`, the `enable_internet_access` field will be omitted from the resulting object.
+  - `enable_maintenance_mode` (`bool`): Set the `enable_maintenance_mode` field on the resulting object. When `null`, the `enable_maintenance_mode` field will be omitted from the resulting object.
+  - `user_enabled_as_local_administrator` (`bool`): Set the `user_enabled_as_local_administrator` field on the resulting object. When `null`, the `user_enabled_as_local_administrator` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `workspace_creation_properties` sub block.

@@ -56,11 +56,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `account_aggregation_source` (`list[obj]`):  When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-account_aggregation_sourcenew) constructor.
-  - `organization_aggregation_source` (`list[obj]`):  When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-organization_aggregation_sourcenew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `account_aggregation_source` (`list[obj]`): Set the `account_aggregation_source` field on the resulting resource block. When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-account_aggregation_sourcenew) constructor.
+  - `organization_aggregation_source` (`list[obj]`): Set the `organization_aggregation_source` field on the resulting resource block. When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-organization_aggregation_sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,11 +84,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `account_aggregation_source` (`list[obj]`):  When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-account_aggregation_sourcenew) constructor.
-  - `organization_aggregation_source` (`list[obj]`):  When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-organization_aggregation_sourcenew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `account_aggregation_source` (`list[obj]`): Set the `account_aggregation_source` field on the resulting object. When `null`, the `account_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.account_aggregation_source.new](#fn-account_aggregation_sourcenew) constructor.
+  - `organization_aggregation_source` (`list[obj]`): Set the `organization_aggregation_source` field on the resulting object. When `null`, the `organization_aggregation_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_aggregator.organization_aggregation_source.new](#fn-organization_aggregation_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_configuration_aggregator` resource into the root Terraform configuration.
@@ -233,9 +233,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `account_ids` (`list`): 
-  - `all_regions` (`bool`):  When `null`, the `all_regions` field will be omitted from the resulting object.
-  - `regions` (`list`):  When `null`, the `regions` field will be omitted from the resulting object.
+  - `account_ids` (`list`): Set the `account_ids` field on the resulting object.
+  - `all_regions` (`bool`): Set the `all_regions` field on the resulting object. When `null`, the `all_regions` field will be omitted from the resulting object.
+  - `regions` (`list`): Set the `regions` field on the resulting object. When `null`, the `regions` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `account_aggregation_source` sub block.
@@ -258,9 +258,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `all_regions` (`bool`):  When `null`, the `all_regions` field will be omitted from the resulting object.
-  - `regions` (`list`):  When `null`, the `regions` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
+  - `all_regions` (`bool`): Set the `all_regions` field on the resulting object. When `null`, the `all_regions` field will be omitted from the resulting object.
+  - `regions` (`list`): Set the `regions` field on the resulting object. When `null`, the `regions` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `organization_aggregation_source` sub block.

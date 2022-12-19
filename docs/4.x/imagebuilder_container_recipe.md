@@ -74,20 +74,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `container_type` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `dockerfile_template_data` (`string`):  When `null`, the `dockerfile_template_data` field will be omitted from the resulting object.
-  - `dockerfile_template_uri` (`string`):  When `null`, the `dockerfile_template_uri` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_image` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`): 
-  - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-componentnew) constructor.
-  - `instance_configuration` (`list[obj]`):  When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-instance_configurationnew) constructor.
-  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-target_repositorynew) constructor.
+  - `container_type` (`string`): Set the `container_type` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `dockerfile_template_data` (`string`): Set the `dockerfile_template_data` field on the resulting resource block. When `null`, the `dockerfile_template_data` field will be omitted from the resulting object.
+  - `dockerfile_template_uri` (`string`): Set the `dockerfile_template_uri` field on the resulting resource block. When `null`, the `dockerfile_template_uri` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `parent_image` (`string`): Set the `parent_image` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting resource block.
+  - `working_directory` (`string`): Set the `working_directory` field on the resulting resource block. When `null`, the `working_directory` field will be omitted from the resulting object.
+  - `component` (`list[obj]`): Set the `component` field on the resulting resource block. When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-componentnew) constructor.
+  - `instance_configuration` (`list[obj]`): Set the `instance_configuration` field on the resulting resource block. When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-instance_configurationnew) constructor.
+  - `target_repository` (`list[obj]`): Set the `target_repository` field on the resulting resource block. When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-target_repositorynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -111,20 +111,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `container_type` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `dockerfile_template_data` (`string`):  When `null`, the `dockerfile_template_data` field will be omitted from the resulting object.
-  - `dockerfile_template_uri` (`string`):  When `null`, the `dockerfile_template_uri` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_image` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`): 
-  - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-componentnew) constructor.
-  - `instance_configuration` (`list[obj]`):  When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-instance_configurationnew) constructor.
-  - `target_repository` (`list[obj]`):  When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-target_repositorynew) constructor.
+  - `container_type` (`string`): Set the `container_type` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `dockerfile_template_data` (`string`): Set the `dockerfile_template_data` field on the resulting object. When `null`, the `dockerfile_template_data` field will be omitted from the resulting object.
+  - `dockerfile_template_uri` (`string`): Set the `dockerfile_template_uri` field on the resulting object. When `null`, the `dockerfile_template_uri` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `parent_image` (`string`): Set the `parent_image` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object.
+  - `working_directory` (`string`): Set the `working_directory` field on the resulting object. When `null`, the `working_directory` field will be omitted from the resulting object.
+  - `component` (`list[obj]`): Set the `component` field on the resulting object. When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.new](#fn-componentnew) constructor.
+  - `instance_configuration` (`list[obj]`): Set the `instance_configuration` field on the resulting object. When `null`, the `instance_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.new](#fn-instance_configurationnew) constructor.
+  - `target_repository` (`list[obj]`): Set the `target_repository` field on the resulting object. When `null`, the `target_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.target_repository.new](#fn-target_repositorynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_container_recipe` resource into the root Terraform configuration.
@@ -434,8 +434,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `component_arn` (`string`): 
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.parameter.new](#fn-componentparameternew) constructor.
+  - `component_arn` (`string`): Set the `component_arn` field on the resulting object.
+  - `parameter` (`list[obj]`): Set the `parameter` field on the resulting object. When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.component.parameter.new](#fn-componentparameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `component` sub block.
@@ -458,8 +458,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `parameter` sub block.
@@ -482,8 +482,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `image` (`string`):  When `null`, the `image` field will be omitted from the resulting object.
-  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.new](#fn-instance_configurationblock_device_mappingnew) constructor.
+  - `image` (`string`): Set the `image` field on the resulting object. When `null`, the `image` field will be omitted from the resulting object.
+  - `block_device_mapping` (`list[obj]`): Set the `block_device_mapping` field on the resulting object. When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.new](#fn-instance_configurationblock_device_mappingnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `instance_configuration` sub block.
@@ -506,10 +506,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.
-  - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.
-  - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
-  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.ebs.new](#fn-instance_configurationinstance_configurationebsnew) constructor.
+  - `device_name` (`string`): Set the `device_name` field on the resulting object. When `null`, the `device_name` field will be omitted from the resulting object.
+  - `no_device` (`bool`): Set the `no_device` field on the resulting object. When `null`, the `no_device` field will be omitted from the resulting object.
+  - `virtual_name` (`string`): Set the `virtual_name` field on the resulting object. When `null`, the `virtual_name` field will be omitted from the resulting object.
+  - `ebs` (`list[obj]`): Set the `ebs` field on the resulting object. When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_container_recipe.instance_configuration.block_device_mapping.ebs.new](#fn-instance_configurationinstance_configurationebsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `block_device_mapping` sub block.
@@ -532,14 +532,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete_on_termination` (`string`):  When `null`, the `delete_on_termination` field will be omitted from the resulting object.
-  - `encrypted` (`string`):  When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `snapshot_id` (`string`):  When `null`, the `snapshot_id` field will be omitted from the resulting object.
-  - `throughput` (`number`):  When `null`, the `throughput` field will be omitted from the resulting object.
-  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `delete_on_termination` (`string`): Set the `delete_on_termination` field on the resulting object. When `null`, the `delete_on_termination` field will be omitted from the resulting object.
+  - `encrypted` (`string`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `snapshot_id` (`string`): Set the `snapshot_id` field on the resulting object. When `null`, the `snapshot_id` field will be omitted from the resulting object.
+  - `throughput` (`number`): Set the `throughput` field on the resulting object. When `null`, the `throughput` field will be omitted from the resulting object.
+  - `volume_size` (`number`): Set the `volume_size` field on the resulting object. When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs` sub block.
@@ -562,8 +562,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `repository_name` (`string`): 
-  - `service` (`string`): 
+  - `repository_name` (`string`): Set the `repository_name` field on the resulting object.
+  - `service` (`string`): Set the `service` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `target_repository` sub block.

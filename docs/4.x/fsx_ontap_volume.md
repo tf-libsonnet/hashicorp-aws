@@ -62,17 +62,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `junction_path` (`string`): 
-  - `name` (`string`): 
-  - `security_style` (`string`):  When `null`, the `security_style` field will be omitted from the resulting object.
-  - `size_in_megabytes` (`number`): 
-  - `storage_efficiency_enabled` (`bool`): 
-  - `storage_virtual_machine_id` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
-  - `tiering_policy` (`list[obj]`):  When `null`, the `tiering_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.tiering_policy.new](#fn-tiering_policynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.timeouts.new](#fn-timeoutsnew) constructor.
+  - `junction_path` (`string`): Set the `junction_path` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `security_style` (`string`): Set the `security_style` field on the resulting resource block. When `null`, the `security_style` field will be omitted from the resulting object.
+  - `size_in_megabytes` (`number`): Set the `size_in_megabytes` field on the resulting resource block.
+  - `storage_efficiency_enabled` (`bool`): Set the `storage_efficiency_enabled` field on the resulting resource block.
+  - `storage_virtual_machine_id` (`string`): Set the `storage_virtual_machine_id` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `volume_type` (`string`): Set the `volume_type` field on the resulting resource block. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `tiering_policy` (`list[obj]`): Set the `tiering_policy` field on the resulting resource block. When `null`, the `tiering_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.tiering_policy.new](#fn-tiering_policynew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,17 +96,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `junction_path` (`string`): 
-  - `name` (`string`): 
-  - `security_style` (`string`):  When `null`, the `security_style` field will be omitted from the resulting object.
-  - `size_in_megabytes` (`number`): 
-  - `storage_efficiency_enabled` (`bool`): 
-  - `storage_virtual_machine_id` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
-  - `tiering_policy` (`list[obj]`):  When `null`, the `tiering_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.tiering_policy.new](#fn-tiering_policynew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.timeouts.new](#fn-timeoutsnew) constructor.
+  - `junction_path` (`string`): Set the `junction_path` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `security_style` (`string`): Set the `security_style` field on the resulting object. When `null`, the `security_style` field will be omitted from the resulting object.
+  - `size_in_megabytes` (`number`): Set the `size_in_megabytes` field on the resulting object.
+  - `storage_efficiency_enabled` (`bool`): Set the `storage_efficiency_enabled` field on the resulting object.
+  - `storage_virtual_machine_id` (`string`): Set the `storage_virtual_machine_id` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `tiering_policy` (`list[obj]`): Set the `tiering_policy` field on the resulting object. When `null`, the `tiering_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.tiering_policy.new](#fn-tiering_policynew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_volume.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_ontap_volume` resource into the root Terraform configuration.
@@ -346,8 +346,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cooling_period` (`number`):  When `null`, the `cooling_period` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `cooling_period` (`number`): Set the `cooling_period` field on the resulting object. When `null`, the `cooling_period` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tiering_policy` sub block.
@@ -370,9 +370,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

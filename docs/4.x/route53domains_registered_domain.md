@@ -73,19 +73,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `admin_privacy` (`bool`):  When `null`, the `admin_privacy` field will be omitted from the resulting object.
-  - `auto_renew` (`bool`):  When `null`, the `auto_renew` field will be omitted from the resulting object.
-  - `domain_name` (`string`): 
-  - `registrant_privacy` (`bool`):  When `null`, the `registrant_privacy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tech_privacy` (`bool`):  When `null`, the `tech_privacy` field will be omitted from the resulting object.
-  - `transfer_lock` (`bool`):  When `null`, the `transfer_lock` field will be omitted from the resulting object.
-  - `admin_contact` (`list[obj]`):  When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-admin_contactnew) constructor.
-  - `name_server` (`list[obj]`):  When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-name_servernew) constructor.
-  - `registrant_contact` (`list[obj]`):  When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-registrant_contactnew) constructor.
-  - `tech_contact` (`list[obj]`):  When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-tech_contactnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-timeoutsnew) constructor.
+  - `admin_privacy` (`bool`): Set the `admin_privacy` field on the resulting resource block. When `null`, the `admin_privacy` field will be omitted from the resulting object.
+  - `auto_renew` (`bool`): Set the `auto_renew` field on the resulting resource block. When `null`, the `auto_renew` field will be omitted from the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
+  - `registrant_privacy` (`bool`): Set the `registrant_privacy` field on the resulting resource block. When `null`, the `registrant_privacy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tech_privacy` (`bool`): Set the `tech_privacy` field on the resulting resource block. When `null`, the `tech_privacy` field will be omitted from the resulting object.
+  - `transfer_lock` (`bool`): Set the `transfer_lock` field on the resulting resource block. When `null`, the `transfer_lock` field will be omitted from the resulting object.
+  - `admin_contact` (`list[obj]`): Set the `admin_contact` field on the resulting resource block. When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-admin_contactnew) constructor.
+  - `name_server` (`list[obj]`): Set the `name_server` field on the resulting resource block. When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-name_servernew) constructor.
+  - `registrant_contact` (`list[obj]`): Set the `registrant_contact` field on the resulting resource block. When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-registrant_contactnew) constructor.
+  - `tech_contact` (`list[obj]`): Set the `tech_contact` field on the resulting resource block. When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-tech_contactnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -109,19 +109,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `admin_privacy` (`bool`):  When `null`, the `admin_privacy` field will be omitted from the resulting object.
-  - `auto_renew` (`bool`):  When `null`, the `auto_renew` field will be omitted from the resulting object.
-  - `domain_name` (`string`): 
-  - `registrant_privacy` (`bool`):  When `null`, the `registrant_privacy` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tech_privacy` (`bool`):  When `null`, the `tech_privacy` field will be omitted from the resulting object.
-  - `transfer_lock` (`bool`):  When `null`, the `transfer_lock` field will be omitted from the resulting object.
-  - `admin_contact` (`list[obj]`):  When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-admin_contactnew) constructor.
-  - `name_server` (`list[obj]`):  When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-name_servernew) constructor.
-  - `registrant_contact` (`list[obj]`):  When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-registrant_contactnew) constructor.
-  - `tech_contact` (`list[obj]`):  When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-tech_contactnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-timeoutsnew) constructor.
+  - `admin_privacy` (`bool`): Set the `admin_privacy` field on the resulting object. When `null`, the `admin_privacy` field will be omitted from the resulting object.
+  - `auto_renew` (`bool`): Set the `auto_renew` field on the resulting object. When `null`, the `auto_renew` field will be omitted from the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `registrant_privacy` (`bool`): Set the `registrant_privacy` field on the resulting object. When `null`, the `registrant_privacy` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tech_privacy` (`bool`): Set the `tech_privacy` field on the resulting object. When `null`, the `tech_privacy` field will be omitted from the resulting object.
+  - `transfer_lock` (`bool`): Set the `transfer_lock` field on the resulting object. When `null`, the `transfer_lock` field will be omitted from the resulting object.
+  - `admin_contact` (`list[obj]`): Set the `admin_contact` field on the resulting object. When `null`, the `admin_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.admin_contact.new](#fn-admin_contactnew) constructor.
+  - `name_server` (`list[obj]`): Set the `name_server` field on the resulting object. When `null`, the `name_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.name_server.new](#fn-name_servernew) constructor.
+  - `registrant_contact` (`list[obj]`): Set the `registrant_contact` field on the resulting object. When `null`, the `registrant_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.registrant_contact.new](#fn-registrant_contactnew) constructor.
+  - `tech_contact` (`list[obj]`): Set the `tech_contact` field on the resulting object. When `null`, the `tech_contact` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.tech_contact.new](#fn-tech_contactnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53domains_registered_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53domains_registered_domain` resource into the root Terraform configuration.
@@ -456,20 +456,20 @@ Terraform sub block.
 
 
 **Args**:
-  - `address_line_1` (`string`):  When `null`, the `address_line_1` field will be omitted from the resulting object.
-  - `address_line_2` (`string`):  When `null`, the `address_line_2` field will be omitted from the resulting object.
-  - `city` (`string`):  When `null`, the `city` field will be omitted from the resulting object.
-  - `contact_type` (`string`):  When `null`, the `contact_type` field will be omitted from the resulting object.
-  - `country_code` (`string`):  When `null`, the `country_code` field will be omitted from the resulting object.
-  - `email` (`string`):  When `null`, the `email` field will be omitted from the resulting object.
-  - `extra_params` (`obj`):  When `null`, the `extra_params` field will be omitted from the resulting object.
-  - `fax` (`string`):  When `null`, the `fax` field will be omitted from the resulting object.
-  - `first_name` (`string`):  When `null`, the `first_name` field will be omitted from the resulting object.
-  - `last_name` (`string`):  When `null`, the `last_name` field will be omitted from the resulting object.
-  - `organization_name` (`string`):  When `null`, the `organization_name` field will be omitted from the resulting object.
-  - `phone_number` (`string`):  When `null`, the `phone_number` field will be omitted from the resulting object.
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `zip_code` (`string`):  When `null`, the `zip_code` field will be omitted from the resulting object.
+  - `address_line_1` (`string`): Set the `address_line_1` field on the resulting object. When `null`, the `address_line_1` field will be omitted from the resulting object.
+  - `address_line_2` (`string`): Set the `address_line_2` field on the resulting object. When `null`, the `address_line_2` field will be omitted from the resulting object.
+  - `city` (`string`): Set the `city` field on the resulting object. When `null`, the `city` field will be omitted from the resulting object.
+  - `contact_type` (`string`): Set the `contact_type` field on the resulting object. When `null`, the `contact_type` field will be omitted from the resulting object.
+  - `country_code` (`string`): Set the `country_code` field on the resulting object. When `null`, the `country_code` field will be omitted from the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting object. When `null`, the `email` field will be omitted from the resulting object.
+  - `extra_params` (`obj`): Set the `extra_params` field on the resulting object. When `null`, the `extra_params` field will be omitted from the resulting object.
+  - `fax` (`string`): Set the `fax` field on the resulting object. When `null`, the `fax` field will be omitted from the resulting object.
+  - `first_name` (`string`): Set the `first_name` field on the resulting object. When `null`, the `first_name` field will be omitted from the resulting object.
+  - `last_name` (`string`): Set the `last_name` field on the resulting object. When `null`, the `last_name` field will be omitted from the resulting object.
+  - `organization_name` (`string`): Set the `organization_name` field on the resulting object. When `null`, the `organization_name` field will be omitted from the resulting object.
+  - `phone_number` (`string`): Set the `phone_number` field on the resulting object. When `null`, the `phone_number` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
+  - `zip_code` (`string`): Set the `zip_code` field on the resulting object. When `null`, the `zip_code` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `admin_contact` sub block.
@@ -492,8 +492,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `glue_ips` (`list`):  When `null`, the `glue_ips` field will be omitted from the resulting object.
-  - `name` (`string`): 
+  - `glue_ips` (`list`): Set the `glue_ips` field on the resulting object. When `null`, the `glue_ips` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `name_server` sub block.
@@ -516,20 +516,20 @@ Terraform sub block.
 
 
 **Args**:
-  - `address_line_1` (`string`):  When `null`, the `address_line_1` field will be omitted from the resulting object.
-  - `address_line_2` (`string`):  When `null`, the `address_line_2` field will be omitted from the resulting object.
-  - `city` (`string`):  When `null`, the `city` field will be omitted from the resulting object.
-  - `contact_type` (`string`):  When `null`, the `contact_type` field will be omitted from the resulting object.
-  - `country_code` (`string`):  When `null`, the `country_code` field will be omitted from the resulting object.
-  - `email` (`string`):  When `null`, the `email` field will be omitted from the resulting object.
-  - `extra_params` (`obj`):  When `null`, the `extra_params` field will be omitted from the resulting object.
-  - `fax` (`string`):  When `null`, the `fax` field will be omitted from the resulting object.
-  - `first_name` (`string`):  When `null`, the `first_name` field will be omitted from the resulting object.
-  - `last_name` (`string`):  When `null`, the `last_name` field will be omitted from the resulting object.
-  - `organization_name` (`string`):  When `null`, the `organization_name` field will be omitted from the resulting object.
-  - `phone_number` (`string`):  When `null`, the `phone_number` field will be omitted from the resulting object.
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `zip_code` (`string`):  When `null`, the `zip_code` field will be omitted from the resulting object.
+  - `address_line_1` (`string`): Set the `address_line_1` field on the resulting object. When `null`, the `address_line_1` field will be omitted from the resulting object.
+  - `address_line_2` (`string`): Set the `address_line_2` field on the resulting object. When `null`, the `address_line_2` field will be omitted from the resulting object.
+  - `city` (`string`): Set the `city` field on the resulting object. When `null`, the `city` field will be omitted from the resulting object.
+  - `contact_type` (`string`): Set the `contact_type` field on the resulting object. When `null`, the `contact_type` field will be omitted from the resulting object.
+  - `country_code` (`string`): Set the `country_code` field on the resulting object. When `null`, the `country_code` field will be omitted from the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting object. When `null`, the `email` field will be omitted from the resulting object.
+  - `extra_params` (`obj`): Set the `extra_params` field on the resulting object. When `null`, the `extra_params` field will be omitted from the resulting object.
+  - `fax` (`string`): Set the `fax` field on the resulting object. When `null`, the `fax` field will be omitted from the resulting object.
+  - `first_name` (`string`): Set the `first_name` field on the resulting object. When `null`, the `first_name` field will be omitted from the resulting object.
+  - `last_name` (`string`): Set the `last_name` field on the resulting object. When `null`, the `last_name` field will be omitted from the resulting object.
+  - `organization_name` (`string`): Set the `organization_name` field on the resulting object. When `null`, the `organization_name` field will be omitted from the resulting object.
+  - `phone_number` (`string`): Set the `phone_number` field on the resulting object. When `null`, the `phone_number` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
+  - `zip_code` (`string`): Set the `zip_code` field on the resulting object. When `null`, the `zip_code` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `registrant_contact` sub block.
@@ -552,20 +552,20 @@ Terraform sub block.
 
 
 **Args**:
-  - `address_line_1` (`string`):  When `null`, the `address_line_1` field will be omitted from the resulting object.
-  - `address_line_2` (`string`):  When `null`, the `address_line_2` field will be omitted from the resulting object.
-  - `city` (`string`):  When `null`, the `city` field will be omitted from the resulting object.
-  - `contact_type` (`string`):  When `null`, the `contact_type` field will be omitted from the resulting object.
-  - `country_code` (`string`):  When `null`, the `country_code` field will be omitted from the resulting object.
-  - `email` (`string`):  When `null`, the `email` field will be omitted from the resulting object.
-  - `extra_params` (`obj`):  When `null`, the `extra_params` field will be omitted from the resulting object.
-  - `fax` (`string`):  When `null`, the `fax` field will be omitted from the resulting object.
-  - `first_name` (`string`):  When `null`, the `first_name` field will be omitted from the resulting object.
-  - `last_name` (`string`):  When `null`, the `last_name` field will be omitted from the resulting object.
-  - `organization_name` (`string`):  When `null`, the `organization_name` field will be omitted from the resulting object.
-  - `phone_number` (`string`):  When `null`, the `phone_number` field will be omitted from the resulting object.
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `zip_code` (`string`):  When `null`, the `zip_code` field will be omitted from the resulting object.
+  - `address_line_1` (`string`): Set the `address_line_1` field on the resulting object. When `null`, the `address_line_1` field will be omitted from the resulting object.
+  - `address_line_2` (`string`): Set the `address_line_2` field on the resulting object. When `null`, the `address_line_2` field will be omitted from the resulting object.
+  - `city` (`string`): Set the `city` field on the resulting object. When `null`, the `city` field will be omitted from the resulting object.
+  - `contact_type` (`string`): Set the `contact_type` field on the resulting object. When `null`, the `contact_type` field will be omitted from the resulting object.
+  - `country_code` (`string`): Set the `country_code` field on the resulting object. When `null`, the `country_code` field will be omitted from the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting object. When `null`, the `email` field will be omitted from the resulting object.
+  - `extra_params` (`obj`): Set the `extra_params` field on the resulting object. When `null`, the `extra_params` field will be omitted from the resulting object.
+  - `fax` (`string`): Set the `fax` field on the resulting object. When `null`, the `fax` field will be omitted from the resulting object.
+  - `first_name` (`string`): Set the `first_name` field on the resulting object. When `null`, the `first_name` field will be omitted from the resulting object.
+  - `last_name` (`string`): Set the `last_name` field on the resulting object. When `null`, the `last_name` field will be omitted from the resulting object.
+  - `organization_name` (`string`): Set the `organization_name` field on the resulting object. When `null`, the `organization_name` field will be omitted from the resulting object.
+  - `phone_number` (`string`): Set the `phone_number` field on the resulting object. When `null`, the `phone_number` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
+  - `zip_code` (`string`): Set the `zip_code` field on the resulting object. When `null`, the `zip_code` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tech_contact` sub block.
@@ -588,8 +588,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

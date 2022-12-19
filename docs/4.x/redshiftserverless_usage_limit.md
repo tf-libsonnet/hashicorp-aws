@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `amount` (`number`): 
-  - `breach_action` (`string`):  When `null`, the `breach_action` field will be omitted from the resulting object.
-  - `period` (`string`):  When `null`, the `period` field will be omitted from the resulting object.
-  - `resource_arn` (`string`): 
-  - `usage_type` (`string`): 
+  - `amount` (`number`): Set the `amount` field on the resulting resource block.
+  - `breach_action` (`string`): Set the `breach_action` field on the resulting resource block. When `null`, the `breach_action` field will be omitted from the resulting object.
+  - `period` (`string`): Set the `period` field on the resulting resource block. When `null`, the `period` field will be omitted from the resulting object.
+  - `resource_arn` (`string`): Set the `resource_arn` field on the resulting resource block.
+  - `usage_type` (`string`): Set the `usage_type` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `amount` (`number`): 
-  - `breach_action` (`string`):  When `null`, the `breach_action` field will be omitted from the resulting object.
-  - `period` (`string`):  When `null`, the `period` field will be omitted from the resulting object.
-  - `resource_arn` (`string`): 
-  - `usage_type` (`string`): 
+  - `amount` (`number`): Set the `amount` field on the resulting object.
+  - `breach_action` (`string`): Set the `breach_action` field on the resulting object. When `null`, the `breach_action` field will be omitted from the resulting object.
+  - `period` (`string`): Set the `period` field on the resulting object. When `null`, the `period` field will be omitted from the resulting object.
+  - `resource_arn` (`string`): Set the `resource_arn` field on the resulting object.
+  - `usage_type` (`string`): Set the `usage_type` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftserverless_usage_limit` resource into the root Terraform configuration.

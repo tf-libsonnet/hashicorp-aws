@@ -58,19 +58,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `apple_platform_bundle_id` (`string`):  When `null`, the `apple_platform_bundle_id` field will be omitted from the resulting object.
-  - `apple_platform_team_id` (`string`):  When `null`, the `apple_platform_team_id` field will be omitted from the resulting object.
-  - `event_delivery_failure_topic_arn` (`string`):  When `null`, the `event_delivery_failure_topic_arn` field will be omitted from the resulting object.
-  - `event_endpoint_created_topic_arn` (`string`):  When `null`, the `event_endpoint_created_topic_arn` field will be omitted from the resulting object.
-  - `event_endpoint_deleted_topic_arn` (`string`):  When `null`, the `event_endpoint_deleted_topic_arn` field will be omitted from the resulting object.
-  - `event_endpoint_updated_topic_arn` (`string`):  When `null`, the `event_endpoint_updated_topic_arn` field will be omitted from the resulting object.
-  - `failure_feedback_role_arn` (`string`):  When `null`, the `failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform` (`string`): 
-  - `platform_credential` (`string`): 
-  - `platform_principal` (`string`):  When `null`, the `platform_principal` field will be omitted from the resulting object.
-  - `success_feedback_role_arn` (`string`):  When `null`, the `success_feedback_role_arn` field will be omitted from the resulting object.
-  - `success_feedback_sample_rate` (`string`):  When `null`, the `success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `apple_platform_bundle_id` (`string`): Set the `apple_platform_bundle_id` field on the resulting resource block. When `null`, the `apple_platform_bundle_id` field will be omitted from the resulting object.
+  - `apple_platform_team_id` (`string`): Set the `apple_platform_team_id` field on the resulting resource block. When `null`, the `apple_platform_team_id` field will be omitted from the resulting object.
+  - `event_delivery_failure_topic_arn` (`string`): Set the `event_delivery_failure_topic_arn` field on the resulting resource block. When `null`, the `event_delivery_failure_topic_arn` field will be omitted from the resulting object.
+  - `event_endpoint_created_topic_arn` (`string`): Set the `event_endpoint_created_topic_arn` field on the resulting resource block. When `null`, the `event_endpoint_created_topic_arn` field will be omitted from the resulting object.
+  - `event_endpoint_deleted_topic_arn` (`string`): Set the `event_endpoint_deleted_topic_arn` field on the resulting resource block. When `null`, the `event_endpoint_deleted_topic_arn` field will be omitted from the resulting object.
+  - `event_endpoint_updated_topic_arn` (`string`): Set the `event_endpoint_updated_topic_arn` field on the resulting resource block. When `null`, the `event_endpoint_updated_topic_arn` field will be omitted from the resulting object.
+  - `failure_feedback_role_arn` (`string`): Set the `failure_feedback_role_arn` field on the resulting resource block. When `null`, the `failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `platform` (`string`): Set the `platform` field on the resulting resource block.
+  - `platform_credential` (`string`): Set the `platform_credential` field on the resulting resource block.
+  - `platform_principal` (`string`): Set the `platform_principal` field on the resulting resource block. When `null`, the `platform_principal` field will be omitted from the resulting object.
+  - `success_feedback_role_arn` (`string`): Set the `success_feedback_role_arn` field on the resulting resource block. When `null`, the `success_feedback_role_arn` field will be omitted from the resulting object.
+  - `success_feedback_sample_rate` (`string`): Set the `success_feedback_sample_rate` field on the resulting resource block. When `null`, the `success_feedback_sample_rate` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,19 +94,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `apple_platform_bundle_id` (`string`):  When `null`, the `apple_platform_bundle_id` field will be omitted from the resulting object.
-  - `apple_platform_team_id` (`string`):  When `null`, the `apple_platform_team_id` field will be omitted from the resulting object.
-  - `event_delivery_failure_topic_arn` (`string`):  When `null`, the `event_delivery_failure_topic_arn` field will be omitted from the resulting object.
-  - `event_endpoint_created_topic_arn` (`string`):  When `null`, the `event_endpoint_created_topic_arn` field will be omitted from the resulting object.
-  - `event_endpoint_deleted_topic_arn` (`string`):  When `null`, the `event_endpoint_deleted_topic_arn` field will be omitted from the resulting object.
-  - `event_endpoint_updated_topic_arn` (`string`):  When `null`, the `event_endpoint_updated_topic_arn` field will be omitted from the resulting object.
-  - `failure_feedback_role_arn` (`string`):  When `null`, the `failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `platform` (`string`): 
-  - `platform_credential` (`string`): 
-  - `platform_principal` (`string`):  When `null`, the `platform_principal` field will be omitted from the resulting object.
-  - `success_feedback_role_arn` (`string`):  When `null`, the `success_feedback_role_arn` field will be omitted from the resulting object.
-  - `success_feedback_sample_rate` (`string`):  When `null`, the `success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `apple_platform_bundle_id` (`string`): Set the `apple_platform_bundle_id` field on the resulting object. When `null`, the `apple_platform_bundle_id` field will be omitted from the resulting object.
+  - `apple_platform_team_id` (`string`): Set the `apple_platform_team_id` field on the resulting object. When `null`, the `apple_platform_team_id` field will be omitted from the resulting object.
+  - `event_delivery_failure_topic_arn` (`string`): Set the `event_delivery_failure_topic_arn` field on the resulting object. When `null`, the `event_delivery_failure_topic_arn` field will be omitted from the resulting object.
+  - `event_endpoint_created_topic_arn` (`string`): Set the `event_endpoint_created_topic_arn` field on the resulting object. When `null`, the `event_endpoint_created_topic_arn` field will be omitted from the resulting object.
+  - `event_endpoint_deleted_topic_arn` (`string`): Set the `event_endpoint_deleted_topic_arn` field on the resulting object. When `null`, the `event_endpoint_deleted_topic_arn` field will be omitted from the resulting object.
+  - `event_endpoint_updated_topic_arn` (`string`): Set the `event_endpoint_updated_topic_arn` field on the resulting object. When `null`, the `event_endpoint_updated_topic_arn` field will be omitted from the resulting object.
+  - `failure_feedback_role_arn` (`string`): Set the `failure_feedback_role_arn` field on the resulting object. When `null`, the `failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `platform` (`string`): Set the `platform` field on the resulting object.
+  - `platform_credential` (`string`): Set the `platform_credential` field on the resulting object.
+  - `platform_principal` (`string`): Set the `platform_principal` field on the resulting object. When `null`, the `platform_principal` field will be omitted from the resulting object.
+  - `success_feedback_role_arn` (`string`): Set the `success_feedback_role_arn` field on the resulting object. When `null`, the `success_feedback_role_arn` field will be omitted from the resulting object.
+  - `success_feedback_sample_rate` (`string`): Set the `success_feedback_sample_rate` field on the resulting object. When `null`, the `success_feedback_sample_rate` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sns_platform_application` resource into the root Terraform configuration.

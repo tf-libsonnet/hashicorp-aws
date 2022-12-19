@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `control_status` (`string`): 
-  - `disabled_reason` (`string`):  When `null`, the `disabled_reason` field will be omitted from the resulting object.
-  - `standards_control_arn` (`string`): 
+  - `control_status` (`string`): Set the `control_status` field on the resulting resource block.
+  - `disabled_reason` (`string`): Set the `disabled_reason` field on the resulting resource block. When `null`, the `disabled_reason` field will be omitted from the resulting object.
+  - `standards_control_arn` (`string`): Set the `standards_control_arn` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `control_status` (`string`): 
-  - `disabled_reason` (`string`):  When `null`, the `disabled_reason` field will be omitted from the resulting object.
-  - `standards_control_arn` (`string`): 
+  - `control_status` (`string`): Set the `control_status` field on the resulting object.
+  - `disabled_reason` (`string`): Set the `disabled_reason` field on the resulting object. When `null`, the `disabled_reason` field will be omitted from the resulting object.
+  - `standards_control_arn` (`string`): Set the `standards_control_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `securityhub_standards_control` resource into the root Terraform configuration.

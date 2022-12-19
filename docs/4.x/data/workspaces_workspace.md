@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `directory_id` (`string`):  When `null`, the `directory_id` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
-  - `workspace_id` (`string`):  When `null`, the `workspace_id` field will be omitted from the resulting object.
+  - `directory_id` (`string`): Set the `directory_id` field on the resulting data source block. When `null`, the `directory_id` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `user_name` (`string`): Set the `user_name` field on the resulting data source block. When `null`, the `user_name` field will be omitted from the resulting object.
+  - `workspace_id` (`string`): Set the `workspace_id` field on the resulting data source block. When `null`, the `workspace_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `directory_id` (`string`):  When `null`, the `directory_id` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
-  - `workspace_id` (`string`):  When `null`, the `workspace_id` field will be omitted from the resulting object.
+  - `directory_id` (`string`): Set the `directory_id` field on the resulting object. When `null`, the `directory_id` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `user_name` (`string`): Set the `user_name` field on the resulting object. When `null`, the `user_name` field will be omitted from the resulting object.
+  - `workspace_id` (`string`): Set the `workspace_id` field on the resulting object. When `null`, the `workspace_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `workspaces_workspace` data source into the root Terraform configuration.

@@ -52,10 +52,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `identifier` (`string`): 
-  - `name` (`string`): 
-  - `user_pool_id` (`string`): 
-  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_resource_server.scope.new](#fn-scopenew) constructor.
+  - `identifier` (`string`): Set the `identifier` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting resource block.
+  - `scope` (`list[obj]`): Set the `scope` field on the resulting resource block. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_resource_server.scope.new](#fn-scopenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,10 +79,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `identifier` (`string`): 
-  - `name` (`string`): 
-  - `user_pool_id` (`string`): 
-  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_resource_server.scope.new](#fn-scopenew) constructor.
+  - `identifier` (`string`): Set the `identifier` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
+  - `scope` (`list[obj]`): Set the `scope` field on the resulting object. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_resource_server.scope.new](#fn-scopenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_resource_server` resource into the root Terraform configuration.
@@ -190,8 +190,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `scope_description` (`string`): 
-  - `scope_name` (`string`): 
+  - `scope_description` (`string`): Set the `scope_description` field on the resulting object.
+  - `scope_name` (`string`): Set the `scope_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scope` sub block.

@@ -124,30 +124,30 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `badge_enabled` (`bool`):  When `null`, the `badge_enabled` field will be omitted from the resulting object.
-  - `build_timeout` (`number`):  When `null`, the `build_timeout` field will be omitted from the resulting object.
-  - `concurrent_build_limit` (`number`):  When `null`, the `concurrent_build_limit` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `encryption_key` (`string`):  When `null`, the `encryption_key` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `project_visibility` (`string`):  When `null`, the `project_visibility` field will be omitted from the resulting object.
-  - `queued_timeout` (`number`):  When `null`, the `queued_timeout` field will be omitted from the resulting object.
-  - `resource_access_role` (`string`):  When `null`, the `resource_access_role` field will be omitted from the resulting object.
-  - `service_role` (`string`): 
-  - `source_version` (`string`):  When `null`, the `source_version` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifacts` (`list[obj]`):  When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-artifactsnew) constructor.
-  - `build_batch_config` (`list[obj]`):  When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-build_batch_confignew) constructor.
-  - `cache` (`list[obj]`):  When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-cachenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-environmentnew) constructor.
-  - `file_system_locations` (`list[obj]`):  When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-file_system_locationsnew) constructor.
-  - `logs_config` (`list[obj]`):  When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-logs_confignew) constructor.
-  - `secondary_artifacts` (`list[obj]`):  When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-secondary_artifactsnew) constructor.
-  - `secondary_source_version` (`list[obj]`):  When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-secondary_source_versionnew) constructor.
-  - `secondary_sources` (`list[obj]`):  When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-secondary_sourcesnew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-sourcenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `badge_enabled` (`bool`): Set the `badge_enabled` field on the resulting resource block. When `null`, the `badge_enabled` field will be omitted from the resulting object.
+  - `build_timeout` (`number`): Set the `build_timeout` field on the resulting resource block. When `null`, the `build_timeout` field will be omitted from the resulting object.
+  - `concurrent_build_limit` (`number`): Set the `concurrent_build_limit` field on the resulting resource block. When `null`, the `concurrent_build_limit` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `encryption_key` (`string`): Set the `encryption_key` field on the resulting resource block. When `null`, the `encryption_key` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `project_visibility` (`string`): Set the `project_visibility` field on the resulting resource block. When `null`, the `project_visibility` field will be omitted from the resulting object.
+  - `queued_timeout` (`number`): Set the `queued_timeout` field on the resulting resource block. When `null`, the `queued_timeout` field will be omitted from the resulting object.
+  - `resource_access_role` (`string`): Set the `resource_access_role` field on the resulting resource block. When `null`, the `resource_access_role` field will be omitted from the resulting object.
+  - `service_role` (`string`): Set the `service_role` field on the resulting resource block.
+  - `source_version` (`string`): Set the `source_version` field on the resulting resource block. When `null`, the `source_version` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `artifacts` (`list[obj]`): Set the `artifacts` field on the resulting resource block. When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-artifactsnew) constructor.
+  - `build_batch_config` (`list[obj]`): Set the `build_batch_config` field on the resulting resource block. When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-build_batch_confignew) constructor.
+  - `cache` (`list[obj]`): Set the `cache` field on the resulting resource block. When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-cachenew) constructor.
+  - `environment` (`list[obj]`): Set the `environment` field on the resulting resource block. When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-environmentnew) constructor.
+  - `file_system_locations` (`list[obj]`): Set the `file_system_locations` field on the resulting resource block. When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-file_system_locationsnew) constructor.
+  - `logs_config` (`list[obj]`): Set the `logs_config` field on the resulting resource block. When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-logs_confignew) constructor.
+  - `secondary_artifacts` (`list[obj]`): Set the `secondary_artifacts` field on the resulting resource block. When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-secondary_artifactsnew) constructor.
+  - `secondary_source_version` (`list[obj]`): Set the `secondary_source_version` field on the resulting resource block. When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-secondary_source_versionnew) constructor.
+  - `secondary_sources` (`list[obj]`): Set the `secondary_sources` field on the resulting resource block. When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-secondary_sourcesnew) constructor.
+  - `source` (`list[obj]`): Set the `source` field on the resulting resource block. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-sourcenew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting resource block. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -171,30 +171,30 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `badge_enabled` (`bool`):  When `null`, the `badge_enabled` field will be omitted from the resulting object.
-  - `build_timeout` (`number`):  When `null`, the `build_timeout` field will be omitted from the resulting object.
-  - `concurrent_build_limit` (`number`):  When `null`, the `concurrent_build_limit` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `encryption_key` (`string`):  When `null`, the `encryption_key` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `project_visibility` (`string`):  When `null`, the `project_visibility` field will be omitted from the resulting object.
-  - `queued_timeout` (`number`):  When `null`, the `queued_timeout` field will be omitted from the resulting object.
-  - `resource_access_role` (`string`):  When `null`, the `resource_access_role` field will be omitted from the resulting object.
-  - `service_role` (`string`): 
-  - `source_version` (`string`):  When `null`, the `source_version` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `artifacts` (`list[obj]`):  When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-artifactsnew) constructor.
-  - `build_batch_config` (`list[obj]`):  When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-build_batch_confignew) constructor.
-  - `cache` (`list[obj]`):  When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-cachenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-environmentnew) constructor.
-  - `file_system_locations` (`list[obj]`):  When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-file_system_locationsnew) constructor.
-  - `logs_config` (`list[obj]`):  When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-logs_confignew) constructor.
-  - `secondary_artifacts` (`list[obj]`):  When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-secondary_artifactsnew) constructor.
-  - `secondary_source_version` (`list[obj]`):  When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-secondary_source_versionnew) constructor.
-  - `secondary_sources` (`list[obj]`):  When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-secondary_sourcesnew) constructor.
-  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-sourcenew) constructor.
-  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `badge_enabled` (`bool`): Set the `badge_enabled` field on the resulting object. When `null`, the `badge_enabled` field will be omitted from the resulting object.
+  - `build_timeout` (`number`): Set the `build_timeout` field on the resulting object. When `null`, the `build_timeout` field will be omitted from the resulting object.
+  - `concurrent_build_limit` (`number`): Set the `concurrent_build_limit` field on the resulting object. When `null`, the `concurrent_build_limit` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `encryption_key` (`string`): Set the `encryption_key` field on the resulting object. When `null`, the `encryption_key` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `project_visibility` (`string`): Set the `project_visibility` field on the resulting object. When `null`, the `project_visibility` field will be omitted from the resulting object.
+  - `queued_timeout` (`number`): Set the `queued_timeout` field on the resulting object. When `null`, the `queued_timeout` field will be omitted from the resulting object.
+  - `resource_access_role` (`string`): Set the `resource_access_role` field on the resulting object. When `null`, the `resource_access_role` field will be omitted from the resulting object.
+  - `service_role` (`string`): Set the `service_role` field on the resulting object.
+  - `source_version` (`string`): Set the `source_version` field on the resulting object. When `null`, the `source_version` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `artifacts` (`list[obj]`): Set the `artifacts` field on the resulting object. When `null`, the `artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.artifacts.new](#fn-artifactsnew) constructor.
+  - `build_batch_config` (`list[obj]`): Set the `build_batch_config` field on the resulting object. When `null`, the `build_batch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.new](#fn-build_batch_confignew) constructor.
+  - `cache` (`list[obj]`): Set the `cache` field on the resulting object. When `null`, the `cache` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.cache.new](#fn-cachenew) constructor.
+  - `environment` (`list[obj]`): Set the `environment` field on the resulting object. When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.new](#fn-environmentnew) constructor.
+  - `file_system_locations` (`list[obj]`): Set the `file_system_locations` field on the resulting object. When `null`, the `file_system_locations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.file_system_locations.new](#fn-file_system_locationsnew) constructor.
+  - `logs_config` (`list[obj]`): Set the `logs_config` field on the resulting object. When `null`, the `logs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.new](#fn-logs_confignew) constructor.
+  - `secondary_artifacts` (`list[obj]`): Set the `secondary_artifacts` field on the resulting object. When `null`, the `secondary_artifacts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_artifacts.new](#fn-secondary_artifactsnew) constructor.
+  - `secondary_source_version` (`list[obj]`): Set the `secondary_source_version` field on the resulting object. When `null`, the `secondary_source_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_source_version.new](#fn-secondary_source_versionnew) constructor.
+  - `secondary_sources` (`list[obj]`): Set the `secondary_sources` field on the resulting object. When `null`, the `secondary_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.new](#fn-secondary_sourcesnew) constructor.
+  - `source` (`list[obj]`): Set the `source` field on the resulting object. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.new](#fn-sourcenew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codebuild_project` resource into the root Terraform configuration.
@@ -832,16 +832,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `artifact_identifier` (`string`):  When `null`, the `artifact_identifier` field will be omitted from the resulting object.
-  - `bucket_owner_access` (`string`):  When `null`, the `bucket_owner_access` field will be omitted from the resulting object.
-  - `encryption_disabled` (`bool`):  When `null`, the `encryption_disabled` field will be omitted from the resulting object.
-  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `namespace_type` (`string`):  When `null`, the `namespace_type` field will be omitted from the resulting object.
-  - `override_artifact_name` (`bool`):  When `null`, the `override_artifact_name` field will be omitted from the resulting object.
-  - `packaging` (`string`):  When `null`, the `packaging` field will be omitted from the resulting object.
-  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `artifact_identifier` (`string`): Set the `artifact_identifier` field on the resulting object. When `null`, the `artifact_identifier` field will be omitted from the resulting object.
+  - `bucket_owner_access` (`string`): Set the `bucket_owner_access` field on the resulting object. When `null`, the `bucket_owner_access` field will be omitted from the resulting object.
+  - `encryption_disabled` (`bool`): Set the `encryption_disabled` field on the resulting object. When `null`, the `encryption_disabled` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `namespace_type` (`string`): Set the `namespace_type` field on the resulting object. When `null`, the `namespace_type` field will be omitted from the resulting object.
+  - `override_artifact_name` (`bool`): Set the `override_artifact_name` field on the resulting object. When `null`, the `override_artifact_name` field will be omitted from the resulting object.
+  - `packaging` (`string`): Set the `packaging` field on the resulting object. When `null`, the `packaging` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `artifacts` sub block.
@@ -864,10 +864,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `combine_artifacts` (`bool`):  When `null`, the `combine_artifacts` field will be omitted from the resulting object.
-  - `service_role` (`string`): 
-  - `timeout_in_mins` (`number`):  When `null`, the `timeout_in_mins` field will be omitted from the resulting object.
-  - `restrictions` (`list[obj]`):  When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.restrictions.new](#fn-build_batch_configrestrictionsnew) constructor.
+  - `combine_artifacts` (`bool`): Set the `combine_artifacts` field on the resulting object. When `null`, the `combine_artifacts` field will be omitted from the resulting object.
+  - `service_role` (`string`): Set the `service_role` field on the resulting object.
+  - `timeout_in_mins` (`number`): Set the `timeout_in_mins` field on the resulting object. When `null`, the `timeout_in_mins` field will be omitted from the resulting object.
+  - `restrictions` (`list[obj]`): Set the `restrictions` field on the resulting object. When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.build_batch_config.restrictions.new](#fn-build_batch_configrestrictionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `build_batch_config` sub block.
@@ -890,8 +890,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `compute_types_allowed` (`list`):  When `null`, the `compute_types_allowed` field will be omitted from the resulting object.
-  - `maximum_builds_allowed` (`number`):  When `null`, the `maximum_builds_allowed` field will be omitted from the resulting object.
+  - `compute_types_allowed` (`list`): Set the `compute_types_allowed` field on the resulting object. When `null`, the `compute_types_allowed` field will be omitted from the resulting object.
+  - `maximum_builds_allowed` (`number`): Set the `maximum_builds_allowed` field on the resulting object. When `null`, the `maximum_builds_allowed` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `restrictions` sub block.
@@ -914,9 +914,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
-  - `modes` (`list`):  When `null`, the `modes` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
+  - `modes` (`list`): Set the `modes` field on the resulting object. When `null`, the `modes` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cache` sub block.
@@ -939,14 +939,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `certificate` (`string`):  When `null`, the `certificate` field will be omitted from the resulting object.
-  - `compute_type` (`string`): 
-  - `image` (`string`): 
-  - `image_pull_credentials_type` (`string`):  When `null`, the `image_pull_credentials_type` field will be omitted from the resulting object.
-  - `privileged_mode` (`bool`):  When `null`, the `privileged_mode` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `environment_variable` (`list[obj]`):  When `null`, the `environment_variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.environment_variable.new](#fn-environmentenvironment_variablenew) constructor.
-  - `registry_credential` (`list[obj]`):  When `null`, the `registry_credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.registry_credential.new](#fn-environmentregistry_credentialnew) constructor.
+  - `certificate` (`string`): Set the `certificate` field on the resulting object. When `null`, the `certificate` field will be omitted from the resulting object.
+  - `compute_type` (`string`): Set the `compute_type` field on the resulting object.
+  - `image` (`string`): Set the `image` field on the resulting object.
+  - `image_pull_credentials_type` (`string`): Set the `image_pull_credentials_type` field on the resulting object. When `null`, the `image_pull_credentials_type` field will be omitted from the resulting object.
+  - `privileged_mode` (`bool`): Set the `privileged_mode` field on the resulting object. When `null`, the `privileged_mode` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `environment_variable` (`list[obj]`): Set the `environment_variable` field on the resulting object. When `null`, the `environment_variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.environment_variable.new](#fn-environmentenvironment_variablenew) constructor.
+  - `registry_credential` (`list[obj]`): Set the `registry_credential` field on the resulting object. When `null`, the `registry_credential` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.environment.registry_credential.new](#fn-environmentregistry_credentialnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `environment` sub block.
@@ -969,9 +969,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `environment_variable` sub block.
@@ -994,8 +994,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `credential` (`string`): 
-  - `credential_provider` (`string`): 
+  - `credential` (`string`): Set the `credential` field on the resulting object.
+  - `credential_provider` (`string`): Set the `credential_provider` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `registry_credential` sub block.
@@ -1018,11 +1018,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `identifier` (`string`):  When `null`, the `identifier` field will be omitted from the resulting object.
-  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
-  - `mount_options` (`string`):  When `null`, the `mount_options` field will be omitted from the resulting object.
-  - `mount_point` (`string`):  When `null`, the `mount_point` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `identifier` (`string`): Set the `identifier` field on the resulting object. When `null`, the `identifier` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
+  - `mount_options` (`string`): Set the `mount_options` field on the resulting object. When `null`, the `mount_options` field will be omitted from the resulting object.
+  - `mount_point` (`string`): Set the `mount_point` field on the resulting object. When `null`, the `mount_point` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `file_system_locations` sub block.
@@ -1045,8 +1045,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs` (`list[obj]`):  When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.cloudwatch_logs.new](#fn-logs_configcloudwatch_logsnew) constructor.
-  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.s3_logs.new](#fn-logs_configs3_logsnew) constructor.
+  - `cloudwatch_logs` (`list[obj]`): Set the `cloudwatch_logs` field on the resulting object. When `null`, the `cloudwatch_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.cloudwatch_logs.new](#fn-logs_configcloudwatch_logsnew) constructor.
+  - `s3_logs` (`list[obj]`): Set the `s3_logs` field on the resulting object. When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.logs_config.s3_logs.new](#fn-logs_configs3_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logs_config` sub block.
@@ -1069,9 +1069,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `group_name` (`string`):  When `null`, the `group_name` field will be omitted from the resulting object.
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `stream_name` (`string`):  When `null`, the `stream_name` field will be omitted from the resulting object.
+  - `group_name` (`string`): Set the `group_name` field on the resulting object. When `null`, the `group_name` field will be omitted from the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+  - `stream_name` (`string`): Set the `stream_name` field on the resulting object. When `null`, the `stream_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_logs` sub block.
@@ -1094,10 +1094,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_owner_access` (`string`):  When `null`, the `bucket_owner_access` field will be omitted from the resulting object.
-  - `encryption_disabled` (`bool`):  When `null`, the `encryption_disabled` field will be omitted from the resulting object.
-  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `bucket_owner_access` (`string`): Set the `bucket_owner_access` field on the resulting object. When `null`, the `bucket_owner_access` field will be omitted from the resulting object.
+  - `encryption_disabled` (`bool`): Set the `encryption_disabled` field on the resulting object. When `null`, the `encryption_disabled` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_logs` sub block.
@@ -1120,16 +1120,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `artifact_identifier` (`string`): 
-  - `bucket_owner_access` (`string`):  When `null`, the `bucket_owner_access` field will be omitted from the resulting object.
-  - `encryption_disabled` (`bool`):  When `null`, the `encryption_disabled` field will be omitted from the resulting object.
-  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `namespace_type` (`string`):  When `null`, the `namespace_type` field will be omitted from the resulting object.
-  - `override_artifact_name` (`bool`):  When `null`, the `override_artifact_name` field will be omitted from the resulting object.
-  - `packaging` (`string`):  When `null`, the `packaging` field will be omitted from the resulting object.
-  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `artifact_identifier` (`string`): Set the `artifact_identifier` field on the resulting object.
+  - `bucket_owner_access` (`string`): Set the `bucket_owner_access` field on the resulting object. When `null`, the `bucket_owner_access` field will be omitted from the resulting object.
+  - `encryption_disabled` (`bool`): Set the `encryption_disabled` field on the resulting object. When `null`, the `encryption_disabled` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `namespace_type` (`string`): Set the `namespace_type` field on the resulting object. When `null`, the `namespace_type` field will be omitted from the resulting object.
+  - `override_artifact_name` (`bool`): Set the `override_artifact_name` field on the resulting object. When `null`, the `override_artifact_name` field will be omitted from the resulting object.
+  - `packaging` (`string`): Set the `packaging` field on the resulting object. When `null`, the `packaging` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `secondary_artifacts` sub block.
@@ -1152,8 +1152,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `source_identifier` (`string`): 
-  - `source_version` (`string`): 
+  - `source_identifier` (`string`): Set the `source_identifier` field on the resulting object.
+  - `source_version` (`string`): Set the `source_version` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `secondary_source_version` sub block.
@@ -1176,16 +1176,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `buildspec` (`string`):  When `null`, the `buildspec` field will be omitted from the resulting object.
-  - `git_clone_depth` (`number`):  When `null`, the `git_clone_depth` field will be omitted from the resulting object.
-  - `insecure_ssl` (`bool`):  When `null`, the `insecure_ssl` field will be omitted from the resulting object.
-  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
-  - `report_build_status` (`bool`):  When `null`, the `report_build_status` field will be omitted from the resulting object.
-  - `source_identifier` (`string`): 
-  - `type` (`string`): 
-  - `auth` (`list[obj]`):  When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.auth.new](#fn-secondary_sourcesauthnew) constructor.
-  - `build_status_config` (`list[obj]`):  When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.build_status_config.new](#fn-secondary_sourcesbuild_status_confignew) constructor.
-  - `git_submodules_config` (`list[obj]`):  When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.git_submodules_config.new](#fn-secondary_sourcesgit_submodules_confignew) constructor.
+  - `buildspec` (`string`): Set the `buildspec` field on the resulting object. When `null`, the `buildspec` field will be omitted from the resulting object.
+  - `git_clone_depth` (`number`): Set the `git_clone_depth` field on the resulting object. When `null`, the `git_clone_depth` field will be omitted from the resulting object.
+  - `insecure_ssl` (`bool`): Set the `insecure_ssl` field on the resulting object. When `null`, the `insecure_ssl` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
+  - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.
+  - `source_identifier` (`string`): Set the `source_identifier` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `auth` (`list[obj]`): Set the `auth` field on the resulting object. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.auth.new](#fn-secondary_sourcesauthnew) constructor.
+  - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.build_status_config.new](#fn-secondary_sourcesbuild_status_confignew) constructor.
+  - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.git_submodules_config.new](#fn-secondary_sourcesgit_submodules_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `secondary_sources` sub block.
@@ -1208,8 +1208,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `resource` (`string`):  When `null`, the `resource` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auth` sub block.
@@ -1232,8 +1232,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `context` (`string`):  When `null`, the `context` field will be omitted from the resulting object.
-  - `target_url` (`string`):  When `null`, the `target_url` field will be omitted from the resulting object.
+  - `context` (`string`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.
+  - `target_url` (`string`): Set the `target_url` field on the resulting object. When `null`, the `target_url` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `build_status_config` sub block.
@@ -1256,7 +1256,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `fetch_submodules` (`bool`): 
+  - `fetch_submodules` (`bool`): Set the `fetch_submodules` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `git_submodules_config` sub block.
@@ -1279,15 +1279,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `buildspec` (`string`):  When `null`, the `buildspec` field will be omitted from the resulting object.
-  - `git_clone_depth` (`number`):  When `null`, the `git_clone_depth` field will be omitted from the resulting object.
-  - `insecure_ssl` (`bool`):  When `null`, the `insecure_ssl` field will be omitted from the resulting object.
-  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
-  - `report_build_status` (`bool`):  When `null`, the `report_build_status` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `auth` (`list[obj]`):  When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.auth.new](#fn-sourceauthnew) constructor.
-  - `build_status_config` (`list[obj]`):  When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.build_status_config.new](#fn-sourcebuild_status_confignew) constructor.
-  - `git_submodules_config` (`list[obj]`):  When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.git_submodules_config.new](#fn-sourcegit_submodules_confignew) constructor.
+  - `buildspec` (`string`): Set the `buildspec` field on the resulting object. When `null`, the `buildspec` field will be omitted from the resulting object.
+  - `git_clone_depth` (`number`): Set the `git_clone_depth` field on the resulting object. When `null`, the `git_clone_depth` field will be omitted from the resulting object.
+  - `insecure_ssl` (`bool`): Set the `insecure_ssl` field on the resulting object. When `null`, the `insecure_ssl` field will be omitted from the resulting object.
+  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
+  - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `auth` (`list[obj]`): Set the `auth` field on the resulting object. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.auth.new](#fn-sourceauthnew) constructor.
+  - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.build_status_config.new](#fn-sourcebuild_status_confignew) constructor.
+  - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.git_submodules_config.new](#fn-sourcegit_submodules_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.
@@ -1310,8 +1310,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `resource` (`string`):  When `null`, the `resource` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auth` sub block.
@@ -1334,8 +1334,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `context` (`string`):  When `null`, the `context` field will be omitted from the resulting object.
-  - `target_url` (`string`):  When `null`, the `target_url` field will be omitted from the resulting object.
+  - `context` (`string`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.
+  - `target_url` (`string`): Set the `target_url` field on the resulting object. When `null`, the `target_url` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `build_status_config` sub block.
@@ -1358,7 +1358,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `fetch_submodules` (`bool`): 
+  - `fetch_submodules` (`bool`): Set the `fetch_submodules` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `git_submodules_config` sub block.
@@ -1381,9 +1381,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): 
-  - `subnets` (`list`): 
-  - `vpc_id` (`string`): 
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
+  - `subnets` (`list`): Set the `subnets` field on the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc_config` sub block.

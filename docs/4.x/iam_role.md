@@ -60,18 +60,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `assume_role_policy` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_detach_policies` (`bool`):  When `null`, the `force_detach_policies` field will be omitted from the resulting object.
-  - `managed_policy_arns` (`list`):  When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
-  - `max_session_duration` (`number`):  When `null`, the `max_session_duration` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
-  - `permissions_boundary` (`string`):  When `null`, the `permissions_boundary` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `inline_policy` (`list[obj]`):  When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-inline_policynew) constructor.
+  - `assume_role_policy` (`string`): Set the `assume_role_policy` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_detach_policies` (`bool`): Set the `force_detach_policies` field on the resulting resource block. When `null`, the `force_detach_policies` field will be omitted from the resulting object.
+  - `managed_policy_arns` (`list`): Set the `managed_policy_arns` field on the resulting resource block. When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
+  - `max_session_duration` (`number`): Set the `max_session_duration` field on the resulting resource block. When `null`, the `max_session_duration` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting resource block. When `null`, the `path` field will be omitted from the resulting object.
+  - `permissions_boundary` (`string`): Set the `permissions_boundary` field on the resulting resource block. When `null`, the `permissions_boundary` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `inline_policy` (`list[obj]`): Set the `inline_policy` field on the resulting resource block. When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-inline_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,18 +95,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `assume_role_policy` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `force_detach_policies` (`bool`):  When `null`, the `force_detach_policies` field will be omitted from the resulting object.
-  - `managed_policy_arns` (`list`):  When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
-  - `max_session_duration` (`number`):  When `null`, the `max_session_duration` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
-  - `permissions_boundary` (`string`):  When `null`, the `permissions_boundary` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `inline_policy` (`list[obj]`):  When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-inline_policynew) constructor.
+  - `assume_role_policy` (`string`): Set the `assume_role_policy` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `force_detach_policies` (`bool`): Set the `force_detach_policies` field on the resulting object. When `null`, the `force_detach_policies` field will be omitted from the resulting object.
+  - `managed_policy_arns` (`list`): Set the `managed_policy_arns` field on the resulting object. When `null`, the `managed_policy_arns` field will be omitted from the resulting object.
+  - `max_session_duration` (`number`): Set the `max_session_duration` field on the resulting object. When `null`, the `max_session_duration` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
+  - `permissions_boundary` (`string`): Set the `permissions_boundary` field on the resulting object. When `null`, the `permissions_boundary` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `inline_policy` (`list[obj]`): Set the `inline_policy` field on the resulting object. When `null`, the `inline_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iam_role.inline_policy.new](#fn-inline_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iam_role` resource into the root Terraform configuration.
@@ -342,8 +342,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `inline_policy` sub block.

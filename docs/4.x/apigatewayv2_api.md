@@ -63,21 +63,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_key_selection_expression` (`string`):  When `null`, the `api_key_selection_expression` field will be omitted from the resulting object.
-  - `body` (`string`):  When `null`, the `body` field will be omitted from the resulting object.
-  - `credentials_arn` (`string`):  When `null`, the `credentials_arn` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `disable_execute_api_endpoint` (`bool`):  When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
-  - `fail_on_warnings` (`bool`):  When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `protocol_type` (`string`): 
-  - `route_key` (`string`):  When `null`, the `route_key` field will be omitted from the resulting object.
-  - `route_selection_expression` (`string`):  When `null`, the `route_selection_expression` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target` (`string`):  When `null`, the `target` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `cors_configuration` (`list[obj]`):  When `null`, the `cors_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_api.cors_configuration.new](#fn-cors_configurationnew) constructor.
+  - `api_key_selection_expression` (`string`): Set the `api_key_selection_expression` field on the resulting resource block. When `null`, the `api_key_selection_expression` field will be omitted from the resulting object.
+  - `body` (`string`): Set the `body` field on the resulting resource block. When `null`, the `body` field will be omitted from the resulting object.
+  - `credentials_arn` (`string`): Set the `credentials_arn` field on the resulting resource block. When `null`, the `credentials_arn` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting resource block. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
+  - `fail_on_warnings` (`bool`): Set the `fail_on_warnings` field on the resulting resource block. When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `protocol_type` (`string`): Set the `protocol_type` field on the resulting resource block.
+  - `route_key` (`string`): Set the `route_key` field on the resulting resource block. When `null`, the `route_key` field will be omitted from the resulting object.
+  - `route_selection_expression` (`string`): Set the `route_selection_expression` field on the resulting resource block. When `null`, the `route_selection_expression` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target` (`string`): Set the `target` field on the resulting resource block. When `null`, the `target` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting resource block. When `null`, the `version` field will be omitted from the resulting object.
+  - `cors_configuration` (`list[obj]`): Set the `cors_configuration` field on the resulting resource block. When `null`, the `cors_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_api.cors_configuration.new](#fn-cors_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,21 +101,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_key_selection_expression` (`string`):  When `null`, the `api_key_selection_expression` field will be omitted from the resulting object.
-  - `body` (`string`):  When `null`, the `body` field will be omitted from the resulting object.
-  - `credentials_arn` (`string`):  When `null`, the `credentials_arn` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `disable_execute_api_endpoint` (`bool`):  When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
-  - `fail_on_warnings` (`bool`):  When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `protocol_type` (`string`): 
-  - `route_key` (`string`):  When `null`, the `route_key` field will be omitted from the resulting object.
-  - `route_selection_expression` (`string`):  When `null`, the `route_selection_expression` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target` (`string`):  When `null`, the `target` field will be omitted from the resulting object.
-  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
-  - `cors_configuration` (`list[obj]`):  When `null`, the `cors_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_api.cors_configuration.new](#fn-cors_configurationnew) constructor.
+  - `api_key_selection_expression` (`string`): Set the `api_key_selection_expression` field on the resulting object. When `null`, the `api_key_selection_expression` field will be omitted from the resulting object.
+  - `body` (`string`): Set the `body` field on the resulting object. When `null`, the `body` field will be omitted from the resulting object.
+  - `credentials_arn` (`string`): Set the `credentials_arn` field on the resulting object. When `null`, the `credentials_arn` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting object. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
+  - `fail_on_warnings` (`bool`): Set the `fail_on_warnings` field on the resulting object. When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `protocol_type` (`string`): Set the `protocol_type` field on the resulting object.
+  - `route_key` (`string`): Set the `route_key` field on the resulting object. When `null`, the `route_key` field will be omitted from the resulting object.
+  - `route_selection_expression` (`string`): Set the `route_selection_expression` field on the resulting object. When `null`, the `route_selection_expression` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target` (`string`): Set the `target` field on the resulting object. When `null`, the `target` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `cors_configuration` (`list[obj]`): Set the `cors_configuration` field on the resulting object. When `null`, the `cors_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_api.cors_configuration.new](#fn-cors_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_api` resource into the root Terraform configuration.
@@ -399,12 +399,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_credentials` (`bool`):  When `null`, the `allow_credentials` field will be omitted from the resulting object.
-  - `allow_headers` (`list`):  When `null`, the `allow_headers` field will be omitted from the resulting object.
-  - `allow_methods` (`list`):  When `null`, the `allow_methods` field will be omitted from the resulting object.
-  - `allow_origins` (`list`):  When `null`, the `allow_origins` field will be omitted from the resulting object.
-  - `expose_headers` (`list`):  When `null`, the `expose_headers` field will be omitted from the resulting object.
-  - `max_age` (`number`):  When `null`, the `max_age` field will be omitted from the resulting object.
+  - `allow_credentials` (`bool`): Set the `allow_credentials` field on the resulting object. When `null`, the `allow_credentials` field will be omitted from the resulting object.
+  - `allow_headers` (`list`): Set the `allow_headers` field on the resulting object. When `null`, the `allow_headers` field will be omitted from the resulting object.
+  - `allow_methods` (`list`): Set the `allow_methods` field on the resulting object. When `null`, the `allow_methods` field will be omitted from the resulting object.
+  - `allow_origins` (`list`): Set the `allow_origins` field on the resulting object. When `null`, the `allow_origins` field will be omitted from the resulting object.
+  - `expose_headers` (`list`): Set the `expose_headers` field on the resulting object. When `null`, the `expose_headers` field will be omitted from the resulting object.
+  - `max_age` (`number`): Set the `max_age` field on the resulting object. When `null`, the `max_age` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cors_configuration` sub block.

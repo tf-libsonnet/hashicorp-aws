@@ -56,14 +56,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `app_name` (`string`): 
-  - `app_type` (`string`): 
-  - `domain_id` (`string`): 
-  - `space_name` (`string`):  When `null`, the `space_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_profile_name` (`string`):  When `null`, the `user_profile_name` field will be omitted from the resulting object.
-  - `resource_spec` (`list[obj]`):  When `null`, the `resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app.resource_spec.new](#fn-resource_specnew) constructor.
+  - `app_name` (`string`): Set the `app_name` field on the resulting resource block.
+  - `app_type` (`string`): Set the `app_type` field on the resulting resource block.
+  - `domain_id` (`string`): Set the `domain_id` field on the resulting resource block.
+  - `space_name` (`string`): Set the `space_name` field on the resulting resource block. When `null`, the `space_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_profile_name` (`string`): Set the `user_profile_name` field on the resulting resource block. When `null`, the `user_profile_name` field will be omitted from the resulting object.
+  - `resource_spec` (`list[obj]`): Set the `resource_spec` field on the resulting resource block. When `null`, the `resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app.resource_spec.new](#fn-resource_specnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,14 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `app_name` (`string`): 
-  - `app_type` (`string`): 
-  - `domain_id` (`string`): 
-  - `space_name` (`string`):  When `null`, the `space_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_profile_name` (`string`):  When `null`, the `user_profile_name` field will be omitted from the resulting object.
-  - `resource_spec` (`list[obj]`):  When `null`, the `resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app.resource_spec.new](#fn-resource_specnew) constructor.
+  - `app_name` (`string`): Set the `app_name` field on the resulting object.
+  - `app_type` (`string`): Set the `app_type` field on the resulting object.
+  - `domain_id` (`string`): Set the `domain_id` field on the resulting object.
+  - `space_name` (`string`): Set the `space_name` field on the resulting object. When `null`, the `space_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_profile_name` (`string`): Set the `user_profile_name` field on the resulting object. When `null`, the `user_profile_name` field will be omitted from the resulting object.
+  - `resource_spec` (`list[obj]`): Set the `resource_spec` field on the resulting object. When `null`, the `resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app.resource_spec.new](#fn-resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_app` resource into the root Terraform configuration.
@@ -266,10 +266,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `lifecycle_config_arn` (`string`):  When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_arn` (`string`):  When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_version_arn` (`string`):  When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `resource_spec` sub block.

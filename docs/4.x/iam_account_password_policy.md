@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `allow_users_to_change_password` (`bool`):  When `null`, the `allow_users_to_change_password` field will be omitted from the resulting object.
-  - `hard_expiry` (`bool`):  When `null`, the `hard_expiry` field will be omitted from the resulting object.
-  - `max_password_age` (`number`):  When `null`, the `max_password_age` field will be omitted from the resulting object.
-  - `minimum_password_length` (`number`):  When `null`, the `minimum_password_length` field will be omitted from the resulting object.
-  - `password_reuse_prevention` (`number`):  When `null`, the `password_reuse_prevention` field will be omitted from the resulting object.
-  - `require_lowercase_characters` (`bool`):  When `null`, the `require_lowercase_characters` field will be omitted from the resulting object.
-  - `require_numbers` (`bool`):  When `null`, the `require_numbers` field will be omitted from the resulting object.
-  - `require_symbols` (`bool`):  When `null`, the `require_symbols` field will be omitted from the resulting object.
-  - `require_uppercase_characters` (`bool`):  When `null`, the `require_uppercase_characters` field will be omitted from the resulting object.
+  - `allow_users_to_change_password` (`bool`): Set the `allow_users_to_change_password` field on the resulting resource block. When `null`, the `allow_users_to_change_password` field will be omitted from the resulting object.
+  - `hard_expiry` (`bool`): Set the `hard_expiry` field on the resulting resource block. When `null`, the `hard_expiry` field will be omitted from the resulting object.
+  - `max_password_age` (`number`): Set the `max_password_age` field on the resulting resource block. When `null`, the `max_password_age` field will be omitted from the resulting object.
+  - `minimum_password_length` (`number`): Set the `minimum_password_length` field on the resulting resource block. When `null`, the `minimum_password_length` field will be omitted from the resulting object.
+  - `password_reuse_prevention` (`number`): Set the `password_reuse_prevention` field on the resulting resource block. When `null`, the `password_reuse_prevention` field will be omitted from the resulting object.
+  - `require_lowercase_characters` (`bool`): Set the `require_lowercase_characters` field on the resulting resource block. When `null`, the `require_lowercase_characters` field will be omitted from the resulting object.
+  - `require_numbers` (`bool`): Set the `require_numbers` field on the resulting resource block. When `null`, the `require_numbers` field will be omitted from the resulting object.
+  - `require_symbols` (`bool`): Set the `require_symbols` field on the resulting resource block. When `null`, the `require_symbols` field will be omitted from the resulting object.
+  - `require_uppercase_characters` (`bool`): Set the `require_uppercase_characters` field on the resulting resource block. When `null`, the `require_uppercase_characters` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `allow_users_to_change_password` (`bool`):  When `null`, the `allow_users_to_change_password` field will be omitted from the resulting object.
-  - `hard_expiry` (`bool`):  When `null`, the `hard_expiry` field will be omitted from the resulting object.
-  - `max_password_age` (`number`):  When `null`, the `max_password_age` field will be omitted from the resulting object.
-  - `minimum_password_length` (`number`):  When `null`, the `minimum_password_length` field will be omitted from the resulting object.
-  - `password_reuse_prevention` (`number`):  When `null`, the `password_reuse_prevention` field will be omitted from the resulting object.
-  - `require_lowercase_characters` (`bool`):  When `null`, the `require_lowercase_characters` field will be omitted from the resulting object.
-  - `require_numbers` (`bool`):  When `null`, the `require_numbers` field will be omitted from the resulting object.
-  - `require_symbols` (`bool`):  When `null`, the `require_symbols` field will be omitted from the resulting object.
-  - `require_uppercase_characters` (`bool`):  When `null`, the `require_uppercase_characters` field will be omitted from the resulting object.
+  - `allow_users_to_change_password` (`bool`): Set the `allow_users_to_change_password` field on the resulting object. When `null`, the `allow_users_to_change_password` field will be omitted from the resulting object.
+  - `hard_expiry` (`bool`): Set the `hard_expiry` field on the resulting object. When `null`, the `hard_expiry` field will be omitted from the resulting object.
+  - `max_password_age` (`number`): Set the `max_password_age` field on the resulting object. When `null`, the `max_password_age` field will be omitted from the resulting object.
+  - `minimum_password_length` (`number`): Set the `minimum_password_length` field on the resulting object. When `null`, the `minimum_password_length` field will be omitted from the resulting object.
+  - `password_reuse_prevention` (`number`): Set the `password_reuse_prevention` field on the resulting object. When `null`, the `password_reuse_prevention` field will be omitted from the resulting object.
+  - `require_lowercase_characters` (`bool`): Set the `require_lowercase_characters` field on the resulting object. When `null`, the `require_lowercase_characters` field will be omitted from the resulting object.
+  - `require_numbers` (`bool`): Set the `require_numbers` field on the resulting object. When `null`, the `require_numbers` field will be omitted from the resulting object.
+  - `require_symbols` (`bool`): Set the `require_symbols` field on the resulting object. When `null`, the `require_symbols` field will be omitted from the resulting object.
+  - `require_uppercase_characters` (`bool`): Set the `require_uppercase_characters` field on the resulting object. When `null`, the `require_uppercase_characters` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iam_account_password_policy` resource into the root Terraform configuration.

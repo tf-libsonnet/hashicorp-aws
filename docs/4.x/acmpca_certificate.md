@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `certificate_authority_arn` (`string`): 
-  - `certificate_signing_request` (`string`): 
-  - `signing_algorithm` (`string`): 
-  - `template_arn` (`string`):  When `null`, the `template_arn` field will be omitted from the resulting object.
-  - `validity` (`list[obj]`):  When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-validitynew) constructor.
+  - `certificate_authority_arn` (`string`): Set the `certificate_authority_arn` field on the resulting resource block.
+  - `certificate_signing_request` (`string`): Set the `certificate_signing_request` field on the resulting resource block.
+  - `signing_algorithm` (`string`): Set the `signing_algorithm` field on the resulting resource block.
+  - `template_arn` (`string`): Set the `template_arn` field on the resulting resource block. When `null`, the `template_arn` field will be omitted from the resulting object.
+  - `validity` (`list[obj]`): Set the `validity` field on the resulting resource block. When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-validitynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `certificate_authority_arn` (`string`): 
-  - `certificate_signing_request` (`string`): 
-  - `signing_algorithm` (`string`): 
-  - `template_arn` (`string`):  When `null`, the `template_arn` field will be omitted from the resulting object.
-  - `validity` (`list[obj]`):  When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-validitynew) constructor.
+  - `certificate_authority_arn` (`string`): Set the `certificate_authority_arn` field on the resulting object.
+  - `certificate_signing_request` (`string`): Set the `certificate_signing_request` field on the resulting object.
+  - `signing_algorithm` (`string`): Set the `signing_algorithm` field on the resulting object.
+  - `template_arn` (`string`): Set the `template_arn` field on the resulting object. When `null`, the `template_arn` field will be omitted from the resulting object.
+  - `validity` (`list[obj]`): Set the `validity` field on the resulting object. When `null`, the `validity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate.validity.new](#fn-validitynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `acmpca_certificate` resource into the root Terraform configuration.
@@ -209,8 +209,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): 
-  - `value` (`string`): 
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `validity` sub block.

@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auth_type` (`string`): 
-  - `server_type` (`string`): 
-  - `token` (`string`): 
-  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
+  - `auth_type` (`string`): Set the `auth_type` field on the resulting resource block.
+  - `server_type` (`string`): Set the `server_type` field on the resulting resource block.
+  - `token` (`string`): Set the `token` field on the resulting resource block.
+  - `user_name` (`string`): Set the `user_name` field on the resulting resource block. When `null`, the `user_name` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auth_type` (`string`): 
-  - `server_type` (`string`): 
-  - `token` (`string`): 
-  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
+  - `auth_type` (`string`): Set the `auth_type` field on the resulting object.
+  - `server_type` (`string`): Set the `server_type` field on the resulting object.
+  - `token` (`string`): Set the `token` field on the resulting object.
+  - `user_name` (`string`): Set the `user_name` field on the resulting object. When `null`, the `user_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codebuild_source_credential` resource into the root Terraform configuration.

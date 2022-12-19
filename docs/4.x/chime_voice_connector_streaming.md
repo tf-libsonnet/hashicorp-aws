@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `data_retention` (`number`): 
-  - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
-  - `streaming_notification_targets` (`list`):  When `null`, the `streaming_notification_targets` field will be omitted from the resulting object.
-  - `voice_connector_id` (`string`): 
+  - `data_retention` (`number`): Set the `data_retention` field on the resulting resource block.
+  - `disabled` (`bool`): Set the `disabled` field on the resulting resource block. When `null`, the `disabled` field will be omitted from the resulting object.
+  - `streaming_notification_targets` (`list`): Set the `streaming_notification_targets` field on the resulting resource block. When `null`, the `streaming_notification_targets` field will be omitted from the resulting object.
+  - `voice_connector_id` (`string`): Set the `voice_connector_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `data_retention` (`number`): 
-  - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
-  - `streaming_notification_targets` (`list`):  When `null`, the `streaming_notification_targets` field will be omitted from the resulting object.
-  - `voice_connector_id` (`string`): 
+  - `data_retention` (`number`): Set the `data_retention` field on the resulting object.
+  - `disabled` (`bool`): Set the `disabled` field on the resulting object. When `null`, the `disabled` field will be omitted from the resulting object.
+  - `streaming_notification_targets` (`list`): Set the `streaming_notification_targets` field on the resulting object. When `null`, the `streaming_notification_targets` field will be omitted from the resulting object.
+  - `voice_connector_id` (`string`): Set the `voice_connector_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `chime_voice_connector_streaming` resource into the root Terraform configuration.

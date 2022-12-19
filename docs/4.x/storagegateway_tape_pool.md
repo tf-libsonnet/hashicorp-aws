@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `pool_name` (`string`): 
-  - `retention_lock_time_in_days` (`number`):  When `null`, the `retention_lock_time_in_days` field will be omitted from the resulting object.
-  - `retention_lock_type` (`string`):  When `null`, the `retention_lock_type` field will be omitted from the resulting object.
-  - `storage_class` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `pool_name` (`string`): Set the `pool_name` field on the resulting resource block.
+  - `retention_lock_time_in_days` (`number`): Set the `retention_lock_time_in_days` field on the resulting resource block. When `null`, the `retention_lock_time_in_days` field will be omitted from the resulting object.
+  - `retention_lock_type` (`string`): Set the `retention_lock_type` field on the resulting resource block. When `null`, the `retention_lock_type` field will be omitted from the resulting object.
+  - `storage_class` (`string`): Set the `storage_class` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `pool_name` (`string`): 
-  - `retention_lock_time_in_days` (`number`):  When `null`, the `retention_lock_time_in_days` field will be omitted from the resulting object.
-  - `retention_lock_type` (`string`):  When `null`, the `retention_lock_type` field will be omitted from the resulting object.
-  - `storage_class` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `pool_name` (`string`): Set the `pool_name` field on the resulting object.
+  - `retention_lock_time_in_days` (`number`): Set the `retention_lock_time_in_days` field on the resulting object. When `null`, the `retention_lock_time_in_days` field will be omitted from the resulting object.
+  - `retention_lock_type` (`string`): Set the `retention_lock_type` field on the resulting object. When `null`, the `retention_lock_type` field will be omitted from the resulting object.
+  - `storage_class` (`string`): Set the `storage_class` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_tape_pool` resource into the root Terraform configuration.

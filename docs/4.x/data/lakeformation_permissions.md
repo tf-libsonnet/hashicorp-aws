@@ -74,15 +74,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `catalog_resource` (`bool`):  When `null`, the `catalog_resource` field will be omitted from the resulting object.
-  - `principal` (`string`): 
-  - `data_location` (`list[obj]`):  When `null`, the `data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.data_location.new](#fn-data_locationnew) constructor.
-  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.database.new](#fn-databasenew) constructor.
-  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag.new](#fn-lf_tagnew) constructor.
-  - `lf_tag_policy` (`list[obj]`):  When `null`, the `lf_tag_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag_policy.new](#fn-lf_tag_policynew) constructor.
-  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table.new](#fn-tablenew) constructor.
-  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table_with_columns.new](#fn-table_with_columnsnew) constructor.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting data source block. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `catalog_resource` (`bool`): Set the `catalog_resource` field on the resulting data source block. When `null`, the `catalog_resource` field will be omitted from the resulting object.
+  - `principal` (`string`): Set the `principal` field on the resulting data source block.
+  - `data_location` (`list[obj]`): Set the `data_location` field on the resulting data source block. When `null`, the `data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.data_location.new](#fn-data_locationnew) constructor.
+  - `database` (`list[obj]`): Set the `database` field on the resulting data source block. When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.database.new](#fn-databasenew) constructor.
+  - `lf_tag` (`list[obj]`): Set the `lf_tag` field on the resulting data source block. When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag.new](#fn-lf_tagnew) constructor.
+  - `lf_tag_policy` (`list[obj]`): Set the `lf_tag_policy` field on the resulting data source block. When `null`, the `lf_tag_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag_policy.new](#fn-lf_tag_policynew) constructor.
+  - `table` (`list[obj]`): Set the `table` field on the resulting data source block. When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table.new](#fn-tablenew) constructor.
+  - `table_with_columns` (`list[obj]`): Set the `table_with_columns` field on the resulting data source block. When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table_with_columns.new](#fn-table_with_columnsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -106,15 +106,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `catalog_resource` (`bool`):  When `null`, the `catalog_resource` field will be omitted from the resulting object.
-  - `principal` (`string`): 
-  - `data_location` (`list[obj]`):  When `null`, the `data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.data_location.new](#fn-data_locationnew) constructor.
-  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.database.new](#fn-databasenew) constructor.
-  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag.new](#fn-lf_tagnew) constructor.
-  - `lf_tag_policy` (`list[obj]`):  When `null`, the `lf_tag_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag_policy.new](#fn-lf_tag_policynew) constructor.
-  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table.new](#fn-tablenew) constructor.
-  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table_with_columns.new](#fn-table_with_columnsnew) constructor.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `catalog_resource` (`bool`): Set the `catalog_resource` field on the resulting object. When `null`, the `catalog_resource` field will be omitted from the resulting object.
+  - `principal` (`string`): Set the `principal` field on the resulting object.
+  - `data_location` (`list[obj]`): Set the `data_location` field on the resulting object. When `null`, the `data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.data_location.new](#fn-data_locationnew) constructor.
+  - `database` (`list[obj]`): Set the `database` field on the resulting object. When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.database.new](#fn-databasenew) constructor.
+  - `lf_tag` (`list[obj]`): Set the `lf_tag` field on the resulting object. When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag.new](#fn-lf_tagnew) constructor.
+  - `lf_tag_policy` (`list[obj]`): Set the `lf_tag_policy` field on the resulting object. When `null`, the `lf_tag_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.lf_tag_policy.new](#fn-lf_tag_policynew) constructor.
+  - `table` (`list[obj]`): Set the `table` field on the resulting object. When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table.new](#fn-tablenew) constructor.
+  - `table_with_columns` (`list[obj]`): Set the `table_with_columns` field on the resulting object. When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lakeformation_permissions.table_with_columns.new](#fn-table_with_columnsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `lakeformation_permissions` data source into the root Terraform configuration.
@@ -407,8 +407,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `arn` (`string`): 
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `arn` (`string`): Set the `arn` field on the resulting object.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `data_location` sub block.
@@ -431,8 +431,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `name` (`string`): 
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `database` sub block.
@@ -455,9 +455,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `key` (`string`): 
-  - `values` (`list`): 
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lf_tag` sub block.
@@ -480,9 +480,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `resource_type` (`string`): 
-  - `expression` (`list[obj]`):  When `null`, the `expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_permissions.lf_tag_policy.expression.new](#fn-lf_tag_policyexpressionnew) constructor.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `resource_type` (`string`): Set the `resource_type` field on the resulting object.
+  - `expression` (`list[obj]`): Set the `expression` field on the resulting object. When `null`, the `expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_permissions.lf_tag_policy.expression.new](#fn-lf_tag_policyexpressionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `lf_tag_policy` sub block.
@@ -505,8 +505,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `values` (`list`): 
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `expression` sub block.
@@ -529,10 +529,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `wildcard` (`bool`):  When `null`, the `wildcard` field will be omitted from the resulting object.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `wildcard` (`bool`): Set the `wildcard` field on the resulting object. When `null`, the `wildcard` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `table` sub block.
@@ -555,12 +555,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `column_names` (`list`):  When `null`, the `column_names` field will be omitted from the resulting object.
-  - `database_name` (`string`): 
-  - `excluded_column_names` (`list`):  When `null`, the `excluded_column_names` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `wildcard` (`bool`):  When `null`, the `wildcard` field will be omitted from the resulting object.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `column_names` (`list`): Set the `column_names` field on the resulting object. When `null`, the `column_names` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `excluded_column_names` (`list`): Set the `excluded_column_names` field on the resulting object. When `null`, the `excluded_column_names` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `wildcard` (`bool`): Set the `wildcard` field on the resulting object. When `null`, the `wildcard` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `table_with_columns` sub block.

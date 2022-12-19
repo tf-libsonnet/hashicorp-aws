@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `compatible_architectures` (`list`):  When `null`, the `compatible_architectures` field will be omitted from the resulting object.
-  - `compatible_runtimes` (`list`):  When `null`, the `compatible_runtimes` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `filename` (`string`):  When `null`, the `filename` field will be omitted from the resulting object.
-  - `layer_name` (`string`): 
-  - `license_info` (`string`):  When `null`, the `license_info` field will be omitted from the resulting object.
-  - `s3_bucket` (`string`):  When `null`, the `s3_bucket` field will be omitted from the resulting object.
-  - `s3_key` (`string`):  When `null`, the `s3_key` field will be omitted from the resulting object.
-  - `s3_object_version` (`string`):  When `null`, the `s3_object_version` field will be omitted from the resulting object.
-  - `skip_destroy` (`bool`):  When `null`, the `skip_destroy` field will be omitted from the resulting object.
-  - `source_code_hash` (`string`):  When `null`, the `source_code_hash` field will be omitted from the resulting object.
+  - `compatible_architectures` (`list`): Set the `compatible_architectures` field on the resulting resource block. When `null`, the `compatible_architectures` field will be omitted from the resulting object.
+  - `compatible_runtimes` (`list`): Set the `compatible_runtimes` field on the resulting resource block. When `null`, the `compatible_runtimes` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `filename` (`string`): Set the `filename` field on the resulting resource block. When `null`, the `filename` field will be omitted from the resulting object.
+  - `layer_name` (`string`): Set the `layer_name` field on the resulting resource block.
+  - `license_info` (`string`): Set the `license_info` field on the resulting resource block. When `null`, the `license_info` field will be omitted from the resulting object.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting resource block. When `null`, the `s3_bucket` field will be omitted from the resulting object.
+  - `s3_key` (`string`): Set the `s3_key` field on the resulting resource block. When `null`, the `s3_key` field will be omitted from the resulting object.
+  - `s3_object_version` (`string`): Set the `s3_object_version` field on the resulting resource block. When `null`, the `s3_object_version` field will be omitted from the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting resource block. When `null`, the `skip_destroy` field will be omitted from the resulting object.
+  - `source_code_hash` (`string`): Set the `source_code_hash` field on the resulting resource block. When `null`, the `source_code_hash` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `compatible_architectures` (`list`):  When `null`, the `compatible_architectures` field will be omitted from the resulting object.
-  - `compatible_runtimes` (`list`):  When `null`, the `compatible_runtimes` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `filename` (`string`):  When `null`, the `filename` field will be omitted from the resulting object.
-  - `layer_name` (`string`): 
-  - `license_info` (`string`):  When `null`, the `license_info` field will be omitted from the resulting object.
-  - `s3_bucket` (`string`):  When `null`, the `s3_bucket` field will be omitted from the resulting object.
-  - `s3_key` (`string`):  When `null`, the `s3_key` field will be omitted from the resulting object.
-  - `s3_object_version` (`string`):  When `null`, the `s3_object_version` field will be omitted from the resulting object.
-  - `skip_destroy` (`bool`):  When `null`, the `skip_destroy` field will be omitted from the resulting object.
-  - `source_code_hash` (`string`):  When `null`, the `source_code_hash` field will be omitted from the resulting object.
+  - `compatible_architectures` (`list`): Set the `compatible_architectures` field on the resulting object. When `null`, the `compatible_architectures` field will be omitted from the resulting object.
+  - `compatible_runtimes` (`list`): Set the `compatible_runtimes` field on the resulting object. When `null`, the `compatible_runtimes` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `filename` (`string`): Set the `filename` field on the resulting object. When `null`, the `filename` field will be omitted from the resulting object.
+  - `layer_name` (`string`): Set the `layer_name` field on the resulting object.
+  - `license_info` (`string`): Set the `license_info` field on the resulting object. When `null`, the `license_info` field will be omitted from the resulting object.
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting object. When `null`, the `s3_bucket` field will be omitted from the resulting object.
+  - `s3_key` (`string`): Set the `s3_key` field on the resulting object. When `null`, the `s3_key` field will be omitted from the resulting object.
+  - `s3_object_version` (`string`): Set the `s3_object_version` field on the resulting object. When `null`, the `s3_object_version` field will be omitted from the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting object. When `null`, the `skip_destroy` field will be omitted from the resulting object.
+  - `source_code_hash` (`string`): Set the `source_code_hash` field on the resulting object. When `null`, the `source_code_hash` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_layer_version` resource into the root Terraform configuration.

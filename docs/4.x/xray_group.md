@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `filter_expression` (`string`): 
-  - `group_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `insights_configuration` (`list[obj]`):  When `null`, the `insights_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.xray_group.insights_configuration.new](#fn-insights_configurationnew) constructor.
+  - `filter_expression` (`string`): Set the `filter_expression` field on the resulting resource block.
+  - `group_name` (`string`): Set the `group_name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `insights_configuration` (`list[obj]`): Set the `insights_configuration` field on the resulting resource block. When `null`, the `insights_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.xray_group.insights_configuration.new](#fn-insights_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `filter_expression` (`string`): 
-  - `group_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `insights_configuration` (`list[obj]`):  When `null`, the `insights_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.xray_group.insights_configuration.new](#fn-insights_configurationnew) constructor.
+  - `filter_expression` (`string`): Set the `filter_expression` field on the resulting object.
+  - `group_name` (`string`): Set the `group_name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `insights_configuration` (`list[obj]`): Set the `insights_configuration` field on the resulting object. When `null`, the `insights_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.xray_group.insights_configuration.new](#fn-insights_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `xray_group` resource into the root Terraform configuration.
@@ -209,8 +209,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `insights_enabled` (`bool`): 
-  - `notifications_enabled` (`bool`):  When `null`, the `notifications_enabled` field will be omitted from the resulting object.
+  - `insights_enabled` (`bool`): Set the `insights_enabled` field on the resulting object.
+  - `notifications_enabled` (`bool`): Set the `notifications_enabled` field on the resulting object. When `null`, the `notifications_enabled` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `insights_configuration` sub block.

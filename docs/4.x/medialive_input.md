@@ -75,18 +75,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `input_security_groups` (`list`):  When `null`, the `input_security_groups` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `destinations` (`list[obj]`):  When `null`, the `destinations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.destinations.new](#fn-destinationsnew) constructor.
-  - `input_devices` (`list[obj]`):  When `null`, the `input_devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.input_devices.new](#fn-input_devicesnew) constructor.
-  - `media_connect_flows` (`list[obj]`):  When `null`, the `media_connect_flows` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.media_connect_flows.new](#fn-media_connect_flowsnew) constructor.
-  - `sources` (`list[obj]`):  When `null`, the `sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.sources.new](#fn-sourcesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc` (`list[obj]`):  When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.vpc.new](#fn-vpcnew) constructor.
+  - `input_security_groups` (`list`): Set the `input_security_groups` field on the resulting resource block. When `null`, the `input_security_groups` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting resource block.
+  - `destinations` (`list[obj]`): Set the `destinations` field on the resulting resource block. When `null`, the `destinations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.destinations.new](#fn-destinationsnew) constructor.
+  - `input_devices` (`list[obj]`): Set the `input_devices` field on the resulting resource block. When `null`, the `input_devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.input_devices.new](#fn-input_devicesnew) constructor.
+  - `media_connect_flows` (`list[obj]`): Set the `media_connect_flows` field on the resulting resource block. When `null`, the `media_connect_flows` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.media_connect_flows.new](#fn-media_connect_flowsnew) constructor.
+  - `sources` (`list[obj]`): Set the `sources` field on the resulting resource block. When `null`, the `sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.sources.new](#fn-sourcesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc` (`list[obj]`): Set the `vpc` field on the resulting resource block. When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.vpc.new](#fn-vpcnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -110,18 +110,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `input_security_groups` (`list`):  When `null`, the `input_security_groups` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `destinations` (`list[obj]`):  When `null`, the `destinations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.destinations.new](#fn-destinationsnew) constructor.
-  - `input_devices` (`list[obj]`):  When `null`, the `input_devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.input_devices.new](#fn-input_devicesnew) constructor.
-  - `media_connect_flows` (`list[obj]`):  When `null`, the `media_connect_flows` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.media_connect_flows.new](#fn-media_connect_flowsnew) constructor.
-  - `sources` (`list[obj]`):  When `null`, the `sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.sources.new](#fn-sourcesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc` (`list[obj]`):  When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.vpc.new](#fn-vpcnew) constructor.
+  - `input_security_groups` (`list`): Set the `input_security_groups` field on the resulting object. When `null`, the `input_security_groups` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `destinations` (`list[obj]`): Set the `destinations` field on the resulting object. When `null`, the `destinations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.destinations.new](#fn-destinationsnew) constructor.
+  - `input_devices` (`list[obj]`): Set the `input_devices` field on the resulting object. When `null`, the `input_devices` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.input_devices.new](#fn-input_devicesnew) constructor.
+  - `media_connect_flows` (`list[obj]`): Set the `media_connect_flows` field on the resulting object. When `null`, the `media_connect_flows` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.media_connect_flows.new](#fn-media_connect_flowsnew) constructor.
+  - `sources` (`list[obj]`): Set the `sources` field on the resulting object. When `null`, the `sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.sources.new](#fn-sourcesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc` (`list[obj]`): Set the `vpc` field on the resulting object. When `null`, the `vpc` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_input.vpc.new](#fn-vpcnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `medialive_input` resource into the root Terraform configuration.
@@ -461,7 +461,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `stream_name` (`string`): 
+  - `stream_name` (`string`): Set the `stream_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `destinations` sub block.
@@ -504,7 +504,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `flow_arn` (`string`): 
+  - `flow_arn` (`string`): Set the `flow_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `media_connect_flows` sub block.
@@ -527,9 +527,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `password_param` (`string`): 
-  - `url` (`string`): 
-  - `username` (`string`): 
+  - `password_param` (`string`): Set the `password_param` field on the resulting object.
+  - `url` (`string`): Set the `url` field on the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sources` sub block.
@@ -552,9 +552,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -577,8 +577,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): 
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc` sub block.

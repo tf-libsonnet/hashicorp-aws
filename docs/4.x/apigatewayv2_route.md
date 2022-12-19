@@ -60,18 +60,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): 
-  - `api_key_required` (`bool`):  When `null`, the `api_key_required` field will be omitted from the resulting object.
-  - `authorization_scopes` (`list`):  When `null`, the `authorization_scopes` field will be omitted from the resulting object.
-  - `authorization_type` (`string`):  When `null`, the `authorization_type` field will be omitted from the resulting object.
-  - `authorizer_id` (`string`):  When `null`, the `authorizer_id` field will be omitted from the resulting object.
-  - `model_selection_expression` (`string`):  When `null`, the `model_selection_expression` field will be omitted from the resulting object.
-  - `operation_name` (`string`):  When `null`, the `operation_name` field will be omitted from the resulting object.
-  - `request_models` (`obj`):  When `null`, the `request_models` field will be omitted from the resulting object.
-  - `route_key` (`string`): 
-  - `route_response_selection_expression` (`string`):  When `null`, the `route_response_selection_expression` field will be omitted from the resulting object.
-  - `target` (`string`):  When `null`, the `target` field will be omitted from the resulting object.
-  - `request_parameter` (`list[obj]`):  When `null`, the `request_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_route.request_parameter.new](#fn-request_parameternew) constructor.
+  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
+  - `api_key_required` (`bool`): Set the `api_key_required` field on the resulting resource block. When `null`, the `api_key_required` field will be omitted from the resulting object.
+  - `authorization_scopes` (`list`): Set the `authorization_scopes` field on the resulting resource block. When `null`, the `authorization_scopes` field will be omitted from the resulting object.
+  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting resource block. When `null`, the `authorization_type` field will be omitted from the resulting object.
+  - `authorizer_id` (`string`): Set the `authorizer_id` field on the resulting resource block. When `null`, the `authorizer_id` field will be omitted from the resulting object.
+  - `model_selection_expression` (`string`): Set the `model_selection_expression` field on the resulting resource block. When `null`, the `model_selection_expression` field will be omitted from the resulting object.
+  - `operation_name` (`string`): Set the `operation_name` field on the resulting resource block. When `null`, the `operation_name` field will be omitted from the resulting object.
+  - `request_models` (`obj`): Set the `request_models` field on the resulting resource block. When `null`, the `request_models` field will be omitted from the resulting object.
+  - `route_key` (`string`): Set the `route_key` field on the resulting resource block.
+  - `route_response_selection_expression` (`string`): Set the `route_response_selection_expression` field on the resulting resource block. When `null`, the `route_response_selection_expression` field will be omitted from the resulting object.
+  - `target` (`string`): Set the `target` field on the resulting resource block. When `null`, the `target` field will be omitted from the resulting object.
+  - `request_parameter` (`list[obj]`): Set the `request_parameter` field on the resulting resource block. When `null`, the `request_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_route.request_parameter.new](#fn-request_parameternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,18 +95,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): 
-  - `api_key_required` (`bool`):  When `null`, the `api_key_required` field will be omitted from the resulting object.
-  - `authorization_scopes` (`list`):  When `null`, the `authorization_scopes` field will be omitted from the resulting object.
-  - `authorization_type` (`string`):  When `null`, the `authorization_type` field will be omitted from the resulting object.
-  - `authorizer_id` (`string`):  When `null`, the `authorizer_id` field will be omitted from the resulting object.
-  - `model_selection_expression` (`string`):  When `null`, the `model_selection_expression` field will be omitted from the resulting object.
-  - `operation_name` (`string`):  When `null`, the `operation_name` field will be omitted from the resulting object.
-  - `request_models` (`obj`):  When `null`, the `request_models` field will be omitted from the resulting object.
-  - `route_key` (`string`): 
-  - `route_response_selection_expression` (`string`):  When `null`, the `route_response_selection_expression` field will be omitted from the resulting object.
-  - `target` (`string`):  When `null`, the `target` field will be omitted from the resulting object.
-  - `request_parameter` (`list[obj]`):  When `null`, the `request_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_route.request_parameter.new](#fn-request_parameternew) constructor.
+  - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `api_key_required` (`bool`): Set the `api_key_required` field on the resulting object. When `null`, the `api_key_required` field will be omitted from the resulting object.
+  - `authorization_scopes` (`list`): Set the `authorization_scopes` field on the resulting object. When `null`, the `authorization_scopes` field will be omitted from the resulting object.
+  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting object. When `null`, the `authorization_type` field will be omitted from the resulting object.
+  - `authorizer_id` (`string`): Set the `authorizer_id` field on the resulting object. When `null`, the `authorizer_id` field will be omitted from the resulting object.
+  - `model_selection_expression` (`string`): Set the `model_selection_expression` field on the resulting object. When `null`, the `model_selection_expression` field will be omitted from the resulting object.
+  - `operation_name` (`string`): Set the `operation_name` field on the resulting object. When `null`, the `operation_name` field will be omitted from the resulting object.
+  - `request_models` (`obj`): Set the `request_models` field on the resulting object. When `null`, the `request_models` field will be omitted from the resulting object.
+  - `route_key` (`string`): Set the `route_key` field on the resulting object.
+  - `route_response_selection_expression` (`string`): Set the `route_response_selection_expression` field on the resulting object. When `null`, the `route_response_selection_expression` field will be omitted from the resulting object.
+  - `target` (`string`): Set the `target` field on the resulting object. When `null`, the `target` field will be omitted from the resulting object.
+  - `request_parameter` (`list[obj]`): Set the `request_parameter` field on the resulting object. When `null`, the `request_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_route.request_parameter.new](#fn-request_parameternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_route` resource into the root Terraform configuration.
@@ -342,8 +342,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `request_parameter_key` (`string`): 
-  - `required` (`bool`): 
+  - `request_parameter_key` (`string`): Set the `request_parameter_key` field on the resulting object.
+  - `required` (`bool`): Set the `required` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `request_parameter` sub block.

@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `backup_vault_name` (`string`): 
-  - `changeable_for_days` (`number`):  When `null`, the `changeable_for_days` field will be omitted from the resulting object.
-  - `max_retention_days` (`number`):  When `null`, the `max_retention_days` field will be omitted from the resulting object.
-  - `min_retention_days` (`number`):  When `null`, the `min_retention_days` field will be omitted from the resulting object.
+  - `backup_vault_name` (`string`): Set the `backup_vault_name` field on the resulting resource block.
+  - `changeable_for_days` (`number`): Set the `changeable_for_days` field on the resulting resource block. When `null`, the `changeable_for_days` field will be omitted from the resulting object.
+  - `max_retention_days` (`number`): Set the `max_retention_days` field on the resulting resource block. When `null`, the `max_retention_days` field will be omitted from the resulting object.
+  - `min_retention_days` (`number`): Set the `min_retention_days` field on the resulting resource block. When `null`, the `min_retention_days` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `backup_vault_name` (`string`): 
-  - `changeable_for_days` (`number`):  When `null`, the `changeable_for_days` field will be omitted from the resulting object.
-  - `max_retention_days` (`number`):  When `null`, the `max_retention_days` field will be omitted from the resulting object.
-  - `min_retention_days` (`number`):  When `null`, the `min_retention_days` field will be omitted from the resulting object.
+  - `backup_vault_name` (`string`): Set the `backup_vault_name` field on the resulting object.
+  - `changeable_for_days` (`number`): Set the `changeable_for_days` field on the resulting object. When `null`, the `changeable_for_days` field will be omitted from the resulting object.
+  - `max_retention_days` (`number`): Set the `max_retention_days` field on the resulting object. When `null`, the `max_retention_days` field will be omitted from the resulting object.
+  - `min_retention_days` (`number`): Set the `min_retention_days` field on the resulting object. When `null`, the `min_retention_days` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `backup_vault_lock_configuration` resource into the root Terraform configuration.

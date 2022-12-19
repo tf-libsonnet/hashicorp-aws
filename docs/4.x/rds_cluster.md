@@ -108,54 +108,54 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `allocated_storage` (`number`):  When `null`, the `allocated_storage` field will be omitted from the resulting object.
-  - `allow_major_version_upgrade` (`bool`):  When `null`, the `allow_major_version_upgrade` field will be omitted from the resulting object.
-  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `availability_zones` (`list`):  When `null`, the `availability_zones` field will be omitted from the resulting object.
-  - `backtrack_window` (`number`):  When `null`, the `backtrack_window` field will be omitted from the resulting object.
-  - `backup_retention_period` (`number`):  When `null`, the `backup_retention_period` field will be omitted from the resulting object.
-  - `cluster_identifier` (`string`):  When `null`, the `cluster_identifier` field will be omitted from the resulting object.
-  - `cluster_identifier_prefix` (`string`):  When `null`, the `cluster_identifier_prefix` field will be omitted from the resulting object.
-  - `cluster_members` (`list`):  When `null`, the `cluster_members` field will be omitted from the resulting object.
-  - `copy_tags_to_snapshot` (`bool`):  When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
-  - `database_name` (`string`):  When `null`, the `database_name` field will be omitted from the resulting object.
-  - `db_cluster_instance_class` (`string`):  When `null`, the `db_cluster_instance_class` field will be omitted from the resulting object.
-  - `db_cluster_parameter_group_name` (`string`):  When `null`, the `db_cluster_parameter_group_name` field will be omitted from the resulting object.
-  - `db_instance_parameter_group_name` (`string`):  When `null`, the `db_instance_parameter_group_name` field will be omitted from the resulting object.
-  - `db_subnet_group_name` (`string`):  When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
-  - `deletion_protection` (`bool`):  When `null`, the `deletion_protection` field will be omitted from the resulting object.
-  - `enable_global_write_forwarding` (`bool`):  When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
-  - `enable_http_endpoint` (`bool`):  When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
-  - `enabled_cloudwatch_logs_exports` (`list`):  When `null`, the `enabled_cloudwatch_logs_exports` field will be omitted from the resulting object.
-  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.
-  - `engine_mode` (`string`):  When `null`, the `engine_mode` field will be omitted from the resulting object.
-  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
-  - `global_cluster_identifier` (`string`):  When `null`, the `global_cluster_identifier` field will be omitted from the resulting object.
-  - `iam_database_authentication_enabled` (`bool`):  When `null`, the `iam_database_authentication_enabled` field will be omitted from the resulting object.
-  - `iam_roles` (`list`):  When `null`, the `iam_roles` field will be omitted from the resulting object.
-  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `master_password` (`string`):  When `null`, the `master_password` field will be omitted from the resulting object.
-  - `master_username` (`string`):  When `null`, the `master_username` field will be omitted from the resulting object.
-  - `network_type` (`string`):  When `null`, the `network_type` field will be omitted from the resulting object.
-  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
-  - `preferred_backup_window` (`string`):  When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
-  - `preferred_maintenance_window` (`string`):  When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
-  - `replication_source_identifier` (`string`):  When `null`, the `replication_source_identifier` field will be omitted from the resulting object.
-  - `skip_final_snapshot` (`bool`):  When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
-  - `snapshot_identifier` (`string`):  When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
-  - `source_region` (`string`):  When `null`, the `source_region` field will be omitted from the resulting object.
-  - `storage_encrypted` (`bool`):  When `null`, the `storage_encrypted` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
-  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-s3_importnew) constructor.
-  - `scaling_configuration` (`list[obj]`):  When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-scaling_configurationnew) constructor.
-  - `serverlessv2_scaling_configuration` (`list[obj]`):  When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-serverlessv2_scaling_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `allocated_storage` (`number`): Set the `allocated_storage` field on the resulting resource block. When `null`, the `allocated_storage` field will be omitted from the resulting object.
+  - `allow_major_version_upgrade` (`bool`): Set the `allow_major_version_upgrade` field on the resulting resource block. When `null`, the `allow_major_version_upgrade` field will be omitted from the resulting object.
+  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting resource block. When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `availability_zones` (`list`): Set the `availability_zones` field on the resulting resource block. When `null`, the `availability_zones` field will be omitted from the resulting object.
+  - `backtrack_window` (`number`): Set the `backtrack_window` field on the resulting resource block. When `null`, the `backtrack_window` field will be omitted from the resulting object.
+  - `backup_retention_period` (`number`): Set the `backup_retention_period` field on the resulting resource block. When `null`, the `backup_retention_period` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block. When `null`, the `cluster_identifier` field will be omitted from the resulting object.
+  - `cluster_identifier_prefix` (`string`): Set the `cluster_identifier_prefix` field on the resulting resource block. When `null`, the `cluster_identifier_prefix` field will be omitted from the resulting object.
+  - `cluster_members` (`list`): Set the `cluster_members` field on the resulting resource block. When `null`, the `cluster_members` field will be omitted from the resulting object.
+  - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting resource block. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting resource block. When `null`, the `database_name` field will be omitted from the resulting object.
+  - `db_cluster_instance_class` (`string`): Set the `db_cluster_instance_class` field on the resulting resource block. When `null`, the `db_cluster_instance_class` field will be omitted from the resulting object.
+  - `db_cluster_parameter_group_name` (`string`): Set the `db_cluster_parameter_group_name` field on the resulting resource block. When `null`, the `db_cluster_parameter_group_name` field will be omitted from the resulting object.
+  - `db_instance_parameter_group_name` (`string`): Set the `db_instance_parameter_group_name` field on the resulting resource block. When `null`, the `db_instance_parameter_group_name` field will be omitted from the resulting object.
+  - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting resource block. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
+  - `deletion_protection` (`bool`): Set the `deletion_protection` field on the resulting resource block. When `null`, the `deletion_protection` field will be omitted from the resulting object.
+  - `enable_global_write_forwarding` (`bool`): Set the `enable_global_write_forwarding` field on the resulting resource block. When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
+  - `enable_http_endpoint` (`bool`): Set the `enable_http_endpoint` field on the resulting resource block. When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
+  - `enabled_cloudwatch_logs_exports` (`list`): Set the `enabled_cloudwatch_logs_exports` field on the resulting resource block. When `null`, the `enabled_cloudwatch_logs_exports` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting resource block. When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine_mode` (`string`): Set the `engine_mode` field on the resulting resource block. When `null`, the `engine_mode` field will be omitted from the resulting object.
+  - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block. When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting resource block. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
+  - `global_cluster_identifier` (`string`): Set the `global_cluster_identifier` field on the resulting resource block. When `null`, the `global_cluster_identifier` field will be omitted from the resulting object.
+  - `iam_database_authentication_enabled` (`bool`): Set the `iam_database_authentication_enabled` field on the resulting resource block. When `null`, the `iam_database_authentication_enabled` field will be omitted from the resulting object.
+  - `iam_roles` (`list`): Set the `iam_roles` field on the resulting resource block. When `null`, the `iam_roles` field will be omitted from the resulting object.
+  - `iops` (`number`): Set the `iops` field on the resulting resource block. When `null`, the `iops` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `master_password` (`string`): Set the `master_password` field on the resulting resource block. When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_username` (`string`): Set the `master_username` field on the resulting resource block. When `null`, the `master_username` field will be omitted from the resulting object.
+  - `network_type` (`string`): Set the `network_type` field on the resulting resource block. When `null`, the `network_type` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
+  - `preferred_backup_window` (`string`): Set the `preferred_backup_window` field on the resulting resource block. When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
+  - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting resource block. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
+  - `replication_source_identifier` (`string`): Set the `replication_source_identifier` field on the resulting resource block. When `null`, the `replication_source_identifier` field will be omitted from the resulting object.
+  - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting resource block. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `snapshot_identifier` (`string`): Set the `snapshot_identifier` field on the resulting resource block. When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
+  - `source_region` (`string`): Set the `source_region` field on the resulting resource block. When `null`, the `source_region` field will be omitted from the resulting object.
+  - `storage_encrypted` (`bool`): Set the `storage_encrypted` field on the resulting resource block. When `null`, the `storage_encrypted` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting resource block. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `restore_to_point_in_time` (`list[obj]`): Set the `restore_to_point_in_time` field on the resulting resource block. When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
+  - `s3_import` (`list[obj]`): Set the `s3_import` field on the resulting resource block. When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-s3_importnew) constructor.
+  - `scaling_configuration` (`list[obj]`): Set the `scaling_configuration` field on the resulting resource block. When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-scaling_configurationnew) constructor.
+  - `serverlessv2_scaling_configuration` (`list[obj]`): Set the `serverlessv2_scaling_configuration` field on the resulting resource block. When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-serverlessv2_scaling_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -179,54 +179,54 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `allocated_storage` (`number`):  When `null`, the `allocated_storage` field will be omitted from the resulting object.
-  - `allow_major_version_upgrade` (`bool`):  When `null`, the `allow_major_version_upgrade` field will be omitted from the resulting object.
-  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `availability_zones` (`list`):  When `null`, the `availability_zones` field will be omitted from the resulting object.
-  - `backtrack_window` (`number`):  When `null`, the `backtrack_window` field will be omitted from the resulting object.
-  - `backup_retention_period` (`number`):  When `null`, the `backup_retention_period` field will be omitted from the resulting object.
-  - `cluster_identifier` (`string`):  When `null`, the `cluster_identifier` field will be omitted from the resulting object.
-  - `cluster_identifier_prefix` (`string`):  When `null`, the `cluster_identifier_prefix` field will be omitted from the resulting object.
-  - `cluster_members` (`list`):  When `null`, the `cluster_members` field will be omitted from the resulting object.
-  - `copy_tags_to_snapshot` (`bool`):  When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
-  - `database_name` (`string`):  When `null`, the `database_name` field will be omitted from the resulting object.
-  - `db_cluster_instance_class` (`string`):  When `null`, the `db_cluster_instance_class` field will be omitted from the resulting object.
-  - `db_cluster_parameter_group_name` (`string`):  When `null`, the `db_cluster_parameter_group_name` field will be omitted from the resulting object.
-  - `db_instance_parameter_group_name` (`string`):  When `null`, the `db_instance_parameter_group_name` field will be omitted from the resulting object.
-  - `db_subnet_group_name` (`string`):  When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
-  - `deletion_protection` (`bool`):  When `null`, the `deletion_protection` field will be omitted from the resulting object.
-  - `enable_global_write_forwarding` (`bool`):  When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
-  - `enable_http_endpoint` (`bool`):  When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
-  - `enabled_cloudwatch_logs_exports` (`list`):  When `null`, the `enabled_cloudwatch_logs_exports` field will be omitted from the resulting object.
-  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.
-  - `engine_mode` (`string`):  When `null`, the `engine_mode` field will be omitted from the resulting object.
-  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
-  - `global_cluster_identifier` (`string`):  When `null`, the `global_cluster_identifier` field will be omitted from the resulting object.
-  - `iam_database_authentication_enabled` (`bool`):  When `null`, the `iam_database_authentication_enabled` field will be omitted from the resulting object.
-  - `iam_roles` (`list`):  When `null`, the `iam_roles` field will be omitted from the resulting object.
-  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `master_password` (`string`):  When `null`, the `master_password` field will be omitted from the resulting object.
-  - `master_username` (`string`):  When `null`, the `master_username` field will be omitted from the resulting object.
-  - `network_type` (`string`):  When `null`, the `network_type` field will be omitted from the resulting object.
-  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
-  - `preferred_backup_window` (`string`):  When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
-  - `preferred_maintenance_window` (`string`):  When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
-  - `replication_source_identifier` (`string`):  When `null`, the `replication_source_identifier` field will be omitted from the resulting object.
-  - `skip_final_snapshot` (`bool`):  When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
-  - `snapshot_identifier` (`string`):  When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
-  - `source_region` (`string`):  When `null`, the `source_region` field will be omitted from the resulting object.
-  - `storage_encrypted` (`bool`):  When `null`, the `storage_encrypted` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `restore_to_point_in_time` (`list[obj]`):  When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
-  - `s3_import` (`list[obj]`):  When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-s3_importnew) constructor.
-  - `scaling_configuration` (`list[obj]`):  When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-scaling_configurationnew) constructor.
-  - `serverlessv2_scaling_configuration` (`list[obj]`):  When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-serverlessv2_scaling_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `allocated_storage` (`number`): Set the `allocated_storage` field on the resulting object. When `null`, the `allocated_storage` field will be omitted from the resulting object.
+  - `allow_major_version_upgrade` (`bool`): Set the `allow_major_version_upgrade` field on the resulting object. When `null`, the `allow_major_version_upgrade` field will be omitted from the resulting object.
+  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting object. When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `availability_zones` (`list`): Set the `availability_zones` field on the resulting object. When `null`, the `availability_zones` field will be omitted from the resulting object.
+  - `backtrack_window` (`number`): Set the `backtrack_window` field on the resulting object. When `null`, the `backtrack_window` field will be omitted from the resulting object.
+  - `backup_retention_period` (`number`): Set the `backup_retention_period` field on the resulting object. When `null`, the `backup_retention_period` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object. When `null`, the `cluster_identifier` field will be omitted from the resulting object.
+  - `cluster_identifier_prefix` (`string`): Set the `cluster_identifier_prefix` field on the resulting object. When `null`, the `cluster_identifier_prefix` field will be omitted from the resulting object.
+  - `cluster_members` (`list`): Set the `cluster_members` field on the resulting object. When `null`, the `cluster_members` field will be omitted from the resulting object.
+  - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting object. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object. When `null`, the `database_name` field will be omitted from the resulting object.
+  - `db_cluster_instance_class` (`string`): Set the `db_cluster_instance_class` field on the resulting object. When `null`, the `db_cluster_instance_class` field will be omitted from the resulting object.
+  - `db_cluster_parameter_group_name` (`string`): Set the `db_cluster_parameter_group_name` field on the resulting object. When `null`, the `db_cluster_parameter_group_name` field will be omitted from the resulting object.
+  - `db_instance_parameter_group_name` (`string`): Set the `db_instance_parameter_group_name` field on the resulting object. When `null`, the `db_instance_parameter_group_name` field will be omitted from the resulting object.
+  - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting object. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
+  - `deletion_protection` (`bool`): Set the `deletion_protection` field on the resulting object. When `null`, the `deletion_protection` field will be omitted from the resulting object.
+  - `enable_global_write_forwarding` (`bool`): Set the `enable_global_write_forwarding` field on the resulting object. When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
+  - `enable_http_endpoint` (`bool`): Set the `enable_http_endpoint` field on the resulting object. When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
+  - `enabled_cloudwatch_logs_exports` (`list`): Set the `enabled_cloudwatch_logs_exports` field on the resulting object. When `null`, the `enabled_cloudwatch_logs_exports` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine_mode` (`string`): Set the `engine_mode` field on the resulting object. When `null`, the `engine_mode` field will be omitted from the resulting object.
+  - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting object. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
+  - `global_cluster_identifier` (`string`): Set the `global_cluster_identifier` field on the resulting object. When `null`, the `global_cluster_identifier` field will be omitted from the resulting object.
+  - `iam_database_authentication_enabled` (`bool`): Set the `iam_database_authentication_enabled` field on the resulting object. When `null`, the `iam_database_authentication_enabled` field will be omitted from the resulting object.
+  - `iam_roles` (`list`): Set the `iam_roles` field on the resulting object. When `null`, the `iam_roles` field will be omitted from the resulting object.
+  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `master_password` (`string`): Set the `master_password` field on the resulting object. When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_username` (`string`): Set the `master_username` field on the resulting object. When `null`, the `master_username` field will be omitted from the resulting object.
+  - `network_type` (`string`): Set the `network_type` field on the resulting object. When `null`, the `network_type` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+  - `preferred_backup_window` (`string`): Set the `preferred_backup_window` field on the resulting object. When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
+  - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting object. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
+  - `replication_source_identifier` (`string`): Set the `replication_source_identifier` field on the resulting object. When `null`, the `replication_source_identifier` field will be omitted from the resulting object.
+  - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting object. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `snapshot_identifier` (`string`): Set the `snapshot_identifier` field on the resulting object. When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
+  - `source_region` (`string`): Set the `source_region` field on the resulting object. When `null`, the `source_region` field will be omitted from the resulting object.
+  - `storage_encrypted` (`bool`): Set the `storage_encrypted` field on the resulting object. When `null`, the `storage_encrypted` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting object. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `restore_to_point_in_time` (`list[obj]`): Set the `restore_to_point_in_time` field on the resulting object. When `null`, the `restore_to_point_in_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.restore_to_point_in_time.new](#fn-restore_to_point_in_timenew) constructor.
+  - `s3_import` (`list[obj]`): Set the `s3_import` field on the resulting object. When `null`, the `s3_import` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.s3_import.new](#fn-s3_importnew) constructor.
+  - `scaling_configuration` (`list[obj]`): Set the `scaling_configuration` field on the resulting object. When `null`, the `scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.scaling_configuration.new](#fn-scaling_configurationnew) constructor.
+  - `serverlessv2_scaling_configuration` (`list[obj]`): Set the `serverlessv2_scaling_configuration` field on the resulting object. When `null`, the `serverlessv2_scaling_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.serverlessv2_scaling_configuration.new](#fn-serverlessv2_scaling_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rds_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `rds_cluster` resource into the root Terraform configuration.
@@ -1121,10 +1121,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `restore_to_time` (`string`):  When `null`, the `restore_to_time` field will be omitted from the resulting object.
-  - `restore_type` (`string`):  When `null`, the `restore_type` field will be omitted from the resulting object.
-  - `source_cluster_identifier` (`string`): 
-  - `use_latest_restorable_time` (`bool`):  When `null`, the `use_latest_restorable_time` field will be omitted from the resulting object.
+  - `restore_to_time` (`string`): Set the `restore_to_time` field on the resulting object. When `null`, the `restore_to_time` field will be omitted from the resulting object.
+  - `restore_type` (`string`): Set the `restore_type` field on the resulting object. When `null`, the `restore_type` field will be omitted from the resulting object.
+  - `source_cluster_identifier` (`string`): Set the `source_cluster_identifier` field on the resulting object.
+  - `use_latest_restorable_time` (`bool`): Set the `use_latest_restorable_time` field on the resulting object. When `null`, the `use_latest_restorable_time` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `restore_to_point_in_time` sub block.
@@ -1147,11 +1147,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): 
-  - `bucket_prefix` (`string`):  When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `ingestion_role` (`string`): 
-  - `source_engine` (`string`): 
-  - `source_engine_version` (`string`): 
+  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `ingestion_role` (`string`): Set the `ingestion_role` field on the resulting object.
+  - `source_engine` (`string`): Set the `source_engine` field on the resulting object.
+  - `source_engine_version` (`string`): Set the `source_engine_version` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_import` sub block.
@@ -1174,11 +1174,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `auto_pause` (`bool`):  When `null`, the `auto_pause` field will be omitted from the resulting object.
-  - `max_capacity` (`number`):  When `null`, the `max_capacity` field will be omitted from the resulting object.
-  - `min_capacity` (`number`):  When `null`, the `min_capacity` field will be omitted from the resulting object.
-  - `seconds_until_auto_pause` (`number`):  When `null`, the `seconds_until_auto_pause` field will be omitted from the resulting object.
-  - `timeout_action` (`string`):  When `null`, the `timeout_action` field will be omitted from the resulting object.
+  - `auto_pause` (`bool`): Set the `auto_pause` field on the resulting object. When `null`, the `auto_pause` field will be omitted from the resulting object.
+  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting object. When `null`, the `max_capacity` field will be omitted from the resulting object.
+  - `min_capacity` (`number`): Set the `min_capacity` field on the resulting object. When `null`, the `min_capacity` field will be omitted from the resulting object.
+  - `seconds_until_auto_pause` (`number`): Set the `seconds_until_auto_pause` field on the resulting object. When `null`, the `seconds_until_auto_pause` field will be omitted from the resulting object.
+  - `timeout_action` (`string`): Set the `timeout_action` field on the resulting object. When `null`, the `timeout_action` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scaling_configuration` sub block.
@@ -1201,8 +1201,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_capacity` (`number`): 
-  - `min_capacity` (`number`): 
+  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting object.
+  - `min_capacity` (`number`): Set the `min_capacity` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `serverlessv2_scaling_configuration` sub block.
@@ -1225,9 +1225,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

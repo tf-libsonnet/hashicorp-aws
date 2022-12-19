@@ -56,11 +56,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `accelerator_arn` (`string`): 
-  - `client_affinity` (`string`):  When `null`, the `client_affinity` field will be omitted from the resulting object.
-  - `protocol` (`string`): 
-  - `port_range` (`list[obj]`):  When `null`, the `port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.port_range.new](#fn-port_rangenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.timeouts.new](#fn-timeoutsnew) constructor.
+  - `accelerator_arn` (`string`): Set the `accelerator_arn` field on the resulting resource block.
+  - `client_affinity` (`string`): Set the `client_affinity` field on the resulting resource block. When `null`, the `client_affinity` field will be omitted from the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting resource block.
+  - `port_range` (`list[obj]`): Set the `port_range` field on the resulting resource block. When `null`, the `port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.port_range.new](#fn-port_rangenew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,11 +84,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `accelerator_arn` (`string`): 
-  - `client_affinity` (`string`):  When `null`, the `client_affinity` field will be omitted from the resulting object.
-  - `protocol` (`string`): 
-  - `port_range` (`list[obj]`):  When `null`, the `port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.port_range.new](#fn-port_rangenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.timeouts.new](#fn-timeoutsnew) constructor.
+  - `accelerator_arn` (`string`): Set the `accelerator_arn` field on the resulting object.
+  - `client_affinity` (`string`): Set the `client_affinity` field on the resulting object. When `null`, the `client_affinity` field will be omitted from the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object.
+  - `port_range` (`list[obj]`): Set the `port_range` field on the resulting object. When `null`, the `port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.port_range.new](#fn-port_rangenew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_listener.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `globalaccelerator_listener` resource into the root Terraform configuration.
@@ -232,8 +232,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `from_port` (`number`):  When `null`, the `from_port` field will be omitted from the resulting object.
-  - `to_port` (`number`):  When `null`, the `to_port` field will be omitted from the resulting object.
+  - `from_port` (`number`): Set the `from_port` field on the resulting object. When `null`, the `from_port` field will be omitted from the resulting object.
+  - `to_port` (`number`): Set the `to_port` field on the resulting object. When `null`, the `to_port` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `port_range` sub block.
@@ -256,9 +256,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

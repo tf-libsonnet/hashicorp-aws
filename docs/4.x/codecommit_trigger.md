@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `repository_name` (`string`): 
-  - `trigger` (`list[obj]`):  When `null`, the `trigger` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codecommit_trigger.trigger.new](#fn-triggernew) constructor.
+  - `repository_name` (`string`): Set the `repository_name` field on the resulting resource block.
+  - `trigger` (`list[obj]`): Set the `trigger` field on the resulting resource block. When `null`, the `trigger` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codecommit_trigger.trigger.new](#fn-triggernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `repository_name` (`string`): 
-  - `trigger` (`list[obj]`):  When `null`, the `trigger` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codecommit_trigger.trigger.new](#fn-triggernew) constructor.
+  - `repository_name` (`string`): Set the `repository_name` field on the resulting object.
+  - `trigger` (`list[obj]`): Set the `trigger` field on the resulting object. When `null`, the `trigger` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codecommit_trigger.trigger.new](#fn-triggernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codecommit_trigger` resource into the root Terraform configuration.
@@ -152,11 +152,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `branches` (`list`):  When `null`, the `branches` field will be omitted from the resulting object.
-  - `custom_data` (`string`):  When `null`, the `custom_data` field will be omitted from the resulting object.
-  - `destination_arn` (`string`): 
-  - `events` (`list`): 
-  - `name` (`string`): 
+  - `branches` (`list`): Set the `branches` field on the resulting object. When `null`, the `branches` field will be omitted from the resulting object.
+  - `custom_data` (`string`): Set the `custom_data` field on the resulting object. When `null`, the `custom_data` field will be omitted from the resulting object.
+  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.
+  - `events` (`list`): Set the `events` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `trigger` sub block.

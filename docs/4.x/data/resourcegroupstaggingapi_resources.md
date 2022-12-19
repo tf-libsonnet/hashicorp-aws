@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `exclude_compliant_resources` (`bool`):  When `null`, the `exclude_compliant_resources` field will be omitted from the resulting object.
-  - `include_compliance_details` (`bool`):  When `null`, the `include_compliance_details` field will be omitted from the resulting object.
-  - `resource_arn_list` (`list`):  When `null`, the `resource_arn_list` field will be omitted from the resulting object.
-  - `resource_type_filters` (`list`):  When `null`, the `resource_type_filters` field will be omitted from the resulting object.
-  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-tag_filternew) constructor.
+  - `exclude_compliant_resources` (`bool`): Set the `exclude_compliant_resources` field on the resulting data source block. When `null`, the `exclude_compliant_resources` field will be omitted from the resulting object.
+  - `include_compliance_details` (`bool`): Set the `include_compliance_details` field on the resulting data source block. When `null`, the `include_compliance_details` field will be omitted from the resulting object.
+  - `resource_arn_list` (`list`): Set the `resource_arn_list` field on the resulting data source block. When `null`, the `resource_arn_list` field will be omitted from the resulting object.
+  - `resource_type_filters` (`list`): Set the `resource_type_filters` field on the resulting data source block. When `null`, the `resource_type_filters` field will be omitted from the resulting object.
+  - `tag_filter` (`list[obj]`): Set the `tag_filter` field on the resulting data source block. When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-tag_filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `exclude_compliant_resources` (`bool`):  When `null`, the `exclude_compliant_resources` field will be omitted from the resulting object.
-  - `include_compliance_details` (`bool`):  When `null`, the `include_compliance_details` field will be omitted from the resulting object.
-  - `resource_arn_list` (`list`):  When `null`, the `resource_arn_list` field will be omitted from the resulting object.
-  - `resource_type_filters` (`list`):  When `null`, the `resource_type_filters` field will be omitted from the resulting object.
-  - `tag_filter` (`list[obj]`):  When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-tag_filternew) constructor.
+  - `exclude_compliant_resources` (`bool`): Set the `exclude_compliant_resources` field on the resulting object. When `null`, the `exclude_compliant_resources` field will be omitted from the resulting object.
+  - `include_compliance_details` (`bool`): Set the `include_compliance_details` field on the resulting object. When `null`, the `include_compliance_details` field will be omitted from the resulting object.
+  - `resource_arn_list` (`list`): Set the `resource_arn_list` field on the resulting object. When `null`, the `resource_arn_list` field will be omitted from the resulting object.
+  - `resource_type_filters` (`list`): Set the `resource_type_filters` field on the resulting object. When `null`, the `resource_type_filters` field will be omitted from the resulting object.
+  - `tag_filter` (`list[obj]`): Set the `tag_filter` field on the resulting object. When `null`, the `tag_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.resourcegroupstaggingapi_resources.tag_filter.new](#fn-tag_filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `resourcegroupstaggingapi_resources` data source into the root Terraform configuration.
@@ -209,8 +209,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `values` (`list`):  When `null`, the `values` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `values` (`list`): Set the `values` field on the resulting object. When `null`, the `values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tag_filter` sub block.

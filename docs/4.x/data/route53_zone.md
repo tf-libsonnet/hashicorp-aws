@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `private_zone` (`bool`):  When `null`, the `private_zone` field will be omitted from the resulting object.
-  - `resource_record_set_count` (`number`):  When `null`, the `resource_record_set_count` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `zone_id` (`string`):  When `null`, the `zone_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting data source block. When `null`, the `name` field will be omitted from the resulting object.
+  - `private_zone` (`bool`): Set the `private_zone` field on the resulting data source block. When `null`, the `private_zone` field will be omitted from the resulting object.
+  - `resource_record_set_count` (`number`): Set the `resource_record_set_count` field on the resulting data source block. When `null`, the `resource_record_set_count` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting data source block. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `zone_id` (`string`): Set the `zone_id` field on the resulting data source block. When `null`, the `zone_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `private_zone` (`bool`):  When `null`, the `private_zone` field will be omitted from the resulting object.
-  - `resource_record_set_count` (`number`):  When `null`, the `resource_record_set_count` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `zone_id` (`string`):  When `null`, the `zone_id` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `private_zone` (`bool`): Set the `private_zone` field on the resulting object. When `null`, the `private_zone` field will be omitted from the resulting object.
+  - `resource_record_set_count` (`number`): Set the `resource_record_set_count` field on the resulting object. When `null`, the `resource_record_set_count` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `zone_id` (`string`): Set the `zone_id` field on the resulting object. When `null`, the `zone_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `route53_zone` data source into the root Terraform configuration.

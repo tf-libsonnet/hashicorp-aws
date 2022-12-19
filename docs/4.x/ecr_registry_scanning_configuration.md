@@ -52,8 +52,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `scan_type` (`string`): 
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.new](#fn-rulenew) constructor.
+  - `scan_type` (`string`): Set the `scan_type` field on the resulting resource block.
+  - `rule` (`list[obj]`): Set the `rule` field on the resulting resource block. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,8 +77,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `scan_type` (`string`): 
-  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.new](#fn-rulenew) constructor.
+  - `scan_type` (`string`): Set the `scan_type` field on the resulting object.
+  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecr_registry_scanning_configuration` resource into the root Terraform configuration.
@@ -154,8 +154,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `scan_frequency` (`string`): 
-  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.repository_filter.new](#fn-rulerepository_filternew) constructor.
+  - `scan_frequency` (`string`): Set the `scan_frequency` field on the resulting object.
+  - `repository_filter` (`list[obj]`): Set the `repository_filter` field on the resulting object. When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_registry_scanning_configuration.rule.repository_filter.new](#fn-rulerepository_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -178,8 +178,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`string`): 
-  - `filter_type` (`string`): 
+  - `filter` (`string`): Set the `filter` field on the resulting object.
+  - `filter_type` (`string`): Set the `filter_type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `repository_filter` sub block.

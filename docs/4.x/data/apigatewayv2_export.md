@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): 
-  - `export_version` (`string`):  When `null`, the `export_version` field will be omitted from the resulting object.
-  - `include_extensions` (`bool`):  When `null`, the `include_extensions` field will be omitted from the resulting object.
-  - `output_type` (`string`): 
-  - `specification` (`string`): 
-  - `stage_name` (`string`):  When `null`, the `stage_name` field will be omitted from the resulting object.
+  - `api_id` (`string`): Set the `api_id` field on the resulting data source block.
+  - `export_version` (`string`): Set the `export_version` field on the resulting data source block. When `null`, the `export_version` field will be omitted from the resulting object.
+  - `include_extensions` (`bool`): Set the `include_extensions` field on the resulting data source block. When `null`, the `include_extensions` field will be omitted from the resulting object.
+  - `output_type` (`string`): Set the `output_type` field on the resulting data source block.
+  - `specification` (`string`): Set the `specification` field on the resulting data source block.
+  - `stage_name` (`string`): Set the `stage_name` field on the resulting data source block. When `null`, the `stage_name` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): 
-  - `export_version` (`string`):  When `null`, the `export_version` field will be omitted from the resulting object.
-  - `include_extensions` (`bool`):  When `null`, the `include_extensions` field will be omitted from the resulting object.
-  - `output_type` (`string`): 
-  - `specification` (`string`): 
-  - `stage_name` (`string`):  When `null`, the `stage_name` field will be omitted from the resulting object.
+  - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `export_version` (`string`): Set the `export_version` field on the resulting object. When `null`, the `export_version` field will be omitted from the resulting object.
+  - `include_extensions` (`bool`): Set the `include_extensions` field on the resulting object. When `null`, the `include_extensions` field will be omitted from the resulting object.
+  - `output_type` (`string`): Set the `output_type` field on the resulting object.
+  - `specification` (`string`): Set the `specification` field on the resulting object.
+  - `stage_name` (`string`): Set the `stage_name` field on the resulting object. When `null`, the `stage_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `apigatewayv2_export` data source into the root Terraform configuration.

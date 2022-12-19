@@ -86,13 +86,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `etag` (`string`):  When `null`, the `etag` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `cors_config` (`list[obj]`):  When `null`, the `cors_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.new](#fn-cors_confignew) constructor.
-  - `custom_headers_config` (`list[obj]`):  When `null`, the `custom_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.new](#fn-custom_headers_confignew) constructor.
-  - `security_headers_config` (`list[obj]`):  When `null`, the `security_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.new](#fn-security_headers_confignew) constructor.
-  - `server_timing_headers_config` (`list[obj]`):  When `null`, the `server_timing_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.server_timing_headers_config.new](#fn-server_timing_headers_confignew) constructor.
+  - `comment` (`string`): Set the `comment` field on the resulting resource block. When `null`, the `comment` field will be omitted from the resulting object.
+  - `etag` (`string`): Set the `etag` field on the resulting resource block. When `null`, the `etag` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `cors_config` (`list[obj]`): Set the `cors_config` field on the resulting resource block. When `null`, the `cors_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.new](#fn-cors_confignew) constructor.
+  - `custom_headers_config` (`list[obj]`): Set the `custom_headers_config` field on the resulting resource block. When `null`, the `custom_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.new](#fn-custom_headers_confignew) constructor.
+  - `security_headers_config` (`list[obj]`): Set the `security_headers_config` field on the resulting resource block. When `null`, the `security_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.new](#fn-security_headers_confignew) constructor.
+  - `server_timing_headers_config` (`list[obj]`): Set the `server_timing_headers_config` field on the resulting resource block. When `null`, the `server_timing_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.server_timing_headers_config.new](#fn-server_timing_headers_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -116,13 +116,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `etag` (`string`):  When `null`, the `etag` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `cors_config` (`list[obj]`):  When `null`, the `cors_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.new](#fn-cors_confignew) constructor.
-  - `custom_headers_config` (`list[obj]`):  When `null`, the `custom_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.new](#fn-custom_headers_confignew) constructor.
-  - `security_headers_config` (`list[obj]`):  When `null`, the `security_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.new](#fn-security_headers_confignew) constructor.
-  - `server_timing_headers_config` (`list[obj]`):  When `null`, the `server_timing_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.server_timing_headers_config.new](#fn-server_timing_headers_confignew) constructor.
+  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
+  - `etag` (`string`): Set the `etag` field on the resulting object. When `null`, the `etag` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `cors_config` (`list[obj]`): Set the `cors_config` field on the resulting object. When `null`, the `cors_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.new](#fn-cors_confignew) constructor.
+  - `custom_headers_config` (`list[obj]`): Set the `custom_headers_config` field on the resulting object. When `null`, the `custom_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.new](#fn-custom_headers_confignew) constructor.
+  - `security_headers_config` (`list[obj]`): Set the `security_headers_config` field on the resulting object. When `null`, the `security_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.new](#fn-security_headers_confignew) constructor.
+  - `server_timing_headers_config` (`list[obj]`): Set the `server_timing_headers_config` field on the resulting object. When `null`, the `server_timing_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.server_timing_headers_config.new](#fn-server_timing_headers_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_response_headers_policy` resource into the root Terraform configuration.
@@ -341,13 +341,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `access_control_allow_credentials` (`bool`): 
-  - `access_control_max_age_sec` (`number`):  When `null`, the `access_control_max_age_sec` field will be omitted from the resulting object.
-  - `origin_override` (`bool`): 
-  - `access_control_allow_headers` (`list[obj]`):  When `null`, the `access_control_allow_headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_allow_headers.new](#fn-cors_configaccess_control_allow_headersnew) constructor.
-  - `access_control_allow_methods` (`list[obj]`):  When `null`, the `access_control_allow_methods` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_allow_methods.new](#fn-cors_configaccess_control_allow_methodsnew) constructor.
-  - `access_control_allow_origins` (`list[obj]`):  When `null`, the `access_control_allow_origins` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_allow_origins.new](#fn-cors_configaccess_control_allow_originsnew) constructor.
-  - `access_control_expose_headers` (`list[obj]`):  When `null`, the `access_control_expose_headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_expose_headers.new](#fn-cors_configaccess_control_expose_headersnew) constructor.
+  - `access_control_allow_credentials` (`bool`): Set the `access_control_allow_credentials` field on the resulting object.
+  - `access_control_max_age_sec` (`number`): Set the `access_control_max_age_sec` field on the resulting object. When `null`, the `access_control_max_age_sec` field will be omitted from the resulting object.
+  - `origin_override` (`bool`): Set the `origin_override` field on the resulting object.
+  - `access_control_allow_headers` (`list[obj]`): Set the `access_control_allow_headers` field on the resulting object. When `null`, the `access_control_allow_headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_allow_headers.new](#fn-cors_configaccess_control_allow_headersnew) constructor.
+  - `access_control_allow_methods` (`list[obj]`): Set the `access_control_allow_methods` field on the resulting object. When `null`, the `access_control_allow_methods` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_allow_methods.new](#fn-cors_configaccess_control_allow_methodsnew) constructor.
+  - `access_control_allow_origins` (`list[obj]`): Set the `access_control_allow_origins` field on the resulting object. When `null`, the `access_control_allow_origins` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_allow_origins.new](#fn-cors_configaccess_control_allow_originsnew) constructor.
+  - `access_control_expose_headers` (`list[obj]`): Set the `access_control_expose_headers` field on the resulting object. When `null`, the `access_control_expose_headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.access_control_expose_headers.new](#fn-cors_configaccess_control_expose_headersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cors_config` sub block.
@@ -370,7 +370,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list`):  When `null`, the `items` field will be omitted from the resulting object.
+  - `items` (`list`): Set the `items` field on the resulting object. When `null`, the `items` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_control_allow_headers` sub block.
@@ -393,7 +393,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list`):  When `null`, the `items` field will be omitted from the resulting object.
+  - `items` (`list`): Set the `items` field on the resulting object. When `null`, the `items` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_control_allow_methods` sub block.
@@ -416,7 +416,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list`):  When `null`, the `items` field will be omitted from the resulting object.
+  - `items` (`list`): Set the `items` field on the resulting object. When `null`, the `items` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_control_allow_origins` sub block.
@@ -439,7 +439,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list`):  When `null`, the `items` field will be omitted from the resulting object.
+  - `items` (`list`): Set the `items` field on the resulting object. When `null`, the `items` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_control_expose_headers` sub block.
@@ -462,7 +462,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `items` (`list[obj]`):  When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.items.new](#fn-custom_headers_configitemsnew) constructor.
+  - `items` (`list[obj]`): Set the `items` field on the resulting object. When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.items.new](#fn-custom_headers_configitemsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `custom_headers_config` sub block.
@@ -485,9 +485,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `header` (`string`): 
-  - `override` (`bool`): 
-  - `value` (`string`): 
+  - `header` (`string`): Set the `header` field on the resulting object.
+  - `override` (`bool`): Set the `override` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `items` sub block.
@@ -510,12 +510,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `content_security_policy` (`list[obj]`):  When `null`, the `content_security_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.content_security_policy.new](#fn-security_headers_configcontent_security_policynew) constructor.
-  - `content_type_options` (`list[obj]`):  When `null`, the `content_type_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.content_type_options.new](#fn-security_headers_configcontent_type_optionsnew) constructor.
-  - `frame_options` (`list[obj]`):  When `null`, the `frame_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.frame_options.new](#fn-security_headers_configframe_optionsnew) constructor.
-  - `referrer_policy` (`list[obj]`):  When `null`, the `referrer_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.referrer_policy.new](#fn-security_headers_configreferrer_policynew) constructor.
-  - `strict_transport_security` (`list[obj]`):  When `null`, the `strict_transport_security` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.strict_transport_security.new](#fn-security_headers_configstrict_transport_securitynew) constructor.
-  - `xss_protection` (`list[obj]`):  When `null`, the `xss_protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.xss_protection.new](#fn-security_headers_configxss_protectionnew) constructor.
+  - `content_security_policy` (`list[obj]`): Set the `content_security_policy` field on the resulting object. When `null`, the `content_security_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.content_security_policy.new](#fn-security_headers_configcontent_security_policynew) constructor.
+  - `content_type_options` (`list[obj]`): Set the `content_type_options` field on the resulting object. When `null`, the `content_type_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.content_type_options.new](#fn-security_headers_configcontent_type_optionsnew) constructor.
+  - `frame_options` (`list[obj]`): Set the `frame_options` field on the resulting object. When `null`, the `frame_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.frame_options.new](#fn-security_headers_configframe_optionsnew) constructor.
+  - `referrer_policy` (`list[obj]`): Set the `referrer_policy` field on the resulting object. When `null`, the `referrer_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.referrer_policy.new](#fn-security_headers_configreferrer_policynew) constructor.
+  - `strict_transport_security` (`list[obj]`): Set the `strict_transport_security` field on the resulting object. When `null`, the `strict_transport_security` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.strict_transport_security.new](#fn-security_headers_configstrict_transport_securitynew) constructor.
+  - `xss_protection` (`list[obj]`): Set the `xss_protection` field on the resulting object. When `null`, the `xss_protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.xss_protection.new](#fn-security_headers_configxss_protectionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `security_headers_config` sub block.
@@ -538,8 +538,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `content_security_policy` (`string`): 
-  - `override` (`bool`): 
+  - `content_security_policy` (`string`): Set the `content_security_policy` field on the resulting object.
+  - `override` (`bool`): Set the `override` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `content_security_policy` sub block.
@@ -562,7 +562,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `override` (`bool`): 
+  - `override` (`bool`): Set the `override` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `content_type_options` sub block.
@@ -585,8 +585,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `frame_option` (`string`): 
-  - `override` (`bool`): 
+  - `frame_option` (`string`): Set the `frame_option` field on the resulting object.
+  - `override` (`bool`): Set the `override` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `frame_options` sub block.
@@ -609,8 +609,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `override` (`bool`): 
-  - `referrer_policy` (`string`): 
+  - `override` (`bool`): Set the `override` field on the resulting object.
+  - `referrer_policy` (`string`): Set the `referrer_policy` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `referrer_policy` sub block.
@@ -633,10 +633,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `access_control_max_age_sec` (`number`): 
-  - `include_subdomains` (`bool`):  When `null`, the `include_subdomains` field will be omitted from the resulting object.
-  - `override` (`bool`): 
-  - `preload` (`bool`):  When `null`, the `preload` field will be omitted from the resulting object.
+  - `access_control_max_age_sec` (`number`): Set the `access_control_max_age_sec` field on the resulting object.
+  - `include_subdomains` (`bool`): Set the `include_subdomains` field on the resulting object. When `null`, the `include_subdomains` field will be omitted from the resulting object.
+  - `override` (`bool`): Set the `override` field on the resulting object.
+  - `preload` (`bool`): Set the `preload` field on the resulting object. When `null`, the `preload` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `strict_transport_security` sub block.
@@ -659,10 +659,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `mode_block` (`bool`):  When `null`, the `mode_block` field will be omitted from the resulting object.
-  - `override` (`bool`): 
-  - `protection` (`bool`): 
-  - `report_uri` (`string`):  When `null`, the `report_uri` field will be omitted from the resulting object.
+  - `mode_block` (`bool`): Set the `mode_block` field on the resulting object. When `null`, the `mode_block` field will be omitted from the resulting object.
+  - `override` (`bool`): Set the `override` field on the resulting object.
+  - `protection` (`bool`): Set the `protection` field on the resulting object.
+  - `report_uri` (`string`): Set the `report_uri` field on the resulting object. When `null`, the `report_uri` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `xss_protection` sub block.
@@ -685,8 +685,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): 
-  - `sampling_rate` (`number`): 
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `sampling_rate` (`number`): Set the `sampling_rate` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `server_timing_headers_config` sub block.

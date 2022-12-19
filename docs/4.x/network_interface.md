@@ -69,27 +69,27 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `interface_type` (`string`):  When `null`, the `interface_type` field will be omitted from the resulting object.
-  - `ipv4_prefix_count` (`number`):  When `null`, the `ipv4_prefix_count` field will be omitted from the resulting object.
-  - `ipv4_prefixes` (`list`):  When `null`, the `ipv4_prefixes` field will be omitted from the resulting object.
-  - `ipv6_address_count` (`number`):  When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
-  - `ipv6_address_list` (`list`):  When `null`, the `ipv6_address_list` field will be omitted from the resulting object.
-  - `ipv6_address_list_enabled` (`bool`):  When `null`, the `ipv6_address_list_enabled` field will be omitted from the resulting object.
-  - `ipv6_addresses` (`list`):  When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
-  - `ipv6_prefix_count` (`number`):  When `null`, the `ipv6_prefix_count` field will be omitted from the resulting object.
-  - `ipv6_prefixes` (`list`):  When `null`, the `ipv6_prefixes` field will be omitted from the resulting object.
-  - `private_ip` (`string`):  When `null`, the `private_ip` field will be omitted from the resulting object.
-  - `private_ip_list` (`list`):  When `null`, the `private_ip_list` field will be omitted from the resulting object.
-  - `private_ip_list_enabled` (`bool`):  When `null`, the `private_ip_list_enabled` field will be omitted from the resulting object.
-  - `private_ips` (`list`):  When `null`, the `private_ips` field will be omitted from the resulting object.
-  - `private_ips_count` (`number`):  When `null`, the `private_ips_count` field will be omitted from the resulting object.
-  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `source_dest_check` (`bool`):  When `null`, the `source_dest_check` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `attachment` (`list[obj]`):  When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-attachmentnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `interface_type` (`string`): Set the `interface_type` field on the resulting resource block. When `null`, the `interface_type` field will be omitted from the resulting object.
+  - `ipv4_prefix_count` (`number`): Set the `ipv4_prefix_count` field on the resulting resource block. When `null`, the `ipv4_prefix_count` field will be omitted from the resulting object.
+  - `ipv4_prefixes` (`list`): Set the `ipv4_prefixes` field on the resulting resource block. When `null`, the `ipv4_prefixes` field will be omitted from the resulting object.
+  - `ipv6_address_count` (`number`): Set the `ipv6_address_count` field on the resulting resource block. When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
+  - `ipv6_address_list` (`list`): Set the `ipv6_address_list` field on the resulting resource block. When `null`, the `ipv6_address_list` field will be omitted from the resulting object.
+  - `ipv6_address_list_enabled` (`bool`): Set the `ipv6_address_list_enabled` field on the resulting resource block. When `null`, the `ipv6_address_list_enabled` field will be omitted from the resulting object.
+  - `ipv6_addresses` (`list`): Set the `ipv6_addresses` field on the resulting resource block. When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
+  - `ipv6_prefix_count` (`number`): Set the `ipv6_prefix_count` field on the resulting resource block. When `null`, the `ipv6_prefix_count` field will be omitted from the resulting object.
+  - `ipv6_prefixes` (`list`): Set the `ipv6_prefixes` field on the resulting resource block. When `null`, the `ipv6_prefixes` field will be omitted from the resulting object.
+  - `private_ip` (`string`): Set the `private_ip` field on the resulting resource block. When `null`, the `private_ip` field will be omitted from the resulting object.
+  - `private_ip_list` (`list`): Set the `private_ip_list` field on the resulting resource block. When `null`, the `private_ip_list` field will be omitted from the resulting object.
+  - `private_ip_list_enabled` (`bool`): Set the `private_ip_list_enabled` field on the resulting resource block. When `null`, the `private_ip_list_enabled` field will be omitted from the resulting object.
+  - `private_ips` (`list`): Set the `private_ips` field on the resulting resource block. When `null`, the `private_ips` field will be omitted from the resulting object.
+  - `private_ips_count` (`number`): Set the `private_ips_count` field on the resulting resource block. When `null`, the `private_ips_count` field will be omitted from the resulting object.
+  - `security_groups` (`list`): Set the `security_groups` field on the resulting resource block. When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `source_dest_check` (`bool`): Set the `source_dest_check` field on the resulting resource block. When `null`, the `source_dest_check` field will be omitted from the resulting object.
+  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `attachment` (`list[obj]`): Set the `attachment` field on the resulting resource block. When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-attachmentnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -113,27 +113,27 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `interface_type` (`string`):  When `null`, the `interface_type` field will be omitted from the resulting object.
-  - `ipv4_prefix_count` (`number`):  When `null`, the `ipv4_prefix_count` field will be omitted from the resulting object.
-  - `ipv4_prefixes` (`list`):  When `null`, the `ipv4_prefixes` field will be omitted from the resulting object.
-  - `ipv6_address_count` (`number`):  When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
-  - `ipv6_address_list` (`list`):  When `null`, the `ipv6_address_list` field will be omitted from the resulting object.
-  - `ipv6_address_list_enabled` (`bool`):  When `null`, the `ipv6_address_list_enabled` field will be omitted from the resulting object.
-  - `ipv6_addresses` (`list`):  When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
-  - `ipv6_prefix_count` (`number`):  When `null`, the `ipv6_prefix_count` field will be omitted from the resulting object.
-  - `ipv6_prefixes` (`list`):  When `null`, the `ipv6_prefixes` field will be omitted from the resulting object.
-  - `private_ip` (`string`):  When `null`, the `private_ip` field will be omitted from the resulting object.
-  - `private_ip_list` (`list`):  When `null`, the `private_ip_list` field will be omitted from the resulting object.
-  - `private_ip_list_enabled` (`bool`):  When `null`, the `private_ip_list_enabled` field will be omitted from the resulting object.
-  - `private_ips` (`list`):  When `null`, the `private_ips` field will be omitted from the resulting object.
-  - `private_ips_count` (`number`):  When `null`, the `private_ips_count` field will be omitted from the resulting object.
-  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `source_dest_check` (`bool`):  When `null`, the `source_dest_check` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `attachment` (`list[obj]`):  When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-attachmentnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `interface_type` (`string`): Set the `interface_type` field on the resulting object. When `null`, the `interface_type` field will be omitted from the resulting object.
+  - `ipv4_prefix_count` (`number`): Set the `ipv4_prefix_count` field on the resulting object. When `null`, the `ipv4_prefix_count` field will be omitted from the resulting object.
+  - `ipv4_prefixes` (`list`): Set the `ipv4_prefixes` field on the resulting object. When `null`, the `ipv4_prefixes` field will be omitted from the resulting object.
+  - `ipv6_address_count` (`number`): Set the `ipv6_address_count` field on the resulting object. When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
+  - `ipv6_address_list` (`list`): Set the `ipv6_address_list` field on the resulting object. When `null`, the `ipv6_address_list` field will be omitted from the resulting object.
+  - `ipv6_address_list_enabled` (`bool`): Set the `ipv6_address_list_enabled` field on the resulting object. When `null`, the `ipv6_address_list_enabled` field will be omitted from the resulting object.
+  - `ipv6_addresses` (`list`): Set the `ipv6_addresses` field on the resulting object. When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
+  - `ipv6_prefix_count` (`number`): Set the `ipv6_prefix_count` field on the resulting object. When `null`, the `ipv6_prefix_count` field will be omitted from the resulting object.
+  - `ipv6_prefixes` (`list`): Set the `ipv6_prefixes` field on the resulting object. When `null`, the `ipv6_prefixes` field will be omitted from the resulting object.
+  - `private_ip` (`string`): Set the `private_ip` field on the resulting object. When `null`, the `private_ip` field will be omitted from the resulting object.
+  - `private_ip_list` (`list`): Set the `private_ip_list` field on the resulting object. When `null`, the `private_ip_list` field will be omitted from the resulting object.
+  - `private_ip_list_enabled` (`bool`): Set the `private_ip_list_enabled` field on the resulting object. When `null`, the `private_ip_list_enabled` field will be omitted from the resulting object.
+  - `private_ips` (`list`): Set the `private_ips` field on the resulting object. When `null`, the `private_ips` field will be omitted from the resulting object.
+  - `private_ips_count` (`number`): Set the `private_ips_count` field on the resulting object. When `null`, the `private_ips_count` field will be omitted from the resulting object.
+  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `source_dest_check` (`bool`): Set the `source_dest_check` field on the resulting object. When `null`, the `source_dest_check` field will be omitted from the resulting object.
+  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `attachment` (`list[obj]`): Set the `attachment` field on the resulting object. When `null`, the `attachment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.network_interface.attachment.new](#fn-attachmentnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `network_interface` resource into the root Terraform configuration.
@@ -513,8 +513,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `device_index` (`number`): 
-  - `instance` (`string`): 
+  - `device_index` (`number`): Set the `device_index` field on the resulting object.
+  - `instance` (`string`): Set the `instance` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `attachment` sub block.

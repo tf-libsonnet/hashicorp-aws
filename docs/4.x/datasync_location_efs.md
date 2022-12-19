@@ -56,14 +56,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `access_point_arn` (`string`):  When `null`, the `access_point_arn` field will be omitted from the resulting object.
-  - `efs_file_system_arn` (`string`): 
-  - `file_system_access_role_arn` (`string`):  When `null`, the `file_system_access_role_arn` field will be omitted from the resulting object.
-  - `in_transit_encryption` (`string`):  When `null`, the `in_transit_encryption` field will be omitted from the resulting object.
-  - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `ec2_config` (`list[obj]`):  When `null`, the `ec2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_efs.ec2_config.new](#fn-ec2_confignew) constructor.
+  - `access_point_arn` (`string`): Set the `access_point_arn` field on the resulting resource block. When `null`, the `access_point_arn` field will be omitted from the resulting object.
+  - `efs_file_system_arn` (`string`): Set the `efs_file_system_arn` field on the resulting resource block.
+  - `file_system_access_role_arn` (`string`): Set the `file_system_access_role_arn` field on the resulting resource block. When `null`, the `file_system_access_role_arn` field will be omitted from the resulting object.
+  - `in_transit_encryption` (`string`): Set the `in_transit_encryption` field on the resulting resource block. When `null`, the `in_transit_encryption` field will be omitted from the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting resource block. When `null`, the `subdirectory` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `ec2_config` (`list[obj]`): Set the `ec2_config` field on the resulting resource block. When `null`, the `ec2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_efs.ec2_config.new](#fn-ec2_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,14 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_point_arn` (`string`):  When `null`, the `access_point_arn` field will be omitted from the resulting object.
-  - `efs_file_system_arn` (`string`): 
-  - `file_system_access_role_arn` (`string`):  When `null`, the `file_system_access_role_arn` field will be omitted from the resulting object.
-  - `in_transit_encryption` (`string`):  When `null`, the `in_transit_encryption` field will be omitted from the resulting object.
-  - `subdirectory` (`string`):  When `null`, the `subdirectory` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `ec2_config` (`list[obj]`):  When `null`, the `ec2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_efs.ec2_config.new](#fn-ec2_confignew) constructor.
+  - `access_point_arn` (`string`): Set the `access_point_arn` field on the resulting object. When `null`, the `access_point_arn` field will be omitted from the resulting object.
+  - `efs_file_system_arn` (`string`): Set the `efs_file_system_arn` field on the resulting object.
+  - `file_system_access_role_arn` (`string`): Set the `file_system_access_role_arn` field on the resulting object. When `null`, the `file_system_access_role_arn` field will be omitted from the resulting object.
+  - `in_transit_encryption` (`string`): Set the `in_transit_encryption` field on the resulting object. When `null`, the `in_transit_encryption` field will be omitted from the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting object. When `null`, the `subdirectory` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `ec2_config` (`list[obj]`): Set the `ec2_config` field on the resulting object. When `null`, the `ec2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_efs.ec2_config.new](#fn-ec2_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_location_efs` resource into the root Terraform configuration.
@@ -266,8 +266,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_arns` (`list`): 
-  - `subnet_arn` (`string`): 
+  - `security_group_arns` (`list`): Set the `security_group_arns` field on the resulting object.
+  - `subnet_arn` (`string`): Set the `subnet_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ec2_config` sub block.

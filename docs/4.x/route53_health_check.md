@@ -67,28 +67,28 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `child_health_threshold` (`number`):  When `null`, the `child_health_threshold` field will be omitted from the resulting object.
-  - `child_healthchecks` (`list`):  When `null`, the `child_healthchecks` field will be omitted from the resulting object.
-  - `cloudwatch_alarm_name` (`string`):  When `null`, the `cloudwatch_alarm_name` field will be omitted from the resulting object.
-  - `cloudwatch_alarm_region` (`string`):  When `null`, the `cloudwatch_alarm_region` field will be omitted from the resulting object.
-  - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
-  - `enable_sni` (`bool`):  When `null`, the `enable_sni` field will be omitted from the resulting object.
-  - `failure_threshold` (`number`):  When `null`, the `failure_threshold` field will be omitted from the resulting object.
-  - `fqdn` (`string`):  When `null`, the `fqdn` field will be omitted from the resulting object.
-  - `insufficient_data_health_status` (`string`):  When `null`, the `insufficient_data_health_status` field will be omitted from the resulting object.
-  - `invert_healthcheck` (`bool`):  When `null`, the `invert_healthcheck` field will be omitted from the resulting object.
-  - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
-  - `measure_latency` (`bool`):  When `null`, the `measure_latency` field will be omitted from the resulting object.
-  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
-  - `reference_name` (`string`):  When `null`, the `reference_name` field will be omitted from the resulting object.
-  - `regions` (`list`):  When `null`, the `regions` field will be omitted from the resulting object.
-  - `request_interval` (`number`):  When `null`, the `request_interval` field will be omitted from the resulting object.
-  - `resource_path` (`string`):  When `null`, the `resource_path` field will be omitted from the resulting object.
-  - `routing_control_arn` (`string`):  When `null`, the `routing_control_arn` field will be omitted from the resulting object.
-  - `search_string` (`string`):  When `null`, the `search_string` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `child_health_threshold` (`number`): Set the `child_health_threshold` field on the resulting resource block. When `null`, the `child_health_threshold` field will be omitted from the resulting object.
+  - `child_healthchecks` (`list`): Set the `child_healthchecks` field on the resulting resource block. When `null`, the `child_healthchecks` field will be omitted from the resulting object.
+  - `cloudwatch_alarm_name` (`string`): Set the `cloudwatch_alarm_name` field on the resulting resource block. When `null`, the `cloudwatch_alarm_name` field will be omitted from the resulting object.
+  - `cloudwatch_alarm_region` (`string`): Set the `cloudwatch_alarm_region` field on the resulting resource block. When `null`, the `cloudwatch_alarm_region` field will be omitted from the resulting object.
+  - `disabled` (`bool`): Set the `disabled` field on the resulting resource block. When `null`, the `disabled` field will be omitted from the resulting object.
+  - `enable_sni` (`bool`): Set the `enable_sni` field on the resulting resource block. When `null`, the `enable_sni` field will be omitted from the resulting object.
+  - `failure_threshold` (`number`): Set the `failure_threshold` field on the resulting resource block. When `null`, the `failure_threshold` field will be omitted from the resulting object.
+  - `fqdn` (`string`): Set the `fqdn` field on the resulting resource block. When `null`, the `fqdn` field will be omitted from the resulting object.
+  - `insufficient_data_health_status` (`string`): Set the `insufficient_data_health_status` field on the resulting resource block. When `null`, the `insufficient_data_health_status` field will be omitted from the resulting object.
+  - `invert_healthcheck` (`bool`): Set the `invert_healthcheck` field on the resulting resource block. When `null`, the `invert_healthcheck` field will be omitted from the resulting object.
+  - `ip_address` (`string`): Set the `ip_address` field on the resulting resource block. When `null`, the `ip_address` field will be omitted from the resulting object.
+  - `measure_latency` (`bool`): Set the `measure_latency` field on the resulting resource block. When `null`, the `measure_latency` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
+  - `reference_name` (`string`): Set the `reference_name` field on the resulting resource block. When `null`, the `reference_name` field will be omitted from the resulting object.
+  - `regions` (`list`): Set the `regions` field on the resulting resource block. When `null`, the `regions` field will be omitted from the resulting object.
+  - `request_interval` (`number`): Set the `request_interval` field on the resulting resource block. When `null`, the `request_interval` field will be omitted from the resulting object.
+  - `resource_path` (`string`): Set the `resource_path` field on the resulting resource block. When `null`, the `resource_path` field will be omitted from the resulting object.
+  - `routing_control_arn` (`string`): Set the `routing_control_arn` field on the resulting resource block. When `null`, the `routing_control_arn` field will be omitted from the resulting object.
+  - `search_string` (`string`): Set the `search_string` field on the resulting resource block. When `null`, the `search_string` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -112,28 +112,28 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `child_health_threshold` (`number`):  When `null`, the `child_health_threshold` field will be omitted from the resulting object.
-  - `child_healthchecks` (`list`):  When `null`, the `child_healthchecks` field will be omitted from the resulting object.
-  - `cloudwatch_alarm_name` (`string`):  When `null`, the `cloudwatch_alarm_name` field will be omitted from the resulting object.
-  - `cloudwatch_alarm_region` (`string`):  When `null`, the `cloudwatch_alarm_region` field will be omitted from the resulting object.
-  - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
-  - `enable_sni` (`bool`):  When `null`, the `enable_sni` field will be omitted from the resulting object.
-  - `failure_threshold` (`number`):  When `null`, the `failure_threshold` field will be omitted from the resulting object.
-  - `fqdn` (`string`):  When `null`, the `fqdn` field will be omitted from the resulting object.
-  - `insufficient_data_health_status` (`string`):  When `null`, the `insufficient_data_health_status` field will be omitted from the resulting object.
-  - `invert_healthcheck` (`bool`):  When `null`, the `invert_healthcheck` field will be omitted from the resulting object.
-  - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
-  - `measure_latency` (`bool`):  When `null`, the `measure_latency` field will be omitted from the resulting object.
-  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
-  - `reference_name` (`string`):  When `null`, the `reference_name` field will be omitted from the resulting object.
-  - `regions` (`list`):  When `null`, the `regions` field will be omitted from the resulting object.
-  - `request_interval` (`number`):  When `null`, the `request_interval` field will be omitted from the resulting object.
-  - `resource_path` (`string`):  When `null`, the `resource_path` field will be omitted from the resulting object.
-  - `routing_control_arn` (`string`):  When `null`, the `routing_control_arn` field will be omitted from the resulting object.
-  - `search_string` (`string`):  When `null`, the `search_string` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `child_health_threshold` (`number`): Set the `child_health_threshold` field on the resulting object. When `null`, the `child_health_threshold` field will be omitted from the resulting object.
+  - `child_healthchecks` (`list`): Set the `child_healthchecks` field on the resulting object. When `null`, the `child_healthchecks` field will be omitted from the resulting object.
+  - `cloudwatch_alarm_name` (`string`): Set the `cloudwatch_alarm_name` field on the resulting object. When `null`, the `cloudwatch_alarm_name` field will be omitted from the resulting object.
+  - `cloudwatch_alarm_region` (`string`): Set the `cloudwatch_alarm_region` field on the resulting object. When `null`, the `cloudwatch_alarm_region` field will be omitted from the resulting object.
+  - `disabled` (`bool`): Set the `disabled` field on the resulting object. When `null`, the `disabled` field will be omitted from the resulting object.
+  - `enable_sni` (`bool`): Set the `enable_sni` field on the resulting object. When `null`, the `enable_sni` field will be omitted from the resulting object.
+  - `failure_threshold` (`number`): Set the `failure_threshold` field on the resulting object. When `null`, the `failure_threshold` field will be omitted from the resulting object.
+  - `fqdn` (`string`): Set the `fqdn` field on the resulting object. When `null`, the `fqdn` field will be omitted from the resulting object.
+  - `insufficient_data_health_status` (`string`): Set the `insufficient_data_health_status` field on the resulting object. When `null`, the `insufficient_data_health_status` field will be omitted from the resulting object.
+  - `invert_healthcheck` (`bool`): Set the `invert_healthcheck` field on the resulting object. When `null`, the `invert_healthcheck` field will be omitted from the resulting object.
+  - `ip_address` (`string`): Set the `ip_address` field on the resulting object. When `null`, the `ip_address` field will be omitted from the resulting object.
+  - `measure_latency` (`bool`): Set the `measure_latency` field on the resulting object. When `null`, the `measure_latency` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+  - `reference_name` (`string`): Set the `reference_name` field on the resulting object. When `null`, the `reference_name` field will be omitted from the resulting object.
+  - `regions` (`list`): Set the `regions` field on the resulting object. When `null`, the `regions` field will be omitted from the resulting object.
+  - `request_interval` (`number`): Set the `request_interval` field on the resulting object. When `null`, the `request_interval` field will be omitted from the resulting object.
+  - `resource_path` (`string`): Set the `resource_path` field on the resulting object. When `null`, the `resource_path` field will be omitted from the resulting object.
+  - `routing_control_arn` (`string`): Set the `routing_control_arn` field on the resulting object. When `null`, the `routing_control_arn` field will be omitted from the resulting object.
+  - `search_string` (`string`): Set the `search_string` field on the resulting object. When `null`, the `search_string` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_health_check` resource into the root Terraform configuration.

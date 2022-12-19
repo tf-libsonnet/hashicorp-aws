@@ -71,23 +71,23 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auto_bundle_on_deploy` (`string`):  When `null`, the `auto_bundle_on_deploy` field will be omitted from the resulting object.
-  - `aws_flow_ruby_settings` (`string`):  When `null`, the `aws_flow_ruby_settings` field will be omitted from the resulting object.
-  - `data_source_arn` (`string`):  When `null`, the `data_source_arn` field will be omitted from the resulting object.
-  - `data_source_database_name` (`string`):  When `null`, the `data_source_database_name` field will be omitted from the resulting object.
-  - `data_source_type` (`string`):  When `null`, the `data_source_type` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `document_root` (`string`):  When `null`, the `document_root` field will be omitted from the resulting object.
-  - `domains` (`list`):  When `null`, the `domains` field will be omitted from the resulting object.
-  - `enable_ssl` (`bool`):  When `null`, the `enable_ssl` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `rails_env` (`string`):  When `null`, the `rails_env` field will be omitted from the resulting object.
-  - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
-  - `stack_id` (`string`): 
-  - `type` (`string`): 
-  - `app_source` (`list[obj]`):  When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-app_sourcenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-environmentnew) constructor.
-  - `ssl_configuration` (`list[obj]`):  When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-ssl_configurationnew) constructor.
+  - `auto_bundle_on_deploy` (`string`): Set the `auto_bundle_on_deploy` field on the resulting resource block. When `null`, the `auto_bundle_on_deploy` field will be omitted from the resulting object.
+  - `aws_flow_ruby_settings` (`string`): Set the `aws_flow_ruby_settings` field on the resulting resource block. When `null`, the `aws_flow_ruby_settings` field will be omitted from the resulting object.
+  - `data_source_arn` (`string`): Set the `data_source_arn` field on the resulting resource block. When `null`, the `data_source_arn` field will be omitted from the resulting object.
+  - `data_source_database_name` (`string`): Set the `data_source_database_name` field on the resulting resource block. When `null`, the `data_source_database_name` field will be omitted from the resulting object.
+  - `data_source_type` (`string`): Set the `data_source_type` field on the resulting resource block. When `null`, the `data_source_type` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `document_root` (`string`): Set the `document_root` field on the resulting resource block. When `null`, the `document_root` field will be omitted from the resulting object.
+  - `domains` (`list`): Set the `domains` field on the resulting resource block. When `null`, the `domains` field will be omitted from the resulting object.
+  - `enable_ssl` (`bool`): Set the `enable_ssl` field on the resulting resource block. When `null`, the `enable_ssl` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `rails_env` (`string`): Set the `rails_env` field on the resulting resource block. When `null`, the `rails_env` field will be omitted from the resulting object.
+  - `short_name` (`string`): Set the `short_name` field on the resulting resource block. When `null`, the `short_name` field will be omitted from the resulting object.
+  - `stack_id` (`string`): Set the `stack_id` field on the resulting resource block.
+  - `type` (`string`): Set the `type` field on the resulting resource block.
+  - `app_source` (`list[obj]`): Set the `app_source` field on the resulting resource block. When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-app_sourcenew) constructor.
+  - `environment` (`list[obj]`): Set the `environment` field on the resulting resource block. When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-environmentnew) constructor.
+  - `ssl_configuration` (`list[obj]`): Set the `ssl_configuration` field on the resulting resource block. When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-ssl_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -111,23 +111,23 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_bundle_on_deploy` (`string`):  When `null`, the `auto_bundle_on_deploy` field will be omitted from the resulting object.
-  - `aws_flow_ruby_settings` (`string`):  When `null`, the `aws_flow_ruby_settings` field will be omitted from the resulting object.
-  - `data_source_arn` (`string`):  When `null`, the `data_source_arn` field will be omitted from the resulting object.
-  - `data_source_database_name` (`string`):  When `null`, the `data_source_database_name` field will be omitted from the resulting object.
-  - `data_source_type` (`string`):  When `null`, the `data_source_type` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `document_root` (`string`):  When `null`, the `document_root` field will be omitted from the resulting object.
-  - `domains` (`list`):  When `null`, the `domains` field will be omitted from the resulting object.
-  - `enable_ssl` (`bool`):  When `null`, the `enable_ssl` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `rails_env` (`string`):  When `null`, the `rails_env` field will be omitted from the resulting object.
-  - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
-  - `stack_id` (`string`): 
-  - `type` (`string`): 
-  - `app_source` (`list[obj]`):  When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-app_sourcenew) constructor.
-  - `environment` (`list[obj]`):  When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-environmentnew) constructor.
-  - `ssl_configuration` (`list[obj]`):  When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-ssl_configurationnew) constructor.
+  - `auto_bundle_on_deploy` (`string`): Set the `auto_bundle_on_deploy` field on the resulting object. When `null`, the `auto_bundle_on_deploy` field will be omitted from the resulting object.
+  - `aws_flow_ruby_settings` (`string`): Set the `aws_flow_ruby_settings` field on the resulting object. When `null`, the `aws_flow_ruby_settings` field will be omitted from the resulting object.
+  - `data_source_arn` (`string`): Set the `data_source_arn` field on the resulting object. When `null`, the `data_source_arn` field will be omitted from the resulting object.
+  - `data_source_database_name` (`string`): Set the `data_source_database_name` field on the resulting object. When `null`, the `data_source_database_name` field will be omitted from the resulting object.
+  - `data_source_type` (`string`): Set the `data_source_type` field on the resulting object. When `null`, the `data_source_type` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `document_root` (`string`): Set the `document_root` field on the resulting object. When `null`, the `document_root` field will be omitted from the resulting object.
+  - `domains` (`list`): Set the `domains` field on the resulting object. When `null`, the `domains` field will be omitted from the resulting object.
+  - `enable_ssl` (`bool`): Set the `enable_ssl` field on the resulting object. When `null`, the `enable_ssl` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `rails_env` (`string`): Set the `rails_env` field on the resulting object. When `null`, the `rails_env` field will be omitted from the resulting object.
+  - `short_name` (`string`): Set the `short_name` field on the resulting object. When `null`, the `short_name` field will be omitted from the resulting object.
+  - `stack_id` (`string`): Set the `stack_id` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `app_source` (`list[obj]`): Set the `app_source` field on the resulting object. When `null`, the `app_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.app_source.new](#fn-app_sourcenew) constructor.
+  - `environment` (`list[obj]`): Set the `environment` field on the resulting object. When `null`, the `environment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.environment.new](#fn-environmentnew) constructor.
+  - `ssl_configuration` (`list[obj]`): Set the `ssl_configuration` field on the resulting object. When `null`, the `ssl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opsworks_application.ssl_configuration.new](#fn-ssl_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_application` resource into the root Terraform configuration.
@@ -485,12 +485,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `password` (`string`):  When `null`, the `password` field will be omitted from the resulting object.
-  - `revision` (`string`):  When `null`, the `revision` field will be omitted from the resulting object.
-  - `ssh_key` (`string`):  When `null`, the `ssh_key` field will be omitted from the resulting object.
-  - `type` (`string`): 
-  - `url` (`string`):  When `null`, the `url` field will be omitted from the resulting object.
-  - `username` (`string`):  When `null`, the `username` field will be omitted from the resulting object.
+  - `password` (`string`): Set the `password` field on the resulting object. When `null`, the `password` field will be omitted from the resulting object.
+  - `revision` (`string`): Set the `revision` field on the resulting object. When `null`, the `revision` field will be omitted from the resulting object.
+  - `ssh_key` (`string`): Set the `ssh_key` field on the resulting object. When `null`, the `ssh_key` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `url` (`string`): Set the `url` field on the resulting object. When `null`, the `url` field will be omitted from the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `app_source` sub block.
@@ -513,9 +513,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `secure` (`bool`):  When `null`, the `secure` field will be omitted from the resulting object.
-  - `value` (`string`): 
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `secure` (`bool`): Set the `secure` field on the resulting object. When `null`, the `secure` field will be omitted from the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `environment` sub block.
@@ -538,9 +538,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `certificate` (`string`): 
-  - `chain` (`string`):  When `null`, the `chain` field will be omitted from the resulting object.
-  - `private_key` (`string`): 
+  - `certificate` (`string`): Set the `certificate` field on the resulting object.
+  - `chain` (`string`): Set the `chain` field on the resulting object. When `null`, the `chain` field will be omitted from the resulting object.
+  - `private_key` (`string`): Set the `private_key` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ssl_configuration` sub block.

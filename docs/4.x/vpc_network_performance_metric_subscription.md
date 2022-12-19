@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `destination` (`string`): 
-  - `metric` (`string`):  When `null`, the `metric` field will be omitted from the resulting object.
-  - `source` (`string`): 
-  - `statistic` (`string`):  When `null`, the `statistic` field will be omitted from the resulting object.
+  - `destination` (`string`): Set the `destination` field on the resulting resource block.
+  - `metric` (`string`): Set the `metric` field on the resulting resource block. When `null`, the `metric` field will be omitted from the resulting object.
+  - `source` (`string`): Set the `source` field on the resulting resource block.
+  - `statistic` (`string`): Set the `statistic` field on the resulting resource block. When `null`, the `statistic` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `destination` (`string`): 
-  - `metric` (`string`):  When `null`, the `metric` field will be omitted from the resulting object.
-  - `source` (`string`): 
-  - `statistic` (`string`):  When `null`, the `statistic` field will be omitted from the resulting object.
+  - `destination` (`string`): Set the `destination` field on the resulting object.
+  - `metric` (`string`): Set the `metric` field on the resulting object. When `null`, the `metric` field will be omitted from the resulting object.
+  - `source` (`string`): Set the `source` field on the resulting object.
+  - `statistic` (`string`): Set the `statistic` field on the resulting object. When `null`, the `statistic` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_network_performance_metric_subscription` resource into the root Terraform configuration.

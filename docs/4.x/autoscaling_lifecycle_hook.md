@@ -53,14 +53,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `autoscaling_group_name` (`string`): 
-  - `default_result` (`string`):  When `null`, the `default_result` field will be omitted from the resulting object.
-  - `heartbeat_timeout` (`number`):  When `null`, the `heartbeat_timeout` field will be omitted from the resulting object.
-  - `lifecycle_transition` (`string`): 
-  - `name` (`string`): 
-  - `notification_metadata` (`string`):  When `null`, the `notification_metadata` field will be omitted from the resulting object.
-  - `notification_target_arn` (`string`):  When `null`, the `notification_target_arn` field will be omitted from the resulting object.
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting resource block.
+  - `default_result` (`string`): Set the `default_result` field on the resulting resource block. When `null`, the `default_result` field will be omitted from the resulting object.
+  - `heartbeat_timeout` (`number`): Set the `heartbeat_timeout` field on the resulting resource block. When `null`, the `heartbeat_timeout` field will be omitted from the resulting object.
+  - `lifecycle_transition` (`string`): Set the `lifecycle_transition` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `notification_metadata` (`string`): Set the `notification_metadata` field on the resulting resource block. When `null`, the `notification_metadata` field will be omitted from the resulting object.
+  - `notification_target_arn` (`string`): Set the `notification_target_arn` field on the resulting resource block. When `null`, the `notification_target_arn` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block. When `null`, the `role_arn` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,14 +84,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `autoscaling_group_name` (`string`): 
-  - `default_result` (`string`):  When `null`, the `default_result` field will be omitted from the resulting object.
-  - `heartbeat_timeout` (`number`):  When `null`, the `heartbeat_timeout` field will be omitted from the resulting object.
-  - `lifecycle_transition` (`string`): 
-  - `name` (`string`): 
-  - `notification_metadata` (`string`):  When `null`, the `notification_metadata` field will be omitted from the resulting object.
-  - `notification_target_arn` (`string`):  When `null`, the `notification_target_arn` field will be omitted from the resulting object.
-  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting object.
+  - `default_result` (`string`): Set the `default_result` field on the resulting object. When `null`, the `default_result` field will be omitted from the resulting object.
+  - `heartbeat_timeout` (`number`): Set the `heartbeat_timeout` field on the resulting object. When `null`, the `heartbeat_timeout` field will be omitted from the resulting object.
+  - `lifecycle_transition` (`string`): Set the `lifecycle_transition` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `notification_metadata` (`string`): Set the `notification_metadata` field on the resulting object. When `null`, the `notification_metadata` field will be omitted from the resulting object.
+  - `notification_target_arn` (`string`): Set the `notification_target_arn` field on the resulting object. When `null`, the `notification_target_arn` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `autoscaling_lifecycle_hook` resource into the root Terraform configuration.

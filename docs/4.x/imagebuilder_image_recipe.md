@@ -69,17 +69,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_image` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
-  - `version` (`string`): 
-  - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-block_device_mappingnew) constructor.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-componentnew) constructor.
-  - `systems_manager_agent` (`list[obj]`):  When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-systems_manager_agentnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `parent_image` (`string`): Set the `parent_image` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_data_base64` (`string`): Set the `user_data_base64` field on the resulting resource block. When `null`, the `user_data_base64` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting resource block.
+  - `working_directory` (`string`): Set the `working_directory` field on the resulting resource block. When `null`, the `working_directory` field will be omitted from the resulting object.
+  - `block_device_mapping` (`list[obj]`): Set the `block_device_mapping` field on the resulting resource block. When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-block_device_mappingnew) constructor.
+  - `component` (`list[obj]`): Set the `component` field on the resulting resource block. When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-componentnew) constructor.
+  - `systems_manager_agent` (`list[obj]`): Set the `systems_manager_agent` field on the resulting resource block. When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-systems_manager_agentnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,17 +103,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `parent_image` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
-  - `version` (`string`): 
-  - `working_directory` (`string`):  When `null`, the `working_directory` field will be omitted from the resulting object.
-  - `block_device_mapping` (`list[obj]`):  When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-block_device_mappingnew) constructor.
-  - `component` (`list[obj]`):  When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-componentnew) constructor.
-  - `systems_manager_agent` (`list[obj]`):  When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-systems_manager_agentnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `parent_image` (`string`): Set the `parent_image` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_data_base64` (`string`): Set the `user_data_base64` field on the resulting object. When `null`, the `user_data_base64` field will be omitted from the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object.
+  - `working_directory` (`string`): Set the `working_directory` field on the resulting object. When `null`, the `working_directory` field will be omitted from the resulting object.
+  - `block_device_mapping` (`list[obj]`): Set the `block_device_mapping` field on the resulting object. When `null`, the `block_device_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.new](#fn-block_device_mappingnew) constructor.
+  - `component` (`list[obj]`): Set the `component` field on the resulting object. When `null`, the `component` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.new](#fn-componentnew) constructor.
+  - `systems_manager_agent` (`list[obj]`): Set the `systems_manager_agent` field on the resulting object. When `null`, the `systems_manager_agent` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.systems_manager_agent.new](#fn-systems_manager_agentnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_image_recipe` resource into the root Terraform configuration.
@@ -375,10 +375,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `device_name` (`string`):  When `null`, the `device_name` field will be omitted from the resulting object.
-  - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.
-  - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
-  - `ebs` (`list[obj]`):  When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-block_device_mappingebsnew) constructor.
+  - `device_name` (`string`): Set the `device_name` field on the resulting object. When `null`, the `device_name` field will be omitted from the resulting object.
+  - `no_device` (`bool`): Set the `no_device` field on the resulting object. When `null`, the `no_device` field will be omitted from the resulting object.
+  - `virtual_name` (`string`): Set the `virtual_name` field on the resulting object. When `null`, the `virtual_name` field will be omitted from the resulting object.
+  - `ebs` (`list[obj]`): Set the `ebs` field on the resulting object. When `null`, the `ebs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.block_device_mapping.ebs.new](#fn-block_device_mappingebsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `block_device_mapping` sub block.
@@ -401,14 +401,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete_on_termination` (`string`):  When `null`, the `delete_on_termination` field will be omitted from the resulting object.
-  - `encrypted` (`string`):  When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `snapshot_id` (`string`):  When `null`, the `snapshot_id` field will be omitted from the resulting object.
-  - `throughput` (`number`):  When `null`, the `throughput` field will be omitted from the resulting object.
-  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `delete_on_termination` (`string`): Set the `delete_on_termination` field on the resulting object. When `null`, the `delete_on_termination` field will be omitted from the resulting object.
+  - `encrypted` (`string`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `snapshot_id` (`string`): Set the `snapshot_id` field on the resulting object. When `null`, the `snapshot_id` field will be omitted from the resulting object.
+  - `throughput` (`number`): Set the `throughput` field on the resulting object. When `null`, the `throughput` field will be omitted from the resulting object.
+  - `volume_size` (`number`): Set the `volume_size` field on the resulting object. When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs` sub block.
@@ -431,8 +431,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `component_arn` (`string`): 
-  - `parameter` (`list[obj]`):  When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.parameter.new](#fn-componentparameternew) constructor.
+  - `component_arn` (`string`): Set the `component_arn` field on the resulting object.
+  - `parameter` (`list[obj]`): Set the `parameter` field on the resulting object. When `null`, the `parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image_recipe.component.parameter.new](#fn-componentparameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `component` sub block.
@@ -455,8 +455,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `parameter` sub block.
@@ -479,7 +479,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `uninstall_after_build` (`bool`): 
+  - `uninstall_after_build` (`bool`): Set the `uninstall_after_build` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `systems_manager_agent` sub block.

@@ -119,26 +119,26 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `aliases` (`list`):  When `null`, the `aliases` field will be omitted from the resulting object.
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `default_root_object` (`string`):  When `null`, the `default_root_object` field will be omitted from the resulting object.
-  - `enabled` (`bool`): 
-  - `http_version` (`string`):  When `null`, the `http_version` field will be omitted from the resulting object.
-  - `is_ipv6_enabled` (`bool`):  When `null`, the `is_ipv6_enabled` field will be omitted from the resulting object.
-  - `price_class` (`string`):  When `null`, the `price_class` field will be omitted from the resulting object.
-  - `retain_on_delete` (`bool`):  When `null`, the `retain_on_delete` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `wait_for_deployment` (`bool`):  When `null`, the `wait_for_deployment` field will be omitted from the resulting object.
-  - `web_acl_id` (`string`):  When `null`, the `web_acl_id` field will be omitted from the resulting object.
-  - `custom_error_response` (`list[obj]`):  When `null`, the `custom_error_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.custom_error_response.new](#fn-custom_error_responsenew) constructor.
-  - `default_cache_behavior` (`list[obj]`):  When `null`, the `default_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.new](#fn-default_cache_behaviornew) constructor.
-  - `logging_config` (`list[obj]`):  When `null`, the `logging_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.logging_config.new](#fn-logging_confignew) constructor.
-  - `ordered_cache_behavior` (`list[obj]`):  When `null`, the `ordered_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.new](#fn-ordered_cache_behaviornew) constructor.
-  - `origin` (`list[obj]`):  When `null`, the `origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.new](#fn-originnew) constructor.
-  - `origin_group` (`list[obj]`):  When `null`, the `origin_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.new](#fn-origin_groupnew) constructor.
-  - `restrictions` (`list[obj]`):  When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.new](#fn-restrictionsnew) constructor.
-  - `viewer_certificate` (`list[obj]`):  When `null`, the `viewer_certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.viewer_certificate.new](#fn-viewer_certificatenew) constructor.
+  - `aliases` (`list`): Set the `aliases` field on the resulting resource block. When `null`, the `aliases` field will be omitted from the resulting object.
+  - `comment` (`string`): Set the `comment` field on the resulting resource block. When `null`, the `comment` field will be omitted from the resulting object.
+  - `default_root_object` (`string`): Set the `default_root_object` field on the resulting resource block. When `null`, the `default_root_object` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block.
+  - `http_version` (`string`): Set the `http_version` field on the resulting resource block. When `null`, the `http_version` field will be omitted from the resulting object.
+  - `is_ipv6_enabled` (`bool`): Set the `is_ipv6_enabled` field on the resulting resource block. When `null`, the `is_ipv6_enabled` field will be omitted from the resulting object.
+  - `price_class` (`string`): Set the `price_class` field on the resulting resource block. When `null`, the `price_class` field will be omitted from the resulting object.
+  - `retain_on_delete` (`bool`): Set the `retain_on_delete` field on the resulting resource block. When `null`, the `retain_on_delete` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `wait_for_deployment` (`bool`): Set the `wait_for_deployment` field on the resulting resource block. When `null`, the `wait_for_deployment` field will be omitted from the resulting object.
+  - `web_acl_id` (`string`): Set the `web_acl_id` field on the resulting resource block. When `null`, the `web_acl_id` field will be omitted from the resulting object.
+  - `custom_error_response` (`list[obj]`): Set the `custom_error_response` field on the resulting resource block. When `null`, the `custom_error_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.custom_error_response.new](#fn-custom_error_responsenew) constructor.
+  - `default_cache_behavior` (`list[obj]`): Set the `default_cache_behavior` field on the resulting resource block. When `null`, the `default_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.new](#fn-default_cache_behaviornew) constructor.
+  - `logging_config` (`list[obj]`): Set the `logging_config` field on the resulting resource block. When `null`, the `logging_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.logging_config.new](#fn-logging_confignew) constructor.
+  - `ordered_cache_behavior` (`list[obj]`): Set the `ordered_cache_behavior` field on the resulting resource block. When `null`, the `ordered_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.new](#fn-ordered_cache_behaviornew) constructor.
+  - `origin` (`list[obj]`): Set the `origin` field on the resulting resource block. When `null`, the `origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.new](#fn-originnew) constructor.
+  - `origin_group` (`list[obj]`): Set the `origin_group` field on the resulting resource block. When `null`, the `origin_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.new](#fn-origin_groupnew) constructor.
+  - `restrictions` (`list[obj]`): Set the `restrictions` field on the resulting resource block. When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.new](#fn-restrictionsnew) constructor.
+  - `viewer_certificate` (`list[obj]`): Set the `viewer_certificate` field on the resulting resource block. When `null`, the `viewer_certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.viewer_certificate.new](#fn-viewer_certificatenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -162,26 +162,26 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `aliases` (`list`):  When `null`, the `aliases` field will be omitted from the resulting object.
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `default_root_object` (`string`):  When `null`, the `default_root_object` field will be omitted from the resulting object.
-  - `enabled` (`bool`): 
-  - `http_version` (`string`):  When `null`, the `http_version` field will be omitted from the resulting object.
-  - `is_ipv6_enabled` (`bool`):  When `null`, the `is_ipv6_enabled` field will be omitted from the resulting object.
-  - `price_class` (`string`):  When `null`, the `price_class` field will be omitted from the resulting object.
-  - `retain_on_delete` (`bool`):  When `null`, the `retain_on_delete` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `wait_for_deployment` (`bool`):  When `null`, the `wait_for_deployment` field will be omitted from the resulting object.
-  - `web_acl_id` (`string`):  When `null`, the `web_acl_id` field will be omitted from the resulting object.
-  - `custom_error_response` (`list[obj]`):  When `null`, the `custom_error_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.custom_error_response.new](#fn-custom_error_responsenew) constructor.
-  - `default_cache_behavior` (`list[obj]`):  When `null`, the `default_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.new](#fn-default_cache_behaviornew) constructor.
-  - `logging_config` (`list[obj]`):  When `null`, the `logging_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.logging_config.new](#fn-logging_confignew) constructor.
-  - `ordered_cache_behavior` (`list[obj]`):  When `null`, the `ordered_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.new](#fn-ordered_cache_behaviornew) constructor.
-  - `origin` (`list[obj]`):  When `null`, the `origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.new](#fn-originnew) constructor.
-  - `origin_group` (`list[obj]`):  When `null`, the `origin_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.new](#fn-origin_groupnew) constructor.
-  - `restrictions` (`list[obj]`):  When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.new](#fn-restrictionsnew) constructor.
-  - `viewer_certificate` (`list[obj]`):  When `null`, the `viewer_certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.viewer_certificate.new](#fn-viewer_certificatenew) constructor.
+  - `aliases` (`list`): Set the `aliases` field on the resulting object. When `null`, the `aliases` field will be omitted from the resulting object.
+  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
+  - `default_root_object` (`string`): Set the `default_root_object` field on the resulting object. When `null`, the `default_root_object` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `http_version` (`string`): Set the `http_version` field on the resulting object. When `null`, the `http_version` field will be omitted from the resulting object.
+  - `is_ipv6_enabled` (`bool`): Set the `is_ipv6_enabled` field on the resulting object. When `null`, the `is_ipv6_enabled` field will be omitted from the resulting object.
+  - `price_class` (`string`): Set the `price_class` field on the resulting object. When `null`, the `price_class` field will be omitted from the resulting object.
+  - `retain_on_delete` (`bool`): Set the `retain_on_delete` field on the resulting object. When `null`, the `retain_on_delete` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `wait_for_deployment` (`bool`): Set the `wait_for_deployment` field on the resulting object. When `null`, the `wait_for_deployment` field will be omitted from the resulting object.
+  - `web_acl_id` (`string`): Set the `web_acl_id` field on the resulting object. When `null`, the `web_acl_id` field will be omitted from the resulting object.
+  - `custom_error_response` (`list[obj]`): Set the `custom_error_response` field on the resulting object. When `null`, the `custom_error_response` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.custom_error_response.new](#fn-custom_error_responsenew) constructor.
+  - `default_cache_behavior` (`list[obj]`): Set the `default_cache_behavior` field on the resulting object. When `null`, the `default_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.new](#fn-default_cache_behaviornew) constructor.
+  - `logging_config` (`list[obj]`): Set the `logging_config` field on the resulting object. When `null`, the `logging_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.logging_config.new](#fn-logging_confignew) constructor.
+  - `ordered_cache_behavior` (`list[obj]`): Set the `ordered_cache_behavior` field on the resulting object. When `null`, the `ordered_cache_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.new](#fn-ordered_cache_behaviornew) constructor.
+  - `origin` (`list[obj]`): Set the `origin` field on the resulting object. When `null`, the `origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.new](#fn-originnew) constructor.
+  - `origin_group` (`list[obj]`): Set the `origin_group` field on the resulting object. When `null`, the `origin_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.new](#fn-origin_groupnew) constructor.
+  - `restrictions` (`list[obj]`): Set the `restrictions` field on the resulting object. When `null`, the `restrictions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.new](#fn-restrictionsnew) constructor.
+  - `viewer_certificate` (`list[obj]`): Set the `viewer_certificate` field on the resulting object. When `null`, the `viewer_certificate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.viewer_certificate.new](#fn-viewer_certificatenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_distribution` resource into the root Terraform configuration.
@@ -692,10 +692,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `error_caching_min_ttl` (`number`):  When `null`, the `error_caching_min_ttl` field will be omitted from the resulting object.
-  - `error_code` (`number`): 
-  - `response_code` (`number`):  When `null`, the `response_code` field will be omitted from the resulting object.
-  - `response_page_path` (`string`):  When `null`, the `response_page_path` field will be omitted from the resulting object.
+  - `error_caching_min_ttl` (`number`): Set the `error_caching_min_ttl` field on the resulting object. When `null`, the `error_caching_min_ttl` field will be omitted from the resulting object.
+  - `error_code` (`number`): Set the `error_code` field on the resulting object.
+  - `response_code` (`number`): Set the `response_code` field on the resulting object. When `null`, the `response_code` field will be omitted from the resulting object.
+  - `response_page_path` (`string`): Set the `response_page_path` field on the resulting object. When `null`, the `response_page_path` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_error_response` sub block.
@@ -718,25 +718,25 @@ Terraform sub block.
 
 
 **Args**:
-  - `allowed_methods` (`list`): 
-  - `cache_policy_id` (`string`):  When `null`, the `cache_policy_id` field will be omitted from the resulting object.
-  - `cached_methods` (`list`): 
-  - `compress` (`bool`):  When `null`, the `compress` field will be omitted from the resulting object.
-  - `default_ttl` (`number`):  When `null`, the `default_ttl` field will be omitted from the resulting object.
-  - `field_level_encryption_id` (`string`):  When `null`, the `field_level_encryption_id` field will be omitted from the resulting object.
-  - `max_ttl` (`number`):  When `null`, the `max_ttl` field will be omitted from the resulting object.
-  - `min_ttl` (`number`):  When `null`, the `min_ttl` field will be omitted from the resulting object.
-  - `origin_request_policy_id` (`string`):  When `null`, the `origin_request_policy_id` field will be omitted from the resulting object.
-  - `realtime_log_config_arn` (`string`):  When `null`, the `realtime_log_config_arn` field will be omitted from the resulting object.
-  - `response_headers_policy_id` (`string`):  When `null`, the `response_headers_policy_id` field will be omitted from the resulting object.
-  - `smooth_streaming` (`bool`):  When `null`, the `smooth_streaming` field will be omitted from the resulting object.
-  - `target_origin_id` (`string`): 
-  - `trusted_key_groups` (`list`):  When `null`, the `trusted_key_groups` field will be omitted from the resulting object.
-  - `trusted_signers` (`list`):  When `null`, the `trusted_signers` field will be omitted from the resulting object.
-  - `viewer_protocol_policy` (`string`): 
-  - `forwarded_values` (`list[obj]`):  When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.new](#fn-default_cache_behaviorforwarded_valuesnew) constructor.
-  - `function_association` (`list[obj]`):  When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.function_association.new](#fn-default_cache_behaviorfunction_associationnew) constructor.
-  - `lambda_function_association` (`list[obj]`):  When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.lambda_function_association.new](#fn-default_cache_behaviorlambda_function_associationnew) constructor.
+  - `allowed_methods` (`list`): Set the `allowed_methods` field on the resulting object.
+  - `cache_policy_id` (`string`): Set the `cache_policy_id` field on the resulting object. When `null`, the `cache_policy_id` field will be omitted from the resulting object.
+  - `cached_methods` (`list`): Set the `cached_methods` field on the resulting object.
+  - `compress` (`bool`): Set the `compress` field on the resulting object. When `null`, the `compress` field will be omitted from the resulting object.
+  - `default_ttl` (`number`): Set the `default_ttl` field on the resulting object. When `null`, the `default_ttl` field will be omitted from the resulting object.
+  - `field_level_encryption_id` (`string`): Set the `field_level_encryption_id` field on the resulting object. When `null`, the `field_level_encryption_id` field will be omitted from the resulting object.
+  - `max_ttl` (`number`): Set the `max_ttl` field on the resulting object. When `null`, the `max_ttl` field will be omitted from the resulting object.
+  - `min_ttl` (`number`): Set the `min_ttl` field on the resulting object. When `null`, the `min_ttl` field will be omitted from the resulting object.
+  - `origin_request_policy_id` (`string`): Set the `origin_request_policy_id` field on the resulting object. When `null`, the `origin_request_policy_id` field will be omitted from the resulting object.
+  - `realtime_log_config_arn` (`string`): Set the `realtime_log_config_arn` field on the resulting object. When `null`, the `realtime_log_config_arn` field will be omitted from the resulting object.
+  - `response_headers_policy_id` (`string`): Set the `response_headers_policy_id` field on the resulting object. When `null`, the `response_headers_policy_id` field will be omitted from the resulting object.
+  - `smooth_streaming` (`bool`): Set the `smooth_streaming` field on the resulting object. When `null`, the `smooth_streaming` field will be omitted from the resulting object.
+  - `target_origin_id` (`string`): Set the `target_origin_id` field on the resulting object.
+  - `trusted_key_groups` (`list`): Set the `trusted_key_groups` field on the resulting object. When `null`, the `trusted_key_groups` field will be omitted from the resulting object.
+  - `trusted_signers` (`list`): Set the `trusted_signers` field on the resulting object. When `null`, the `trusted_signers` field will be omitted from the resulting object.
+  - `viewer_protocol_policy` (`string`): Set the `viewer_protocol_policy` field on the resulting object.
+  - `forwarded_values` (`list[obj]`): Set the `forwarded_values` field on the resulting object. When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.new](#fn-default_cache_behaviorforwarded_valuesnew) constructor.
+  - `function_association` (`list[obj]`): Set the `function_association` field on the resulting object. When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.function_association.new](#fn-default_cache_behaviorfunction_associationnew) constructor.
+  - `lambda_function_association` (`list[obj]`): Set the `lambda_function_association` field on the resulting object. When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.lambda_function_association.new](#fn-default_cache_behaviorlambda_function_associationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `default_cache_behavior` sub block.
@@ -759,10 +759,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `headers` (`list`):  When `null`, the `headers` field will be omitted from the resulting object.
-  - `query_string` (`bool`): 
-  - `query_string_cache_keys` (`list`):  When `null`, the `query_string_cache_keys` field will be omitted from the resulting object.
-  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.cookies.new](#fn-default_cache_behaviordefault_cache_behaviorcookiesnew) constructor.
+  - `headers` (`list`): Set the `headers` field on the resulting object. When `null`, the `headers` field will be omitted from the resulting object.
+  - `query_string` (`bool`): Set the `query_string` field on the resulting object.
+  - `query_string_cache_keys` (`list`): Set the `query_string_cache_keys` field on the resulting object. When `null`, the `query_string_cache_keys` field will be omitted from the resulting object.
+  - `cookies` (`list[obj]`): Set the `cookies` field on the resulting object. When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.default_cache_behavior.forwarded_values.cookies.new](#fn-default_cache_behaviordefault_cache_behaviorcookiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `forwarded_values` sub block.
@@ -785,8 +785,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `forward` (`string`): 
-  - `whitelisted_names` (`list`):  When `null`, the `whitelisted_names` field will be omitted from the resulting object.
+  - `forward` (`string`): Set the `forward` field on the resulting object.
+  - `whitelisted_names` (`list`): Set the `whitelisted_names` field on the resulting object. When `null`, the `whitelisted_names` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cookies` sub block.
@@ -809,8 +809,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `event_type` (`string`): 
-  - `function_arn` (`string`): 
+  - `event_type` (`string`): Set the `event_type` field on the resulting object.
+  - `function_arn` (`string`): Set the `function_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `function_association` sub block.
@@ -833,9 +833,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `event_type` (`string`): 
-  - `include_body` (`bool`):  When `null`, the `include_body` field will be omitted from the resulting object.
-  - `lambda_arn` (`string`): 
+  - `event_type` (`string`): Set the `event_type` field on the resulting object.
+  - `include_body` (`bool`): Set the `include_body` field on the resulting object. When `null`, the `include_body` field will be omitted from the resulting object.
+  - `lambda_arn` (`string`): Set the `lambda_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda_function_association` sub block.
@@ -858,9 +858,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): 
-  - `include_cookies` (`bool`):  When `null`, the `include_cookies` field will be omitted from the resulting object.
-  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `include_cookies` (`bool`): Set the `include_cookies` field on the resulting object. When `null`, the `include_cookies` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `logging_config` sub block.
@@ -883,26 +883,26 @@ Terraform sub block.
 
 
 **Args**:
-  - `allowed_methods` (`list`): 
-  - `cache_policy_id` (`string`):  When `null`, the `cache_policy_id` field will be omitted from the resulting object.
-  - `cached_methods` (`list`): 
-  - `compress` (`bool`):  When `null`, the `compress` field will be omitted from the resulting object.
-  - `default_ttl` (`number`):  When `null`, the `default_ttl` field will be omitted from the resulting object.
-  - `field_level_encryption_id` (`string`):  When `null`, the `field_level_encryption_id` field will be omitted from the resulting object.
-  - `max_ttl` (`number`):  When `null`, the `max_ttl` field will be omitted from the resulting object.
-  - `min_ttl` (`number`):  When `null`, the `min_ttl` field will be omitted from the resulting object.
-  - `origin_request_policy_id` (`string`):  When `null`, the `origin_request_policy_id` field will be omitted from the resulting object.
-  - `path_pattern` (`string`): 
-  - `realtime_log_config_arn` (`string`):  When `null`, the `realtime_log_config_arn` field will be omitted from the resulting object.
-  - `response_headers_policy_id` (`string`):  When `null`, the `response_headers_policy_id` field will be omitted from the resulting object.
-  - `smooth_streaming` (`bool`):  When `null`, the `smooth_streaming` field will be omitted from the resulting object.
-  - `target_origin_id` (`string`): 
-  - `trusted_key_groups` (`list`):  When `null`, the `trusted_key_groups` field will be omitted from the resulting object.
-  - `trusted_signers` (`list`):  When `null`, the `trusted_signers` field will be omitted from the resulting object.
-  - `viewer_protocol_policy` (`string`): 
-  - `forwarded_values` (`list[obj]`):  When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.new](#fn-ordered_cache_behaviorforwarded_valuesnew) constructor.
-  - `function_association` (`list[obj]`):  When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.function_association.new](#fn-ordered_cache_behaviorfunction_associationnew) constructor.
-  - `lambda_function_association` (`list[obj]`):  When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.lambda_function_association.new](#fn-ordered_cache_behaviorlambda_function_associationnew) constructor.
+  - `allowed_methods` (`list`): Set the `allowed_methods` field on the resulting object.
+  - `cache_policy_id` (`string`): Set the `cache_policy_id` field on the resulting object. When `null`, the `cache_policy_id` field will be omitted from the resulting object.
+  - `cached_methods` (`list`): Set the `cached_methods` field on the resulting object.
+  - `compress` (`bool`): Set the `compress` field on the resulting object. When `null`, the `compress` field will be omitted from the resulting object.
+  - `default_ttl` (`number`): Set the `default_ttl` field on the resulting object. When `null`, the `default_ttl` field will be omitted from the resulting object.
+  - `field_level_encryption_id` (`string`): Set the `field_level_encryption_id` field on the resulting object. When `null`, the `field_level_encryption_id` field will be omitted from the resulting object.
+  - `max_ttl` (`number`): Set the `max_ttl` field on the resulting object. When `null`, the `max_ttl` field will be omitted from the resulting object.
+  - `min_ttl` (`number`): Set the `min_ttl` field on the resulting object. When `null`, the `min_ttl` field will be omitted from the resulting object.
+  - `origin_request_policy_id` (`string`): Set the `origin_request_policy_id` field on the resulting object. When `null`, the `origin_request_policy_id` field will be omitted from the resulting object.
+  - `path_pattern` (`string`): Set the `path_pattern` field on the resulting object.
+  - `realtime_log_config_arn` (`string`): Set the `realtime_log_config_arn` field on the resulting object. When `null`, the `realtime_log_config_arn` field will be omitted from the resulting object.
+  - `response_headers_policy_id` (`string`): Set the `response_headers_policy_id` field on the resulting object. When `null`, the `response_headers_policy_id` field will be omitted from the resulting object.
+  - `smooth_streaming` (`bool`): Set the `smooth_streaming` field on the resulting object. When `null`, the `smooth_streaming` field will be omitted from the resulting object.
+  - `target_origin_id` (`string`): Set the `target_origin_id` field on the resulting object.
+  - `trusted_key_groups` (`list`): Set the `trusted_key_groups` field on the resulting object. When `null`, the `trusted_key_groups` field will be omitted from the resulting object.
+  - `trusted_signers` (`list`): Set the `trusted_signers` field on the resulting object. When `null`, the `trusted_signers` field will be omitted from the resulting object.
+  - `viewer_protocol_policy` (`string`): Set the `viewer_protocol_policy` field on the resulting object.
+  - `forwarded_values` (`list[obj]`): Set the `forwarded_values` field on the resulting object. When `null`, the `forwarded_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.new](#fn-ordered_cache_behaviorforwarded_valuesnew) constructor.
+  - `function_association` (`list[obj]`): Set the `function_association` field on the resulting object. When `null`, the `function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.function_association.new](#fn-ordered_cache_behaviorfunction_associationnew) constructor.
+  - `lambda_function_association` (`list[obj]`): Set the `lambda_function_association` field on the resulting object. When `null`, the `lambda_function_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.lambda_function_association.new](#fn-ordered_cache_behaviorlambda_function_associationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `ordered_cache_behavior` sub block.
@@ -925,10 +925,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `headers` (`list`):  When `null`, the `headers` field will be omitted from the resulting object.
-  - `query_string` (`bool`): 
-  - `query_string_cache_keys` (`list`):  When `null`, the `query_string_cache_keys` field will be omitted from the resulting object.
-  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.cookies.new](#fn-ordered_cache_behaviorordered_cache_behaviorcookiesnew) constructor.
+  - `headers` (`list`): Set the `headers` field on the resulting object. When `null`, the `headers` field will be omitted from the resulting object.
+  - `query_string` (`bool`): Set the `query_string` field on the resulting object.
+  - `query_string_cache_keys` (`list`): Set the `query_string_cache_keys` field on the resulting object. When `null`, the `query_string_cache_keys` field will be omitted from the resulting object.
+  - `cookies` (`list[obj]`): Set the `cookies` field on the resulting object. When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.ordered_cache_behavior.forwarded_values.cookies.new](#fn-ordered_cache_behaviorordered_cache_behaviorcookiesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `forwarded_values` sub block.
@@ -951,8 +951,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `forward` (`string`): 
-  - `whitelisted_names` (`list`):  When `null`, the `whitelisted_names` field will be omitted from the resulting object.
+  - `forward` (`string`): Set the `forward` field on the resulting object.
+  - `whitelisted_names` (`list`): Set the `whitelisted_names` field on the resulting object. When `null`, the `whitelisted_names` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cookies` sub block.
@@ -975,8 +975,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `event_type` (`string`): 
-  - `function_arn` (`string`): 
+  - `event_type` (`string`): Set the `event_type` field on the resulting object.
+  - `function_arn` (`string`): Set the `function_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `function_association` sub block.
@@ -999,9 +999,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `event_type` (`string`): 
-  - `include_body` (`bool`):  When `null`, the `include_body` field will be omitted from the resulting object.
-  - `lambda_arn` (`string`): 
+  - `event_type` (`string`): Set the `event_type` field on the resulting object.
+  - `include_body` (`bool`): Set the `include_body` field on the resulting object. When `null`, the `include_body` field will be omitted from the resulting object.
+  - `lambda_arn` (`string`): Set the `lambda_arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda_function_association` sub block.
@@ -1024,16 +1024,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_attempts` (`number`):  When `null`, the `connection_attempts` field will be omitted from the resulting object.
-  - `connection_timeout` (`number`):  When `null`, the `connection_timeout` field will be omitted from the resulting object.
-  - `domain_name` (`string`): 
-  - `origin_access_control_id` (`string`):  When `null`, the `origin_access_control_id` field will be omitted from the resulting object.
-  - `origin_id` (`string`): 
-  - `origin_path` (`string`):  When `null`, the `origin_path` field will be omitted from the resulting object.
-  - `custom_header` (`list[obj]`):  When `null`, the `custom_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_header.new](#fn-origincustom_headernew) constructor.
-  - `custom_origin_config` (`list[obj]`):  When `null`, the `custom_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_origin_config.new](#fn-origincustom_origin_confignew) constructor.
-  - `origin_shield` (`list[obj]`):  When `null`, the `origin_shield` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.origin_shield.new](#fn-originorigin_shieldnew) constructor.
-  - `s3_origin_config` (`list[obj]`):  When `null`, the `s3_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.s3_origin_config.new](#fn-origins3_origin_confignew) constructor.
+  - `connection_attempts` (`number`): Set the `connection_attempts` field on the resulting object. When `null`, the `connection_attempts` field will be omitted from the resulting object.
+  - `connection_timeout` (`number`): Set the `connection_timeout` field on the resulting object. When `null`, the `connection_timeout` field will be omitted from the resulting object.
+  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `origin_access_control_id` (`string`): Set the `origin_access_control_id` field on the resulting object. When `null`, the `origin_access_control_id` field will be omitted from the resulting object.
+  - `origin_id` (`string`): Set the `origin_id` field on the resulting object.
+  - `origin_path` (`string`): Set the `origin_path` field on the resulting object. When `null`, the `origin_path` field will be omitted from the resulting object.
+  - `custom_header` (`list[obj]`): Set the `custom_header` field on the resulting object. When `null`, the `custom_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_header.new](#fn-origincustom_headernew) constructor.
+  - `custom_origin_config` (`list[obj]`): Set the `custom_origin_config` field on the resulting object. When `null`, the `custom_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.custom_origin_config.new](#fn-origincustom_origin_confignew) constructor.
+  - `origin_shield` (`list[obj]`): Set the `origin_shield` field on the resulting object. When `null`, the `origin_shield` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.origin_shield.new](#fn-originorigin_shieldnew) constructor.
+  - `s3_origin_config` (`list[obj]`): Set the `s3_origin_config` field on the resulting object. When `null`, the `s3_origin_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin.s3_origin_config.new](#fn-origins3_origin_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `origin` sub block.
@@ -1056,8 +1056,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `value` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_header` sub block.
@@ -1080,12 +1080,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `http_port` (`number`): 
-  - `https_port` (`number`): 
-  - `origin_keepalive_timeout` (`number`):  When `null`, the `origin_keepalive_timeout` field will be omitted from the resulting object.
-  - `origin_protocol_policy` (`string`): 
-  - `origin_read_timeout` (`number`):  When `null`, the `origin_read_timeout` field will be omitted from the resulting object.
-  - `origin_ssl_protocols` (`list`): 
+  - `http_port` (`number`): Set the `http_port` field on the resulting object.
+  - `https_port` (`number`): Set the `https_port` field on the resulting object.
+  - `origin_keepalive_timeout` (`number`): Set the `origin_keepalive_timeout` field on the resulting object. When `null`, the `origin_keepalive_timeout` field will be omitted from the resulting object.
+  - `origin_protocol_policy` (`string`): Set the `origin_protocol_policy` field on the resulting object.
+  - `origin_read_timeout` (`number`): Set the `origin_read_timeout` field on the resulting object. When `null`, the `origin_read_timeout` field will be omitted from the resulting object.
+  - `origin_ssl_protocols` (`list`): Set the `origin_ssl_protocols` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_origin_config` sub block.
@@ -1108,8 +1108,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): 
-  - `origin_shield_region` (`string`): 
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `origin_shield_region` (`string`): Set the `origin_shield_region` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `origin_shield` sub block.
@@ -1132,7 +1132,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `origin_access_identity` (`string`): 
+  - `origin_access_identity` (`string`): Set the `origin_access_identity` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_origin_config` sub block.
@@ -1155,9 +1155,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `origin_id` (`string`): 
-  - `failover_criteria` (`list[obj]`):  When `null`, the `failover_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.failover_criteria.new](#fn-origin_groupfailover_criterianew) constructor.
-  - `member` (`list[obj]`):  When `null`, the `member` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.member.new](#fn-origin_groupmembernew) constructor.
+  - `origin_id` (`string`): Set the `origin_id` field on the resulting object.
+  - `failover_criteria` (`list[obj]`): Set the `failover_criteria` field on the resulting object. When `null`, the `failover_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.failover_criteria.new](#fn-origin_groupfailover_criterianew) constructor.
+  - `member` (`list[obj]`): Set the `member` field on the resulting object. When `null`, the `member` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.origin_group.member.new](#fn-origin_groupmembernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `origin_group` sub block.
@@ -1180,7 +1180,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `status_codes` (`list`): 
+  - `status_codes` (`list`): Set the `status_codes` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `failover_criteria` sub block.
@@ -1203,7 +1203,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `origin_id` (`string`): 
+  - `origin_id` (`string`): Set the `origin_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `member` sub block.
@@ -1226,7 +1226,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `geo_restriction` (`list[obj]`):  When `null`, the `geo_restriction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.geo_restriction.new](#fn-restrictionsgeo_restrictionnew) constructor.
+  - `geo_restriction` (`list[obj]`): Set the `geo_restriction` field on the resulting object. When `null`, the `geo_restriction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_distribution.restrictions.geo_restriction.new](#fn-restrictionsgeo_restrictionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `restrictions` sub block.
@@ -1249,8 +1249,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `locations` (`list`):  When `null`, the `locations` field will be omitted from the resulting object.
-  - `restriction_type` (`string`): 
+  - `locations` (`list`): Set the `locations` field on the resulting object. When `null`, the `locations` field will be omitted from the resulting object.
+  - `restriction_type` (`string`): Set the `restriction_type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `geo_restriction` sub block.
@@ -1273,11 +1273,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `acm_certificate_arn` (`string`):  When `null`, the `acm_certificate_arn` field will be omitted from the resulting object.
-  - `cloudfront_default_certificate` (`bool`):  When `null`, the `cloudfront_default_certificate` field will be omitted from the resulting object.
-  - `iam_certificate_id` (`string`):  When `null`, the `iam_certificate_id` field will be omitted from the resulting object.
-  - `minimum_protocol_version` (`string`):  When `null`, the `minimum_protocol_version` field will be omitted from the resulting object.
-  - `ssl_support_method` (`string`):  When `null`, the `ssl_support_method` field will be omitted from the resulting object.
+  - `acm_certificate_arn` (`string`): Set the `acm_certificate_arn` field on the resulting object. When `null`, the `acm_certificate_arn` field will be omitted from the resulting object.
+  - `cloudfront_default_certificate` (`bool`): Set the `cloudfront_default_certificate` field on the resulting object. When `null`, the `cloudfront_default_certificate` field will be omitted from the resulting object.
+  - `iam_certificate_id` (`string`): Set the `iam_certificate_id` field on the resulting object. When `null`, the `iam_certificate_id` field will be omitted from the resulting object.
+  - `minimum_protocol_version` (`string`): Set the `minimum_protocol_version` field on the resulting object. When `null`, the `minimum_protocol_version` field will be omitted from the resulting object.
+  - `ssl_support_method` (`string`): Set the `ssl_support_method` field on the resulting object. When `null`, the `ssl_support_method` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `viewer_certificate` sub block.

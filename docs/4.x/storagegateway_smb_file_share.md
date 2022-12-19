@@ -78,33 +78,33 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `access_based_enumeration` (`bool`):  When `null`, the `access_based_enumeration` field will be omitted from the resulting object.
-  - `admin_user_list` (`list`):  When `null`, the `admin_user_list` field will be omitted from the resulting object.
-  - `audit_destination_arn` (`string`):  When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
-  - `authentication` (`string`):  When `null`, the `authentication` field will be omitted from the resulting object.
-  - `bucket_region` (`string`):  When `null`, the `bucket_region` field will be omitted from the resulting object.
-  - `case_sensitivity` (`string`):  When `null`, the `case_sensitivity` field will be omitted from the resulting object.
-  - `default_storage_class` (`string`):  When `null`, the `default_storage_class` field will be omitted from the resulting object.
-  - `file_share_name` (`string`):  When `null`, the `file_share_name` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): 
-  - `guess_mime_type_enabled` (`bool`):  When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
-  - `invalid_user_list` (`list`):  When `null`, the `invalid_user_list` field will be omitted from the resulting object.
-  - `kms_encrypted` (`bool`):  When `null`, the `kms_encrypted` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `location_arn` (`string`): 
-  - `notification_policy` (`string`):  When `null`, the `notification_policy` field will be omitted from the resulting object.
-  - `object_acl` (`string`):  When `null`, the `object_acl` field will be omitted from the resulting object.
-  - `oplocks_enabled` (`bool`):  When `null`, the `oplocks_enabled` field will be omitted from the resulting object.
-  - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
-  - `requester_pays` (`bool`):  When `null`, the `requester_pays` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `smb_acl_enabled` (`bool`):  When `null`, the `smb_acl_enabled` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `valid_user_list` (`list`):  When `null`, the `valid_user_list` field will be omitted from the resulting object.
-  - `vpc_endpoint_dns_name` (`string`):  When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
-  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-timeoutsnew) constructor.
+  - `access_based_enumeration` (`bool`): Set the `access_based_enumeration` field on the resulting resource block. When `null`, the `access_based_enumeration` field will be omitted from the resulting object.
+  - `admin_user_list` (`list`): Set the `admin_user_list` field on the resulting resource block. When `null`, the `admin_user_list` field will be omitted from the resulting object.
+  - `audit_destination_arn` (`string`): Set the `audit_destination_arn` field on the resulting resource block. When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
+  - `authentication` (`string`): Set the `authentication` field on the resulting resource block. When `null`, the `authentication` field will be omitted from the resulting object.
+  - `bucket_region` (`string`): Set the `bucket_region` field on the resulting resource block. When `null`, the `bucket_region` field will be omitted from the resulting object.
+  - `case_sensitivity` (`string`): Set the `case_sensitivity` field on the resulting resource block. When `null`, the `case_sensitivity` field will be omitted from the resulting object.
+  - `default_storage_class` (`string`): Set the `default_storage_class` field on the resulting resource block. When `null`, the `default_storage_class` field will be omitted from the resulting object.
+  - `file_share_name` (`string`): Set the `file_share_name` field on the resulting resource block. When `null`, the `file_share_name` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting resource block.
+  - `guess_mime_type_enabled` (`bool`): Set the `guess_mime_type_enabled` field on the resulting resource block. When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
+  - `invalid_user_list` (`list`): Set the `invalid_user_list` field on the resulting resource block. When `null`, the `invalid_user_list` field will be omitted from the resulting object.
+  - `kms_encrypted` (`bool`): Set the `kms_encrypted` field on the resulting resource block. When `null`, the `kms_encrypted` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `location_arn` (`string`): Set the `location_arn` field on the resulting resource block.
+  - `notification_policy` (`string`): Set the `notification_policy` field on the resulting resource block. When `null`, the `notification_policy` field will be omitted from the resulting object.
+  - `object_acl` (`string`): Set the `object_acl` field on the resulting resource block. When `null`, the `object_acl` field will be omitted from the resulting object.
+  - `oplocks_enabled` (`bool`): Set the `oplocks_enabled` field on the resulting resource block. When `null`, the `oplocks_enabled` field will be omitted from the resulting object.
+  - `read_only` (`bool`): Set the `read_only` field on the resulting resource block. When `null`, the `read_only` field will be omitted from the resulting object.
+  - `requester_pays` (`bool`): Set the `requester_pays` field on the resulting resource block. When `null`, the `requester_pays` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
+  - `smb_acl_enabled` (`bool`): Set the `smb_acl_enabled` field on the resulting resource block. When `null`, the `smb_acl_enabled` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `valid_user_list` (`list`): Set the `valid_user_list` field on the resulting resource block. When `null`, the `valid_user_list` field will be omitted from the resulting object.
+  - `vpc_endpoint_dns_name` (`string`): Set the `vpc_endpoint_dns_name` field on the resulting resource block. When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
+  - `cache_attributes` (`list[obj]`): Set the `cache_attributes` field on the resulting resource block. When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -128,33 +128,33 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_based_enumeration` (`bool`):  When `null`, the `access_based_enumeration` field will be omitted from the resulting object.
-  - `admin_user_list` (`list`):  When `null`, the `admin_user_list` field will be omitted from the resulting object.
-  - `audit_destination_arn` (`string`):  When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
-  - `authentication` (`string`):  When `null`, the `authentication` field will be omitted from the resulting object.
-  - `bucket_region` (`string`):  When `null`, the `bucket_region` field will be omitted from the resulting object.
-  - `case_sensitivity` (`string`):  When `null`, the `case_sensitivity` field will be omitted from the resulting object.
-  - `default_storage_class` (`string`):  When `null`, the `default_storage_class` field will be omitted from the resulting object.
-  - `file_share_name` (`string`):  When `null`, the `file_share_name` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): 
-  - `guess_mime_type_enabled` (`bool`):  When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
-  - `invalid_user_list` (`list`):  When `null`, the `invalid_user_list` field will be omitted from the resulting object.
-  - `kms_encrypted` (`bool`):  When `null`, the `kms_encrypted` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `location_arn` (`string`): 
-  - `notification_policy` (`string`):  When `null`, the `notification_policy` field will be omitted from the resulting object.
-  - `object_acl` (`string`):  When `null`, the `object_acl` field will be omitted from the resulting object.
-  - `oplocks_enabled` (`bool`):  When `null`, the `oplocks_enabled` field will be omitted from the resulting object.
-  - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
-  - `requester_pays` (`bool`):  When `null`, the `requester_pays` field will be omitted from the resulting object.
-  - `role_arn` (`string`): 
-  - `smb_acl_enabled` (`bool`):  When `null`, the `smb_acl_enabled` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `valid_user_list` (`list`):  When `null`, the `valid_user_list` field will be omitted from the resulting object.
-  - `vpc_endpoint_dns_name` (`string`):  When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
-  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-timeoutsnew) constructor.
+  - `access_based_enumeration` (`bool`): Set the `access_based_enumeration` field on the resulting object. When `null`, the `access_based_enumeration` field will be omitted from the resulting object.
+  - `admin_user_list` (`list`): Set the `admin_user_list` field on the resulting object. When `null`, the `admin_user_list` field will be omitted from the resulting object.
+  - `audit_destination_arn` (`string`): Set the `audit_destination_arn` field on the resulting object. When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
+  - `authentication` (`string`): Set the `authentication` field on the resulting object. When `null`, the `authentication` field will be omitted from the resulting object.
+  - `bucket_region` (`string`): Set the `bucket_region` field on the resulting object. When `null`, the `bucket_region` field will be omitted from the resulting object.
+  - `case_sensitivity` (`string`): Set the `case_sensitivity` field on the resulting object. When `null`, the `case_sensitivity` field will be omitted from the resulting object.
+  - `default_storage_class` (`string`): Set the `default_storage_class` field on the resulting object. When `null`, the `default_storage_class` field will be omitted from the resulting object.
+  - `file_share_name` (`string`): Set the `file_share_name` field on the resulting object. When `null`, the `file_share_name` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting object.
+  - `guess_mime_type_enabled` (`bool`): Set the `guess_mime_type_enabled` field on the resulting object. When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
+  - `invalid_user_list` (`list`): Set the `invalid_user_list` field on the resulting object. When `null`, the `invalid_user_list` field will be omitted from the resulting object.
+  - `kms_encrypted` (`bool`): Set the `kms_encrypted` field on the resulting object. When `null`, the `kms_encrypted` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `location_arn` (`string`): Set the `location_arn` field on the resulting object.
+  - `notification_policy` (`string`): Set the `notification_policy` field on the resulting object. When `null`, the `notification_policy` field will be omitted from the resulting object.
+  - `object_acl` (`string`): Set the `object_acl` field on the resulting object. When `null`, the `object_acl` field will be omitted from the resulting object.
+  - `oplocks_enabled` (`bool`): Set the `oplocks_enabled` field on the resulting object. When `null`, the `oplocks_enabled` field will be omitted from the resulting object.
+  - `read_only` (`bool`): Set the `read_only` field on the resulting object. When `null`, the `read_only` field will be omitted from the resulting object.
+  - `requester_pays` (`bool`): Set the `requester_pays` field on the resulting object. When `null`, the `requester_pays` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `smb_acl_enabled` (`bool`): Set the `smb_acl_enabled` field on the resulting object. When `null`, the `smb_acl_enabled` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `valid_user_list` (`list`): Set the `valid_user_list` field on the resulting object. When `null`, the `valid_user_list` field will be omitted from the resulting object.
+  - `vpc_endpoint_dns_name` (`string`): Set the `vpc_endpoint_dns_name` field on the resulting object. When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
+  - `cache_attributes` (`list[obj]`): Set the `cache_attributes` field on the resulting object. When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_smb_file_share.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_smb_file_share` resource into the root Terraform configuration.
@@ -650,7 +650,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cache_stale_timeout_in_seconds` (`number`):  When `null`, the `cache_stale_timeout_in_seconds` field will be omitted from the resulting object.
+  - `cache_stale_timeout_in_seconds` (`number`): Set the `cache_stale_timeout_in_seconds` field on the resulting object. When `null`, the `cache_stale_timeout_in_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cache_attributes` sub block.
@@ -673,9 +673,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

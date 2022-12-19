@@ -55,11 +55,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): 
-  - `parent_group_name` (`string`):  When `null`, the `parent_group_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `properties` (`list[obj]`):  When `null`, the `properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.new](#fn-propertiesnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `parent_group_name` (`string`): Set the `parent_group_name` field on the resulting resource block. When `null`, the `parent_group_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `properties` (`list[obj]`): Set the `properties` field on the resulting resource block. When `null`, the `properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.new](#fn-propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,11 +83,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): 
-  - `parent_group_name` (`string`):  When `null`, the `parent_group_name` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `properties` (`list[obj]`):  When `null`, the `properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.new](#fn-propertiesnew) constructor.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `parent_group_name` (`string`): Set the `parent_group_name` field on the resulting object. When `null`, the `parent_group_name` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `properties` (`list[obj]`): Set the `properties` field on the resulting object. When `null`, the `properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.new](#fn-propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_thing_group` resource into the root Terraform configuration.
@@ -211,8 +211,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `attribute_payload` (`list[obj]`):  When `null`, the `attribute_payload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.attribute_payload.new](#fn-propertiesattribute_payloadnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `attribute_payload` (`list[obj]`): Set the `attribute_payload` field on the resulting object. When `null`, the `attribute_payload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.attribute_payload.new](#fn-propertiesattribute_payloadnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `properties` sub block.
@@ -235,7 +235,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+  - `attributes` (`obj`): Set the `attributes` field on the resulting object. When `null`, the `attributes` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `attribute_payload` sub block.

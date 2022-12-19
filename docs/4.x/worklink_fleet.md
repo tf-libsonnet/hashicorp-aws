@@ -58,13 +58,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `audit_stream_arn` (`string`):  When `null`, the `audit_stream_arn` field will be omitted from the resulting object.
-  - `device_ca_certificate` (`string`):  When `null`, the `device_ca_certificate` field will be omitted from the resulting object.
-  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `optimize_for_end_user_location` (`bool`):  When `null`, the `optimize_for_end_user_location` field will be omitted from the resulting object.
-  - `identity_provider` (`list[obj]`):  When `null`, the `identity_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.identity_provider.new](#fn-identity_providernew) constructor.
-  - `network` (`list[obj]`):  When `null`, the `network` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.network.new](#fn-networknew) constructor.
+  - `audit_stream_arn` (`string`): Set the `audit_stream_arn` field on the resulting resource block. When `null`, the `audit_stream_arn` field will be omitted from the resulting object.
+  - `device_ca_certificate` (`string`): Set the `device_ca_certificate` field on the resulting resource block. When `null`, the `device_ca_certificate` field will be omitted from the resulting object.
+  - `display_name` (`string`): Set the `display_name` field on the resulting resource block. When `null`, the `display_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `optimize_for_end_user_location` (`bool`): Set the `optimize_for_end_user_location` field on the resulting resource block. When `null`, the `optimize_for_end_user_location` field will be omitted from the resulting object.
+  - `identity_provider` (`list[obj]`): Set the `identity_provider` field on the resulting resource block. When `null`, the `identity_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.identity_provider.new](#fn-identity_providernew) constructor.
+  - `network` (`list[obj]`): Set the `network` field on the resulting resource block. When `null`, the `network` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.network.new](#fn-networknew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,13 +88,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `audit_stream_arn` (`string`):  When `null`, the `audit_stream_arn` field will be omitted from the resulting object.
-  - `device_ca_certificate` (`string`):  When `null`, the `device_ca_certificate` field will be omitted from the resulting object.
-  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `optimize_for_end_user_location` (`bool`):  When `null`, the `optimize_for_end_user_location` field will be omitted from the resulting object.
-  - `identity_provider` (`list[obj]`):  When `null`, the `identity_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.identity_provider.new](#fn-identity_providernew) constructor.
-  - `network` (`list[obj]`):  When `null`, the `network` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.network.new](#fn-networknew) constructor.
+  - `audit_stream_arn` (`string`): Set the `audit_stream_arn` field on the resulting object. When `null`, the `audit_stream_arn` field will be omitted from the resulting object.
+  - `device_ca_certificate` (`string`): Set the `device_ca_certificate` field on the resulting object. When `null`, the `device_ca_certificate` field will be omitted from the resulting object.
+  - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `optimize_for_end_user_location` (`bool`): Set the `optimize_for_end_user_location` field on the resulting object. When `null`, the `optimize_for_end_user_location` field will be omitted from the resulting object.
+  - `identity_provider` (`list[obj]`): Set the `identity_provider` field on the resulting object. When `null`, the `identity_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.identity_provider.new](#fn-identity_providernew) constructor.
+  - `network` (`list[obj]`): Set the `network` field on the resulting object. When `null`, the `network` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.worklink_fleet.network.new](#fn-networknew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `worklink_fleet` resource into the root Terraform configuration.
@@ -271,8 +271,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `saml_metadata` (`string`): 
-  - `type` (`string`): 
+  - `saml_metadata` (`string`): Set the `saml_metadata` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `identity_provider` sub block.
@@ -295,9 +295,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): 
-  - `subnet_ids` (`list`): 
-  - `vpc_id` (`string`): 
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `network` sub block.

@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `active` (`bool`): 
-  - `ca_pem` (`string`):  When `null`, the `ca_pem` field will be omitted from the resulting object.
-  - `certificate_pem` (`string`):  When `null`, the `certificate_pem` field will be omitted from the resulting object.
-  - `csr` (`string`):  When `null`, the `csr` field will be omitted from the resulting object.
+  - `active` (`bool`): Set the `active` field on the resulting resource block.
+  - `ca_pem` (`string`): Set the `ca_pem` field on the resulting resource block. When `null`, the `ca_pem` field will be omitted from the resulting object.
+  - `certificate_pem` (`string`): Set the `certificate_pem` field on the resulting resource block. When `null`, the `certificate_pem` field will be omitted from the resulting object.
+  - `csr` (`string`): Set the `csr` field on the resulting resource block. When `null`, the `csr` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `active` (`bool`): 
-  - `ca_pem` (`string`):  When `null`, the `ca_pem` field will be omitted from the resulting object.
-  - `certificate_pem` (`string`):  When `null`, the `certificate_pem` field will be omitted from the resulting object.
-  - `csr` (`string`):  When `null`, the `csr` field will be omitted from the resulting object.
+  - `active` (`bool`): Set the `active` field on the resulting object.
+  - `ca_pem` (`string`): Set the `ca_pem` field on the resulting object. When `null`, the `ca_pem` field will be omitted from the resulting object.
+  - `certificate_pem` (`string`): Set the `certificate_pem` field on the resulting object. When `null`, the `certificate_pem` field will be omitted from the resulting object.
+  - `csr` (`string`): Set the `csr` field on the resulting object. When `null`, the `csr` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_certificate` resource into the root Terraform configuration.

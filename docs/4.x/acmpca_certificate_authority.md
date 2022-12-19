@@ -69,15 +69,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `permanent_deletion_time_in_days` (`number`):  When `null`, the `permanent_deletion_time_in_days` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `usage_mode` (`string`):  When `null`, the `usage_mode` field will be omitted from the resulting object.
-  - `certificate_authority_configuration` (`list[obj]`):  When `null`, the `certificate_authority_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.new](#fn-certificate_authority_configurationnew) constructor.
-  - `revocation_configuration` (`list[obj]`):  When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.new](#fn-revocation_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.timeouts.new](#fn-timeoutsnew) constructor.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `permanent_deletion_time_in_days` (`number`): Set the `permanent_deletion_time_in_days` field on the resulting resource block. When `null`, the `permanent_deletion_time_in_days` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
+  - `usage_mode` (`string`): Set the `usage_mode` field on the resulting resource block. When `null`, the `usage_mode` field will be omitted from the resulting object.
+  - `certificate_authority_configuration` (`list[obj]`): Set the `certificate_authority_configuration` field on the resulting resource block. When `null`, the `certificate_authority_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.new](#fn-certificate_authority_configurationnew) constructor.
+  - `revocation_configuration` (`list[obj]`): Set the `revocation_configuration` field on the resulting resource block. When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.new](#fn-revocation_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,15 +101,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `permanent_deletion_time_in_days` (`number`):  When `null`, the `permanent_deletion_time_in_days` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
-  - `usage_mode` (`string`):  When `null`, the `usage_mode` field will be omitted from the resulting object.
-  - `certificate_authority_configuration` (`list[obj]`):  When `null`, the `certificate_authority_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.new](#fn-certificate_authority_configurationnew) constructor.
-  - `revocation_configuration` (`list[obj]`):  When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.new](#fn-revocation_configurationnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.timeouts.new](#fn-timeoutsnew) constructor.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `permanent_deletion_time_in_days` (`number`): Set the `permanent_deletion_time_in_days` field on the resulting object. When `null`, the `permanent_deletion_time_in_days` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `usage_mode` (`string`): Set the `usage_mode` field on the resulting object. When `null`, the `usage_mode` field will be omitted from the resulting object.
+  - `certificate_authority_configuration` (`list[obj]`): Set the `certificate_authority_configuration` field on the resulting object. When `null`, the `certificate_authority_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.new](#fn-certificate_authority_configurationnew) constructor.
+  - `revocation_configuration` (`list[obj]`): Set the `revocation_configuration` field on the resulting object. When `null`, the `revocation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.new](#fn-revocation_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `acmpca_certificate_authority` resource into the root Terraform configuration.
@@ -338,9 +338,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key_algorithm` (`string`): 
-  - `signing_algorithm` (`string`): 
-  - `subject` (`list[obj]`):  When `null`, the `subject` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.subject.new](#fn-certificate_authority_configurationsubjectnew) constructor.
+  - `key_algorithm` (`string`): Set the `key_algorithm` field on the resulting object.
+  - `signing_algorithm` (`string`): Set the `signing_algorithm` field on the resulting object.
+  - `subject` (`list[obj]`): Set the `subject` field on the resulting object. When `null`, the `subject` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.certificate_authority_configuration.subject.new](#fn-certificate_authority_configurationsubjectnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `certificate_authority_configuration` sub block.
@@ -363,19 +363,19 @@ Terraform sub block.
 
 
 **Args**:
-  - `common_name` (`string`):  When `null`, the `common_name` field will be omitted from the resulting object.
-  - `country` (`string`):  When `null`, the `country` field will be omitted from the resulting object.
-  - `distinguished_name_qualifier` (`string`):  When `null`, the `distinguished_name_qualifier` field will be omitted from the resulting object.
-  - `generation_qualifier` (`string`):  When `null`, the `generation_qualifier` field will be omitted from the resulting object.
-  - `given_name` (`string`):  When `null`, the `given_name` field will be omitted from the resulting object.
-  - `initials` (`string`):  When `null`, the `initials` field will be omitted from the resulting object.
-  - `locality` (`string`):  When `null`, the `locality` field will be omitted from the resulting object.
-  - `organization` (`string`):  When `null`, the `organization` field will be omitted from the resulting object.
-  - `organizational_unit` (`string`):  When `null`, the `organizational_unit` field will be omitted from the resulting object.
-  - `pseudonym` (`string`):  When `null`, the `pseudonym` field will be omitted from the resulting object.
-  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
-  - `surname` (`string`):  When `null`, the `surname` field will be omitted from the resulting object.
-  - `title` (`string`):  When `null`, the `title` field will be omitted from the resulting object.
+  - `common_name` (`string`): Set the `common_name` field on the resulting object. When `null`, the `common_name` field will be omitted from the resulting object.
+  - `country` (`string`): Set the `country` field on the resulting object. When `null`, the `country` field will be omitted from the resulting object.
+  - `distinguished_name_qualifier` (`string`): Set the `distinguished_name_qualifier` field on the resulting object. When `null`, the `distinguished_name_qualifier` field will be omitted from the resulting object.
+  - `generation_qualifier` (`string`): Set the `generation_qualifier` field on the resulting object. When `null`, the `generation_qualifier` field will be omitted from the resulting object.
+  - `given_name` (`string`): Set the `given_name` field on the resulting object. When `null`, the `given_name` field will be omitted from the resulting object.
+  - `initials` (`string`): Set the `initials` field on the resulting object. When `null`, the `initials` field will be omitted from the resulting object.
+  - `locality` (`string`): Set the `locality` field on the resulting object. When `null`, the `locality` field will be omitted from the resulting object.
+  - `organization` (`string`): Set the `organization` field on the resulting object. When `null`, the `organization` field will be omitted from the resulting object.
+  - `organizational_unit` (`string`): Set the `organizational_unit` field on the resulting object. When `null`, the `organizational_unit` field will be omitted from the resulting object.
+  - `pseudonym` (`string`): Set the `pseudonym` field on the resulting object. When `null`, the `pseudonym` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
+  - `surname` (`string`): Set the `surname` field on the resulting object. When `null`, the `surname` field will be omitted from the resulting object.
+  - `title` (`string`): Set the `title` field on the resulting object. When `null`, the `title` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `subject` sub block.
@@ -398,8 +398,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `crl_configuration` (`list[obj]`):  When `null`, the `crl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new](#fn-revocation_configurationcrl_configurationnew) constructor.
-  - `ocsp_configuration` (`list[obj]`):  When `null`, the `ocsp_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.ocsp_configuration.new](#fn-revocation_configurationocsp_configurationnew) constructor.
+  - `crl_configuration` (`list[obj]`): Set the `crl_configuration` field on the resulting object. When `null`, the `crl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new](#fn-revocation_configurationcrl_configurationnew) constructor.
+  - `ocsp_configuration` (`list[obj]`): Set the `ocsp_configuration` field on the resulting object. When `null`, the `ocsp_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.acmpca_certificate_authority.revocation_configuration.ocsp_configuration.new](#fn-revocation_configurationocsp_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `revocation_configuration` sub block.
@@ -422,11 +422,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_cname` (`string`):  When `null`, the `custom_cname` field will be omitted from the resulting object.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `expiration_in_days` (`number`): 
-  - `s3_bucket_name` (`string`):  When `null`, the `s3_bucket_name` field will be omitted from the resulting object.
-  - `s3_object_acl` (`string`):  When `null`, the `s3_object_acl` field will be omitted from the resulting object.
+  - `custom_cname` (`string`): Set the `custom_cname` field on the resulting object. When `null`, the `custom_cname` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `expiration_in_days` (`number`): Set the `expiration_in_days` field on the resulting object.
+  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object. When `null`, the `s3_bucket_name` field will be omitted from the resulting object.
+  - `s3_object_acl` (`string`): Set the `s3_object_acl` field on the resulting object. When `null`, the `s3_object_acl` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `crl_configuration` sub block.
@@ -449,8 +449,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): 
-  - `ocsp_custom_cname` (`string`):  When `null`, the `ocsp_custom_cname` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `ocsp_custom_cname` (`string`): Set the `ocsp_custom_cname` field on the resulting object. When `null`, the `ocsp_custom_cname` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ocsp_configuration` sub block.
@@ -473,7 +473,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

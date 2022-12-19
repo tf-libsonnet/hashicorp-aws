@@ -53,14 +53,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auto_placement` (`string`):  When `null`, the `auto_placement` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): 
-  - `host_recovery` (`string`):  When `null`, the `host_recovery` field will be omitted from the resulting object.
-  - `instance_family` (`string`):  When `null`, the `instance_family` field will be omitted from the resulting object.
-  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `outpost_arn` (`string`):  When `null`, the `outpost_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `auto_placement` (`string`): Set the `auto_placement` field on the resulting resource block. When `null`, the `auto_placement` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block.
+  - `host_recovery` (`string`): Set the `host_recovery` field on the resulting resource block. When `null`, the `host_recovery` field will be omitted from the resulting object.
+  - `instance_family` (`string`): Set the `instance_family` field on the resulting resource block. When `null`, the `instance_family` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `outpost_arn` (`string`): Set the `outpost_arn` field on the resulting resource block. When `null`, the `outpost_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,14 +84,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_placement` (`string`):  When `null`, the `auto_placement` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): 
-  - `host_recovery` (`string`):  When `null`, the `host_recovery` field will be omitted from the resulting object.
-  - `instance_family` (`string`):  When `null`, the `instance_family` field will be omitted from the resulting object.
-  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `outpost_arn` (`string`):  When `null`, the `outpost_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `auto_placement` (`string`): Set the `auto_placement` field on the resulting object. When `null`, the `auto_placement` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object.
+  - `host_recovery` (`string`): Set the `host_recovery` field on the resulting object. When `null`, the `host_recovery` field will be omitted from the resulting object.
+  - `instance_family` (`string`): Set the `instance_family` field on the resulting object. When `null`, the `instance_family` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `outpost_arn` (`string`): Set the `outpost_arn` field on the resulting object. When `null`, the `outpost_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_host` resource into the root Terraform configuration.

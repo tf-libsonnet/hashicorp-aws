@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `device_fleet_name` (`string`): 
-  - `device` (`list[obj]`):  When `null`, the `device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device.device.new](#fn-devicenew) constructor.
+  - `device_fleet_name` (`string`): Set the `device_fleet_name` field on the resulting resource block.
+  - `device` (`list[obj]`): Set the `device` field on the resulting resource block. When `null`, the `device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device.device.new](#fn-devicenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `device_fleet_name` (`string`): 
-  - `device` (`list[obj]`):  When `null`, the `device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device.device.new](#fn-devicenew) constructor.
+  - `device_fleet_name` (`string`): Set the `device_fleet_name` field on the resulting object.
+  - `device` (`list[obj]`): Set the `device` field on the resulting object. When `null`, the `device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device.device.new](#fn-devicenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_device` resource into the root Terraform configuration.
@@ -152,9 +152,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `device_name` (`string`): 
-  - `iot_thing_name` (`string`):  When `null`, the `iot_thing_name` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `device_name` (`string`): Set the `device_name` field on the resulting object.
+  - `iot_thing_name` (`string`): Set the `iot_thing_name` field on the resulting object. When `null`, the `iot_thing_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `device` sub block.

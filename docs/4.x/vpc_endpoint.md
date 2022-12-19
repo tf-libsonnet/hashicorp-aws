@@ -65,20 +65,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auto_accept` (`bool`):  When `null`, the `auto_accept` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `private_dns_enabled` (`bool`):  When `null`, the `private_dns_enabled` field will be omitted from the resulting object.
-  - `route_table_ids` (`list`):  When `null`, the `route_table_ids` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `service_name` (`string`): 
-  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_endpoint_type` (`string`):  When `null`, the `vpc_endpoint_type` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): 
-  - `dns_options` (`list[obj]`):  When `null`, the `dns_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.dns_options.new](#fn-dns_optionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_accept` (`bool`): Set the `auto_accept` field on the resulting resource block. When `null`, the `auto_accept` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
+  - `private_dns_enabled` (`bool`): Set the `private_dns_enabled` field on the resulting resource block. When `null`, the `private_dns_enabled` field will be omitted from the resulting object.
+  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting resource block. When `null`, the `route_table_ids` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `service_name` (`string`): Set the `service_name` field on the resulting resource block.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_endpoint_type` (`string`): Set the `vpc_endpoint_type` field on the resulting resource block. When `null`, the `vpc_endpoint_type` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
+  - `dns_options` (`list[obj]`): Set the `dns_options` field on the resulting resource block. When `null`, the `dns_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.dns_options.new](#fn-dns_optionsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,20 +102,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_accept` (`bool`):  When `null`, the `auto_accept` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `private_dns_enabled` (`bool`):  When `null`, the `private_dns_enabled` field will be omitted from the resulting object.
-  - `route_table_ids` (`list`):  When `null`, the `route_table_ids` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `service_name` (`string`): 
-  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_endpoint_type` (`string`):  When `null`, the `vpc_endpoint_type` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): 
-  - `dns_options` (`list[obj]`):  When `null`, the `dns_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.dns_options.new](#fn-dns_optionsnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_accept` (`bool`): Set the `auto_accept` field on the resulting object. When `null`, the `auto_accept` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
+  - `private_dns_enabled` (`bool`): Set the `private_dns_enabled` field on the resulting object. When `null`, the `private_dns_enabled` field will be omitted from the resulting object.
+  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting object. When `null`, the `route_table_ids` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `service_name` (`string`): Set the `service_name` field on the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_endpoint_type` (`string`): Set the `vpc_endpoint_type` field on the resulting object. When `null`, the `vpc_endpoint_type` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `dns_options` (`list[obj]`): Set the `dns_options` field on the resulting object. When `null`, the `dns_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.dns_options.new](#fn-dns_optionsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_endpoint.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_endpoint` resource into the root Terraform configuration.
@@ -403,7 +403,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `dns_record_ip_type` (`string`):  When `null`, the `dns_record_ip_type` field will be omitted from the resulting object.
+  - `dns_record_ip_type` (`string`): Set the `dns_record_ip_type` field on the resulting object. When `null`, the `dns_record_ip_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dns_options` sub block.
@@ -426,9 +426,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -58,19 +58,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `allow_unassociated_targets` (`bool`):  When `null`, the `allow_unassociated_targets` field will be omitted from the resulting object.
-  - `cutoff` (`number`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `duration` (`number`): 
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `end_date` (`string`):  When `null`, the `end_date` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `schedule` (`string`): 
-  - `schedule_offset` (`number`):  When `null`, the `schedule_offset` field will be omitted from the resulting object.
-  - `schedule_timezone` (`string`):  When `null`, the `schedule_timezone` field will be omitted from the resulting object.
-  - `start_date` (`string`):  When `null`, the `start_date` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `allow_unassociated_targets` (`bool`): Set the `allow_unassociated_targets` field on the resulting resource block. When `null`, the `allow_unassociated_targets` field will be omitted from the resulting object.
+  - `cutoff` (`number`): Set the `cutoff` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `duration` (`number`): Set the `duration` field on the resulting resource block.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `end_date` (`string`): Set the `end_date` field on the resulting resource block. When `null`, the `end_date` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `schedule` (`string`): Set the `schedule` field on the resulting resource block.
+  - `schedule_offset` (`number`): Set the `schedule_offset` field on the resulting resource block. When `null`, the `schedule_offset` field will be omitted from the resulting object.
+  - `schedule_timezone` (`string`): Set the `schedule_timezone` field on the resulting resource block. When `null`, the `schedule_timezone` field will be omitted from the resulting object.
+  - `start_date` (`string`): Set the `start_date` field on the resulting resource block. When `null`, the `start_date` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,19 +94,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `allow_unassociated_targets` (`bool`):  When `null`, the `allow_unassociated_targets` field will be omitted from the resulting object.
-  - `cutoff` (`number`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `duration` (`number`): 
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `end_date` (`string`):  When `null`, the `end_date` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `schedule` (`string`): 
-  - `schedule_offset` (`number`):  When `null`, the `schedule_offset` field will be omitted from the resulting object.
-  - `schedule_timezone` (`string`):  When `null`, the `schedule_timezone` field will be omitted from the resulting object.
-  - `start_date` (`string`):  When `null`, the `start_date` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `allow_unassociated_targets` (`bool`): Set the `allow_unassociated_targets` field on the resulting object. When `null`, the `allow_unassociated_targets` field will be omitted from the resulting object.
+  - `cutoff` (`number`): Set the `cutoff` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `duration` (`number`): Set the `duration` field on the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `end_date` (`string`): Set the `end_date` field on the resulting object. When `null`, the `end_date` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `schedule` (`string`): Set the `schedule` field on the resulting object.
+  - `schedule_offset` (`number`): Set the `schedule_offset` field on the resulting object. When `null`, the `schedule_offset` field will be omitted from the resulting object.
+  - `schedule_timezone` (`string`): Set the `schedule_timezone` field on the resulting object. When `null`, the `schedule_timezone` field will be omitted from the resulting object.
+  - `start_date` (`string`): Set the `start_date` field on the resulting object. When `null`, the `start_date` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_maintenance_window` resource into the root Terraform configuration.

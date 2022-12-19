@@ -58,14 +58,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `position` (`number`):  When `null`, the `position` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
+  - `action` (`string`): Set the `action` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `position` (`number`): Set the `position` field on the resulting resource block. When `null`, the `position` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `finding_criteria` (`list[obj]`): Set the `finding_criteria` field on the resulting resource block. When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,14 +89,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `position` (`number`):  When `null`, the `position` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
+  - `action` (`string`): Set the `action` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `position` (`number`): Set the `position` field on the resulting object. When `null`, the `position` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `finding_criteria` (`list[obj]`): Set the `finding_criteria` field on the resulting object. When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `macie2_findings_filter` resource into the root Terraform configuration.
@@ -268,7 +268,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `criterion` (`list[obj]`):  When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.criterion.new](#fn-finding_criteriacriterionnew) constructor.
+  - `criterion` (`list[obj]`): Set the `criterion` field on the resulting object. When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_findings_filter.finding_criteria.criterion.new](#fn-finding_criteriacriterionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `finding_criteria` sub block.
@@ -291,14 +291,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`list`):  When `null`, the `eq` field will be omitted from the resulting object.
-  - `eq_exact_match` (`list`):  When `null`, the `eq_exact_match` field will be omitted from the resulting object.
-  - `field` (`string`): 
-  - `gt` (`string`):  When `null`, the `gt` field will be omitted from the resulting object.
-  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
-  - `lt` (`string`):  When `null`, the `lt` field will be omitted from the resulting object.
-  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
-  - `neq` (`list`):  When `null`, the `neq` field will be omitted from the resulting object.
+  - `eq` (`list`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
+  - `eq_exact_match` (`list`): Set the `eq_exact_match` field on the resulting object. When `null`, the `eq_exact_match` field will be omitted from the resulting object.
+  - `field` (`string`): Set the `field` field on the resulting object.
+  - `gt` (`string`): Set the `gt` field on the resulting object. When `null`, the `gt` field will be omitted from the resulting object.
+  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
+  - `lt` (`string`): Set the `lt` field on the resulting object. When `null`, the `lt` field will be omitted from the resulting object.
+  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `neq` (`list`): Set the `neq` field on the resulting object. When `null`, the `neq` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `criterion` sub block.

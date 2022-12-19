@@ -62,23 +62,23 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `availability_zone_group` (`string`):  When `null`, the `availability_zone_group` field will be omitted from the resulting object.
-  - `engine` (`string`): 
-  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `instance_class` (`string`):  When `null`, the `instance_class` field will be omitted from the resulting object.
-  - `license_model` (`string`):  When `null`, the `license_model` field will be omitted from the resulting object.
-  - `preferred_engine_versions` (`list`):  When `null`, the `preferred_engine_versions` field will be omitted from the resulting object.
-  - `preferred_instance_classes` (`list`):  When `null`, the `preferred_instance_classes` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `supports_enhanced_monitoring` (`bool`):  When `null`, the `supports_enhanced_monitoring` field will be omitted from the resulting object.
-  - `supports_global_databases` (`bool`):  When `null`, the `supports_global_databases` field will be omitted from the resulting object.
-  - `supports_iam_database_authentication` (`bool`):  When `null`, the `supports_iam_database_authentication` field will be omitted from the resulting object.
-  - `supports_iops` (`bool`):  When `null`, the `supports_iops` field will be omitted from the resulting object.
-  - `supports_kerberos_authentication` (`bool`):  When `null`, the `supports_kerberos_authentication` field will be omitted from the resulting object.
-  - `supports_performance_insights` (`bool`):  When `null`, the `supports_performance_insights` field will be omitted from the resulting object.
-  - `supports_storage_autoscaling` (`bool`):  When `null`, the `supports_storage_autoscaling` field will be omitted from the resulting object.
-  - `supports_storage_encryption` (`bool`):  When `null`, the `supports_storage_encryption` field will be omitted from the resulting object.
-  - `vpc` (`bool`):  When `null`, the `vpc` field will be omitted from the resulting object.
+  - `availability_zone_group` (`string`): Set the `availability_zone_group` field on the resulting data source block. When `null`, the `availability_zone_group` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting data source block.
+  - `engine_version` (`string`): Set the `engine_version` field on the resulting data source block. When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `instance_class` (`string`): Set the `instance_class` field on the resulting data source block. When `null`, the `instance_class` field will be omitted from the resulting object.
+  - `license_model` (`string`): Set the `license_model` field on the resulting data source block. When `null`, the `license_model` field will be omitted from the resulting object.
+  - `preferred_engine_versions` (`list`): Set the `preferred_engine_versions` field on the resulting data source block. When `null`, the `preferred_engine_versions` field will be omitted from the resulting object.
+  - `preferred_instance_classes` (`list`): Set the `preferred_instance_classes` field on the resulting data source block. When `null`, the `preferred_instance_classes` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting data source block. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `supports_enhanced_monitoring` (`bool`): Set the `supports_enhanced_monitoring` field on the resulting data source block. When `null`, the `supports_enhanced_monitoring` field will be omitted from the resulting object.
+  - `supports_global_databases` (`bool`): Set the `supports_global_databases` field on the resulting data source block. When `null`, the `supports_global_databases` field will be omitted from the resulting object.
+  - `supports_iam_database_authentication` (`bool`): Set the `supports_iam_database_authentication` field on the resulting data source block. When `null`, the `supports_iam_database_authentication` field will be omitted from the resulting object.
+  - `supports_iops` (`bool`): Set the `supports_iops` field on the resulting data source block. When `null`, the `supports_iops` field will be omitted from the resulting object.
+  - `supports_kerberos_authentication` (`bool`): Set the `supports_kerberos_authentication` field on the resulting data source block. When `null`, the `supports_kerberos_authentication` field will be omitted from the resulting object.
+  - `supports_performance_insights` (`bool`): Set the `supports_performance_insights` field on the resulting data source block. When `null`, the `supports_performance_insights` field will be omitted from the resulting object.
+  - `supports_storage_autoscaling` (`bool`): Set the `supports_storage_autoscaling` field on the resulting data source block. When `null`, the `supports_storage_autoscaling` field will be omitted from the resulting object.
+  - `supports_storage_encryption` (`bool`): Set the `supports_storage_encryption` field on the resulting data source block. When `null`, the `supports_storage_encryption` field will be omitted from the resulting object.
+  - `vpc` (`bool`): Set the `vpc` field on the resulting data source block. When `null`, the `vpc` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -102,23 +102,23 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `availability_zone_group` (`string`):  When `null`, the `availability_zone_group` field will be omitted from the resulting object.
-  - `engine` (`string`): 
-  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `instance_class` (`string`):  When `null`, the `instance_class` field will be omitted from the resulting object.
-  - `license_model` (`string`):  When `null`, the `license_model` field will be omitted from the resulting object.
-  - `preferred_engine_versions` (`list`):  When `null`, the `preferred_engine_versions` field will be omitted from the resulting object.
-  - `preferred_instance_classes` (`list`):  When `null`, the `preferred_instance_classes` field will be omitted from the resulting object.
-  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `supports_enhanced_monitoring` (`bool`):  When `null`, the `supports_enhanced_monitoring` field will be omitted from the resulting object.
-  - `supports_global_databases` (`bool`):  When `null`, the `supports_global_databases` field will be omitted from the resulting object.
-  - `supports_iam_database_authentication` (`bool`):  When `null`, the `supports_iam_database_authentication` field will be omitted from the resulting object.
-  - `supports_iops` (`bool`):  When `null`, the `supports_iops` field will be omitted from the resulting object.
-  - `supports_kerberos_authentication` (`bool`):  When `null`, the `supports_kerberos_authentication` field will be omitted from the resulting object.
-  - `supports_performance_insights` (`bool`):  When `null`, the `supports_performance_insights` field will be omitted from the resulting object.
-  - `supports_storage_autoscaling` (`bool`):  When `null`, the `supports_storage_autoscaling` field will be omitted from the resulting object.
-  - `supports_storage_encryption` (`bool`):  When `null`, the `supports_storage_encryption` field will be omitted from the resulting object.
-  - `vpc` (`bool`):  When `null`, the `vpc` field will be omitted from the resulting object.
+  - `availability_zone_group` (`string`): Set the `availability_zone_group` field on the resulting object. When `null`, the `availability_zone_group` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting object.
+  - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `instance_class` (`string`): Set the `instance_class` field on the resulting object. When `null`, the `instance_class` field will be omitted from the resulting object.
+  - `license_model` (`string`): Set the `license_model` field on the resulting object. When `null`, the `license_model` field will be omitted from the resulting object.
+  - `preferred_engine_versions` (`list`): Set the `preferred_engine_versions` field on the resulting object. When `null`, the `preferred_engine_versions` field will be omitted from the resulting object.
+  - `preferred_instance_classes` (`list`): Set the `preferred_instance_classes` field on the resulting object. When `null`, the `preferred_instance_classes` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `supports_enhanced_monitoring` (`bool`): Set the `supports_enhanced_monitoring` field on the resulting object. When `null`, the `supports_enhanced_monitoring` field will be omitted from the resulting object.
+  - `supports_global_databases` (`bool`): Set the `supports_global_databases` field on the resulting object. When `null`, the `supports_global_databases` field will be omitted from the resulting object.
+  - `supports_iam_database_authentication` (`bool`): Set the `supports_iam_database_authentication` field on the resulting object. When `null`, the `supports_iam_database_authentication` field will be omitted from the resulting object.
+  - `supports_iops` (`bool`): Set the `supports_iops` field on the resulting object. When `null`, the `supports_iops` field will be omitted from the resulting object.
+  - `supports_kerberos_authentication` (`bool`): Set the `supports_kerberos_authentication` field on the resulting object. When `null`, the `supports_kerberos_authentication` field will be omitted from the resulting object.
+  - `supports_performance_insights` (`bool`): Set the `supports_performance_insights` field on the resulting object. When `null`, the `supports_performance_insights` field will be omitted from the resulting object.
+  - `supports_storage_autoscaling` (`bool`): Set the `supports_storage_autoscaling` field on the resulting object. When `null`, the `supports_storage_autoscaling` field will be omitted from the resulting object.
+  - `supports_storage_encryption` (`bool`): Set the `supports_storage_encryption` field on the resulting object. When `null`, the `supports_storage_encryption` field will be omitted from the resulting object.
+  - `vpc` (`bool`): Set the `vpc` field on the resulting object. When `null`, the `vpc` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `rds_orderable_db_instance` data source into the root Terraform configuration.

@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `complete_lock` (`bool`): 
-  - `ignore_deletion_error` (`bool`):  When `null`, the `ignore_deletion_error` field will be omitted from the resulting object.
-  - `policy` (`string`): 
-  - `vault_name` (`string`): 
+  - `complete_lock` (`bool`): Set the `complete_lock` field on the resulting resource block.
+  - `ignore_deletion_error` (`bool`): Set the `ignore_deletion_error` field on the resulting resource block. When `null`, the `ignore_deletion_error` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting resource block.
+  - `vault_name` (`string`): Set the `vault_name` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `complete_lock` (`bool`): 
-  - `ignore_deletion_error` (`bool`):  When `null`, the `ignore_deletion_error` field will be omitted from the resulting object.
-  - `policy` (`string`): 
-  - `vault_name` (`string`): 
+  - `complete_lock` (`bool`): Set the `complete_lock` field on the resulting object.
+  - `ignore_deletion_error` (`bool`): Set the `ignore_deletion_error` field on the resulting object. When `null`, the `ignore_deletion_error` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting object.
+  - `vault_name` (`string`): Set the `vault_name` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glacier_vault_lock` resource into the root Terraform configuration.

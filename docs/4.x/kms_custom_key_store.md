@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cloud_hsm_cluster_id` (`string`): 
-  - `custom_key_store_name` (`string`): 
-  - `key_store_password` (`string`): 
-  - `trust_anchor_certificate` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kms_custom_key_store.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cloud_hsm_cluster_id` (`string`): Set the `cloud_hsm_cluster_id` field on the resulting resource block.
+  - `custom_key_store_name` (`string`): Set the `custom_key_store_name` field on the resulting resource block.
+  - `key_store_password` (`string`): Set the `key_store_password` field on the resulting resource block.
+  - `trust_anchor_certificate` (`string`): Set the `trust_anchor_certificate` field on the resulting resource block.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kms_custom_key_store.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cloud_hsm_cluster_id` (`string`): 
-  - `custom_key_store_name` (`string`): 
-  - `key_store_password` (`string`): 
-  - `trust_anchor_certificate` (`string`): 
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kms_custom_key_store.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cloud_hsm_cluster_id` (`string`): Set the `cloud_hsm_cluster_id` field on the resulting object.
+  - `custom_key_store_name` (`string`): Set the `custom_key_store_name` field on the resulting object.
+  - `key_store_password` (`string`): Set the `key_store_password` field on the resulting object.
+  - `trust_anchor_certificate` (`string`): Set the `trust_anchor_certificate` field on the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kms_custom_key_store.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kms_custom_key_store` resource into the root Terraform configuration.
@@ -208,9 +208,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

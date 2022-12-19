@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application_id` (`string`): 
-  - `bundle_id` (`string`):  When `null`, the `bundle_id` field will be omitted from the resulting object.
-  - `certificate` (`string`):  When `null`, the `certificate` field will be omitted from the resulting object.
-  - `default_authentication_method` (`string`):  When `null`, the `default_authentication_method` field will be omitted from the resulting object.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `private_key` (`string`):  When `null`, the `private_key` field will be omitted from the resulting object.
-  - `team_id` (`string`):  When `null`, the `team_id` field will be omitted from the resulting object.
-  - `token_key` (`string`):  When `null`, the `token_key` field will be omitted from the resulting object.
-  - `token_key_id` (`string`):  When `null`, the `token_key_id` field will be omitted from the resulting object.
+  - `application_id` (`string`): Set the `application_id` field on the resulting resource block.
+  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting resource block. When `null`, the `bundle_id` field will be omitted from the resulting object.
+  - `certificate` (`string`): Set the `certificate` field on the resulting resource block. When `null`, the `certificate` field will be omitted from the resulting object.
+  - `default_authentication_method` (`string`): Set the `default_authentication_method` field on the resulting resource block. When `null`, the `default_authentication_method` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `private_key` (`string`): Set the `private_key` field on the resulting resource block. When `null`, the `private_key` field will be omitted from the resulting object.
+  - `team_id` (`string`): Set the `team_id` field on the resulting resource block. When `null`, the `team_id` field will be omitted from the resulting object.
+  - `token_key` (`string`): Set the `token_key` field on the resulting resource block. When `null`, the `token_key` field will be omitted from the resulting object.
+  - `token_key_id` (`string`): Set the `token_key_id` field on the resulting resource block. When `null`, the `token_key_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application_id` (`string`): 
-  - `bundle_id` (`string`):  When `null`, the `bundle_id` field will be omitted from the resulting object.
-  - `certificate` (`string`):  When `null`, the `certificate` field will be omitted from the resulting object.
-  - `default_authentication_method` (`string`):  When `null`, the `default_authentication_method` field will be omitted from the resulting object.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `private_key` (`string`):  When `null`, the `private_key` field will be omitted from the resulting object.
-  - `team_id` (`string`):  When `null`, the `team_id` field will be omitted from the resulting object.
-  - `token_key` (`string`):  When `null`, the `token_key` field will be omitted from the resulting object.
-  - `token_key_id` (`string`):  When `null`, the `token_key_id` field will be omitted from the resulting object.
+  - `application_id` (`string`): Set the `application_id` field on the resulting object.
+  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting object. When `null`, the `bundle_id` field will be omitted from the resulting object.
+  - `certificate` (`string`): Set the `certificate` field on the resulting object. When `null`, the `certificate` field will be omitted from the resulting object.
+  - `default_authentication_method` (`string`): Set the `default_authentication_method` field on the resulting object. When `null`, the `default_authentication_method` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `private_key` (`string`): Set the `private_key` field on the resulting object. When `null`, the `private_key` field will be omitted from the resulting object.
+  - `team_id` (`string`): Set the `team_id` field on the resulting object. When `null`, the `team_id` field will be omitted from the resulting object.
+  - `token_key` (`string`): Set the `token_key` field on the resulting object. When `null`, the `token_key` field will be omitted from the resulting object.
+  - `token_key_id` (`string`): Set the `token_key_id` field on the resulting object. When `null`, the `token_key_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `pinpoint_apns_voip_sandbox_channel` resource into the root Terraform configuration.

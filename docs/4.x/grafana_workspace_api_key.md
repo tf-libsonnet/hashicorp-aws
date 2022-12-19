@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `key_name` (`string`): 
-  - `key_role` (`string`): 
-  - `seconds_to_live` (`number`): 
-  - `workspace_id` (`string`): 
+  - `key_name` (`string`): Set the `key_name` field on the resulting resource block.
+  - `key_role` (`string`): Set the `key_role` field on the resulting resource block.
+  - `seconds_to_live` (`number`): Set the `seconds_to_live` field on the resulting resource block.
+  - `workspace_id` (`string`): Set the `workspace_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `key_name` (`string`): 
-  - `key_role` (`string`): 
-  - `seconds_to_live` (`number`): 
-  - `workspace_id` (`string`): 
+  - `key_name` (`string`): Set the `key_name` field on the resulting object.
+  - `key_role` (`string`): Set the `key_role` field on the resulting object.
+  - `seconds_to_live` (`number`): Set the `seconds_to_live` field on the resulting object.
+  - `workspace_id` (`string`): Set the `workspace_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `grafana_workspace_api_key` resource into the root Terraform configuration.

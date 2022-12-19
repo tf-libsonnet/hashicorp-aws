@@ -66,18 +66,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): 
-  - `auto_deploy` (`bool`):  When `null`, the `auto_deploy` field will be omitted from the resulting object.
-  - `client_certificate_id` (`string`):  When `null`, the `client_certificate_id` field will be omitted from the resulting object.
-  - `deployment_id` (`string`):  When `null`, the `deployment_id` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `stage_variables` (`obj`):  When `null`, the `stage_variables` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
-  - `default_route_settings` (`list[obj]`):  When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-default_route_settingsnew) constructor.
-  - `route_settings` (`list[obj]`):  When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-route_settingsnew) constructor.
+  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
+  - `auto_deploy` (`bool`): Set the `auto_deploy` field on the resulting resource block. When `null`, the `auto_deploy` field will be omitted from the resulting object.
+  - `client_certificate_id` (`string`): Set the `client_certificate_id` field on the resulting resource block. When `null`, the `client_certificate_id` field will be omitted from the resulting object.
+  - `deployment_id` (`string`): Set the `deployment_id` field on the resulting resource block. When `null`, the `deployment_id` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `stage_variables` (`obj`): Set the `stage_variables` field on the resulting resource block. When `null`, the `stage_variables` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_log_settings` (`list[obj]`): Set the `access_log_settings` field on the resulting resource block. When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
+  - `default_route_settings` (`list[obj]`): Set the `default_route_settings` field on the resulting resource block. When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-default_route_settingsnew) constructor.
+  - `route_settings` (`list[obj]`): Set the `route_settings` field on the resulting resource block. When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-route_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,18 +101,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): 
-  - `auto_deploy` (`bool`):  When `null`, the `auto_deploy` field will be omitted from the resulting object.
-  - `client_certificate_id` (`string`):  When `null`, the `client_certificate_id` field will be omitted from the resulting object.
-  - `deployment_id` (`string`):  When `null`, the `deployment_id` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `stage_variables` (`obj`):  When `null`, the `stage_variables` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_log_settings` (`list[obj]`):  When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
-  - `default_route_settings` (`list[obj]`):  When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-default_route_settingsnew) constructor.
-  - `route_settings` (`list[obj]`):  When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-route_settingsnew) constructor.
+  - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `auto_deploy` (`bool`): Set the `auto_deploy` field on the resulting object. When `null`, the `auto_deploy` field will be omitted from the resulting object.
+  - `client_certificate_id` (`string`): Set the `client_certificate_id` field on the resulting object. When `null`, the `client_certificate_id` field will be omitted from the resulting object.
+  - `deployment_id` (`string`): Set the `deployment_id` field on the resulting object. When `null`, the `deployment_id` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `stage_variables` (`obj`): Set the `stage_variables` field on the resulting object. When `null`, the `stage_variables` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_log_settings` (`list[obj]`): Set the `access_log_settings` field on the resulting object. When `null`, the `access_log_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.access_log_settings.new](#fn-access_log_settingsnew) constructor.
+  - `default_route_settings` (`list[obj]`): Set the `default_route_settings` field on the resulting object. When `null`, the `default_route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.default_route_settings.new](#fn-default_route_settingsnew) constructor.
+  - `route_settings` (`list[obj]`): Set the `route_settings` field on the resulting object. When `null`, the `route_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_stage.route_settings.new](#fn-route_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_stage` resource into the root Terraform configuration.
@@ -390,8 +390,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination_arn` (`string`): 
-  - `format` (`string`): 
+  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.
+  - `format` (`string`): Set the `format` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_log_settings` sub block.
@@ -414,11 +414,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_trace_enabled` (`bool`):  When `null`, the `data_trace_enabled` field will be omitted from the resulting object.
-  - `detailed_metrics_enabled` (`bool`):  When `null`, the `detailed_metrics_enabled` field will be omitted from the resulting object.
-  - `logging_level` (`string`):  When `null`, the `logging_level` field will be omitted from the resulting object.
-  - `throttling_burst_limit` (`number`):  When `null`, the `throttling_burst_limit` field will be omitted from the resulting object.
-  - `throttling_rate_limit` (`number`):  When `null`, the `throttling_rate_limit` field will be omitted from the resulting object.
+  - `data_trace_enabled` (`bool`): Set the `data_trace_enabled` field on the resulting object. When `null`, the `data_trace_enabled` field will be omitted from the resulting object.
+  - `detailed_metrics_enabled` (`bool`): Set the `detailed_metrics_enabled` field on the resulting object. When `null`, the `detailed_metrics_enabled` field will be omitted from the resulting object.
+  - `logging_level` (`string`): Set the `logging_level` field on the resulting object. When `null`, the `logging_level` field will be omitted from the resulting object.
+  - `throttling_burst_limit` (`number`): Set the `throttling_burst_limit` field on the resulting object. When `null`, the `throttling_burst_limit` field will be omitted from the resulting object.
+  - `throttling_rate_limit` (`number`): Set the `throttling_rate_limit` field on the resulting object. When `null`, the `throttling_rate_limit` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_route_settings` sub block.
@@ -441,12 +441,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_trace_enabled` (`bool`):  When `null`, the `data_trace_enabled` field will be omitted from the resulting object.
-  - `detailed_metrics_enabled` (`bool`):  When `null`, the `detailed_metrics_enabled` field will be omitted from the resulting object.
-  - `logging_level` (`string`):  When `null`, the `logging_level` field will be omitted from the resulting object.
-  - `route_key` (`string`): 
-  - `throttling_burst_limit` (`number`):  When `null`, the `throttling_burst_limit` field will be omitted from the resulting object.
-  - `throttling_rate_limit` (`number`):  When `null`, the `throttling_rate_limit` field will be omitted from the resulting object.
+  - `data_trace_enabled` (`bool`): Set the `data_trace_enabled` field on the resulting object. When `null`, the `data_trace_enabled` field will be omitted from the resulting object.
+  - `detailed_metrics_enabled` (`bool`): Set the `detailed_metrics_enabled` field on the resulting object. When `null`, the `detailed_metrics_enabled` field will be omitted from the resulting object.
+  - `logging_level` (`string`): Set the `logging_level` field on the resulting object. When `null`, the `logging_level` field will be omitted from the resulting object.
+  - `route_key` (`string`): Set the `route_key` field on the resulting object.
+  - `throttling_burst_limit` (`number`): Set the `throttling_burst_limit` field on the resulting object. When `null`, the `throttling_burst_limit` field will be omitted from the resulting object.
+  - `throttling_rate_limit` (`number`): Set the `throttling_rate_limit` field on the resulting object. When `null`, the `throttling_rate_limit` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `route_settings` sub block.

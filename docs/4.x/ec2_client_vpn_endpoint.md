@@ -74,23 +74,23 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `client_cidr_block` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `dns_servers` (`list`):  When `null`, the `dns_servers` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `self_service_portal` (`string`):  When `null`, the `self_service_portal` field will be omitted from the resulting object.
-  - `server_certificate_arn` (`string`): 
-  - `session_timeout_hours` (`number`):  When `null`, the `session_timeout_hours` field will be omitted from the resulting object.
-  - `split_tunnel` (`bool`):  When `null`, the `split_tunnel` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transport_protocol` (`string`):  When `null`, the `transport_protocol` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `vpn_port` (`number`):  When `null`, the `vpn_port` field will be omitted from the resulting object.
-  - `authentication_options` (`list[obj]`):  When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-authentication_optionsnew) constructor.
-  - `client_connect_options` (`list[obj]`):  When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-client_connect_optionsnew) constructor.
-  - `client_login_banner_options` (`list[obj]`):  When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-client_login_banner_optionsnew) constructor.
-  - `connection_log_options` (`list[obj]`):  When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-connection_log_optionsnew) constructor.
+  - `client_cidr_block` (`string`): Set the `client_cidr_block` field on the resulting resource block.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `dns_servers` (`list`): Set the `dns_servers` field on the resulting resource block. When `null`, the `dns_servers` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `self_service_portal` (`string`): Set the `self_service_portal` field on the resulting resource block. When `null`, the `self_service_portal` field will be omitted from the resulting object.
+  - `server_certificate_arn` (`string`): Set the `server_certificate_arn` field on the resulting resource block.
+  - `session_timeout_hours` (`number`): Set the `session_timeout_hours` field on the resulting resource block. When `null`, the `session_timeout_hours` field will be omitted from the resulting object.
+  - `split_tunnel` (`bool`): Set the `split_tunnel` field on the resulting resource block. When `null`, the `split_tunnel` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transport_protocol` (`string`): Set the `transport_protocol` field on the resulting resource block. When `null`, the `transport_protocol` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `vpn_port` (`number`): Set the `vpn_port` field on the resulting resource block. When `null`, the `vpn_port` field will be omitted from the resulting object.
+  - `authentication_options` (`list[obj]`): Set the `authentication_options` field on the resulting resource block. When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-authentication_optionsnew) constructor.
+  - `client_connect_options` (`list[obj]`): Set the `client_connect_options` field on the resulting resource block. When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-client_connect_optionsnew) constructor.
+  - `client_login_banner_options` (`list[obj]`): Set the `client_login_banner_options` field on the resulting resource block. When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-client_login_banner_optionsnew) constructor.
+  - `connection_log_options` (`list[obj]`): Set the `connection_log_options` field on the resulting resource block. When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-connection_log_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -114,23 +114,23 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `client_cidr_block` (`string`): 
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `dns_servers` (`list`):  When `null`, the `dns_servers` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `self_service_portal` (`string`):  When `null`, the `self_service_portal` field will be omitted from the resulting object.
-  - `server_certificate_arn` (`string`): 
-  - `session_timeout_hours` (`number`):  When `null`, the `session_timeout_hours` field will be omitted from the resulting object.
-  - `split_tunnel` (`bool`):  When `null`, the `split_tunnel` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transport_protocol` (`string`):  When `null`, the `transport_protocol` field will be omitted from the resulting object.
-  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `vpn_port` (`number`):  When `null`, the `vpn_port` field will be omitted from the resulting object.
-  - `authentication_options` (`list[obj]`):  When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-authentication_optionsnew) constructor.
-  - `client_connect_options` (`list[obj]`):  When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-client_connect_optionsnew) constructor.
-  - `client_login_banner_options` (`list[obj]`):  When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-client_login_banner_optionsnew) constructor.
-  - `connection_log_options` (`list[obj]`):  When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-connection_log_optionsnew) constructor.
+  - `client_cidr_block` (`string`): Set the `client_cidr_block` field on the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `dns_servers` (`list`): Set the `dns_servers` field on the resulting object. When `null`, the `dns_servers` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `self_service_portal` (`string`): Set the `self_service_portal` field on the resulting object. When `null`, the `self_service_portal` field will be omitted from the resulting object.
+  - `server_certificate_arn` (`string`): Set the `server_certificate_arn` field on the resulting object.
+  - `session_timeout_hours` (`number`): Set the `session_timeout_hours` field on the resulting object. When `null`, the `session_timeout_hours` field will be omitted from the resulting object.
+  - `split_tunnel` (`bool`): Set the `split_tunnel` field on the resulting object. When `null`, the `split_tunnel` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transport_protocol` (`string`): Set the `transport_protocol` field on the resulting object. When `null`, the `transport_protocol` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `vpn_port` (`number`): Set the `vpn_port` field on the resulting object. When `null`, the `vpn_port` field will be omitted from the resulting object.
+  - `authentication_options` (`list[obj]`): Set the `authentication_options` field on the resulting object. When `null`, the `authentication_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.authentication_options.new](#fn-authentication_optionsnew) constructor.
+  - `client_connect_options` (`list[obj]`): Set the `client_connect_options` field on the resulting object. When `null`, the `client_connect_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_connect_options.new](#fn-client_connect_optionsnew) constructor.
+  - `client_login_banner_options` (`list[obj]`): Set the `client_login_banner_options` field on the resulting object. When `null`, the `client_login_banner_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.client_login_banner_options.new](#fn-client_login_banner_optionsnew) constructor.
+  - `connection_log_options` (`list[obj]`): Set the `connection_log_options` field on the resulting object. When `null`, the `connection_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_endpoint.connection_log_options.new](#fn-connection_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_client_vpn_endpoint` resource into the root Terraform configuration.
@@ -509,11 +509,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `active_directory_id` (`string`):  When `null`, the `active_directory_id` field will be omitted from the resulting object.
-  - `root_certificate_chain_arn` (`string`):  When `null`, the `root_certificate_chain_arn` field will be omitted from the resulting object.
-  - `saml_provider_arn` (`string`):  When `null`, the `saml_provider_arn` field will be omitted from the resulting object.
-  - `self_service_saml_provider_arn` (`string`):  When `null`, the `self_service_saml_provider_arn` field will be omitted from the resulting object.
-  - `type` (`string`): 
+  - `active_directory_id` (`string`): Set the `active_directory_id` field on the resulting object. When `null`, the `active_directory_id` field will be omitted from the resulting object.
+  - `root_certificate_chain_arn` (`string`): Set the `root_certificate_chain_arn` field on the resulting object. When `null`, the `root_certificate_chain_arn` field will be omitted from the resulting object.
+  - `saml_provider_arn` (`string`): Set the `saml_provider_arn` field on the resulting object. When `null`, the `saml_provider_arn` field will be omitted from the resulting object.
+  - `self_service_saml_provider_arn` (`string`): Set the `self_service_saml_provider_arn` field on the resulting object. When `null`, the `self_service_saml_provider_arn` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `authentication_options` sub block.
@@ -536,8 +536,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
-  - `lambda_function_arn` (`string`):  When `null`, the `lambda_function_arn` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `lambda_function_arn` (`string`): Set the `lambda_function_arn` field on the resulting object. When `null`, the `lambda_function_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `client_connect_options` sub block.
@@ -560,8 +560,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `banner_text` (`string`):  When `null`, the `banner_text` field will be omitted from the resulting object.
-  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `banner_text` (`string`): Set the `banner_text` field on the resulting object. When `null`, the `banner_text` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `client_login_banner_options` sub block.
@@ -584,9 +584,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_group` (`string`):  When `null`, the `cloudwatch_log_group` field will be omitted from the resulting object.
-  - `cloudwatch_log_stream` (`string`):  When `null`, the `cloudwatch_log_stream` field will be omitted from the resulting object.
-  - `enabled` (`bool`): 
+  - `cloudwatch_log_group` (`string`): Set the `cloudwatch_log_group` field on the resulting object. When `null`, the `cloudwatch_log_group` field will be omitted from the resulting object.
+  - `cloudwatch_log_stream` (`string`): Set the `cloudwatch_log_stream` field on the resulting object. When `null`, the `cloudwatch_log_stream` field will be omitted from the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `connection_log_options` sub block.

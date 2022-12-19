@@ -121,31 +121,31 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `alias_attributes` (`list`):  When `null`, the `alias_attributes` field will be omitted from the resulting object.
-  - `auto_verified_attributes` (`list`):  When `null`, the `auto_verified_attributes` field will be omitted from the resulting object.
-  - `deletion_protection` (`string`):  When `null`, the `deletion_protection` field will be omitted from the resulting object.
-  - `email_verification_message` (`string`):  When `null`, the `email_verification_message` field will be omitted from the resulting object.
-  - `email_verification_subject` (`string`):  When `null`, the `email_verification_subject` field will be omitted from the resulting object.
-  - `mfa_configuration` (`string`):  When `null`, the `mfa_configuration` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `sms_authentication_message` (`string`):  When `null`, the `sms_authentication_message` field will be omitted from the resulting object.
-  - `sms_verification_message` (`string`):  When `null`, the `sms_verification_message` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `username_attributes` (`list`):  When `null`, the `username_attributes` field will be omitted from the resulting object.
-  - `account_recovery_setting` (`list[obj]`):  When `null`, the `account_recovery_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.new](#fn-account_recovery_settingnew) constructor.
-  - `admin_create_user_config` (`list[obj]`):  When `null`, the `admin_create_user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.new](#fn-admin_create_user_confignew) constructor.
-  - `device_configuration` (`list[obj]`):  When `null`, the `device_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.device_configuration.new](#fn-device_configurationnew) constructor.
-  - `email_configuration` (`list[obj]`):  When `null`, the `email_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.email_configuration.new](#fn-email_configurationnew) constructor.
-  - `lambda_config` (`list[obj]`):  When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.new](#fn-lambda_confignew) constructor.
-  - `password_policy` (`list[obj]`):  When `null`, the `password_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.password_policy.new](#fn-password_policynew) constructor.
-  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.new](#fn-schemanew) constructor.
-  - `sms_configuration` (`list[obj]`):  When `null`, the `sms_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.sms_configuration.new](#fn-sms_configurationnew) constructor.
-  - `software_token_mfa_configuration` (`list[obj]`):  When `null`, the `software_token_mfa_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.software_token_mfa_configuration.new](#fn-software_token_mfa_configurationnew) constructor.
-  - `user_attribute_update_settings` (`list[obj]`):  When `null`, the `user_attribute_update_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_attribute_update_settings.new](#fn-user_attribute_update_settingsnew) constructor.
-  - `user_pool_add_ons` (`list[obj]`):  When `null`, the `user_pool_add_ons` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_pool_add_ons.new](#fn-user_pool_add_onsnew) constructor.
-  - `username_configuration` (`list[obj]`):  When `null`, the `username_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.username_configuration.new](#fn-username_configurationnew) constructor.
-  - `verification_message_template` (`list[obj]`):  When `null`, the `verification_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.verification_message_template.new](#fn-verification_message_templatenew) constructor.
+  - `alias_attributes` (`list`): Set the `alias_attributes` field on the resulting resource block. When `null`, the `alias_attributes` field will be omitted from the resulting object.
+  - `auto_verified_attributes` (`list`): Set the `auto_verified_attributes` field on the resulting resource block. When `null`, the `auto_verified_attributes` field will be omitted from the resulting object.
+  - `deletion_protection` (`string`): Set the `deletion_protection` field on the resulting resource block. When `null`, the `deletion_protection` field will be omitted from the resulting object.
+  - `email_verification_message` (`string`): Set the `email_verification_message` field on the resulting resource block. When `null`, the `email_verification_message` field will be omitted from the resulting object.
+  - `email_verification_subject` (`string`): Set the `email_verification_subject` field on the resulting resource block. When `null`, the `email_verification_subject` field will be omitted from the resulting object.
+  - `mfa_configuration` (`string`): Set the `mfa_configuration` field on the resulting resource block. When `null`, the `mfa_configuration` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `sms_authentication_message` (`string`): Set the `sms_authentication_message` field on the resulting resource block. When `null`, the `sms_authentication_message` field will be omitted from the resulting object.
+  - `sms_verification_message` (`string`): Set the `sms_verification_message` field on the resulting resource block. When `null`, the `sms_verification_message` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `username_attributes` (`list`): Set the `username_attributes` field on the resulting resource block. When `null`, the `username_attributes` field will be omitted from the resulting object.
+  - `account_recovery_setting` (`list[obj]`): Set the `account_recovery_setting` field on the resulting resource block. When `null`, the `account_recovery_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.new](#fn-account_recovery_settingnew) constructor.
+  - `admin_create_user_config` (`list[obj]`): Set the `admin_create_user_config` field on the resulting resource block. When `null`, the `admin_create_user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.new](#fn-admin_create_user_confignew) constructor.
+  - `device_configuration` (`list[obj]`): Set the `device_configuration` field on the resulting resource block. When `null`, the `device_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.device_configuration.new](#fn-device_configurationnew) constructor.
+  - `email_configuration` (`list[obj]`): Set the `email_configuration` field on the resulting resource block. When `null`, the `email_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.email_configuration.new](#fn-email_configurationnew) constructor.
+  - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting resource block. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.new](#fn-lambda_confignew) constructor.
+  - `password_policy` (`list[obj]`): Set the `password_policy` field on the resulting resource block. When `null`, the `password_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.password_policy.new](#fn-password_policynew) constructor.
+  - `schema` (`list[obj]`): Set the `schema` field on the resulting resource block. When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.new](#fn-schemanew) constructor.
+  - `sms_configuration` (`list[obj]`): Set the `sms_configuration` field on the resulting resource block. When `null`, the `sms_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.sms_configuration.new](#fn-sms_configurationnew) constructor.
+  - `software_token_mfa_configuration` (`list[obj]`): Set the `software_token_mfa_configuration` field on the resulting resource block. When `null`, the `software_token_mfa_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.software_token_mfa_configuration.new](#fn-software_token_mfa_configurationnew) constructor.
+  - `user_attribute_update_settings` (`list[obj]`): Set the `user_attribute_update_settings` field on the resulting resource block. When `null`, the `user_attribute_update_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_attribute_update_settings.new](#fn-user_attribute_update_settingsnew) constructor.
+  - `user_pool_add_ons` (`list[obj]`): Set the `user_pool_add_ons` field on the resulting resource block. When `null`, the `user_pool_add_ons` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_pool_add_ons.new](#fn-user_pool_add_onsnew) constructor.
+  - `username_configuration` (`list[obj]`): Set the `username_configuration` field on the resulting resource block. When `null`, the `username_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.username_configuration.new](#fn-username_configurationnew) constructor.
+  - `verification_message_template` (`list[obj]`): Set the `verification_message_template` field on the resulting resource block. When `null`, the `verification_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.verification_message_template.new](#fn-verification_message_templatenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -169,31 +169,31 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `alias_attributes` (`list`):  When `null`, the `alias_attributes` field will be omitted from the resulting object.
-  - `auto_verified_attributes` (`list`):  When `null`, the `auto_verified_attributes` field will be omitted from the resulting object.
-  - `deletion_protection` (`string`):  When `null`, the `deletion_protection` field will be omitted from the resulting object.
-  - `email_verification_message` (`string`):  When `null`, the `email_verification_message` field will be omitted from the resulting object.
-  - `email_verification_subject` (`string`):  When `null`, the `email_verification_subject` field will be omitted from the resulting object.
-  - `mfa_configuration` (`string`):  When `null`, the `mfa_configuration` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `sms_authentication_message` (`string`):  When `null`, the `sms_authentication_message` field will be omitted from the resulting object.
-  - `sms_verification_message` (`string`):  When `null`, the `sms_verification_message` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `username_attributes` (`list`):  When `null`, the `username_attributes` field will be omitted from the resulting object.
-  - `account_recovery_setting` (`list[obj]`):  When `null`, the `account_recovery_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.new](#fn-account_recovery_settingnew) constructor.
-  - `admin_create_user_config` (`list[obj]`):  When `null`, the `admin_create_user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.new](#fn-admin_create_user_confignew) constructor.
-  - `device_configuration` (`list[obj]`):  When `null`, the `device_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.device_configuration.new](#fn-device_configurationnew) constructor.
-  - `email_configuration` (`list[obj]`):  When `null`, the `email_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.email_configuration.new](#fn-email_configurationnew) constructor.
-  - `lambda_config` (`list[obj]`):  When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.new](#fn-lambda_confignew) constructor.
-  - `password_policy` (`list[obj]`):  When `null`, the `password_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.password_policy.new](#fn-password_policynew) constructor.
-  - `schema` (`list[obj]`):  When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.new](#fn-schemanew) constructor.
-  - `sms_configuration` (`list[obj]`):  When `null`, the `sms_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.sms_configuration.new](#fn-sms_configurationnew) constructor.
-  - `software_token_mfa_configuration` (`list[obj]`):  When `null`, the `software_token_mfa_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.software_token_mfa_configuration.new](#fn-software_token_mfa_configurationnew) constructor.
-  - `user_attribute_update_settings` (`list[obj]`):  When `null`, the `user_attribute_update_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_attribute_update_settings.new](#fn-user_attribute_update_settingsnew) constructor.
-  - `user_pool_add_ons` (`list[obj]`):  When `null`, the `user_pool_add_ons` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_pool_add_ons.new](#fn-user_pool_add_onsnew) constructor.
-  - `username_configuration` (`list[obj]`):  When `null`, the `username_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.username_configuration.new](#fn-username_configurationnew) constructor.
-  - `verification_message_template` (`list[obj]`):  When `null`, the `verification_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.verification_message_template.new](#fn-verification_message_templatenew) constructor.
+  - `alias_attributes` (`list`): Set the `alias_attributes` field on the resulting object. When `null`, the `alias_attributes` field will be omitted from the resulting object.
+  - `auto_verified_attributes` (`list`): Set the `auto_verified_attributes` field on the resulting object. When `null`, the `auto_verified_attributes` field will be omitted from the resulting object.
+  - `deletion_protection` (`string`): Set the `deletion_protection` field on the resulting object. When `null`, the `deletion_protection` field will be omitted from the resulting object.
+  - `email_verification_message` (`string`): Set the `email_verification_message` field on the resulting object. When `null`, the `email_verification_message` field will be omitted from the resulting object.
+  - `email_verification_subject` (`string`): Set the `email_verification_subject` field on the resulting object. When `null`, the `email_verification_subject` field will be omitted from the resulting object.
+  - `mfa_configuration` (`string`): Set the `mfa_configuration` field on the resulting object. When `null`, the `mfa_configuration` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `sms_authentication_message` (`string`): Set the `sms_authentication_message` field on the resulting object. When `null`, the `sms_authentication_message` field will be omitted from the resulting object.
+  - `sms_verification_message` (`string`): Set the `sms_verification_message` field on the resulting object. When `null`, the `sms_verification_message` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `username_attributes` (`list`): Set the `username_attributes` field on the resulting object. When `null`, the `username_attributes` field will be omitted from the resulting object.
+  - `account_recovery_setting` (`list[obj]`): Set the `account_recovery_setting` field on the resulting object. When `null`, the `account_recovery_setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.new](#fn-account_recovery_settingnew) constructor.
+  - `admin_create_user_config` (`list[obj]`): Set the `admin_create_user_config` field on the resulting object. When `null`, the `admin_create_user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.new](#fn-admin_create_user_confignew) constructor.
+  - `device_configuration` (`list[obj]`): Set the `device_configuration` field on the resulting object. When `null`, the `device_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.device_configuration.new](#fn-device_configurationnew) constructor.
+  - `email_configuration` (`list[obj]`): Set the `email_configuration` field on the resulting object. When `null`, the `email_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.email_configuration.new](#fn-email_configurationnew) constructor.
+  - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting object. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.new](#fn-lambda_confignew) constructor.
+  - `password_policy` (`list[obj]`): Set the `password_policy` field on the resulting object. When `null`, the `password_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.password_policy.new](#fn-password_policynew) constructor.
+  - `schema` (`list[obj]`): Set the `schema` field on the resulting object. When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.new](#fn-schemanew) constructor.
+  - `sms_configuration` (`list[obj]`): Set the `sms_configuration` field on the resulting object. When `null`, the `sms_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.sms_configuration.new](#fn-sms_configurationnew) constructor.
+  - `software_token_mfa_configuration` (`list[obj]`): Set the `software_token_mfa_configuration` field on the resulting object. When `null`, the `software_token_mfa_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.software_token_mfa_configuration.new](#fn-software_token_mfa_configurationnew) constructor.
+  - `user_attribute_update_settings` (`list[obj]`): Set the `user_attribute_update_settings` field on the resulting object. When `null`, the `user_attribute_update_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_attribute_update_settings.new](#fn-user_attribute_update_settingsnew) constructor.
+  - `user_pool_add_ons` (`list[obj]`): Set the `user_pool_add_ons` field on the resulting object. When `null`, the `user_pool_add_ons` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.user_pool_add_ons.new](#fn-user_pool_add_onsnew) constructor.
+  - `username_configuration` (`list[obj]`): Set the `username_configuration` field on the resulting object. When `null`, the `username_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.username_configuration.new](#fn-username_configurationnew) constructor.
+  - `verification_message_template` (`list[obj]`): Set the `verification_message_template` field on the resulting object. When `null`, the `verification_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.verification_message_template.new](#fn-verification_message_templatenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_user_pool` resource into the root Terraform configuration.
@@ -889,7 +889,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `recovery_mechanism` (`list[obj]`):  When `null`, the `recovery_mechanism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.recovery_mechanism.new](#fn-account_recovery_settingrecovery_mechanismnew) constructor.
+  - `recovery_mechanism` (`list[obj]`): Set the `recovery_mechanism` field on the resulting object. When `null`, the `recovery_mechanism` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.account_recovery_setting.recovery_mechanism.new](#fn-account_recovery_settingrecovery_mechanismnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `account_recovery_setting` sub block.
@@ -912,8 +912,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `priority` (`number`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `priority` (`number`): Set the `priority` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `recovery_mechanism` sub block.
@@ -936,8 +936,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_admin_create_user_only` (`bool`):  When `null`, the `allow_admin_create_user_only` field will be omitted from the resulting object.
-  - `invite_message_template` (`list[obj]`):  When `null`, the `invite_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.invite_message_template.new](#fn-admin_create_user_configinvite_message_templatenew) constructor.
+  - `allow_admin_create_user_only` (`bool`): Set the `allow_admin_create_user_only` field on the resulting object. When `null`, the `allow_admin_create_user_only` field will be omitted from the resulting object.
+  - `invite_message_template` (`list[obj]`): Set the `invite_message_template` field on the resulting object. When `null`, the `invite_message_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.admin_create_user_config.invite_message_template.new](#fn-admin_create_user_configinvite_message_templatenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `admin_create_user_config` sub block.
@@ -960,9 +960,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `email_message` (`string`):  When `null`, the `email_message` field will be omitted from the resulting object.
-  - `email_subject` (`string`):  When `null`, the `email_subject` field will be omitted from the resulting object.
-  - `sms_message` (`string`):  When `null`, the `sms_message` field will be omitted from the resulting object.
+  - `email_message` (`string`): Set the `email_message` field on the resulting object. When `null`, the `email_message` field will be omitted from the resulting object.
+  - `email_subject` (`string`): Set the `email_subject` field on the resulting object. When `null`, the `email_subject` field will be omitted from the resulting object.
+  - `sms_message` (`string`): Set the `sms_message` field on the resulting object. When `null`, the `sms_message` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `invite_message_template` sub block.
@@ -985,8 +985,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `challenge_required_on_new_device` (`bool`):  When `null`, the `challenge_required_on_new_device` field will be omitted from the resulting object.
-  - `device_only_remembered_on_user_prompt` (`bool`):  When `null`, the `device_only_remembered_on_user_prompt` field will be omitted from the resulting object.
+  - `challenge_required_on_new_device` (`bool`): Set the `challenge_required_on_new_device` field on the resulting object. When `null`, the `challenge_required_on_new_device` field will be omitted from the resulting object.
+  - `device_only_remembered_on_user_prompt` (`bool`): Set the `device_only_remembered_on_user_prompt` field on the resulting object. When `null`, the `device_only_remembered_on_user_prompt` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `device_configuration` sub block.
@@ -1009,11 +1009,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `configuration_set` (`string`):  When `null`, the `configuration_set` field will be omitted from the resulting object.
-  - `email_sending_account` (`string`):  When `null`, the `email_sending_account` field will be omitted from the resulting object.
-  - `from_email_address` (`string`):  When `null`, the `from_email_address` field will be omitted from the resulting object.
-  - `reply_to_email_address` (`string`):  When `null`, the `reply_to_email_address` field will be omitted from the resulting object.
-  - `source_arn` (`string`):  When `null`, the `source_arn` field will be omitted from the resulting object.
+  - `configuration_set` (`string`): Set the `configuration_set` field on the resulting object. When `null`, the `configuration_set` field will be omitted from the resulting object.
+  - `email_sending_account` (`string`): Set the `email_sending_account` field on the resulting object. When `null`, the `email_sending_account` field will be omitted from the resulting object.
+  - `from_email_address` (`string`): Set the `from_email_address` field on the resulting object. When `null`, the `from_email_address` field will be omitted from the resulting object.
+  - `reply_to_email_address` (`string`): Set the `reply_to_email_address` field on the resulting object. When `null`, the `reply_to_email_address` field will be omitted from the resulting object.
+  - `source_arn` (`string`): Set the `source_arn` field on the resulting object. When `null`, the `source_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `email_configuration` sub block.
@@ -1036,19 +1036,19 @@ Terraform sub block.
 
 
 **Args**:
-  - `create_auth_challenge` (`string`):  When `null`, the `create_auth_challenge` field will be omitted from the resulting object.
-  - `custom_message` (`string`):  When `null`, the `custom_message` field will be omitted from the resulting object.
-  - `define_auth_challenge` (`string`):  When `null`, the `define_auth_challenge` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `post_authentication` (`string`):  When `null`, the `post_authentication` field will be omitted from the resulting object.
-  - `post_confirmation` (`string`):  When `null`, the `post_confirmation` field will be omitted from the resulting object.
-  - `pre_authentication` (`string`):  When `null`, the `pre_authentication` field will be omitted from the resulting object.
-  - `pre_sign_up` (`string`):  When `null`, the `pre_sign_up` field will be omitted from the resulting object.
-  - `pre_token_generation` (`string`):  When `null`, the `pre_token_generation` field will be omitted from the resulting object.
-  - `user_migration` (`string`):  When `null`, the `user_migration` field will be omitted from the resulting object.
-  - `verify_auth_challenge_response` (`string`):  When `null`, the `verify_auth_challenge_response` field will be omitted from the resulting object.
-  - `custom_email_sender` (`list[obj]`):  When `null`, the `custom_email_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_email_sender.new](#fn-lambda_configcustom_email_sendernew) constructor.
-  - `custom_sms_sender` (`list[obj]`):  When `null`, the `custom_sms_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_sms_sender.new](#fn-lambda_configcustom_sms_sendernew) constructor.
+  - `create_auth_challenge` (`string`): Set the `create_auth_challenge` field on the resulting object. When `null`, the `create_auth_challenge` field will be omitted from the resulting object.
+  - `custom_message` (`string`): Set the `custom_message` field on the resulting object. When `null`, the `custom_message` field will be omitted from the resulting object.
+  - `define_auth_challenge` (`string`): Set the `define_auth_challenge` field on the resulting object. When `null`, the `define_auth_challenge` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `post_authentication` (`string`): Set the `post_authentication` field on the resulting object. When `null`, the `post_authentication` field will be omitted from the resulting object.
+  - `post_confirmation` (`string`): Set the `post_confirmation` field on the resulting object. When `null`, the `post_confirmation` field will be omitted from the resulting object.
+  - `pre_authentication` (`string`): Set the `pre_authentication` field on the resulting object. When `null`, the `pre_authentication` field will be omitted from the resulting object.
+  - `pre_sign_up` (`string`): Set the `pre_sign_up` field on the resulting object. When `null`, the `pre_sign_up` field will be omitted from the resulting object.
+  - `pre_token_generation` (`string`): Set the `pre_token_generation` field on the resulting object. When `null`, the `pre_token_generation` field will be omitted from the resulting object.
+  - `user_migration` (`string`): Set the `user_migration` field on the resulting object. When `null`, the `user_migration` field will be omitted from the resulting object.
+  - `verify_auth_challenge_response` (`string`): Set the `verify_auth_challenge_response` field on the resulting object. When `null`, the `verify_auth_challenge_response` field will be omitted from the resulting object.
+  - `custom_email_sender` (`list[obj]`): Set the `custom_email_sender` field on the resulting object. When `null`, the `custom_email_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_email_sender.new](#fn-lambda_configcustom_email_sendernew) constructor.
+  - `custom_sms_sender` (`list[obj]`): Set the `custom_sms_sender` field on the resulting object. When `null`, the `custom_sms_sender` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.lambda_config.custom_sms_sender.new](#fn-lambda_configcustom_sms_sendernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `lambda_config` sub block.
@@ -1071,8 +1071,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `lambda_arn` (`string`): 
-  - `lambda_version` (`string`): 
+  - `lambda_arn` (`string`): Set the `lambda_arn` field on the resulting object.
+  - `lambda_version` (`string`): Set the `lambda_version` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_email_sender` sub block.
@@ -1095,8 +1095,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `lambda_arn` (`string`): 
-  - `lambda_version` (`string`): 
+  - `lambda_arn` (`string`): Set the `lambda_arn` field on the resulting object.
+  - `lambda_version` (`string`): Set the `lambda_version` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_sms_sender` sub block.
@@ -1119,12 +1119,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `minimum_length` (`number`):  When `null`, the `minimum_length` field will be omitted from the resulting object.
-  - `require_lowercase` (`bool`):  When `null`, the `require_lowercase` field will be omitted from the resulting object.
-  - `require_numbers` (`bool`):  When `null`, the `require_numbers` field will be omitted from the resulting object.
-  - `require_symbols` (`bool`):  When `null`, the `require_symbols` field will be omitted from the resulting object.
-  - `require_uppercase` (`bool`):  When `null`, the `require_uppercase` field will be omitted from the resulting object.
-  - `temporary_password_validity_days` (`number`):  When `null`, the `temporary_password_validity_days` field will be omitted from the resulting object.
+  - `minimum_length` (`number`): Set the `minimum_length` field on the resulting object. When `null`, the `minimum_length` field will be omitted from the resulting object.
+  - `require_lowercase` (`bool`): Set the `require_lowercase` field on the resulting object. When `null`, the `require_lowercase` field will be omitted from the resulting object.
+  - `require_numbers` (`bool`): Set the `require_numbers` field on the resulting object. When `null`, the `require_numbers` field will be omitted from the resulting object.
+  - `require_symbols` (`bool`): Set the `require_symbols` field on the resulting object. When `null`, the `require_symbols` field will be omitted from the resulting object.
+  - `require_uppercase` (`bool`): Set the `require_uppercase` field on the resulting object. When `null`, the `require_uppercase` field will be omitted from the resulting object.
+  - `temporary_password_validity_days` (`number`): Set the `temporary_password_validity_days` field on the resulting object. When `null`, the `temporary_password_validity_days` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `password_policy` sub block.
@@ -1147,13 +1147,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `attribute_data_type` (`string`): 
-  - `developer_only_attribute` (`bool`):  When `null`, the `developer_only_attribute` field will be omitted from the resulting object.
-  - `mutable` (`bool`):  When `null`, the `mutable` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `required` (`bool`):  When `null`, the `required` field will be omitted from the resulting object.
-  - `number_attribute_constraints` (`list[obj]`):  When `null`, the `number_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.number_attribute_constraints.new](#fn-schemanumber_attribute_constraintsnew) constructor.
-  - `string_attribute_constraints` (`list[obj]`):  When `null`, the `string_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.string_attribute_constraints.new](#fn-schemastring_attribute_constraintsnew) constructor.
+  - `attribute_data_type` (`string`): Set the `attribute_data_type` field on the resulting object.
+  - `developer_only_attribute` (`bool`): Set the `developer_only_attribute` field on the resulting object. When `null`, the `developer_only_attribute` field will be omitted from the resulting object.
+  - `mutable` (`bool`): Set the `mutable` field on the resulting object. When `null`, the `mutable` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `required` (`bool`): Set the `required` field on the resulting object. When `null`, the `required` field will be omitted from the resulting object.
+  - `number_attribute_constraints` (`list[obj]`): Set the `number_attribute_constraints` field on the resulting object. When `null`, the `number_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.number_attribute_constraints.new](#fn-schemanumber_attribute_constraintsnew) constructor.
+  - `string_attribute_constraints` (`list[obj]`): Set the `string_attribute_constraints` field on the resulting object. When `null`, the `string_attribute_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_user_pool.schema.string_attribute_constraints.new](#fn-schemastring_attribute_constraintsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema` sub block.
@@ -1176,8 +1176,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_value` (`string`):  When `null`, the `max_value` field will be omitted from the resulting object.
-  - `min_value` (`string`):  When `null`, the `min_value` field will be omitted from the resulting object.
+  - `max_value` (`string`): Set the `max_value` field on the resulting object. When `null`, the `max_value` field will be omitted from the resulting object.
+  - `min_value` (`string`): Set the `min_value` field on the resulting object. When `null`, the `min_value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `number_attribute_constraints` sub block.
@@ -1200,8 +1200,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_length` (`string`):  When `null`, the `max_length` field will be omitted from the resulting object.
-  - `min_length` (`string`):  When `null`, the `min_length` field will be omitted from the resulting object.
+  - `max_length` (`string`): Set the `max_length` field on the resulting object. When `null`, the `max_length` field will be omitted from the resulting object.
+  - `min_length` (`string`): Set the `min_length` field on the resulting object. When `null`, the `min_length` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `string_attribute_constraints` sub block.
@@ -1224,9 +1224,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `external_id` (`string`): 
-  - `sns_caller_arn` (`string`): 
-  - `sns_region` (`string`):  When `null`, the `sns_region` field will be omitted from the resulting object.
+  - `external_id` (`string`): Set the `external_id` field on the resulting object.
+  - `sns_caller_arn` (`string`): Set the `sns_caller_arn` field on the resulting object.
+  - `sns_region` (`string`): Set the `sns_region` field on the resulting object. When `null`, the `sns_region` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sms_configuration` sub block.
@@ -1249,7 +1249,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): 
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `software_token_mfa_configuration` sub block.
@@ -1272,7 +1272,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `attributes_require_verification_before_update` (`list`): 
+  - `attributes_require_verification_before_update` (`list`): Set the `attributes_require_verification_before_update` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `user_attribute_update_settings` sub block.
@@ -1295,7 +1295,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `advanced_security_mode` (`string`): 
+  - `advanced_security_mode` (`string`): Set the `advanced_security_mode` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `user_pool_add_ons` sub block.
@@ -1318,7 +1318,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `case_sensitive` (`bool`): 
+  - `case_sensitive` (`bool`): Set the `case_sensitive` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `username_configuration` sub block.
@@ -1341,12 +1341,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_email_option` (`string`):  When `null`, the `default_email_option` field will be omitted from the resulting object.
-  - `email_message` (`string`):  When `null`, the `email_message` field will be omitted from the resulting object.
-  - `email_message_by_link` (`string`):  When `null`, the `email_message_by_link` field will be omitted from the resulting object.
-  - `email_subject` (`string`):  When `null`, the `email_subject` field will be omitted from the resulting object.
-  - `email_subject_by_link` (`string`):  When `null`, the `email_subject_by_link` field will be omitted from the resulting object.
-  - `sms_message` (`string`):  When `null`, the `sms_message` field will be omitted from the resulting object.
+  - `default_email_option` (`string`): Set the `default_email_option` field on the resulting object. When `null`, the `default_email_option` field will be omitted from the resulting object.
+  - `email_message` (`string`): Set the `email_message` field on the resulting object. When `null`, the `email_message` field will be omitted from the resulting object.
+  - `email_message_by_link` (`string`): Set the `email_message_by_link` field on the resulting object. When `null`, the `email_message_by_link` field will be omitted from the resulting object.
+  - `email_subject` (`string`): Set the `email_subject` field on the resulting object. When `null`, the `email_subject` field will be omitted from the resulting object.
+  - `email_subject_by_link` (`string`): Set the `email_subject_by_link` field on the resulting object. When `null`, the `email_subject_by_link` field will be omitted from the resulting object.
+  - `sms_message` (`string`): Set the `sms_message` field on the resulting object. When `null`, the `sms_message` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `verification_message_template` sub block.

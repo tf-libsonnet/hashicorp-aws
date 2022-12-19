@@ -57,15 +57,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`): 
-  - `email` (`string`): 
-  - `invitation_disable_email_notification` (`bool`):  When `null`, the `invitation_disable_email_notification` field will be omitted from the resulting object.
-  - `invitation_message` (`string`):  When `null`, the `invitation_message` field will be omitted from the resulting object.
-  - `invite` (`bool`):  When `null`, the `invite` field will be omitted from the resulting object.
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_member.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting resource block.
+  - `email` (`string`): Set the `email` field on the resulting resource block.
+  - `invitation_disable_email_notification` (`bool`): Set the `invitation_disable_email_notification` field on the resulting resource block. When `null`, the `invitation_disable_email_notification` field will be omitted from the resulting object.
+  - `invitation_message` (`string`): Set the `invitation_message` field on the resulting resource block. When `null`, the `invitation_message` field will be omitted from the resulting object.
+  - `invite` (`bool`): Set the `invite` field on the resulting resource block. When `null`, the `invite` field will be omitted from the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting resource block. When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_member.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,15 +89,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`): 
-  - `email` (`string`): 
-  - `invitation_disable_email_notification` (`bool`):  When `null`, the `invitation_disable_email_notification` field will be omitted from the resulting object.
-  - `invitation_message` (`string`):  When `null`, the `invitation_message` field will be omitted from the resulting object.
-  - `invite` (`bool`):  When `null`, the `invite` field will be omitted from the resulting object.
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_member.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_id` (`string`): Set the `account_id` field on the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting object.
+  - `invitation_disable_email_notification` (`bool`): Set the `invitation_disable_email_notification` field on the resulting object. When `null`, the `invitation_disable_email_notification` field will be omitted from the resulting object.
+  - `invitation_message` (`string`): Set the `invitation_message` field on the resulting object. When `null`, the `invitation_message` field will be omitted from the resulting object.
+  - `invite` (`bool`): Set the `invite` field on the resulting object. When `null`, the `invite` field will be omitted from the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.macie2_member.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `macie2_member` resource into the root Terraform configuration.
@@ -284,8 +284,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

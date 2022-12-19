@@ -70,31 +70,31 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application_failure_feedback_role_arn` (`string`):  When `null`, the `application_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `application_success_feedback_role_arn` (`string`):  When `null`, the `application_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `application_success_feedback_sample_rate` (`number`):  When `null`, the `application_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `content_based_deduplication` (`bool`):  When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
-  - `delivery_policy` (`string`):  When `null`, the `delivery_policy` field will be omitted from the resulting object.
-  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
-  - `fifo_topic` (`bool`):  When `null`, the `fifo_topic` field will be omitted from the resulting object.
-  - `firehose_failure_feedback_role_arn` (`string`):  When `null`, the `firehose_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `firehose_success_feedback_role_arn` (`string`):  When `null`, the `firehose_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `firehose_success_feedback_sample_rate` (`number`):  When `null`, the `firehose_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `http_failure_feedback_role_arn` (`string`):  When `null`, the `http_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `http_success_feedback_role_arn` (`string`):  When `null`, the `http_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `http_success_feedback_sample_rate` (`number`):  When `null`, the `http_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `kms_master_key_id` (`string`):  When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
-  - `lambda_failure_feedback_role_arn` (`string`):  When `null`, the `lambda_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `lambda_success_feedback_role_arn` (`string`):  When `null`, the `lambda_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `lambda_success_feedback_sample_rate` (`number`):  When `null`, the `lambda_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `sqs_failure_feedback_role_arn` (`string`):  When `null`, the `sqs_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `sqs_success_feedback_role_arn` (`string`):  When `null`, the `sqs_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `sqs_success_feedback_sample_rate` (`number`):  When `null`, the `sqs_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `application_failure_feedback_role_arn` (`string`): Set the `application_failure_feedback_role_arn` field on the resulting resource block. When `null`, the `application_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `application_success_feedback_role_arn` (`string`): Set the `application_success_feedback_role_arn` field on the resulting resource block. When `null`, the `application_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `application_success_feedback_sample_rate` (`number`): Set the `application_success_feedback_sample_rate` field on the resulting resource block. When `null`, the `application_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `content_based_deduplication` (`bool`): Set the `content_based_deduplication` field on the resulting resource block. When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
+  - `delivery_policy` (`string`): Set the `delivery_policy` field on the resulting resource block. When `null`, the `delivery_policy` field will be omitted from the resulting object.
+  - `display_name` (`string`): Set the `display_name` field on the resulting resource block. When `null`, the `display_name` field will be omitted from the resulting object.
+  - `fifo_topic` (`bool`): Set the `fifo_topic` field on the resulting resource block. When `null`, the `fifo_topic` field will be omitted from the resulting object.
+  - `firehose_failure_feedback_role_arn` (`string`): Set the `firehose_failure_feedback_role_arn` field on the resulting resource block. When `null`, the `firehose_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `firehose_success_feedback_role_arn` (`string`): Set the `firehose_success_feedback_role_arn` field on the resulting resource block. When `null`, the `firehose_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `firehose_success_feedback_sample_rate` (`number`): Set the `firehose_success_feedback_sample_rate` field on the resulting resource block. When `null`, the `firehose_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `http_failure_feedback_role_arn` (`string`): Set the `http_failure_feedback_role_arn` field on the resulting resource block. When `null`, the `http_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `http_success_feedback_role_arn` (`string`): Set the `http_success_feedback_role_arn` field on the resulting resource block. When `null`, the `http_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `http_success_feedback_sample_rate` (`number`): Set the `http_success_feedback_sample_rate` field on the resulting resource block. When `null`, the `http_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `kms_master_key_id` (`string`): Set the `kms_master_key_id` field on the resulting resource block. When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
+  - `lambda_failure_feedback_role_arn` (`string`): Set the `lambda_failure_feedback_role_arn` field on the resulting resource block. When `null`, the `lambda_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `lambda_success_feedback_role_arn` (`string`): Set the `lambda_success_feedback_role_arn` field on the resulting resource block. When `null`, the `lambda_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `lambda_success_feedback_sample_rate` (`number`): Set the `lambda_success_feedback_sample_rate` field on the resulting resource block. When `null`, the `lambda_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
+  - `sqs_failure_feedback_role_arn` (`string`): Set the `sqs_failure_feedback_role_arn` field on the resulting resource block. When `null`, the `sqs_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `sqs_success_feedback_role_arn` (`string`): Set the `sqs_success_feedback_role_arn` field on the resulting resource block. When `null`, the `sqs_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `sqs_success_feedback_sample_rate` (`number`): Set the `sqs_success_feedback_sample_rate` field on the resulting resource block. When `null`, the `sqs_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -118,31 +118,31 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application_failure_feedback_role_arn` (`string`):  When `null`, the `application_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `application_success_feedback_role_arn` (`string`):  When `null`, the `application_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `application_success_feedback_sample_rate` (`number`):  When `null`, the `application_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `content_based_deduplication` (`bool`):  When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
-  - `delivery_policy` (`string`):  When `null`, the `delivery_policy` field will be omitted from the resulting object.
-  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
-  - `fifo_topic` (`bool`):  When `null`, the `fifo_topic` field will be omitted from the resulting object.
-  - `firehose_failure_feedback_role_arn` (`string`):  When `null`, the `firehose_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `firehose_success_feedback_role_arn` (`string`):  When `null`, the `firehose_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `firehose_success_feedback_sample_rate` (`number`):  When `null`, the `firehose_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `http_failure_feedback_role_arn` (`string`):  When `null`, the `http_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `http_success_feedback_role_arn` (`string`):  When `null`, the `http_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `http_success_feedback_sample_rate` (`number`):  When `null`, the `http_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `kms_master_key_id` (`string`):  When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
-  - `lambda_failure_feedback_role_arn` (`string`):  When `null`, the `lambda_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `lambda_success_feedback_role_arn` (`string`):  When `null`, the `lambda_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `lambda_success_feedback_sample_rate` (`number`):  When `null`, the `lambda_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
-  - `sqs_failure_feedback_role_arn` (`string`):  When `null`, the `sqs_failure_feedback_role_arn` field will be omitted from the resulting object.
-  - `sqs_success_feedback_role_arn` (`string`):  When `null`, the `sqs_success_feedback_role_arn` field will be omitted from the resulting object.
-  - `sqs_success_feedback_sample_rate` (`number`):  When `null`, the `sqs_success_feedback_sample_rate` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `application_failure_feedback_role_arn` (`string`): Set the `application_failure_feedback_role_arn` field on the resulting object. When `null`, the `application_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `application_success_feedback_role_arn` (`string`): Set the `application_success_feedback_role_arn` field on the resulting object. When `null`, the `application_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `application_success_feedback_sample_rate` (`number`): Set the `application_success_feedback_sample_rate` field on the resulting object. When `null`, the `application_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `content_based_deduplication` (`bool`): Set the `content_based_deduplication` field on the resulting object. When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
+  - `delivery_policy` (`string`): Set the `delivery_policy` field on the resulting object. When `null`, the `delivery_policy` field will be omitted from the resulting object.
+  - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
+  - `fifo_topic` (`bool`): Set the `fifo_topic` field on the resulting object. When `null`, the `fifo_topic` field will be omitted from the resulting object.
+  - `firehose_failure_feedback_role_arn` (`string`): Set the `firehose_failure_feedback_role_arn` field on the resulting object. When `null`, the `firehose_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `firehose_success_feedback_role_arn` (`string`): Set the `firehose_success_feedback_role_arn` field on the resulting object. When `null`, the `firehose_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `firehose_success_feedback_sample_rate` (`number`): Set the `firehose_success_feedback_sample_rate` field on the resulting object. When `null`, the `firehose_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `http_failure_feedback_role_arn` (`string`): Set the `http_failure_feedback_role_arn` field on the resulting object. When `null`, the `http_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `http_success_feedback_role_arn` (`string`): Set the `http_success_feedback_role_arn` field on the resulting object. When `null`, the `http_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `http_success_feedback_sample_rate` (`number`): Set the `http_success_feedback_sample_rate` field on the resulting object. When `null`, the `http_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `kms_master_key_id` (`string`): Set the `kms_master_key_id` field on the resulting object. When `null`, the `kms_master_key_id` field will be omitted from the resulting object.
+  - `lambda_failure_feedback_role_arn` (`string`): Set the `lambda_failure_feedback_role_arn` field on the resulting object. When `null`, the `lambda_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `lambda_success_feedback_role_arn` (`string`): Set the `lambda_success_feedback_role_arn` field on the resulting object. When `null`, the `lambda_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `lambda_success_feedback_sample_rate` (`number`): Set the `lambda_success_feedback_sample_rate` field on the resulting object. When `null`, the `lambda_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
+  - `sqs_failure_feedback_role_arn` (`string`): Set the `sqs_failure_feedback_role_arn` field on the resulting object. When `null`, the `sqs_failure_feedback_role_arn` field will be omitted from the resulting object.
+  - `sqs_success_feedback_role_arn` (`string`): Set the `sqs_success_feedback_role_arn` field on the resulting object. When `null`, the `sqs_success_feedback_role_arn` field will be omitted from the resulting object.
+  - `sqs_success_feedback_sample_rate` (`number`): Set the `sqs_success_feedback_sample_rate` field on the resulting object. When `null`, the `sqs_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sns_topic` resource into the root Terraform configuration.

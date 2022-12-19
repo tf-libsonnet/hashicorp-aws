@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account` (`string`): 
-  - `cluster_identifier` (`string`): 
-  - `force_delete` (`bool`):  When `null`, the `force_delete` field will be omitted from the resulting object.
-  - `vpc_ids` (`list`):  When `null`, the `vpc_ids` field will be omitted from the resulting object.
+  - `account` (`string`): Set the `account` field on the resulting resource block.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.
+  - `force_delete` (`bool`): Set the `force_delete` field on the resulting resource block. When `null`, the `force_delete` field will be omitted from the resulting object.
+  - `vpc_ids` (`list`): Set the `vpc_ids` field on the resulting resource block. When `null`, the `vpc_ids` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account` (`string`): 
-  - `cluster_identifier` (`string`): 
-  - `force_delete` (`bool`):  When `null`, the `force_delete` field will be omitted from the resulting object.
-  - `vpc_ids` (`list`):  When `null`, the `vpc_ids` field will be omitted from the resulting object.
+  - `account` (`string`): Set the `account` field on the resulting object.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
+  - `force_delete` (`bool`): Set the `force_delete` field on the resulting object. When `null`, the `force_delete` field will be omitted from the resulting object.
+  - `vpc_ids` (`list`): Set the `vpc_ids` field on the resulting object. When `null`, the `vpc_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_endpoint_authorization` resource into the root Terraform configuration.

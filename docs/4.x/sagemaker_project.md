@@ -55,11 +55,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `project_description` (`string`):  When `null`, the `project_description` field will be omitted from the resulting object.
-  - `project_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `service_catalog_provisioning_details` (`list[obj]`):  When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-service_catalog_provisioning_detailsnew) constructor.
+  - `project_description` (`string`): Set the `project_description` field on the resulting resource block. When `null`, the `project_description` field will be omitted from the resulting object.
+  - `project_name` (`string`): Set the `project_name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `service_catalog_provisioning_details` (`list[obj]`): Set the `service_catalog_provisioning_details` field on the resulting resource block. When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-service_catalog_provisioning_detailsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,11 +83,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `project_description` (`string`):  When `null`, the `project_description` field will be omitted from the resulting object.
-  - `project_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `service_catalog_provisioning_details` (`list[obj]`):  When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-service_catalog_provisioning_detailsnew) constructor.
+  - `project_description` (`string`): Set the `project_description` field on the resulting object. When `null`, the `project_description` field will be omitted from the resulting object.
+  - `project_name` (`string`): Set the `project_name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `service_catalog_provisioning_details` (`list[obj]`): Set the `service_catalog_provisioning_details` field on the resulting object. When `null`, the `service_catalog_provisioning_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.new](#fn-service_catalog_provisioning_detailsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_project` resource into the root Terraform configuration.
@@ -211,10 +211,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `path_id` (`string`):  When `null`, the `path_id` field will be omitted from the resulting object.
-  - `product_id` (`string`): 
-  - `provisioning_artifact_id` (`string`):  When `null`, the `provisioning_artifact_id` field will be omitted from the resulting object.
-  - `provisioning_parameter` (`list[obj]`):  When `null`, the `provisioning_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.provisioning_parameter.new](#fn-service_catalog_provisioning_detailsprovisioning_parameternew) constructor.
+  - `path_id` (`string`): Set the `path_id` field on the resulting object. When `null`, the `path_id` field will be omitted from the resulting object.
+  - `product_id` (`string`): Set the `product_id` field on the resulting object.
+  - `provisioning_artifact_id` (`string`): Set the `provisioning_artifact_id` field on the resulting object. When `null`, the `provisioning_artifact_id` field will be omitted from the resulting object.
+  - `provisioning_parameter` (`list[obj]`): Set the `provisioning_parameter` field on the resulting object. When `null`, the `provisioning_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_project.service_catalog_provisioning_details.provisioning_parameter.new](#fn-service_catalog_provisioning_detailsprovisioning_parameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `service_catalog_provisioning_details` sub block.
@@ -237,8 +237,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): 
-  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `provisioning_parameter` sub block.

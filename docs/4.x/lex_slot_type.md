@@ -57,12 +57,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `create_version` (`bool`):  When `null`, the `create_version` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `value_selection_strategy` (`string`):  When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
-  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-enumeration_valuenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-timeoutsnew) constructor.
+  - `create_version` (`bool`): Set the `create_version` field on the resulting resource block. When `null`, the `create_version` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `value_selection_strategy` (`string`): Set the `value_selection_strategy` field on the resulting resource block. When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
+  - `enumeration_value` (`list[obj]`): Set the `enumeration_value` field on the resulting resource block. When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-enumeration_valuenew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,12 +86,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `create_version` (`bool`):  When `null`, the `create_version` field will be omitted from the resulting object.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): 
-  - `value_selection_strategy` (`string`):  When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
-  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-enumeration_valuenew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-timeoutsnew) constructor.
+  - `create_version` (`bool`): Set the `create_version` field on the resulting object. When `null`, the `create_version` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value_selection_strategy` (`string`): Set the `value_selection_strategy` field on the resulting object. When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
+  - `enumeration_value` (`list[obj]`): Set the `enumeration_value` field on the resulting object. When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-enumeration_valuenew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lex_slot_type` resource into the root Terraform configuration.
@@ -251,8 +251,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `synonyms` (`list`):  When `null`, the `synonyms` field will be omitted from the resulting object.
-  - `value` (`string`): 
+  - `synonyms` (`list`): Set the `synonyms` field on the resulting object. When `null`, the `synonyms` field will be omitted from the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `enumeration_value` sub block.
@@ -275,9 +275,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

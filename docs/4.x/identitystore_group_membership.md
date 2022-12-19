@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `group_id` (`string`): 
-  - `identity_store_id` (`string`): 
-  - `member_id` (`string`): 
+  - `group_id` (`string`): Set the `group_id` field on the resulting resource block.
+  - `identity_store_id` (`string`): Set the `identity_store_id` field on the resulting resource block.
+  - `member_id` (`string`): Set the `member_id` field on the resulting resource block.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `group_id` (`string`): 
-  - `identity_store_id` (`string`): 
-  - `member_id` (`string`): 
+  - `group_id` (`string`): Set the `group_id` field on the resulting object.
+  - `identity_store_id` (`string`): Set the `identity_store_id` field on the resulting object.
+  - `member_id` (`string`): Set the `member_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `identitystore_group_membership` resource into the root Terraform configuration.

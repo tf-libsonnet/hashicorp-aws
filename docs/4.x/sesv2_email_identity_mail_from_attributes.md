@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `behavior_on_mx_failure` (`string`):  When `null`, the `behavior_on_mx_failure` field will be omitted from the resulting object.
-  - `email_identity` (`string`): 
-  - `mail_from_domain` (`string`):  When `null`, the `mail_from_domain` field will be omitted from the resulting object.
+  - `behavior_on_mx_failure` (`string`): Set the `behavior_on_mx_failure` field on the resulting resource block. When `null`, the `behavior_on_mx_failure` field will be omitted from the resulting object.
+  - `email_identity` (`string`): Set the `email_identity` field on the resulting resource block.
+  - `mail_from_domain` (`string`): Set the `mail_from_domain` field on the resulting resource block. When `null`, the `mail_from_domain` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `behavior_on_mx_failure` (`string`):  When `null`, the `behavior_on_mx_failure` field will be omitted from the resulting object.
-  - `email_identity` (`string`): 
-  - `mail_from_domain` (`string`):  When `null`, the `mail_from_domain` field will be omitted from the resulting object.
+  - `behavior_on_mx_failure` (`string`): Set the `behavior_on_mx_failure` field on the resulting object. When `null`, the `behavior_on_mx_failure` field will be omitted from the resulting object.
+  - `email_identity` (`string`): Set the `email_identity` field on the resulting object.
+  - `mail_from_domain` (`string`): Set the `mail_from_domain` field on the resulting object. When `null`, the `mail_from_domain` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sesv2_email_identity_mail_from_attributes` resource into the root Terraform configuration.

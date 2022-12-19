@@ -86,18 +86,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `default_time_to_live` (`number`):  When `null`, the `default_time_to_live` field will be omitted from the resulting object.
-  - `keyspace_name` (`string`): 
-  - `table_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `capacity_specification` (`list[obj]`):  When `null`, the `capacity_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.capacity_specification.new](#fn-capacity_specificationnew) constructor.
-  - `comment` (`list[obj]`):  When `null`, the `comment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.comment.new](#fn-commentnew) constructor.
-  - `encryption_specification` (`list[obj]`):  When `null`, the `encryption_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.encryption_specification.new](#fn-encryption_specificationnew) constructor.
-  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
-  - `schema_definition` (`list[obj]`):  When `null`, the `schema_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.new](#fn-schema_definitionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.timeouts.new](#fn-timeoutsnew) constructor.
-  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.ttl.new](#fn-ttlnew) constructor.
+  - `default_time_to_live` (`number`): Set the `default_time_to_live` field on the resulting resource block. When `null`, the `default_time_to_live` field will be omitted from the resulting object.
+  - `keyspace_name` (`string`): Set the `keyspace_name` field on the resulting resource block.
+  - `table_name` (`string`): Set the `table_name` field on the resulting resource block.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `capacity_specification` (`list[obj]`): Set the `capacity_specification` field on the resulting resource block. When `null`, the `capacity_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.capacity_specification.new](#fn-capacity_specificationnew) constructor.
+  - `comment` (`list[obj]`): Set the `comment` field on the resulting resource block. When `null`, the `comment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.comment.new](#fn-commentnew) constructor.
+  - `encryption_specification` (`list[obj]`): Set the `encryption_specification` field on the resulting resource block. When `null`, the `encryption_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.encryption_specification.new](#fn-encryption_specificationnew) constructor.
+  - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting resource block. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
+  - `schema_definition` (`list[obj]`): Set the `schema_definition` field on the resulting resource block. When `null`, the `schema_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.new](#fn-schema_definitionnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ttl` (`list[obj]`): Set the `ttl` field on the resulting resource block. When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.ttl.new](#fn-ttlnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -121,18 +121,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_time_to_live` (`number`):  When `null`, the `default_time_to_live` field will be omitted from the resulting object.
-  - `keyspace_name` (`string`): 
-  - `table_name` (`string`): 
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `capacity_specification` (`list[obj]`):  When `null`, the `capacity_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.capacity_specification.new](#fn-capacity_specificationnew) constructor.
-  - `comment` (`list[obj]`):  When `null`, the `comment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.comment.new](#fn-commentnew) constructor.
-  - `encryption_specification` (`list[obj]`):  When `null`, the `encryption_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.encryption_specification.new](#fn-encryption_specificationnew) constructor.
-  - `point_in_time_recovery` (`list[obj]`):  When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
-  - `schema_definition` (`list[obj]`):  When `null`, the `schema_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.new](#fn-schema_definitionnew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.timeouts.new](#fn-timeoutsnew) constructor.
-  - `ttl` (`list[obj]`):  When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.ttl.new](#fn-ttlnew) constructor.
+  - `default_time_to_live` (`number`): Set the `default_time_to_live` field on the resulting object. When `null`, the `default_time_to_live` field will be omitted from the resulting object.
+  - `keyspace_name` (`string`): Set the `keyspace_name` field on the resulting object.
+  - `table_name` (`string`): Set the `table_name` field on the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `capacity_specification` (`list[obj]`): Set the `capacity_specification` field on the resulting object. When `null`, the `capacity_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.capacity_specification.new](#fn-capacity_specificationnew) constructor.
+  - `comment` (`list[obj]`): Set the `comment` field on the resulting object. When `null`, the `comment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.comment.new](#fn-commentnew) constructor.
+  - `encryption_specification` (`list[obj]`): Set the `encryption_specification` field on the resulting object. When `null`, the `encryption_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.encryption_specification.new](#fn-encryption_specificationnew) constructor.
+  - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting object. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
+  - `schema_definition` (`list[obj]`): Set the `schema_definition` field on the resulting object. When `null`, the `schema_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.new](#fn-schema_definitionnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ttl` (`list[obj]`): Set the `ttl` field on the resulting object. When `null`, the `ttl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.ttl.new](#fn-ttlnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `keyspaces_table` resource into the root Terraform configuration.
@@ -493,9 +493,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `read_capacity_units` (`number`):  When `null`, the `read_capacity_units` field will be omitted from the resulting object.
-  - `throughput_mode` (`string`):  When `null`, the `throughput_mode` field will be omitted from the resulting object.
-  - `write_capacity_units` (`number`):  When `null`, the `write_capacity_units` field will be omitted from the resulting object.
+  - `read_capacity_units` (`number`): Set the `read_capacity_units` field on the resulting object. When `null`, the `read_capacity_units` field will be omitted from the resulting object.
+  - `throughput_mode` (`string`): Set the `throughput_mode` field on the resulting object. When `null`, the `throughput_mode` field will be omitted from the resulting object.
+  - `write_capacity_units` (`number`): Set the `write_capacity_units` field on the resulting object. When `null`, the `write_capacity_units` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `capacity_specification` sub block.
@@ -518,7 +518,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `message` (`string`):  When `null`, the `message` field will be omitted from the resulting object.
+  - `message` (`string`): Set the `message` field on the resulting object. When `null`, the `message` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `comment` sub block.
@@ -541,8 +541,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_identifier` (`string`):  When `null`, the `kms_key_identifier` field will be omitted from the resulting object.
-  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `kms_key_identifier` (`string`): Set the `kms_key_identifier` field on the resulting object. When `null`, the `kms_key_identifier` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encryption_specification` sub block.
@@ -565,7 +565,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `point_in_time_recovery` sub block.
@@ -588,10 +588,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `clustering_key` (`list[obj]`):  When `null`, the `clustering_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.clustering_key.new](#fn-schema_definitionclustering_keynew) constructor.
-  - `column` (`list[obj]`):  When `null`, the `column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.column.new](#fn-schema_definitioncolumnnew) constructor.
-  - `partition_key` (`list[obj]`):  When `null`, the `partition_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.partition_key.new](#fn-schema_definitionpartition_keynew) constructor.
-  - `static_column` (`list[obj]`):  When `null`, the `static_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.static_column.new](#fn-schema_definitionstatic_columnnew) constructor.
+  - `clustering_key` (`list[obj]`): Set the `clustering_key` field on the resulting object. When `null`, the `clustering_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.clustering_key.new](#fn-schema_definitionclustering_keynew) constructor.
+  - `column` (`list[obj]`): Set the `column` field on the resulting object. When `null`, the `column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.column.new](#fn-schema_definitioncolumnnew) constructor.
+  - `partition_key` (`list[obj]`): Set the `partition_key` field on the resulting object. When `null`, the `partition_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.partition_key.new](#fn-schema_definitionpartition_keynew) constructor.
+  - `static_column` (`list[obj]`): Set the `static_column` field on the resulting object. When `null`, the `static_column` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.schema_definition.static_column.new](#fn-schema_definitionstatic_columnnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema_definition` sub block.
@@ -614,8 +614,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `order_by` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `order_by` (`string`): Set the `order_by` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `clustering_key` sub block.
@@ -638,8 +638,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
-  - `type` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `column` sub block.
@@ -662,7 +662,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `partition_key` sub block.
@@ -685,7 +685,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): 
+  - `name` (`string`): Set the `name` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `static_column` sub block.
@@ -708,9 +708,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -733,7 +733,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): 
+  - `status` (`string`): Set the `status` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ttl` sub block.

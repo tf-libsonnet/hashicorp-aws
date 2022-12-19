@@ -57,15 +57,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `autoscaling_policy` (`string`):  When `null`, the `autoscaling_policy` field will be omitted from the resulting object.
-  - `bid_price` (`string`):  When `null`, the `bid_price` field will be omitted from the resulting object.
-  - `cluster_id` (`string`): 
-  - `configurations_json` (`string`):  When `null`, the `configurations_json` field will be omitted from the resulting object.
-  - `ebs_optimized` (`bool`):  When `null`, the `ebs_optimized` field will be omitted from the resulting object.
-  - `instance_count` (`number`):  When `null`, the `instance_count` field will be omitted from the resulting object.
-  - `instance_type` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_group.ebs_config.new](#fn-ebs_confignew) constructor.
+  - `autoscaling_policy` (`string`): Set the `autoscaling_policy` field on the resulting resource block. When `null`, the `autoscaling_policy` field will be omitted from the resulting object.
+  - `bid_price` (`string`): Set the `bid_price` field on the resulting resource block. When `null`, the `bid_price` field will be omitted from the resulting object.
+  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting resource block.
+  - `configurations_json` (`string`): Set the `configurations_json` field on the resulting resource block. When `null`, the `configurations_json` field will be omitted from the resulting object.
+  - `ebs_optimized` (`bool`): Set the `ebs_optimized` field on the resulting resource block. When `null`, the `ebs_optimized` field will be omitted from the resulting object.
+  - `instance_count` (`number`): Set the `instance_count` field on the resulting resource block. When `null`, the `instance_count` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block.
+  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `ebs_config` (`list[obj]`): Set the `ebs_config` field on the resulting resource block. When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_group.ebs_config.new](#fn-ebs_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,15 +89,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `autoscaling_policy` (`string`):  When `null`, the `autoscaling_policy` field will be omitted from the resulting object.
-  - `bid_price` (`string`):  When `null`, the `bid_price` field will be omitted from the resulting object.
-  - `cluster_id` (`string`): 
-  - `configurations_json` (`string`):  When `null`, the `configurations_json` field will be omitted from the resulting object.
-  - `ebs_optimized` (`bool`):  When `null`, the `ebs_optimized` field will be omitted from the resulting object.
-  - `instance_count` (`number`):  When `null`, the `instance_count` field will be omitted from the resulting object.
-  - `instance_type` (`string`): 
-  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
-  - `ebs_config` (`list[obj]`):  When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_group.ebs_config.new](#fn-ebs_confignew) constructor.
+  - `autoscaling_policy` (`string`): Set the `autoscaling_policy` field on the resulting object. When `null`, the `autoscaling_policy` field will be omitted from the resulting object.
+  - `bid_price` (`string`): Set the `bid_price` field on the resulting object. When `null`, the `bid_price` field will be omitted from the resulting object.
+  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting object.
+  - `configurations_json` (`string`): Set the `configurations_json` field on the resulting object. When `null`, the `configurations_json` field will be omitted from the resulting object.
+  - `ebs_optimized` (`bool`): Set the `ebs_optimized` field on the resulting object. When `null`, the `ebs_optimized` field will be omitted from the resulting object.
+  - `instance_count` (`number`): Set the `instance_count` field on the resulting object. When `null`, the `instance_count` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `ebs_config` (`list[obj]`): Set the `ebs_config` field on the resulting object. When `null`, the `ebs_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_instance_group.ebs_config.new](#fn-ebs_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emr_instance_group` resource into the root Terraform configuration.
@@ -285,10 +285,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
-  - `size` (`number`): 
-  - `type` (`string`): 
-  - `volumes_per_instance` (`number`):  When `null`, the `volumes_per_instance` field will be omitted from the resulting object.
+  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
+  - `size` (`number`): Set the `size` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `volumes_per_instance` (`number`): Set the `volumes_per_instance` field on the resulting object. When `null`, the `volumes_per_instance` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs_config` sub block.

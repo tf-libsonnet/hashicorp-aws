@@ -68,18 +68,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `permanent_restore` (`bool`):  When `null`, the `permanent_restore` field will be omitted from the resulting object.
-  - `role_name` (`string`):  When `null`, the `role_name` field will be omitted from the resulting object.
-  - `storage_tier` (`string`):  When `null`, the `storage_tier` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `temporary_restore_days` (`number`):  When `null`, the `temporary_restore_days` field will be omitted from the resulting object.
-  - `client_data` (`list[obj]`):  When `null`, the `client_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.client_data.new](#fn-client_datanew) constructor.
-  - `disk_container` (`list[obj]`):  When `null`, the `disk_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.new](#fn-disk_containernew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `encrypted` (`bool`): Set the `encrypted` field on the resulting resource block. When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `permanent_restore` (`bool`): Set the `permanent_restore` field on the resulting resource block. When `null`, the `permanent_restore` field will be omitted from the resulting object.
+  - `role_name` (`string`): Set the `role_name` field on the resulting resource block. When `null`, the `role_name` field will be omitted from the resulting object.
+  - `storage_tier` (`string`): Set the `storage_tier` field on the resulting resource block. When `null`, the `storage_tier` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `temporary_restore_days` (`number`): Set the `temporary_restore_days` field on the resulting resource block. When `null`, the `temporary_restore_days` field will be omitted from the resulting object.
+  - `client_data` (`list[obj]`): Set the `client_data` field on the resulting resource block. When `null`, the `client_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.client_data.new](#fn-client_datanew) constructor.
+  - `disk_container` (`list[obj]`): Set the `disk_container` field on the resulting resource block. When `null`, the `disk_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.new](#fn-disk_containernew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,18 +103,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `permanent_restore` (`bool`):  When `null`, the `permanent_restore` field will be omitted from the resulting object.
-  - `role_name` (`string`):  When `null`, the `role_name` field will be omitted from the resulting object.
-  - `storage_tier` (`string`):  When `null`, the `storage_tier` field will be omitted from the resulting object.
-  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `temporary_restore_days` (`number`):  When `null`, the `temporary_restore_days` field will be omitted from the resulting object.
-  - `client_data` (`list[obj]`):  When `null`, the `client_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.client_data.new](#fn-client_datanew) constructor.
-  - `disk_container` (`list[obj]`):  When `null`, the `disk_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.new](#fn-disk_containernew) constructor.
-  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `encrypted` (`bool`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `permanent_restore` (`bool`): Set the `permanent_restore` field on the resulting object. When `null`, the `permanent_restore` field will be omitted from the resulting object.
+  - `role_name` (`string`): Set the `role_name` field on the resulting object. When `null`, the `role_name` field will be omitted from the resulting object.
+  - `storage_tier` (`string`): Set the `storage_tier` field on the resulting object. When `null`, the `storage_tier` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `temporary_restore_days` (`number`): Set the `temporary_restore_days` field on the resulting object. When `null`, the `temporary_restore_days` field will be omitted from the resulting object.
+  - `client_data` (`list[obj]`): Set the `client_data` field on the resulting object. When `null`, the `client_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.client_data.new](#fn-client_datanew) constructor.
+  - `disk_container` (`list[obj]`): Set the `disk_container` field on the resulting object. When `null`, the `disk_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.new](#fn-disk_containernew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ebs_snapshot_import` resource into the root Terraform configuration.
@@ -391,10 +391,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
-  - `upload_end` (`string`):  When `null`, the `upload_end` field will be omitted from the resulting object.
-  - `upload_size` (`number`):  When `null`, the `upload_size` field will be omitted from the resulting object.
-  - `upload_start` (`string`):  When `null`, the `upload_start` field will be omitted from the resulting object.
+  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
+  - `upload_end` (`string`): Set the `upload_end` field on the resulting object. When `null`, the `upload_end` field will be omitted from the resulting object.
+  - `upload_size` (`number`): Set the `upload_size` field on the resulting object. When `null`, the `upload_size` field will be omitted from the resulting object.
+  - `upload_start` (`string`): Set the `upload_start` field on the resulting object. When `null`, the `upload_start` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `client_data` sub block.
@@ -417,10 +417,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
-  - `format` (`string`): 
-  - `url` (`string`):  When `null`, the `url` field will be omitted from the resulting object.
-  - `user_bucket` (`list[obj]`):  When `null`, the `user_bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.user_bucket.new](#fn-disk_containeruser_bucketnew) constructor.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `format` (`string`): Set the `format` field on the resulting object.
+  - `url` (`string`): Set the `url` field on the resulting object. When `null`, the `url` field will be omitted from the resulting object.
+  - `user_bucket` (`list[obj]`): Set the `user_bucket` field on the resulting object. When `null`, the `user_bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ebs_snapshot_import.disk_container.user_bucket.new](#fn-disk_containeruser_bucketnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `disk_container` sub block.
@@ -443,8 +443,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_bucket` (`string`): 
-  - `s3_key` (`string`): 
+  - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting object.
+  - `s3_key` (`string`): Set the `s3_key` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `user_bucket` sub block.
@@ -467,8 +467,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

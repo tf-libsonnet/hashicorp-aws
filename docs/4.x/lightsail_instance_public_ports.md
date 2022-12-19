@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `instance_name` (`string`): 
-  - `port_info` (`list[obj]`):  When `null`, the `port_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_instance_public_ports.port_info.new](#fn-port_infonew) constructor.
+  - `instance_name` (`string`): Set the `instance_name` field on the resulting resource block.
+  - `port_info` (`list[obj]`): Set the `port_info` field on the resulting resource block. When `null`, the `port_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_instance_public_ports.port_info.new](#fn-port_infonew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `instance_name` (`string`): 
-  - `port_info` (`list[obj]`):  When `null`, the `port_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_instance_public_ports.port_info.new](#fn-port_infonew) constructor.
+  - `instance_name` (`string`): Set the `instance_name` field on the resulting object.
+  - `port_info` (`list[obj]`): Set the `port_info` field on the resulting object. When `null`, the `port_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_instance_public_ports.port_info.new](#fn-port_infonew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_instance_public_ports` resource into the root Terraform configuration.
@@ -152,11 +152,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidrs` (`list`):  When `null`, the `cidrs` field will be omitted from the resulting object.
-  - `from_port` (`number`): 
-  - `ipv6_cidrs` (`list`):  When `null`, the `ipv6_cidrs` field will be omitted from the resulting object.
-  - `protocol` (`string`): 
-  - `to_port` (`number`): 
+  - `cidrs` (`list`): Set the `cidrs` field on the resulting object. When `null`, the `cidrs` field will be omitted from the resulting object.
+  - `from_port` (`number`): Set the `from_port` field on the resulting object.
+  - `ipv6_cidrs` (`list`): Set the `ipv6_cidrs` field on the resulting object. When `null`, the `ipv6_cidrs` field will be omitted from the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object.
+  - `to_port` (`number`): Set the `to_port` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `port_info` sub block.

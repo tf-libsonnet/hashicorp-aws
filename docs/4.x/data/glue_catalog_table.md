@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): 
-  - `name` (`string`): 
-  - `query_as_of_time` (`string`):  When `null`, the `query_as_of_time` field will be omitted from the resulting object.
-  - `transaction_id` (`number`):  When `null`, the `transaction_id` field will be omitted from the resulting object.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting data source block. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting data source block.
+  - `name` (`string`): Set the `name` field on the resulting data source block.
+  - `query_as_of_time` (`string`): Set the `query_as_of_time` field on the resulting data source block. When `null`, the `query_as_of_time` field will be omitted from the resulting object.
+  - `transaction_id` (`number`): Set the `transaction_id` field on the resulting data source block. When `null`, the `transaction_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): 
-  - `name` (`string`): 
-  - `query_as_of_time` (`string`):  When `null`, the `query_as_of_time` field will be omitted from the resulting object.
-  - `transaction_id` (`number`):  When `null`, the `transaction_id` field will be omitted from the resulting object.
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `query_as_of_time` (`string`): Set the `query_as_of_time` field on the resulting object. When `null`, the `query_as_of_time` field will be omitted from the resulting object.
+  - `transaction_id` (`number`): Set the `transaction_id` field on the resulting object. When `null`, the `transaction_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `glue_catalog_table` data source into the root Terraform configuration.
