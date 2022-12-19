@@ -1,0 +1,85 @@
+local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
+local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
+{
+  '#':: d.pkg(name='glue_data_catalog_encryption_settings', url='', help='`glue_data_catalog_encryption_settings` represents the `aws_glue_data_catalog_encryption_settings` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
+  data_catalog_encryption_settings:: {
+    connection_password_encryption:: {
+      '#new':: d.fn(help='\n`aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.connection_password_encryption.new` constructs a new object with attributes and blocks configured for the `connection_password_encryption`\nTerraform sub block.\n\n\n\n**Args**:\n  - `aws_kms_key_id` (`string`):  When `null`, the `aws_kms_key_id` field will be omitted from the resulting object.\n  - `return_connection_password_encrypted` (`bool`): \n\n**Returns**:\n  - An attribute object that represents the `connection_password_encryption` sub block.\n', args=[]),
+      new(
+        return_connection_password_encrypted,
+        aws_kms_key_id=null
+      ):: std.prune(a={
+        aws_kms_key_id: aws_kms_key_id,
+        return_connection_password_encrypted: return_connection_password_encrypted,
+      }),
+    },
+    encryption_at_rest:: {
+      '#new':: d.fn(help='\n`aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.encryption_at_rest.new` constructs a new object with attributes and blocks configured for the `encryption_at_rest`\nTerraform sub block.\n\n\n\n**Args**:\n  - `catalog_encryption_mode` (`string`): \n  - `sse_aws_kms_key_id` (`string`):  When `null`, the `sse_aws_kms_key_id` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `encryption_at_rest` sub block.\n', args=[]),
+      new(
+        catalog_encryption_mode,
+        sse_aws_kms_key_id=null
+      ):: std.prune(a={
+        catalog_encryption_mode: catalog_encryption_mode,
+        sse_aws_kms_key_id: sse_aws_kms_key_id,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.new` constructs a new object with attributes and blocks configured for the `data_catalog_encryption_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `connection_password_encryption` (`list[obj]`):  When `null`, the `connection_password_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.connection_password_encryption.new](#fn-datacatalogencryptionsettingsconnectionpasswordencryptionnew) constructor.\n  - `encryption_at_rest` (`list[obj]`):  When `null`, the `encryption_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.encryption_at_rest.new](#fn-datacatalogencryptionsettingsencryptionatrestnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `data_catalog_encryption_settings` sub block.\n', args=[]),
+    new(
+      connection_password_encryption=null,
+      encryption_at_rest=null
+    ):: std.prune(a={
+      connection_password_encryption: connection_password_encryption,
+      encryption_at_rest: encryption_at_rest,
+    }),
+  },
+  '#new':: d.fn(help="\n`aws.glue_data_catalog_encryption_settings.new` injects a new `aws_glue_data_catalog_encryption_settings` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.glue_data_catalog_encryption_settings.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.glue_data_catalog_encryption_settings` using the reference:\n\n    $._ref.aws_glue_data_catalog_encryption_settings.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_glue_data_catalog_encryption_settings.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.\n  - `data_catalog_encryption_settings` (`list[obj]`):  When `null`, the `data_catalog_encryption_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.new](#fn-gluedatacatalogencryptionsettingsdatacatalogencryptionsettingsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  new(
+    resourceLabel,
+    catalog_id=null,
+    data_catalog_encryption_settings=null,
+    _meta={}
+  ):: tf.withResource(
+    type='aws_glue_data_catalog_encryption_settings',
+    label=resourceLabel,
+    attrs=self.newAttrs(catalog_id=catalog_id, data_catalog_encryption_settings=data_catalog_encryption_settings),
+    _meta=_meta
+  ),
+  '#newAttrs':: d.fn(help='\n`aws.glue_data_catalog_encryption_settings.newAttrs` constructs a new object with attributes and blocks configured for the `glue_data_catalog_encryption_settings`\nTerraform resource.\n\nUnlike [aws.glue_data_catalog_encryption_settings.new](#fn-gluedatacatalogencryptionsettingsnew), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.\n  - `data_catalog_encryption_settings` (`list[obj]`):  When `null`, the `data_catalog_encryption_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.new](#fn-gluedatacatalogencryptionsettingsdatacatalogencryptionsettingsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_data_catalog_encryption_settings` resource into the root Terraform configuration.\n', args=[]),
+  newAttrs(
+    catalog_id=null,
+    data_catalog_encryption_settings=null
+  ):: std.prune(a={
+    catalog_id: catalog_id,
+    data_catalog_encryption_settings: data_catalog_encryption_settings,
+  }),
+  '#withCatalogId':: d.fn(help='`aws.glue_data_catalog_encryption_settings.withCatalogId` constructs a mixin object that can be merged into the `glue_data_catalog_encryption_settings`\nTerraform resource block to set or update the catalog_id field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `catalog_id` field.\n', args=[]),
+  withCatalogId(resourceLabel, value):: {
+    resource+: {
+      aws_glue_data_catalog_encryption_settings+: {
+        [resourceLabel]+: {
+          catalog_id: value,
+        },
+      },
+    },
+  },
+  '#withDataCatalogEncryptionSettings':: d.fn(help='`aws.glue_data_catalog_encryption_settings.withDataCatalogEncryptionSettings` constructs a mixin object that can be merged into the `glue_data_catalog_encryption_settings`\nTerraform resource block to set or update the data_catalog_encryption_settings field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `data_catalog_encryption_settings` field.\n', args=[]),
+  withDataCatalogEncryptionSettings(resourceLabel, value):: {
+    resource+: {
+      aws_glue_data_catalog_encryption_settings+: {
+        [resourceLabel]+: {
+          data_catalog_encryption_settings: value,
+        },
+      },
+    },
+  },
+  '#withDataCatalogEncryptionSettingsMixin':: d.fn(help='`aws.glue_data_catalog_encryption_settings.withDataCatalogEncryptionSettingsMixin` constructs a mixin object that can be merged into the `glue_data_catalog_encryption_settings`\nTerraform resource block to set or update the data_catalog_encryption_settings field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.glue_data_catalog_encryption_settings.withDataCatalogEncryptionSettings](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `data_catalog_encryption_settings` field.\n', args=[]),
+  withDataCatalogEncryptionSettingsMixin(resourceLabel, value):: {
+    resource+: {
+      aws_glue_data_catalog_encryption_settings+: {
+        [resourceLabel]+: {
+          data_catalog_encryption_settings+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+}

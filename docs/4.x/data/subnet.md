@@ -1,0 +1,354 @@
+---
+permalink: /data/subnet/
+---
+
+# data.subnet
+
+`subnet` represents the `aws_subnet` Terraform data source.
+
+
+
+This package contains functions and utilities for setting up the data source using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAvailabilityZone()`](#fn-withavailabilityzone)
+* [`fn withAvailabilityZoneId()`](#fn-withavailabilityzoneid)
+* [`fn withCidrBlock()`](#fn-withcidrblock)
+* [`fn withDefaultForAz()`](#fn-withdefaultforaz)
+* [`fn withFilter()`](#fn-withfilter)
+* [`fn withFilterMixin()`](#fn-withfiltermixin)
+* [`fn withIpv6CidrBlock()`](#fn-withipv6cidrblock)
+* [`fn withState()`](#fn-withstate)
+* [`fn withTags()`](#fn-withtags)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`fn withVpcId()`](#fn-withvpcid)
+* [`obj filter`](#obj-filter)
+  * [`fn new()`](#fn-filternew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.data.subnet.new` injects a new `data_aws_subnet` Terraform `data source`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.data.subnet.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.data.subnet` using the reference:
+
+    $._ref.data_aws_subnet.some_id.get('id')
+
+This is the same as directly entering `"${ data_aws_subnet.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_id` (`string`):  When `null`, the `availability_zone_id` field will be omitted from the resulting object.
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `default_for_az` (`bool`):  When `null`, the `default_for_az` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.filter.new](#fn-subnetfilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.timeouts.new](#fn-subnettimeoutsnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new data source into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.data.subnet.newAttrs` constructs a new object with attributes and blocks configured for the `subnet`
+Terraform data source.
+
+Unlike [aws.data.subnet.new](#fn-subnetnew), this function will not inject the `data source`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_id` (`string`):  When `null`, the `availability_zone_id` field will be omitted from the resulting object.
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `default_for_az` (`bool`):  When `null`, the `default_for_az` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.filter.new](#fn-subnetfilternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.subnet.timeouts.new](#fn-subnettimeoutsnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `subnet` data source into the root Terraform configuration.
+
+
+### fn withAvailabilityZone
+
+```ts
+withAvailabilityZone()
+```
+
+`aws.subnet.withAvailabilityZone` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the availability_zone field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `availability_zone` field.
+
+
+### fn withAvailabilityZoneId
+
+```ts
+withAvailabilityZoneId()
+```
+
+`aws.subnet.withAvailabilityZoneId` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the availability_zone_id field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `availability_zone_id` field.
+
+
+### fn withCidrBlock
+
+```ts
+withCidrBlock()
+```
+
+`aws.subnet.withCidrBlock` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the cidr_block field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cidr_block` field.
+
+
+### fn withDefaultForAz
+
+```ts
+withDefaultForAz()
+```
+
+`aws.subnet.withDefaultForAz` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the default_for_az field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `default_for_az` field.
+
+
+### fn withFilter
+
+```ts
+withFilter()
+```
+
+`aws.subnet.withFilter` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the filter field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `filter` field.
+
+
+### fn withFilterMixin
+
+```ts
+withFilterMixin()
+```
+
+`aws.subnet.withFilterMixin` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the filter field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.subnet.withFilter](TODO)
+function.
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `filter` field.
+
+
+### fn withIpv6CidrBlock
+
+```ts
+withIpv6CidrBlock()
+```
+
+`aws.subnet.withIpv6CidrBlock` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the ipv6_cidr_block field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `ipv6_cidr_block` field.
+
+
+### fn withState
+
+```ts
+withState()
+```
+
+`aws.subnet.withState` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the state field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `state` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.subnet.withTags` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the tags field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `tags` field.
+
+
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.subnet.withTimeouts` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the timeouts field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.subnet.withTimeoutsMixin` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.subnet.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withVpcId
+
+```ts
+withVpcId()
+```
+
+`aws.subnet.withVpcId` constructs a mixin object that can be merged into the `subnet`
+Terraform data source block to set or update the vpc_id field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `vpc_id` field.
+
+
+## obj filter
+
+
+
+### fn filter.new
+
+```ts
+new()
+```
+
+
+`aws.subnet.filter.new` constructs a new object with attributes and blocks configured for the `filter`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): 
+  - `values` (`list`): 
+
+**Returns**:
+  - An attribute object that represents the `filter` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.subnet.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

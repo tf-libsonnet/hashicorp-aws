@@ -1,0 +1,195 @@
+---
+permalink: /lambda_provisioned_concurrency_config/
+---
+
+# lambda_provisioned_concurrency_config
+
+`lambda_provisioned_concurrency_config` represents the `aws_lambda_provisioned_concurrency_config` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withFunctionName()`](#fn-withfunctionname)
+* [`fn withProvisionedConcurrentExecutions()`](#fn-withprovisionedconcurrentexecutions)
+* [`fn withQualifier()`](#fn-withqualifier)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.lambda_provisioned_concurrency_config.new` injects a new `aws_lambda_provisioned_concurrency_config` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.lambda_provisioned_concurrency_config.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.lambda_provisioned_concurrency_config` using the reference:
+
+    $._ref.aws_lambda_provisioned_concurrency_config.some_id.get('id')
+
+This is the same as directly entering `"${ aws_lambda_provisioned_concurrency_config.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `function_name` (`string`): 
+  - `provisioned_concurrent_executions` (`number`): 
+  - `qualifier` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_provisioned_concurrency_config.timeouts.new](#fn-lambdaprovisionedconcurrencyconfigtimeoutsnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.lambda_provisioned_concurrency_config.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_provisioned_concurrency_config`
+Terraform resource.
+
+Unlike [aws.lambda_provisioned_concurrency_config.new](#fn-lambdaprovisionedconcurrencyconfignew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `function_name` (`string`): 
+  - `provisioned_concurrent_executions` (`number`): 
+  - `qualifier` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_provisioned_concurrency_config.timeouts.new](#fn-lambdaprovisionedconcurrencyconfigtimeoutsnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_provisioned_concurrency_config` resource into the root Terraform configuration.
+
+
+### fn withFunctionName
+
+```ts
+withFunctionName()
+```
+
+`aws.lambda_provisioned_concurrency_config.withFunctionName` constructs a mixin object that can be merged into the `lambda_provisioned_concurrency_config`
+Terraform resource block to set or update the function_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `function_name` field.
+
+
+### fn withProvisionedConcurrentExecutions
+
+```ts
+withProvisionedConcurrentExecutions()
+```
+
+`aws.lambda_provisioned_concurrency_config.withProvisionedConcurrentExecutions` constructs a mixin object that can be merged into the `lambda_provisioned_concurrency_config`
+Terraform resource block to set or update the provisioned_concurrent_executions field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `provisioned_concurrent_executions` field.
+
+
+### fn withQualifier
+
+```ts
+withQualifier()
+```
+
+`aws.lambda_provisioned_concurrency_config.withQualifier` constructs a mixin object that can be merged into the `lambda_provisioned_concurrency_config`
+Terraform resource block to set or update the qualifier field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `qualifier` field.
+
+
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.lambda_provisioned_concurrency_config.withTimeouts` constructs a mixin object that can be merged into the `lambda_provisioned_concurrency_config`
+Terraform resource block to set or update the timeouts field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.lambda_provisioned_concurrency_config.withTimeoutsMixin` constructs a mixin object that can be merged into the `lambda_provisioned_concurrency_config`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.lambda_provisioned_concurrency_config.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.lambda_provisioned_concurrency_config.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

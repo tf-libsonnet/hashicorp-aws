@@ -1,0 +1,130 @@
+---
+permalink: /cloud9_environment_membership/
+---
+
+# cloud9_environment_membership
+
+`cloud9_environment_membership` represents the `aws_cloud9_environment_membership` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withEnvironmentId()`](#fn-withenvironmentid)
+* [`fn withPermissions()`](#fn-withpermissions)
+* [`fn withUserArn()`](#fn-withuserarn)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.cloud9_environment_membership.new` injects a new `aws_cloud9_environment_membership` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.cloud9_environment_membership.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.cloud9_environment_membership` using the reference:
+
+    $._ref.aws_cloud9_environment_membership.some_id.get('id')
+
+This is the same as directly entering `"${ aws_cloud9_environment_membership.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `environment_id` (`string`): 
+  - `permissions` (`string`): 
+  - `user_arn` (`string`): 
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.cloud9_environment_membership.newAttrs` constructs a new object with attributes and blocks configured for the `cloud9_environment_membership`
+Terraform resource.
+
+Unlike [aws.cloud9_environment_membership.new](#fn-cloud9environmentmembershipnew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `environment_id` (`string`): 
+  - `permissions` (`string`): 
+  - `user_arn` (`string`): 
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloud9_environment_membership` resource into the root Terraform configuration.
+
+
+### fn withEnvironmentId
+
+```ts
+withEnvironmentId()
+```
+
+`aws.cloud9_environment_membership.withEnvironmentId` constructs a mixin object that can be merged into the `cloud9_environment_membership`
+Terraform resource block to set or update the environment_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `environment_id` field.
+
+
+### fn withPermissions
+
+```ts
+withPermissions()
+```
+
+`aws.cloud9_environment_membership.withPermissions` constructs a mixin object that can be merged into the `cloud9_environment_membership`
+Terraform resource block to set or update the permissions field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `permissions` field.
+
+
+### fn withUserArn
+
+```ts
+withUserArn()
+```
+
+`aws.cloud9_environment_membership.withUserArn` constructs a mixin object that can be merged into the `cloud9_environment_membership`
+Terraform resource block to set or update the user_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `user_arn` field.

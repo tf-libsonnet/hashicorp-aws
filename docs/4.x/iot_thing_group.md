@@ -1,0 +1,239 @@
+---
+permalink: /iot_thing_group/
+---
+
+# iot_thing_group
+
+`iot_thing_group` represents the `aws_iot_thing_group` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withName()`](#fn-withname)
+* [`fn withParentGroupName()`](#fn-withparentgroupname)
+* [`fn withProperties()`](#fn-withproperties)
+* [`fn withPropertiesMixin()`](#fn-withpropertiesmixin)
+* [`fn withTags()`](#fn-withtags)
+* [`fn withTagsAll()`](#fn-withtagsall)
+* [`obj properties`](#obj-properties)
+  * [`fn new()`](#fn-propertiesnew)
+  * [`obj properties.attribute_payload`](#obj-propertiesattribute_payload)
+    * [`fn new()`](#fn-propertiesattribute_payloadnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.iot_thing_group.new` injects a new `aws_iot_thing_group` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.iot_thing_group.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.iot_thing_group` using the reference:
+
+    $._ref.aws_iot_thing_group.some_id.get('id')
+
+This is the same as directly entering `"${ aws_iot_thing_group.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `name` (`string`): 
+  - `parent_group_name` (`string`):  When `null`, the `parent_group_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `properties` (`list[obj]`):  When `null`, the `properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.new](#fn-iotthinggrouppropertiesnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.iot_thing_group.newAttrs` constructs a new object with attributes and blocks configured for the `iot_thing_group`
+Terraform resource.
+
+Unlike [aws.iot_thing_group.new](#fn-iotthinggroupnew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `name` (`string`): 
+  - `parent_group_name` (`string`):  When `null`, the `parent_group_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `properties` (`list[obj]`):  When `null`, the `properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.new](#fn-iotthinggrouppropertiesnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_thing_group` resource into the root Terraform configuration.
+
+
+### fn withName
+
+```ts
+withName()
+```
+
+`aws.iot_thing_group.withName` constructs a mixin object that can be merged into the `iot_thing_group`
+Terraform resource block to set or update the name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `name` field.
+
+
+### fn withParentGroupName
+
+```ts
+withParentGroupName()
+```
+
+`aws.iot_thing_group.withParentGroupName` constructs a mixin object that can be merged into the `iot_thing_group`
+Terraform resource block to set or update the parent_group_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `parent_group_name` field.
+
+
+### fn withProperties
+
+```ts
+withProperties()
+```
+
+`aws.iot_thing_group.withProperties` constructs a mixin object that can be merged into the `iot_thing_group`
+Terraform resource block to set or update the properties field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `properties` field.
+
+
+### fn withPropertiesMixin
+
+```ts
+withPropertiesMixin()
+```
+
+`aws.iot_thing_group.withPropertiesMixin` constructs a mixin object that can be merged into the `iot_thing_group`
+Terraform resource block to set or update the properties field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.iot_thing_group.withProperties](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `properties` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.iot_thing_group.withTags` constructs a mixin object that can be merged into the `iot_thing_group`
+Terraform resource block to set or update the tags field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `tags` field.
+
+
+### fn withTagsAll
+
+```ts
+withTagsAll()
+```
+
+`aws.iot_thing_group.withTagsAll` constructs a mixin object that can be merged into the `iot_thing_group`
+Terraform resource block to set or update the tags_all field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `tags_all` field.
+
+
+## obj properties
+
+
+
+### fn properties.new
+
+```ts
+new()
+```
+
+
+`aws.iot_thing_group.properties.new` constructs a new object with attributes and blocks configured for the `properties`
+Terraform sub block.
+
+
+
+**Args**:
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `attribute_payload` (`list[obj]`):  When `null`, the `attribute_payload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_thing_group.properties.attribute_payload.new](#fn-propertiesattributepayloadnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `properties` sub block.
+
+
+## obj properties.attribute_payload
+
+
+
+### fn properties.attribute_payload.new
+
+```ts
+new()
+```
+
+
+`aws.iot_thing_group.properties.attribute_payload.new` constructs a new object with attributes and blocks configured for the `attribute_payload`
+Terraform sub block.
+
+
+
+**Args**:
+  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `attribute_payload` sub block.

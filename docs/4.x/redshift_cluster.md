@@ -1,0 +1,1014 @@
+---
+permalink: /redshift_cluster/
+---
+
+# redshift_cluster
+
+`redshift_cluster` represents the `aws_redshift_cluster` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAllowVersionUpgrade()`](#fn-withallowversionupgrade)
+* [`fn withApplyImmediately()`](#fn-withapplyimmediately)
+* [`fn withAquaConfigurationStatus()`](#fn-withaquaconfigurationstatus)
+* [`fn withAutomatedSnapshotRetentionPeriod()`](#fn-withautomatedsnapshotretentionperiod)
+* [`fn withAvailabilityZone()`](#fn-withavailabilityzone)
+* [`fn withAvailabilityZoneRelocationEnabled()`](#fn-withavailabilityzonerelocationenabled)
+* [`fn withClusterIdentifier()`](#fn-withclusteridentifier)
+* [`fn withClusterParameterGroupName()`](#fn-withclusterparametergroupname)
+* [`fn withClusterPublicKey()`](#fn-withclusterpublickey)
+* [`fn withClusterRevisionNumber()`](#fn-withclusterrevisionnumber)
+* [`fn withClusterSecurityGroups()`](#fn-withclustersecuritygroups)
+* [`fn withClusterSubnetGroupName()`](#fn-withclustersubnetgroupname)
+* [`fn withClusterType()`](#fn-withclustertype)
+* [`fn withClusterVersion()`](#fn-withclusterversion)
+* [`fn withDatabaseName()`](#fn-withdatabasename)
+* [`fn withDefaultIamRoleArn()`](#fn-withdefaultiamrolearn)
+* [`fn withElasticIp()`](#fn-withelasticip)
+* [`fn withEncrypted()`](#fn-withencrypted)
+* [`fn withEndpoint()`](#fn-withendpoint)
+* [`fn withEnhancedVpcRouting()`](#fn-withenhancedvpcrouting)
+* [`fn withFinalSnapshotIdentifier()`](#fn-withfinalsnapshotidentifier)
+* [`fn withIamRoles()`](#fn-withiamroles)
+* [`fn withKmsKeyId()`](#fn-withkmskeyid)
+* [`fn withLogging()`](#fn-withlogging)
+* [`fn withLoggingMixin()`](#fn-withloggingmixin)
+* [`fn withMaintenanceTrackName()`](#fn-withmaintenancetrackname)
+* [`fn withManualSnapshotRetentionPeriod()`](#fn-withmanualsnapshotretentionperiod)
+* [`fn withMasterPassword()`](#fn-withmasterpassword)
+* [`fn withMasterUsername()`](#fn-withmasterusername)
+* [`fn withNodeType()`](#fn-withnodetype)
+* [`fn withNumberOfNodes()`](#fn-withnumberofnodes)
+* [`fn withOwnerAccount()`](#fn-withowneraccount)
+* [`fn withPort()`](#fn-withport)
+* [`fn withPreferredMaintenanceWindow()`](#fn-withpreferredmaintenancewindow)
+* [`fn withPubliclyAccessible()`](#fn-withpubliclyaccessible)
+* [`fn withSkipFinalSnapshot()`](#fn-withskipfinalsnapshot)
+* [`fn withSnapshotClusterIdentifier()`](#fn-withsnapshotclusteridentifier)
+* [`fn withSnapshotCopy()`](#fn-withsnapshotcopy)
+* [`fn withSnapshotCopyMixin()`](#fn-withsnapshotcopymixin)
+* [`fn withSnapshotIdentifier()`](#fn-withsnapshotidentifier)
+* [`fn withTags()`](#fn-withtags)
+* [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`fn withVpcSecurityGroupIds()`](#fn-withvpcsecuritygroupids)
+* [`obj logging`](#obj-logging)
+  * [`fn new()`](#fn-loggingnew)
+* [`obj snapshot_copy`](#obj-snapshot_copy)
+  * [`fn new()`](#fn-snapshot_copynew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.redshift_cluster.new` injects a new `aws_redshift_cluster` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.redshift_cluster.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.redshift_cluster` using the reference:
+
+    $._ref.aws_redshift_cluster.some_id.get('id')
+
+This is the same as directly entering `"${ aws_redshift_cluster.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `allow_version_upgrade` (`bool`):  When `null`, the `allow_version_upgrade` field will be omitted from the resulting object.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `aqua_configuration_status` (`string`):  When `null`, the `aqua_configuration_status` field will be omitted from the resulting object.
+  - `automated_snapshot_retention_period` (`number`):  When `null`, the `automated_snapshot_retention_period` field will be omitted from the resulting object.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_relocation_enabled` (`bool`):  When `null`, the `availability_zone_relocation_enabled` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): 
+  - `cluster_parameter_group_name` (`string`):  When `null`, the `cluster_parameter_group_name` field will be omitted from the resulting object.
+  - `cluster_public_key` (`string`):  When `null`, the `cluster_public_key` field will be omitted from the resulting object.
+  - `cluster_revision_number` (`string`):  When `null`, the `cluster_revision_number` field will be omitted from the resulting object.
+  - `cluster_security_groups` (`list`):  When `null`, the `cluster_security_groups` field will be omitted from the resulting object.
+  - `cluster_subnet_group_name` (`string`):  When `null`, the `cluster_subnet_group_name` field will be omitted from the resulting object.
+  - `cluster_type` (`string`):  When `null`, the `cluster_type` field will be omitted from the resulting object.
+  - `cluster_version` (`string`):  When `null`, the `cluster_version` field will be omitted from the resulting object.
+  - `database_name` (`string`):  When `null`, the `database_name` field will be omitted from the resulting object.
+  - `default_iam_role_arn` (`string`):  When `null`, the `default_iam_role_arn` field will be omitted from the resulting object.
+  - `elastic_ip` (`string`):  When `null`, the `elastic_ip` field will be omitted from the resulting object.
+  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `endpoint` (`string`):  When `null`, the `endpoint` field will be omitted from the resulting object.
+  - `enhanced_vpc_routing` (`bool`):  When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
+  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
+  - `iam_roles` (`list`):  When `null`, the `iam_roles` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `maintenance_track_name` (`string`):  When `null`, the `maintenance_track_name` field will be omitted from the resulting object.
+  - `manual_snapshot_retention_period` (`number`):  When `null`, the `manual_snapshot_retention_period` field will be omitted from the resulting object.
+  - `master_password` (`string`):  When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_username` (`string`):  When `null`, the `master_username` field will be omitted from the resulting object.
+  - `node_type` (`string`): 
+  - `number_of_nodes` (`number`):  When `null`, the `number_of_nodes` field will be omitted from the resulting object.
+  - `owner_account` (`string`):  When `null`, the `owner_account` field will be omitted from the resulting object.
+  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
+  - `preferred_maintenance_window` (`string`):  When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
+  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `skip_final_snapshot` (`bool`):  When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `snapshot_cluster_identifier` (`string`):  When `null`, the `snapshot_cluster_identifier` field will be omitted from the resulting object.
+  - `snapshot_identifier` (`string`):  When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `logging` (`list[obj]`):  When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_cluster.logging.new](#fn-redshiftclusterloggingnew) constructor.
+  - `snapshot_copy` (`list[obj]`):  When `null`, the `snapshot_copy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_cluster.snapshot_copy.new](#fn-redshiftclustersnapshotcopynew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_cluster.timeouts.new](#fn-redshiftclustertimeoutsnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.redshift_cluster.newAttrs` constructs a new object with attributes and blocks configured for the `redshift_cluster`
+Terraform resource.
+
+Unlike [aws.redshift_cluster.new](#fn-redshiftclusternew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `allow_version_upgrade` (`bool`):  When `null`, the `allow_version_upgrade` field will be omitted from the resulting object.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `aqua_configuration_status` (`string`):  When `null`, the `aqua_configuration_status` field will be omitted from the resulting object.
+  - `automated_snapshot_retention_period` (`number`):  When `null`, the `automated_snapshot_retention_period` field will be omitted from the resulting object.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone_relocation_enabled` (`bool`):  When `null`, the `availability_zone_relocation_enabled` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): 
+  - `cluster_parameter_group_name` (`string`):  When `null`, the `cluster_parameter_group_name` field will be omitted from the resulting object.
+  - `cluster_public_key` (`string`):  When `null`, the `cluster_public_key` field will be omitted from the resulting object.
+  - `cluster_revision_number` (`string`):  When `null`, the `cluster_revision_number` field will be omitted from the resulting object.
+  - `cluster_security_groups` (`list`):  When `null`, the `cluster_security_groups` field will be omitted from the resulting object.
+  - `cluster_subnet_group_name` (`string`):  When `null`, the `cluster_subnet_group_name` field will be omitted from the resulting object.
+  - `cluster_type` (`string`):  When `null`, the `cluster_type` field will be omitted from the resulting object.
+  - `cluster_version` (`string`):  When `null`, the `cluster_version` field will be omitted from the resulting object.
+  - `database_name` (`string`):  When `null`, the `database_name` field will be omitted from the resulting object.
+  - `default_iam_role_arn` (`string`):  When `null`, the `default_iam_role_arn` field will be omitted from the resulting object.
+  - `elastic_ip` (`string`):  When `null`, the `elastic_ip` field will be omitted from the resulting object.
+  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `endpoint` (`string`):  When `null`, the `endpoint` field will be omitted from the resulting object.
+  - `enhanced_vpc_routing` (`bool`):  When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
+  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
+  - `iam_roles` (`list`):  When `null`, the `iam_roles` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `maintenance_track_name` (`string`):  When `null`, the `maintenance_track_name` field will be omitted from the resulting object.
+  - `manual_snapshot_retention_period` (`number`):  When `null`, the `manual_snapshot_retention_period` field will be omitted from the resulting object.
+  - `master_password` (`string`):  When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_username` (`string`):  When `null`, the `master_username` field will be omitted from the resulting object.
+  - `node_type` (`string`): 
+  - `number_of_nodes` (`number`):  When `null`, the `number_of_nodes` field will be omitted from the resulting object.
+  - `owner_account` (`string`):  When `null`, the `owner_account` field will be omitted from the resulting object.
+  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
+  - `preferred_maintenance_window` (`string`):  When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
+  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `skip_final_snapshot` (`bool`):  When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `snapshot_cluster_identifier` (`string`):  When `null`, the `snapshot_cluster_identifier` field will be omitted from the resulting object.
+  - `snapshot_identifier` (`string`):  When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `logging` (`list[obj]`):  When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_cluster.logging.new](#fn-redshiftclusterloggingnew) constructor.
+  - `snapshot_copy` (`list[obj]`):  When `null`, the `snapshot_copy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_cluster.snapshot_copy.new](#fn-redshiftclustersnapshotcopynew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_cluster.timeouts.new](#fn-redshiftclustertimeoutsnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_cluster` resource into the root Terraform configuration.
+
+
+### fn withAllowVersionUpgrade
+
+```ts
+withAllowVersionUpgrade()
+```
+
+`aws.redshift_cluster.withAllowVersionUpgrade` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the allow_version_upgrade field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `allow_version_upgrade` field.
+
+
+### fn withApplyImmediately
+
+```ts
+withApplyImmediately()
+```
+
+`aws.redshift_cluster.withApplyImmediately` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the apply_immediately field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `apply_immediately` field.
+
+
+### fn withAquaConfigurationStatus
+
+```ts
+withAquaConfigurationStatus()
+```
+
+`aws.redshift_cluster.withAquaConfigurationStatus` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the aqua_configuration_status field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `aqua_configuration_status` field.
+
+
+### fn withAutomatedSnapshotRetentionPeriod
+
+```ts
+withAutomatedSnapshotRetentionPeriod()
+```
+
+`aws.redshift_cluster.withAutomatedSnapshotRetentionPeriod` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the automated_snapshot_retention_period field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `automated_snapshot_retention_period` field.
+
+
+### fn withAvailabilityZone
+
+```ts
+withAvailabilityZone()
+```
+
+`aws.redshift_cluster.withAvailabilityZone` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the availability_zone field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `availability_zone` field.
+
+
+### fn withAvailabilityZoneRelocationEnabled
+
+```ts
+withAvailabilityZoneRelocationEnabled()
+```
+
+`aws.redshift_cluster.withAvailabilityZoneRelocationEnabled` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the availability_zone_relocation_enabled field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `availability_zone_relocation_enabled` field.
+
+
+### fn withClusterIdentifier
+
+```ts
+withClusterIdentifier()
+```
+
+`aws.redshift_cluster.withClusterIdentifier` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_identifier field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_identifier` field.
+
+
+### fn withClusterParameterGroupName
+
+```ts
+withClusterParameterGroupName()
+```
+
+`aws.redshift_cluster.withClusterParameterGroupName` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_parameter_group_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_parameter_group_name` field.
+
+
+### fn withClusterPublicKey
+
+```ts
+withClusterPublicKey()
+```
+
+`aws.redshift_cluster.withClusterPublicKey` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_public_key field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_public_key` field.
+
+
+### fn withClusterRevisionNumber
+
+```ts
+withClusterRevisionNumber()
+```
+
+`aws.redshift_cluster.withClusterRevisionNumber` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_revision_number field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_revision_number` field.
+
+
+### fn withClusterSecurityGroups
+
+```ts
+withClusterSecurityGroups()
+```
+
+`aws.redshift_cluster.withClusterSecurityGroups` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_security_groups field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_security_groups` field.
+
+
+### fn withClusterSubnetGroupName
+
+```ts
+withClusterSubnetGroupName()
+```
+
+`aws.redshift_cluster.withClusterSubnetGroupName` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_subnet_group_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_subnet_group_name` field.
+
+
+### fn withClusterType
+
+```ts
+withClusterType()
+```
+
+`aws.redshift_cluster.withClusterType` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_type` field.
+
+
+### fn withClusterVersion
+
+```ts
+withClusterVersion()
+```
+
+`aws.redshift_cluster.withClusterVersion` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the cluster_version field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `cluster_version` field.
+
+
+### fn withDatabaseName
+
+```ts
+withDatabaseName()
+```
+
+`aws.redshift_cluster.withDatabaseName` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the database_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `database_name` field.
+
+
+### fn withDefaultIamRoleArn
+
+```ts
+withDefaultIamRoleArn()
+```
+
+`aws.redshift_cluster.withDefaultIamRoleArn` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the default_iam_role_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `default_iam_role_arn` field.
+
+
+### fn withElasticIp
+
+```ts
+withElasticIp()
+```
+
+`aws.redshift_cluster.withElasticIp` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the elastic_ip field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `elastic_ip` field.
+
+
+### fn withEncrypted
+
+```ts
+withEncrypted()
+```
+
+`aws.redshift_cluster.withEncrypted` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the encrypted field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `encrypted` field.
+
+
+### fn withEndpoint
+
+```ts
+withEndpoint()
+```
+
+`aws.redshift_cluster.withEndpoint` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the endpoint field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `endpoint` field.
+
+
+### fn withEnhancedVpcRouting
+
+```ts
+withEnhancedVpcRouting()
+```
+
+`aws.redshift_cluster.withEnhancedVpcRouting` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the enhanced_vpc_routing field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `enhanced_vpc_routing` field.
+
+
+### fn withFinalSnapshotIdentifier
+
+```ts
+withFinalSnapshotIdentifier()
+```
+
+`aws.redshift_cluster.withFinalSnapshotIdentifier` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the final_snapshot_identifier field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `final_snapshot_identifier` field.
+
+
+### fn withIamRoles
+
+```ts
+withIamRoles()
+```
+
+`aws.redshift_cluster.withIamRoles` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the iam_roles field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `iam_roles` field.
+
+
+### fn withKmsKeyId
+
+```ts
+withKmsKeyId()
+```
+
+`aws.redshift_cluster.withKmsKeyId` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the kms_key_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `kms_key_id` field.
+
+
+### fn withLogging
+
+```ts
+withLogging()
+```
+
+`aws.redshift_cluster.withLogging` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the logging field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `logging` field.
+
+
+### fn withLoggingMixin
+
+```ts
+withLoggingMixin()
+```
+
+`aws.redshift_cluster.withLoggingMixin` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the logging field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.redshift_cluster.withLogging](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `logging` field.
+
+
+### fn withMaintenanceTrackName
+
+```ts
+withMaintenanceTrackName()
+```
+
+`aws.redshift_cluster.withMaintenanceTrackName` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the maintenance_track_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `maintenance_track_name` field.
+
+
+### fn withManualSnapshotRetentionPeriod
+
+```ts
+withManualSnapshotRetentionPeriod()
+```
+
+`aws.redshift_cluster.withManualSnapshotRetentionPeriod` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the manual_snapshot_retention_period field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `manual_snapshot_retention_period` field.
+
+
+### fn withMasterPassword
+
+```ts
+withMasterPassword()
+```
+
+`aws.redshift_cluster.withMasterPassword` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the master_password field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `master_password` field.
+
+
+### fn withMasterUsername
+
+```ts
+withMasterUsername()
+```
+
+`aws.redshift_cluster.withMasterUsername` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the master_username field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `master_username` field.
+
+
+### fn withNodeType
+
+```ts
+withNodeType()
+```
+
+`aws.redshift_cluster.withNodeType` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the node_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `node_type` field.
+
+
+### fn withNumberOfNodes
+
+```ts
+withNumberOfNodes()
+```
+
+`aws.redshift_cluster.withNumberOfNodes` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the number_of_nodes field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `number_of_nodes` field.
+
+
+### fn withOwnerAccount
+
+```ts
+withOwnerAccount()
+```
+
+`aws.redshift_cluster.withOwnerAccount` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the owner_account field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `owner_account` field.
+
+
+### fn withPort
+
+```ts
+withPort()
+```
+
+`aws.redshift_cluster.withPort` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the port field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `port` field.
+
+
+### fn withPreferredMaintenanceWindow
+
+```ts
+withPreferredMaintenanceWindow()
+```
+
+`aws.redshift_cluster.withPreferredMaintenanceWindow` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the preferred_maintenance_window field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `preferred_maintenance_window` field.
+
+
+### fn withPubliclyAccessible
+
+```ts
+withPubliclyAccessible()
+```
+
+`aws.redshift_cluster.withPubliclyAccessible` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the publicly_accessible field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `publicly_accessible` field.
+
+
+### fn withSkipFinalSnapshot
+
+```ts
+withSkipFinalSnapshot()
+```
+
+`aws.redshift_cluster.withSkipFinalSnapshot` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the skip_final_snapshot field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `skip_final_snapshot` field.
+
+
+### fn withSnapshotClusterIdentifier
+
+```ts
+withSnapshotClusterIdentifier()
+```
+
+`aws.redshift_cluster.withSnapshotClusterIdentifier` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the snapshot_cluster_identifier field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `snapshot_cluster_identifier` field.
+
+
+### fn withSnapshotCopy
+
+```ts
+withSnapshotCopy()
+```
+
+`aws.redshift_cluster.withSnapshotCopy` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the snapshot_copy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `snapshot_copy` field.
+
+
+### fn withSnapshotCopyMixin
+
+```ts
+withSnapshotCopyMixin()
+```
+
+`aws.redshift_cluster.withSnapshotCopyMixin` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the snapshot_copy field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.redshift_cluster.withSnapshotCopy](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `snapshot_copy` field.
+
+
+### fn withSnapshotIdentifier
+
+```ts
+withSnapshotIdentifier()
+```
+
+`aws.redshift_cluster.withSnapshotIdentifier` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the snapshot_identifier field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `snapshot_identifier` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.redshift_cluster.withTags` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the tags field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `tags` field.
+
+
+### fn withTagsAll
+
+```ts
+withTagsAll()
+```
+
+`aws.redshift_cluster.withTagsAll` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the tags_all field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `tags_all` field.
+
+
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.redshift_cluster.withTimeouts` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the timeouts field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.redshift_cluster.withTimeoutsMixin` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.redshift_cluster.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withVpcSecurityGroupIds
+
+```ts
+withVpcSecurityGroupIds()
+```
+
+`aws.redshift_cluster.withVpcSecurityGroupIds` constructs a mixin object that can be merged into the `redshift_cluster`
+Terraform resource block to set or update the vpc_security_group_ids field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `vpc_security_group_ids` field.
+
+
+## obj logging
+
+
+
+### fn logging.new
+
+```ts
+new()
+```
+
+
+`aws.redshift_cluster.logging.new` constructs a new object with attributes and blocks configured for the `logging`
+Terraform sub block.
+
+
+
+**Args**:
+  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `enable` (`bool`): 
+  - `log_destination_type` (`string`):  When `null`, the `log_destination_type` field will be omitted from the resulting object.
+  - `log_exports` (`list`):  When `null`, the `log_exports` field will be omitted from the resulting object.
+  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `logging` sub block.
+
+
+## obj snapshot_copy
+
+
+
+### fn snapshot_copy.new
+
+```ts
+new()
+```
+
+
+`aws.redshift_cluster.snapshot_copy.new` constructs a new object with attributes and blocks configured for the `snapshot_copy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `destination_region` (`string`): 
+  - `grant_name` (`string`):  When `null`, the `grant_name` field will be omitted from the resulting object.
+  - `retention_period` (`number`):  When `null`, the `retention_period` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `snapshot_copy` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.redshift_cluster.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

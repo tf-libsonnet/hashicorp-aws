@@ -1,0 +1,184 @@
+local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
+local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
+{
+  '#':: d.pkg(name='cloudfront_cache_policy', url='', help='`cloudfront_cache_policy` represents the `aws_cloudfront_cache_policy` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
+  '#new':: d.fn(help="\n`aws.cloudfront_cache_policy.new` injects a new `aws_cloudfront_cache_policy` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.cloudfront_cache_policy.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.cloudfront_cache_policy` using the reference:\n\n    $._ref.aws_cloudfront_cache_policy.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_cloudfront_cache_policy.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.\n  - `default_ttl` (`number`):  When `null`, the `default_ttl` field will be omitted from the resulting object.\n  - `max_ttl` (`number`):  When `null`, the `max_ttl` field will be omitted from the resulting object.\n  - `min_ttl` (`number`):  When `null`, the `min_ttl` field will be omitted from the resulting object.\n  - `name` (`string`): \n  - `parameters_in_cache_key_and_forwarded_to_origin` (`list[obj]`):  When `null`, the `parameters_in_cache_key_and_forwarded_to_origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.new](#fn-cloudfrontcachepolicyparametersincachekeyandforwardedtooriginnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  new(
+    resourceLabel,
+    name,
+    comment=null,
+    default_ttl=null,
+    max_ttl=null,
+    min_ttl=null,
+    parameters_in_cache_key_and_forwarded_to_origin=null,
+    _meta={}
+  ):: tf.withResource(
+    type='aws_cloudfront_cache_policy',
+    label=resourceLabel,
+    attrs=self.newAttrs(
+      comment=comment,
+      default_ttl=default_ttl,
+      max_ttl=max_ttl,
+      min_ttl=min_ttl,
+      name=name,
+      parameters_in_cache_key_and_forwarded_to_origin=parameters_in_cache_key_and_forwarded_to_origin
+    ),
+    _meta=_meta
+  ),
+  '#newAttrs':: d.fn(help='\n`aws.cloudfront_cache_policy.newAttrs` constructs a new object with attributes and blocks configured for the `cloudfront_cache_policy`\nTerraform resource.\n\nUnlike [aws.cloudfront_cache_policy.new](#fn-cloudfrontcachepolicynew), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.\n  - `default_ttl` (`number`):  When `null`, the `default_ttl` field will be omitted from the resulting object.\n  - `max_ttl` (`number`):  When `null`, the `max_ttl` field will be omitted from the resulting object.\n  - `min_ttl` (`number`):  When `null`, the `min_ttl` field will be omitted from the resulting object.\n  - `name` (`string`): \n  - `parameters_in_cache_key_and_forwarded_to_origin` (`list[obj]`):  When `null`, the `parameters_in_cache_key_and_forwarded_to_origin` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.new](#fn-cloudfrontcachepolicyparametersincachekeyandforwardedtooriginnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_cache_policy` resource into the root Terraform configuration.\n', args=[]),
+  newAttrs(
+    name,
+    comment=null,
+    default_ttl=null,
+    max_ttl=null,
+    min_ttl=null,
+    parameters_in_cache_key_and_forwarded_to_origin=null
+  ):: std.prune(a={
+    comment: comment,
+    default_ttl: default_ttl,
+    max_ttl: max_ttl,
+    min_ttl: min_ttl,
+    name: name,
+    parameters_in_cache_key_and_forwarded_to_origin: parameters_in_cache_key_and_forwarded_to_origin,
+  }),
+  parameters_in_cache_key_and_forwarded_to_origin:: {
+    cookies_config:: {
+      cookies:: {
+        '#new':: d.fn(help='\n`aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.cookies.new` constructs a new object with attributes and blocks configured for the `cookies`\nTerraform sub block.\n\n\n\n**Args**:\n  - `items` (`list`):  When `null`, the `items` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `cookies` sub block.\n', args=[]),
+        new(
+          items=null
+        ):: std.prune(a={
+          items: items,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.new` constructs a new object with attributes and blocks configured for the `cookies_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cookie_behavior` (`string`): \n  - `cookies` (`list[obj]`):  When `null`, the `cookies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.cookies.new](#fn-cookiesconfigcookiesnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `cookies_config` sub block.\n', args=[]),
+      new(
+        cookie_behavior,
+        cookies=null
+      ):: std.prune(a={
+        cookie_behavior: cookie_behavior,
+        cookies: cookies,
+      }),
+    },
+    headers_config:: {
+      headers:: {
+        '#new':: d.fn(help='\n`aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.headers.new` constructs a new object with attributes and blocks configured for the `headers`\nTerraform sub block.\n\n\n\n**Args**:\n  - `items` (`list`):  When `null`, the `items` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `headers` sub block.\n', args=[]),
+        new(
+          items=null
+        ):: std.prune(a={
+          items: items,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.new` constructs a new object with attributes and blocks configured for the `headers_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `header_behavior` (`string`):  When `null`, the `header_behavior` field will be omitted from the resulting object.\n  - `headers` (`list[obj]`):  When `null`, the `headers` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.headers.new](#fn-headersconfigheadersnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `headers_config` sub block.\n', args=[]),
+      new(
+        header_behavior=null,
+        headers=null
+      ):: std.prune(a={
+        header_behavior: header_behavior,
+        headers: headers,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.new` constructs a new object with attributes and blocks configured for the `parameters_in_cache_key_and_forwarded_to_origin`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enable_accept_encoding_brotli` (`bool`):  When `null`, the `enable_accept_encoding_brotli` field will be omitted from the resulting object.\n  - `enable_accept_encoding_gzip` (`bool`):  When `null`, the `enable_accept_encoding_gzip` field will be omitted from the resulting object.\n  - `cookies_config` (`list[obj]`):  When `null`, the `cookies_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.cookies_config.new](#fn-parametersincachekeyandforwardedtoorigincookiesconfignew) constructor.\n  - `headers_config` (`list[obj]`):  When `null`, the `headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.headers_config.new](#fn-parametersincachekeyandforwardedtooriginheadersconfignew) constructor.\n  - `query_strings_config` (`list[obj]`):  When `null`, the `query_strings_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.new](#fn-parametersincachekeyandforwardedtooriginquerystringsconfignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `parameters_in_cache_key_and_forwarded_to_origin` sub block.\n', args=[]),
+    new(
+      cookies_config=null,
+      enable_accept_encoding_brotli=null,
+      enable_accept_encoding_gzip=null,
+      headers_config=null,
+      query_strings_config=null
+    ):: std.prune(a={
+      cookies_config: cookies_config,
+      enable_accept_encoding_brotli: enable_accept_encoding_brotli,
+      enable_accept_encoding_gzip: enable_accept_encoding_gzip,
+      headers_config: headers_config,
+      query_strings_config: query_strings_config,
+    }),
+    query_strings_config:: {
+      '#new':: d.fn(help='\n`aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.new` constructs a new object with attributes and blocks configured for the `query_strings_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `query_string_behavior` (`string`): \n  - `query_strings` (`list[obj]`):  When `null`, the `query_strings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.query_strings.new](#fn-querystringsconfigquerystringsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `query_strings_config` sub block.\n', args=[]),
+      new(
+        query_string_behavior,
+        query_strings=null
+      ):: std.prune(a={
+        query_string_behavior: query_string_behavior,
+        query_strings: query_strings,
+      }),
+      query_strings:: {
+        '#new':: d.fn(help='\n`aws.cloudfront_cache_policy.parameters_in_cache_key_and_forwarded_to_origin.query_strings_config.query_strings.new` constructs a new object with attributes and blocks configured for the `query_strings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `items` (`list`):  When `null`, the `items` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `query_strings` sub block.\n', args=[]),
+        new(
+          items=null
+        ):: std.prune(a={
+          items: items,
+        }),
+      },
+    },
+  },
+  '#withComment':: d.fn(help='`aws.cloudfront_cache_policy.withComment` constructs a mixin object that can be merged into the `cloudfront_cache_policy`\nTerraform resource block to set or update the comment field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `comment` field.\n', args=[]),
+  withComment(resourceLabel, value):: {
+    resource+: {
+      aws_cloudfront_cache_policy+: {
+        [resourceLabel]+: {
+          comment: value,
+        },
+      },
+    },
+  },
+  '#withDefaultTtl':: d.fn(help='`aws.cloudfront_cache_policy.withDefaultTtl` constructs a mixin object that can be merged into the `cloudfront_cache_policy`\nTerraform resource block to set or update the default_ttl field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `default_ttl` field.\n', args=[]),
+  withDefaultTtl(resourceLabel, value):: {
+    resource+: {
+      aws_cloudfront_cache_policy+: {
+        [resourceLabel]+: {
+          default_ttl: value,
+        },
+      },
+    },
+  },
+  '#withMaxTtl':: d.fn(help='`aws.cloudfront_cache_policy.withMaxTtl` constructs a mixin object that can be merged into the `cloudfront_cache_policy`\nTerraform resource block to set or update the max_ttl field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `max_ttl` field.\n', args=[]),
+  withMaxTtl(resourceLabel, value):: {
+    resource+: {
+      aws_cloudfront_cache_policy+: {
+        [resourceLabel]+: {
+          max_ttl: value,
+        },
+      },
+    },
+  },
+  '#withMinTtl':: d.fn(help='`aws.cloudfront_cache_policy.withMinTtl` constructs a mixin object that can be merged into the `cloudfront_cache_policy`\nTerraform resource block to set or update the min_ttl field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `min_ttl` field.\n', args=[]),
+  withMinTtl(resourceLabel, value):: {
+    resource+: {
+      aws_cloudfront_cache_policy+: {
+        [resourceLabel]+: {
+          min_ttl: value,
+        },
+      },
+    },
+  },
+  '#withName':: d.fn(help='`aws.cloudfront_cache_policy.withName` constructs a mixin object that can be merged into the `cloudfront_cache_policy`\nTerraform resource block to set or update the name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `name` field.\n', args=[]),
+  withName(resourceLabel, value):: {
+    resource+: {
+      aws_cloudfront_cache_policy+: {
+        [resourceLabel]+: {
+          name: value,
+        },
+      },
+    },
+  },
+  '#withParametersInCacheKeyAndForwardedToOrigin':: d.fn(help='`aws.cloudfront_cache_policy.withParametersInCacheKeyAndForwardedToOrigin` constructs a mixin object that can be merged into the `cloudfront_cache_policy`\nTerraform resource block to set or update the parameters_in_cache_key_and_forwarded_to_origin field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `parameters_in_cache_key_and_forwarded_to_origin` field.\n', args=[]),
+  withParametersInCacheKeyAndForwardedToOrigin(resourceLabel, value):: {
+    resource+: {
+      aws_cloudfront_cache_policy+: {
+        [resourceLabel]+: {
+          parameters_in_cache_key_and_forwarded_to_origin: value,
+        },
+      },
+    },
+  },
+  '#withParametersInCacheKeyAndForwardedToOriginMixin':: d.fn(help='`aws.cloudfront_cache_policy.withParametersInCacheKeyAndForwardedToOriginMixin` constructs a mixin object that can be merged into the `cloudfront_cache_policy`\nTerraform resource block to set or update the parameters_in_cache_key_and_forwarded_to_origin field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.cloudfront_cache_policy.withParametersInCacheKeyAndForwardedToOrigin](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `parameters_in_cache_key_and_forwarded_to_origin` field.\n', args=[]),
+  withParametersInCacheKeyAndForwardedToOriginMixin(resourceLabel, value):: {
+    resource+: {
+      aws_cloudfront_cache_policy+: {
+        [resourceLabel]+: {
+          parameters_in_cache_key_and_forwarded_to_origin+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+}

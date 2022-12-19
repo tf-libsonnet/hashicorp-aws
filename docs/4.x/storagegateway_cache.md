@@ -1,0 +1,111 @@
+---
+permalink: /storagegateway_cache/
+---
+
+# storagegateway_cache
+
+`storagegateway_cache` represents the `aws_storagegateway_cache` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withDiskId()`](#fn-withdiskid)
+* [`fn withGatewayArn()`](#fn-withgatewayarn)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.storagegateway_cache.new` injects a new `aws_storagegateway_cache` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.storagegateway_cache.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.storagegateway_cache` using the reference:
+
+    $._ref.aws_storagegateway_cache.some_id.get('id')
+
+This is the same as directly entering `"${ aws_storagegateway_cache.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `disk_id` (`string`): 
+  - `gateway_arn` (`string`): 
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.storagegateway_cache.newAttrs` constructs a new object with attributes and blocks configured for the `storagegateway_cache`
+Terraform resource.
+
+Unlike [aws.storagegateway_cache.new](#fn-storagegatewaycachenew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `disk_id` (`string`): 
+  - `gateway_arn` (`string`): 
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_cache` resource into the root Terraform configuration.
+
+
+### fn withDiskId
+
+```ts
+withDiskId()
+```
+
+`aws.storagegateway_cache.withDiskId` constructs a mixin object that can be merged into the `storagegateway_cache`
+Terraform resource block to set or update the disk_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `disk_id` field.
+
+
+### fn withGatewayArn
+
+```ts
+withGatewayArn()
+```
+
+`aws.storagegateway_cache.withGatewayArn` constructs a mixin object that can be merged into the `storagegateway_cache`
+Terraform resource block to set or update the gateway_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `gateway_arn` field.

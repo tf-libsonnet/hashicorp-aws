@@ -1,0 +1,110 @@
+local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
+local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
+{
+  '#':: d.pkg(name='memorydb_user', url='', help='`memorydb_user` represents the `aws_memorydb_user` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
+  authentication_mode:: {
+    '#new':: d.fn(help='\n`aws.memorydb_user.authentication_mode.new` constructs a new object with attributes and blocks configured for the `authentication_mode`\nTerraform sub block.\n\n\n\n**Args**:\n  - `passwords` (`list`): \n  - `type` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `authentication_mode` sub block.\n', args=[]),
+    new(
+      passwords,
+      type
+    ):: std.prune(a={
+      passwords: passwords,
+      type: type,
+    }),
+  },
+  '#new':: d.fn(help="\n`aws.memorydb_user.new` injects a new `aws_memorydb_user` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.memorydb_user.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.memorydb_user` using the reference:\n\n    $._ref.aws_memorydb_user.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_memorydb_user.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `access_string` (`string`): \n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `user_name` (`string`): \n  - `authentication_mode` (`list[obj]`):  When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.memorydb_user.authentication_mode.new](#fn-memorydbuserauthenticationmodenew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  new(
+    resourceLabel,
+    access_string,
+    user_name,
+    authentication_mode=null,
+    tags=null,
+    tags_all=null,
+    _meta={}
+  ):: tf.withResource(
+    type='aws_memorydb_user',
+    label=resourceLabel,
+    attrs=self.newAttrs(
+      access_string=access_string,
+      authentication_mode=authentication_mode,
+      tags=tags,
+      tags_all=tags_all,
+      user_name=user_name
+    ),
+    _meta=_meta
+  ),
+  '#newAttrs':: d.fn(help='\n`aws.memorydb_user.newAttrs` constructs a new object with attributes and blocks configured for the `memorydb_user`\nTerraform resource.\n\nUnlike [aws.memorydb_user.new](#fn-memorydbusernew), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `access_string` (`string`): \n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `user_name` (`string`): \n  - `authentication_mode` (`list[obj]`):  When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.memorydb_user.authentication_mode.new](#fn-memorydbuserauthenticationmodenew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `memorydb_user` resource into the root Terraform configuration.\n', args=[]),
+  newAttrs(
+    access_string,
+    user_name,
+    authentication_mode=null,
+    tags=null,
+    tags_all=null
+  ):: std.prune(a={
+    access_string: access_string,
+    authentication_mode: authentication_mode,
+    tags: tags,
+    tags_all: tags_all,
+    user_name: user_name,
+  }),
+  '#withAccessString':: d.fn(help='`aws.memorydb_user.withAccessString` constructs a mixin object that can be merged into the `memorydb_user`\nTerraform resource block to set or update the access_string field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `access_string` field.\n', args=[]),
+  withAccessString(resourceLabel, value):: {
+    resource+: {
+      aws_memorydb_user+: {
+        [resourceLabel]+: {
+          access_string: value,
+        },
+      },
+    },
+  },
+  '#withAuthenticationMode':: d.fn(help='`aws.memorydb_user.withAuthenticationMode` constructs a mixin object that can be merged into the `memorydb_user`\nTerraform resource block to set or update the authentication_mode field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `authentication_mode` field.\n', args=[]),
+  withAuthenticationMode(resourceLabel, value):: {
+    resource+: {
+      aws_memorydb_user+: {
+        [resourceLabel]+: {
+          authentication_mode: value,
+        },
+      },
+    },
+  },
+  '#withAuthenticationModeMixin':: d.fn(help='`aws.memorydb_user.withAuthenticationModeMixin` constructs a mixin object that can be merged into the `memorydb_user`\nTerraform resource block to set or update the authentication_mode field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.memorydb_user.withAuthenticationMode](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `authentication_mode` field.\n', args=[]),
+  withAuthenticationModeMixin(resourceLabel, value):: {
+    resource+: {
+      aws_memorydb_user+: {
+        [resourceLabel]+: {
+          authentication_mode+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withTags':: d.fn(help='`aws.memorydb_user.withTags` constructs a mixin object that can be merged into the `memorydb_user`\nTerraform resource block to set or update the tags field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `tags` field.\n', args=[]),
+  withTags(resourceLabel, value):: {
+    resource+: {
+      aws_memorydb_user+: {
+        [resourceLabel]+: {
+          tags: value,
+        },
+      },
+    },
+  },
+  '#withTagsAll':: d.fn(help='`aws.memorydb_user.withTagsAll` constructs a mixin object that can be merged into the `memorydb_user`\nTerraform resource block to set or update the tags_all field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `tags_all` field.\n', args=[]),
+  withTagsAll(resourceLabel, value):: {
+    resource+: {
+      aws_memorydb_user+: {
+        [resourceLabel]+: {
+          tags_all: value,
+        },
+      },
+    },
+  },
+  '#withUserName':: d.fn(help='`aws.memorydb_user.withUserName` constructs a mixin object that can be merged into the `memorydb_user`\nTerraform resource block to set or update the user_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `user_name` field.\n', args=[]),
+  withUserName(resourceLabel, value):: {
+    resource+: {
+      aws_memorydb_user+: {
+        [resourceLabel]+: {
+          user_name: value,
+        },
+      },
+    },
+  },
+}

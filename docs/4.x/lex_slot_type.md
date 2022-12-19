@@ -1,0 +1,280 @@
+---
+permalink: /lex_slot_type/
+---
+
+# lex_slot_type
+
+`lex_slot_type` represents the `aws_lex_slot_type` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withCreateVersion()`](#fn-withcreateversion)
+* [`fn withDescription()`](#fn-withdescription)
+* [`fn withEnumerationValue()`](#fn-withenumerationvalue)
+* [`fn withEnumerationValueMixin()`](#fn-withenumerationvaluemixin)
+* [`fn withName()`](#fn-withname)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`fn withValueSelectionStrategy()`](#fn-withvalueselectionstrategy)
+* [`obj enumeration_value`](#obj-enumeration_value)
+  * [`fn new()`](#fn-enumeration_valuenew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.lex_slot_type.new` injects a new `aws_lex_slot_type` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.lex_slot_type.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.lex_slot_type` using the reference:
+
+    $._ref.aws_lex_slot_type.some_id.get('id')
+
+This is the same as directly entering `"${ aws_lex_slot_type.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `create_version` (`bool`):  When `null`, the `create_version` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `value_selection_strategy` (`string`):  When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
+  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-lexslottypeenumerationvaluenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-lexslottypetimeoutsnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.lex_slot_type.newAttrs` constructs a new object with attributes and blocks configured for the `lex_slot_type`
+Terraform resource.
+
+Unlike [aws.lex_slot_type.new](#fn-lexslottypenew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `create_version` (`bool`):  When `null`, the `create_version` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `value_selection_strategy` (`string`):  When `null`, the `value_selection_strategy` field will be omitted from the resulting object.
+  - `enumeration_value` (`list[obj]`):  When `null`, the `enumeration_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.enumeration_value.new](#fn-lexslottypeenumerationvaluenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_slot_type.timeouts.new](#fn-lexslottypetimeoutsnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lex_slot_type` resource into the root Terraform configuration.
+
+
+### fn withCreateVersion
+
+```ts
+withCreateVersion()
+```
+
+`aws.lex_slot_type.withCreateVersion` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the create_version field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `create_version` field.
+
+
+### fn withDescription
+
+```ts
+withDescription()
+```
+
+`aws.lex_slot_type.withDescription` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the description field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `description` field.
+
+
+### fn withEnumerationValue
+
+```ts
+withEnumerationValue()
+```
+
+`aws.lex_slot_type.withEnumerationValue` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the enumeration_value field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `enumeration_value` field.
+
+
+### fn withEnumerationValueMixin
+
+```ts
+withEnumerationValueMixin()
+```
+
+`aws.lex_slot_type.withEnumerationValueMixin` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the enumeration_value field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.lex_slot_type.withEnumerationValue](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `enumeration_value` field.
+
+
+### fn withName
+
+```ts
+withName()
+```
+
+`aws.lex_slot_type.withName` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `name` field.
+
+
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.lex_slot_type.withTimeouts` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the timeouts field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.lex_slot_type.withTimeoutsMixin` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.lex_slot_type.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withValueSelectionStrategy
+
+```ts
+withValueSelectionStrategy()
+```
+
+`aws.lex_slot_type.withValueSelectionStrategy` constructs a mixin object that can be merged into the `lex_slot_type`
+Terraform resource block to set or update the value_selection_strategy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `value_selection_strategy` field.
+
+
+## obj enumeration_value
+
+
+
+### fn enumeration_value.new
+
+```ts
+new()
+```
+
+
+`aws.lex_slot_type.enumeration_value.new` constructs a new object with attributes and blocks configured for the `enumeration_value`
+Terraform sub block.
+
+
+
+**Args**:
+  - `synonyms` (`list`):  When `null`, the `synonyms` field will be omitted from the resulting object.
+  - `value` (`string`): 
+
+**Returns**:
+  - An attribute object that represents the `enumeration_value` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.lex_slot_type.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

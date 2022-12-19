@@ -1,0 +1,322 @@
+local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
+local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
+{
+  '#':: d.pkg(name='comprehend_document_classifier', url='', help='`comprehend_document_classifier` represents the `aws_comprehend_document_classifier` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
+  input_data_config:: {
+    augmented_manifests:: {
+      '#new':: d.fn(help='\n`aws.comprehend_document_classifier.input_data_config.augmented_manifests.new` constructs a new object with attributes and blocks configured for the `augmented_manifests`\nTerraform sub block.\n\n\n\n**Args**:\n  - `annotation_data_s3_uri` (`string`):  When `null`, the `annotation_data_s3_uri` field will be omitted from the resulting object.\n  - `attribute_names` (`list`): \n  - `document_type` (`string`):  When `null`, the `document_type` field will be omitted from the resulting object.\n  - `s3_uri` (`string`): \n  - `source_documents_s3_uri` (`string`):  When `null`, the `source_documents_s3_uri` field will be omitted from the resulting object.\n  - `split` (`string`):  When `null`, the `split` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `augmented_manifests` sub block.\n', args=[]),
+      new(
+        attribute_names,
+        s3_uri,
+        annotation_data_s3_uri=null,
+        document_type=null,
+        source_documents_s3_uri=null,
+        split=null
+      ):: std.prune(a={
+        annotation_data_s3_uri: annotation_data_s3_uri,
+        attribute_names: attribute_names,
+        document_type: document_type,
+        s3_uri: s3_uri,
+        source_documents_s3_uri: source_documents_s3_uri,
+        split: split,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.comprehend_document_classifier.input_data_config.new` constructs a new object with attributes and blocks configured for the `input_data_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `data_format` (`string`):  When `null`, the `data_format` field will be omitted from the resulting object.\n  - `label_delimiter` (`string`):  When `null`, the `label_delimiter` field will be omitted from the resulting object.\n  - `s3_uri` (`string`):  When `null`, the `s3_uri` field will be omitted from the resulting object.\n  - `test_s3_uri` (`string`):  When `null`, the `test_s3_uri` field will be omitted from the resulting object.\n  - `augmented_manifests` (`list[obj]`):  When `null`, the `augmented_manifests` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.augmented_manifests.new](#fn-inputdataconfigaugmentedmanifestsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `input_data_config` sub block.\n', args=[]),
+    new(
+      augmented_manifests=null,
+      data_format=null,
+      label_delimiter=null,
+      s3_uri=null,
+      test_s3_uri=null
+    ):: std.prune(a={
+      augmented_manifests: augmented_manifests,
+      data_format: data_format,
+      label_delimiter: label_delimiter,
+      s3_uri: s3_uri,
+      test_s3_uri: test_s3_uri,
+    }),
+  },
+  '#new':: d.fn(help="\n`aws.comprehend_document_classifier.new` injects a new `aws_comprehend_document_classifier` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.comprehend_document_classifier.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.comprehend_document_classifier` using the reference:\n\n    $._ref.aws_comprehend_document_classifier.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_comprehend_document_classifier.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `data_access_role_arn` (`string`): \n  - `language_code` (`string`): \n  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.\n  - `model_kms_key_id` (`string`):  When `null`, the `model_kms_key_id` field will be omitted from the resulting object.\n  - `name` (`string`): \n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.\n  - `version_name_prefix` (`string`):  When `null`, the `version_name_prefix` field will be omitted from the resulting object.\n  - `volume_kms_key_id` (`string`):  When `null`, the `volume_kms_key_id` field will be omitted from the resulting object.\n  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.new](#fn-comprehenddocumentclassifierinputdataconfignew) constructor.\n  - `output_data_config` (`list[obj]`):  When `null`, the `output_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.output_data_config.new](#fn-comprehenddocumentclassifieroutputdataconfignew) constructor.\n  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.timeouts.new](#fn-comprehenddocumentclassifiertimeoutsnew) constructor.\n  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.vpc_config.new](#fn-comprehenddocumentclassifiervpcconfignew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  new(
+    resourceLabel,
+    data_access_role_arn,
+    language_code,
+    name,
+    input_data_config=null,
+    mode=null,
+    model_kms_key_id=null,
+    output_data_config=null,
+    tags=null,
+    tags_all=null,
+    timeouts=null,
+    version_name=null,
+    version_name_prefix=null,
+    volume_kms_key_id=null,
+    vpc_config=null,
+    _meta={}
+  ):: tf.withResource(
+    type='aws_comprehend_document_classifier',
+    label=resourceLabel,
+    attrs=self.newAttrs(
+      data_access_role_arn=data_access_role_arn,
+      input_data_config=input_data_config,
+      language_code=language_code,
+      mode=mode,
+      model_kms_key_id=model_kms_key_id,
+      name=name,
+      output_data_config=output_data_config,
+      tags=tags,
+      tags_all=tags_all,
+      timeouts=timeouts,
+      version_name=version_name,
+      version_name_prefix=version_name_prefix,
+      volume_kms_key_id=volume_kms_key_id,
+      vpc_config=vpc_config
+    ),
+    _meta=_meta
+  ),
+  '#newAttrs':: d.fn(help='\n`aws.comprehend_document_classifier.newAttrs` constructs a new object with attributes and blocks configured for the `comprehend_document_classifier`\nTerraform resource.\n\nUnlike [aws.comprehend_document_classifier.new](#fn-comprehenddocumentclassifiernew), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `data_access_role_arn` (`string`): \n  - `language_code` (`string`): \n  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.\n  - `model_kms_key_id` (`string`):  When `null`, the `model_kms_key_id` field will be omitted from the resulting object.\n  - `name` (`string`): \n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `version_name` (`string`):  When `null`, the `version_name` field will be omitted from the resulting object.\n  - `version_name_prefix` (`string`):  When `null`, the `version_name_prefix` field will be omitted from the resulting object.\n  - `volume_kms_key_id` (`string`):  When `null`, the `volume_kms_key_id` field will be omitted from the resulting object.\n  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.input_data_config.new](#fn-comprehenddocumentclassifierinputdataconfignew) constructor.\n  - `output_data_config` (`list[obj]`):  When `null`, the `output_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.output_data_config.new](#fn-comprehenddocumentclassifieroutputdataconfignew) constructor.\n  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.timeouts.new](#fn-comprehenddocumentclassifiertimeoutsnew) constructor.\n  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.comprehend_document_classifier.vpc_config.new](#fn-comprehenddocumentclassifiervpcconfignew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `comprehend_document_classifier` resource into the root Terraform configuration.\n', args=[]),
+  newAttrs(
+    data_access_role_arn,
+    language_code,
+    name,
+    input_data_config=null,
+    mode=null,
+    model_kms_key_id=null,
+    output_data_config=null,
+    tags=null,
+    tags_all=null,
+    timeouts=null,
+    version_name=null,
+    version_name_prefix=null,
+    volume_kms_key_id=null,
+    vpc_config=null
+  ):: std.prune(a={
+    data_access_role_arn: data_access_role_arn,
+    input_data_config: input_data_config,
+    language_code: language_code,
+    mode: mode,
+    model_kms_key_id: model_kms_key_id,
+    name: name,
+    output_data_config: output_data_config,
+    tags: tags,
+    tags_all: tags_all,
+    timeouts: timeouts,
+    version_name: version_name,
+    version_name_prefix: version_name_prefix,
+    volume_kms_key_id: volume_kms_key_id,
+    vpc_config: vpc_config,
+  }),
+  output_data_config:: {
+    '#new':: d.fn(help='\n`aws.comprehend_document_classifier.output_data_config.new` constructs a new object with attributes and blocks configured for the `output_data_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `s3_uri` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `output_data_config` sub block.\n', args=[]),
+    new(
+      s3_uri,
+      kms_key_id=null
+    ):: std.prune(a={
+      kms_key_id: kms_key_id,
+      s3_uri: s3_uri,
+    }),
+  },
+  timeouts:: {
+    '#new':: d.fn(help='\n`aws.comprehend_document_classifier.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`\nTerraform sub block.\n\n\n\n**Args**:\n  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.\n  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.\n  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `timeouts` sub block.\n', args=[]),
+    new(
+      create=null,
+      delete=null,
+      update=null
+    ):: std.prune(a={
+      create: create,
+      delete: delete,
+      update: update,
+    }),
+  },
+  vpc_config:: {
+    '#new':: d.fn(help='\n`aws.comprehend_document_classifier.vpc_config.new` constructs a new object with attributes and blocks configured for the `vpc_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `security_group_ids` (`list`): \n  - `subnets` (`list`): \n\n**Returns**:\n  - An attribute object that represents the `vpc_config` sub block.\n', args=[]),
+    new(
+      security_group_ids,
+      subnets
+    ):: std.prune(a={
+      security_group_ids: security_group_ids,
+      subnets: subnets,
+    }),
+  },
+  '#withDataAccessRoleArn':: d.fn(help='`aws.comprehend_document_classifier.withDataAccessRoleArn` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the data_access_role_arn field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `data_access_role_arn` field.\n', args=[]),
+  withDataAccessRoleArn(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          data_access_role_arn: value,
+        },
+      },
+    },
+  },
+  '#withInputDataConfig':: d.fn(help='`aws.comprehend_document_classifier.withInputDataConfig` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the input_data_config field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `input_data_config` field.\n', args=[]),
+  withInputDataConfig(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          input_data_config: value,
+        },
+      },
+    },
+  },
+  '#withInputDataConfigMixin':: d.fn(help='`aws.comprehend_document_classifier.withInputDataConfigMixin` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the input_data_config field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.comprehend_document_classifier.withInputDataConfig](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `input_data_config` field.\n', args=[]),
+  withInputDataConfigMixin(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          input_data_config+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withLanguageCode':: d.fn(help='`aws.comprehend_document_classifier.withLanguageCode` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the language_code field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `language_code` field.\n', args=[]),
+  withLanguageCode(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          language_code: value,
+        },
+      },
+    },
+  },
+  '#withMode':: d.fn(help='`aws.comprehend_document_classifier.withMode` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the mode field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `mode` field.\n', args=[]),
+  withMode(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          mode: value,
+        },
+      },
+    },
+  },
+  '#withModelKmsKeyId':: d.fn(help='`aws.comprehend_document_classifier.withModelKmsKeyId` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the model_kms_key_id field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `model_kms_key_id` field.\n', args=[]),
+  withModelKmsKeyId(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          model_kms_key_id: value,
+        },
+      },
+    },
+  },
+  '#withName':: d.fn(help='`aws.comprehend_document_classifier.withName` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `name` field.\n', args=[]),
+  withName(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          name: value,
+        },
+      },
+    },
+  },
+  '#withOutputDataConfig':: d.fn(help='`aws.comprehend_document_classifier.withOutputDataConfig` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the output_data_config field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `output_data_config` field.\n', args=[]),
+  withOutputDataConfig(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          output_data_config: value,
+        },
+      },
+    },
+  },
+  '#withOutputDataConfigMixin':: d.fn(help='`aws.comprehend_document_classifier.withOutputDataConfigMixin` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the output_data_config field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.comprehend_document_classifier.withOutputDataConfig](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `output_data_config` field.\n', args=[]),
+  withOutputDataConfigMixin(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          output_data_config+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withTags':: d.fn(help='`aws.comprehend_document_classifier.withTags` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the tags field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `tags` field.\n', args=[]),
+  withTags(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          tags: value,
+        },
+      },
+    },
+  },
+  '#withTagsAll':: d.fn(help='`aws.comprehend_document_classifier.withTagsAll` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the tags_all field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `tags_all` field.\n', args=[]),
+  withTagsAll(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          tags_all: value,
+        },
+      },
+    },
+  },
+  '#withTimeouts':: d.fn(help='`aws.comprehend_document_classifier.withTimeouts` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the timeouts field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `timeouts` field.\n', args=[]),
+  withTimeouts(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          timeouts: value,
+        },
+      },
+    },
+  },
+  '#withTimeoutsMixin':: d.fn(help='`aws.comprehend_document_classifier.withTimeoutsMixin` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the timeouts field.\n\nThis function will merge the passed in value to the existing map. If you wish\nto instead replace the entire map with the passed in `value`, use the [aws.comprehend_document_classifier.withTimeouts](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `timeouts` field.\n', args=[]),
+  withTimeoutsMixin(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          timeouts+: value,
+        },
+      },
+    },
+  },
+  '#withVersionName':: d.fn(help='`aws.comprehend_document_classifier.withVersionName` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the version_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `version_name` field.\n', args=[]),
+  withVersionName(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          version_name: value,
+        },
+      },
+    },
+  },
+  '#withVersionNamePrefix':: d.fn(help='`aws.comprehend_document_classifier.withVersionNamePrefix` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the version_name_prefix field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `version_name_prefix` field.\n', args=[]),
+  withVersionNamePrefix(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          version_name_prefix: value,
+        },
+      },
+    },
+  },
+  '#withVolumeKmsKeyId':: d.fn(help='`aws.comprehend_document_classifier.withVolumeKmsKeyId` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the volume_kms_key_id field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `volume_kms_key_id` field.\n', args=[]),
+  withVolumeKmsKeyId(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          volume_kms_key_id: value,
+        },
+      },
+    },
+  },
+  '#withVpcConfig':: d.fn(help='`aws.comprehend_document_classifier.withVpcConfig` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the vpc_config field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `vpc_config` field.\n', args=[]),
+  withVpcConfig(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          vpc_config: value,
+        },
+      },
+    },
+  },
+  '#withVpcConfigMixin':: d.fn(help='`aws.comprehend_document_classifier.withVpcConfigMixin` constructs a mixin object that can be merged into the `comprehend_document_classifier`\nTerraform resource block to set or update the vpc_config field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.comprehend_document_classifier.withVpcConfig](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `vpc_config` field.\n', args=[]),
+  withVpcConfigMixin(resourceLabel, value):: {
+    resource+: {
+      aws_comprehend_document_classifier+: {
+        [resourceLabel]+: {
+          vpc_config+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+}

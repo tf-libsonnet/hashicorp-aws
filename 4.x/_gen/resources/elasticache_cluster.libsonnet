@@ -1,0 +1,464 @@
+local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
+local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
+{
+  '#':: d.pkg(name='elasticache_cluster', url='', help='`elasticache_cluster` represents the `aws_elasticache_cluster` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
+  log_delivery_configuration:: {
+    '#new':: d.fn(help='\n`aws.elasticache_cluster.log_delivery_configuration.new` constructs a new object with attributes and blocks configured for the `log_delivery_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `destination` (`string`): \n  - `destination_type` (`string`): \n  - `log_format` (`string`): \n  - `log_type` (`string`): \n\n**Returns**:\n  - An attribute object that represents the `log_delivery_configuration` sub block.\n', args=[]),
+    new(
+      destination,
+      destination_type,
+      log_format,
+      log_type
+    ):: std.prune(a={
+      destination: destination,
+      destination_type: destination_type,
+      log_format: log_format,
+      log_type: log_type,
+    }),
+  },
+  '#new':: d.fn(help="\n`aws.elasticache_cluster.new` injects a new `aws_elasticache_cluster` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.elasticache_cluster.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.elasticache_cluster` using the reference:\n\n    $._ref.aws_elasticache_cluster.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_elasticache_cluster.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.\n  - `auto_minor_version_upgrade` (`string`):  When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.\n  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.\n  - `az_mode` (`string`):  When `null`, the `az_mode` field will be omitted from the resulting object.\n  - `cluster_id` (`string`): \n  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.\n  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.\n  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.\n  - `ip_discovery` (`string`):  When `null`, the `ip_discovery` field will be omitted from the resulting object.\n  - `maintenance_window` (`string`):  When `null`, the `maintenance_window` field will be omitted from the resulting object.\n  - `network_type` (`string`):  When `null`, the `network_type` field will be omitted from the resulting object.\n  - `node_type` (`string`):  When `null`, the `node_type` field will be omitted from the resulting object.\n  - `notification_topic_arn` (`string`):  When `null`, the `notification_topic_arn` field will be omitted from the resulting object.\n  - `num_cache_nodes` (`number`):  When `null`, the `num_cache_nodes` field will be omitted from the resulting object.\n  - `outpost_mode` (`string`):  When `null`, the `outpost_mode` field will be omitted from the resulting object.\n  - `parameter_group_name` (`string`):  When `null`, the `parameter_group_name` field will be omitted from the resulting object.\n  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.\n  - `preferred_availability_zones` (`list`):  When `null`, the `preferred_availability_zones` field will be omitted from the resulting object.\n  - `preferred_outpost_arn` (`string`):  When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.\n  - `replication_group_id` (`string`):  When `null`, the `replication_group_id` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.\n  - `security_group_names` (`list`):  When `null`, the `security_group_names` field will be omitted from the resulting object.\n  - `snapshot_arns` (`list`):  When `null`, the `snapshot_arns` field will be omitted from the resulting object.\n  - `snapshot_name` (`string`):  When `null`, the `snapshot_name` field will be omitted from the resulting object.\n  - `snapshot_retention_limit` (`number`):  When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.\n  - `snapshot_window` (`string`):  When `null`, the `snapshot_window` field will be omitted from the resulting object.\n  - `subnet_group_name` (`string`):  When `null`, the `subnet_group_name` field will be omitted from the resulting object.\n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `log_delivery_configuration` (`list[obj]`):  When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-elasticacheclusterlogdeliveryconfigurationnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  new(
+    resourceLabel,
+    cluster_id,
+    apply_immediately=null,
+    auto_minor_version_upgrade=null,
+    availability_zone=null,
+    az_mode=null,
+    engine=null,
+    engine_version=null,
+    final_snapshot_identifier=null,
+    ip_discovery=null,
+    log_delivery_configuration=null,
+    maintenance_window=null,
+    network_type=null,
+    node_type=null,
+    notification_topic_arn=null,
+    num_cache_nodes=null,
+    outpost_mode=null,
+    parameter_group_name=null,
+    port=null,
+    preferred_availability_zones=null,
+    preferred_outpost_arn=null,
+    replication_group_id=null,
+    security_group_ids=null,
+    security_group_names=null,
+    snapshot_arns=null,
+    snapshot_name=null,
+    snapshot_retention_limit=null,
+    snapshot_window=null,
+    subnet_group_name=null,
+    tags=null,
+    tags_all=null,
+    _meta={}
+  ):: tf.withResource(
+    type='aws_elasticache_cluster',
+    label=resourceLabel,
+    attrs=self.newAttrs(
+      apply_immediately=apply_immediately,
+      auto_minor_version_upgrade=auto_minor_version_upgrade,
+      availability_zone=availability_zone,
+      az_mode=az_mode,
+      cluster_id=cluster_id,
+      engine=engine,
+      engine_version=engine_version,
+      final_snapshot_identifier=final_snapshot_identifier,
+      ip_discovery=ip_discovery,
+      log_delivery_configuration=log_delivery_configuration,
+      maintenance_window=maintenance_window,
+      network_type=network_type,
+      node_type=node_type,
+      notification_topic_arn=notification_topic_arn,
+      num_cache_nodes=num_cache_nodes,
+      outpost_mode=outpost_mode,
+      parameter_group_name=parameter_group_name,
+      port=port,
+      preferred_availability_zones=preferred_availability_zones,
+      preferred_outpost_arn=preferred_outpost_arn,
+      replication_group_id=replication_group_id,
+      security_group_ids=security_group_ids,
+      security_group_names=security_group_names,
+      snapshot_arns=snapshot_arns,
+      snapshot_name=snapshot_name,
+      snapshot_retention_limit=snapshot_retention_limit,
+      snapshot_window=snapshot_window,
+      subnet_group_name=subnet_group_name,
+      tags=tags,
+      tags_all=tags_all
+    ),
+    _meta=_meta
+  ),
+  '#newAttrs':: d.fn(help='\n`aws.elasticache_cluster.newAttrs` constructs a new object with attributes and blocks configured for the `elasticache_cluster`\nTerraform resource.\n\nUnlike [aws.elasticache_cluster.new](#fn-elasticacheclusternew), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.\n  - `auto_minor_version_upgrade` (`string`):  When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.\n  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.\n  - `az_mode` (`string`):  When `null`, the `az_mode` field will be omitted from the resulting object.\n  - `cluster_id` (`string`): \n  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.\n  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.\n  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.\n  - `ip_discovery` (`string`):  When `null`, the `ip_discovery` field will be omitted from the resulting object.\n  - `maintenance_window` (`string`):  When `null`, the `maintenance_window` field will be omitted from the resulting object.\n  - `network_type` (`string`):  When `null`, the `network_type` field will be omitted from the resulting object.\n  - `node_type` (`string`):  When `null`, the `node_type` field will be omitted from the resulting object.\n  - `notification_topic_arn` (`string`):  When `null`, the `notification_topic_arn` field will be omitted from the resulting object.\n  - `num_cache_nodes` (`number`):  When `null`, the `num_cache_nodes` field will be omitted from the resulting object.\n  - `outpost_mode` (`string`):  When `null`, the `outpost_mode` field will be omitted from the resulting object.\n  - `parameter_group_name` (`string`):  When `null`, the `parameter_group_name` field will be omitted from the resulting object.\n  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.\n  - `preferred_availability_zones` (`list`):  When `null`, the `preferred_availability_zones` field will be omitted from the resulting object.\n  - `preferred_outpost_arn` (`string`):  When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.\n  - `replication_group_id` (`string`):  When `null`, the `replication_group_id` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.\n  - `security_group_names` (`list`):  When `null`, the `security_group_names` field will be omitted from the resulting object.\n  - `snapshot_arns` (`list`):  When `null`, the `snapshot_arns` field will be omitted from the resulting object.\n  - `snapshot_name` (`string`):  When `null`, the `snapshot_name` field will be omitted from the resulting object.\n  - `snapshot_retention_limit` (`number`):  When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.\n  - `snapshot_window` (`string`):  When `null`, the `snapshot_window` field will be omitted from the resulting object.\n  - `subnet_group_name` (`string`):  When `null`, the `subnet_group_name` field will be omitted from the resulting object.\n  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `log_delivery_configuration` (`list[obj]`):  When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-elasticacheclusterlogdeliveryconfigurationnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elasticache_cluster` resource into the root Terraform configuration.\n', args=[]),
+  newAttrs(
+    cluster_id,
+    apply_immediately=null,
+    auto_minor_version_upgrade=null,
+    availability_zone=null,
+    az_mode=null,
+    engine=null,
+    engine_version=null,
+    final_snapshot_identifier=null,
+    ip_discovery=null,
+    log_delivery_configuration=null,
+    maintenance_window=null,
+    network_type=null,
+    node_type=null,
+    notification_topic_arn=null,
+    num_cache_nodes=null,
+    outpost_mode=null,
+    parameter_group_name=null,
+    port=null,
+    preferred_availability_zones=null,
+    preferred_outpost_arn=null,
+    replication_group_id=null,
+    security_group_ids=null,
+    security_group_names=null,
+    snapshot_arns=null,
+    snapshot_name=null,
+    snapshot_retention_limit=null,
+    snapshot_window=null,
+    subnet_group_name=null,
+    tags=null,
+    tags_all=null
+  ):: std.prune(a={
+    apply_immediately: apply_immediately,
+    auto_minor_version_upgrade: auto_minor_version_upgrade,
+    availability_zone: availability_zone,
+    az_mode: az_mode,
+    cluster_id: cluster_id,
+    engine: engine,
+    engine_version: engine_version,
+    final_snapshot_identifier: final_snapshot_identifier,
+    ip_discovery: ip_discovery,
+    log_delivery_configuration: log_delivery_configuration,
+    maintenance_window: maintenance_window,
+    network_type: network_type,
+    node_type: node_type,
+    notification_topic_arn: notification_topic_arn,
+    num_cache_nodes: num_cache_nodes,
+    outpost_mode: outpost_mode,
+    parameter_group_name: parameter_group_name,
+    port: port,
+    preferred_availability_zones: preferred_availability_zones,
+    preferred_outpost_arn: preferred_outpost_arn,
+    replication_group_id: replication_group_id,
+    security_group_ids: security_group_ids,
+    security_group_names: security_group_names,
+    snapshot_arns: snapshot_arns,
+    snapshot_name: snapshot_name,
+    snapshot_retention_limit: snapshot_retention_limit,
+    snapshot_window: snapshot_window,
+    subnet_group_name: subnet_group_name,
+    tags: tags,
+    tags_all: tags_all,
+  }),
+  '#withApplyImmediately':: d.fn(help='`aws.elasticache_cluster.withApplyImmediately` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the apply_immediately field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `apply_immediately` field.\n', args=[]),
+  withApplyImmediately(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          apply_immediately: value,
+        },
+      },
+    },
+  },
+  '#withAutoMinorVersionUpgrade':: d.fn(help='`aws.elasticache_cluster.withAutoMinorVersionUpgrade` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the auto_minor_version_upgrade field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `auto_minor_version_upgrade` field.\n', args=[]),
+  withAutoMinorVersionUpgrade(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          auto_minor_version_upgrade: value,
+        },
+      },
+    },
+  },
+  '#withAvailabilityZone':: d.fn(help='`aws.elasticache_cluster.withAvailabilityZone` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the availability_zone field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `availability_zone` field.\n', args=[]),
+  withAvailabilityZone(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          availability_zone: value,
+        },
+      },
+    },
+  },
+  '#withAzMode':: d.fn(help='`aws.elasticache_cluster.withAzMode` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the az_mode field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `az_mode` field.\n', args=[]),
+  withAzMode(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          az_mode: value,
+        },
+      },
+    },
+  },
+  '#withClusterId':: d.fn(help='`aws.elasticache_cluster.withClusterId` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the cluster_id field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `cluster_id` field.\n', args=[]),
+  withClusterId(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          cluster_id: value,
+        },
+      },
+    },
+  },
+  '#withEngine':: d.fn(help='`aws.elasticache_cluster.withEngine` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the engine field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `engine` field.\n', args=[]),
+  withEngine(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          engine: value,
+        },
+      },
+    },
+  },
+  '#withEngineVersion':: d.fn(help='`aws.elasticache_cluster.withEngineVersion` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the engine_version field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `engine_version` field.\n', args=[]),
+  withEngineVersion(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          engine_version: value,
+        },
+      },
+    },
+  },
+  '#withFinalSnapshotIdentifier':: d.fn(help='`aws.elasticache_cluster.withFinalSnapshotIdentifier` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the final_snapshot_identifier field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `final_snapshot_identifier` field.\n', args=[]),
+  withFinalSnapshotIdentifier(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          final_snapshot_identifier: value,
+        },
+      },
+    },
+  },
+  '#withIpDiscovery':: d.fn(help='`aws.elasticache_cluster.withIpDiscovery` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the ip_discovery field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `ip_discovery` field.\n', args=[]),
+  withIpDiscovery(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          ip_discovery: value,
+        },
+      },
+    },
+  },
+  '#withLogDeliveryConfiguration':: d.fn(help='`aws.elasticache_cluster.withLogDeliveryConfiguration` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the log_delivery_configuration field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `log_delivery_configuration` field.\n', args=[]),
+  withLogDeliveryConfiguration(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          log_delivery_configuration: value,
+        },
+      },
+    },
+  },
+  '#withLogDeliveryConfigurationMixin':: d.fn(help='`aws.elasticache_cluster.withLogDeliveryConfigurationMixin` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the log_delivery_configuration field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.elasticache_cluster.withLogDeliveryConfiguration](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `log_delivery_configuration` field.\n', args=[]),
+  withLogDeliveryConfigurationMixin(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          log_delivery_configuration+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withMaintenanceWindow':: d.fn(help='`aws.elasticache_cluster.withMaintenanceWindow` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the maintenance_window field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `maintenance_window` field.\n', args=[]),
+  withMaintenanceWindow(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          maintenance_window: value,
+        },
+      },
+    },
+  },
+  '#withNetworkType':: d.fn(help='`aws.elasticache_cluster.withNetworkType` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the network_type field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `network_type` field.\n', args=[]),
+  withNetworkType(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          network_type: value,
+        },
+      },
+    },
+  },
+  '#withNodeType':: d.fn(help='`aws.elasticache_cluster.withNodeType` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the node_type field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `node_type` field.\n', args=[]),
+  withNodeType(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          node_type: value,
+        },
+      },
+    },
+  },
+  '#withNotificationTopicArn':: d.fn(help='`aws.elasticache_cluster.withNotificationTopicArn` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the notification_topic_arn field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `notification_topic_arn` field.\n', args=[]),
+  withNotificationTopicArn(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          notification_topic_arn: value,
+        },
+      },
+    },
+  },
+  '#withNumCacheNodes':: d.fn(help='`aws.elasticache_cluster.withNumCacheNodes` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the num_cache_nodes field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `num_cache_nodes` field.\n', args=[]),
+  withNumCacheNodes(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          num_cache_nodes: value,
+        },
+      },
+    },
+  },
+  '#withOutpostMode':: d.fn(help='`aws.elasticache_cluster.withOutpostMode` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the outpost_mode field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `outpost_mode` field.\n', args=[]),
+  withOutpostMode(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          outpost_mode: value,
+        },
+      },
+    },
+  },
+  '#withParameterGroupName':: d.fn(help='`aws.elasticache_cluster.withParameterGroupName` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the parameter_group_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `parameter_group_name` field.\n', args=[]),
+  withParameterGroupName(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          parameter_group_name: value,
+        },
+      },
+    },
+  },
+  '#withPort':: d.fn(help='`aws.elasticache_cluster.withPort` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the port field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `port` field.\n', args=[]),
+  withPort(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          port: value,
+        },
+      },
+    },
+  },
+  '#withPreferredAvailabilityZones':: d.fn(help='`aws.elasticache_cluster.withPreferredAvailabilityZones` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the preferred_availability_zones field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `preferred_availability_zones` field.\n', args=[]),
+  withPreferredAvailabilityZones(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          preferred_availability_zones: value,
+        },
+      },
+    },
+  },
+  '#withPreferredOutpostArn':: d.fn(help='`aws.elasticache_cluster.withPreferredOutpostArn` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the preferred_outpost_arn field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `preferred_outpost_arn` field.\n', args=[]),
+  withPreferredOutpostArn(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          preferred_outpost_arn: value,
+        },
+      },
+    },
+  },
+  '#withReplicationGroupId':: d.fn(help='`aws.elasticache_cluster.withReplicationGroupId` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the replication_group_id field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `replication_group_id` field.\n', args=[]),
+  withReplicationGroupId(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          replication_group_id: value,
+        },
+      },
+    },
+  },
+  '#withSecurityGroupIds':: d.fn(help='`aws.elasticache_cluster.withSecurityGroupIds` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the security_group_ids field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `security_group_ids` field.\n', args=[]),
+  withSecurityGroupIds(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          security_group_ids: value,
+        },
+      },
+    },
+  },
+  '#withSecurityGroupNames':: d.fn(help='`aws.elasticache_cluster.withSecurityGroupNames` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the security_group_names field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `security_group_names` field.\n', args=[]),
+  withSecurityGroupNames(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          security_group_names: value,
+        },
+      },
+    },
+  },
+  '#withSnapshotArns':: d.fn(help='`aws.elasticache_cluster.withSnapshotArns` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the snapshot_arns field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `snapshot_arns` field.\n', args=[]),
+  withSnapshotArns(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          snapshot_arns: value,
+        },
+      },
+    },
+  },
+  '#withSnapshotName':: d.fn(help='`aws.elasticache_cluster.withSnapshotName` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the snapshot_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `snapshot_name` field.\n', args=[]),
+  withSnapshotName(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          snapshot_name: value,
+        },
+      },
+    },
+  },
+  '#withSnapshotRetentionLimit':: d.fn(help='`aws.elasticache_cluster.withSnapshotRetentionLimit` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the snapshot_retention_limit field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `snapshot_retention_limit` field.\n', args=[]),
+  withSnapshotRetentionLimit(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          snapshot_retention_limit: value,
+        },
+      },
+    },
+  },
+  '#withSnapshotWindow':: d.fn(help='`aws.elasticache_cluster.withSnapshotWindow` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the snapshot_window field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `snapshot_window` field.\n', args=[]),
+  withSnapshotWindow(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          snapshot_window: value,
+        },
+      },
+    },
+  },
+  '#withSubnetGroupName':: d.fn(help='`aws.elasticache_cluster.withSubnetGroupName` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the subnet_group_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `subnet_group_name` field.\n', args=[]),
+  withSubnetGroupName(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          subnet_group_name: value,
+        },
+      },
+    },
+  },
+  '#withTags':: d.fn(help='`aws.elasticache_cluster.withTags` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the tags field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `tags` field.\n', args=[]),
+  withTags(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          tags: value,
+        },
+      },
+    },
+  },
+  '#withTagsAll':: d.fn(help='`aws.elasticache_cluster.withTagsAll` constructs a mixin object that can be merged into the `elasticache_cluster`\nTerraform resource block to set or update the tags_all field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `tags_all` field.\n', args=[]),
+  withTagsAll(resourceLabel, value):: {
+    resource+: {
+      aws_elasticache_cluster+: {
+        [resourceLabel]+: {
+          tags_all: value,
+        },
+      },
+    },
+  },
+}

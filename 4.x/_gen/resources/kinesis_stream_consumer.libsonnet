@@ -1,0 +1,45 @@
+local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
+local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
+{
+  '#':: d.pkg(name='kinesis_stream_consumer', url='', help='`kinesis_stream_consumer` represents the `aws_kinesis_stream_consumer` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
+  '#new':: d.fn(help="\n`aws.kinesis_stream_consumer.new` injects a new `aws_kinesis_stream_consumer` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.kinesis_stream_consumer.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.kinesis_stream_consumer` using the reference:\n\n    $._ref.aws_kinesis_stream_consumer.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_kinesis_stream_consumer.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `name` (`string`): \n  - `stream_arn` (`string`): \n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  new(
+    resourceLabel,
+    name,
+    stream_arn,
+    _meta={}
+  ):: tf.withResource(
+    type='aws_kinesis_stream_consumer',
+    label=resourceLabel,
+    attrs=self.newAttrs(name=name, stream_arn=stream_arn),
+    _meta=_meta
+  ),
+  '#newAttrs':: d.fn(help='\n`aws.kinesis_stream_consumer.newAttrs` constructs a new object with attributes and blocks configured for the `kinesis_stream_consumer`\nTerraform resource.\n\nUnlike [aws.kinesis_stream_consumer.new](#fn-kinesisstreamconsumernew), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `name` (`string`): \n  - `stream_arn` (`string`): \n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kinesis_stream_consumer` resource into the root Terraform configuration.\n', args=[]),
+  newAttrs(
+    name,
+    stream_arn
+  ):: std.prune(a={
+    name: name,
+    stream_arn: stream_arn,
+  }),
+  '#withName':: d.fn(help='`aws.kinesis_stream_consumer.withName` constructs a mixin object that can be merged into the `kinesis_stream_consumer`\nTerraform resource block to set or update the name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `name` field.\n', args=[]),
+  withName(resourceLabel, value):: {
+    resource+: {
+      aws_kinesis_stream_consumer+: {
+        [resourceLabel]+: {
+          name: value,
+        },
+      },
+    },
+  },
+  '#withStreamArn':: d.fn(help='`aws.kinesis_stream_consumer.withStreamArn` constructs a mixin object that can be merged into the `kinesis_stream_consumer`\nTerraform resource block to set or update the stream_arn field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`TODO`): The value to set for the `stream_arn` field.\n', args=[]),
+  withStreamArn(resourceLabel, value):: {
+    resource+: {
+      aws_kinesis_stream_consumer+: {
+        [resourceLabel]+: {
+          stream_arn: value,
+        },
+      },
+    },
+  },
+}

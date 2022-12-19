@@ -1,0 +1,338 @@
+---
+permalink: /datapipeline_pipeline_definition/
+---
+
+# datapipeline_pipeline_definition
+
+`datapipeline_pipeline_definition` represents the `aws_datapipeline_pipeline_definition` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withParameterObject()`](#fn-withparameterobject)
+* [`fn withParameterObjectMixin()`](#fn-withparameterobjectmixin)
+* [`fn withParameterValue()`](#fn-withparametervalue)
+* [`fn withParameterValueMixin()`](#fn-withparametervaluemixin)
+* [`fn withPipelineId()`](#fn-withpipelineid)
+* [`fn withPipelineObject()`](#fn-withpipelineobject)
+* [`fn withPipelineObjectMixin()`](#fn-withpipelineobjectmixin)
+* [`obj parameter_object`](#obj-parameter_object)
+  * [`fn new()`](#fn-parameter_objectnew)
+  * [`obj parameter_object.attribute`](#obj-parameter_objectattribute)
+    * [`fn new()`](#fn-parameter_objectattributenew)
+* [`obj parameter_value`](#obj-parameter_value)
+  * [`fn new()`](#fn-parameter_valuenew)
+* [`obj pipeline_object`](#obj-pipeline_object)
+  * [`fn new()`](#fn-pipeline_objectnew)
+  * [`obj pipeline_object.field`](#obj-pipeline_objectfield)
+    * [`fn new()`](#fn-pipeline_objectfieldnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.datapipeline_pipeline_definition.new` injects a new `aws_datapipeline_pipeline_definition` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.datapipeline_pipeline_definition.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.datapipeline_pipeline_definition` using the reference:
+
+    $._ref.aws_datapipeline_pipeline_definition.some_id.get('id')
+
+This is the same as directly entering `"${ aws_datapipeline_pipeline_definition.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `pipeline_id` (`string`): 
+  - `parameter_object` (`list[obj]`):  When `null`, the `parameter_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.new](#fn-datapipelinepipelinedefinitionparameterobjectnew) constructor.
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_value.new](#fn-datapipelinepipelinedefinitionparametervaluenew) constructor.
+  - `pipeline_object` (`list[obj]`):  When `null`, the `pipeline_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.new](#fn-datapipelinepipelinedefinitionpipelineobjectnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.datapipeline_pipeline_definition.newAttrs` constructs a new object with attributes and blocks configured for the `datapipeline_pipeline_definition`
+Terraform resource.
+
+Unlike [aws.datapipeline_pipeline_definition.new](#fn-datapipelinepipelinedefinitionnew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `pipeline_id` (`string`): 
+  - `parameter_object` (`list[obj]`):  When `null`, the `parameter_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.new](#fn-datapipelinepipelinedefinitionparameterobjectnew) constructor.
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_value.new](#fn-datapipelinepipelinedefinitionparametervaluenew) constructor.
+  - `pipeline_object` (`list[obj]`):  When `null`, the `pipeline_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.new](#fn-datapipelinepipelinedefinitionpipelineobjectnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datapipeline_pipeline_definition` resource into the root Terraform configuration.
+
+
+### fn withParameterObject
+
+```ts
+withParameterObject()
+```
+
+`aws.datapipeline_pipeline_definition.withParameterObject` constructs a mixin object that can be merged into the `datapipeline_pipeline_definition`
+Terraform resource block to set or update the parameter_object field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `parameter_object` field.
+
+
+### fn withParameterObjectMixin
+
+```ts
+withParameterObjectMixin()
+```
+
+`aws.datapipeline_pipeline_definition.withParameterObjectMixin` constructs a mixin object that can be merged into the `datapipeline_pipeline_definition`
+Terraform resource block to set or update the parameter_object field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.datapipeline_pipeline_definition.withParameterObject](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `parameter_object` field.
+
+
+### fn withParameterValue
+
+```ts
+withParameterValue()
+```
+
+`aws.datapipeline_pipeline_definition.withParameterValue` constructs a mixin object that can be merged into the `datapipeline_pipeline_definition`
+Terraform resource block to set or update the parameter_value field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `parameter_value` field.
+
+
+### fn withParameterValueMixin
+
+```ts
+withParameterValueMixin()
+```
+
+`aws.datapipeline_pipeline_definition.withParameterValueMixin` constructs a mixin object that can be merged into the `datapipeline_pipeline_definition`
+Terraform resource block to set or update the parameter_value field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.datapipeline_pipeline_definition.withParameterValue](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `parameter_value` field.
+
+
+### fn withPipelineId
+
+```ts
+withPipelineId()
+```
+
+`aws.datapipeline_pipeline_definition.withPipelineId` constructs a mixin object that can be merged into the `datapipeline_pipeline_definition`
+Terraform resource block to set or update the pipeline_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `pipeline_id` field.
+
+
+### fn withPipelineObject
+
+```ts
+withPipelineObject()
+```
+
+`aws.datapipeline_pipeline_definition.withPipelineObject` constructs a mixin object that can be merged into the `datapipeline_pipeline_definition`
+Terraform resource block to set or update the pipeline_object field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `pipeline_object` field.
+
+
+### fn withPipelineObjectMixin
+
+```ts
+withPipelineObjectMixin()
+```
+
+`aws.datapipeline_pipeline_definition.withPipelineObjectMixin` constructs a mixin object that can be merged into the `datapipeline_pipeline_definition`
+Terraform resource block to set or update the pipeline_object field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.datapipeline_pipeline_definition.withPipelineObject](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `pipeline_object` field.
+
+
+## obj parameter_object
+
+
+
+### fn parameter_object.new
+
+```ts
+new()
+```
+
+
+`aws.datapipeline_pipeline_definition.parameter_object.new` constructs a new object with attributes and blocks configured for the `parameter_object`
+Terraform sub block.
+
+
+
+**Args**:
+  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.attribute.new](#fn-parameterobjectattributenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `parameter_object` sub block.
+
+
+## obj parameter_object.attribute
+
+
+
+### fn parameter_object.attribute.new
+
+```ts
+new()
+```
+
+
+`aws.datapipeline_pipeline_definition.parameter_object.attribute.new` constructs a new object with attributes and blocks configured for the `attribute`
+Terraform sub block.
+
+
+
+**Args**:
+  - `key` (`string`): 
+  - `string_value` (`string`): 
+
+**Returns**:
+  - An attribute object that represents the `attribute` sub block.
+
+
+## obj parameter_value
+
+
+
+### fn parameter_value.new
+
+```ts
+new()
+```
+
+
+`aws.datapipeline_pipeline_definition.parameter_value.new` constructs a new object with attributes and blocks configured for the `parameter_value`
+Terraform sub block.
+
+
+
+**Args**:
+  - `string_value` (`string`): 
+
+**Returns**:
+  - An attribute object that represents the `parameter_value` sub block.
+
+
+## obj pipeline_object
+
+
+
+### fn pipeline_object.new
+
+```ts
+new()
+```
+
+
+`aws.datapipeline_pipeline_definition.pipeline_object.new` constructs a new object with attributes and blocks configured for the `pipeline_object`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): 
+  - `field` (`list[obj]`):  When `null`, the `field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.field.new](#fn-pipelineobjectfieldnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `pipeline_object` sub block.
+
+
+## obj pipeline_object.field
+
+
+
+### fn pipeline_object.field.new
+
+```ts
+new()
+```
+
+
+`aws.datapipeline_pipeline_definition.pipeline_object.field.new` constructs a new object with attributes and blocks configured for the `field`
+Terraform sub block.
+
+
+
+**Args**:
+  - `key` (`string`): 
+  - `ref_value` (`string`):  When `null`, the `ref_value` field will be omitted from the resulting object.
+  - `string_value` (`string`):  When `null`, the `string_value` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `field` sub block.

@@ -1,0 +1,499 @@
+---
+permalink: /directory_service_directory/
+---
+
+# directory_service_directory
+
+`directory_service_directory` represents the `aws_directory_service_directory` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAlias()`](#fn-withalias)
+* [`fn withConnectSettings()`](#fn-withconnectsettings)
+* [`fn withConnectSettingsMixin()`](#fn-withconnectsettingsmixin)
+* [`fn withDescription()`](#fn-withdescription)
+* [`fn withDesiredNumberOfDomainControllers()`](#fn-withdesirednumberofdomaincontrollers)
+* [`fn withEdition()`](#fn-withedition)
+* [`fn withEnableSso()`](#fn-withenablesso)
+* [`fn withName()`](#fn-withname)
+* [`fn withPassword()`](#fn-withpassword)
+* [`fn withShortName()`](#fn-withshortname)
+* [`fn withSize()`](#fn-withsize)
+* [`fn withTags()`](#fn-withtags)
+* [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`fn withType()`](#fn-withtype)
+* [`fn withVpcSettings()`](#fn-withvpcsettings)
+* [`fn withVpcSettingsMixin()`](#fn-withvpcsettingsmixin)
+* [`obj connect_settings`](#obj-connect_settings)
+  * [`fn new()`](#fn-connect_settingsnew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
+* [`obj vpc_settings`](#obj-vpc_settings)
+  * [`fn new()`](#fn-vpc_settingsnew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.directory_service_directory.new` injects a new `aws_directory_service_directory` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.directory_service_directory.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.directory_service_directory` using the reference:
+
+    $._ref.aws_directory_service_directory.some_id.get('id')
+
+This is the same as directly entering `"${ aws_directory_service_directory.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `alias` (`string`):  When `null`, the `alias` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `desired_number_of_domain_controllers` (`number`):  When `null`, the `desired_number_of_domain_controllers` field will be omitted from the resulting object.
+  - `edition` (`string`):  When `null`, the `edition` field will be omitted from the resulting object.
+  - `enable_sso` (`bool`):  When `null`, the `enable_sso` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `password` (`string`): 
+  - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
+  - `size` (`string`):  When `null`, the `size` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-directoryservicedirectoryconnectsettingsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-directoryservicedirectorytimeoutsnew) constructor.
+  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-directoryservicedirectoryvpcsettingsnew) constructor.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.directory_service_directory.newAttrs` constructs a new object with attributes and blocks configured for the `directory_service_directory`
+Terraform resource.
+
+Unlike [aws.directory_service_directory.new](#fn-directoryservicedirectorynew), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `alias` (`string`):  When `null`, the `alias` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `desired_number_of_domain_controllers` (`number`):  When `null`, the `desired_number_of_domain_controllers` field will be omitted from the resulting object.
+  - `edition` (`string`):  When `null`, the `edition` field will be omitted from the resulting object.
+  - `enable_sso` (`bool`):  When `null`, the `enable_sso` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `password` (`string`): 
+  - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
+  - `size` (`string`):  When `null`, the `size` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-directoryservicedirectoryconnectsettingsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-directoryservicedirectorytimeoutsnew) constructor.
+  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-directoryservicedirectoryvpcsettingsnew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_service_directory` resource into the root Terraform configuration.
+
+
+### fn withAlias
+
+```ts
+withAlias()
+```
+
+`aws.directory_service_directory.withAlias` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the alias field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `alias` field.
+
+
+### fn withConnectSettings
+
+```ts
+withConnectSettings()
+```
+
+`aws.directory_service_directory.withConnectSettings` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the connect_settings field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `connect_settings` field.
+
+
+### fn withConnectSettingsMixin
+
+```ts
+withConnectSettingsMixin()
+```
+
+`aws.directory_service_directory.withConnectSettingsMixin` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the connect_settings field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.directory_service_directory.withConnectSettings](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `connect_settings` field.
+
+
+### fn withDescription
+
+```ts
+withDescription()
+```
+
+`aws.directory_service_directory.withDescription` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the description field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `description` field.
+
+
+### fn withDesiredNumberOfDomainControllers
+
+```ts
+withDesiredNumberOfDomainControllers()
+```
+
+`aws.directory_service_directory.withDesiredNumberOfDomainControllers` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the desired_number_of_domain_controllers field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `desired_number_of_domain_controllers` field.
+
+
+### fn withEdition
+
+```ts
+withEdition()
+```
+
+`aws.directory_service_directory.withEdition` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the edition field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `edition` field.
+
+
+### fn withEnableSso
+
+```ts
+withEnableSso()
+```
+
+`aws.directory_service_directory.withEnableSso` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the enable_sso field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `enable_sso` field.
+
+
+### fn withName
+
+```ts
+withName()
+```
+
+`aws.directory_service_directory.withName` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `name` field.
+
+
+### fn withPassword
+
+```ts
+withPassword()
+```
+
+`aws.directory_service_directory.withPassword` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the password field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `password` field.
+
+
+### fn withShortName
+
+```ts
+withShortName()
+```
+
+`aws.directory_service_directory.withShortName` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the short_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `short_name` field.
+
+
+### fn withSize
+
+```ts
+withSize()
+```
+
+`aws.directory_service_directory.withSize` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the size field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `size` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.directory_service_directory.withTags` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the tags field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `tags` field.
+
+
+### fn withTagsAll
+
+```ts
+withTagsAll()
+```
+
+`aws.directory_service_directory.withTagsAll` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the tags_all field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `tags_all` field.
+
+
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.directory_service_directory.withTimeouts` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the timeouts field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.directory_service_directory.withTimeoutsMixin` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.directory_service_directory.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `timeouts` field.
+
+
+### fn withType
+
+```ts
+withType()
+```
+
+`aws.directory_service_directory.withType` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `type` field.
+
+
+### fn withVpcSettings
+
+```ts
+withVpcSettings()
+```
+
+`aws.directory_service_directory.withVpcSettings` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the vpc_settings field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `vpc_settings` field.
+
+
+### fn withVpcSettingsMixin
+
+```ts
+withVpcSettingsMixin()
+```
+
+`aws.directory_service_directory.withVpcSettingsMixin` constructs a mixin object that can be merged into the `directory_service_directory`
+Terraform resource block to set or update the vpc_settings field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.directory_service_directory.withVpcSettings](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`TODO`): The value to set for the `vpc_settings` field.
+
+
+## obj connect_settings
+
+
+
+### fn connect_settings.new
+
+```ts
+new()
+```
+
+
+`aws.directory_service_directory.connect_settings.new` constructs a new object with attributes and blocks configured for the `connect_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `customer_dns_ips` (`list`): 
+  - `customer_username` (`string`): 
+  - `subnet_ids` (`list`): 
+  - `vpc_id` (`string`): 
+
+**Returns**:
+  - An attribute object that represents the `connect_settings` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.directory_service_directory.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.
+
+
+## obj vpc_settings
+
+
+
+### fn vpc_settings.new
+
+```ts
+new()
+```
+
+
+`aws.directory_service_directory.vpc_settings.new` constructs a new object with attributes and blocks configured for the `vpc_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `subnet_ids` (`list`): 
+  - `vpc_id` (`string`): 
+
+**Returns**:
+  - An attribute object that represents the `vpc_settings` sub block.
