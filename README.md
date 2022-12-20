@@ -34,14 +34,13 @@ jb install github.com/tf-libsonnet/hashicorp-aws@main
 # Or if you want to install a specific release
 #   jb install github.com/tf-libsonnet/hashicorp-aws@v0.0.1
 # Or if you want to install bindings for a specific provider major version series
-#   jb install github.com/tf-libsonnet/hashicorp-aws/1.x@main
+#   jb install github.com/tf-libsonnet/hashicorp-aws/4.x@main
 ```
 
 You can then import the package in your Jsonnet code:
 
 ```jsonnet
 // main.tf.json.jsonnet
-local tf = import 'github.com/tf-libsonnet/core/main.libsonnet';
 local aws = import 'github.com/tf-libsonnet/hashicorp-aws/main.libsonnet';
 
 local o =
