@@ -54,10 +54,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `fields` (`list`): Set the `fields` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `sampling_rate` (`number`): Set the `sampling_rate` field on the resulting resource block.
-  - `endpoint` (`list[obj]`): Set the `endpoint` field on the resulting resource block. When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.new](#fn-endpointnew) constructor.
+  - `fields` (`list`): 
+  - `name` (`string`): 
+  - `sampling_rate` (`number`): 
+  - `endpoint` (`list[obj]`):  When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.new](#fn-endpointnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,10 +81,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `fields` (`list`): Set the `fields` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `sampling_rate` (`number`): Set the `sampling_rate` field on the resulting object.
-  - `endpoint` (`list[obj]`): Set the `endpoint` field on the resulting object. When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.new](#fn-endpointnew) constructor.
+  - `fields` (`list`): 
+  - `name` (`string`): 
+  - `sampling_rate` (`number`): 
+  - `endpoint` (`list[obj]`):  When `null`, the `endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.new](#fn-endpointnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_realtime_log_config` resource into the root Terraform configuration.
@@ -192,8 +192,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `stream_type` (`string`): Set the `stream_type` field on the resulting object.
-  - `kinesis_stream_config` (`list[obj]`): Set the `kinesis_stream_config` field on the resulting object. When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.kinesis_stream_config.new](#fn-endpointkinesis_stream_confignew) constructor.
+  - `stream_type` (`string`): 
+  - `kinesis_stream_config` (`list[obj]`):  When `null`, the `kinesis_stream_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_realtime_log_config.endpoint.kinesis_stream_config.new](#fn-endpointkinesis_stream_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `endpoint` sub block.
@@ -216,8 +216,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `stream_arn` (`string`): Set the `stream_arn` field on the resulting object.
+  - `role_arn` (`string`): 
+  - `stream_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `kinesis_stream_config` sub block.

@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `certificate` (`string`): Set the `certificate` field on the resulting resource block.
-  - `display_name` (`string`): Set the `display_name` field on the resulting resource block. When `null`, the `display_name` field will be omitted from the resulting object.
-  - `fleet_arn` (`string`): Set the `fleet_arn` field on the resulting resource block.
+  - `certificate` (`string`): 
+  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
+  - `fleet_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `certificate` (`string`): Set the `certificate` field on the resulting object.
-  - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
-  - `fleet_arn` (`string`): Set the `fleet_arn` field on the resulting object.
+  - `certificate` (`string`): 
+  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
+  - `fleet_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `worklink_website_certificate_authority_association` resource into the root Terraform configuration.

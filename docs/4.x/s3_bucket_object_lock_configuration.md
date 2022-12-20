@@ -55,11 +55,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `object_lock_enabled` (`string`): Set the `object_lock_enabled` field on the resulting resource block. When `null`, the `object_lock_enabled` field will be omitted from the resulting object.
-  - `token` (`string`): Set the `token` field on the resulting resource block. When `null`, the `token` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting resource block. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `object_lock_enabled` (`string`):  When `null`, the `object_lock_enabled` field will be omitted from the resulting object.
+  - `token` (`string`):  When `null`, the `token` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,11 +83,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `object_lock_enabled` (`string`): Set the `object_lock_enabled` field on the resulting object. When `null`, the `object_lock_enabled` field will be omitted from the resulting object.
-  - `token` (`string`): Set the `token` field on the resulting object. When `null`, the `token` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `object_lock_enabled` (`string`):  When `null`, the `object_lock_enabled` field will be omitted from the resulting object.
+  - `token` (`string`):  When `null`, the `token` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_object_lock_configuration` resource into the root Terraform configuration.
@@ -211,7 +211,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_retention` (`list[obj]`): Set the `default_retention` field on the resulting object. When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.default_retention.new](#fn-ruledefault_retentionnew) constructor.
+  - `default_retention` (`list[obj]`):  When `null`, the `default_retention` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_object_lock_configuration.rule.default_retention.new](#fn-ruledefault_retentionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -234,9 +234,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `days` (`number`): Set the `days` field on the resulting object. When `null`, the `days` field will be omitted from the resulting object.
-  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
-  - `years` (`number`): Set the `years` field on the resulting object. When `null`, the `years` field will be omitted from the resulting object.
+  - `days` (`number`):  When `null`, the `days` field will be omitted from the resulting object.
+  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
+  - `years` (`number`):  When `null`, the `years` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_retention` sub block.

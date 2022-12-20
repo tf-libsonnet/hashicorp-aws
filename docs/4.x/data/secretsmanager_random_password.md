@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `exclude_characters` (`string`): Set the `exclude_characters` field on the resulting data source block. When `null`, the `exclude_characters` field will be omitted from the resulting object.
-  - `exclude_lowercase` (`bool`): Set the `exclude_lowercase` field on the resulting data source block. When `null`, the `exclude_lowercase` field will be omitted from the resulting object.
-  - `exclude_numbers` (`bool`): Set the `exclude_numbers` field on the resulting data source block. When `null`, the `exclude_numbers` field will be omitted from the resulting object.
-  - `exclude_punctuation` (`bool`): Set the `exclude_punctuation` field on the resulting data source block. When `null`, the `exclude_punctuation` field will be omitted from the resulting object.
-  - `exclude_uppercase` (`bool`): Set the `exclude_uppercase` field on the resulting data source block. When `null`, the `exclude_uppercase` field will be omitted from the resulting object.
-  - `include_space` (`bool`): Set the `include_space` field on the resulting data source block. When `null`, the `include_space` field will be omitted from the resulting object.
-  - `password_length` (`number`): Set the `password_length` field on the resulting data source block. When `null`, the `password_length` field will be omitted from the resulting object.
-  - `random_password` (`string`): Set the `random_password` field on the resulting data source block. When `null`, the `random_password` field will be omitted from the resulting object.
-  - `require_each_included_type` (`bool`): Set the `require_each_included_type` field on the resulting data source block. When `null`, the `require_each_included_type` field will be omitted from the resulting object.
+  - `exclude_characters` (`string`):  When `null`, the `exclude_characters` field will be omitted from the resulting object.
+  - `exclude_lowercase` (`bool`):  When `null`, the `exclude_lowercase` field will be omitted from the resulting object.
+  - `exclude_numbers` (`bool`):  When `null`, the `exclude_numbers` field will be omitted from the resulting object.
+  - `exclude_punctuation` (`bool`):  When `null`, the `exclude_punctuation` field will be omitted from the resulting object.
+  - `exclude_uppercase` (`bool`):  When `null`, the `exclude_uppercase` field will be omitted from the resulting object.
+  - `include_space` (`bool`):  When `null`, the `include_space` field will be omitted from the resulting object.
+  - `password_length` (`number`):  When `null`, the `password_length` field will be omitted from the resulting object.
+  - `random_password` (`string`):  When `null`, the `random_password` field will be omitted from the resulting object.
+  - `require_each_included_type` (`bool`):  When `null`, the `require_each_included_type` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `exclude_characters` (`string`): Set the `exclude_characters` field on the resulting object. When `null`, the `exclude_characters` field will be omitted from the resulting object.
-  - `exclude_lowercase` (`bool`): Set the `exclude_lowercase` field on the resulting object. When `null`, the `exclude_lowercase` field will be omitted from the resulting object.
-  - `exclude_numbers` (`bool`): Set the `exclude_numbers` field on the resulting object. When `null`, the `exclude_numbers` field will be omitted from the resulting object.
-  - `exclude_punctuation` (`bool`): Set the `exclude_punctuation` field on the resulting object. When `null`, the `exclude_punctuation` field will be omitted from the resulting object.
-  - `exclude_uppercase` (`bool`): Set the `exclude_uppercase` field on the resulting object. When `null`, the `exclude_uppercase` field will be omitted from the resulting object.
-  - `include_space` (`bool`): Set the `include_space` field on the resulting object. When `null`, the `include_space` field will be omitted from the resulting object.
-  - `password_length` (`number`): Set the `password_length` field on the resulting object. When `null`, the `password_length` field will be omitted from the resulting object.
-  - `random_password` (`string`): Set the `random_password` field on the resulting object. When `null`, the `random_password` field will be omitted from the resulting object.
-  - `require_each_included_type` (`bool`): Set the `require_each_included_type` field on the resulting object. When `null`, the `require_each_included_type` field will be omitted from the resulting object.
+  - `exclude_characters` (`string`):  When `null`, the `exclude_characters` field will be omitted from the resulting object.
+  - `exclude_lowercase` (`bool`):  When `null`, the `exclude_lowercase` field will be omitted from the resulting object.
+  - `exclude_numbers` (`bool`):  When `null`, the `exclude_numbers` field will be omitted from the resulting object.
+  - `exclude_punctuation` (`bool`):  When `null`, the `exclude_punctuation` field will be omitted from the resulting object.
+  - `exclude_uppercase` (`bool`):  When `null`, the `exclude_uppercase` field will be omitted from the resulting object.
+  - `include_space` (`bool`):  When `null`, the `include_space` field will be omitted from the resulting object.
+  - `password_length` (`number`):  When `null`, the `password_length` field will be omitted from the resulting object.
+  - `random_password` (`string`):  When `null`, the `random_password` field will be omitted from the resulting object.
+  - `require_each_included_type` (`bool`):  When `null`, the `require_each_included_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `secretsmanager_random_password` data source into the root Terraform configuration.

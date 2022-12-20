@@ -72,25 +72,25 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `certificate` (`string`): Set the `certificate` field on the resulting resource block. When `null`, the `certificate` field will be omitted from the resulting object.
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting resource block. When `null`, the `directory_id` field will be omitted from the resulting object.
-  - `domain` (`string`): Set the `domain` field on the resulting resource block. When `null`, the `domain` field will be omitted from the resulting object.
-  - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting resource block. When `null`, the `endpoint_type` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting resource block. When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `function_` (`string`): Set the `function_` field on the resulting resource block. When `null`, the `function_` field will be omitted from the resulting object.
-  - `host_key` (`string`): Set the `host_key` field on the resulting resource block. When `null`, the `host_key` field will be omitted from the resulting object.
-  - `identity_provider_type` (`string`): Set the `identity_provider_type` field on the resulting resource block. When `null`, the `identity_provider_type` field will be omitted from the resulting object.
-  - `invocation_role` (`string`): Set the `invocation_role` field on the resulting resource block. When `null`, the `invocation_role` field will be omitted from the resulting object.
-  - `logging_role` (`string`): Set the `logging_role` field on the resulting resource block. When `null`, the `logging_role` field will be omitted from the resulting object.
-  - `post_authentication_login_banner` (`string`): Set the `post_authentication_login_banner` field on the resulting resource block. When `null`, the `post_authentication_login_banner` field will be omitted from the resulting object.
-  - `pre_authentication_login_banner` (`string`): Set the `pre_authentication_login_banner` field on the resulting resource block. When `null`, the `pre_authentication_login_banner` field will be omitted from the resulting object.
-  - `protocols` (`list`): Set the `protocols` field on the resulting resource block. When `null`, the `protocols` field will be omitted from the resulting object.
-  - `security_policy_name` (`string`): Set the `security_policy_name` field on the resulting resource block. When `null`, the `security_policy_name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `url` (`string`): Set the `url` field on the resulting resource block. When `null`, the `url` field will be omitted from the resulting object.
-  - `endpoint_details` (`list[obj]`): Set the `endpoint_details` field on the resulting resource block. When `null`, the `endpoint_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.endpoint_details.new](#fn-endpoint_detailsnew) constructor.
-  - `workflow_details` (`list[obj]`): Set the `workflow_details` field on the resulting resource block. When `null`, the `workflow_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.new](#fn-workflow_detailsnew) constructor.
+  - `certificate` (`string`):  When `null`, the `certificate` field will be omitted from the resulting object.
+  - `directory_id` (`string`):  When `null`, the `directory_id` field will be omitted from the resulting object.
+  - `domain` (`string`):  When `null`, the `domain` field will be omitted from the resulting object.
+  - `endpoint_type` (`string`):  When `null`, the `endpoint_type` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `function_` (`string`):  When `null`, the `function_` field will be omitted from the resulting object.
+  - `host_key` (`string`):  When `null`, the `host_key` field will be omitted from the resulting object.
+  - `identity_provider_type` (`string`):  When `null`, the `identity_provider_type` field will be omitted from the resulting object.
+  - `invocation_role` (`string`):  When `null`, the `invocation_role` field will be omitted from the resulting object.
+  - `logging_role` (`string`):  When `null`, the `logging_role` field will be omitted from the resulting object.
+  - `post_authentication_login_banner` (`string`):  When `null`, the `post_authentication_login_banner` field will be omitted from the resulting object.
+  - `pre_authentication_login_banner` (`string`):  When `null`, the `pre_authentication_login_banner` field will be omitted from the resulting object.
+  - `protocols` (`list`):  When `null`, the `protocols` field will be omitted from the resulting object.
+  - `security_policy_name` (`string`):  When `null`, the `security_policy_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `url` (`string`):  When `null`, the `url` field will be omitted from the resulting object.
+  - `endpoint_details` (`list[obj]`):  When `null`, the `endpoint_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.endpoint_details.new](#fn-endpoint_detailsnew) constructor.
+  - `workflow_details` (`list[obj]`):  When `null`, the `workflow_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.new](#fn-workflow_detailsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -114,25 +114,25 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `certificate` (`string`): Set the `certificate` field on the resulting object. When `null`, the `certificate` field will be omitted from the resulting object.
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting object. When `null`, the `directory_id` field will be omitted from the resulting object.
-  - `domain` (`string`): Set the `domain` field on the resulting object. When `null`, the `domain` field will be omitted from the resulting object.
-  - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting object. When `null`, the `endpoint_type` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting object. When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `function_` (`string`): Set the `function_` field on the resulting object. When `null`, the `function_` field will be omitted from the resulting object.
-  - `host_key` (`string`): Set the `host_key` field on the resulting object. When `null`, the `host_key` field will be omitted from the resulting object.
-  - `identity_provider_type` (`string`): Set the `identity_provider_type` field on the resulting object. When `null`, the `identity_provider_type` field will be omitted from the resulting object.
-  - `invocation_role` (`string`): Set the `invocation_role` field on the resulting object. When `null`, the `invocation_role` field will be omitted from the resulting object.
-  - `logging_role` (`string`): Set the `logging_role` field on the resulting object. When `null`, the `logging_role` field will be omitted from the resulting object.
-  - `post_authentication_login_banner` (`string`): Set the `post_authentication_login_banner` field on the resulting object. When `null`, the `post_authentication_login_banner` field will be omitted from the resulting object.
-  - `pre_authentication_login_banner` (`string`): Set the `pre_authentication_login_banner` field on the resulting object. When `null`, the `pre_authentication_login_banner` field will be omitted from the resulting object.
-  - `protocols` (`list`): Set the `protocols` field on the resulting object. When `null`, the `protocols` field will be omitted from the resulting object.
-  - `security_policy_name` (`string`): Set the `security_policy_name` field on the resulting object. When `null`, the `security_policy_name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `url` (`string`): Set the `url` field on the resulting object. When `null`, the `url` field will be omitted from the resulting object.
-  - `endpoint_details` (`list[obj]`): Set the `endpoint_details` field on the resulting object. When `null`, the `endpoint_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.endpoint_details.new](#fn-endpoint_detailsnew) constructor.
-  - `workflow_details` (`list[obj]`): Set the `workflow_details` field on the resulting object. When `null`, the `workflow_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.new](#fn-workflow_detailsnew) constructor.
+  - `certificate` (`string`):  When `null`, the `certificate` field will be omitted from the resulting object.
+  - `directory_id` (`string`):  When `null`, the `directory_id` field will be omitted from the resulting object.
+  - `domain` (`string`):  When `null`, the `domain` field will be omitted from the resulting object.
+  - `endpoint_type` (`string`):  When `null`, the `endpoint_type` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `function_` (`string`):  When `null`, the `function_` field will be omitted from the resulting object.
+  - `host_key` (`string`):  When `null`, the `host_key` field will be omitted from the resulting object.
+  - `identity_provider_type` (`string`):  When `null`, the `identity_provider_type` field will be omitted from the resulting object.
+  - `invocation_role` (`string`):  When `null`, the `invocation_role` field will be omitted from the resulting object.
+  - `logging_role` (`string`):  When `null`, the `logging_role` field will be omitted from the resulting object.
+  - `post_authentication_login_banner` (`string`):  When `null`, the `post_authentication_login_banner` field will be omitted from the resulting object.
+  - `pre_authentication_login_banner` (`string`):  When `null`, the `pre_authentication_login_banner` field will be omitted from the resulting object.
+  - `protocols` (`list`):  When `null`, the `protocols` field will be omitted from the resulting object.
+  - `security_policy_name` (`string`):  When `null`, the `security_policy_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `url` (`string`):  When `null`, the `url` field will be omitted from the resulting object.
+  - `endpoint_details` (`list[obj]`):  When `null`, the `endpoint_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.endpoint_details.new](#fn-endpoint_detailsnew) constructor.
+  - `workflow_details` (`list[obj]`):  When `null`, the `workflow_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.new](#fn-workflow_detailsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transfer_server` resource into the root Terraform configuration.
@@ -501,11 +501,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `address_allocation_ids` (`list`): Set the `address_allocation_ids` field on the resulting object. When `null`, the `address_allocation_ids` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `vpc_endpoint_id` (`string`): Set the `vpc_endpoint_id` field on the resulting object. When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `address_allocation_ids` (`list`):  When `null`, the `address_allocation_ids` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `vpc_endpoint_id` (`string`):  When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `endpoint_details` sub block.
@@ -528,7 +528,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_upload` (`list[obj]`): Set the `on_upload` field on the resulting object. When `null`, the `on_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_upload.new](#fn-workflow_detailson_uploadnew) constructor.
+  - `on_upload` (`list[obj]`):  When `null`, the `on_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_upload.new](#fn-workflow_detailson_uploadnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `workflow_details` sub block.
@@ -551,8 +551,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.
-  - `workflow_id` (`string`): Set the `workflow_id` field on the resulting object.
+  - `execution_role` (`string`): 
+  - `workflow_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `on_upload` sub block.

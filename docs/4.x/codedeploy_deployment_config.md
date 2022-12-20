@@ -59,10 +59,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `compute_platform` (`string`): Set the `compute_platform` field on the resulting resource block. When `null`, the `compute_platform` field will be omitted from the resulting object.
-  - `deployment_config_name` (`string`): Set the `deployment_config_name` field on the resulting resource block.
-  - `minimum_healthy_hosts` (`list[obj]`): Set the `minimum_healthy_hosts` field on the resulting resource block. When `null`, the `minimum_healthy_hosts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.minimum_healthy_hosts.new](#fn-minimum_healthy_hostsnew) constructor.
-  - `traffic_routing_config` (`list[obj]`): Set the `traffic_routing_config` field on the resulting resource block. When `null`, the `traffic_routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.new](#fn-traffic_routing_confignew) constructor.
+  - `compute_platform` (`string`):  When `null`, the `compute_platform` field will be omitted from the resulting object.
+  - `deployment_config_name` (`string`): 
+  - `minimum_healthy_hosts` (`list[obj]`):  When `null`, the `minimum_healthy_hosts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.minimum_healthy_hosts.new](#fn-minimum_healthy_hostsnew) constructor.
+  - `traffic_routing_config` (`list[obj]`):  When `null`, the `traffic_routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.new](#fn-traffic_routing_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,10 +86,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `compute_platform` (`string`): Set the `compute_platform` field on the resulting object. When `null`, the `compute_platform` field will be omitted from the resulting object.
-  - `deployment_config_name` (`string`): Set the `deployment_config_name` field on the resulting object.
-  - `minimum_healthy_hosts` (`list[obj]`): Set the `minimum_healthy_hosts` field on the resulting object. When `null`, the `minimum_healthy_hosts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.minimum_healthy_hosts.new](#fn-minimum_healthy_hostsnew) constructor.
-  - `traffic_routing_config` (`list[obj]`): Set the `traffic_routing_config` field on the resulting object. When `null`, the `traffic_routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.new](#fn-traffic_routing_confignew) constructor.
+  - `compute_platform` (`string`):  When `null`, the `compute_platform` field will be omitted from the resulting object.
+  - `deployment_config_name` (`string`): 
+  - `minimum_healthy_hosts` (`list[obj]`):  When `null`, the `minimum_healthy_hosts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.minimum_healthy_hosts.new](#fn-minimum_healthy_hostsnew) constructor.
+  - `traffic_routing_config` (`list[obj]`):  When `null`, the `traffic_routing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.new](#fn-traffic_routing_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codedeploy_deployment_config` resource into the root Terraform configuration.
@@ -218,8 +218,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `value` (`number`):  When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `minimum_healthy_hosts` sub block.
@@ -242,9 +242,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
-  - `time_based_canary` (`list[obj]`): Set the `time_based_canary` field on the resulting object. When `null`, the `time_based_canary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_canary.new](#fn-traffic_routing_configtime_based_canarynew) constructor.
-  - `time_based_linear` (`list[obj]`): Set the `time_based_linear` field on the resulting object. When `null`, the `time_based_linear` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_linear.new](#fn-traffic_routing_configtime_based_linearnew) constructor.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `time_based_canary` (`list[obj]`):  When `null`, the `time_based_canary` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_canary.new](#fn-traffic_routing_configtime_based_canarynew) constructor.
+  - `time_based_linear` (`list[obj]`):  When `null`, the `time_based_linear` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codedeploy_deployment_config.traffic_routing_config.time_based_linear.new](#fn-traffic_routing_configtime_based_linearnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `traffic_routing_config` sub block.
@@ -267,8 +267,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `interval` (`number`): Set the `interval` field on the resulting object. When `null`, the `interval` field will be omitted from the resulting object.
-  - `percentage` (`number`): Set the `percentage` field on the resulting object. When `null`, the `percentage` field will be omitted from the resulting object.
+  - `interval` (`number`):  When `null`, the `interval` field will be omitted from the resulting object.
+  - `percentage` (`number`):  When `null`, the `percentage` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `time_based_canary` sub block.
@@ -291,8 +291,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `interval` (`number`): Set the `interval` field on the resulting object. When `null`, the `interval` field will be omitted from the resulting object.
-  - `percentage` (`number`): Set the `percentage` field on the resulting object. When `null`, the `percentage` field will be omitted from the resulting object.
+  - `interval` (`number`):  When `null`, the `interval` field will be omitted from the resulting object.
+  - `percentage` (`number`):  When `null`, the `percentage` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `time_based_linear` sub block.

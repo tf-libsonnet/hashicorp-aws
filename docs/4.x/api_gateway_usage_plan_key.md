@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `key_id` (`string`): Set the `key_id` field on the resulting resource block.
-  - `key_type` (`string`): Set the `key_type` field on the resulting resource block.
-  - `usage_plan_id` (`string`): Set the `usage_plan_id` field on the resulting resource block.
+  - `key_id` (`string`): 
+  - `key_type` (`string`): 
+  - `usage_plan_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `key_id` (`string`): Set the `key_id` field on the resulting object.
-  - `key_type` (`string`): Set the `key_type` field on the resulting object.
-  - `usage_plan_id` (`string`): Set the `usage_plan_id` field on the resulting object.
+  - `key_id` (`string`): 
+  - `key_type` (`string`): 
+  - `usage_plan_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_usage_plan_key` resource into the root Terraform configuration.

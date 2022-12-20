@@ -52,10 +52,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `pattern` (`string`): Set the `pattern` field on the resulting resource block.
-  - `metric_transformation` (`list[obj]`): Set the `metric_transformation` field on the resulting resource block. When `null`, the `metric_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_metric_filter.metric_transformation.new](#fn-metric_transformationnew) constructor.
+  - `log_group_name` (`string`): 
+  - `name` (`string`): 
+  - `pattern` (`string`): 
+  - `metric_transformation` (`list[obj]`):  When `null`, the `metric_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_metric_filter.metric_transformation.new](#fn-metric_transformationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,10 +79,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `pattern` (`string`): Set the `pattern` field on the resulting object.
-  - `metric_transformation` (`list[obj]`): Set the `metric_transformation` field on the resulting object. When `null`, the `metric_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_metric_filter.metric_transformation.new](#fn-metric_transformationnew) constructor.
+  - `log_group_name` (`string`): 
+  - `name` (`string`): 
+  - `pattern` (`string`): 
+  - `metric_transformation` (`list[obj]`):  When `null`, the `metric_transformation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_log_metric_filter.metric_transformation.new](#fn-metric_transformationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_log_metric_filter` resource into the root Terraform configuration.
@@ -190,12 +190,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_value` (`string`): Set the `default_value` field on the resulting object. When `null`, the `default_value` field will be omitted from the resulting object.
-  - `dimensions` (`obj`): Set the `dimensions` field on the resulting object. When `null`, the `dimensions` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting object.
-  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `default_value` (`string`):  When `null`, the `default_value` field will be omitted from the resulting object.
+  - `dimensions` (`obj`):  When `null`, the `dimensions` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `namespace` (`string`): 
+  - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `metric_transformation` sub block.

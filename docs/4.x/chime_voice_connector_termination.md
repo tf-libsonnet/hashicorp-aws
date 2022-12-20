@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `calling_regions` (`list`): Set the `calling_regions` field on the resulting resource block.
-  - `cidr_allow_list` (`list`): Set the `cidr_allow_list` field on the resulting resource block.
-  - `cps_limit` (`number`): Set the `cps_limit` field on the resulting resource block. When `null`, the `cps_limit` field will be omitted from the resulting object.
-  - `default_phone_number` (`string`): Set the `default_phone_number` field on the resulting resource block. When `null`, the `default_phone_number` field will be omitted from the resulting object.
-  - `disabled` (`bool`): Set the `disabled` field on the resulting resource block. When `null`, the `disabled` field will be omitted from the resulting object.
-  - `voice_connector_id` (`string`): Set the `voice_connector_id` field on the resulting resource block.
+  - `calling_regions` (`list`): 
+  - `cidr_allow_list` (`list`): 
+  - `cps_limit` (`number`):  When `null`, the `cps_limit` field will be omitted from the resulting object.
+  - `default_phone_number` (`string`):  When `null`, the `default_phone_number` field will be omitted from the resulting object.
+  - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
+  - `voice_connector_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `calling_regions` (`list`): Set the `calling_regions` field on the resulting object.
-  - `cidr_allow_list` (`list`): Set the `cidr_allow_list` field on the resulting object.
-  - `cps_limit` (`number`): Set the `cps_limit` field on the resulting object. When `null`, the `cps_limit` field will be omitted from the resulting object.
-  - `default_phone_number` (`string`): Set the `default_phone_number` field on the resulting object. When `null`, the `default_phone_number` field will be omitted from the resulting object.
-  - `disabled` (`bool`): Set the `disabled` field on the resulting object. When `null`, the `disabled` field will be omitted from the resulting object.
-  - `voice_connector_id` (`string`): Set the `voice_connector_id` field on the resulting object.
+  - `calling_regions` (`list`): 
+  - `cidr_allow_list` (`list`): 
+  - `cps_limit` (`number`):  When `null`, the `cps_limit` field will be omitted from the resulting object.
+  - `default_phone_number` (`string`):  When `null`, the `default_phone_number` field will be omitted from the resulting object.
+  - `disabled` (`bool`):  When `null`, the `disabled` field will be omitted from the resulting object.
+  - `voice_connector_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `chime_voice_connector_termination` resource into the root Terraform configuration.

@@ -54,12 +54,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `access_group_id` (`string`): Set the `access_group_id` field on the resulting resource block. When `null`, the `access_group_id` field will be omitted from the resulting object.
-  - `authorize_all_groups` (`bool`): Set the `authorize_all_groups` field on the resulting resource block. When `null`, the `authorize_all_groups` field will be omitted from the resulting object.
-  - `client_vpn_endpoint_id` (`string`): Set the `client_vpn_endpoint_id` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `target_network_cidr` (`string`): Set the `target_network_cidr` field on the resulting resource block.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_authorization_rule.timeouts.new](#fn-timeoutsnew) constructor.
+  - `access_group_id` (`string`):  When `null`, the `access_group_id` field will be omitted from the resulting object.
+  - `authorize_all_groups` (`bool`):  When `null`, the `authorize_all_groups` field will be omitted from the resulting object.
+  - `client_vpn_endpoint_id` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `target_network_cidr` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_authorization_rule.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,12 +83,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_group_id` (`string`): Set the `access_group_id` field on the resulting object. When `null`, the `access_group_id` field will be omitted from the resulting object.
-  - `authorize_all_groups` (`bool`): Set the `authorize_all_groups` field on the resulting object. When `null`, the `authorize_all_groups` field will be omitted from the resulting object.
-  - `client_vpn_endpoint_id` (`string`): Set the `client_vpn_endpoint_id` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `target_network_cidr` (`string`): Set the `target_network_cidr` field on the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_authorization_rule.timeouts.new](#fn-timeoutsnew) constructor.
+  - `access_group_id` (`string`):  When `null`, the `access_group_id` field will be omitted from the resulting object.
+  - `authorize_all_groups` (`bool`):  When `null`, the `authorize_all_groups` field will be omitted from the resulting object.
+  - `client_vpn_endpoint_id` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `target_network_cidr` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_authorization_rule.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_client_vpn_authorization_rule` resource into the root Terraform configuration.
@@ -227,8 +227,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -70,14 +70,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `included_object_versions` (`string`): Set the `included_object_versions` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `optional_fields` (`list`): Set the `optional_fields` field on the resulting resource block. When `null`, the `optional_fields` field will be omitted from the resulting object.
-  - `destination` (`list[obj]`): Set the `destination` field on the resulting resource block. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.new](#fn-destinationnew) constructor.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting resource block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.filter.new](#fn-filternew) constructor.
-  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting resource block. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.schedule.new](#fn-schedulenew) constructor.
+  - `bucket` (`string`): 
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `included_object_versions` (`string`): 
+  - `name` (`string`): 
+  - `optional_fields` (`list`):  When `null`, the `optional_fields` field will be omitted from the resulting object.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.new](#fn-destinationnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.filter.new](#fn-filternew) constructor.
+  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.schedule.new](#fn-schedulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,14 +101,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `included_object_versions` (`string`): Set the `included_object_versions` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `optional_fields` (`list`): Set the `optional_fields` field on the resulting object. When `null`, the `optional_fields` field will be omitted from the resulting object.
-  - `destination` (`list[obj]`): Set the `destination` field on the resulting object. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.new](#fn-destinationnew) constructor.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.filter.new](#fn-filternew) constructor.
-  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting object. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.schedule.new](#fn-schedulenew) constructor.
+  - `bucket` (`string`): 
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `included_object_versions` (`string`): 
+  - `name` (`string`): 
+  - `optional_fields` (`list`):  When `null`, the `optional_fields` field will be omitted from the resulting object.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.new](#fn-destinationnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.filter.new](#fn-filternew) constructor.
+  - `schedule` (`list[obj]`):  When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.schedule.new](#fn-schedulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_inventory` resource into the root Terraform configuration.
@@ -322,7 +322,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`list[obj]`): Set the `bucket` field on the resulting object. When `null`, the `bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.new](#fn-destinationbucketnew) constructor.
+  - `bucket` (`list[obj]`):  When `null`, the `bucket` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.new](#fn-destinationbucketnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.
@@ -345,11 +345,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `bucket_arn` (`string`): Set the `bucket_arn` field on the resulting object.
-  - `format` (`string`): Set the `format` field on the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `encryption` (`list[obj]`): Set the `encryption` field on the resulting object. When `null`, the `encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.new](#fn-destinationdestinationencryptionnew) constructor.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `bucket_arn` (`string`): 
+  - `format` (`string`): 
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `encryption` (`list[obj]`):  When `null`, the `encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.new](#fn-destinationdestinationencryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `bucket` sub block.
@@ -372,8 +372,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `sse_kms` (`list[obj]`): Set the `sse_kms` field on the resulting object. When `null`, the `sse_kms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_kms.new](#fn-destinationdestinationbucketsse_kmsnew) constructor.
-  - `sse_s3` (`list[obj]`): Set the `sse_s3` field on the resulting object. When `null`, the `sse_s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_s3.new](#fn-destinationdestinationbucketsse_s3new) constructor.
+  - `sse_kms` (`list[obj]`):  When `null`, the `sse_kms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_kms.new](#fn-destinationdestinationbucketsse_kmsnew) constructor.
+  - `sse_s3` (`list[obj]`):  When `null`, the `sse_s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_inventory.destination.bucket.encryption.sse_s3.new](#fn-destinationdestinationbucketsse_s3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption` sub block.
@@ -396,7 +396,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `key_id` (`string`): Set the `key_id` field on the resulting object.
+  - `key_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `sse_kms` sub block.
@@ -439,7 +439,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -462,7 +462,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `frequency` (`string`): Set the `frequency` field on the resulting object.
+  - `frequency` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `schedule` sub block.

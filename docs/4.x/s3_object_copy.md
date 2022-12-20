@@ -87,45 +87,45 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `acl` (`string`): Set the `acl` field on the resulting resource block. When `null`, the `acl` field will be omitted from the resulting object.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `bucket_key_enabled` (`bool`): Set the `bucket_key_enabled` field on the resulting resource block. When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
-  - `cache_control` (`string`): Set the `cache_control` field on the resulting resource block. When `null`, the `cache_control` field will be omitted from the resulting object.
-  - `content_disposition` (`string`): Set the `content_disposition` field on the resulting resource block. When `null`, the `content_disposition` field will be omitted from the resulting object.
-  - `content_encoding` (`string`): Set the `content_encoding` field on the resulting resource block. When `null`, the `content_encoding` field will be omitted from the resulting object.
-  - `content_language` (`string`): Set the `content_language` field on the resulting resource block. When `null`, the `content_language` field will be omitted from the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting resource block. When `null`, the `content_type` field will be omitted from the resulting object.
-  - `copy_if_match` (`string`): Set the `copy_if_match` field on the resulting resource block. When `null`, the `copy_if_match` field will be omitted from the resulting object.
-  - `copy_if_modified_since` (`string`): Set the `copy_if_modified_since` field on the resulting resource block. When `null`, the `copy_if_modified_since` field will be omitted from the resulting object.
-  - `copy_if_none_match` (`string`): Set the `copy_if_none_match` field on the resulting resource block. When `null`, the `copy_if_none_match` field will be omitted from the resulting object.
-  - `copy_if_unmodified_since` (`string`): Set the `copy_if_unmodified_since` field on the resulting resource block. When `null`, the `copy_if_unmodified_since` field will be omitted from the resulting object.
-  - `customer_algorithm` (`string`): Set the `customer_algorithm` field on the resulting resource block. When `null`, the `customer_algorithm` field will be omitted from the resulting object.
-  - `customer_key` (`string`): Set the `customer_key` field on the resulting resource block. When `null`, the `customer_key` field will be omitted from the resulting object.
-  - `customer_key_md5` (`string`): Set the `customer_key_md5` field on the resulting resource block. When `null`, the `customer_key_md5` field will be omitted from the resulting object.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `expected_source_bucket_owner` (`string`): Set the `expected_source_bucket_owner` field on the resulting resource block. When `null`, the `expected_source_bucket_owner` field will be omitted from the resulting object.
-  - `expires` (`string`): Set the `expires` field on the resulting resource block. When `null`, the `expires` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting resource block. When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting resource block.
-  - `kms_encryption_context` (`string`): Set the `kms_encryption_context` field on the resulting resource block. When `null`, the `kms_encryption_context` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `metadata` (`obj`): Set the `metadata` field on the resulting resource block. When `null`, the `metadata` field will be omitted from the resulting object.
-  - `metadata_directive` (`string`): Set the `metadata_directive` field on the resulting resource block. When `null`, the `metadata_directive` field will be omitted from the resulting object.
-  - `object_lock_legal_hold_status` (`string`): Set the `object_lock_legal_hold_status` field on the resulting resource block. When `null`, the `object_lock_legal_hold_status` field will be omitted from the resulting object.
-  - `object_lock_mode` (`string`): Set the `object_lock_mode` field on the resulting resource block. When `null`, the `object_lock_mode` field will be omitted from the resulting object.
-  - `object_lock_retain_until_date` (`string`): Set the `object_lock_retain_until_date` field on the resulting resource block. When `null`, the `object_lock_retain_until_date` field will be omitted from the resulting object.
-  - `request_payer` (`string`): Set the `request_payer` field on the resulting resource block. When `null`, the `request_payer` field will be omitted from the resulting object.
-  - `server_side_encryption` (`string`): Set the `server_side_encryption` field on the resulting resource block. When `null`, the `server_side_encryption` field will be omitted from the resulting object.
-  - `source` (`string`): Set the `source` field on the resulting resource block.
-  - `source_customer_algorithm` (`string`): Set the `source_customer_algorithm` field on the resulting resource block. When `null`, the `source_customer_algorithm` field will be omitted from the resulting object.
-  - `source_customer_key` (`string`): Set the `source_customer_key` field on the resulting resource block. When `null`, the `source_customer_key` field will be omitted from the resulting object.
-  - `source_customer_key_md5` (`string`): Set the `source_customer_key_md5` field on the resulting resource block. When `null`, the `source_customer_key_md5` field will be omitted from the resulting object.
-  - `storage_class` (`string`): Set the `storage_class` field on the resulting resource block. When `null`, the `storage_class` field will be omitted from the resulting object.
-  - `tagging_directive` (`string`): Set the `tagging_directive` field on the resulting resource block. When `null`, the `tagging_directive` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `website_redirect` (`string`): Set the `website_redirect` field on the resulting resource block. When `null`, the `website_redirect` field will be omitted from the resulting object.
-  - `grant` (`list[obj]`): Set the `grant` field on the resulting resource block. When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_object_copy.grant.new](#fn-grantnew) constructor.
+  - `acl` (`string`):  When `null`, the `acl` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `bucket_key_enabled` (`bool`):  When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
+  - `cache_control` (`string`):  When `null`, the `cache_control` field will be omitted from the resulting object.
+  - `content_disposition` (`string`):  When `null`, the `content_disposition` field will be omitted from the resulting object.
+  - `content_encoding` (`string`):  When `null`, the `content_encoding` field will be omitted from the resulting object.
+  - `content_language` (`string`):  When `null`, the `content_language` field will be omitted from the resulting object.
+  - `content_type` (`string`):  When `null`, the `content_type` field will be omitted from the resulting object.
+  - `copy_if_match` (`string`):  When `null`, the `copy_if_match` field will be omitted from the resulting object.
+  - `copy_if_modified_since` (`string`):  When `null`, the `copy_if_modified_since` field will be omitted from the resulting object.
+  - `copy_if_none_match` (`string`):  When `null`, the `copy_if_none_match` field will be omitted from the resulting object.
+  - `copy_if_unmodified_since` (`string`):  When `null`, the `copy_if_unmodified_since` field will be omitted from the resulting object.
+  - `customer_algorithm` (`string`):  When `null`, the `customer_algorithm` field will be omitted from the resulting object.
+  - `customer_key` (`string`):  When `null`, the `customer_key` field will be omitted from the resulting object.
+  - `customer_key_md5` (`string`):  When `null`, the `customer_key_md5` field will be omitted from the resulting object.
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `expected_source_bucket_owner` (`string`):  When `null`, the `expected_source_bucket_owner` field will be omitted from the resulting object.
+  - `expires` (`string`):  When `null`, the `expires` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `key` (`string`): 
+  - `kms_encryption_context` (`string`):  When `null`, the `kms_encryption_context` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `metadata` (`obj`):  When `null`, the `metadata` field will be omitted from the resulting object.
+  - `metadata_directive` (`string`):  When `null`, the `metadata_directive` field will be omitted from the resulting object.
+  - `object_lock_legal_hold_status` (`string`):  When `null`, the `object_lock_legal_hold_status` field will be omitted from the resulting object.
+  - `object_lock_mode` (`string`):  When `null`, the `object_lock_mode` field will be omitted from the resulting object.
+  - `object_lock_retain_until_date` (`string`):  When `null`, the `object_lock_retain_until_date` field will be omitted from the resulting object.
+  - `request_payer` (`string`):  When `null`, the `request_payer` field will be omitted from the resulting object.
+  - `server_side_encryption` (`string`):  When `null`, the `server_side_encryption` field will be omitted from the resulting object.
+  - `source` (`string`): 
+  - `source_customer_algorithm` (`string`):  When `null`, the `source_customer_algorithm` field will be omitted from the resulting object.
+  - `source_customer_key` (`string`):  When `null`, the `source_customer_key` field will be omitted from the resulting object.
+  - `source_customer_key_md5` (`string`):  When `null`, the `source_customer_key_md5` field will be omitted from the resulting object.
+  - `storage_class` (`string`):  When `null`, the `storage_class` field will be omitted from the resulting object.
+  - `tagging_directive` (`string`):  When `null`, the `tagging_directive` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `website_redirect` (`string`):  When `null`, the `website_redirect` field will be omitted from the resulting object.
+  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_object_copy.grant.new](#fn-grantnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -149,45 +149,45 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `acl` (`string`): Set the `acl` field on the resulting object. When `null`, the `acl` field will be omitted from the resulting object.
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `bucket_key_enabled` (`bool`): Set the `bucket_key_enabled` field on the resulting object. When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
-  - `cache_control` (`string`): Set the `cache_control` field on the resulting object. When `null`, the `cache_control` field will be omitted from the resulting object.
-  - `content_disposition` (`string`): Set the `content_disposition` field on the resulting object. When `null`, the `content_disposition` field will be omitted from the resulting object.
-  - `content_encoding` (`string`): Set the `content_encoding` field on the resulting object. When `null`, the `content_encoding` field will be omitted from the resulting object.
-  - `content_language` (`string`): Set the `content_language` field on the resulting object. When `null`, the `content_language` field will be omitted from the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting object. When `null`, the `content_type` field will be omitted from the resulting object.
-  - `copy_if_match` (`string`): Set the `copy_if_match` field on the resulting object. When `null`, the `copy_if_match` field will be omitted from the resulting object.
-  - `copy_if_modified_since` (`string`): Set the `copy_if_modified_since` field on the resulting object. When `null`, the `copy_if_modified_since` field will be omitted from the resulting object.
-  - `copy_if_none_match` (`string`): Set the `copy_if_none_match` field on the resulting object. When `null`, the `copy_if_none_match` field will be omitted from the resulting object.
-  - `copy_if_unmodified_since` (`string`): Set the `copy_if_unmodified_since` field on the resulting object. When `null`, the `copy_if_unmodified_since` field will be omitted from the resulting object.
-  - `customer_algorithm` (`string`): Set the `customer_algorithm` field on the resulting object. When `null`, the `customer_algorithm` field will be omitted from the resulting object.
-  - `customer_key` (`string`): Set the `customer_key` field on the resulting object. When `null`, the `customer_key` field will be omitted from the resulting object.
-  - `customer_key_md5` (`string`): Set the `customer_key_md5` field on the resulting object. When `null`, the `customer_key_md5` field will be omitted from the resulting object.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `expected_source_bucket_owner` (`string`): Set the `expected_source_bucket_owner` field on the resulting object. When `null`, the `expected_source_bucket_owner` field will be omitted from the resulting object.
-  - `expires` (`string`): Set the `expires` field on the resulting object. When `null`, the `expires` field will be omitted from the resulting object.
-  - `force_destroy` (`bool`): Set the `force_destroy` field on the resulting object. When `null`, the `force_destroy` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `kms_encryption_context` (`string`): Set the `kms_encryption_context` field on the resulting object. When `null`, the `kms_encryption_context` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `metadata` (`obj`): Set the `metadata` field on the resulting object. When `null`, the `metadata` field will be omitted from the resulting object.
-  - `metadata_directive` (`string`): Set the `metadata_directive` field on the resulting object. When `null`, the `metadata_directive` field will be omitted from the resulting object.
-  - `object_lock_legal_hold_status` (`string`): Set the `object_lock_legal_hold_status` field on the resulting object. When `null`, the `object_lock_legal_hold_status` field will be omitted from the resulting object.
-  - `object_lock_mode` (`string`): Set the `object_lock_mode` field on the resulting object. When `null`, the `object_lock_mode` field will be omitted from the resulting object.
-  - `object_lock_retain_until_date` (`string`): Set the `object_lock_retain_until_date` field on the resulting object. When `null`, the `object_lock_retain_until_date` field will be omitted from the resulting object.
-  - `request_payer` (`string`): Set the `request_payer` field on the resulting object. When `null`, the `request_payer` field will be omitted from the resulting object.
-  - `server_side_encryption` (`string`): Set the `server_side_encryption` field on the resulting object. When `null`, the `server_side_encryption` field will be omitted from the resulting object.
-  - `source` (`string`): Set the `source` field on the resulting object.
-  - `source_customer_algorithm` (`string`): Set the `source_customer_algorithm` field on the resulting object. When `null`, the `source_customer_algorithm` field will be omitted from the resulting object.
-  - `source_customer_key` (`string`): Set the `source_customer_key` field on the resulting object. When `null`, the `source_customer_key` field will be omitted from the resulting object.
-  - `source_customer_key_md5` (`string`): Set the `source_customer_key_md5` field on the resulting object. When `null`, the `source_customer_key_md5` field will be omitted from the resulting object.
-  - `storage_class` (`string`): Set the `storage_class` field on the resulting object. When `null`, the `storage_class` field will be omitted from the resulting object.
-  - `tagging_directive` (`string`): Set the `tagging_directive` field on the resulting object. When `null`, the `tagging_directive` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `website_redirect` (`string`): Set the `website_redirect` field on the resulting object. When `null`, the `website_redirect` field will be omitted from the resulting object.
-  - `grant` (`list[obj]`): Set the `grant` field on the resulting object. When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_object_copy.grant.new](#fn-grantnew) constructor.
+  - `acl` (`string`):  When `null`, the `acl` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `bucket_key_enabled` (`bool`):  When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
+  - `cache_control` (`string`):  When `null`, the `cache_control` field will be omitted from the resulting object.
+  - `content_disposition` (`string`):  When `null`, the `content_disposition` field will be omitted from the resulting object.
+  - `content_encoding` (`string`):  When `null`, the `content_encoding` field will be omitted from the resulting object.
+  - `content_language` (`string`):  When `null`, the `content_language` field will be omitted from the resulting object.
+  - `content_type` (`string`):  When `null`, the `content_type` field will be omitted from the resulting object.
+  - `copy_if_match` (`string`):  When `null`, the `copy_if_match` field will be omitted from the resulting object.
+  - `copy_if_modified_since` (`string`):  When `null`, the `copy_if_modified_since` field will be omitted from the resulting object.
+  - `copy_if_none_match` (`string`):  When `null`, the `copy_if_none_match` field will be omitted from the resulting object.
+  - `copy_if_unmodified_since` (`string`):  When `null`, the `copy_if_unmodified_since` field will be omitted from the resulting object.
+  - `customer_algorithm` (`string`):  When `null`, the `customer_algorithm` field will be omitted from the resulting object.
+  - `customer_key` (`string`):  When `null`, the `customer_key` field will be omitted from the resulting object.
+  - `customer_key_md5` (`string`):  When `null`, the `customer_key_md5` field will be omitted from the resulting object.
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `expected_source_bucket_owner` (`string`):  When `null`, the `expected_source_bucket_owner` field will be omitted from the resulting object.
+  - `expires` (`string`):  When `null`, the `expires` field will be omitted from the resulting object.
+  - `force_destroy` (`bool`):  When `null`, the `force_destroy` field will be omitted from the resulting object.
+  - `key` (`string`): 
+  - `kms_encryption_context` (`string`):  When `null`, the `kms_encryption_context` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `metadata` (`obj`):  When `null`, the `metadata` field will be omitted from the resulting object.
+  - `metadata_directive` (`string`):  When `null`, the `metadata_directive` field will be omitted from the resulting object.
+  - `object_lock_legal_hold_status` (`string`):  When `null`, the `object_lock_legal_hold_status` field will be omitted from the resulting object.
+  - `object_lock_mode` (`string`):  When `null`, the `object_lock_mode` field will be omitted from the resulting object.
+  - `object_lock_retain_until_date` (`string`):  When `null`, the `object_lock_retain_until_date` field will be omitted from the resulting object.
+  - `request_payer` (`string`):  When `null`, the `request_payer` field will be omitted from the resulting object.
+  - `server_side_encryption` (`string`):  When `null`, the `server_side_encryption` field will be omitted from the resulting object.
+  - `source` (`string`): 
+  - `source_customer_algorithm` (`string`):  When `null`, the `source_customer_algorithm` field will be omitted from the resulting object.
+  - `source_customer_key` (`string`):  When `null`, the `source_customer_key` field will be omitted from the resulting object.
+  - `source_customer_key_md5` (`string`):  When `null`, the `source_customer_key_md5` field will be omitted from the resulting object.
+  - `storage_class` (`string`):  When `null`, the `storage_class` field will be omitted from the resulting object.
+  - `tagging_directive` (`string`):  When `null`, the `tagging_directive` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `website_redirect` (`string`):  When `null`, the `website_redirect` field will be omitted from the resulting object.
+  - `grant` (`list[obj]`):  When `null`, the `grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_object_copy.grant.new](#fn-grantnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_object_copy` resource into the root Terraform configuration.
@@ -855,10 +855,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `email` (`string`): Set the `email` field on the resulting object. When `null`, the `email` field will be omitted from the resulting object.
-  - `permissions` (`list`): Set the `permissions` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `uri` (`string`): Set the `uri` field on the resulting object. When `null`, the `uri` field will be omitted from the resulting object.
+  - `email` (`string`):  When `null`, the `email` field will be omitted from the resulting object.
+  - `permissions` (`list`): 
+  - `type` (`string`): 
+  - `uri` (`string`):  When `null`, the `uri` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `grant` sub block.

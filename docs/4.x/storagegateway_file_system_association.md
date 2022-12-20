@@ -56,14 +56,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `audit_destination_arn` (`string`): Set the `audit_destination_arn` field on the resulting resource block. When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting resource block.
-  - `location_arn` (`string`): Set the `location_arn` field on the resulting resource block.
-  - `password` (`string`): Set the `password` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `username` (`string`): Set the `username` field on the resulting resource block.
-  - `cache_attributes` (`list[obj]`): Set the `cache_attributes` field on the resulting resource block. When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `audit_destination_arn` (`string`):  When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): 
+  - `location_arn` (`string`): 
+  - `password` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `username` (`string`): 
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-cache_attributesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,14 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `audit_destination_arn` (`string`): Set the `audit_destination_arn` field on the resulting object. When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting object.
-  - `location_arn` (`string`): Set the `location_arn` field on the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `username` (`string`): Set the `username` field on the resulting object.
-  - `cache_attributes` (`list[obj]`): Set the `cache_attributes` field on the resulting object. When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `audit_destination_arn` (`string`):  When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): 
+  - `location_arn` (`string`): 
+  - `password` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `username` (`string`): 
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_file_system_association.cache_attributes.new](#fn-cache_attributesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_file_system_association` resource into the root Terraform configuration.
@@ -266,7 +266,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cache_stale_timeout_in_seconds` (`number`): Set the `cache_stale_timeout_in_seconds` field on the resulting object. When `null`, the `cache_stale_timeout_in_seconds` field will be omitted from the resulting object.
+  - `cache_stale_timeout_in_seconds` (`number`):  When `null`, the `cache_stale_timeout_in_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cache_attributes` sub block.

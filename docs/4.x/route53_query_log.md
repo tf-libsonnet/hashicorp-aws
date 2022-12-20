@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting resource block.
-  - `zone_id` (`string`): Set the `zone_id` field on the resulting resource block.
+  - `cloudwatch_log_group_arn` (`string`): 
+  - `zone_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting object.
-  - `zone_id` (`string`): Set the `zone_id` field on the resulting object.
+  - `cloudwatch_log_group_arn` (`string`): 
+  - `zone_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_query_log` resource into the root Terraform configuration.

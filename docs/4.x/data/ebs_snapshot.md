@@ -58,13 +58,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `most_recent` (`bool`): Set the `most_recent` field on the resulting data source block. When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `owners` (`list`): Set the `owners` field on the resulting data source block. When `null`, the `owners` field will be omitted from the resulting object.
-  - `restorable_by_user_ids` (`list`): Set the `restorable_by_user_ids` field on the resulting data source block. When `null`, the `restorable_by_user_ids` field will be omitted from the resulting object.
-  - `snapshot_ids` (`list`): Set the `snapshot_ids` field on the resulting data source block. When `null`, the `snapshot_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.filter.new](#fn-filternew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.timeouts.new](#fn-timeoutsnew) constructor.
+  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `owners` (`list`):  When `null`, the `owners` field will be omitted from the resulting object.
+  - `restorable_by_user_ids` (`list`):  When `null`, the `restorable_by_user_ids` field will be omitted from the resulting object.
+  - `snapshot_ids` (`list`):  When `null`, the `snapshot_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -88,13 +88,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `most_recent` (`bool`): Set the `most_recent` field on the resulting object. When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `owners` (`list`): Set the `owners` field on the resulting object. When `null`, the `owners` field will be omitted from the resulting object.
-  - `restorable_by_user_ids` (`list`): Set the `restorable_by_user_ids` field on the resulting object. When `null`, the `restorable_by_user_ids` field will be omitted from the resulting object.
-  - `snapshot_ids` (`list`): Set the `snapshot_ids` field on the resulting object. When `null`, the `snapshot_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.filter.new](#fn-filternew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.timeouts.new](#fn-timeoutsnew) constructor.
+  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `owners` (`list`):  When `null`, the `owners` field will be omitted from the resulting object.
+  - `restorable_by_user_ids` (`list`):  When `null`, the `restorable_by_user_ids` field will be omitted from the resulting object.
+  - `snapshot_ids` (`list`):  When `null`, the `snapshot_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ebs_snapshot.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ebs_snapshot` data source into the root Terraform configuration.
@@ -270,8 +270,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `name` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -294,7 +294,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

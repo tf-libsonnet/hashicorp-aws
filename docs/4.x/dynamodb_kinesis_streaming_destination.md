@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `stream_arn` (`string`): Set the `stream_arn` field on the resulting resource block.
-  - `table_name` (`string`): Set the `table_name` field on the resulting resource block.
+  - `stream_arn` (`string`): 
+  - `table_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `stream_arn` (`string`): Set the `stream_arn` field on the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting object.
+  - `stream_arn` (`string`): 
+  - `table_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `dynamodb_kinesis_streaming_destination` resource into the root Terraform configuration.

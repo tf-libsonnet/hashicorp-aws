@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.
-  - `endpoint_name` (`string`): Set the `endpoint_name` field on the resulting resource block.
-  - `resource_owner` (`string`): Set the `resource_owner` field on the resulting resource block. When `null`, the `resource_owner` field will be omitted from the resulting object.
-  - `subnet_group_name` (`string`): Set the `subnet_group_name` field on the resulting resource block.
-  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting resource block. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): 
+  - `endpoint_name` (`string`): 
+  - `resource_owner` (`string`):  When `null`, the `resource_owner` field will be omitted from the resulting object.
+  - `subnet_group_name` (`string`): 
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
-  - `endpoint_name` (`string`): Set the `endpoint_name` field on the resulting object.
-  - `resource_owner` (`string`): Set the `resource_owner` field on the resulting object. When `null`, the `resource_owner` field will be omitted from the resulting object.
-  - `subnet_group_name` (`string`): Set the `subnet_group_name` field on the resulting object.
-  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting object. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): 
+  - `endpoint_name` (`string`): 
+  - `resource_owner` (`string`):  When `null`, the `resource_owner` field will be omitted from the resulting object.
+  - `subnet_group_name` (`string`): 
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_endpoint_access` resource into the root Terraform configuration.

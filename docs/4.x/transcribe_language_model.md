@@ -58,13 +58,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `base_model_name` (`string`): Set the `base_model_name` field on the resulting resource block.
-  - `language_code` (`string`): Set the `language_code` field on the resulting resource block.
-  - `model_name` (`string`): Set the `model_name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `input_data_config` (`list[obj]`): Set the `input_data_config` field on the resulting resource block. When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.input_data_config.new](#fn-input_data_confignew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.timeouts.new](#fn-timeoutsnew) constructor.
+  - `base_model_name` (`string`): 
+  - `language_code` (`string`): 
+  - `model_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.input_data_config.new](#fn-input_data_confignew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,13 +88,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `base_model_name` (`string`): Set the `base_model_name` field on the resulting object.
-  - `language_code` (`string`): Set the `language_code` field on the resulting object.
-  - `model_name` (`string`): Set the `model_name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `input_data_config` (`list[obj]`): Set the `input_data_config` field on the resulting object. When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.input_data_config.new](#fn-input_data_confignew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.timeouts.new](#fn-timeoutsnew) constructor.
+  - `base_model_name` (`string`): 
+  - `language_code` (`string`): 
+  - `model_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `input_data_config` (`list[obj]`):  When `null`, the `input_data_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.input_data_config.new](#fn-input_data_confignew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transcribe_language_model.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transcribe_language_model` resource into the root Terraform configuration.
@@ -270,9 +270,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_access_role_arn` (`string`): Set the `data_access_role_arn` field on the resulting object.
-  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.
-  - `tuning_data_s3_uri` (`string`): Set the `tuning_data_s3_uri` field on the resulting object. When `null`, the `tuning_data_s3_uri` field will be omitted from the resulting object.
+  - `data_access_role_arn` (`string`): 
+  - `s3_uri` (`string`): 
+  - `tuning_data_s3_uri` (`string`):  When `null`, the `tuning_data_s3_uri` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `input_data_config` sub block.
@@ -295,7 +295,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `db_password` (`string`): Set the `db_password` field on the resulting resource block.
-  - `db_user` (`string`): Set the `db_user` field on the resulting resource block.
-  - `rds_db_instance_arn` (`string`): Set the `rds_db_instance_arn` field on the resulting resource block.
-  - `stack_id` (`string`): Set the `stack_id` field on the resulting resource block.
+  - `db_password` (`string`): 
+  - `db_user` (`string`): 
+  - `rds_db_instance_arn` (`string`): 
+  - `stack_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `db_password` (`string`): Set the `db_password` field on the resulting object.
-  - `db_user` (`string`): Set the `db_user` field on the resulting object.
-  - `rds_db_instance_arn` (`string`): Set the `rds_db_instance_arn` field on the resulting object.
-  - `stack_id` (`string`): Set the `stack_id` field on the resulting object.
+  - `db_password` (`string`): 
+  - `db_user` (`string`): 
+  - `rds_db_instance_arn` (`string`): 
+  - `stack_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_rds_db_instance` resource into the root Terraform configuration.

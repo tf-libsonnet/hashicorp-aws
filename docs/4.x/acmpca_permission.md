@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `actions` (`list`): Set the `actions` field on the resulting resource block.
-  - `certificate_authority_arn` (`string`): Set the `certificate_authority_arn` field on the resulting resource block.
-  - `principal` (`string`): Set the `principal` field on the resulting resource block.
-  - `source_account` (`string`): Set the `source_account` field on the resulting resource block. When `null`, the `source_account` field will be omitted from the resulting object.
+  - `actions` (`list`): 
+  - `certificate_authority_arn` (`string`): 
+  - `principal` (`string`): 
+  - `source_account` (`string`):  When `null`, the `source_account` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `actions` (`list`): Set the `actions` field on the resulting object.
-  - `certificate_authority_arn` (`string`): Set the `certificate_authority_arn` field on the resulting object.
-  - `principal` (`string`): Set the `principal` field on the resulting object.
-  - `source_account` (`string`): Set the `source_account` field on the resulting object. When `null`, the `source_account` field will be omitted from the resulting object.
+  - `actions` (`list`): 
+  - `certificate_authority_arn` (`string`): 
+  - `principal` (`string`): 
+  - `source_account` (`string`):  When `null`, the `source_account` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `acmpca_permission` resource into the root Terraform configuration.

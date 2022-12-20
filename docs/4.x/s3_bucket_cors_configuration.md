@@ -51,9 +51,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `cors_rule` (`list[obj]`): Set the `cors_rule` field on the resulting resource block. When `null`, the `cors_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_cors_configuration.cors_rule.new](#fn-cors_rulenew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `cors_rule` (`list[obj]`):  When `null`, the `cors_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_cors_configuration.cors_rule.new](#fn-cors_rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,9 +77,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `cors_rule` (`list[obj]`): Set the `cors_rule` field on the resulting object. When `null`, the `cors_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_cors_configuration.cors_rule.new](#fn-cors_rulenew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `cors_rule` (`list[obj]`):  When `null`, the `cors_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_cors_configuration.cors_rule.new](#fn-cors_rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_cors_configuration` resource into the root Terraform configuration.
@@ -171,11 +171,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `allowed_headers` (`list`): Set the `allowed_headers` field on the resulting object. When `null`, the `allowed_headers` field will be omitted from the resulting object.
-  - `allowed_methods` (`list`): Set the `allowed_methods` field on the resulting object.
-  - `allowed_origins` (`list`): Set the `allowed_origins` field on the resulting object.
-  - `expose_headers` (`list`): Set the `expose_headers` field on the resulting object. When `null`, the `expose_headers` field will be omitted from the resulting object.
-  - `max_age_seconds` (`number`): Set the `max_age_seconds` field on the resulting object. When `null`, the `max_age_seconds` field will be omitted from the resulting object.
+  - `allowed_headers` (`list`):  When `null`, the `allowed_headers` field will be omitted from the resulting object.
+  - `allowed_methods` (`list`): 
+  - `allowed_origins` (`list`): 
+  - `expose_headers` (`list`):  When `null`, the `expose_headers` field will be omitted from the resulting object.
+  - `max_age_seconds` (`number`):  When `null`, the `max_age_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cors_rule` sub block.

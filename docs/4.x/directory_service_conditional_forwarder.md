@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting resource block.
-  - `dns_ips` (`list`): Set the `dns_ips` field on the resulting resource block.
-  - `remote_domain_name` (`string`): Set the `remote_domain_name` field on the resulting resource block.
+  - `directory_id` (`string`): 
+  - `dns_ips` (`list`): 
+  - `remote_domain_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting object.
-  - `dns_ips` (`list`): Set the `dns_ips` field on the resulting object.
-  - `remote_domain_name` (`string`): Set the `remote_domain_name` field on the resulting object.
+  - `directory_id` (`string`): 
+  - `dns_ips` (`list`): 
+  - `remote_domain_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_service_conditional_forwarder` resource into the root Terraform configuration.

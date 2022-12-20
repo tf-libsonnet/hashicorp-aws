@@ -102,19 +102,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `create_version` (`bool`): Set the `create_version` field on the resulting resource block. When `null`, the `create_version` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `parent_intent_signature` (`string`): Set the `parent_intent_signature` field on the resulting resource block. When `null`, the `parent_intent_signature` field will be omitted from the resulting object.
-  - `sample_utterances` (`list`): Set the `sample_utterances` field on the resulting resource block. When `null`, the `sample_utterances` field will be omitted from the resulting object.
-  - `conclusion_statement` (`list[obj]`): Set the `conclusion_statement` field on the resulting resource block. When `null`, the `conclusion_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.conclusion_statement.new](#fn-conclusion_statementnew) constructor.
-  - `confirmation_prompt` (`list[obj]`): Set the `confirmation_prompt` field on the resulting resource block. When `null`, the `confirmation_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.confirmation_prompt.new](#fn-confirmation_promptnew) constructor.
-  - `dialog_code_hook` (`list[obj]`): Set the `dialog_code_hook` field on the resulting resource block. When `null`, the `dialog_code_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.dialog_code_hook.new](#fn-dialog_code_hooknew) constructor.
-  - `follow_up_prompt` (`list[obj]`): Set the `follow_up_prompt` field on the resulting resource block. When `null`, the `follow_up_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.new](#fn-follow_up_promptnew) constructor.
-  - `fulfillment_activity` (`list[obj]`): Set the `fulfillment_activity` field on the resulting resource block. When `null`, the `fulfillment_activity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.fulfillment_activity.new](#fn-fulfillment_activitynew) constructor.
-  - `rejection_statement` (`list[obj]`): Set the `rejection_statement` field on the resulting resource block. When `null`, the `rejection_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.rejection_statement.new](#fn-rejection_statementnew) constructor.
-  - `slot` (`list[obj]`): Set the `slot` field on the resulting resource block. When `null`, the `slot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.new](#fn-slotnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.timeouts.new](#fn-timeoutsnew) constructor.
+  - `create_version` (`bool`):  When `null`, the `create_version` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parent_intent_signature` (`string`):  When `null`, the `parent_intent_signature` field will be omitted from the resulting object.
+  - `sample_utterances` (`list`):  When `null`, the `sample_utterances` field will be omitted from the resulting object.
+  - `conclusion_statement` (`list[obj]`):  When `null`, the `conclusion_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.conclusion_statement.new](#fn-conclusion_statementnew) constructor.
+  - `confirmation_prompt` (`list[obj]`):  When `null`, the `confirmation_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.confirmation_prompt.new](#fn-confirmation_promptnew) constructor.
+  - `dialog_code_hook` (`list[obj]`):  When `null`, the `dialog_code_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.dialog_code_hook.new](#fn-dialog_code_hooknew) constructor.
+  - `follow_up_prompt` (`list[obj]`):  When `null`, the `follow_up_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.new](#fn-follow_up_promptnew) constructor.
+  - `fulfillment_activity` (`list[obj]`):  When `null`, the `fulfillment_activity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.fulfillment_activity.new](#fn-fulfillment_activitynew) constructor.
+  - `rejection_statement` (`list[obj]`):  When `null`, the `rejection_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.rejection_statement.new](#fn-rejection_statementnew) constructor.
+  - `slot` (`list[obj]`):  When `null`, the `slot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.new](#fn-slotnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -138,19 +138,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `create_version` (`bool`): Set the `create_version` field on the resulting object. When `null`, the `create_version` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `parent_intent_signature` (`string`): Set the `parent_intent_signature` field on the resulting object. When `null`, the `parent_intent_signature` field will be omitted from the resulting object.
-  - `sample_utterances` (`list`): Set the `sample_utterances` field on the resulting object. When `null`, the `sample_utterances` field will be omitted from the resulting object.
-  - `conclusion_statement` (`list[obj]`): Set the `conclusion_statement` field on the resulting object. When `null`, the `conclusion_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.conclusion_statement.new](#fn-conclusion_statementnew) constructor.
-  - `confirmation_prompt` (`list[obj]`): Set the `confirmation_prompt` field on the resulting object. When `null`, the `confirmation_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.confirmation_prompt.new](#fn-confirmation_promptnew) constructor.
-  - `dialog_code_hook` (`list[obj]`): Set the `dialog_code_hook` field on the resulting object. When `null`, the `dialog_code_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.dialog_code_hook.new](#fn-dialog_code_hooknew) constructor.
-  - `follow_up_prompt` (`list[obj]`): Set the `follow_up_prompt` field on the resulting object. When `null`, the `follow_up_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.new](#fn-follow_up_promptnew) constructor.
-  - `fulfillment_activity` (`list[obj]`): Set the `fulfillment_activity` field on the resulting object. When `null`, the `fulfillment_activity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.fulfillment_activity.new](#fn-fulfillment_activitynew) constructor.
-  - `rejection_statement` (`list[obj]`): Set the `rejection_statement` field on the resulting object. When `null`, the `rejection_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.rejection_statement.new](#fn-rejection_statementnew) constructor.
-  - `slot` (`list[obj]`): Set the `slot` field on the resulting object. When `null`, the `slot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.new](#fn-slotnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.timeouts.new](#fn-timeoutsnew) constructor.
+  - `create_version` (`bool`):  When `null`, the `create_version` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parent_intent_signature` (`string`):  When `null`, the `parent_intent_signature` field will be omitted from the resulting object.
+  - `sample_utterances` (`list`):  When `null`, the `sample_utterances` field will be omitted from the resulting object.
+  - `conclusion_statement` (`list[obj]`):  When `null`, the `conclusion_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.conclusion_statement.new](#fn-conclusion_statementnew) constructor.
+  - `confirmation_prompt` (`list[obj]`):  When `null`, the `confirmation_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.confirmation_prompt.new](#fn-confirmation_promptnew) constructor.
+  - `dialog_code_hook` (`list[obj]`):  When `null`, the `dialog_code_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.dialog_code_hook.new](#fn-dialog_code_hooknew) constructor.
+  - `follow_up_prompt` (`list[obj]`):  When `null`, the `follow_up_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.new](#fn-follow_up_promptnew) constructor.
+  - `fulfillment_activity` (`list[obj]`):  When `null`, the `fulfillment_activity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.fulfillment_activity.new](#fn-fulfillment_activitynew) constructor.
+  - `rejection_statement` (`list[obj]`):  When `null`, the `rejection_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.rejection_statement.new](#fn-rejection_statementnew) constructor.
+  - `slot` (`list[obj]`):  When `null`, the `slot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.new](#fn-slotnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lex_intent` resource into the root Terraform configuration.
@@ -548,8 +548,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `response_card` (`string`): Set the `response_card` field on the resulting object. When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Set the `message` field on the resulting object. When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.conclusion_statement.message.new](#fn-conclusion_statementmessagenew) constructor.
+  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.conclusion_statement.message.new](#fn-conclusion_statementmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `conclusion_statement` sub block.
@@ -572,9 +572,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `content` (`string`): Set the `content` field on the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting object.
-  - `group_number` (`number`): Set the `group_number` field on the resulting object. When `null`, the `group_number` field will be omitted from the resulting object.
+  - `content` (`string`): 
+  - `content_type` (`string`): 
+  - `group_number` (`number`):  When `null`, the `group_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `message` sub block.
@@ -597,9 +597,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_attempts` (`number`): Set the `max_attempts` field on the resulting object.
-  - `response_card` (`string`): Set the `response_card` field on the resulting object. When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Set the `message` field on the resulting object. When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.confirmation_prompt.message.new](#fn-confirmation_promptmessagenew) constructor.
+  - `max_attempts` (`number`): 
+  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.confirmation_prompt.message.new](#fn-confirmation_promptmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `confirmation_prompt` sub block.
@@ -622,9 +622,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `content` (`string`): Set the `content` field on the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting object.
-  - `group_number` (`number`): Set the `group_number` field on the resulting object. When `null`, the `group_number` field will be omitted from the resulting object.
+  - `content` (`string`): 
+  - `content_type` (`string`): 
+  - `group_number` (`number`):  When `null`, the `group_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `message` sub block.
@@ -647,8 +647,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `message_version` (`string`): Set the `message_version` field on the resulting object.
-  - `uri` (`string`): Set the `uri` field on the resulting object.
+  - `message_version` (`string`): 
+  - `uri` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `dialog_code_hook` sub block.
@@ -671,8 +671,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prompt` (`list[obj]`): Set the `prompt` field on the resulting object. When `null`, the `prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.prompt.new](#fn-follow_up_promptpromptnew) constructor.
-  - `rejection_statement` (`list[obj]`): Set the `rejection_statement` field on the resulting object. When `null`, the `rejection_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.rejection_statement.new](#fn-follow_up_promptrejection_statementnew) constructor.
+  - `prompt` (`list[obj]`):  When `null`, the `prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.prompt.new](#fn-follow_up_promptpromptnew) constructor.
+  - `rejection_statement` (`list[obj]`):  When `null`, the `rejection_statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.rejection_statement.new](#fn-follow_up_promptrejection_statementnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `follow_up_prompt` sub block.
@@ -695,9 +695,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_attempts` (`number`): Set the `max_attempts` field on the resulting object.
-  - `response_card` (`string`): Set the `response_card` field on the resulting object. When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Set the `message` field on the resulting object. When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.prompt.message.new](#fn-follow_up_promptfollow_up_promptmessagenew) constructor.
+  - `max_attempts` (`number`): 
+  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.prompt.message.new](#fn-follow_up_promptfollow_up_promptmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `prompt` sub block.
@@ -720,9 +720,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `content` (`string`): Set the `content` field on the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting object.
-  - `group_number` (`number`): Set the `group_number` field on the resulting object. When `null`, the `group_number` field will be omitted from the resulting object.
+  - `content` (`string`): 
+  - `content_type` (`string`): 
+  - `group_number` (`number`):  When `null`, the `group_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `message` sub block.
@@ -745,8 +745,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `response_card` (`string`): Set the `response_card` field on the resulting object. When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Set the `message` field on the resulting object. When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.rejection_statement.message.new](#fn-follow_up_promptfollow_up_promptmessagenew) constructor.
+  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.follow_up_prompt.rejection_statement.message.new](#fn-follow_up_promptfollow_up_promptmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rejection_statement` sub block.
@@ -769,9 +769,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `content` (`string`): Set the `content` field on the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting object.
-  - `group_number` (`number`): Set the `group_number` field on the resulting object. When `null`, the `group_number` field will be omitted from the resulting object.
+  - `content` (`string`): 
+  - `content_type` (`string`): 
+  - `group_number` (`number`):  When `null`, the `group_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `message` sub block.
@@ -794,8 +794,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `code_hook` (`list[obj]`): Set the `code_hook` field on the resulting object. When `null`, the `code_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.fulfillment_activity.code_hook.new](#fn-fulfillment_activitycode_hooknew) constructor.
+  - `type` (`string`): 
+  - `code_hook` (`list[obj]`):  When `null`, the `code_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.fulfillment_activity.code_hook.new](#fn-fulfillment_activitycode_hooknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `fulfillment_activity` sub block.
@@ -818,8 +818,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `message_version` (`string`): Set the `message_version` field on the resulting object.
-  - `uri` (`string`): Set the `uri` field on the resulting object.
+  - `message_version` (`string`): 
+  - `uri` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `code_hook` sub block.
@@ -842,8 +842,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `response_card` (`string`): Set the `response_card` field on the resulting object. When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Set the `message` field on the resulting object. When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.rejection_statement.message.new](#fn-rejection_statementmessagenew) constructor.
+  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.rejection_statement.message.new](#fn-rejection_statementmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rejection_statement` sub block.
@@ -866,9 +866,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `content` (`string`): Set the `content` field on the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting object.
-  - `group_number` (`number`): Set the `group_number` field on the resulting object. When `null`, the `group_number` field will be omitted from the resulting object.
+  - `content` (`string`): 
+  - `content_type` (`string`): 
+  - `group_number` (`number`):  When `null`, the `group_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `message` sub block.
@@ -891,15 +891,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.
-  - `response_card` (`string`): Set the `response_card` field on the resulting object. When `null`, the `response_card` field will be omitted from the resulting object.
-  - `sample_utterances` (`list`): Set the `sample_utterances` field on the resulting object. When `null`, the `sample_utterances` field will be omitted from the resulting object.
-  - `slot_constraint` (`string`): Set the `slot_constraint` field on the resulting object.
-  - `slot_type` (`string`): Set the `slot_type` field on the resulting object.
-  - `slot_type_version` (`string`): Set the `slot_type_version` field on the resulting object. When `null`, the `slot_type_version` field will be omitted from the resulting object.
-  - `value_elicitation_prompt` (`list[obj]`): Set the `value_elicitation_prompt` field on the resulting object. When `null`, the `value_elicitation_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.value_elicitation_prompt.new](#fn-slotvalue_elicitation_promptnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
+  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
+  - `sample_utterances` (`list`):  When `null`, the `sample_utterances` field will be omitted from the resulting object.
+  - `slot_constraint` (`string`): 
+  - `slot_type` (`string`): 
+  - `slot_type_version` (`string`):  When `null`, the `slot_type_version` field will be omitted from the resulting object.
+  - `value_elicitation_prompt` (`list[obj]`):  When `null`, the `value_elicitation_prompt` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.value_elicitation_prompt.new](#fn-slotvalue_elicitation_promptnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `slot` sub block.
@@ -922,9 +922,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_attempts` (`number`): Set the `max_attempts` field on the resulting object.
-  - `response_card` (`string`): Set the `response_card` field on the resulting object. When `null`, the `response_card` field will be omitted from the resulting object.
-  - `message` (`list[obj]`): Set the `message` field on the resulting object. When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.value_elicitation_prompt.message.new](#fn-slotslotmessagenew) constructor.
+  - `max_attempts` (`number`): 
+  - `response_card` (`string`):  When `null`, the `response_card` field will be omitted from the resulting object.
+  - `message` (`list[obj]`):  When `null`, the `message` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lex_intent.slot.value_elicitation_prompt.message.new](#fn-slotslotmessagenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `value_elicitation_prompt` sub block.
@@ -947,9 +947,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `content` (`string`): Set the `content` field on the resulting object.
-  - `content_type` (`string`): Set the `content_type` field on the resulting object.
-  - `group_number` (`number`): Set the `group_number` field on the resulting object. When `null`, the `group_number` field will be omitted from the resulting object.
+  - `content` (`string`): 
+  - `content_type` (`string`): 
+  - `group_number` (`number`):  When `null`, the `group_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `message` sub block.
@@ -972,9 +972,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

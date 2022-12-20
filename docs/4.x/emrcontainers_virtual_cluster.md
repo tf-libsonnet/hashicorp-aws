@@ -60,11 +60,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `container_provider` (`list[obj]`): Set the `container_provider` field on the resulting resource block. When `null`, the `container_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.new](#fn-container_providernew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `container_provider` (`list[obj]`):  When `null`, the `container_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.new](#fn-container_providernew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,11 +88,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `container_provider` (`list[obj]`): Set the `container_provider` field on the resulting object. When `null`, the `container_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.new](#fn-container_providernew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `container_provider` (`list[obj]`):  When `null`, the `container_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.new](#fn-container_providernew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emrcontainers_virtual_cluster` resource into the root Terraform configuration.
@@ -236,8 +236,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `info` (`list[obj]`): Set the `info` field on the resulting object. When `null`, the `info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.new](#fn-container_providerinfonew) constructor.
+  - `type` (`string`): 
+  - `info` (`list[obj]`):  When `null`, the `info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.new](#fn-container_providerinfonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container_provider` sub block.
@@ -260,7 +260,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `eks_info` (`list[obj]`): Set the `eks_info` field on the resulting object. When `null`, the `eks_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.eks_info.new](#fn-container_providercontainer_providereks_infonew) constructor.
+  - `eks_info` (`list[obj]`):  When `null`, the `eks_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrcontainers_virtual_cluster.container_provider.info.eks_info.new](#fn-container_providercontainer_providereks_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `info` sub block.
@@ -283,7 +283,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.
+  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `eks_info` sub block.
@@ -306,7 +306,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

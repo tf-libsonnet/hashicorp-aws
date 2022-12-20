@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `db_instance_class` (`string`): Set the `db_instance_class` field on the resulting data source block.
-  - `duration` (`number`): Set the `duration` field on the resulting data source block.
-  - `multi_az` (`bool`): Set the `multi_az` field on the resulting data source block.
-  - `offering_type` (`string`): Set the `offering_type` field on the resulting data source block.
-  - `product_description` (`string`): Set the `product_description` field on the resulting data source block.
+  - `db_instance_class` (`string`): 
+  - `duration` (`number`): 
+  - `multi_az` (`bool`): 
+  - `offering_type` (`string`): 
+  - `product_description` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `db_instance_class` (`string`): Set the `db_instance_class` field on the resulting object.
-  - `duration` (`number`): Set the `duration` field on the resulting object.
-  - `multi_az` (`bool`): Set the `multi_az` field on the resulting object.
-  - `offering_type` (`string`): Set the `offering_type` field on the resulting object.
-  - `product_description` (`string`): Set the `product_description` field on the resulting object.
+  - `db_instance_class` (`string`): 
+  - `duration` (`number`): 
+  - `multi_az` (`bool`): 
+  - `offering_type` (`string`): 
+  - `product_description` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `rds_reserved_instance_offering` data source into the root Terraform configuration.

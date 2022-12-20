@@ -61,13 +61,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auto_accept` (`bool`): Set the `auto_accept` field on the resulting resource block. When `null`, the `auto_accept` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_peering_connection_id` (`string`): Set the `vpc_peering_connection_id` field on the resulting resource block.
-  - `accepter` (`list[obj]`): Set the `accepter` field on the resulting resource block. When `null`, the `accepter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.accepter.new](#fn-accepternew) constructor.
-  - `requester` (`list[obj]`): Set the `requester` field on the resulting resource block. When `null`, the `requester` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.requester.new](#fn-requesternew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_accept` (`bool`):  When `null`, the `auto_accept` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_peering_connection_id` (`string`): 
+  - `accepter` (`list[obj]`):  When `null`, the `accepter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.accepter.new](#fn-accepternew) constructor.
+  - `requester` (`list[obj]`):  When `null`, the `requester` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.requester.new](#fn-requesternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,13 +91,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_accept` (`bool`): Set the `auto_accept` field on the resulting object. When `null`, the `auto_accept` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_peering_connection_id` (`string`): Set the `vpc_peering_connection_id` field on the resulting object.
-  - `accepter` (`list[obj]`): Set the `accepter` field on the resulting object. When `null`, the `accepter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.accepter.new](#fn-accepternew) constructor.
-  - `requester` (`list[obj]`): Set the `requester` field on the resulting object. When `null`, the `requester` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.requester.new](#fn-requesternew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.timeouts.new](#fn-timeoutsnew) constructor.
+  - `auto_accept` (`bool`):  When `null`, the `auto_accept` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_peering_connection_id` (`string`): 
+  - `accepter` (`list[obj]`):  When `null`, the `accepter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.accepter.new](#fn-accepternew) constructor.
+  - `requester` (`list[obj]`):  When `null`, the `requester` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.requester.new](#fn-requesternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_accepter.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_peering_connection_accepter` resource into the root Terraform configuration.
@@ -294,9 +294,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_classic_link_to_remote_vpc` (`bool`): Set the `allow_classic_link_to_remote_vpc` field on the resulting object. When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.
-  - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.
-  - `allow_vpc_to_remote_classic_link` (`bool`): Set the `allow_vpc_to_remote_classic_link` field on the resulting object. When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.
+  - `allow_classic_link_to_remote_vpc` (`bool`):  When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.
+  - `allow_remote_vpc_dns_resolution` (`bool`):  When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.
+  - `allow_vpc_to_remote_classic_link` (`bool`):  When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `accepter` sub block.
@@ -319,9 +319,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_classic_link_to_remote_vpc` (`bool`): Set the `allow_classic_link_to_remote_vpc` field on the resulting object. When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.
-  - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.
-  - `allow_vpc_to_remote_classic_link` (`bool`): Set the `allow_vpc_to_remote_classic_link` field on the resulting object. When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.
+  - `allow_classic_link_to_remote_vpc` (`bool`):  When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.
+  - `allow_remote_vpc_dns_resolution` (`bool`):  When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.
+  - `allow_vpc_to_remote_classic_link` (`bool`):  When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `requester` sub block.
@@ -344,8 +344,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `attributes` (`obj`): Set the `attributes` field on the resulting resource block. When `null`, the `attributes` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `thing_type_name` (`string`): Set the `thing_type_name` field on the resulting resource block. When `null`, the `thing_type_name` field will be omitted from the resulting object.
+  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `thing_type_name` (`string`):  When `null`, the `thing_type_name` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `attributes` (`obj`): Set the `attributes` field on the resulting object. When `null`, the `attributes` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `thing_type_name` (`string`): Set the `thing_type_name` field on the resulting object. When `null`, the `thing_type_name` field will be omitted from the resulting object.
+  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `thing_type_name` (`string`):  When `null`, the `thing_type_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_thing` resource into the root Terraform configuration.

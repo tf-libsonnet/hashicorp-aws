@@ -56,8 +56,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting resource block. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `name` (`string`): 
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,8 +81,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting object. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `name` (`string`): 
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_security_configuration` resource into the root Terraform configuration.
@@ -158,9 +158,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_encryption` (`list[obj]`): Set the `cloudwatch_encryption` field on the resulting object. When `null`, the `cloudwatch_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.cloudwatch_encryption.new](#fn-encryption_configurationcloudwatch_encryptionnew) constructor.
-  - `job_bookmarks_encryption` (`list[obj]`): Set the `job_bookmarks_encryption` field on the resulting object. When `null`, the `job_bookmarks_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.job_bookmarks_encryption.new](#fn-encryption_configurationjob_bookmarks_encryptionnew) constructor.
-  - `s3_encryption` (`list[obj]`): Set the `s3_encryption` field on the resulting object. When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.s3_encryption.new](#fn-encryption_configurations3_encryptionnew) constructor.
+  - `cloudwatch_encryption` (`list[obj]`):  When `null`, the `cloudwatch_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.cloudwatch_encryption.new](#fn-encryption_configurationcloudwatch_encryptionnew) constructor.
+  - `job_bookmarks_encryption` (`list[obj]`):  When `null`, the `job_bookmarks_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.job_bookmarks_encryption.new](#fn-encryption_configurationjob_bookmarks_encryptionnew) constructor.
+  - `s3_encryption` (`list[obj]`):  When `null`, the `s3_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_security_configuration.encryption_configuration.s3_encryption.new](#fn-encryption_configurations3_encryptionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.
@@ -183,8 +183,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_encryption_mode` (`string`): Set the `cloudwatch_encryption_mode` field on the resulting object. When `null`, the `cloudwatch_encryption_mode` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `cloudwatch_encryption_mode` (`string`):  When `null`, the `cloudwatch_encryption_mode` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_encryption` sub block.
@@ -207,8 +207,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `job_bookmarks_encryption_mode` (`string`): Set the `job_bookmarks_encryption_mode` field on the resulting object. When `null`, the `job_bookmarks_encryption_mode` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `job_bookmarks_encryption_mode` (`string`):  When `null`, the `job_bookmarks_encryption_mode` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `job_bookmarks_encryption` sub block.
@@ -231,8 +231,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `s3_encryption_mode` (`string`): Set the `s3_encryption_mode` field on the resulting object. When `null`, the `s3_encryption_mode` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `s3_encryption_mode` (`string`):  When `null`, the `s3_encryption_mode` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_encryption` sub block.

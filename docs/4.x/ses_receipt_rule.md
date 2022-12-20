@@ -80,20 +80,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `after` (`string`): Set the `after` field on the resulting resource block. When `null`, the `after` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `recipients` (`list`): Set the `recipients` field on the resulting resource block. When `null`, the `recipients` field will be omitted from the resulting object.
-  - `rule_set_name` (`string`): Set the `rule_set_name` field on the resulting resource block.
-  - `scan_enabled` (`bool`): Set the `scan_enabled` field on the resulting resource block. When `null`, the `scan_enabled` field will be omitted from the resulting object.
-  - `tls_policy` (`string`): Set the `tls_policy` field on the resulting resource block. When `null`, the `tls_policy` field will be omitted from the resulting object.
-  - `add_header_action` (`list[obj]`): Set the `add_header_action` field on the resulting resource block. When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-add_header_actionnew) constructor.
-  - `bounce_action` (`list[obj]`): Set the `bounce_action` field on the resulting resource block. When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-bounce_actionnew) constructor.
-  - `lambda_action` (`list[obj]`): Set the `lambda_action` field on the resulting resource block. When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-lambda_actionnew) constructor.
-  - `s3_action` (`list[obj]`): Set the `s3_action` field on the resulting resource block. When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-s3_actionnew) constructor.
-  - `sns_action` (`list[obj]`): Set the `sns_action` field on the resulting resource block. When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-sns_actionnew) constructor.
-  - `stop_action` (`list[obj]`): Set the `stop_action` field on the resulting resource block. When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-stop_actionnew) constructor.
-  - `workmail_action` (`list[obj]`): Set the `workmail_action` field on the resulting resource block. When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-workmail_actionnew) constructor.
+  - `after` (`string`):  When `null`, the `after` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `recipients` (`list`):  When `null`, the `recipients` field will be omitted from the resulting object.
+  - `rule_set_name` (`string`): 
+  - `scan_enabled` (`bool`):  When `null`, the `scan_enabled` field will be omitted from the resulting object.
+  - `tls_policy` (`string`):  When `null`, the `tls_policy` field will be omitted from the resulting object.
+  - `add_header_action` (`list[obj]`):  When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-add_header_actionnew) constructor.
+  - `bounce_action` (`list[obj]`):  When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-bounce_actionnew) constructor.
+  - `lambda_action` (`list[obj]`):  When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-lambda_actionnew) constructor.
+  - `s3_action` (`list[obj]`):  When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-s3_actionnew) constructor.
+  - `sns_action` (`list[obj]`):  When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-sns_actionnew) constructor.
+  - `stop_action` (`list[obj]`):  When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-stop_actionnew) constructor.
+  - `workmail_action` (`list[obj]`):  When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-workmail_actionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -117,20 +117,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `after` (`string`): Set the `after` field on the resulting object. When `null`, the `after` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `recipients` (`list`): Set the `recipients` field on the resulting object. When `null`, the `recipients` field will be omitted from the resulting object.
-  - `rule_set_name` (`string`): Set the `rule_set_name` field on the resulting object.
-  - `scan_enabled` (`bool`): Set the `scan_enabled` field on the resulting object. When `null`, the `scan_enabled` field will be omitted from the resulting object.
-  - `tls_policy` (`string`): Set the `tls_policy` field on the resulting object. When `null`, the `tls_policy` field will be omitted from the resulting object.
-  - `add_header_action` (`list[obj]`): Set the `add_header_action` field on the resulting object. When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-add_header_actionnew) constructor.
-  - `bounce_action` (`list[obj]`): Set the `bounce_action` field on the resulting object. When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-bounce_actionnew) constructor.
-  - `lambda_action` (`list[obj]`): Set the `lambda_action` field on the resulting object. When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-lambda_actionnew) constructor.
-  - `s3_action` (`list[obj]`): Set the `s3_action` field on the resulting object. When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-s3_actionnew) constructor.
-  - `sns_action` (`list[obj]`): Set the `sns_action` field on the resulting object. When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-sns_actionnew) constructor.
-  - `stop_action` (`list[obj]`): Set the `stop_action` field on the resulting object. When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-stop_actionnew) constructor.
-  - `workmail_action` (`list[obj]`): Set the `workmail_action` field on the resulting object. When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-workmail_actionnew) constructor.
+  - `after` (`string`):  When `null`, the `after` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `recipients` (`list`):  When `null`, the `recipients` field will be omitted from the resulting object.
+  - `rule_set_name` (`string`): 
+  - `scan_enabled` (`bool`):  When `null`, the `scan_enabled` field will be omitted from the resulting object.
+  - `tls_policy` (`string`):  When `null`, the `tls_policy` field will be omitted from the resulting object.
+  - `add_header_action` (`list[obj]`):  When `null`, the `add_header_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.add_header_action.new](#fn-add_header_actionnew) constructor.
+  - `bounce_action` (`list[obj]`):  When `null`, the `bounce_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.bounce_action.new](#fn-bounce_actionnew) constructor.
+  - `lambda_action` (`list[obj]`):  When `null`, the `lambda_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.lambda_action.new](#fn-lambda_actionnew) constructor.
+  - `s3_action` (`list[obj]`):  When `null`, the `s3_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.s3_action.new](#fn-s3_actionnew) constructor.
+  - `sns_action` (`list[obj]`):  When `null`, the `sns_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.sns_action.new](#fn-sns_actionnew) constructor.
+  - `stop_action` (`list[obj]`):  When `null`, the `stop_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.stop_action.new](#fn-stop_actionnew) constructor.
+  - `workmail_action` (`list[obj]`):  When `null`, the `workmail_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_receipt_rule.workmail_action.new](#fn-workmail_actionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ses_receipt_rule` resource into the root Terraform configuration.
@@ -524,9 +524,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `header_name` (`string`): Set the `header_name` field on the resulting object.
-  - `header_value` (`string`): Set the `header_value` field on the resulting object.
-  - `position` (`number`): Set the `position` field on the resulting object.
+  - `header_name` (`string`): 
+  - `header_value` (`string`): 
+  - `position` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `add_header_action` sub block.
@@ -549,12 +549,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `message` (`string`): Set the `message` field on the resulting object.
-  - `position` (`number`): Set the `position` field on the resulting object.
-  - `sender` (`string`): Set the `sender` field on the resulting object.
-  - `smtp_reply_code` (`string`): Set the `smtp_reply_code` field on the resulting object.
-  - `status_code` (`string`): Set the `status_code` field on the resulting object. When `null`, the `status_code` field will be omitted from the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object. When `null`, the `topic_arn` field will be omitted from the resulting object.
+  - `message` (`string`): 
+  - `position` (`number`): 
+  - `sender` (`string`): 
+  - `smtp_reply_code` (`string`): 
+  - `status_code` (`string`):  When `null`, the `status_code` field will be omitted from the resulting object.
+  - `topic_arn` (`string`):  When `null`, the `topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `bounce_action` sub block.
@@ -577,10 +577,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `function_arn` (`string`): Set the `function_arn` field on the resulting object.
-  - `invocation_type` (`string`): Set the `invocation_type` field on the resulting object. When `null`, the `invocation_type` field will be omitted from the resulting object.
-  - `position` (`number`): Set the `position` field on the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object. When `null`, the `topic_arn` field will be omitted from the resulting object.
+  - `function_arn` (`string`): 
+  - `invocation_type` (`string`):  When `null`, the `invocation_type` field will be omitted from the resulting object.
+  - `position` (`number`): 
+  - `topic_arn` (`string`):  When `null`, the `topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda_action` sub block.
@@ -603,11 +603,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `object_key_prefix` (`string`): Set the `object_key_prefix` field on the resulting object. When `null`, the `object_key_prefix` field will be omitted from the resulting object.
-  - `position` (`number`): Set the `position` field on the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object. When `null`, the `topic_arn` field will be omitted from the resulting object.
+  - `bucket_name` (`string`): 
+  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `object_key_prefix` (`string`):  When `null`, the `object_key_prefix` field will be omitted from the resulting object.
+  - `position` (`number`): 
+  - `topic_arn` (`string`):  When `null`, the `topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_action` sub block.
@@ -630,9 +630,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `encoding` (`string`): Set the `encoding` field on the resulting object. When `null`, the `encoding` field will be omitted from the resulting object.
-  - `position` (`number`): Set the `position` field on the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object.
+  - `encoding` (`string`):  When `null`, the `encoding` field will be omitted from the resulting object.
+  - `position` (`number`): 
+  - `topic_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `sns_action` sub block.
@@ -655,9 +655,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `position` (`number`): Set the `position` field on the resulting object.
-  - `scope` (`string`): Set the `scope` field on the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object. When `null`, the `topic_arn` field will be omitted from the resulting object.
+  - `position` (`number`): 
+  - `scope` (`string`): 
+  - `topic_arn` (`string`):  When `null`, the `topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `stop_action` sub block.
@@ -680,9 +680,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `organization_arn` (`string`): Set the `organization_arn` field on the resulting object.
-  - `position` (`number`): Set the `position` field on the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object. When `null`, the `topic_arn` field will be omitted from the resulting object.
+  - `organization_arn` (`string`): 
+  - `position` (`number`): 
+  - `topic_arn` (`string`):  When `null`, the `topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `workmail_action` sub block.

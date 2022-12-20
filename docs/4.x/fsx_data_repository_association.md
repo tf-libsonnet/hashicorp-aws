@@ -65,16 +65,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `batch_import_meta_data_on_create` (`bool`): Set the `batch_import_meta_data_on_create` field on the resulting resource block. When `null`, the `batch_import_meta_data_on_create` field will be omitted from the resulting object.
-  - `data_repository_path` (`string`): Set the `data_repository_path` field on the resulting resource block.
-  - `delete_data_in_filesystem` (`bool`): Set the `delete_data_in_filesystem` field on the resulting resource block. When `null`, the `delete_data_in_filesystem` field will be omitted from the resulting object.
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting resource block.
-  - `file_system_path` (`string`): Set the `file_system_path` field on the resulting resource block.
-  - `imported_file_chunk_size` (`number`): Set the `imported_file_chunk_size` field on the resulting resource block. When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `s3` (`list[obj]`): Set the `s3` field on the resulting resource block. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-s3new) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-timeoutsnew) constructor.
+  - `batch_import_meta_data_on_create` (`bool`):  When `null`, the `batch_import_meta_data_on_create` field will be omitted from the resulting object.
+  - `data_repository_path` (`string`): 
+  - `delete_data_in_filesystem` (`bool`):  When `null`, the `delete_data_in_filesystem` field will be omitted from the resulting object.
+  - `file_system_id` (`string`): 
+  - `file_system_path` (`string`): 
+  - `imported_file_chunk_size` (`number`):  When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-s3new) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -98,16 +98,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `batch_import_meta_data_on_create` (`bool`): Set the `batch_import_meta_data_on_create` field on the resulting object. When `null`, the `batch_import_meta_data_on_create` field will be omitted from the resulting object.
-  - `data_repository_path` (`string`): Set the `data_repository_path` field on the resulting object.
-  - `delete_data_in_filesystem` (`bool`): Set the `delete_data_in_filesystem` field on the resulting object. When `null`, the `delete_data_in_filesystem` field will be omitted from the resulting object.
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object.
-  - `file_system_path` (`string`): Set the `file_system_path` field on the resulting object.
-  - `imported_file_chunk_size` (`number`): Set the `imported_file_chunk_size` field on the resulting object. When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-s3new) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-timeoutsnew) constructor.
+  - `batch_import_meta_data_on_create` (`bool`):  When `null`, the `batch_import_meta_data_on_create` field will be omitted from the resulting object.
+  - `data_repository_path` (`string`): 
+  - `delete_data_in_filesystem` (`bool`):  When `null`, the `delete_data_in_filesystem` field will be omitted from the resulting object.
+  - `file_system_id` (`string`): 
+  - `file_system_path` (`string`): 
+  - `imported_file_chunk_size` (`number`):  When `null`, the `imported_file_chunk_size` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.new](#fn-s3new) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_data_repository_association` resource into the root Terraform configuration.
@@ -331,8 +331,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `auto_export_policy` (`list[obj]`): Set the `auto_export_policy` field on the resulting object. When `null`, the `auto_export_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_export_policy.new](#fn-s3auto_export_policynew) constructor.
-  - `auto_import_policy` (`list[obj]`): Set the `auto_import_policy` field on the resulting object. When `null`, the `auto_import_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_import_policy.new](#fn-s3auto_import_policynew) constructor.
+  - `auto_export_policy` (`list[obj]`):  When `null`, the `auto_export_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_export_policy.new](#fn-s3auto_export_policynew) constructor.
+  - `auto_import_policy` (`list[obj]`):  When `null`, the `auto_import_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_data_repository_association.s3.auto_import_policy.new](#fn-s3auto_import_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -355,7 +355,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `events` (`list`): Set the `events` field on the resulting object. When `null`, the `events` field will be omitted from the resulting object.
+  - `events` (`list`):  When `null`, the `events` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auto_export_policy` sub block.
@@ -378,7 +378,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `events` (`list`): Set the `events` field on the resulting object. When `null`, the `events` field will be omitted from the resulting object.
+  - `events` (`list`):  When `null`, the `events` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auto_import_policy` sub block.
@@ -401,9 +401,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

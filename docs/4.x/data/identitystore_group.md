@@ -59,10 +59,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `group_id` (`string`): Set the `group_id` field on the resulting data source block. When `null`, the `group_id` field will be omitted from the resulting object.
-  - `identity_store_id` (`string`): Set the `identity_store_id` field on the resulting data source block.
-  - `alternate_identifier` (`list[obj]`): Set the `alternate_identifier` field on the resulting data source block. When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-alternate_identifiernew) constructor.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-filternew) constructor.
+  - `group_id` (`string`):  When `null`, the `group_id` field will be omitted from the resulting object.
+  - `identity_store_id` (`string`): 
+  - `alternate_identifier` (`list[obj]`):  When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-alternate_identifiernew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -86,10 +86,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `group_id` (`string`): Set the `group_id` field on the resulting object. When `null`, the `group_id` field will be omitted from the resulting object.
-  - `identity_store_id` (`string`): Set the `identity_store_id` field on the resulting object.
-  - `alternate_identifier` (`list[obj]`): Set the `alternate_identifier` field on the resulting object. When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-alternate_identifiernew) constructor.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-filternew) constructor.
+  - `group_id` (`string`):  When `null`, the `group_id` field will be omitted from the resulting object.
+  - `identity_store_id` (`string`): 
+  - `alternate_identifier` (`list[obj]`):  When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.alternate_identifier.new](#fn-alternate_identifiernew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_group.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `identitystore_group` data source into the root Terraform configuration.
@@ -218,8 +218,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `external_id` (`list[obj]`): Set the `external_id` field on the resulting object. When `null`, the `external_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.external_id.new](#fn-alternate_identifierexternal_idnew) constructor.
-  - `unique_attribute` (`list[obj]`): Set the `unique_attribute` field on the resulting object. When `null`, the `unique_attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.unique_attribute.new](#fn-alternate_identifierunique_attributenew) constructor.
+  - `external_id` (`list[obj]`):  When `null`, the `external_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.external_id.new](#fn-alternate_identifierexternal_idnew) constructor.
+  - `unique_attribute` (`list[obj]`):  When `null`, the `unique_attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.identitystore_group.alternate_identifier.unique_attribute.new](#fn-alternate_identifierunique_attributenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `alternate_identifier` sub block.
@@ -242,7 +242,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `issuer` (`string`): Set the `issuer` field on the resulting object.
+  - `issuer` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `external_id` sub block.
@@ -265,8 +265,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `attribute_path` (`string`): Set the `attribute_path` field on the resulting object.
-  - `attribute_value` (`string`): Set the `attribute_value` field on the resulting object.
+  - `attribute_path` (`string`): 
+  - `attribute_value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `unique_attribute` sub block.
@@ -289,8 +289,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `attribute_path` (`string`): Set the `attribute_path` field on the resulting object.
-  - `attribute_value` (`string`): Set the `attribute_value` field on the resulting object.
+  - `attribute_path` (`string`): 
+  - `attribute_value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.

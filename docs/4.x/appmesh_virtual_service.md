@@ -60,12 +60,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `mesh_name` (`string`): Set the `mesh_name` field on the resulting resource block.
-  - `mesh_owner` (`string`): Set the `mesh_owner` field on the resulting resource block. When `null`, the `mesh_owner` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `spec` (`list[obj]`): Set the `spec` field on the resulting resource block. When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-specnew) constructor.
+  - `mesh_name` (`string`): 
+  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-specnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,12 +89,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `mesh_name` (`string`): Set the `mesh_name` field on the resulting object.
-  - `mesh_owner` (`string`): Set the `mesh_owner` field on the resulting object. When `null`, the `mesh_owner` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `spec` (`list[obj]`): Set the `spec` field on the resulting object. When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-specnew) constructor.
+  - `mesh_name` (`string`): 
+  - `mesh_owner` (`string`):  When `null`, the `mesh_owner` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `spec` (`list[obj]`):  When `null`, the `spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.new](#fn-specnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appmesh_virtual_service` resource into the root Terraform configuration.
@@ -234,7 +234,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `provider` (`list[obj]`): Set the `provider` field on the resulting object. When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.new](#fn-specprovidernew) constructor.
+  - `provider` (`list[obj]`):  When `null`, the `provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.new](#fn-specprovidernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `spec` sub block.
@@ -257,8 +257,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_node` (`list[obj]`): Set the `virtual_node` field on the resulting object. When `null`, the `virtual_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_node.new](#fn-specspecvirtual_nodenew) constructor.
-  - `virtual_router` (`list[obj]`): Set the `virtual_router` field on the resulting object. When `null`, the `virtual_router` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_router.new](#fn-specspecvirtual_routernew) constructor.
+  - `virtual_node` (`list[obj]`):  When `null`, the `virtual_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_node.new](#fn-specspecvirtual_nodenew) constructor.
+  - `virtual_router` (`list[obj]`):  When `null`, the `virtual_router` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_service.spec.provider.virtual_router.new](#fn-specspecvirtual_routernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `provider` sub block.
@@ -281,7 +281,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_node_name` (`string`): Set the `virtual_node_name` field on the resulting object.
+  - `virtual_node_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `virtual_node` sub block.
@@ -304,7 +304,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `virtual_router_name` (`string`): Set the `virtual_router_name` field on the resulting object.
+  - `virtual_router_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `virtual_router` sub block.

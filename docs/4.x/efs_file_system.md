@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `availability_zone_name` (`string`): Set the `availability_zone_name` field on the resulting resource block. When `null`, the `availability_zone_name` field will be omitted from the resulting object.
-  - `creation_token` (`string`): Set the `creation_token` field on the resulting resource block. When `null`, the `creation_token` field will be omitted from the resulting object.
-  - `encrypted` (`bool`): Set the `encrypted` field on the resulting resource block. When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `performance_mode` (`string`): Set the `performance_mode` field on the resulting resource block. When `null`, the `performance_mode` field will be omitted from the resulting object.
-  - `provisioned_throughput_in_mibps` (`number`): Set the `provisioned_throughput_in_mibps` field on the resulting resource block. When `null`, the `provisioned_throughput_in_mibps` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `throughput_mode` (`string`): Set the `throughput_mode` field on the resulting resource block. When `null`, the `throughput_mode` field will be omitted from the resulting object.
-  - `lifecycle_policy` (`list[obj]`): Set the `lifecycle_policy` field on the resulting resource block. When `null`, the `lifecycle_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.lifecycle_policy.new](#fn-lifecycle_policynew) constructor.
+  - `availability_zone_name` (`string`):  When `null`, the `availability_zone_name` field will be omitted from the resulting object.
+  - `creation_token` (`string`):  When `null`, the `creation_token` field will be omitted from the resulting object.
+  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `performance_mode` (`string`):  When `null`, the `performance_mode` field will be omitted from the resulting object.
+  - `provisioned_throughput_in_mibps` (`number`):  When `null`, the `provisioned_throughput_in_mibps` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `throughput_mode` (`string`):  When `null`, the `throughput_mode` field will be omitted from the resulting object.
+  - `lifecycle_policy` (`list[obj]`):  When `null`, the `lifecycle_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.lifecycle_policy.new](#fn-lifecycle_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `availability_zone_name` (`string`): Set the `availability_zone_name` field on the resulting object. When `null`, the `availability_zone_name` field will be omitted from the resulting object.
-  - `creation_token` (`string`): Set the `creation_token` field on the resulting object. When `null`, the `creation_token` field will be omitted from the resulting object.
-  - `encrypted` (`bool`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `performance_mode` (`string`): Set the `performance_mode` field on the resulting object. When `null`, the `performance_mode` field will be omitted from the resulting object.
-  - `provisioned_throughput_in_mibps` (`number`): Set the `provisioned_throughput_in_mibps` field on the resulting object. When `null`, the `provisioned_throughput_in_mibps` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `throughput_mode` (`string`): Set the `throughput_mode` field on the resulting object. When `null`, the `throughput_mode` field will be omitted from the resulting object.
-  - `lifecycle_policy` (`list[obj]`): Set the `lifecycle_policy` field on the resulting object. When `null`, the `lifecycle_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.lifecycle_policy.new](#fn-lifecycle_policynew) constructor.
+  - `availability_zone_name` (`string`):  When `null`, the `availability_zone_name` field will be omitted from the resulting object.
+  - `creation_token` (`string`):  When `null`, the `creation_token` field will be omitted from the resulting object.
+  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `performance_mode` (`string`):  When `null`, the `performance_mode` field will be omitted from the resulting object.
+  - `provisioned_throughput_in_mibps` (`number`):  When `null`, the `provisioned_throughput_in_mibps` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `throughput_mode` (`string`):  When `null`, the `throughput_mode` field will be omitted from the resulting object.
+  - `lifecycle_policy` (`list[obj]`):  When `null`, the `lifecycle_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.lifecycle_policy.new](#fn-lifecycle_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `efs_file_system` resource into the root Terraform configuration.
@@ -304,8 +304,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `transition_to_ia` (`string`): Set the `transition_to_ia` field on the resulting object. When `null`, the `transition_to_ia` field will be omitted from the resulting object.
-  - `transition_to_primary_storage_class` (`string`): Set the `transition_to_primary_storage_class` field on the resulting object. When `null`, the `transition_to_primary_storage_class` field will be omitted from the resulting object.
+  - `transition_to_ia` (`string`):  When `null`, the `transition_to_ia` field will be omitted from the resulting object.
+  - `transition_to_primary_storage_class` (`string`):  When `null`, the `transition_to_primary_storage_class` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lifecycle_policy` sub block.

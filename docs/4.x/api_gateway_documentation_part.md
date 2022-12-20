@@ -51,9 +51,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `properties` (`string`): Set the `properties` field on the resulting resource block.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
-  - `location` (`list[obj]`): Set the `location` field on the resulting resource block. When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_documentation_part.location.new](#fn-locationnew) constructor.
+  - `properties` (`string`): 
+  - `rest_api_id` (`string`): 
+  - `location` (`list[obj]`):  When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_documentation_part.location.new](#fn-locationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,9 +77,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `properties` (`string`): Set the `properties` field on the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
-  - `location` (`list[obj]`): Set the `location` field on the resulting object. When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_documentation_part.location.new](#fn-locationnew) constructor.
+  - `properties` (`string`): 
+  - `rest_api_id` (`string`): 
+  - `location` (`list[obj]`):  When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_documentation_part.location.new](#fn-locationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_documentation_part` resource into the root Terraform configuration.
@@ -171,11 +171,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `method` (`string`): Set the `method` field on the resulting object. When `null`, the `method` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
-  - `status_code` (`string`): Set the `status_code` field on the resulting object. When `null`, the `status_code` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `method` (`string`):  When `null`, the `method` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
+  - `status_code` (`string`):  When `null`, the `status_code` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `location` sub block.

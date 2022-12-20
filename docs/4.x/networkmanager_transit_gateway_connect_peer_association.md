@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `device_id` (`string`): Set the `device_id` field on the resulting resource block.
-  - `global_network_id` (`string`): Set the `global_network_id` field on the resulting resource block.
-  - `link_id` (`string`): Set the `link_id` field on the resulting resource block. When `null`, the `link_id` field will be omitted from the resulting object.
-  - `transit_gateway_connect_peer_arn` (`string`): Set the `transit_gateway_connect_peer_arn` field on the resulting resource block.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_transit_gateway_connect_peer_association.timeouts.new](#fn-timeoutsnew) constructor.
+  - `device_id` (`string`): 
+  - `global_network_id` (`string`): 
+  - `link_id` (`string`):  When `null`, the `link_id` field will be omitted from the resulting object.
+  - `transit_gateway_connect_peer_arn` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_transit_gateway_connect_peer_association.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `device_id` (`string`): Set the `device_id` field on the resulting object.
-  - `global_network_id` (`string`): Set the `global_network_id` field on the resulting object.
-  - `link_id` (`string`): Set the `link_id` field on the resulting object. When `null`, the `link_id` field will be omitted from the resulting object.
-  - `transit_gateway_connect_peer_arn` (`string`): Set the `transit_gateway_connect_peer_arn` field on the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_transit_gateway_connect_peer_association.timeouts.new](#fn-timeoutsnew) constructor.
+  - `device_id` (`string`): 
+  - `global_network_id` (`string`): 
+  - `link_id` (`string`):  When `null`, the `link_id` field will be omitted from the resulting object.
+  - `transit_gateway_connect_peer_arn` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_transit_gateway_connect_peer_association.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkmanager_transit_gateway_connect_peer_association` resource into the root Terraform configuration.
@@ -208,8 +208,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

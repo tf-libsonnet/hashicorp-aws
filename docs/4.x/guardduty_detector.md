@@ -65,11 +65,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `enable` (`bool`): Set the `enable` field on the resulting resource block. When `null`, the `enable` field will be omitted from the resulting object.
-  - `finding_publishing_frequency` (`string`): Set the `finding_publishing_frequency` field on the resulting resource block. When `null`, the `finding_publishing_frequency` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `datasources` (`list[obj]`): Set the `datasources` field on the resulting resource block. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.new](#fn-datasourcesnew) constructor.
+  - `enable` (`bool`):  When `null`, the `enable` field will be omitted from the resulting object.
+  - `finding_publishing_frequency` (`string`):  When `null`, the `finding_publishing_frequency` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `datasources` (`list[obj]`):  When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.new](#fn-datasourcesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,11 +93,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `enable` (`bool`): Set the `enable` field on the resulting object. When `null`, the `enable` field will be omitted from the resulting object.
-  - `finding_publishing_frequency` (`string`): Set the `finding_publishing_frequency` field on the resulting object. When `null`, the `finding_publishing_frequency` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `datasources` (`list[obj]`): Set the `datasources` field on the resulting object. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.new](#fn-datasourcesnew) constructor.
+  - `enable` (`bool`):  When `null`, the `enable` field will be omitted from the resulting object.
+  - `finding_publishing_frequency` (`string`):  When `null`, the `finding_publishing_frequency` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `datasources` (`list[obj]`):  When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.new](#fn-datasourcesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `guardduty_detector` resource into the root Terraform configuration.
@@ -221,9 +221,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `kubernetes` (`list[obj]`): Set the `kubernetes` field on the resulting object. When `null`, the `kubernetes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.new](#fn-datasourceskubernetesnew) constructor.
-  - `malware_protection` (`list[obj]`): Set the `malware_protection` field on the resulting object. When `null`, the `malware_protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.new](#fn-datasourcesmalware_protectionnew) constructor.
-  - `s3_logs` (`list[obj]`): Set the `s3_logs` field on the resulting object. When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.s3_logs.new](#fn-datasourcess3_logsnew) constructor.
+  - `kubernetes` (`list[obj]`):  When `null`, the `kubernetes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.new](#fn-datasourceskubernetesnew) constructor.
+  - `malware_protection` (`list[obj]`):  When `null`, the `malware_protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.new](#fn-datasourcesmalware_protectionnew) constructor.
+  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.s3_logs.new](#fn-datasourcess3_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `datasources` sub block.
@@ -246,7 +246,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `audit_logs` (`list[obj]`): Set the `audit_logs` field on the resulting object. When `null`, the `audit_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.audit_logs.new](#fn-datasourcesdatasourcesaudit_logsnew) constructor.
+  - `audit_logs` (`list[obj]`):  When `null`, the `audit_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.kubernetes.audit_logs.new](#fn-datasourcesdatasourcesaudit_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kubernetes` sub block.
@@ -269,7 +269,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable` (`bool`): Set the `enable` field on the resulting object.
+  - `enable` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `audit_logs` sub block.
@@ -292,7 +292,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `scan_ec2_instance_with_findings` (`list[obj]`): Set the `scan_ec2_instance_with_findings` field on the resulting object. When `null`, the `scan_ec2_instance_with_findings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.new](#fn-datasourcesdatasourcesscan_ec2_instance_with_findingsnew) constructor.
+  - `scan_ec2_instance_with_findings` (`list[obj]`):  When `null`, the `scan_ec2_instance_with_findings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.new](#fn-datasourcesdatasourcesscan_ec2_instance_with_findingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `malware_protection` sub block.
@@ -315,7 +315,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `ebs_volumes` (`list[obj]`): Set the `ebs_volumes` field on the resulting object. When `null`, the `ebs_volumes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.ebs_volumes.new](#fn-datasourcesdatasourcesmalware_protectionebs_volumesnew) constructor.
+  - `ebs_volumes` (`list[obj]`):  When `null`, the `ebs_volumes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_detector.datasources.malware_protection.scan_ec2_instance_with_findings.ebs_volumes.new](#fn-datasourcesdatasourcesmalware_protectionebs_volumesnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `scan_ec2_instance_with_findings` sub block.
@@ -338,7 +338,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable` (`bool`): Set the `enable` field on the resulting object.
+  - `enable` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `ebs_volumes` sub block.
@@ -361,7 +361,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable` (`bool`): Set the `enable` field on the resulting object.
+  - `enable` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `s3_logs` sub block.

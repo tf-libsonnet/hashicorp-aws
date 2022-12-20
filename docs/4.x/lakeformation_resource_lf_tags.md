@@ -66,12 +66,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database` (`list[obj]`): Set the `database` field on the resulting resource block. When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-databasenew) constructor.
-  - `lf_tag` (`list[obj]`): Set the `lf_tag` field on the resulting resource block. When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lf_tagnew) constructor.
-  - `table` (`list[obj]`): Set the `table` field on the resulting resource block. When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-tablenew) constructor.
-  - `table_with_columns` (`list[obj]`): Set the `table_with_columns` field on the resulting resource block. When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-table_with_columnsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-timeoutsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-databasenew) constructor.
+  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lf_tagnew) constructor.
+  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-tablenew) constructor.
+  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-table_with_columnsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,12 +95,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database` (`list[obj]`): Set the `database` field on the resulting object. When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-databasenew) constructor.
-  - `lf_tag` (`list[obj]`): Set the `lf_tag` field on the resulting object. When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lf_tagnew) constructor.
-  - `table` (`list[obj]`): Set the `table` field on the resulting object. When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-tablenew) constructor.
-  - `table_with_columns` (`list[obj]`): Set the `table_with_columns` field on the resulting object. When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-table_with_columnsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-timeoutsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database` (`list[obj]`):  When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.database.new](#fn-databasenew) constructor.
+  - `lf_tag` (`list[obj]`):  When `null`, the `lf_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.lf_tag.new](#fn-lf_tagnew) constructor.
+  - `table` (`list[obj]`):  When `null`, the `table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table.new](#fn-tablenew) constructor.
+  - `table_with_columns` (`list[obj]`):  When `null`, the `table_with_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.table_with_columns.new](#fn-table_with_columnsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_resource_lf_tags.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lakeformation_resource_lf_tags` resource into the root Terraform configuration.
@@ -323,8 +323,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `database` sub block.
@@ -347,9 +347,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `lf_tag` sub block.
@@ -372,10 +372,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `wildcard` (`bool`): Set the `wildcard` field on the resulting object. When `null`, the `wildcard` field will be omitted from the resulting object.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): 
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `wildcard` (`bool`):  When `null`, the `wildcard` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `table` sub block.
@@ -398,12 +398,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `column_names` (`list`): Set the `column_names` field on the resulting object. When `null`, the `column_names` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `excluded_column_names` (`list`): Set the `excluded_column_names` field on the resulting object. When `null`, the `excluded_column_names` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `wildcard` (`bool`): Set the `wildcard` field on the resulting object. When `null`, the `wildcard` field will be omitted from the resulting object.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `column_names` (`list`):  When `null`, the `column_names` field will be omitted from the resulting object.
+  - `database_name` (`string`): 
+  - `excluded_column_names` (`list`):  When `null`, the `excluded_column_names` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `wildcard` (`bool`):  When `null`, the `wildcard` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `table_with_columns` sub block.
@@ -426,8 +426,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

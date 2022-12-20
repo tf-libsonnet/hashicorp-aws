@@ -75,17 +75,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `architecture` (`string`): Set the `architecture` field on the resulting resource block. When `null`, the `architecture` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `release_label` (`string`): Set the `release_label` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `auto_start_configuration` (`list[obj]`): Set the `auto_start_configuration` field on the resulting resource block. When `null`, the `auto_start_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_start_configuration.new](#fn-auto_start_configurationnew) constructor.
-  - `auto_stop_configuration` (`list[obj]`): Set the `auto_stop_configuration` field on the resulting resource block. When `null`, the `auto_stop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_stop_configuration.new](#fn-auto_stop_configurationnew) constructor.
-  - `initial_capacity` (`list[obj]`): Set the `initial_capacity` field on the resulting resource block. When `null`, the `initial_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.new](#fn-initial_capacitynew) constructor.
-  - `maximum_capacity` (`list[obj]`): Set the `maximum_capacity` field on the resulting resource block. When `null`, the `maximum_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.maximum_capacity.new](#fn-maximum_capacitynew) constructor.
-  - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting resource block. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `architecture` (`string`):  When `null`, the `architecture` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `release_label` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `auto_start_configuration` (`list[obj]`):  When `null`, the `auto_start_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_start_configuration.new](#fn-auto_start_configurationnew) constructor.
+  - `auto_stop_configuration` (`list[obj]`):  When `null`, the `auto_stop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_stop_configuration.new](#fn-auto_stop_configurationnew) constructor.
+  - `initial_capacity` (`list[obj]`):  When `null`, the `initial_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.new](#fn-initial_capacitynew) constructor.
+  - `maximum_capacity` (`list[obj]`):  When `null`, the `maximum_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.maximum_capacity.new](#fn-maximum_capacitynew) constructor.
+  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.network_configuration.new](#fn-network_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -109,17 +109,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `architecture` (`string`): Set the `architecture` field on the resulting object. When `null`, the `architecture` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `release_label` (`string`): Set the `release_label` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `auto_start_configuration` (`list[obj]`): Set the `auto_start_configuration` field on the resulting object. When `null`, the `auto_start_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_start_configuration.new](#fn-auto_start_configurationnew) constructor.
-  - `auto_stop_configuration` (`list[obj]`): Set the `auto_stop_configuration` field on the resulting object. When `null`, the `auto_stop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_stop_configuration.new](#fn-auto_stop_configurationnew) constructor.
-  - `initial_capacity` (`list[obj]`): Set the `initial_capacity` field on the resulting object. When `null`, the `initial_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.new](#fn-initial_capacitynew) constructor.
-  - `maximum_capacity` (`list[obj]`): Set the `maximum_capacity` field on the resulting object. When `null`, the `maximum_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.maximum_capacity.new](#fn-maximum_capacitynew) constructor.
-  - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting object. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.network_configuration.new](#fn-network_configurationnew) constructor.
+  - `architecture` (`string`):  When `null`, the `architecture` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `release_label` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `auto_start_configuration` (`list[obj]`):  When `null`, the `auto_start_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_start_configuration.new](#fn-auto_start_configurationnew) constructor.
+  - `auto_stop_configuration` (`list[obj]`):  When `null`, the `auto_stop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_stop_configuration.new](#fn-auto_stop_configurationnew) constructor.
+  - `initial_capacity` (`list[obj]`):  When `null`, the `initial_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.new](#fn-initial_capacitynew) constructor.
+  - `maximum_capacity` (`list[obj]`):  When `null`, the `maximum_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.maximum_capacity.new](#fn-maximum_capacitynew) constructor.
+  - `network_configuration` (`list[obj]`):  When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.network_configuration.new](#fn-network_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emrserverless_application` resource into the root Terraform configuration.
@@ -423,7 +423,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auto_start_configuration` sub block.
@@ -446,8 +446,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `idle_timeout_minutes` (`number`): Set the `idle_timeout_minutes` field on the resulting object. When `null`, the `idle_timeout_minutes` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `idle_timeout_minutes` (`number`):  When `null`, the `idle_timeout_minutes` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auto_stop_configuration` sub block.
@@ -470,8 +470,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `initial_capacity_type` (`string`): Set the `initial_capacity_type` field on the resulting object.
-  - `initial_capacity_config` (`list[obj]`): Set the `initial_capacity_config` field on the resulting object. When `null`, the `initial_capacity_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.new](#fn-initial_capacityinitial_capacity_confignew) constructor.
+  - `initial_capacity_type` (`string`): 
+  - `initial_capacity_config` (`list[obj]`):  When `null`, the `initial_capacity_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.new](#fn-initial_capacityinitial_capacity_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `initial_capacity` sub block.
@@ -494,8 +494,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `worker_count` (`number`): Set the `worker_count` field on the resulting object.
-  - `worker_configuration` (`list[obj]`): Set the `worker_configuration` field on the resulting object. When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.worker_configuration.new](#fn-initial_capacityinitial_capacityworker_configurationnew) constructor.
+  - `worker_count` (`number`): 
+  - `worker_configuration` (`list[obj]`):  When `null`, the `worker_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.initial_capacity_config.worker_configuration.new](#fn-initial_capacityinitial_capacityworker_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `initial_capacity_config` sub block.
@@ -518,9 +518,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cpu` (`string`): Set the `cpu` field on the resulting object.
-  - `disk` (`string`): Set the `disk` field on the resulting object. When `null`, the `disk` field will be omitted from the resulting object.
-  - `memory` (`string`): Set the `memory` field on the resulting object.
+  - `cpu` (`string`): 
+  - `disk` (`string`):  When `null`, the `disk` field will be omitted from the resulting object.
+  - `memory` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `worker_configuration` sub block.
@@ -543,9 +543,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cpu` (`string`): Set the `cpu` field on the resulting object.
-  - `disk` (`string`): Set the `disk` field on the resulting object. When `null`, the `disk` field will be omitted from the resulting object.
-  - `memory` (`string`): Set the `memory` field on the resulting object.
+  - `cpu` (`string`): 
+  - `disk` (`string`):  When `null`, the `disk` field will be omitted from the resulting object.
+  - `memory` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `maximum_capacity` sub block.
@@ -568,8 +568,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `network_configuration` sub block.

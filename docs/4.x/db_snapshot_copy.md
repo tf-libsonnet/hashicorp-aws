@@ -59,17 +59,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `copy_tags` (`bool`): Set the `copy_tags` field on the resulting resource block. When `null`, the `copy_tags` field will be omitted from the resulting object.
-  - `destination_region` (`string`): Set the `destination_region` field on the resulting resource block. When `null`, the `destination_region` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `option_group_name` (`string`): Set the `option_group_name` field on the resulting resource block. When `null`, the `option_group_name` field will be omitted from the resulting object.
-  - `presigned_url` (`string`): Set the `presigned_url` field on the resulting resource block. When `null`, the `presigned_url` field will be omitted from the resulting object.
-  - `source_db_snapshot_identifier` (`string`): Set the `source_db_snapshot_identifier` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_custom_availability_zone` (`string`): Set the `target_custom_availability_zone` field on the resulting resource block. When `null`, the `target_custom_availability_zone` field will be omitted from the resulting object.
-  - `target_db_snapshot_identifier` (`string`): Set the `target_db_snapshot_identifier` field on the resulting resource block.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_snapshot_copy.timeouts.new](#fn-timeoutsnew) constructor.
+  - `copy_tags` (`bool`):  When `null`, the `copy_tags` field will be omitted from the resulting object.
+  - `destination_region` (`string`):  When `null`, the `destination_region` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `option_group_name` (`string`):  When `null`, the `option_group_name` field will be omitted from the resulting object.
+  - `presigned_url` (`string`):  When `null`, the `presigned_url` field will be omitted from the resulting object.
+  - `source_db_snapshot_identifier` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_custom_availability_zone` (`string`):  When `null`, the `target_custom_availability_zone` field will be omitted from the resulting object.
+  - `target_db_snapshot_identifier` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_snapshot_copy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,17 +93,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `copy_tags` (`bool`): Set the `copy_tags` field on the resulting object. When `null`, the `copy_tags` field will be omitted from the resulting object.
-  - `destination_region` (`string`): Set the `destination_region` field on the resulting object. When `null`, the `destination_region` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `option_group_name` (`string`): Set the `option_group_name` field on the resulting object. When `null`, the `option_group_name` field will be omitted from the resulting object.
-  - `presigned_url` (`string`): Set the `presigned_url` field on the resulting object. When `null`, the `presigned_url` field will be omitted from the resulting object.
-  - `source_db_snapshot_identifier` (`string`): Set the `source_db_snapshot_identifier` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_custom_availability_zone` (`string`): Set the `target_custom_availability_zone` field on the resulting object. When `null`, the `target_custom_availability_zone` field will be omitted from the resulting object.
-  - `target_db_snapshot_identifier` (`string`): Set the `target_db_snapshot_identifier` field on the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_snapshot_copy.timeouts.new](#fn-timeoutsnew) constructor.
+  - `copy_tags` (`bool`):  When `null`, the `copy_tags` field will be omitted from the resulting object.
+  - `destination_region` (`string`):  When `null`, the `destination_region` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `option_group_name` (`string`):  When `null`, the `option_group_name` field will be omitted from the resulting object.
+  - `presigned_url` (`string`):  When `null`, the `presigned_url` field will be omitted from the resulting object.
+  - `source_db_snapshot_identifier` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_custom_availability_zone` (`string`):  When `null`, the `target_custom_availability_zone` field will be omitted from the resulting object.
+  - `target_db_snapshot_identifier` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_snapshot_copy.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `db_snapshot_copy` resource into the root Terraform configuration.
@@ -322,7 +322,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

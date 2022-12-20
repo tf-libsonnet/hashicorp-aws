@@ -83,20 +83,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `owner` (`string`): Set the `owner` field on the resulting resource block. When `null`, the `owner` field will be omitted from the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `retention` (`number`): Set the `retention` field on the resulting resource block. When `null`, the `retention` field will be omitted from the resulting object.
-  - `table_type` (`string`): Set the `table_type` field on the resulting resource block. When `null`, the `table_type` field will be omitted from the resulting object.
-  - `view_expanded_text` (`string`): Set the `view_expanded_text` field on the resulting resource block. When `null`, the `view_expanded_text` field will be omitted from the resulting object.
-  - `view_original_text` (`string`): Set the `view_original_text` field on the resulting resource block. When `null`, the `view_original_text` field will be omitted from the resulting object.
-  - `partition_index` (`list[obj]`): Set the `partition_index` field on the resulting resource block. When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_index.new](#fn-partition_indexnew) constructor.
-  - `partition_keys` (`list[obj]`): Set the `partition_keys` field on the resulting resource block. When `null`, the `partition_keys` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_keys.new](#fn-partition_keysnew) constructor.
-  - `storage_descriptor` (`list[obj]`): Set the `storage_descriptor` field on the resulting resource block. When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.new](#fn-storage_descriptornew) constructor.
-  - `target_table` (`list[obj]`): Set the `target_table` field on the resulting resource block. When `null`, the `target_table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.target_table.new](#fn-target_tablenew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `owner` (`string`):  When `null`, the `owner` field will be omitted from the resulting object.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `retention` (`number`):  When `null`, the `retention` field will be omitted from the resulting object.
+  - `table_type` (`string`):  When `null`, the `table_type` field will be omitted from the resulting object.
+  - `view_expanded_text` (`string`):  When `null`, the `view_expanded_text` field will be omitted from the resulting object.
+  - `view_original_text` (`string`):  When `null`, the `view_original_text` field will be omitted from the resulting object.
+  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_index.new](#fn-partition_indexnew) constructor.
+  - `partition_keys` (`list[obj]`):  When `null`, the `partition_keys` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_keys.new](#fn-partition_keysnew) constructor.
+  - `storage_descriptor` (`list[obj]`):  When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.new](#fn-storage_descriptornew) constructor.
+  - `target_table` (`list[obj]`):  When `null`, the `target_table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.target_table.new](#fn-target_tablenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -120,20 +120,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `owner` (`string`): Set the `owner` field on the resulting object. When `null`, the `owner` field will be omitted from the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `retention` (`number`): Set the `retention` field on the resulting object. When `null`, the `retention` field will be omitted from the resulting object.
-  - `table_type` (`string`): Set the `table_type` field on the resulting object. When `null`, the `table_type` field will be omitted from the resulting object.
-  - `view_expanded_text` (`string`): Set the `view_expanded_text` field on the resulting object. When `null`, the `view_expanded_text` field will be omitted from the resulting object.
-  - `view_original_text` (`string`): Set the `view_original_text` field on the resulting object. When `null`, the `view_original_text` field will be omitted from the resulting object.
-  - `partition_index` (`list[obj]`): Set the `partition_index` field on the resulting object. When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_index.new](#fn-partition_indexnew) constructor.
-  - `partition_keys` (`list[obj]`): Set the `partition_keys` field on the resulting object. When `null`, the `partition_keys` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_keys.new](#fn-partition_keysnew) constructor.
-  - `storage_descriptor` (`list[obj]`): Set the `storage_descriptor` field on the resulting object. When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.new](#fn-storage_descriptornew) constructor.
-  - `target_table` (`list[obj]`): Set the `target_table` field on the resulting object. When `null`, the `target_table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.target_table.new](#fn-target_tablenew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `owner` (`string`):  When `null`, the `owner` field will be omitted from the resulting object.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `retention` (`number`):  When `null`, the `retention` field will be omitted from the resulting object.
+  - `table_type` (`string`):  When `null`, the `table_type` field will be omitted from the resulting object.
+  - `view_expanded_text` (`string`):  When `null`, the `view_expanded_text` field will be omitted from the resulting object.
+  - `view_original_text` (`string`):  When `null`, the `view_original_text` field will be omitted from the resulting object.
+  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_index.new](#fn-partition_indexnew) constructor.
+  - `partition_keys` (`list[obj]`):  When `null`, the `partition_keys` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_keys.new](#fn-partition_keysnew) constructor.
+  - `storage_descriptor` (`list[obj]`):  When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.new](#fn-storage_descriptornew) constructor.
+  - `target_table` (`list[obj]`):  When `null`, the `target_table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.target_table.new](#fn-target_tablenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_catalog_table` resource into the root Terraform configuration.
@@ -464,8 +464,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `index_name` (`string`): Set the `index_name` field on the resulting object.
-  - `keys` (`list`): Set the `keys` field on the resulting object.
+  - `index_name` (`string`): 
+  - `keys` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `partition_index` sub block.
@@ -488,9 +488,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `partition_keys` sub block.
@@ -513,19 +513,19 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_columns` (`list`): Set the `bucket_columns` field on the resulting object. When `null`, the `bucket_columns` field will be omitted from the resulting object.
-  - `compressed` (`bool`): Set the `compressed` field on the resulting object. When `null`, the `compressed` field will be omitted from the resulting object.
-  - `input_format` (`string`): Set the `input_format` field on the resulting object. When `null`, the `input_format` field will be omitted from the resulting object.
-  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
-  - `number_of_buckets` (`number`): Set the `number_of_buckets` field on the resulting object. When `null`, the `number_of_buckets` field will be omitted from the resulting object.
-  - `output_format` (`string`): Set the `output_format` field on the resulting object. When `null`, the `output_format` field will be omitted from the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `stored_as_sub_directories` (`bool`): Set the `stored_as_sub_directories` field on the resulting object. When `null`, the `stored_as_sub_directories` field will be omitted from the resulting object.
-  - `columns` (`list[obj]`): Set the `columns` field on the resulting object. When `null`, the `columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.columns.new](#fn-storage_descriptorcolumnsnew) constructor.
-  - `schema_reference` (`list[obj]`): Set the `schema_reference` field on the resulting object. When `null`, the `schema_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.new](#fn-storage_descriptorschema_referencenew) constructor.
-  - `ser_de_info` (`list[obj]`): Set the `ser_de_info` field on the resulting object. When `null`, the `ser_de_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.ser_de_info.new](#fn-storage_descriptorser_de_infonew) constructor.
-  - `skewed_info` (`list[obj]`): Set the `skewed_info` field on the resulting object. When `null`, the `skewed_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.skewed_info.new](#fn-storage_descriptorskewed_infonew) constructor.
-  - `sort_columns` (`list[obj]`): Set the `sort_columns` field on the resulting object. When `null`, the `sort_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.sort_columns.new](#fn-storage_descriptorsort_columnsnew) constructor.
+  - `bucket_columns` (`list`):  When `null`, the `bucket_columns` field will be omitted from the resulting object.
+  - `compressed` (`bool`):  When `null`, the `compressed` field will be omitted from the resulting object.
+  - `input_format` (`string`):  When `null`, the `input_format` field will be omitted from the resulting object.
+  - `location` (`string`):  When `null`, the `location` field will be omitted from the resulting object.
+  - `number_of_buckets` (`number`):  When `null`, the `number_of_buckets` field will be omitted from the resulting object.
+  - `output_format` (`string`):  When `null`, the `output_format` field will be omitted from the resulting object.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `stored_as_sub_directories` (`bool`):  When `null`, the `stored_as_sub_directories` field will be omitted from the resulting object.
+  - `columns` (`list[obj]`):  When `null`, the `columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.columns.new](#fn-storage_descriptorcolumnsnew) constructor.
+  - `schema_reference` (`list[obj]`):  When `null`, the `schema_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.new](#fn-storage_descriptorschema_referencenew) constructor.
+  - `ser_de_info` (`list[obj]`):  When `null`, the `ser_de_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.ser_de_info.new](#fn-storage_descriptorser_de_infonew) constructor.
+  - `skewed_info` (`list[obj]`):  When `null`, the `skewed_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.skewed_info.new](#fn-storage_descriptorskewed_infonew) constructor.
+  - `sort_columns` (`list[obj]`):  When `null`, the `sort_columns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.sort_columns.new](#fn-storage_descriptorsort_columnsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `storage_descriptor` sub block.
@@ -548,10 +548,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `columns` sub block.
@@ -574,9 +574,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `schema_version_id` (`string`): Set the `schema_version_id` field on the resulting object. When `null`, the `schema_version_id` field will be omitted from the resulting object.
-  - `schema_version_number` (`number`): Set the `schema_version_number` field on the resulting object.
-  - `schema_id` (`list[obj]`): Set the `schema_id` field on the resulting object. When `null`, the `schema_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.schema_id.new](#fn-storage_descriptorstorage_descriptorschema_idnew) constructor.
+  - `schema_version_id` (`string`):  When `null`, the `schema_version_id` field will be omitted from the resulting object.
+  - `schema_version_number` (`number`): 
+  - `schema_id` (`list[obj]`):  When `null`, the `schema_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.schema_reference.schema_id.new](#fn-storage_descriptorstorage_descriptorschema_idnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `schema_reference` sub block.
@@ -599,9 +599,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `registry_name` (`string`): Set the `registry_name` field on the resulting object. When `null`, the `registry_name` field will be omitted from the resulting object.
-  - `schema_arn` (`string`): Set the `schema_arn` field on the resulting object. When `null`, the `schema_arn` field will be omitted from the resulting object.
-  - `schema_name` (`string`): Set the `schema_name` field on the resulting object. When `null`, the `schema_name` field will be omitted from the resulting object.
+  - `registry_name` (`string`):  When `null`, the `registry_name` field will be omitted from the resulting object.
+  - `schema_arn` (`string`):  When `null`, the `schema_arn` field will be omitted from the resulting object.
+  - `schema_name` (`string`):  When `null`, the `schema_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `schema_id` sub block.
@@ -624,9 +624,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `serialization_library` (`string`): Set the `serialization_library` field on the resulting object. When `null`, the `serialization_library` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `serialization_library` (`string`):  When `null`, the `serialization_library` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ser_de_info` sub block.
@@ -649,9 +649,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `skewed_column_names` (`list`): Set the `skewed_column_names` field on the resulting object. When `null`, the `skewed_column_names` field will be omitted from the resulting object.
-  - `skewed_column_value_location_maps` (`obj`): Set the `skewed_column_value_location_maps` field on the resulting object. When `null`, the `skewed_column_value_location_maps` field will be omitted from the resulting object.
-  - `skewed_column_values` (`list`): Set the `skewed_column_values` field on the resulting object. When `null`, the `skewed_column_values` field will be omitted from the resulting object.
+  - `skewed_column_names` (`list`):  When `null`, the `skewed_column_names` field will be omitted from the resulting object.
+  - `skewed_column_value_location_maps` (`obj`):  When `null`, the `skewed_column_value_location_maps` field will be omitted from the resulting object.
+  - `skewed_column_values` (`list`):  When `null`, the `skewed_column_values` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `skewed_info` sub block.
@@ -674,8 +674,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `column` (`string`): Set the `column` field on the resulting object.
-  - `sort_order` (`number`): Set the `sort_order` field on the resulting object.
+  - `column` (`string`): 
+  - `sort_order` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `sort_columns` sub block.
@@ -698,9 +698,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
+  - `catalog_id` (`string`): 
+  - `database_name` (`string`): 
+  - `name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `target_table` sub block.

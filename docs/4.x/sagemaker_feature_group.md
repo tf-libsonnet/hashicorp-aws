@@ -70,16 +70,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `event_time_feature_name` (`string`): Set the `event_time_feature_name` field on the resulting resource block.
-  - `feature_group_name` (`string`): Set the `feature_group_name` field on the resulting resource block.
-  - `record_identifier_feature_name` (`string`): Set the `record_identifier_feature_name` field on the resulting resource block.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `feature_definition` (`list[obj]`): Set the `feature_definition` field on the resulting resource block. When `null`, the `feature_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.feature_definition.new](#fn-feature_definitionnew) constructor.
-  - `offline_store_config` (`list[obj]`): Set the `offline_store_config` field on the resulting resource block. When `null`, the `offline_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.new](#fn-offline_store_confignew) constructor.
-  - `online_store_config` (`list[obj]`): Set the `online_store_config` field on the resulting resource block. When `null`, the `online_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.new](#fn-online_store_confignew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `event_time_feature_name` (`string`): 
+  - `feature_group_name` (`string`): 
+  - `record_identifier_feature_name` (`string`): 
+  - `role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `feature_definition` (`list[obj]`):  When `null`, the `feature_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.feature_definition.new](#fn-feature_definitionnew) constructor.
+  - `offline_store_config` (`list[obj]`):  When `null`, the `offline_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.new](#fn-offline_store_confignew) constructor.
+  - `online_store_config` (`list[obj]`):  When `null`, the `online_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.new](#fn-online_store_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,16 +103,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `event_time_feature_name` (`string`): Set the `event_time_feature_name` field on the resulting object.
-  - `feature_group_name` (`string`): Set the `feature_group_name` field on the resulting object.
-  - `record_identifier_feature_name` (`string`): Set the `record_identifier_feature_name` field on the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `feature_definition` (`list[obj]`): Set the `feature_definition` field on the resulting object. When `null`, the `feature_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.feature_definition.new](#fn-feature_definitionnew) constructor.
-  - `offline_store_config` (`list[obj]`): Set the `offline_store_config` field on the resulting object. When `null`, the `offline_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.new](#fn-offline_store_confignew) constructor.
-  - `online_store_config` (`list[obj]`): Set the `online_store_config` field on the resulting object. When `null`, the `online_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.new](#fn-online_store_confignew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `event_time_feature_name` (`string`): 
+  - `feature_group_name` (`string`): 
+  - `record_identifier_feature_name` (`string`): 
+  - `role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `feature_definition` (`list[obj]`):  When `null`, the `feature_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.feature_definition.new](#fn-feature_definitionnew) constructor.
+  - `offline_store_config` (`list[obj]`):  When `null`, the `offline_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.new](#fn-offline_store_confignew) constructor.
+  - `online_store_config` (`list[obj]`):  When `null`, the `online_store_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.new](#fn-online_store_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_feature_group` resource into the root Terraform configuration.
@@ -358,8 +358,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `feature_name` (`string`): Set the `feature_name` field on the resulting object. When `null`, the `feature_name` field will be omitted from the resulting object.
-  - `feature_type` (`string`): Set the `feature_type` field on the resulting object. When `null`, the `feature_type` field will be omitted from the resulting object.
+  - `feature_name` (`string`):  When `null`, the `feature_name` field will be omitted from the resulting object.
+  - `feature_type` (`string`):  When `null`, the `feature_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `feature_definition` sub block.
@@ -382,9 +382,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `disable_glue_table_creation` (`bool`): Set the `disable_glue_table_creation` field on the resulting object. When `null`, the `disable_glue_table_creation` field will be omitted from the resulting object.
-  - `data_catalog_config` (`list[obj]`): Set the `data_catalog_config` field on the resulting object. When `null`, the `data_catalog_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.data_catalog_config.new](#fn-offline_store_configdata_catalog_confignew) constructor.
-  - `s3_storage_config` (`list[obj]`): Set the `s3_storage_config` field on the resulting object. When `null`, the `s3_storage_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.s3_storage_config.new](#fn-offline_store_configs3_storage_confignew) constructor.
+  - `disable_glue_table_creation` (`bool`):  When `null`, the `disable_glue_table_creation` field will be omitted from the resulting object.
+  - `data_catalog_config` (`list[obj]`):  When `null`, the `data_catalog_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.data_catalog_config.new](#fn-offline_store_configdata_catalog_confignew) constructor.
+  - `s3_storage_config` (`list[obj]`):  When `null`, the `s3_storage_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.s3_storage_config.new](#fn-offline_store_configs3_storage_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `offline_store_config` sub block.
@@ -407,9 +407,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog` (`string`): Set the `catalog` field on the resulting object. When `null`, the `catalog` field will be omitted from the resulting object.
-  - `database` (`string`): Set the `database` field on the resulting object. When `null`, the `database` field will be omitted from the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting object. When `null`, the `table_name` field will be omitted from the resulting object.
+  - `catalog` (`string`):  When `null`, the `catalog` field will be omitted from the resulting object.
+  - `database` (`string`):  When `null`, the `database` field will be omitted from the resulting object.
+  - `table_name` (`string`):  When `null`, the `table_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `data_catalog_config` sub block.
@@ -432,8 +432,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `s3_uri` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `s3_storage_config` sub block.
@@ -456,8 +456,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable_online_store` (`bool`): Set the `enable_online_store` field on the resulting object. When `null`, the `enable_online_store` field will be omitted from the resulting object.
-  - `security_config` (`list[obj]`): Set the `security_config` field on the resulting object. When `null`, the `security_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.security_config.new](#fn-online_store_configsecurity_confignew) constructor.
+  - `enable_online_store` (`bool`):  When `null`, the `enable_online_store` field will be omitted from the resulting object.
+  - `security_config` (`list[obj]`):  When `null`, the `security_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.security_config.new](#fn-online_store_configsecurity_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `online_store_config` sub block.
@@ -480,7 +480,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `security_config` sub block.

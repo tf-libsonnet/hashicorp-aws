@@ -73,25 +73,25 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `architecture` (`string`): Set the `architecture` field on the resulting resource block. When `null`, the `architecture` field will be omitted from the resulting object.
-  - `boot_mode` (`string`): Set the `boot_mode` field on the resulting resource block. When `null`, the `boot_mode` field will be omitted from the resulting object.
-  - `deprecation_time` (`string`): Set the `deprecation_time` field on the resulting resource block. When `null`, the `deprecation_time` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `ena_support` (`bool`): Set the `ena_support` field on the resulting resource block. When `null`, the `ena_support` field will be omitted from the resulting object.
-  - `image_location` (`string`): Set the `image_location` field on the resulting resource block. When `null`, the `image_location` field will be omitted from the resulting object.
-  - `imds_support` (`string`): Set the `imds_support` field on the resulting resource block. When `null`, the `imds_support` field will be omitted from the resulting object.
-  - `kernel_id` (`string`): Set the `kernel_id` field on the resulting resource block. When `null`, the `kernel_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `ramdisk_id` (`string`): Set the `ramdisk_id` field on the resulting resource block. When `null`, the `ramdisk_id` field will be omitted from the resulting object.
-  - `root_device_name` (`string`): Set the `root_device_name` field on the resulting resource block. When `null`, the `root_device_name` field will be omitted from the resulting object.
-  - `sriov_net_support` (`string`): Set the `sriov_net_support` field on the resulting resource block. When `null`, the `sriov_net_support` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tpm_support` (`string`): Set the `tpm_support` field on the resulting resource block. When `null`, the `tpm_support` field will be omitted from the resulting object.
-  - `virtualization_type` (`string`): Set the `virtualization_type` field on the resulting resource block. When `null`, the `virtualization_type` field will be omitted from the resulting object.
-  - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting resource block. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
-  - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting resource block. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.timeouts.new](#fn-timeoutsnew) constructor.
+  - `architecture` (`string`):  When `null`, the `architecture` field will be omitted from the resulting object.
+  - `boot_mode` (`string`):  When `null`, the `boot_mode` field will be omitted from the resulting object.
+  - `deprecation_time` (`string`):  When `null`, the `deprecation_time` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `ena_support` (`bool`):  When `null`, the `ena_support` field will be omitted from the resulting object.
+  - `image_location` (`string`):  When `null`, the `image_location` field will be omitted from the resulting object.
+  - `imds_support` (`string`):  When `null`, the `imds_support` field will be omitted from the resulting object.
+  - `kernel_id` (`string`):  When `null`, the `kernel_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `ramdisk_id` (`string`):  When `null`, the `ramdisk_id` field will be omitted from the resulting object.
+  - `root_device_name` (`string`):  When `null`, the `root_device_name` field will be omitted from the resulting object.
+  - `sriov_net_support` (`string`):  When `null`, the `sriov_net_support` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tpm_support` (`string`):  When `null`, the `tpm_support` field will be omitted from the resulting object.
+  - `virtualization_type` (`string`):  When `null`, the `virtualization_type` field will be omitted from the resulting object.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -115,25 +115,25 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `architecture` (`string`): Set the `architecture` field on the resulting object. When `null`, the `architecture` field will be omitted from the resulting object.
-  - `boot_mode` (`string`): Set the `boot_mode` field on the resulting object. When `null`, the `boot_mode` field will be omitted from the resulting object.
-  - `deprecation_time` (`string`): Set the `deprecation_time` field on the resulting object. When `null`, the `deprecation_time` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `ena_support` (`bool`): Set the `ena_support` field on the resulting object. When `null`, the `ena_support` field will be omitted from the resulting object.
-  - `image_location` (`string`): Set the `image_location` field on the resulting object. When `null`, the `image_location` field will be omitted from the resulting object.
-  - `imds_support` (`string`): Set the `imds_support` field on the resulting object. When `null`, the `imds_support` field will be omitted from the resulting object.
-  - `kernel_id` (`string`): Set the `kernel_id` field on the resulting object. When `null`, the `kernel_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `ramdisk_id` (`string`): Set the `ramdisk_id` field on the resulting object. When `null`, the `ramdisk_id` field will be omitted from the resulting object.
-  - `root_device_name` (`string`): Set the `root_device_name` field on the resulting object. When `null`, the `root_device_name` field will be omitted from the resulting object.
-  - `sriov_net_support` (`string`): Set the `sriov_net_support` field on the resulting object. When `null`, the `sriov_net_support` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tpm_support` (`string`): Set the `tpm_support` field on the resulting object. When `null`, the `tpm_support` field will be omitted from the resulting object.
-  - `virtualization_type` (`string`): Set the `virtualization_type` field on the resulting object. When `null`, the `virtualization_type` field will be omitted from the resulting object.
-  - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting object. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
-  - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting object. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.timeouts.new](#fn-timeoutsnew) constructor.
+  - `architecture` (`string`):  When `null`, the `architecture` field will be omitted from the resulting object.
+  - `boot_mode` (`string`):  When `null`, the `boot_mode` field will be omitted from the resulting object.
+  - `deprecation_time` (`string`):  When `null`, the `deprecation_time` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `ena_support` (`bool`):  When `null`, the `ena_support` field will be omitted from the resulting object.
+  - `image_location` (`string`):  When `null`, the `image_location` field will be omitted from the resulting object.
+  - `imds_support` (`string`):  When `null`, the `imds_support` field will be omitted from the resulting object.
+  - `kernel_id` (`string`):  When `null`, the `kernel_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `ramdisk_id` (`string`):  When `null`, the `ramdisk_id` field will be omitted from the resulting object.
+  - `root_device_name` (`string`):  When `null`, the `root_device_name` field will be omitted from the resulting object.
+  - `sriov_net_support` (`string`):  When `null`, the `sriov_net_support` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tpm_support` (`string`):  When `null`, the `tpm_support` field will be omitted from the resulting object.
+  - `virtualization_type` (`string`):  When `null`, the `virtualization_type` field will be omitted from the resulting object.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ami.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ami` resource into the root Terraform configuration.
@@ -522,15 +522,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete_on_termination` (`bool`): Set the `delete_on_termination` field on the resulting object. When `null`, the `delete_on_termination` field will be omitted from the resulting object.
-  - `device_name` (`string`): Set the `device_name` field on the resulting object.
-  - `encrypted` (`bool`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
-  - `outpost_arn` (`string`): Set the `outpost_arn` field on the resulting object. When `null`, the `outpost_arn` field will be omitted from the resulting object.
-  - `snapshot_id` (`string`): Set the `snapshot_id` field on the resulting object. When `null`, the `snapshot_id` field will be omitted from the resulting object.
-  - `throughput` (`number`): Set the `throughput` field on the resulting object. When `null`, the `throughput` field will be omitted from the resulting object.
-  - `volume_size` (`number`): Set the `volume_size` field on the resulting object. When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `delete_on_termination` (`bool`):  When `null`, the `delete_on_termination` field will be omitted from the resulting object.
+  - `device_name` (`string`): 
+  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
+  - `outpost_arn` (`string`):  When `null`, the `outpost_arn` field will be omitted from the resulting object.
+  - `snapshot_id` (`string`):  When `null`, the `snapshot_id` field will be omitted from the resulting object.
+  - `throughput` (`number`):  When `null`, the `throughput` field will be omitted from the resulting object.
+  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs_block_device` sub block.
@@ -553,8 +553,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `device_name` (`string`): Set the `device_name` field on the resulting object.
-  - `virtual_name` (`string`): Set the `virtual_name` field on the resulting object.
+  - `device_name` (`string`): 
+  - `virtual_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `ephemeral_block_device` sub block.
@@ -577,9 +577,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

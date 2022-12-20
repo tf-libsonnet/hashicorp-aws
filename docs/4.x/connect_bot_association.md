@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting resource block.
-  - `lex_bot` (`list[obj]`): Set the `lex_bot` field on the resulting resource block. When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-lex_botnew) constructor.
+  - `instance_id` (`string`): 
+  - `lex_bot` (`list[obj]`):  When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-lex_botnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting object.
-  - `lex_bot` (`list[obj]`): Set the `lex_bot` field on the resulting object. When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-lex_botnew) constructor.
+  - `instance_id` (`string`): 
+  - `lex_bot` (`list[obj]`):  When `null`, the `lex_bot` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_bot_association.lex_bot.new](#fn-lex_botnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_bot_association` resource into the root Terraform configuration.
@@ -152,8 +152,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `lex_region` (`string`): Set the `lex_region` field on the resulting object. When `null`, the `lex_region` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
+  - `lex_region` (`string`):  When `null`, the `lex_region` field will be omitted from the resulting object.
+  - `name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `lex_bot` sub block.

@@ -67,9 +67,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting resource block. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,9 +93,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_lifecycle_configuration` resource into the root Terraform configuration.
@@ -187,14 +187,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object.
-  - `abort_incomplete_multipart_upload` (`list[obj]`): Set the `abort_incomplete_multipart_upload` field on the resulting object. When `null`, the `abort_incomplete_multipart_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.abort_incomplete_multipart_upload.new](#fn-ruleabort_incomplete_multipart_uploadnew) constructor.
-  - `expiration` (`list[obj]`): Set the `expiration` field on the resulting object. When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.expiration.new](#fn-ruleexpirationnew) constructor.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.filter.new](#fn-rulefilternew) constructor.
-  - `noncurrent_version_expiration` (`list[obj]`): Set the `noncurrent_version_expiration` field on the resulting object. When `null`, the `noncurrent_version_expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.noncurrent_version_expiration.new](#fn-rulenoncurrent_version_expirationnew) constructor.
-  - `noncurrent_version_transition` (`list[obj]`): Set the `noncurrent_version_transition` field on the resulting object. When `null`, the `noncurrent_version_transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.noncurrent_version_transition.new](#fn-rulenoncurrent_version_transitionnew) constructor.
-  - `transition` (`list[obj]`): Set the `transition` field on the resulting object. When `null`, the `transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.transition.new](#fn-ruletransitionnew) constructor.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `status` (`string`): 
+  - `abort_incomplete_multipart_upload` (`list[obj]`):  When `null`, the `abort_incomplete_multipart_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.abort_incomplete_multipart_upload.new](#fn-ruleabort_incomplete_multipart_uploadnew) constructor.
+  - `expiration` (`list[obj]`):  When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.expiration.new](#fn-ruleexpirationnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.filter.new](#fn-rulefilternew) constructor.
+  - `noncurrent_version_expiration` (`list[obj]`):  When `null`, the `noncurrent_version_expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.noncurrent_version_expiration.new](#fn-rulenoncurrent_version_expirationnew) constructor.
+  - `noncurrent_version_transition` (`list[obj]`):  When `null`, the `noncurrent_version_transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.noncurrent_version_transition.new](#fn-rulenoncurrent_version_transitionnew) constructor.
+  - `transition` (`list[obj]`):  When `null`, the `transition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.transition.new](#fn-ruletransitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -217,7 +217,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `days_after_initiation` (`number`): Set the `days_after_initiation` field on the resulting object. When `null`, the `days_after_initiation` field will be omitted from the resulting object.
+  - `days_after_initiation` (`number`):  When `null`, the `days_after_initiation` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `abort_incomplete_multipart_upload` sub block.
@@ -240,9 +240,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `date` (`string`): Set the `date` field on the resulting object. When `null`, the `date` field will be omitted from the resulting object.
-  - `days` (`number`): Set the `days` field on the resulting object. When `null`, the `days` field will be omitted from the resulting object.
-  - `expired_object_delete_marker` (`bool`): Set the `expired_object_delete_marker` field on the resulting object. When `null`, the `expired_object_delete_marker` field will be omitted from the resulting object.
+  - `date` (`string`):  When `null`, the `date` field will be omitted from the resulting object.
+  - `days` (`number`):  When `null`, the `days` field will be omitted from the resulting object.
+  - `expired_object_delete_marker` (`bool`):  When `null`, the `expired_object_delete_marker` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `expiration` sub block.
@@ -265,11 +265,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `object_size_greater_than` (`string`): Set the `object_size_greater_than` field on the resulting object. When `null`, the `object_size_greater_than` field will be omitted from the resulting object.
-  - `object_size_less_than` (`string`): Set the `object_size_less_than` field on the resulting object. When `null`, the `object_size_less_than` field will be omitted from the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `and` (`list[obj]`): Set the `and` field on the resulting object. When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.filter.and.new](#fn-ruleruleandnew) constructor.
-  - `tag` (`list[obj]`): Set the `tag` field on the resulting object. When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.filter.tag.new](#fn-ruleruletagnew) constructor.
+  - `object_size_greater_than` (`string`):  When `null`, the `object_size_greater_than` field will be omitted from the resulting object.
+  - `object_size_less_than` (`string`):  When `null`, the `object_size_less_than` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.filter.and.new](#fn-ruleruleandnew) constructor.
+  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_lifecycle_configuration.rule.filter.tag.new](#fn-ruleruletagnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -292,10 +292,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `object_size_greater_than` (`number`): Set the `object_size_greater_than` field on the resulting object. When `null`, the `object_size_greater_than` field will be omitted from the resulting object.
-  - `object_size_less_than` (`number`): Set the `object_size_less_than` field on the resulting object. When `null`, the `object_size_less_than` field will be omitted from the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `object_size_greater_than` (`number`):  When `null`, the `object_size_greater_than` field will be omitted from the resulting object.
+  - `object_size_less_than` (`number`):  When `null`, the `object_size_less_than` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -318,8 +318,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `tag` sub block.
@@ -342,8 +342,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `newer_noncurrent_versions` (`string`): Set the `newer_noncurrent_versions` field on the resulting object. When `null`, the `newer_noncurrent_versions` field will be omitted from the resulting object.
-  - `noncurrent_days` (`number`): Set the `noncurrent_days` field on the resulting object. When `null`, the `noncurrent_days` field will be omitted from the resulting object.
+  - `newer_noncurrent_versions` (`string`):  When `null`, the `newer_noncurrent_versions` field will be omitted from the resulting object.
+  - `noncurrent_days` (`number`):  When `null`, the `noncurrent_days` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `noncurrent_version_expiration` sub block.
@@ -366,9 +366,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `newer_noncurrent_versions` (`string`): Set the `newer_noncurrent_versions` field on the resulting object. When `null`, the `newer_noncurrent_versions` field will be omitted from the resulting object.
-  - `noncurrent_days` (`number`): Set the `noncurrent_days` field on the resulting object. When `null`, the `noncurrent_days` field will be omitted from the resulting object.
-  - `storage_class` (`string`): Set the `storage_class` field on the resulting object.
+  - `newer_noncurrent_versions` (`string`):  When `null`, the `newer_noncurrent_versions` field will be omitted from the resulting object.
+  - `noncurrent_days` (`number`):  When `null`, the `noncurrent_days` field will be omitted from the resulting object.
+  - `storage_class` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `noncurrent_version_transition` sub block.
@@ -391,9 +391,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `date` (`string`): Set the `date` field on the resulting object. When `null`, the `date` field will be omitted from the resulting object.
-  - `days` (`number`): Set the `days` field on the resulting object. When `null`, the `days` field will be omitted from the resulting object.
-  - `storage_class` (`string`): Set the `storage_class` field on the resulting object.
+  - `date` (`string`):  When `null`, the `date` field will be omitted from the resulting object.
+  - `days` (`number`):  When `null`, the `days` field will be omitted from the resulting object.
+  - `storage_class` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `transition` sub block.

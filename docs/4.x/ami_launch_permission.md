@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `group` (`string`): Set the `group` field on the resulting resource block. When `null`, the `group` field will be omitted from the resulting object.
-  - `image_id` (`string`): Set the `image_id` field on the resulting resource block.
-  - `organization_arn` (`string`): Set the `organization_arn` field on the resulting resource block. When `null`, the `organization_arn` field will be omitted from the resulting object.
-  - `organizational_unit_arn` (`string`): Set the `organizational_unit_arn` field on the resulting resource block. When `null`, the `organizational_unit_arn` field will be omitted from the resulting object.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `group` (`string`):  When `null`, the `group` field will be omitted from the resulting object.
+  - `image_id` (`string`): 
+  - `organization_arn` (`string`):  When `null`, the `organization_arn` field will be omitted from the resulting object.
+  - `organizational_unit_arn` (`string`):  When `null`, the `organizational_unit_arn` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `group` (`string`): Set the `group` field on the resulting object. When `null`, the `group` field will be omitted from the resulting object.
-  - `image_id` (`string`): Set the `image_id` field on the resulting object.
-  - `organization_arn` (`string`): Set the `organization_arn` field on the resulting object. When `null`, the `organization_arn` field will be omitted from the resulting object.
-  - `organizational_unit_arn` (`string`): Set the `organizational_unit_arn` field on the resulting object. When `null`, the `organizational_unit_arn` field will be omitted from the resulting object.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `group` (`string`):  When `null`, the `group` field will be omitted from the resulting object.
+  - `image_id` (`string`): 
+  - `organization_arn` (`string`):  When `null`, the `organization_arn` field will be omitted from the resulting object.
+  - `organizational_unit_arn` (`string`):  When `null`, the `organizational_unit_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ami_launch_permission` resource into the root Terraform configuration.

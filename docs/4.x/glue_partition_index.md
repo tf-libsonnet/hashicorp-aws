@@ -56,11 +56,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting resource block.
-  - `table_name` (`string`): Set the `table_name` field on the resulting resource block.
-  - `partition_index` (`list[obj]`): Set the `partition_index` field on the resulting resource block. When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-partition_indexnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-timeoutsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): 
+  - `table_name` (`string`): 
+  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-partition_indexnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,11 +84,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting object.
-  - `partition_index` (`list[obj]`): Set the `partition_index` field on the resulting object. When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-partition_indexnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-timeoutsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `database_name` (`string`): 
+  - `table_name` (`string`): 
+  - `partition_index` (`list[obj]`):  When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.partition_index.new](#fn-partition_indexnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_partition_index.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_partition_index` resource into the root Terraform configuration.
@@ -232,8 +232,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `index_name` (`string`): Set the `index_name` field on the resulting object. When `null`, the `index_name` field will be omitted from the resulting object.
-  - `keys` (`list`): Set the `keys` field on the resulting object. When `null`, the `keys` field will be omitted from the resulting object.
+  - `index_name` (`string`):  When `null`, the `index_name` field will be omitted from the resulting object.
+  - `keys` (`list`):  When `null`, the `keys` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `partition_index` sub block.
@@ -256,8 +256,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

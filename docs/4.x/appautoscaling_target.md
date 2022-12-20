@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting resource block.
-  - `min_capacity` (`number`): Set the `min_capacity` field on the resulting resource block.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block. When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `scalable_dimension` (`string`): Set the `scalable_dimension` field on the resulting resource block.
-  - `service_namespace` (`string`): Set the `service_namespace` field on the resulting resource block.
+  - `max_capacity` (`number`): 
+  - `min_capacity` (`number`): 
+  - `resource_id` (`string`): 
+  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `scalable_dimension` (`string`): 
+  - `service_namespace` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting object.
-  - `min_capacity` (`number`): Set the `min_capacity` field on the resulting object.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
-  - `scalable_dimension` (`string`): Set the `scalable_dimension` field on the resulting object.
-  - `service_namespace` (`string`): Set the `service_namespace` field on the resulting object.
+  - `max_capacity` (`number`): 
+  - `min_capacity` (`number`): 
+  - `resource_id` (`string`): 
+  - `role_arn` (`string`):  When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `scalable_dimension` (`string`): 
+  - `service_namespace` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appautoscaling_target` resource into the root Terraform configuration.

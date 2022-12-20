@@ -64,15 +64,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `compute_environment_name` (`string`): Set the `compute_environment_name` field on the resulting resource block. When `null`, the `compute_environment_name` field will be omitted from the resulting object.
-  - `compute_environment_name_prefix` (`string`): Set the `compute_environment_name_prefix` field on the resulting resource block. When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.
-  - `service_role` (`string`): Set the `service_role` field on the resulting resource block. When `null`, the `service_role` field will be omitted from the resulting object.
-  - `state` (`string`): Set the `state` field on the resulting resource block. When `null`, the `state` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting resource block. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.
-  - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting resource block. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.
+  - `compute_environment_name` (`string`):  When `null`, the `compute_environment_name` field will be omitted from the resulting object.
+  - `compute_environment_name_prefix` (`string`):  When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.
+  - `service_role` (`string`):  When `null`, the `service_role` field will be omitted from the resulting object.
+  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `compute_resources` (`list[obj]`):  When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.
+  - `eks_configuration` (`list[obj]`):  When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,15 +96,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `compute_environment_name` (`string`): Set the `compute_environment_name` field on the resulting object. When `null`, the `compute_environment_name` field will be omitted from the resulting object.
-  - `compute_environment_name_prefix` (`string`): Set the `compute_environment_name_prefix` field on the resulting object. When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.
-  - `service_role` (`string`): Set the `service_role` field on the resulting object. When `null`, the `service_role` field will be omitted from the resulting object.
-  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting object. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.
-  - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting object. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.
+  - `compute_environment_name` (`string`):  When `null`, the `compute_environment_name` field will be omitted from the resulting object.
+  - `compute_environment_name_prefix` (`string`):  When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.
+  - `service_role` (`string`):  When `null`, the `service_role` field will be omitted from the resulting object.
+  - `state` (`string`):  When `null`, the `state` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `compute_resources` (`list[obj]`):  When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.
+  - `eks_configuration` (`list[obj]`):  When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `batch_compute_environment` resource into the root Terraform configuration.
@@ -313,22 +313,22 @@ Terraform sub block.
 
 
 **Args**:
-  - `allocation_strategy` (`string`): Set the `allocation_strategy` field on the resulting object. When `null`, the `allocation_strategy` field will be omitted from the resulting object.
-  - `bid_percentage` (`number`): Set the `bid_percentage` field on the resulting object. When `null`, the `bid_percentage` field will be omitted from the resulting object.
-  - `desired_vcpus` (`number`): Set the `desired_vcpus` field on the resulting object. When `null`, the `desired_vcpus` field will be omitted from the resulting object.
-  - `ec2_key_pair` (`string`): Set the `ec2_key_pair` field on the resulting object. When `null`, the `ec2_key_pair` field will be omitted from the resulting object.
-  - `image_id` (`string`): Set the `image_id` field on the resulting object. When `null`, the `image_id` field will be omitted from the resulting object.
-  - `instance_role` (`string`): Set the `instance_role` field on the resulting object. When `null`, the `instance_role` field will be omitted from the resulting object.
-  - `instance_type` (`list`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `max_vcpus` (`number`): Set the `max_vcpus` field on the resulting object.
-  - `min_vcpus` (`number`): Set the `min_vcpus` field on the resulting object. When `null`, the `min_vcpus` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `spot_iam_fleet_role` (`string`): Set the `spot_iam_fleet_role` field on the resulting object. When `null`, the `spot_iam_fleet_role` field will be omitted from the resulting object.
-  - `subnets` (`list`): Set the `subnets` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `ec2_configuration` (`list[obj]`): Set the `ec2_configuration` field on the resulting object. When `null`, the `ec2_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.ec2_configuration.new](#fn-compute_resourcesec2_configurationnew) constructor.
-  - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting object. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.launch_template.new](#fn-compute_resourceslaunch_templatenew) constructor.
+  - `allocation_strategy` (`string`):  When `null`, the `allocation_strategy` field will be omitted from the resulting object.
+  - `bid_percentage` (`number`):  When `null`, the `bid_percentage` field will be omitted from the resulting object.
+  - `desired_vcpus` (`number`):  When `null`, the `desired_vcpus` field will be omitted from the resulting object.
+  - `ec2_key_pair` (`string`):  When `null`, the `ec2_key_pair` field will be omitted from the resulting object.
+  - `image_id` (`string`):  When `null`, the `image_id` field will be omitted from the resulting object.
+  - `instance_role` (`string`):  When `null`, the `instance_role` field will be omitted from the resulting object.
+  - `instance_type` (`list`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `max_vcpus` (`number`): 
+  - `min_vcpus` (`number`):  When `null`, the `min_vcpus` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `spot_iam_fleet_role` (`string`):  When `null`, the `spot_iam_fleet_role` field will be omitted from the resulting object.
+  - `subnets` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `ec2_configuration` (`list[obj]`):  When `null`, the `ec2_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.ec2_configuration.new](#fn-compute_resourcesec2_configurationnew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.launch_template.new](#fn-compute_resourceslaunch_templatenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `compute_resources` sub block.
@@ -351,8 +351,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `image_id_override` (`string`): Set the `image_id_override` field on the resulting object. When `null`, the `image_id_override` field will be omitted from the resulting object.
-  - `image_type` (`string`): Set the `image_type` field on the resulting object. When `null`, the `image_type` field will be omitted from the resulting object.
+  - `image_id_override` (`string`):  When `null`, the `image_id_override` field will be omitted from the resulting object.
+  - `image_type` (`string`):  When `null`, the `image_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ec2_configuration` sub block.
@@ -375,9 +375,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `launch_template_id` (`string`): Set the `launch_template_id` field on the resulting object. When `null`, the `launch_template_id` field will be omitted from the resulting object.
-  - `launch_template_name` (`string`): Set the `launch_template_name` field on the resulting object. When `null`, the `launch_template_name` field will be omitted from the resulting object.
-  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `launch_template_id` (`string`):  When `null`, the `launch_template_id` field will be omitted from the resulting object.
+  - `launch_template_name` (`string`):  When `null`, the `launch_template_name` field will be omitted from the resulting object.
+  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `launch_template` sub block.
@@ -400,8 +400,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `eks_cluster_arn` (`string`): Set the `eks_cluster_arn` field on the resulting object.
-  - `kubernetes_namespace` (`string`): Set the `kubernetes_namespace` field on the resulting object.
+  - `eks_cluster_arn` (`string`): 
+  - `kubernetes_namespace` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `eks_configuration` sub block.

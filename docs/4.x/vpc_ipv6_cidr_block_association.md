@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting resource block. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `ipv6_ipam_pool_id` (`string`): Set the `ipv6_ipam_pool_id` field on the resulting resource block.
-  - `ipv6_netmask_length` (`number`): Set the `ipv6_netmask_length` field on the resulting resource block. When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipv6_cidr_block_association.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `ipv6_ipam_pool_id` (`string`): 
+  - `ipv6_netmask_length` (`number`):  When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipv6_cidr_block_association.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `ipv6_ipam_pool_id` (`string`): Set the `ipv6_ipam_pool_id` field on the resulting object.
-  - `ipv6_netmask_length` (`number`): Set the `ipv6_netmask_length` field on the resulting object. When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipv6_cidr_block_association.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `ipv6_ipam_pool_id` (`string`): 
+  - `ipv6_netmask_length` (`number`):  When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipv6_cidr_block_association.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_ipv6_cidr_block_association` resource into the root Terraform configuration.
@@ -208,8 +208,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -55,13 +55,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `device_fleet_name` (`string`): Set the `device_fleet_name` field on the resulting resource block.
-  - `enable_iot_role_alias` (`bool`): Set the `enable_iot_role_alias` field on the resulting resource block. When `null`, the `enable_iot_role_alias` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `output_config` (`list[obj]`): Set the `output_config` field on the resulting resource block. When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device_fleet.output_config.new](#fn-output_confignew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `device_fleet_name` (`string`): 
+  - `enable_iot_role_alias` (`bool`):  When `null`, the `enable_iot_role_alias` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `output_config` (`list[obj]`):  When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device_fleet.output_config.new](#fn-output_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,13 +85,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `device_fleet_name` (`string`): Set the `device_fleet_name` field on the resulting object.
-  - `enable_iot_role_alias` (`bool`): Set the `enable_iot_role_alias` field on the resulting object. When `null`, the `enable_iot_role_alias` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `output_config` (`list[obj]`): Set the `output_config` field on the resulting object. When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device_fleet.output_config.new](#fn-output_confignew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `device_fleet_name` (`string`): 
+  - `enable_iot_role_alias` (`bool`):  When `null`, the `enable_iot_role_alias` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `output_config` (`list[obj]`):  When `null`, the `output_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_device_fleet.output_config.new](#fn-output_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_device_fleet` resource into the root Terraform configuration.
@@ -247,8 +247,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `s3_output_location` (`string`): Set the `s3_output_location` field on the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `s3_output_location` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `output_config` sub block.

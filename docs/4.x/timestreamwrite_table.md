@@ -61,12 +61,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `database_name` (`string`): Set the `database_name` field on the resulting resource block.
-  - `table_name` (`string`): Set the `table_name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting resource block. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.
-  - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting resource block. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.
+  - `database_name` (`string`): 
+  - `table_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `magnetic_store_write_properties` (`list[obj]`):  When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.
+  - `retention_properties` (`list[obj]`):  When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,12 +90,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting object. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.
-  - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting object. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.
+  - `database_name` (`string`): 
+  - `table_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `magnetic_store_write_properties` (`list[obj]`):  When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.
+  - `retention_properties` (`list[obj]`):  When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `timestreamwrite_table` resource into the root Terraform configuration.
@@ -256,8 +256,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable_magnetic_store_writes` (`bool`): Set the `enable_magnetic_store_writes` field on the resulting object. When `null`, the `enable_magnetic_store_writes` field will be omitted from the resulting object.
-  - `magnetic_store_rejected_data_location` (`list[obj]`): Set the `magnetic_store_rejected_data_location` field on the resulting object. When `null`, the `magnetic_store_rejected_data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.new](#fn-magnetic_store_write_propertiesmagnetic_store_rejected_data_locationnew) constructor.
+  - `enable_magnetic_store_writes` (`bool`):  When `null`, the `enable_magnetic_store_writes` field will be omitted from the resulting object.
+  - `magnetic_store_rejected_data_location` (`list[obj]`):  When `null`, the `magnetic_store_rejected_data_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.new](#fn-magnetic_store_write_propertiesmagnetic_store_rejected_data_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `magnetic_store_write_properties` sub block.
@@ -280,7 +280,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_configuration` (`list[obj]`): Set the `s3_configuration` field on the resulting object. When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.s3_configuration.new](#fn-magnetic_store_write_propertiesmagnetic_store_write_propertiess3_configurationnew) constructor.
+  - `s3_configuration` (`list[obj]`):  When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.magnetic_store_rejected_data_location.s3_configuration.new](#fn-magnetic_store_write_propertiesmagnetic_store_write_propertiess3_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `magnetic_store_rejected_data_location` sub block.
@@ -303,10 +303,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object. When `null`, the `bucket_name` field will be omitted from the resulting object.
-  - `encryption_option` (`string`): Set the `encryption_option` field on the resulting object. When `null`, the `encryption_option` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `object_key_prefix` (`string`): Set the `object_key_prefix` field on the resulting object. When `null`, the `object_key_prefix` field will be omitted from the resulting object.
+  - `bucket_name` (`string`):  When `null`, the `bucket_name` field will be omitted from the resulting object.
+  - `encryption_option` (`string`):  When `null`, the `encryption_option` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `object_key_prefix` (`string`):  When `null`, the `object_key_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_configuration` sub block.
@@ -329,8 +329,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `magnetic_store_retention_period_in_days` (`number`): Set the `magnetic_store_retention_period_in_days` field on the resulting object.
-  - `memory_store_retention_period_in_hours` (`number`): Set the `memory_store_retention_period_in_hours` field on the resulting object.
+  - `magnetic_store_retention_period_in_days` (`number`): 
+  - `memory_store_retention_period_in_hours` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `retention_properties` sub block.

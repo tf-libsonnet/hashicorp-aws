@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `attribute_mapping` (`obj`): Set the `attribute_mapping` field on the resulting resource block. When `null`, the `attribute_mapping` field will be omitted from the resulting object.
-  - `idp_identifiers` (`list`): Set the `idp_identifiers` field on the resulting resource block. When `null`, the `idp_identifiers` field will be omitted from the resulting object.
-  - `provider_details` (`obj`): Set the `provider_details` field on the resulting resource block.
-  - `provider_name` (`string`): Set the `provider_name` field on the resulting resource block.
-  - `provider_type` (`string`): Set the `provider_type` field on the resulting resource block.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting resource block.
+  - `attribute_mapping` (`obj`):  When `null`, the `attribute_mapping` field will be omitted from the resulting object.
+  - `idp_identifiers` (`list`):  When `null`, the `idp_identifiers` field will be omitted from the resulting object.
+  - `provider_details` (`obj`): 
+  - `provider_name` (`string`): 
+  - `provider_type` (`string`): 
+  - `user_pool_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `attribute_mapping` (`obj`): Set the `attribute_mapping` field on the resulting object. When `null`, the `attribute_mapping` field will be omitted from the resulting object.
-  - `idp_identifiers` (`list`): Set the `idp_identifiers` field on the resulting object. When `null`, the `idp_identifiers` field will be omitted from the resulting object.
-  - `provider_details` (`obj`): Set the `provider_details` field on the resulting object.
-  - `provider_name` (`string`): Set the `provider_name` field on the resulting object.
-  - `provider_type` (`string`): Set the `provider_type` field on the resulting object.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
+  - `attribute_mapping` (`obj`):  When `null`, the `attribute_mapping` field will be omitted from the resulting object.
+  - `idp_identifiers` (`list`):  When `null`, the `idp_identifiers` field will be omitted from the resulting object.
+  - `provider_details` (`obj`): 
+  - `provider_name` (`string`): 
+  - `provider_type` (`string`): 
+  - `user_pool_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_identity_provider` resource into the root Terraform configuration.

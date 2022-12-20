@@ -59,20 +59,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `attributes` (`obj`): Set the `attributes` field on the resulting resource block. When `null`, the `attributes` field will be omitted from the resulting object.
-  - `fixed_rate` (`number`): Set the `fixed_rate` field on the resulting resource block.
-  - `host` (`string`): Set the `host` field on the resulting resource block.
-  - `http_method` (`string`): Set the `http_method` field on the resulting resource block.
-  - `priority` (`number`): Set the `priority` field on the resulting resource block.
-  - `reservoir_size` (`number`): Set the `reservoir_size` field on the resulting resource block.
-  - `resource_arn` (`string`): Set the `resource_arn` field on the resulting resource block.
-  - `rule_name` (`string`): Set the `rule_name` field on the resulting resource block. When `null`, the `rule_name` field will be omitted from the resulting object.
-  - `service_name` (`string`): Set the `service_name` field on the resulting resource block.
-  - `service_type` (`string`): Set the `service_type` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `url_path` (`string`): Set the `url_path` field on the resulting resource block.
-  - `version` (`number`): Set the `version` field on the resulting resource block.
+  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+  - `fixed_rate` (`number`): 
+  - `host` (`string`): 
+  - `http_method` (`string`): 
+  - `priority` (`number`): 
+  - `reservoir_size` (`number`): 
+  - `resource_arn` (`string`): 
+  - `rule_name` (`string`):  When `null`, the `rule_name` field will be omitted from the resulting object.
+  - `service_name` (`string`): 
+  - `service_type` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `url_path` (`string`): 
+  - `version` (`number`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,20 +96,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `attributes` (`obj`): Set the `attributes` field on the resulting object. When `null`, the `attributes` field will be omitted from the resulting object.
-  - `fixed_rate` (`number`): Set the `fixed_rate` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `http_method` (`string`): Set the `http_method` field on the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object.
-  - `reservoir_size` (`number`): Set the `reservoir_size` field on the resulting object.
-  - `resource_arn` (`string`): Set the `resource_arn` field on the resulting object.
-  - `rule_name` (`string`): Set the `rule_name` field on the resulting object. When `null`, the `rule_name` field will be omitted from the resulting object.
-  - `service_name` (`string`): Set the `service_name` field on the resulting object.
-  - `service_type` (`string`): Set the `service_type` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `url_path` (`string`): Set the `url_path` field on the resulting object.
-  - `version` (`number`): Set the `version` field on the resulting object.
+  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+  - `fixed_rate` (`number`): 
+  - `host` (`string`): 
+  - `http_method` (`string`): 
+  - `priority` (`number`): 
+  - `reservoir_size` (`number`): 
+  - `resource_arn` (`string`): 
+  - `rule_name` (`string`):  When `null`, the `rule_name` field will be omitted from the resulting object.
+  - `service_name` (`string`): 
+  - `service_type` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `url_path` (`string`): 
+  - `version` (`number`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `xray_sampling_rule` resource into the root Terraform configuration.

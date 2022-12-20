@@ -63,16 +63,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `default_variation` (`string`): Set the `default_variation` field on the resulting resource block. When `null`, the `default_variation` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `entity_overrides` (`obj`): Set the `entity_overrides` field on the resulting resource block. When `null`, the `entity_overrides` field will be omitted from the resulting object.
-  - `evaluation_strategy` (`string`): Set the `evaluation_strategy` field on the resulting resource block. When `null`, the `evaluation_strategy` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `project` (`string`): Set the `project` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.timeouts.new](#fn-timeoutsnew) constructor.
-  - `variations` (`list[obj]`): Set the `variations` field on the resulting resource block. When `null`, the `variations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.new](#fn-variationsnew) constructor.
+  - `default_variation` (`string`):  When `null`, the `default_variation` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `entity_overrides` (`obj`):  When `null`, the `entity_overrides` field will be omitted from the resulting object.
+  - `evaluation_strategy` (`string`):  When `null`, the `evaluation_strategy` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `project` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.timeouts.new](#fn-timeoutsnew) constructor.
+  - `variations` (`list[obj]`):  When `null`, the `variations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.new](#fn-variationsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,16 +96,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_variation` (`string`): Set the `default_variation` field on the resulting object. When `null`, the `default_variation` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `entity_overrides` (`obj`): Set the `entity_overrides` field on the resulting object. When `null`, the `entity_overrides` field will be omitted from the resulting object.
-  - `evaluation_strategy` (`string`): Set the `evaluation_strategy` field on the resulting object. When `null`, the `evaluation_strategy` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `project` (`string`): Set the `project` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.timeouts.new](#fn-timeoutsnew) constructor.
-  - `variations` (`list[obj]`): Set the `variations` field on the resulting object. When `null`, the `variations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.new](#fn-variationsnew) constructor.
+  - `default_variation` (`string`):  When `null`, the `default_variation` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `entity_overrides` (`obj`):  When `null`, the `entity_overrides` field will be omitted from the resulting object.
+  - `evaluation_strategy` (`string`):  When `null`, the `evaluation_strategy` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `project` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.timeouts.new](#fn-timeoutsnew) constructor.
+  - `variations` (`list[obj]`):  When `null`, the `variations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.new](#fn-variationsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `evidently_feature` resource into the root Terraform configuration.
@@ -329,9 +329,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -354,8 +354,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `value` (`list[obj]`): Set the `value` field on the resulting object. When `null`, the `value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.value.new](#fn-variationsvaluenew) constructor.
+  - `name` (`string`): 
+  - `value` (`list[obj]`):  When `null`, the `value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.evidently_feature.variations.value.new](#fn-variationsvaluenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `variations` sub block.
@@ -378,10 +378,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `bool_value` (`string`): Set the `bool_value` field on the resulting object. When `null`, the `bool_value` field will be omitted from the resulting object.
-  - `double_value` (`string`): Set the `double_value` field on the resulting object. When `null`, the `double_value` field will be omitted from the resulting object.
-  - `long_value` (`string`): Set the `long_value` field on the resulting object. When `null`, the `long_value` field will be omitted from the resulting object.
-  - `string_value` (`string`): Set the `string_value` field on the resulting object. When `null`, the `string_value` field will be omitted from the resulting object.
+  - `bool_value` (`string`):  When `null`, the `bool_value` field will be omitted from the resulting object.
+  - `double_value` (`string`):  When `null`, the `double_value` field will be omitted from the resulting object.
+  - `long_value` (`string`):  When `null`, the `long_value` field will be omitted from the resulting object.
+  - `string_value` (`string`):  When `null`, the `string_value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `value` sub block.

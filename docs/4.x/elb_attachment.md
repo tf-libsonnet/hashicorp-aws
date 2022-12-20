@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `elb` (`string`): Set the `elb` field on the resulting resource block.
-  - `instance` (`string`): Set the `instance` field on the resulting resource block.
+  - `elb` (`string`): 
+  - `instance` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `elb` (`string`): Set the `elb` field on the resulting object.
-  - `instance` (`string`): Set the `instance` field on the resulting object.
+  - `elb` (`string`): 
+  - `instance` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elb_attachment` resource into the root Terraform configuration.

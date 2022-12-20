@@ -56,9 +56,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `language` (`string`): Set the `language` field on the resulting data source block. When `null`, the `language` field will be omitted from the resulting object.
-  - `dag_edge` (`list[obj]`): Set the `dag_edge` field on the resulting data source block. When `null`, the `dag_edge` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_edge.new](#fn-dag_edgenew) constructor.
-  - `dag_node` (`list[obj]`): Set the `dag_node` field on the resulting data source block. When `null`, the `dag_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_node.new](#fn-dag_nodenew) constructor.
+  - `language` (`string`):  When `null`, the `language` field will be omitted from the resulting object.
+  - `dag_edge` (`list[obj]`):  When `null`, the `dag_edge` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_edge.new](#fn-dag_edgenew) constructor.
+  - `dag_node` (`list[obj]`):  When `null`, the `dag_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_node.new](#fn-dag_nodenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -82,9 +82,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `language` (`string`): Set the `language` field on the resulting object. When `null`, the `language` field will be omitted from the resulting object.
-  - `dag_edge` (`list[obj]`): Set the `dag_edge` field on the resulting object. When `null`, the `dag_edge` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_edge.new](#fn-dag_edgenew) constructor.
-  - `dag_node` (`list[obj]`): Set the `dag_node` field on the resulting object. When `null`, the `dag_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_node.new](#fn-dag_nodenew) constructor.
+  - `language` (`string`):  When `null`, the `language` field will be omitted from the resulting object.
+  - `dag_edge` (`list[obj]`):  When `null`, the `dag_edge` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_edge.new](#fn-dag_edgenew) constructor.
+  - `dag_node` (`list[obj]`):  When `null`, the `dag_node` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.glue_script.dag_node.new](#fn-dag_nodenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `glue_script` data source into the root Terraform configuration.
@@ -197,9 +197,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `source` (`string`): Set the `source` field on the resulting object.
-  - `target` (`string`): Set the `target` field on the resulting object.
-  - `target_parameter` (`string`): Set the `target_parameter` field on the resulting object. When `null`, the `target_parameter` field will be omitted from the resulting object.
+  - `source` (`string`): 
+  - `target` (`string`): 
+  - `target_parameter` (`string`):  When `null`, the `target_parameter` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dag_edge` sub block.
@@ -222,9 +222,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `line_number` (`number`): Set the `line_number` field on the resulting object. When `null`, the `line_number` field will be omitted from the resulting object.
-  - `node_type` (`string`): Set the `node_type` field on the resulting object.
-  - `args` (`list[obj]`): Set the `args` field on the resulting object. When `null`, the `args` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_script.dag_node.args.new](#fn-dag_nodeargsnew) constructor.
+  - `line_number` (`number`):  When `null`, the `line_number` field will be omitted from the resulting object.
+  - `node_type` (`string`): 
+  - `args` (`list[obj]`):  When `null`, the `args` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_script.dag_node.args.new](#fn-dag_nodeargsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dag_node` sub block.
@@ -247,9 +247,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `param` (`bool`): Set the `param` field on the resulting object. When `null`, the `param` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `name` (`string`): 
+  - `param` (`bool`):  When `null`, the `param` field will be omitted from the resulting object.
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `args` sub block.

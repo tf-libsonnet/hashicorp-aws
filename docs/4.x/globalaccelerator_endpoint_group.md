@@ -65,17 +65,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `endpoint_group_region` (`string`): Set the `endpoint_group_region` field on the resulting resource block. When `null`, the `endpoint_group_region` field will be omitted from the resulting object.
-  - `health_check_interval_seconds` (`number`): Set the `health_check_interval_seconds` field on the resulting resource block. When `null`, the `health_check_interval_seconds` field will be omitted from the resulting object.
-  - `health_check_path` (`string`): Set the `health_check_path` field on the resulting resource block. When `null`, the `health_check_path` field will be omitted from the resulting object.
-  - `health_check_port` (`number`): Set the `health_check_port` field on the resulting resource block. When `null`, the `health_check_port` field will be omitted from the resulting object.
-  - `health_check_protocol` (`string`): Set the `health_check_protocol` field on the resulting resource block. When `null`, the `health_check_protocol` field will be omitted from the resulting object.
-  - `listener_arn` (`string`): Set the `listener_arn` field on the resulting resource block.
-  - `threshold_count` (`number`): Set the `threshold_count` field on the resulting resource block. When `null`, the `threshold_count` field will be omitted from the resulting object.
-  - `traffic_dial_percentage` (`number`): Set the `traffic_dial_percentage` field on the resulting resource block. When `null`, the `traffic_dial_percentage` field will be omitted from the resulting object.
-  - `endpoint_configuration` (`list[obj]`): Set the `endpoint_configuration` field on the resulting resource block. When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
-  - `port_override` (`list[obj]`): Set the `port_override` field on the resulting resource block. When `null`, the `port_override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.port_override.new](#fn-port_overridenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `endpoint_group_region` (`string`):  When `null`, the `endpoint_group_region` field will be omitted from the resulting object.
+  - `health_check_interval_seconds` (`number`):  When `null`, the `health_check_interval_seconds` field will be omitted from the resulting object.
+  - `health_check_path` (`string`):  When `null`, the `health_check_path` field will be omitted from the resulting object.
+  - `health_check_port` (`number`):  When `null`, the `health_check_port` field will be omitted from the resulting object.
+  - `health_check_protocol` (`string`):  When `null`, the `health_check_protocol` field will be omitted from the resulting object.
+  - `listener_arn` (`string`): 
+  - `threshold_count` (`number`):  When `null`, the `threshold_count` field will be omitted from the resulting object.
+  - `traffic_dial_percentage` (`number`):  When `null`, the `traffic_dial_percentage` field will be omitted from the resulting object.
+  - `endpoint_configuration` (`list[obj]`):  When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
+  - `port_override` (`list[obj]`):  When `null`, the `port_override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.port_override.new](#fn-port_overridenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -99,17 +99,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `endpoint_group_region` (`string`): Set the `endpoint_group_region` field on the resulting object. When `null`, the `endpoint_group_region` field will be omitted from the resulting object.
-  - `health_check_interval_seconds` (`number`): Set the `health_check_interval_seconds` field on the resulting object. When `null`, the `health_check_interval_seconds` field will be omitted from the resulting object.
-  - `health_check_path` (`string`): Set the `health_check_path` field on the resulting object. When `null`, the `health_check_path` field will be omitted from the resulting object.
-  - `health_check_port` (`number`): Set the `health_check_port` field on the resulting object. When `null`, the `health_check_port` field will be omitted from the resulting object.
-  - `health_check_protocol` (`string`): Set the `health_check_protocol` field on the resulting object. When `null`, the `health_check_protocol` field will be omitted from the resulting object.
-  - `listener_arn` (`string`): Set the `listener_arn` field on the resulting object.
-  - `threshold_count` (`number`): Set the `threshold_count` field on the resulting object. When `null`, the `threshold_count` field will be omitted from the resulting object.
-  - `traffic_dial_percentage` (`number`): Set the `traffic_dial_percentage` field on the resulting object. When `null`, the `traffic_dial_percentage` field will be omitted from the resulting object.
-  - `endpoint_configuration` (`list[obj]`): Set the `endpoint_configuration` field on the resulting object. When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
-  - `port_override` (`list[obj]`): Set the `port_override` field on the resulting object. When `null`, the `port_override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.port_override.new](#fn-port_overridenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `endpoint_group_region` (`string`):  When `null`, the `endpoint_group_region` field will be omitted from the resulting object.
+  - `health_check_interval_seconds` (`number`):  When `null`, the `health_check_interval_seconds` field will be omitted from the resulting object.
+  - `health_check_path` (`string`):  When `null`, the `health_check_path` field will be omitted from the resulting object.
+  - `health_check_port` (`number`):  When `null`, the `health_check_port` field will be omitted from the resulting object.
+  - `health_check_protocol` (`string`):  When `null`, the `health_check_protocol` field will be omitted from the resulting object.
+  - `listener_arn` (`string`): 
+  - `threshold_count` (`number`):  When `null`, the `threshold_count` field will be omitted from the resulting object.
+  - `traffic_dial_percentage` (`number`):  When `null`, the `traffic_dial_percentage` field will be omitted from the resulting object.
+  - `endpoint_configuration` (`list[obj]`):  When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
+  - `port_override` (`list[obj]`):  When `null`, the `port_override` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.port_override.new](#fn-port_overridenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.globalaccelerator_endpoint_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `globalaccelerator_endpoint_group` resource into the root Terraform configuration.
@@ -370,9 +370,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_ip_preservation_enabled` (`bool`): Set the `client_ip_preservation_enabled` field on the resulting object. When `null`, the `client_ip_preservation_enabled` field will be omitted from the resulting object.
-  - `endpoint_id` (`string`): Set the `endpoint_id` field on the resulting object. When `null`, the `endpoint_id` field will be omitted from the resulting object.
-  - `weight` (`number`): Set the `weight` field on the resulting object. When `null`, the `weight` field will be omitted from the resulting object.
+  - `client_ip_preservation_enabled` (`bool`):  When `null`, the `client_ip_preservation_enabled` field will be omitted from the resulting object.
+  - `endpoint_id` (`string`):  When `null`, the `endpoint_id` field will be omitted from the resulting object.
+  - `weight` (`number`):  When `null`, the `weight` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `endpoint_configuration` sub block.
@@ -395,8 +395,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint_port` (`number`): Set the `endpoint_port` field on the resulting object.
-  - `listener_port` (`number`): Set the `listener_port` field on the resulting object.
+  - `endpoint_port` (`number`): 
+  - `listener_port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `port_override` sub block.
@@ -419,9 +419,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

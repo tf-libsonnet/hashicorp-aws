@@ -66,18 +66,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `global_network_id` (`string`): Set the `global_network_id` field on the resulting resource block.
-  - `model` (`string`): Set the `model` field on the resulting resource block. When `null`, the `model` field will be omitted from the resulting object.
-  - `serial_number` (`string`): Set the `serial_number` field on the resulting resource block. When `null`, the `serial_number` field will be omitted from the resulting object.
-  - `site_id` (`string`): Set the `site_id` field on the resulting resource block. When `null`, the `site_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
-  - `vendor` (`string`): Set the `vendor` field on the resulting resource block. When `null`, the `vendor` field will be omitted from the resulting object.
-  - `aws_location` (`list[obj]`): Set the `aws_location` field on the resulting resource block. When `null`, the `aws_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.aws_location.new](#fn-aws_locationnew) constructor.
-  - `location` (`list[obj]`): Set the `location` field on the resulting resource block. When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.location.new](#fn-locationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `global_network_id` (`string`): 
+  - `model` (`string`):  When `null`, the `model` field will be omitted from the resulting object.
+  - `serial_number` (`string`):  When `null`, the `serial_number` field will be omitted from the resulting object.
+  - `site_id` (`string`):  When `null`, the `site_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `vendor` (`string`):  When `null`, the `vendor` field will be omitted from the resulting object.
+  - `aws_location` (`list[obj]`):  When `null`, the `aws_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.aws_location.new](#fn-aws_locationnew) constructor.
+  - `location` (`list[obj]`):  When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.location.new](#fn-locationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,18 +101,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `global_network_id` (`string`): Set the `global_network_id` field on the resulting object.
-  - `model` (`string`): Set the `model` field on the resulting object. When `null`, the `model` field will be omitted from the resulting object.
-  - `serial_number` (`string`): Set the `serial_number` field on the resulting object. When `null`, the `serial_number` field will be omitted from the resulting object.
-  - `site_id` (`string`): Set the `site_id` field on the resulting object. When `null`, the `site_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
-  - `vendor` (`string`): Set the `vendor` field on the resulting object. When `null`, the `vendor` field will be omitted from the resulting object.
-  - `aws_location` (`list[obj]`): Set the `aws_location` field on the resulting object. When `null`, the `aws_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.aws_location.new](#fn-aws_locationnew) constructor.
-  - `location` (`list[obj]`): Set the `location` field on the resulting object. When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.location.new](#fn-locationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `global_network_id` (`string`): 
+  - `model` (`string`):  When `null`, the `model` field will be omitted from the resulting object.
+  - `serial_number` (`string`):  When `null`, the `serial_number` field will be omitted from the resulting object.
+  - `site_id` (`string`):  When `null`, the `site_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `vendor` (`string`):  When `null`, the `vendor` field will be omitted from the resulting object.
+  - `aws_location` (`list[obj]`):  When `null`, the `aws_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.aws_location.new](#fn-aws_locationnew) constructor.
+  - `location` (`list[obj]`):  When `null`, the `location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.location.new](#fn-locationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_device.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkmanager_device` resource into the root Terraform configuration.
@@ -389,8 +389,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `subnet_arn` (`string`): Set the `subnet_arn` field on the resulting object. When `null`, the `subnet_arn` field will be omitted from the resulting object.
-  - `zone` (`string`): Set the `zone` field on the resulting object. When `null`, the `zone` field will be omitted from the resulting object.
+  - `subnet_arn` (`string`):  When `null`, the `subnet_arn` field will be omitted from the resulting object.
+  - `zone` (`string`):  When `null`, the `zone` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `aws_location` sub block.
@@ -413,9 +413,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `address` (`string`): Set the `address` field on the resulting object. When `null`, the `address` field will be omitted from the resulting object.
-  - `latitude` (`string`): Set the `latitude` field on the resulting object. When `null`, the `latitude` field will be omitted from the resulting object.
-  - `longitude` (`string`): Set the `longitude` field on the resulting object. When `null`, the `longitude` field will be omitted from the resulting object.
+  - `address` (`string`):  When `null`, the `address` field will be omitted from the resulting object.
+  - `latitude` (`string`):  When `null`, the `latitude` field will be omitted from the resulting object.
+  - `longitude` (`string`):  When `null`, the `longitude` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `location` sub block.
@@ -438,9 +438,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

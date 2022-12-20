@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `reservation_type` (`string`): Set the `reservation_type` field on the resulting resource block.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block.
+  - `cidr_block` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `reservation_type` (`string`): 
+  - `subnet_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `reservation_type` (`string`): Set the `reservation_type` field on the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
+  - `cidr_block` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `reservation_type` (`string`): 
+  - `subnet_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_subnet_cidr_reservation` resource into the root Terraform configuration.

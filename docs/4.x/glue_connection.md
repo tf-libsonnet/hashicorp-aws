@@ -57,15 +57,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `connection_properties` (`obj`): Set the `connection_properties` field on the resulting resource block. When `null`, the `connection_properties` field will be omitted from the resulting object.
-  - `connection_type` (`string`): Set the `connection_type` field on the resulting resource block. When `null`, the `connection_type` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `match_criteria` (`list`): Set the `match_criteria` field on the resulting resource block. When `null`, the `match_criteria` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `physical_connection_requirements` (`list[obj]`): Set the `physical_connection_requirements` field on the resulting resource block. When `null`, the `physical_connection_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_connection.physical_connection_requirements.new](#fn-physical_connection_requirementsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `connection_properties` (`obj`):  When `null`, the `connection_properties` field will be omitted from the resulting object.
+  - `connection_type` (`string`):  When `null`, the `connection_type` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `match_criteria` (`list`):  When `null`, the `match_criteria` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `physical_connection_requirements` (`list[obj]`):  When `null`, the `physical_connection_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_connection.physical_connection_requirements.new](#fn-physical_connection_requirementsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,15 +89,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `connection_properties` (`obj`): Set the `connection_properties` field on the resulting object. When `null`, the `connection_properties` field will be omitted from the resulting object.
-  - `connection_type` (`string`): Set the `connection_type` field on the resulting object. When `null`, the `connection_type` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `match_criteria` (`list`): Set the `match_criteria` field on the resulting object. When `null`, the `match_criteria` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `physical_connection_requirements` (`list[obj]`): Set the `physical_connection_requirements` field on the resulting object. When `null`, the `physical_connection_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_connection.physical_connection_requirements.new](#fn-physical_connection_requirementsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `connection_properties` (`obj`):  When `null`, the `connection_properties` field will be omitted from the resulting object.
+  - `connection_type` (`string`):  When `null`, the `connection_type` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `match_criteria` (`list`):  When `null`, the `match_criteria` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `physical_connection_requirements` (`list[obj]`):  When `null`, the `physical_connection_requirements` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_connection.physical_connection_requirements.new](#fn-physical_connection_requirementsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_connection` resource into the root Terraform configuration.
@@ -285,9 +285,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `security_group_id_list` (`list`): Set the `security_group_id_list` field on the resulting object. When `null`, the `security_group_id_list` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `security_group_id_list` (`list`):  When `null`, the `security_group_id_list` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `physical_connection_requirements` sub block.

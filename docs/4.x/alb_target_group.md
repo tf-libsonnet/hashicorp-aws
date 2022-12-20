@@ -74,26 +74,26 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `connection_termination` (`bool`): Set the `connection_termination` field on the resulting resource block. When `null`, the `connection_termination` field will be omitted from the resulting object.
-  - `deregistration_delay` (`string`): Set the `deregistration_delay` field on the resulting resource block. When `null`, the `deregistration_delay` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `lambda_multi_value_headers_enabled` (`bool`): Set the `lambda_multi_value_headers_enabled` field on the resulting resource block. When `null`, the `lambda_multi_value_headers_enabled` field will be omitted from the resulting object.
-  - `load_balancing_algorithm_type` (`string`): Set the `load_balancing_algorithm_type` field on the resulting resource block. When `null`, the `load_balancing_algorithm_type` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
-  - `preserve_client_ip` (`string`): Set the `preserve_client_ip` field on the resulting resource block. When `null`, the `preserve_client_ip` field will be omitted from the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting resource block. When `null`, the `protocol` field will be omitted from the resulting object.
-  - `protocol_version` (`string`): Set the `protocol_version` field on the resulting resource block. When `null`, the `protocol_version` field will be omitted from the resulting object.
-  - `proxy_protocol_v2` (`bool`): Set the `proxy_protocol_v2` field on the resulting resource block. When `null`, the `proxy_protocol_v2` field will be omitted from the resulting object.
-  - `slow_start` (`number`): Set the `slow_start` field on the resulting resource block. When `null`, the `slow_start` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_type` (`string`): Set the `target_type` field on the resulting resource block. When `null`, the `target_type` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block. When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `health_check` (`list[obj]`): Set the `health_check` field on the resulting resource block. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.health_check.new](#fn-health_checknew) constructor.
-  - `stickiness` (`list[obj]`): Set the `stickiness` field on the resulting resource block. When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.stickiness.new](#fn-stickinessnew) constructor.
-  - `target_failover` (`list[obj]`): Set the `target_failover` field on the resulting resource block. When `null`, the `target_failover` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_failover.new](#fn-target_failovernew) constructor.
+  - `connection_termination` (`bool`):  When `null`, the `connection_termination` field will be omitted from the resulting object.
+  - `deregistration_delay` (`string`):  When `null`, the `deregistration_delay` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `lambda_multi_value_headers_enabled` (`bool`):  When `null`, the `lambda_multi_value_headers_enabled` field will be omitted from the resulting object.
+  - `load_balancing_algorithm_type` (`string`):  When `null`, the `load_balancing_algorithm_type` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
+  - `preserve_client_ip` (`string`):  When `null`, the `preserve_client_ip` field will be omitted from the resulting object.
+  - `protocol` (`string`):  When `null`, the `protocol` field will be omitted from the resulting object.
+  - `protocol_version` (`string`):  When `null`, the `protocol_version` field will be omitted from the resulting object.
+  - `proxy_protocol_v2` (`bool`):  When `null`, the `proxy_protocol_v2` field will be omitted from the resulting object.
+  - `slow_start` (`number`):  When `null`, the `slow_start` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.health_check.new](#fn-health_checknew) constructor.
+  - `stickiness` (`list[obj]`):  When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.stickiness.new](#fn-stickinessnew) constructor.
+  - `target_failover` (`list[obj]`):  When `null`, the `target_failover` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_failover.new](#fn-target_failovernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -117,26 +117,26 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `connection_termination` (`bool`): Set the `connection_termination` field on the resulting object. When `null`, the `connection_termination` field will be omitted from the resulting object.
-  - `deregistration_delay` (`string`): Set the `deregistration_delay` field on the resulting object. When `null`, the `deregistration_delay` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `lambda_multi_value_headers_enabled` (`bool`): Set the `lambda_multi_value_headers_enabled` field on the resulting object. When `null`, the `lambda_multi_value_headers_enabled` field will be omitted from the resulting object.
-  - `load_balancing_algorithm_type` (`string`): Set the `load_balancing_algorithm_type` field on the resulting object. When `null`, the `load_balancing_algorithm_type` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
-  - `preserve_client_ip` (`string`): Set the `preserve_client_ip` field on the resulting object. When `null`, the `preserve_client_ip` field will be omitted from the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.
-  - `protocol_version` (`string`): Set the `protocol_version` field on the resulting object. When `null`, the `protocol_version` field will be omitted from the resulting object.
-  - `proxy_protocol_v2` (`bool`): Set the `proxy_protocol_v2` field on the resulting object. When `null`, the `proxy_protocol_v2` field will be omitted from the resulting object.
-  - `slow_start` (`number`): Set the `slow_start` field on the resulting object. When `null`, the `slow_start` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_type` (`string`): Set the `target_type` field on the resulting object. When `null`, the `target_type` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `health_check` (`list[obj]`): Set the `health_check` field on the resulting object. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.health_check.new](#fn-health_checknew) constructor.
-  - `stickiness` (`list[obj]`): Set the `stickiness` field on the resulting object. When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.stickiness.new](#fn-stickinessnew) constructor.
-  - `target_failover` (`list[obj]`): Set the `target_failover` field on the resulting object. When `null`, the `target_failover` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_failover.new](#fn-target_failovernew) constructor.
+  - `connection_termination` (`bool`):  When `null`, the `connection_termination` field will be omitted from the resulting object.
+  - `deregistration_delay` (`string`):  When `null`, the `deregistration_delay` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `lambda_multi_value_headers_enabled` (`bool`):  When `null`, the `lambda_multi_value_headers_enabled` field will be omitted from the resulting object.
+  - `load_balancing_algorithm_type` (`string`):  When `null`, the `load_balancing_algorithm_type` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
+  - `preserve_client_ip` (`string`):  When `null`, the `preserve_client_ip` field will be omitted from the resulting object.
+  - `protocol` (`string`):  When `null`, the `protocol` field will be omitted from the resulting object.
+  - `protocol_version` (`string`):  When `null`, the `protocol_version` field will be omitted from the resulting object.
+  - `proxy_protocol_v2` (`bool`):  When `null`, the `proxy_protocol_v2` field will be omitted from the resulting object.
+  - `slow_start` (`number`):  When `null`, the `slow_start` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_type` (`string`):  When `null`, the `target_type` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.health_check.new](#fn-health_checknew) constructor.
+  - `stickiness` (`list[obj]`):  When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.stickiness.new](#fn-stickinessnew) constructor.
+  - `target_failover` (`list[obj]`):  When `null`, the `target_failover` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_failover.new](#fn-target_failovernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `alb_target_group` resource into the root Terraform configuration.
@@ -542,15 +542,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `healthy_threshold` (`number`): Set the `healthy_threshold` field on the resulting object. When `null`, the `healthy_threshold` field will be omitted from the resulting object.
-  - `interval` (`number`): Set the `interval` field on the resulting object. When `null`, the `interval` field will be omitted from the resulting object.
-  - `matcher` (`string`): Set the `matcher` field on the resulting object. When `null`, the `matcher` field will be omitted from the resulting object.
-  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
-  - `port` (`string`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.
-  - `timeout` (`number`): Set the `timeout` field on the resulting object. When `null`, the `timeout` field will be omitted from the resulting object.
-  - `unhealthy_threshold` (`number`): Set the `unhealthy_threshold` field on the resulting object. When `null`, the `unhealthy_threshold` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `healthy_threshold` (`number`):  When `null`, the `healthy_threshold` field will be omitted from the resulting object.
+  - `interval` (`number`):  When `null`, the `interval` field will be omitted from the resulting object.
+  - `matcher` (`string`):  When `null`, the `matcher` field will be omitted from the resulting object.
+  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
+  - `port` (`string`):  When `null`, the `port` field will be omitted from the resulting object.
+  - `protocol` (`string`):  When `null`, the `protocol` field will be omitted from the resulting object.
+  - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
+  - `unhealthy_threshold` (`number`):  When `null`, the `unhealthy_threshold` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `health_check` sub block.
@@ -573,10 +573,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `cookie_duration` (`number`): Set the `cookie_duration` field on the resulting object. When `null`, the `cookie_duration` field will be omitted from the resulting object.
-  - `cookie_name` (`string`): Set the `cookie_name` field on the resulting object. When `null`, the `cookie_name` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `cookie_duration` (`number`):  When `null`, the `cookie_duration` field will be omitted from the resulting object.
+  - `cookie_name` (`string`):  When `null`, the `cookie_name` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `stickiness` sub block.
@@ -599,8 +599,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_deregistration` (`string`): Set the `on_deregistration` field on the resulting object.
-  - `on_unhealthy` (`string`): Set the `on_unhealthy` field on the resulting object.
+  - `on_deregistration` (`string`): 
+  - `on_unhealthy` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `target_failover` sub block.

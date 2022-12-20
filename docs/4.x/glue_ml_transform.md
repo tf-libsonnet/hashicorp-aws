@@ -66,19 +66,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `glue_version` (`string`): Set the `glue_version` field on the resulting resource block. When `null`, the `glue_version` field will be omitted from the resulting object.
-  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting resource block. When `null`, the `max_capacity` field will be omitted from the resulting object.
-  - `max_retries` (`number`): Set the `max_retries` field on the resulting resource block. When `null`, the `max_retries` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `number_of_workers` (`number`): Set the `number_of_workers` field on the resulting resource block. When `null`, the `number_of_workers` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout` (`number`): Set the `timeout` field on the resulting resource block. When `null`, the `timeout` field will be omitted from the resulting object.
-  - `worker_type` (`string`): Set the `worker_type` field on the resulting resource block. When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `input_record_tables` (`list[obj]`): Set the `input_record_tables` field on the resulting resource block. When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-input_record_tablesnew) constructor.
-  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-parametersnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `glue_version` (`string`):  When `null`, the `glue_version` field will be omitted from the resulting object.
+  - `max_capacity` (`number`):  When `null`, the `max_capacity` field will be omitted from the resulting object.
+  - `max_retries` (`number`):  When `null`, the `max_retries` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `number_of_workers` (`number`):  When `null`, the `number_of_workers` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
+  - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
+  - `input_record_tables` (`list[obj]`):  When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-input_record_tablesnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-parametersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,19 +102,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `glue_version` (`string`): Set the `glue_version` field on the resulting object. When `null`, the `glue_version` field will be omitted from the resulting object.
-  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting object. When `null`, the `max_capacity` field will be omitted from the resulting object.
-  - `max_retries` (`number`): Set the `max_retries` field on the resulting object. When `null`, the `max_retries` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `number_of_workers` (`number`): Set the `number_of_workers` field on the resulting object. When `null`, the `number_of_workers` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout` (`number`): Set the `timeout` field on the resulting object. When `null`, the `timeout` field will be omitted from the resulting object.
-  - `worker_type` (`string`): Set the `worker_type` field on the resulting object. When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `input_record_tables` (`list[obj]`): Set the `input_record_tables` field on the resulting object. When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-input_record_tablesnew) constructor.
-  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting object. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-parametersnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `glue_version` (`string`):  When `null`, the `glue_version` field will be omitted from the resulting object.
+  - `max_capacity` (`number`):  When `null`, the `max_capacity` field will be omitted from the resulting object.
+  - `max_retries` (`number`):  When `null`, the `max_retries` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `number_of_workers` (`number`):  When `null`, the `number_of_workers` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
+  - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
+  - `input_record_tables` (`list[obj]`):  When `null`, the `input_record_tables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.input_record_tables.new](#fn-input_record_tablesnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.new](#fn-parametersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_ml_transform` resource into the root Terraform configuration.
@@ -387,10 +387,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting object.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `connection_name` (`string`):  When `null`, the `connection_name` field will be omitted from the resulting object.
+  - `database_name` (`string`): 
+  - `table_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `input_record_tables` sub block.
@@ -413,8 +413,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `transform_type` (`string`): Set the `transform_type` field on the resulting object.
-  - `find_matches_parameters` (`list[obj]`): Set the `find_matches_parameters` field on the resulting object. When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-parametersfind_matches_parametersnew) constructor.
+  - `transform_type` (`string`): 
+  - `find_matches_parameters` (`list[obj]`):  When `null`, the `find_matches_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_ml_transform.parameters.find_matches_parameters.new](#fn-parametersfind_matches_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `parameters` sub block.
@@ -437,10 +437,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `accuracy_cost_trade_off` (`number`): Set the `accuracy_cost_trade_off` field on the resulting object. When `null`, the `accuracy_cost_trade_off` field will be omitted from the resulting object.
-  - `enforce_provided_labels` (`bool`): Set the `enforce_provided_labels` field on the resulting object. When `null`, the `enforce_provided_labels` field will be omitted from the resulting object.
-  - `precision_recall_trade_off` (`number`): Set the `precision_recall_trade_off` field on the resulting object. When `null`, the `precision_recall_trade_off` field will be omitted from the resulting object.
-  - `primary_key_column_name` (`string`): Set the `primary_key_column_name` field on the resulting object. When `null`, the `primary_key_column_name` field will be omitted from the resulting object.
+  - `accuracy_cost_trade_off` (`number`):  When `null`, the `accuracy_cost_trade_off` field will be omitted from the resulting object.
+  - `enforce_provided_labels` (`bool`):  When `null`, the `enforce_provided_labels` field will be omitted from the resulting object.
+  - `precision_recall_trade_off` (`number`):  When `null`, the `precision_recall_trade_off` field will be omitted from the resulting object.
+  - `primary_key_column_name` (`string`):  When `null`, the `primary_key_column_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `find_matches_parameters` sub block.

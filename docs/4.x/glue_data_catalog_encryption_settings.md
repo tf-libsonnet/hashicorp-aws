@@ -54,8 +54,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `data_catalog_encryption_settings` (`list[obj]`): Set the `data_catalog_encryption_settings` field on the resulting resource block. When `null`, the `data_catalog_encryption_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.new](#fn-data_catalog_encryption_settingsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `data_catalog_encryption_settings` (`list[obj]`):  When `null`, the `data_catalog_encryption_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.new](#fn-data_catalog_encryption_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,8 +79,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `data_catalog_encryption_settings` (`list[obj]`): Set the `data_catalog_encryption_settings` field on the resulting object. When `null`, the `data_catalog_encryption_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.new](#fn-data_catalog_encryption_settingsnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `data_catalog_encryption_settings` (`list[obj]`):  When `null`, the `data_catalog_encryption_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.new](#fn-data_catalog_encryption_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_data_catalog_encryption_settings` resource into the root Terraform configuration.
@@ -156,8 +156,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `connection_password_encryption` (`list[obj]`): Set the `connection_password_encryption` field on the resulting object. When `null`, the `connection_password_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.connection_password_encryption.new](#fn-data_catalog_encryption_settingsconnection_password_encryptionnew) constructor.
-  - `encryption_at_rest` (`list[obj]`): Set the `encryption_at_rest` field on the resulting object. When `null`, the `encryption_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.encryption_at_rest.new](#fn-data_catalog_encryption_settingsencryption_at_restnew) constructor.
+  - `connection_password_encryption` (`list[obj]`):  When `null`, the `connection_password_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.connection_password_encryption.new](#fn-data_catalog_encryption_settingsconnection_password_encryptionnew) constructor.
+  - `encryption_at_rest` (`list[obj]`):  When `null`, the `encryption_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_data_catalog_encryption_settings.data_catalog_encryption_settings.encryption_at_rest.new](#fn-data_catalog_encryption_settingsencryption_at_restnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_catalog_encryption_settings` sub block.
@@ -180,8 +180,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `aws_kms_key_id` (`string`): Set the `aws_kms_key_id` field on the resulting object. When `null`, the `aws_kms_key_id` field will be omitted from the resulting object.
-  - `return_connection_password_encrypted` (`bool`): Set the `return_connection_password_encrypted` field on the resulting object.
+  - `aws_kms_key_id` (`string`):  When `null`, the `aws_kms_key_id` field will be omitted from the resulting object.
+  - `return_connection_password_encrypted` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `connection_password_encryption` sub block.
@@ -204,8 +204,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog_encryption_mode` (`string`): Set the `catalog_encryption_mode` field on the resulting object.
-  - `sse_aws_kms_key_id` (`string`): Set the `sse_aws_kms_key_id` field on the resulting object. When `null`, the `sse_aws_kms_key_id` field will be omitted from the resulting object.
+  - `catalog_encryption_mode` (`string`): 
+  - `sse_aws_kms_key_id` (`string`):  When `null`, the `sse_aws_kms_key_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encryption_at_rest` sub block.

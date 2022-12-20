@@ -55,13 +55,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `duration` (`number`): Set the `duration` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `rules_package_arns` (`list`): Set the `rules_package_arns` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_arn` (`string`): Set the `target_arn` field on the resulting resource block.
-  - `event_subscription` (`list[obj]`): Set the `event_subscription` field on the resulting resource block. When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-event_subscriptionnew) constructor.
+  - `duration` (`number`): 
+  - `name` (`string`): 
+  - `rules_package_arns` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_arn` (`string`): 
+  - `event_subscription` (`list[obj]`):  When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-event_subscriptionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,13 +85,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `duration` (`number`): Set the `duration` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `rules_package_arns` (`list`): Set the `rules_package_arns` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target_arn` (`string`): Set the `target_arn` field on the resulting object.
-  - `event_subscription` (`list[obj]`): Set the `event_subscription` field on the resulting object. When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-event_subscriptionnew) constructor.
+  - `duration` (`number`): 
+  - `name` (`string`): 
+  - `rules_package_arns` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target_arn` (`string`): 
+  - `event_subscription` (`list[obj]`):  When `null`, the `event_subscription` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector_assessment_template.event_subscription.new](#fn-event_subscriptionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `inspector_assessment_template` resource into the root Terraform configuration.
@@ -247,8 +247,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `event` (`string`): Set the `event` field on the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object.
+  - `event` (`string`): 
+  - `topic_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `event_subscription` sub block.

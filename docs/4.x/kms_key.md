@@ -57,18 +57,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bypass_policy_lockout_safety_check` (`bool`): Set the `bypass_policy_lockout_safety_check` field on the resulting resource block. When `null`, the `bypass_policy_lockout_safety_check` field will be omitted from the resulting object.
-  - `custom_key_store_id` (`string`): Set the `custom_key_store_id` field on the resulting resource block. When `null`, the `custom_key_store_id` field will be omitted from the resulting object.
-  - `customer_master_key_spec` (`string`): Set the `customer_master_key_spec` field on the resulting resource block. When `null`, the `customer_master_key_spec` field will be omitted from the resulting object.
-  - `deletion_window_in_days` (`number`): Set the `deletion_window_in_days` field on the resulting resource block. When `null`, the `deletion_window_in_days` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `enable_key_rotation` (`bool`): Set the `enable_key_rotation` field on the resulting resource block. When `null`, the `enable_key_rotation` field will be omitted from the resulting object.
-  - `is_enabled` (`bool`): Set the `is_enabled` field on the resulting resource block. When `null`, the `is_enabled` field will be omitted from the resulting object.
-  - `key_usage` (`string`): Set the `key_usage` field on the resulting resource block. When `null`, the `key_usage` field will be omitted from the resulting object.
-  - `multi_region` (`bool`): Set the `multi_region` field on the resulting resource block. When `null`, the `multi_region` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `bypass_policy_lockout_safety_check` (`bool`):  When `null`, the `bypass_policy_lockout_safety_check` field will be omitted from the resulting object.
+  - `custom_key_store_id` (`string`):  When `null`, the `custom_key_store_id` field will be omitted from the resulting object.
+  - `customer_master_key_spec` (`string`):  When `null`, the `customer_master_key_spec` field will be omitted from the resulting object.
+  - `deletion_window_in_days` (`number`):  When `null`, the `deletion_window_in_days` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `enable_key_rotation` (`bool`):  When `null`, the `enable_key_rotation` field will be omitted from the resulting object.
+  - `is_enabled` (`bool`):  When `null`, the `is_enabled` field will be omitted from the resulting object.
+  - `key_usage` (`string`):  When `null`, the `key_usage` field will be omitted from the resulting object.
+  - `multi_region` (`bool`):  When `null`, the `multi_region` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -92,18 +92,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bypass_policy_lockout_safety_check` (`bool`): Set the `bypass_policy_lockout_safety_check` field on the resulting object. When `null`, the `bypass_policy_lockout_safety_check` field will be omitted from the resulting object.
-  - `custom_key_store_id` (`string`): Set the `custom_key_store_id` field on the resulting object. When `null`, the `custom_key_store_id` field will be omitted from the resulting object.
-  - `customer_master_key_spec` (`string`): Set the `customer_master_key_spec` field on the resulting object. When `null`, the `customer_master_key_spec` field will be omitted from the resulting object.
-  - `deletion_window_in_days` (`number`): Set the `deletion_window_in_days` field on the resulting object. When `null`, the `deletion_window_in_days` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `enable_key_rotation` (`bool`): Set the `enable_key_rotation` field on the resulting object. When `null`, the `enable_key_rotation` field will be omitted from the resulting object.
-  - `is_enabled` (`bool`): Set the `is_enabled` field on the resulting object. When `null`, the `is_enabled` field will be omitted from the resulting object.
-  - `key_usage` (`string`): Set the `key_usage` field on the resulting object. When `null`, the `key_usage` field will be omitted from the resulting object.
-  - `multi_region` (`bool`): Set the `multi_region` field on the resulting object. When `null`, the `multi_region` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `bypass_policy_lockout_safety_check` (`bool`):  When `null`, the `bypass_policy_lockout_safety_check` field will be omitted from the resulting object.
+  - `custom_key_store_id` (`string`):  When `null`, the `custom_key_store_id` field will be omitted from the resulting object.
+  - `customer_master_key_spec` (`string`):  When `null`, the `customer_master_key_spec` field will be omitted from the resulting object.
+  - `deletion_window_in_days` (`number`):  When `null`, the `deletion_window_in_days` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `enable_key_rotation` (`bool`):  When `null`, the `enable_key_rotation` field will be omitted from the resulting object.
+  - `is_enabled` (`bool`):  When `null`, the `is_enabled` field will be omitted from the resulting object.
+  - `key_usage` (`string`):  When `null`, the `key_usage` field will be omitted from the resulting object.
+  - `multi_region` (`bool`):  When `null`, the `multi_region` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kms_key` resource into the root Terraform configuration.

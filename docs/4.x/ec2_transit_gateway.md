@@ -60,18 +60,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `amazon_side_asn` (`number`): Set the `amazon_side_asn` field on the resulting resource block. When `null`, the `amazon_side_asn` field will be omitted from the resulting object.
-  - `auto_accept_shared_attachments` (`string`): Set the `auto_accept_shared_attachments` field on the resulting resource block. When `null`, the `auto_accept_shared_attachments` field will be omitted from the resulting object.
-  - `default_route_table_association` (`string`): Set the `default_route_table_association` field on the resulting resource block. When `null`, the `default_route_table_association` field will be omitted from the resulting object.
-  - `default_route_table_propagation` (`string`): Set the `default_route_table_propagation` field on the resulting resource block. When `null`, the `default_route_table_propagation` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `dns_support` (`string`): Set the `dns_support` field on the resulting resource block. When `null`, the `dns_support` field will be omitted from the resulting object.
-  - `multicast_support` (`string`): Set the `multicast_support` field on the resulting resource block. When `null`, the `multicast_support` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_cidr_blocks` (`list`): Set the `transit_gateway_cidr_blocks` field on the resulting resource block. When `null`, the `transit_gateway_cidr_blocks` field will be omitted from the resulting object.
-  - `vpn_ecmp_support` (`string`): Set the `vpn_ecmp_support` field on the resulting resource block. When `null`, the `vpn_ecmp_support` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_transit_gateway.timeouts.new](#fn-timeoutsnew) constructor.
+  - `amazon_side_asn` (`number`):  When `null`, the `amazon_side_asn` field will be omitted from the resulting object.
+  - `auto_accept_shared_attachments` (`string`):  When `null`, the `auto_accept_shared_attachments` field will be omitted from the resulting object.
+  - `default_route_table_association` (`string`):  When `null`, the `default_route_table_association` field will be omitted from the resulting object.
+  - `default_route_table_propagation` (`string`):  When `null`, the `default_route_table_propagation` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `dns_support` (`string`):  When `null`, the `dns_support` field will be omitted from the resulting object.
+  - `multicast_support` (`string`):  When `null`, the `multicast_support` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_cidr_blocks` (`list`):  When `null`, the `transit_gateway_cidr_blocks` field will be omitted from the resulting object.
+  - `vpn_ecmp_support` (`string`):  When `null`, the `vpn_ecmp_support` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_transit_gateway.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,18 +95,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `amazon_side_asn` (`number`): Set the `amazon_side_asn` field on the resulting object. When `null`, the `amazon_side_asn` field will be omitted from the resulting object.
-  - `auto_accept_shared_attachments` (`string`): Set the `auto_accept_shared_attachments` field on the resulting object. When `null`, the `auto_accept_shared_attachments` field will be omitted from the resulting object.
-  - `default_route_table_association` (`string`): Set the `default_route_table_association` field on the resulting object. When `null`, the `default_route_table_association` field will be omitted from the resulting object.
-  - `default_route_table_propagation` (`string`): Set the `default_route_table_propagation` field on the resulting object. When `null`, the `default_route_table_propagation` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `dns_support` (`string`): Set the `dns_support` field on the resulting object. When `null`, the `dns_support` field will be omitted from the resulting object.
-  - `multicast_support` (`string`): Set the `multicast_support` field on the resulting object. When `null`, the `multicast_support` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_cidr_blocks` (`list`): Set the `transit_gateway_cidr_blocks` field on the resulting object. When `null`, the `transit_gateway_cidr_blocks` field will be omitted from the resulting object.
-  - `vpn_ecmp_support` (`string`): Set the `vpn_ecmp_support` field on the resulting object. When `null`, the `vpn_ecmp_support` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_transit_gateway.timeouts.new](#fn-timeoutsnew) constructor.
+  - `amazon_side_asn` (`number`):  When `null`, the `amazon_side_asn` field will be omitted from the resulting object.
+  - `auto_accept_shared_attachments` (`string`):  When `null`, the `auto_accept_shared_attachments` field will be omitted from the resulting object.
+  - `default_route_table_association` (`string`):  When `null`, the `default_route_table_association` field will be omitted from the resulting object.
+  - `default_route_table_propagation` (`string`):  When `null`, the `default_route_table_propagation` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `dns_support` (`string`):  When `null`, the `dns_support` field will be omitted from the resulting object.
+  - `multicast_support` (`string`):  When `null`, the `multicast_support` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_cidr_blocks` (`list`):  When `null`, the `transit_gateway_cidr_blocks` field will be omitted from the resulting object.
+  - `vpn_ecmp_support` (`string`):  When `null`, the `vpn_ecmp_support` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_transit_gateway.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_transit_gateway` resource into the root Terraform configuration.
@@ -341,9 +341,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

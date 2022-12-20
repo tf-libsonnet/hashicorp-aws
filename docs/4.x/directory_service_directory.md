@@ -69,21 +69,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `alias` (`string`): Set the `alias` field on the resulting resource block. When `null`, the `alias` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `desired_number_of_domain_controllers` (`number`): Set the `desired_number_of_domain_controllers` field on the resulting resource block. When `null`, the `desired_number_of_domain_controllers` field will be omitted from the resulting object.
-  - `edition` (`string`): Set the `edition` field on the resulting resource block. When `null`, the `edition` field will be omitted from the resulting object.
-  - `enable_sso` (`bool`): Set the `enable_sso` field on the resulting resource block. When `null`, the `enable_sso` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `password` (`string`): Set the `password` field on the resulting resource block.
-  - `short_name` (`string`): Set the `short_name` field on the resulting resource block. When `null`, the `short_name` field will be omitted from the resulting object.
-  - `size` (`string`): Set the `size` field on the resulting resource block. When `null`, the `size` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
-  - `connect_settings` (`list[obj]`): Set the `connect_settings` field on the resulting resource block. When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-connect_settingsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_settings` (`list[obj]`): Set the `vpc_settings` field on the resulting resource block. When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-vpc_settingsnew) constructor.
+  - `alias` (`string`):  When `null`, the `alias` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `desired_number_of_domain_controllers` (`number`):  When `null`, the `desired_number_of_domain_controllers` field will be omitted from the resulting object.
+  - `edition` (`string`):  When `null`, the `edition` field will be omitted from the resulting object.
+  - `enable_sso` (`bool`):  When `null`, the `enable_sso` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `password` (`string`): 
+  - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
+  - `size` (`string`):  When `null`, the `size` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-connect_settingsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-vpc_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -107,21 +107,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `alias` (`string`): Set the `alias` field on the resulting object. When `null`, the `alias` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `desired_number_of_domain_controllers` (`number`): Set the `desired_number_of_domain_controllers` field on the resulting object. When `null`, the `desired_number_of_domain_controllers` field will be omitted from the resulting object.
-  - `edition` (`string`): Set the `edition` field on the resulting object. When `null`, the `edition` field will be omitted from the resulting object.
-  - `enable_sso` (`bool`): Set the `enable_sso` field on the resulting object. When `null`, the `enable_sso` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting object.
-  - `short_name` (`string`): Set the `short_name` field on the resulting object. When `null`, the `short_name` field will be omitted from the resulting object.
-  - `size` (`string`): Set the `size` field on the resulting object. When `null`, the `size` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
-  - `connect_settings` (`list[obj]`): Set the `connect_settings` field on the resulting object. When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-connect_settingsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_settings` (`list[obj]`): Set the `vpc_settings` field on the resulting object. When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-vpc_settingsnew) constructor.
+  - `alias` (`string`):  When `null`, the `alias` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `desired_number_of_domain_controllers` (`number`):  When `null`, the `desired_number_of_domain_controllers` field will be omitted from the resulting object.
+  - `edition` (`string`):  When `null`, the `edition` field will be omitted from the resulting object.
+  - `enable_sso` (`bool`):  When `null`, the `enable_sso` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `password` (`string`): 
+  - `short_name` (`string`):  When `null`, the `short_name` field will be omitted from the resulting object.
+  - `size` (`string`):  When `null`, the `size` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `connect_settings` (`list[obj]`):  When `null`, the `connect_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.connect_settings.new](#fn-connect_settingsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_settings` (`list[obj]`):  When `null`, the `vpc_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_directory.vpc_settings.new](#fn-vpc_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_service_directory` resource into the root Terraform configuration.
@@ -446,10 +446,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `customer_dns_ips` (`list`): Set the `customer_dns_ips` field on the resulting object.
-  - `customer_username` (`string`): Set the `customer_username` field on the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `customer_dns_ips` (`list`): 
+  - `customer_username` (`string`): 
+  - `subnet_ids` (`list`): 
+  - `vpc_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `connect_settings` sub block.
@@ -472,9 +472,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -497,8 +497,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `subnet_ids` (`list`): 
+  - `vpc_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `vpc_settings` sub block.

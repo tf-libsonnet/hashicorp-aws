@@ -61,16 +61,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `destination_cidr_block` (`string`): Set the `destination_cidr_block` field on the resulting resource block.
-  - `protocol` (`number`): Set the `protocol` field on the resulting resource block. When `null`, the `protocol` field will be omitted from the resulting object.
-  - `rule_action` (`string`): Set the `rule_action` field on the resulting resource block.
-  - `rule_number` (`number`): Set the `rule_number` field on the resulting resource block.
-  - `source_cidr_block` (`string`): Set the `source_cidr_block` field on the resulting resource block.
-  - `traffic_direction` (`string`): Set the `traffic_direction` field on the resulting resource block.
-  - `traffic_mirror_filter_id` (`string`): Set the `traffic_mirror_filter_id` field on the resulting resource block.
-  - `destination_port_range` (`list[obj]`): Set the `destination_port_range` field on the resulting resource block. When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-destination_port_rangenew) constructor.
-  - `source_port_range` (`list[obj]`): Set the `source_port_range` field on the resulting resource block. When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-source_port_rangenew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `destination_cidr_block` (`string`): 
+  - `protocol` (`number`):  When `null`, the `protocol` field will be omitted from the resulting object.
+  - `rule_action` (`string`): 
+  - `rule_number` (`number`): 
+  - `source_cidr_block` (`string`): 
+  - `traffic_direction` (`string`): 
+  - `traffic_mirror_filter_id` (`string`): 
+  - `destination_port_range` (`list[obj]`):  When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-destination_port_rangenew) constructor.
+  - `source_port_range` (`list[obj]`):  When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-source_port_rangenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,16 +94,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `destination_cidr_block` (`string`): Set the `destination_cidr_block` field on the resulting object.
-  - `protocol` (`number`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.
-  - `rule_action` (`string`): Set the `rule_action` field on the resulting object.
-  - `rule_number` (`number`): Set the `rule_number` field on the resulting object.
-  - `source_cidr_block` (`string`): Set the `source_cidr_block` field on the resulting object.
-  - `traffic_direction` (`string`): Set the `traffic_direction` field on the resulting object.
-  - `traffic_mirror_filter_id` (`string`): Set the `traffic_mirror_filter_id` field on the resulting object.
-  - `destination_port_range` (`list[obj]`): Set the `destination_port_range` field on the resulting object. When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-destination_port_rangenew) constructor.
-  - `source_port_range` (`list[obj]`): Set the `source_port_range` field on the resulting object. When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-source_port_rangenew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `destination_cidr_block` (`string`): 
+  - `protocol` (`number`):  When `null`, the `protocol` field will be omitted from the resulting object.
+  - `rule_action` (`string`): 
+  - `rule_number` (`number`): 
+  - `source_cidr_block` (`string`): 
+  - `traffic_direction` (`string`): 
+  - `traffic_mirror_filter_id` (`string`): 
+  - `destination_port_range` (`list[obj]`):  When `null`, the `destination_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.destination_port_range.new](#fn-destination_port_rangenew) constructor.
+  - `source_port_range` (`list[obj]`):  When `null`, the `source_port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_traffic_mirror_filter_rule.source_port_range.new](#fn-source_port_rangenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_traffic_mirror_filter_rule` resource into the root Terraform configuration.
@@ -328,8 +328,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `from_port` (`number`): Set the `from_port` field on the resulting object. When `null`, the `from_port` field will be omitted from the resulting object.
-  - `to_port` (`number`): Set the `to_port` field on the resulting object. When `null`, the `to_port` field will be omitted from the resulting object.
+  - `from_port` (`number`):  When `null`, the `from_port` field will be omitted from the resulting object.
+  - `to_port` (`number`):  When `null`, the `to_port` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `destination_port_range` sub block.
@@ -352,8 +352,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `from_port` (`number`): Set the `from_port` field on the resulting object. When `null`, the `from_port` field will be omitted from the resulting object.
-  - `to_port` (`number`): Set the `to_port` field on the resulting object. When `null`, the `to_port` field will be omitted from the resulting object.
+  - `from_port` (`number`):  When `null`, the `from_port` field will be omitted from the resulting object.
+  - `to_port` (`number`):  When `null`, the `to_port` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `source_port_range` sub block.

@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `http_method` (`string`): Set the `http_method` field on the resulting resource block.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
-  - `response_models` (`obj`): Set the `response_models` field on the resulting resource block. When `null`, the `response_models` field will be omitted from the resulting object.
-  - `response_parameters` (`obj`): Set the `response_parameters` field on the resulting resource block. When `null`, the `response_parameters` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
-  - `status_code` (`string`): Set the `status_code` field on the resulting resource block.
+  - `http_method` (`string`): 
+  - `resource_id` (`string`): 
+  - `response_models` (`obj`):  When `null`, the `response_models` field will be omitted from the resulting object.
+  - `response_parameters` (`obj`):  When `null`, the `response_parameters` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): 
+  - `status_code` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `http_method` (`string`): Set the `http_method` field on the resulting object.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
-  - `response_models` (`obj`): Set the `response_models` field on the resulting object. When `null`, the `response_models` field will be omitted from the resulting object.
-  - `response_parameters` (`obj`): Set the `response_parameters` field on the resulting object. When `null`, the `response_parameters` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
-  - `status_code` (`string`): Set the `status_code` field on the resulting object.
+  - `http_method` (`string`): 
+  - `resource_id` (`string`): 
+  - `response_models` (`obj`):  When `null`, the `response_models` field will be omitted from the resulting object.
+  - `response_parameters` (`obj`):  When `null`, the `response_parameters` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): 
+  - `status_code` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_method_response` resource into the root Terraform configuration.

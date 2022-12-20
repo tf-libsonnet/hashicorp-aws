@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `pipeline_id` (`string`): Set the `pipeline_id` field on the resulting data source block.
-  - `parameter_value` (`list[obj]`): Set the `parameter_value` field on the resulting data source block. When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
+  - `pipeline_id` (`string`): 
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `pipeline_id` (`string`): Set the `pipeline_id` field on the resulting object.
-  - `parameter_value` (`list[obj]`): Set the `parameter_value` field on the resulting object. When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
+  - `pipeline_id` (`string`): 
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `datapipeline_pipeline_definition` data source into the root Terraform configuration.

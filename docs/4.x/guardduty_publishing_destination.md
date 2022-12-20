@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting resource block.
-  - `destination_type` (`string`): Set the `destination_type` field on the resulting resource block. When `null`, the `destination_type` field will be omitted from the resulting object.
-  - `detector_id` (`string`): Set the `detector_id` field on the resulting resource block.
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block.
+  - `destination_arn` (`string`): 
+  - `destination_type` (`string`):  When `null`, the `destination_type` field will be omitted from the resulting object.
+  - `detector_id` (`string`): 
+  - `kms_key_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.
-  - `destination_type` (`string`): Set the `destination_type` field on the resulting object. When `null`, the `destination_type` field will be omitted from the resulting object.
-  - `detector_id` (`string`): Set the `detector_id` field on the resulting object.
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object.
+  - `destination_arn` (`string`): 
+  - `destination_type` (`string`):  When `null`, the `destination_type` field will be omitted from the resulting object.
+  - `detector_id` (`string`): 
+  - `kms_key_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `guardduty_publishing_destination` resource into the root Terraform configuration.

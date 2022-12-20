@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `principal_arn` (`string`): Set the `principal_arn` field on the resulting resource block.
-  - `vpc_endpoint_service_id` (`string`): Set the `vpc_endpoint_service_id` field on the resulting resource block.
+  - `principal_arn` (`string`): 
+  - `vpc_endpoint_service_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `principal_arn` (`string`): Set the `principal_arn` field on the resulting object.
-  - `vpc_endpoint_service_id` (`string`): Set the `vpc_endpoint_service_id` field on the resulting object.
+  - `principal_arn` (`string`): 
+  - `vpc_endpoint_service_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_endpoint_service_allowed_principal` resource into the root Terraform configuration.

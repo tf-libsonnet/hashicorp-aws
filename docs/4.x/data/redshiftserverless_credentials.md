@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `db_name` (`string`): Set the `db_name` field on the resulting data source block. When `null`, the `db_name` field will be omitted from the resulting object.
-  - `duration_seconds` (`number`): Set the `duration_seconds` field on the resulting data source block. When `null`, the `duration_seconds` field will be omitted from the resulting object.
-  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting data source block.
+  - `db_name` (`string`):  When `null`, the `db_name` field will be omitted from the resulting object.
+  - `duration_seconds` (`number`):  When `null`, the `duration_seconds` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `db_name` (`string`): Set the `db_name` field on the resulting object. When `null`, the `db_name` field will be omitted from the resulting object.
-  - `duration_seconds` (`number`): Set the `duration_seconds` field on the resulting object. When `null`, the `duration_seconds` field will be omitted from the resulting object.
-  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting object.
+  - `db_name` (`string`):  When `null`, the `db_name` field will be omitted from the resulting object.
+  - `duration_seconds` (`number`):  When `null`, the `duration_seconds` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `redshiftserverless_credentials` data source into the root Terraform configuration.

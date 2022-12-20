@@ -53,14 +53,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `aws_account_id` (`string`): Set the `aws_account_id` field on the resulting resource block. When `null`, the `aws_account_id` field will be omitted from the resulting object.
-  - `email` (`string`): Set the `email` field on the resulting resource block.
-  - `iam_arn` (`string`): Set the `iam_arn` field on the resulting resource block. When `null`, the `iam_arn` field will be omitted from the resulting object.
-  - `identity_type` (`string`): Set the `identity_type` field on the resulting resource block.
-  - `namespace` (`string`): Set the `namespace` field on the resulting resource block. When `null`, the `namespace` field will be omitted from the resulting object.
-  - `session_name` (`string`): Set the `session_name` field on the resulting resource block. When `null`, the `session_name` field will be omitted from the resulting object.
-  - `user_name` (`string`): Set the `user_name` field on the resulting resource block. When `null`, the `user_name` field will be omitted from the resulting object.
-  - `user_role` (`string`): Set the `user_role` field on the resulting resource block.
+  - `aws_account_id` (`string`):  When `null`, the `aws_account_id` field will be omitted from the resulting object.
+  - `email` (`string`): 
+  - `iam_arn` (`string`):  When `null`, the `iam_arn` field will be omitted from the resulting object.
+  - `identity_type` (`string`): 
+  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
+  - `session_name` (`string`):  When `null`, the `session_name` field will be omitted from the resulting object.
+  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
+  - `user_role` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,14 +84,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `aws_account_id` (`string`): Set the `aws_account_id` field on the resulting object. When `null`, the `aws_account_id` field will be omitted from the resulting object.
-  - `email` (`string`): Set the `email` field on the resulting object.
-  - `iam_arn` (`string`): Set the `iam_arn` field on the resulting object. When `null`, the `iam_arn` field will be omitted from the resulting object.
-  - `identity_type` (`string`): Set the `identity_type` field on the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.
-  - `session_name` (`string`): Set the `session_name` field on the resulting object. When `null`, the `session_name` field will be omitted from the resulting object.
-  - `user_name` (`string`): Set the `user_name` field on the resulting object. When `null`, the `user_name` field will be omitted from the resulting object.
-  - `user_role` (`string`): Set the `user_role` field on the resulting object.
+  - `aws_account_id` (`string`):  When `null`, the `aws_account_id` field will be omitted from the resulting object.
+  - `email` (`string`): 
+  - `iam_arn` (`string`):  When `null`, the `iam_arn` field will be omitted from the resulting object.
+  - `identity_type` (`string`): 
+  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
+  - `session_name` (`string`):  When `null`, the `session_name` field will be omitted from the resulting object.
+  - `user_name` (`string`):  When `null`, the `user_name` field will be omitted from the resulting object.
+  - `user_role` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `quicksight_user` resource into the root Terraform configuration.

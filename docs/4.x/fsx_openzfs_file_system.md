@@ -78,24 +78,24 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting resource block. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
-  - `backup_id` (`string`): Set the `backup_id` field on the resulting resource block. When `null`, the `backup_id` field will be omitted from the resulting object.
-  - `copy_tags_to_backups` (`bool`): Set the `copy_tags_to_backups` field on the resulting resource block. When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
-  - `copy_tags_to_volumes` (`bool`): Set the `copy_tags_to_volumes` field on the resulting resource block. When `null`, the `copy_tags_to_volumes` field will be omitted from the resulting object.
-  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting resource block. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
-  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting resource block.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block. When `null`, the `storage_capacity` field will be omitted from the resulting object.
-  - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting resource block.
-  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting resource block. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting resource block. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.
-  - `root_volume_configuration` (`list[obj]`): Set the `root_volume_configuration` field on the resulting resource block. When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-root_volume_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-timeoutsnew) constructor.
+  - `automatic_backup_retention_days` (`number`):  When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
+  - `backup_id` (`string`):  When `null`, the `backup_id` field will be omitted from the resulting object.
+  - `copy_tags_to_backups` (`bool`):  When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
+  - `copy_tags_to_volumes` (`bool`):  When `null`, the `copy_tags_to_volumes` field will be omitted from the resulting object.
+  - `daily_automatic_backup_start_time` (`string`):  When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
+  - `deployment_type` (`string`): 
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`):  When `null`, the `storage_capacity` field will be omitted from the resulting object.
+  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `throughput_capacity` (`number`): 
+  - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
+  - `disk_iops_configuration` (`list[obj]`):  When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.
+  - `root_volume_configuration` (`list[obj]`):  When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-root_volume_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -119,24 +119,24 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting object. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
-  - `backup_id` (`string`): Set the `backup_id` field on the resulting object. When `null`, the `backup_id` field will be omitted from the resulting object.
-  - `copy_tags_to_backups` (`bool`): Set the `copy_tags_to_backups` field on the resulting object. When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
-  - `copy_tags_to_volumes` (`bool`): Set the `copy_tags_to_volumes` field on the resulting object. When `null`, the `copy_tags_to_volumes` field will be omitted from the resulting object.
-  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting object. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
-  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object. When `null`, the `storage_capacity` field will be omitted from the resulting object.
-  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting object.
-  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting object. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.
-  - `root_volume_configuration` (`list[obj]`): Set the `root_volume_configuration` field on the resulting object. When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-root_volume_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-timeoutsnew) constructor.
+  - `automatic_backup_retention_days` (`number`):  When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.
+  - `backup_id` (`string`):  When `null`, the `backup_id` field will be omitted from the resulting object.
+  - `copy_tags_to_backups` (`bool`):  When `null`, the `copy_tags_to_backups` field will be omitted from the resulting object.
+  - `copy_tags_to_volumes` (`bool`):  When `null`, the `copy_tags_to_volumes` field will be omitted from the resulting object.
+  - `daily_automatic_backup_start_time` (`string`):  When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
+  - `deployment_type` (`string`): 
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`):  When `null`, the `storage_capacity` field will be omitted from the resulting object.
+  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `throughput_capacity` (`number`): 
+  - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
+  - `disk_iops_configuration` (`list[obj]`):  When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.
+  - `root_volume_configuration` (`list[obj]`):  When `null`, the `root_volume_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.new](#fn-root_volume_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_openzfs_file_system` resource into the root Terraform configuration.
@@ -509,8 +509,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
-  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
+  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
+  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `disk_iops_configuration` sub block.
@@ -533,12 +533,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `copy_tags_to_snapshots` (`bool`): Set the `copy_tags_to_snapshots` field on the resulting object. When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
-  - `data_compression_type` (`string`): Set the `data_compression_type` field on the resulting object. When `null`, the `data_compression_type` field will be omitted from the resulting object.
-  - `read_only` (`bool`): Set the `read_only` field on the resulting object. When `null`, the `read_only` field will be omitted from the resulting object.
-  - `record_size_kib` (`number`): Set the `record_size_kib` field on the resulting object. When `null`, the `record_size_kib` field will be omitted from the resulting object.
-  - `nfs_exports` (`list[obj]`): Set the `nfs_exports` field on the resulting object. When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.new](#fn-root_volume_configurationnfs_exportsnew) constructor.
-  - `user_and_group_quotas` (`list[obj]`): Set the `user_and_group_quotas` field on the resulting object. When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.user_and_group_quotas.new](#fn-root_volume_configurationuser_and_group_quotasnew) constructor.
+  - `copy_tags_to_snapshots` (`bool`):  When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
+  - `data_compression_type` (`string`):  When `null`, the `data_compression_type` field will be omitted from the resulting object.
+  - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
+  - `record_size_kib` (`number`):  When `null`, the `record_size_kib` field will be omitted from the resulting object.
+  - `nfs_exports` (`list[obj]`):  When `null`, the `nfs_exports` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.new](#fn-root_volume_configurationnfs_exportsnew) constructor.
+  - `user_and_group_quotas` (`list[obj]`):  When `null`, the `user_and_group_quotas` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.user_and_group_quotas.new](#fn-root_volume_configurationuser_and_group_quotasnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `root_volume_configuration` sub block.
@@ -561,7 +561,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_configurations` (`list[obj]`): Set the `client_configurations` field on the resulting object. When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.client_configurations.new](#fn-root_volume_configurationroot_volume_configurationclient_configurationsnew) constructor.
+  - `client_configurations` (`list[obj]`):  When `null`, the `client_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_openzfs_file_system.root_volume_configuration.nfs_exports.client_configurations.new](#fn-root_volume_configurationroot_volume_configurationclient_configurationsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `nfs_exports` sub block.
@@ -584,8 +584,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `clients` (`string`): Set the `clients` field on the resulting object.
-  - `options` (`list`): Set the `options` field on the resulting object.
+  - `clients` (`string`): 
+  - `options` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `client_configurations` sub block.
@@ -608,8 +608,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `storage_capacity_quota_gib` (`number`): Set the `storage_capacity_quota_gib` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `storage_capacity_quota_gib` (`number`): 
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `user_and_group_quotas` sub block.
@@ -632,9 +632,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

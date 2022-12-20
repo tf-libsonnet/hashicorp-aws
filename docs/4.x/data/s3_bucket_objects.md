@@ -52,13 +52,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting data source block.
-  - `delimiter` (`string`): Set the `delimiter` field on the resulting data source block. When `null`, the `delimiter` field will be omitted from the resulting object.
-  - `encoding_type` (`string`): Set the `encoding_type` field on the resulting data source block. When `null`, the `encoding_type` field will be omitted from the resulting object.
-  - `fetch_owner` (`bool`): Set the `fetch_owner` field on the resulting data source block. When `null`, the `fetch_owner` field will be omitted from the resulting object.
-  - `max_keys` (`number`): Set the `max_keys` field on the resulting data source block. When `null`, the `max_keys` field will be omitted from the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting data source block. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `start_after` (`string`): Set the `start_after` field on the resulting data source block. When `null`, the `start_after` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `delimiter` (`string`):  When `null`, the `delimiter` field will be omitted from the resulting object.
+  - `encoding_type` (`string`):  When `null`, the `encoding_type` field will be omitted from the resulting object.
+  - `fetch_owner` (`bool`):  When `null`, the `fetch_owner` field will be omitted from the resulting object.
+  - `max_keys` (`number`):  When `null`, the `max_keys` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `start_after` (`string`):  When `null`, the `start_after` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -82,13 +82,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `delimiter` (`string`): Set the `delimiter` field on the resulting object. When `null`, the `delimiter` field will be omitted from the resulting object.
-  - `encoding_type` (`string`): Set the `encoding_type` field on the resulting object. When `null`, the `encoding_type` field will be omitted from the resulting object.
-  - `fetch_owner` (`bool`): Set the `fetch_owner` field on the resulting object. When `null`, the `fetch_owner` field will be omitted from the resulting object.
-  - `max_keys` (`number`): Set the `max_keys` field on the resulting object. When `null`, the `max_keys` field will be omitted from the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `start_after` (`string`): Set the `start_after` field on the resulting object. When `null`, the `start_after` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `delimiter` (`string`):  When `null`, the `delimiter` field will be omitted from the resulting object.
+  - `encoding_type` (`string`):  When `null`, the `encoding_type` field will be omitted from the resulting object.
+  - `fetch_owner` (`bool`):  When `null`, the `fetch_owner` field will be omitted from the resulting object.
+  - `max_keys` (`number`):  When `null`, the `max_keys` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `start_after` (`string`):  When `null`, the `start_after` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `s3_bucket_objects` data source into the root Terraform configuration.

@@ -62,14 +62,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `enable` (`bool`): Set the `enable` field on the resulting resource block. When `null`, the `enable` field will be omitted from the resulting object.
-  - `end_time` (`string`): Set the `end_time` field on the resulting resource block. When `null`, the `end_time` field will be omitted from the resulting object.
-  - `iam_role` (`string`): Set the `iam_role` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `schedule` (`string`): Set the `schedule` field on the resulting resource block.
-  - `start_time` (`string`): Set the `start_time` field on the resulting resource block. When `null`, the `start_time` field will be omitted from the resulting object.
-  - `target_action` (`list[obj]`): Set the `target_action` field on the resulting resource block. When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-target_actionnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `enable` (`bool`):  When `null`, the `enable` field will be omitted from the resulting object.
+  - `end_time` (`string`):  When `null`, the `end_time` field will be omitted from the resulting object.
+  - `iam_role` (`string`): 
+  - `name` (`string`): 
+  - `schedule` (`string`): 
+  - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
+  - `target_action` (`list[obj]`):  When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-target_actionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,14 +93,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `enable` (`bool`): Set the `enable` field on the resulting object. When `null`, the `enable` field will be omitted from the resulting object.
-  - `end_time` (`string`): Set the `end_time` field on the resulting object. When `null`, the `end_time` field will be omitted from the resulting object.
-  - `iam_role` (`string`): Set the `iam_role` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `schedule` (`string`): Set the `schedule` field on the resulting object.
-  - `start_time` (`string`): Set the `start_time` field on the resulting object. When `null`, the `start_time` field will be omitted from the resulting object.
-  - `target_action` (`list[obj]`): Set the `target_action` field on the resulting object. When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-target_actionnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `enable` (`bool`):  When `null`, the `enable` field will be omitted from the resulting object.
+  - `end_time` (`string`):  When `null`, the `end_time` field will be omitted from the resulting object.
+  - `iam_role` (`string`): 
+  - `name` (`string`): 
+  - `schedule` (`string`): 
+  - `start_time` (`string`):  When `null`, the `start_time` field will be omitted from the resulting object.
+  - `target_action` (`list[obj]`):  When `null`, the `target_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.new](#fn-target_actionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_scheduled_action` resource into the root Terraform configuration.
@@ -272,9 +272,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `pause_cluster` (`list[obj]`): Set the `pause_cluster` field on the resulting object. When `null`, the `pause_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.pause_cluster.new](#fn-target_actionpause_clusternew) constructor.
-  - `resize_cluster` (`list[obj]`): Set the `resize_cluster` field on the resulting object. When `null`, the `resize_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resize_cluster.new](#fn-target_actionresize_clusternew) constructor.
-  - `resume_cluster` (`list[obj]`): Set the `resume_cluster` field on the resulting object. When `null`, the `resume_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resume_cluster.new](#fn-target_actionresume_clusternew) constructor.
+  - `pause_cluster` (`list[obj]`):  When `null`, the `pause_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.pause_cluster.new](#fn-target_actionpause_clusternew) constructor.
+  - `resize_cluster` (`list[obj]`):  When `null`, the `resize_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resize_cluster.new](#fn-target_actionresize_clusternew) constructor.
+  - `resume_cluster` (`list[obj]`):  When `null`, the `resume_cluster` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_scheduled_action.target_action.resume_cluster.new](#fn-target_actionresume_clusternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_action` sub block.
@@ -297,7 +297,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
+  - `cluster_identifier` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `pause_cluster` sub block.
@@ -320,11 +320,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `classic` (`bool`): Set the `classic` field on the resulting object. When `null`, the `classic` field will be omitted from the resulting object.
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
-  - `cluster_type` (`string`): Set the `cluster_type` field on the resulting object. When `null`, the `cluster_type` field will be omitted from the resulting object.
-  - `node_type` (`string`): Set the `node_type` field on the resulting object. When `null`, the `node_type` field will be omitted from the resulting object.
-  - `number_of_nodes` (`number`): Set the `number_of_nodes` field on the resulting object. When `null`, the `number_of_nodes` field will be omitted from the resulting object.
+  - `classic` (`bool`):  When `null`, the `classic` field will be omitted from the resulting object.
+  - `cluster_identifier` (`string`): 
+  - `cluster_type` (`string`):  When `null`, the `cluster_type` field will be omitted from the resulting object.
+  - `node_type` (`string`):  When `null`, the `node_type` field will be omitted from the resulting object.
+  - `number_of_nodes` (`number`):  When `null`, the `number_of_nodes` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `resize_cluster` sub block.
@@ -347,7 +347,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
+  - `cluster_identifier` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resume_cluster` sub block.

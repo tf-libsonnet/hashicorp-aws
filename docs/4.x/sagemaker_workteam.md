@@ -62,13 +62,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `workforce_name` (`string`): Set the `workforce_name` field on the resulting resource block.
-  - `workteam_name` (`string`): Set the `workteam_name` field on the resulting resource block.
-  - `member_definition` (`list[obj]`): Set the `member_definition` field on the resulting resource block. When `null`, the `member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.new](#fn-member_definitionnew) constructor.
-  - `notification_configuration` (`list[obj]`): Set the `notification_configuration` field on the resulting resource block. When `null`, the `notification_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.notification_configuration.new](#fn-notification_configurationnew) constructor.
+  - `description` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `workforce_name` (`string`): 
+  - `workteam_name` (`string`): 
+  - `member_definition` (`list[obj]`):  When `null`, the `member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.new](#fn-member_definitionnew) constructor.
+  - `notification_configuration` (`list[obj]`):  When `null`, the `notification_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.notification_configuration.new](#fn-notification_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -92,13 +92,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `workforce_name` (`string`): Set the `workforce_name` field on the resulting object.
-  - `workteam_name` (`string`): Set the `workteam_name` field on the resulting object.
-  - `member_definition` (`list[obj]`): Set the `member_definition` field on the resulting object. When `null`, the `member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.new](#fn-member_definitionnew) constructor.
-  - `notification_configuration` (`list[obj]`): Set the `notification_configuration` field on the resulting object. When `null`, the `notification_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.notification_configuration.new](#fn-notification_configurationnew) constructor.
+  - `description` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `workforce_name` (`string`): 
+  - `workteam_name` (`string`): 
+  - `member_definition` (`list[obj]`):  When `null`, the `member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.new](#fn-member_definitionnew) constructor.
+  - `notification_configuration` (`list[obj]`):  When `null`, the `notification_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.notification_configuration.new](#fn-notification_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_workteam` resource into the root Terraform configuration.
@@ -275,8 +275,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `cognito_member_definition` (`list[obj]`): Set the `cognito_member_definition` field on the resulting object. When `null`, the `cognito_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.cognito_member_definition.new](#fn-member_definitioncognito_member_definitionnew) constructor.
-  - `oidc_member_definition` (`list[obj]`): Set the `oidc_member_definition` field on the resulting object. When `null`, the `oidc_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.oidc_member_definition.new](#fn-member_definitionoidc_member_definitionnew) constructor.
+  - `cognito_member_definition` (`list[obj]`):  When `null`, the `cognito_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.cognito_member_definition.new](#fn-member_definitioncognito_member_definitionnew) constructor.
+  - `oidc_member_definition` (`list[obj]`):  When `null`, the `oidc_member_definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_workteam.member_definition.oidc_member_definition.new](#fn-member_definitionoidc_member_definitionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `member_definition` sub block.
@@ -299,9 +299,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_id` (`string`): Set the `client_id` field on the resulting object.
-  - `user_group` (`string`): Set the `user_group` field on the resulting object.
-  - `user_pool` (`string`): Set the `user_pool` field on the resulting object.
+  - `client_id` (`string`): 
+  - `user_group` (`string`): 
+  - `user_pool` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `cognito_member_definition` sub block.
@@ -324,7 +324,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `groups` (`list`): Set the `groups` field on the resulting object.
+  - `groups` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `oidc_member_definition` sub block.
@@ -347,7 +347,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `notification_topic_arn` (`string`): Set the `notification_topic_arn` field on the resulting object. When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
+  - `notification_topic_arn` (`string`):  When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `notification_configuration` sub block.

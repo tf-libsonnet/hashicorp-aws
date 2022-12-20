@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `peer_account_id` (`string`): Set the `peer_account_id` field on the resulting resource block. When `null`, the `peer_account_id` field will be omitted from the resulting object.
-  - `peer_region` (`string`): Set the `peer_region` field on the resulting resource block.
-  - `peer_transit_gateway_id` (`string`): Set the `peer_transit_gateway_id` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting resource block.
+  - `peer_account_id` (`string`):  When `null`, the `peer_account_id` field will be omitted from the resulting object.
+  - `peer_region` (`string`): 
+  - `peer_transit_gateway_id` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `peer_account_id` (`string`): Set the `peer_account_id` field on the resulting object. When `null`, the `peer_account_id` field will be omitted from the resulting object.
-  - `peer_region` (`string`): Set the `peer_region` field on the resulting object.
-  - `peer_transit_gateway_id` (`string`): Set the `peer_transit_gateway_id` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting object.
+  - `peer_account_id` (`string`):  When `null`, the `peer_account_id` field will be omitted from the resulting object.
+  - `peer_region` (`string`): 
+  - `peer_transit_gateway_id` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_transit_gateway_peering_attachment` resource into the root Terraform configuration.

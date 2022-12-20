@@ -110,19 +110,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `app_network_access_type` (`string`): Set the `app_network_access_type` field on the resulting resource block. When `null`, the `app_network_access_type` field will be omitted from the resulting object.
-  - `app_security_group_management` (`string`): Set the `app_security_group_management` field on the resulting resource block. When `null`, the `app_security_group_management` field will be omitted from the resulting object.
-  - `auth_mode` (`string`): Set the `auth_mode` field on the resulting resource block.
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
-  - `default_space_settings` (`list[obj]`): Set the `default_space_settings` field on the resulting resource block. When `null`, the `default_space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.new](#fn-default_space_settingsnew) constructor.
-  - `default_user_settings` (`list[obj]`): Set the `default_user_settings` field on the resulting resource block. When `null`, the `default_user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.new](#fn-default_user_settingsnew) constructor.
-  - `domain_settings` (`list[obj]`): Set the `domain_settings` field on the resulting resource block. When `null`, the `domain_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.domain_settings.new](#fn-domain_settingsnew) constructor.
-  - `retention_policy` (`list[obj]`): Set the `retention_policy` field on the resulting resource block. When `null`, the `retention_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.retention_policy.new](#fn-retention_policynew) constructor.
+  - `app_network_access_type` (`string`):  When `null`, the `app_network_access_type` field will be omitted from the resulting object.
+  - `app_security_group_management` (`string`):  When `null`, the `app_security_group_management` field will be omitted from the resulting object.
+  - `auth_mode` (`string`): 
+  - `domain_name` (`string`): 
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): 
+  - `default_space_settings` (`list[obj]`):  When `null`, the `default_space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.new](#fn-default_space_settingsnew) constructor.
+  - `default_user_settings` (`list[obj]`):  When `null`, the `default_user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.new](#fn-default_user_settingsnew) constructor.
+  - `domain_settings` (`list[obj]`):  When `null`, the `domain_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.domain_settings.new](#fn-domain_settingsnew) constructor.
+  - `retention_policy` (`list[obj]`):  When `null`, the `retention_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.retention_policy.new](#fn-retention_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -146,19 +146,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `app_network_access_type` (`string`): Set the `app_network_access_type` field on the resulting object. When `null`, the `app_network_access_type` field will be omitted from the resulting object.
-  - `app_security_group_management` (`string`): Set the `app_security_group_management` field on the resulting object. When `null`, the `app_security_group_management` field will be omitted from the resulting object.
-  - `auth_mode` (`string`): Set the `auth_mode` field on the resulting object.
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
-  - `default_space_settings` (`list[obj]`): Set the `default_space_settings` field on the resulting object. When `null`, the `default_space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.new](#fn-default_space_settingsnew) constructor.
-  - `default_user_settings` (`list[obj]`): Set the `default_user_settings` field on the resulting object. When `null`, the `default_user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.new](#fn-default_user_settingsnew) constructor.
-  - `domain_settings` (`list[obj]`): Set the `domain_settings` field on the resulting object. When `null`, the `domain_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.domain_settings.new](#fn-domain_settingsnew) constructor.
-  - `retention_policy` (`list[obj]`): Set the `retention_policy` field on the resulting object. When `null`, the `retention_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.retention_policy.new](#fn-retention_policynew) constructor.
+  - `app_network_access_type` (`string`):  When `null`, the `app_network_access_type` field will be omitted from the resulting object.
+  - `app_security_group_management` (`string`):  When `null`, the `app_security_group_management` field will be omitted from the resulting object.
+  - `auth_mode` (`string`): 
+  - `domain_name` (`string`): 
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): 
+  - `default_space_settings` (`list[obj]`):  When `null`, the `default_space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.new](#fn-default_space_settingsnew) constructor.
+  - `default_user_settings` (`list[obj]`):  When `null`, the `default_user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.new](#fn-default_user_settingsnew) constructor.
+  - `domain_settings` (`list[obj]`):  When `null`, the `domain_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.domain_settings.new](#fn-domain_settingsnew) constructor.
+  - `retention_policy` (`list[obj]`):  When `null`, the `retention_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.retention_policy.new](#fn-retention_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_domain` resource into the root Terraform configuration.
@@ -473,10 +473,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.new](#fn-default_space_settingsjupyter_server_app_settingsnew) constructor.
-  - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.new](#fn-default_space_settingskernel_gateway_app_settingsnew) constructor.
+  - `execution_role` (`string`): 
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `jupyter_server_app_settings` (`list[obj]`):  When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.new](#fn-default_space_settingsjupyter_server_app_settingsnew) constructor.
+  - `kernel_gateway_app_settings` (`list[obj]`):  When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.new](#fn-default_space_settingskernel_gateway_app_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `default_space_settings` sub block.
@@ -499,9 +499,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `lifecycle_config_arns` (`list`): Set the `lifecycle_config_arns` field on the resulting object. When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `code_repository` (`list[obj]`): Set the `code_repository` field on the resulting object. When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.code_repository.new](#fn-default_space_settingsdefault_space_settingscode_repositorynew) constructor.
-  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-default_space_settingsdefault_space_settingsdefault_resource_specnew) constructor.
+  - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
+  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.code_repository.new](#fn-default_space_settingsdefault_space_settingscode_repositorynew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-default_space_settingsdefault_space_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `jupyter_server_app_settings` sub block.
@@ -524,7 +524,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `repository_url` (`string`): Set the `repository_url` field on the resulting object.
+  - `repository_url` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `code_repository` sub block.
@@ -547,10 +547,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`):  When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`):  When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`):  When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_resource_spec` sub block.
@@ -573,9 +573,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `lifecycle_config_arns` (`list`): Set the `lifecycle_config_arns` field on the resulting object. When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `custom_image` (`list[obj]`): Set the `custom_image` field on the resulting object. When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.custom_image.new](#fn-default_space_settingsdefault_space_settingscustom_imagenew) constructor.
-  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-default_space_settingsdefault_space_settingsdefault_resource_specnew) constructor.
+  - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
+  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.custom_image.new](#fn-default_space_settingsdefault_space_settingscustom_imagenew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-default_space_settingsdefault_space_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kernel_gateway_app_settings` sub block.
@@ -598,9 +598,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `app_image_config_name` (`string`): Set the `app_image_config_name` field on the resulting object.
-  - `image_name` (`string`): Set the `image_name` field on the resulting object.
-  - `image_version_number` (`number`): Set the `image_version_number` field on the resulting object. When `null`, the `image_version_number` field will be omitted from the resulting object.
+  - `app_image_config_name` (`string`): 
+  - `image_name` (`string`): 
+  - `image_version_number` (`number`):  When `null`, the `image_version_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_image` sub block.
@@ -623,10 +623,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`):  When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`):  When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`):  When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_resource_spec` sub block.
@@ -649,14 +649,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `canvas_app_settings` (`list[obj]`): Set the `canvas_app_settings` field on the resulting object. When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.new](#fn-default_user_settingscanvas_app_settingsnew) constructor.
-  - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.new](#fn-default_user_settingsjupyter_server_app_settingsnew) constructor.
-  - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.new](#fn-default_user_settingskernel_gateway_app_settingsnew) constructor.
-  - `r_session_app_settings` (`list[obj]`): Set the `r_session_app_settings` field on the resulting object. When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.new](#fn-default_user_settingsr_session_app_settingsnew) constructor.
-  - `sharing_settings` (`list[obj]`): Set the `sharing_settings` field on the resulting object. When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.sharing_settings.new](#fn-default_user_settingssharing_settingsnew) constructor.
-  - `tensor_board_app_settings` (`list[obj]`): Set the `tensor_board_app_settings` field on the resulting object. When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.new](#fn-default_user_settingstensor_board_app_settingsnew) constructor.
+  - `execution_role` (`string`): 
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `canvas_app_settings` (`list[obj]`):  When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.new](#fn-default_user_settingscanvas_app_settingsnew) constructor.
+  - `jupyter_server_app_settings` (`list[obj]`):  When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.new](#fn-default_user_settingsjupyter_server_app_settingsnew) constructor.
+  - `kernel_gateway_app_settings` (`list[obj]`):  When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.new](#fn-default_user_settingskernel_gateway_app_settingsnew) constructor.
+  - `r_session_app_settings` (`list[obj]`):  When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.new](#fn-default_user_settingsr_session_app_settingsnew) constructor.
+  - `sharing_settings` (`list[obj]`):  When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.sharing_settings.new](#fn-default_user_settingssharing_settingsnew) constructor.
+  - `tensor_board_app_settings` (`list[obj]`):  When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.new](#fn-default_user_settingstensor_board_app_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `default_user_settings` sub block.
@@ -679,7 +679,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-default_user_settingsdefault_user_settingstime_series_forecasting_settingsnew) constructor.
+  - `time_series_forecasting_settings` (`list[obj]`):  When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-default_user_settingsdefault_user_settingstime_series_forecasting_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `canvas_app_settings` sub block.
@@ -702,8 +702,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `amazon_forecast_role_arn` (`string`): Set the `amazon_forecast_role_arn` field on the resulting object. When `null`, the `amazon_forecast_role_arn` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+  - `amazon_forecast_role_arn` (`string`):  When `null`, the `amazon_forecast_role_arn` field will be omitted from the resulting object.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `time_series_forecasting_settings` sub block.
@@ -726,9 +726,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `lifecycle_config_arns` (`list`): Set the `lifecycle_config_arns` field on the resulting object. When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `code_repository` (`list[obj]`): Set the `code_repository` field on the resulting object. When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.code_repository.new](#fn-default_user_settingsdefault_user_settingscode_repositorynew) constructor.
-  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
+  - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
+  - `code_repository` (`list[obj]`):  When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.code_repository.new](#fn-default_user_settingsdefault_user_settingscode_repositorynew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `jupyter_server_app_settings` sub block.
@@ -751,7 +751,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `repository_url` (`string`): Set the `repository_url` field on the resulting object.
+  - `repository_url` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `code_repository` sub block.
@@ -774,10 +774,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`):  When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`):  When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`):  When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_resource_spec` sub block.
@@ -800,9 +800,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `lifecycle_config_arns` (`list`): Set the `lifecycle_config_arns` field on the resulting object. When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
-  - `custom_image` (`list[obj]`): Set the `custom_image` field on the resulting object. When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.custom_image.new](#fn-default_user_settingsdefault_user_settingscustom_imagenew) constructor.
-  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
+  - `lifecycle_config_arns` (`list`):  When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.
+  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.custom_image.new](#fn-default_user_settingsdefault_user_settingscustom_imagenew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kernel_gateway_app_settings` sub block.
@@ -825,9 +825,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `app_image_config_name` (`string`): Set the `app_image_config_name` field on the resulting object.
-  - `image_name` (`string`): Set the `image_name` field on the resulting object.
-  - `image_version_number` (`number`): Set the `image_version_number` field on the resulting object. When `null`, the `image_version_number` field will be omitted from the resulting object.
+  - `app_image_config_name` (`string`): 
+  - `image_name` (`string`): 
+  - `image_version_number` (`number`):  When `null`, the `image_version_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_image` sub block.
@@ -850,10 +850,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`):  When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`):  When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`):  When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_resource_spec` sub block.
@@ -876,8 +876,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_image` (`list[obj]`): Set the `custom_image` field on the resulting object. When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.custom_image.new](#fn-default_user_settingsdefault_user_settingscustom_imagenew) constructor.
-  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
+  - `custom_image` (`list[obj]`):  When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.custom_image.new](#fn-default_user_settingsdefault_user_settingscustom_imagenew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `r_session_app_settings` sub block.
@@ -900,9 +900,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `app_image_config_name` (`string`): Set the `app_image_config_name` field on the resulting object.
-  - `image_name` (`string`): Set the `image_name` field on the resulting object.
-  - `image_version_number` (`number`): Set the `image_version_number` field on the resulting object. When `null`, the `image_version_number` field will be omitted from the resulting object.
+  - `app_image_config_name` (`string`): 
+  - `image_name` (`string`): 
+  - `image_version_number` (`number`):  When `null`, the `image_version_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `custom_image` sub block.
@@ -925,10 +925,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`):  When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`):  When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`):  When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_resource_spec` sub block.
@@ -951,9 +951,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `notebook_output_option` (`string`): Set the `notebook_output_option` field on the resulting object. When `null`, the `notebook_output_option` field will be omitted from the resulting object.
-  - `s3_kms_key_id` (`string`): Set the `s3_kms_key_id` field on the resulting object. When `null`, the `s3_kms_key_id` field will be omitted from the resulting object.
-  - `s3_output_path` (`string`): Set the `s3_output_path` field on the resulting object. When `null`, the `s3_output_path` field will be omitted from the resulting object.
+  - `notebook_output_option` (`string`):  When `null`, the `notebook_output_option` field will be omitted from the resulting object.
+  - `s3_kms_key_id` (`string`):  When `null`, the `s3_kms_key_id` field will be omitted from the resulting object.
+  - `s3_output_path` (`string`):  When `null`, the `s3_output_path` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sharing_settings` sub block.
@@ -976,7 +976,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
+  - `default_resource_spec` (`list[obj]`):  When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tensor_board_app_settings` sub block.
@@ -999,10 +999,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
-  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`):  When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`):  When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`):  When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `default_resource_spec` sub block.
@@ -1025,8 +1025,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `execution_role_identity_config` (`string`): Set the `execution_role_identity_config` field on the resulting object. When `null`, the `execution_role_identity_config` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `execution_role_identity_config` (`string`):  When `null`, the `execution_role_identity_config` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `domain_settings` sub block.
@@ -1049,7 +1049,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `home_efs_file_system` (`string`): Set the `home_efs_file_system` field on the resulting object. When `null`, the `home_efs_file_system` field will be omitted from the resulting object.
+  - `home_efs_file_system` (`string`):  When `null`, the `home_efs_file_system` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `retention_policy` sub block.

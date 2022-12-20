@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `code` (`string`): Set the `code` field on the resulting resource block.
-  - `comment` (`string`): Set the `comment` field on the resulting resource block. When `null`, the `comment` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `publish` (`bool`): Set the `publish` field on the resulting resource block. When `null`, the `publish` field will be omitted from the resulting object.
-  - `runtime` (`string`): Set the `runtime` field on the resulting resource block.
+  - `code` (`string`): 
+  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `publish` (`bool`):  When `null`, the `publish` field will be omitted from the resulting object.
+  - `runtime` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `code` (`string`): Set the `code` field on the resulting object.
-  - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `publish` (`bool`): Set the `publish` field on the resulting object. When `null`, the `publish` field will be omitted from the resulting object.
-  - `runtime` (`string`): Set the `runtime` field on the resulting object.
+  - `code` (`string`): 
+  - `comment` (`string`):  When `null`, the `comment` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `publish` (`bool`):  When `null`, the `publish` field will be omitted from the resulting object.
+  - `runtime` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudfront_function` resource into the root Terraform configuration.

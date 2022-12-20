@@ -60,10 +60,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `service_name` (`string`): Set the `service_name` field on the resulting resource block.
-  - `container` (`list[obj]`): Set the `container` field on the resulting resource block. When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.container.new](#fn-containernew) constructor.
-  - `public_endpoint` (`list[obj]`): Set the `public_endpoint` field on the resulting resource block. When `null`, the `public_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.new](#fn-public_endpointnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.timeouts.new](#fn-timeoutsnew) constructor.
+  - `service_name` (`string`): 
+  - `container` (`list[obj]`):  When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.container.new](#fn-containernew) constructor.
+  - `public_endpoint` (`list[obj]`):  When `null`, the `public_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.new](#fn-public_endpointnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,10 +87,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `service_name` (`string`): Set the `service_name` field on the resulting object.
-  - `container` (`list[obj]`): Set the `container` field on the resulting object. When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.container.new](#fn-containernew) constructor.
-  - `public_endpoint` (`list[obj]`): Set the `public_endpoint` field on the resulting object. When `null`, the `public_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.new](#fn-public_endpointnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.timeouts.new](#fn-timeoutsnew) constructor.
+  - `service_name` (`string`): 
+  - `container` (`list[obj]`):  When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.container.new](#fn-containernew) constructor.
+  - `public_endpoint` (`list[obj]`):  When `null`, the `public_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.new](#fn-public_endpointnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_container_service_deployment_version` resource into the root Terraform configuration.
@@ -239,11 +239,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `command` (`list`): Set the `command` field on the resulting object. When `null`, the `command` field will be omitted from the resulting object.
-  - `container_name` (`string`): Set the `container_name` field on the resulting object.
-  - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.
-  - `image` (`string`): Set the `image` field on the resulting object.
-  - `ports` (`obj`): Set the `ports` field on the resulting object. When `null`, the `ports` field will be omitted from the resulting object.
+  - `command` (`list`):  When `null`, the `command` field will be omitted from the resulting object.
+  - `container_name` (`string`): 
+  - `environment` (`obj`):  When `null`, the `environment` field will be omitted from the resulting object.
+  - `image` (`string`): 
+  - `ports` (`obj`):  When `null`, the `ports` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `container` sub block.
@@ -266,9 +266,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `container_name` (`string`): Set the `container_name` field on the resulting object.
-  - `container_port` (`number`): Set the `container_port` field on the resulting object.
-  - `health_check` (`list[obj]`): Set the `health_check` field on the resulting object. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.health_check.new](#fn-public_endpointhealth_checknew) constructor.
+  - `container_name` (`string`): 
+  - `container_port` (`number`): 
+  - `health_check` (`list[obj]`):  When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_container_service_deployment_version.public_endpoint.health_check.new](#fn-public_endpointhealth_checknew) constructor.
 
 **Returns**:
   - An attribute object that represents the `public_endpoint` sub block.
@@ -291,12 +291,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `healthy_threshold` (`number`): Set the `healthy_threshold` field on the resulting object. When `null`, the `healthy_threshold` field will be omitted from the resulting object.
-  - `interval_seconds` (`number`): Set the `interval_seconds` field on the resulting object. When `null`, the `interval_seconds` field will be omitted from the resulting object.
-  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
-  - `success_codes` (`string`): Set the `success_codes` field on the resulting object. When `null`, the `success_codes` field will be omitted from the resulting object.
-  - `timeout_seconds` (`number`): Set the `timeout_seconds` field on the resulting object. When `null`, the `timeout_seconds` field will be omitted from the resulting object.
-  - `unhealthy_threshold` (`number`): Set the `unhealthy_threshold` field on the resulting object. When `null`, the `unhealthy_threshold` field will be omitted from the resulting object.
+  - `healthy_threshold` (`number`):  When `null`, the `healthy_threshold` field will be omitted from the resulting object.
+  - `interval_seconds` (`number`):  When `null`, the `interval_seconds` field will be omitted from the resulting object.
+  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
+  - `success_codes` (`string`):  When `null`, the `success_codes` field will be omitted from the resulting object.
+  - `timeout_seconds` (`number`):  When `null`, the `timeout_seconds` field will be omitted from the resulting object.
+  - `unhealthy_threshold` (`number`):  When `null`, the `unhealthy_threshold` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `health_check` sub block.
@@ -319,7 +319,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

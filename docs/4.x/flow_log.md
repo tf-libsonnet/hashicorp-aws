@@ -63,21 +63,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `eni_id` (`string`): Set the `eni_id` field on the resulting resource block. When `null`, the `eni_id` field will be omitted from the resulting object.
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting resource block. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
-  - `log_destination` (`string`): Set the `log_destination` field on the resulting resource block. When `null`, the `log_destination` field will be omitted from the resulting object.
-  - `log_destination_type` (`string`): Set the `log_destination_type` field on the resulting resource block. When `null`, the `log_destination_type` field will be omitted from the resulting object.
-  - `log_format` (`string`): Set the `log_format` field on the resulting resource block. When `null`, the `log_format` field will be omitted from the resulting object.
-  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting resource block. When `null`, the `log_group_name` field will be omitted from the resulting object.
-  - `max_aggregation_interval` (`number`): Set the `max_aggregation_interval` field on the resulting resource block. When `null`, the `max_aggregation_interval` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `traffic_type` (`string`): Set the `traffic_type` field on the resulting resource block. When `null`, the `traffic_type` field will be omitted from the resulting object.
-  - `transit_gateway_attachment_id` (`string`): Set the `transit_gateway_attachment_id` field on the resulting resource block. When `null`, the `transit_gateway_attachment_id` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting resource block. When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block. When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `destination_options` (`list[obj]`): Set the `destination_options` field on the resulting resource block. When `null`, the `destination_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.flow_log.destination_options.new](#fn-destination_optionsnew) constructor.
+  - `eni_id` (`string`):  When `null`, the `eni_id` field will be omitted from the resulting object.
+  - `iam_role_arn` (`string`):  When `null`, the `iam_role_arn` field will be omitted from the resulting object.
+  - `log_destination` (`string`):  When `null`, the `log_destination` field will be omitted from the resulting object.
+  - `log_destination_type` (`string`):  When `null`, the `log_destination_type` field will be omitted from the resulting object.
+  - `log_format` (`string`):  When `null`, the `log_format` field will be omitted from the resulting object.
+  - `log_group_name` (`string`):  When `null`, the `log_group_name` field will be omitted from the resulting object.
+  - `max_aggregation_interval` (`number`):  When `null`, the `max_aggregation_interval` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `traffic_type` (`string`):  When `null`, the `traffic_type` field will be omitted from the resulting object.
+  - `transit_gateway_attachment_id` (`string`):  When `null`, the `transit_gateway_attachment_id` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`):  When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `destination_options` (`list[obj]`):  When `null`, the `destination_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.flow_log.destination_options.new](#fn-destination_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,21 +101,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `eni_id` (`string`): Set the `eni_id` field on the resulting object. When `null`, the `eni_id` field will be omitted from the resulting object.
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting object. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
-  - `log_destination` (`string`): Set the `log_destination` field on the resulting object. When `null`, the `log_destination` field will be omitted from the resulting object.
-  - `log_destination_type` (`string`): Set the `log_destination_type` field on the resulting object. When `null`, the `log_destination_type` field will be omitted from the resulting object.
-  - `log_format` (`string`): Set the `log_format` field on the resulting object. When `null`, the `log_format` field will be omitted from the resulting object.
-  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting object. When `null`, the `log_group_name` field will be omitted from the resulting object.
-  - `max_aggregation_interval` (`number`): Set the `max_aggregation_interval` field on the resulting object. When `null`, the `max_aggregation_interval` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `traffic_type` (`string`): Set the `traffic_type` field on the resulting object. When `null`, the `traffic_type` field will be omitted from the resulting object.
-  - `transit_gateway_attachment_id` (`string`): Set the `transit_gateway_attachment_id` field on the resulting object. When `null`, the `transit_gateway_attachment_id` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting object. When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `destination_options` (`list[obj]`): Set the `destination_options` field on the resulting object. When `null`, the `destination_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.flow_log.destination_options.new](#fn-destination_optionsnew) constructor.
+  - `eni_id` (`string`):  When `null`, the `eni_id` field will be omitted from the resulting object.
+  - `iam_role_arn` (`string`):  When `null`, the `iam_role_arn` field will be omitted from the resulting object.
+  - `log_destination` (`string`):  When `null`, the `log_destination` field will be omitted from the resulting object.
+  - `log_destination_type` (`string`):  When `null`, the `log_destination_type` field will be omitted from the resulting object.
+  - `log_format` (`string`):  When `null`, the `log_format` field will be omitted from the resulting object.
+  - `log_group_name` (`string`):  When `null`, the `log_group_name` field will be omitted from the resulting object.
+  - `max_aggregation_interval` (`number`):  When `null`, the `max_aggregation_interval` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `traffic_type` (`string`):  When `null`, the `traffic_type` field will be omitted from the resulting object.
+  - `transit_gateway_attachment_id` (`string`):  When `null`, the `transit_gateway_attachment_id` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`):  When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `destination_options` (`list[obj]`):  When `null`, the `destination_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.flow_log.destination_options.new](#fn-destination_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `flow_log` resource into the root Terraform configuration.
@@ -399,9 +399,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `file_format` (`string`): Set the `file_format` field on the resulting object. When `null`, the `file_format` field will be omitted from the resulting object.
-  - `hive_compatible_partitions` (`bool`): Set the `hive_compatible_partitions` field on the resulting object. When `null`, the `hive_compatible_partitions` field will be omitted from the resulting object.
-  - `per_hour_partition` (`bool`): Set the `per_hour_partition` field on the resulting object. When `null`, the `per_hour_partition` field will be omitted from the resulting object.
+  - `file_format` (`string`):  When `null`, the `file_format` field will be omitted from the resulting object.
+  - `hive_compatible_partitions` (`bool`):  When `null`, the `hive_compatible_partitions` field will be omitted from the resulting object.
+  - `per_hour_partition` (`bool`):  When `null`, the `per_hour_partition` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `destination_options` sub block.

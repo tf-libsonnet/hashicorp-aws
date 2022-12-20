@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `resolver_endpoint_id` (`string`): Set the `resolver_endpoint_id` field on the resulting data source block. When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_resolver_endpoint.filter.new](#fn-filternew) constructor.
+  - `resolver_endpoint_id` (`string`):  When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_resolver_endpoint.filter.new](#fn-filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `resolver_endpoint_id` (`string`): Set the `resolver_endpoint_id` field on the resulting object. When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_resolver_endpoint.filter.new](#fn-filternew) constructor.
+  - `resolver_endpoint_id` (`string`):  When `null`, the `resolver_endpoint_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.route53_resolver_endpoint.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `route53_resolver_endpoint` data source into the root Terraform configuration.
@@ -152,8 +152,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `name` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.

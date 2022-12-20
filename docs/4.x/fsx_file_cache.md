@@ -70,18 +70,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `copy_tags_to_data_repository_associations` (`bool`): Set the `copy_tags_to_data_repository_associations` field on the resulting resource block. When `null`, the `copy_tags_to_data_repository_associations` field will be omitted from the resulting object.
-  - `file_cache_type` (`string`): Set the `file_cache_type` field on the resulting resource block.
-  - `file_cache_type_version` (`string`): Set the `file_cache_type_version` field on the resulting resource block.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `data_repository_association` (`list[obj]`): Set the `data_repository_association` field on the resulting resource block. When `null`, the `data_repository_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.new](#fn-data_repository_associationnew) constructor.
-  - `lustre_configuration` (`list[obj]`): Set the `lustre_configuration` field on the resulting resource block. When `null`, the `lustre_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.new](#fn-lustre_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.timeouts.new](#fn-timeoutsnew) constructor.
+  - `copy_tags_to_data_repository_associations` (`bool`):  When `null`, the `copy_tags_to_data_repository_associations` field will be omitted from the resulting object.
+  - `file_cache_type` (`string`): 
+  - `file_cache_type_version` (`string`): 
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`): 
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `data_repository_association` (`list[obj]`):  When `null`, the `data_repository_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.new](#fn-data_repository_associationnew) constructor.
+  - `lustre_configuration` (`list[obj]`):  When `null`, the `lustre_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.new](#fn-lustre_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,18 +105,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `copy_tags_to_data_repository_associations` (`bool`): Set the `copy_tags_to_data_repository_associations` field on the resulting object. When `null`, the `copy_tags_to_data_repository_associations` field will be omitted from the resulting object.
-  - `file_cache_type` (`string`): Set the `file_cache_type` field on the resulting object.
-  - `file_cache_type_version` (`string`): Set the `file_cache_type_version` field on the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `data_repository_association` (`list[obj]`): Set the `data_repository_association` field on the resulting object. When `null`, the `data_repository_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.new](#fn-data_repository_associationnew) constructor.
-  - `lustre_configuration` (`list[obj]`): Set the `lustre_configuration` field on the resulting object. When `null`, the `lustre_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.new](#fn-lustre_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.timeouts.new](#fn-timeoutsnew) constructor.
+  - `copy_tags_to_data_repository_associations` (`bool`):  When `null`, the `copy_tags_to_data_repository_associations` field will be omitted from the resulting object.
+  - `file_cache_type` (`string`): 
+  - `file_cache_type_version` (`string`): 
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `storage_capacity` (`number`): 
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `data_repository_association` (`list[obj]`):  When `null`, the `data_repository_association` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.new](#fn-data_repository_associationnew) constructor.
+  - `lustre_configuration` (`list[obj]`):  When `null`, the `lustre_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.new](#fn-lustre_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_file_cache` resource into the root Terraform configuration.
@@ -393,11 +393,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_repository_path` (`string`): Set the `data_repository_path` field on the resulting object.
-  - `data_repository_subdirectories` (`list`): Set the `data_repository_subdirectories` field on the resulting object. When `null`, the `data_repository_subdirectories` field will be omitted from the resulting object.
-  - `file_cache_path` (`string`): Set the `file_cache_path` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `nfs` (`list[obj]`): Set the `nfs` field on the resulting object. When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.nfs.new](#fn-data_repository_associationnfsnew) constructor.
+  - `data_repository_path` (`string`): 
+  - `data_repository_subdirectories` (`list`):  When `null`, the `data_repository_subdirectories` field will be omitted from the resulting object.
+  - `file_cache_path` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `nfs` (`list[obj]`):  When `null`, the `nfs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.data_repository_association.nfs.new](#fn-data_repository_associationnfsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `data_repository_association` sub block.
@@ -420,8 +420,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `dns_ips` (`list`): Set the `dns_ips` field on the resulting object. When `null`, the `dns_ips` field will be omitted from the resulting object.
-  - `version` (`string`): Set the `version` field on the resulting object.
+  - `dns_ips` (`list`):  When `null`, the `dns_ips` field will be omitted from the resulting object.
+  - `version` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `nfs` sub block.
@@ -444,10 +444,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting object.
-  - `per_unit_storage_throughput` (`number`): Set the `per_unit_storage_throughput` field on the resulting object.
-  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
-  - `metadata_configuration` (`list[obj]`): Set the `metadata_configuration` field on the resulting object. When `null`, the `metadata_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.metadata_configuration.new](#fn-lustre_configurationmetadata_configurationnew) constructor.
+  - `deployment_type` (`string`): 
+  - `per_unit_storage_throughput` (`number`): 
+  - `weekly_maintenance_start_time` (`string`):  When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
+  - `metadata_configuration` (`list[obj]`):  When `null`, the `metadata_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_file_cache.lustre_configuration.metadata_configuration.new](#fn-lustre_configurationmetadata_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `lustre_configuration` sub block.
@@ -470,7 +470,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object.
+  - `storage_capacity` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `metadata_configuration` sub block.
@@ -493,9 +493,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

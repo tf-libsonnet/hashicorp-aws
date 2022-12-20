@@ -56,11 +56,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting resource block.
-  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
-  - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `cors` (`list[obj]`): Set the `cors` field on the resulting resource block. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.
+  - `authorization_type` (`string`): 
+  - `function_name` (`string`): 
+  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `cors` (`list[obj]`):  When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,11 +84,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting object.
-  - `function_name` (`string`): Set the `function_name` field on the resulting object.
-  - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.
-  - `cors` (`list[obj]`): Set the `cors` field on the resulting object. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.
+  - `authorization_type` (`string`): 
+  - `function_name` (`string`): 
+  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `cors` (`list[obj]`):  When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_function_url` resource into the root Terraform configuration.
@@ -232,12 +232,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_credentials` (`bool`): Set the `allow_credentials` field on the resulting object. When `null`, the `allow_credentials` field will be omitted from the resulting object.
-  - `allow_headers` (`list`): Set the `allow_headers` field on the resulting object. When `null`, the `allow_headers` field will be omitted from the resulting object.
-  - `allow_methods` (`list`): Set the `allow_methods` field on the resulting object. When `null`, the `allow_methods` field will be omitted from the resulting object.
-  - `allow_origins` (`list`): Set the `allow_origins` field on the resulting object. When `null`, the `allow_origins` field will be omitted from the resulting object.
-  - `expose_headers` (`list`): Set the `expose_headers` field on the resulting object. When `null`, the `expose_headers` field will be omitted from the resulting object.
-  - `max_age` (`number`): Set the `max_age` field on the resulting object. When `null`, the `max_age` field will be omitted from the resulting object.
+  - `allow_credentials` (`bool`):  When `null`, the `allow_credentials` field will be omitted from the resulting object.
+  - `allow_headers` (`list`):  When `null`, the `allow_headers` field will be omitted from the resulting object.
+  - `allow_methods` (`list`):  When `null`, the `allow_methods` field will be omitted from the resulting object.
+  - `allow_origins` (`list`):  When `null`, the `allow_origins` field will be omitted from the resulting object.
+  - `expose_headers` (`list`):  When `null`, the `expose_headers` field will be omitted from the resulting object.
+  - `max_age` (`number`):  When `null`, the `max_age` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cors` sub block.
@@ -260,7 +260,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

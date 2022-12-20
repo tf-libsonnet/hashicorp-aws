@@ -51,9 +51,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `ingress` (`list[obj]`): Set the `ingress` field on the resulting resource block. When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_security_group.ingress.new](#fn-ingressnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `ingress` (`list[obj]`):  When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_security_group.ingress.new](#fn-ingressnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,9 +77,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `ingress` (`list[obj]`): Set the `ingress` field on the resulting object. When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_security_group.ingress.new](#fn-ingressnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `ingress` (`list[obj]`):  When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshift_security_group.ingress.new](#fn-ingressnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_security_group` resource into the root Terraform configuration.
@@ -171,9 +171,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr` (`string`): Set the `cidr` field on the resulting object. When `null`, the `cidr` field will be omitted from the resulting object.
-  - `security_group_name` (`string`): Set the `security_group_name` field on the resulting object. When `null`, the `security_group_name` field will be omitted from the resulting object.
-  - `security_group_owner_id` (`string`): Set the `security_group_owner_id` field on the resulting object. When `null`, the `security_group_owner_id` field will be omitted from the resulting object.
+  - `cidr` (`string`):  When `null`, the `cidr` field will be omitted from the resulting object.
+  - `security_group_name` (`string`):  When `null`, the `security_group_name` field will be omitted from the resulting object.
+  - `security_group_owner_id` (`string`):  When `null`, the `security_group_owner_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ingress` sub block.

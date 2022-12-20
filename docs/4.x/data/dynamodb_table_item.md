@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `expression_attribute_names` (`obj`): Set the `expression_attribute_names` field on the resulting data source block. When `null`, the `expression_attribute_names` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting data source block.
-  - `projection_expression` (`string`): Set the `projection_expression` field on the resulting data source block. When `null`, the `projection_expression` field will be omitted from the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting data source block.
+  - `expression_attribute_names` (`obj`):  When `null`, the `expression_attribute_names` field will be omitted from the resulting object.
+  - `key` (`string`): 
+  - `projection_expression` (`string`):  When `null`, the `projection_expression` field will be omitted from the resulting object.
+  - `table_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `expression_attribute_names` (`obj`): Set the `expression_attribute_names` field on the resulting object. When `null`, the `expression_attribute_names` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `projection_expression` (`string`): Set the `projection_expression` field on the resulting object. When `null`, the `projection_expression` field will be omitted from the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting object.
+  - `expression_attribute_names` (`obj`):  When `null`, the `expression_attribute_names` field will be omitted from the resulting object.
+  - `key` (`string`): 
+  - `projection_expression` (`string`):  When `null`, the `projection_expression` field will be omitted from the resulting object.
+  - `table_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `dynamodb_table_item` data source into the root Terraform configuration.

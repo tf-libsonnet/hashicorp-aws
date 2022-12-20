@@ -61,19 +61,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_key_source` (`string`): Set the `api_key_source` field on the resulting resource block. When `null`, the `api_key_source` field will be omitted from the resulting object.
-  - `binary_media_types` (`list`): Set the `binary_media_types` field on the resulting resource block. When `null`, the `binary_media_types` field will be omitted from the resulting object.
-  - `body` (`string`): Set the `body` field on the resulting resource block. When `null`, the `body` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting resource block. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
-  - `minimum_compression_size` (`number`): Set the `minimum_compression_size` field on the resulting resource block. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
-  - `put_rest_api_mode` (`string`): Set the `put_rest_api_mode` field on the resulting resource block. When `null`, the `put_rest_api_mode` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `endpoint_configuration` (`list[obj]`): Set the `endpoint_configuration` field on the resulting resource block. When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_rest_api.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
+  - `api_key_source` (`string`):  When `null`, the `api_key_source` field will be omitted from the resulting object.
+  - `binary_media_types` (`list`):  When `null`, the `binary_media_types` field will be omitted from the resulting object.
+  - `body` (`string`):  When `null`, the `body` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `disable_execute_api_endpoint` (`bool`):  When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
+  - `minimum_compression_size` (`number`):  When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `put_rest_api_mode` (`string`):  When `null`, the `put_rest_api_mode` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `endpoint_configuration` (`list[obj]`):  When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_rest_api.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -97,19 +97,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_key_source` (`string`): Set the `api_key_source` field on the resulting object. When `null`, the `api_key_source` field will be omitted from the resulting object.
-  - `binary_media_types` (`list`): Set the `binary_media_types` field on the resulting object. When `null`, the `binary_media_types` field will be omitted from the resulting object.
-  - `body` (`string`): Set the `body` field on the resulting object. When `null`, the `body` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting object. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
-  - `minimum_compression_size` (`number`): Set the `minimum_compression_size` field on the resulting object. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
-  - `put_rest_api_mode` (`string`): Set the `put_rest_api_mode` field on the resulting object. When `null`, the `put_rest_api_mode` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `endpoint_configuration` (`list[obj]`): Set the `endpoint_configuration` field on the resulting object. When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_rest_api.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
+  - `api_key_source` (`string`):  When `null`, the `api_key_source` field will be omitted from the resulting object.
+  - `binary_media_types` (`list`):  When `null`, the `binary_media_types` field will be omitted from the resulting object.
+  - `body` (`string`):  When `null`, the `body` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `disable_execute_api_endpoint` (`bool`):  When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
+  - `minimum_compression_size` (`number`):  When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `put_rest_api_mode` (`string`):  When `null`, the `put_rest_api_mode` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `endpoint_configuration` (`list[obj]`):  When `null`, the `endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_rest_api.endpoint_configuration.new](#fn-endpoint_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_rest_api` resource into the root Terraform configuration.
@@ -361,8 +361,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `types` (`list`): Set the `types` field on the resulting object.
-  - `vpc_endpoint_ids` (`list`): Set the `vpc_endpoint_ids` field on the resulting object. When `null`, the `vpc_endpoint_ids` field will be omitted from the resulting object.
+  - `types` (`list`): 
+  - `vpc_endpoint_ids` (`list`):  When `null`, the `vpc_endpoint_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `endpoint_configuration` sub block.

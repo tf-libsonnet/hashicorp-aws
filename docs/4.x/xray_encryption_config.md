@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `key_id` (`string`): Set the `key_id` field on the resulting resource block. When `null`, the `key_id` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
+  - `key_id` (`string`):  When `null`, the `key_id` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `key_id` (`string`): Set the `key_id` field on the resulting object. When `null`, the `key_id` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `key_id` (`string`):  When `null`, the `key_id` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `xray_encryption_config` resource into the root Terraform configuration.

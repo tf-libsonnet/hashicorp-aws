@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
-  - `authorizer_credentials_arn` (`string`): Set the `authorizer_credentials_arn` field on the resulting resource block. When `null`, the `authorizer_credentials_arn` field will be omitted from the resulting object.
-  - `authorizer_payload_format_version` (`string`): Set the `authorizer_payload_format_version` field on the resulting resource block. When `null`, the `authorizer_payload_format_version` field will be omitted from the resulting object.
-  - `authorizer_result_ttl_in_seconds` (`number`): Set the `authorizer_result_ttl_in_seconds` field on the resulting resource block. When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
-  - `authorizer_type` (`string`): Set the `authorizer_type` field on the resulting resource block.
-  - `authorizer_uri` (`string`): Set the `authorizer_uri` field on the resulting resource block. When `null`, the `authorizer_uri` field will be omitted from the resulting object.
-  - `enable_simple_responses` (`bool`): Set the `enable_simple_responses` field on the resulting resource block. When `null`, the `enable_simple_responses` field will be omitted from the resulting object.
-  - `identity_sources` (`list`): Set the `identity_sources` field on the resulting resource block. When `null`, the `identity_sources` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `jwt_configuration` (`list[obj]`): Set the `jwt_configuration` field on the resulting resource block. When `null`, the `jwt_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_authorizer.jwt_configuration.new](#fn-jwt_configurationnew) constructor.
+  - `api_id` (`string`): 
+  - `authorizer_credentials_arn` (`string`):  When `null`, the `authorizer_credentials_arn` field will be omitted from the resulting object.
+  - `authorizer_payload_format_version` (`string`):  When `null`, the `authorizer_payload_format_version` field will be omitted from the resulting object.
+  - `authorizer_result_ttl_in_seconds` (`number`):  When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
+  - `authorizer_type` (`string`): 
+  - `authorizer_uri` (`string`):  When `null`, the `authorizer_uri` field will be omitted from the resulting object.
+  - `enable_simple_responses` (`bool`):  When `null`, the `enable_simple_responses` field will be omitted from the resulting object.
+  - `identity_sources` (`list`):  When `null`, the `identity_sources` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `jwt_configuration` (`list[obj]`):  When `null`, the `jwt_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_authorizer.jwt_configuration.new](#fn-jwt_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): Set the `api_id` field on the resulting object.
-  - `authorizer_credentials_arn` (`string`): Set the `authorizer_credentials_arn` field on the resulting object. When `null`, the `authorizer_credentials_arn` field will be omitted from the resulting object.
-  - `authorizer_payload_format_version` (`string`): Set the `authorizer_payload_format_version` field on the resulting object. When `null`, the `authorizer_payload_format_version` field will be omitted from the resulting object.
-  - `authorizer_result_ttl_in_seconds` (`number`): Set the `authorizer_result_ttl_in_seconds` field on the resulting object. When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
-  - `authorizer_type` (`string`): Set the `authorizer_type` field on the resulting object.
-  - `authorizer_uri` (`string`): Set the `authorizer_uri` field on the resulting object. When `null`, the `authorizer_uri` field will be omitted from the resulting object.
-  - `enable_simple_responses` (`bool`): Set the `enable_simple_responses` field on the resulting object. When `null`, the `enable_simple_responses` field will be omitted from the resulting object.
-  - `identity_sources` (`list`): Set the `identity_sources` field on the resulting object. When `null`, the `identity_sources` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `jwt_configuration` (`list[obj]`): Set the `jwt_configuration` field on the resulting object. When `null`, the `jwt_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_authorizer.jwt_configuration.new](#fn-jwt_configurationnew) constructor.
+  - `api_id` (`string`): 
+  - `authorizer_credentials_arn` (`string`):  When `null`, the `authorizer_credentials_arn` field will be omitted from the resulting object.
+  - `authorizer_payload_format_version` (`string`):  When `null`, the `authorizer_payload_format_version` field will be omitted from the resulting object.
+  - `authorizer_result_ttl_in_seconds` (`number`):  When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
+  - `authorizer_type` (`string`): 
+  - `authorizer_uri` (`string`):  When `null`, the `authorizer_uri` field will be omitted from the resulting object.
+  - `enable_simple_responses` (`bool`):  When `null`, the `enable_simple_responses` field will be omitted from the resulting object.
+  - `identity_sources` (`list`):  When `null`, the `identity_sources` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `jwt_configuration` (`list[obj]`):  When `null`, the `jwt_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apigatewayv2_authorizer.jwt_configuration.new](#fn-jwt_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apigatewayv2_authorizer` resource into the root Terraform configuration.
@@ -304,8 +304,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `audience` (`list`): Set the `audience` field on the resulting object. When `null`, the `audience` field will be omitted from the resulting object.
-  - `issuer` (`string`): Set the `issuer` field on the resulting object. When `null`, the `issuer` field will be omitted from the resulting object.
+  - `audience` (`list`):  When `null`, the `audience` field will be omitted from the resulting object.
+  - `issuer` (`string`):  When `null`, the `issuer` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `jwt_configuration` sub block.

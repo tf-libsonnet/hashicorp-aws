@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `destination_cidr_block` (`string`): Set the `destination_cidr_block` field on the resulting resource block.
-  - `local_gateway_route_table_id` (`string`): Set the `local_gateway_route_table_id` field on the resulting resource block.
-  - `local_gateway_virtual_interface_group_id` (`string`): Set the `local_gateway_virtual_interface_group_id` field on the resulting resource block.
+  - `destination_cidr_block` (`string`): 
+  - `local_gateway_route_table_id` (`string`): 
+  - `local_gateway_virtual_interface_group_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `destination_cidr_block` (`string`): Set the `destination_cidr_block` field on the resulting object.
-  - `local_gateway_route_table_id` (`string`): Set the `local_gateway_route_table_id` field on the resulting object.
-  - `local_gateway_virtual_interface_group_id` (`string`): Set the `local_gateway_virtual_interface_group_id` field on the resulting object.
+  - `destination_cidr_block` (`string`): 
+  - `local_gateway_route_table_id` (`string`): 
+  - `local_gateway_virtual_interface_group_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_local_gateway_route` resource into the root Terraform configuration.

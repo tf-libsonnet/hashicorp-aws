@@ -67,19 +67,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `delete_all_policy_resources` (`bool`): Set the `delete_all_policy_resources` field on the resulting resource block. When `null`, the `delete_all_policy_resources` field will be omitted from the resulting object.
-  - `delete_unused_fm_managed_resources` (`bool`): Set the `delete_unused_fm_managed_resources` field on the resulting resource block. When `null`, the `delete_unused_fm_managed_resources` field will be omitted from the resulting object.
-  - `exclude_resource_tags` (`bool`): Set the `exclude_resource_tags` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `remediation_enabled` (`bool`): Set the `remediation_enabled` field on the resulting resource block. When `null`, the `remediation_enabled` field will be omitted from the resulting object.
-  - `resource_tags` (`obj`): Set the `resource_tags` field on the resulting resource block. When `null`, the `resource_tags` field will be omitted from the resulting object.
-  - `resource_type` (`string`): Set the `resource_type` field on the resulting resource block. When `null`, the `resource_type` field will be omitted from the resulting object.
-  - `resource_type_list` (`list`): Set the `resource_type_list` field on the resulting resource block. When `null`, the `resource_type_list` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `exclude_map` (`list[obj]`): Set the `exclude_map` field on the resulting resource block. When `null`, the `exclude_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.exclude_map.new](#fn-exclude_mapnew) constructor.
-  - `include_map` (`list[obj]`): Set the `include_map` field on the resulting resource block. When `null`, the `include_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.include_map.new](#fn-include_mapnew) constructor.
-  - `security_service_policy_data` (`list[obj]`): Set the `security_service_policy_data` field on the resulting resource block. When `null`, the `security_service_policy_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.new](#fn-security_service_policy_datanew) constructor.
+  - `delete_all_policy_resources` (`bool`):  When `null`, the `delete_all_policy_resources` field will be omitted from the resulting object.
+  - `delete_unused_fm_managed_resources` (`bool`):  When `null`, the `delete_unused_fm_managed_resources` field will be omitted from the resulting object.
+  - `exclude_resource_tags` (`bool`): 
+  - `name` (`string`): 
+  - `remediation_enabled` (`bool`):  When `null`, the `remediation_enabled` field will be omitted from the resulting object.
+  - `resource_tags` (`obj`):  When `null`, the `resource_tags` field will be omitted from the resulting object.
+  - `resource_type` (`string`):  When `null`, the `resource_type` field will be omitted from the resulting object.
+  - `resource_type_list` (`list`):  When `null`, the `resource_type_list` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `exclude_map` (`list[obj]`):  When `null`, the `exclude_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.exclude_map.new](#fn-exclude_mapnew) constructor.
+  - `include_map` (`list[obj]`):  When `null`, the `include_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.include_map.new](#fn-include_mapnew) constructor.
+  - `security_service_policy_data` (`list[obj]`):  When `null`, the `security_service_policy_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.new](#fn-security_service_policy_datanew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,19 +103,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `delete_all_policy_resources` (`bool`): Set the `delete_all_policy_resources` field on the resulting object. When `null`, the `delete_all_policy_resources` field will be omitted from the resulting object.
-  - `delete_unused_fm_managed_resources` (`bool`): Set the `delete_unused_fm_managed_resources` field on the resulting object. When `null`, the `delete_unused_fm_managed_resources` field will be omitted from the resulting object.
-  - `exclude_resource_tags` (`bool`): Set the `exclude_resource_tags` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `remediation_enabled` (`bool`): Set the `remediation_enabled` field on the resulting object. When `null`, the `remediation_enabled` field will be omitted from the resulting object.
-  - `resource_tags` (`obj`): Set the `resource_tags` field on the resulting object. When `null`, the `resource_tags` field will be omitted from the resulting object.
-  - `resource_type` (`string`): Set the `resource_type` field on the resulting object. When `null`, the `resource_type` field will be omitted from the resulting object.
-  - `resource_type_list` (`list`): Set the `resource_type_list` field on the resulting object. When `null`, the `resource_type_list` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `exclude_map` (`list[obj]`): Set the `exclude_map` field on the resulting object. When `null`, the `exclude_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.exclude_map.new](#fn-exclude_mapnew) constructor.
-  - `include_map` (`list[obj]`): Set the `include_map` field on the resulting object. When `null`, the `include_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.include_map.new](#fn-include_mapnew) constructor.
-  - `security_service_policy_data` (`list[obj]`): Set the `security_service_policy_data` field on the resulting object. When `null`, the `security_service_policy_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.new](#fn-security_service_policy_datanew) constructor.
+  - `delete_all_policy_resources` (`bool`):  When `null`, the `delete_all_policy_resources` field will be omitted from the resulting object.
+  - `delete_unused_fm_managed_resources` (`bool`):  When `null`, the `delete_unused_fm_managed_resources` field will be omitted from the resulting object.
+  - `exclude_resource_tags` (`bool`): 
+  - `name` (`string`): 
+  - `remediation_enabled` (`bool`):  When `null`, the `remediation_enabled` field will be omitted from the resulting object.
+  - `resource_tags` (`obj`):  When `null`, the `resource_tags` field will be omitted from the resulting object.
+  - `resource_type` (`string`):  When `null`, the `resource_type` field will be omitted from the resulting object.
+  - `resource_type_list` (`list`):  When `null`, the `resource_type_list` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `exclude_map` (`list[obj]`):  When `null`, the `exclude_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.exclude_map.new](#fn-exclude_mapnew) constructor.
+  - `include_map` (`list[obj]`):  When `null`, the `include_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.include_map.new](#fn-include_mapnew) constructor.
+  - `security_service_policy_data` (`list[obj]`):  When `null`, the `security_service_policy_data` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.new](#fn-security_service_policy_datanew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fms_policy` resource into the root Terraform configuration.
@@ -409,8 +409,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `account` (`list`): Set the `account` field on the resulting object. When `null`, the `account` field will be omitted from the resulting object.
-  - `orgunit` (`list`): Set the `orgunit` field on the resulting object. When `null`, the `orgunit` field will be omitted from the resulting object.
+  - `account` (`list`):  When `null`, the `account` field will be omitted from the resulting object.
+  - `orgunit` (`list`):  When `null`, the `orgunit` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `exclude_map` sub block.
@@ -433,8 +433,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `account` (`list`): Set the `account` field on the resulting object. When `null`, the `account` field will be omitted from the resulting object.
-  - `orgunit` (`list`): Set the `orgunit` field on the resulting object. When `null`, the `orgunit` field will be omitted from the resulting object.
+  - `account` (`list`):  When `null`, the `account` field will be omitted from the resulting object.
+  - `orgunit` (`list`):  When `null`, the `orgunit` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `include_map` sub block.
@@ -457,8 +457,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `managed_service_data` (`string`): Set the `managed_service_data` field on the resulting object. When `null`, the `managed_service_data` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `managed_service_data` (`string`):  When `null`, the `managed_service_data` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `security_service_policy_data` sub block.

@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action` (`string`): Set the `action` field on the resulting resource block.
-  - `block_override_dns_type` (`string`): Set the `block_override_dns_type` field on the resulting resource block. When `null`, the `block_override_dns_type` field will be omitted from the resulting object.
-  - `block_override_domain` (`string`): Set the `block_override_domain` field on the resulting resource block. When `null`, the `block_override_domain` field will be omitted from the resulting object.
-  - `block_override_ttl` (`number`): Set the `block_override_ttl` field on the resulting resource block. When `null`, the `block_override_ttl` field will be omitted from the resulting object.
-  - `block_response` (`string`): Set the `block_response` field on the resulting resource block. When `null`, the `block_response` field will be omitted from the resulting object.
-  - `firewall_domain_list_id` (`string`): Set the `firewall_domain_list_id` field on the resulting resource block.
-  - `firewall_rule_group_id` (`string`): Set the `firewall_rule_group_id` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `priority` (`number`): Set the `priority` field on the resulting resource block.
+  - `action` (`string`): 
+  - `block_override_dns_type` (`string`):  When `null`, the `block_override_dns_type` field will be omitted from the resulting object.
+  - `block_override_domain` (`string`):  When `null`, the `block_override_domain` field will be omitted from the resulting object.
+  - `block_override_ttl` (`number`):  When `null`, the `block_override_ttl` field will be omitted from the resulting object.
+  - `block_response` (`string`):  When `null`, the `block_response` field will be omitted from the resulting object.
+  - `firewall_domain_list_id` (`string`): 
+  - `firewall_rule_group_id` (`string`): 
+  - `name` (`string`): 
+  - `priority` (`number`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action` (`string`): Set the `action` field on the resulting object.
-  - `block_override_dns_type` (`string`): Set the `block_override_dns_type` field on the resulting object. When `null`, the `block_override_dns_type` field will be omitted from the resulting object.
-  - `block_override_domain` (`string`): Set the `block_override_domain` field on the resulting object. When `null`, the `block_override_domain` field will be omitted from the resulting object.
-  - `block_override_ttl` (`number`): Set the `block_override_ttl` field on the resulting object. When `null`, the `block_override_ttl` field will be omitted from the resulting object.
-  - `block_response` (`string`): Set the `block_response` field on the resulting object. When `null`, the `block_response` field will be omitted from the resulting object.
-  - `firewall_domain_list_id` (`string`): Set the `firewall_domain_list_id` field on the resulting object.
-  - `firewall_rule_group_id` (`string`): Set the `firewall_rule_group_id` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object.
+  - `action` (`string`): 
+  - `block_override_dns_type` (`string`):  When `null`, the `block_override_dns_type` field will be omitted from the resulting object.
+  - `block_override_domain` (`string`):  When `null`, the `block_override_domain` field will be omitted from the resulting object.
+  - `block_override_ttl` (`number`):  When `null`, the `block_override_ttl` field will be omitted from the resulting object.
+  - `block_response` (`string`):  When `null`, the `block_response` field will be omitted from the resulting object.
+  - `firewall_domain_list_id` (`string`): 
+  - `firewall_rule_group_id` (`string`): 
+  - `name` (`string`): 
+  - `priority` (`number`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_resolver_firewall_rule` resource into the root Terraform configuration.

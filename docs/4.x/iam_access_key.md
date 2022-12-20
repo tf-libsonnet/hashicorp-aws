@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `pgp_key` (`string`): Set the `pgp_key` field on the resulting resource block. When `null`, the `pgp_key` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting resource block. When `null`, the `status` field will be omitted from the resulting object.
-  - `user` (`string`): Set the `user` field on the resulting resource block.
+  - `pgp_key` (`string`):  When `null`, the `pgp_key` field will be omitted from the resulting object.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `user` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `pgp_key` (`string`): Set the `pgp_key` field on the resulting object. When `null`, the `pgp_key` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
-  - `user` (`string`): Set the `user` field on the resulting object.
+  - `pgp_key` (`string`):  When `null`, the `pgp_key` field will be omitted from the resulting object.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `user` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iam_access_key` resource into the root Terraform configuration.

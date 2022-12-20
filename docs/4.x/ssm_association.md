@@ -65,20 +65,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `apply_only_at_cron_interval` (`bool`): Set the `apply_only_at_cron_interval` field on the resulting resource block. When `null`, the `apply_only_at_cron_interval` field will be omitted from the resulting object.
-  - `association_name` (`string`): Set the `association_name` field on the resulting resource block. When `null`, the `association_name` field will be omitted from the resulting object.
-  - `automation_target_parameter_name` (`string`): Set the `automation_target_parameter_name` field on the resulting resource block. When `null`, the `automation_target_parameter_name` field will be omitted from the resulting object.
-  - `compliance_severity` (`string`): Set the `compliance_severity` field on the resulting resource block. When `null`, the `compliance_severity` field will be omitted from the resulting object.
-  - `document_version` (`string`): Set the `document_version` field on the resulting resource block. When `null`, the `document_version` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting resource block. When `null`, the `instance_id` field will be omitted from the resulting object.
-  - `max_concurrency` (`string`): Set the `max_concurrency` field on the resulting resource block. When `null`, the `max_concurrency` field will be omitted from the resulting object.
-  - `max_errors` (`string`): Set the `max_errors` field on the resulting resource block. When `null`, the `max_errors` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting resource block. When `null`, the `schedule_expression` field will be omitted from the resulting object.
-  - `wait_for_success_timeout_seconds` (`number`): Set the `wait_for_success_timeout_seconds` field on the resulting resource block. When `null`, the `wait_for_success_timeout_seconds` field will be omitted from the resulting object.
-  - `output_location` (`list[obj]`): Set the `output_location` field on the resulting resource block. When `null`, the `output_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.output_location.new](#fn-output_locationnew) constructor.
-  - `targets` (`list[obj]`): Set the `targets` field on the resulting resource block. When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.targets.new](#fn-targetsnew) constructor.
+  - `apply_only_at_cron_interval` (`bool`):  When `null`, the `apply_only_at_cron_interval` field will be omitted from the resulting object.
+  - `association_name` (`string`):  When `null`, the `association_name` field will be omitted from the resulting object.
+  - `automation_target_parameter_name` (`string`):  When `null`, the `automation_target_parameter_name` field will be omitted from the resulting object.
+  - `compliance_severity` (`string`):  When `null`, the `compliance_severity` field will be omitted from the resulting object.
+  - `document_version` (`string`):  When `null`, the `document_version` field will be omitted from the resulting object.
+  - `instance_id` (`string`):  When `null`, the `instance_id` field will be omitted from the resulting object.
+  - `max_concurrency` (`string`):  When `null`, the `max_concurrency` field will be omitted from the resulting object.
+  - `max_errors` (`string`):  When `null`, the `max_errors` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `schedule_expression` (`string`):  When `null`, the `schedule_expression` field will be omitted from the resulting object.
+  - `wait_for_success_timeout_seconds` (`number`):  When `null`, the `wait_for_success_timeout_seconds` field will be omitted from the resulting object.
+  - `output_location` (`list[obj]`):  When `null`, the `output_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.output_location.new](#fn-output_locationnew) constructor.
+  - `targets` (`list[obj]`):  When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.targets.new](#fn-targetsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -102,20 +102,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `apply_only_at_cron_interval` (`bool`): Set the `apply_only_at_cron_interval` field on the resulting object. When `null`, the `apply_only_at_cron_interval` field will be omitted from the resulting object.
-  - `association_name` (`string`): Set the `association_name` field on the resulting object. When `null`, the `association_name` field will be omitted from the resulting object.
-  - `automation_target_parameter_name` (`string`): Set the `automation_target_parameter_name` field on the resulting object. When `null`, the `automation_target_parameter_name` field will be omitted from the resulting object.
-  - `compliance_severity` (`string`): Set the `compliance_severity` field on the resulting object. When `null`, the `compliance_severity` field will be omitted from the resulting object.
-  - `document_version` (`string`): Set the `document_version` field on the resulting object. When `null`, the `document_version` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting object. When `null`, the `instance_id` field will be omitted from the resulting object.
-  - `max_concurrency` (`string`): Set the `max_concurrency` field on the resulting object. When `null`, the `max_concurrency` field will be omitted from the resulting object.
-  - `max_errors` (`string`): Set the `max_errors` field on the resulting object. When `null`, the `max_errors` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object. When `null`, the `schedule_expression` field will be omitted from the resulting object.
-  - `wait_for_success_timeout_seconds` (`number`): Set the `wait_for_success_timeout_seconds` field on the resulting object. When `null`, the `wait_for_success_timeout_seconds` field will be omitted from the resulting object.
-  - `output_location` (`list[obj]`): Set the `output_location` field on the resulting object. When `null`, the `output_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.output_location.new](#fn-output_locationnew) constructor.
-  - `targets` (`list[obj]`): Set the `targets` field on the resulting object. When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.targets.new](#fn-targetsnew) constructor.
+  - `apply_only_at_cron_interval` (`bool`):  When `null`, the `apply_only_at_cron_interval` field will be omitted from the resulting object.
+  - `association_name` (`string`):  When `null`, the `association_name` field will be omitted from the resulting object.
+  - `automation_target_parameter_name` (`string`):  When `null`, the `automation_target_parameter_name` field will be omitted from the resulting object.
+  - `compliance_severity` (`string`):  When `null`, the `compliance_severity` field will be omitted from the resulting object.
+  - `document_version` (`string`):  When `null`, the `document_version` field will be omitted from the resulting object.
+  - `instance_id` (`string`):  When `null`, the `instance_id` field will be omitted from the resulting object.
+  - `max_concurrency` (`string`):  When `null`, the `max_concurrency` field will be omitted from the resulting object.
+  - `max_errors` (`string`):  When `null`, the `max_errors` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `schedule_expression` (`string`):  When `null`, the `schedule_expression` field will be omitted from the resulting object.
+  - `wait_for_success_timeout_seconds` (`number`):  When `null`, the `wait_for_success_timeout_seconds` field will be omitted from the resulting object.
+  - `output_location` (`list[obj]`):  When `null`, the `output_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.output_location.new](#fn-output_locationnew) constructor.
+  - `targets` (`list[obj]`):  When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.targets.new](#fn-targetsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_association` resource into the root Terraform configuration.
@@ -404,9 +404,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object.
-  - `s3_key_prefix` (`string`): Set the `s3_key_prefix` field on the resulting object. When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
-  - `s3_region` (`string`): Set the `s3_region` field on the resulting object. When `null`, the `s3_region` field will be omitted from the resulting object.
+  - `s3_bucket_name` (`string`): 
+  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+  - `s3_region` (`string`):  When `null`, the `s3_region` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `output_location` sub block.
@@ -429,8 +429,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `key` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `targets` sub block.

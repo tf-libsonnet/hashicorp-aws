@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting resource block.
-  - `ip_address` (`string`): Set the `ip_address` field on the resulting resource block. When `null`, the `ip_address` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting resource block. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block.
+  - `file_system_id` (`string`): 
+  - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnet_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object.
-  - `ip_address` (`string`): Set the `ip_address` field on the resulting object. When `null`, the `ip_address` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
+  - `file_system_id` (`string`): 
+  - `ip_address` (`string`):  When `null`, the `ip_address` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnet_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `efs_mount_target` resource into the root Terraform configuration.

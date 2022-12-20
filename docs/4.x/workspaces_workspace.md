@@ -61,16 +61,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting resource block.
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting resource block.
-  - `root_volume_encryption_enabled` (`bool`): Set the `root_volume_encryption_enabled` field on the resulting resource block. When `null`, the `root_volume_encryption_enabled` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_name` (`string`): Set the `user_name` field on the resulting resource block.
-  - `user_volume_encryption_enabled` (`bool`): Set the `user_volume_encryption_enabled` field on the resulting resource block. When `null`, the `user_volume_encryption_enabled` field will be omitted from the resulting object.
-  - `volume_encryption_key` (`string`): Set the `volume_encryption_key` field on the resulting resource block. When `null`, the `volume_encryption_key` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-timeoutsnew) constructor.
-  - `workspace_properties` (`list[obj]`): Set the `workspace_properties` field on the resulting resource block. When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspace_propertiesnew) constructor.
+  - `bundle_id` (`string`): 
+  - `directory_id` (`string`): 
+  - `root_volume_encryption_enabled` (`bool`):  When `null`, the `root_volume_encryption_enabled` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_name` (`string`): 
+  - `user_volume_encryption_enabled` (`bool`):  When `null`, the `user_volume_encryption_enabled` field will be omitted from the resulting object.
+  - `volume_encryption_key` (`string`):  When `null`, the `volume_encryption_key` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-timeoutsnew) constructor.
+  - `workspace_properties` (`list[obj]`):  When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspace_propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,16 +94,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting object.
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting object.
-  - `root_volume_encryption_enabled` (`bool`): Set the `root_volume_encryption_enabled` field on the resulting object. When `null`, the `root_volume_encryption_enabled` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_name` (`string`): Set the `user_name` field on the resulting object.
-  - `user_volume_encryption_enabled` (`bool`): Set the `user_volume_encryption_enabled` field on the resulting object. When `null`, the `user_volume_encryption_enabled` field will be omitted from the resulting object.
-  - `volume_encryption_key` (`string`): Set the `volume_encryption_key` field on the resulting object. When `null`, the `volume_encryption_key` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-timeoutsnew) constructor.
-  - `workspace_properties` (`list[obj]`): Set the `workspace_properties` field on the resulting object. When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspace_propertiesnew) constructor.
+  - `bundle_id` (`string`): 
+  - `directory_id` (`string`): 
+  - `root_volume_encryption_enabled` (`bool`):  When `null`, the `root_volume_encryption_enabled` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_name` (`string`): 
+  - `user_volume_encryption_enabled` (`bool`):  When `null`, the `user_volume_encryption_enabled` field will be omitted from the resulting object.
+  - `volume_encryption_key` (`string`):  When `null`, the `volume_encryption_key` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.timeouts.new](#fn-timeoutsnew) constructor.
+  - `workspace_properties` (`list[obj]`):  When `null`, the `workspace_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.workspaces_workspace.workspace_properties.new](#fn-workspace_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `workspaces_workspace` resource into the root Terraform configuration.
@@ -327,9 +327,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -352,11 +352,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `compute_type_name` (`string`): Set the `compute_type_name` field on the resulting object. When `null`, the `compute_type_name` field will be omitted from the resulting object.
-  - `root_volume_size_gib` (`number`): Set the `root_volume_size_gib` field on the resulting object. When `null`, the `root_volume_size_gib` field will be omitted from the resulting object.
-  - `running_mode` (`string`): Set the `running_mode` field on the resulting object. When `null`, the `running_mode` field will be omitted from the resulting object.
-  - `running_mode_auto_stop_timeout_in_minutes` (`number`): Set the `running_mode_auto_stop_timeout_in_minutes` field on the resulting object. When `null`, the `running_mode_auto_stop_timeout_in_minutes` field will be omitted from the resulting object.
-  - `user_volume_size_gib` (`number`): Set the `user_volume_size_gib` field on the resulting object. When `null`, the `user_volume_size_gib` field will be omitted from the resulting object.
+  - `compute_type_name` (`string`):  When `null`, the `compute_type_name` field will be omitted from the resulting object.
+  - `root_volume_size_gib` (`number`):  When `null`, the `root_volume_size_gib` field will be omitted from the resulting object.
+  - `running_mode` (`string`):  When `null`, the `running_mode` field will be omitted from the resulting object.
+  - `running_mode_auto_stop_timeout_in_minutes` (`number`):  When `null`, the `running_mode_auto_stop_timeout_in_minutes` field will be omitted from the resulting object.
+  - `user_volume_size_gib` (`number`):  When `null`, the `user_volume_size_gib` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `workspace_properties` sub block.

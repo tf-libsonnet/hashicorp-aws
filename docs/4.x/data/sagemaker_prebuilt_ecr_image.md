@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `dns_suffix` (`string`): Set the `dns_suffix` field on the resulting data source block. When `null`, the `dns_suffix` field will be omitted from the resulting object.
-  - `image_tag` (`string`): Set the `image_tag` field on the resulting data source block. When `null`, the `image_tag` field will be omitted from the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting data source block. When `null`, the `region` field will be omitted from the resulting object.
-  - `repository_name` (`string`): Set the `repository_name` field on the resulting data source block.
+  - `dns_suffix` (`string`):  When `null`, the `dns_suffix` field will be omitted from the resulting object.
+  - `image_tag` (`string`):  When `null`, the `image_tag` field will be omitted from the resulting object.
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `repository_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `dns_suffix` (`string`): Set the `dns_suffix` field on the resulting object. When `null`, the `dns_suffix` field will be omitted from the resulting object.
-  - `image_tag` (`string`): Set the `image_tag` field on the resulting object. When `null`, the `image_tag` field will be omitted from the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
-  - `repository_name` (`string`): Set the `repository_name` field on the resulting object.
+  - `dns_suffix` (`string`):  When `null`, the `dns_suffix` field will be omitted from the resulting object.
+  - `image_tag` (`string`):  When `null`, the `image_tag` field will be omitted from the resulting object.
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `repository_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `sagemaker_prebuilt_ecr_image` data source into the root Terraform configuration.

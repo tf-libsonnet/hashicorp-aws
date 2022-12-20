@@ -73,25 +73,25 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `connections` (`list`): Set the `connections` field on the resulting resource block. When `null`, the `connections` field will be omitted from the resulting object.
-  - `default_arguments` (`obj`): Set the `default_arguments` field on the resulting resource block. When `null`, the `default_arguments` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `execution_class` (`string`): Set the `execution_class` field on the resulting resource block. When `null`, the `execution_class` field will be omitted from the resulting object.
-  - `glue_version` (`string`): Set the `glue_version` field on the resulting resource block. When `null`, the `glue_version` field will be omitted from the resulting object.
-  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting resource block. When `null`, the `max_capacity` field will be omitted from the resulting object.
-  - `max_retries` (`number`): Set the `max_retries` field on the resulting resource block. When `null`, the `max_retries` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `non_overridable_arguments` (`obj`): Set the `non_overridable_arguments` field on the resulting resource block. When `null`, the `non_overridable_arguments` field will be omitted from the resulting object.
-  - `number_of_workers` (`number`): Set the `number_of_workers` field on the resulting resource block. When `null`, the `number_of_workers` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
-  - `security_configuration` (`string`): Set the `security_configuration` field on the resulting resource block. When `null`, the `security_configuration` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout` (`number`): Set the `timeout` field on the resulting resource block. When `null`, the `timeout` field will be omitted from the resulting object.
-  - `worker_type` (`string`): Set the `worker_type` field on the resulting resource block. When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `command` (`list[obj]`): Set the `command` field on the resulting resource block. When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-commandnew) constructor.
-  - `execution_property` (`list[obj]`): Set the `execution_property` field on the resulting resource block. When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-execution_propertynew) constructor.
-  - `notification_property` (`list[obj]`): Set the `notification_property` field on the resulting resource block. When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-notification_propertynew) constructor.
+  - `connections` (`list`):  When `null`, the `connections` field will be omitted from the resulting object.
+  - `default_arguments` (`obj`):  When `null`, the `default_arguments` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `execution_class` (`string`):  When `null`, the `execution_class` field will be omitted from the resulting object.
+  - `glue_version` (`string`):  When `null`, the `glue_version` field will be omitted from the resulting object.
+  - `max_capacity` (`number`):  When `null`, the `max_capacity` field will be omitted from the resulting object.
+  - `max_retries` (`number`):  When `null`, the `max_retries` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `non_overridable_arguments` (`obj`):  When `null`, the `non_overridable_arguments` field will be omitted from the resulting object.
+  - `number_of_workers` (`number`):  When `null`, the `number_of_workers` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
+  - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
+  - `command` (`list[obj]`):  When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-commandnew) constructor.
+  - `execution_property` (`list[obj]`):  When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-execution_propertynew) constructor.
+  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-notification_propertynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -115,25 +115,25 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `connections` (`list`): Set the `connections` field on the resulting object. When `null`, the `connections` field will be omitted from the resulting object.
-  - `default_arguments` (`obj`): Set the `default_arguments` field on the resulting object. When `null`, the `default_arguments` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `execution_class` (`string`): Set the `execution_class` field on the resulting object. When `null`, the `execution_class` field will be omitted from the resulting object.
-  - `glue_version` (`string`): Set the `glue_version` field on the resulting object. When `null`, the `glue_version` field will be omitted from the resulting object.
-  - `max_capacity` (`number`): Set the `max_capacity` field on the resulting object. When `null`, the `max_capacity` field will be omitted from the resulting object.
-  - `max_retries` (`number`): Set the `max_retries` field on the resulting object. When `null`, the `max_retries` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `non_overridable_arguments` (`obj`): Set the `non_overridable_arguments` field on the resulting object. When `null`, the `non_overridable_arguments` field will be omitted from the resulting object.
-  - `number_of_workers` (`number`): Set the `number_of_workers` field on the resulting object. When `null`, the `number_of_workers` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `security_configuration` (`string`): Set the `security_configuration` field on the resulting object. When `null`, the `security_configuration` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout` (`number`): Set the `timeout` field on the resulting object. When `null`, the `timeout` field will be omitted from the resulting object.
-  - `worker_type` (`string`): Set the `worker_type` field on the resulting object. When `null`, the `worker_type` field will be omitted from the resulting object.
-  - `command` (`list[obj]`): Set the `command` field on the resulting object. When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-commandnew) constructor.
-  - `execution_property` (`list[obj]`): Set the `execution_property` field on the resulting object. When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-execution_propertynew) constructor.
-  - `notification_property` (`list[obj]`): Set the `notification_property` field on the resulting object. When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-notification_propertynew) constructor.
+  - `connections` (`list`):  When `null`, the `connections` field will be omitted from the resulting object.
+  - `default_arguments` (`obj`):  When `null`, the `default_arguments` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `execution_class` (`string`):  When `null`, the `execution_class` field will be omitted from the resulting object.
+  - `glue_version` (`string`):  When `null`, the `glue_version` field will be omitted from the resulting object.
+  - `max_capacity` (`number`):  When `null`, the `max_capacity` field will be omitted from the resulting object.
+  - `max_retries` (`number`):  When `null`, the `max_retries` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `non_overridable_arguments` (`obj`):  When `null`, the `non_overridable_arguments` field will be omitted from the resulting object.
+  - `number_of_workers` (`number`):  When `null`, the `number_of_workers` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout` (`number`):  When `null`, the `timeout` field will be omitted from the resulting object.
+  - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
+  - `command` (`list[obj]`):  When `null`, the `command` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.command.new](#fn-commandnew) constructor.
+  - `execution_property` (`list[obj]`):  When `null`, the `execution_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.execution_property.new](#fn-execution_propertynew) constructor.
+  - `notification_property` (`list[obj]`):  When `null`, the `notification_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_job.notification_property.new](#fn-notification_propertynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_job` resource into the root Terraform configuration.
@@ -523,9 +523,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `python_version` (`string`): Set the `python_version` field on the resulting object. When `null`, the `python_version` field will be omitted from the resulting object.
-  - `script_location` (`string`): Set the `script_location` field on the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `python_version` (`string`):  When `null`, the `python_version` field will be omitted from the resulting object.
+  - `script_location` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `command` sub block.
@@ -548,7 +548,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_concurrent_runs` (`number`): Set the `max_concurrent_runs` field on the resulting object. When `null`, the `max_concurrent_runs` field will be omitted from the resulting object.
+  - `max_concurrent_runs` (`number`):  When `null`, the `max_concurrent_runs` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `execution_property` sub block.
@@ -571,7 +571,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `notify_delay_after` (`number`): Set the `notify_delay_after` field on the resulting object. When `null`, the `notify_delay_after` field will be omitted from the resulting object.
+  - `notify_delay_after` (`number`):  When `null`, the `notify_delay_after` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `notification_property` sub block.

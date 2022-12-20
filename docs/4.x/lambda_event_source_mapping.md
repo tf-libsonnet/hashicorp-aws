@@ -88,27 +88,27 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `batch_size` (`number`): Set the `batch_size` field on the resulting resource block. When `null`, the `batch_size` field will be omitted from the resulting object.
-  - `bisect_batch_on_function_error` (`bool`): Set the `bisect_batch_on_function_error` field on the resulting resource block. When `null`, the `bisect_batch_on_function_error` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `event_source_arn` (`string`): Set the `event_source_arn` field on the resulting resource block. When `null`, the `event_source_arn` field will be omitted from the resulting object.
-  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
-  - `function_response_types` (`list`): Set the `function_response_types` field on the resulting resource block. When `null`, the `function_response_types` field will be omitted from the resulting object.
-  - `maximum_batching_window_in_seconds` (`number`): Set the `maximum_batching_window_in_seconds` field on the resulting resource block. When `null`, the `maximum_batching_window_in_seconds` field will be omitted from the resulting object.
-  - `maximum_record_age_in_seconds` (`number`): Set the `maximum_record_age_in_seconds` field on the resulting resource block. When `null`, the `maximum_record_age_in_seconds` field will be omitted from the resulting object.
-  - `maximum_retry_attempts` (`number`): Set the `maximum_retry_attempts` field on the resulting resource block. When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
-  - `parallelization_factor` (`number`): Set the `parallelization_factor` field on the resulting resource block. When `null`, the `parallelization_factor` field will be omitted from the resulting object.
-  - `queues` (`list`): Set the `queues` field on the resulting resource block. When `null`, the `queues` field will be omitted from the resulting object.
-  - `starting_position` (`string`): Set the `starting_position` field on the resulting resource block. When `null`, the `starting_position` field will be omitted from the resulting object.
-  - `starting_position_timestamp` (`string`): Set the `starting_position_timestamp` field on the resulting resource block. When `null`, the `starting_position_timestamp` field will be omitted from the resulting object.
-  - `topics` (`list`): Set the `topics` field on the resulting resource block. When `null`, the `topics` field will be omitted from the resulting object.
-  - `tumbling_window_in_seconds` (`number`): Set the `tumbling_window_in_seconds` field on the resulting resource block. When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
-  - `amazon_managed_kafka_event_source_config` (`list[obj]`): Set the `amazon_managed_kafka_event_source_config` field on the resulting resource block. When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
-  - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting resource block. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
-  - `filter_criteria` (`list[obj]`): Set the `filter_criteria` field on the resulting resource block. When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
-  - `self_managed_event_source` (`list[obj]`): Set the `self_managed_event_source` field on the resulting resource block. When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
-  - `self_managed_kafka_event_source_config` (`list[obj]`): Set the `self_managed_kafka_event_source_config` field on the resulting resource block. When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
-  - `source_access_configuration` (`list[obj]`): Set the `source_access_configuration` field on the resulting resource block. When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
+  - `batch_size` (`number`):  When `null`, the `batch_size` field will be omitted from the resulting object.
+  - `bisect_batch_on_function_error` (`bool`):  When `null`, the `bisect_batch_on_function_error` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `event_source_arn` (`string`):  When `null`, the `event_source_arn` field will be omitted from the resulting object.
+  - `function_name` (`string`): 
+  - `function_response_types` (`list`):  When `null`, the `function_response_types` field will be omitted from the resulting object.
+  - `maximum_batching_window_in_seconds` (`number`):  When `null`, the `maximum_batching_window_in_seconds` field will be omitted from the resulting object.
+  - `maximum_record_age_in_seconds` (`number`):  When `null`, the `maximum_record_age_in_seconds` field will be omitted from the resulting object.
+  - `maximum_retry_attempts` (`number`):  When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
+  - `parallelization_factor` (`number`):  When `null`, the `parallelization_factor` field will be omitted from the resulting object.
+  - `queues` (`list`):  When `null`, the `queues` field will be omitted from the resulting object.
+  - `starting_position` (`string`):  When `null`, the `starting_position` field will be omitted from the resulting object.
+  - `starting_position_timestamp` (`string`):  When `null`, the `starting_position_timestamp` field will be omitted from the resulting object.
+  - `topics` (`list`):  When `null`, the `topics` field will be omitted from the resulting object.
+  - `tumbling_window_in_seconds` (`number`):  When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
+  - `amazon_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
+  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
+  - `filter_criteria` (`list[obj]`):  When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
+  - `self_managed_event_source` (`list[obj]`):  When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
+  - `self_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
+  - `source_access_configuration` (`list[obj]`):  When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -132,27 +132,27 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `batch_size` (`number`): Set the `batch_size` field on the resulting object. When `null`, the `batch_size` field will be omitted from the resulting object.
-  - `bisect_batch_on_function_error` (`bool`): Set the `bisect_batch_on_function_error` field on the resulting object. When `null`, the `bisect_batch_on_function_error` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `event_source_arn` (`string`): Set the `event_source_arn` field on the resulting object. When `null`, the `event_source_arn` field will be omitted from the resulting object.
-  - `function_name` (`string`): Set the `function_name` field on the resulting object.
-  - `function_response_types` (`list`): Set the `function_response_types` field on the resulting object. When `null`, the `function_response_types` field will be omitted from the resulting object.
-  - `maximum_batching_window_in_seconds` (`number`): Set the `maximum_batching_window_in_seconds` field on the resulting object. When `null`, the `maximum_batching_window_in_seconds` field will be omitted from the resulting object.
-  - `maximum_record_age_in_seconds` (`number`): Set the `maximum_record_age_in_seconds` field on the resulting object. When `null`, the `maximum_record_age_in_seconds` field will be omitted from the resulting object.
-  - `maximum_retry_attempts` (`number`): Set the `maximum_retry_attempts` field on the resulting object. When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
-  - `parallelization_factor` (`number`): Set the `parallelization_factor` field on the resulting object. When `null`, the `parallelization_factor` field will be omitted from the resulting object.
-  - `queues` (`list`): Set the `queues` field on the resulting object. When `null`, the `queues` field will be omitted from the resulting object.
-  - `starting_position` (`string`): Set the `starting_position` field on the resulting object. When `null`, the `starting_position` field will be omitted from the resulting object.
-  - `starting_position_timestamp` (`string`): Set the `starting_position_timestamp` field on the resulting object. When `null`, the `starting_position_timestamp` field will be omitted from the resulting object.
-  - `topics` (`list`): Set the `topics` field on the resulting object. When `null`, the `topics` field will be omitted from the resulting object.
-  - `tumbling_window_in_seconds` (`number`): Set the `tumbling_window_in_seconds` field on the resulting object. When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
-  - `amazon_managed_kafka_event_source_config` (`list[obj]`): Set the `amazon_managed_kafka_event_source_config` field on the resulting object. When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
-  - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting object. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
-  - `filter_criteria` (`list[obj]`): Set the `filter_criteria` field on the resulting object. When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
-  - `self_managed_event_source` (`list[obj]`): Set the `self_managed_event_source` field on the resulting object. When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
-  - `self_managed_kafka_event_source_config` (`list[obj]`): Set the `self_managed_kafka_event_source_config` field on the resulting object. When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
-  - `source_access_configuration` (`list[obj]`): Set the `source_access_configuration` field on the resulting object. When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
+  - `batch_size` (`number`):  When `null`, the `batch_size` field will be omitted from the resulting object.
+  - `bisect_batch_on_function_error` (`bool`):  When `null`, the `bisect_batch_on_function_error` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `event_source_arn` (`string`):  When `null`, the `event_source_arn` field will be omitted from the resulting object.
+  - `function_name` (`string`): 
+  - `function_response_types` (`list`):  When `null`, the `function_response_types` field will be omitted from the resulting object.
+  - `maximum_batching_window_in_seconds` (`number`):  When `null`, the `maximum_batching_window_in_seconds` field will be omitted from the resulting object.
+  - `maximum_record_age_in_seconds` (`number`):  When `null`, the `maximum_record_age_in_seconds` field will be omitted from the resulting object.
+  - `maximum_retry_attempts` (`number`):  When `null`, the `maximum_retry_attempts` field will be omitted from the resulting object.
+  - `parallelization_factor` (`number`):  When `null`, the `parallelization_factor` field will be omitted from the resulting object.
+  - `queues` (`list`):  When `null`, the `queues` field will be omitted from the resulting object.
+  - `starting_position` (`string`):  When `null`, the `starting_position` field will be omitted from the resulting object.
+  - `starting_position_timestamp` (`string`):  When `null`, the `starting_position_timestamp` field will be omitted from the resulting object.
+  - `topics` (`list`):  When `null`, the `topics` field will be omitted from the resulting object.
+  - `tumbling_window_in_seconds` (`number`):  When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
+  - `amazon_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
+  - `destination_config` (`list[obj]`):  When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
+  - `filter_criteria` (`list[obj]`):  When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
+  - `self_managed_event_source` (`list[obj]`):  When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
+  - `self_managed_kafka_event_source_config` (`list[obj]`):  When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
+  - `source_access_configuration` (`list[obj]`):  When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_event_source_mapping` resource into the root Terraform configuration.
@@ -637,7 +637,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `consumer_group_id` (`string`): Set the `consumer_group_id` field on the resulting object. When `null`, the `consumer_group_id` field will be omitted from the resulting object.
+  - `consumer_group_id` (`string`):  When `null`, the `consumer_group_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `amazon_managed_kafka_event_source_config` sub block.
@@ -660,7 +660,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `on_failure` (`list[obj]`): Set the `on_failure` field on the resulting object. When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.
+  - `on_failure` (`list[obj]`):  When `null`, the `on_failure` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.on_failure.new](#fn-destination_configon_failurenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_config` sub block.
@@ -683,7 +683,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.
+  - `destination_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `on_failure` sub block.
@@ -706,7 +706,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-filter_criteriafilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.filter.new](#fn-filter_criteriafilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter_criteria` sub block.
@@ -729,7 +729,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `pattern` (`string`): Set the `pattern` field on the resulting object. When `null`, the `pattern` field will be omitted from the resulting object.
+  - `pattern` (`string`):  When `null`, the `pattern` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -752,7 +752,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoints` (`obj`): Set the `endpoints` field on the resulting object.
+  - `endpoints` (`obj`): 
 
 **Returns**:
   - An attribute object that represents the `self_managed_event_source` sub block.
@@ -775,7 +775,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `consumer_group_id` (`string`): Set the `consumer_group_id` field on the resulting object. When `null`, the `consumer_group_id` field will be omitted from the resulting object.
+  - `consumer_group_id` (`string`):  When `null`, the `consumer_group_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `self_managed_kafka_event_source_config` sub block.
@@ -798,8 +798,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `uri` (`string`): Set the `uri` field on the resulting object.
+  - `type` (`string`): 
+  - `uri` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `source_access_configuration` sub block.

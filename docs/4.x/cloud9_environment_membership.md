@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `environment_id` (`string`): Set the `environment_id` field on the resulting resource block.
-  - `permissions` (`string`): Set the `permissions` field on the resulting resource block.
-  - `user_arn` (`string`): Set the `user_arn` field on the resulting resource block.
+  - `environment_id` (`string`): 
+  - `permissions` (`string`): 
+  - `user_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `environment_id` (`string`): Set the `environment_id` field on the resulting object.
-  - `permissions` (`string`): Set the `permissions` field on the resulting object.
-  - `user_arn` (`string`): Set the `user_arn` field on the resulting object.
+  - `environment_id` (`string`): 
+  - `permissions` (`string`): 
+  - `user_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloud9_environment_membership` resource into the root Terraform configuration.

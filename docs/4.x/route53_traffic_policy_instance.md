@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `hosted_zone_id` (`string`): Set the `hosted_zone_id` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `traffic_policy_id` (`string`): Set the `traffic_policy_id` field on the resulting resource block.
-  - `traffic_policy_version` (`number`): Set the `traffic_policy_version` field on the resulting resource block.
-  - `ttl` (`number`): Set the `ttl` field on the resulting resource block.
+  - `hosted_zone_id` (`string`): 
+  - `name` (`string`): 
+  - `traffic_policy_id` (`string`): 
+  - `traffic_policy_version` (`number`): 
+  - `ttl` (`number`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `hosted_zone_id` (`string`): Set the `hosted_zone_id` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `traffic_policy_id` (`string`): Set the `traffic_policy_id` field on the resulting object.
-  - `traffic_policy_version` (`number`): Set the `traffic_policy_version` field on the resulting object.
-  - `ttl` (`number`): Set the `ttl` field on the resulting object.
+  - `hosted_zone_id` (`string`): 
+  - `name` (`string`): 
+  - `traffic_policy_id` (`string`): 
+  - `traffic_policy_version` (`number`): 
+  - `ttl` (`number`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_traffic_policy_instance` resource into the root Terraform configuration.

@@ -56,8 +56,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting resource block. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,8 +81,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3control_bucket_lifecycle_configuration` resource into the root Terraform configuration.
@@ -158,10 +158,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
-  - `abort_incomplete_multipart_upload` (`list[obj]`): Set the `abort_incomplete_multipart_upload` field on the resulting object. When `null`, the `abort_incomplete_multipart_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.abort_incomplete_multipart_upload.new](#fn-ruleabort_incomplete_multipart_uploadnew) constructor.
-  - `expiration` (`list[obj]`): Set the `expiration` field on the resulting object. When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.expiration.new](#fn-ruleexpirationnew) constructor.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.filter.new](#fn-rulefilternew) constructor.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `abort_incomplete_multipart_upload` (`list[obj]`):  When `null`, the `abort_incomplete_multipart_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.abort_incomplete_multipart_upload.new](#fn-ruleabort_incomplete_multipart_uploadnew) constructor.
+  - `expiration` (`list[obj]`):  When `null`, the `expiration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.expiration.new](#fn-ruleexpirationnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_bucket_lifecycle_configuration.rule.filter.new](#fn-rulefilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -184,7 +184,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `days_after_initiation` (`number`): Set the `days_after_initiation` field on the resulting object.
+  - `days_after_initiation` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `abort_incomplete_multipart_upload` sub block.
@@ -207,9 +207,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `date` (`string`): Set the `date` field on the resulting object. When `null`, the `date` field will be omitted from the resulting object.
-  - `days` (`number`): Set the `days` field on the resulting object. When `null`, the `days` field will be omitted from the resulting object.
-  - `expired_object_delete_marker` (`bool`): Set the `expired_object_delete_marker` field on the resulting object. When `null`, the `expired_object_delete_marker` field will be omitted from the resulting object.
+  - `date` (`string`):  When `null`, the `date` field will be omitted from the resulting object.
+  - `days` (`number`):  When `null`, the `days` field will be omitted from the resulting object.
+  - `expired_object_delete_marker` (`bool`):  When `null`, the `expired_object_delete_marker` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `expiration` sub block.
@@ -232,8 +232,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.

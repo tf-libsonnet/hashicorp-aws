@@ -69,19 +69,19 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `approved_patches` (`list`): Set the `approved_patches` field on the resulting resource block. When `null`, the `approved_patches` field will be omitted from the resulting object.
-  - `approved_patches_compliance_level` (`string`): Set the `approved_patches_compliance_level` field on the resulting resource block. When `null`, the `approved_patches_compliance_level` field will be omitted from the resulting object.
-  - `approved_patches_enable_non_security` (`bool`): Set the `approved_patches_enable_non_security` field on the resulting resource block. When `null`, the `approved_patches_enable_non_security` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `operating_system` (`string`): Set the `operating_system` field on the resulting resource block. When `null`, the `operating_system` field will be omitted from the resulting object.
-  - `rejected_patches` (`list`): Set the `rejected_patches` field on the resulting resource block. When `null`, the `rejected_patches` field will be omitted from the resulting object.
-  - `rejected_patches_action` (`string`): Set the `rejected_patches_action` field on the resulting resource block. When `null`, the `rejected_patches_action` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `approval_rule` (`list[obj]`): Set the `approval_rule` field on the resulting resource block. When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-approval_rulenew) constructor.
-  - `global_filter` (`list[obj]`): Set the `global_filter` field on the resulting resource block. When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-global_filternew) constructor.
-  - `source` (`list[obj]`): Set the `source` field on the resulting resource block. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-sourcenew) constructor.
+  - `approved_patches` (`list`):  When `null`, the `approved_patches` field will be omitted from the resulting object.
+  - `approved_patches_compliance_level` (`string`):  When `null`, the `approved_patches_compliance_level` field will be omitted from the resulting object.
+  - `approved_patches_enable_non_security` (`bool`):  When `null`, the `approved_patches_enable_non_security` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `operating_system` (`string`):  When `null`, the `operating_system` field will be omitted from the resulting object.
+  - `rejected_patches` (`list`):  When `null`, the `rejected_patches` field will be omitted from the resulting object.
+  - `rejected_patches_action` (`string`):  When `null`, the `rejected_patches_action` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `approval_rule` (`list[obj]`):  When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-approval_rulenew) constructor.
+  - `global_filter` (`list[obj]`):  When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-global_filternew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,19 +105,19 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `approved_patches` (`list`): Set the `approved_patches` field on the resulting object. When `null`, the `approved_patches` field will be omitted from the resulting object.
-  - `approved_patches_compliance_level` (`string`): Set the `approved_patches_compliance_level` field on the resulting object. When `null`, the `approved_patches_compliance_level` field will be omitted from the resulting object.
-  - `approved_patches_enable_non_security` (`bool`): Set the `approved_patches_enable_non_security` field on the resulting object. When `null`, the `approved_patches_enable_non_security` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `operating_system` (`string`): Set the `operating_system` field on the resulting object. When `null`, the `operating_system` field will be omitted from the resulting object.
-  - `rejected_patches` (`list`): Set the `rejected_patches` field on the resulting object. When `null`, the `rejected_patches` field will be omitted from the resulting object.
-  - `rejected_patches_action` (`string`): Set the `rejected_patches_action` field on the resulting object. When `null`, the `rejected_patches_action` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `approval_rule` (`list[obj]`): Set the `approval_rule` field on the resulting object. When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-approval_rulenew) constructor.
-  - `global_filter` (`list[obj]`): Set the `global_filter` field on the resulting object. When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-global_filternew) constructor.
-  - `source` (`list[obj]`): Set the `source` field on the resulting object. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-sourcenew) constructor.
+  - `approved_patches` (`list`):  When `null`, the `approved_patches` field will be omitted from the resulting object.
+  - `approved_patches_compliance_level` (`string`):  When `null`, the `approved_patches_compliance_level` field will be omitted from the resulting object.
+  - `approved_patches_enable_non_security` (`bool`):  When `null`, the `approved_patches_enable_non_security` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `operating_system` (`string`):  When `null`, the `operating_system` field will be omitted from the resulting object.
+  - `rejected_patches` (`list`):  When `null`, the `rejected_patches` field will be omitted from the resulting object.
+  - `rejected_patches_action` (`string`):  When `null`, the `rejected_patches_action` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `approval_rule` (`list[obj]`):  When `null`, the `approval_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.new](#fn-approval_rulenew) constructor.
+  - `global_filter` (`list[obj]`):  When `null`, the `global_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.global_filter.new](#fn-global_filternew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_patch_baseline` resource into the root Terraform configuration.
@@ -411,11 +411,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `approve_after_days` (`number`): Set the `approve_after_days` field on the resulting object. When `null`, the `approve_after_days` field will be omitted from the resulting object.
-  - `approve_until_date` (`string`): Set the `approve_until_date` field on the resulting object. When `null`, the `approve_until_date` field will be omitted from the resulting object.
-  - `compliance_level` (`string`): Set the `compliance_level` field on the resulting object. When `null`, the `compliance_level` field will be omitted from the resulting object.
-  - `enable_non_security` (`bool`): Set the `enable_non_security` field on the resulting object. When `null`, the `enable_non_security` field will be omitted from the resulting object.
-  - `patch_filter` (`list[obj]`): Set the `patch_filter` field on the resulting object. When `null`, the `patch_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.patch_filter.new](#fn-approval_rulepatch_filternew) constructor.
+  - `approve_after_days` (`number`):  When `null`, the `approve_after_days` field will be omitted from the resulting object.
+  - `approve_until_date` (`string`):  When `null`, the `approve_until_date` field will be omitted from the resulting object.
+  - `compliance_level` (`string`):  When `null`, the `compliance_level` field will be omitted from the resulting object.
+  - `enable_non_security` (`bool`):  When `null`, the `enable_non_security` field will be omitted from the resulting object.
+  - `patch_filter` (`list[obj]`):  When `null`, the `patch_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_patch_baseline.approval_rule.patch_filter.new](#fn-approval_rulepatch_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `approval_rule` sub block.
@@ -438,8 +438,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `key` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `patch_filter` sub block.
@@ -462,8 +462,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `key` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `global_filter` sub block.
@@ -486,9 +486,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `configuration` (`string`): Set the `configuration` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `products` (`list`): Set the `products` field on the resulting object.
+  - `configuration` (`string`): 
+  - `name` (`string`): 
+  - `products` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `source` sub block.

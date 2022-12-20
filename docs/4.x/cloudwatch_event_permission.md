@@ -53,11 +53,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action` (`string`): Set the `action` field on the resulting resource block. When `null`, the `action` field will be omitted from the resulting object.
-  - `event_bus_name` (`string`): Set the `event_bus_name` field on the resulting resource block. When `null`, the `event_bus_name` field will be omitted from the resulting object.
-  - `principal` (`string`): Set the `principal` field on the resulting resource block.
-  - `statement_id` (`string`): Set the `statement_id` field on the resulting resource block.
-  - `condition` (`list[obj]`): Set the `condition` field on the resulting resource block. When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-conditionnew) constructor.
+  - `action` (`string`):  When `null`, the `action` field will be omitted from the resulting object.
+  - `event_bus_name` (`string`):  When `null`, the `event_bus_name` field will be omitted from the resulting object.
+  - `principal` (`string`): 
+  - `statement_id` (`string`): 
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-conditionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,11 +81,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action` (`string`): Set the `action` field on the resulting object. When `null`, the `action` field will be omitted from the resulting object.
-  - `event_bus_name` (`string`): Set the `event_bus_name` field on the resulting object. When `null`, the `event_bus_name` field will be omitted from the resulting object.
-  - `principal` (`string`): Set the `principal` field on the resulting object.
-  - `statement_id` (`string`): Set the `statement_id` field on the resulting object.
-  - `condition` (`list[obj]`): Set the `condition` field on the resulting object. When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-conditionnew) constructor.
+  - `action` (`string`):  When `null`, the `action` field will be omitted from the resulting object.
+  - `event_bus_name` (`string`):  When `null`, the `event_bus_name` field will be omitted from the resulting object.
+  - `principal` (`string`): 
+  - `statement_id` (`string`): 
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_permission.condition.new](#fn-conditionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_event_permission` resource into the root Terraform configuration.
@@ -209,9 +209,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `type` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.

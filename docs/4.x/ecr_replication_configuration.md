@@ -55,7 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `replication_configuration` (`list[obj]`): Set the `replication_configuration` field on the resulting resource block. When `null`, the `replication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.new](#fn-replication_configurationnew) constructor.
+  - `replication_configuration` (`list[obj]`):  When `null`, the `replication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.new](#fn-replication_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,7 +79,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `replication_configuration` (`list[obj]`): Set the `replication_configuration` field on the resulting object. When `null`, the `replication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.new](#fn-replication_configurationnew) constructor.
+  - `replication_configuration` (`list[obj]`):  When `null`, the `replication_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.new](#fn-replication_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecr_replication_configuration` resource into the root Terraform configuration.
@@ -139,7 +139,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.new](#fn-replication_configurationrulenew) constructor.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.new](#fn-replication_configurationrulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `replication_configuration` sub block.
@@ -162,8 +162,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`list[obj]`): Set the `destination` field on the resulting object. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.destination.new](#fn-replication_configurationreplication_configurationdestinationnew) constructor.
-  - `repository_filter` (`list[obj]`): Set the `repository_filter` field on the resulting object. When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.repository_filter.new](#fn-replication_configurationreplication_configurationrepository_filternew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.destination.new](#fn-replication_configurationreplication_configurationdestinationnew) constructor.
+  - `repository_filter` (`list[obj]`):  When `null`, the `repository_filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_replication_configuration.replication_configuration.rule.repository_filter.new](#fn-replication_configurationreplication_configurationrepository_filternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -186,8 +186,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `region` (`string`): Set the `region` field on the resulting object.
-  - `registry_id` (`string`): Set the `registry_id` field on the resulting object.
+  - `region` (`string`): 
+  - `registry_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.
@@ -210,8 +210,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`string`): Set the `filter` field on the resulting object.
-  - `filter_type` (`string`): Set the `filter_type` field on the resulting object.
+  - `filter` (`string`): 
+  - `filter_type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `repository_filter` sub block.

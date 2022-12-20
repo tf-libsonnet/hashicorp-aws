@@ -66,15 +66,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `category` (`string`): Set the `category` field on the resulting resource block.
-  - `provider_name` (`string`): Set the `provider_name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`): Set the `version` field on the resulting resource block.
-  - `configuration_property` (`list[obj]`): Set the `configuration_property` field on the resulting resource block. When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-configuration_propertynew) constructor.
-  - `input_artifact_details` (`list[obj]`): Set the `input_artifact_details` field on the resulting resource block. When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-input_artifact_detailsnew) constructor.
-  - `output_artifact_details` (`list[obj]`): Set the `output_artifact_details` field on the resulting resource block. When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-output_artifact_detailsnew) constructor.
-  - `settings` (`list[obj]`): Set the `settings` field on the resulting resource block. When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-settingsnew) constructor.
+  - `category` (`string`): 
+  - `provider_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): 
+  - `configuration_property` (`list[obj]`):  When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-configuration_propertynew) constructor.
+  - `input_artifact_details` (`list[obj]`):  When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-input_artifact_detailsnew) constructor.
+  - `output_artifact_details` (`list[obj]`):  When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-output_artifact_detailsnew) constructor.
+  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -98,15 +98,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `category` (`string`): Set the `category` field on the resulting object.
-  - `provider_name` (`string`): Set the `provider_name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `version` (`string`): Set the `version` field on the resulting object.
-  - `configuration_property` (`list[obj]`): Set the `configuration_property` field on the resulting object. When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-configuration_propertynew) constructor.
-  - `input_artifact_details` (`list[obj]`): Set the `input_artifact_details` field on the resulting object. When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-input_artifact_detailsnew) constructor.
-  - `output_artifact_details` (`list[obj]`): Set the `output_artifact_details` field on the resulting object. When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-output_artifact_detailsnew) constructor.
-  - `settings` (`list[obj]`): Set the `settings` field on the resulting object. When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-settingsnew) constructor.
+  - `category` (`string`): 
+  - `provider_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `version` (`string`): 
+  - `configuration_property` (`list[obj]`):  When `null`, the `configuration_property` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.configuration_property.new](#fn-configuration_propertynew) constructor.
+  - `input_artifact_details` (`list[obj]`):  When `null`, the `input_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.input_artifact_details.new](#fn-input_artifact_detailsnew) constructor.
+  - `output_artifact_details` (`list[obj]`):  When `null`, the `output_artifact_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.output_artifact_details.new](#fn-output_artifact_detailsnew) constructor.
+  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline_custom_action_type.settings.new](#fn-settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codepipeline_custom_action_type` resource into the root Terraform configuration.
@@ -357,13 +357,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `key` (`bool`): Set the `key` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `queryable` (`bool`): Set the `queryable` field on the resulting object. When `null`, the `queryable` field will be omitted from the resulting object.
-  - `required` (`bool`): Set the `required` field on the resulting object.
-  - `secret` (`bool`): Set the `secret` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `key` (`bool`): 
+  - `name` (`string`): 
+  - `queryable` (`bool`):  When `null`, the `queryable` field will be omitted from the resulting object.
+  - `required` (`bool`): 
+  - `secret` (`bool`): 
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `configuration_property` sub block.
@@ -386,8 +386,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `maximum_count` (`number`): Set the `maximum_count` field on the resulting object.
-  - `minimum_count` (`number`): Set the `minimum_count` field on the resulting object.
+  - `maximum_count` (`number`): 
+  - `minimum_count` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `input_artifact_details` sub block.
@@ -410,8 +410,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `maximum_count` (`number`): Set the `maximum_count` field on the resulting object.
-  - `minimum_count` (`number`): Set the `minimum_count` field on the resulting object.
+  - `maximum_count` (`number`): 
+  - `minimum_count` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `output_artifact_details` sub block.
@@ -434,10 +434,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `entity_url_template` (`string`): Set the `entity_url_template` field on the resulting object. When `null`, the `entity_url_template` field will be omitted from the resulting object.
-  - `execution_url_template` (`string`): Set the `execution_url_template` field on the resulting object. When `null`, the `execution_url_template` field will be omitted from the resulting object.
-  - `revision_url_template` (`string`): Set the `revision_url_template` field on the resulting object. When `null`, the `revision_url_template` field will be omitted from the resulting object.
-  - `third_party_configuration_url` (`string`): Set the `third_party_configuration_url` field on the resulting object. When `null`, the `third_party_configuration_url` field will be omitted from the resulting object.
+  - `entity_url_template` (`string`):  When `null`, the `entity_url_template` field will be omitted from the resulting object.
+  - `execution_url_template` (`string`):  When `null`, the `execution_url_template` field will be omitted from the resulting object.
+  - `revision_url_template` (`string`):  When `null`, the `revision_url_template` field will be omitted from the resulting object.
+  - `third_party_configuration_url` (`string`):  When `null`, the `third_party_configuration_url` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `settings` sub block.

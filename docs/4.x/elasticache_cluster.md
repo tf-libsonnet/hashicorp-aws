@@ -78,36 +78,36 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting resource block. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `auto_minor_version_upgrade` (`string`): Set the `auto_minor_version_upgrade` field on the resulting resource block. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block. When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `az_mode` (`string`): Set the `az_mode` field on the resulting resource block. When `null`, the `az_mode` field will be omitted from the resulting object.
-  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting resource block.
-  - `engine` (`string`): Set the `engine` field on the resulting resource block. When `null`, the `engine` field will be omitted from the resulting object.
-  - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block. When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting resource block. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
-  - `ip_discovery` (`string`): Set the `ip_discovery` field on the resulting resource block. When `null`, the `ip_discovery` field will be omitted from the resulting object.
-  - `maintenance_window` (`string`): Set the `maintenance_window` field on the resulting resource block. When `null`, the `maintenance_window` field will be omitted from the resulting object.
-  - `network_type` (`string`): Set the `network_type` field on the resulting resource block. When `null`, the `network_type` field will be omitted from the resulting object.
-  - `node_type` (`string`): Set the `node_type` field on the resulting resource block. When `null`, the `node_type` field will be omitted from the resulting object.
-  - `notification_topic_arn` (`string`): Set the `notification_topic_arn` field on the resulting resource block. When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
-  - `num_cache_nodes` (`number`): Set the `num_cache_nodes` field on the resulting resource block. When `null`, the `num_cache_nodes` field will be omitted from the resulting object.
-  - `outpost_mode` (`string`): Set the `outpost_mode` field on the resulting resource block. When `null`, the `outpost_mode` field will be omitted from the resulting object.
-  - `parameter_group_name` (`string`): Set the `parameter_group_name` field on the resulting resource block. When `null`, the `parameter_group_name` field will be omitted from the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
-  - `preferred_availability_zones` (`list`): Set the `preferred_availability_zones` field on the resulting resource block. When `null`, the `preferred_availability_zones` field will be omitted from the resulting object.
-  - `preferred_outpost_arn` (`string`): Set the `preferred_outpost_arn` field on the resulting resource block. When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.
-  - `replication_group_id` (`string`): Set the `replication_group_id` field on the resulting resource block. When `null`, the `replication_group_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `security_group_names` (`list`): Set the `security_group_names` field on the resulting resource block. When `null`, the `security_group_names` field will be omitted from the resulting object.
-  - `snapshot_arns` (`list`): Set the `snapshot_arns` field on the resulting resource block. When `null`, the `snapshot_arns` field will be omitted from the resulting object.
-  - `snapshot_name` (`string`): Set the `snapshot_name` field on the resulting resource block. When `null`, the `snapshot_name` field will be omitted from the resulting object.
-  - `snapshot_retention_limit` (`number`): Set the `snapshot_retention_limit` field on the resulting resource block. When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.
-  - `snapshot_window` (`string`): Set the `snapshot_window` field on the resulting resource block. When `null`, the `snapshot_window` field will be omitted from the resulting object.
-  - `subnet_group_name` (`string`): Set the `subnet_group_name` field on the resulting resource block. When `null`, the `subnet_group_name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `log_delivery_configuration` (`list[obj]`): Set the `log_delivery_configuration` field on the resulting resource block. When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `auto_minor_version_upgrade` (`string`):  When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `az_mode` (`string`):  When `null`, the `az_mode` field will be omitted from the resulting object.
+  - `cluster_id` (`string`): 
+  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
+  - `ip_discovery` (`string`):  When `null`, the `ip_discovery` field will be omitted from the resulting object.
+  - `maintenance_window` (`string`):  When `null`, the `maintenance_window` field will be omitted from the resulting object.
+  - `network_type` (`string`):  When `null`, the `network_type` field will be omitted from the resulting object.
+  - `node_type` (`string`):  When `null`, the `node_type` field will be omitted from the resulting object.
+  - `notification_topic_arn` (`string`):  When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
+  - `num_cache_nodes` (`number`):  When `null`, the `num_cache_nodes` field will be omitted from the resulting object.
+  - `outpost_mode` (`string`):  When `null`, the `outpost_mode` field will be omitted from the resulting object.
+  - `parameter_group_name` (`string`):  When `null`, the `parameter_group_name` field will be omitted from the resulting object.
+  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
+  - `preferred_availability_zones` (`list`):  When `null`, the `preferred_availability_zones` field will be omitted from the resulting object.
+  - `preferred_outpost_arn` (`string`):  When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.
+  - `replication_group_id` (`string`):  When `null`, the `replication_group_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `security_group_names` (`list`):  When `null`, the `security_group_names` field will be omitted from the resulting object.
+  - `snapshot_arns` (`list`):  When `null`, the `snapshot_arns` field will be omitted from the resulting object.
+  - `snapshot_name` (`string`):  When `null`, the `snapshot_name` field will be omitted from the resulting object.
+  - `snapshot_retention_limit` (`number`):  When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.
+  - `snapshot_window` (`string`):  When `null`, the `snapshot_window` field will be omitted from the resulting object.
+  - `subnet_group_name` (`string`):  When `null`, the `subnet_group_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `log_delivery_configuration` (`list[obj]`):  When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -131,36 +131,36 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting object. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `auto_minor_version_upgrade` (`string`): Set the `auto_minor_version_upgrade` field on the resulting object. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `az_mode` (`string`): Set the `az_mode` field on the resulting object. When `null`, the `az_mode` field will be omitted from the resulting object.
-  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting object.
-  - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
-  - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting object. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
-  - `ip_discovery` (`string`): Set the `ip_discovery` field on the resulting object. When `null`, the `ip_discovery` field will be omitted from the resulting object.
-  - `maintenance_window` (`string`): Set the `maintenance_window` field on the resulting object. When `null`, the `maintenance_window` field will be omitted from the resulting object.
-  - `network_type` (`string`): Set the `network_type` field on the resulting object. When `null`, the `network_type` field will be omitted from the resulting object.
-  - `node_type` (`string`): Set the `node_type` field on the resulting object. When `null`, the `node_type` field will be omitted from the resulting object.
-  - `notification_topic_arn` (`string`): Set the `notification_topic_arn` field on the resulting object. When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
-  - `num_cache_nodes` (`number`): Set the `num_cache_nodes` field on the resulting object. When `null`, the `num_cache_nodes` field will be omitted from the resulting object.
-  - `outpost_mode` (`string`): Set the `outpost_mode` field on the resulting object. When `null`, the `outpost_mode` field will be omitted from the resulting object.
-  - `parameter_group_name` (`string`): Set the `parameter_group_name` field on the resulting object. When `null`, the `parameter_group_name` field will be omitted from the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
-  - `preferred_availability_zones` (`list`): Set the `preferred_availability_zones` field on the resulting object. When `null`, the `preferred_availability_zones` field will be omitted from the resulting object.
-  - `preferred_outpost_arn` (`string`): Set the `preferred_outpost_arn` field on the resulting object. When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.
-  - `replication_group_id` (`string`): Set the `replication_group_id` field on the resulting object. When `null`, the `replication_group_id` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `security_group_names` (`list`): Set the `security_group_names` field on the resulting object. When `null`, the `security_group_names` field will be omitted from the resulting object.
-  - `snapshot_arns` (`list`): Set the `snapshot_arns` field on the resulting object. When `null`, the `snapshot_arns` field will be omitted from the resulting object.
-  - `snapshot_name` (`string`): Set the `snapshot_name` field on the resulting object. When `null`, the `snapshot_name` field will be omitted from the resulting object.
-  - `snapshot_retention_limit` (`number`): Set the `snapshot_retention_limit` field on the resulting object. When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.
-  - `snapshot_window` (`string`): Set the `snapshot_window` field on the resulting object. When `null`, the `snapshot_window` field will be omitted from the resulting object.
-  - `subnet_group_name` (`string`): Set the `subnet_group_name` field on the resulting object. When `null`, the `subnet_group_name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `log_delivery_configuration` (`list[obj]`): Set the `log_delivery_configuration` field on the resulting object. When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `auto_minor_version_upgrade` (`string`):  When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `az_mode` (`string`):  When `null`, the `az_mode` field will be omitted from the resulting object.
+  - `cluster_id` (`string`): 
+  - `engine` (`string`):  When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `final_snapshot_identifier` (`string`):  When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
+  - `ip_discovery` (`string`):  When `null`, the `ip_discovery` field will be omitted from the resulting object.
+  - `maintenance_window` (`string`):  When `null`, the `maintenance_window` field will be omitted from the resulting object.
+  - `network_type` (`string`):  When `null`, the `network_type` field will be omitted from the resulting object.
+  - `node_type` (`string`):  When `null`, the `node_type` field will be omitted from the resulting object.
+  - `notification_topic_arn` (`string`):  When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
+  - `num_cache_nodes` (`number`):  When `null`, the `num_cache_nodes` field will be omitted from the resulting object.
+  - `outpost_mode` (`string`):  When `null`, the `outpost_mode` field will be omitted from the resulting object.
+  - `parameter_group_name` (`string`):  When `null`, the `parameter_group_name` field will be omitted from the resulting object.
+  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
+  - `preferred_availability_zones` (`list`):  When `null`, the `preferred_availability_zones` field will be omitted from the resulting object.
+  - `preferred_outpost_arn` (`string`):  When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.
+  - `replication_group_id` (`string`):  When `null`, the `replication_group_id` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `security_group_names` (`list`):  When `null`, the `security_group_names` field will be omitted from the resulting object.
+  - `snapshot_arns` (`list`):  When `null`, the `snapshot_arns` field will be omitted from the resulting object.
+  - `snapshot_name` (`string`):  When `null`, the `snapshot_name` field will be omitted from the resulting object.
+  - `snapshot_retention_limit` (`number`):  When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.
+  - `snapshot_window` (`string`):  When `null`, the `snapshot_window` field will be omitted from the resulting object.
+  - `subnet_group_name` (`string`):  When `null`, the `subnet_group_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `log_delivery_configuration` (`list[obj]`):  When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elasticache_cluster` resource into the root Terraform configuration.
@@ -684,10 +684,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `destination` (`string`): Set the `destination` field on the resulting object.
-  - `destination_type` (`string`): Set the `destination_type` field on the resulting object.
-  - `log_format` (`string`): Set the `log_format` field on the resulting object.
-  - `log_type` (`string`): Set the `log_type` field on the resulting object.
+  - `destination` (`string`): 
+  - `destination_type` (`string`): 
+  - `log_format` (`string`): 
+  - `log_type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `log_delivery_configuration` sub block.

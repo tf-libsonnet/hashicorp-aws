@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authorizer_credentials` (`string`): Set the `authorizer_credentials` field on the resulting resource block. When `null`, the `authorizer_credentials` field will be omitted from the resulting object.
-  - `authorizer_result_ttl_in_seconds` (`number`): Set the `authorizer_result_ttl_in_seconds` field on the resulting resource block. When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
-  - `authorizer_uri` (`string`): Set the `authorizer_uri` field on the resulting resource block. When `null`, the `authorizer_uri` field will be omitted from the resulting object.
-  - `identity_source` (`string`): Set the `identity_source` field on the resulting resource block. When `null`, the `identity_source` field will be omitted from the resulting object.
-  - `identity_validation_expression` (`string`): Set the `identity_validation_expression` field on the resulting resource block. When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `provider_arns` (`list`): Set the `provider_arns` field on the resulting resource block. When `null`, the `provider_arns` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
-  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
+  - `authorizer_credentials` (`string`):  When `null`, the `authorizer_credentials` field will be omitted from the resulting object.
+  - `authorizer_result_ttl_in_seconds` (`number`):  When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
+  - `authorizer_uri` (`string`):  When `null`, the `authorizer_uri` field will be omitted from the resulting object.
+  - `identity_source` (`string`):  When `null`, the `identity_source` field will be omitted from the resulting object.
+  - `identity_validation_expression` (`string`):  When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `provider_arns` (`list`):  When `null`, the `provider_arns` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): 
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authorizer_credentials` (`string`): Set the `authorizer_credentials` field on the resulting object. When `null`, the `authorizer_credentials` field will be omitted from the resulting object.
-  - `authorizer_result_ttl_in_seconds` (`number`): Set the `authorizer_result_ttl_in_seconds` field on the resulting object. When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
-  - `authorizer_uri` (`string`): Set the `authorizer_uri` field on the resulting object. When `null`, the `authorizer_uri` field will be omitted from the resulting object.
-  - `identity_source` (`string`): Set the `identity_source` field on the resulting object. When `null`, the `identity_source` field will be omitted from the resulting object.
-  - `identity_validation_expression` (`string`): Set the `identity_validation_expression` field on the resulting object. When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `provider_arns` (`list`): Set the `provider_arns` field on the resulting object. When `null`, the `provider_arns` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `authorizer_credentials` (`string`):  When `null`, the `authorizer_credentials` field will be omitted from the resulting object.
+  - `authorizer_result_ttl_in_seconds` (`number`):  When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
+  - `authorizer_uri` (`string`):  When `null`, the `authorizer_uri` field will be omitted from the resulting object.
+  - `identity_source` (`string`):  When `null`, the `identity_source` field will be omitted from the resulting object.
+  - `identity_validation_expression` (`string`):  When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `provider_arns` (`list`):  When `null`, the `provider_arns` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): 
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_authorizer` resource into the root Terraform configuration.

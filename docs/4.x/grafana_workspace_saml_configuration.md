@@ -62,20 +62,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `admin_role_values` (`list`): Set the `admin_role_values` field on the resulting resource block. When `null`, the `admin_role_values` field will be omitted from the resulting object.
-  - `allowed_organizations` (`list`): Set the `allowed_organizations` field on the resulting resource block. When `null`, the `allowed_organizations` field will be omitted from the resulting object.
-  - `editor_role_values` (`list`): Set the `editor_role_values` field on the resulting resource block.
-  - `email_assertion` (`string`): Set the `email_assertion` field on the resulting resource block. When `null`, the `email_assertion` field will be omitted from the resulting object.
-  - `groups_assertion` (`string`): Set the `groups_assertion` field on the resulting resource block. When `null`, the `groups_assertion` field will be omitted from the resulting object.
-  - `idp_metadata_url` (`string`): Set the `idp_metadata_url` field on the resulting resource block. When `null`, the `idp_metadata_url` field will be omitted from the resulting object.
-  - `idp_metadata_xml` (`string`): Set the `idp_metadata_xml` field on the resulting resource block. When `null`, the `idp_metadata_xml` field will be omitted from the resulting object.
-  - `login_assertion` (`string`): Set the `login_assertion` field on the resulting resource block. When `null`, the `login_assertion` field will be omitted from the resulting object.
-  - `login_validity_duration` (`number`): Set the `login_validity_duration` field on the resulting resource block. When `null`, the `login_validity_duration` field will be omitted from the resulting object.
-  - `name_assertion` (`string`): Set the `name_assertion` field on the resulting resource block. When `null`, the `name_assertion` field will be omitted from the resulting object.
-  - `org_assertion` (`string`): Set the `org_assertion` field on the resulting resource block. When `null`, the `org_assertion` field will be omitted from the resulting object.
-  - `role_assertion` (`string`): Set the `role_assertion` field on the resulting resource block. When `null`, the `role_assertion` field will be omitted from the resulting object.
-  - `workspace_id` (`string`): Set the `workspace_id` field on the resulting resource block.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-timeoutsnew) constructor.
+  - `admin_role_values` (`list`):  When `null`, the `admin_role_values` field will be omitted from the resulting object.
+  - `allowed_organizations` (`list`):  When `null`, the `allowed_organizations` field will be omitted from the resulting object.
+  - `editor_role_values` (`list`): 
+  - `email_assertion` (`string`):  When `null`, the `email_assertion` field will be omitted from the resulting object.
+  - `groups_assertion` (`string`):  When `null`, the `groups_assertion` field will be omitted from the resulting object.
+  - `idp_metadata_url` (`string`):  When `null`, the `idp_metadata_url` field will be omitted from the resulting object.
+  - `idp_metadata_xml` (`string`):  When `null`, the `idp_metadata_xml` field will be omitted from the resulting object.
+  - `login_assertion` (`string`):  When `null`, the `login_assertion` field will be omitted from the resulting object.
+  - `login_validity_duration` (`number`):  When `null`, the `login_validity_duration` field will be omitted from the resulting object.
+  - `name_assertion` (`string`):  When `null`, the `name_assertion` field will be omitted from the resulting object.
+  - `org_assertion` (`string`):  When `null`, the `org_assertion` field will be omitted from the resulting object.
+  - `role_assertion` (`string`):  When `null`, the `role_assertion` field will be omitted from the resulting object.
+  - `workspace_id` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -99,20 +99,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `admin_role_values` (`list`): Set the `admin_role_values` field on the resulting object. When `null`, the `admin_role_values` field will be omitted from the resulting object.
-  - `allowed_organizations` (`list`): Set the `allowed_organizations` field on the resulting object. When `null`, the `allowed_organizations` field will be omitted from the resulting object.
-  - `editor_role_values` (`list`): Set the `editor_role_values` field on the resulting object.
-  - `email_assertion` (`string`): Set the `email_assertion` field on the resulting object. When `null`, the `email_assertion` field will be omitted from the resulting object.
-  - `groups_assertion` (`string`): Set the `groups_assertion` field on the resulting object. When `null`, the `groups_assertion` field will be omitted from the resulting object.
-  - `idp_metadata_url` (`string`): Set the `idp_metadata_url` field on the resulting object. When `null`, the `idp_metadata_url` field will be omitted from the resulting object.
-  - `idp_metadata_xml` (`string`): Set the `idp_metadata_xml` field on the resulting object. When `null`, the `idp_metadata_xml` field will be omitted from the resulting object.
-  - `login_assertion` (`string`): Set the `login_assertion` field on the resulting object. When `null`, the `login_assertion` field will be omitted from the resulting object.
-  - `login_validity_duration` (`number`): Set the `login_validity_duration` field on the resulting object. When `null`, the `login_validity_duration` field will be omitted from the resulting object.
-  - `name_assertion` (`string`): Set the `name_assertion` field on the resulting object. When `null`, the `name_assertion` field will be omitted from the resulting object.
-  - `org_assertion` (`string`): Set the `org_assertion` field on the resulting object. When `null`, the `org_assertion` field will be omitted from the resulting object.
-  - `role_assertion` (`string`): Set the `role_assertion` field on the resulting object. When `null`, the `role_assertion` field will be omitted from the resulting object.
-  - `workspace_id` (`string`): Set the `workspace_id` field on the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-timeoutsnew) constructor.
+  - `admin_role_values` (`list`):  When `null`, the `admin_role_values` field will be omitted from the resulting object.
+  - `allowed_organizations` (`list`):  When `null`, the `allowed_organizations` field will be omitted from the resulting object.
+  - `editor_role_values` (`list`): 
+  - `email_assertion` (`string`):  When `null`, the `email_assertion` field will be omitted from the resulting object.
+  - `groups_assertion` (`string`):  When `null`, the `groups_assertion` field will be omitted from the resulting object.
+  - `idp_metadata_url` (`string`):  When `null`, the `idp_metadata_url` field will be omitted from the resulting object.
+  - `idp_metadata_xml` (`string`):  When `null`, the `idp_metadata_xml` field will be omitted from the resulting object.
+  - `login_assertion` (`string`):  When `null`, the `login_assertion` field will be omitted from the resulting object.
+  - `login_validity_duration` (`number`):  When `null`, the `login_validity_duration` field will be omitted from the resulting object.
+  - `name_assertion` (`string`):  When `null`, the `name_assertion` field will be omitted from the resulting object.
+  - `org_assertion` (`string`):  When `null`, the `org_assertion` field will be omitted from the resulting object.
+  - `role_assertion` (`string`):  When `null`, the `role_assertion` field will be omitted from the resulting object.
+  - `workspace_id` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace_saml_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `grafana_workspace_saml_configuration` resource into the root Terraform configuration.
@@ -379,8 +379,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

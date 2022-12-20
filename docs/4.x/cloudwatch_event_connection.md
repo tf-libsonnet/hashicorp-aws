@@ -76,10 +76,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `auth_parameters` (`list[obj]`): Set the `auth_parameters` field on the resulting resource block. When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-auth_parametersnew) constructor.
+  - `authorization_type` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `auth_parameters` (`list[obj]`):  When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-auth_parametersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,10 +103,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `auth_parameters` (`list[obj]`): Set the `auth_parameters` field on the resulting object. When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-auth_parametersnew) constructor.
+  - `authorization_type` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `auth_parameters` (`list[obj]`):  When `null`, the `auth_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.new](#fn-auth_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_event_connection` resource into the root Terraform configuration.
@@ -214,10 +214,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `api_key` (`list[obj]`): Set the `api_key` field on the resulting object. When `null`, the `api_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.api_key.new](#fn-auth_parametersapi_keynew) constructor.
-  - `basic` (`list[obj]`): Set the `basic` field on the resulting object. When `null`, the `basic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.basic.new](#fn-auth_parametersbasicnew) constructor.
-  - `invocation_http_parameters` (`list[obj]`): Set the `invocation_http_parameters` field on the resulting object. When `null`, the `invocation_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.new](#fn-auth_parametersinvocation_http_parametersnew) constructor.
-  - `oauth` (`list[obj]`): Set the `oauth` field on the resulting object. When `null`, the `oauth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.new](#fn-auth_parametersoauthnew) constructor.
+  - `api_key` (`list[obj]`):  When `null`, the `api_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.api_key.new](#fn-auth_parametersapi_keynew) constructor.
+  - `basic` (`list[obj]`):  When `null`, the `basic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.basic.new](#fn-auth_parametersbasicnew) constructor.
+  - `invocation_http_parameters` (`list[obj]`):  When `null`, the `invocation_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.new](#fn-auth_parametersinvocation_http_parametersnew) constructor.
+  - `oauth` (`list[obj]`):  When `null`, the `oauth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.new](#fn-auth_parametersoauthnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auth_parameters` sub block.
@@ -240,8 +240,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `api_key` sub block.
@@ -264,8 +264,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `password` (`string`): Set the `password` field on the resulting object.
-  - `username` (`string`): Set the `username` field on the resulting object.
+  - `password` (`string`): 
+  - `username` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `basic` sub block.
@@ -288,9 +288,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `body` (`list[obj]`): Set the `body` field on the resulting object. When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.body.new](#fn-auth_parametersauth_parametersbodynew) constructor.
-  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.header.new](#fn-auth_parametersauth_parametersheadernew) constructor.
-  - `query_string` (`list[obj]`): Set the `query_string` field on the resulting object. When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.query_string.new](#fn-auth_parametersauth_parametersquery_stringnew) constructor.
+  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.body.new](#fn-auth_parametersauth_parametersbodynew) constructor.
+  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.header.new](#fn-auth_parametersauth_parametersheadernew) constructor.
+  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.invocation_http_parameters.query_string.new](#fn-auth_parametersauth_parametersquery_stringnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `invocation_http_parameters` sub block.
@@ -313,9 +313,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `is_value_secret` (`bool`): Set the `is_value_secret` field on the resulting object. When `null`, the `is_value_secret` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `is_value_secret` (`bool`):  When `null`, the `is_value_secret` field will be omitted from the resulting object.
+  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
+  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `body` sub block.
@@ -338,9 +338,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `is_value_secret` (`bool`): Set the `is_value_secret` field on the resulting object. When `null`, the `is_value_secret` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `is_value_secret` (`bool`):  When `null`, the `is_value_secret` field will be omitted from the resulting object.
+  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
+  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `header` sub block.
@@ -363,9 +363,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `is_value_secret` (`bool`): Set the `is_value_secret` field on the resulting object. When `null`, the `is_value_secret` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `is_value_secret` (`bool`):  When `null`, the `is_value_secret` field will be omitted from the resulting object.
+  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
+  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `query_string` sub block.
@@ -388,10 +388,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `authorization_endpoint` (`string`): Set the `authorization_endpoint` field on the resulting object.
-  - `http_method` (`string`): Set the `http_method` field on the resulting object.
-  - `client_parameters` (`list[obj]`): Set the `client_parameters` field on the resulting object. When `null`, the `client_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.client_parameters.new](#fn-auth_parametersauth_parametersclient_parametersnew) constructor.
-  - `oauth_http_parameters` (`list[obj]`): Set the `oauth_http_parameters` field on the resulting object. When `null`, the `oauth_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.new](#fn-auth_parametersauth_parametersoauth_http_parametersnew) constructor.
+  - `authorization_endpoint` (`string`): 
+  - `http_method` (`string`): 
+  - `client_parameters` (`list[obj]`):  When `null`, the `client_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.client_parameters.new](#fn-auth_parametersauth_parametersclient_parametersnew) constructor.
+  - `oauth_http_parameters` (`list[obj]`):  When `null`, the `oauth_http_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.new](#fn-auth_parametersauth_parametersoauth_http_parametersnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `oauth` sub block.
@@ -414,8 +414,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `client_id` (`string`): Set the `client_id` field on the resulting object.
-  - `client_secret` (`string`): Set the `client_secret` field on the resulting object.
+  - `client_id` (`string`): 
+  - `client_secret` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `client_parameters` sub block.
@@ -438,9 +438,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `body` (`list[obj]`): Set the `body` field on the resulting object. When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.body.new](#fn-auth_parametersauth_parametersoauthbodynew) constructor.
-  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.header.new](#fn-auth_parametersauth_parametersoauthheadernew) constructor.
-  - `query_string` (`list[obj]`): Set the `query_string` field on the resulting object. When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.query_string.new](#fn-auth_parametersauth_parametersoauthquery_stringnew) constructor.
+  - `body` (`list[obj]`):  When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.body.new](#fn-auth_parametersauth_parametersoauthbodynew) constructor.
+  - `header` (`list[obj]`):  When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.header.new](#fn-auth_parametersauth_parametersoauthheadernew) constructor.
+  - `query_string` (`list[obj]`):  When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_connection.auth_parameters.oauth.oauth_http_parameters.query_string.new](#fn-auth_parametersauth_parametersoauthquery_stringnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `oauth_http_parameters` sub block.
@@ -463,9 +463,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `is_value_secret` (`bool`): Set the `is_value_secret` field on the resulting object. When `null`, the `is_value_secret` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `is_value_secret` (`bool`):  When `null`, the `is_value_secret` field will be omitted from the resulting object.
+  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
+  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `body` sub block.
@@ -488,9 +488,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `is_value_secret` (`bool`): Set the `is_value_secret` field on the resulting object. When `null`, the `is_value_secret` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `is_value_secret` (`bool`):  When `null`, the `is_value_secret` field will be omitted from the resulting object.
+  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
+  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `header` sub block.
@@ -513,9 +513,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `is_value_secret` (`bool`): Set the `is_value_secret` field on the resulting object. When `null`, the `is_value_secret` field will be omitted from the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+  - `is_value_secret` (`bool`):  When `null`, the `is_value_secret` field will be omitted from the resulting object.
+  - `key` (`string`):  When `null`, the `key` field will be omitted from the resulting object.
+  - `value` (`string`):  When `null`, the `value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `query_string` sub block.

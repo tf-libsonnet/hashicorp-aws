@@ -55,13 +55,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `asserted_controls` (`list`): Set the `asserted_controls` field on the resulting resource block. When `null`, the `asserted_controls` field will be omitted from the resulting object.
-  - `control_panel_arn` (`string`): Set the `control_panel_arn` field on the resulting resource block.
-  - `gating_controls` (`list`): Set the `gating_controls` field on the resulting resource block. When `null`, the `gating_controls` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `target_controls` (`list`): Set the `target_controls` field on the resulting resource block. When `null`, the `target_controls` field will be omitted from the resulting object.
-  - `wait_period_ms` (`number`): Set the `wait_period_ms` field on the resulting resource block.
-  - `rule_config` (`list[obj]`): Set the `rule_config` field on the resulting resource block. When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-rule_confignew) constructor.
+  - `asserted_controls` (`list`):  When `null`, the `asserted_controls` field will be omitted from the resulting object.
+  - `control_panel_arn` (`string`): 
+  - `gating_controls` (`list`):  When `null`, the `gating_controls` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `target_controls` (`list`):  When `null`, the `target_controls` field will be omitted from the resulting object.
+  - `wait_period_ms` (`number`): 
+  - `rule_config` (`list[obj]`):  When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-rule_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,13 +85,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `asserted_controls` (`list`): Set the `asserted_controls` field on the resulting object. When `null`, the `asserted_controls` field will be omitted from the resulting object.
-  - `control_panel_arn` (`string`): Set the `control_panel_arn` field on the resulting object.
-  - `gating_controls` (`list`): Set the `gating_controls` field on the resulting object. When `null`, the `gating_controls` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `target_controls` (`list`): Set the `target_controls` field on the resulting object. When `null`, the `target_controls` field will be omitted from the resulting object.
-  - `wait_period_ms` (`number`): Set the `wait_period_ms` field on the resulting object.
-  - `rule_config` (`list[obj]`): Set the `rule_config` field on the resulting object. When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-rule_confignew) constructor.
+  - `asserted_controls` (`list`):  When `null`, the `asserted_controls` field will be omitted from the resulting object.
+  - `control_panel_arn` (`string`): 
+  - `gating_controls` (`list`):  When `null`, the `gating_controls` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `target_controls` (`list`):  When `null`, the `target_controls` field will be omitted from the resulting object.
+  - `wait_period_ms` (`number`): 
+  - `rule_config` (`list[obj]`):  When `null`, the `rule_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53recoverycontrolconfig_safety_rule.rule_config.new](#fn-rule_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53recoverycontrolconfig_safety_rule` resource into the root Terraform configuration.
@@ -247,9 +247,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `inverted` (`bool`): Set the `inverted` field on the resulting object.
-  - `threshold` (`number`): Set the `threshold` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `inverted` (`bool`): 
+  - `threshold` (`number`): 
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `rule_config` sub block.

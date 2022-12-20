@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `log_group_names` (`list`): Set the `log_group_names` field on the resulting resource block. When `null`, the `log_group_names` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `query_string` (`string`): Set the `query_string` field on the resulting resource block.
+  - `log_group_names` (`list`):  When `null`, the `log_group_names` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `query_string` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `log_group_names` (`list`): Set the `log_group_names` field on the resulting object. When `null`, the `log_group_names` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `query_string` (`string`): Set the `query_string` field on the resulting object.
+  - `log_group_names` (`list`):  When `null`, the `log_group_names` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `query_string` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_query_definition` resource into the root Terraform configuration.

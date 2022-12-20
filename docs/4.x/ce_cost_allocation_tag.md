@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `status` (`string`): Set the `status` field on the resulting resource block.
-  - `tag_key` (`string`): Set the `tag_key` field on the resulting resource block.
+  - `status` (`string`): 
+  - `tag_key` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object.
-  - `tag_key` (`string`): Set the `tag_key` field on the resulting object.
+  - `status` (`string`): 
+  - `tag_key` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ce_cost_allocation_tag` resource into the root Terraform configuration.

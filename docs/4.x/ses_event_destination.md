@@ -61,13 +61,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `configuration_set_name` (`string`): Set the `configuration_set_name` field on the resulting resource block.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `matching_types` (`list`): Set the `matching_types` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `cloudwatch_destination` (`list[obj]`): Set the `cloudwatch_destination` field on the resulting resource block. When `null`, the `cloudwatch_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.cloudwatch_destination.new](#fn-cloudwatch_destinationnew) constructor.
-  - `kinesis_destination` (`list[obj]`): Set the `kinesis_destination` field on the resulting resource block. When `null`, the `kinesis_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.kinesis_destination.new](#fn-kinesis_destinationnew) constructor.
-  - `sns_destination` (`list[obj]`): Set the `sns_destination` field on the resulting resource block. When `null`, the `sns_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.sns_destination.new](#fn-sns_destinationnew) constructor.
+  - `configuration_set_name` (`string`): 
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `matching_types` (`list`): 
+  - `name` (`string`): 
+  - `cloudwatch_destination` (`list[obj]`):  When `null`, the `cloudwatch_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.cloudwatch_destination.new](#fn-cloudwatch_destinationnew) constructor.
+  - `kinesis_destination` (`list[obj]`):  When `null`, the `kinesis_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.kinesis_destination.new](#fn-kinesis_destinationnew) constructor.
+  - `sns_destination` (`list[obj]`):  When `null`, the `sns_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.sns_destination.new](#fn-sns_destinationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,13 +91,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `configuration_set_name` (`string`): Set the `configuration_set_name` field on the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `matching_types` (`list`): Set the `matching_types` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `cloudwatch_destination` (`list[obj]`): Set the `cloudwatch_destination` field on the resulting object. When `null`, the `cloudwatch_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.cloudwatch_destination.new](#fn-cloudwatch_destinationnew) constructor.
-  - `kinesis_destination` (`list[obj]`): Set the `kinesis_destination` field on the resulting object. When `null`, the `kinesis_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.kinesis_destination.new](#fn-kinesis_destinationnew) constructor.
-  - `sns_destination` (`list[obj]`): Set the `sns_destination` field on the resulting object. When `null`, the `sns_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.sns_destination.new](#fn-sns_destinationnew) constructor.
+  - `configuration_set_name` (`string`): 
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `matching_types` (`list`): 
+  - `name` (`string`): 
+  - `cloudwatch_destination` (`list[obj]`):  When `null`, the `cloudwatch_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.cloudwatch_destination.new](#fn-cloudwatch_destinationnew) constructor.
+  - `kinesis_destination` (`list[obj]`):  When `null`, the `kinesis_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.kinesis_destination.new](#fn-kinesis_destinationnew) constructor.
+  - `sns_destination` (`list[obj]`):  When `null`, the `sns_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ses_event_destination.sns_destination.new](#fn-sns_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ses_event_destination` resource into the root Terraform configuration.
@@ -295,9 +295,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `default_value` (`string`): Set the `default_value` field on the resulting object.
-  - `dimension_name` (`string`): Set the `dimension_name` field on the resulting object.
-  - `value_source` (`string`): Set the `value_source` field on the resulting object.
+  - `default_value` (`string`): 
+  - `dimension_name` (`string`): 
+  - `value_source` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_destination` sub block.
@@ -320,8 +320,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `stream_arn` (`string`): Set the `stream_arn` field on the resulting object.
+  - `role_arn` (`string`): 
+  - `stream_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `kinesis_destination` sub block.
@@ -344,7 +344,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object.
+  - `topic_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `sns_destination` sub block.

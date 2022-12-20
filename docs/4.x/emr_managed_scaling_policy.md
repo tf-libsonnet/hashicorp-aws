@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting resource block.
-  - `compute_limits` (`list[obj]`): Set the `compute_limits` field on the resulting resource block. When `null`, the `compute_limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_managed_scaling_policy.compute_limits.new](#fn-compute_limitsnew) constructor.
+  - `cluster_id` (`string`): 
+  - `compute_limits` (`list[obj]`):  When `null`, the `compute_limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_managed_scaling_policy.compute_limits.new](#fn-compute_limitsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting object.
-  - `compute_limits` (`list[obj]`): Set the `compute_limits` field on the resulting object. When `null`, the `compute_limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_managed_scaling_policy.compute_limits.new](#fn-compute_limitsnew) constructor.
+  - `cluster_id` (`string`): 
+  - `compute_limits` (`list[obj]`):  When `null`, the `compute_limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emr_managed_scaling_policy.compute_limits.new](#fn-compute_limitsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `emr_managed_scaling_policy` resource into the root Terraform configuration.
@@ -152,11 +152,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `maximum_capacity_units` (`number`): Set the `maximum_capacity_units` field on the resulting object.
-  - `maximum_core_capacity_units` (`number`): Set the `maximum_core_capacity_units` field on the resulting object. When `null`, the `maximum_core_capacity_units` field will be omitted from the resulting object.
-  - `maximum_ondemand_capacity_units` (`number`): Set the `maximum_ondemand_capacity_units` field on the resulting object. When `null`, the `maximum_ondemand_capacity_units` field will be omitted from the resulting object.
-  - `minimum_capacity_units` (`number`): Set the `minimum_capacity_units` field on the resulting object.
-  - `unit_type` (`string`): Set the `unit_type` field on the resulting object.
+  - `maximum_capacity_units` (`number`): 
+  - `maximum_core_capacity_units` (`number`):  When `null`, the `maximum_core_capacity_units` field will be omitted from the resulting object.
+  - `maximum_ondemand_capacity_units` (`number`):  When `null`, the `maximum_ondemand_capacity_units` field will be omitted from the resulting object.
+  - `minimum_capacity_units` (`number`): 
+  - `unit_type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `compute_limits` sub block.

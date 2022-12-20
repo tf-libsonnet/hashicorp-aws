@@ -49,7 +49,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `secret` (`list[obj]`): Set the `secret` field on the resulting data source block. When `null`, the `secret` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.kms_secrets.secret.new](#fn-secretnew) constructor.
+  - `secret` (`list[obj]`):  When `null`, the `secret` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.kms_secrets.secret.new](#fn-secretnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -73,7 +73,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `secret` (`list[obj]`): Set the `secret` field on the resulting object. When `null`, the `secret` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.kms_secrets.secret.new](#fn-secretnew) constructor.
+  - `secret` (`list[obj]`):  When `null`, the `secret` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.kms_secrets.secret.new](#fn-secretnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `kms_secrets` data source into the root Terraform configuration.
@@ -133,10 +133,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `context` (`obj`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.
-  - `grant_tokens` (`list`): Set the `grant_tokens` field on the resulting object. When `null`, the `grant_tokens` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `payload` (`string`): Set the `payload` field on the resulting object.
+  - `context` (`obj`):  When `null`, the `context` field will be omitted from the resulting object.
+  - `grant_tokens` (`list`):  When `null`, the `grant_tokens` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `payload` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `secret` sub block.

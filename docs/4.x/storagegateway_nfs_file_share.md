@@ -76,28 +76,28 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `audit_destination_arn` (`string`): Set the `audit_destination_arn` field on the resulting resource block. When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
-  - `bucket_region` (`string`): Set the `bucket_region` field on the resulting resource block. When `null`, the `bucket_region` field will be omitted from the resulting object.
-  - `client_list` (`list`): Set the `client_list` field on the resulting resource block.
-  - `default_storage_class` (`string`): Set the `default_storage_class` field on the resulting resource block. When `null`, the `default_storage_class` field will be omitted from the resulting object.
-  - `file_share_name` (`string`): Set the `file_share_name` field on the resulting resource block. When `null`, the `file_share_name` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting resource block.
-  - `guess_mime_type_enabled` (`bool`): Set the `guess_mime_type_enabled` field on the resulting resource block. When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
-  - `kms_encrypted` (`bool`): Set the `kms_encrypted` field on the resulting resource block. When `null`, the `kms_encrypted` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `location_arn` (`string`): Set the `location_arn` field on the resulting resource block.
-  - `notification_policy` (`string`): Set the `notification_policy` field on the resulting resource block. When `null`, the `notification_policy` field will be omitted from the resulting object.
-  - `object_acl` (`string`): Set the `object_acl` field on the resulting resource block. When `null`, the `object_acl` field will be omitted from the resulting object.
-  - `read_only` (`bool`): Set the `read_only` field on the resulting resource block. When `null`, the `read_only` field will be omitted from the resulting object.
-  - `requester_pays` (`bool`): Set the `requester_pays` field on the resulting resource block. When `null`, the `requester_pays` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
-  - `squash` (`string`): Set the `squash` field on the resulting resource block. When `null`, the `squash` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_endpoint_dns_name` (`string`): Set the `vpc_endpoint_dns_name` field on the resulting resource block. When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
-  - `cache_attributes` (`list[obj]`): Set the `cache_attributes` field on the resulting resource block. When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
-  - `nfs_file_share_defaults` (`list[obj]`): Set the `nfs_file_share_defaults` field on the resulting resource block. When `null`, the `nfs_file_share_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.nfs_file_share_defaults.new](#fn-nfs_file_share_defaultsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.timeouts.new](#fn-timeoutsnew) constructor.
+  - `audit_destination_arn` (`string`):  When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
+  - `bucket_region` (`string`):  When `null`, the `bucket_region` field will be omitted from the resulting object.
+  - `client_list` (`list`): 
+  - `default_storage_class` (`string`):  When `null`, the `default_storage_class` field will be omitted from the resulting object.
+  - `file_share_name` (`string`):  When `null`, the `file_share_name` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): 
+  - `guess_mime_type_enabled` (`bool`):  When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
+  - `kms_encrypted` (`bool`):  When `null`, the `kms_encrypted` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `location_arn` (`string`): 
+  - `notification_policy` (`string`):  When `null`, the `notification_policy` field will be omitted from the resulting object.
+  - `object_acl` (`string`):  When `null`, the `object_acl` field will be omitted from the resulting object.
+  - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
+  - `requester_pays` (`bool`):  When `null`, the `requester_pays` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `squash` (`string`):  When `null`, the `squash` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_endpoint_dns_name` (`string`):  When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `nfs_file_share_defaults` (`list[obj]`):  When `null`, the `nfs_file_share_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.nfs_file_share_defaults.new](#fn-nfs_file_share_defaultsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -121,28 +121,28 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `audit_destination_arn` (`string`): Set the `audit_destination_arn` field on the resulting object. When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
-  - `bucket_region` (`string`): Set the `bucket_region` field on the resulting object. When `null`, the `bucket_region` field will be omitted from the resulting object.
-  - `client_list` (`list`): Set the `client_list` field on the resulting object.
-  - `default_storage_class` (`string`): Set the `default_storage_class` field on the resulting object. When `null`, the `default_storage_class` field will be omitted from the resulting object.
-  - `file_share_name` (`string`): Set the `file_share_name` field on the resulting object. When `null`, the `file_share_name` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting object.
-  - `guess_mime_type_enabled` (`bool`): Set the `guess_mime_type_enabled` field on the resulting object. When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
-  - `kms_encrypted` (`bool`): Set the `kms_encrypted` field on the resulting object. When `null`, the `kms_encrypted` field will be omitted from the resulting object.
-  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
-  - `location_arn` (`string`): Set the `location_arn` field on the resulting object.
-  - `notification_policy` (`string`): Set the `notification_policy` field on the resulting object. When `null`, the `notification_policy` field will be omitted from the resulting object.
-  - `object_acl` (`string`): Set the `object_acl` field on the resulting object. When `null`, the `object_acl` field will be omitted from the resulting object.
-  - `read_only` (`bool`): Set the `read_only` field on the resulting object. When `null`, the `read_only` field will be omitted from the resulting object.
-  - `requester_pays` (`bool`): Set the `requester_pays` field on the resulting object. When `null`, the `requester_pays` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `squash` (`string`): Set the `squash` field on the resulting object. When `null`, the `squash` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_endpoint_dns_name` (`string`): Set the `vpc_endpoint_dns_name` field on the resulting object. When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
-  - `cache_attributes` (`list[obj]`): Set the `cache_attributes` field on the resulting object. When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
-  - `nfs_file_share_defaults` (`list[obj]`): Set the `nfs_file_share_defaults` field on the resulting object. When `null`, the `nfs_file_share_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.nfs_file_share_defaults.new](#fn-nfs_file_share_defaultsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.timeouts.new](#fn-timeoutsnew) constructor.
+  - `audit_destination_arn` (`string`):  When `null`, the `audit_destination_arn` field will be omitted from the resulting object.
+  - `bucket_region` (`string`):  When `null`, the `bucket_region` field will be omitted from the resulting object.
+  - `client_list` (`list`): 
+  - `default_storage_class` (`string`):  When `null`, the `default_storage_class` field will be omitted from the resulting object.
+  - `file_share_name` (`string`):  When `null`, the `file_share_name` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): 
+  - `guess_mime_type_enabled` (`bool`):  When `null`, the `guess_mime_type_enabled` field will be omitted from the resulting object.
+  - `kms_encrypted` (`bool`):  When `null`, the `kms_encrypted` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`):  When `null`, the `kms_key_arn` field will be omitted from the resulting object.
+  - `location_arn` (`string`): 
+  - `notification_policy` (`string`):  When `null`, the `notification_policy` field will be omitted from the resulting object.
+  - `object_acl` (`string`):  When `null`, the `object_acl` field will be omitted from the resulting object.
+  - `read_only` (`bool`):  When `null`, the `read_only` field will be omitted from the resulting object.
+  - `requester_pays` (`bool`):  When `null`, the `requester_pays` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `squash` (`string`):  When `null`, the `squash` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_endpoint_dns_name` (`string`):  When `null`, the `vpc_endpoint_dns_name` field will be omitted from the resulting object.
+  - `cache_attributes` (`list[obj]`):  When `null`, the `cache_attributes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.cache_attributes.new](#fn-cache_attributesnew) constructor.
+  - `nfs_file_share_defaults` (`list[obj]`):  When `null`, the `nfs_file_share_defaults` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.nfs_file_share_defaults.new](#fn-nfs_file_share_defaultsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.storagegateway_nfs_file_share.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_nfs_file_share` resource into the root Terraform configuration.
@@ -579,7 +579,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cache_stale_timeout_in_seconds` (`number`): Set the `cache_stale_timeout_in_seconds` field on the resulting object. When `null`, the `cache_stale_timeout_in_seconds` field will be omitted from the resulting object.
+  - `cache_stale_timeout_in_seconds` (`number`):  When `null`, the `cache_stale_timeout_in_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cache_attributes` sub block.
@@ -602,10 +602,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `directory_mode` (`string`): Set the `directory_mode` field on the resulting object. When `null`, the `directory_mode` field will be omitted from the resulting object.
-  - `file_mode` (`string`): Set the `file_mode` field on the resulting object. When `null`, the `file_mode` field will be omitted from the resulting object.
-  - `group_id` (`string`): Set the `group_id` field on the resulting object. When `null`, the `group_id` field will be omitted from the resulting object.
-  - `owner_id` (`string`): Set the `owner_id` field on the resulting object. When `null`, the `owner_id` field will be omitted from the resulting object.
+  - `directory_mode` (`string`):  When `null`, the `directory_mode` field will be omitted from the resulting object.
+  - `file_mode` (`string`):  When `null`, the `file_mode` field will be omitted from the resulting object.
+  - `group_id` (`string`):  When `null`, the `group_id` field will be omitted from the resulting object.
+  - `owner_id` (`string`):  When `null`, the `owner_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `nfs_file_share_defaults` sub block.
@@ -628,9 +628,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

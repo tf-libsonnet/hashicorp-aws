@@ -64,12 +64,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `client_authentication` (`list[obj]`): Set the `client_authentication` field on the resulting resource block. When `null`, the `client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.new](#fn-client_authenticationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting resource block. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `cluster_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `client_authentication` (`list[obj]`):  When `null`, the `client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.new](#fn-client_authenticationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,12 +93,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `client_authentication` (`list[obj]`): Set the `client_authentication` field on the resulting object. When `null`, the `client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.new](#fn-client_authenticationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `cluster_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `client_authentication` (`list[obj]`):  When `null`, the `client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.new](#fn-client_authenticationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `msk_serverless_cluster` resource into the root Terraform configuration.
@@ -279,7 +279,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `sasl` (`list[obj]`): Set the `sasl` field on the resulting object. When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.new](#fn-client_authenticationsaslnew) constructor.
+  - `sasl` (`list[obj]`):  When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.new](#fn-client_authenticationsaslnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `client_authentication` sub block.
@@ -302,7 +302,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `iam` (`list[obj]`): Set the `iam` field on the resulting object. When `null`, the `iam` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.iam.new](#fn-client_authenticationclient_authenticationiamnew) constructor.
+  - `iam` (`list[obj]`):  When `null`, the `iam` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_serverless_cluster.client_authentication.sasl.iam.new](#fn-client_authenticationclient_authenticationiamnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `sasl` sub block.
@@ -325,7 +325,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `enabled` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `iam` sub block.
@@ -348,8 +348,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -372,8 +372,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `vpc_config` sub block.

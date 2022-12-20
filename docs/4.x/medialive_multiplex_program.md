@@ -59,9 +59,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `multiplex_id` (`string`): Set the `multiplex_id` field on the resulting resource block.
-  - `program_name` (`string`): Set the `program_name` field on the resulting resource block.
-  - `multiplex_program_settings` (`list[obj]`): Set the `multiplex_program_settings` field on the resulting resource block. When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-multiplex_program_settingsnew) constructor.
+  - `multiplex_id` (`string`): 
+  - `program_name` (`string`): 
+  - `multiplex_program_settings` (`list[obj]`):  When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-multiplex_program_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,9 +85,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `multiplex_id` (`string`): Set the `multiplex_id` field on the resulting object.
-  - `program_name` (`string`): Set the `program_name` field on the resulting object.
-  - `multiplex_program_settings` (`list[obj]`): Set the `multiplex_program_settings` field on the resulting object. When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-multiplex_program_settingsnew) constructor.
+  - `multiplex_id` (`string`): 
+  - `program_name` (`string`): 
+  - `multiplex_program_settings` (`list[obj]`):  When `null`, the `multiplex_program_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.new](#fn-multiplex_program_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `medialive_multiplex_program` resource into the root Terraform configuration.
@@ -179,10 +179,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `preferred_channel_pipeline` (`string`): Set the `preferred_channel_pipeline` field on the resulting object.
-  - `program_number` (`number`): Set the `program_number` field on the resulting object.
-  - `service_descriptor` (`list[obj]`): Set the `service_descriptor` field on the resulting object. When `null`, the `service_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.service_descriptor.new](#fn-multiplex_program_settingsservice_descriptornew) constructor.
-  - `video_settings` (`list[obj]`): Set the `video_settings` field on the resulting object. When `null`, the `video_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new](#fn-multiplex_program_settingsvideo_settingsnew) constructor.
+  - `preferred_channel_pipeline` (`string`): 
+  - `program_number` (`number`): 
+  - `service_descriptor` (`list[obj]`):  When `null`, the `service_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.service_descriptor.new](#fn-multiplex_program_settingsservice_descriptornew) constructor.
+  - `video_settings` (`list[obj]`):  When `null`, the `video_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new](#fn-multiplex_program_settingsvideo_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `multiplex_program_settings` sub block.
@@ -205,8 +205,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `provider_name` (`string`): Set the `provider_name` field on the resulting object.
-  - `service_name` (`string`): Set the `service_name` field on the resulting object.
+  - `provider_name` (`string`): 
+  - `service_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `service_descriptor` sub block.
@@ -229,9 +229,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `constant_bitrate` (`number`): Set the `constant_bitrate` field on the resulting object. When `null`, the `constant_bitrate` field will be omitted from the resulting object.
-  - `statemux_settings` (`list[obj]`): Set the `statemux_settings` field on the resulting object. When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatemux_settingsnew) constructor.
-  - `statmux_settings` (`list[obj]`): Set the `statmux_settings` field on the resulting object. When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatmux_settingsnew) constructor.
+  - `constant_bitrate` (`number`):  When `null`, the `constant_bitrate` field will be omitted from the resulting object.
+  - `statemux_settings` (`list[obj]`):  When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatemux_settingsnew) constructor.
+  - `statmux_settings` (`list[obj]`):  When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatmux_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `video_settings` sub block.
@@ -254,9 +254,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `maximum_bitrate` (`number`): Set the `maximum_bitrate` field on the resulting object. When `null`, the `maximum_bitrate` field will be omitted from the resulting object.
-  - `minimum_bitrate` (`number`): Set the `minimum_bitrate` field on the resulting object. When `null`, the `minimum_bitrate` field will be omitted from the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.
+  - `maximum_bitrate` (`number`):  When `null`, the `maximum_bitrate` field will be omitted from the resulting object.
+  - `minimum_bitrate` (`number`):  When `null`, the `minimum_bitrate` field will be omitted from the resulting object.
+  - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `statemux_settings` sub block.
@@ -279,9 +279,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `maximum_bitrate` (`number`): Set the `maximum_bitrate` field on the resulting object. When `null`, the `maximum_bitrate` field will be omitted from the resulting object.
-  - `minimum_bitrate` (`number`): Set the `minimum_bitrate` field on the resulting object. When `null`, the `minimum_bitrate` field will be omitted from the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.
+  - `maximum_bitrate` (`number`):  When `null`, the `maximum_bitrate` field will be omitted from the resulting object.
+  - `minimum_bitrate` (`number`):  When `null`, the `minimum_bitrate` field will be omitted from the resulting object.
+  - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `statmux_settings` sub block.

@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `aws_region` (`string`): Set the `aws_region` field on the resulting resource block. When `null`, the `aws_region` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `require_encryption` (`bool`): Set the `require_encryption` field on the resulting resource block.
+  - `aws_region` (`string`):  When `null`, the `aws_region` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `require_encryption` (`bool`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `aws_region` (`string`): Set the `aws_region` field on the resulting object. When `null`, the `aws_region` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `require_encryption` (`bool`): Set the `require_encryption` field on the resulting object.
+  - `aws_region` (`string`):  When `null`, the `aws_region` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `require_encryption` (`bool`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `chime_voice_connector` resource into the root Terraform configuration.

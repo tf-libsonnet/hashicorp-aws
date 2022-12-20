@@ -63,12 +63,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `multi_az` (`bool`): Set the `multi_az` field on the resulting resource block. When `null`, the `multi_az` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `endpoint_options` (`list[obj]`): Set the `endpoint_options` field on the resulting resource block. When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-endpoint_optionsnew) constructor.
-  - `index_field` (`list[obj]`): Set the `index_field` field on the resulting resource block. When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-index_fieldnew) constructor.
-  - `scaling_parameters` (`list[obj]`): Set the `scaling_parameters` field on the resulting resource block. When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-scaling_parametersnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
+  - `multi_az` (`bool`):  When `null`, the `multi_az` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `endpoint_options` (`list[obj]`):  When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-endpoint_optionsnew) constructor.
+  - `index_field` (`list[obj]`):  When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-index_fieldnew) constructor.
+  - `scaling_parameters` (`list[obj]`):  When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-scaling_parametersnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -92,12 +92,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `multi_az` (`bool`): Set the `multi_az` field on the resulting object. When `null`, the `multi_az` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `endpoint_options` (`list[obj]`): Set the `endpoint_options` field on the resulting object. When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-endpoint_optionsnew) constructor.
-  - `index_field` (`list[obj]`): Set the `index_field` field on the resulting object. When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-index_fieldnew) constructor.
-  - `scaling_parameters` (`list[obj]`): Set the `scaling_parameters` field on the resulting object. When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-scaling_parametersnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
+  - `multi_az` (`bool`):  When `null`, the `multi_az` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `endpoint_options` (`list[obj]`):  When `null`, the `endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.endpoint_options.new](#fn-endpoint_optionsnew) constructor.
+  - `index_field` (`list[obj]`):  When `null`, the `index_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.index_field.new](#fn-index_fieldnew) constructor.
+  - `scaling_parameters` (`list[obj]`):  When `null`, the `scaling_parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.scaling_parameters.new](#fn-scaling_parametersnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudsearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudsearch_domain` resource into the root Terraform configuration.
@@ -299,8 +299,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enforce_https` (`bool`): Set the `enforce_https` field on the resulting object. When `null`, the `enforce_https` field will be omitted from the resulting object.
-  - `tls_security_policy` (`string`): Set the `tls_security_policy` field on the resulting object. When `null`, the `tls_security_policy` field will be omitted from the resulting object.
+  - `enforce_https` (`bool`):  When `null`, the `enforce_https` field will be omitted from the resulting object.
+  - `tls_security_policy` (`string`):  When `null`, the `tls_security_policy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `endpoint_options` sub block.
@@ -323,16 +323,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `analysis_scheme` (`string`): Set the `analysis_scheme` field on the resulting object. When `null`, the `analysis_scheme` field will be omitted from the resulting object.
-  - `default_value` (`string`): Set the `default_value` field on the resulting object. When `null`, the `default_value` field will be omitted from the resulting object.
-  - `facet` (`bool`): Set the `facet` field on the resulting object. When `null`, the `facet` field will be omitted from the resulting object.
-  - `highlight` (`bool`): Set the `highlight` field on the resulting object. When `null`, the `highlight` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `return` (`bool`): Set the `return` field on the resulting object. When `null`, the `return` field will be omitted from the resulting object.
-  - `search` (`bool`): Set the `search` field on the resulting object. When `null`, the `search` field will be omitted from the resulting object.
-  - `sort` (`bool`): Set the `sort` field on the resulting object. When `null`, the `sort` field will be omitted from the resulting object.
-  - `source_fields` (`string`): Set the `source_fields` field on the resulting object. When `null`, the `source_fields` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `analysis_scheme` (`string`):  When `null`, the `analysis_scheme` field will be omitted from the resulting object.
+  - `default_value` (`string`):  When `null`, the `default_value` field will be omitted from the resulting object.
+  - `facet` (`bool`):  When `null`, the `facet` field will be omitted from the resulting object.
+  - `highlight` (`bool`):  When `null`, the `highlight` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `return` (`bool`):  When `null`, the `return` field will be omitted from the resulting object.
+  - `search` (`bool`):  When `null`, the `search` field will be omitted from the resulting object.
+  - `sort` (`bool`):  When `null`, the `sort` field will be omitted from the resulting object.
+  - `source_fields` (`string`):  When `null`, the `source_fields` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `index_field` sub block.
@@ -355,9 +355,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `desired_instance_type` (`string`): Set the `desired_instance_type` field on the resulting object. When `null`, the `desired_instance_type` field will be omitted from the resulting object.
-  - `desired_partition_count` (`number`): Set the `desired_partition_count` field on the resulting object. When `null`, the `desired_partition_count` field will be omitted from the resulting object.
-  - `desired_replication_count` (`number`): Set the `desired_replication_count` field on the resulting object. When `null`, the `desired_replication_count` field will be omitted from the resulting object.
+  - `desired_instance_type` (`string`):  When `null`, the `desired_instance_type` field will be omitted from the resulting object.
+  - `desired_partition_count` (`number`):  When `null`, the `desired_partition_count` field will be omitted from the resulting object.
+  - `desired_replication_count` (`number`):  When `null`, the `desired_replication_count` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scaling_parameters` sub block.
@@ -380,9 +380,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

@@ -59,17 +59,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `accept_language` (`string`): Set the `accept_language` field on the resulting resource block. When `null`, the `accept_language` field will be omitted from the resulting object.
-  - `active` (`bool`): Set the `active` field on the resulting resource block. When `null`, the `active` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `disable_template_validation` (`bool`): Set the `disable_template_validation` field on the resulting resource block. When `null`, the `disable_template_validation` field will be omitted from the resulting object.
-  - `guidance` (`string`): Set the `guidance` field on the resulting resource block. When `null`, the `guidance` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `product_id` (`string`): Set the `product_id` field on the resulting resource block.
-  - `template_physical_id` (`string`): Set the `template_physical_id` field on the resulting resource block. When `null`, the `template_physical_id` field will be omitted from the resulting object.
-  - `template_url` (`string`): Set the `template_url` field on the resulting resource block. When `null`, the `template_url` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-timeoutsnew) constructor.
+  - `accept_language` (`string`):  When `null`, the `accept_language` field will be omitted from the resulting object.
+  - `active` (`bool`):  When `null`, the `active` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `disable_template_validation` (`bool`):  When `null`, the `disable_template_validation` field will be omitted from the resulting object.
+  - `guidance` (`string`):  When `null`, the `guidance` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `product_id` (`string`): 
+  - `template_physical_id` (`string`):  When `null`, the `template_physical_id` field will be omitted from the resulting object.
+  - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,17 +93,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `accept_language` (`string`): Set the `accept_language` field on the resulting object. When `null`, the `accept_language` field will be omitted from the resulting object.
-  - `active` (`bool`): Set the `active` field on the resulting object. When `null`, the `active` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `disable_template_validation` (`bool`): Set the `disable_template_validation` field on the resulting object. When `null`, the `disable_template_validation` field will be omitted from the resulting object.
-  - `guidance` (`string`): Set the `guidance` field on the resulting object. When `null`, the `guidance` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `product_id` (`string`): Set the `product_id` field on the resulting object.
-  - `template_physical_id` (`string`): Set the `template_physical_id` field on the resulting object. When `null`, the `template_physical_id` field will be omitted from the resulting object.
-  - `template_url` (`string`): Set the `template_url` field on the resulting object. When `null`, the `template_url` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-timeoutsnew) constructor.
+  - `accept_language` (`string`):  When `null`, the `accept_language` field will be omitted from the resulting object.
+  - `active` (`bool`):  When `null`, the `active` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `disable_template_validation` (`bool`):  When `null`, the `disable_template_validation` field will be omitted from the resulting object.
+  - `guidance` (`string`):  When `null`, the `guidance` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `product_id` (`string`): 
+  - `template_physical_id` (`string`):  When `null`, the `template_physical_id` field will be omitted from the resulting object.
+  - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.servicecatalog_provisioning_artifact.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `servicecatalog_provisioning_artifact` resource into the root Terraform configuration.
@@ -322,10 +322,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

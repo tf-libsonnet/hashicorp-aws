@@ -53,14 +53,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `destination` (`string`): Set the `destination` field on the resulting resource block.
-  - `destination_ip` (`string`): Set the `destination_ip` field on the resulting resource block. When `null`, the `destination_ip` field will be omitted from the resulting object.
-  - `destination_port` (`number`): Set the `destination_port` field on the resulting resource block. When `null`, the `destination_port` field will be omitted from the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting resource block.
-  - `source` (`string`): Set the `source` field on the resulting resource block.
-  - `source_ip` (`string`): Set the `source_ip` field on the resulting resource block. When `null`, the `source_ip` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `destination` (`string`): 
+  - `destination_ip` (`string`):  When `null`, the `destination_ip` field will be omitted from the resulting object.
+  - `destination_port` (`number`):  When `null`, the `destination_port` field will be omitted from the resulting object.
+  - `protocol` (`string`): 
+  - `source` (`string`): 
+  - `source_ip` (`string`):  When `null`, the `source_ip` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,14 +84,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `destination` (`string`): Set the `destination` field on the resulting object.
-  - `destination_ip` (`string`): Set the `destination_ip` field on the resulting object. When `null`, the `destination_ip` field will be omitted from the resulting object.
-  - `destination_port` (`number`): Set the `destination_port` field on the resulting object. When `null`, the `destination_port` field will be omitted from the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting object.
-  - `source` (`string`): Set the `source` field on the resulting object.
-  - `source_ip` (`string`): Set the `source_ip` field on the resulting object. When `null`, the `source_ip` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `destination` (`string`): 
+  - `destination_ip` (`string`):  When `null`, the `destination_ip` field will be omitted from the resulting object.
+  - `destination_port` (`number`):  When `null`, the `destination_port` field will be omitted from the resulting object.
+  - `protocol` (`string`): 
+  - `source` (`string`): 
+  - `source_ip` (`string`):  When `null`, the `source_ip` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_network_insights_path` resource into the root Terraform configuration.

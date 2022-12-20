@@ -52,13 +52,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authorizer_function_arn` (`string`): Set the `authorizer_function_arn` field on the resulting resource block.
-  - `enable_caching_for_http` (`bool`): Set the `enable_caching_for_http` field on the resulting resource block. When `null`, the `enable_caching_for_http` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `signing_disabled` (`bool`): Set the `signing_disabled` field on the resulting resource block. When `null`, the `signing_disabled` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting resource block. When `null`, the `status` field will be omitted from the resulting object.
-  - `token_key_name` (`string`): Set the `token_key_name` field on the resulting resource block. When `null`, the `token_key_name` field will be omitted from the resulting object.
-  - `token_signing_public_keys` (`obj`): Set the `token_signing_public_keys` field on the resulting resource block. When `null`, the `token_signing_public_keys` field will be omitted from the resulting object.
+  - `authorizer_function_arn` (`string`): 
+  - `enable_caching_for_http` (`bool`):  When `null`, the `enable_caching_for_http` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `signing_disabled` (`bool`):  When `null`, the `signing_disabled` field will be omitted from the resulting object.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `token_key_name` (`string`):  When `null`, the `token_key_name` field will be omitted from the resulting object.
+  - `token_signing_public_keys` (`obj`):  When `null`, the `token_signing_public_keys` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,13 +82,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authorizer_function_arn` (`string`): Set the `authorizer_function_arn` field on the resulting object.
-  - `enable_caching_for_http` (`bool`): Set the `enable_caching_for_http` field on the resulting object. When `null`, the `enable_caching_for_http` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `signing_disabled` (`bool`): Set the `signing_disabled` field on the resulting object. When `null`, the `signing_disabled` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
-  - `token_key_name` (`string`): Set the `token_key_name` field on the resulting object. When `null`, the `token_key_name` field will be omitted from the resulting object.
-  - `token_signing_public_keys` (`obj`): Set the `token_signing_public_keys` field on the resulting object. When `null`, the `token_signing_public_keys` field will be omitted from the resulting object.
+  - `authorizer_function_arn` (`string`): 
+  - `enable_caching_for_http` (`bool`):  When `null`, the `enable_caching_for_http` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `signing_disabled` (`bool`):  When `null`, the `signing_disabled` field will be omitted from the resulting object.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `token_key_name` (`string`):  When `null`, the `token_key_name` field will be omitted from the resulting object.
+  - `token_signing_public_keys` (`obj`):  When `null`, the `token_signing_public_keys` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_authorizer` resource into the root Terraform configuration.

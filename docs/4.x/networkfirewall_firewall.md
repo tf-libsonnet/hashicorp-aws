@@ -62,17 +62,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `delete_protection` (`bool`): Set the `delete_protection` field on the resulting resource block. When `null`, the `delete_protection` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `firewall_policy_arn` (`string`): Set the `firewall_policy_arn` field on the resulting resource block.
-  - `firewall_policy_change_protection` (`bool`): Set the `firewall_policy_change_protection` field on the resulting resource block. When `null`, the `firewall_policy_change_protection` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `subnet_change_protection` (`bool`): Set the `subnet_change_protection` field on the resulting resource block. When `null`, the `subnet_change_protection` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
-  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting resource block. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
-  - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting resource block. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
+  - `delete_protection` (`bool`):  When `null`, the `delete_protection` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `firewall_policy_arn` (`string`): 
+  - `firewall_policy_change_protection` (`bool`):  When `null`, the `firewall_policy_change_protection` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `subnet_change_protection` (`bool`):  When `null`, the `subnet_change_protection` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): 
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,17 +96,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `delete_protection` (`bool`): Set the `delete_protection` field on the resulting object. When `null`, the `delete_protection` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `firewall_policy_arn` (`string`): Set the `firewall_policy_arn` field on the resulting object.
-  - `firewall_policy_change_protection` (`bool`): Set the `firewall_policy_change_protection` field on the resulting object. When `null`, the `firewall_policy_change_protection` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `subnet_change_protection` (`bool`): Set the `subnet_change_protection` field on the resulting object. When `null`, the `subnet_change_protection` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
-  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting object. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
-  - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting object. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
+  - `delete_protection` (`bool`):  When `null`, the `delete_protection` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `firewall_policy_arn` (`string`): 
+  - `firewall_policy_change_protection` (`bool`):  When `null`, the `firewall_policy_change_protection` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `subnet_change_protection` (`bool`):  When `null`, the `subnet_change_protection` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): 
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkfirewall_firewall` resource into the root Terraform configuration.
@@ -347,8 +347,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key_id` (`string`): Set the `key_id` field on the resulting object. When `null`, the `key_id` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `key_id` (`string`):  When `null`, the `key_id` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.
@@ -371,7 +371,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
+  - `subnet_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `subnet_mapping` sub block.

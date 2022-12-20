@@ -61,12 +61,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `index_id` (`string`): Set the `index_id` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
-  - `configuration` (`list[obj]`): Set the `configuration` field on the resulting resource block. When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.new](#fn-configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `index_id` (`string`): 
+  - `name` (`string`): 
+  - `role_arn` (`string`): 
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.new](#fn-configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,12 +90,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `index_id` (`string`): Set the `index_id` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `configuration` (`list[obj]`): Set the `configuration` field on the resulting object. When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.new](#fn-configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `index_id` (`string`): 
+  - `name` (`string`): 
+  - `role_arn` (`string`): 
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.new](#fn-configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kendra_experience` resource into the root Terraform configuration.
@@ -255,8 +255,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `content_source_configuration` (`list[obj]`): Set the `content_source_configuration` field on the resulting object. When `null`, the `content_source_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.content_source_configuration.new](#fn-configurationcontent_source_configurationnew) constructor.
-  - `user_identity_configuration` (`list[obj]`): Set the `user_identity_configuration` field on the resulting object. When `null`, the `user_identity_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.user_identity_configuration.new](#fn-configurationuser_identity_configurationnew) constructor.
+  - `content_source_configuration` (`list[obj]`):  When `null`, the `content_source_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.content_source_configuration.new](#fn-configurationcontent_source_configurationnew) constructor.
+  - `user_identity_configuration` (`list[obj]`):  When `null`, the `user_identity_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kendra_experience.configuration.user_identity_configuration.new](#fn-configurationuser_identity_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -279,9 +279,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_source_ids` (`list`): Set the `data_source_ids` field on the resulting object. When `null`, the `data_source_ids` field will be omitted from the resulting object.
-  - `direct_put_content` (`bool`): Set the `direct_put_content` field on the resulting object. When `null`, the `direct_put_content` field will be omitted from the resulting object.
-  - `faq_ids` (`list`): Set the `faq_ids` field on the resulting object. When `null`, the `faq_ids` field will be omitted from the resulting object.
+  - `data_source_ids` (`list`):  When `null`, the `data_source_ids` field will be omitted from the resulting object.
+  - `direct_put_content` (`bool`):  When `null`, the `direct_put_content` field will be omitted from the resulting object.
+  - `faq_ids` (`list`):  When `null`, the `faq_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `content_source_configuration` sub block.
@@ -304,7 +304,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `identity_attribute_name` (`string`): Set the `identity_attribute_name` field on the resulting object.
+  - `identity_attribute_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `user_identity_configuration` sub block.
@@ -327,9 +327,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

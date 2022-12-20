@@ -82,10 +82,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `role` (`string`): Set the `role` field on the resulting resource block.
-  - `token` (`string`): Set the `token` field on the resulting resource block. When `null`, the `token` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting resource block. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `role` (`string`): 
+  - `token` (`string`):  When `null`, the `token` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -109,10 +109,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `role` (`string`): Set the `role` field on the resulting object.
-  - `token` (`string`): Set the `token` field on the resulting object. When `null`, the `token` field will be omitted from the resulting object.
-  - `rule` (`list[obj]`): Set the `rule` field on the resulting object. When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.new](#fn-rulenew) constructor.
+  - `bucket` (`string`): 
+  - `role` (`string`): 
+  - `token` (`string`):  When `null`, the `token` field will be omitted from the resulting object.
+  - `rule` (`list[obj]`):  When `null`, the `rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.new](#fn-rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_replication_configuration` resource into the root Terraform configuration.
@@ -220,14 +220,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object.
-  - `delete_marker_replication` (`list[obj]`): Set the `delete_marker_replication` field on the resulting object. When `null`, the `delete_marker_replication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.delete_marker_replication.new](#fn-ruledelete_marker_replicationnew) constructor.
-  - `destination` (`list[obj]`): Set the `destination` field on the resulting object. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.new](#fn-ruledestinationnew) constructor.
-  - `existing_object_replication` (`list[obj]`): Set the `existing_object_replication` field on the resulting object. When `null`, the `existing_object_replication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.existing_object_replication.new](#fn-ruleexisting_object_replicationnew) constructor.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.filter.new](#fn-rulefilternew) constructor.
-  - `source_selection_criteria` (`list[obj]`): Set the `source_selection_criteria` field on the resulting object. When `null`, the `source_selection_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.source_selection_criteria.new](#fn-rulesource_selection_criterianew) constructor.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `priority` (`number`):  When `null`, the `priority` field will be omitted from the resulting object.
+  - `status` (`string`): 
+  - `delete_marker_replication` (`list[obj]`):  When `null`, the `delete_marker_replication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.delete_marker_replication.new](#fn-ruledelete_marker_replicationnew) constructor.
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.new](#fn-ruledestinationnew) constructor.
+  - `existing_object_replication` (`list[obj]`):  When `null`, the `existing_object_replication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.existing_object_replication.new](#fn-ruleexisting_object_replicationnew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.filter.new](#fn-rulefilternew) constructor.
+  - `source_selection_criteria` (`list[obj]`):  When `null`, the `source_selection_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.source_selection_criteria.new](#fn-rulesource_selection_criterianew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule` sub block.
@@ -250,7 +250,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object.
+  - `status` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `delete_marker_replication` sub block.
@@ -273,13 +273,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `account` (`string`): Set the `account` field on the resulting object. When `null`, the `account` field will be omitted from the resulting object.
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `storage_class` (`string`): Set the `storage_class` field on the resulting object. When `null`, the `storage_class` field will be omitted from the resulting object.
-  - `access_control_translation` (`list[obj]`): Set the `access_control_translation` field on the resulting object. When `null`, the `access_control_translation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.access_control_translation.new](#fn-ruleruleaccess_control_translationnew) constructor.
-  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting object. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.encryption_configuration.new](#fn-ruleruleencryption_configurationnew) constructor.
-  - `metrics` (`list[obj]`): Set the `metrics` field on the resulting object. When `null`, the `metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.metrics.new](#fn-rulerulemetricsnew) constructor.
-  - `replication_time` (`list[obj]`): Set the `replication_time` field on the resulting object. When `null`, the `replication_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.replication_time.new](#fn-rulerulereplication_timenew) constructor.
+  - `account` (`string`):  When `null`, the `account` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `storage_class` (`string`):  When `null`, the `storage_class` field will be omitted from the resulting object.
+  - `access_control_translation` (`list[obj]`):  When `null`, the `access_control_translation` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.access_control_translation.new](#fn-ruleruleaccess_control_translationnew) constructor.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.encryption_configuration.new](#fn-ruleruleencryption_configurationnew) constructor.
+  - `metrics` (`list[obj]`):  When `null`, the `metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.metrics.new](#fn-rulerulemetricsnew) constructor.
+  - `replication_time` (`list[obj]`):  When `null`, the `replication_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.replication_time.new](#fn-rulerulereplication_timenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.
@@ -302,7 +302,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `owner` (`string`): Set the `owner` field on the resulting object.
+  - `owner` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `access_control_translation` sub block.
@@ -325,7 +325,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `replica_kms_key_id` (`string`): Set the `replica_kms_key_id` field on the resulting object.
+  - `replica_kms_key_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.
@@ -348,8 +348,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object.
-  - `event_threshold` (`list[obj]`): Set the `event_threshold` field on the resulting object. When `null`, the `event_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.metrics.event_threshold.new](#fn-ruleruledestinationevent_thresholdnew) constructor.
+  - `status` (`string`): 
+  - `event_threshold` (`list[obj]`):  When `null`, the `event_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.metrics.event_threshold.new](#fn-ruleruledestinationevent_thresholdnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metrics` sub block.
@@ -372,7 +372,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `minutes` (`number`): Set the `minutes` field on the resulting object.
+  - `minutes` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `event_threshold` sub block.
@@ -395,8 +395,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object.
-  - `time` (`list[obj]`): Set the `time` field on the resulting object. When `null`, the `time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.replication_time.time.new](#fn-ruleruledestinationtimenew) constructor.
+  - `status` (`string`): 
+  - `time` (`list[obj]`):  When `null`, the `time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.destination.replication_time.time.new](#fn-ruleruledestinationtimenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `replication_time` sub block.
@@ -419,7 +419,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `minutes` (`number`): Set the `minutes` field on the resulting object.
+  - `minutes` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `time` sub block.
@@ -442,7 +442,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object.
+  - `status` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `existing_object_replication` sub block.
@@ -465,9 +465,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `and` (`list[obj]`): Set the `and` field on the resulting object. When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.filter.and.new](#fn-ruleruleandnew) constructor.
-  - `tag` (`list[obj]`): Set the `tag` field on the resulting object. When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.filter.tag.new](#fn-ruleruletagnew) constructor.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `and` (`list[obj]`):  When `null`, the `and` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.filter.and.new](#fn-ruleruleandnew) constructor.
+  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.filter.tag.new](#fn-ruleruletagnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -490,8 +490,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `and` sub block.
@@ -514,8 +514,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `tag` sub block.
@@ -538,8 +538,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `replica_modifications` (`list[obj]`): Set the `replica_modifications` field on the resulting object. When `null`, the `replica_modifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.source_selection_criteria.replica_modifications.new](#fn-rulerulereplica_modificationsnew) constructor.
-  - `sse_kms_encrypted_objects` (`list[obj]`): Set the `sse_kms_encrypted_objects` field on the resulting object. When `null`, the `sse_kms_encrypted_objects` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.source_selection_criteria.sse_kms_encrypted_objects.new](#fn-rulerulesse_kms_encrypted_objectsnew) constructor.
+  - `replica_modifications` (`list[obj]`):  When `null`, the `replica_modifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.source_selection_criteria.replica_modifications.new](#fn-rulerulereplica_modificationsnew) constructor.
+  - `sse_kms_encrypted_objects` (`list[obj]`):  When `null`, the `sse_kms_encrypted_objects` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_replication_configuration.rule.source_selection_criteria.sse_kms_encrypted_objects.new](#fn-rulerulesse_kms_encrypted_objectsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source_selection_criteria` sub block.
@@ -562,7 +562,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object.
+  - `status` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `replica_modifications` sub block.
@@ -585,7 +585,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `status` (`string`): Set the `status` field on the resulting object.
+  - `status` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `sse_kms_encrypted_objects` sub block.

@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `allocation_id` (`string`): Set the `allocation_id` field on the resulting resource block. When `null`, the `allocation_id` field will be omitted from the resulting object.
-  - `allow_reassociation` (`bool`): Set the `allow_reassociation` field on the resulting resource block. When `null`, the `allow_reassociation` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting resource block. When `null`, the `instance_id` field will be omitted from the resulting object.
-  - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting resource block. When `null`, the `network_interface_id` field will be omitted from the resulting object.
-  - `private_ip_address` (`string`): Set the `private_ip_address` field on the resulting resource block. When `null`, the `private_ip_address` field will be omitted from the resulting object.
-  - `public_ip` (`string`): Set the `public_ip` field on the resulting resource block. When `null`, the `public_ip` field will be omitted from the resulting object.
+  - `allocation_id` (`string`):  When `null`, the `allocation_id` field will be omitted from the resulting object.
+  - `allow_reassociation` (`bool`):  When `null`, the `allow_reassociation` field will be omitted from the resulting object.
+  - `instance_id` (`string`):  When `null`, the `instance_id` field will be omitted from the resulting object.
+  - `network_interface_id` (`string`):  When `null`, the `network_interface_id` field will be omitted from the resulting object.
+  - `private_ip_address` (`string`):  When `null`, the `private_ip_address` field will be omitted from the resulting object.
+  - `public_ip` (`string`):  When `null`, the `public_ip` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `allocation_id` (`string`): Set the `allocation_id` field on the resulting object. When `null`, the `allocation_id` field will be omitted from the resulting object.
-  - `allow_reassociation` (`bool`): Set the `allow_reassociation` field on the resulting object. When `null`, the `allow_reassociation` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting object. When `null`, the `instance_id` field will be omitted from the resulting object.
-  - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting object. When `null`, the `network_interface_id` field will be omitted from the resulting object.
-  - `private_ip_address` (`string`): Set the `private_ip_address` field on the resulting object. When `null`, the `private_ip_address` field will be omitted from the resulting object.
-  - `public_ip` (`string`): Set the `public_ip` field on the resulting object. When `null`, the `public_ip` field will be omitted from the resulting object.
+  - `allocation_id` (`string`):  When `null`, the `allocation_id` field will be omitted from the resulting object.
+  - `allow_reassociation` (`bool`):  When `null`, the `allow_reassociation` field will be omitted from the resulting object.
+  - `instance_id` (`string`):  When `null`, the `instance_id` field will be omitted from the resulting object.
+  - `network_interface_id` (`string`):  When `null`, the `network_interface_id` field will be omitted from the resulting object.
+  - `private_ip_address` (`string`):  When `null`, the `private_ip_address` field will be omitted from the resulting object.
+  - `public_ip` (`string`):  When `null`, the `public_ip` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eip_association` resource into the root Terraform configuration.

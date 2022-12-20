@@ -68,20 +68,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `appstream_agent_version` (`string`): Set the `appstream_agent_version` field on the resulting resource block. When `null`, the `appstream_agent_version` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `display_name` (`string`): Set the `display_name` field on the resulting resource block. When `null`, the `display_name` field will be omitted from the resulting object.
-  - `enable_default_internet_access` (`bool`): Set the `enable_default_internet_access` field on the resulting resource block. When `null`, the `enable_default_internet_access` field will be omitted from the resulting object.
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting resource block. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
-  - `image_arn` (`string`): Set the `image_arn` field on the resulting resource block. When `null`, the `image_arn` field will be omitted from the resulting object.
-  - `image_name` (`string`): Set the `image_name` field on the resulting resource block. When `null`, the `image_name` field will be omitted from the resulting object.
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_endpoint` (`list[obj]`): Set the `access_endpoint` field on the resulting resource block. When `null`, the `access_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.access_endpoint.new](#fn-access_endpointnew) constructor.
-  - `domain_join_info` (`list[obj]`): Set the `domain_join_info` field on the resulting resource block. When `null`, the `domain_join_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.domain_join_info.new](#fn-domain_join_infonew) constructor.
-  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting resource block. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `appstream_agent_version` (`string`):  When `null`, the `appstream_agent_version` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
+  - `enable_default_internet_access` (`bool`):  When `null`, the `enable_default_internet_access` field will be omitted from the resulting object.
+  - `iam_role_arn` (`string`):  When `null`, the `iam_role_arn` field will be omitted from the resulting object.
+  - `image_arn` (`string`):  When `null`, the `image_arn` field will be omitted from the resulting object.
+  - `image_name` (`string`):  When `null`, the `image_name` field will be omitted from the resulting object.
+  - `instance_type` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_endpoint` (`list[obj]`):  When `null`, the `access_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.access_endpoint.new](#fn-access_endpointnew) constructor.
+  - `domain_join_info` (`list[obj]`):  When `null`, the `domain_join_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.domain_join_info.new](#fn-domain_join_infonew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,20 +105,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `appstream_agent_version` (`string`): Set the `appstream_agent_version` field on the resulting object. When `null`, the `appstream_agent_version` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
-  - `enable_default_internet_access` (`bool`): Set the `enable_default_internet_access` field on the resulting object. When `null`, the `enable_default_internet_access` field will be omitted from the resulting object.
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting object. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
-  - `image_arn` (`string`): Set the `image_arn` field on the resulting object. When `null`, the `image_arn` field will be omitted from the resulting object.
-  - `image_name` (`string`): Set the `image_name` field on the resulting object. When `null`, the `image_name` field will be omitted from the resulting object.
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_endpoint` (`list[obj]`): Set the `access_endpoint` field on the resulting object. When `null`, the `access_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.access_endpoint.new](#fn-access_endpointnew) constructor.
-  - `domain_join_info` (`list[obj]`): Set the `domain_join_info` field on the resulting object. When `null`, the `domain_join_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.domain_join_info.new](#fn-domain_join_infonew) constructor.
-  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `appstream_agent_version` (`string`):  When `null`, the `appstream_agent_version` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
+  - `enable_default_internet_access` (`bool`):  When `null`, the `enable_default_internet_access` field will be omitted from the resulting object.
+  - `iam_role_arn` (`string`):  When `null`, the `iam_role_arn` field will be omitted from the resulting object.
+  - `image_arn` (`string`):  When `null`, the `image_arn` field will be omitted from the resulting object.
+  - `image_name` (`string`):  When `null`, the `image_name` field will be omitted from the resulting object.
+  - `instance_type` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_endpoint` (`list[obj]`):  When `null`, the `access_endpoint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.access_endpoint.new](#fn-access_endpointnew) constructor.
+  - `domain_join_info` (`list[obj]`):  When `null`, the `domain_join_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.domain_join_info.new](#fn-domain_join_infonew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_image_builder.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appstream_image_builder` resource into the root Terraform configuration.
@@ -428,8 +428,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting object.
-  - `vpce_id` (`string`): Set the `vpce_id` field on the resulting object. When `null`, the `vpce_id` field will be omitted from the resulting object.
+  - `endpoint_type` (`string`): 
+  - `vpce_id` (`string`):  When `null`, the `vpce_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_endpoint` sub block.
@@ -452,8 +452,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `directory_name` (`string`): Set the `directory_name` field on the resulting object. When `null`, the `directory_name` field will be omitted from the resulting object.
-  - `organizational_unit_distinguished_name` (`string`): Set the `organizational_unit_distinguished_name` field on the resulting object. When `null`, the `organizational_unit_distinguished_name` field will be omitted from the resulting object.
+  - `directory_name` (`string`):  When `null`, the `directory_name` field will be omitted from the resulting object.
+  - `organizational_unit_distinguished_name` (`string`):  When `null`, the `organizational_unit_distinguished_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `domain_join_info` sub block.
@@ -476,8 +476,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc_config` sub block.

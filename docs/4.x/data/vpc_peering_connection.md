@@ -63,18 +63,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting data source block. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `owner_id` (`string`): Set the `owner_id` field on the resulting data source block. When `null`, the `owner_id` field will be omitted from the resulting object.
-  - `peer_cidr_block` (`string`): Set the `peer_cidr_block` field on the resulting data source block. When `null`, the `peer_cidr_block` field will be omitted from the resulting object.
-  - `peer_owner_id` (`string`): Set the `peer_owner_id` field on the resulting data source block. When `null`, the `peer_owner_id` field will be omitted from the resulting object.
-  - `peer_region` (`string`): Set the `peer_region` field on the resulting data source block. When `null`, the `peer_region` field will be omitted from the resulting object.
-  - `peer_vpc_id` (`string`): Set the `peer_vpc_id` field on the resulting data source block. When `null`, the `peer_vpc_id` field will be omitted from the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting data source block. When `null`, the `region` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting data source block. When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting data source block. When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.filter.new](#fn-filternew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `owner_id` (`string`):  When `null`, the `owner_id` field will be omitted from the resulting object.
+  - `peer_cidr_block` (`string`):  When `null`, the `peer_cidr_block` field will be omitted from the resulting object.
+  - `peer_owner_id` (`string`):  When `null`, the `peer_owner_id` field will be omitted from the resulting object.
+  - `peer_region` (`string`):  When `null`, the `peer_region` field will be omitted from the resulting object.
+  - `peer_vpc_id` (`string`):  When `null`, the `peer_vpc_id` field will be omitted from the resulting object.
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -98,18 +98,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `owner_id` (`string`): Set the `owner_id` field on the resulting object. When `null`, the `owner_id` field will be omitted from the resulting object.
-  - `peer_cidr_block` (`string`): Set the `peer_cidr_block` field on the resulting object. When `null`, the `peer_cidr_block` field will be omitted from the resulting object.
-  - `peer_owner_id` (`string`): Set the `peer_owner_id` field on the resulting object. When `null`, the `peer_owner_id` field will be omitted from the resulting object.
-  - `peer_region` (`string`): Set the `peer_region` field on the resulting object. When `null`, the `peer_region` field will be omitted from the resulting object.
-  - `peer_vpc_id` (`string`): Set the `peer_vpc_id` field on the resulting object. When `null`, the `peer_vpc_id` field will be omitted from the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object. When `null`, the `vpc_id` field will be omitted from the resulting object.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.filter.new](#fn-filternew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.timeouts.new](#fn-timeoutsnew) constructor.
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `owner_id` (`string`):  When `null`, the `owner_id` field will be omitted from the resulting object.
+  - `peer_cidr_block` (`string`):  When `null`, the `peer_cidr_block` field will be omitted from the resulting object.
+  - `peer_owner_id` (`string`):  When `null`, the `peer_owner_id` field will be omitted from the resulting object.
+  - `peer_region` (`string`):  When `null`, the `peer_region` field will be omitted from the resulting object.
+  - `peer_vpc_id` (`string`):  When `null`, the `peer_vpc_id` field will be omitted from the resulting object.
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `vpc_id` (`string`):  When `null`, the `vpc_id` field will be omitted from the resulting object.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.filter.new](#fn-filternew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.vpc_peering_connection.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `vpc_peering_connection` data source into the root Terraform configuration.
@@ -365,8 +365,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `name` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
@@ -389,7 +389,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `read` (`string`):  When `null`, the `read` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

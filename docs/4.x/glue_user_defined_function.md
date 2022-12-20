@@ -55,13 +55,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `class_name` (`string`): Set the `class_name` field on the resulting resource block.
-  - `database_name` (`string`): Set the `database_name` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `owner_name` (`string`): Set the `owner_name` field on the resulting resource block.
-  - `owner_type` (`string`): Set the `owner_type` field on the resulting resource block.
-  - `resource_uris` (`list[obj]`): Set the `resource_uris` field on the resulting resource block. When `null`, the `resource_uris` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_user_defined_function.resource_uris.new](#fn-resource_urisnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `class_name` (`string`): 
+  - `database_name` (`string`): 
+  - `name` (`string`): 
+  - `owner_name` (`string`): 
+  - `owner_type` (`string`): 
+  - `resource_uris` (`list[obj]`):  When `null`, the `resource_uris` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_user_defined_function.resource_uris.new](#fn-resource_urisnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,13 +85,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
-  - `class_name` (`string`): Set the `class_name` field on the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `owner_name` (`string`): Set the `owner_name` field on the resulting object.
-  - `owner_type` (`string`): Set the `owner_type` field on the resulting object.
-  - `resource_uris` (`list[obj]`): Set the `resource_uris` field on the resulting object. When `null`, the `resource_uris` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_user_defined_function.resource_uris.new](#fn-resource_urisnew) constructor.
+  - `catalog_id` (`string`):  When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `class_name` (`string`): 
+  - `database_name` (`string`): 
+  - `name` (`string`): 
+  - `owner_name` (`string`): 
+  - `owner_type` (`string`): 
+  - `resource_uris` (`list[obj]`):  When `null`, the `resource_uris` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_user_defined_function.resource_uris.new](#fn-resource_urisnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_user_defined_function` resource into the root Terraform configuration.
@@ -247,8 +247,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `resource_type` (`string`): Set the `resource_type` field on the resulting object.
-  - `uri` (`string`): Set the `uri` field on the resulting object.
+  - `resource_type` (`string`): 
+  - `uri` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_uris` sub block.

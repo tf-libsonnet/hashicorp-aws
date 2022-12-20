@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `function_name` (`string`): Set the `function_name` field on the resulting data source block.
-  - `input` (`string`): Set the `input` field on the resulting data source block.
-  - `qualifier` (`string`): Set the `qualifier` field on the resulting data source block. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `function_name` (`string`): 
+  - `input` (`string`): 
+  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `function_name` (`string`): Set the `function_name` field on the resulting object.
-  - `input` (`string`): Set the `input` field on the resulting object.
-  - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `function_name` (`string`): 
+  - `input` (`string`): 
+  - `qualifier` (`string`):  When `null`, the `qualifier` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `lambda_invocation` data source into the root Terraform configuration.

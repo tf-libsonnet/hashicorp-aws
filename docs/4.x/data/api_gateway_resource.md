@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `path` (`string`): Set the `path` field on the resulting data source block.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting data source block.
+  - `path` (`string`): 
+  - `rest_api_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `path` (`string`): Set the `path` field on the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
+  - `path` (`string`): 
+  - `rest_api_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `api_gateway_resource` data source into the root Terraform configuration.

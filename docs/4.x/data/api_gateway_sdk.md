@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting data source block. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting data source block.
-  - `sdk_type` (`string`): Set the `sdk_type` field on the resulting data source block.
-  - `stage_name` (`string`): Set the `stage_name` field on the resulting data source block.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): 
+  - `sdk_type` (`string`): 
+  - `stage_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
-  - `sdk_type` (`string`): Set the `sdk_type` field on the resulting object.
-  - `stage_name` (`string`): Set the `stage_name` field on the resulting object.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `rest_api_id` (`string`): 
+  - `sdk_type` (`string`): 
+  - `stage_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `api_gateway_sdk` data source into the root Terraform configuration.

@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `allow_ssh` (`bool`): Set the `allow_ssh` field on the resulting resource block. When `null`, the `allow_ssh` field will be omitted from the resulting object.
-  - `allow_sudo` (`bool`): Set the `allow_sudo` field on the resulting resource block. When `null`, the `allow_sudo` field will be omitted from the resulting object.
-  - `level` (`string`): Set the `level` field on the resulting resource block. When `null`, the `level` field will be omitted from the resulting object.
-  - `stack_id` (`string`): Set the `stack_id` field on the resulting resource block. When `null`, the `stack_id` field will be omitted from the resulting object.
-  - `user_arn` (`string`): Set the `user_arn` field on the resulting resource block.
+  - `allow_ssh` (`bool`):  When `null`, the `allow_ssh` field will be omitted from the resulting object.
+  - `allow_sudo` (`bool`):  When `null`, the `allow_sudo` field will be omitted from the resulting object.
+  - `level` (`string`):  When `null`, the `level` field will be omitted from the resulting object.
+  - `stack_id` (`string`):  When `null`, the `stack_id` field will be omitted from the resulting object.
+  - `user_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `allow_ssh` (`bool`): Set the `allow_ssh` field on the resulting object. When `null`, the `allow_ssh` field will be omitted from the resulting object.
-  - `allow_sudo` (`bool`): Set the `allow_sudo` field on the resulting object. When `null`, the `allow_sudo` field will be omitted from the resulting object.
-  - `level` (`string`): Set the `level` field on the resulting object. When `null`, the `level` field will be omitted from the resulting object.
-  - `stack_id` (`string`): Set the `stack_id` field on the resulting object. When `null`, the `stack_id` field will be omitted from the resulting object.
-  - `user_arn` (`string`): Set the `user_arn` field on the resulting object.
+  - `allow_ssh` (`bool`):  When `null`, the `allow_ssh` field will be omitted from the resulting object.
+  - `allow_sudo` (`bool`):  When `null`, the `allow_sudo` field will be omitted from the resulting object.
+  - `level` (`string`):  When `null`, the `level` field will be omitted from the resulting object.
+  - `stack_id` (`string`):  When `null`, the `stack_id` field will be omitted from the resulting object.
+  - `user_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_permission` resource into the root Terraform configuration.

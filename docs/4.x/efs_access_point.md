@@ -58,11 +58,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `posix_user` (`list[obj]`): Set the `posix_user` field on the resulting resource block. When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-posix_usernew) constructor.
-  - `root_directory` (`list[obj]`): Set the `root_directory` field on the resulting resource block. When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-root_directorynew) constructor.
+  - `file_system_id` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `posix_user` (`list[obj]`):  When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-posix_usernew) constructor.
+  - `root_directory` (`list[obj]`):  When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-root_directorynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,11 +86,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `posix_user` (`list[obj]`): Set the `posix_user` field on the resulting object. When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-posix_usernew) constructor.
-  - `root_directory` (`list[obj]`): Set the `root_directory` field on the resulting object. When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-root_directorynew) constructor.
+  - `file_system_id` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `posix_user` (`list[obj]`):  When `null`, the `posix_user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.posix_user.new](#fn-posix_usernew) constructor.
+  - `root_directory` (`list[obj]`):  When `null`, the `root_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.new](#fn-root_directorynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `efs_access_point` resource into the root Terraform configuration.
@@ -235,9 +235,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `gid` (`number`): Set the `gid` field on the resulting object.
-  - `secondary_gids` (`list`): Set the `secondary_gids` field on the resulting object. When `null`, the `secondary_gids` field will be omitted from the resulting object.
-  - `uid` (`number`): Set the `uid` field on the resulting object.
+  - `gid` (`number`): 
+  - `secondary_gids` (`list`):  When `null`, the `secondary_gids` field will be omitted from the resulting object.
+  - `uid` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `posix_user` sub block.
@@ -260,8 +260,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
-  - `creation_info` (`list[obj]`): Set the `creation_info` field on the resulting object. When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-root_directorycreation_infonew) constructor.
+  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
+  - `creation_info` (`list[obj]`):  When `null`, the `creation_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_access_point.root_directory.creation_info.new](#fn-root_directorycreation_infonew) constructor.
 
 **Returns**:
   - An attribute object that represents the `root_directory` sub block.
@@ -284,9 +284,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `owner_gid` (`number`): Set the `owner_gid` field on the resulting object.
-  - `owner_uid` (`number`): Set the `owner_uid` field on the resulting object.
-  - `permissions` (`string`): Set the `permissions` field on the resulting object.
+  - `owner_gid` (`number`): 
+  - `owner_uid` (`number`): 
+  - `permissions` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `creation_info` sub block.

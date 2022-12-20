@@ -62,17 +62,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `directory_user_id` (`string`): Set the `directory_user_id` field on the resulting resource block. When `null`, the `directory_user_id` field will be omitted from the resulting object.
-  - `hierarchy_group_id` (`string`): Set the `hierarchy_group_id` field on the resulting resource block. When `null`, the `hierarchy_group_id` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `password` (`string`): Set the `password` field on the resulting resource block. When `null`, the `password` field will be omitted from the resulting object.
-  - `routing_profile_id` (`string`): Set the `routing_profile_id` field on the resulting resource block.
-  - `security_profile_ids` (`list`): Set the `security_profile_ids` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `identity_info` (`list[obj]`): Set the `identity_info` field on the resulting resource block. When `null`, the `identity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.identity_info.new](#fn-identity_infonew) constructor.
-  - `phone_config` (`list[obj]`): Set the `phone_config` field on the resulting resource block. When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.phone_config.new](#fn-phone_confignew) constructor.
+  - `directory_user_id` (`string`):  When `null`, the `directory_user_id` field will be omitted from the resulting object.
+  - `hierarchy_group_id` (`string`):  When `null`, the `hierarchy_group_id` field will be omitted from the resulting object.
+  - `instance_id` (`string`): 
+  - `name` (`string`): 
+  - `password` (`string`):  When `null`, the `password` field will be omitted from the resulting object.
+  - `routing_profile_id` (`string`): 
+  - `security_profile_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `identity_info` (`list[obj]`):  When `null`, the `identity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.identity_info.new](#fn-identity_infonew) constructor.
+  - `phone_config` (`list[obj]`):  When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.phone_config.new](#fn-phone_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,17 +96,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `directory_user_id` (`string`): Set the `directory_user_id` field on the resulting object. When `null`, the `directory_user_id` field will be omitted from the resulting object.
-  - `hierarchy_group_id` (`string`): Set the `hierarchy_group_id` field on the resulting object. When `null`, the `hierarchy_group_id` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting object. When `null`, the `password` field will be omitted from the resulting object.
-  - `routing_profile_id` (`string`): Set the `routing_profile_id` field on the resulting object.
-  - `security_profile_ids` (`list`): Set the `security_profile_ids` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `identity_info` (`list[obj]`): Set the `identity_info` field on the resulting object. When `null`, the `identity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.identity_info.new](#fn-identity_infonew) constructor.
-  - `phone_config` (`list[obj]`): Set the `phone_config` field on the resulting object. When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.phone_config.new](#fn-phone_confignew) constructor.
+  - `directory_user_id` (`string`):  When `null`, the `directory_user_id` field will be omitted from the resulting object.
+  - `hierarchy_group_id` (`string`):  When `null`, the `hierarchy_group_id` field will be omitted from the resulting object.
+  - `instance_id` (`string`): 
+  - `name` (`string`): 
+  - `password` (`string`):  When `null`, the `password` field will be omitted from the resulting object.
+  - `routing_profile_id` (`string`): 
+  - `security_profile_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `identity_info` (`list[obj]`):  When `null`, the `identity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.identity_info.new](#fn-identity_infonew) constructor.
+  - `phone_config` (`list[obj]`):  When `null`, the `phone_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_user.phone_config.new](#fn-phone_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_user` resource into the root Terraform configuration.
@@ -347,9 +347,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `email` (`string`): Set the `email` field on the resulting object. When `null`, the `email` field will be omitted from the resulting object.
-  - `first_name` (`string`): Set the `first_name` field on the resulting object. When `null`, the `first_name` field will be omitted from the resulting object.
-  - `last_name` (`string`): Set the `last_name` field on the resulting object. When `null`, the `last_name` field will be omitted from the resulting object.
+  - `email` (`string`):  When `null`, the `email` field will be omitted from the resulting object.
+  - `first_name` (`string`):  When `null`, the `first_name` field will be omitted from the resulting object.
+  - `last_name` (`string`):  When `null`, the `last_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `identity_info` sub block.
@@ -372,10 +372,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `after_contact_work_time_limit` (`number`): Set the `after_contact_work_time_limit` field on the resulting object. When `null`, the `after_contact_work_time_limit` field will be omitted from the resulting object.
-  - `auto_accept` (`bool`): Set the `auto_accept` field on the resulting object. When `null`, the `auto_accept` field will be omitted from the resulting object.
-  - `desk_phone_number` (`string`): Set the `desk_phone_number` field on the resulting object. When `null`, the `desk_phone_number` field will be omitted from the resulting object.
-  - `phone_type` (`string`): Set the `phone_type` field on the resulting object.
+  - `after_contact_work_time_limit` (`number`):  When `null`, the `after_contact_work_time_limit` field will be omitted from the resulting object.
+  - `auto_accept` (`bool`):  When `null`, the `auto_accept` field will be omitted from the resulting object.
+  - `desk_phone_number` (`string`):  When `null`, the `desk_phone_number` field will be omitted from the resulting object.
+  - `phone_type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `phone_config` sub block.

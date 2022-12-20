@@ -109,24 +109,24 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `access_policies` (`string`): Set the `access_policies` field on the resulting resource block. When `null`, the `access_policies` field will be omitted from the resulting object.
-  - `advanced_options` (`obj`): Set the `advanced_options` field on the resulting resource block. When `null`, the `advanced_options` field will be omitted from the resulting object.
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
-  - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block. When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_security_options` (`list[obj]`): Set the `advanced_security_options` field on the resulting resource block. When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.new](#fn-advanced_security_optionsnew) constructor.
-  - `auto_tune_options` (`list[obj]`): Set the `auto_tune_options` field on the resulting resource block. When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.new](#fn-auto_tune_optionsnew) constructor.
-  - `cluster_config` (`list[obj]`): Set the `cluster_config` field on the resulting resource block. When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.new](#fn-cluster_confignew) constructor.
-  - `cognito_options` (`list[obj]`): Set the `cognito_options` field on the resulting resource block. When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cognito_options.new](#fn-cognito_optionsnew) constructor.
-  - `domain_endpoint_options` (`list[obj]`): Set the `domain_endpoint_options` field on the resulting resource block. When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.domain_endpoint_options.new](#fn-domain_endpoint_optionsnew) constructor.
-  - `ebs_options` (`list[obj]`): Set the `ebs_options` field on the resulting resource block. When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.ebs_options.new](#fn-ebs_optionsnew) constructor.
-  - `encrypt_at_rest` (`list[obj]`): Set the `encrypt_at_rest` field on the resulting resource block. When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.encrypt_at_rest.new](#fn-encrypt_at_restnew) constructor.
-  - `log_publishing_options` (`list[obj]`): Set the `log_publishing_options` field on the resulting resource block. When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.log_publishing_options.new](#fn-log_publishing_optionsnew) constructor.
-  - `node_to_node_encryption` (`list[obj]`): Set the `node_to_node_encryption` field on the resulting resource block. When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
-  - `snapshot_options` (`list[obj]`): Set the `snapshot_options` field on the resulting resource block. When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_options` (`list[obj]`): Set the `vpc_options` field on the resulting resource block. When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
+  - `access_policies` (`string`):  When `null`, the `access_policies` field will be omitted from the resulting object.
+  - `advanced_options` (`obj`):  When `null`, the `advanced_options` field will be omitted from the resulting object.
+  - `domain_name` (`string`): 
+  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `advanced_security_options` (`list[obj]`):  When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.new](#fn-advanced_security_optionsnew) constructor.
+  - `auto_tune_options` (`list[obj]`):  When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.new](#fn-auto_tune_optionsnew) constructor.
+  - `cluster_config` (`list[obj]`):  When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.new](#fn-cluster_confignew) constructor.
+  - `cognito_options` (`list[obj]`):  When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cognito_options.new](#fn-cognito_optionsnew) constructor.
+  - `domain_endpoint_options` (`list[obj]`):  When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.domain_endpoint_options.new](#fn-domain_endpoint_optionsnew) constructor.
+  - `ebs_options` (`list[obj]`):  When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.ebs_options.new](#fn-ebs_optionsnew) constructor.
+  - `encrypt_at_rest` (`list[obj]`):  When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.encrypt_at_rest.new](#fn-encrypt_at_restnew) constructor.
+  - `log_publishing_options` (`list[obj]`):  When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.log_publishing_options.new](#fn-log_publishing_optionsnew) constructor.
+  - `node_to_node_encryption` (`list[obj]`):  When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
+  - `snapshot_options` (`list[obj]`):  When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_options` (`list[obj]`):  When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -150,24 +150,24 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_policies` (`string`): Set the `access_policies` field on the resulting object. When `null`, the `access_policies` field will be omitted from the resulting object.
-  - `advanced_options` (`obj`): Set the `advanced_options` field on the resulting object. When `null`, the `advanced_options` field will be omitted from the resulting object.
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
-  - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_security_options` (`list[obj]`): Set the `advanced_security_options` field on the resulting object. When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.new](#fn-advanced_security_optionsnew) constructor.
-  - `auto_tune_options` (`list[obj]`): Set the `auto_tune_options` field on the resulting object. When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.new](#fn-auto_tune_optionsnew) constructor.
-  - `cluster_config` (`list[obj]`): Set the `cluster_config` field on the resulting object. When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.new](#fn-cluster_confignew) constructor.
-  - `cognito_options` (`list[obj]`): Set the `cognito_options` field on the resulting object. When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cognito_options.new](#fn-cognito_optionsnew) constructor.
-  - `domain_endpoint_options` (`list[obj]`): Set the `domain_endpoint_options` field on the resulting object. When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.domain_endpoint_options.new](#fn-domain_endpoint_optionsnew) constructor.
-  - `ebs_options` (`list[obj]`): Set the `ebs_options` field on the resulting object. When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.ebs_options.new](#fn-ebs_optionsnew) constructor.
-  - `encrypt_at_rest` (`list[obj]`): Set the `encrypt_at_rest` field on the resulting object. When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.encrypt_at_rest.new](#fn-encrypt_at_restnew) constructor.
-  - `log_publishing_options` (`list[obj]`): Set the `log_publishing_options` field on the resulting object. When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.log_publishing_options.new](#fn-log_publishing_optionsnew) constructor.
-  - `node_to_node_encryption` (`list[obj]`): Set the `node_to_node_encryption` field on the resulting object. When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
-  - `snapshot_options` (`list[obj]`): Set the `snapshot_options` field on the resulting object. When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_options` (`list[obj]`): Set the `vpc_options` field on the resulting object. When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
+  - `access_policies` (`string`):  When `null`, the `access_policies` field will be omitted from the resulting object.
+  - `advanced_options` (`obj`):  When `null`, the `advanced_options` field will be omitted from the resulting object.
+  - `domain_name` (`string`): 
+  - `engine_version` (`string`):  When `null`, the `engine_version` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `advanced_security_options` (`list[obj]`):  When `null`, the `advanced_security_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.new](#fn-advanced_security_optionsnew) constructor.
+  - `auto_tune_options` (`list[obj]`):  When `null`, the `auto_tune_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.new](#fn-auto_tune_optionsnew) constructor.
+  - `cluster_config` (`list[obj]`):  When `null`, the `cluster_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.new](#fn-cluster_confignew) constructor.
+  - `cognito_options` (`list[obj]`):  When `null`, the `cognito_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cognito_options.new](#fn-cognito_optionsnew) constructor.
+  - `domain_endpoint_options` (`list[obj]`):  When `null`, the `domain_endpoint_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.domain_endpoint_options.new](#fn-domain_endpoint_optionsnew) constructor.
+  - `ebs_options` (`list[obj]`):  When `null`, the `ebs_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.ebs_options.new](#fn-ebs_optionsnew) constructor.
+  - `encrypt_at_rest` (`list[obj]`):  When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.encrypt_at_rest.new](#fn-encrypt_at_restnew) constructor.
+  - `log_publishing_options` (`list[obj]`):  When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.log_publishing_options.new](#fn-log_publishing_optionsnew) constructor.
+  - `node_to_node_encryption` (`list[obj]`):  When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
+  - `snapshot_options` (`list[obj]`):  When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_options` (`list[obj]`):  When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opensearch_domain` resource into the root Terraform configuration.
@@ -729,10 +729,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `anonymous_auth_enabled` (`bool`): Set the `anonymous_auth_enabled` field on the resulting object. When `null`, the `anonymous_auth_enabled` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
-  - `internal_user_database_enabled` (`bool`): Set the `internal_user_database_enabled` field on the resulting object. When `null`, the `internal_user_database_enabled` field will be omitted from the resulting object.
-  - `master_user_options` (`list[obj]`): Set the `master_user_options` field on the resulting object. When `null`, the `master_user_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.master_user_options.new](#fn-advanced_security_optionsmaster_user_optionsnew) constructor.
+  - `anonymous_auth_enabled` (`bool`):  When `null`, the `anonymous_auth_enabled` field will be omitted from the resulting object.
+  - `enabled` (`bool`): 
+  - `internal_user_database_enabled` (`bool`):  When `null`, the `internal_user_database_enabled` field will be omitted from the resulting object.
+  - `master_user_options` (`list[obj]`):  When `null`, the `master_user_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.advanced_security_options.master_user_options.new](#fn-advanced_security_optionsmaster_user_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_security_options` sub block.
@@ -755,9 +755,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `master_user_arn` (`string`): Set the `master_user_arn` field on the resulting object. When `null`, the `master_user_arn` field will be omitted from the resulting object.
-  - `master_user_name` (`string`): Set the `master_user_name` field on the resulting object. When `null`, the `master_user_name` field will be omitted from the resulting object.
-  - `master_user_password` (`string`): Set the `master_user_password` field on the resulting object. When `null`, the `master_user_password` field will be omitted from the resulting object.
+  - `master_user_arn` (`string`):  When `null`, the `master_user_arn` field will be omitted from the resulting object.
+  - `master_user_name` (`string`):  When `null`, the `master_user_name` field will be omitted from the resulting object.
+  - `master_user_password` (`string`):  When `null`, the `master_user_password` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `master_user_options` sub block.
@@ -780,9 +780,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `desired_state` (`string`): Set the `desired_state` field on the resulting object.
-  - `rollback_on_disable` (`string`): Set the `rollback_on_disable` field on the resulting object. When `null`, the `rollback_on_disable` field will be omitted from the resulting object.
-  - `maintenance_schedule` (`list[obj]`): Set the `maintenance_schedule` field on the resulting object. When `null`, the `maintenance_schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.new](#fn-auto_tune_optionsmaintenance_schedulenew) constructor.
+  - `desired_state` (`string`): 
+  - `rollback_on_disable` (`string`):  When `null`, the `rollback_on_disable` field will be omitted from the resulting object.
+  - `maintenance_schedule` (`list[obj]`):  When `null`, the `maintenance_schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.new](#fn-auto_tune_optionsmaintenance_schedulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `auto_tune_options` sub block.
@@ -805,9 +805,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cron_expression_for_recurrence` (`string`): Set the `cron_expression_for_recurrence` field on the resulting object.
-  - `start_at` (`string`): Set the `start_at` field on the resulting object.
-  - `duration` (`list[obj]`): Set the `duration` field on the resulting object. When `null`, the `duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.duration.new](#fn-auto_tune_optionsauto_tune_optionsdurationnew) constructor.
+  - `cron_expression_for_recurrence` (`string`): 
+  - `start_at` (`string`): 
+  - `duration` (`list[obj]`):  When `null`, the `duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.auto_tune_options.maintenance_schedule.duration.new](#fn-auto_tune_optionsauto_tune_optionsdurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `maintenance_schedule` sub block.
@@ -830,8 +830,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `duration` sub block.
@@ -854,17 +854,17 @@ Terraform sub block.
 
 
 **Args**:
-  - `dedicated_master_count` (`number`): Set the `dedicated_master_count` field on the resulting object. When `null`, the `dedicated_master_count` field will be omitted from the resulting object.
-  - `dedicated_master_enabled` (`bool`): Set the `dedicated_master_enabled` field on the resulting object. When `null`, the `dedicated_master_enabled` field will be omitted from the resulting object.
-  - `dedicated_master_type` (`string`): Set the `dedicated_master_type` field on the resulting object. When `null`, the `dedicated_master_type` field will be omitted from the resulting object.
-  - `instance_count` (`number`): Set the `instance_count` field on the resulting object. When `null`, the `instance_count` field will be omitted from the resulting object.
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `warm_count` (`number`): Set the `warm_count` field on the resulting object. When `null`, the `warm_count` field will be omitted from the resulting object.
-  - `warm_enabled` (`bool`): Set the `warm_enabled` field on the resulting object. When `null`, the `warm_enabled` field will be omitted from the resulting object.
-  - `warm_type` (`string`): Set the `warm_type` field on the resulting object. When `null`, the `warm_type` field will be omitted from the resulting object.
-  - `zone_awareness_enabled` (`bool`): Set the `zone_awareness_enabled` field on the resulting object. When `null`, the `zone_awareness_enabled` field will be omitted from the resulting object.
-  - `cold_storage_options` (`list[obj]`): Set the `cold_storage_options` field on the resulting object. When `null`, the `cold_storage_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.cold_storage_options.new](#fn-cluster_configcold_storage_optionsnew) constructor.
-  - `zone_awareness_config` (`list[obj]`): Set the `zone_awareness_config` field on the resulting object. When `null`, the `zone_awareness_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.zone_awareness_config.new](#fn-cluster_configzone_awareness_confignew) constructor.
+  - `dedicated_master_count` (`number`):  When `null`, the `dedicated_master_count` field will be omitted from the resulting object.
+  - `dedicated_master_enabled` (`bool`):  When `null`, the `dedicated_master_enabled` field will be omitted from the resulting object.
+  - `dedicated_master_type` (`string`):  When `null`, the `dedicated_master_type` field will be omitted from the resulting object.
+  - `instance_count` (`number`):  When `null`, the `instance_count` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `warm_count` (`number`):  When `null`, the `warm_count` field will be omitted from the resulting object.
+  - `warm_enabled` (`bool`):  When `null`, the `warm_enabled` field will be omitted from the resulting object.
+  - `warm_type` (`string`):  When `null`, the `warm_type` field will be omitted from the resulting object.
+  - `zone_awareness_enabled` (`bool`):  When `null`, the `zone_awareness_enabled` field will be omitted from the resulting object.
+  - `cold_storage_options` (`list[obj]`):  When `null`, the `cold_storage_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.cold_storage_options.new](#fn-cluster_configcold_storage_optionsnew) constructor.
+  - `zone_awareness_config` (`list[obj]`):  When `null`, the `zone_awareness_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.cluster_config.zone_awareness_config.new](#fn-cluster_configzone_awareness_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `cluster_config` sub block.
@@ -887,7 +887,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cold_storage_options` sub block.
@@ -910,7 +910,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `availability_zone_count` (`number`): Set the `availability_zone_count` field on the resulting object. When `null`, the `availability_zone_count` field will be omitted from the resulting object.
+  - `availability_zone_count` (`number`):  When `null`, the `availability_zone_count` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `zone_awareness_config` sub block.
@@ -933,10 +933,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `identity_pool_id` (`string`): Set the `identity_pool_id` field on the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `identity_pool_id` (`string`): 
+  - `role_arn` (`string`): 
+  - `user_pool_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `cognito_options` sub block.
@@ -959,11 +959,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `custom_endpoint` (`string`): Set the `custom_endpoint` field on the resulting object. When `null`, the `custom_endpoint` field will be omitted from the resulting object.
-  - `custom_endpoint_certificate_arn` (`string`): Set the `custom_endpoint_certificate_arn` field on the resulting object. When `null`, the `custom_endpoint_certificate_arn` field will be omitted from the resulting object.
-  - `custom_endpoint_enabled` (`bool`): Set the `custom_endpoint_enabled` field on the resulting object. When `null`, the `custom_endpoint_enabled` field will be omitted from the resulting object.
-  - `enforce_https` (`bool`): Set the `enforce_https` field on the resulting object. When `null`, the `enforce_https` field will be omitted from the resulting object.
-  - `tls_security_policy` (`string`): Set the `tls_security_policy` field on the resulting object. When `null`, the `tls_security_policy` field will be omitted from the resulting object.
+  - `custom_endpoint` (`string`):  When `null`, the `custom_endpoint` field will be omitted from the resulting object.
+  - `custom_endpoint_certificate_arn` (`string`):  When `null`, the `custom_endpoint_certificate_arn` field will be omitted from the resulting object.
+  - `custom_endpoint_enabled` (`bool`):  When `null`, the `custom_endpoint_enabled` field will be omitted from the resulting object.
+  - `enforce_https` (`bool`):  When `null`, the `enforce_https` field will be omitted from the resulting object.
+  - `tls_security_policy` (`string`):  When `null`, the `tls_security_policy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `domain_endpoint_options` sub block.
@@ -986,11 +986,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `ebs_enabled` (`bool`): Set the `ebs_enabled` field on the resulting object.
-  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
-  - `throughput` (`number`): Set the `throughput` field on the resulting object. When `null`, the `throughput` field will be omitted from the resulting object.
-  - `volume_size` (`number`): Set the `volume_size` field on the resulting object. When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `ebs_enabled` (`bool`): 
+  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
+  - `throughput` (`number`):  When `null`, the `throughput` field will be omitted from the resulting object.
+  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs_options` sub block.
@@ -1013,8 +1013,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `enabled` (`bool`): 
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encrypt_at_rest` sub block.
@@ -1037,9 +1037,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `log_type` (`string`): Set the `log_type` field on the resulting object.
+  - `cloudwatch_log_group_arn` (`string`): 
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `log_publishing_options` sub block.
@@ -1062,7 +1062,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
+  - `enabled` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `node_to_node_encryption` sub block.
@@ -1085,7 +1085,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `automated_snapshot_start_hour` (`number`): Set the `automated_snapshot_start_hour` field on the resulting object.
+  - `automated_snapshot_start_hour` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `snapshot_options` sub block.
@@ -1108,9 +1108,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -1133,8 +1133,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `vpc_options` sub block.

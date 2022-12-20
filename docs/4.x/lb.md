@@ -75,27 +75,27 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting resource block. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
-  - `desync_mitigation_mode` (`string`): Set the `desync_mitigation_mode` field on the resulting resource block. When `null`, the `desync_mitigation_mode` field will be omitted from the resulting object.
-  - `drop_invalid_header_fields` (`bool`): Set the `drop_invalid_header_fields` field on the resulting resource block. When `null`, the `drop_invalid_header_fields` field will be omitted from the resulting object.
-  - `enable_cross_zone_load_balancing` (`bool`): Set the `enable_cross_zone_load_balancing` field on the resulting resource block. When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
-  - `enable_deletion_protection` (`bool`): Set the `enable_deletion_protection` field on the resulting resource block. When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
-  - `enable_http2` (`bool`): Set the `enable_http2` field on the resulting resource block. When `null`, the `enable_http2` field will be omitted from the resulting object.
-  - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting resource block. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
-  - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting resource block. When `null`, the `idle_timeout` field will be omitted from the resulting object.
-  - `internal` (`bool`): Set the `internal` field on the resulting resource block. When `null`, the `internal` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `load_balancer_type` (`string`): Set the `load_balancer_type` field on the resulting resource block. When `null`, the `load_balancer_type` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `preserve_host_header` (`bool`): Set the `preserve_host_header` field on the resulting resource block. When `null`, the `preserve_host_header` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting resource block. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnets` (`list`): Set the `subnets` field on the resulting resource block. When `null`, the `subnets` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_logs` (`list[obj]`): Set the `access_logs` field on the resulting resource block. When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-access_logsnew) constructor.
-  - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting resource block. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-timeoutsnew) constructor.
+  - `customer_owned_ipv4_pool` (`string`):  When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
+  - `desync_mitigation_mode` (`string`):  When `null`, the `desync_mitigation_mode` field will be omitted from the resulting object.
+  - `drop_invalid_header_fields` (`bool`):  When `null`, the `drop_invalid_header_fields` field will be omitted from the resulting object.
+  - `enable_cross_zone_load_balancing` (`bool`):  When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
+  - `enable_deletion_protection` (`bool`):  When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
+  - `enable_http2` (`bool`):  When `null`, the `enable_http2` field will be omitted from the resulting object.
+  - `enable_waf_fail_open` (`bool`):  When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
+  - `idle_timeout` (`number`):  When `null`, the `idle_timeout` field will be omitted from the resulting object.
+  - `internal` (`bool`):  When `null`, the `internal` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `load_balancer_type` (`string`):  When `null`, the `load_balancer_type` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `preserve_host_header` (`bool`):  When `null`, the `preserve_host_header` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnets` (`list`):  When `null`, the `subnets` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_logs` (`list[obj]`):  When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-access_logsnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -119,27 +119,27 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting object. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
-  - `desync_mitigation_mode` (`string`): Set the `desync_mitigation_mode` field on the resulting object. When `null`, the `desync_mitigation_mode` field will be omitted from the resulting object.
-  - `drop_invalid_header_fields` (`bool`): Set the `drop_invalid_header_fields` field on the resulting object. When `null`, the `drop_invalid_header_fields` field will be omitted from the resulting object.
-  - `enable_cross_zone_load_balancing` (`bool`): Set the `enable_cross_zone_load_balancing` field on the resulting object. When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
-  - `enable_deletion_protection` (`bool`): Set the `enable_deletion_protection` field on the resulting object. When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
-  - `enable_http2` (`bool`): Set the `enable_http2` field on the resulting object. When `null`, the `enable_http2` field will be omitted from the resulting object.
-  - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting object. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
-  - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting object. When `null`, the `idle_timeout` field will be omitted from the resulting object.
-  - `internal` (`bool`): Set the `internal` field on the resulting object. When `null`, the `internal` field will be omitted from the resulting object.
-  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `load_balancer_type` (`string`): Set the `load_balancer_type` field on the resulting object. When `null`, the `load_balancer_type` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `preserve_host_header` (`bool`): Set the `preserve_host_header` field on the resulting object. When `null`, the `preserve_host_header` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `subnets` (`list`): Set the `subnets` field on the resulting object. When `null`, the `subnets` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_logs` (`list[obj]`): Set the `access_logs` field on the resulting object. When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-access_logsnew) constructor.
-  - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting object. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-timeoutsnew) constructor.
+  - `customer_owned_ipv4_pool` (`string`):  When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
+  - `desync_mitigation_mode` (`string`):  When `null`, the `desync_mitigation_mode` field will be omitted from the resulting object.
+  - `drop_invalid_header_fields` (`bool`):  When `null`, the `drop_invalid_header_fields` field will be omitted from the resulting object.
+  - `enable_cross_zone_load_balancing` (`bool`):  When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
+  - `enable_deletion_protection` (`bool`):  When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
+  - `enable_http2` (`bool`):  When `null`, the `enable_http2` field will be omitted from the resulting object.
+  - `enable_waf_fail_open` (`bool`):  When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
+  - `idle_timeout` (`number`):  When `null`, the `idle_timeout` field will be omitted from the resulting object.
+  - `internal` (`bool`):  When `null`, the `internal` field will be omitted from the resulting object.
+  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `load_balancer_type` (`string`):  When `null`, the `load_balancer_type` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `preserve_host_header` (`bool`):  When `null`, the `preserve_host_header` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `subnets` (`list`):  When `null`, the `subnets` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_logs` (`list[obj]`):  When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-access_logsnew) constructor.
+  - `subnet_mapping` (`list[obj]`):  When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lb` resource into the root Terraform configuration.
@@ -560,9 +560,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_logs` sub block.
@@ -585,10 +585,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `allocation_id` (`string`): Set the `allocation_id` field on the resulting object. When `null`, the `allocation_id` field will be omitted from the resulting object.
-  - `ipv6_address` (`string`): Set the `ipv6_address` field on the resulting object. When `null`, the `ipv6_address` field will be omitted from the resulting object.
-  - `private_ipv4_address` (`string`): Set the `private_ipv4_address` field on the resulting object. When `null`, the `private_ipv4_address` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
+  - `allocation_id` (`string`):  When `null`, the `allocation_id` field will be omitted from the resulting object.
+  - `ipv6_address` (`string`):  When `null`, the `ipv6_address` field will be omitted from the resulting object.
+  - `private_ipv4_address` (`string`):  When `null`, the `private_ipv4_address` field will be omitted from the resulting object.
+  - `subnet_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `subnet_mapping` sub block.
@@ -611,9 +611,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

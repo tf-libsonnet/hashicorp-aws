@@ -61,13 +61,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `campaign_hook` (`list[obj]`): Set the `campaign_hook` field on the resulting resource block. When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-campaign_hooknew) constructor.
-  - `limits` (`list[obj]`): Set the `limits` field on the resulting resource block. When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-limitsnew) constructor.
-  - `quiet_time` (`list[obj]`): Set the `quiet_time` field on the resulting resource block. When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-quiet_timenew) constructor.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `campaign_hook` (`list[obj]`):  When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-campaign_hooknew) constructor.
+  - `limits` (`list[obj]`):  When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-limitsnew) constructor.
+  - `quiet_time` (`list[obj]`):  When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-quiet_timenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,13 +91,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `campaign_hook` (`list[obj]`): Set the `campaign_hook` field on the resulting object. When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-campaign_hooknew) constructor.
-  - `limits` (`list[obj]`): Set the `limits` field on the resulting object. When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-limitsnew) constructor.
-  - `quiet_time` (`list[obj]`): Set the `quiet_time` field on the resulting object. When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-quiet_timenew) constructor.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `campaign_hook` (`list[obj]`):  When `null`, the `campaign_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.campaign_hook.new](#fn-campaign_hooknew) constructor.
+  - `limits` (`list[obj]`):  When `null`, the `limits` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.limits.new](#fn-limitsnew) constructor.
+  - `quiet_time` (`list[obj]`):  When `null`, the `quiet_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.pinpoint_app.quiet_time.new](#fn-quiet_timenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `pinpoint_app` resource into the root Terraform configuration.
@@ -295,9 +295,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `lambda_function_name` (`string`): Set the `lambda_function_name` field on the resulting object. When `null`, the `lambda_function_name` field will be omitted from the resulting object.
-  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
-  - `web_url` (`string`): Set the `web_url` field on the resulting object. When `null`, the `web_url` field will be omitted from the resulting object.
+  - `lambda_function_name` (`string`):  When `null`, the `lambda_function_name` field will be omitted from the resulting object.
+  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
+  - `web_url` (`string`):  When `null`, the `web_url` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `campaign_hook` sub block.
@@ -320,10 +320,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `daily` (`number`): Set the `daily` field on the resulting object. When `null`, the `daily` field will be omitted from the resulting object.
-  - `maximum_duration` (`number`): Set the `maximum_duration` field on the resulting object. When `null`, the `maximum_duration` field will be omitted from the resulting object.
-  - `messages_per_second` (`number`): Set the `messages_per_second` field on the resulting object. When `null`, the `messages_per_second` field will be omitted from the resulting object.
-  - `total` (`number`): Set the `total` field on the resulting object. When `null`, the `total` field will be omitted from the resulting object.
+  - `daily` (`number`):  When `null`, the `daily` field will be omitted from the resulting object.
+  - `maximum_duration` (`number`):  When `null`, the `maximum_duration` field will be omitted from the resulting object.
+  - `messages_per_second` (`number`):  When `null`, the `messages_per_second` field will be omitted from the resulting object.
+  - `total` (`number`):  When `null`, the `total` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `limits` sub block.
@@ -346,8 +346,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `quiet_time` sub block.

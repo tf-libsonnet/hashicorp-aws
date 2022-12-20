@@ -63,18 +63,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `arn` (`string`): Set the `arn` field on the resulting resource block. When `null`, the `arn` field will be omitted from the resulting object.
-  - `encryption_type` (`string`): Set the `encryption_type` field on the resulting resource block. When `null`, the `encryption_type` field will be omitted from the resulting object.
-  - `enforce_consumer_deletion` (`bool`): Set the `enforce_consumer_deletion` field on the resulting resource block. When `null`, the `enforce_consumer_deletion` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `retention_period` (`number`): Set the `retention_period` field on the resulting resource block. When `null`, the `retention_period` field will be omitted from the resulting object.
-  - `shard_count` (`number`): Set the `shard_count` field on the resulting resource block. When `null`, the `shard_count` field will be omitted from the resulting object.
-  - `shard_level_metrics` (`list`): Set the `shard_level_metrics` field on the resulting resource block. When `null`, the `shard_level_metrics` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `stream_mode_details` (`list[obj]`): Set the `stream_mode_details` field on the resulting resource block. When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-stream_mode_detailsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-timeoutsnew) constructor.
+  - `arn` (`string`):  When `null`, the `arn` field will be omitted from the resulting object.
+  - `encryption_type` (`string`):  When `null`, the `encryption_type` field will be omitted from the resulting object.
+  - `enforce_consumer_deletion` (`bool`):  When `null`, the `enforce_consumer_deletion` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `retention_period` (`number`):  When `null`, the `retention_period` field will be omitted from the resulting object.
+  - `shard_count` (`number`):  When `null`, the `shard_count` field will be omitted from the resulting object.
+  - `shard_level_metrics` (`list`):  When `null`, the `shard_level_metrics` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `stream_mode_details` (`list[obj]`):  When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-stream_mode_detailsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -98,18 +98,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `arn` (`string`): Set the `arn` field on the resulting object. When `null`, the `arn` field will be omitted from the resulting object.
-  - `encryption_type` (`string`): Set the `encryption_type` field on the resulting object. When `null`, the `encryption_type` field will be omitted from the resulting object.
-  - `enforce_consumer_deletion` (`bool`): Set the `enforce_consumer_deletion` field on the resulting object. When `null`, the `enforce_consumer_deletion` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `retention_period` (`number`): Set the `retention_period` field on the resulting object. When `null`, the `retention_period` field will be omitted from the resulting object.
-  - `shard_count` (`number`): Set the `shard_count` field on the resulting object. When `null`, the `shard_count` field will be omitted from the resulting object.
-  - `shard_level_metrics` (`list`): Set the `shard_level_metrics` field on the resulting object. When `null`, the `shard_level_metrics` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `stream_mode_details` (`list[obj]`): Set the `stream_mode_details` field on the resulting object. When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-stream_mode_detailsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-timeoutsnew) constructor.
+  - `arn` (`string`):  When `null`, the `arn` field will be omitted from the resulting object.
+  - `encryption_type` (`string`):  When `null`, the `encryption_type` field will be omitted from the resulting object.
+  - `enforce_consumer_deletion` (`bool`):  When `null`, the `enforce_consumer_deletion` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `retention_period` (`number`):  When `null`, the `retention_period` field will be omitted from the resulting object.
+  - `shard_count` (`number`):  When `null`, the `shard_count` field will be omitted from the resulting object.
+  - `shard_level_metrics` (`list`):  When `null`, the `shard_level_metrics` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `stream_mode_details` (`list[obj]`):  When `null`, the `stream_mode_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.stream_mode_details.new](#fn-stream_mode_detailsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_stream.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `kinesis_stream` resource into the root Terraform configuration.
@@ -365,7 +365,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `stream_mode` (`string`): Set the `stream_mode` field on the resulting object.
+  - `stream_mode` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `stream_mode_details` sub block.
@@ -388,9 +388,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

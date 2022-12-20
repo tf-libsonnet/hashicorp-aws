@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `allow_self_management` (`bool`): Set the `allow_self_management` field on the resulting resource block. When `null`, the `allow_self_management` field will be omitted from the resulting object.
-  - `ssh_public_key` (`string`): Set the `ssh_public_key` field on the resulting resource block. When `null`, the `ssh_public_key` field will be omitted from the resulting object.
-  - `ssh_username` (`string`): Set the `ssh_username` field on the resulting resource block.
-  - `user_arn` (`string`): Set the `user_arn` field on the resulting resource block.
+  - `allow_self_management` (`bool`):  When `null`, the `allow_self_management` field will be omitted from the resulting object.
+  - `ssh_public_key` (`string`):  When `null`, the `ssh_public_key` field will be omitted from the resulting object.
+  - `ssh_username` (`string`): 
+  - `user_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `allow_self_management` (`bool`): Set the `allow_self_management` field on the resulting object. When `null`, the `allow_self_management` field will be omitted from the resulting object.
-  - `ssh_public_key` (`string`): Set the `ssh_public_key` field on the resulting object. When `null`, the `ssh_public_key` field will be omitted from the resulting object.
-  - `ssh_username` (`string`): Set the `ssh_username` field on the resulting object.
-  - `user_arn` (`string`): Set the `user_arn` field on the resulting object.
+  - `allow_self_management` (`bool`):  When `null`, the `allow_self_management` field will be omitted from the resulting object.
+  - `ssh_public_key` (`string`):  When `null`, the `ssh_public_key` field will be omitted from the resulting object.
+  - `ssh_username` (`string`): 
+  - `user_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `opsworks_user_profile` resource into the root Terraform configuration.

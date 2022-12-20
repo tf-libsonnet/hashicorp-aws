@@ -56,17 +56,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `attributes` (`obj`): Set the `attributes` field on the resulting resource block. When `null`, the `attributes` field will be omitted from the resulting object.
-  - `client_metadata` (`obj`): Set the `client_metadata` field on the resulting resource block. When `null`, the `client_metadata` field will be omitted from the resulting object.
-  - `desired_delivery_mediums` (`list`): Set the `desired_delivery_mediums` field on the resulting resource block. When `null`, the `desired_delivery_mediums` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `force_alias_creation` (`bool`): Set the `force_alias_creation` field on the resulting resource block. When `null`, the `force_alias_creation` field will be omitted from the resulting object.
-  - `message_action` (`string`): Set the `message_action` field on the resulting resource block. When `null`, the `message_action` field will be omitted from the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting resource block. When `null`, the `password` field will be omitted from the resulting object.
-  - `temporary_password` (`string`): Set the `temporary_password` field on the resulting resource block. When `null`, the `temporary_password` field will be omitted from the resulting object.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting resource block.
-  - `username` (`string`): Set the `username` field on the resulting resource block.
-  - `validation_data` (`obj`): Set the `validation_data` field on the resulting resource block. When `null`, the `validation_data` field will be omitted from the resulting object.
+  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+  - `client_metadata` (`obj`):  When `null`, the `client_metadata` field will be omitted from the resulting object.
+  - `desired_delivery_mediums` (`list`):  When `null`, the `desired_delivery_mediums` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `force_alias_creation` (`bool`):  When `null`, the `force_alias_creation` field will be omitted from the resulting object.
+  - `message_action` (`string`):  When `null`, the `message_action` field will be omitted from the resulting object.
+  - `password` (`string`):  When `null`, the `password` field will be omitted from the resulting object.
+  - `temporary_password` (`string`):  When `null`, the `temporary_password` field will be omitted from the resulting object.
+  - `user_pool_id` (`string`): 
+  - `username` (`string`): 
+  - `validation_data` (`obj`):  When `null`, the `validation_data` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,17 +90,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `attributes` (`obj`): Set the `attributes` field on the resulting object. When `null`, the `attributes` field will be omitted from the resulting object.
-  - `client_metadata` (`obj`): Set the `client_metadata` field on the resulting object. When `null`, the `client_metadata` field will be omitted from the resulting object.
-  - `desired_delivery_mediums` (`list`): Set the `desired_delivery_mediums` field on the resulting object. When `null`, the `desired_delivery_mediums` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `force_alias_creation` (`bool`): Set the `force_alias_creation` field on the resulting object. When `null`, the `force_alias_creation` field will be omitted from the resulting object.
-  - `message_action` (`string`): Set the `message_action` field on the resulting object. When `null`, the `message_action` field will be omitted from the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting object. When `null`, the `password` field will be omitted from the resulting object.
-  - `temporary_password` (`string`): Set the `temporary_password` field on the resulting object. When `null`, the `temporary_password` field will be omitted from the resulting object.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
-  - `username` (`string`): Set the `username` field on the resulting object.
-  - `validation_data` (`obj`): Set the `validation_data` field on the resulting object. When `null`, the `validation_data` field will be omitted from the resulting object.
+  - `attributes` (`obj`):  When `null`, the `attributes` field will be omitted from the resulting object.
+  - `client_metadata` (`obj`):  When `null`, the `client_metadata` field will be omitted from the resulting object.
+  - `desired_delivery_mediums` (`list`):  When `null`, the `desired_delivery_mediums` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `force_alias_creation` (`bool`):  When `null`, the `force_alias_creation` field will be omitted from the resulting object.
+  - `message_action` (`string`):  When `null`, the `message_action` field will be omitted from the resulting object.
+  - `password` (`string`):  When `null`, the `password` field will be omitted from the resulting object.
+  - `temporary_password` (`string`):  When `null`, the `temporary_password` field will be omitted from the resulting object.
+  - `user_pool_id` (`string`): 
+  - `username` (`string`): 
+  - `validation_data` (`obj`):  When `null`, the `validation_data` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_user` resource into the root Terraform configuration.

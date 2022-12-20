@@ -62,14 +62,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `force_delete` (`bool`): Set the `force_delete` field on the resulting resource block. When `null`, the `force_delete` field will be omitted from the resulting object.
-  - `image_tag_mutability` (`string`): Set the `image_tag_mutability` field on the resulting resource block. When `null`, the `image_tag_mutability` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting resource block. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
-  - `image_scanning_configuration` (`list[obj]`): Set the `image_scanning_configuration` field on the resulting resource block. When `null`, the `image_scanning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.image_scanning_configuration.new](#fn-image_scanning_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.timeouts.new](#fn-timeoutsnew) constructor.
+  - `force_delete` (`bool`):  When `null`, the `force_delete` field will be omitted from the resulting object.
+  - `image_tag_mutability` (`string`):  When `null`, the `image_tag_mutability` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `image_scanning_configuration` (`list[obj]`):  When `null`, the `image_scanning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.image_scanning_configuration.new](#fn-image_scanning_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,14 +93,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `force_delete` (`bool`): Set the `force_delete` field on the resulting object. When `null`, the `force_delete` field will be omitted from the resulting object.
-  - `image_tag_mutability` (`string`): Set the `image_tag_mutability` field on the resulting object. When `null`, the `image_tag_mutability` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting object. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
-  - `image_scanning_configuration` (`list[obj]`): Set the `image_scanning_configuration` field on the resulting object. When `null`, the `image_scanning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.image_scanning_configuration.new](#fn-image_scanning_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.timeouts.new](#fn-timeoutsnew) constructor.
+  - `force_delete` (`bool`):  When `null`, the `force_delete` field will be omitted from the resulting object.
+  - `image_tag_mutability` (`string`):  When `null`, the `image_tag_mutability` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `encryption_configuration` (`list[obj]`):  When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
+  - `image_scanning_configuration` (`list[obj]`):  When `null`, the `image_scanning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.image_scanning_configuration.new](#fn-image_scanning_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecr_repository.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecr_repository` resource into the root Terraform configuration.
@@ -313,8 +313,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `encryption_type` (`string`): Set the `encryption_type` field on the resulting object. When `null`, the `encryption_type` field will be omitted from the resulting object.
-  - `kms_key` (`string`): Set the `kms_key` field on the resulting object. When `null`, the `kms_key` field will be omitted from the resulting object.
+  - `encryption_type` (`string`):  When `null`, the `encryption_type` field will be omitted from the resulting object.
+  - `kms_key` (`string`):  When `null`, the `kms_key` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encryption_configuration` sub block.
@@ -337,7 +337,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `scan_on_push` (`bool`): Set the `scan_on_push` field on the resulting object.
+  - `scan_on_push` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `image_scanning_configuration` sub block.
@@ -360,7 +360,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

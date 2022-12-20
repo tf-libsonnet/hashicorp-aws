@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `health_check_arn` (`string`): Set the `health_check_arn` field on the resulting resource block.
-  - `shield_protection_id` (`string`): Set the `shield_protection_id` field on the resulting resource block.
+  - `health_check_arn` (`string`): 
+  - `shield_protection_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `health_check_arn` (`string`): Set the `health_check_arn` field on the resulting object.
-  - `shield_protection_id` (`string`): Set the `shield_protection_id` field on the resulting object.
+  - `health_check_arn` (`string`): 
+  - `shield_protection_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `shield_protection_health_check_association` resource into the root Terraform configuration.

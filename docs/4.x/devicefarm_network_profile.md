@@ -59,20 +59,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `downlink_bandwidth_bits` (`number`): Set the `downlink_bandwidth_bits` field on the resulting resource block. When `null`, the `downlink_bandwidth_bits` field will be omitted from the resulting object.
-  - `downlink_delay_ms` (`number`): Set the `downlink_delay_ms` field on the resulting resource block. When `null`, the `downlink_delay_ms` field will be omitted from the resulting object.
-  - `downlink_jitter_ms` (`number`): Set the `downlink_jitter_ms` field on the resulting resource block. When `null`, the `downlink_jitter_ms` field will be omitted from the resulting object.
-  - `downlink_loss_percent` (`number`): Set the `downlink_loss_percent` field on the resulting resource block. When `null`, the `downlink_loss_percent` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `project_arn` (`string`): Set the `project_arn` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
-  - `uplink_bandwidth_bits` (`number`): Set the `uplink_bandwidth_bits` field on the resulting resource block. When `null`, the `uplink_bandwidth_bits` field will be omitted from the resulting object.
-  - `uplink_delay_ms` (`number`): Set the `uplink_delay_ms` field on the resulting resource block. When `null`, the `uplink_delay_ms` field will be omitted from the resulting object.
-  - `uplink_jitter_ms` (`number`): Set the `uplink_jitter_ms` field on the resulting resource block. When `null`, the `uplink_jitter_ms` field will be omitted from the resulting object.
-  - `uplink_loss_percent` (`number`): Set the `uplink_loss_percent` field on the resulting resource block. When `null`, the `uplink_loss_percent` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `downlink_bandwidth_bits` (`number`):  When `null`, the `downlink_bandwidth_bits` field will be omitted from the resulting object.
+  - `downlink_delay_ms` (`number`):  When `null`, the `downlink_delay_ms` field will be omitted from the resulting object.
+  - `downlink_jitter_ms` (`number`):  When `null`, the `downlink_jitter_ms` field will be omitted from the resulting object.
+  - `downlink_loss_percent` (`number`):  When `null`, the `downlink_loss_percent` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `project_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `uplink_bandwidth_bits` (`number`):  When `null`, the `uplink_bandwidth_bits` field will be omitted from the resulting object.
+  - `uplink_delay_ms` (`number`):  When `null`, the `uplink_delay_ms` field will be omitted from the resulting object.
+  - `uplink_jitter_ms` (`number`):  When `null`, the `uplink_jitter_ms` field will be omitted from the resulting object.
+  - `uplink_loss_percent` (`number`):  When `null`, the `uplink_loss_percent` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,20 +96,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `downlink_bandwidth_bits` (`number`): Set the `downlink_bandwidth_bits` field on the resulting object. When `null`, the `downlink_bandwidth_bits` field will be omitted from the resulting object.
-  - `downlink_delay_ms` (`number`): Set the `downlink_delay_ms` field on the resulting object. When `null`, the `downlink_delay_ms` field will be omitted from the resulting object.
-  - `downlink_jitter_ms` (`number`): Set the `downlink_jitter_ms` field on the resulting object. When `null`, the `downlink_jitter_ms` field will be omitted from the resulting object.
-  - `downlink_loss_percent` (`number`): Set the `downlink_loss_percent` field on the resulting object. When `null`, the `downlink_loss_percent` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `project_arn` (`string`): Set the `project_arn` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
-  - `uplink_bandwidth_bits` (`number`): Set the `uplink_bandwidth_bits` field on the resulting object. When `null`, the `uplink_bandwidth_bits` field will be omitted from the resulting object.
-  - `uplink_delay_ms` (`number`): Set the `uplink_delay_ms` field on the resulting object. When `null`, the `uplink_delay_ms` field will be omitted from the resulting object.
-  - `uplink_jitter_ms` (`number`): Set the `uplink_jitter_ms` field on the resulting object. When `null`, the `uplink_jitter_ms` field will be omitted from the resulting object.
-  - `uplink_loss_percent` (`number`): Set the `uplink_loss_percent` field on the resulting object. When `null`, the `uplink_loss_percent` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `downlink_bandwidth_bits` (`number`):  When `null`, the `downlink_bandwidth_bits` field will be omitted from the resulting object.
+  - `downlink_delay_ms` (`number`):  When `null`, the `downlink_delay_ms` field will be omitted from the resulting object.
+  - `downlink_jitter_ms` (`number`):  When `null`, the `downlink_jitter_ms` field will be omitted from the resulting object.
+  - `downlink_loss_percent` (`number`):  When `null`, the `downlink_loss_percent` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `project_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `uplink_bandwidth_bits` (`number`):  When `null`, the `uplink_bandwidth_bits` field will be omitted from the resulting object.
+  - `uplink_delay_ms` (`number`):  When `null`, the `uplink_delay_ms` field will be omitted from the resulting object.
+  - `uplink_jitter_ms` (`number`):  When `null`, the `uplink_jitter_ms` field will be omitted from the resulting object.
+  - `uplink_loss_percent` (`number`):  When `null`, the `uplink_loss_percent` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `devicefarm_network_profile` resource into the root Terraform configuration.

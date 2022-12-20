@@ -77,17 +77,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `schema` (`string`): Set the `schema` field on the resulting resource block. When `null`, the `schema` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `xray_enabled` (`bool`): Set the `xray_enabled` field on the resulting resource block. When `null`, the `xray_enabled` field will be omitted from the resulting object.
-  - `additional_authentication_provider` (`list[obj]`): Set the `additional_authentication_provider` field on the resulting resource block. When `null`, the `additional_authentication_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.new](#fn-additional_authentication_providernew) constructor.
-  - `lambda_authorizer_config` (`list[obj]`): Set the `lambda_authorizer_config` field on the resulting resource block. When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.lambda_authorizer_config.new](#fn-lambda_authorizer_confignew) constructor.
-  - `log_config` (`list[obj]`): Set the `log_config` field on the resulting resource block. When `null`, the `log_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.log_config.new](#fn-log_confignew) constructor.
-  - `openid_connect_config` (`list[obj]`): Set the `openid_connect_config` field on the resulting resource block. When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.openid_connect_config.new](#fn-openid_connect_confignew) constructor.
-  - `user_pool_config` (`list[obj]`): Set the `user_pool_config` field on the resulting resource block. When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.user_pool_config.new](#fn-user_pool_confignew) constructor.
+  - `authentication_type` (`string`): 
+  - `name` (`string`): 
+  - `schema` (`string`):  When `null`, the `schema` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `xray_enabled` (`bool`):  When `null`, the `xray_enabled` field will be omitted from the resulting object.
+  - `additional_authentication_provider` (`list[obj]`):  When `null`, the `additional_authentication_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.new](#fn-additional_authentication_providernew) constructor.
+  - `lambda_authorizer_config` (`list[obj]`):  When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.lambda_authorizer_config.new](#fn-lambda_authorizer_confignew) constructor.
+  - `log_config` (`list[obj]`):  When `null`, the `log_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.log_config.new](#fn-log_confignew) constructor.
+  - `openid_connect_config` (`list[obj]`):  When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.openid_connect_config.new](#fn-openid_connect_confignew) constructor.
+  - `user_pool_config` (`list[obj]`):  When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.user_pool_config.new](#fn-user_pool_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -111,17 +111,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `schema` (`string`): Set the `schema` field on the resulting object. When `null`, the `schema` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `xray_enabled` (`bool`): Set the `xray_enabled` field on the resulting object. When `null`, the `xray_enabled` field will be omitted from the resulting object.
-  - `additional_authentication_provider` (`list[obj]`): Set the `additional_authentication_provider` field on the resulting object. When `null`, the `additional_authentication_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.new](#fn-additional_authentication_providernew) constructor.
-  - `lambda_authorizer_config` (`list[obj]`): Set the `lambda_authorizer_config` field on the resulting object. When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.lambda_authorizer_config.new](#fn-lambda_authorizer_confignew) constructor.
-  - `log_config` (`list[obj]`): Set the `log_config` field on the resulting object. When `null`, the `log_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.log_config.new](#fn-log_confignew) constructor.
-  - `openid_connect_config` (`list[obj]`): Set the `openid_connect_config` field on the resulting object. When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.openid_connect_config.new](#fn-openid_connect_confignew) constructor.
-  - `user_pool_config` (`list[obj]`): Set the `user_pool_config` field on the resulting object. When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.user_pool_config.new](#fn-user_pool_confignew) constructor.
+  - `authentication_type` (`string`): 
+  - `name` (`string`): 
+  - `schema` (`string`):  When `null`, the `schema` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `xray_enabled` (`bool`):  When `null`, the `xray_enabled` field will be omitted from the resulting object.
+  - `additional_authentication_provider` (`list[obj]`):  When `null`, the `additional_authentication_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.new](#fn-additional_authentication_providernew) constructor.
+  - `lambda_authorizer_config` (`list[obj]`):  When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.lambda_authorizer_config.new](#fn-lambda_authorizer_confignew) constructor.
+  - `log_config` (`list[obj]`):  When `null`, the `log_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.log_config.new](#fn-log_confignew) constructor.
+  - `openid_connect_config` (`list[obj]`):  When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.openid_connect_config.new](#fn-openid_connect_confignew) constructor.
+  - `user_pool_config` (`list[obj]`):  When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.user_pool_config.new](#fn-user_pool_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appsync_graphql_api` resource into the root Terraform configuration.
@@ -425,10 +425,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting object.
-  - `lambda_authorizer_config` (`list[obj]`): Set the `lambda_authorizer_config` field on the resulting object. When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.lambda_authorizer_config.new](#fn-additional_authentication_providerlambda_authorizer_confignew) constructor.
-  - `openid_connect_config` (`list[obj]`): Set the `openid_connect_config` field on the resulting object. When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.openid_connect_config.new](#fn-additional_authentication_provideropenid_connect_confignew) constructor.
-  - `user_pool_config` (`list[obj]`): Set the `user_pool_config` field on the resulting object. When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.user_pool_config.new](#fn-additional_authentication_provideruser_pool_confignew) constructor.
+  - `authentication_type` (`string`): 
+  - `lambda_authorizer_config` (`list[obj]`):  When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.lambda_authorizer_config.new](#fn-additional_authentication_providerlambda_authorizer_confignew) constructor.
+  - `openid_connect_config` (`list[obj]`):  When `null`, the `openid_connect_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.openid_connect_config.new](#fn-additional_authentication_provideropenid_connect_confignew) constructor.
+  - `user_pool_config` (`list[obj]`):  When `null`, the `user_pool_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.user_pool_config.new](#fn-additional_authentication_provideruser_pool_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `additional_authentication_provider` sub block.
@@ -451,9 +451,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `authorizer_result_ttl_in_seconds` (`number`): Set the `authorizer_result_ttl_in_seconds` field on the resulting object. When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
-  - `authorizer_uri` (`string`): Set the `authorizer_uri` field on the resulting object.
-  - `identity_validation_expression` (`string`): Set the `identity_validation_expression` field on the resulting object. When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
+  - `authorizer_result_ttl_in_seconds` (`number`):  When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
+  - `authorizer_uri` (`string`): 
+  - `identity_validation_expression` (`string`):  When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda_authorizer_config` sub block.
@@ -476,10 +476,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `auth_ttl` (`number`): Set the `auth_ttl` field on the resulting object. When `null`, the `auth_ttl` field will be omitted from the resulting object.
-  - `client_id` (`string`): Set the `client_id` field on the resulting object. When `null`, the `client_id` field will be omitted from the resulting object.
-  - `iat_ttl` (`number`): Set the `iat_ttl` field on the resulting object. When `null`, the `iat_ttl` field will be omitted from the resulting object.
-  - `issuer` (`string`): Set the `issuer` field on the resulting object.
+  - `auth_ttl` (`number`):  When `null`, the `auth_ttl` field will be omitted from the resulting object.
+  - `client_id` (`string`):  When `null`, the `client_id` field will be omitted from the resulting object.
+  - `iat_ttl` (`number`):  When `null`, the `iat_ttl` field will be omitted from the resulting object.
+  - `issuer` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `openid_connect_config` sub block.
@@ -502,9 +502,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `app_id_client_regex` (`string`): Set the `app_id_client_regex` field on the resulting object. When `null`, the `app_id_client_regex` field will be omitted from the resulting object.
-  - `aws_region` (`string`): Set the `aws_region` field on the resulting object. When `null`, the `aws_region` field will be omitted from the resulting object.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
+  - `app_id_client_regex` (`string`):  When `null`, the `app_id_client_regex` field will be omitted from the resulting object.
+  - `aws_region` (`string`):  When `null`, the `aws_region` field will be omitted from the resulting object.
+  - `user_pool_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `user_pool_config` sub block.
@@ -527,9 +527,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `authorizer_result_ttl_in_seconds` (`number`): Set the `authorizer_result_ttl_in_seconds` field on the resulting object. When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
-  - `authorizer_uri` (`string`): Set the `authorizer_uri` field on the resulting object.
-  - `identity_validation_expression` (`string`): Set the `identity_validation_expression` field on the resulting object. When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
+  - `authorizer_result_ttl_in_seconds` (`number`):  When `null`, the `authorizer_result_ttl_in_seconds` field will be omitted from the resulting object.
+  - `authorizer_uri` (`string`): 
+  - `identity_validation_expression` (`string`):  When `null`, the `identity_validation_expression` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda_authorizer_config` sub block.
@@ -552,9 +552,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_logs_role_arn` (`string`): Set the `cloudwatch_logs_role_arn` field on the resulting object.
-  - `exclude_verbose_content` (`bool`): Set the `exclude_verbose_content` field on the resulting object. When `null`, the `exclude_verbose_content` field will be omitted from the resulting object.
-  - `field_log_level` (`string`): Set the `field_log_level` field on the resulting object.
+  - `cloudwatch_logs_role_arn` (`string`): 
+  - `exclude_verbose_content` (`bool`):  When `null`, the `exclude_verbose_content` field will be omitted from the resulting object.
+  - `field_log_level` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `log_config` sub block.
@@ -577,10 +577,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `auth_ttl` (`number`): Set the `auth_ttl` field on the resulting object. When `null`, the `auth_ttl` field will be omitted from the resulting object.
-  - `client_id` (`string`): Set the `client_id` field on the resulting object. When `null`, the `client_id` field will be omitted from the resulting object.
-  - `iat_ttl` (`number`): Set the `iat_ttl` field on the resulting object. When `null`, the `iat_ttl` field will be omitted from the resulting object.
-  - `issuer` (`string`): Set the `issuer` field on the resulting object.
+  - `auth_ttl` (`number`):  When `null`, the `auth_ttl` field will be omitted from the resulting object.
+  - `client_id` (`string`):  When `null`, the `client_id` field will be omitted from the resulting object.
+  - `iat_ttl` (`number`):  When `null`, the `iat_ttl` field will be omitted from the resulting object.
+  - `issuer` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `openid_connect_config` sub block.
@@ -603,10 +603,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `app_id_client_regex` (`string`): Set the `app_id_client_regex` field on the resulting object. When `null`, the `app_id_client_regex` field will be omitted from the resulting object.
-  - `aws_region` (`string`): Set the `aws_region` field on the resulting object. When `null`, the `aws_region` field will be omitted from the resulting object.
-  - `default_action` (`string`): Set the `default_action` field on the resulting object.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
+  - `app_id_client_regex` (`string`):  When `null`, the `app_id_client_regex` field will be omitted from the resulting object.
+  - `aws_region` (`string`):  When `null`, the `aws_region` field will be omitted from the resulting object.
+  - `default_action` (`string`): 
+  - `user_pool_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `user_pool_config` sub block.

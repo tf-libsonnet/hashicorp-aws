@@ -55,13 +55,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `destinations` (`list`): Set the `destinations` field on the resulting resource block. When `null`, the `destinations` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `notification_target` (`string`): Set the `notification_target` field on the resulting resource block. When `null`, the `notification_target` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout_in_seconds` (`number`): Set the `timeout_in_seconds` field on the resulting resource block. When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
-  - `player_latency_policy` (`list[obj]`): Set the `player_latency_policy` field on the resulting resource block. When `null`, the `player_latency_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_session_queue.player_latency_policy.new](#fn-player_latency_policynew) constructor.
+  - `destinations` (`list`):  When `null`, the `destinations` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `notification_target` (`string`):  When `null`, the `notification_target` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout_in_seconds` (`number`):  When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
+  - `player_latency_policy` (`list[obj]`):  When `null`, the `player_latency_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_session_queue.player_latency_policy.new](#fn-player_latency_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,13 +85,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `destinations` (`list`): Set the `destinations` field on the resulting object. When `null`, the `destinations` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `notification_target` (`string`): Set the `notification_target` field on the resulting object. When `null`, the `notification_target` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeout_in_seconds` (`number`): Set the `timeout_in_seconds` field on the resulting object. When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
-  - `player_latency_policy` (`list[obj]`): Set the `player_latency_policy` field on the resulting object. When `null`, the `player_latency_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_session_queue.player_latency_policy.new](#fn-player_latency_policynew) constructor.
+  - `destinations` (`list`):  When `null`, the `destinations` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `notification_target` (`string`):  When `null`, the `notification_target` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeout_in_seconds` (`number`):  When `null`, the `timeout_in_seconds` field will be omitted from the resulting object.
+  - `player_latency_policy` (`list[obj]`):  When `null`, the `player_latency_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.gamelift_game_session_queue.player_latency_policy.new](#fn-player_latency_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `gamelift_game_session_queue` resource into the root Terraform configuration.
@@ -247,8 +247,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `maximum_individual_player_latency_milliseconds` (`number`): Set the `maximum_individual_player_latency_milliseconds` field on the resulting object.
-  - `policy_duration_seconds` (`number`): Set the `policy_duration_seconds` field on the resulting object. When `null`, the `policy_duration_seconds` field will be omitted from the resulting object.
+  - `maximum_individual_player_latency_milliseconds` (`number`): 
+  - `policy_duration_seconds` (`number`):  When `null`, the `policy_duration_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `player_latency_policy` sub block.

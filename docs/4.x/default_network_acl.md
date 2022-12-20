@@ -57,12 +57,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `default_network_acl_id` (`string`): Set the `default_network_acl_id` field on the resulting resource block.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block. When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `egress` (`list[obj]`): Set the `egress` field on the resulting resource block. When `null`, the `egress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.egress.new](#fn-egressnew) constructor.
-  - `ingress` (`list[obj]`): Set the `ingress` field on the resulting resource block. When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.ingress.new](#fn-ingressnew) constructor.
+  - `default_network_acl_id` (`string`): 
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `egress` (`list[obj]`):  When `null`, the `egress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.egress.new](#fn-egressnew) constructor.
+  - `ingress` (`list[obj]`):  When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.ingress.new](#fn-ingressnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,12 +86,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_network_acl_id` (`string`): Set the `default_network_acl_id` field on the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `egress` (`list[obj]`): Set the `egress` field on the resulting object. When `null`, the `egress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.egress.new](#fn-egressnew) constructor.
-  - `ingress` (`list[obj]`): Set the `ingress` field on the resulting object. When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.ingress.new](#fn-ingressnew) constructor.
+  - `default_network_acl_id` (`string`): 
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `egress` (`list[obj]`):  When `null`, the `egress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.egress.new](#fn-egressnew) constructor.
+  - `ingress` (`list[obj]`):  When `null`, the `ingress` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.default_network_acl.ingress.new](#fn-ingressnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `default_network_acl` resource into the root Terraform configuration.
@@ -252,15 +252,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`string`): Set the `action` field on the resulting object.
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `from_port` (`number`): Set the `from_port` field on the resulting object.
-  - `icmp_code` (`number`): Set the `icmp_code` field on the resulting object. When `null`, the `icmp_code` field will be omitted from the resulting object.
-  - `icmp_type` (`number`): Set the `icmp_type` field on the resulting object. When `null`, the `icmp_type` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting object.
-  - `rule_no` (`number`): Set the `rule_no` field on the resulting object.
-  - `to_port` (`number`): Set the `to_port` field on the resulting object.
+  - `action` (`string`): 
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `from_port` (`number`): 
+  - `icmp_code` (`number`):  When `null`, the `icmp_code` field will be omitted from the resulting object.
+  - `icmp_type` (`number`):  When `null`, the `icmp_type` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `protocol` (`string`): 
+  - `rule_no` (`number`): 
+  - `to_port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `egress` sub block.
@@ -283,15 +283,15 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`string`): Set the `action` field on the resulting object.
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `from_port` (`number`): Set the `from_port` field on the resulting object.
-  - `icmp_code` (`number`): Set the `icmp_code` field on the resulting object. When `null`, the `icmp_code` field will be omitted from the resulting object.
-  - `icmp_type` (`number`): Set the `icmp_type` field on the resulting object. When `null`, the `icmp_type` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting object.
-  - `rule_no` (`number`): Set the `rule_no` field on the resulting object.
-  - `to_port` (`number`): Set the `to_port` field on the resulting object.
+  - `action` (`string`): 
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `from_port` (`number`): 
+  - `icmp_code` (`number`):  When `null`, the `icmp_code` field will be omitted from the resulting object.
+  - `icmp_type` (`number`):  When `null`, the `icmp_type` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `protocol` (`string`): 
+  - `rule_no` (`number`): 
+  - `to_port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `ingress` sub block.

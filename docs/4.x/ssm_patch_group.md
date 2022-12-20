@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `baseline_id` (`string`): Set the `baseline_id` field on the resulting resource block.
-  - `patch_group` (`string`): Set the `patch_group` field on the resulting resource block.
+  - `baseline_id` (`string`): 
+  - `patch_group` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `baseline_id` (`string`): Set the `baseline_id` field on the resulting object.
-  - `patch_group` (`string`): Set the `patch_group` field on the resulting object.
+  - `baseline_id` (`string`): 
+  - `patch_group` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_patch_group` resource into the root Terraform configuration.

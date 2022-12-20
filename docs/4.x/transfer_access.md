@@ -59,14 +59,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `external_id` (`string`): Set the `external_id` field on the resulting resource block.
-  - `home_directory` (`string`): Set the `home_directory` field on the resulting resource block. When `null`, the `home_directory` field will be omitted from the resulting object.
-  - `home_directory_type` (`string`): Set the `home_directory_type` field on the resulting resource block. When `null`, the `home_directory_type` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
-  - `role` (`string`): Set the `role` field on the resulting resource block. When `null`, the `role` field will be omitted from the resulting object.
-  - `server_id` (`string`): Set the `server_id` field on the resulting resource block.
-  - `home_directory_mappings` (`list[obj]`): Set the `home_directory_mappings` field on the resulting resource block. When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-home_directory_mappingsnew) constructor.
-  - `posix_profile` (`list[obj]`): Set the `posix_profile` field on the resulting resource block. When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-posix_profilenew) constructor.
+  - `external_id` (`string`): 
+  - `home_directory` (`string`):  When `null`, the `home_directory` field will be omitted from the resulting object.
+  - `home_directory_type` (`string`):  When `null`, the `home_directory_type` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `role` (`string`):  When `null`, the `role` field will be omitted from the resulting object.
+  - `server_id` (`string`): 
+  - `home_directory_mappings` (`list[obj]`):  When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-home_directory_mappingsnew) constructor.
+  - `posix_profile` (`list[obj]`):  When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-posix_profilenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,14 +90,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `external_id` (`string`): Set the `external_id` field on the resulting object.
-  - `home_directory` (`string`): Set the `home_directory` field on the resulting object. When `null`, the `home_directory` field will be omitted from the resulting object.
-  - `home_directory_type` (`string`): Set the `home_directory_type` field on the resulting object. When `null`, the `home_directory_type` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
-  - `role` (`string`): Set the `role` field on the resulting object. When `null`, the `role` field will be omitted from the resulting object.
-  - `server_id` (`string`): Set the `server_id` field on the resulting object.
-  - `home_directory_mappings` (`list[obj]`): Set the `home_directory_mappings` field on the resulting object. When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-home_directory_mappingsnew) constructor.
-  - `posix_profile` (`list[obj]`): Set the `posix_profile` field on the resulting object. When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-posix_profilenew) constructor.
+  - `external_id` (`string`): 
+  - `home_directory` (`string`):  When `null`, the `home_directory` field will be omitted from the resulting object.
+  - `home_directory_type` (`string`):  When `null`, the `home_directory_type` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `role` (`string`):  When `null`, the `role` field will be omitted from the resulting object.
+  - `server_id` (`string`): 
+  - `home_directory_mappings` (`list[obj]`):  When `null`, the `home_directory_mappings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.home_directory_mappings.new](#fn-home_directory_mappingsnew) constructor.
+  - `posix_profile` (`list[obj]`):  When `null`, the `posix_profile` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_access.posix_profile.new](#fn-posix_profilenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transfer_access` resource into the root Terraform configuration.
@@ -290,8 +290,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `entry` (`string`): Set the `entry` field on the resulting object.
-  - `target` (`string`): Set the `target` field on the resulting object.
+  - `entry` (`string`): 
+  - `target` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `home_directory_mappings` sub block.
@@ -314,9 +314,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `gid` (`number`): Set the `gid` field on the resulting object.
-  - `secondary_gids` (`list`): Set the `secondary_gids` field on the resulting object. When `null`, the `secondary_gids` field will be omitted from the resulting object.
-  - `uid` (`number`): Set the `uid` field on the resulting object.
+  - `gid` (`number`): 
+  - `secondary_gids` (`list`):  When `null`, the `secondary_gids` field will be omitted from the resulting object.
+  - `uid` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `posix_profile` sub block.

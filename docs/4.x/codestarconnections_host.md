@@ -56,11 +56,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `provider_endpoint` (`string`): Set the `provider_endpoint` field on the resulting resource block.
-  - `provider_type` (`string`): Set the `provider_type` field on the resulting resource block.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting resource block. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
+  - `name` (`string`): 
+  - `provider_endpoint` (`string`): 
+  - `provider_type` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,11 +84,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `provider_endpoint` (`string`): Set the `provider_endpoint` field on the resulting object.
-  - `provider_type` (`string`): Set the `provider_type` field on the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.timeouts.new](#fn-timeoutsnew) constructor.
-  - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting object. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
+  - `name` (`string`): 
+  - `provider_endpoint` (`string`): 
+  - `provider_type` (`string`): 
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.timeouts.new](#fn-timeoutsnew) constructor.
+  - `vpc_configuration` (`list[obj]`):  When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarconnections_host.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codestarconnections_host` resource into the root Terraform configuration.
@@ -232,9 +232,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -257,10 +257,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `tls_certificate` (`string`): Set the `tls_certificate` field on the resulting object. When `null`, the `tls_certificate` field will be omitted from the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `security_group_ids` (`list`): 
+  - `subnet_ids` (`list`): 
+  - `tls_certificate` (`string`):  When `null`, the `tls_certificate` field will be omitted from the resulting object.
+  - `vpc_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `vpc_configuration` sub block.

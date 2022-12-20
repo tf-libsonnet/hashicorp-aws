@@ -54,10 +54,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `branch_filter` (`string`): Set the `branch_filter` field on the resulting resource block. When `null`, the `branch_filter` field will be omitted from the resulting object.
-  - `build_type` (`string`): Set the `build_type` field on the resulting resource block. When `null`, the `build_type` field will be omitted from the resulting object.
-  - `project_name` (`string`): Set the `project_name` field on the resulting resource block.
-  - `filter_group` (`list[obj]`): Set the `filter_group` field on the resulting resource block. When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-filter_groupnew) constructor.
+  - `branch_filter` (`string`):  When `null`, the `branch_filter` field will be omitted from the resulting object.
+  - `build_type` (`string`):  When `null`, the `build_type` field will be omitted from the resulting object.
+  - `project_name` (`string`): 
+  - `filter_group` (`list[obj]`):  When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-filter_groupnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -81,10 +81,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `branch_filter` (`string`): Set the `branch_filter` field on the resulting object. When `null`, the `branch_filter` field will be omitted from the resulting object.
-  - `build_type` (`string`): Set the `build_type` field on the resulting object. When `null`, the `build_type` field will be omitted from the resulting object.
-  - `project_name` (`string`): Set the `project_name` field on the resulting object.
-  - `filter_group` (`list[obj]`): Set the `filter_group` field on the resulting object. When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-filter_groupnew) constructor.
+  - `branch_filter` (`string`):  When `null`, the `branch_filter` field will be omitted from the resulting object.
+  - `build_type` (`string`):  When `null`, the `build_type` field will be omitted from the resulting object.
+  - `project_name` (`string`): 
+  - `filter_group` (`list[obj]`):  When `null`, the `filter_group` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.new](#fn-filter_groupnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codebuild_webhook` resource into the root Terraform configuration.
@@ -192,7 +192,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-filter_groupfilternew) constructor.
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_webhook.filter_group.filter.new](#fn-filter_groupfilternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filter_group` sub block.
@@ -215,9 +215,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `exclude_matched_pattern` (`bool`): Set the `exclude_matched_pattern` field on the resulting object. When `null`, the `exclude_matched_pattern` field will be omitted from the resulting object.
-  - `pattern` (`string`): Set the `pattern` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `exclude_matched_pattern` (`bool`):  When `null`, the `exclude_matched_pattern` field will be omitted from the resulting object.
+  - `pattern` (`string`): 
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.

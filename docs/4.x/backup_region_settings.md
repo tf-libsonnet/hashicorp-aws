@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `resource_type_management_preference` (`obj`): Set the `resource_type_management_preference` field on the resulting resource block. When `null`, the `resource_type_management_preference` field will be omitted from the resulting object.
-  - `resource_type_opt_in_preference` (`obj`): Set the `resource_type_opt_in_preference` field on the resulting resource block.
+  - `resource_type_management_preference` (`obj`):  When `null`, the `resource_type_management_preference` field will be omitted from the resulting object.
+  - `resource_type_opt_in_preference` (`obj`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `resource_type_management_preference` (`obj`): Set the `resource_type_management_preference` field on the resulting object. When `null`, the `resource_type_management_preference` field will be omitted from the resulting object.
-  - `resource_type_opt_in_preference` (`obj`): Set the `resource_type_opt_in_preference` field on the resulting object.
+  - `resource_type_management_preference` (`obj`):  When `null`, the `resource_type_management_preference` field will be omitted from the resulting object.
+  - `resource_type_opt_in_preference` (`obj`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `backup_region_settings` resource into the root Terraform configuration.

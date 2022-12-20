@@ -73,29 +73,29 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `actions_enabled` (`bool`): Set the `actions_enabled` field on the resulting resource block. When `null`, the `actions_enabled` field will be omitted from the resulting object.
-  - `alarm_actions` (`list`): Set the `alarm_actions` field on the resulting resource block. When `null`, the `alarm_actions` field will be omitted from the resulting object.
-  - `alarm_description` (`string`): Set the `alarm_description` field on the resulting resource block. When `null`, the `alarm_description` field will be omitted from the resulting object.
-  - `alarm_name` (`string`): Set the `alarm_name` field on the resulting resource block.
-  - `comparison_operator` (`string`): Set the `comparison_operator` field on the resulting resource block.
-  - `datapoints_to_alarm` (`number`): Set the `datapoints_to_alarm` field on the resulting resource block. When `null`, the `datapoints_to_alarm` field will be omitted from the resulting object.
-  - `dimensions` (`obj`): Set the `dimensions` field on the resulting resource block. When `null`, the `dimensions` field will be omitted from the resulting object.
-  - `evaluate_low_sample_count_percentiles` (`string`): Set the `evaluate_low_sample_count_percentiles` field on the resulting resource block. When `null`, the `evaluate_low_sample_count_percentiles` field will be omitted from the resulting object.
-  - `evaluation_periods` (`number`): Set the `evaluation_periods` field on the resulting resource block.
-  - `extended_statistic` (`string`): Set the `extended_statistic` field on the resulting resource block. When `null`, the `extended_statistic` field will be omitted from the resulting object.
-  - `insufficient_data_actions` (`list`): Set the `insufficient_data_actions` field on the resulting resource block. When `null`, the `insufficient_data_actions` field will be omitted from the resulting object.
-  - `metric_name` (`string`): Set the `metric_name` field on the resulting resource block. When `null`, the `metric_name` field will be omitted from the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting resource block. When `null`, the `namespace` field will be omitted from the resulting object.
-  - `ok_actions` (`list`): Set the `ok_actions` field on the resulting resource block. When `null`, the `ok_actions` field will be omitted from the resulting object.
-  - `period` (`number`): Set the `period` field on the resulting resource block. When `null`, the `period` field will be omitted from the resulting object.
-  - `statistic` (`string`): Set the `statistic` field on the resulting resource block. When `null`, the `statistic` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `threshold` (`number`): Set the `threshold` field on the resulting resource block. When `null`, the `threshold` field will be omitted from the resulting object.
-  - `threshold_metric_id` (`string`): Set the `threshold_metric_id` field on the resulting resource block. When `null`, the `threshold_metric_id` field will be omitted from the resulting object.
-  - `treat_missing_data` (`string`): Set the `treat_missing_data` field on the resulting resource block. When `null`, the `treat_missing_data` field will be omitted from the resulting object.
-  - `unit` (`string`): Set the `unit` field on the resulting resource block. When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric_query` (`list[obj]`): Set the `metric_query` field on the resulting resource block. When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-metric_querynew) constructor.
+  - `actions_enabled` (`bool`):  When `null`, the `actions_enabled` field will be omitted from the resulting object.
+  - `alarm_actions` (`list`):  When `null`, the `alarm_actions` field will be omitted from the resulting object.
+  - `alarm_description` (`string`):  When `null`, the `alarm_description` field will be omitted from the resulting object.
+  - `alarm_name` (`string`): 
+  - `comparison_operator` (`string`): 
+  - `datapoints_to_alarm` (`number`):  When `null`, the `datapoints_to_alarm` field will be omitted from the resulting object.
+  - `dimensions` (`obj`):  When `null`, the `dimensions` field will be omitted from the resulting object.
+  - `evaluate_low_sample_count_percentiles` (`string`):  When `null`, the `evaluate_low_sample_count_percentiles` field will be omitted from the resulting object.
+  - `evaluation_periods` (`number`): 
+  - `extended_statistic` (`string`):  When `null`, the `extended_statistic` field will be omitted from the resulting object.
+  - `insufficient_data_actions` (`list`):  When `null`, the `insufficient_data_actions` field will be omitted from the resulting object.
+  - `metric_name` (`string`):  When `null`, the `metric_name` field will be omitted from the resulting object.
+  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
+  - `ok_actions` (`list`):  When `null`, the `ok_actions` field will be omitted from the resulting object.
+  - `period` (`number`):  When `null`, the `period` field will be omitted from the resulting object.
+  - `statistic` (`string`):  When `null`, the `statistic` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `threshold` (`number`):  When `null`, the `threshold` field will be omitted from the resulting object.
+  - `threshold_metric_id` (`string`):  When `null`, the `threshold_metric_id` field will be omitted from the resulting object.
+  - `treat_missing_data` (`string`):  When `null`, the `treat_missing_data` field will be omitted from the resulting object.
+  - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
+  - `metric_query` (`list[obj]`):  When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-metric_querynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -119,29 +119,29 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `actions_enabled` (`bool`): Set the `actions_enabled` field on the resulting object. When `null`, the `actions_enabled` field will be omitted from the resulting object.
-  - `alarm_actions` (`list`): Set the `alarm_actions` field on the resulting object. When `null`, the `alarm_actions` field will be omitted from the resulting object.
-  - `alarm_description` (`string`): Set the `alarm_description` field on the resulting object. When `null`, the `alarm_description` field will be omitted from the resulting object.
-  - `alarm_name` (`string`): Set the `alarm_name` field on the resulting object.
-  - `comparison_operator` (`string`): Set the `comparison_operator` field on the resulting object.
-  - `datapoints_to_alarm` (`number`): Set the `datapoints_to_alarm` field on the resulting object. When `null`, the `datapoints_to_alarm` field will be omitted from the resulting object.
-  - `dimensions` (`obj`): Set the `dimensions` field on the resulting object. When `null`, the `dimensions` field will be omitted from the resulting object.
-  - `evaluate_low_sample_count_percentiles` (`string`): Set the `evaluate_low_sample_count_percentiles` field on the resulting object. When `null`, the `evaluate_low_sample_count_percentiles` field will be omitted from the resulting object.
-  - `evaluation_periods` (`number`): Set the `evaluation_periods` field on the resulting object.
-  - `extended_statistic` (`string`): Set the `extended_statistic` field on the resulting object. When `null`, the `extended_statistic` field will be omitted from the resulting object.
-  - `insufficient_data_actions` (`list`): Set the `insufficient_data_actions` field on the resulting object. When `null`, the `insufficient_data_actions` field will be omitted from the resulting object.
-  - `metric_name` (`string`): Set the `metric_name` field on the resulting object. When `null`, the `metric_name` field will be omitted from the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.
-  - `ok_actions` (`list`): Set the `ok_actions` field on the resulting object. When `null`, the `ok_actions` field will be omitted from the resulting object.
-  - `period` (`number`): Set the `period` field on the resulting object. When `null`, the `period` field will be omitted from the resulting object.
-  - `statistic` (`string`): Set the `statistic` field on the resulting object. When `null`, the `statistic` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `threshold` (`number`): Set the `threshold` field on the resulting object. When `null`, the `threshold` field will be omitted from the resulting object.
-  - `threshold_metric_id` (`string`): Set the `threshold_metric_id` field on the resulting object. When `null`, the `threshold_metric_id` field will be omitted from the resulting object.
-  - `treat_missing_data` (`string`): Set the `treat_missing_data` field on the resulting object. When `null`, the `treat_missing_data` field will be omitted from the resulting object.
-  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.
-  - `metric_query` (`list[obj]`): Set the `metric_query` field on the resulting object. When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-metric_querynew) constructor.
+  - `actions_enabled` (`bool`):  When `null`, the `actions_enabled` field will be omitted from the resulting object.
+  - `alarm_actions` (`list`):  When `null`, the `alarm_actions` field will be omitted from the resulting object.
+  - `alarm_description` (`string`):  When `null`, the `alarm_description` field will be omitted from the resulting object.
+  - `alarm_name` (`string`): 
+  - `comparison_operator` (`string`): 
+  - `datapoints_to_alarm` (`number`):  When `null`, the `datapoints_to_alarm` field will be omitted from the resulting object.
+  - `dimensions` (`obj`):  When `null`, the `dimensions` field will be omitted from the resulting object.
+  - `evaluate_low_sample_count_percentiles` (`string`):  When `null`, the `evaluate_low_sample_count_percentiles` field will be omitted from the resulting object.
+  - `evaluation_periods` (`number`): 
+  - `extended_statistic` (`string`):  When `null`, the `extended_statistic` field will be omitted from the resulting object.
+  - `insufficient_data_actions` (`list`):  When `null`, the `insufficient_data_actions` field will be omitted from the resulting object.
+  - `metric_name` (`string`):  When `null`, the `metric_name` field will be omitted from the resulting object.
+  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
+  - `ok_actions` (`list`):  When `null`, the `ok_actions` field will be omitted from the resulting object.
+  - `period` (`number`):  When `null`, the `period` field will be omitted from the resulting object.
+  - `statistic` (`string`):  When `null`, the `statistic` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `threshold` (`number`):  When `null`, the `threshold` field will be omitted from the resulting object.
+  - `threshold_metric_id` (`string`):  When `null`, the `threshold_metric_id` field will be omitted from the resulting object.
+  - `treat_missing_data` (`string`):  When `null`, the `treat_missing_data` field will be omitted from the resulting object.
+  - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
+  - `metric_query` (`list[obj]`):  When `null`, the `metric_query` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.new](#fn-metric_querynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudwatch_metric_alarm` resource into the root Terraform configuration.
@@ -553,11 +553,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `expression` (`string`): Set the `expression` field on the resulting object. When `null`, the `expression` field will be omitted from the resulting object.
-  - `label` (`string`): Set the `label` field on the resulting object. When `null`, the `label` field will be omitted from the resulting object.
-  - `return_data` (`bool`): Set the `return_data` field on the resulting object. When `null`, the `return_data` field will be omitted from the resulting object.
-  - `metric` (`list[obj]`): Set the `metric` field on the resulting object. When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-metric_querymetricnew) constructor.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `expression` (`string`):  When `null`, the `expression` field will be omitted from the resulting object.
+  - `label` (`string`):  When `null`, the `label` field will be omitted from the resulting object.
+  - `return_data` (`bool`):  When `null`, the `return_data` field will be omitted from the resulting object.
+  - `metric` (`list[obj]`):  When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-metric_querymetricnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `metric_query` sub block.
@@ -580,12 +580,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `dimensions` (`obj`): Set the `dimensions` field on the resulting object. When `null`, the `dimensions` field will be omitted from the resulting object.
-  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.
-  - `period` (`number`): Set the `period` field on the resulting object.
-  - `stat` (`string`): Set the `stat` field on the resulting object.
-  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.
+  - `dimensions` (`obj`):  When `null`, the `dimensions` field will be omitted from the resulting object.
+  - `metric_name` (`string`): 
+  - `namespace` (`string`):  When `null`, the `namespace` field will be omitted from the resulting object.
+  - `period` (`number`): 
+  - `stat` (`string`): 
+  - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `metric` sub block.

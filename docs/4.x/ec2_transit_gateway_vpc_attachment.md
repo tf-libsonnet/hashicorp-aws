@@ -55,16 +55,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `appliance_mode_support` (`string`): Set the `appliance_mode_support` field on the resulting resource block. When `null`, the `appliance_mode_support` field will be omitted from the resulting object.
-  - `dns_support` (`string`): Set the `dns_support` field on the resulting resource block. When `null`, the `dns_support` field will be omitted from the resulting object.
-  - `ipv6_support` (`string`): Set the `ipv6_support` field on the resulting resource block. When `null`, the `ipv6_support` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_default_route_table_association` (`bool`): Set the `transit_gateway_default_route_table_association` field on the resulting resource block. When `null`, the `transit_gateway_default_route_table_association` field will be omitted from the resulting object.
-  - `transit_gateway_default_route_table_propagation` (`bool`): Set the `transit_gateway_default_route_table_propagation` field on the resulting resource block. When `null`, the `transit_gateway_default_route_table_propagation` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting resource block.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
+  - `appliance_mode_support` (`string`):  When `null`, the `appliance_mode_support` field will be omitted from the resulting object.
+  - `dns_support` (`string`):  When `null`, the `dns_support` field will be omitted from the resulting object.
+  - `ipv6_support` (`string`):  When `null`, the `ipv6_support` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_default_route_table_association` (`bool`):  When `null`, the `transit_gateway_default_route_table_association` field will be omitted from the resulting object.
+  - `transit_gateway_default_route_table_propagation` (`bool`):  When `null`, the `transit_gateway_default_route_table_propagation` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`): 
+  - `vpc_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,16 +88,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `appliance_mode_support` (`string`): Set the `appliance_mode_support` field on the resulting object. When `null`, the `appliance_mode_support` field will be omitted from the resulting object.
-  - `dns_support` (`string`): Set the `dns_support` field on the resulting object. When `null`, the `dns_support` field will be omitted from the resulting object.
-  - `ipv6_support` (`string`): Set the `ipv6_support` field on the resulting object. When `null`, the `ipv6_support` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_default_route_table_association` (`bool`): Set the `transit_gateway_default_route_table_association` field on the resulting object. When `null`, the `transit_gateway_default_route_table_association` field will be omitted from the resulting object.
-  - `transit_gateway_default_route_table_propagation` (`bool`): Set the `transit_gateway_default_route_table_propagation` field on the resulting object. When `null`, the `transit_gateway_default_route_table_propagation` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting object.
-  - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
+  - `appliance_mode_support` (`string`):  When `null`, the `appliance_mode_support` field will be omitted from the resulting object.
+  - `dns_support` (`string`):  When `null`, the `dns_support` field will be omitted from the resulting object.
+  - `ipv6_support` (`string`):  When `null`, the `ipv6_support` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_default_route_table_association` (`bool`):  When `null`, the `transit_gateway_default_route_table_association` field will be omitted from the resulting object.
+  - `transit_gateway_default_route_table_propagation` (`bool`):  When `null`, the `transit_gateway_default_route_table_propagation` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`): 
+  - `vpc_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_transit_gateway_vpc_attachment` resource into the root Terraform configuration.

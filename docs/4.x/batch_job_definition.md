@@ -63,16 +63,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `container_properties` (`string`): Set the `container_properties` field on the resulting resource block. When `null`, the `container_properties` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `platform_capabilities` (`list`): Set the `platform_capabilities` field on the resulting resource block. When `null`, the `platform_capabilities` field will be omitted from the resulting object.
-  - `propagate_tags` (`bool`): Set the `propagate_tags` field on the resulting resource block. When `null`, the `propagate_tags` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `retry_strategy` (`list[obj]`): Set the `retry_strategy` field on the resulting resource block. When `null`, the `retry_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.new](#fn-retry_strategynew) constructor.
-  - `timeout` (`list[obj]`): Set the `timeout` field on the resulting resource block. When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.timeout.new](#fn-timeoutnew) constructor.
+  - `container_properties` (`string`):  When `null`, the `container_properties` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `platform_capabilities` (`list`):  When `null`, the `platform_capabilities` field will be omitted from the resulting object.
+  - `propagate_tags` (`bool`):  When `null`, the `propagate_tags` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `retry_strategy` (`list[obj]`):  When `null`, the `retry_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.new](#fn-retry_strategynew) constructor.
+  - `timeout` (`list[obj]`):  When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.timeout.new](#fn-timeoutnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,16 +96,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `container_properties` (`string`): Set the `container_properties` field on the resulting object. When `null`, the `container_properties` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `platform_capabilities` (`list`): Set the `platform_capabilities` field on the resulting object. When `null`, the `platform_capabilities` field will be omitted from the resulting object.
-  - `propagate_tags` (`bool`): Set the `propagate_tags` field on the resulting object. When `null`, the `propagate_tags` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `retry_strategy` (`list[obj]`): Set the `retry_strategy` field on the resulting object. When `null`, the `retry_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.new](#fn-retry_strategynew) constructor.
-  - `timeout` (`list[obj]`): Set the `timeout` field on the resulting object. When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.timeout.new](#fn-timeoutnew) constructor.
+  - `container_properties` (`string`):  When `null`, the `container_properties` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `platform_capabilities` (`list`):  When `null`, the `platform_capabilities` field will be omitted from the resulting object.
+  - `propagate_tags` (`bool`):  When `null`, the `propagate_tags` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `retry_strategy` (`list[obj]`):  When `null`, the `retry_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.new](#fn-retry_strategynew) constructor.
+  - `timeout` (`list[obj]`):  When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.timeout.new](#fn-timeoutnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `batch_job_definition` resource into the root Terraform configuration.
@@ -330,8 +330,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `attempts` (`number`): Set the `attempts` field on the resulting object. When `null`, the `attempts` field will be omitted from the resulting object.
-  - `evaluate_on_exit` (`list[obj]`): Set the `evaluate_on_exit` field on the resulting object. When `null`, the `evaluate_on_exit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.evaluate_on_exit.new](#fn-retry_strategyevaluate_on_exitnew) constructor.
+  - `attempts` (`number`):  When `null`, the `attempts` field will be omitted from the resulting object.
+  - `evaluate_on_exit` (`list[obj]`):  When `null`, the `evaluate_on_exit` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_job_definition.retry_strategy.evaluate_on_exit.new](#fn-retry_strategyevaluate_on_exitnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `retry_strategy` sub block.
@@ -354,10 +354,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`string`): Set the `action` field on the resulting object.
-  - `on_exit_code` (`string`): Set the `on_exit_code` field on the resulting object. When `null`, the `on_exit_code` field will be omitted from the resulting object.
-  - `on_reason` (`string`): Set the `on_reason` field on the resulting object. When `null`, the `on_reason` field will be omitted from the resulting object.
-  - `on_status_reason` (`string`): Set the `on_status_reason` field on the resulting object. When `null`, the `on_status_reason` field will be omitted from the resulting object.
+  - `action` (`string`): 
+  - `on_exit_code` (`string`):  When `null`, the `on_exit_code` field will be omitted from the resulting object.
+  - `on_reason` (`string`):  When `null`, the `on_reason` field will be omitted from the resulting object.
+  - `on_status_reason` (`string`):  When `null`, the `on_status_reason` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `evaluate_on_exit` sub block.
@@ -380,7 +380,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `attempt_duration_seconds` (`number`): Set the `attempt_duration_seconds` field on the resulting object. When `null`, the `attempt_duration_seconds` field will be omitted from the resulting object.
+  - `attempt_duration_seconds` (`number`):  When `null`, the `attempt_duration_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeout` sub block.

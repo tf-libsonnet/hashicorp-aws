@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `access_point_id` (`string`): Set the `access_point_id` field on the resulting data source block. When `null`, the `access_point_id` field will be omitted from the resulting object.
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting data source block. When `null`, the `file_system_id` field will be omitted from the resulting object.
-  - `mount_target_id` (`string`): Set the `mount_target_id` field on the resulting data source block. When `null`, the `mount_target_id` field will be omitted from the resulting object.
+  - `access_point_id` (`string`):  When `null`, the `access_point_id` field will be omitted from the resulting object.
+  - `file_system_id` (`string`):  When `null`, the `file_system_id` field will be omitted from the resulting object.
+  - `mount_target_id` (`string`):  When `null`, the `mount_target_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_point_id` (`string`): Set the `access_point_id` field on the resulting object. When `null`, the `access_point_id` field will be omitted from the resulting object.
-  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object. When `null`, the `file_system_id` field will be omitted from the resulting object.
-  - `mount_target_id` (`string`): Set the `mount_target_id` field on the resulting object. When `null`, the `mount_target_id` field will be omitted from the resulting object.
+  - `access_point_id` (`string`):  When `null`, the `access_point_id` field will be omitted from the resulting object.
+  - `file_system_id` (`string`):  When `null`, the `file_system_id` field will be omitted from the resulting object.
+  - `mount_target_id` (`string`):  When `null`, the `mount_target_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `efs_mount_target` data source into the root Terraform configuration.

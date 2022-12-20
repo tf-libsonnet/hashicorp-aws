@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `connection_events` (`list`): Set the `connection_events` field on the resulting resource block.
-  - `connection_notification_arn` (`string`): Set the `connection_notification_arn` field on the resulting resource block.
-  - `vpc_endpoint_id` (`string`): Set the `vpc_endpoint_id` field on the resulting resource block. When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
-  - `vpc_endpoint_service_id` (`string`): Set the `vpc_endpoint_service_id` field on the resulting resource block. When `null`, the `vpc_endpoint_service_id` field will be omitted from the resulting object.
+  - `connection_events` (`list`): 
+  - `connection_notification_arn` (`string`): 
+  - `vpc_endpoint_id` (`string`):  When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
+  - `vpc_endpoint_service_id` (`string`):  When `null`, the `vpc_endpoint_service_id` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `connection_events` (`list`): Set the `connection_events` field on the resulting object.
-  - `connection_notification_arn` (`string`): Set the `connection_notification_arn` field on the resulting object.
-  - `vpc_endpoint_id` (`string`): Set the `vpc_endpoint_id` field on the resulting object. When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
-  - `vpc_endpoint_service_id` (`string`): Set the `vpc_endpoint_service_id` field on the resulting object. When `null`, the `vpc_endpoint_service_id` field will be omitted from the resulting object.
+  - `connection_events` (`list`): 
+  - `connection_notification_arn` (`string`): 
+  - `vpc_endpoint_id` (`string`):  When `null`, the `vpc_endpoint_id` field will be omitted from the resulting object.
+  - `vpc_endpoint_service_id` (`string`):  When `null`, the `vpc_endpoint_service_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_endpoint_connection_notification` resource into the root Terraform configuration.

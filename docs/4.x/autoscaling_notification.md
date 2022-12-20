@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `group_names` (`list`): Set the `group_names` field on the resulting resource block.
-  - `notifications` (`list`): Set the `notifications` field on the resulting resource block.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting resource block.
+  - `group_names` (`list`): 
+  - `notifications` (`list`): 
+  - `topic_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `group_names` (`list`): Set the `group_names` field on the resulting object.
-  - `notifications` (`list`): Set the `notifications` field on the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object.
+  - `group_names` (`list`): 
+  - `notifications` (`list`): 
+  - `topic_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `autoscaling_notification` resource into the root Terraform configuration.

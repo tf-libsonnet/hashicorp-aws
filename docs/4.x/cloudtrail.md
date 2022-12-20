@@ -75,23 +75,23 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cloud_watch_logs_group_arn` (`string`): Set the `cloud_watch_logs_group_arn` field on the resulting resource block. When `null`, the `cloud_watch_logs_group_arn` field will be omitted from the resulting object.
-  - `cloud_watch_logs_role_arn` (`string`): Set the `cloud_watch_logs_role_arn` field on the resulting resource block. When `null`, the `cloud_watch_logs_role_arn` field will be omitted from the resulting object.
-  - `enable_log_file_validation` (`bool`): Set the `enable_log_file_validation` field on the resulting resource block. When `null`, the `enable_log_file_validation` field will be omitted from the resulting object.
-  - `enable_logging` (`bool`): Set the `enable_logging` field on the resulting resource block. When `null`, the `enable_logging` field will be omitted from the resulting object.
-  - `include_global_service_events` (`bool`): Set the `include_global_service_events` field on the resulting resource block. When `null`, the `include_global_service_events` field will be omitted from the resulting object.
-  - `is_multi_region_trail` (`bool`): Set the `is_multi_region_trail` field on the resulting resource block. When `null`, the `is_multi_region_trail` field will be omitted from the resulting object.
-  - `is_organization_trail` (`bool`): Set the `is_organization_trail` field on the resulting resource block. When `null`, the `is_organization_trail` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting resource block.
-  - `s3_key_prefix` (`string`): Set the `s3_key_prefix` field on the resulting resource block. When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
-  - `sns_topic_name` (`string`): Set the `sns_topic_name` field on the resulting resource block. When `null`, the `sns_topic_name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`): Set the `advanced_event_selector` field on the resulting resource block. When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
-  - `event_selector` (`list[obj]`): Set the `event_selector` field on the resulting resource block. When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-event_selectornew) constructor.
-  - `insight_selector` (`list[obj]`): Set the `insight_selector` field on the resulting resource block. When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-insight_selectornew) constructor.
+  - `cloud_watch_logs_group_arn` (`string`):  When `null`, the `cloud_watch_logs_group_arn` field will be omitted from the resulting object.
+  - `cloud_watch_logs_role_arn` (`string`):  When `null`, the `cloud_watch_logs_role_arn` field will be omitted from the resulting object.
+  - `enable_log_file_validation` (`bool`):  When `null`, the `enable_log_file_validation` field will be omitted from the resulting object.
+  - `enable_logging` (`bool`):  When `null`, the `enable_logging` field will be omitted from the resulting object.
+  - `include_global_service_events` (`bool`):  When `null`, the `include_global_service_events` field will be omitted from the resulting object.
+  - `is_multi_region_trail` (`bool`):  When `null`, the `is_multi_region_trail` field will be omitted from the resulting object.
+  - `is_organization_trail` (`bool`):  When `null`, the `is_organization_trail` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `s3_bucket_name` (`string`): 
+  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+  - `sns_topic_name` (`string`):  When `null`, the `sns_topic_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
+  - `event_selector` (`list[obj]`):  When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-event_selectornew) constructor.
+  - `insight_selector` (`list[obj]`):  When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-insight_selectornew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -115,23 +115,23 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cloud_watch_logs_group_arn` (`string`): Set the `cloud_watch_logs_group_arn` field on the resulting object. When `null`, the `cloud_watch_logs_group_arn` field will be omitted from the resulting object.
-  - `cloud_watch_logs_role_arn` (`string`): Set the `cloud_watch_logs_role_arn` field on the resulting object. When `null`, the `cloud_watch_logs_role_arn` field will be omitted from the resulting object.
-  - `enable_log_file_validation` (`bool`): Set the `enable_log_file_validation` field on the resulting object. When `null`, the `enable_log_file_validation` field will be omitted from the resulting object.
-  - `enable_logging` (`bool`): Set the `enable_logging` field on the resulting object. When `null`, the `enable_logging` field will be omitted from the resulting object.
-  - `include_global_service_events` (`bool`): Set the `include_global_service_events` field on the resulting object. When `null`, the `include_global_service_events` field will be omitted from the resulting object.
-  - `is_multi_region_trail` (`bool`): Set the `is_multi_region_trail` field on the resulting object. When `null`, the `is_multi_region_trail` field will be omitted from the resulting object.
-  - `is_organization_trail` (`bool`): Set the `is_organization_trail` field on the resulting object. When `null`, the `is_organization_trail` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object.
-  - `s3_key_prefix` (`string`): Set the `s3_key_prefix` field on the resulting object. When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
-  - `sns_topic_name` (`string`): Set the `sns_topic_name` field on the resulting object. When `null`, the `sns_topic_name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `advanced_event_selector` (`list[obj]`): Set the `advanced_event_selector` field on the resulting object. When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
-  - `event_selector` (`list[obj]`): Set the `event_selector` field on the resulting object. When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-event_selectornew) constructor.
-  - `insight_selector` (`list[obj]`): Set the `insight_selector` field on the resulting object. When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-insight_selectornew) constructor.
+  - `cloud_watch_logs_group_arn` (`string`):  When `null`, the `cloud_watch_logs_group_arn` field will be omitted from the resulting object.
+  - `cloud_watch_logs_role_arn` (`string`):  When `null`, the `cloud_watch_logs_role_arn` field will be omitted from the resulting object.
+  - `enable_log_file_validation` (`bool`):  When `null`, the `enable_log_file_validation` field will be omitted from the resulting object.
+  - `enable_logging` (`bool`):  When `null`, the `enable_logging` field will be omitted from the resulting object.
+  - `include_global_service_events` (`bool`):  When `null`, the `include_global_service_events` field will be omitted from the resulting object.
+  - `is_multi_region_trail` (`bool`):  When `null`, the `is_multi_region_trail` field will be omitted from the resulting object.
+  - `is_organization_trail` (`bool`):  When `null`, the `is_organization_trail` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `s3_bucket_name` (`string`): 
+  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+  - `sns_topic_name` (`string`):  When `null`, the `sns_topic_name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `advanced_event_selector` (`list[obj]`):  When `null`, the `advanced_event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.new](#fn-advanced_event_selectornew) constructor.
+  - `event_selector` (`list[obj]`):  When `null`, the `event_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.new](#fn-event_selectornew) constructor.
+  - `insight_selector` (`list[obj]`):  When `null`, the `insight_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.insight_selector.new](#fn-insight_selectornew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudtrail` resource into the root Terraform configuration.
@@ -489,8 +489,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `field_selector` (`list[obj]`): Set the `field_selector` field on the resulting object. When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.field_selector.new](#fn-advanced_event_selectorfield_selectornew) constructor.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `field_selector` (`list[obj]`):  When `null`, the `field_selector` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.advanced_event_selector.field_selector.new](#fn-advanced_event_selectorfield_selectornew) constructor.
 
 **Returns**:
   - An attribute object that represents the `advanced_event_selector` sub block.
@@ -513,13 +513,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `ends_with` (`list`): Set the `ends_with` field on the resulting object. When `null`, the `ends_with` field will be omitted from the resulting object.
-  - `equals` (`list`): Set the `equals` field on the resulting object. When `null`, the `equals` field will be omitted from the resulting object.
-  - `field` (`string`): Set the `field` field on the resulting object.
-  - `not_ends_with` (`list`): Set the `not_ends_with` field on the resulting object. When `null`, the `not_ends_with` field will be omitted from the resulting object.
-  - `not_equals` (`list`): Set the `not_equals` field on the resulting object. When `null`, the `not_equals` field will be omitted from the resulting object.
-  - `not_starts_with` (`list`): Set the `not_starts_with` field on the resulting object. When `null`, the `not_starts_with` field will be omitted from the resulting object.
-  - `starts_with` (`list`): Set the `starts_with` field on the resulting object. When `null`, the `starts_with` field will be omitted from the resulting object.
+  - `ends_with` (`list`):  When `null`, the `ends_with` field will be omitted from the resulting object.
+  - `equals` (`list`):  When `null`, the `equals` field will be omitted from the resulting object.
+  - `field` (`string`): 
+  - `not_ends_with` (`list`):  When `null`, the `not_ends_with` field will be omitted from the resulting object.
+  - `not_equals` (`list`):  When `null`, the `not_equals` field will be omitted from the resulting object.
+  - `not_starts_with` (`list`):  When `null`, the `not_starts_with` field will be omitted from the resulting object.
+  - `starts_with` (`list`):  When `null`, the `starts_with` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `field_selector` sub block.
@@ -542,10 +542,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `exclude_management_event_sources` (`list`): Set the `exclude_management_event_sources` field on the resulting object. When `null`, the `exclude_management_event_sources` field will be omitted from the resulting object.
-  - `include_management_events` (`bool`): Set the `include_management_events` field on the resulting object. When `null`, the `include_management_events` field will be omitted from the resulting object.
-  - `read_write_type` (`string`): Set the `read_write_type` field on the resulting object. When `null`, the `read_write_type` field will be omitted from the resulting object.
-  - `data_resource` (`list[obj]`): Set the `data_resource` field on the resulting object. When `null`, the `data_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.data_resource.new](#fn-event_selectordata_resourcenew) constructor.
+  - `exclude_management_event_sources` (`list`):  When `null`, the `exclude_management_event_sources` field will be omitted from the resulting object.
+  - `include_management_events` (`bool`):  When `null`, the `include_management_events` field will be omitted from the resulting object.
+  - `read_write_type` (`string`):  When `null`, the `read_write_type` field will be omitted from the resulting object.
+  - `data_resource` (`list[obj]`):  When `null`, the `data_resource` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudtrail.event_selector.data_resource.new](#fn-event_selectordata_resourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `event_selector` sub block.
@@ -568,8 +568,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `type` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `data_resource` sub block.
@@ -592,7 +592,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `insight_type` (`string`): Set the `insight_type` field on the resulting object.
+  - `insight_type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `insight_selector` sub block.

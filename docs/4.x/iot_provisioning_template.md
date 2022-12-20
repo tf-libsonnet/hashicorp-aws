@@ -56,14 +56,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `provisioning_role_arn` (`string`): Set the `provisioning_role_arn` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_body` (`string`): Set the `template_body` field on the resulting resource block.
-  - `pre_provisioning_hook` (`list[obj]`): Set the `pre_provisioning_hook` field on the resulting resource block. When `null`, the `pre_provisioning_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_provisioning_template.pre_provisioning_hook.new](#fn-pre_provisioning_hooknew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `provisioning_role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_body` (`string`): 
+  - `pre_provisioning_hook` (`list[obj]`):  When `null`, the `pre_provisioning_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_provisioning_template.pre_provisioning_hook.new](#fn-pre_provisioning_hooknew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,14 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `provisioning_role_arn` (`string`): Set the `provisioning_role_arn` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_body` (`string`): Set the `template_body` field on the resulting object.
-  - `pre_provisioning_hook` (`list[obj]`): Set the `pre_provisioning_hook` field on the resulting object. When `null`, the `pre_provisioning_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_provisioning_template.pre_provisioning_hook.new](#fn-pre_provisioning_hooknew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `provisioning_role_arn` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_body` (`string`): 
+  - `pre_provisioning_hook` (`list[obj]`):  When `null`, the `pre_provisioning_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_provisioning_template.pre_provisioning_hook.new](#fn-pre_provisioning_hooknew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `iot_provisioning_template` resource into the root Terraform configuration.
@@ -266,8 +266,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `payload_version` (`string`): Set the `payload_version` field on the resulting object. When `null`, the `payload_version` field will be omitted from the resulting object.
-  - `target_arn` (`string`): Set the `target_arn` field on the resulting object.
+  - `payload_version` (`string`):  When `null`, the `payload_version` field will be omitted from the resulting object.
+  - `target_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `pre_provisioning_hook` sub block.

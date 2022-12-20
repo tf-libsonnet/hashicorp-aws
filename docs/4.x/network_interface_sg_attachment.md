@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting resource block.
-  - `security_group_id` (`string`): Set the `security_group_id` field on the resulting resource block.
+  - `network_interface_id` (`string`): 
+  - `security_group_id` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting object.
-  - `security_group_id` (`string`): Set the `security_group_id` field on the resulting object.
+  - `network_interface_id` (`string`): 
+  - `security_group_id` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `network_interface_sg_attachment` resource into the root Terraform configuration.

@@ -66,13 +66,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `policy_type` (`string`): Set the `policy_type` field on the resulting resource block. When `null`, the `policy_type` field will be omitted from the resulting object.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
-  - `scalable_dimension` (`string`): Set the `scalable_dimension` field on the resulting resource block.
-  - `service_namespace` (`string`): Set the `service_namespace` field on the resulting resource block.
-  - `step_scaling_policy_configuration` (`list[obj]`): Set the `step_scaling_policy_configuration` field on the resulting resource block. When `null`, the `step_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.new](#fn-step_scaling_policy_configurationnew) constructor.
-  - `target_tracking_scaling_policy_configuration` (`list[obj]`): Set the `target_tracking_scaling_policy_configuration` field on the resulting resource block. When `null`, the `target_tracking_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.new](#fn-target_tracking_scaling_policy_configurationnew) constructor.
+  - `name` (`string`): 
+  - `policy_type` (`string`):  When `null`, the `policy_type` field will be omitted from the resulting object.
+  - `resource_id` (`string`): 
+  - `scalable_dimension` (`string`): 
+  - `service_namespace` (`string`): 
+  - `step_scaling_policy_configuration` (`list[obj]`):  When `null`, the `step_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.new](#fn-step_scaling_policy_configurationnew) constructor.
+  - `target_tracking_scaling_policy_configuration` (`list[obj]`):  When `null`, the `target_tracking_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.new](#fn-target_tracking_scaling_policy_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,13 +96,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `policy_type` (`string`): Set the `policy_type` field on the resulting object. When `null`, the `policy_type` field will be omitted from the resulting object.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
-  - `scalable_dimension` (`string`): Set the `scalable_dimension` field on the resulting object.
-  - `service_namespace` (`string`): Set the `service_namespace` field on the resulting object.
-  - `step_scaling_policy_configuration` (`list[obj]`): Set the `step_scaling_policy_configuration` field on the resulting object. When `null`, the `step_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.new](#fn-step_scaling_policy_configurationnew) constructor.
-  - `target_tracking_scaling_policy_configuration` (`list[obj]`): Set the `target_tracking_scaling_policy_configuration` field on the resulting object. When `null`, the `target_tracking_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.new](#fn-target_tracking_scaling_policy_configurationnew) constructor.
+  - `name` (`string`): 
+  - `policy_type` (`string`):  When `null`, the `policy_type` field will be omitted from the resulting object.
+  - `resource_id` (`string`): 
+  - `scalable_dimension` (`string`): 
+  - `service_namespace` (`string`): 
+  - `step_scaling_policy_configuration` (`list[obj]`):  When `null`, the `step_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.new](#fn-step_scaling_policy_configurationnew) constructor.
+  - `target_tracking_scaling_policy_configuration` (`list[obj]`):  When `null`, the `target_tracking_scaling_policy_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.new](#fn-target_tracking_scaling_policy_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appautoscaling_policy` resource into the root Terraform configuration.
@@ -279,11 +279,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `adjustment_type` (`string`): Set the `adjustment_type` field on the resulting object. When `null`, the `adjustment_type` field will be omitted from the resulting object.
-  - `cooldown` (`number`): Set the `cooldown` field on the resulting object. When `null`, the `cooldown` field will be omitted from the resulting object.
-  - `metric_aggregation_type` (`string`): Set the `metric_aggregation_type` field on the resulting object. When `null`, the `metric_aggregation_type` field will be omitted from the resulting object.
-  - `min_adjustment_magnitude` (`number`): Set the `min_adjustment_magnitude` field on the resulting object. When `null`, the `min_adjustment_magnitude` field will be omitted from the resulting object.
-  - `step_adjustment` (`list[obj]`): Set the `step_adjustment` field on the resulting object. When `null`, the `step_adjustment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.step_adjustment.new](#fn-step_scaling_policy_configurationstep_adjustmentnew) constructor.
+  - `adjustment_type` (`string`):  When `null`, the `adjustment_type` field will be omitted from the resulting object.
+  - `cooldown` (`number`):  When `null`, the `cooldown` field will be omitted from the resulting object.
+  - `metric_aggregation_type` (`string`):  When `null`, the `metric_aggregation_type` field will be omitted from the resulting object.
+  - `min_adjustment_magnitude` (`number`):  When `null`, the `min_adjustment_magnitude` field will be omitted from the resulting object.
+  - `step_adjustment` (`list[obj]`):  When `null`, the `step_adjustment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.step_scaling_policy_configuration.step_adjustment.new](#fn-step_scaling_policy_configurationstep_adjustmentnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `step_scaling_policy_configuration` sub block.
@@ -306,9 +306,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_interval_lower_bound` (`string`): Set the `metric_interval_lower_bound` field on the resulting object. When `null`, the `metric_interval_lower_bound` field will be omitted from the resulting object.
-  - `metric_interval_upper_bound` (`string`): Set the `metric_interval_upper_bound` field on the resulting object. When `null`, the `metric_interval_upper_bound` field will be omitted from the resulting object.
-  - `scaling_adjustment` (`number`): Set the `scaling_adjustment` field on the resulting object.
+  - `metric_interval_lower_bound` (`string`):  When `null`, the `metric_interval_lower_bound` field will be omitted from the resulting object.
+  - `metric_interval_upper_bound` (`string`):  When `null`, the `metric_interval_upper_bound` field will be omitted from the resulting object.
+  - `scaling_adjustment` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `step_adjustment` sub block.
@@ -331,12 +331,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `disable_scale_in` (`bool`): Set the `disable_scale_in` field on the resulting object. When `null`, the `disable_scale_in` field will be omitted from the resulting object.
-  - `scale_in_cooldown` (`number`): Set the `scale_in_cooldown` field on the resulting object. When `null`, the `scale_in_cooldown` field will be omitted from the resulting object.
-  - `scale_out_cooldown` (`number`): Set the `scale_out_cooldown` field on the resulting object. When `null`, the `scale_out_cooldown` field will be omitted from the resulting object.
-  - `target_value` (`number`): Set the `target_value` field on the resulting object.
-  - `customized_metric_specification` (`list[obj]`): Set the `customized_metric_specification` field on the resulting object. When `null`, the `customized_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.new](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationnew) constructor.
-  - `predefined_metric_specification` (`list[obj]`): Set the `predefined_metric_specification` field on the resulting object. When `null`, the `predefined_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.predefined_metric_specification.new](#fn-target_tracking_scaling_policy_configurationpredefined_metric_specificationnew) constructor.
+  - `disable_scale_in` (`bool`):  When `null`, the `disable_scale_in` field will be omitted from the resulting object.
+  - `scale_in_cooldown` (`number`):  When `null`, the `scale_in_cooldown` field will be omitted from the resulting object.
+  - `scale_out_cooldown` (`number`):  When `null`, the `scale_out_cooldown` field will be omitted from the resulting object.
+  - `target_value` (`number`): 
+  - `customized_metric_specification` (`list[obj]`):  When `null`, the `customized_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.new](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationnew) constructor.
+  - `predefined_metric_specification` (`list[obj]`):  When `null`, the `predefined_metric_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.predefined_metric_specification.new](#fn-target_tracking_scaling_policy_configurationpredefined_metric_specificationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `target_tracking_scaling_policy_configuration` sub block.
@@ -359,11 +359,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting object.
-  - `statistic` (`string`): Set the `statistic` field on the resulting object.
-  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.
-  - `dimensions` (`list[obj]`): Set the `dimensions` field on the resulting object. When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationdimensionsnew) constructor.
+  - `metric_name` (`string`): 
+  - `namespace` (`string`): 
+  - `statistic` (`string`): 
+  - `unit` (`string`):  When `null`, the `unit` field will be omitted from the resulting object.
+  - `dimensions` (`list[obj]`):  When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationdimensionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `customized_metric_specification` sub block.
@@ -386,8 +386,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `name` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `dimensions` sub block.
@@ -410,8 +410,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.
-  - `resource_label` (`string`): Set the `resource_label` field on the resulting object. When `null`, the `resource_label` field will be omitted from the resulting object.
+  - `predefined_metric_type` (`string`): 
+  - `resource_label` (`string`):  When `null`, the `resource_label` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `predefined_metric_specification` sub block.

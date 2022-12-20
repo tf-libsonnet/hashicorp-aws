@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `addon_name` (`string`): Set the `addon_name` field on the resulting resource block.
-  - `addon_version` (`string`): Set the `addon_version` field on the resulting resource block. When `null`, the `addon_version` field will be omitted from the resulting object.
-  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting resource block.
-  - `configuration_values` (`string`): Set the `configuration_values` field on the resulting resource block. When `null`, the `configuration_values` field will be omitted from the resulting object.
-  - `preserve` (`bool`): Set the `preserve` field on the resulting resource block. When `null`, the `preserve` field will be omitted from the resulting object.
-  - `resolve_conflicts` (`string`): Set the `resolve_conflicts` field on the resulting resource block. When `null`, the `resolve_conflicts` field will be omitted from the resulting object.
-  - `service_account_role_arn` (`string`): Set the `service_account_role_arn` field on the resulting resource block. When `null`, the `service_account_role_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_addon.timeouts.new](#fn-timeoutsnew) constructor.
+  - `addon_name` (`string`): 
+  - `addon_version` (`string`):  When `null`, the `addon_version` field will be omitted from the resulting object.
+  - `cluster_name` (`string`): 
+  - `configuration_values` (`string`):  When `null`, the `configuration_values` field will be omitted from the resulting object.
+  - `preserve` (`bool`):  When `null`, the `preserve` field will be omitted from the resulting object.
+  - `resolve_conflicts` (`string`):  When `null`, the `resolve_conflicts` field will be omitted from the resulting object.
+  - `service_account_role_arn` (`string`):  When `null`, the `service_account_role_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_addon.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `addon_name` (`string`): Set the `addon_name` field on the resulting object.
-  - `addon_version` (`string`): Set the `addon_version` field on the resulting object. When `null`, the `addon_version` field will be omitted from the resulting object.
-  - `cluster_name` (`string`): Set the `cluster_name` field on the resulting object.
-  - `configuration_values` (`string`): Set the `configuration_values` field on the resulting object. When `null`, the `configuration_values` field will be omitted from the resulting object.
-  - `preserve` (`bool`): Set the `preserve` field on the resulting object. When `null`, the `preserve` field will be omitted from the resulting object.
-  - `resolve_conflicts` (`string`): Set the `resolve_conflicts` field on the resulting object. When `null`, the `resolve_conflicts` field will be omitted from the resulting object.
-  - `service_account_role_arn` (`string`): Set the `service_account_role_arn` field on the resulting object. When `null`, the `service_account_role_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_addon.timeouts.new](#fn-timeoutsnew) constructor.
+  - `addon_name` (`string`): 
+  - `addon_version` (`string`):  When `null`, the `addon_version` field will be omitted from the resulting object.
+  - `cluster_name` (`string`): 
+  - `configuration_values` (`string`):  When `null`, the `configuration_values` field will be omitted from the resulting object.
+  - `preserve` (`bool`):  When `null`, the `preserve` field will be omitted from the resulting object.
+  - `resolve_conflicts` (`string`):  When `null`, the `resolve_conflicts` field will be omitted from the resulting object.
+  - `service_account_role_arn` (`string`):  When `null`, the `service_account_role_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_addon.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_addon` resource into the root Terraform configuration.
@@ -303,9 +303,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

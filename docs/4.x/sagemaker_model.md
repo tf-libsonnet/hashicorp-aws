@@ -74,15 +74,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `enable_network_isolation` (`bool`): Set the `enable_network_isolation` field on the resulting resource block. When `null`, the `enable_network_isolation` field will be omitted from the resulting object.
-  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `container` (`list[obj]`): Set the `container` field on the resulting resource block. When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.new](#fn-containernew) constructor.
-  - `inference_execution_config` (`list[obj]`): Set the `inference_execution_config` field on the resulting resource block. When `null`, the `inference_execution_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.inference_execution_config.new](#fn-inference_execution_confignew) constructor.
-  - `primary_container` (`list[obj]`): Set the `primary_container` field on the resulting resource block. When `null`, the `primary_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.new](#fn-primary_containernew) constructor.
-  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting resource block. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `enable_network_isolation` (`bool`):  When `null`, the `enable_network_isolation` field will be omitted from the resulting object.
+  - `execution_role_arn` (`string`): 
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `container` (`list[obj]`):  When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.new](#fn-containernew) constructor.
+  - `inference_execution_config` (`list[obj]`):  When `null`, the `inference_execution_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.inference_execution_config.new](#fn-inference_execution_confignew) constructor.
+  - `primary_container` (`list[obj]`):  When `null`, the `primary_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.new](#fn-primary_containernew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -106,15 +106,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `enable_network_isolation` (`bool`): Set the `enable_network_isolation` field on the resulting object. When `null`, the `enable_network_isolation` field will be omitted from the resulting object.
-  - `execution_role_arn` (`string`): Set the `execution_role_arn` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `container` (`list[obj]`): Set the `container` field on the resulting object. When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.new](#fn-containernew) constructor.
-  - `inference_execution_config` (`list[obj]`): Set the `inference_execution_config` field on the resulting object. When `null`, the `inference_execution_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.inference_execution_config.new](#fn-inference_execution_confignew) constructor.
-  - `primary_container` (`list[obj]`): Set the `primary_container` field on the resulting object. When `null`, the `primary_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.new](#fn-primary_containernew) constructor.
-  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.vpc_config.new](#fn-vpc_confignew) constructor.
+  - `enable_network_isolation` (`bool`):  When `null`, the `enable_network_isolation` field will be omitted from the resulting object.
+  - `execution_role_arn` (`string`): 
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `container` (`list[obj]`):  When `null`, the `container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.new](#fn-containernew) constructor.
+  - `inference_execution_config` (`list[obj]`):  When `null`, the `inference_execution_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.inference_execution_config.new](#fn-inference_execution_confignew) constructor.
+  - `primary_container` (`list[obj]`):  When `null`, the `primary_container` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.new](#fn-primary_containernew) constructor.
+  - `vpc_config` (`list[obj]`):  When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.vpc_config.new](#fn-vpc_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_model` resource into the root Terraform configuration.
@@ -365,12 +365,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.
-  - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.
-  - `image` (`string`): Set the `image` field on the resulting object.
-  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
-  - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.
-  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-containerimage_confignew) constructor.
+  - `container_hostname` (`string`):  When `null`, the `container_hostname` field will be omitted from the resulting object.
+  - `environment` (`obj`):  When `null`, the `environment` field will be omitted from the resulting object.
+  - `image` (`string`): 
+  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
+  - `model_data_url` (`string`):  When `null`, the `model_data_url` field will be omitted from the resulting object.
+  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-containerimage_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container` sub block.
@@ -393,8 +393,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `repository_access_mode` (`string`): Set the `repository_access_mode` field on the resulting object.
-  - `repository_auth_config` (`list[obj]`): Set the `repository_auth_config` field on the resulting object. When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.repository_auth_config.new](#fn-containercontainerrepository_auth_confignew) constructor.
+  - `repository_access_mode` (`string`): 
+  - `repository_auth_config` (`list[obj]`):  When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.repository_auth_config.new](#fn-containercontainerrepository_auth_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `image_config` sub block.
@@ -417,7 +417,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `repository_credentials_provider_arn` (`string`): Set the `repository_credentials_provider_arn` field on the resulting object.
+  - `repository_credentials_provider_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `repository_auth_config` sub block.
@@ -440,7 +440,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `mode` (`string`): Set the `mode` field on the resulting object.
+  - `mode` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `inference_execution_config` sub block.
@@ -463,12 +463,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.
-  - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.
-  - `image` (`string`): Set the `image` field on the resulting object.
-  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
-  - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.
-  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-primary_containerimage_confignew) constructor.
+  - `container_hostname` (`string`):  When `null`, the `container_hostname` field will be omitted from the resulting object.
+  - `environment` (`obj`):  When `null`, the `environment` field will be omitted from the resulting object.
+  - `image` (`string`): 
+  - `mode` (`string`):  When `null`, the `mode` field will be omitted from the resulting object.
+  - `model_data_url` (`string`):  When `null`, the `model_data_url` field will be omitted from the resulting object.
+  - `image_config` (`list[obj]`):  When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-primary_containerimage_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `primary_container` sub block.
@@ -491,8 +491,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `repository_access_mode` (`string`): Set the `repository_access_mode` field on the resulting object.
-  - `repository_auth_config` (`list[obj]`): Set the `repository_auth_config` field on the resulting object. When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.repository_auth_config.new](#fn-primary_containerprimary_containerrepository_auth_confignew) constructor.
+  - `repository_access_mode` (`string`): 
+  - `repository_auth_config` (`list[obj]`):  When `null`, the `repository_auth_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.repository_auth_config.new](#fn-primary_containerprimary_containerrepository_auth_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `image_config` sub block.
@@ -515,7 +515,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `repository_credentials_provider_arn` (`string`): Set the `repository_credentials_provider_arn` field on the resulting object.
+  - `repository_credentials_provider_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `repository_auth_config` sub block.
@@ -538,8 +538,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
-  - `subnets` (`list`): Set the `subnets` field on the resulting object.
+  - `security_group_ids` (`list`): 
+  - `subnets` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `vpc_config` sub block.

@@ -69,18 +69,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `display_name` (`string`): Set the `display_name` field on the resulting resource block. When `null`, the `display_name` field will be omitted from the resulting object.
-  - `embed_host_domains` (`list`): Set the `embed_host_domains` field on the resulting resource block. When `null`, the `embed_host_domains` field will be omitted from the resulting object.
-  - `feedback_url` (`string`): Set the `feedback_url` field on the resulting resource block. When `null`, the `feedback_url` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `redirect_url` (`string`): Set the `redirect_url` field on the resulting resource block. When `null`, the `redirect_url` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_endpoints` (`list[obj]`): Set the `access_endpoints` field on the resulting resource block. When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
-  - `application_settings` (`list[obj]`): Set the `application_settings` field on the resulting resource block. When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
-  - `storage_connectors` (`list[obj]`): Set the `storage_connectors` field on the resulting resource block. When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
-  - `user_settings` (`list[obj]`): Set the `user_settings` field on the resulting resource block. When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
+  - `embed_host_domains` (`list`):  When `null`, the `embed_host_domains` field will be omitted from the resulting object.
+  - `feedback_url` (`string`):  When `null`, the `feedback_url` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `redirect_url` (`string`):  When `null`, the `redirect_url` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_endpoints` (`list[obj]`):  When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
+  - `application_settings` (`list[obj]`):  When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
+  - `storage_connectors` (`list[obj]`):  When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
+  - `user_settings` (`list[obj]`):  When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -104,18 +104,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
-  - `embed_host_domains` (`list`): Set the `embed_host_domains` field on the resulting object. When `null`, the `embed_host_domains` field will be omitted from the resulting object.
-  - `feedback_url` (`string`): Set the `feedback_url` field on the resulting object. When `null`, the `feedback_url` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `redirect_url` (`string`): Set the `redirect_url` field on the resulting object. When `null`, the `redirect_url` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `access_endpoints` (`list[obj]`): Set the `access_endpoints` field on the resulting object. When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
-  - `application_settings` (`list[obj]`): Set the `application_settings` field on the resulting object. When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
-  - `storage_connectors` (`list[obj]`): Set the `storage_connectors` field on the resulting object. When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
-  - `user_settings` (`list[obj]`): Set the `user_settings` field on the resulting object. When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `display_name` (`string`):  When `null`, the `display_name` field will be omitted from the resulting object.
+  - `embed_host_domains` (`list`):  When `null`, the `embed_host_domains` field will be omitted from the resulting object.
+  - `feedback_url` (`string`):  When `null`, the `feedback_url` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `redirect_url` (`string`):  When `null`, the `redirect_url` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `access_endpoints` (`list[obj]`):  When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
+  - `application_settings` (`list[obj]`):  When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
+  - `storage_connectors` (`list[obj]`):  When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
+  - `user_settings` (`list[obj]`):  When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appstream_stack` resource into the root Terraform configuration.
@@ -414,8 +414,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting object.
-  - `vpce_id` (`string`): Set the `vpce_id` field on the resulting object. When `null`, the `vpce_id` field will be omitted from the resulting object.
+  - `endpoint_type` (`string`): 
+  - `vpce_id` (`string`):  When `null`, the `vpce_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `access_endpoints` sub block.
@@ -438,8 +438,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object.
-  - `settings_group` (`string`): Set the `settings_group` field on the resulting object. When `null`, the `settings_group` field will be omitted from the resulting object.
+  - `enabled` (`bool`): 
+  - `settings_group` (`string`):  When `null`, the `settings_group` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `application_settings` sub block.
@@ -462,9 +462,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `connector_type` (`string`): Set the `connector_type` field on the resulting object.
-  - `domains` (`list`): Set the `domains` field on the resulting object. When `null`, the `domains` field will be omitted from the resulting object.
-  - `resource_identifier` (`string`): Set the `resource_identifier` field on the resulting object. When `null`, the `resource_identifier` field will be omitted from the resulting object.
+  - `connector_type` (`string`): 
+  - `domains` (`list`):  When `null`, the `domains` field will be omitted from the resulting object.
+  - `resource_identifier` (`string`):  When `null`, the `resource_identifier` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `storage_connectors` sub block.
@@ -487,8 +487,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `action` (`string`): Set the `action` field on the resulting object.
-  - `permission` (`string`): Set the `permission` field on the resulting object.
+  - `action` (`string`): 
+  - `permission` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `user_settings` sub block.

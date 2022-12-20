@@ -115,17 +115,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `aws_account_id` (`string`): Set the `aws_account_id` field on the resulting resource block. When `null`, the `aws_account_id` field will be omitted from the resulting object.
-  - `data_source_id` (`string`): Set the `data_source_id` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `credentials` (`list[obj]`): Set the `credentials` field on the resulting resource block. When `null`, the `credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.credentials.new](#fn-credentialsnew) constructor.
-  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.new](#fn-parametersnew) constructor.
-  - `permission` (`list[obj]`): Set the `permission` field on the resulting resource block. When `null`, the `permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.permission.new](#fn-permissionnew) constructor.
-  - `ssl_properties` (`list[obj]`): Set the `ssl_properties` field on the resulting resource block. When `null`, the `ssl_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.ssl_properties.new](#fn-ssl_propertiesnew) constructor.
-  - `vpc_connection_properties` (`list[obj]`): Set the `vpc_connection_properties` field on the resulting resource block. When `null`, the `vpc_connection_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.vpc_connection_properties.new](#fn-vpc_connection_propertiesnew) constructor.
+  - `aws_account_id` (`string`):  When `null`, the `aws_account_id` field will be omitted from the resulting object.
+  - `data_source_id` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `credentials` (`list[obj]`):  When `null`, the `credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.credentials.new](#fn-credentialsnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.new](#fn-parametersnew) constructor.
+  - `permission` (`list[obj]`):  When `null`, the `permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.permission.new](#fn-permissionnew) constructor.
+  - `ssl_properties` (`list[obj]`):  When `null`, the `ssl_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.ssl_properties.new](#fn-ssl_propertiesnew) constructor.
+  - `vpc_connection_properties` (`list[obj]`):  When `null`, the `vpc_connection_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.vpc_connection_properties.new](#fn-vpc_connection_propertiesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -149,17 +149,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `aws_account_id` (`string`): Set the `aws_account_id` field on the resulting object. When `null`, the `aws_account_id` field will be omitted from the resulting object.
-  - `data_source_id` (`string`): Set the `data_source_id` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `credentials` (`list[obj]`): Set the `credentials` field on the resulting object. When `null`, the `credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.credentials.new](#fn-credentialsnew) constructor.
-  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting object. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.new](#fn-parametersnew) constructor.
-  - `permission` (`list[obj]`): Set the `permission` field on the resulting object. When `null`, the `permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.permission.new](#fn-permissionnew) constructor.
-  - `ssl_properties` (`list[obj]`): Set the `ssl_properties` field on the resulting object. When `null`, the `ssl_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.ssl_properties.new](#fn-ssl_propertiesnew) constructor.
-  - `vpc_connection_properties` (`list[obj]`): Set the `vpc_connection_properties` field on the resulting object. When `null`, the `vpc_connection_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.vpc_connection_properties.new](#fn-vpc_connection_propertiesnew) constructor.
+  - `aws_account_id` (`string`):  When `null`, the `aws_account_id` field will be omitted from the resulting object.
+  - `data_source_id` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `credentials` (`list[obj]`):  When `null`, the `credentials` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.credentials.new](#fn-credentialsnew) constructor.
+  - `parameters` (`list[obj]`):  When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.new](#fn-parametersnew) constructor.
+  - `permission` (`list[obj]`):  When `null`, the `permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.permission.new](#fn-permissionnew) constructor.
+  - `ssl_properties` (`list[obj]`):  When `null`, the `ssl_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.ssl_properties.new](#fn-ssl_propertiesnew) constructor.
+  - `vpc_connection_properties` (`list[obj]`):  When `null`, the `vpc_connection_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.vpc_connection_properties.new](#fn-vpc_connection_propertiesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `quicksight_data_source` resource into the root Terraform configuration.
@@ -463,8 +463,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `copy_source_arn` (`string`): Set the `copy_source_arn` field on the resulting object. When `null`, the `copy_source_arn` field will be omitted from the resulting object.
-  - `credential_pair` (`list[obj]`): Set the `credential_pair` field on the resulting object. When `null`, the `credential_pair` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.credentials.credential_pair.new](#fn-credentialscredential_pairnew) constructor.
+  - `copy_source_arn` (`string`):  When `null`, the `copy_source_arn` field will be omitted from the resulting object.
+  - `credential_pair` (`list[obj]`):  When `null`, the `credential_pair` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.credentials.credential_pair.new](#fn-credentialscredential_pairnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `credentials` sub block.
@@ -487,8 +487,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `password` (`string`): Set the `password` field on the resulting object.
-  - `username` (`string`): Set the `username` field on the resulting object.
+  - `password` (`string`): 
+  - `username` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `credential_pair` sub block.
@@ -511,26 +511,26 @@ Terraform sub block.
 
 
 **Args**:
-  - `amazon_elasticsearch` (`list[obj]`): Set the `amazon_elasticsearch` field on the resulting object. When `null`, the `amazon_elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.amazon_elasticsearch.new](#fn-parametersamazon_elasticsearchnew) constructor.
-  - `athena` (`list[obj]`): Set the `athena` field on the resulting object. When `null`, the `athena` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.athena.new](#fn-parametersathenanew) constructor.
-  - `aurora` (`list[obj]`): Set the `aurora` field on the resulting object. When `null`, the `aurora` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.aurora.new](#fn-parametersauroranew) constructor.
-  - `aurora_postgresql` (`list[obj]`): Set the `aurora_postgresql` field on the resulting object. When `null`, the `aurora_postgresql` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.aurora_postgresql.new](#fn-parametersaurora_postgresqlnew) constructor.
-  - `aws_iot_analytics` (`list[obj]`): Set the `aws_iot_analytics` field on the resulting object. When `null`, the `aws_iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.aws_iot_analytics.new](#fn-parametersaws_iot_analyticsnew) constructor.
-  - `jira` (`list[obj]`): Set the `jira` field on the resulting object. When `null`, the `jira` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.jira.new](#fn-parametersjiranew) constructor.
-  - `maria_db` (`list[obj]`): Set the `maria_db` field on the resulting object. When `null`, the `maria_db` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.maria_db.new](#fn-parametersmaria_dbnew) constructor.
-  - `mysql` (`list[obj]`): Set the `mysql` field on the resulting object. When `null`, the `mysql` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.mysql.new](#fn-parametersmysqlnew) constructor.
-  - `oracle` (`list[obj]`): Set the `oracle` field on the resulting object. When `null`, the `oracle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.oracle.new](#fn-parametersoraclenew) constructor.
-  - `postgresql` (`list[obj]`): Set the `postgresql` field on the resulting object. When `null`, the `postgresql` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.postgresql.new](#fn-parameterspostgresqlnew) constructor.
-  - `presto` (`list[obj]`): Set the `presto` field on the resulting object. When `null`, the `presto` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.presto.new](#fn-parametersprestonew) constructor.
-  - `rds` (`list[obj]`): Set the `rds` field on the resulting object. When `null`, the `rds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.rds.new](#fn-parametersrdsnew) constructor.
-  - `redshift` (`list[obj]`): Set the `redshift` field on the resulting object. When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.redshift.new](#fn-parametersredshiftnew) constructor.
-  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.s3.new](#fn-parameterss3new) constructor.
-  - `service_now` (`list[obj]`): Set the `service_now` field on the resulting object. When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.service_now.new](#fn-parametersservice_nownew) constructor.
-  - `snowflake` (`list[obj]`): Set the `snowflake` field on the resulting object. When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.snowflake.new](#fn-parameterssnowflakenew) constructor.
-  - `spark` (`list[obj]`): Set the `spark` field on the resulting object. When `null`, the `spark` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.spark.new](#fn-parameterssparknew) constructor.
-  - `sql_server` (`list[obj]`): Set the `sql_server` field on the resulting object. When `null`, the `sql_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.sql_server.new](#fn-parameterssql_servernew) constructor.
-  - `teradata` (`list[obj]`): Set the `teradata` field on the resulting object. When `null`, the `teradata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.teradata.new](#fn-parametersteradatanew) constructor.
-  - `twitter` (`list[obj]`): Set the `twitter` field on the resulting object. When `null`, the `twitter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.twitter.new](#fn-parameterstwitternew) constructor.
+  - `amazon_elasticsearch` (`list[obj]`):  When `null`, the `amazon_elasticsearch` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.amazon_elasticsearch.new](#fn-parametersamazon_elasticsearchnew) constructor.
+  - `athena` (`list[obj]`):  When `null`, the `athena` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.athena.new](#fn-parametersathenanew) constructor.
+  - `aurora` (`list[obj]`):  When `null`, the `aurora` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.aurora.new](#fn-parametersauroranew) constructor.
+  - `aurora_postgresql` (`list[obj]`):  When `null`, the `aurora_postgresql` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.aurora_postgresql.new](#fn-parametersaurora_postgresqlnew) constructor.
+  - `aws_iot_analytics` (`list[obj]`):  When `null`, the `aws_iot_analytics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.aws_iot_analytics.new](#fn-parametersaws_iot_analyticsnew) constructor.
+  - `jira` (`list[obj]`):  When `null`, the `jira` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.jira.new](#fn-parametersjiranew) constructor.
+  - `maria_db` (`list[obj]`):  When `null`, the `maria_db` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.maria_db.new](#fn-parametersmaria_dbnew) constructor.
+  - `mysql` (`list[obj]`):  When `null`, the `mysql` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.mysql.new](#fn-parametersmysqlnew) constructor.
+  - `oracle` (`list[obj]`):  When `null`, the `oracle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.oracle.new](#fn-parametersoraclenew) constructor.
+  - `postgresql` (`list[obj]`):  When `null`, the `postgresql` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.postgresql.new](#fn-parameterspostgresqlnew) constructor.
+  - `presto` (`list[obj]`):  When `null`, the `presto` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.presto.new](#fn-parametersprestonew) constructor.
+  - `rds` (`list[obj]`):  When `null`, the `rds` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.rds.new](#fn-parametersrdsnew) constructor.
+  - `redshift` (`list[obj]`):  When `null`, the `redshift` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.redshift.new](#fn-parametersredshiftnew) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.s3.new](#fn-parameterss3new) constructor.
+  - `service_now` (`list[obj]`):  When `null`, the `service_now` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.service_now.new](#fn-parametersservice_nownew) constructor.
+  - `snowflake` (`list[obj]`):  When `null`, the `snowflake` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.snowflake.new](#fn-parameterssnowflakenew) constructor.
+  - `spark` (`list[obj]`):  When `null`, the `spark` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.spark.new](#fn-parameterssparknew) constructor.
+  - `sql_server` (`list[obj]`):  When `null`, the `sql_server` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.sql_server.new](#fn-parameterssql_servernew) constructor.
+  - `teradata` (`list[obj]`):  When `null`, the `teradata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.teradata.new](#fn-parametersteradatanew) constructor.
+  - `twitter` (`list[obj]`):  When `null`, the `twitter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.twitter.new](#fn-parameterstwitternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `parameters` sub block.
@@ -553,7 +553,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `domain` (`string`): Set the `domain` field on the resulting object.
+  - `domain` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `amazon_elasticsearch` sub block.
@@ -576,7 +576,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `work_group` (`string`): Set the `work_group` field on the resulting object. When `null`, the `work_group` field will be omitted from the resulting object.
+  - `work_group` (`string`):  When `null`, the `work_group` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `athena` sub block.
@@ -599,9 +599,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `aurora` sub block.
@@ -624,9 +624,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `aurora_postgresql` sub block.
@@ -649,7 +649,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `data_set_name` (`string`): Set the `data_set_name` field on the resulting object.
+  - `data_set_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `aws_iot_analytics` sub block.
@@ -672,7 +672,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `site_base_url` (`string`): Set the `site_base_url` field on the resulting object.
+  - `site_base_url` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `jira` sub block.
@@ -695,9 +695,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `maria_db` sub block.
@@ -720,9 +720,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `mysql` sub block.
@@ -745,9 +745,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `oracle` sub block.
@@ -770,9 +770,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `postgresql` sub block.
@@ -795,9 +795,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `catalog` (`string`): Set the `catalog` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `catalog` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `presto` sub block.
@@ -820,8 +820,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting object.
+  - `database` (`string`): 
+  - `instance_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `rds` sub block.
@@ -844,10 +844,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `cluster_id` (`string`): Set the `cluster_id` field on the resulting object. When `null`, the `cluster_id` field will be omitted from the resulting object.
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object. When `null`, the `host` field will be omitted from the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+  - `cluster_id` (`string`):  When `null`, the `cluster_id` field will be omitted from the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`):  When `null`, the `host` field will be omitted from the resulting object.
+  - `port` (`number`):  When `null`, the `port` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `redshift` sub block.
@@ -870,7 +870,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `manifest_file_location` (`list[obj]`): Set the `manifest_file_location` field on the resulting object. When `null`, the `manifest_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.s3.manifest_file_location.new](#fn-parametersparametersmanifest_file_locationnew) constructor.
+  - `manifest_file_location` (`list[obj]`):  When `null`, the `manifest_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_source.parameters.s3.manifest_file_location.new](#fn-parametersparametersmanifest_file_locationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -893,8 +893,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
+  - `bucket` (`string`): 
+  - `key` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `manifest_file_location` sub block.
@@ -917,7 +917,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `site_base_url` (`string`): Set the `site_base_url` field on the resulting object.
+  - `site_base_url` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `service_now` sub block.
@@ -940,9 +940,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `warehouse` (`string`): Set the `warehouse` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `warehouse` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `snowflake` sub block.
@@ -965,8 +965,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `spark` sub block.
@@ -989,9 +989,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `sql_server` sub block.
@@ -1014,9 +1014,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `database` (`string`): Set the `database` field on the resulting object.
-  - `host` (`string`): Set the `host` field on the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
+  - `database` (`string`): 
+  - `host` (`string`): 
+  - `port` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `teradata` sub block.
@@ -1039,8 +1039,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `max_rows` (`number`): Set the `max_rows` field on the resulting object.
-  - `query` (`string`): Set the `query` field on the resulting object.
+  - `max_rows` (`number`): 
+  - `query` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `twitter` sub block.
@@ -1063,8 +1063,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `actions` (`list`): Set the `actions` field on the resulting object.
-  - `principal` (`string`): Set the `principal` field on the resulting object.
+  - `actions` (`list`): 
+  - `principal` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `permission` sub block.
@@ -1087,7 +1087,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `disable_ssl` (`bool`): Set the `disable_ssl` field on the resulting object.
+  - `disable_ssl` (`bool`): 
 
 **Returns**:
   - An attribute object that represents the `ssl_properties` sub block.
@@ -1110,7 +1110,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `vpc_connection_arn` (`string`): Set the `vpc_connection_arn` field on the resulting object.
+  - `vpc_connection_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `vpc_connection_properties` sub block.

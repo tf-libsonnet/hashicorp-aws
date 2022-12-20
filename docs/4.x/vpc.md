@@ -61,22 +61,22 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `assign_generated_ipv6_cidr_block` (`bool`): Set the `assign_generated_ipv6_cidr_block` field on the resulting resource block. When `null`, the `assign_generated_ipv6_cidr_block` field will be omitted from the resulting object.
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting resource block. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `enable_classiclink` (`bool`): Set the `enable_classiclink` field on the resulting resource block. When `null`, the `enable_classiclink` field will be omitted from the resulting object.
-  - `enable_classiclink_dns_support` (`bool`): Set the `enable_classiclink_dns_support` field on the resulting resource block. When `null`, the `enable_classiclink_dns_support` field will be omitted from the resulting object.
-  - `enable_dns_hostnames` (`bool`): Set the `enable_dns_hostnames` field on the resulting resource block. When `null`, the `enable_dns_hostnames` field will be omitted from the resulting object.
-  - `enable_dns_support` (`bool`): Set the `enable_dns_support` field on the resulting resource block. When `null`, the `enable_dns_support` field will be omitted from the resulting object.
-  - `enable_network_address_usage_metrics` (`bool`): Set the `enable_network_address_usage_metrics` field on the resulting resource block. When `null`, the `enable_network_address_usage_metrics` field will be omitted from the resulting object.
-  - `instance_tenancy` (`string`): Set the `instance_tenancy` field on the resulting resource block. When `null`, the `instance_tenancy` field will be omitted from the resulting object.
-  - `ipv4_ipam_pool_id` (`string`): Set the `ipv4_ipam_pool_id` field on the resulting resource block. When `null`, the `ipv4_ipam_pool_id` field will be omitted from the resulting object.
-  - `ipv4_netmask_length` (`number`): Set the `ipv4_netmask_length` field on the resulting resource block. When `null`, the `ipv4_netmask_length` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting resource block. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `ipv6_cidr_block_network_border_group` (`string`): Set the `ipv6_cidr_block_network_border_group` field on the resulting resource block. When `null`, the `ipv6_cidr_block_network_border_group` field will be omitted from the resulting object.
-  - `ipv6_ipam_pool_id` (`string`): Set the `ipv6_ipam_pool_id` field on the resulting resource block. When `null`, the `ipv6_ipam_pool_id` field will be omitted from the resulting object.
-  - `ipv6_netmask_length` (`number`): Set the `ipv6_netmask_length` field on the resulting resource block. When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `assign_generated_ipv6_cidr_block` (`bool`):  When `null`, the `assign_generated_ipv6_cidr_block` field will be omitted from the resulting object.
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `enable_classiclink` (`bool`):  When `null`, the `enable_classiclink` field will be omitted from the resulting object.
+  - `enable_classiclink_dns_support` (`bool`):  When `null`, the `enable_classiclink_dns_support` field will be omitted from the resulting object.
+  - `enable_dns_hostnames` (`bool`):  When `null`, the `enable_dns_hostnames` field will be omitted from the resulting object.
+  - `enable_dns_support` (`bool`):  When `null`, the `enable_dns_support` field will be omitted from the resulting object.
+  - `enable_network_address_usage_metrics` (`bool`):  When `null`, the `enable_network_address_usage_metrics` field will be omitted from the resulting object.
+  - `instance_tenancy` (`string`):  When `null`, the `instance_tenancy` field will be omitted from the resulting object.
+  - `ipv4_ipam_pool_id` (`string`):  When `null`, the `ipv4_ipam_pool_id` field will be omitted from the resulting object.
+  - `ipv4_netmask_length` (`number`):  When `null`, the `ipv4_netmask_length` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `ipv6_cidr_block_network_border_group` (`string`):  When `null`, the `ipv6_cidr_block_network_border_group` field will be omitted from the resulting object.
+  - `ipv6_ipam_pool_id` (`string`):  When `null`, the `ipv6_ipam_pool_id` field will be omitted from the resulting object.
+  - `ipv6_netmask_length` (`number`):  When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -100,22 +100,22 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `assign_generated_ipv6_cidr_block` (`bool`): Set the `assign_generated_ipv6_cidr_block` field on the resulting object. When `null`, the `assign_generated_ipv6_cidr_block` field will be omitted from the resulting object.
-  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `enable_classiclink` (`bool`): Set the `enable_classiclink` field on the resulting object. When `null`, the `enable_classiclink` field will be omitted from the resulting object.
-  - `enable_classiclink_dns_support` (`bool`): Set the `enable_classiclink_dns_support` field on the resulting object. When `null`, the `enable_classiclink_dns_support` field will be omitted from the resulting object.
-  - `enable_dns_hostnames` (`bool`): Set the `enable_dns_hostnames` field on the resulting object. When `null`, the `enable_dns_hostnames` field will be omitted from the resulting object.
-  - `enable_dns_support` (`bool`): Set the `enable_dns_support` field on the resulting object. When `null`, the `enable_dns_support` field will be omitted from the resulting object.
-  - `enable_network_address_usage_metrics` (`bool`): Set the `enable_network_address_usage_metrics` field on the resulting object. When `null`, the `enable_network_address_usage_metrics` field will be omitted from the resulting object.
-  - `instance_tenancy` (`string`): Set the `instance_tenancy` field on the resulting object. When `null`, the `instance_tenancy` field will be omitted from the resulting object.
-  - `ipv4_ipam_pool_id` (`string`): Set the `ipv4_ipam_pool_id` field on the resulting object. When `null`, the `ipv4_ipam_pool_id` field will be omitted from the resulting object.
-  - `ipv4_netmask_length` (`number`): Set the `ipv4_netmask_length` field on the resulting object. When `null`, the `ipv4_netmask_length` field will be omitted from the resulting object.
-  - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
-  - `ipv6_cidr_block_network_border_group` (`string`): Set the `ipv6_cidr_block_network_border_group` field on the resulting object. When `null`, the `ipv6_cidr_block_network_border_group` field will be omitted from the resulting object.
-  - `ipv6_ipam_pool_id` (`string`): Set the `ipv6_ipam_pool_id` field on the resulting object. When `null`, the `ipv6_ipam_pool_id` field will be omitted from the resulting object.
-  - `ipv6_netmask_length` (`number`): Set the `ipv6_netmask_length` field on the resulting object. When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `assign_generated_ipv6_cidr_block` (`bool`):  When `null`, the `assign_generated_ipv6_cidr_block` field will be omitted from the resulting object.
+  - `cidr_block` (`string`):  When `null`, the `cidr_block` field will be omitted from the resulting object.
+  - `enable_classiclink` (`bool`):  When `null`, the `enable_classiclink` field will be omitted from the resulting object.
+  - `enable_classiclink_dns_support` (`bool`):  When `null`, the `enable_classiclink_dns_support` field will be omitted from the resulting object.
+  - `enable_dns_hostnames` (`bool`):  When `null`, the `enable_dns_hostnames` field will be omitted from the resulting object.
+  - `enable_dns_support` (`bool`):  When `null`, the `enable_dns_support` field will be omitted from the resulting object.
+  - `enable_network_address_usage_metrics` (`bool`):  When `null`, the `enable_network_address_usage_metrics` field will be omitted from the resulting object.
+  - `instance_tenancy` (`string`):  When `null`, the `instance_tenancy` field will be omitted from the resulting object.
+  - `ipv4_ipam_pool_id` (`string`):  When `null`, the `ipv4_ipam_pool_id` field will be omitted from the resulting object.
+  - `ipv4_netmask_length` (`number`):  When `null`, the `ipv4_netmask_length` field will be omitted from the resulting object.
+  - `ipv6_cidr_block` (`string`):  When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
+  - `ipv6_cidr_block_network_border_group` (`string`):  When `null`, the `ipv6_cidr_block_network_border_group` field will be omitted from the resulting object.
+  - `ipv6_ipam_pool_id` (`string`):  When `null`, the `ipv6_ipam_pool_id` field will be omitted from the resulting object.
+  - `ipv6_netmask_length` (`number`):  When `null`, the `ipv6_netmask_length` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc` resource into the root Terraform configuration.

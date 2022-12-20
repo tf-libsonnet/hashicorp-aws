@@ -65,23 +65,23 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cache_key_parameters` (`list`): Set the `cache_key_parameters` field on the resulting resource block. When `null`, the `cache_key_parameters` field will be omitted from the resulting object.
-  - `cache_namespace` (`string`): Set the `cache_namespace` field on the resulting resource block. When `null`, the `cache_namespace` field will be omitted from the resulting object.
-  - `connection_id` (`string`): Set the `connection_id` field on the resulting resource block. When `null`, the `connection_id` field will be omitted from the resulting object.
-  - `connection_type` (`string`): Set the `connection_type` field on the resulting resource block. When `null`, the `connection_type` field will be omitted from the resulting object.
-  - `content_handling` (`string`): Set the `content_handling` field on the resulting resource block. When `null`, the `content_handling` field will be omitted from the resulting object.
-  - `credentials` (`string`): Set the `credentials` field on the resulting resource block. When `null`, the `credentials` field will be omitted from the resulting object.
-  - `http_method` (`string`): Set the `http_method` field on the resulting resource block.
-  - `integration_http_method` (`string`): Set the `integration_http_method` field on the resulting resource block. When `null`, the `integration_http_method` field will be omitted from the resulting object.
-  - `passthrough_behavior` (`string`): Set the `passthrough_behavior` field on the resulting resource block. When `null`, the `passthrough_behavior` field will be omitted from the resulting object.
-  - `request_parameters` (`obj`): Set the `request_parameters` field on the resulting resource block. When `null`, the `request_parameters` field will be omitted from the resulting object.
-  - `request_templates` (`obj`): Set the `request_templates` field on the resulting resource block. When `null`, the `request_templates` field will be omitted from the resulting object.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting resource block.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
-  - `timeout_milliseconds` (`number`): Set the `timeout_milliseconds` field on the resulting resource block. When `null`, the `timeout_milliseconds` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `uri` (`string`): Set the `uri` field on the resulting resource block. When `null`, the `uri` field will be omitted from the resulting object.
-  - `tls_config` (`list[obj]`): Set the `tls_config` field on the resulting resource block. When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_integration.tls_config.new](#fn-tls_confignew) constructor.
+  - `cache_key_parameters` (`list`):  When `null`, the `cache_key_parameters` field will be omitted from the resulting object.
+  - `cache_namespace` (`string`):  When `null`, the `cache_namespace` field will be omitted from the resulting object.
+  - `connection_id` (`string`):  When `null`, the `connection_id` field will be omitted from the resulting object.
+  - `connection_type` (`string`):  When `null`, the `connection_type` field will be omitted from the resulting object.
+  - `content_handling` (`string`):  When `null`, the `content_handling` field will be omitted from the resulting object.
+  - `credentials` (`string`):  When `null`, the `credentials` field will be omitted from the resulting object.
+  - `http_method` (`string`): 
+  - `integration_http_method` (`string`):  When `null`, the `integration_http_method` field will be omitted from the resulting object.
+  - `passthrough_behavior` (`string`):  When `null`, the `passthrough_behavior` field will be omitted from the resulting object.
+  - `request_parameters` (`obj`):  When `null`, the `request_parameters` field will be omitted from the resulting object.
+  - `request_templates` (`obj`):  When `null`, the `request_templates` field will be omitted from the resulting object.
+  - `resource_id` (`string`): 
+  - `rest_api_id` (`string`): 
+  - `timeout_milliseconds` (`number`):  When `null`, the `timeout_milliseconds` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `uri` (`string`):  When `null`, the `uri` field will be omitted from the resulting object.
+  - `tls_config` (`list[obj]`):  When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_integration.tls_config.new](#fn-tls_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,23 +105,23 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cache_key_parameters` (`list`): Set the `cache_key_parameters` field on the resulting object. When `null`, the `cache_key_parameters` field will be omitted from the resulting object.
-  - `cache_namespace` (`string`): Set the `cache_namespace` field on the resulting object. When `null`, the `cache_namespace` field will be omitted from the resulting object.
-  - `connection_id` (`string`): Set the `connection_id` field on the resulting object. When `null`, the `connection_id` field will be omitted from the resulting object.
-  - `connection_type` (`string`): Set the `connection_type` field on the resulting object. When `null`, the `connection_type` field will be omitted from the resulting object.
-  - `content_handling` (`string`): Set the `content_handling` field on the resulting object. When `null`, the `content_handling` field will be omitted from the resulting object.
-  - `credentials` (`string`): Set the `credentials` field on the resulting object. When `null`, the `credentials` field will be omitted from the resulting object.
-  - `http_method` (`string`): Set the `http_method` field on the resulting object.
-  - `integration_http_method` (`string`): Set the `integration_http_method` field on the resulting object. When `null`, the `integration_http_method` field will be omitted from the resulting object.
-  - `passthrough_behavior` (`string`): Set the `passthrough_behavior` field on the resulting object. When `null`, the `passthrough_behavior` field will be omitted from the resulting object.
-  - `request_parameters` (`obj`): Set the `request_parameters` field on the resulting object. When `null`, the `request_parameters` field will be omitted from the resulting object.
-  - `request_templates` (`obj`): Set the `request_templates` field on the resulting object. When `null`, the `request_templates` field will be omitted from the resulting object.
-  - `resource_id` (`string`): Set the `resource_id` field on the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
-  - `timeout_milliseconds` (`number`): Set the `timeout_milliseconds` field on the resulting object. When `null`, the `timeout_milliseconds` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `uri` (`string`): Set the `uri` field on the resulting object. When `null`, the `uri` field will be omitted from the resulting object.
-  - `tls_config` (`list[obj]`): Set the `tls_config` field on the resulting object. When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_integration.tls_config.new](#fn-tls_confignew) constructor.
+  - `cache_key_parameters` (`list`):  When `null`, the `cache_key_parameters` field will be omitted from the resulting object.
+  - `cache_namespace` (`string`):  When `null`, the `cache_namespace` field will be omitted from the resulting object.
+  - `connection_id` (`string`):  When `null`, the `connection_id` field will be omitted from the resulting object.
+  - `connection_type` (`string`):  When `null`, the `connection_type` field will be omitted from the resulting object.
+  - `content_handling` (`string`):  When `null`, the `content_handling` field will be omitted from the resulting object.
+  - `credentials` (`string`):  When `null`, the `credentials` field will be omitted from the resulting object.
+  - `http_method` (`string`): 
+  - `integration_http_method` (`string`):  When `null`, the `integration_http_method` field will be omitted from the resulting object.
+  - `passthrough_behavior` (`string`):  When `null`, the `passthrough_behavior` field will be omitted from the resulting object.
+  - `request_parameters` (`obj`):  When `null`, the `request_parameters` field will be omitted from the resulting object.
+  - `request_templates` (`obj`):  When `null`, the `request_templates` field will be omitted from the resulting object.
+  - `resource_id` (`string`): 
+  - `rest_api_id` (`string`): 
+  - `timeout_milliseconds` (`number`):  When `null`, the `timeout_milliseconds` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `uri` (`string`):  When `null`, the `uri` field will be omitted from the resulting object.
+  - `tls_config` (`list[obj]`):  When `null`, the `tls_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_integration.tls_config.new](#fn-tls_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_integration` resource into the root Terraform configuration.
@@ -437,7 +437,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `insecure_skip_verification` (`bool`): Set the `insecure_skip_verification` field on the resulting object. When `null`, the `insecure_skip_verification` field will be omitted from the resulting object.
+  - `insecure_skip_verification` (`bool`):  When `null`, the `insecure_skip_verification` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `tls_config` sub block.

@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `endpoint_name` (`string`): Set the `endpoint_name` field on the resulting resource block.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
-  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting resource block. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting resource block.
+  - `endpoint_name` (`string`): 
+  - `subnet_ids` (`list`): 
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `endpoint_name` (`string`): Set the `endpoint_name` field on the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
-  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting object. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting object.
+  - `endpoint_name` (`string`): 
+  - `subnet_ids` (`list`): 
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftserverless_endpoint_access` resource into the root Terraform configuration.

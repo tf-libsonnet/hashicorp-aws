@@ -52,8 +52,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `size_constraints` (`list[obj]`): Set the `size_constraints` field on the resulting resource block. When `null`, the `size_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.new](#fn-size_constraintsnew) constructor.
+  - `name` (`string`): 
+  - `size_constraints` (`list[obj]`):  When `null`, the `size_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.new](#fn-size_constraintsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,8 +77,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `size_constraints` (`list[obj]`): Set the `size_constraints` field on the resulting object. When `null`, the `size_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.new](#fn-size_constraintsnew) constructor.
+  - `name` (`string`): 
+  - `size_constraints` (`list[obj]`):  When `null`, the `size_constraints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.new](#fn-size_constraintsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `waf_size_constraint_set` resource into the root Terraform configuration.
@@ -154,10 +154,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison_operator` (`string`): Set the `comparison_operator` field on the resulting object.
-  - `size` (`number`): Set the `size` field on the resulting object.
-  - `text_transformation` (`string`): Set the `text_transformation` field on the resulting object.
-  - `field_to_match` (`list[obj]`): Set the `field_to_match` field on the resulting object. When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.field_to_match.new](#fn-size_constraintsfield_to_matchnew) constructor.
+  - `comparison_operator` (`string`): 
+  - `size` (`number`): 
+  - `text_transformation` (`string`): 
+  - `field_to_match` (`list[obj]`):  When `null`, the `field_to_match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_size_constraint_set.size_constraints.field_to_match.new](#fn-size_constraintsfield_to_matchnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `size_constraints` sub block.
@@ -180,8 +180,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `data` (`string`): Set the `data` field on the resulting object. When `null`, the `data` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `data` (`string`):  When `null`, the `data` field will be omitted from the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `field_to_match` sub block.

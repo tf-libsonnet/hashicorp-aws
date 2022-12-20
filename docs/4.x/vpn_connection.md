@@ -108,59 +108,59 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `customer_gateway_id` (`string`): Set the `customer_gateway_id` field on the resulting resource block.
-  - `enable_acceleration` (`bool`): Set the `enable_acceleration` field on the resulting resource block. When `null`, the `enable_acceleration` field will be omitted from the resulting object.
-  - `local_ipv4_network_cidr` (`string`): Set the `local_ipv4_network_cidr` field on the resulting resource block. When `null`, the `local_ipv4_network_cidr` field will be omitted from the resulting object.
-  - `local_ipv6_network_cidr` (`string`): Set the `local_ipv6_network_cidr` field on the resulting resource block. When `null`, the `local_ipv6_network_cidr` field will be omitted from the resulting object.
-  - `outside_ip_address_type` (`string`): Set the `outside_ip_address_type` field on the resulting resource block. When `null`, the `outside_ip_address_type` field will be omitted from the resulting object.
-  - `remote_ipv4_network_cidr` (`string`): Set the `remote_ipv4_network_cidr` field on the resulting resource block. When `null`, the `remote_ipv4_network_cidr` field will be omitted from the resulting object.
-  - `remote_ipv6_network_cidr` (`string`): Set the `remote_ipv6_network_cidr` field on the resulting resource block. When `null`, the `remote_ipv6_network_cidr` field will be omitted from the resulting object.
-  - `static_routes_only` (`bool`): Set the `static_routes_only` field on the resulting resource block. When `null`, the `static_routes_only` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting resource block. When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
-  - `transport_transit_gateway_attachment_id` (`string`): Set the `transport_transit_gateway_attachment_id` field on the resulting resource block. When `null`, the `transport_transit_gateway_attachment_id` field will be omitted from the resulting object.
-  - `tunnel1_dpd_timeout_action` (`string`): Set the `tunnel1_dpd_timeout_action` field on the resulting resource block. When `null`, the `tunnel1_dpd_timeout_action` field will be omitted from the resulting object.
-  - `tunnel1_dpd_timeout_seconds` (`number`): Set the `tunnel1_dpd_timeout_seconds` field on the resulting resource block. When `null`, the `tunnel1_dpd_timeout_seconds` field will be omitted from the resulting object.
-  - `tunnel1_ike_versions` (`list`): Set the `tunnel1_ike_versions` field on the resulting resource block. When `null`, the `tunnel1_ike_versions` field will be omitted from the resulting object.
-  - `tunnel1_inside_cidr` (`string`): Set the `tunnel1_inside_cidr` field on the resulting resource block. When `null`, the `tunnel1_inside_cidr` field will be omitted from the resulting object.
-  - `tunnel1_inside_ipv6_cidr` (`string`): Set the `tunnel1_inside_ipv6_cidr` field on the resulting resource block. When `null`, the `tunnel1_inside_ipv6_cidr` field will be omitted from the resulting object.
-  - `tunnel1_phase1_dh_group_numbers` (`list`): Set the `tunnel1_phase1_dh_group_numbers` field on the resulting resource block. When `null`, the `tunnel1_phase1_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel1_phase1_encryption_algorithms` (`list`): Set the `tunnel1_phase1_encryption_algorithms` field on the resulting resource block. When `null`, the `tunnel1_phase1_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase1_integrity_algorithms` (`list`): Set the `tunnel1_phase1_integrity_algorithms` field on the resulting resource block. When `null`, the `tunnel1_phase1_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase1_lifetime_seconds` (`number`): Set the `tunnel1_phase1_lifetime_seconds` field on the resulting resource block. When `null`, the `tunnel1_phase1_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel1_phase2_dh_group_numbers` (`list`): Set the `tunnel1_phase2_dh_group_numbers` field on the resulting resource block. When `null`, the `tunnel1_phase2_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel1_phase2_encryption_algorithms` (`list`): Set the `tunnel1_phase2_encryption_algorithms` field on the resulting resource block. When `null`, the `tunnel1_phase2_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase2_integrity_algorithms` (`list`): Set the `tunnel1_phase2_integrity_algorithms` field on the resulting resource block. When `null`, the `tunnel1_phase2_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase2_lifetime_seconds` (`number`): Set the `tunnel1_phase2_lifetime_seconds` field on the resulting resource block. When `null`, the `tunnel1_phase2_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel1_preshared_key` (`string`): Set the `tunnel1_preshared_key` field on the resulting resource block. When `null`, the `tunnel1_preshared_key` field will be omitted from the resulting object.
-  - `tunnel1_rekey_fuzz_percentage` (`number`): Set the `tunnel1_rekey_fuzz_percentage` field on the resulting resource block. When `null`, the `tunnel1_rekey_fuzz_percentage` field will be omitted from the resulting object.
-  - `tunnel1_rekey_margin_time_seconds` (`number`): Set the `tunnel1_rekey_margin_time_seconds` field on the resulting resource block. When `null`, the `tunnel1_rekey_margin_time_seconds` field will be omitted from the resulting object.
-  - `tunnel1_replay_window_size` (`number`): Set the `tunnel1_replay_window_size` field on the resulting resource block. When `null`, the `tunnel1_replay_window_size` field will be omitted from the resulting object.
-  - `tunnel1_startup_action` (`string`): Set the `tunnel1_startup_action` field on the resulting resource block. When `null`, the `tunnel1_startup_action` field will be omitted from the resulting object.
-  - `tunnel2_dpd_timeout_action` (`string`): Set the `tunnel2_dpd_timeout_action` field on the resulting resource block. When `null`, the `tunnel2_dpd_timeout_action` field will be omitted from the resulting object.
-  - `tunnel2_dpd_timeout_seconds` (`number`): Set the `tunnel2_dpd_timeout_seconds` field on the resulting resource block. When `null`, the `tunnel2_dpd_timeout_seconds` field will be omitted from the resulting object.
-  - `tunnel2_ike_versions` (`list`): Set the `tunnel2_ike_versions` field on the resulting resource block. When `null`, the `tunnel2_ike_versions` field will be omitted from the resulting object.
-  - `tunnel2_inside_cidr` (`string`): Set the `tunnel2_inside_cidr` field on the resulting resource block. When `null`, the `tunnel2_inside_cidr` field will be omitted from the resulting object.
-  - `tunnel2_inside_ipv6_cidr` (`string`): Set the `tunnel2_inside_ipv6_cidr` field on the resulting resource block. When `null`, the `tunnel2_inside_ipv6_cidr` field will be omitted from the resulting object.
-  - `tunnel2_phase1_dh_group_numbers` (`list`): Set the `tunnel2_phase1_dh_group_numbers` field on the resulting resource block. When `null`, the `tunnel2_phase1_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel2_phase1_encryption_algorithms` (`list`): Set the `tunnel2_phase1_encryption_algorithms` field on the resulting resource block. When `null`, the `tunnel2_phase1_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase1_integrity_algorithms` (`list`): Set the `tunnel2_phase1_integrity_algorithms` field on the resulting resource block. When `null`, the `tunnel2_phase1_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase1_lifetime_seconds` (`number`): Set the `tunnel2_phase1_lifetime_seconds` field on the resulting resource block. When `null`, the `tunnel2_phase1_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel2_phase2_dh_group_numbers` (`list`): Set the `tunnel2_phase2_dh_group_numbers` field on the resulting resource block. When `null`, the `tunnel2_phase2_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel2_phase2_encryption_algorithms` (`list`): Set the `tunnel2_phase2_encryption_algorithms` field on the resulting resource block. When `null`, the `tunnel2_phase2_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase2_integrity_algorithms` (`list`): Set the `tunnel2_phase2_integrity_algorithms` field on the resulting resource block. When `null`, the `tunnel2_phase2_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase2_lifetime_seconds` (`number`): Set the `tunnel2_phase2_lifetime_seconds` field on the resulting resource block. When `null`, the `tunnel2_phase2_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel2_preshared_key` (`string`): Set the `tunnel2_preshared_key` field on the resulting resource block. When `null`, the `tunnel2_preshared_key` field will be omitted from the resulting object.
-  - `tunnel2_rekey_fuzz_percentage` (`number`): Set the `tunnel2_rekey_fuzz_percentage` field on the resulting resource block. When `null`, the `tunnel2_rekey_fuzz_percentage` field will be omitted from the resulting object.
-  - `tunnel2_rekey_margin_time_seconds` (`number`): Set the `tunnel2_rekey_margin_time_seconds` field on the resulting resource block. When `null`, the `tunnel2_rekey_margin_time_seconds` field will be omitted from the resulting object.
-  - `tunnel2_replay_window_size` (`number`): Set the `tunnel2_replay_window_size` field on the resulting resource block. When `null`, the `tunnel2_replay_window_size` field will be omitted from the resulting object.
-  - `tunnel2_startup_action` (`string`): Set the `tunnel2_startup_action` field on the resulting resource block. When `null`, the `tunnel2_startup_action` field will be omitted from the resulting object.
-  - `tunnel_inside_ip_version` (`string`): Set the `tunnel_inside_ip_version` field on the resulting resource block. When `null`, the `tunnel_inside_ip_version` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `vpn_gateway_id` (`string`): Set the `vpn_gateway_id` field on the resulting resource block. When `null`, the `vpn_gateway_id` field will be omitted from the resulting object.
-  - `tunnel1_log_options` (`list[obj]`): Set the `tunnel1_log_options` field on the resulting resource block. When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-tunnel1_log_optionsnew) constructor.
-  - `tunnel2_log_options` (`list[obj]`): Set the `tunnel2_log_options` field on the resulting resource block. When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-tunnel2_log_optionsnew) constructor.
+  - `customer_gateway_id` (`string`): 
+  - `enable_acceleration` (`bool`):  When `null`, the `enable_acceleration` field will be omitted from the resulting object.
+  - `local_ipv4_network_cidr` (`string`):  When `null`, the `local_ipv4_network_cidr` field will be omitted from the resulting object.
+  - `local_ipv6_network_cidr` (`string`):  When `null`, the `local_ipv6_network_cidr` field will be omitted from the resulting object.
+  - `outside_ip_address_type` (`string`):  When `null`, the `outside_ip_address_type` field will be omitted from the resulting object.
+  - `remote_ipv4_network_cidr` (`string`):  When `null`, the `remote_ipv4_network_cidr` field will be omitted from the resulting object.
+  - `remote_ipv6_network_cidr` (`string`):  When `null`, the `remote_ipv6_network_cidr` field will be omitted from the resulting object.
+  - `static_routes_only` (`bool`):  When `null`, the `static_routes_only` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`):  When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
+  - `transport_transit_gateway_attachment_id` (`string`):  When `null`, the `transport_transit_gateway_attachment_id` field will be omitted from the resulting object.
+  - `tunnel1_dpd_timeout_action` (`string`):  When `null`, the `tunnel1_dpd_timeout_action` field will be omitted from the resulting object.
+  - `tunnel1_dpd_timeout_seconds` (`number`):  When `null`, the `tunnel1_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel1_ike_versions` (`list`):  When `null`, the `tunnel1_ike_versions` field will be omitted from the resulting object.
+  - `tunnel1_inside_cidr` (`string`):  When `null`, the `tunnel1_inside_cidr` field will be omitted from the resulting object.
+  - `tunnel1_inside_ipv6_cidr` (`string`):  When `null`, the `tunnel1_inside_ipv6_cidr` field will be omitted from the resulting object.
+  - `tunnel1_phase1_dh_group_numbers` (`list`):  When `null`, the `tunnel1_phase1_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel1_phase1_encryption_algorithms` (`list`):  When `null`, the `tunnel1_phase1_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase1_integrity_algorithms` (`list`):  When `null`, the `tunnel1_phase1_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase1_lifetime_seconds` (`number`):  When `null`, the `tunnel1_phase1_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel1_phase2_dh_group_numbers` (`list`):  When `null`, the `tunnel1_phase2_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel1_phase2_encryption_algorithms` (`list`):  When `null`, the `tunnel1_phase2_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase2_integrity_algorithms` (`list`):  When `null`, the `tunnel1_phase2_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase2_lifetime_seconds` (`number`):  When `null`, the `tunnel1_phase2_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel1_preshared_key` (`string`):  When `null`, the `tunnel1_preshared_key` field will be omitted from the resulting object.
+  - `tunnel1_rekey_fuzz_percentage` (`number`):  When `null`, the `tunnel1_rekey_fuzz_percentage` field will be omitted from the resulting object.
+  - `tunnel1_rekey_margin_time_seconds` (`number`):  When `null`, the `tunnel1_rekey_margin_time_seconds` field will be omitted from the resulting object.
+  - `tunnel1_replay_window_size` (`number`):  When `null`, the `tunnel1_replay_window_size` field will be omitted from the resulting object.
+  - `tunnel1_startup_action` (`string`):  When `null`, the `tunnel1_startup_action` field will be omitted from the resulting object.
+  - `tunnel2_dpd_timeout_action` (`string`):  When `null`, the `tunnel2_dpd_timeout_action` field will be omitted from the resulting object.
+  - `tunnel2_dpd_timeout_seconds` (`number`):  When `null`, the `tunnel2_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel2_ike_versions` (`list`):  When `null`, the `tunnel2_ike_versions` field will be omitted from the resulting object.
+  - `tunnel2_inside_cidr` (`string`):  When `null`, the `tunnel2_inside_cidr` field will be omitted from the resulting object.
+  - `tunnel2_inside_ipv6_cidr` (`string`):  When `null`, the `tunnel2_inside_ipv6_cidr` field will be omitted from the resulting object.
+  - `tunnel2_phase1_dh_group_numbers` (`list`):  When `null`, the `tunnel2_phase1_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel2_phase1_encryption_algorithms` (`list`):  When `null`, the `tunnel2_phase1_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase1_integrity_algorithms` (`list`):  When `null`, the `tunnel2_phase1_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase1_lifetime_seconds` (`number`):  When `null`, the `tunnel2_phase1_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel2_phase2_dh_group_numbers` (`list`):  When `null`, the `tunnel2_phase2_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel2_phase2_encryption_algorithms` (`list`):  When `null`, the `tunnel2_phase2_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase2_integrity_algorithms` (`list`):  When `null`, the `tunnel2_phase2_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase2_lifetime_seconds` (`number`):  When `null`, the `tunnel2_phase2_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel2_preshared_key` (`string`):  When `null`, the `tunnel2_preshared_key` field will be omitted from the resulting object.
+  - `tunnel2_rekey_fuzz_percentage` (`number`):  When `null`, the `tunnel2_rekey_fuzz_percentage` field will be omitted from the resulting object.
+  - `tunnel2_rekey_margin_time_seconds` (`number`):  When `null`, the `tunnel2_rekey_margin_time_seconds` field will be omitted from the resulting object.
+  - `tunnel2_replay_window_size` (`number`):  When `null`, the `tunnel2_replay_window_size` field will be omitted from the resulting object.
+  - `tunnel2_startup_action` (`string`):  When `null`, the `tunnel2_startup_action` field will be omitted from the resulting object.
+  - `tunnel_inside_ip_version` (`string`):  When `null`, the `tunnel_inside_ip_version` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `vpn_gateway_id` (`string`):  When `null`, the `vpn_gateway_id` field will be omitted from the resulting object.
+  - `tunnel1_log_options` (`list[obj]`):  When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-tunnel1_log_optionsnew) constructor.
+  - `tunnel2_log_options` (`list[obj]`):  When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-tunnel2_log_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -184,59 +184,59 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `customer_gateway_id` (`string`): Set the `customer_gateway_id` field on the resulting object.
-  - `enable_acceleration` (`bool`): Set the `enable_acceleration` field on the resulting object. When `null`, the `enable_acceleration` field will be omitted from the resulting object.
-  - `local_ipv4_network_cidr` (`string`): Set the `local_ipv4_network_cidr` field on the resulting object. When `null`, the `local_ipv4_network_cidr` field will be omitted from the resulting object.
-  - `local_ipv6_network_cidr` (`string`): Set the `local_ipv6_network_cidr` field on the resulting object. When `null`, the `local_ipv6_network_cidr` field will be omitted from the resulting object.
-  - `outside_ip_address_type` (`string`): Set the `outside_ip_address_type` field on the resulting object. When `null`, the `outside_ip_address_type` field will be omitted from the resulting object.
-  - `remote_ipv4_network_cidr` (`string`): Set the `remote_ipv4_network_cidr` field on the resulting object. When `null`, the `remote_ipv4_network_cidr` field will be omitted from the resulting object.
-  - `remote_ipv6_network_cidr` (`string`): Set the `remote_ipv6_network_cidr` field on the resulting object. When `null`, the `remote_ipv6_network_cidr` field will be omitted from the resulting object.
-  - `static_routes_only` (`bool`): Set the `static_routes_only` field on the resulting object. When `null`, the `static_routes_only` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting object. When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
-  - `transport_transit_gateway_attachment_id` (`string`): Set the `transport_transit_gateway_attachment_id` field on the resulting object. When `null`, the `transport_transit_gateway_attachment_id` field will be omitted from the resulting object.
-  - `tunnel1_dpd_timeout_action` (`string`): Set the `tunnel1_dpd_timeout_action` field on the resulting object. When `null`, the `tunnel1_dpd_timeout_action` field will be omitted from the resulting object.
-  - `tunnel1_dpd_timeout_seconds` (`number`): Set the `tunnel1_dpd_timeout_seconds` field on the resulting object. When `null`, the `tunnel1_dpd_timeout_seconds` field will be omitted from the resulting object.
-  - `tunnel1_ike_versions` (`list`): Set the `tunnel1_ike_versions` field on the resulting object. When `null`, the `tunnel1_ike_versions` field will be omitted from the resulting object.
-  - `tunnel1_inside_cidr` (`string`): Set the `tunnel1_inside_cidr` field on the resulting object. When `null`, the `tunnel1_inside_cidr` field will be omitted from the resulting object.
-  - `tunnel1_inside_ipv6_cidr` (`string`): Set the `tunnel1_inside_ipv6_cidr` field on the resulting object. When `null`, the `tunnel1_inside_ipv6_cidr` field will be omitted from the resulting object.
-  - `tunnel1_phase1_dh_group_numbers` (`list`): Set the `tunnel1_phase1_dh_group_numbers` field on the resulting object. When `null`, the `tunnel1_phase1_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel1_phase1_encryption_algorithms` (`list`): Set the `tunnel1_phase1_encryption_algorithms` field on the resulting object. When `null`, the `tunnel1_phase1_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase1_integrity_algorithms` (`list`): Set the `tunnel1_phase1_integrity_algorithms` field on the resulting object. When `null`, the `tunnel1_phase1_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase1_lifetime_seconds` (`number`): Set the `tunnel1_phase1_lifetime_seconds` field on the resulting object. When `null`, the `tunnel1_phase1_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel1_phase2_dh_group_numbers` (`list`): Set the `tunnel1_phase2_dh_group_numbers` field on the resulting object. When `null`, the `tunnel1_phase2_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel1_phase2_encryption_algorithms` (`list`): Set the `tunnel1_phase2_encryption_algorithms` field on the resulting object. When `null`, the `tunnel1_phase2_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase2_integrity_algorithms` (`list`): Set the `tunnel1_phase2_integrity_algorithms` field on the resulting object. When `null`, the `tunnel1_phase2_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel1_phase2_lifetime_seconds` (`number`): Set the `tunnel1_phase2_lifetime_seconds` field on the resulting object. When `null`, the `tunnel1_phase2_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel1_preshared_key` (`string`): Set the `tunnel1_preshared_key` field on the resulting object. When `null`, the `tunnel1_preshared_key` field will be omitted from the resulting object.
-  - `tunnel1_rekey_fuzz_percentage` (`number`): Set the `tunnel1_rekey_fuzz_percentage` field on the resulting object. When `null`, the `tunnel1_rekey_fuzz_percentage` field will be omitted from the resulting object.
-  - `tunnel1_rekey_margin_time_seconds` (`number`): Set the `tunnel1_rekey_margin_time_seconds` field on the resulting object. When `null`, the `tunnel1_rekey_margin_time_seconds` field will be omitted from the resulting object.
-  - `tunnel1_replay_window_size` (`number`): Set the `tunnel1_replay_window_size` field on the resulting object. When `null`, the `tunnel1_replay_window_size` field will be omitted from the resulting object.
-  - `tunnel1_startup_action` (`string`): Set the `tunnel1_startup_action` field on the resulting object. When `null`, the `tunnel1_startup_action` field will be omitted from the resulting object.
-  - `tunnel2_dpd_timeout_action` (`string`): Set the `tunnel2_dpd_timeout_action` field on the resulting object. When `null`, the `tunnel2_dpd_timeout_action` field will be omitted from the resulting object.
-  - `tunnel2_dpd_timeout_seconds` (`number`): Set the `tunnel2_dpd_timeout_seconds` field on the resulting object. When `null`, the `tunnel2_dpd_timeout_seconds` field will be omitted from the resulting object.
-  - `tunnel2_ike_versions` (`list`): Set the `tunnel2_ike_versions` field on the resulting object. When `null`, the `tunnel2_ike_versions` field will be omitted from the resulting object.
-  - `tunnel2_inside_cidr` (`string`): Set the `tunnel2_inside_cidr` field on the resulting object. When `null`, the `tunnel2_inside_cidr` field will be omitted from the resulting object.
-  - `tunnel2_inside_ipv6_cidr` (`string`): Set the `tunnel2_inside_ipv6_cidr` field on the resulting object. When `null`, the `tunnel2_inside_ipv6_cidr` field will be omitted from the resulting object.
-  - `tunnel2_phase1_dh_group_numbers` (`list`): Set the `tunnel2_phase1_dh_group_numbers` field on the resulting object. When `null`, the `tunnel2_phase1_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel2_phase1_encryption_algorithms` (`list`): Set the `tunnel2_phase1_encryption_algorithms` field on the resulting object. When `null`, the `tunnel2_phase1_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase1_integrity_algorithms` (`list`): Set the `tunnel2_phase1_integrity_algorithms` field on the resulting object. When `null`, the `tunnel2_phase1_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase1_lifetime_seconds` (`number`): Set the `tunnel2_phase1_lifetime_seconds` field on the resulting object. When `null`, the `tunnel2_phase1_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel2_phase2_dh_group_numbers` (`list`): Set the `tunnel2_phase2_dh_group_numbers` field on the resulting object. When `null`, the `tunnel2_phase2_dh_group_numbers` field will be omitted from the resulting object.
-  - `tunnel2_phase2_encryption_algorithms` (`list`): Set the `tunnel2_phase2_encryption_algorithms` field on the resulting object. When `null`, the `tunnel2_phase2_encryption_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase2_integrity_algorithms` (`list`): Set the `tunnel2_phase2_integrity_algorithms` field on the resulting object. When `null`, the `tunnel2_phase2_integrity_algorithms` field will be omitted from the resulting object.
-  - `tunnel2_phase2_lifetime_seconds` (`number`): Set the `tunnel2_phase2_lifetime_seconds` field on the resulting object. When `null`, the `tunnel2_phase2_lifetime_seconds` field will be omitted from the resulting object.
-  - `tunnel2_preshared_key` (`string`): Set the `tunnel2_preshared_key` field on the resulting object. When `null`, the `tunnel2_preshared_key` field will be omitted from the resulting object.
-  - `tunnel2_rekey_fuzz_percentage` (`number`): Set the `tunnel2_rekey_fuzz_percentage` field on the resulting object. When `null`, the `tunnel2_rekey_fuzz_percentage` field will be omitted from the resulting object.
-  - `tunnel2_rekey_margin_time_seconds` (`number`): Set the `tunnel2_rekey_margin_time_seconds` field on the resulting object. When `null`, the `tunnel2_rekey_margin_time_seconds` field will be omitted from the resulting object.
-  - `tunnel2_replay_window_size` (`number`): Set the `tunnel2_replay_window_size` field on the resulting object. When `null`, the `tunnel2_replay_window_size` field will be omitted from the resulting object.
-  - `tunnel2_startup_action` (`string`): Set the `tunnel2_startup_action` field on the resulting object. When `null`, the `tunnel2_startup_action` field will be omitted from the resulting object.
-  - `tunnel_inside_ip_version` (`string`): Set the `tunnel_inside_ip_version` field on the resulting object. When `null`, the `tunnel_inside_ip_version` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `vpn_gateway_id` (`string`): Set the `vpn_gateway_id` field on the resulting object. When `null`, the `vpn_gateway_id` field will be omitted from the resulting object.
-  - `tunnel1_log_options` (`list[obj]`): Set the `tunnel1_log_options` field on the resulting object. When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-tunnel1_log_optionsnew) constructor.
-  - `tunnel2_log_options` (`list[obj]`): Set the `tunnel2_log_options` field on the resulting object. When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-tunnel2_log_optionsnew) constructor.
+  - `customer_gateway_id` (`string`): 
+  - `enable_acceleration` (`bool`):  When `null`, the `enable_acceleration` field will be omitted from the resulting object.
+  - `local_ipv4_network_cidr` (`string`):  When `null`, the `local_ipv4_network_cidr` field will be omitted from the resulting object.
+  - `local_ipv6_network_cidr` (`string`):  When `null`, the `local_ipv6_network_cidr` field will be omitted from the resulting object.
+  - `outside_ip_address_type` (`string`):  When `null`, the `outside_ip_address_type` field will be omitted from the resulting object.
+  - `remote_ipv4_network_cidr` (`string`):  When `null`, the `remote_ipv4_network_cidr` field will be omitted from the resulting object.
+  - `remote_ipv6_network_cidr` (`string`):  When `null`, the `remote_ipv6_network_cidr` field will be omitted from the resulting object.
+  - `static_routes_only` (`bool`):  When `null`, the `static_routes_only` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_gateway_id` (`string`):  When `null`, the `transit_gateway_id` field will be omitted from the resulting object.
+  - `transport_transit_gateway_attachment_id` (`string`):  When `null`, the `transport_transit_gateway_attachment_id` field will be omitted from the resulting object.
+  - `tunnel1_dpd_timeout_action` (`string`):  When `null`, the `tunnel1_dpd_timeout_action` field will be omitted from the resulting object.
+  - `tunnel1_dpd_timeout_seconds` (`number`):  When `null`, the `tunnel1_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel1_ike_versions` (`list`):  When `null`, the `tunnel1_ike_versions` field will be omitted from the resulting object.
+  - `tunnel1_inside_cidr` (`string`):  When `null`, the `tunnel1_inside_cidr` field will be omitted from the resulting object.
+  - `tunnel1_inside_ipv6_cidr` (`string`):  When `null`, the `tunnel1_inside_ipv6_cidr` field will be omitted from the resulting object.
+  - `tunnel1_phase1_dh_group_numbers` (`list`):  When `null`, the `tunnel1_phase1_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel1_phase1_encryption_algorithms` (`list`):  When `null`, the `tunnel1_phase1_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase1_integrity_algorithms` (`list`):  When `null`, the `tunnel1_phase1_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase1_lifetime_seconds` (`number`):  When `null`, the `tunnel1_phase1_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel1_phase2_dh_group_numbers` (`list`):  When `null`, the `tunnel1_phase2_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel1_phase2_encryption_algorithms` (`list`):  When `null`, the `tunnel1_phase2_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase2_integrity_algorithms` (`list`):  When `null`, the `tunnel1_phase2_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel1_phase2_lifetime_seconds` (`number`):  When `null`, the `tunnel1_phase2_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel1_preshared_key` (`string`):  When `null`, the `tunnel1_preshared_key` field will be omitted from the resulting object.
+  - `tunnel1_rekey_fuzz_percentage` (`number`):  When `null`, the `tunnel1_rekey_fuzz_percentage` field will be omitted from the resulting object.
+  - `tunnel1_rekey_margin_time_seconds` (`number`):  When `null`, the `tunnel1_rekey_margin_time_seconds` field will be omitted from the resulting object.
+  - `tunnel1_replay_window_size` (`number`):  When `null`, the `tunnel1_replay_window_size` field will be omitted from the resulting object.
+  - `tunnel1_startup_action` (`string`):  When `null`, the `tunnel1_startup_action` field will be omitted from the resulting object.
+  - `tunnel2_dpd_timeout_action` (`string`):  When `null`, the `tunnel2_dpd_timeout_action` field will be omitted from the resulting object.
+  - `tunnel2_dpd_timeout_seconds` (`number`):  When `null`, the `tunnel2_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel2_ike_versions` (`list`):  When `null`, the `tunnel2_ike_versions` field will be omitted from the resulting object.
+  - `tunnel2_inside_cidr` (`string`):  When `null`, the `tunnel2_inside_cidr` field will be omitted from the resulting object.
+  - `tunnel2_inside_ipv6_cidr` (`string`):  When `null`, the `tunnel2_inside_ipv6_cidr` field will be omitted from the resulting object.
+  - `tunnel2_phase1_dh_group_numbers` (`list`):  When `null`, the `tunnel2_phase1_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel2_phase1_encryption_algorithms` (`list`):  When `null`, the `tunnel2_phase1_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase1_integrity_algorithms` (`list`):  When `null`, the `tunnel2_phase1_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase1_lifetime_seconds` (`number`):  When `null`, the `tunnel2_phase1_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel2_phase2_dh_group_numbers` (`list`):  When `null`, the `tunnel2_phase2_dh_group_numbers` field will be omitted from the resulting object.
+  - `tunnel2_phase2_encryption_algorithms` (`list`):  When `null`, the `tunnel2_phase2_encryption_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase2_integrity_algorithms` (`list`):  When `null`, the `tunnel2_phase2_integrity_algorithms` field will be omitted from the resulting object.
+  - `tunnel2_phase2_lifetime_seconds` (`number`):  When `null`, the `tunnel2_phase2_lifetime_seconds` field will be omitted from the resulting object.
+  - `tunnel2_preshared_key` (`string`):  When `null`, the `tunnel2_preshared_key` field will be omitted from the resulting object.
+  - `tunnel2_rekey_fuzz_percentage` (`number`):  When `null`, the `tunnel2_rekey_fuzz_percentage` field will be omitted from the resulting object.
+  - `tunnel2_rekey_margin_time_seconds` (`number`):  When `null`, the `tunnel2_rekey_margin_time_seconds` field will be omitted from the resulting object.
+  - `tunnel2_replay_window_size` (`number`):  When `null`, the `tunnel2_replay_window_size` field will be omitted from the resulting object.
+  - `tunnel2_startup_action` (`string`):  When `null`, the `tunnel2_startup_action` field will be omitted from the resulting object.
+  - `tunnel_inside_ip_version` (`string`):  When `null`, the `tunnel_inside_ip_version` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `vpn_gateway_id` (`string`):  When `null`, the `vpn_gateway_id` field will be omitted from the resulting object.
+  - `tunnel1_log_options` (`list[obj]`):  When `null`, the `tunnel1_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.new](#fn-tunnel1_log_optionsnew) constructor.
+  - `tunnel2_log_options` (`list[obj]`):  When `null`, the `tunnel2_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.new](#fn-tunnel2_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpn_connection` resource into the root Terraform configuration.
@@ -1149,7 +1149,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_options` (`list[obj]`): Set the `cloudwatch_log_options` field on the resulting object. When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.cloudwatch_log_options.new](#fn-tunnel1_log_optionscloudwatch_log_optionsnew) constructor.
+  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel1_log_options.cloudwatch_log_options.new](#fn-tunnel1_log_optionscloudwatch_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tunnel1_log_options` sub block.
@@ -1172,9 +1172,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `log_enabled` (`bool`): Set the `log_enabled` field on the resulting object. When `null`, the `log_enabled` field will be omitted from the resulting object.
-  - `log_group_arn` (`string`): Set the `log_group_arn` field on the resulting object. When `null`, the `log_group_arn` field will be omitted from the resulting object.
-  - `log_output_format` (`string`): Set the `log_output_format` field on the resulting object. When `null`, the `log_output_format` field will be omitted from the resulting object.
+  - `log_enabled` (`bool`):  When `null`, the `log_enabled` field will be omitted from the resulting object.
+  - `log_group_arn` (`string`):  When `null`, the `log_group_arn` field will be omitted from the resulting object.
+  - `log_output_format` (`string`):  When `null`, the `log_output_format` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_log_options` sub block.
@@ -1197,7 +1197,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cloudwatch_log_options` (`list[obj]`): Set the `cloudwatch_log_options` field on the resulting object. When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.cloudwatch_log_options.new](#fn-tunnel2_log_optionscloudwatch_log_optionsnew) constructor.
+  - `cloudwatch_log_options` (`list[obj]`):  When `null`, the `cloudwatch_log_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpn_connection.tunnel2_log_options.cloudwatch_log_options.new](#fn-tunnel2_log_optionscloudwatch_log_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `tunnel2_log_options` sub block.
@@ -1220,9 +1220,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `log_enabled` (`bool`): Set the `log_enabled` field on the resulting object. When `null`, the `log_enabled` field will be omitted from the resulting object.
-  - `log_group_arn` (`string`): Set the `log_group_arn` field on the resulting object. When `null`, the `log_group_arn` field will be omitted from the resulting object.
-  - `log_output_format` (`string`): Set the `log_output_format` field on the resulting object. When `null`, the `log_output_format` field will be omitted from the resulting object.
+  - `log_enabled` (`bool`):  When `null`, the `log_enabled` field will be omitted from the resulting object.
+  - `log_group_arn` (`string`):  When `null`, the `log_group_arn` field will be omitted from the resulting object.
+  - `log_output_format` (`string`):  When `null`, the `log_output_format` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_log_options` sub block.

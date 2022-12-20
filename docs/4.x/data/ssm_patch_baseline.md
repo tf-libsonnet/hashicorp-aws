@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `default_baseline` (`bool`): Set the `default_baseline` field on the resulting data source block. When `null`, the `default_baseline` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting data source block. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `operating_system` (`string`): Set the `operating_system` field on the resulting data source block. When `null`, the `operating_system` field will be omitted from the resulting object.
-  - `owner` (`string`): Set the `owner` field on the resulting data source block.
+  - `default_baseline` (`bool`):  When `null`, the `default_baseline` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `operating_system` (`string`):  When `null`, the `operating_system` field will be omitted from the resulting object.
+  - `owner` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_baseline` (`bool`): Set the `default_baseline` field on the resulting object. When `null`, the `default_baseline` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `operating_system` (`string`): Set the `operating_system` field on the resulting object. When `null`, the `operating_system` field will be omitted from the resulting object.
-  - `owner` (`string`): Set the `owner` field on the resulting object.
+  - `default_baseline` (`bool`):  When `null`, the `default_baseline` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `operating_system` (`string`):  When `null`, the `operating_system` field will be omitted from the resulting object.
+  - `owner` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ssm_patch_baseline` data source into the root Terraform configuration.

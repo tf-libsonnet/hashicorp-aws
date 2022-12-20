@@ -61,22 +61,22 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting resource block. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block.
-  - `backup_retention_enabled` (`bool`): Set the `backup_retention_enabled` field on the resulting resource block. When `null`, the `backup_retention_enabled` field will be omitted from the resulting object.
-  - `blueprint_id` (`string`): Set the `blueprint_id` field on the resulting resource block.
-  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting resource block.
-  - `final_snapshot_name` (`string`): Set the `final_snapshot_name` field on the resulting resource block. When `null`, the `final_snapshot_name` field will be omitted from the resulting object.
-  - `master_database_name` (`string`): Set the `master_database_name` field on the resulting resource block.
-  - `master_password` (`string`): Set the `master_password` field on the resulting resource block.
-  - `master_username` (`string`): Set the `master_username` field on the resulting resource block.
-  - `preferred_backup_window` (`string`): Set the `preferred_backup_window` field on the resulting resource block. When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
-  - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting resource block. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
-  - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting resource block. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
-  - `relational_database_name` (`string`): Set the `relational_database_name` field on the resulting resource block.
-  - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting resource block. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): 
+  - `backup_retention_enabled` (`bool`):  When `null`, the `backup_retention_enabled` field will be omitted from the resulting object.
+  - `blueprint_id` (`string`): 
+  - `bundle_id` (`string`): 
+  - `final_snapshot_name` (`string`):  When `null`, the `final_snapshot_name` field will be omitted from the resulting object.
+  - `master_database_name` (`string`): 
+  - `master_password` (`string`): 
+  - `master_username` (`string`): 
+  - `preferred_backup_window` (`string`):  When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
+  - `preferred_maintenance_window` (`string`):  When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
+  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `relational_database_name` (`string`): 
+  - `skip_final_snapshot` (`bool`):  When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -100,22 +100,22 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting object. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object.
-  - `backup_retention_enabled` (`bool`): Set the `backup_retention_enabled` field on the resulting object. When `null`, the `backup_retention_enabled` field will be omitted from the resulting object.
-  - `blueprint_id` (`string`): Set the `blueprint_id` field on the resulting object.
-  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting object.
-  - `final_snapshot_name` (`string`): Set the `final_snapshot_name` field on the resulting object. When `null`, the `final_snapshot_name` field will be omitted from the resulting object.
-  - `master_database_name` (`string`): Set the `master_database_name` field on the resulting object.
-  - `master_password` (`string`): Set the `master_password` field on the resulting object.
-  - `master_username` (`string`): Set the `master_username` field on the resulting object.
-  - `preferred_backup_window` (`string`): Set the `preferred_backup_window` field on the resulting object. When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
-  - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting object. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
-  - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting object. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
-  - `relational_database_name` (`string`): Set the `relational_database_name` field on the resulting object.
-  - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting object. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): 
+  - `backup_retention_enabled` (`bool`):  When `null`, the `backup_retention_enabled` field will be omitted from the resulting object.
+  - `blueprint_id` (`string`): 
+  - `bundle_id` (`string`): 
+  - `final_snapshot_name` (`string`):  When `null`, the `final_snapshot_name` field will be omitted from the resulting object.
+  - `master_database_name` (`string`): 
+  - `master_password` (`string`): 
+  - `master_username` (`string`): 
+  - `preferred_backup_window` (`string`):  When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
+  - `preferred_maintenance_window` (`string`):  When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
+  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `relational_database_name` (`string`): 
+  - `skip_final_snapshot` (`bool`):  When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_database` resource into the root Terraform configuration.

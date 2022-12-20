@@ -59,11 +59,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `eventbridge` (`bool`): Set the `eventbridge` field on the resulting resource block. When `null`, the `eventbridge` field will be omitted from the resulting object.
-  - `lambda_function` (`list[obj]`): Set the `lambda_function` field on the resulting resource block. When `null`, the `lambda_function` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.lambda_function.new](#fn-lambda_functionnew) constructor.
-  - `queue` (`list[obj]`): Set the `queue` field on the resulting resource block. When `null`, the `queue` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.queue.new](#fn-queuenew) constructor.
-  - `topic` (`list[obj]`): Set the `topic` field on the resulting resource block. When `null`, the `topic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.topic.new](#fn-topicnew) constructor.
+  - `bucket` (`string`): 
+  - `eventbridge` (`bool`):  When `null`, the `eventbridge` field will be omitted from the resulting object.
+  - `lambda_function` (`list[obj]`):  When `null`, the `lambda_function` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.lambda_function.new](#fn-lambda_functionnew) constructor.
+  - `queue` (`list[obj]`):  When `null`, the `queue` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.queue.new](#fn-queuenew) constructor.
+  - `topic` (`list[obj]`):  When `null`, the `topic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.topic.new](#fn-topicnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,11 +87,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `eventbridge` (`bool`): Set the `eventbridge` field on the resulting object. When `null`, the `eventbridge` field will be omitted from the resulting object.
-  - `lambda_function` (`list[obj]`): Set the `lambda_function` field on the resulting object. When `null`, the `lambda_function` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.lambda_function.new](#fn-lambda_functionnew) constructor.
-  - `queue` (`list[obj]`): Set the `queue` field on the resulting object. When `null`, the `queue` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.queue.new](#fn-queuenew) constructor.
-  - `topic` (`list[obj]`): Set the `topic` field on the resulting object. When `null`, the `topic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.topic.new](#fn-topicnew) constructor.
+  - `bucket` (`string`): 
+  - `eventbridge` (`bool`):  When `null`, the `eventbridge` field will be omitted from the resulting object.
+  - `lambda_function` (`list[obj]`):  When `null`, the `lambda_function` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.lambda_function.new](#fn-lambda_functionnew) constructor.
+  - `queue` (`list[obj]`):  When `null`, the `queue` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.queue.new](#fn-queuenew) constructor.
+  - `topic` (`list[obj]`):  When `null`, the `topic` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_notification.topic.new](#fn-topicnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_notification` resource into the root Terraform configuration.
@@ -257,10 +257,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `events` (`list`): Set the `events` field on the resulting object.
-  - `filter_prefix` (`string`): Set the `filter_prefix` field on the resulting object. When `null`, the `filter_prefix` field will be omitted from the resulting object.
-  - `filter_suffix` (`string`): Set the `filter_suffix` field on the resulting object. When `null`, the `filter_suffix` field will be omitted from the resulting object.
-  - `lambda_function_arn` (`string`): Set the `lambda_function_arn` field on the resulting object. When `null`, the `lambda_function_arn` field will be omitted from the resulting object.
+  - `events` (`list`): 
+  - `filter_prefix` (`string`):  When `null`, the `filter_prefix` field will be omitted from the resulting object.
+  - `filter_suffix` (`string`):  When `null`, the `filter_suffix` field will be omitted from the resulting object.
+  - `lambda_function_arn` (`string`):  When `null`, the `lambda_function_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lambda_function` sub block.
@@ -283,10 +283,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `events` (`list`): Set the `events` field on the resulting object.
-  - `filter_prefix` (`string`): Set the `filter_prefix` field on the resulting object. When `null`, the `filter_prefix` field will be omitted from the resulting object.
-  - `filter_suffix` (`string`): Set the `filter_suffix` field on the resulting object. When `null`, the `filter_suffix` field will be omitted from the resulting object.
-  - `queue_arn` (`string`): Set the `queue_arn` field on the resulting object.
+  - `events` (`list`): 
+  - `filter_prefix` (`string`):  When `null`, the `filter_prefix` field will be omitted from the resulting object.
+  - `filter_suffix` (`string`):  When `null`, the `filter_suffix` field will be omitted from the resulting object.
+  - `queue_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `queue` sub block.
@@ -309,10 +309,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `events` (`list`): Set the `events` field on the resulting object.
-  - `filter_prefix` (`string`): Set the `filter_prefix` field on the resulting object. When `null`, the `filter_prefix` field will be omitted from the resulting object.
-  - `filter_suffix` (`string`): Set the `filter_suffix` field on the resulting object. When `null`, the `filter_suffix` field will be omitted from the resulting object.
-  - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object.
+  - `events` (`list`): 
+  - `filter_prefix` (`string`):  When `null`, the `filter_prefix` field will be omitted from the resulting object.
+  - `filter_suffix` (`string`):  When `null`, the `filter_suffix` field will be omitted from the resulting object.
+  - `topic_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `topic` sub block.

@@ -57,15 +57,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `agent_arns` (`list`): Set the `agent_arns` field on the resulting resource block.
-  - `domain` (`string`): Set the `domain` field on the resulting resource block. When `null`, the `domain` field will be omitted from the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting resource block.
-  - `server_hostname` (`string`): Set the `server_hostname` field on the resulting resource block.
-  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user` (`string`): Set the `user` field on the resulting resource block.
-  - `mount_options` (`list[obj]`): Set the `mount_options` field on the resulting resource block. When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_smb.mount_options.new](#fn-mount_optionsnew) constructor.
+  - `agent_arns` (`list`): 
+  - `domain` (`string`):  When `null`, the `domain` field will be omitted from the resulting object.
+  - `password` (`string`): 
+  - `server_hostname` (`string`): 
+  - `subdirectory` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user` (`string`): 
+  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_smb.mount_options.new](#fn-mount_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,15 +89,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `agent_arns` (`list`): Set the `agent_arns` field on the resulting object.
-  - `domain` (`string`): Set the `domain` field on the resulting object. When `null`, the `domain` field will be omitted from the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting object.
-  - `server_hostname` (`string`): Set the `server_hostname` field on the resulting object.
-  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user` (`string`): Set the `user` field on the resulting object.
-  - `mount_options` (`list[obj]`): Set the `mount_options` field on the resulting object. When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_smb.mount_options.new](#fn-mount_optionsnew) constructor.
+  - `agent_arns` (`list`): 
+  - `domain` (`string`):  When `null`, the `domain` field will be omitted from the resulting object.
+  - `password` (`string`): 
+  - `server_hostname` (`string`): 
+  - `subdirectory` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user` (`string`): 
+  - `mount_options` (`list[obj]`):  When `null`, the `mount_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_location_smb.mount_options.new](#fn-mount_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_location_smb` resource into the root Terraform configuration.
@@ -285,7 +285,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `mount_options` sub block.

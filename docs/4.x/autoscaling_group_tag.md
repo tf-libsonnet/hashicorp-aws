@@ -50,8 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting resource block.
-  - `tag` (`list[obj]`): Set the `tag` field on the resulting resource block. When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group_tag.tag.new](#fn-tagnew) constructor.
+  - `autoscaling_group_name` (`string`): 
+  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group_tag.tag.new](#fn-tagnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -75,8 +75,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting object.
-  - `tag` (`list[obj]`): Set the `tag` field on the resulting object. When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group_tag.tag.new](#fn-tagnew) constructor.
+  - `autoscaling_group_name` (`string`): 
+  - `tag` (`list[obj]`):  When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group_tag.tag.new](#fn-tagnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `autoscaling_group_tag` resource into the root Terraform configuration.
@@ -152,9 +152,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `propagate_at_launch` (`bool`): Set the `propagate_at_launch` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `propagate_at_launch` (`bool`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `tag` sub block.

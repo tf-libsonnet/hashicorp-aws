@@ -66,13 +66,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `not_resources` (`list`): Set the `not_resources` field on the resulting resource block. When `null`, the `not_resources` field will be omitted from the resulting object.
-  - `plan_id` (`string`): Set the `plan_id` field on the resulting resource block.
-  - `resources` (`list`): Set the `resources` field on the resulting resource block. When `null`, the `resources` field will be omitted from the resulting object.
-  - `condition` (`list[obj]`): Set the `condition` field on the resulting resource block. When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-conditionnew) constructor.
-  - `selection_tag` (`list[obj]`): Set the `selection_tag` field on the resulting resource block. When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-selection_tagnew) constructor.
+  - `iam_role_arn` (`string`): 
+  - `name` (`string`): 
+  - `not_resources` (`list`):  When `null`, the `not_resources` field will be omitted from the resulting object.
+  - `plan_id` (`string`): 
+  - `resources` (`list`):  When `null`, the `resources` field will be omitted from the resulting object.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-conditionnew) constructor.
+  - `selection_tag` (`list[obj]`):  When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-selection_tagnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,13 +96,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `not_resources` (`list`): Set the `not_resources` field on the resulting object. When `null`, the `not_resources` field will be omitted from the resulting object.
-  - `plan_id` (`string`): Set the `plan_id` field on the resulting object.
-  - `resources` (`list`): Set the `resources` field on the resulting object. When `null`, the `resources` field will be omitted from the resulting object.
-  - `condition` (`list[obj]`): Set the `condition` field on the resulting object. When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-conditionnew) constructor.
-  - `selection_tag` (`list[obj]`): Set the `selection_tag` field on the resulting object. When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-selection_tagnew) constructor.
+  - `iam_role_arn` (`string`): 
+  - `name` (`string`): 
+  - `not_resources` (`list`):  When `null`, the `not_resources` field will be omitted from the resulting object.
+  - `plan_id` (`string`): 
+  - `resources` (`list`):  When `null`, the `resources` field will be omitted from the resulting object.
+  - `condition` (`list[obj]`):  When `null`, the `condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.new](#fn-conditionnew) constructor.
+  - `selection_tag` (`list[obj]`):  When `null`, the `selection_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.selection_tag.new](#fn-selection_tagnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `backup_selection` resource into the root Terraform configuration.
@@ -279,10 +279,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `string_equals` (`list[obj]`): Set the `string_equals` field on the resulting object. When `null`, the `string_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_equals.new](#fn-conditionstring_equalsnew) constructor.
-  - `string_like` (`list[obj]`): Set the `string_like` field on the resulting object. When `null`, the `string_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_like.new](#fn-conditionstring_likenew) constructor.
-  - `string_not_equals` (`list[obj]`): Set the `string_not_equals` field on the resulting object. When `null`, the `string_not_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_equals.new](#fn-conditionstring_not_equalsnew) constructor.
-  - `string_not_like` (`list[obj]`): Set the `string_not_like` field on the resulting object. When `null`, the `string_not_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_like.new](#fn-conditionstring_not_likenew) constructor.
+  - `string_equals` (`list[obj]`):  When `null`, the `string_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_equals.new](#fn-conditionstring_equalsnew) constructor.
+  - `string_like` (`list[obj]`):  When `null`, the `string_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_like.new](#fn-conditionstring_likenew) constructor.
+  - `string_not_equals` (`list[obj]`):  When `null`, the `string_not_equals` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_equals.new](#fn-conditionstring_not_equalsnew) constructor.
+  - `string_not_like` (`list[obj]`):  When `null`, the `string_not_like` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_selection.condition.string_not_like.new](#fn-conditionstring_not_likenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `condition` sub block.
@@ -305,8 +305,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `string_equals` sub block.
@@ -329,8 +329,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `string_like` sub block.
@@ -353,8 +353,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `string_not_equals` sub block.
@@ -377,8 +377,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `string_not_like` sub block.
@@ -401,9 +401,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `key` (`string`): 
+  - `type` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `selection_tag` sub block.

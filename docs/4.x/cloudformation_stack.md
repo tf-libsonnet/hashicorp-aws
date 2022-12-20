@@ -63,21 +63,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `capabilities` (`list`): Set the `capabilities` field on the resulting resource block. When `null`, the `capabilities` field will be omitted from the resulting object.
-  - `disable_rollback` (`bool`): Set the `disable_rollback` field on the resulting resource block. When `null`, the `disable_rollback` field will be omitted from the resulting object.
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting resource block. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `notification_arns` (`list`): Set the `notification_arns` field on the resulting resource block. When `null`, the `notification_arns` field will be omitted from the resulting object.
-  - `on_failure` (`string`): Set the `on_failure` field on the resulting resource block. When `null`, the `on_failure` field will be omitted from the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `policy_body` (`string`): Set the `policy_body` field on the resulting resource block. When `null`, the `policy_body` field will be omitted from the resulting object.
-  - `policy_url` (`string`): Set the `policy_url` field on the resulting resource block. When `null`, the `policy_url` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_body` (`string`): Set the `template_body` field on the resulting resource block. When `null`, the `template_body` field will be omitted from the resulting object.
-  - `template_url` (`string`): Set the `template_url` field on the resulting resource block. When `null`, the `template_url` field will be omitted from the resulting object.
-  - `timeout_in_minutes` (`number`): Set the `timeout_in_minutes` field on the resulting resource block. When `null`, the `timeout_in_minutes` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack.timeouts.new](#fn-timeoutsnew) constructor.
+  - `capabilities` (`list`):  When `null`, the `capabilities` field will be omitted from the resulting object.
+  - `disable_rollback` (`bool`):  When `null`, the `disable_rollback` field will be omitted from the resulting object.
+  - `iam_role_arn` (`string`):  When `null`, the `iam_role_arn` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `notification_arns` (`list`):  When `null`, the `notification_arns` field will be omitted from the resulting object.
+  - `on_failure` (`string`):  When `null`, the `on_failure` field will be omitted from the resulting object.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `policy_body` (`string`):  When `null`, the `policy_body` field will be omitted from the resulting object.
+  - `policy_url` (`string`):  When `null`, the `policy_url` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_body` (`string`):  When `null`, the `template_body` field will be omitted from the resulting object.
+  - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
+  - `timeout_in_minutes` (`number`):  When `null`, the `timeout_in_minutes` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,21 +101,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `capabilities` (`list`): Set the `capabilities` field on the resulting object. When `null`, the `capabilities` field will be omitted from the resulting object.
-  - `disable_rollback` (`bool`): Set the `disable_rollback` field on the resulting object. When `null`, the `disable_rollback` field will be omitted from the resulting object.
-  - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting object. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `notification_arns` (`list`): Set the `notification_arns` field on the resulting object. When `null`, the `notification_arns` field will be omitted from the resulting object.
-  - `on_failure` (`string`): Set the `on_failure` field on the resulting object. When `null`, the `on_failure` field will be omitted from the resulting object.
-  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
-  - `policy_body` (`string`): Set the `policy_body` field on the resulting object. When `null`, the `policy_body` field will be omitted from the resulting object.
-  - `policy_url` (`string`): Set the `policy_url` field on the resulting object. When `null`, the `policy_url` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `template_body` (`string`): Set the `template_body` field on the resulting object. When `null`, the `template_body` field will be omitted from the resulting object.
-  - `template_url` (`string`): Set the `template_url` field on the resulting object. When `null`, the `template_url` field will be omitted from the resulting object.
-  - `timeout_in_minutes` (`number`): Set the `timeout_in_minutes` field on the resulting object. When `null`, the `timeout_in_minutes` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack.timeouts.new](#fn-timeoutsnew) constructor.
+  - `capabilities` (`list`):  When `null`, the `capabilities` field will be omitted from the resulting object.
+  - `disable_rollback` (`bool`):  When `null`, the `disable_rollback` field will be omitted from the resulting object.
+  - `iam_role_arn` (`string`):  When `null`, the `iam_role_arn` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `notification_arns` (`list`):  When `null`, the `notification_arns` field will be omitted from the resulting object.
+  - `on_failure` (`string`):  When `null`, the `on_failure` field will be omitted from the resulting object.
+  - `parameters` (`obj`):  When `null`, the `parameters` field will be omitted from the resulting object.
+  - `policy_body` (`string`):  When `null`, the `policy_body` field will be omitted from the resulting object.
+  - `policy_url` (`string`):  When `null`, the `policy_url` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `template_body` (`string`):  When `null`, the `template_body` field will be omitted from the resulting object.
+  - `template_url` (`string`):  When `null`, the `template_url` field will be omitted from the resulting object.
+  - `timeout_in_minutes` (`number`):  When `null`, the `timeout_in_minutes` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudformation_stack` resource into the root Terraform configuration.
@@ -398,9 +398,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

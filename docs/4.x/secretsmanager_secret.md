@@ -63,18 +63,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `force_overwrite_replica_secret` (`bool`): Set the `force_overwrite_replica_secret` field on the resulting resource block. When `null`, the `force_overwrite_replica_secret` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
-  - `recovery_window_in_days` (`number`): Set the `recovery_window_in_days` field on the resulting resource block. When `null`, the `recovery_window_in_days` field will be omitted from the resulting object.
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting resource block. When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `replica` (`list[obj]`): Set the `replica` field on the resulting resource block. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.replica.new](#fn-replicanew) constructor.
-  - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting resource block. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.rotation_rules.new](#fn-rotation_rulesnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `force_overwrite_replica_secret` (`bool`):  When `null`, the `force_overwrite_replica_secret` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `recovery_window_in_days` (`number`):  When `null`, the `recovery_window_in_days` field will be omitted from the resulting object.
+  - `rotation_lambda_arn` (`string`):  When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.replica.new](#fn-replicanew) constructor.
+  - `rotation_rules` (`list[obj]`):  When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -98,18 +98,18 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `force_overwrite_replica_secret` (`bool`): Set the `force_overwrite_replica_secret` field on the resulting object. When `null`, the `force_overwrite_replica_secret` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
-  - `recovery_window_in_days` (`number`): Set the `recovery_window_in_days` field on the resulting object. When `null`, the `recovery_window_in_days` field will be omitted from the resulting object.
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting object. When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `replica` (`list[obj]`): Set the `replica` field on the resulting object. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.replica.new](#fn-replicanew) constructor.
-  - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting object. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.rotation_rules.new](#fn-rotation_rulesnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `force_overwrite_replica_secret` (`bool`):  When `null`, the `force_overwrite_replica_secret` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`):  When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `policy` (`string`):  When `null`, the `policy` field will be omitted from the resulting object.
+  - `recovery_window_in_days` (`number`):  When `null`, the `recovery_window_in_days` field will be omitted from the resulting object.
+  - `rotation_lambda_arn` (`string`):  When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `replica` (`list[obj]`):  When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.replica.new](#fn-replicanew) constructor.
+  - `rotation_rules` (`list[obj]`):  When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `secretsmanager_secret` resource into the root Terraform configuration.
@@ -366,8 +366,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `region` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `replica` sub block.
@@ -390,7 +390,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `automatically_after_days` (`number`): Set the `automatically_after_days` field on the resulting object.
+  - `automatically_after_days` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `rotation_rules` sub block.

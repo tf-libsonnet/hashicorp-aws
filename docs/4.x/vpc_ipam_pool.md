@@ -63,21 +63,21 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `address_family` (`string`): Set the `address_family` field on the resulting resource block.
-  - `allocation_default_netmask_length` (`number`): Set the `allocation_default_netmask_length` field on the resulting resource block. When `null`, the `allocation_default_netmask_length` field will be omitted from the resulting object.
-  - `allocation_max_netmask_length` (`number`): Set the `allocation_max_netmask_length` field on the resulting resource block. When `null`, the `allocation_max_netmask_length` field will be omitted from the resulting object.
-  - `allocation_min_netmask_length` (`number`): Set the `allocation_min_netmask_length` field on the resulting resource block. When `null`, the `allocation_min_netmask_length` field will be omitted from the resulting object.
-  - `allocation_resource_tags` (`obj`): Set the `allocation_resource_tags` field on the resulting resource block. When `null`, the `allocation_resource_tags` field will be omitted from the resulting object.
-  - `auto_import` (`bool`): Set the `auto_import` field on the resulting resource block. When `null`, the `auto_import` field will be omitted from the resulting object.
-  - `aws_service` (`string`): Set the `aws_service` field on the resulting resource block. When `null`, the `aws_service` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `ipam_scope_id` (`string`): Set the `ipam_scope_id` field on the resulting resource block.
-  - `locale` (`string`): Set the `locale` field on the resulting resource block. When `null`, the `locale` field will be omitted from the resulting object.
-  - `publicly_advertisable` (`bool`): Set the `publicly_advertisable` field on the resulting resource block. When `null`, the `publicly_advertisable` field will be omitted from the resulting object.
-  - `source_ipam_pool_id` (`string`): Set the `source_ipam_pool_id` field on the resulting resource block. When `null`, the `source_ipam_pool_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool.timeouts.new](#fn-timeoutsnew) constructor.
+  - `address_family` (`string`): 
+  - `allocation_default_netmask_length` (`number`):  When `null`, the `allocation_default_netmask_length` field will be omitted from the resulting object.
+  - `allocation_max_netmask_length` (`number`):  When `null`, the `allocation_max_netmask_length` field will be omitted from the resulting object.
+  - `allocation_min_netmask_length` (`number`):  When `null`, the `allocation_min_netmask_length` field will be omitted from the resulting object.
+  - `allocation_resource_tags` (`obj`):  When `null`, the `allocation_resource_tags` field will be omitted from the resulting object.
+  - `auto_import` (`bool`):  When `null`, the `auto_import` field will be omitted from the resulting object.
+  - `aws_service` (`string`):  When `null`, the `aws_service` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `ipam_scope_id` (`string`): 
+  - `locale` (`string`):  When `null`, the `locale` field will be omitted from the resulting object.
+  - `publicly_advertisable` (`bool`):  When `null`, the `publicly_advertisable` field will be omitted from the resulting object.
+  - `source_ipam_pool_id` (`string`):  When `null`, the `source_ipam_pool_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,21 +101,21 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `address_family` (`string`): Set the `address_family` field on the resulting object.
-  - `allocation_default_netmask_length` (`number`): Set the `allocation_default_netmask_length` field on the resulting object. When `null`, the `allocation_default_netmask_length` field will be omitted from the resulting object.
-  - `allocation_max_netmask_length` (`number`): Set the `allocation_max_netmask_length` field on the resulting object. When `null`, the `allocation_max_netmask_length` field will be omitted from the resulting object.
-  - `allocation_min_netmask_length` (`number`): Set the `allocation_min_netmask_length` field on the resulting object. When `null`, the `allocation_min_netmask_length` field will be omitted from the resulting object.
-  - `allocation_resource_tags` (`obj`): Set the `allocation_resource_tags` field on the resulting object. When `null`, the `allocation_resource_tags` field will be omitted from the resulting object.
-  - `auto_import` (`bool`): Set the `auto_import` field on the resulting object. When `null`, the `auto_import` field will be omitted from the resulting object.
-  - `aws_service` (`string`): Set the `aws_service` field on the resulting object. When `null`, the `aws_service` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `ipam_scope_id` (`string`): Set the `ipam_scope_id` field on the resulting object.
-  - `locale` (`string`): Set the `locale` field on the resulting object. When `null`, the `locale` field will be omitted from the resulting object.
-  - `publicly_advertisable` (`bool`): Set the `publicly_advertisable` field on the resulting object. When `null`, the `publicly_advertisable` field will be omitted from the resulting object.
-  - `source_ipam_pool_id` (`string`): Set the `source_ipam_pool_id` field on the resulting object. When `null`, the `source_ipam_pool_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool.timeouts.new](#fn-timeoutsnew) constructor.
+  - `address_family` (`string`): 
+  - `allocation_default_netmask_length` (`number`):  When `null`, the `allocation_default_netmask_length` field will be omitted from the resulting object.
+  - `allocation_max_netmask_length` (`number`):  When `null`, the `allocation_max_netmask_length` field will be omitted from the resulting object.
+  - `allocation_min_netmask_length` (`number`):  When `null`, the `allocation_min_netmask_length` field will be omitted from the resulting object.
+  - `allocation_resource_tags` (`obj`):  When `null`, the `allocation_resource_tags` field will be omitted from the resulting object.
+  - `auto_import` (`bool`):  When `null`, the `auto_import` field will be omitted from the resulting object.
+  - `aws_service` (`string`):  When `null`, the `aws_service` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `ipam_scope_id` (`string`): 
+  - `locale` (`string`):  When `null`, the `locale` field will be omitted from the resulting object.
+  - `publicly_advertisable` (`bool`):  When `null`, the `publicly_advertisable` field will be omitted from the resulting object.
+  - `source_ipam_pool_id` (`string`):  When `null`, the `source_ipam_pool_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_ipam_pool` resource into the root Terraform configuration.
@@ -398,9 +398,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

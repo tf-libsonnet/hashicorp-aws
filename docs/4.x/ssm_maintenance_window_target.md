@@ -54,12 +54,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `owner_information` (`string`): Set the `owner_information` field on the resulting resource block. When `null`, the `owner_information` field will be omitted from the resulting object.
-  - `resource_type` (`string`): Set the `resource_type` field on the resulting resource block.
-  - `window_id` (`string`): Set the `window_id` field on the resulting resource block.
-  - `targets` (`list[obj]`): Set the `targets` field on the resulting resource block. When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_target.targets.new](#fn-targetsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `owner_information` (`string`):  When `null`, the `owner_information` field will be omitted from the resulting object.
+  - `resource_type` (`string`): 
+  - `window_id` (`string`): 
+  - `targets` (`list[obj]`):  When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_target.targets.new](#fn-targetsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,12 +83,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `owner_information` (`string`): Set the `owner_information` field on the resulting object. When `null`, the `owner_information` field will be omitted from the resulting object.
-  - `resource_type` (`string`): Set the `resource_type` field on the resulting object.
-  - `window_id` (`string`): Set the `window_id` field on the resulting object.
-  - `targets` (`list[obj]`): Set the `targets` field on the resulting object. When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_target.targets.new](#fn-targetsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `owner_information` (`string`):  When `null`, the `owner_information` field will be omitted from the resulting object.
+  - `resource_type` (`string`): 
+  - `window_id` (`string`): 
+  - `targets` (`list[obj]`):  When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_maintenance_window_target.targets.new](#fn-targetsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ssm_maintenance_window_target` resource into the root Terraform configuration.
@@ -228,8 +228,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `values` (`list`): Set the `values` field on the resulting object.
+  - `key` (`string`): 
+  - `values` (`list`): 
 
 **Returns**:
   - An attribute object that represents the `targets` sub block.

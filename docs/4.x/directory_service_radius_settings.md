@@ -58,16 +58,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authentication_protocol` (`string`): Set the `authentication_protocol` field on the resulting resource block.
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting resource block.
-  - `display_label` (`string`): Set the `display_label` field on the resulting resource block.
-  - `radius_port` (`number`): Set the `radius_port` field on the resulting resource block.
-  - `radius_retries` (`number`): Set the `radius_retries` field on the resulting resource block.
-  - `radius_servers` (`list`): Set the `radius_servers` field on the resulting resource block.
-  - `radius_timeout` (`number`): Set the `radius_timeout` field on the resulting resource block.
-  - `shared_secret` (`string`): Set the `shared_secret` field on the resulting resource block.
-  - `use_same_username` (`bool`): Set the `use_same_username` field on the resulting resource block. When `null`, the `use_same_username` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_radius_settings.timeouts.new](#fn-timeoutsnew) constructor.
+  - `authentication_protocol` (`string`): 
+  - `directory_id` (`string`): 
+  - `display_label` (`string`): 
+  - `radius_port` (`number`): 
+  - `radius_retries` (`number`): 
+  - `radius_servers` (`list`): 
+  - `radius_timeout` (`number`): 
+  - `shared_secret` (`string`): 
+  - `use_same_username` (`bool`):  When `null`, the `use_same_username` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_radius_settings.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,16 +91,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authentication_protocol` (`string`): Set the `authentication_protocol` field on the resulting object.
-  - `directory_id` (`string`): Set the `directory_id` field on the resulting object.
-  - `display_label` (`string`): Set the `display_label` field on the resulting object.
-  - `radius_port` (`number`): Set the `radius_port` field on the resulting object.
-  - `radius_retries` (`number`): Set the `radius_retries` field on the resulting object.
-  - `radius_servers` (`list`): Set the `radius_servers` field on the resulting object.
-  - `radius_timeout` (`number`): Set the `radius_timeout` field on the resulting object.
-  - `shared_secret` (`string`): Set the `shared_secret` field on the resulting object.
-  - `use_same_username` (`bool`): Set the `use_same_username` field on the resulting object. When `null`, the `use_same_username` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_radius_settings.timeouts.new](#fn-timeoutsnew) constructor.
+  - `authentication_protocol` (`string`): 
+  - `directory_id` (`string`): 
+  - `display_label` (`string`): 
+  - `radius_port` (`number`): 
+  - `radius_retries` (`number`): 
+  - `radius_servers` (`list`): 
+  - `radius_timeout` (`number`): 
+  - `shared_secret` (`string`): 
+  - `use_same_username` (`bool`):  When `null`, the `use_same_username` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.directory_service_radius_settings.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `directory_service_radius_settings` resource into the root Terraform configuration.
@@ -303,8 +303,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

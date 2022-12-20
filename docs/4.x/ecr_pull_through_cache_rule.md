@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `ecr_repository_prefix` (`string`): Set the `ecr_repository_prefix` field on the resulting resource block.
-  - `upstream_registry_url` (`string`): Set the `upstream_registry_url` field on the resulting resource block.
+  - `ecr_repository_prefix` (`string`): 
+  - `upstream_registry_url` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `ecr_repository_prefix` (`string`): Set the `ecr_repository_prefix` field on the resulting object.
-  - `upstream_registry_url` (`string`): Set the `upstream_registry_url` field on the resulting object.
+  - `ecr_repository_prefix` (`string`): 
+  - `upstream_registry_url` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecr_pull_through_cache_rule` resource into the root Terraform configuration.

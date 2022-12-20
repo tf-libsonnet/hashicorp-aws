@@ -51,9 +51,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting resource block.
-  - `secret_id` (`string`): Set the `secret_id` field on the resulting resource block.
-  - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting resource block. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret_rotation.rotation_rules.new](#fn-rotation_rulesnew) constructor.
+  - `rotation_lambda_arn` (`string`): 
+  - `secret_id` (`string`): 
+  - `rotation_rules` (`list[obj]`):  When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret_rotation.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,9 +77,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting object.
-  - `secret_id` (`string`): Set the `secret_id` field on the resulting object.
-  - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting object. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret_rotation.rotation_rules.new](#fn-rotation_rulesnew) constructor.
+  - `rotation_lambda_arn` (`string`): 
+  - `secret_id` (`string`): 
+  - `rotation_rules` (`list[obj]`):  When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret_rotation.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `secretsmanager_secret_rotation` resource into the root Terraform configuration.
@@ -171,7 +171,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `automatically_after_days` (`number`): Set the `automatically_after_days` field on the resulting object.
+  - `automatically_after_days` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `rotation_rules` sub block.

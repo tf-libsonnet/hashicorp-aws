@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `disk_id` (`string`): Set the `disk_id` field on the resulting resource block. When `null`, the `disk_id` field will be omitted from the resulting object.
-  - `disk_path` (`string`): Set the `disk_path` field on the resulting resource block. When `null`, the `disk_path` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting resource block.
+  - `disk_id` (`string`):  When `null`, the `disk_id` field will be omitted from the resulting object.
+  - `disk_path` (`string`):  When `null`, the `disk_path` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `disk_id` (`string`): Set the `disk_id` field on the resulting object. When `null`, the `disk_id` field will be omitted from the resulting object.
-  - `disk_path` (`string`): Set the `disk_path` field on the resulting object. When `null`, the `disk_path` field will be omitted from the resulting object.
-  - `gateway_arn` (`string`): Set the `gateway_arn` field on the resulting object.
+  - `disk_id` (`string`):  When `null`, the `disk_id` field will be omitted from the resulting object.
+  - `disk_path` (`string`):  When `null`, the `disk_path` field will be omitted from the resulting object.
+  - `gateway_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `storagegateway_upload_buffer` resource into the root Terraform configuration.

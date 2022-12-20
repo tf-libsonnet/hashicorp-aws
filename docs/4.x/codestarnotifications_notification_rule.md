@@ -56,14 +56,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `detail_type` (`string`): Set the `detail_type` field on the resulting resource block.
-  - `event_type_ids` (`list`): Set the `event_type_ids` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `resource` (`string`): Set the `resource` field on the resulting resource block.
-  - `status` (`string`): Set the `status` field on the resulting resource block. When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target` (`list[obj]`): Set the `target` field on the resulting resource block. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarnotifications_notification_rule.target.new](#fn-targetnew) constructor.
+  - `detail_type` (`string`): 
+  - `event_type_ids` (`list`): 
+  - `name` (`string`): 
+  - `resource` (`string`): 
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarnotifications_notification_rule.target.new](#fn-targetnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,14 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `detail_type` (`string`): Set the `detail_type` field on the resulting object.
-  - `event_type_ids` (`list`): Set the `event_type_ids` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `resource` (`string`): Set the `resource` field on the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `target` (`list[obj]`): Set the `target` field on the resulting object. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarnotifications_notification_rule.target.new](#fn-targetnew) constructor.
+  - `detail_type` (`string`): 
+  - `event_type_ids` (`list`): 
+  - `name` (`string`): 
+  - `resource` (`string`): 
+  - `status` (`string`):  When `null`, the `status` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `target` (`list[obj]`):  When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codestarnotifications_notification_rule.target.new](#fn-targetnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codestarnotifications_notification_rule` resource into the root Terraform configuration.
@@ -266,8 +266,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `address` (`string`): Set the `address` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `address` (`string`): 
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `target` sub block.

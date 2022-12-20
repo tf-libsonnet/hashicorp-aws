@@ -54,15 +54,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block.
-  - `blueprint_id` (`string`): Set the `blueprint_id` field on the resulting resource block.
-  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting resource block.
-  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `key_pair_name` (`string`): Set the `key_pair_name` field on the resulting resource block. When `null`, the `key_pair_name` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_data` (`string`): Set the `user_data` field on the resulting resource block. When `null`, the `user_data` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): 
+  - `blueprint_id` (`string`): 
+  - `bundle_id` (`string`): 
+  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `key_pair_name` (`string`):  When `null`, the `key_pair_name` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_data` (`string`):  When `null`, the `user_data` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,15 +86,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object.
-  - `blueprint_id` (`string`): Set the `blueprint_id` field on the resulting object.
-  - `bundle_id` (`string`): Set the `bundle_id` field on the resulting object.
-  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `key_pair_name` (`string`): Set the `key_pair_name` field on the resulting object. When `null`, the `key_pair_name` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `user_data` (`string`): Set the `user_data` field on the resulting object. When `null`, the `user_data` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): 
+  - `blueprint_id` (`string`): 
+  - `bundle_id` (`string`): 
+  - `ip_address_type` (`string`):  When `null`, the `ip_address_type` field will be omitted from the resulting object.
+  - `key_pair_name` (`string`):  When `null`, the `key_pair_name` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `user_data` (`string`):  When `null`, the `user_data` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_instance` resource into the root Terraform configuration.

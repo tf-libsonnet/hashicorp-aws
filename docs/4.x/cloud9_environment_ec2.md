@@ -55,16 +55,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `automatic_stop_time_minutes` (`number`): Set the `automatic_stop_time_minutes` field on the resulting resource block. When `null`, the `automatic_stop_time_minutes` field will be omitted from the resulting object.
-  - `connection_type` (`string`): Set the `connection_type` field on the resulting resource block. When `null`, the `connection_type` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `image_id` (`string`): Set the `image_id` field on the resulting resource block. When `null`, the `image_id` field will be omitted from the resulting object.
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `owner_arn` (`string`): Set the `owner_arn` field on the resulting resource block. When `null`, the `owner_arn` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `automatic_stop_time_minutes` (`number`):  When `null`, the `automatic_stop_time_minutes` field will be omitted from the resulting object.
+  - `connection_type` (`string`):  When `null`, the `connection_type` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `image_id` (`string`):  When `null`, the `image_id` field will be omitted from the resulting object.
+  - `instance_type` (`string`): 
+  - `name` (`string`): 
+  - `owner_arn` (`string`):  When `null`, the `owner_arn` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,16 +88,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `automatic_stop_time_minutes` (`number`): Set the `automatic_stop_time_minutes` field on the resulting object. When `null`, the `automatic_stop_time_minutes` field will be omitted from the resulting object.
-  - `connection_type` (`string`): Set the `connection_type` field on the resulting object. When `null`, the `connection_type` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `image_id` (`string`): Set the `image_id` field on the resulting object. When `null`, the `image_id` field will be omitted from the resulting object.
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `owner_arn` (`string`): Set the `owner_arn` field on the resulting object. When `null`, the `owner_arn` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `automatic_stop_time_minutes` (`number`):  When `null`, the `automatic_stop_time_minutes` field will be omitted from the resulting object.
+  - `connection_type` (`string`):  When `null`, the `connection_type` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `image_id` (`string`):  When `null`, the `image_id` field will be omitted from the resulting object.
+  - `instance_type` (`string`): 
+  - `name` (`string`): 
+  - `owner_arn` (`string`):  When `null`, the `owner_arn` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloud9_environment_ec2` resource into the root Terraform configuration.

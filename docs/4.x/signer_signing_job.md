@@ -59,10 +59,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `ignore_signing_job_failure` (`bool`): Set the `ignore_signing_job_failure` field on the resulting resource block. When `null`, the `ignore_signing_job_failure` field will be omitted from the resulting object.
-  - `profile_name` (`string`): Set the `profile_name` field on the resulting resource block.
-  - `destination` (`list[obj]`): Set the `destination` field on the resulting resource block. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.new](#fn-destinationnew) constructor.
-  - `source` (`list[obj]`): Set the `source` field on the resulting resource block. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.new](#fn-sourcenew) constructor.
+  - `ignore_signing_job_failure` (`bool`):  When `null`, the `ignore_signing_job_failure` field will be omitted from the resulting object.
+  - `profile_name` (`string`): 
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.new](#fn-destinationnew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -86,10 +86,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `ignore_signing_job_failure` (`bool`): Set the `ignore_signing_job_failure` field on the resulting object. When `null`, the `ignore_signing_job_failure` field will be omitted from the resulting object.
-  - `profile_name` (`string`): Set the `profile_name` field on the resulting object.
-  - `destination` (`list[obj]`): Set the `destination` field on the resulting object. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.new](#fn-destinationnew) constructor.
-  - `source` (`list[obj]`): Set the `source` field on the resulting object. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.new](#fn-sourcenew) constructor.
+  - `ignore_signing_job_failure` (`bool`):  When `null`, the `ignore_signing_job_failure` field will be omitted from the resulting object.
+  - `profile_name` (`string`): 
+  - `destination` (`list[obj]`):  When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.new](#fn-destinationnew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `signer_signing_job` resource into the root Terraform configuration.
@@ -218,7 +218,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.s3.new](#fn-destinations3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.destination.s3.new](#fn-destinations3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination` sub block.
@@ -241,8 +241,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `prefix` (`string`):  When `null`, the `prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -265,7 +265,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.s3.new](#fn-sources3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_job.source.s3.new](#fn-sources3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.
@@ -288,9 +288,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `version` (`string`): Set the `version` field on the resulting object.
+  - `bucket` (`string`): 
+  - `key` (`string`): 
+  - `version` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.

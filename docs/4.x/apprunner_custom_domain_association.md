@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
-  - `enable_www_subdomain` (`bool`): Set the `enable_www_subdomain` field on the resulting resource block. When `null`, the `enable_www_subdomain` field will be omitted from the resulting object.
-  - `service_arn` (`string`): Set the `service_arn` field on the resulting resource block.
+  - `domain_name` (`string`): 
+  - `enable_www_subdomain` (`bool`):  When `null`, the `enable_www_subdomain` field will be omitted from the resulting object.
+  - `service_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
-  - `enable_www_subdomain` (`bool`): Set the `enable_www_subdomain` field on the resulting object. When `null`, the `enable_www_subdomain` field will be omitted from the resulting object.
-  - `service_arn` (`string`): Set the `service_arn` field on the resulting object.
+  - `domain_name` (`string`): 
+  - `enable_www_subdomain` (`bool`):  When `null`, the `enable_www_subdomain` field will be omitted from the resulting object.
+  - `service_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apprunner_custom_domain_association` resource into the root Terraform configuration.

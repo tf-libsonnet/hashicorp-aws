@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `access_point_arn` (`string`): Set the `access_point_arn` field on the resulting resource block.
-  - `policy` (`string`): Set the `policy` field on the resulting resource block.
+  - `access_point_arn` (`string`): 
+  - `policy` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `access_point_arn` (`string`): Set the `access_point_arn` field on the resulting object.
-  - `policy` (`string`): Set the `policy` field on the resulting object.
+  - `access_point_arn` (`string`): 
+  - `policy` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3control_access_point_policy` resource into the root Terraform configuration.

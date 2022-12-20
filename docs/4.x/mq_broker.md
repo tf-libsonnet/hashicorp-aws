@@ -87,27 +87,27 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting resource block. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `authentication_strategy` (`string`): Set the `authentication_strategy` field on the resulting resource block. When `null`, the `authentication_strategy` field will be omitted from the resulting object.
-  - `auto_minor_version_upgrade` (`bool`): Set the `auto_minor_version_upgrade` field on the resulting resource block. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
-  - `broker_name` (`string`): Set the `broker_name` field on the resulting resource block.
-  - `deployment_mode` (`string`): Set the `deployment_mode` field on the resulting resource block. When `null`, the `deployment_mode` field will be omitted from the resulting object.
-  - `engine_type` (`string`): Set the `engine_type` field on the resulting resource block.
-  - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block.
-  - `host_instance_type` (`string`): Set the `host_instance_type` field on the resulting resource block.
-  - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting resource block. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting resource block. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block. When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`): Set the `configuration` field on the resulting resource block. When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-configurationnew) constructor.
-  - `encryption_options` (`list[obj]`): Set the `encryption_options` field on the resulting resource block. When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-encryption_optionsnew) constructor.
-  - `ldap_server_metadata` (`list[obj]`): Set the `ldap_server_metadata` field on the resulting resource block. When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-ldap_server_metadatanew) constructor.
-  - `logs` (`list[obj]`): Set the `logs` field on the resulting resource block. When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-logsnew) constructor.
-  - `maintenance_window_start_time` (`list[obj]`): Set the `maintenance_window_start_time` field on the resulting resource block. When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-maintenance_window_start_timenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-timeoutsnew) constructor.
-  - `user` (`list[obj]`): Set the `user` field on the resulting resource block. When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-usernew) constructor.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `authentication_strategy` (`string`):  When `null`, the `authentication_strategy` field will be omitted from the resulting object.
+  - `auto_minor_version_upgrade` (`bool`):  When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
+  - `broker_name` (`string`): 
+  - `deployment_mode` (`string`):  When `null`, the `deployment_mode` field will be omitted from the resulting object.
+  - `engine_type` (`string`): 
+  - `engine_version` (`string`): 
+  - `host_instance_type` (`string`): 
+  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-configurationnew) constructor.
+  - `encryption_options` (`list[obj]`):  When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-encryption_optionsnew) constructor.
+  - `ldap_server_metadata` (`list[obj]`):  When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-ldap_server_metadatanew) constructor.
+  - `logs` (`list[obj]`):  When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-logsnew) constructor.
+  - `maintenance_window_start_time` (`list[obj]`):  When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-maintenance_window_start_timenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user` (`list[obj]`):  When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-usernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -131,27 +131,27 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting object. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `authentication_strategy` (`string`): Set the `authentication_strategy` field on the resulting object. When `null`, the `authentication_strategy` field will be omitted from the resulting object.
-  - `auto_minor_version_upgrade` (`bool`): Set the `auto_minor_version_upgrade` field on the resulting object. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
-  - `broker_name` (`string`): Set the `broker_name` field on the resulting object.
-  - `deployment_mode` (`string`): Set the `deployment_mode` field on the resulting object. When `null`, the `deployment_mode` field will be omitted from the resulting object.
-  - `engine_type` (`string`): Set the `engine_type` field on the resulting object.
-  - `engine_version` (`string`): Set the `engine_version` field on the resulting object.
-  - `host_instance_type` (`string`): Set the `host_instance_type` field on the resulting object.
-  - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting object. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
-  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `configuration` (`list[obj]`): Set the `configuration` field on the resulting object. When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-configurationnew) constructor.
-  - `encryption_options` (`list[obj]`): Set the `encryption_options` field on the resulting object. When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-encryption_optionsnew) constructor.
-  - `ldap_server_metadata` (`list[obj]`): Set the `ldap_server_metadata` field on the resulting object. When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-ldap_server_metadatanew) constructor.
-  - `logs` (`list[obj]`): Set the `logs` field on the resulting object. When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-logsnew) constructor.
-  - `maintenance_window_start_time` (`list[obj]`): Set the `maintenance_window_start_time` field on the resulting object. When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-maintenance_window_start_timenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-timeoutsnew) constructor.
-  - `user` (`list[obj]`): Set the `user` field on the resulting object. When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-usernew) constructor.
+  - `apply_immediately` (`bool`):  When `null`, the `apply_immediately` field will be omitted from the resulting object.
+  - `authentication_strategy` (`string`):  When `null`, the `authentication_strategy` field will be omitted from the resulting object.
+  - `auto_minor_version_upgrade` (`bool`):  When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
+  - `broker_name` (`string`): 
+  - `deployment_mode` (`string`):  When `null`, the `deployment_mode` field will be omitted from the resulting object.
+  - `engine_type` (`string`): 
+  - `engine_version` (`string`): 
+  - `host_instance_type` (`string`): 
+  - `publicly_accessible` (`bool`):  When `null`, the `publicly_accessible` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `storage_type` (`string`):  When `null`, the `storage_type` field will be omitted from the resulting object.
+  - `subnet_ids` (`list`):  When `null`, the `subnet_ids` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `configuration` (`list[obj]`):  When `null`, the `configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.configuration.new](#fn-configurationnew) constructor.
+  - `encryption_options` (`list[obj]`):  When `null`, the `encryption_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.encryption_options.new](#fn-encryption_optionsnew) constructor.
+  - `ldap_server_metadata` (`list[obj]`):  When `null`, the `ldap_server_metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.ldap_server_metadata.new](#fn-ldap_server_metadatanew) constructor.
+  - `logs` (`list[obj]`):  When `null`, the `logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.logs.new](#fn-logsnew) constructor.
+  - `maintenance_window_start_time` (`list[obj]`):  When `null`, the `maintenance_window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.maintenance_window_start_time.new](#fn-maintenance_window_start_timenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.timeouts.new](#fn-timeoutsnew) constructor.
+  - `user` (`list[obj]`):  When `null`, the `user` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.mq_broker.user.new](#fn-usernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `mq_broker` resource into the root Terraform configuration.
@@ -656,7 +656,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `revision` (`number`): Set the `revision` field on the resulting object. When `null`, the `revision` field will be omitted from the resulting object.
+  - `revision` (`number`):  When `null`, the `revision` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `configuration` sub block.
@@ -679,8 +679,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `use_aws_owned_key` (`bool`): Set the `use_aws_owned_key` field on the resulting object. When `null`, the `use_aws_owned_key` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `use_aws_owned_key` (`bool`):  When `null`, the `use_aws_owned_key` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `encryption_options` sub block.
@@ -703,17 +703,17 @@ Terraform sub block.
 
 
 **Args**:
-  - `hosts` (`list`): Set the `hosts` field on the resulting object. When `null`, the `hosts` field will be omitted from the resulting object.
-  - `role_base` (`string`): Set the `role_base` field on the resulting object. When `null`, the `role_base` field will be omitted from the resulting object.
-  - `role_name` (`string`): Set the `role_name` field on the resulting object. When `null`, the `role_name` field will be omitted from the resulting object.
-  - `role_search_matching` (`string`): Set the `role_search_matching` field on the resulting object. When `null`, the `role_search_matching` field will be omitted from the resulting object.
-  - `role_search_subtree` (`bool`): Set the `role_search_subtree` field on the resulting object. When `null`, the `role_search_subtree` field will be omitted from the resulting object.
-  - `service_account_password` (`string`): Set the `service_account_password` field on the resulting object. When `null`, the `service_account_password` field will be omitted from the resulting object.
-  - `service_account_username` (`string`): Set the `service_account_username` field on the resulting object. When `null`, the `service_account_username` field will be omitted from the resulting object.
-  - `user_base` (`string`): Set the `user_base` field on the resulting object. When `null`, the `user_base` field will be omitted from the resulting object.
-  - `user_role_name` (`string`): Set the `user_role_name` field on the resulting object. When `null`, the `user_role_name` field will be omitted from the resulting object.
-  - `user_search_matching` (`string`): Set the `user_search_matching` field on the resulting object. When `null`, the `user_search_matching` field will be omitted from the resulting object.
-  - `user_search_subtree` (`bool`): Set the `user_search_subtree` field on the resulting object. When `null`, the `user_search_subtree` field will be omitted from the resulting object.
+  - `hosts` (`list`):  When `null`, the `hosts` field will be omitted from the resulting object.
+  - `role_base` (`string`):  When `null`, the `role_base` field will be omitted from the resulting object.
+  - `role_name` (`string`):  When `null`, the `role_name` field will be omitted from the resulting object.
+  - `role_search_matching` (`string`):  When `null`, the `role_search_matching` field will be omitted from the resulting object.
+  - `role_search_subtree` (`bool`):  When `null`, the `role_search_subtree` field will be omitted from the resulting object.
+  - `service_account_password` (`string`):  When `null`, the `service_account_password` field will be omitted from the resulting object.
+  - `service_account_username` (`string`):  When `null`, the `service_account_username` field will be omitted from the resulting object.
+  - `user_base` (`string`):  When `null`, the `user_base` field will be omitted from the resulting object.
+  - `user_role_name` (`string`):  When `null`, the `user_role_name` field will be omitted from the resulting object.
+  - `user_search_matching` (`string`):  When `null`, the `user_search_matching` field will be omitted from the resulting object.
+  - `user_search_subtree` (`bool`):  When `null`, the `user_search_subtree` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ldap_server_metadata` sub block.
@@ -736,8 +736,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `audit` (`string`): Set the `audit` field on the resulting object. When `null`, the `audit` field will be omitted from the resulting object.
-  - `general` (`bool`): Set the `general` field on the resulting object. When `null`, the `general` field will be omitted from the resulting object.
+  - `audit` (`string`):  When `null`, the `audit` field will be omitted from the resulting object.
+  - `general` (`bool`):  When `null`, the `general` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `logs` sub block.
@@ -760,9 +760,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `day_of_week` (`string`): Set the `day_of_week` field on the resulting object.
-  - `time_of_day` (`string`): Set the `time_of_day` field on the resulting object.
-  - `time_zone` (`string`): Set the `time_zone` field on the resulting object.
+  - `day_of_week` (`string`): 
+  - `time_of_day` (`string`): 
+  - `time_zone` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `maintenance_window_start_time` sub block.
@@ -785,9 +785,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
@@ -810,10 +810,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `console_access` (`bool`): Set the `console_access` field on the resulting object. When `null`, the `console_access` field will be omitted from the resulting object.
-  - `groups` (`list`): Set the `groups` field on the resulting object. When `null`, the `groups` field will be omitted from the resulting object.
-  - `password` (`string`): Set the `password` field on the resulting object.
-  - `username` (`string`): Set the `username` field on the resulting object.
+  - `console_access` (`bool`):  When `null`, the `console_access` field will be omitted from the resulting object.
+  - `groups` (`list`):  When `null`, the `groups` field will be omitted from the resulting object.
+  - `password` (`string`): 
+  - `username` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `user` sub block.

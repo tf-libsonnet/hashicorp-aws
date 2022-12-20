@@ -59,14 +59,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `logging_configuration_identifiers` (`list`): Set the `logging_configuration_identifiers` field on the resulting resource block. When `null`, the `logging_configuration_identifiers` field will be omitted from the resulting object.
-  - `maximum_message_length` (`number`): Set the `maximum_message_length` field on the resulting resource block. When `null`, the `maximum_message_length` field will be omitted from the resulting object.
-  - `maximum_message_rate_per_second` (`number`): Set the `maximum_message_rate_per_second` field on the resulting resource block. When `null`, the `maximum_message_rate_per_second` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `message_review_handler` (`list[obj]`): Set the `message_review_handler` field on the resulting resource block. When `null`, the `message_review_handler` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.message_review_handler.new](#fn-message_review_handlernew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.timeouts.new](#fn-timeoutsnew) constructor.
+  - `logging_configuration_identifiers` (`list`):  When `null`, the `logging_configuration_identifiers` field will be omitted from the resulting object.
+  - `maximum_message_length` (`number`):  When `null`, the `maximum_message_length` field will be omitted from the resulting object.
+  - `maximum_message_rate_per_second` (`number`):  When `null`, the `maximum_message_rate_per_second` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `message_review_handler` (`list[obj]`):  When `null`, the `message_review_handler` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.message_review_handler.new](#fn-message_review_handlernew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,14 +90,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `logging_configuration_identifiers` (`list`): Set the `logging_configuration_identifiers` field on the resulting object. When `null`, the `logging_configuration_identifiers` field will be omitted from the resulting object.
-  - `maximum_message_length` (`number`): Set the `maximum_message_length` field on the resulting object. When `null`, the `maximum_message_length` field will be omitted from the resulting object.
-  - `maximum_message_rate_per_second` (`number`): Set the `maximum_message_rate_per_second` field on the resulting object. When `null`, the `maximum_message_rate_per_second` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `message_review_handler` (`list[obj]`): Set the `message_review_handler` field on the resulting object. When `null`, the `message_review_handler` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.message_review_handler.new](#fn-message_review_handlernew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.timeouts.new](#fn-timeoutsnew) constructor.
+  - `logging_configuration_identifiers` (`list`):  When `null`, the `logging_configuration_identifiers` field will be omitted from the resulting object.
+  - `maximum_message_length` (`number`):  When `null`, the `maximum_message_length` field will be omitted from the resulting object.
+  - `maximum_message_rate_per_second` (`number`):  When `null`, the `maximum_message_rate_per_second` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `message_review_handler` (`list[obj]`):  When `null`, the `message_review_handler` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.message_review_handler.new](#fn-message_review_handlernew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivschat_room.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ivschat_room` resource into the root Terraform configuration.
@@ -289,8 +289,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `fallback_result` (`string`): Set the `fallback_result` field on the resulting object. When `null`, the `fallback_result` field will be omitted from the resulting object.
-  - `uri` (`string`): Set the `uri` field on the resulting object. When `null`, the `uri` field will be omitted from the resulting object.
+  - `fallback_result` (`string`):  When `null`, the `fallback_result` field will be omitted from the resulting object.
+  - `uri` (`string`):  When `null`, the `uri` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `message_review_handler` sub block.
@@ -313,9 +313,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

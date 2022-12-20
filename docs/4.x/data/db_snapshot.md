@@ -51,12 +51,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting data source block. When `null`, the `db_instance_identifier` field will be omitted from the resulting object.
-  - `db_snapshot_identifier` (`string`): Set the `db_snapshot_identifier` field on the resulting data source block. When `null`, the `db_snapshot_identifier` field will be omitted from the resulting object.
-  - `include_public` (`bool`): Set the `include_public` field on the resulting data source block. When `null`, the `include_public` field will be omitted from the resulting object.
-  - `include_shared` (`bool`): Set the `include_shared` field on the resulting data source block. When `null`, the `include_shared` field will be omitted from the resulting object.
-  - `most_recent` (`bool`): Set the `most_recent` field on the resulting data source block. When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `snapshot_type` (`string`): Set the `snapshot_type` field on the resulting data source block. When `null`, the `snapshot_type` field will be omitted from the resulting object.
+  - `db_instance_identifier` (`string`):  When `null`, the `db_instance_identifier` field will be omitted from the resulting object.
+  - `db_snapshot_identifier` (`string`):  When `null`, the `db_snapshot_identifier` field will be omitted from the resulting object.
+  - `include_public` (`bool`):  When `null`, the `include_public` field will be omitted from the resulting object.
+  - `include_shared` (`bool`):  When `null`, the `include_shared` field will be omitted from the resulting object.
+  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `snapshot_type` (`string`):  When `null`, the `snapshot_type` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -80,12 +80,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting object. When `null`, the `db_instance_identifier` field will be omitted from the resulting object.
-  - `db_snapshot_identifier` (`string`): Set the `db_snapshot_identifier` field on the resulting object. When `null`, the `db_snapshot_identifier` field will be omitted from the resulting object.
-  - `include_public` (`bool`): Set the `include_public` field on the resulting object. When `null`, the `include_public` field will be omitted from the resulting object.
-  - `include_shared` (`bool`): Set the `include_shared` field on the resulting object. When `null`, the `include_shared` field will be omitted from the resulting object.
-  - `most_recent` (`bool`): Set the `most_recent` field on the resulting object. When `null`, the `most_recent` field will be omitted from the resulting object.
-  - `snapshot_type` (`string`): Set the `snapshot_type` field on the resulting object. When `null`, the `snapshot_type` field will be omitted from the resulting object.
+  - `db_instance_identifier` (`string`):  When `null`, the `db_instance_identifier` field will be omitted from the resulting object.
+  - `db_snapshot_identifier` (`string`):  When `null`, the `db_snapshot_identifier` field will be omitted from the resulting object.
+  - `include_public` (`bool`):  When `null`, the `include_public` field will be omitted from the resulting object.
+  - `include_shared` (`bool`):  When `null`, the `include_shared` field will be omitted from the resulting object.
+  - `most_recent` (`bool`):  When `null`, the `most_recent` field will be omitted from the resulting object.
+  - `snapshot_type` (`string`):  When `null`, the `snapshot_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `db_snapshot` data source into the root Terraform configuration.

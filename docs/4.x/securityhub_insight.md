@@ -249,9 +249,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `group_by_attribute` (`string`): Set the `group_by_attribute` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `filters` (`list[obj]`): Set the `filters` field on the resulting resource block. When `null`, the `filters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.new](#fn-filtersnew) constructor.
+  - `group_by_attribute` (`string`): 
+  - `name` (`string`): 
+  - `filters` (`list[obj]`):  When `null`, the `filters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.new](#fn-filtersnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -275,9 +275,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `group_by_attribute` (`string`): Set the `group_by_attribute` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `filters` (`list[obj]`): Set the `filters` field on the resulting object. When `null`, the `filters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.new](#fn-filtersnew) constructor.
+  - `group_by_attribute` (`string`): 
+  - `name` (`string`): 
+  - `filters` (`list[obj]`):  When `null`, the `filters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.new](#fn-filtersnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `securityhub_insight` resource into the root Terraform configuration.
@@ -369,94 +369,94 @@ Terraform sub block.
 
 
 **Args**:
-  - `aws_account_id` (`list[obj]`): Set the `aws_account_id` field on the resulting object. When `null`, the `aws_account_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.aws_account_id.new](#fn-filtersaws_account_idnew) constructor.
-  - `company_name` (`list[obj]`): Set the `company_name` field on the resulting object. When `null`, the `company_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.company_name.new](#fn-filterscompany_namenew) constructor.
-  - `compliance_status` (`list[obj]`): Set the `compliance_status` field on the resulting object. When `null`, the `compliance_status` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.compliance_status.new](#fn-filterscompliance_statusnew) constructor.
-  - `confidence` (`list[obj]`): Set the `confidence` field on the resulting object. When `null`, the `confidence` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.confidence.new](#fn-filtersconfidencenew) constructor.
-  - `created_at` (`list[obj]`): Set the `created_at` field on the resulting object. When `null`, the `created_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.created_at.new](#fn-filterscreated_atnew) constructor.
-  - `criticality` (`list[obj]`): Set the `criticality` field on the resulting object. When `null`, the `criticality` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.criticality.new](#fn-filterscriticalitynew) constructor.
-  - `description` (`list[obj]`): Set the `description` field on the resulting object. When `null`, the `description` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.description.new](#fn-filtersdescriptionnew) constructor.
-  - `finding_provider_fields_confidence` (`list[obj]`): Set the `finding_provider_fields_confidence` field on the resulting object. When `null`, the `finding_provider_fields_confidence` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_confidence.new](#fn-filtersfinding_provider_fields_confidencenew) constructor.
-  - `finding_provider_fields_criticality` (`list[obj]`): Set the `finding_provider_fields_criticality` field on the resulting object. When `null`, the `finding_provider_fields_criticality` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_criticality.new](#fn-filtersfinding_provider_fields_criticalitynew) constructor.
-  - `finding_provider_fields_related_findings_id` (`list[obj]`): Set the `finding_provider_fields_related_findings_id` field on the resulting object. When `null`, the `finding_provider_fields_related_findings_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_related_findings_id.new](#fn-filtersfinding_provider_fields_related_findings_idnew) constructor.
-  - `finding_provider_fields_related_findings_product_arn` (`list[obj]`): Set the `finding_provider_fields_related_findings_product_arn` field on the resulting object. When `null`, the `finding_provider_fields_related_findings_product_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_related_findings_product_arn.new](#fn-filtersfinding_provider_fields_related_findings_product_arnnew) constructor.
-  - `finding_provider_fields_severity_label` (`list[obj]`): Set the `finding_provider_fields_severity_label` field on the resulting object. When `null`, the `finding_provider_fields_severity_label` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_severity_label.new](#fn-filtersfinding_provider_fields_severity_labelnew) constructor.
-  - `finding_provider_fields_severity_original` (`list[obj]`): Set the `finding_provider_fields_severity_original` field on the resulting object. When `null`, the `finding_provider_fields_severity_original` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_severity_original.new](#fn-filtersfinding_provider_fields_severity_originalnew) constructor.
-  - `finding_provider_fields_types` (`list[obj]`): Set the `finding_provider_fields_types` field on the resulting object. When `null`, the `finding_provider_fields_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_types.new](#fn-filtersfinding_provider_fields_typesnew) constructor.
-  - `first_observed_at` (`list[obj]`): Set the `first_observed_at` field on the resulting object. When `null`, the `first_observed_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.first_observed_at.new](#fn-filtersfirst_observed_atnew) constructor.
-  - `generator_id` (`list[obj]`): Set the `generator_id` field on the resulting object. When `null`, the `generator_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.generator_id.new](#fn-filtersgenerator_idnew) constructor.
-  - `id` (`list[obj]`): Set the `id` field on the resulting object. When `null`, the `id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.id.new](#fn-filtersidnew) constructor.
-  - `keyword` (`list[obj]`): Set the `keyword` field on the resulting object. When `null`, the `keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.keyword.new](#fn-filterskeywordnew) constructor.
-  - `last_observed_at` (`list[obj]`): Set the `last_observed_at` field on the resulting object. When `null`, the `last_observed_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.last_observed_at.new](#fn-filterslast_observed_atnew) constructor.
-  - `malware_name` (`list[obj]`): Set the `malware_name` field on the resulting object. When `null`, the `malware_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_name.new](#fn-filtersmalware_namenew) constructor.
-  - `malware_path` (`list[obj]`): Set the `malware_path` field on the resulting object. When `null`, the `malware_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_path.new](#fn-filtersmalware_pathnew) constructor.
-  - `malware_state` (`list[obj]`): Set the `malware_state` field on the resulting object. When `null`, the `malware_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_state.new](#fn-filtersmalware_statenew) constructor.
-  - `malware_type` (`list[obj]`): Set the `malware_type` field on the resulting object. When `null`, the `malware_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_type.new](#fn-filtersmalware_typenew) constructor.
-  - `network_destination_domain` (`list[obj]`): Set the `network_destination_domain` field on the resulting object. When `null`, the `network_destination_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_domain.new](#fn-filtersnetwork_destination_domainnew) constructor.
-  - `network_destination_ipv4` (`list[obj]`): Set the `network_destination_ipv4` field on the resulting object. When `null`, the `network_destination_ipv4` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_ipv4.new](#fn-filtersnetwork_destination_ipv4new) constructor.
-  - `network_destination_ipv6` (`list[obj]`): Set the `network_destination_ipv6` field on the resulting object. When `null`, the `network_destination_ipv6` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_ipv6.new](#fn-filtersnetwork_destination_ipv6new) constructor.
-  - `network_destination_port` (`list[obj]`): Set the `network_destination_port` field on the resulting object. When `null`, the `network_destination_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_port.new](#fn-filtersnetwork_destination_portnew) constructor.
-  - `network_direction` (`list[obj]`): Set the `network_direction` field on the resulting object. When `null`, the `network_direction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_direction.new](#fn-filtersnetwork_directionnew) constructor.
-  - `network_protocol` (`list[obj]`): Set the `network_protocol` field on the resulting object. When `null`, the `network_protocol` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_protocol.new](#fn-filtersnetwork_protocolnew) constructor.
-  - `network_source_domain` (`list[obj]`): Set the `network_source_domain` field on the resulting object. When `null`, the `network_source_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_domain.new](#fn-filtersnetwork_source_domainnew) constructor.
-  - `network_source_ipv4` (`list[obj]`): Set the `network_source_ipv4` field on the resulting object. When `null`, the `network_source_ipv4` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_ipv4.new](#fn-filtersnetwork_source_ipv4new) constructor.
-  - `network_source_ipv6` (`list[obj]`): Set the `network_source_ipv6` field on the resulting object. When `null`, the `network_source_ipv6` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_ipv6.new](#fn-filtersnetwork_source_ipv6new) constructor.
-  - `network_source_mac` (`list[obj]`): Set the `network_source_mac` field on the resulting object. When `null`, the `network_source_mac` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_mac.new](#fn-filtersnetwork_source_macnew) constructor.
-  - `network_source_port` (`list[obj]`): Set the `network_source_port` field on the resulting object. When `null`, the `network_source_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_port.new](#fn-filtersnetwork_source_portnew) constructor.
-  - `note_text` (`list[obj]`): Set the `note_text` field on the resulting object. When `null`, the `note_text` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_text.new](#fn-filtersnote_textnew) constructor.
-  - `note_updated_at` (`list[obj]`): Set the `note_updated_at` field on the resulting object. When `null`, the `note_updated_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_updated_at.new](#fn-filtersnote_updated_atnew) constructor.
-  - `note_updated_by` (`list[obj]`): Set the `note_updated_by` field on the resulting object. When `null`, the `note_updated_by` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_updated_by.new](#fn-filtersnote_updated_bynew) constructor.
-  - `process_launched_at` (`list[obj]`): Set the `process_launched_at` field on the resulting object. When `null`, the `process_launched_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_launched_at.new](#fn-filtersprocess_launched_atnew) constructor.
-  - `process_name` (`list[obj]`): Set the `process_name` field on the resulting object. When `null`, the `process_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_name.new](#fn-filtersprocess_namenew) constructor.
-  - `process_parent_pid` (`list[obj]`): Set the `process_parent_pid` field on the resulting object. When `null`, the `process_parent_pid` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_parent_pid.new](#fn-filtersprocess_parent_pidnew) constructor.
-  - `process_path` (`list[obj]`): Set the `process_path` field on the resulting object. When `null`, the `process_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_path.new](#fn-filtersprocess_pathnew) constructor.
-  - `process_pid` (`list[obj]`): Set the `process_pid` field on the resulting object. When `null`, the `process_pid` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_pid.new](#fn-filtersprocess_pidnew) constructor.
-  - `process_terminated_at` (`list[obj]`): Set the `process_terminated_at` field on the resulting object. When `null`, the `process_terminated_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_terminated_at.new](#fn-filtersprocess_terminated_atnew) constructor.
-  - `product_arn` (`list[obj]`): Set the `product_arn` field on the resulting object. When `null`, the `product_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.product_arn.new](#fn-filtersproduct_arnnew) constructor.
-  - `product_fields` (`list[obj]`): Set the `product_fields` field on the resulting object. When `null`, the `product_fields` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.product_fields.new](#fn-filtersproduct_fieldsnew) constructor.
-  - `product_name` (`list[obj]`): Set the `product_name` field on the resulting object. When `null`, the `product_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.product_name.new](#fn-filtersproduct_namenew) constructor.
-  - `recommendation_text` (`list[obj]`): Set the `recommendation_text` field on the resulting object. When `null`, the `recommendation_text` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.recommendation_text.new](#fn-filtersrecommendation_textnew) constructor.
-  - `record_state` (`list[obj]`): Set the `record_state` field on the resulting object. When `null`, the `record_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.record_state.new](#fn-filtersrecord_statenew) constructor.
-  - `related_findings_id` (`list[obj]`): Set the `related_findings_id` field on the resulting object. When `null`, the `related_findings_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.related_findings_id.new](#fn-filtersrelated_findings_idnew) constructor.
-  - `related_findings_product_arn` (`list[obj]`): Set the `related_findings_product_arn` field on the resulting object. When `null`, the `related_findings_product_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.related_findings_product_arn.new](#fn-filtersrelated_findings_product_arnnew) constructor.
-  - `resource_aws_ec2_instance_iam_instance_profile_arn` (`list[obj]`): Set the `resource_aws_ec2_instance_iam_instance_profile_arn` field on the resulting object. When `null`, the `resource_aws_ec2_instance_iam_instance_profile_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_iam_instance_profile_arn.new](#fn-filtersresource_aws_ec2_instance_iam_instance_profile_arnnew) constructor.
-  - `resource_aws_ec2_instance_image_id` (`list[obj]`): Set the `resource_aws_ec2_instance_image_id` field on the resulting object. When `null`, the `resource_aws_ec2_instance_image_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_image_id.new](#fn-filtersresource_aws_ec2_instance_image_idnew) constructor.
-  - `resource_aws_ec2_instance_ipv4_addresses` (`list[obj]`): Set the `resource_aws_ec2_instance_ipv4_addresses` field on the resulting object. When `null`, the `resource_aws_ec2_instance_ipv4_addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_ipv4_addresses.new](#fn-filtersresource_aws_ec2_instance_ipv4_addressesnew) constructor.
-  - `resource_aws_ec2_instance_ipv6_addresses` (`list[obj]`): Set the `resource_aws_ec2_instance_ipv6_addresses` field on the resulting object. When `null`, the `resource_aws_ec2_instance_ipv6_addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_ipv6_addresses.new](#fn-filtersresource_aws_ec2_instance_ipv6_addressesnew) constructor.
-  - `resource_aws_ec2_instance_key_name` (`list[obj]`): Set the `resource_aws_ec2_instance_key_name` field on the resulting object. When `null`, the `resource_aws_ec2_instance_key_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_key_name.new](#fn-filtersresource_aws_ec2_instance_key_namenew) constructor.
-  - `resource_aws_ec2_instance_launched_at` (`list[obj]`): Set the `resource_aws_ec2_instance_launched_at` field on the resulting object. When `null`, the `resource_aws_ec2_instance_launched_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_launched_at.new](#fn-filtersresource_aws_ec2_instance_launched_atnew) constructor.
-  - `resource_aws_ec2_instance_subnet_id` (`list[obj]`): Set the `resource_aws_ec2_instance_subnet_id` field on the resulting object. When `null`, the `resource_aws_ec2_instance_subnet_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_subnet_id.new](#fn-filtersresource_aws_ec2_instance_subnet_idnew) constructor.
-  - `resource_aws_ec2_instance_type` (`list[obj]`): Set the `resource_aws_ec2_instance_type` field on the resulting object. When `null`, the `resource_aws_ec2_instance_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_type.new](#fn-filtersresource_aws_ec2_instance_typenew) constructor.
-  - `resource_aws_ec2_instance_vpc_id` (`list[obj]`): Set the `resource_aws_ec2_instance_vpc_id` field on the resulting object. When `null`, the `resource_aws_ec2_instance_vpc_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_vpc_id.new](#fn-filtersresource_aws_ec2_instance_vpc_idnew) constructor.
-  - `resource_aws_iam_access_key_created_at` (`list[obj]`): Set the `resource_aws_iam_access_key_created_at` field on the resulting object. When `null`, the `resource_aws_iam_access_key_created_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_created_at.new](#fn-filtersresource_aws_iam_access_key_created_atnew) constructor.
-  - `resource_aws_iam_access_key_status` (`list[obj]`): Set the `resource_aws_iam_access_key_status` field on the resulting object. When `null`, the `resource_aws_iam_access_key_status` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_status.new](#fn-filtersresource_aws_iam_access_key_statusnew) constructor.
-  - `resource_aws_iam_access_key_user_name` (`list[obj]`): Set the `resource_aws_iam_access_key_user_name` field on the resulting object. When `null`, the `resource_aws_iam_access_key_user_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_user_name.new](#fn-filtersresource_aws_iam_access_key_user_namenew) constructor.
-  - `resource_aws_s3_bucket_owner_id` (`list[obj]`): Set the `resource_aws_s3_bucket_owner_id` field on the resulting object. When `null`, the `resource_aws_s3_bucket_owner_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_s3_bucket_owner_id.new](#fn-filtersresource_aws_s3_bucket_owner_idnew) constructor.
-  - `resource_aws_s3_bucket_owner_name` (`list[obj]`): Set the `resource_aws_s3_bucket_owner_name` field on the resulting object. When `null`, the `resource_aws_s3_bucket_owner_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_s3_bucket_owner_name.new](#fn-filtersresource_aws_s3_bucket_owner_namenew) constructor.
-  - `resource_container_image_id` (`list[obj]`): Set the `resource_container_image_id` field on the resulting object. When `null`, the `resource_container_image_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_image_id.new](#fn-filtersresource_container_image_idnew) constructor.
-  - `resource_container_image_name` (`list[obj]`): Set the `resource_container_image_name` field on the resulting object. When `null`, the `resource_container_image_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_image_name.new](#fn-filtersresource_container_image_namenew) constructor.
-  - `resource_container_launched_at` (`list[obj]`): Set the `resource_container_launched_at` field on the resulting object. When `null`, the `resource_container_launched_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_launched_at.new](#fn-filtersresource_container_launched_atnew) constructor.
-  - `resource_container_name` (`list[obj]`): Set the `resource_container_name` field on the resulting object. When `null`, the `resource_container_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_name.new](#fn-filtersresource_container_namenew) constructor.
-  - `resource_details_other` (`list[obj]`): Set the `resource_details_other` field on the resulting object. When `null`, the `resource_details_other` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_details_other.new](#fn-filtersresource_details_othernew) constructor.
-  - `resource_id` (`list[obj]`): Set the `resource_id` field on the resulting object. When `null`, the `resource_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_id.new](#fn-filtersresource_idnew) constructor.
-  - `resource_partition` (`list[obj]`): Set the `resource_partition` field on the resulting object. When `null`, the `resource_partition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_partition.new](#fn-filtersresource_partitionnew) constructor.
-  - `resource_region` (`list[obj]`): Set the `resource_region` field on the resulting object. When `null`, the `resource_region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_region.new](#fn-filtersresource_regionnew) constructor.
-  - `resource_tags` (`list[obj]`): Set the `resource_tags` field on the resulting object. When `null`, the `resource_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_tags.new](#fn-filtersresource_tagsnew) constructor.
-  - `resource_type` (`list[obj]`): Set the `resource_type` field on the resulting object. When `null`, the `resource_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_type.new](#fn-filtersresource_typenew) constructor.
-  - `severity_label` (`list[obj]`): Set the `severity_label` field on the resulting object. When `null`, the `severity_label` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.severity_label.new](#fn-filtersseverity_labelnew) constructor.
-  - `source_url` (`list[obj]`): Set the `source_url` field on the resulting object. When `null`, the `source_url` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.source_url.new](#fn-filterssource_urlnew) constructor.
-  - `threat_intel_indicator_category` (`list[obj]`): Set the `threat_intel_indicator_category` field on the resulting object. When `null`, the `threat_intel_indicator_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_category.new](#fn-filtersthreat_intel_indicator_categorynew) constructor.
-  - `threat_intel_indicator_last_observed_at` (`list[obj]`): Set the `threat_intel_indicator_last_observed_at` field on the resulting object. When `null`, the `threat_intel_indicator_last_observed_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_last_observed_at.new](#fn-filtersthreat_intel_indicator_last_observed_atnew) constructor.
-  - `threat_intel_indicator_source` (`list[obj]`): Set the `threat_intel_indicator_source` field on the resulting object. When `null`, the `threat_intel_indicator_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_source.new](#fn-filtersthreat_intel_indicator_sourcenew) constructor.
-  - `threat_intel_indicator_source_url` (`list[obj]`): Set the `threat_intel_indicator_source_url` field on the resulting object. When `null`, the `threat_intel_indicator_source_url` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_source_url.new](#fn-filtersthreat_intel_indicator_source_urlnew) constructor.
-  - `threat_intel_indicator_type` (`list[obj]`): Set the `threat_intel_indicator_type` field on the resulting object. When `null`, the `threat_intel_indicator_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_type.new](#fn-filtersthreat_intel_indicator_typenew) constructor.
-  - `threat_intel_indicator_value` (`list[obj]`): Set the `threat_intel_indicator_value` field on the resulting object. When `null`, the `threat_intel_indicator_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_value.new](#fn-filtersthreat_intel_indicator_valuenew) constructor.
-  - `title` (`list[obj]`): Set the `title` field on the resulting object. When `null`, the `title` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.title.new](#fn-filterstitlenew) constructor.
-  - `type` (`list[obj]`): Set the `type` field on the resulting object. When `null`, the `type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.type.new](#fn-filterstypenew) constructor.
-  - `updated_at` (`list[obj]`): Set the `updated_at` field on the resulting object. When `null`, the `updated_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.updated_at.new](#fn-filtersupdated_atnew) constructor.
-  - `user_defined_values` (`list[obj]`): Set the `user_defined_values` field on the resulting object. When `null`, the `user_defined_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.user_defined_values.new](#fn-filtersuser_defined_valuesnew) constructor.
-  - `verification_state` (`list[obj]`): Set the `verification_state` field on the resulting object. When `null`, the `verification_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.verification_state.new](#fn-filtersverification_statenew) constructor.
-  - `workflow_status` (`list[obj]`): Set the `workflow_status` field on the resulting object. When `null`, the `workflow_status` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.workflow_status.new](#fn-filtersworkflow_statusnew) constructor.
+  - `aws_account_id` (`list[obj]`):  When `null`, the `aws_account_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.aws_account_id.new](#fn-filtersaws_account_idnew) constructor.
+  - `company_name` (`list[obj]`):  When `null`, the `company_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.company_name.new](#fn-filterscompany_namenew) constructor.
+  - `compliance_status` (`list[obj]`):  When `null`, the `compliance_status` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.compliance_status.new](#fn-filterscompliance_statusnew) constructor.
+  - `confidence` (`list[obj]`):  When `null`, the `confidence` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.confidence.new](#fn-filtersconfidencenew) constructor.
+  - `created_at` (`list[obj]`):  When `null`, the `created_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.created_at.new](#fn-filterscreated_atnew) constructor.
+  - `criticality` (`list[obj]`):  When `null`, the `criticality` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.criticality.new](#fn-filterscriticalitynew) constructor.
+  - `description` (`list[obj]`):  When `null`, the `description` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.description.new](#fn-filtersdescriptionnew) constructor.
+  - `finding_provider_fields_confidence` (`list[obj]`):  When `null`, the `finding_provider_fields_confidence` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_confidence.new](#fn-filtersfinding_provider_fields_confidencenew) constructor.
+  - `finding_provider_fields_criticality` (`list[obj]`):  When `null`, the `finding_provider_fields_criticality` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_criticality.new](#fn-filtersfinding_provider_fields_criticalitynew) constructor.
+  - `finding_provider_fields_related_findings_id` (`list[obj]`):  When `null`, the `finding_provider_fields_related_findings_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_related_findings_id.new](#fn-filtersfinding_provider_fields_related_findings_idnew) constructor.
+  - `finding_provider_fields_related_findings_product_arn` (`list[obj]`):  When `null`, the `finding_provider_fields_related_findings_product_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_related_findings_product_arn.new](#fn-filtersfinding_provider_fields_related_findings_product_arnnew) constructor.
+  - `finding_provider_fields_severity_label` (`list[obj]`):  When `null`, the `finding_provider_fields_severity_label` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_severity_label.new](#fn-filtersfinding_provider_fields_severity_labelnew) constructor.
+  - `finding_provider_fields_severity_original` (`list[obj]`):  When `null`, the `finding_provider_fields_severity_original` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_severity_original.new](#fn-filtersfinding_provider_fields_severity_originalnew) constructor.
+  - `finding_provider_fields_types` (`list[obj]`):  When `null`, the `finding_provider_fields_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.finding_provider_fields_types.new](#fn-filtersfinding_provider_fields_typesnew) constructor.
+  - `first_observed_at` (`list[obj]`):  When `null`, the `first_observed_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.first_observed_at.new](#fn-filtersfirst_observed_atnew) constructor.
+  - `generator_id` (`list[obj]`):  When `null`, the `generator_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.generator_id.new](#fn-filtersgenerator_idnew) constructor.
+  - `id` (`list[obj]`):  When `null`, the `id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.id.new](#fn-filtersidnew) constructor.
+  - `keyword` (`list[obj]`):  When `null`, the `keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.keyword.new](#fn-filterskeywordnew) constructor.
+  - `last_observed_at` (`list[obj]`):  When `null`, the `last_observed_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.last_observed_at.new](#fn-filterslast_observed_atnew) constructor.
+  - `malware_name` (`list[obj]`):  When `null`, the `malware_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_name.new](#fn-filtersmalware_namenew) constructor.
+  - `malware_path` (`list[obj]`):  When `null`, the `malware_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_path.new](#fn-filtersmalware_pathnew) constructor.
+  - `malware_state` (`list[obj]`):  When `null`, the `malware_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_state.new](#fn-filtersmalware_statenew) constructor.
+  - `malware_type` (`list[obj]`):  When `null`, the `malware_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.malware_type.new](#fn-filtersmalware_typenew) constructor.
+  - `network_destination_domain` (`list[obj]`):  When `null`, the `network_destination_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_domain.new](#fn-filtersnetwork_destination_domainnew) constructor.
+  - `network_destination_ipv4` (`list[obj]`):  When `null`, the `network_destination_ipv4` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_ipv4.new](#fn-filtersnetwork_destination_ipv4new) constructor.
+  - `network_destination_ipv6` (`list[obj]`):  When `null`, the `network_destination_ipv6` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_ipv6.new](#fn-filtersnetwork_destination_ipv6new) constructor.
+  - `network_destination_port` (`list[obj]`):  When `null`, the `network_destination_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_destination_port.new](#fn-filtersnetwork_destination_portnew) constructor.
+  - `network_direction` (`list[obj]`):  When `null`, the `network_direction` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_direction.new](#fn-filtersnetwork_directionnew) constructor.
+  - `network_protocol` (`list[obj]`):  When `null`, the `network_protocol` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_protocol.new](#fn-filtersnetwork_protocolnew) constructor.
+  - `network_source_domain` (`list[obj]`):  When `null`, the `network_source_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_domain.new](#fn-filtersnetwork_source_domainnew) constructor.
+  - `network_source_ipv4` (`list[obj]`):  When `null`, the `network_source_ipv4` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_ipv4.new](#fn-filtersnetwork_source_ipv4new) constructor.
+  - `network_source_ipv6` (`list[obj]`):  When `null`, the `network_source_ipv6` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_ipv6.new](#fn-filtersnetwork_source_ipv6new) constructor.
+  - `network_source_mac` (`list[obj]`):  When `null`, the `network_source_mac` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_mac.new](#fn-filtersnetwork_source_macnew) constructor.
+  - `network_source_port` (`list[obj]`):  When `null`, the `network_source_port` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.network_source_port.new](#fn-filtersnetwork_source_portnew) constructor.
+  - `note_text` (`list[obj]`):  When `null`, the `note_text` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_text.new](#fn-filtersnote_textnew) constructor.
+  - `note_updated_at` (`list[obj]`):  When `null`, the `note_updated_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_updated_at.new](#fn-filtersnote_updated_atnew) constructor.
+  - `note_updated_by` (`list[obj]`):  When `null`, the `note_updated_by` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_updated_by.new](#fn-filtersnote_updated_bynew) constructor.
+  - `process_launched_at` (`list[obj]`):  When `null`, the `process_launched_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_launched_at.new](#fn-filtersprocess_launched_atnew) constructor.
+  - `process_name` (`list[obj]`):  When `null`, the `process_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_name.new](#fn-filtersprocess_namenew) constructor.
+  - `process_parent_pid` (`list[obj]`):  When `null`, the `process_parent_pid` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_parent_pid.new](#fn-filtersprocess_parent_pidnew) constructor.
+  - `process_path` (`list[obj]`):  When `null`, the `process_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_path.new](#fn-filtersprocess_pathnew) constructor.
+  - `process_pid` (`list[obj]`):  When `null`, the `process_pid` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_pid.new](#fn-filtersprocess_pidnew) constructor.
+  - `process_terminated_at` (`list[obj]`):  When `null`, the `process_terminated_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_terminated_at.new](#fn-filtersprocess_terminated_atnew) constructor.
+  - `product_arn` (`list[obj]`):  When `null`, the `product_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.product_arn.new](#fn-filtersproduct_arnnew) constructor.
+  - `product_fields` (`list[obj]`):  When `null`, the `product_fields` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.product_fields.new](#fn-filtersproduct_fieldsnew) constructor.
+  - `product_name` (`list[obj]`):  When `null`, the `product_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.product_name.new](#fn-filtersproduct_namenew) constructor.
+  - `recommendation_text` (`list[obj]`):  When `null`, the `recommendation_text` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.recommendation_text.new](#fn-filtersrecommendation_textnew) constructor.
+  - `record_state` (`list[obj]`):  When `null`, the `record_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.record_state.new](#fn-filtersrecord_statenew) constructor.
+  - `related_findings_id` (`list[obj]`):  When `null`, the `related_findings_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.related_findings_id.new](#fn-filtersrelated_findings_idnew) constructor.
+  - `related_findings_product_arn` (`list[obj]`):  When `null`, the `related_findings_product_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.related_findings_product_arn.new](#fn-filtersrelated_findings_product_arnnew) constructor.
+  - `resource_aws_ec2_instance_iam_instance_profile_arn` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_iam_instance_profile_arn` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_iam_instance_profile_arn.new](#fn-filtersresource_aws_ec2_instance_iam_instance_profile_arnnew) constructor.
+  - `resource_aws_ec2_instance_image_id` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_image_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_image_id.new](#fn-filtersresource_aws_ec2_instance_image_idnew) constructor.
+  - `resource_aws_ec2_instance_ipv4_addresses` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_ipv4_addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_ipv4_addresses.new](#fn-filtersresource_aws_ec2_instance_ipv4_addressesnew) constructor.
+  - `resource_aws_ec2_instance_ipv6_addresses` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_ipv6_addresses` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_ipv6_addresses.new](#fn-filtersresource_aws_ec2_instance_ipv6_addressesnew) constructor.
+  - `resource_aws_ec2_instance_key_name` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_key_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_key_name.new](#fn-filtersresource_aws_ec2_instance_key_namenew) constructor.
+  - `resource_aws_ec2_instance_launched_at` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_launched_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_launched_at.new](#fn-filtersresource_aws_ec2_instance_launched_atnew) constructor.
+  - `resource_aws_ec2_instance_subnet_id` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_subnet_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_subnet_id.new](#fn-filtersresource_aws_ec2_instance_subnet_idnew) constructor.
+  - `resource_aws_ec2_instance_type` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_type.new](#fn-filtersresource_aws_ec2_instance_typenew) constructor.
+  - `resource_aws_ec2_instance_vpc_id` (`list[obj]`):  When `null`, the `resource_aws_ec2_instance_vpc_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_vpc_id.new](#fn-filtersresource_aws_ec2_instance_vpc_idnew) constructor.
+  - `resource_aws_iam_access_key_created_at` (`list[obj]`):  When `null`, the `resource_aws_iam_access_key_created_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_created_at.new](#fn-filtersresource_aws_iam_access_key_created_atnew) constructor.
+  - `resource_aws_iam_access_key_status` (`list[obj]`):  When `null`, the `resource_aws_iam_access_key_status` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_status.new](#fn-filtersresource_aws_iam_access_key_statusnew) constructor.
+  - `resource_aws_iam_access_key_user_name` (`list[obj]`):  When `null`, the `resource_aws_iam_access_key_user_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_user_name.new](#fn-filtersresource_aws_iam_access_key_user_namenew) constructor.
+  - `resource_aws_s3_bucket_owner_id` (`list[obj]`):  When `null`, the `resource_aws_s3_bucket_owner_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_s3_bucket_owner_id.new](#fn-filtersresource_aws_s3_bucket_owner_idnew) constructor.
+  - `resource_aws_s3_bucket_owner_name` (`list[obj]`):  When `null`, the `resource_aws_s3_bucket_owner_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_s3_bucket_owner_name.new](#fn-filtersresource_aws_s3_bucket_owner_namenew) constructor.
+  - `resource_container_image_id` (`list[obj]`):  When `null`, the `resource_container_image_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_image_id.new](#fn-filtersresource_container_image_idnew) constructor.
+  - `resource_container_image_name` (`list[obj]`):  When `null`, the `resource_container_image_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_image_name.new](#fn-filtersresource_container_image_namenew) constructor.
+  - `resource_container_launched_at` (`list[obj]`):  When `null`, the `resource_container_launched_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_launched_at.new](#fn-filtersresource_container_launched_atnew) constructor.
+  - `resource_container_name` (`list[obj]`):  When `null`, the `resource_container_name` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_name.new](#fn-filtersresource_container_namenew) constructor.
+  - `resource_details_other` (`list[obj]`):  When `null`, the `resource_details_other` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_details_other.new](#fn-filtersresource_details_othernew) constructor.
+  - `resource_id` (`list[obj]`):  When `null`, the `resource_id` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_id.new](#fn-filtersresource_idnew) constructor.
+  - `resource_partition` (`list[obj]`):  When `null`, the `resource_partition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_partition.new](#fn-filtersresource_partitionnew) constructor.
+  - `resource_region` (`list[obj]`):  When `null`, the `resource_region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_region.new](#fn-filtersresource_regionnew) constructor.
+  - `resource_tags` (`list[obj]`):  When `null`, the `resource_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_tags.new](#fn-filtersresource_tagsnew) constructor.
+  - `resource_type` (`list[obj]`):  When `null`, the `resource_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_type.new](#fn-filtersresource_typenew) constructor.
+  - `severity_label` (`list[obj]`):  When `null`, the `severity_label` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.severity_label.new](#fn-filtersseverity_labelnew) constructor.
+  - `source_url` (`list[obj]`):  When `null`, the `source_url` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.source_url.new](#fn-filterssource_urlnew) constructor.
+  - `threat_intel_indicator_category` (`list[obj]`):  When `null`, the `threat_intel_indicator_category` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_category.new](#fn-filtersthreat_intel_indicator_categorynew) constructor.
+  - `threat_intel_indicator_last_observed_at` (`list[obj]`):  When `null`, the `threat_intel_indicator_last_observed_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_last_observed_at.new](#fn-filtersthreat_intel_indicator_last_observed_atnew) constructor.
+  - `threat_intel_indicator_source` (`list[obj]`):  When `null`, the `threat_intel_indicator_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_source.new](#fn-filtersthreat_intel_indicator_sourcenew) constructor.
+  - `threat_intel_indicator_source_url` (`list[obj]`):  When `null`, the `threat_intel_indicator_source_url` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_source_url.new](#fn-filtersthreat_intel_indicator_source_urlnew) constructor.
+  - `threat_intel_indicator_type` (`list[obj]`):  When `null`, the `threat_intel_indicator_type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_type.new](#fn-filtersthreat_intel_indicator_typenew) constructor.
+  - `threat_intel_indicator_value` (`list[obj]`):  When `null`, the `threat_intel_indicator_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_value.new](#fn-filtersthreat_intel_indicator_valuenew) constructor.
+  - `title` (`list[obj]`):  When `null`, the `title` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.title.new](#fn-filterstitlenew) constructor.
+  - `type` (`list[obj]`):  When `null`, the `type` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.type.new](#fn-filterstypenew) constructor.
+  - `updated_at` (`list[obj]`):  When `null`, the `updated_at` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.updated_at.new](#fn-filtersupdated_atnew) constructor.
+  - `user_defined_values` (`list[obj]`):  When `null`, the `user_defined_values` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.user_defined_values.new](#fn-filtersuser_defined_valuesnew) constructor.
+  - `verification_state` (`list[obj]`):  When `null`, the `verification_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.verification_state.new](#fn-filtersverification_statenew) constructor.
+  - `workflow_status` (`list[obj]`):  When `null`, the `workflow_status` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.workflow_status.new](#fn-filtersworkflow_statusnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `filters` sub block.
@@ -479,8 +479,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `aws_account_id` sub block.
@@ -503,8 +503,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `company_name` sub block.
@@ -527,8 +527,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `compliance_status` sub block.
@@ -551,9 +551,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `confidence` sub block.
@@ -576,9 +576,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.created_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.created_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `created_at` sub block.
@@ -601,8 +601,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -625,9 +625,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `criticality` sub block.
@@ -650,8 +650,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `description` sub block.
@@ -674,9 +674,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `finding_provider_fields_confidence` sub block.
@@ -699,9 +699,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `finding_provider_fields_criticality` sub block.
@@ -724,8 +724,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `finding_provider_fields_related_findings_id` sub block.
@@ -748,8 +748,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `finding_provider_fields_related_findings_product_arn` sub block.
@@ -772,8 +772,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `finding_provider_fields_severity_label` sub block.
@@ -796,8 +796,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `finding_provider_fields_severity_original` sub block.
@@ -820,8 +820,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `finding_provider_fields_types` sub block.
@@ -844,9 +844,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.first_observed_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.first_observed_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `first_observed_at` sub block.
@@ -869,8 +869,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -893,8 +893,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `generator_id` sub block.
@@ -917,8 +917,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `id` sub block.
@@ -941,7 +941,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `keyword` sub block.
@@ -964,9 +964,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.last_observed_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.last_observed_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `last_observed_at` sub block.
@@ -989,8 +989,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -1013,8 +1013,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `malware_name` sub block.
@@ -1037,8 +1037,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `malware_path` sub block.
@@ -1061,8 +1061,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `malware_state` sub block.
@@ -1085,8 +1085,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `malware_type` sub block.
@@ -1109,8 +1109,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_destination_domain` sub block.
@@ -1133,7 +1133,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr` (`string`): Set the `cidr` field on the resulting object.
+  - `cidr` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_destination_ipv4` sub block.
@@ -1156,7 +1156,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr` (`string`): Set the `cidr` field on the resulting object.
+  - `cidr` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_destination_ipv6` sub block.
@@ -1179,9 +1179,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `network_destination_port` sub block.
@@ -1204,8 +1204,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_direction` sub block.
@@ -1228,8 +1228,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_protocol` sub block.
@@ -1252,8 +1252,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_source_domain` sub block.
@@ -1276,7 +1276,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr` (`string`): Set the `cidr` field on the resulting object.
+  - `cidr` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_source_ipv4` sub block.
@@ -1299,7 +1299,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr` (`string`): Set the `cidr` field on the resulting object.
+  - `cidr` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_source_ipv6` sub block.
@@ -1322,8 +1322,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_source_mac` sub block.
@@ -1346,9 +1346,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `network_source_port` sub block.
@@ -1371,8 +1371,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `note_text` sub block.
@@ -1395,9 +1395,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_updated_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.note_updated_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `note_updated_at` sub block.
@@ -1420,8 +1420,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -1444,8 +1444,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `note_updated_by` sub block.
@@ -1468,9 +1468,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_launched_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_launched_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `process_launched_at` sub block.
@@ -1493,8 +1493,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -1517,8 +1517,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `process_name` sub block.
@@ -1541,9 +1541,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `process_parent_pid` sub block.
@@ -1566,8 +1566,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `process_path` sub block.
@@ -1590,9 +1590,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `eq` (`string`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `gte` (`string`): Set the `gte` field on the resulting object. When `null`, the `gte` field will be omitted from the resulting object.
-  - `lte` (`string`): Set the `lte` field on the resulting object. When `null`, the `lte` field will be omitted from the resulting object.
+  - `eq` (`string`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `gte` (`string`):  When `null`, the `gte` field will be omitted from the resulting object.
+  - `lte` (`string`):  When `null`, the `lte` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `process_pid` sub block.
@@ -1615,9 +1615,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_terminated_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.process_terminated_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `process_terminated_at` sub block.
@@ -1640,8 +1640,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -1664,8 +1664,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `product_arn` sub block.
@@ -1688,9 +1688,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `product_fields` sub block.
@@ -1713,8 +1713,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `product_name` sub block.
@@ -1737,8 +1737,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `recommendation_text` sub block.
@@ -1761,8 +1761,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `record_state` sub block.
@@ -1785,8 +1785,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `related_findings_id` sub block.
@@ -1809,8 +1809,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `related_findings_product_arn` sub block.
@@ -1833,8 +1833,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_iam_instance_profile_arn` sub block.
@@ -1857,8 +1857,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_image_id` sub block.
@@ -1881,7 +1881,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr` (`string`): Set the `cidr` field on the resulting object.
+  - `cidr` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_ipv4_addresses` sub block.
@@ -1904,7 +1904,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr` (`string`): Set the `cidr` field on the resulting object.
+  - `cidr` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_ipv6_addresses` sub block.
@@ -1927,8 +1927,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_key_name` sub block.
@@ -1951,9 +1951,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_launched_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_ec2_instance_launched_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_launched_at` sub block.
@@ -1976,8 +1976,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -2000,8 +2000,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_subnet_id` sub block.
@@ -2024,8 +2024,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_type` sub block.
@@ -2048,8 +2048,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_ec2_instance_vpc_id` sub block.
@@ -2072,9 +2072,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_created_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_aws_iam_access_key_created_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `resource_aws_iam_access_key_created_at` sub block.
@@ -2097,8 +2097,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -2121,8 +2121,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_iam_access_key_status` sub block.
@@ -2145,8 +2145,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_iam_access_key_user_name` sub block.
@@ -2169,8 +2169,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_s3_bucket_owner_id` sub block.
@@ -2193,8 +2193,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_aws_s3_bucket_owner_name` sub block.
@@ -2217,8 +2217,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_container_image_id` sub block.
@@ -2241,8 +2241,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_container_image_name` sub block.
@@ -2265,9 +2265,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_launched_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.resource_container_launched_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `resource_container_launched_at` sub block.
@@ -2290,8 +2290,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -2314,8 +2314,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_container_name` sub block.
@@ -2338,9 +2338,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_details_other` sub block.
@@ -2363,8 +2363,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_id` sub block.
@@ -2387,8 +2387,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_partition` sub block.
@@ -2411,8 +2411,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_region` sub block.
@@ -2435,9 +2435,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_tags` sub block.
@@ -2460,8 +2460,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `resource_type` sub block.
@@ -2484,8 +2484,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `severity_label` sub block.
@@ -2508,8 +2508,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `source_url` sub block.
@@ -2532,8 +2532,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `threat_intel_indicator_category` sub block.
@@ -2556,9 +2556,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_last_observed_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.threat_intel_indicator_last_observed_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `threat_intel_indicator_last_observed_at` sub block.
@@ -2581,8 +2581,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -2605,8 +2605,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `threat_intel_indicator_source` sub block.
@@ -2629,8 +2629,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `threat_intel_indicator_source_url` sub block.
@@ -2653,8 +2653,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `threat_intel_indicator_type` sub block.
@@ -2677,8 +2677,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `threat_intel_indicator_value` sub block.
@@ -2701,8 +2701,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `title` sub block.
@@ -2725,8 +2725,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `type` sub block.
@@ -2749,9 +2749,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `end` (`string`): Set the `end` field on the resulting object. When `null`, the `end` field will be omitted from the resulting object.
-  - `start` (`string`): Set the `start` field on the resulting object. When `null`, the `start` field will be omitted from the resulting object.
-  - `date_range` (`list[obj]`): Set the `date_range` field on the resulting object. When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.updated_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
+  - `end` (`string`):  When `null`, the `end` field will be omitted from the resulting object.
+  - `start` (`string`):  When `null`, the `start` field will be omitted from the resulting object.
+  - `date_range` (`list[obj]`):  When `null`, the `date_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.securityhub_insight.filters.updated_at.date_range.new](#fn-filtersfiltersdate_rangenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `updated_at` sub block.
@@ -2774,8 +2774,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `unit` (`string`): Set the `unit` field on the resulting object.
-  - `value` (`number`): Set the `value` field on the resulting object.
+  - `unit` (`string`): 
+  - `value` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `date_range` sub block.
@@ -2798,9 +2798,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `key` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `user_defined_values` sub block.
@@ -2823,8 +2823,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `verification_state` sub block.
@@ -2847,8 +2847,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `comparison` (`string`): Set the `comparison` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `comparison` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `workflow_status` sub block.

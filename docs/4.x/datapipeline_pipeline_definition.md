@@ -62,10 +62,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `pipeline_id` (`string`): Set the `pipeline_id` field on the resulting resource block.
-  - `parameter_object` (`list[obj]`): Set the `parameter_object` field on the resulting resource block. When `null`, the `parameter_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.new](#fn-parameter_objectnew) constructor.
-  - `parameter_value` (`list[obj]`): Set the `parameter_value` field on the resulting resource block. When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
-  - `pipeline_object` (`list[obj]`): Set the `pipeline_object` field on the resulting resource block. When `null`, the `pipeline_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.new](#fn-pipeline_objectnew) constructor.
+  - `pipeline_id` (`string`): 
+  - `parameter_object` (`list[obj]`):  When `null`, the `parameter_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.new](#fn-parameter_objectnew) constructor.
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
+  - `pipeline_object` (`list[obj]`):  When `null`, the `pipeline_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.new](#fn-pipeline_objectnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,10 +89,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `pipeline_id` (`string`): Set the `pipeline_id` field on the resulting object.
-  - `parameter_object` (`list[obj]`): Set the `parameter_object` field on the resulting object. When `null`, the `parameter_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.new](#fn-parameter_objectnew) constructor.
-  - `parameter_value` (`list[obj]`): Set the `parameter_value` field on the resulting object. When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
-  - `pipeline_object` (`list[obj]`): Set the `pipeline_object` field on the resulting object. When `null`, the `pipeline_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.new](#fn-pipeline_objectnew) constructor.
+  - `pipeline_id` (`string`): 
+  - `parameter_object` (`list[obj]`):  When `null`, the `parameter_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.new](#fn-parameter_objectnew) constructor.
+  - `parameter_value` (`list[obj]`):  When `null`, the `parameter_value` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_value.new](#fn-parameter_valuenew) constructor.
+  - `pipeline_object` (`list[obj]`):  When `null`, the `pipeline_object` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.new](#fn-pipeline_objectnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datapipeline_pipeline_definition` resource into the root Terraform configuration.
@@ -242,7 +242,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `attribute` (`list[obj]`): Set the `attribute` field on the resulting object. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.attribute.new](#fn-parameter_objectattributenew) constructor.
+  - `attribute` (`list[obj]`):  When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.parameter_object.attribute.new](#fn-parameter_objectattributenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `parameter_object` sub block.
@@ -265,8 +265,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `string_value` (`string`): Set the `string_value` field on the resulting object.
+  - `key` (`string`): 
+  - `string_value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `attribute` sub block.
@@ -289,7 +289,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `string_value` (`string`): Set the `string_value` field on the resulting object.
+  - `string_value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `parameter_value` sub block.
@@ -312,8 +312,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `field` (`list[obj]`): Set the `field` field on the resulting object. When `null`, the `field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.field.new](#fn-pipeline_objectfieldnew) constructor.
+  - `name` (`string`): 
+  - `field` (`list[obj]`):  When `null`, the `field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datapipeline_pipeline_definition.pipeline_object.field.new](#fn-pipeline_objectfieldnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `pipeline_object` sub block.
@@ -336,9 +336,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `key` (`string`): Set the `key` field on the resulting object.
-  - `ref_value` (`string`): Set the `ref_value` field on the resulting object. When `null`, the `ref_value` field will be omitted from the resulting object.
-  - `string_value` (`string`): Set the `string_value` field on the resulting object. When `null`, the `string_value` field will be omitted from the resulting object.
+  - `key` (`string`): 
+  - `ref_value` (`string`):  When `null`, the `ref_value` field will be omitted from the resulting object.
+  - `string_value` (`string`):  When `null`, the `string_value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `field` sub block.

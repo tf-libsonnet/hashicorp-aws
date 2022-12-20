@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.
-  - `schedule_identifier` (`string`): Set the `schedule_identifier` field on the resulting resource block.
+  - `cluster_identifier` (`string`): 
+  - `schedule_identifier` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
-  - `schedule_identifier` (`string`): Set the `schedule_identifier` field on the resulting object.
+  - `cluster_identifier` (`string`): 
+  - `schedule_identifier` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshift_snapshot_schedule_association` resource into the root Terraform configuration.

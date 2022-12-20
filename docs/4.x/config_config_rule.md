@@ -63,14 +63,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting resource block. When `null`, the `input_parameters` field will be omitted from the resulting object.
-  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting resource block. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `scope` (`list[obj]`): Set the `scope` field on the resulting resource block. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
-  - `source` (`list[obj]`): Set the `source` field on the resulting resource block. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `input_parameters` (`string`):  When `null`, the `input_parameters` field will be omitted from the resulting object.
+  - `maximum_execution_frequency` (`string`):  When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -94,14 +94,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting object. When `null`, the `input_parameters` field will be omitted from the resulting object.
-  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting object. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `scope` (`list[obj]`): Set the `scope` field on the resulting object. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
-  - `source` (`list[obj]`): Set the `source` field on the resulting object. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `input_parameters` (`string`):  When `null`, the `input_parameters` field will be omitted from the resulting object.
+  - `maximum_execution_frequency` (`string`):  When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `scope` (`list[obj]`):  When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
+  - `source` (`list[obj]`):  When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_config_rule` resource into the root Terraform configuration.
@@ -294,10 +294,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `compliance_resource_id` (`string`): Set the `compliance_resource_id` field on the resulting object. When `null`, the `compliance_resource_id` field will be omitted from the resulting object.
-  - `compliance_resource_types` (`list`): Set the `compliance_resource_types` field on the resulting object. When `null`, the `compliance_resource_types` field will be omitted from the resulting object.
-  - `tag_key` (`string`): Set the `tag_key` field on the resulting object. When `null`, the `tag_key` field will be omitted from the resulting object.
-  - `tag_value` (`string`): Set the `tag_value` field on the resulting object. When `null`, the `tag_value` field will be omitted from the resulting object.
+  - `compliance_resource_id` (`string`):  When `null`, the `compliance_resource_id` field will be omitted from the resulting object.
+  - `compliance_resource_types` (`list`):  When `null`, the `compliance_resource_types` field will be omitted from the resulting object.
+  - `tag_key` (`string`):  When `null`, the `tag_key` field will be omitted from the resulting object.
+  - `tag_value` (`string`):  When `null`, the `tag_value` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `scope` sub block.
@@ -320,10 +320,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `owner` (`string`): Set the `owner` field on the resulting object.
-  - `source_identifier` (`string`): Set the `source_identifier` field on the resulting object. When `null`, the `source_identifier` field will be omitted from the resulting object.
-  - `custom_policy_details` (`list[obj]`): Set the `custom_policy_details` field on the resulting object. When `null`, the `custom_policy_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.custom_policy_details.new](#fn-sourcecustom_policy_detailsnew) constructor.
-  - `source_detail` (`list[obj]`): Set the `source_detail` field on the resulting object. When `null`, the `source_detail` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.source_detail.new](#fn-sourcesource_detailnew) constructor.
+  - `owner` (`string`): 
+  - `source_identifier` (`string`):  When `null`, the `source_identifier` field will be omitted from the resulting object.
+  - `custom_policy_details` (`list[obj]`):  When `null`, the `custom_policy_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.custom_policy_details.new](#fn-sourcecustom_policy_detailsnew) constructor.
+  - `source_detail` (`list[obj]`):  When `null`, the `source_detail` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.source_detail.new](#fn-sourcesource_detailnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.
@@ -346,9 +346,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable_debug_log_delivery` (`bool`): Set the `enable_debug_log_delivery` field on the resulting object. When `null`, the `enable_debug_log_delivery` field will be omitted from the resulting object.
-  - `policy_runtime` (`string`): Set the `policy_runtime` field on the resulting object.
-  - `policy_text` (`string`): Set the `policy_text` field on the resulting object.
+  - `enable_debug_log_delivery` (`bool`):  When `null`, the `enable_debug_log_delivery` field will be omitted from the resulting object.
+  - `policy_runtime` (`string`): 
+  - `policy_text` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `custom_policy_details` sub block.
@@ -371,9 +371,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `event_source` (`string`): Set the `event_source` field on the resulting object. When `null`, the `event_source` field will be omitted from the resulting object.
-  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting object. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
-  - `message_type` (`string`): Set the `message_type` field on the resulting object. When `null`, the `message_type` field will be omitted from the resulting object.
+  - `event_source` (`string`):  When `null`, the `event_source` field will be omitted from the resulting object.
+  - `maximum_execution_frequency` (`string`):  When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
+  - `message_type` (`string`):  When `null`, the `message_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `source_detail` sub block.

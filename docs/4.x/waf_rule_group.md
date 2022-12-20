@@ -55,11 +55,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `metric_name` (`string`): Set the `metric_name` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `activated_rule` (`list[obj]`): Set the `activated_rule` field on the resulting resource block. When `null`, the `activated_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.new](#fn-activated_rulenew) constructor.
+  - `metric_name` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `activated_rule` (`list[obj]`):  When `null`, the `activated_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.new](#fn-activated_rulenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,11 +83,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `activated_rule` (`list[obj]`): Set the `activated_rule` field on the resulting object. When `null`, the `activated_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.new](#fn-activated_rulenew) constructor.
+  - `metric_name` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `activated_rule` (`list[obj]`):  When `null`, the `activated_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.new](#fn-activated_rulenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `waf_rule_group` resource into the root Terraform configuration.
@@ -211,10 +211,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `priority` (`number`): Set the `priority` field on the resulting object.
-  - `rule_id` (`string`): Set the `rule_id` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
-  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.action.new](#fn-activated_ruleactionnew) constructor.
+  - `priority` (`number`): 
+  - `rule_id` (`string`): 
+  - `type` (`string`):  When `null`, the `type` field will be omitted from the resulting object.
+  - `action` (`list[obj]`):  When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.waf_rule_group.activated_rule.action.new](#fn-activated_ruleactionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `activated_rule` sub block.
@@ -237,7 +237,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `action` sub block.

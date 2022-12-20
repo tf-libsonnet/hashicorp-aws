@@ -63,15 +63,15 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `call_as` (`string`): Set the `call_as` field on the resulting resource block. When `null`, the `call_as` field will be omitted from the resulting object.
-  - `parameter_overrides` (`obj`): Set the `parameter_overrides` field on the resulting resource block. When `null`, the `parameter_overrides` field will be omitted from the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting resource block. When `null`, the `region` field will be omitted from the resulting object.
-  - `retain_stack` (`bool`): Set the `retain_stack` field on the resulting resource block. When `null`, the `retain_stack` field will be omitted from the resulting object.
-  - `stack_set_name` (`string`): Set the `stack_set_name` field on the resulting resource block.
-  - `deployment_targets` (`list[obj]`): Set the `deployment_targets` field on the resulting resource block. When `null`, the `deployment_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.deployment_targets.new](#fn-deployment_targetsnew) constructor.
-  - `operation_preferences` (`list[obj]`): Set the `operation_preferences` field on the resulting resource block. When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.operation_preferences.new](#fn-operation_preferencesnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `call_as` (`string`):  When `null`, the `call_as` field will be omitted from the resulting object.
+  - `parameter_overrides` (`obj`):  When `null`, the `parameter_overrides` field will be omitted from the resulting object.
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `retain_stack` (`bool`):  When `null`, the `retain_stack` field will be omitted from the resulting object.
+  - `stack_set_name` (`string`): 
+  - `deployment_targets` (`list[obj]`):  When `null`, the `deployment_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.deployment_targets.new](#fn-deployment_targetsnew) constructor.
+  - `operation_preferences` (`list[obj]`):  When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.operation_preferences.new](#fn-operation_preferencesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,15 +95,15 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `call_as` (`string`): Set the `call_as` field on the resulting object. When `null`, the `call_as` field will be omitted from the resulting object.
-  - `parameter_overrides` (`obj`): Set the `parameter_overrides` field on the resulting object. When `null`, the `parameter_overrides` field will be omitted from the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
-  - `retain_stack` (`bool`): Set the `retain_stack` field on the resulting object. When `null`, the `retain_stack` field will be omitted from the resulting object.
-  - `stack_set_name` (`string`): Set the `stack_set_name` field on the resulting object.
-  - `deployment_targets` (`list[obj]`): Set the `deployment_targets` field on the resulting object. When `null`, the `deployment_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.deployment_targets.new](#fn-deployment_targetsnew) constructor.
-  - `operation_preferences` (`list[obj]`): Set the `operation_preferences` field on the resulting object. When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.operation_preferences.new](#fn-operation_preferencesnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `call_as` (`string`):  When `null`, the `call_as` field will be omitted from the resulting object.
+  - `parameter_overrides` (`obj`):  When `null`, the `parameter_overrides` field will be omitted from the resulting object.
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `retain_stack` (`bool`):  When `null`, the `retain_stack` field will be omitted from the resulting object.
+  - `stack_set_name` (`string`): 
+  - `deployment_targets` (`list[obj]`):  When `null`, the `deployment_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.deployment_targets.new](#fn-deployment_targetsnew) constructor.
+  - `operation_preferences` (`list[obj]`):  When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.operation_preferences.new](#fn-operation_preferencesnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set_instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cloudformation_stack_set_instance` resource into the root Terraform configuration.
@@ -332,7 +332,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `organizational_unit_ids` (`list`): Set the `organizational_unit_ids` field on the resulting object. When `null`, the `organizational_unit_ids` field will be omitted from the resulting object.
+  - `organizational_unit_ids` (`list`):  When `null`, the `organizational_unit_ids` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `deployment_targets` sub block.
@@ -355,12 +355,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `failure_tolerance_count` (`number`): Set the `failure_tolerance_count` field on the resulting object. When `null`, the `failure_tolerance_count` field will be omitted from the resulting object.
-  - `failure_tolerance_percentage` (`number`): Set the `failure_tolerance_percentage` field on the resulting object. When `null`, the `failure_tolerance_percentage` field will be omitted from the resulting object.
-  - `max_concurrent_count` (`number`): Set the `max_concurrent_count` field on the resulting object. When `null`, the `max_concurrent_count` field will be omitted from the resulting object.
-  - `max_concurrent_percentage` (`number`): Set the `max_concurrent_percentage` field on the resulting object. When `null`, the `max_concurrent_percentage` field will be omitted from the resulting object.
-  - `region_concurrency_type` (`string`): Set the `region_concurrency_type` field on the resulting object. When `null`, the `region_concurrency_type` field will be omitted from the resulting object.
-  - `region_order` (`list`): Set the `region_order` field on the resulting object. When `null`, the `region_order` field will be omitted from the resulting object.
+  - `failure_tolerance_count` (`number`):  When `null`, the `failure_tolerance_count` field will be omitted from the resulting object.
+  - `failure_tolerance_percentage` (`number`):  When `null`, the `failure_tolerance_percentage` field will be omitted from the resulting object.
+  - `max_concurrent_count` (`number`):  When `null`, the `max_concurrent_count` field will be omitted from the resulting object.
+  - `max_concurrent_percentage` (`number`):  When `null`, the `max_concurrent_percentage` field will be omitted from the resulting object.
+  - `region_concurrency_type` (`string`):  When `null`, the `region_concurrency_type` field will be omitted from the resulting object.
+  - `region_order` (`list`):  When `null`, the `region_order` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `operation_preferences` sub block.
@@ -383,9 +383,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

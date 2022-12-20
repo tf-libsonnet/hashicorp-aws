@@ -61,22 +61,22 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `arguments` (`obj`): Set the `arguments` field on the resulting resource block. When `null`, the `arguments` field will be omitted from the resulting object.
-  - `extra_jars_s3_path` (`string`): Set the `extra_jars_s3_path` field on the resulting resource block. When `null`, the `extra_jars_s3_path` field will be omitted from the resulting object.
-  - `extra_python_libs_s3_path` (`string`): Set the `extra_python_libs_s3_path` field on the resulting resource block. When `null`, the `extra_python_libs_s3_path` field will be omitted from the resulting object.
-  - `glue_version` (`string`): Set the `glue_version` field on the resulting resource block. When `null`, the `glue_version` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `number_of_nodes` (`number`): Set the `number_of_nodes` field on the resulting resource block. When `null`, the `number_of_nodes` field will be omitted from the resulting object.
-  - `number_of_workers` (`number`): Set the `number_of_workers` field on the resulting resource block. When `null`, the `number_of_workers` field will be omitted from the resulting object.
-  - `public_key` (`string`): Set the `public_key` field on the resulting resource block. When `null`, the `public_key` field will be omitted from the resulting object.
-  - `public_keys` (`list`): Set the `public_keys` field on the resulting resource block. When `null`, the `public_keys` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
-  - `security_configuration` (`string`): Set the `security_configuration` field on the resulting resource block. When `null`, the `security_configuration` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `worker_type` (`string`): Set the `worker_type` field on the resulting resource block. When `null`, the `worker_type` field will be omitted from the resulting object.
+  - `arguments` (`obj`):  When `null`, the `arguments` field will be omitted from the resulting object.
+  - `extra_jars_s3_path` (`string`):  When `null`, the `extra_jars_s3_path` field will be omitted from the resulting object.
+  - `extra_python_libs_s3_path` (`string`):  When `null`, the `extra_python_libs_s3_path` field will be omitted from the resulting object.
+  - `glue_version` (`string`):  When `null`, the `glue_version` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `number_of_nodes` (`number`):  When `null`, the `number_of_nodes` field will be omitted from the resulting object.
+  - `number_of_workers` (`number`):  When `null`, the `number_of_workers` field will be omitted from the resulting object.
+  - `public_key` (`string`):  When `null`, the `public_key` field will be omitted from the resulting object.
+  - `public_keys` (`list`):  When `null`, the `public_keys` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -100,22 +100,22 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `arguments` (`obj`): Set the `arguments` field on the resulting object. When `null`, the `arguments` field will be omitted from the resulting object.
-  - `extra_jars_s3_path` (`string`): Set the `extra_jars_s3_path` field on the resulting object. When `null`, the `extra_jars_s3_path` field will be omitted from the resulting object.
-  - `extra_python_libs_s3_path` (`string`): Set the `extra_python_libs_s3_path` field on the resulting object. When `null`, the `extra_python_libs_s3_path` field will be omitted from the resulting object.
-  - `glue_version` (`string`): Set the `glue_version` field on the resulting object. When `null`, the `glue_version` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `number_of_nodes` (`number`): Set the `number_of_nodes` field on the resulting object. When `null`, the `number_of_nodes` field will be omitted from the resulting object.
-  - `number_of_workers` (`number`): Set the `number_of_workers` field on the resulting object. When `null`, the `number_of_workers` field will be omitted from the resulting object.
-  - `public_key` (`string`): Set the `public_key` field on the resulting object. When `null`, the `public_key` field will be omitted from the resulting object.
-  - `public_keys` (`list`): Set the `public_keys` field on the resulting object. When `null`, the `public_keys` field will be omitted from the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `security_configuration` (`string`): Set the `security_configuration` field on the resulting object. When `null`, the `security_configuration` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `worker_type` (`string`): Set the `worker_type` field on the resulting object. When `null`, the `worker_type` field will be omitted from the resulting object.
+  - `arguments` (`obj`):  When `null`, the `arguments` field will be omitted from the resulting object.
+  - `extra_jars_s3_path` (`string`):  When `null`, the `extra_jars_s3_path` field will be omitted from the resulting object.
+  - `extra_python_libs_s3_path` (`string`):  When `null`, the `extra_python_libs_s3_path` field will be omitted from the resulting object.
+  - `glue_version` (`string`):  When `null`, the `glue_version` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `number_of_nodes` (`number`):  When `null`, the `number_of_nodes` field will be omitted from the resulting object.
+  - `number_of_workers` (`number`):  When `null`, the `number_of_workers` field will be omitted from the resulting object.
+  - `public_key` (`string`):  When `null`, the `public_key` field will be omitted from the resulting object.
+  - `public_keys` (`list`):  When `null`, the `public_keys` field will be omitted from the resulting object.
+  - `role_arn` (`string`): 
+  - `security_configuration` (`string`):  When `null`, the `security_configuration` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `worker_type` (`string`):  When `null`, the `worker_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `glue_dev_endpoint` resource into the root Terraform configuration.

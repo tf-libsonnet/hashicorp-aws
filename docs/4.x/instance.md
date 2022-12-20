@@ -129,52 +129,52 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `ami` (`string`): Set the `ami` field on the resulting resource block. When `null`, the `ami` field will be omitted from the resulting object.
-  - `associate_public_ip_address` (`bool`): Set the `associate_public_ip_address` field on the resulting resource block. When `null`, the `associate_public_ip_address` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block. When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `cpu_core_count` (`number`): Set the `cpu_core_count` field on the resulting resource block. When `null`, the `cpu_core_count` field will be omitted from the resulting object.
-  - `cpu_threads_per_core` (`number`): Set the `cpu_threads_per_core` field on the resulting resource block. When `null`, the `cpu_threads_per_core` field will be omitted from the resulting object.
-  - `disable_api_stop` (`bool`): Set the `disable_api_stop` field on the resulting resource block. When `null`, the `disable_api_stop` field will be omitted from the resulting object.
-  - `disable_api_termination` (`bool`): Set the `disable_api_termination` field on the resulting resource block. When `null`, the `disable_api_termination` field will be omitted from the resulting object.
-  - `ebs_optimized` (`bool`): Set the `ebs_optimized` field on the resulting resource block. When `null`, the `ebs_optimized` field will be omitted from the resulting object.
-  - `get_password_data` (`bool`): Set the `get_password_data` field on the resulting resource block. When `null`, the `get_password_data` field will be omitted from the resulting object.
-  - `hibernation` (`bool`): Set the `hibernation` field on the resulting resource block. When `null`, the `hibernation` field will be omitted from the resulting object.
-  - `host_id` (`string`): Set the `host_id` field on the resulting resource block. When `null`, the `host_id` field will be omitted from the resulting object.
-  - `host_resource_group_arn` (`string`): Set the `host_resource_group_arn` field on the resulting resource block. When `null`, the `host_resource_group_arn` field will be omitted from the resulting object.
-  - `iam_instance_profile` (`string`): Set the `iam_instance_profile` field on the resulting resource block. When `null`, the `iam_instance_profile` field will be omitted from the resulting object.
-  - `instance_initiated_shutdown_behavior` (`string`): Set the `instance_initiated_shutdown_behavior` field on the resulting resource block. When `null`, the `instance_initiated_shutdown_behavior` field will be omitted from the resulting object.
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `ipv6_address_count` (`number`): Set the `ipv6_address_count` field on the resulting resource block. When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
-  - `ipv6_addresses` (`list`): Set the `ipv6_addresses` field on the resulting resource block. When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
-  - `key_name` (`string`): Set the `key_name` field on the resulting resource block. When `null`, the `key_name` field will be omitted from the resulting object.
-  - `monitoring` (`bool`): Set the `monitoring` field on the resulting resource block. When `null`, the `monitoring` field will be omitted from the resulting object.
-  - `placement_group` (`string`): Set the `placement_group` field on the resulting resource block. When `null`, the `placement_group` field will be omitted from the resulting object.
-  - `placement_partition_number` (`number`): Set the `placement_partition_number` field on the resulting resource block. When `null`, the `placement_partition_number` field will be omitted from the resulting object.
-  - `private_ip` (`string`): Set the `private_ip` field on the resulting resource block. When `null`, the `private_ip` field will be omitted from the resulting object.
-  - `secondary_private_ips` (`list`): Set the `secondary_private_ips` field on the resulting resource block. When `null`, the `secondary_private_ips` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting resource block. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `source_dest_check` (`bool`): Set the `source_dest_check` field on the resulting resource block. When `null`, the `source_dest_check` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tenancy` (`string`): Set the `tenancy` field on the resulting resource block. When `null`, the `tenancy` field will be omitted from the resulting object.
-  - `user_data` (`string`): Set the `user_data` field on the resulting resource block. When `null`, the `user_data` field will be omitted from the resulting object.
-  - `user_data_base64` (`string`): Set the `user_data_base64` field on the resulting resource block. When `null`, the `user_data_base64` field will be omitted from the resulting object.
-  - `user_data_replace_on_change` (`bool`): Set the `user_data_replace_on_change` field on the resulting resource block. When `null`, the `user_data_replace_on_change` field will be omitted from the resulting object.
-  - `volume_tags` (`obj`): Set the `volume_tags` field on the resulting resource block. When `null`, the `volume_tags` field will be omitted from the resulting object.
-  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting resource block. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `capacity_reservation_specification` (`list[obj]`): Set the `capacity_reservation_specification` field on the resulting resource block. When `null`, the `capacity_reservation_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.new](#fn-capacity_reservation_specificationnew) constructor.
-  - `credit_specification` (`list[obj]`): Set the `credit_specification` field on the resulting resource block. When `null`, the `credit_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.credit_specification.new](#fn-credit_specificationnew) constructor.
-  - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting resource block. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
-  - `enclave_options` (`list[obj]`): Set the `enclave_options` field on the resulting resource block. When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
-  - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting resource block. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
-  - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting resource block. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.launch_template.new](#fn-launch_templatenew) constructor.
-  - `maintenance_options` (`list[obj]`): Set the `maintenance_options` field on the resulting resource block. When `null`, the `maintenance_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.maintenance_options.new](#fn-maintenance_optionsnew) constructor.
-  - `metadata_options` (`list[obj]`): Set the `metadata_options` field on the resulting resource block. When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.metadata_options.new](#fn-metadata_optionsnew) constructor.
-  - `network_interface` (`list[obj]`): Set the `network_interface` field on the resulting resource block. When `null`, the `network_interface` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.network_interface.new](#fn-network_interfacenew) constructor.
-  - `private_dns_name_options` (`list[obj]`): Set the `private_dns_name_options` field on the resulting resource block. When `null`, the `private_dns_name_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.private_dns_name_options.new](#fn-private_dns_name_optionsnew) constructor.
-  - `root_block_device` (`list[obj]`): Set the `root_block_device` field on the resulting resource block. When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.root_block_device.new](#fn-root_block_devicenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ami` (`string`):  When `null`, the `ami` field will be omitted from the resulting object.
+  - `associate_public_ip_address` (`bool`):  When `null`, the `associate_public_ip_address` field will be omitted from the resulting object.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `cpu_core_count` (`number`):  When `null`, the `cpu_core_count` field will be omitted from the resulting object.
+  - `cpu_threads_per_core` (`number`):  When `null`, the `cpu_threads_per_core` field will be omitted from the resulting object.
+  - `disable_api_stop` (`bool`):  When `null`, the `disable_api_stop` field will be omitted from the resulting object.
+  - `disable_api_termination` (`bool`):  When `null`, the `disable_api_termination` field will be omitted from the resulting object.
+  - `ebs_optimized` (`bool`):  When `null`, the `ebs_optimized` field will be omitted from the resulting object.
+  - `get_password_data` (`bool`):  When `null`, the `get_password_data` field will be omitted from the resulting object.
+  - `hibernation` (`bool`):  When `null`, the `hibernation` field will be omitted from the resulting object.
+  - `host_id` (`string`):  When `null`, the `host_id` field will be omitted from the resulting object.
+  - `host_resource_group_arn` (`string`):  When `null`, the `host_resource_group_arn` field will be omitted from the resulting object.
+  - `iam_instance_profile` (`string`):  When `null`, the `iam_instance_profile` field will be omitted from the resulting object.
+  - `instance_initiated_shutdown_behavior` (`string`):  When `null`, the `instance_initiated_shutdown_behavior` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `ipv6_address_count` (`number`):  When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
+  - `ipv6_addresses` (`list`):  When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
+  - `key_name` (`string`):  When `null`, the `key_name` field will be omitted from the resulting object.
+  - `monitoring` (`bool`):  When `null`, the `monitoring` field will be omitted from the resulting object.
+  - `placement_group` (`string`):  When `null`, the `placement_group` field will be omitted from the resulting object.
+  - `placement_partition_number` (`number`):  When `null`, the `placement_partition_number` field will be omitted from the resulting object.
+  - `private_ip` (`string`):  When `null`, the `private_ip` field will be omitted from the resulting object.
+  - `secondary_private_ips` (`list`):  When `null`, the `secondary_private_ips` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `source_dest_check` (`bool`):  When `null`, the `source_dest_check` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tenancy` (`string`):  When `null`, the `tenancy` field will be omitted from the resulting object.
+  - `user_data` (`string`):  When `null`, the `user_data` field will be omitted from the resulting object.
+  - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
+  - `user_data_replace_on_change` (`bool`):  When `null`, the `user_data_replace_on_change` field will be omitted from the resulting object.
+  - `volume_tags` (`obj`):  When `null`, the `volume_tags` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `capacity_reservation_specification` (`list[obj]`):  When `null`, the `capacity_reservation_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.new](#fn-capacity_reservation_specificationnew) constructor.
+  - `credit_specification` (`list[obj]`):  When `null`, the `credit_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.credit_specification.new](#fn-credit_specificationnew) constructor.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
+  - `enclave_options` (`list[obj]`):  When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.launch_template.new](#fn-launch_templatenew) constructor.
+  - `maintenance_options` (`list[obj]`):  When `null`, the `maintenance_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.maintenance_options.new](#fn-maintenance_optionsnew) constructor.
+  - `metadata_options` (`list[obj]`):  When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.metadata_options.new](#fn-metadata_optionsnew) constructor.
+  - `network_interface` (`list[obj]`):  When `null`, the `network_interface` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.network_interface.new](#fn-network_interfacenew) constructor.
+  - `private_dns_name_options` (`list[obj]`):  When `null`, the `private_dns_name_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.private_dns_name_options.new](#fn-private_dns_name_optionsnew) constructor.
+  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.root_block_device.new](#fn-root_block_devicenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -198,52 +198,52 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `ami` (`string`): Set the `ami` field on the resulting object. When `null`, the `ami` field will be omitted from the resulting object.
-  - `associate_public_ip_address` (`bool`): Set the `associate_public_ip_address` field on the resulting object. When `null`, the `associate_public_ip_address` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
-  - `cpu_core_count` (`number`): Set the `cpu_core_count` field on the resulting object. When `null`, the `cpu_core_count` field will be omitted from the resulting object.
-  - `cpu_threads_per_core` (`number`): Set the `cpu_threads_per_core` field on the resulting object. When `null`, the `cpu_threads_per_core` field will be omitted from the resulting object.
-  - `disable_api_stop` (`bool`): Set the `disable_api_stop` field on the resulting object. When `null`, the `disable_api_stop` field will be omitted from the resulting object.
-  - `disable_api_termination` (`bool`): Set the `disable_api_termination` field on the resulting object. When `null`, the `disable_api_termination` field will be omitted from the resulting object.
-  - `ebs_optimized` (`bool`): Set the `ebs_optimized` field on the resulting object. When `null`, the `ebs_optimized` field will be omitted from the resulting object.
-  - `get_password_data` (`bool`): Set the `get_password_data` field on the resulting object. When `null`, the `get_password_data` field will be omitted from the resulting object.
-  - `hibernation` (`bool`): Set the `hibernation` field on the resulting object. When `null`, the `hibernation` field will be omitted from the resulting object.
-  - `host_id` (`string`): Set the `host_id` field on the resulting object. When `null`, the `host_id` field will be omitted from the resulting object.
-  - `host_resource_group_arn` (`string`): Set the `host_resource_group_arn` field on the resulting object. When `null`, the `host_resource_group_arn` field will be omitted from the resulting object.
-  - `iam_instance_profile` (`string`): Set the `iam_instance_profile` field on the resulting object. When `null`, the `iam_instance_profile` field will be omitted from the resulting object.
-  - `instance_initiated_shutdown_behavior` (`string`): Set the `instance_initiated_shutdown_behavior` field on the resulting object. When `null`, the `instance_initiated_shutdown_behavior` field will be omitted from the resulting object.
-  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
-  - `ipv6_address_count` (`number`): Set the `ipv6_address_count` field on the resulting object. When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
-  - `ipv6_addresses` (`list`): Set the `ipv6_addresses` field on the resulting object. When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
-  - `key_name` (`string`): Set the `key_name` field on the resulting object. When `null`, the `key_name` field will be omitted from the resulting object.
-  - `monitoring` (`bool`): Set the `monitoring` field on the resulting object. When `null`, the `monitoring` field will be omitted from the resulting object.
-  - `placement_group` (`string`): Set the `placement_group` field on the resulting object. When `null`, the `placement_group` field will be omitted from the resulting object.
-  - `placement_partition_number` (`number`): Set the `placement_partition_number` field on the resulting object. When `null`, the `placement_partition_number` field will be omitted from the resulting object.
-  - `private_ip` (`string`): Set the `private_ip` field on the resulting object. When `null`, the `private_ip` field will be omitted from the resulting object.
-  - `secondary_private_ips` (`list`): Set the `secondary_private_ips` field on the resulting object. When `null`, the `secondary_private_ips` field will be omitted from the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
-  - `source_dest_check` (`bool`): Set the `source_dest_check` field on the resulting object. When `null`, the `source_dest_check` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `tenancy` (`string`): Set the `tenancy` field on the resulting object. When `null`, the `tenancy` field will be omitted from the resulting object.
-  - `user_data` (`string`): Set the `user_data` field on the resulting object. When `null`, the `user_data` field will be omitted from the resulting object.
-  - `user_data_base64` (`string`): Set the `user_data_base64` field on the resulting object. When `null`, the `user_data_base64` field will be omitted from the resulting object.
-  - `user_data_replace_on_change` (`bool`): Set the `user_data_replace_on_change` field on the resulting object. When `null`, the `user_data_replace_on_change` field will be omitted from the resulting object.
-  - `volume_tags` (`obj`): Set the `volume_tags` field on the resulting object. When `null`, the `volume_tags` field will be omitted from the resulting object.
-  - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting object. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
-  - `capacity_reservation_specification` (`list[obj]`): Set the `capacity_reservation_specification` field on the resulting object. When `null`, the `capacity_reservation_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.new](#fn-capacity_reservation_specificationnew) constructor.
-  - `credit_specification` (`list[obj]`): Set the `credit_specification` field on the resulting object. When `null`, the `credit_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.credit_specification.new](#fn-credit_specificationnew) constructor.
-  - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting object. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
-  - `enclave_options` (`list[obj]`): Set the `enclave_options` field on the resulting object. When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
-  - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting object. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
-  - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting object. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.launch_template.new](#fn-launch_templatenew) constructor.
-  - `maintenance_options` (`list[obj]`): Set the `maintenance_options` field on the resulting object. When `null`, the `maintenance_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.maintenance_options.new](#fn-maintenance_optionsnew) constructor.
-  - `metadata_options` (`list[obj]`): Set the `metadata_options` field on the resulting object. When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.metadata_options.new](#fn-metadata_optionsnew) constructor.
-  - `network_interface` (`list[obj]`): Set the `network_interface` field on the resulting object. When `null`, the `network_interface` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.network_interface.new](#fn-network_interfacenew) constructor.
-  - `private_dns_name_options` (`list[obj]`): Set the `private_dns_name_options` field on the resulting object. When `null`, the `private_dns_name_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.private_dns_name_options.new](#fn-private_dns_name_optionsnew) constructor.
-  - `root_block_device` (`list[obj]`): Set the `root_block_device` field on the resulting object. When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.root_block_device.new](#fn-root_block_devicenew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.timeouts.new](#fn-timeoutsnew) constructor.
+  - `ami` (`string`):  When `null`, the `ami` field will be omitted from the resulting object.
+  - `associate_public_ip_address` (`bool`):  When `null`, the `associate_public_ip_address` field will be omitted from the resulting object.
+  - `availability_zone` (`string`):  When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `cpu_core_count` (`number`):  When `null`, the `cpu_core_count` field will be omitted from the resulting object.
+  - `cpu_threads_per_core` (`number`):  When `null`, the `cpu_threads_per_core` field will be omitted from the resulting object.
+  - `disable_api_stop` (`bool`):  When `null`, the `disable_api_stop` field will be omitted from the resulting object.
+  - `disable_api_termination` (`bool`):  When `null`, the `disable_api_termination` field will be omitted from the resulting object.
+  - `ebs_optimized` (`bool`):  When `null`, the `ebs_optimized` field will be omitted from the resulting object.
+  - `get_password_data` (`bool`):  When `null`, the `get_password_data` field will be omitted from the resulting object.
+  - `hibernation` (`bool`):  When `null`, the `hibernation` field will be omitted from the resulting object.
+  - `host_id` (`string`):  When `null`, the `host_id` field will be omitted from the resulting object.
+  - `host_resource_group_arn` (`string`):  When `null`, the `host_resource_group_arn` field will be omitted from the resulting object.
+  - `iam_instance_profile` (`string`):  When `null`, the `iam_instance_profile` field will be omitted from the resulting object.
+  - `instance_initiated_shutdown_behavior` (`string`):  When `null`, the `instance_initiated_shutdown_behavior` field will be omitted from the resulting object.
+  - `instance_type` (`string`):  When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `ipv6_address_count` (`number`):  When `null`, the `ipv6_address_count` field will be omitted from the resulting object.
+  - `ipv6_addresses` (`list`):  When `null`, the `ipv6_addresses` field will be omitted from the resulting object.
+  - `key_name` (`string`):  When `null`, the `key_name` field will be omitted from the resulting object.
+  - `monitoring` (`bool`):  When `null`, the `monitoring` field will be omitted from the resulting object.
+  - `placement_group` (`string`):  When `null`, the `placement_group` field will be omitted from the resulting object.
+  - `placement_partition_number` (`number`):  When `null`, the `placement_partition_number` field will be omitted from the resulting object.
+  - `private_ip` (`string`):  When `null`, the `private_ip` field will be omitted from the resulting object.
+  - `secondary_private_ips` (`list`):  When `null`, the `secondary_private_ips` field will be omitted from the resulting object.
+  - `security_groups` (`list`):  When `null`, the `security_groups` field will be omitted from the resulting object.
+  - `source_dest_check` (`bool`):  When `null`, the `source_dest_check` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tenancy` (`string`):  When `null`, the `tenancy` field will be omitted from the resulting object.
+  - `user_data` (`string`):  When `null`, the `user_data` field will be omitted from the resulting object.
+  - `user_data_base64` (`string`):  When `null`, the `user_data_base64` field will be omitted from the resulting object.
+  - `user_data_replace_on_change` (`bool`):  When `null`, the `user_data_replace_on_change` field will be omitted from the resulting object.
+  - `volume_tags` (`obj`):  When `null`, the `volume_tags` field will be omitted from the resulting object.
+  - `vpc_security_group_ids` (`list`):  When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
+  - `capacity_reservation_specification` (`list[obj]`):  When `null`, the `capacity_reservation_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.new](#fn-capacity_reservation_specificationnew) constructor.
+  - `credit_specification` (`list[obj]`):  When `null`, the `credit_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.credit_specification.new](#fn-credit_specificationnew) constructor.
+  - `ebs_block_device` (`list[obj]`):  When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
+  - `enclave_options` (`list[obj]`):  When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
+  - `ephemeral_block_device` (`list[obj]`):  When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `launch_template` (`list[obj]`):  When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.launch_template.new](#fn-launch_templatenew) constructor.
+  - `maintenance_options` (`list[obj]`):  When `null`, the `maintenance_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.maintenance_options.new](#fn-maintenance_optionsnew) constructor.
+  - `metadata_options` (`list[obj]`):  When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.metadata_options.new](#fn-metadata_optionsnew) constructor.
+  - `network_interface` (`list[obj]`):  When `null`, the `network_interface` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.network_interface.new](#fn-network_interfacenew) constructor.
+  - `private_dns_name_options` (`list[obj]`):  When `null`, the `private_dns_name_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.private_dns_name_options.new](#fn-private_dns_name_optionsnew) constructor.
+  - `root_block_device` (`list[obj]`):  When `null`, the `root_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.root_block_device.new](#fn-root_block_devicenew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `instance` resource into the root Terraform configuration.
@@ -1253,8 +1253,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `capacity_reservation_preference` (`string`): Set the `capacity_reservation_preference` field on the resulting object. When `null`, the `capacity_reservation_preference` field will be omitted from the resulting object.
-  - `capacity_reservation_target` (`list[obj]`): Set the `capacity_reservation_target` field on the resulting object. When `null`, the `capacity_reservation_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.capacity_reservation_target.new](#fn-capacity_reservation_specificationcapacity_reservation_targetnew) constructor.
+  - `capacity_reservation_preference` (`string`):  When `null`, the `capacity_reservation_preference` field will be omitted from the resulting object.
+  - `capacity_reservation_target` (`list[obj]`):  When `null`, the `capacity_reservation_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.capacity_reservation_target.new](#fn-capacity_reservation_specificationcapacity_reservation_targetnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `capacity_reservation_specification` sub block.
@@ -1277,8 +1277,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `capacity_reservation_id` (`string`): Set the `capacity_reservation_id` field on the resulting object. When `null`, the `capacity_reservation_id` field will be omitted from the resulting object.
-  - `capacity_reservation_resource_group_arn` (`string`): Set the `capacity_reservation_resource_group_arn` field on the resulting object. When `null`, the `capacity_reservation_resource_group_arn` field will be omitted from the resulting object.
+  - `capacity_reservation_id` (`string`):  When `null`, the `capacity_reservation_id` field will be omitted from the resulting object.
+  - `capacity_reservation_resource_group_arn` (`string`):  When `null`, the `capacity_reservation_resource_group_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `capacity_reservation_target` sub block.
@@ -1301,7 +1301,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `cpu_credits` (`string`): Set the `cpu_credits` field on the resulting object. When `null`, the `cpu_credits` field will be omitted from the resulting object.
+  - `cpu_credits` (`string`):  When `null`, the `cpu_credits` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `credit_specification` sub block.
@@ -1324,16 +1324,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete_on_termination` (`bool`): Set the `delete_on_termination` field on the resulting object. When `null`, the `delete_on_termination` field will be omitted from the resulting object.
-  - `device_name` (`string`): Set the `device_name` field on the resulting object.
-  - `encrypted` (`bool`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `snapshot_id` (`string`): Set the `snapshot_id` field on the resulting object. When `null`, the `snapshot_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `throughput` (`number`): Set the `throughput` field on the resulting object. When `null`, the `throughput` field will be omitted from the resulting object.
-  - `volume_size` (`number`): Set the `volume_size` field on the resulting object. When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `delete_on_termination` (`bool`):  When `null`, the `delete_on_termination` field will be omitted from the resulting object.
+  - `device_name` (`string`): 
+  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `snapshot_id` (`string`):  When `null`, the `snapshot_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `throughput` (`number`):  When `null`, the `throughput` field will be omitted from the resulting object.
+  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ebs_block_device` sub block.
@@ -1356,7 +1356,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `enclave_options` sub block.
@@ -1379,9 +1379,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `device_name` (`string`): Set the `device_name` field on the resulting object.
-  - `no_device` (`bool`): Set the `no_device` field on the resulting object. When `null`, the `no_device` field will be omitted from the resulting object.
-  - `virtual_name` (`string`): Set the `virtual_name` field on the resulting object. When `null`, the `virtual_name` field will be omitted from the resulting object.
+  - `device_name` (`string`): 
+  - `no_device` (`bool`):  When `null`, the `no_device` field will be omitted from the resulting object.
+  - `virtual_name` (`string`):  When `null`, the `virtual_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `ephemeral_block_device` sub block.
@@ -1404,8 +1404,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `version` (`string`):  When `null`, the `version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `launch_template` sub block.
@@ -1428,7 +1428,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `auto_recovery` (`string`): Set the `auto_recovery` field on the resulting object. When `null`, the `auto_recovery` field will be omitted from the resulting object.
+  - `auto_recovery` (`string`):  When `null`, the `auto_recovery` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `maintenance_options` sub block.
@@ -1451,10 +1451,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `http_endpoint` (`string`): Set the `http_endpoint` field on the resulting object. When `null`, the `http_endpoint` field will be omitted from the resulting object.
-  - `http_put_response_hop_limit` (`number`): Set the `http_put_response_hop_limit` field on the resulting object. When `null`, the `http_put_response_hop_limit` field will be omitted from the resulting object.
-  - `http_tokens` (`string`): Set the `http_tokens` field on the resulting object. When `null`, the `http_tokens` field will be omitted from the resulting object.
-  - `instance_metadata_tags` (`string`): Set the `instance_metadata_tags` field on the resulting object. When `null`, the `instance_metadata_tags` field will be omitted from the resulting object.
+  - `http_endpoint` (`string`):  When `null`, the `http_endpoint` field will be omitted from the resulting object.
+  - `http_put_response_hop_limit` (`number`):  When `null`, the `http_put_response_hop_limit` field will be omitted from the resulting object.
+  - `http_tokens` (`string`):  When `null`, the `http_tokens` field will be omitted from the resulting object.
+  - `instance_metadata_tags` (`string`):  When `null`, the `instance_metadata_tags` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `metadata_options` sub block.
@@ -1477,10 +1477,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete_on_termination` (`bool`): Set the `delete_on_termination` field on the resulting object. When `null`, the `delete_on_termination` field will be omitted from the resulting object.
-  - `device_index` (`number`): Set the `device_index` field on the resulting object.
-  - `network_card_index` (`number`): Set the `network_card_index` field on the resulting object. When `null`, the `network_card_index` field will be omitted from the resulting object.
-  - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting object.
+  - `delete_on_termination` (`bool`):  When `null`, the `delete_on_termination` field will be omitted from the resulting object.
+  - `device_index` (`number`): 
+  - `network_card_index` (`number`):  When `null`, the `network_card_index` field will be omitted from the resulting object.
+  - `network_interface_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `network_interface` sub block.
@@ -1503,9 +1503,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `enable_resource_name_dns_a_record` (`bool`): Set the `enable_resource_name_dns_a_record` field on the resulting object. When `null`, the `enable_resource_name_dns_a_record` field will be omitted from the resulting object.
-  - `enable_resource_name_dns_aaaa_record` (`bool`): Set the `enable_resource_name_dns_aaaa_record` field on the resulting object. When `null`, the `enable_resource_name_dns_aaaa_record` field will be omitted from the resulting object.
-  - `hostname_type` (`string`): Set the `hostname_type` field on the resulting object. When `null`, the `hostname_type` field will be omitted from the resulting object.
+  - `enable_resource_name_dns_a_record` (`bool`):  When `null`, the `enable_resource_name_dns_a_record` field will be omitted from the resulting object.
+  - `enable_resource_name_dns_aaaa_record` (`bool`):  When `null`, the `enable_resource_name_dns_aaaa_record` field will be omitted from the resulting object.
+  - `hostname_type` (`string`):  When `null`, the `hostname_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `private_dns_name_options` sub block.
@@ -1528,14 +1528,14 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete_on_termination` (`bool`): Set the `delete_on_termination` field on the resulting object. When `null`, the `delete_on_termination` field will be omitted from the resulting object.
-  - `encrypted` (`bool`): Set the `encrypted` field on the resulting object. When `null`, the `encrypted` field will be omitted from the resulting object.
-  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
-  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `throughput` (`number`): Set the `throughput` field on the resulting object. When `null`, the `throughput` field will be omitted from the resulting object.
-  - `volume_size` (`number`): Set the `volume_size` field on the resulting object. When `null`, the `volume_size` field will be omitted from the resulting object.
-  - `volume_type` (`string`): Set the `volume_type` field on the resulting object. When `null`, the `volume_type` field will be omitted from the resulting object.
+  - `delete_on_termination` (`bool`):  When `null`, the `delete_on_termination` field will be omitted from the resulting object.
+  - `encrypted` (`bool`):  When `null`, the `encrypted` field will be omitted from the resulting object.
+  - `iops` (`number`):  When `null`, the `iops` field will be omitted from the resulting object.
+  - `kms_key_id` (`string`):  When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `throughput` (`number`):  When `null`, the `throughput` field will be omitted from the resulting object.
+  - `volume_size` (`number`):  When `null`, the `volume_size` field will be omitted from the resulting object.
+  - `volume_type` (`string`):  When `null`, the `volume_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `root_block_device` sub block.
@@ -1558,9 +1558,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

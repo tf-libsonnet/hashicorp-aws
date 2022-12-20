@@ -48,9 +48,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `group_name` (`string`): Set the `group_name` field on the resulting resource block.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting resource block.
-  - `username` (`string`): Set the `username` field on the resulting resource block.
+  - `group_name` (`string`): 
+  - `user_pool_id` (`string`): 
+  - `username` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,9 +74,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `group_name` (`string`): Set the `group_name` field on the resulting object.
-  - `user_pool_id` (`string`): Set the `user_pool_id` field on the resulting object.
-  - `username` (`string`): Set the `username` field on the resulting object.
+  - `group_name` (`string`): 
+  - `user_pool_id` (`string`): 
+  - `username` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_user_in_group` resource into the root Terraform configuration.

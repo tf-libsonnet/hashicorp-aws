@@ -47,8 +47,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `principal` (`string`): Set the `principal` field on the resulting resource block.
-  - `resource_share_arn` (`string`): Set the `resource_share_arn` field on the resulting resource block.
+  - `principal` (`string`): 
+  - `resource_share_arn` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -72,8 +72,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `principal` (`string`): Set the `principal` field on the resulting object.
-  - `resource_share_arn` (`string`): Set the `resource_share_arn` field on the resulting object.
+  - `principal` (`string`): 
+  - `resource_share_arn` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ram_principal_association` resource into the root Terraform configuration.

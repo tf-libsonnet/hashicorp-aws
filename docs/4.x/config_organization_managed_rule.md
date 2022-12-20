@@ -59,17 +59,17 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `excluded_accounts` (`list`): Set the `excluded_accounts` field on the resulting resource block. When `null`, the `excluded_accounts` field will be omitted from the resulting object.
-  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting resource block. When `null`, the `input_parameters` field will be omitted from the resulting object.
-  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting resource block. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `resource_id_scope` (`string`): Set the `resource_id_scope` field on the resulting resource block. When `null`, the `resource_id_scope` field will be omitted from the resulting object.
-  - `resource_types_scope` (`list`): Set the `resource_types_scope` field on the resulting resource block. When `null`, the `resource_types_scope` field will be omitted from the resulting object.
-  - `rule_identifier` (`string`): Set the `rule_identifier` field on the resulting resource block.
-  - `tag_key_scope` (`string`): Set the `tag_key_scope` field on the resulting resource block. When `null`, the `tag_key_scope` field will be omitted from the resulting object.
-  - `tag_value_scope` (`string`): Set the `tag_value_scope` field on the resulting resource block. When `null`, the `tag_value_scope` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `excluded_accounts` (`list`):  When `null`, the `excluded_accounts` field will be omitted from the resulting object.
+  - `input_parameters` (`string`):  When `null`, the `input_parameters` field will be omitted from the resulting object.
+  - `maximum_execution_frequency` (`string`):  When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `resource_id_scope` (`string`):  When `null`, the `resource_id_scope` field will be omitted from the resulting object.
+  - `resource_types_scope` (`list`):  When `null`, the `resource_types_scope` field will be omitted from the resulting object.
+  - `rule_identifier` (`string`): 
+  - `tag_key_scope` (`string`):  When `null`, the `tag_key_scope` field will be omitted from the resulting object.
+  - `tag_value_scope` (`string`):  When `null`, the `tag_value_scope` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,17 +93,17 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `excluded_accounts` (`list`): Set the `excluded_accounts` field on the resulting object. When `null`, the `excluded_accounts` field will be omitted from the resulting object.
-  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting object. When `null`, the `input_parameters` field will be omitted from the resulting object.
-  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting object. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `resource_id_scope` (`string`): Set the `resource_id_scope` field on the resulting object. When `null`, the `resource_id_scope` field will be omitted from the resulting object.
-  - `resource_types_scope` (`list`): Set the `resource_types_scope` field on the resulting object. When `null`, the `resource_types_scope` field will be omitted from the resulting object.
-  - `rule_identifier` (`string`): Set the `rule_identifier` field on the resulting object.
-  - `tag_key_scope` (`string`): Set the `tag_key_scope` field on the resulting object. When `null`, the `tag_key_scope` field will be omitted from the resulting object.
-  - `tag_value_scope` (`string`): Set the `tag_value_scope` field on the resulting object. When `null`, the `tag_value_scope` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-timeoutsnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `excluded_accounts` (`list`):  When `null`, the `excluded_accounts` field will be omitted from the resulting object.
+  - `input_parameters` (`string`):  When `null`, the `input_parameters` field will be omitted from the resulting object.
+  - `maximum_execution_frequency` (`string`):  When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `resource_id_scope` (`string`):  When `null`, the `resource_id_scope` field will be omitted from the resulting object.
+  - `resource_types_scope` (`list`):  When `null`, the `resource_types_scope` field will be omitted from the resulting object.
+  - `rule_identifier` (`string`): 
+  - `tag_key_scope` (`string`):  When `null`, the `tag_key_scope` field will be omitted from the resulting object.
+  - `tag_value_scope` (`string`):  When `null`, the `tag_value_scope` field will be omitted from the resulting object.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_organization_managed_rule.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_organization_managed_rule` resource into the root Terraform configuration.
@@ -322,9 +322,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

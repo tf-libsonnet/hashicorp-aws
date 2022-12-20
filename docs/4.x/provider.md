@@ -45,11 +45,11 @@ the `src` and/or `version` parameters are set.
 **Args**:
   - `access_key` (`string`): The access key for API operations. You can retrieve this
 from the &#39;Security &amp; Credentials&#39; section of the AWS console. When `null`, the `access_key` field will be omitted from the resulting object.
-  - `allowed_account_ids` (`list`): Set the `allowed_account_ids` field on the resulting provider block. When `null`, the `allowed_account_ids` field will be omitted from the resulting object.
+  - `allowed_account_ids` (`list`):  When `null`, the `allowed_account_ids` field will be omitted from the resulting object.
   - `custom_ca_bundle` (`string`): File containing custom root and intermediate certificates. Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.) When `null`, the `custom_ca_bundle` field will be omitted from the resulting object.
   - `ec2_metadata_service_endpoint` (`string`): Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. When `null`, the `ec2_metadata_service_endpoint` field will be omitted from the resulting object.
   - `ec2_metadata_service_endpoint_mode` (`string`): Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. When `null`, the `ec2_metadata_service_endpoint_mode` field will be omitted from the resulting object.
-  - `forbidden_account_ids` (`list`): Set the `forbidden_account_ids` field on the resulting provider block. When `null`, the `forbidden_account_ids` field will be omitted from the resulting object.
+  - `forbidden_account_ids` (`list`):  When `null`, the `forbidden_account_ids` field will be omitted from the resulting object.
   - `http_proxy` (`string`): The address of an HTTP proxy to use when accessing the AWS API. Can also be configured using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables. When `null`, the `http_proxy` field will be omitted from the resulting object.
   - `insecure` (`bool`): Explicitly allow the provider to perform &#34;insecure&#34; SSL requests. If omitted, default value is `false` When `null`, the `insecure` field will be omitted from the resulting object.
   - `max_retries` (`number`): The maximum number of times an AWS API request is
@@ -83,10 +83,10 @@ are us-east-1 and us-west-2. When `null`, the `sts_region` field will be omitted
 using temporary security credentials. When `null`, the `token` field will be omitted from the resulting object.
   - `use_dualstack_endpoint` (`bool`): Resolve an endpoint with DualStack capability When `null`, the `use_dualstack_endpoint` field will be omitted from the resulting object.
   - `use_fips_endpoint` (`bool`): Resolve an endpoint with FIPS capability When `null`, the `use_fips_endpoint` field will be omitted from the resulting object.
-  - `assume_role` (`list[obj]`): Set the `assume_role` field on the resulting provider block. When `null`, the `assume_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role.new](#fn-awsassumerolenew) constructor.
-  - `assume_role_with_web_identity` (`list[obj]`): Set the `assume_role_with_web_identity` field on the resulting provider block. When `null`, the `assume_role_with_web_identity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role_with_web_identity.new](#fn-awsassumerolewithwebidentitynew) constructor.
+  - `assume_role` (`list[obj]`):  When `null`, the `assume_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role.new](#fn-awsassumerolenew) constructor.
+  - `assume_role_with_web_identity` (`list[obj]`):  When `null`, the `assume_role_with_web_identity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role_with_web_identity.new](#fn-awsassumerolewithwebidentitynew) constructor.
   - `default_tags` (`list[obj]`): Configuration block with settings to default resource tags across all resources. When `null`, the `default_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.default_tags.new](#fn-awsdefaulttagsnew) constructor.
-  - `endpoints` (`list[obj]`): Set the `endpoints` field on the resulting provider block. When `null`, the `endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.endpoints.new](#fn-awsendpointsnew) constructor.
+  - `endpoints` (`list[obj]`):  When `null`, the `endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.endpoints.new](#fn-awsendpointsnew) constructor.
   - `ignore_tags` (`list[obj]`): Configuration block with settings to ignore resource tags across all resources. When `null`, the `ignore_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.ignore_tags.new](#fn-awsignoretagsnew) constructor.
   - `alias` (`string`): The provider `alias` to set for this instance of the provider block. When `null`, the `alias`
   field will be omitted from the resulting provider block.
@@ -121,11 +121,11 @@ injecting into a complete block.
 **Args**:
   - `access_key` (`string`): The access key for API operations. You can retrieve this
 from the &#39;Security &amp; Credentials&#39; section of the AWS console. When `null`, the `access_key` field will be omitted from the resulting object.
-  - `allowed_account_ids` (`list`): Set the `allowed_account_ids` field on the resulting object. When `null`, the `allowed_account_ids` field will be omitted from the resulting object.
+  - `allowed_account_ids` (`list`):  When `null`, the `allowed_account_ids` field will be omitted from the resulting object.
   - `custom_ca_bundle` (`string`): File containing custom root and intermediate certificates. Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.) When `null`, the `custom_ca_bundle` field will be omitted from the resulting object.
   - `ec2_metadata_service_endpoint` (`string`): Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. When `null`, the `ec2_metadata_service_endpoint` field will be omitted from the resulting object.
   - `ec2_metadata_service_endpoint_mode` (`string`): Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. When `null`, the `ec2_metadata_service_endpoint_mode` field will be omitted from the resulting object.
-  - `forbidden_account_ids` (`list`): Set the `forbidden_account_ids` field on the resulting object. When `null`, the `forbidden_account_ids` field will be omitted from the resulting object.
+  - `forbidden_account_ids` (`list`):  When `null`, the `forbidden_account_ids` field will be omitted from the resulting object.
   - `http_proxy` (`string`): The address of an HTTP proxy to use when accessing the AWS API. Can also be configured using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables. When `null`, the `http_proxy` field will be omitted from the resulting object.
   - `insecure` (`bool`): Explicitly allow the provider to perform &#34;insecure&#34; SSL requests. If omitted, default value is `false` When `null`, the `insecure` field will be omitted from the resulting object.
   - `max_retries` (`number`): The maximum number of times an AWS API request is
@@ -159,10 +159,10 @@ are us-east-1 and us-west-2. When `null`, the `sts_region` field will be omitted
 using temporary security credentials. When `null`, the `token` field will be omitted from the resulting object.
   - `use_dualstack_endpoint` (`bool`): Resolve an endpoint with DualStack capability When `null`, the `use_dualstack_endpoint` field will be omitted from the resulting object.
   - `use_fips_endpoint` (`bool`): Resolve an endpoint with FIPS capability When `null`, the `use_fips_endpoint` field will be omitted from the resulting object.
-  - `assume_role` (`list[obj]`): Set the `assume_role` field on the resulting object. When `null`, the `assume_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role.new](#fn-awsassumerolenew) constructor.
-  - `assume_role_with_web_identity` (`list[obj]`): Set the `assume_role_with_web_identity` field on the resulting object. When `null`, the `assume_role_with_web_identity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role_with_web_identity.new](#fn-awsassumerolewithwebidentitynew) constructor.
+  - `assume_role` (`list[obj]`):  When `null`, the `assume_role` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role.new](#fn-awsassumerolenew) constructor.
+  - `assume_role_with_web_identity` (`list[obj]`):  When `null`, the `assume_role_with_web_identity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.assume_role_with_web_identity.new](#fn-awsassumerolewithwebidentitynew) constructor.
   - `default_tags` (`list[obj]`): Configuration block with settings to default resource tags across all resources. When `null`, the `default_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.default_tags.new](#fn-awsdefaulttagsnew) constructor.
-  - `endpoints` (`list[obj]`): Set the `endpoints` field on the resulting object. When `null`, the `endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.endpoints.new](#fn-awsendpointsnew) constructor.
+  - `endpoints` (`list[obj]`):  When `null`, the `endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.endpoints.new](#fn-awsendpointsnew) constructor.
   - `ignore_tags` (`list[obj]`): Configuration block with settings to ignore resource tags across all resources. When `null`, the `ignore_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.provider.ignore_tags.new](#fn-awsignoretagsnew) constructor.
 
 **Returns**:
@@ -224,8 +224,8 @@ Terraform sub block.
   - `policy_arns` (`list`): Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. When `null`, the `policy_arns` field will be omitted from the resulting object.
   - `role_arn` (`string`): Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls. When `null`, the `role_arn` field will be omitted from the resulting object.
   - `session_name` (`string`): An identifier for the assumed role session. When `null`, the `session_name` field will be omitted from the resulting object.
-  - `web_identity_token` (`string`): Set the `web_identity_token` field on the resulting object. When `null`, the `web_identity_token` field will be omitted from the resulting object.
-  - `web_identity_token_file` (`string`): Set the `web_identity_token_file` field on the resulting object. When `null`, the `web_identity_token_file` field will be omitted from the resulting object.
+  - `web_identity_token` (`string`):  When `null`, the `web_identity_token` field will be omitted from the resulting object.
+  - `web_identity_token_file` (`string`):  When `null`, the `web_identity_token_file` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `assume_role_with_web_identity` sub block.
@@ -530,6 +530,7 @@ Terraform sub block.
   - `nimble` (`string`): Use this to override the default service endpoint URL When `null`, the `nimble` field will be omitted from the resulting object.
   - `nimblestudio` (`string`): Use this to override the default service endpoint URL When `null`, the `nimblestudio` field will be omitted from the resulting object.
   - `opensearch` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearch` field will be omitted from the resulting object.
+  - `opensearchserverless` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchserverless` field will be omitted from the resulting object.
   - `opensearchservice` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchservice` field will be omitted from the resulting object.
   - `opsworks` (`string`): Use this to override the default service endpoint URL When `null`, the `opsworks` field will be omitted from the resulting object.
   - `opsworkscm` (`string`): Use this to override the default service endpoint URL When `null`, the `opsworkscm` field will be omitted from the resulting object.

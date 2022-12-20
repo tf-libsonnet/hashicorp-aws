@@ -57,13 +57,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action_plan_instructions` (`string`): Set the `action_plan_instructions` field on the resulting resource block. When `null`, the `action_plan_instructions` field will be omitted from the resulting object.
-  - `action_plan_title` (`string`): Set the `action_plan_title` field on the resulting resource block. When `null`, the `action_plan_title` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `testing_information` (`string`): Set the `testing_information` field on the resulting resource block. When `null`, the `testing_information` field will be omitted from the resulting object.
-  - `control_mapping_sources` (`list[obj]`): Set the `control_mapping_sources` field on the resulting resource block. When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-control_mapping_sourcesnew) constructor.
+  - `action_plan_instructions` (`string`):  When `null`, the `action_plan_instructions` field will be omitted from the resulting object.
+  - `action_plan_title` (`string`):  When `null`, the `action_plan_title` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `testing_information` (`string`):  When `null`, the `testing_information` field will be omitted from the resulting object.
+  - `control_mapping_sources` (`list[obj]`):  When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-control_mapping_sourcesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,13 +87,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action_plan_instructions` (`string`): Set the `action_plan_instructions` field on the resulting object. When `null`, the `action_plan_instructions` field will be omitted from the resulting object.
-  - `action_plan_title` (`string`): Set the `action_plan_title` field on the resulting object. When `null`, the `action_plan_title` field will be omitted from the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `testing_information` (`string`): Set the `testing_information` field on the resulting object. When `null`, the `testing_information` field will be omitted from the resulting object.
-  - `control_mapping_sources` (`list[obj]`): Set the `control_mapping_sources` field on the resulting object. When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-control_mapping_sourcesnew) constructor.
+  - `action_plan_instructions` (`string`):  When `null`, the `action_plan_instructions` field will be omitted from the resulting object.
+  - `action_plan_title` (`string`):  When `null`, the `action_plan_title` field will be omitted from the resulting object.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `testing_information` (`string`):  When `null`, the `testing_information` field will be omitted from the resulting object.
+  - `control_mapping_sources` (`list[obj]`):  When `null`, the `control_mapping_sources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.new](#fn-control_mapping_sourcesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `auditmanager_control` resource into the root Terraform configuration.
@@ -249,13 +249,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `source_description` (`string`): Set the `source_description` field on the resulting object. When `null`, the `source_description` field will be omitted from the resulting object.
-  - `source_frequency` (`string`): Set the `source_frequency` field on the resulting object. When `null`, the `source_frequency` field will be omitted from the resulting object.
-  - `source_name` (`string`): Set the `source_name` field on the resulting object.
-  - `source_set_up_option` (`string`): Set the `source_set_up_option` field on the resulting object.
-  - `source_type` (`string`): Set the `source_type` field on the resulting object.
-  - `troubleshooting_text` (`string`): Set the `troubleshooting_text` field on the resulting object. When `null`, the `troubleshooting_text` field will be omitted from the resulting object.
-  - `source_keyword` (`list[obj]`): Set the `source_keyword` field on the resulting object. When `null`, the `source_keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.source_keyword.new](#fn-control_mapping_sourcessource_keywordnew) constructor.
+  - `source_description` (`string`):  When `null`, the `source_description` field will be omitted from the resulting object.
+  - `source_frequency` (`string`):  When `null`, the `source_frequency` field will be omitted from the resulting object.
+  - `source_name` (`string`): 
+  - `source_set_up_option` (`string`): 
+  - `source_type` (`string`): 
+  - `troubleshooting_text` (`string`):  When `null`, the `troubleshooting_text` field will be omitted from the resulting object.
+  - `source_keyword` (`list[obj]`):  When `null`, the `source_keyword` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.auditmanager_control.control_mapping_sources.source_keyword.new](#fn-control_mapping_sourcessource_keywordnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `control_mapping_sources` sub block.
@@ -278,8 +278,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `keyword_input_type` (`string`): Set the `keyword_input_type` field on the resulting object.
-  - `keyword_value` (`string`): Set the `keyword_value` field on the resulting object.
+  - `keyword_input_type` (`string`): 
+  - `keyword_value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `source_keyword` sub block.

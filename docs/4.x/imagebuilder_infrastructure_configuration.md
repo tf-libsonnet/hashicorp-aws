@@ -67,20 +67,20 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `instance_profile_name` (`string`): Set the `instance_profile_name` field on the resulting resource block.
-  - `instance_types` (`list`): Set the `instance_types` field on the resulting resource block. When `null`, the `instance_types` field will be omitted from the resulting object.
-  - `key_pair` (`string`): Set the `key_pair` field on the resulting resource block. When `null`, the `key_pair` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `resource_tags` (`obj`): Set the `resource_tags` field on the resulting resource block. When `null`, the `resource_tags` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting resource block. When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `terminate_instance_on_failure` (`bool`): Set the `terminate_instance_on_failure` field on the resulting resource block. When `null`, the `terminate_instance_on_failure` field will be omitted from the resulting object.
-  - `instance_metadata_options` (`list[obj]`): Set the `instance_metadata_options` field on the resulting resource block. When `null`, the `instance_metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.instance_metadata_options.new](#fn-instance_metadata_optionsnew) constructor.
-  - `logging` (`list[obj]`): Set the `logging` field on the resulting resource block. When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.new](#fn-loggingnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `instance_profile_name` (`string`): 
+  - `instance_types` (`list`):  When `null`, the `instance_types` field will be omitted from the resulting object.
+  - `key_pair` (`string`):  When `null`, the `key_pair` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `resource_tags` (`obj`):  When `null`, the `resource_tags` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `sns_topic_arn` (`string`):  When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `terminate_instance_on_failure` (`bool`):  When `null`, the `terminate_instance_on_failure` field will be omitted from the resulting object.
+  - `instance_metadata_options` (`list[obj]`):  When `null`, the `instance_metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.instance_metadata_options.new](#fn-instance_metadata_optionsnew) constructor.
+  - `logging` (`list[obj]`):  When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.new](#fn-loggingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -104,20 +104,20 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `instance_profile_name` (`string`): Set the `instance_profile_name` field on the resulting object.
-  - `instance_types` (`list`): Set the `instance_types` field on the resulting object. When `null`, the `instance_types` field will be omitted from the resulting object.
-  - `key_pair` (`string`): Set the `key_pair` field on the resulting object. When `null`, the `key_pair` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `resource_tags` (`obj`): Set the `resource_tags` field on the resulting object. When `null`, the `resource_tags` field will be omitted from the resulting object.
-  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting object. When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
-  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object. When `null`, the `subnet_id` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `terminate_instance_on_failure` (`bool`): Set the `terminate_instance_on_failure` field on the resulting object. When `null`, the `terminate_instance_on_failure` field will be omitted from the resulting object.
-  - `instance_metadata_options` (`list[obj]`): Set the `instance_metadata_options` field on the resulting object. When `null`, the `instance_metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.instance_metadata_options.new](#fn-instance_metadata_optionsnew) constructor.
-  - `logging` (`list[obj]`): Set the `logging` field on the resulting object. When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.new](#fn-loggingnew) constructor.
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `instance_profile_name` (`string`): 
+  - `instance_types` (`list`):  When `null`, the `instance_types` field will be omitted from the resulting object.
+  - `key_pair` (`string`):  When `null`, the `key_pair` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `resource_tags` (`obj`):  When `null`, the `resource_tags` field will be omitted from the resulting object.
+  - `security_group_ids` (`list`):  When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `sns_topic_arn` (`string`):  When `null`, the `sns_topic_arn` field will be omitted from the resulting object.
+  - `subnet_id` (`string`):  When `null`, the `subnet_id` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `terminate_instance_on_failure` (`bool`):  When `null`, the `terminate_instance_on_failure` field will be omitted from the resulting object.
+  - `instance_metadata_options` (`list[obj]`):  When `null`, the `instance_metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.instance_metadata_options.new](#fn-instance_metadata_optionsnew) constructor.
+  - `logging` (`list[obj]`):  When `null`, the `logging` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.new](#fn-loggingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `imagebuilder_infrastructure_configuration` resource into the root Terraform configuration.
@@ -406,8 +406,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `http_put_response_hop_limit` (`number`): Set the `http_put_response_hop_limit` field on the resulting object. When `null`, the `http_put_response_hop_limit` field will be omitted from the resulting object.
-  - `http_tokens` (`string`): Set the `http_tokens` field on the resulting object. When `null`, the `http_tokens` field will be omitted from the resulting object.
+  - `http_put_response_hop_limit` (`number`):  When `null`, the `http_put_response_hop_limit` field will be omitted from the resulting object.
+  - `http_tokens` (`string`):  When `null`, the `http_tokens` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `instance_metadata_options` sub block.
@@ -430,7 +430,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_logs` (`list[obj]`): Set the `s3_logs` field on the resulting object. When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.s3_logs.new](#fn-loggings3_logsnew) constructor.
+  - `s3_logs` (`list[obj]`):  When `null`, the `s3_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_infrastructure_configuration.logging.s3_logs.new](#fn-loggings3_logsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `logging` sub block.
@@ -453,8 +453,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object.
-  - `s3_key_prefix` (`string`): Set the `s3_key_prefix` field on the resulting object. When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
+  - `s3_bucket_name` (`string`): 
+  - `s3_key_prefix` (`string`):  When `null`, the `s3_key_prefix` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_logs` sub block.

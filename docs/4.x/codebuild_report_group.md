@@ -56,12 +56,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `delete_reports` (`bool`): Set the `delete_reports` field on the resulting resource block. When `null`, the `delete_reports` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `export_config` (`list[obj]`): Set the `export_config` field on the resulting resource block. When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-export_confignew) constructor.
+  - `delete_reports` (`bool`):  When `null`, the `delete_reports` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `export_config` (`list[obj]`):  When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-export_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -85,12 +85,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `delete_reports` (`bool`): Set the `delete_reports` field on the resulting object. When `null`, the `delete_reports` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `export_config` (`list[obj]`): Set the `export_config` field on the resulting object. When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-export_confignew) constructor.
+  - `delete_reports` (`bool`):  When `null`, the `delete_reports` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `export_config` (`list[obj]`):  When `null`, the `export_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.new](#fn-export_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codebuild_report_group` resource into the root Terraform configuration.
@@ -230,8 +230,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `s3_destination` (`list[obj]`): Set the `s3_destination` field on the resulting object. When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-export_configs3_destinationnew) constructor.
+  - `type` (`string`): 
+  - `s3_destination` (`list[obj]`):  When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_report_group.export_config.s3_destination.new](#fn-export_configs3_destinationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `export_config` sub block.
@@ -254,11 +254,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `encryption_disabled` (`bool`): Set the `encryption_disabled` field on the resulting object. When `null`, the `encryption_disabled` field will be omitted from the resulting object.
-  - `encryption_key` (`string`): Set the `encryption_key` field on the resulting object.
-  - `packaging` (`string`): Set the `packaging` field on the resulting object. When `null`, the `packaging` field will be omitted from the resulting object.
-  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
+  - `bucket` (`string`): 
+  - `encryption_disabled` (`bool`):  When `null`, the `encryption_disabled` field will be omitted from the resulting object.
+  - `encryption_key` (`string`): 
+  - `packaging` (`string`):  When `null`, the `packaging` field will be omitted from the resulting object.
+  - `path` (`string`):  When `null`, the `path` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `s3_destination` sub block.

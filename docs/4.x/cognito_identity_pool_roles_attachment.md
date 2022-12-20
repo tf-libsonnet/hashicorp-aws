@@ -53,9 +53,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `identity_pool_id` (`string`): Set the `identity_pool_id` field on the resulting resource block.
-  - `roles` (`obj`): Set the `roles` field on the resulting resource block.
-  - `role_mapping` (`list[obj]`): Set the `role_mapping` field on the resulting resource block. When `null`, the `role_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool_roles_attachment.role_mapping.new](#fn-role_mappingnew) constructor.
+  - `identity_pool_id` (`string`): 
+  - `roles` (`obj`): 
+  - `role_mapping` (`list[obj]`):  When `null`, the `role_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool_roles_attachment.role_mapping.new](#fn-role_mappingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,9 +79,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `identity_pool_id` (`string`): Set the `identity_pool_id` field on the resulting object.
-  - `roles` (`obj`): Set the `roles` field on the resulting object.
-  - `role_mapping` (`list[obj]`): Set the `role_mapping` field on the resulting object. When `null`, the `role_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool_roles_attachment.role_mapping.new](#fn-role_mappingnew) constructor.
+  - `identity_pool_id` (`string`): 
+  - `roles` (`obj`): 
+  - `role_mapping` (`list[obj]`):  When `null`, the `role_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool_roles_attachment.role_mapping.new](#fn-role_mappingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `cognito_identity_pool_roles_attachment` resource into the root Terraform configuration.
@@ -173,10 +173,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `ambiguous_role_resolution` (`string`): Set the `ambiguous_role_resolution` field on the resulting object. When `null`, the `ambiguous_role_resolution` field will be omitted from the resulting object.
-  - `identity_provider` (`string`): Set the `identity_provider` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `mapping_rule` (`list[obj]`): Set the `mapping_rule` field on the resulting object. When `null`, the `mapping_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool_roles_attachment.role_mapping.mapping_rule.new](#fn-role_mappingmapping_rulenew) constructor.
+  - `ambiguous_role_resolution` (`string`):  When `null`, the `ambiguous_role_resolution` field will be omitted from the resulting object.
+  - `identity_provider` (`string`): 
+  - `type` (`string`): 
+  - `mapping_rule` (`list[obj]`):  When `null`, the `mapping_rule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cognito_identity_pool_roles_attachment.role_mapping.mapping_rule.new](#fn-role_mappingmapping_rulenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `role_mapping` sub block.
@@ -199,10 +199,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `claim` (`string`): Set the `claim` field on the resulting object.
-  - `match_type` (`string`): Set the `match_type` field on the resulting object.
-  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `claim` (`string`): 
+  - `match_type` (`string`): 
+  - `role_arn` (`string`): 
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `mapping_rule` sub block.

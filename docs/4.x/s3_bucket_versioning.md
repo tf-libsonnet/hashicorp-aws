@@ -52,10 +52,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `mfa` (`string`): Set the `mfa` field on the resulting resource block. When `null`, the `mfa` field will be omitted from the resulting object.
-  - `versioning_configuration` (`list[obj]`): Set the `versioning_configuration` field on the resulting resource block. When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-versioning_configurationnew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `mfa` (`string`):  When `null`, the `mfa` field will be omitted from the resulting object.
+  - `versioning_configuration` (`list[obj]`):  When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-versioning_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,10 +79,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
-  - `mfa` (`string`): Set the `mfa` field on the resulting object. When `null`, the `mfa` field will be omitted from the resulting object.
-  - `versioning_configuration` (`list[obj]`): Set the `versioning_configuration` field on the resulting object. When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-versioning_configurationnew) constructor.
+  - `bucket` (`string`): 
+  - `expected_bucket_owner` (`string`):  When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
+  - `mfa` (`string`):  When `null`, the `mfa` field will be omitted from the resulting object.
+  - `versioning_configuration` (`list[obj]`):  When `null`, the `versioning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_versioning.versioning_configuration.new](#fn-versioning_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_versioning` resource into the root Terraform configuration.
@@ -190,8 +190,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `mfa_delete` (`string`): Set the `mfa_delete` field on the resulting object. When `null`, the `mfa_delete` field will be omitted from the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object.
+  - `mfa_delete` (`string`):  When `null`, the `mfa_delete` field will be omitted from the resulting object.
+  - `status` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `versioning_configuration` sub block.

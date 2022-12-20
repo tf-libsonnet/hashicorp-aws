@@ -58,9 +58,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `details` (`list[obj]`): Set the `details` field on the resulting resource block. When `null`, the `details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.new](#fn-detailsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `details` (`list[obj]`):  When `null`, the `details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.new](#fn-detailsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -84,9 +84,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
-  - `details` (`list[obj]`): Set the `details` field on the resulting object. When `null`, the `details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.new](#fn-detailsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.timeouts.new](#fn-timeoutsnew) constructor.
+  - `account_id` (`string`):  When `null`, the `account_id` field will be omitted from the resulting object.
+  - `details` (`list[obj]`):  When `null`, the `details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.new](#fn-detailsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3control_multi_region_access_point` resource into the root Terraform configuration.
@@ -198,9 +198,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `public_access_block` (`list[obj]`): Set the `public_access_block` field on the resulting object. When `null`, the `public_access_block` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.public_access_block.new](#fn-detailspublic_access_blocknew) constructor.
-  - `region` (`list[obj]`): Set the `region` field on the resulting object. When `null`, the `region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.region.new](#fn-detailsregionnew) constructor.
+  - `name` (`string`): 
+  - `public_access_block` (`list[obj]`):  When `null`, the `public_access_block` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.public_access_block.new](#fn-detailspublic_access_blocknew) constructor.
+  - `region` (`list[obj]`):  When `null`, the `region` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_multi_region_access_point.details.region.new](#fn-detailsregionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `details` sub block.
@@ -223,10 +223,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `block_public_acls` (`bool`): Set the `block_public_acls` field on the resulting object. When `null`, the `block_public_acls` field will be omitted from the resulting object.
-  - `block_public_policy` (`bool`): Set the `block_public_policy` field on the resulting object. When `null`, the `block_public_policy` field will be omitted from the resulting object.
-  - `ignore_public_acls` (`bool`): Set the `ignore_public_acls` field on the resulting object. When `null`, the `ignore_public_acls` field will be omitted from the resulting object.
-  - `restrict_public_buckets` (`bool`): Set the `restrict_public_buckets` field on the resulting object. When `null`, the `restrict_public_buckets` field will be omitted from the resulting object.
+  - `block_public_acls` (`bool`):  When `null`, the `block_public_acls` field will be omitted from the resulting object.
+  - `block_public_policy` (`bool`):  When `null`, the `block_public_policy` field will be omitted from the resulting object.
+  - `ignore_public_acls` (`bool`):  When `null`, the `ignore_public_acls` field will be omitted from the resulting object.
+  - `restrict_public_buckets` (`bool`):  When `null`, the `restrict_public_buckets` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `public_access_block` sub block.
@@ -249,7 +249,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `bucket` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `region` sub block.
@@ -272,8 +272,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

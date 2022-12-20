@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting resource block.
-  - `send_email_notification` (`bool`): Set the `send_email_notification` field on the resulting resource block. When `null`, the `send_email_notification` field will be omitted from the resulting object.
-  - `stack_name` (`string`): Set the `stack_name` field on the resulting resource block.
-  - `user_name` (`string`): Set the `user_name` field on the resulting resource block.
+  - `authentication_type` (`string`): 
+  - `send_email_notification` (`bool`):  When `null`, the `send_email_notification` field will be omitted from the resulting object.
+  - `stack_name` (`string`): 
+  - `user_name` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `authentication_type` (`string`): Set the `authentication_type` field on the resulting object.
-  - `send_email_notification` (`bool`): Set the `send_email_notification` field on the resulting object. When `null`, the `send_email_notification` field will be omitted from the resulting object.
-  - `stack_name` (`string`): Set the `stack_name` field on the resulting object.
-  - `user_name` (`string`): Set the `user_name` field on the resulting object.
+  - `authentication_type` (`string`): 
+  - `send_email_notification` (`bool`):  When `null`, the `send_email_notification` field will be omitted from the resulting object.
+  - `stack_name` (`string`): 
+  - `user_name` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appstream_user_stack_association` resource into the root Terraform configuration.

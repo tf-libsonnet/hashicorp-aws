@@ -63,13 +63,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `recording_reconnect_window_seconds` (`number`): Set the `recording_reconnect_window_seconds` field on the resulting resource block. When `null`, the `recording_reconnect_window_seconds` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_configuration` (`list[obj]`): Set the `destination_configuration` field on the resulting resource block. When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
-  - `thumbnail_configuration` (`list[obj]`): Set the `thumbnail_configuration` field on the resulting resource block. When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-thumbnail_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-timeoutsnew) constructor.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `recording_reconnect_window_seconds` (`number`):  When `null`, the `recording_reconnect_window_seconds` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
+  - `thumbnail_configuration` (`list[obj]`):  When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-thumbnail_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -93,13 +93,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `recording_reconnect_window_seconds` (`number`): Set the `recording_reconnect_window_seconds` field on the resulting object. When `null`, the `recording_reconnect_window_seconds` field will be omitted from the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `destination_configuration` (`list[obj]`): Set the `destination_configuration` field on the resulting object. When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
-  - `thumbnail_configuration` (`list[obj]`): Set the `thumbnail_configuration` field on the resulting object. When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-thumbnail_configurationnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-timeoutsnew) constructor.
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `recording_reconnect_window_seconds` (`number`):  When `null`, the `recording_reconnect_window_seconds` field will be omitted from the resulting object.
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `destination_configuration` (`list[obj]`):  When `null`, the `destination_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.new](#fn-destination_configurationnew) constructor.
+  - `thumbnail_configuration` (`list[obj]`):  When `null`, the `thumbnail_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.thumbnail_configuration.new](#fn-thumbnail_configurationnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ivs_recording_configuration` resource into the root Terraform configuration.
@@ -296,7 +296,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `s3` (`list[obj]`): Set the `s3` field on the resulting object. When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-destination_configurations3new) constructor.
+  - `s3` (`list[obj]`):  When `null`, the `s3` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ivs_recording_configuration.destination_configuration.s3.new](#fn-destination_configurations3new) constructor.
 
 **Returns**:
   - An attribute object that represents the `destination_configuration` sub block.
@@ -319,7 +319,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
+  - `bucket_name` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `s3` sub block.
@@ -342,8 +342,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `recording_mode` (`string`): Set the `recording_mode` field on the resulting object. When `null`, the `recording_mode` field will be omitted from the resulting object.
-  - `target_interval_seconds` (`number`): Set the `target_interval_seconds` field on the resulting object. When `null`, the `target_interval_seconds` field will be omitted from the resulting object.
+  - `recording_mode` (`string`):  When `null`, the `recording_mode` field will be omitted from the resulting object.
+  - `target_interval_seconds` (`number`):  When `null`, the `target_interval_seconds` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `thumbnail_configuration` sub block.
@@ -366,8 +366,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `create` (`string`):  When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

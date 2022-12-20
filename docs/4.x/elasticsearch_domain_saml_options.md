@@ -56,9 +56,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
-  - `saml_options` (`list[obj]`): Set the `saml_options` field on the resulting resource block. When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.new](#fn-saml_optionsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.timeouts.new](#fn-timeoutsnew) constructor.
+  - `domain_name` (`string`): 
+  - `saml_options` (`list[obj]`):  When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.new](#fn-saml_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -82,9 +82,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
-  - `saml_options` (`list[obj]`): Set the `saml_options` field on the resulting object. When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.new](#fn-saml_optionsnew) constructor.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.timeouts.new](#fn-timeoutsnew) constructor.
+  - `domain_name` (`string`): 
+  - `saml_options` (`list[obj]`):  When `null`, the `saml_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.new](#fn-saml_optionsnew) constructor.
+  - `timeouts` (`obj`):  When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elasticsearch_domain_saml_options` resource into the root Terraform configuration.
@@ -196,13 +196,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `master_backend_role` (`string`): Set the `master_backend_role` field on the resulting object. When `null`, the `master_backend_role` field will be omitted from the resulting object.
-  - `master_user_name` (`string`): Set the `master_user_name` field on the resulting object. When `null`, the `master_user_name` field will be omitted from the resulting object.
-  - `roles_key` (`string`): Set the `roles_key` field on the resulting object. When `null`, the `roles_key` field will be omitted from the resulting object.
-  - `session_timeout_minutes` (`number`): Set the `session_timeout_minutes` field on the resulting object. When `null`, the `session_timeout_minutes` field will be omitted from the resulting object.
-  - `subject_key` (`string`): Set the `subject_key` field on the resulting object. When `null`, the `subject_key` field will be omitted from the resulting object.
-  - `idp` (`list[obj]`): Set the `idp` field on the resulting object. When `null`, the `idp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.idp.new](#fn-saml_optionsidpnew) constructor.
+  - `enabled` (`bool`):  When `null`, the `enabled` field will be omitted from the resulting object.
+  - `master_backend_role` (`string`):  When `null`, the `master_backend_role` field will be omitted from the resulting object.
+  - `master_user_name` (`string`):  When `null`, the `master_user_name` field will be omitted from the resulting object.
+  - `roles_key` (`string`):  When `null`, the `roles_key` field will be omitted from the resulting object.
+  - `session_timeout_minutes` (`number`):  When `null`, the `session_timeout_minutes` field will be omitted from the resulting object.
+  - `subject_key` (`string`):  When `null`, the `subject_key` field will be omitted from the resulting object.
+  - `idp` (`list[obj]`):  When `null`, the `idp` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticsearch_domain_saml_options.saml_options.idp.new](#fn-saml_optionsidpnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `saml_options` sub block.
@@ -225,8 +225,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `entity_id` (`string`): Set the `entity_id` field on the resulting object.
-  - `metadata_content` (`string`): Set the `metadata_content` field on the resulting object.
+  - `entity_id` (`string`): 
+  - `metadata_content` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `idp` sub block.
@@ -249,8 +249,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
-  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+  - `delete` (`string`):  When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`):  When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

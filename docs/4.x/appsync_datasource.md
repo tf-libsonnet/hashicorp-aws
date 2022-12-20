@@ -78,16 +78,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `service_role_arn` (`string`): Set the `service_role_arn` field on the resulting resource block. When `null`, the `service_role_arn` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
-  - `dynamodb_config` (`list[obj]`): Set the `dynamodb_config` field on the resulting resource block. When `null`, the `dynamodb_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.new](#fn-dynamodb_confignew) constructor.
-  - `elasticsearch_config` (`list[obj]`): Set the `elasticsearch_config` field on the resulting resource block. When `null`, the `elasticsearch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.elasticsearch_config.new](#fn-elasticsearch_confignew) constructor.
-  - `http_config` (`list[obj]`): Set the `http_config` field on the resulting resource block. When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
-  - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting resource block. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
-  - `relational_database_config` (`list[obj]`): Set the `relational_database_config` field on the resulting resource block. When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
+  - `api_id` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `service_role_arn` (`string`):  When `null`, the `service_role_arn` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `dynamodb_config` (`list[obj]`):  When `null`, the `dynamodb_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.new](#fn-dynamodb_confignew) constructor.
+  - `elasticsearch_config` (`list[obj]`):  When `null`, the `elasticsearch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.elasticsearch_config.new](#fn-elasticsearch_confignew) constructor.
+  - `http_config` (`list[obj]`):  When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
+  - `lambda_config` (`list[obj]`):  When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
+  - `relational_database_config` (`list[obj]`):  When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -111,16 +111,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `api_id` (`string`): Set the `api_id` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `service_role_arn` (`string`): Set the `service_role_arn` field on the resulting object. When `null`, the `service_role_arn` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-  - `dynamodb_config` (`list[obj]`): Set the `dynamodb_config` field on the resulting object. When `null`, the `dynamodb_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.new](#fn-dynamodb_confignew) constructor.
-  - `elasticsearch_config` (`list[obj]`): Set the `elasticsearch_config` field on the resulting object. When `null`, the `elasticsearch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.elasticsearch_config.new](#fn-elasticsearch_confignew) constructor.
-  - `http_config` (`list[obj]`): Set the `http_config` field on the resulting object. When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
-  - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting object. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
-  - `relational_database_config` (`list[obj]`): Set the `relational_database_config` field on the resulting object. When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
+  - `api_id` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `service_role_arn` (`string`):  When `null`, the `service_role_arn` field will be omitted from the resulting object.
+  - `type` (`string`): 
+  - `dynamodb_config` (`list[obj]`):  When `null`, the `dynamodb_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.new](#fn-dynamodb_confignew) constructor.
+  - `elasticsearch_config` (`list[obj]`):  When `null`, the `elasticsearch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.elasticsearch_config.new](#fn-elasticsearch_confignew) constructor.
+  - `http_config` (`list[obj]`):  When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
+  - `lambda_config` (`list[obj]`):  When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
+  - `relational_database_config` (`list[obj]`):  When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `appsync_datasource` resource into the root Terraform configuration.
@@ -408,11 +408,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
-  - `table_name` (`string`): Set the `table_name` field on the resulting object.
-  - `use_caller_credentials` (`bool`): Set the `use_caller_credentials` field on the resulting object. When `null`, the `use_caller_credentials` field will be omitted from the resulting object.
-  - `versioned` (`bool`): Set the `versioned` field on the resulting object. When `null`, the `versioned` field will be omitted from the resulting object.
-  - `delta_sync_config` (`list[obj]`): Set the `delta_sync_config` field on the resulting object. When `null`, the `delta_sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.delta_sync_config.new](#fn-dynamodb_configdelta_sync_confignew) constructor.
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `table_name` (`string`): 
+  - `use_caller_credentials` (`bool`):  When `null`, the `use_caller_credentials` field will be omitted from the resulting object.
+  - `versioned` (`bool`):  When `null`, the `versioned` field will be omitted from the resulting object.
+  - `delta_sync_config` (`list[obj]`):  When `null`, the `delta_sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.delta_sync_config.new](#fn-dynamodb_configdelta_sync_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `dynamodb_config` sub block.
@@ -435,9 +435,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `base_table_ttl` (`number`): Set the `base_table_ttl` field on the resulting object. When `null`, the `base_table_ttl` field will be omitted from the resulting object.
-  - `delta_sync_table_name` (`string`): Set the `delta_sync_table_name` field on the resulting object.
-  - `delta_sync_table_ttl` (`number`): Set the `delta_sync_table_ttl` field on the resulting object. When `null`, the `delta_sync_table_ttl` field will be omitted from the resulting object.
+  - `base_table_ttl` (`number`):  When `null`, the `base_table_ttl` field will be omitted from the resulting object.
+  - `delta_sync_table_name` (`string`): 
+  - `delta_sync_table_ttl` (`number`):  When `null`, the `delta_sync_table_ttl` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `delta_sync_config` sub block.
@@ -460,8 +460,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint` (`string`): Set the `endpoint` field on the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
+  - `endpoint` (`string`): 
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `elasticsearch_config` sub block.
@@ -484,8 +484,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `endpoint` (`string`): Set the `endpoint` field on the resulting object.
-  - `authorization_config` (`list[obj]`): Set the `authorization_config` field on the resulting object. When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.authorization_config.new](#fn-http_configauthorization_confignew) constructor.
+  - `endpoint` (`string`): 
+  - `authorization_config` (`list[obj]`):  When `null`, the `authorization_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.authorization_config.new](#fn-http_configauthorization_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `http_config` sub block.
@@ -508,8 +508,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting object. When `null`, the `authorization_type` field will be omitted from the resulting object.
-  - `aws_iam_config` (`list[obj]`): Set the `aws_iam_config` field on the resulting object. When `null`, the `aws_iam_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.authorization_config.aws_iam_config.new](#fn-http_confighttp_configaws_iam_confignew) constructor.
+  - `authorization_type` (`string`):  When `null`, the `authorization_type` field will be omitted from the resulting object.
+  - `aws_iam_config` (`list[obj]`):  When `null`, the `aws_iam_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.authorization_config.aws_iam_config.new](#fn-http_confighttp_configaws_iam_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `authorization_config` sub block.
@@ -532,8 +532,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `signing_region` (`string`): Set the `signing_region` field on the resulting object. When `null`, the `signing_region` field will be omitted from the resulting object.
-  - `signing_service_name` (`string`): Set the `signing_service_name` field on the resulting object. When `null`, the `signing_service_name` field will be omitted from the resulting object.
+  - `signing_region` (`string`):  When `null`, the `signing_region` field will be omitted from the resulting object.
+  - `signing_service_name` (`string`):  When `null`, the `signing_service_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `aws_iam_config` sub block.
@@ -556,7 +556,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `function_arn` (`string`): Set the `function_arn` field on the resulting object.
+  - `function_arn` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `lambda_config` sub block.
@@ -579,8 +579,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `source_type` (`string`): Set the `source_type` field on the resulting object. When `null`, the `source_type` field will be omitted from the resulting object.
-  - `http_endpoint_config` (`list[obj]`): Set the `http_endpoint_config` field on the resulting object. When `null`, the `http_endpoint_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.http_endpoint_config.new](#fn-relational_database_confighttp_endpoint_confignew) constructor.
+  - `source_type` (`string`):  When `null`, the `source_type` field will be omitted from the resulting object.
+  - `http_endpoint_config` (`list[obj]`):  When `null`, the `http_endpoint_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.http_endpoint_config.new](#fn-relational_database_confighttp_endpoint_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `relational_database_config` sub block.
@@ -603,11 +603,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `aws_secret_store_arn` (`string`): Set the `aws_secret_store_arn` field on the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object. When `null`, the `database_name` field will be omitted from the resulting object.
-  - `db_cluster_identifier` (`string`): Set the `db_cluster_identifier` field on the resulting object.
-  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
-  - `schema` (`string`): Set the `schema` field on the resulting object. When `null`, the `schema` field will be omitted from the resulting object.
+  - `aws_secret_store_arn` (`string`): 
+  - `database_name` (`string`):  When `null`, the `database_name` field will be omitted from the resulting object.
+  - `db_cluster_identifier` (`string`): 
+  - `region` (`string`):  When `null`, the `region` field will be omitted from the resulting object.
+  - `schema` (`string`):  When `null`, the `schema` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `http_endpoint_config` sub block.

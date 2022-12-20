@@ -70,16 +70,16 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `aws_kms_key_arn` (`string`): Set the `aws_kms_key_arn` field on the resulting resource block. When `null`, the `aws_kms_key_arn` field will be omitted from the resulting object.
-  - `input_bucket` (`string`): Set the `input_bucket` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
-  - `output_bucket` (`string`): Set the `output_bucket` field on the resulting resource block. When `null`, the `output_bucket` field will be omitted from the resulting object.
-  - `role` (`string`): Set the `role` field on the resulting resource block.
-  - `content_config` (`list[obj]`): Set the `content_config` field on the resulting resource block. When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-content_confignew) constructor.
-  - `content_config_permissions` (`list[obj]`): Set the `content_config_permissions` field on the resulting resource block. When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-content_config_permissionsnew) constructor.
-  - `notifications` (`list[obj]`): Set the `notifications` field on the resulting resource block. When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-notificationsnew) constructor.
-  - `thumbnail_config` (`list[obj]`): Set the `thumbnail_config` field on the resulting resource block. When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-thumbnail_confignew) constructor.
-  - `thumbnail_config_permissions` (`list[obj]`): Set the `thumbnail_config_permissions` field on the resulting resource block. When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-thumbnail_config_permissionsnew) constructor.
+  - `aws_kms_key_arn` (`string`):  When `null`, the `aws_kms_key_arn` field will be omitted from the resulting object.
+  - `input_bucket` (`string`): 
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `output_bucket` (`string`):  When `null`, the `output_bucket` field will be omitted from the resulting object.
+  - `role` (`string`): 
+  - `content_config` (`list[obj]`):  When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-content_confignew) constructor.
+  - `content_config_permissions` (`list[obj]`):  When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-content_config_permissionsnew) constructor.
+  - `notifications` (`list[obj]`):  When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-notificationsnew) constructor.
+  - `thumbnail_config` (`list[obj]`):  When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-thumbnail_confignew) constructor.
+  - `thumbnail_config_permissions` (`list[obj]`):  When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-thumbnail_config_permissionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -103,16 +103,16 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `aws_kms_key_arn` (`string`): Set the `aws_kms_key_arn` field on the resulting object. When `null`, the `aws_kms_key_arn` field will be omitted from the resulting object.
-  - `input_bucket` (`string`): Set the `input_bucket` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
-  - `output_bucket` (`string`): Set the `output_bucket` field on the resulting object. When `null`, the `output_bucket` field will be omitted from the resulting object.
-  - `role` (`string`): Set the `role` field on the resulting object.
-  - `content_config` (`list[obj]`): Set the `content_config` field on the resulting object. When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-content_confignew) constructor.
-  - `content_config_permissions` (`list[obj]`): Set the `content_config_permissions` field on the resulting object. When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-content_config_permissionsnew) constructor.
-  - `notifications` (`list[obj]`): Set the `notifications` field on the resulting object. When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-notificationsnew) constructor.
-  - `thumbnail_config` (`list[obj]`): Set the `thumbnail_config` field on the resulting object. When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-thumbnail_confignew) constructor.
-  - `thumbnail_config_permissions` (`list[obj]`): Set the `thumbnail_config_permissions` field on the resulting object. When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-thumbnail_config_permissionsnew) constructor.
+  - `aws_kms_key_arn` (`string`):  When `null`, the `aws_kms_key_arn` field will be omitted from the resulting object.
+  - `input_bucket` (`string`): 
+  - `name` (`string`):  When `null`, the `name` field will be omitted from the resulting object.
+  - `output_bucket` (`string`):  When `null`, the `output_bucket` field will be omitted from the resulting object.
+  - `role` (`string`): 
+  - `content_config` (`list[obj]`):  When `null`, the `content_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config.new](#fn-content_confignew) constructor.
+  - `content_config_permissions` (`list[obj]`):  When `null`, the `content_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.content_config_permissions.new](#fn-content_config_permissionsnew) constructor.
+  - `notifications` (`list[obj]`):  When `null`, the `notifications` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.notifications.new](#fn-notificationsnew) constructor.
+  - `thumbnail_config` (`list[obj]`):  When `null`, the `thumbnail_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config.new](#fn-thumbnail_confignew) constructor.
+  - `thumbnail_config_permissions` (`list[obj]`):  When `null`, the `thumbnail_config_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastictranscoder_pipeline.thumbnail_config_permissions.new](#fn-thumbnail_config_permissionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastictranscoder_pipeline` resource into the root Terraform configuration.
@@ -400,8 +400,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object. When `null`, the `bucket` field will be omitted from the resulting object.
-  - `storage_class` (`string`): Set the `storage_class` field on the resulting object. When `null`, the `storage_class` field will be omitted from the resulting object.
+  - `bucket` (`string`):  When `null`, the `bucket` field will be omitted from the resulting object.
+  - `storage_class` (`string`):  When `null`, the `storage_class` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `content_config` sub block.
@@ -424,9 +424,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `access` (`list`): Set the `access` field on the resulting object. When `null`, the `access` field will be omitted from the resulting object.
-  - `grantee` (`string`): Set the `grantee` field on the resulting object. When `null`, the `grantee` field will be omitted from the resulting object.
-  - `grantee_type` (`string`): Set the `grantee_type` field on the resulting object. When `null`, the `grantee_type` field will be omitted from the resulting object.
+  - `access` (`list`):  When `null`, the `access` field will be omitted from the resulting object.
+  - `grantee` (`string`):  When `null`, the `grantee` field will be omitted from the resulting object.
+  - `grantee_type` (`string`):  When `null`, the `grantee_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `content_config_permissions` sub block.
@@ -449,10 +449,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `completed` (`string`): Set the `completed` field on the resulting object. When `null`, the `completed` field will be omitted from the resulting object.
-  - `error_` (`string`): Set the `error_` field on the resulting object. When `null`, the `error_` field will be omitted from the resulting object.
-  - `progressing` (`string`): Set the `progressing` field on the resulting object. When `null`, the `progressing` field will be omitted from the resulting object.
-  - `warning` (`string`): Set the `warning` field on the resulting object. When `null`, the `warning` field will be omitted from the resulting object.
+  - `completed` (`string`):  When `null`, the `completed` field will be omitted from the resulting object.
+  - `error_` (`string`):  When `null`, the `error_` field will be omitted from the resulting object.
+  - `progressing` (`string`):  When `null`, the `progressing` field will be omitted from the resulting object.
+  - `warning` (`string`):  When `null`, the `warning` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `notifications` sub block.
@@ -475,8 +475,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `bucket` (`string`): Set the `bucket` field on the resulting object. When `null`, the `bucket` field will be omitted from the resulting object.
-  - `storage_class` (`string`): Set the `storage_class` field on the resulting object. When `null`, the `storage_class` field will be omitted from the resulting object.
+  - `bucket` (`string`):  When `null`, the `bucket` field will be omitted from the resulting object.
+  - `storage_class` (`string`):  When `null`, the `storage_class` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `thumbnail_config` sub block.
@@ -499,9 +499,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `access` (`list`): Set the `access` field on the resulting object. When `null`, the `access` field will be omitted from the resulting object.
-  - `grantee` (`string`): Set the `grantee` field on the resulting object. When `null`, the `grantee` field will be omitted from the resulting object.
-  - `grantee_type` (`string`): Set the `grantee_type` field on the resulting object. When `null`, the `grantee_type` field will be omitted from the resulting object.
+  - `access` (`list`):  When `null`, the `access` field will be omitted from the resulting object.
+  - `grantee` (`string`):  When `null`, the `grantee` field will be omitted from the resulting object.
+  - `grantee_type` (`string`):  When `null`, the `grantee_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `thumbnail_config_permissions` sub block.

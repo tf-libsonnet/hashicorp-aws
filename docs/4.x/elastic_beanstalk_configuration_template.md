@@ -54,12 +54,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `application` (`string`): Set the `application` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `environment_id` (`string`): Set the `environment_id` field on the resulting resource block. When `null`, the `environment_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `solution_stack_name` (`string`): Set the `solution_stack_name` field on the resulting resource block. When `null`, the `solution_stack_name` field will be omitted from the resulting object.
-  - `setting` (`list[obj]`): Set the `setting` field on the resulting resource block. When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_configuration_template.setting.new](#fn-settingnew) constructor.
+  - `application` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `environment_id` (`string`):  When `null`, the `environment_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `solution_stack_name` (`string`):  When `null`, the `solution_stack_name` field will be omitted from the resulting object.
+  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_configuration_template.setting.new](#fn-settingnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,12 +83,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `application` (`string`): Set the `application` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `environment_id` (`string`): Set the `environment_id` field on the resulting object. When `null`, the `environment_id` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `solution_stack_name` (`string`): Set the `solution_stack_name` field on the resulting object. When `null`, the `solution_stack_name` field will be omitted from the resulting object.
-  - `setting` (`list[obj]`): Set the `setting` field on the resulting object. When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_configuration_template.setting.new](#fn-settingnew) constructor.
+  - `application` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `environment_id` (`string`):  When `null`, the `environment_id` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `solution_stack_name` (`string`):  When `null`, the `solution_stack_name` field will be omitted from the resulting object.
+  - `setting` (`list[obj]`):  When `null`, the `setting` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elastic_beanstalk_configuration_template.setting.new](#fn-settingnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elastic_beanstalk_configuration_template` resource into the root Terraform configuration.
@@ -228,10 +228,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting object.
-  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.
-  - `value` (`string`): Set the `value` field on the resulting object.
+  - `name` (`string`): 
+  - `namespace` (`string`): 
+  - `resource` (`string`):  When `null`, the `resource` field will be omitted from the resulting object.
+  - `value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `setting` sub block.

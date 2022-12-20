@@ -50,11 +50,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
-  - `is_alias` (`bool`): Set the `is_alias` field on the resulting resource block. When `null`, the `is_alias` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `target` (`string`): Set the `target` field on the resulting resource block.
-  - `type` (`string`): Set the `type` field on the resulting resource block.
+  - `domain_name` (`string`): 
+  - `is_alias` (`bool`):  When `null`, the `is_alias` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `target` (`string`): 
+  - `type` (`string`): 
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,11 +78,11 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
-  - `is_alias` (`bool`): Set the `is_alias` field on the resulting object. When `null`, the `is_alias` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `target` (`string`): Set the `target` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `domain_name` (`string`): 
+  - `is_alias` (`bool`):  When `null`, the `is_alias` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `target` (`string`): 
+  - `type` (`string`): 
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_domain_entry` resource into the root Terraform configuration.

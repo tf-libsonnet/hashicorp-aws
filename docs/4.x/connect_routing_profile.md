@@ -59,14 +59,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `default_outbound_queue_id` (`string`): Set the `default_outbound_queue_id` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `media_concurrencies` (`list[obj]`): Set the `media_concurrencies` field on the resulting resource block. When `null`, the `media_concurrencies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.media_concurrencies.new](#fn-media_concurrenciesnew) constructor.
-  - `queue_configs` (`list[obj]`): Set the `queue_configs` field on the resulting resource block. When `null`, the `queue_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.queue_configs.new](#fn-queue_configsnew) constructor.
+  - `default_outbound_queue_id` (`string`): 
+  - `description` (`string`): 
+  - `instance_id` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `media_concurrencies` (`list[obj]`):  When `null`, the `media_concurrencies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.media_concurrencies.new](#fn-media_concurrenciesnew) constructor.
+  - `queue_configs` (`list[obj]`):  When `null`, the `queue_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.queue_configs.new](#fn-queue_configsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -90,14 +90,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `default_outbound_queue_id` (`string`): Set the `default_outbound_queue_id` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `media_concurrencies` (`list[obj]`): Set the `media_concurrencies` field on the resulting object. When `null`, the `media_concurrencies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.media_concurrencies.new](#fn-media_concurrenciesnew) constructor.
-  - `queue_configs` (`list[obj]`): Set the `queue_configs` field on the resulting object. When `null`, the `queue_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.queue_configs.new](#fn-queue_configsnew) constructor.
+  - `default_outbound_queue_id` (`string`): 
+  - `description` (`string`): 
+  - `instance_id` (`string`): 
+  - `name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `media_concurrencies` (`list[obj]`):  When `null`, the `media_concurrencies` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.media_concurrencies.new](#fn-media_concurrenciesnew) constructor.
+  - `queue_configs` (`list[obj]`):  When `null`, the `queue_configs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.connect_routing_profile.queue_configs.new](#fn-queue_configsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `connect_routing_profile` resource into the root Terraform configuration.
@@ -290,8 +290,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `channel` (`string`): Set the `channel` field on the resulting object.
-  - `concurrency` (`number`): Set the `concurrency` field on the resulting object.
+  - `channel` (`string`): 
+  - `concurrency` (`number`): 
 
 **Returns**:
   - An attribute object that represents the `media_concurrencies` sub block.
@@ -314,10 +314,10 @@ Terraform sub block.
 
 
 **Args**:
-  - `channel` (`string`): Set the `channel` field on the resulting object.
-  - `delay` (`number`): Set the `delay` field on the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object.
-  - `queue_id` (`string`): Set the `queue_id` field on the resulting object.
+  - `channel` (`string`): 
+  - `delay` (`number`): 
+  - `priority` (`number`): 
+  - `queue_id` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `queue_configs` sub block.

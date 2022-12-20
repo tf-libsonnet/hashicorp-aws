@@ -58,14 +58,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `action` (`string`): Set the `action` field on the resulting resource block.
-  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `detector_id` (`string`): Set the `detector_id` field on the resulting resource block.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `rank` (`number`): Set the `rank` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `finding_criteria` (`list[obj]`): Set the `finding_criteria` field on the resulting resource block. When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
+  - `action` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `detector_id` (`string`): 
+  - `name` (`string`): 
+  - `rank` (`number`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,14 +89,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `action` (`string`): Set the `action` field on the resulting object.
-  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `detector_id` (`string`): Set the `detector_id` field on the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `rank` (`number`): Set the `rank` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `finding_criteria` (`list[obj]`): Set the `finding_criteria` field on the resulting object. When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
+  - `action` (`string`): 
+  - `description` (`string`):  When `null`, the `description` field will be omitted from the resulting object.
+  - `detector_id` (`string`): 
+  - `name` (`string`): 
+  - `rank` (`number`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `finding_criteria` (`list[obj]`):  When `null`, the `finding_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.new](#fn-finding_criterianew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `guardduty_filter` resource into the root Terraform configuration.
@@ -268,7 +268,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `criterion` (`list[obj]`): Set the `criterion` field on the resulting object. When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.criterion.new](#fn-finding_criteriacriterionnew) constructor.
+  - `criterion` (`list[obj]`):  When `null`, the `criterion` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_filter.finding_criteria.criterion.new](#fn-finding_criteriacriterionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `finding_criteria` sub block.
@@ -291,13 +291,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `equals` (`list`): Set the `equals` field on the resulting object. When `null`, the `equals` field will be omitted from the resulting object.
-  - `field` (`string`): Set the `field` field on the resulting object.
-  - `greater_than` (`string`): Set the `greater_than` field on the resulting object. When `null`, the `greater_than` field will be omitted from the resulting object.
-  - `greater_than_or_equal` (`string`): Set the `greater_than_or_equal` field on the resulting object. When `null`, the `greater_than_or_equal` field will be omitted from the resulting object.
-  - `less_than` (`string`): Set the `less_than` field on the resulting object. When `null`, the `less_than` field will be omitted from the resulting object.
-  - `less_than_or_equal` (`string`): Set the `less_than_or_equal` field on the resulting object. When `null`, the `less_than_or_equal` field will be omitted from the resulting object.
-  - `not_equals` (`list`): Set the `not_equals` field on the resulting object. When `null`, the `not_equals` field will be omitted from the resulting object.
+  - `equals` (`list`):  When `null`, the `equals` field will be omitted from the resulting object.
+  - `field` (`string`): 
+  - `greater_than` (`string`):  When `null`, the `greater_than` field will be omitted from the resulting object.
+  - `greater_than_or_equal` (`string`):  When `null`, the `greater_than_or_equal` field will be omitted from the resulting object.
+  - `less_than` (`string`):  When `null`, the `less_than` field will be omitted from the resulting object.
+  - `less_than_or_equal` (`string`):  When `null`, the `less_than_or_equal` field will be omitted from the resulting object.
+  - `not_equals` (`list`):  When `null`, the `not_equals` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `criterion` sub block.

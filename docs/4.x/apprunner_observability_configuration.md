@@ -52,10 +52,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `observability_configuration_name` (`string`): Set the `observability_configuration_name` field on the resulting resource block.
-  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `trace_configuration` (`list[obj]`): Set the `trace_configuration` field on the resulting resource block. When `null`, the `trace_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_observability_configuration.trace_configuration.new](#fn-trace_configurationnew) constructor.
+  - `observability_configuration_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `trace_configuration` (`list[obj]`):  When `null`, the `trace_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_observability_configuration.trace_configuration.new](#fn-trace_configurationnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,10 +79,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `observability_configuration_name` (`string`): Set the `observability_configuration_name` field on the resulting object.
-  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `trace_configuration` (`list[obj]`): Set the `trace_configuration` field on the resulting object. When `null`, the `trace_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_observability_configuration.trace_configuration.new](#fn-trace_configurationnew) constructor.
+  - `observability_configuration_name` (`string`): 
+  - `tags` (`obj`):  When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`):  When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `trace_configuration` (`list[obj]`):  When `null`, the `trace_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_observability_configuration.trace_configuration.new](#fn-trace_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `apprunner_observability_configuration` resource into the root Terraform configuration.
@@ -190,7 +190,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `vendor` (`string`): Set the `vendor` field on the resulting object. When `null`, the `vendor` field will be omitted from the resulting object.
+  - `vendor` (`string`):  When `null`, the `vendor` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `trace_configuration` sub block.

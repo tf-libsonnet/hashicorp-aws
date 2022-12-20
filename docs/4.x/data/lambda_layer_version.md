@@ -49,10 +49,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `compatible_architecture` (`string`): Set the `compatible_architecture` field on the resulting data source block. When `null`, the `compatible_architecture` field will be omitted from the resulting object.
-  - `compatible_runtime` (`string`): Set the `compatible_runtime` field on the resulting data source block. When `null`, the `compatible_runtime` field will be omitted from the resulting object.
-  - `layer_name` (`string`): Set the `layer_name` field on the resulting data source block.
-  - `version` (`number`): Set the `version` field on the resulting data source block. When `null`, the `version` field will be omitted from the resulting object.
+  - `compatible_architecture` (`string`):  When `null`, the `compatible_architecture` field will be omitted from the resulting object.
+  - `compatible_runtime` (`string`):  When `null`, the `compatible_runtime` field will be omitted from the resulting object.
+  - `layer_name` (`string`): 
+  - `version` (`number`):  When `null`, the `version` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -76,10 +76,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `compatible_architecture` (`string`): Set the `compatible_architecture` field on the resulting object. When `null`, the `compatible_architecture` field will be omitted from the resulting object.
-  - `compatible_runtime` (`string`): Set the `compatible_runtime` field on the resulting object. When `null`, the `compatible_runtime` field will be omitted from the resulting object.
-  - `layer_name` (`string`): Set the `layer_name` field on the resulting object.
-  - `version` (`number`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `compatible_architecture` (`string`):  When `null`, the `compatible_architecture` field will be omitted from the resulting object.
+  - `compatible_runtime` (`string`):  When `null`, the `compatible_runtime` field will be omitted from the resulting object.
+  - `layer_name` (`string`): 
+  - `version` (`number`):  When `null`, the `version` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `lambda_layer_version` data source into the root Terraform configuration.

@@ -51,9 +51,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `analyzer_name` (`string`): Set the `analyzer_name` field on the resulting resource block.
-  - `rule_name` (`string`): Set the `rule_name` field on the resulting resource block.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting resource block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-filternew) constructor.
+  - `analyzer_name` (`string`): 
+  - `rule_name` (`string`): 
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -77,9 +77,9 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `analyzer_name` (`string`): Set the `analyzer_name` field on the resulting object.
-  - `rule_name` (`string`): Set the `rule_name` field on the resulting object.
-  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-filternew) constructor.
+  - `analyzer_name` (`string`): 
+  - `rule_name` (`string`): 
+  - `filter` (`list[obj]`):  When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.accessanalyzer_archive_rule.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `accessanalyzer_archive_rule` resource into the root Terraform configuration.
@@ -171,11 +171,11 @@ Terraform sub block.
 
 
 **Args**:
-  - `contains` (`list`): Set the `contains` field on the resulting object. When `null`, the `contains` field will be omitted from the resulting object.
-  - `criteria` (`string`): Set the `criteria` field on the resulting object.
-  - `eq` (`list`): Set the `eq` field on the resulting object. When `null`, the `eq` field will be omitted from the resulting object.
-  - `exists` (`string`): Set the `exists` field on the resulting object. When `null`, the `exists` field will be omitted from the resulting object.
-  - `neq` (`list`): Set the `neq` field on the resulting object. When `null`, the `neq` field will be omitted from the resulting object.
+  - `contains` (`list`):  When `null`, the `contains` field will be omitted from the resulting object.
+  - `criteria` (`string`): 
+  - `eq` (`list`):  When `null`, the `eq` field will be omitted from the resulting object.
+  - `exists` (`string`):  When `null`, the `exists` field will be omitted from the resulting object.
+  - `neq` (`list`):  When `null`, the `neq` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.

@@ -54,12 +54,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `delivery_s3_bucket` (`string`): Set the `delivery_s3_bucket` field on the resulting resource block. When `null`, the `delivery_s3_bucket` field will be omitted from the resulting object.
-  - `delivery_s3_key_prefix` (`string`): Set the `delivery_s3_key_prefix` field on the resulting resource block. When `null`, the `delivery_s3_key_prefix` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `template_body` (`string`): Set the `template_body` field on the resulting resource block. When `null`, the `template_body` field will be omitted from the resulting object.
-  - `template_s3_uri` (`string`): Set the `template_s3_uri` field on the resulting resource block. When `null`, the `template_s3_uri` field will be omitted from the resulting object.
-  - `input_parameter` (`list[obj]`): Set the `input_parameter` field on the resulting resource block. When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_conformance_pack.input_parameter.new](#fn-input_parameternew) constructor.
+  - `delivery_s3_bucket` (`string`):  When `null`, the `delivery_s3_bucket` field will be omitted from the resulting object.
+  - `delivery_s3_key_prefix` (`string`):  When `null`, the `delivery_s3_key_prefix` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `template_body` (`string`):  When `null`, the `template_body` field will be omitted from the resulting object.
+  - `template_s3_uri` (`string`):  When `null`, the `template_s3_uri` field will be omitted from the resulting object.
+  - `input_parameter` (`list[obj]`):  When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_conformance_pack.input_parameter.new](#fn-input_parameternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -83,12 +83,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `delivery_s3_bucket` (`string`): Set the `delivery_s3_bucket` field on the resulting object. When `null`, the `delivery_s3_bucket` field will be omitted from the resulting object.
-  - `delivery_s3_key_prefix` (`string`): Set the `delivery_s3_key_prefix` field on the resulting object. When `null`, the `delivery_s3_key_prefix` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object.
-  - `template_body` (`string`): Set the `template_body` field on the resulting object. When `null`, the `template_body` field will be omitted from the resulting object.
-  - `template_s3_uri` (`string`): Set the `template_s3_uri` field on the resulting object. When `null`, the `template_s3_uri` field will be omitted from the resulting object.
-  - `input_parameter` (`list[obj]`): Set the `input_parameter` field on the resulting object. When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_conformance_pack.input_parameter.new](#fn-input_parameternew) constructor.
+  - `delivery_s3_bucket` (`string`):  When `null`, the `delivery_s3_bucket` field will be omitted from the resulting object.
+  - `delivery_s3_key_prefix` (`string`):  When `null`, the `delivery_s3_key_prefix` field will be omitted from the resulting object.
+  - `name` (`string`): 
+  - `template_body` (`string`):  When `null`, the `template_body` field will be omitted from the resulting object.
+  - `template_s3_uri` (`string`):  When `null`, the `template_s3_uri` field will be omitted from the resulting object.
+  - `input_parameter` (`list[obj]`):  When `null`, the `input_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_conformance_pack.input_parameter.new](#fn-input_parameternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_conformance_pack` resource into the root Terraform configuration.
@@ -228,8 +228,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `parameter_name` (`string`): Set the `parameter_name` field on the resulting object.
-  - `parameter_value` (`string`): Set the `parameter_value` field on the resulting object.
+  - `parameter_name` (`string`): 
+  - `parameter_value` (`string`): 
 
 **Returns**:
   - An attribute object that represents the `input_parameter` sub block.

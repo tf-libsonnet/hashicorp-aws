@@ -52,10 +52,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `method_path` (`string`): Set the `method_path` field on the resulting resource block.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting resource block.
-  - `stage_name` (`string`): Set the `stage_name` field on the resulting resource block.
-  - `settings` (`list[obj]`): Set the `settings` field on the resulting resource block. When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_method_settings.settings.new](#fn-settingsnew) constructor.
+  - `method_path` (`string`): 
+  - `rest_api_id` (`string`): 
+  - `stage_name` (`string`): 
+  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_method_settings.settings.new](#fn-settingsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -79,10 +79,10 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `method_path` (`string`): Set the `method_path` field on the resulting object.
-  - `rest_api_id` (`string`): Set the `rest_api_id` field on the resulting object.
-  - `stage_name` (`string`): Set the `stage_name` field on the resulting object.
-  - `settings` (`list[obj]`): Set the `settings` field on the resulting object. When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_method_settings.settings.new](#fn-settingsnew) constructor.
+  - `method_path` (`string`): 
+  - `rest_api_id` (`string`): 
+  - `stage_name` (`string`): 
+  - `settings` (`list[obj]`):  When `null`, the `settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.api_gateway_method_settings.settings.new](#fn-settingsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_method_settings` resource into the root Terraform configuration.
@@ -190,16 +190,16 @@ Terraform sub block.
 
 
 **Args**:
-  - `cache_data_encrypted` (`bool`): Set the `cache_data_encrypted` field on the resulting object. When `null`, the `cache_data_encrypted` field will be omitted from the resulting object.
-  - `cache_ttl_in_seconds` (`number`): Set the `cache_ttl_in_seconds` field on the resulting object. When `null`, the `cache_ttl_in_seconds` field will be omitted from the resulting object.
-  - `caching_enabled` (`bool`): Set the `caching_enabled` field on the resulting object. When `null`, the `caching_enabled` field will be omitted from the resulting object.
-  - `data_trace_enabled` (`bool`): Set the `data_trace_enabled` field on the resulting object. When `null`, the `data_trace_enabled` field will be omitted from the resulting object.
-  - `logging_level` (`string`): Set the `logging_level` field on the resulting object. When `null`, the `logging_level` field will be omitted from the resulting object.
-  - `metrics_enabled` (`bool`): Set the `metrics_enabled` field on the resulting object. When `null`, the `metrics_enabled` field will be omitted from the resulting object.
-  - `require_authorization_for_cache_control` (`bool`): Set the `require_authorization_for_cache_control` field on the resulting object. When `null`, the `require_authorization_for_cache_control` field will be omitted from the resulting object.
-  - `throttling_burst_limit` (`number`): Set the `throttling_burst_limit` field on the resulting object. When `null`, the `throttling_burst_limit` field will be omitted from the resulting object.
-  - `throttling_rate_limit` (`number`): Set the `throttling_rate_limit` field on the resulting object. When `null`, the `throttling_rate_limit` field will be omitted from the resulting object.
-  - `unauthorized_cache_control_header_strategy` (`string`): Set the `unauthorized_cache_control_header_strategy` field on the resulting object. When `null`, the `unauthorized_cache_control_header_strategy` field will be omitted from the resulting object.
+  - `cache_data_encrypted` (`bool`):  When `null`, the `cache_data_encrypted` field will be omitted from the resulting object.
+  - `cache_ttl_in_seconds` (`number`):  When `null`, the `cache_ttl_in_seconds` field will be omitted from the resulting object.
+  - `caching_enabled` (`bool`):  When `null`, the `caching_enabled` field will be omitted from the resulting object.
+  - `data_trace_enabled` (`bool`):  When `null`, the `data_trace_enabled` field will be omitted from the resulting object.
+  - `logging_level` (`string`):  When `null`, the `logging_level` field will be omitted from the resulting object.
+  - `metrics_enabled` (`bool`):  When `null`, the `metrics_enabled` field will be omitted from the resulting object.
+  - `require_authorization_for_cache_control` (`bool`):  When `null`, the `require_authorization_for_cache_control` field will be omitted from the resulting object.
+  - `throttling_burst_limit` (`number`):  When `null`, the `throttling_burst_limit` field will be omitted from the resulting object.
+  - `throttling_rate_limit` (`number`):  When `null`, the `throttling_rate_limit` field will be omitted from the resulting object.
+  - `unauthorized_cache_control_header_strategy` (`string`):  When `null`, the `unauthorized_cache_control_header_strategy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `settings` sub block.
