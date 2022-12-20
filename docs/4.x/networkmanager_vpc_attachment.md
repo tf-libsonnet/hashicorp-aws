@@ -270,7 +270,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `ipv6_support` (`bool`): Set the `ipv6_support` field on the resulting object.
+  - `appliance_mode_support` (`bool`): Set the `appliance_mode_support` field on the resulting object. When `null`, the `appliance_mode_support` field will be omitted from the resulting object.
+  - `ipv6_support` (`bool`): Set the `ipv6_support` field on the resulting object. When `null`, the `ipv6_support` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `options` sub block.

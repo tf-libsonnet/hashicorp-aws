@@ -16,9 +16,12 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withBandwidth()`](#fn-withbandwidth)
+* [`fn withEncryptionMode()`](#fn-withencryptionmode)
 * [`fn withLocation()`](#fn-withlocation)
 * [`fn withName()`](#fn-withname)
 * [`fn withProviderName()`](#fn-withprovidername)
+* [`fn withRequestMacsec()`](#fn-withrequestmacsec)
+* [`fn withSkipDestroy()`](#fn-withskipdestroy)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 
@@ -52,9 +55,12 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `bandwidth` (`string`): Set the `bandwidth` field on the resulting resource block.
+  - `encryption_mode` (`string`): Set the `encryption_mode` field on the resulting resource block. When `null`, the `encryption_mode` field will be omitted from the resulting object.
   - `location` (`string`): Set the `location` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `provider_name` (`string`): Set the `provider_name` field on the resulting resource block. When `null`, the `provider_name` field will be omitted from the resulting object.
+  - `request_macsec` (`bool`): Set the `request_macsec` field on the resulting resource block. When `null`, the `request_macsec` field will be omitted from the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting resource block. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -81,9 +87,12 @@ injecting into a complete block.
 
 **Args**:
   - `bandwidth` (`string`): Set the `bandwidth` field on the resulting object.
+  - `encryption_mode` (`string`): Set the `encryption_mode` field on the resulting object. When `null`, the `encryption_mode` field will be omitted from the resulting object.
   - `location` (`string`): Set the `location` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `provider_name` (`string`): Set the `provider_name` field on the resulting object. When `null`, the `provider_name` field will be omitted from the resulting object.
+  - `request_macsec` (`bool`): Set the `request_macsec` field on the resulting object. When `null`, the `request_macsec` field will be omitted from the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting object. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -105,6 +114,22 @@ Terraform resource block to set or update the bandwidth field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `bandwidth` field.
+
+
+### fn withEncryptionMode
+
+```ts
+withEncryptionMode()
+```
+
+`aws.string.withEncryptionMode` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the encryption_mode field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `encryption_mode` field.
 
 
 ### fn withLocation
@@ -153,6 +178,38 @@ Terraform resource block to set or update the provider_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `provider_name` field.
+
+
+### fn withRequestMacsec
+
+```ts
+withRequestMacsec()
+```
+
+`aws.bool.withRequestMacsec` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the request_macsec field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `request_macsec` field.
+
+
+### fn withSkipDestroy
+
+```ts
+withSkipDestroy()
+```
+
+`aws.bool.withSkipDestroy` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the skip_destroy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `skip_destroy` field.
 
 
 ### fn withTags

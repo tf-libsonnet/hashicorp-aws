@@ -30,6 +30,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-encryption_configurationnew)
 * [`obj rule_group`](#obj-rule_group)
   * [`fn new()`](#fn-rule_groupnew)
+  * [`obj rule_group.reference_sets`](#obj-rule_groupreference_sets)
+    * [`fn new()`](#fn-rule_groupreference_setsnew)
+    * [`obj rule_group.reference_sets.ip_set_references`](#obj-rule_groupreference_setsip_set_references)
+      * [`fn new()`](#fn-rule_groupreference_setsip_set_referencesnew)
+      * [`obj rule_group.reference_sets.ip_set_references.ip_set_reference`](#obj-rule_groupreference_setsip_set_referencesip_set_reference)
+        * [`fn new()`](#fn-rule_groupreference_setsip_set_referencesip_set_referencenew)
   * [`obj rule_group.rule_variables`](#obj-rule_grouprule_variables)
     * [`fn new()`](#fn-rule_grouprule_variablesnew)
     * [`obj rule_group.rule_variables.ip_sets`](#obj-rule_grouprule_variablesip_sets)
@@ -381,12 +387,83 @@ Terraform sub block.
 
 
 **Args**:
+  - `reference_sets` (`list[obj]`): Set the `reference_sets` field on the resulting object. When `null`, the `reference_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.reference_sets.new](#fn-rule_groupreference_setsnew) constructor.
   - `rule_variables` (`list[obj]`): Set the `rule_variables` field on the resulting object. When `null`, the `rule_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.new](#fn-rule_grouprule_variablesnew) constructor.
   - `rules_source` (`list[obj]`): Set the `rules_source` field on the resulting object. When `null`, the `rules_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.new](#fn-rule_grouprules_sourcenew) constructor.
   - `stateful_rule_options` (`list[obj]`): Set the `stateful_rule_options` field on the resulting object. When `null`, the `stateful_rule_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.stateful_rule_options.new](#fn-rule_groupstateful_rule_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `rule_group` sub block.
+
+
+## obj rule_group.reference_sets
+
+
+
+### fn rule_group.reference_sets.new
+
+```ts
+new()
+```
+
+
+`aws.networkfirewall_rule_group.rule_group.reference_sets.new` constructs a new object with attributes and blocks configured for the `reference_sets`
+Terraform sub block.
+
+
+
+**Args**:
+  - `ip_set_references` (`list[obj]`): Set the `ip_set_references` field on the resulting object. When `null`, the `ip_set_references` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.new](#fn-rule_grouprule_groupip_set_referencesnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `reference_sets` sub block.
+
+
+## obj rule_group.reference_sets.ip_set_references
+
+
+
+### fn rule_group.reference_sets.ip_set_references.new
+
+```ts
+new()
+```
+
+
+`aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.new` constructs a new object with attributes and blocks configured for the `ip_set_references`
+Terraform sub block.
+
+
+
+**Args**:
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `ip_set_reference` (`list[obj]`): Set the `ip_set_reference` field on the resulting object. When `null`, the `ip_set_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.ip_set_reference.new](#fn-rule_grouprule_groupreference_setsip_set_referencenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `ip_set_references` sub block.
+
+
+## obj rule_group.reference_sets.ip_set_references.ip_set_reference
+
+
+
+### fn rule_group.reference_sets.ip_set_references.ip_set_reference.new
+
+```ts
+new()
+```
+
+
+`aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.ip_set_reference.new` constructs a new object with attributes and blocks configured for the `ip_set_reference`
+Terraform sub block.
+
+
+
+**Args**:
+  - `reference_arn` (`string`): Set the `reference_arn` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `ip_set_reference` sub block.
 
 
 ## obj rule_group.rule_variables

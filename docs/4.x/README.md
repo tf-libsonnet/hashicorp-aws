@@ -358,6 +358,7 @@ project.
 * [dx_hosted_transit_virtual_interface](dx_hosted_transit_virtual_interface.md)
 * [dx_hosted_transit_virtual_interface_accepter](dx_hosted_transit_virtual_interface_accepter.md)
 * [dx_lag](dx_lag.md)
+* [dx_macsec_key_association](dx_macsec_key_association.md)
 * [dx_private_virtual_interface](dx_private_virtual_interface.md)
 * [dx_public_virtual_interface](dx_public_virtual_interface.md)
 * [dx_transit_virtual_interface](dx_transit_virtual_interface.md)
