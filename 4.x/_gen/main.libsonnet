@@ -348,6 +348,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   dx_hosted_transit_virtual_interface: (import 'resources/dx_hosted_transit_virtual_interface.libsonnet'),
   dx_hosted_transit_virtual_interface_accepter: (import 'resources/dx_hosted_transit_virtual_interface_accepter.libsonnet'),
   dx_lag: (import 'resources/dx_lag.libsonnet'),
+  dx_macsec_key_association: (import 'resources/dx_macsec_key_association.libsonnet'),
   dx_private_virtual_interface: (import 'resources/dx_private_virtual_interface.libsonnet'),
   dx_public_virtual_interface: (import 'resources/dx_public_virtual_interface.libsonnet'),
   dx_transit_virtual_interface: (import 'resources/dx_transit_virtual_interface.libsonnet'),

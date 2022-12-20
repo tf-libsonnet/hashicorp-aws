@@ -64,16 +64,44 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     type: type,
   }),
   rule_group:: {
-    '#new':: d.fn(help='\n`aws.networkfirewall_rule_group.rule_group.new` constructs a new object with attributes and blocks configured for the `rule_group`\nTerraform sub block.\n\n\n\n**Args**:\n  - `rule_variables` (`list[obj]`): Set the `rule_variables` field on the resulting object. When `null`, the `rule_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.new](#fn-rule_grouprule_variablesnew) constructor.\n  - `rules_source` (`list[obj]`): Set the `rules_source` field on the resulting object. When `null`, the `rules_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.new](#fn-rule_grouprules_sourcenew) constructor.\n  - `stateful_rule_options` (`list[obj]`): Set the `stateful_rule_options` field on the resulting object. When `null`, the `stateful_rule_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.stateful_rule_options.new](#fn-rule_groupstateful_rule_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule_group` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.networkfirewall_rule_group.rule_group.new` constructs a new object with attributes and blocks configured for the `rule_group`\nTerraform sub block.\n\n\n\n**Args**:\n  - `reference_sets` (`list[obj]`): Set the `reference_sets` field on the resulting object. When `null`, the `reference_sets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.reference_sets.new](#fn-rule_groupreference_setsnew) constructor.\n  - `rule_variables` (`list[obj]`): Set the `rule_variables` field on the resulting object. When `null`, the `rule_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rule_variables.new](#fn-rule_grouprule_variablesnew) constructor.\n  - `rules_source` (`list[obj]`): Set the `rules_source` field on the resulting object. When `null`, the `rules_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.rules_source.new](#fn-rule_grouprules_sourcenew) constructor.\n  - `stateful_rule_options` (`list[obj]`): Set the `stateful_rule_options` field on the resulting object. When `null`, the `stateful_rule_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.stateful_rule_options.new](#fn-rule_groupstateful_rule_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule_group` sub block.\n', args=[]),
     new(
+      reference_sets=null,
       rule_variables=null,
       rules_source=null,
       stateful_rule_options=null
     ):: std.prune(a={
+      reference_sets: reference_sets,
       rule_variables: rule_variables,
       rules_source: rules_source,
       stateful_rule_options: stateful_rule_options,
     }),
+    reference_sets:: {
+      ip_set_references:: {
+        ip_set_reference:: {
+          '#new':: d.fn(help='\n`aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.ip_set_reference.new` constructs a new object with attributes and blocks configured for the `ip_set_reference`\nTerraform sub block.\n\n\n\n**Args**:\n  - `reference_arn` (`string`): Set the `reference_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `ip_set_reference` sub block.\n', args=[]),
+          new(
+            reference_arn
+          ):: std.prune(a={
+            reference_arn: reference_arn,
+          }),
+        },
+        '#new':: d.fn(help='\n`aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.new` constructs a new object with attributes and blocks configured for the `ip_set_references`\nTerraform sub block.\n\n\n\n**Args**:\n  - `key` (`string`): Set the `key` field on the resulting object.\n  - `ip_set_reference` (`list[obj]`): Set the `ip_set_reference` field on the resulting object. When `null`, the `ip_set_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.ip_set_reference.new](#fn-rule_grouprule_groupreference_setsip_set_referencenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `ip_set_references` sub block.\n', args=[]),
+        new(
+          key,
+          ip_set_reference=null
+        ):: std.prune(a={
+          ip_set_reference: ip_set_reference,
+          key: key,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.networkfirewall_rule_group.rule_group.reference_sets.new` constructs a new object with attributes and blocks configured for the `reference_sets`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ip_set_references` (`list[obj]`): Set the `ip_set_references` field on the resulting object. When `null`, the `ip_set_references` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_rule_group.rule_group.reference_sets.ip_set_references.new](#fn-rule_grouprule_groupip_set_referencesnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `reference_sets` sub block.\n', args=[]),
+      new(
+        ip_set_references=null
+      ):: std.prune(a={
+        ip_set_references: ip_set_references,
+      }),
+    },
     rule_variables:: {
       ip_sets:: {
         ip_set:: {

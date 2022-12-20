@@ -530,6 +530,7 @@ Terraform sub block.
   - `nimble` (`string`): Use this to override the default service endpoint URL When `null`, the `nimble` field will be omitted from the resulting object.
   - `nimblestudio` (`string`): Use this to override the default service endpoint URL When `null`, the `nimblestudio` field will be omitted from the resulting object.
   - `opensearch` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearch` field will be omitted from the resulting object.
+  - `opensearchserverless` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchserverless` field will be omitted from the resulting object.
   - `opensearchservice` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchservice` field will be omitted from the resulting object.
   - `opsworks` (`string`): Use this to override the default service endpoint URL When `null`, the `opsworks` field will be omitted from the resulting object.
   - `opsworkscm` (`string`): Use this to override the default service endpoint URL When `null`, the `opsworkscm` field will be omitted from the resulting object.

@@ -46,10 +46,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     vpc_arn: vpc_arn,
   }),
   options:: {
-    '#new':: d.fn(help='\n`aws.networkmanager_vpc_attachment.options.new` constructs a new object with attributes and blocks configured for the `options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ipv6_support` (`bool`): Set the `ipv6_support` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `options` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.networkmanager_vpc_attachment.options.new` constructs a new object with attributes and blocks configured for the `options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `appliance_mode_support` (`bool`): Set the `appliance_mode_support` field on the resulting object. When `null`, the `appliance_mode_support` field will be omitted from the resulting object.\n  - `ipv6_support` (`bool`): Set the `ipv6_support` field on the resulting object. When `null`, the `ipv6_support` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `options` sub block.\n', args=[]),
     new(
-      ipv6_support
+      appliance_mode_support=null,
+      ipv6_support=null
     ):: std.prune(a={
+      appliance_mode_support: appliance_mode_support,
       ipv6_support: ipv6_support,
     }),
   },
