@@ -16,6 +16,8 @@
 This repository contains [Jsonnet](https://jsonnet.org/) functions for generating resources and data sources for the
 [hashicorp/aws](https://registry.terraform.io/providers/hashicorp/aws) Terraform provider.
 
+Learn more about `tf.libsonnet` [here](https://docs.tflibsonnet.com).
+
 > **IMPORTANT**
 >
 > This library is generated using [tf-libsonnet/libgenerator](https://github.com/tf-libsonnet/libgenerator). If you find
