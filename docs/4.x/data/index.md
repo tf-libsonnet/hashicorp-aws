@@ -367,7 +367,6 @@ permalink: /data/
 * [s3_bucket_policy](s3_bucket_policy.md)
 * [s3_object](s3_object.md)
 * [s3_objects](s3_objects.md)
-* [s3control_multi_region_access_point](s3control_multi_region_access_point.md)
 * [sagemaker_prebuilt_ecr_image](sagemaker_prebuilt_ecr_image.md)
 * [secretsmanager_random_password](secretsmanager_random_password.md)
 * [secretsmanager_secret](secretsmanager_secret.md)

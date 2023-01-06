@@ -17,7 +17,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAccountId()`](#fn-withaccountid)
 * [`fn withBucket()`](#fn-withbucket)
-* [`fn withBucketAccountId()`](#fn-withbucketaccountid)
 * [`fn withName()`](#fn-withname)
 * [`fn withPolicy()`](#fn-withpolicy)
 * [`fn withPublicAccessBlockConfiguration()`](#fn-withpublicaccessblockconfiguration)
@@ -60,7 +59,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
   - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
-  - `bucket_account_id` (`string`): Set the `bucket_account_id` field on the resulting resource block. When `null`, the `bucket_account_id` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
   - `public_access_block_configuration` (`list[obj]`): Set the `public_access_block_configuration` field on the resulting resource block. When `null`, the `public_access_block_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.public_access_block_configuration.new](#fn-public_access_block_configurationnew) constructor.
@@ -90,7 +88,6 @@ injecting into a complete block.
 **Args**:
   - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
   - `bucket` (`string`): Set the `bucket` field on the resulting object.
-  - `bucket_account_id` (`string`): Set the `bucket_account_id` field on the resulting object. When `null`, the `bucket_account_id` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
   - `public_access_block_configuration` (`list[obj]`): Set the `public_access_block_configuration` field on the resulting object. When `null`, the `public_access_block_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_access_point.public_access_block_configuration.new](#fn-public_access_block_configurationnew) constructor.
@@ -130,22 +127,6 @@ Terraform resource block to set or update the bucket field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `bucket` field.
-
-
-### fn withBucketAccountId
-
-```ts
-withBucketAccountId()
-```
-
-`aws.string.withBucketAccountId` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the bucket_account_id field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `bucket_account_id` field.
 
 
 ### fn withName

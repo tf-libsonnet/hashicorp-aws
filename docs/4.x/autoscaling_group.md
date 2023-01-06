@@ -21,7 +21,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDefaultCooldown()`](#fn-withdefaultcooldown)
 * [`fn withDefaultInstanceWarmup()`](#fn-withdefaultinstancewarmup)
 * [`fn withDesiredCapacity()`](#fn-withdesiredcapacity)
-* [`fn withDesiredCapacityType()`](#fn-withdesiredcapacitytype)
 * [`fn withEnabledMetrics()`](#fn-withenabledmetrics)
 * [`fn withForceDelete()`](#fn-withforcedelete)
 * [`fn withForceDeleteWarmPool()`](#fn-withforcedeletewarmpool)
@@ -142,7 +141,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `default_cooldown` (`number`): Set the `default_cooldown` field on the resulting resource block. When `null`, the `default_cooldown` field will be omitted from the resulting object.
   - `default_instance_warmup` (`number`): Set the `default_instance_warmup` field on the resulting resource block. When `null`, the `default_instance_warmup` field will be omitted from the resulting object.
   - `desired_capacity` (`number`): Set the `desired_capacity` field on the resulting resource block. When `null`, the `desired_capacity` field will be omitted from the resulting object.
-  - `desired_capacity_type` (`string`): Set the `desired_capacity_type` field on the resulting resource block. When `null`, the `desired_capacity_type` field will be omitted from the resulting object.
   - `enabled_metrics` (`list`): Set the `enabled_metrics` field on the resulting resource block. When `null`, the `enabled_metrics` field will be omitted from the resulting object.
   - `force_delete` (`bool`): Set the `force_delete` field on the resulting resource block. When `null`, the `force_delete` field will be omitted from the resulting object.
   - `force_delete_warm_pool` (`bool`): Set the `force_delete_warm_pool` field on the resulting resource block. When `null`, the `force_delete_warm_pool` field will be omitted from the resulting object.
@@ -203,7 +201,6 @@ injecting into a complete block.
   - `default_cooldown` (`number`): Set the `default_cooldown` field on the resulting object. When `null`, the `default_cooldown` field will be omitted from the resulting object.
   - `default_instance_warmup` (`number`): Set the `default_instance_warmup` field on the resulting object. When `null`, the `default_instance_warmup` field will be omitted from the resulting object.
   - `desired_capacity` (`number`): Set the `desired_capacity` field on the resulting object. When `null`, the `desired_capacity` field will be omitted from the resulting object.
-  - `desired_capacity_type` (`string`): Set the `desired_capacity_type` field on the resulting object. When `null`, the `desired_capacity_type` field will be omitted from the resulting object.
   - `enabled_metrics` (`list`): Set the `enabled_metrics` field on the resulting object. When `null`, the `enabled_metrics` field will be omitted from the resulting object.
   - `force_delete` (`bool`): Set the `force_delete` field on the resulting object. When `null`, the `force_delete` field will be omitted from the resulting object.
   - `force_delete_warm_pool` (`bool`): Set the `force_delete_warm_pool` field on the resulting object. When `null`, the `force_delete_warm_pool` field will be omitted from the resulting object.
@@ -334,22 +331,6 @@ Terraform resource block to set or update the desired_capacity field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `desired_capacity` field.
-
-
-### fn withDesiredCapacityType
-
-```ts
-withDesiredCapacityType()
-```
-
-`aws.string.withDesiredCapacityType` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the desired_capacity_type field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `desired_capacity_type` field.
 
 
 ### fn withEnabledMetrics

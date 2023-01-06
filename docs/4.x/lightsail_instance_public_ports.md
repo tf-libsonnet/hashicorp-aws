@@ -152,7 +152,6 @@ Terraform sub block.
 
 
 **Args**:
-  - `cidr_list_aliases` (`list`): Set the `cidr_list_aliases` field on the resulting object. When `null`, the `cidr_list_aliases` field will be omitted from the resulting object.
   - `cidrs` (`list`): Set the `cidrs` field on the resulting object. When `null`, the `cidrs` field will be omitted from the resulting object.
   - `from_port` (`number`): Set the `from_port` field on the resulting object.
   - `ipv6_cidrs` (`list`): Set the `ipv6_cidrs` field on the resulting object. When `null`, the `ipv6_cidrs` field will be omitted from the resulting object.

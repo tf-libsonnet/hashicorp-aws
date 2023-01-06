@@ -519,21 +519,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         zendesk: zendesk,
       }),
       redshift:: {
-        '#new':: d.fn(help='\n`aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.redshift.new` constructs a new object with attributes and blocks configured for the `redshift`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.\n  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.\n  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object. When `null`, the `cluster_identifier` field will be omitted from the resulting object.\n  - `data_api_role_arn` (`string`): Set the `data_api_role_arn` field on the resulting object. When `null`, the `data_api_role_arn` field will be omitted from the resulting object.\n  - `database_name` (`string`): Set the `database_name` field on the resulting object. When `null`, the `database_name` field will be omitted from the resulting object.\n  - `database_url` (`string`): Set the `database_url` field on the resulting object. When `null`, the `database_url` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `redshift` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.appflow_connector_profile.connector_profile_config.connector_profile_properties.redshift.new` constructs a new object with attributes and blocks configured for the `redshift`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.\n  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.\n  - `database_url` (`string`): Set the `database_url` field on the resulting object. When `null`, the `database_url` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `redshift` sub block.\n', args=[]),
         new(
           bucket_name,
           role_arn,
           bucket_prefix=null,
-          cluster_identifier=null,
-          data_api_role_arn=null,
-          database_name=null,
           database_url=null
         ):: std.prune(a={
           bucket_name: bucket_name,
           bucket_prefix: bucket_prefix,
-          cluster_identifier: cluster_identifier,
-          data_api_role_arn: data_api_role_arn,
-          database_name: database_name,
           database_url: database_url,
           role_arn: role_arn,
         }),

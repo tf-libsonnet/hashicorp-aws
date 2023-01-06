@@ -62,7 +62,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting resource block. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block. When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block.
   - `backup_retention_enabled` (`bool`): Set the `backup_retention_enabled` field on the resulting resource block. When `null`, the `backup_retention_enabled` field will be omitted from the resulting object.
   - `blueprint_id` (`string`): Set the `blueprint_id` field on the resulting resource block.
   - `bundle_id` (`string`): Set the `bundle_id` field on the resulting resource block.
@@ -101,7 +101,7 @@ injecting into a complete block.
 
 **Args**:
   - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting object. When `null`, the `apply_immediately` field will be omitted from the resulting object.
-  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
+  - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object.
   - `backup_retention_enabled` (`bool`): Set the `backup_retention_enabled` field on the resulting object. When `null`, the `backup_retention_enabled` field will be omitted from the resulting object.
   - `blueprint_id` (`string`): Set the `blueprint_id` field on the resulting object.
   - `bundle_id` (`string`): Set the `bundle_id` field on the resulting object.

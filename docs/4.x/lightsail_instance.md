@@ -15,8 +15,6 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
-* [`fn withAddOn()`](#fn-withaddon)
-* [`fn withAddOnMixin()`](#fn-withaddonmixin)
 * [`fn withAvailabilityZone()`](#fn-withavailabilityzone)
 * [`fn withBlueprintId()`](#fn-withblueprintid)
 * [`fn withBundleId()`](#fn-withbundleid)
@@ -26,8 +24,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withUserData()`](#fn-withuserdata)
-* [`obj add_on`](#obj-add_on)
-  * [`fn new()`](#fn-add_onnew)
 
 ## Fields
 
@@ -67,7 +63,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_data` (`string`): Set the `user_data` field on the resulting resource block. When `null`, the `user_data` field will be omitted from the resulting object.
-  - `add_on` (`list[obj]`): Set the `add_on` field on the resulting resource block. When `null`, the `add_on` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_instance.add_on.new](#fn-add_onnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -100,47 +95,9 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_data` (`string`): Set the `user_data` field on the resulting object. When `null`, the `user_data` field will be omitted from the resulting object.
-  - `add_on` (`list[obj]`): Set the `add_on` field on the resulting object. When `null`, the `add_on` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lightsail_instance.add_on.new](#fn-add_onnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_instance` resource into the root Terraform configuration.
-
-
-### fn withAddOn
-
-```ts
-withAddOn()
-```
-
-`aws.list[obj].withAddOn` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the add_on field.
-
-This function will replace the array with the passed in `value`. If you wish to instead append the
-passed in value to the existing array, use the [aws.list[obj].withAddOnMixin](TODO) function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `add_on` field.
-
-
-### fn withAddOnMixin
-
-```ts
-withAddOnMixin()
-```
-
-`aws.list[obj].withAddOnMixin` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the add_on field.
-
-This function will append the passed in array or object to the existing array. If you wish
-to instead replace the array with the passed in `value`, use the [aws.list[obj].withAddOn](TODO)
-function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `add_on` field.
 
 
 ### fn withAvailabilityZone
@@ -285,28 +242,3 @@ Terraform resource block to set or update the user_data field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `user_data` field.
-
-
-## obj add_on
-
-
-
-### fn add_on.new
-
-```ts
-new()
-```
-
-
-`aws.lightsail_instance.add_on.new` constructs a new object with attributes and blocks configured for the `add_on`
-Terraform sub block.
-
-
-
-**Args**:
-  - `snapshot_time` (`string`): Set the `snapshot_time` field on the resulting object.
-  - `status` (`string`): Set the `status` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `add_on` sub block.

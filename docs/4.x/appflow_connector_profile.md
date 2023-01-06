@@ -1431,9 +1431,6 @@ Terraform sub block.
 **Args**:
   - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
   - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object. When `null`, the `cluster_identifier` field will be omitted from the resulting object.
-  - `data_api_role_arn` (`string`): Set the `data_api_role_arn` field on the resulting object. When `null`, the `data_api_role_arn` field will be omitted from the resulting object.
-  - `database_name` (`string`): Set the `database_name` field on the resulting object. When `null`, the `database_name` field will be omitted from the resulting object.
   - `database_url` (`string`): Set the `database_url` field on the resulting object. When `null`, the `database_url` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 

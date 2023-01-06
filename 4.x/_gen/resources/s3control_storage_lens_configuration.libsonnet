@@ -47,22 +47,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           enabled: enabled,
         }),
       },
-      advanced_cost_optimization_metrics:: {
-        '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_cost_optimization_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_cost_optimization_metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `advanced_cost_optimization_metrics` sub block.\n', args=[]),
-        new(
-          enabled=null
-        ):: std.prune(a={
-          enabled: enabled,
-        }),
-      },
-      advanced_data_protection_metrics:: {
-        '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_data_protection_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_data_protection_metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `advanced_data_protection_metrics` sub block.\n', args=[]),
-        new(
-          enabled=null
-        ):: std.prune(a={
-          enabled: enabled,
-        }),
-      },
       bucket_level:: {
         activity_metrics:: {
           '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.activity_metrics.new` constructs a new object with attributes and blocks configured for the `activity_metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `activity_metrics` sub block.\n', args=[]),
@@ -72,42 +56,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
             enabled: enabled,
           }),
         },
-        advanced_cost_optimization_metrics:: {
-          '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_cost_optimization_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_cost_optimization_metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `advanced_cost_optimization_metrics` sub block.\n', args=[]),
-          new(
-            enabled=null
-          ):: std.prune(a={
-            enabled: enabled,
-          }),
-        },
-        advanced_data_protection_metrics:: {
-          '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_data_protection_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_data_protection_metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `advanced_data_protection_metrics` sub block.\n', args=[]),
-          new(
-            enabled=null
-          ):: std.prune(a={
-            enabled: enabled,
-          }),
-        },
-        detailed_status_code_metrics:: {
-          '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.detailed_status_code_metrics.new` constructs a new object with attributes and blocks configured for the `detailed_status_code_metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `detailed_status_code_metrics` sub block.\n', args=[]),
-          new(
-            enabled=null
-          ):: std.prune(a={
-            enabled: enabled,
-          }),
-        },
-        '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.new` constructs a new object with attributes and blocks configured for the `bucket_level`\nTerraform sub block.\n\n\n\n**Args**:\n  - `activity_metrics` (`list[obj]`): Set the `activity_metrics` field on the resulting object. When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.activity_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_levelactivity_metricsnew) constructor.\n  - `advanced_cost_optimization_metrics` (`list[obj]`): Set the `advanced_cost_optimization_metrics` field on the resulting object. When `null`, the `advanced_cost_optimization_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_cost_optimization_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_leveladvanced_cost_optimization_metricsnew) constructor.\n  - `advanced_data_protection_metrics` (`list[obj]`): Set the `advanced_data_protection_metrics` field on the resulting object. When `null`, the `advanced_data_protection_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_data_protection_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_leveladvanced_data_protection_metricsnew) constructor.\n  - `detailed_status_code_metrics` (`list[obj]`): Set the `detailed_status_code_metrics` field on the resulting object. When `null`, the `detailed_status_code_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.detailed_status_code_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_leveldetailed_status_code_metricsnew) constructor.\n  - `prefix_level` (`list[obj]`): Set the `prefix_level` field on the resulting object. When `null`, the `prefix_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_levelprefix_levelnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `bucket_level` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.new` constructs a new object with attributes and blocks configured for the `bucket_level`\nTerraform sub block.\n\n\n\n**Args**:\n  - `activity_metrics` (`list[obj]`): Set the `activity_metrics` field on the resulting object. When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.activity_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_levelactivity_metricsnew) constructor.\n  - `prefix_level` (`list[obj]`): Set the `prefix_level` field on the resulting object. When `null`, the `prefix_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_levelprefix_levelnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `bucket_level` sub block.\n', args=[]),
         new(
           activity_metrics=null,
-          advanced_cost_optimization_metrics=null,
-          advanced_data_protection_metrics=null,
-          detailed_status_code_metrics=null,
           prefix_level=null
         ):: std.prune(a={
           activity_metrics: activity_metrics,
-          advanced_cost_optimization_metrics: advanced_cost_optimization_metrics,
-          advanced_data_protection_metrics: advanced_data_protection_metrics,
-          detailed_status_code_metrics: detailed_status_code_metrics,
           prefix_level: prefix_level,
         }),
         prefix_level:: {
@@ -141,27 +95,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           },
         },
       },
-      detailed_status_code_metrics:: {
-        '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.detailed_status_code_metrics.new` constructs a new object with attributes and blocks configured for the `detailed_status_code_metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `detailed_status_code_metrics` sub block.\n', args=[]),
-        new(
-          enabled=null
-        ):: std.prune(a={
-          enabled: enabled,
-        }),
-      },
-      '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.new` constructs a new object with attributes and blocks configured for the `account_level`\nTerraform sub block.\n\n\n\n**Args**:\n  - `activity_metrics` (`list[obj]`): Set the `activity_metrics` field on the resulting object. When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.activity_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationactivity_metricsnew) constructor.\n  - `advanced_cost_optimization_metrics` (`list[obj]`): Set the `advanced_cost_optimization_metrics` field on the resulting object. When `null`, the `advanced_cost_optimization_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_cost_optimization_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationadvanced_cost_optimization_metricsnew) constructor.\n  - `advanced_data_protection_metrics` (`list[obj]`): Set the `advanced_data_protection_metrics` field on the resulting object. When `null`, the `advanced_data_protection_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_data_protection_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationadvanced_data_protection_metricsnew) constructor.\n  - `bucket_level` (`list[obj]`): Set the `bucket_level` field on the resulting object. When `null`, the `bucket_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.new](#fn-storage_lens_configurationstorage_lens_configurationbucket_levelnew) constructor.\n  - `detailed_status_code_metrics` (`list[obj]`): Set the `detailed_status_code_metrics` field on the resulting object. When `null`, the `detailed_status_code_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.detailed_status_code_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationdetailed_status_code_metricsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `account_level` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.new` constructs a new object with attributes and blocks configured for the `account_level`\nTerraform sub block.\n\n\n\n**Args**:\n  - `activity_metrics` (`list[obj]`): Set the `activity_metrics` field on the resulting object. When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.activity_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationactivity_metricsnew) constructor.\n  - `bucket_level` (`list[obj]`): Set the `bucket_level` field on the resulting object. When `null`, the `bucket_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.new](#fn-storage_lens_configurationstorage_lens_configurationbucket_levelnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `account_level` sub block.\n', args=[]),
       new(
         activity_metrics=null,
-        advanced_cost_optimization_metrics=null,
-        advanced_data_protection_metrics=null,
-        bucket_level=null,
-        detailed_status_code_metrics=null
+        bucket_level=null
       ):: std.prune(a={
         activity_metrics: activity_metrics,
-        advanced_cost_optimization_metrics: advanced_cost_optimization_metrics,
-        advanced_data_protection_metrics: advanced_data_protection_metrics,
         bucket_level: bucket_level,
-        detailed_status_code_metrics: detailed_status_code_metrics,
       }),
     },
     aws_org:: {
