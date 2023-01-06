@@ -134,7 +134,9 @@ Terraform sub block.
 
 **Args**:
   - `context` (`obj`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.
+  - `encryption_algorithm` (`string`): Set the `encryption_algorithm` field on the resulting object. When `null`, the `encryption_algorithm` field will be omitted from the resulting object.
   - `grant_tokens` (`list`): Set the `grant_tokens` field on the resulting object. When `null`, the `grant_tokens` field will be omitted from the resulting object.
+  - `key_id` (`string`): Set the `key_id` field on the resulting object. When `null`, the `key_id` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `payload` (`string`): Set the `payload` field on the resulting object.
 

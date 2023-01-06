@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withApiId()`](#fn-withapiid)
 * [`fn withCachingConfig()`](#fn-withcachingconfig)
 * [`fn withCachingConfigMixin()`](#fn-withcachingconfigmixin)
+* [`fn withCode()`](#fn-withcode)
 * [`fn withDataSource()`](#fn-withdatasource)
 * [`fn withField()`](#fn-withfield)
 * [`fn withKind()`](#fn-withkind)
@@ -26,6 +27,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withPipelineConfigMixin()`](#fn-withpipelineconfigmixin)
 * [`fn withRequestTemplate()`](#fn-withrequesttemplate)
 * [`fn withResponseTemplate()`](#fn-withresponsetemplate)
+* [`fn withRuntime()`](#fn-withruntime)
+* [`fn withRuntimeMixin()`](#fn-withruntimemixin)
 * [`fn withSyncConfig()`](#fn-withsyncconfig)
 * [`fn withSyncConfigMixin()`](#fn-withsyncconfigmixin)
 * [`fn withType()`](#fn-withtype)
@@ -33,6 +36,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-caching_confignew)
 * [`obj pipeline_config`](#obj-pipeline_config)
   * [`fn new()`](#fn-pipeline_confignew)
+* [`obj runtime`](#obj-runtime)
+  * [`fn new()`](#fn-runtimenew)
 * [`obj sync_config`](#obj-sync_config)
   * [`fn new()`](#fn-sync_confignew)
   * [`obj sync_config.lambda_conflict_handler_config`](#obj-sync_configlambda_conflict_handler_config)
@@ -68,6 +73,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `api_id` (`string`): Set the `api_id` field on the resulting resource block.
+  - `code` (`string`): Set the `code` field on the resulting resource block. When `null`, the `code` field will be omitted from the resulting object.
   - `data_source` (`string`): Set the `data_source` field on the resulting resource block. When `null`, the `data_source` field will be omitted from the resulting object.
   - `field` (`string`): Set the `field` field on the resulting resource block.
   - `kind` (`string`): Set the `kind` field on the resulting resource block. When `null`, the `kind` field will be omitted from the resulting object.
@@ -77,6 +83,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `type` (`string`): Set the `type` field on the resulting resource block.
   - `caching_config` (`list[obj]`): Set the `caching_config` field on the resulting resource block. When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-caching_confignew) constructor.
   - `pipeline_config` (`list[obj]`): Set the `pipeline_config` field on the resulting resource block. When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-pipeline_confignew) constructor.
+  - `runtime` (`list[obj]`): Set the `runtime` field on the resulting resource block. When `null`, the `runtime` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.runtime.new](#fn-runtimenew) constructor.
   - `sync_config` (`list[obj]`): Set the `sync_config` field on the resulting resource block. When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-sync_confignew) constructor.
 
 **Returns**:
@@ -102,6 +109,7 @@ injecting into a complete block.
 
 **Args**:
   - `api_id` (`string`): Set the `api_id` field on the resulting object.
+  - `code` (`string`): Set the `code` field on the resulting object. When `null`, the `code` field will be omitted from the resulting object.
   - `data_source` (`string`): Set the `data_source` field on the resulting object. When `null`, the `data_source` field will be omitted from the resulting object.
   - `field` (`string`): Set the `field` field on the resulting object.
   - `kind` (`string`): Set the `kind` field on the resulting object. When `null`, the `kind` field will be omitted from the resulting object.
@@ -111,6 +119,7 @@ injecting into a complete block.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `caching_config` (`list[obj]`): Set the `caching_config` field on the resulting object. When `null`, the `caching_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.caching_config.new](#fn-caching_confignew) constructor.
   - `pipeline_config` (`list[obj]`): Set the `pipeline_config` field on the resulting object. When `null`, the `pipeline_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.pipeline_config.new](#fn-pipeline_confignew) constructor.
+  - `runtime` (`list[obj]`): Set the `runtime` field on the resulting object. When `null`, the `runtime` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.runtime.new](#fn-runtimenew) constructor.
   - `sync_config` (`list[obj]`): Set the `sync_config` field on the resulting object. When `null`, the `sync_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_resolver.sync_config.new](#fn-sync_confignew) constructor.
 
 **Returns**:
@@ -168,6 +177,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `caching_config` field.
+
+
+### fn withCode
+
+```ts
+withCode()
+```
+
+`aws.string.withCode` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the code field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `code` field.
 
 
 ### fn withDataSource
@@ -303,6 +328,43 @@ Terraform resource block to set or update the response_template field.
   - `value` (`string`): The value to set for the `response_template` field.
 
 
+### fn withRuntime
+
+```ts
+withRuntime()
+```
+
+`aws.list[obj].withRuntime` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the runtime field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withRuntimeMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `runtime` field.
+
+
+### fn withRuntimeMixin
+
+```ts
+withRuntimeMixin()
+```
+
+`aws.list[obj].withRuntimeMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the runtime field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withRuntime](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `runtime` field.
+
+
 ### fn withSyncConfig
 
 ```ts
@@ -401,6 +463,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `pipeline_config` sub block.
+
+
+## obj runtime
+
+
+
+### fn runtime.new
+
+```ts
+new()
+```
+
+
+`aws.appsync_resolver.runtime.new` constructs a new object with attributes and blocks configured for the `runtime`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `runtime_version` (`string`): Set the `runtime_version` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `runtime` sub block.
 
 
 ## obj sync_config

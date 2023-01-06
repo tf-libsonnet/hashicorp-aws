@@ -27,16 +27,28 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-storage_lens_configurationaccount_levelnew)
     * [`obj storage_lens_configuration.account_level.activity_metrics`](#obj-storage_lens_configurationaccount_levelactivity_metrics)
       * [`fn new()`](#fn-storage_lens_configurationaccount_levelactivity_metricsnew)
+    * [`obj storage_lens_configuration.account_level.advanced_cost_optimization_metrics`](#obj-storage_lens_configurationaccount_leveladvanced_cost_optimization_metrics)
+      * [`fn new()`](#fn-storage_lens_configurationaccount_leveladvanced_cost_optimization_metricsnew)
+    * [`obj storage_lens_configuration.account_level.advanced_data_protection_metrics`](#obj-storage_lens_configurationaccount_leveladvanced_data_protection_metrics)
+      * [`fn new()`](#fn-storage_lens_configurationaccount_leveladvanced_data_protection_metricsnew)
     * [`obj storage_lens_configuration.account_level.bucket_level`](#obj-storage_lens_configurationaccount_levelbucket_level)
       * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_levelnew)
       * [`obj storage_lens_configuration.account_level.bucket_level.activity_metrics`](#obj-storage_lens_configurationaccount_levelbucket_levelactivity_metrics)
         * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_levelactivity_metricsnew)
+      * [`obj storage_lens_configuration.account_level.bucket_level.advanced_cost_optimization_metrics`](#obj-storage_lens_configurationaccount_levelbucket_leveladvanced_cost_optimization_metrics)
+        * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_leveladvanced_cost_optimization_metricsnew)
+      * [`obj storage_lens_configuration.account_level.bucket_level.advanced_data_protection_metrics`](#obj-storage_lens_configurationaccount_levelbucket_leveladvanced_data_protection_metrics)
+        * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_leveladvanced_data_protection_metricsnew)
+      * [`obj storage_lens_configuration.account_level.bucket_level.detailed_status_code_metrics`](#obj-storage_lens_configurationaccount_levelbucket_leveldetailed_status_code_metrics)
+        * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_leveldetailed_status_code_metricsnew)
       * [`obj storage_lens_configuration.account_level.bucket_level.prefix_level`](#obj-storage_lens_configurationaccount_levelbucket_levelprefix_level)
         * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_levelprefix_levelnew)
         * [`obj storage_lens_configuration.account_level.bucket_level.prefix_level.storage_metrics`](#obj-storage_lens_configurationaccount_levelbucket_levelprefix_levelstorage_metrics)
           * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_levelprefix_levelstorage_metricsnew)
           * [`obj storage_lens_configuration.account_level.bucket_level.prefix_level.storage_metrics.selection_criteria`](#obj-storage_lens_configurationaccount_levelbucket_levelprefix_levelstorage_metricsselection_criteria)
             * [`fn new()`](#fn-storage_lens_configurationaccount_levelbucket_levelprefix_levelstorage_metricsselection_criterianew)
+    * [`obj storage_lens_configuration.account_level.detailed_status_code_metrics`](#obj-storage_lens_configurationaccount_leveldetailed_status_code_metrics)
+      * [`fn new()`](#fn-storage_lens_configurationaccount_leveldetailed_status_code_metricsnew)
   * [`obj storage_lens_configuration.aws_org`](#obj-storage_lens_configurationaws_org)
     * [`fn new()`](#fn-storage_lens_configurationaws_orgnew)
   * [`obj storage_lens_configuration.data_export`](#obj-storage_lens_configurationdata_export)
@@ -270,7 +282,10 @@ Terraform sub block.
 
 **Args**:
   - `activity_metrics` (`list[obj]`): Set the `activity_metrics` field on the resulting object. When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.activity_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationactivity_metricsnew) constructor.
+  - `advanced_cost_optimization_metrics` (`list[obj]`): Set the `advanced_cost_optimization_metrics` field on the resulting object. When `null`, the `advanced_cost_optimization_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_cost_optimization_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationadvanced_cost_optimization_metricsnew) constructor.
+  - `advanced_data_protection_metrics` (`list[obj]`): Set the `advanced_data_protection_metrics` field on the resulting object. When `null`, the `advanced_data_protection_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_data_protection_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationadvanced_data_protection_metricsnew) constructor.
   - `bucket_level` (`list[obj]`): Set the `bucket_level` field on the resulting object. When `null`, the `bucket_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.new](#fn-storage_lens_configurationstorage_lens_configurationbucket_levelnew) constructor.
+  - `detailed_status_code_metrics` (`list[obj]`): Set the `detailed_status_code_metrics` field on the resulting object. When `null`, the `detailed_status_code_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.detailed_status_code_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationdetailed_status_code_metricsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `account_level` sub block.
@@ -299,6 +314,52 @@ Terraform sub block.
   - An attribute object that represents the `activity_metrics` sub block.
 
 
+## obj storage_lens_configuration.account_level.advanced_cost_optimization_metrics
+
+
+
+### fn storage_lens_configuration.account_level.advanced_cost_optimization_metrics.new
+
+```ts
+new()
+```
+
+
+`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_cost_optimization_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_cost_optimization_metrics`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `advanced_cost_optimization_metrics` sub block.
+
+
+## obj storage_lens_configuration.account_level.advanced_data_protection_metrics
+
+
+
+### fn storage_lens_configuration.account_level.advanced_data_protection_metrics.new
+
+```ts
+new()
+```
+
+
+`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.advanced_data_protection_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_data_protection_metrics`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `advanced_data_protection_metrics` sub block.
+
+
 ## obj storage_lens_configuration.account_level.bucket_level
 
 
@@ -317,6 +378,9 @@ Terraform sub block.
 
 **Args**:
   - `activity_metrics` (`list[obj]`): Set the `activity_metrics` field on the resulting object. When `null`, the `activity_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.activity_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_levelactivity_metricsnew) constructor.
+  - `advanced_cost_optimization_metrics` (`list[obj]`): Set the `advanced_cost_optimization_metrics` field on the resulting object. When `null`, the `advanced_cost_optimization_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_cost_optimization_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_leveladvanced_cost_optimization_metricsnew) constructor.
+  - `advanced_data_protection_metrics` (`list[obj]`): Set the `advanced_data_protection_metrics` field on the resulting object. When `null`, the `advanced_data_protection_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_data_protection_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_leveladvanced_data_protection_metricsnew) constructor.
+  - `detailed_status_code_metrics` (`list[obj]`): Set the `detailed_status_code_metrics` field on the resulting object. When `null`, the `detailed_status_code_metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.detailed_status_code_metrics.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_leveldetailed_status_code_metricsnew) constructor.
   - `prefix_level` (`list[obj]`): Set the `prefix_level` field on the resulting object. When `null`, the `prefix_level` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.prefix_level.new](#fn-storage_lens_configurationstorage_lens_configurationaccount_levelprefix_levelnew) constructor.
 
 **Returns**:
@@ -344,6 +408,75 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `activity_metrics` sub block.
+
+
+## obj storage_lens_configuration.account_level.bucket_level.advanced_cost_optimization_metrics
+
+
+
+### fn storage_lens_configuration.account_level.bucket_level.advanced_cost_optimization_metrics.new
+
+```ts
+new()
+```
+
+
+`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_cost_optimization_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_cost_optimization_metrics`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `advanced_cost_optimization_metrics` sub block.
+
+
+## obj storage_lens_configuration.account_level.bucket_level.advanced_data_protection_metrics
+
+
+
+### fn storage_lens_configuration.account_level.bucket_level.advanced_data_protection_metrics.new
+
+```ts
+new()
+```
+
+
+`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.advanced_data_protection_metrics.new` constructs a new object with attributes and blocks configured for the `advanced_data_protection_metrics`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `advanced_data_protection_metrics` sub block.
+
+
+## obj storage_lens_configuration.account_level.bucket_level.detailed_status_code_metrics
+
+
+
+### fn storage_lens_configuration.account_level.bucket_level.detailed_status_code_metrics.new
+
+```ts
+new()
+```
+
+
+`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.bucket_level.detailed_status_code_metrics.new` constructs a new object with attributes and blocks configured for the `detailed_status_code_metrics`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `detailed_status_code_metrics` sub block.
 
 
 ## obj storage_lens_configuration.account_level.bucket_level.prefix_level
@@ -416,6 +549,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `selection_criteria` sub block.
+
+
+## obj storage_lens_configuration.account_level.detailed_status_code_metrics
+
+
+
+### fn storage_lens_configuration.account_level.detailed_status_code_metrics.new
+
+```ts
+new()
+```
+
+
+`aws.s3control_storage_lens_configuration.storage_lens_configuration.account_level.detailed_status_code_metrics.new` constructs a new object with attributes and blocks configured for the `detailed_status_code_metrics`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `detailed_status_code_metrics` sub block.
 
 
 ## obj storage_lens_configuration.aws_org

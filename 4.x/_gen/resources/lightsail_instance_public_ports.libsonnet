@@ -23,14 +23,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     port_info: port_info,
   }),
   port_info:: {
-    '#new':: d.fn(help='\n`aws.lightsail_instance_public_ports.port_info.new` constructs a new object with attributes and blocks configured for the `port_info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cidrs` (`list`): Set the `cidrs` field on the resulting object. When `null`, the `cidrs` field will be omitted from the resulting object.\n  - `from_port` (`number`): Set the `from_port` field on the resulting object.\n  - `ipv6_cidrs` (`list`): Set the `ipv6_cidrs` field on the resulting object. When `null`, the `ipv6_cidrs` field will be omitted from the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting object.\n  - `to_port` (`number`): Set the `to_port` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `port_info` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lightsail_instance_public_ports.port_info.new` constructs a new object with attributes and blocks configured for the `port_info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cidr_list_aliases` (`list`): Set the `cidr_list_aliases` field on the resulting object. When `null`, the `cidr_list_aliases` field will be omitted from the resulting object.\n  - `cidrs` (`list`): Set the `cidrs` field on the resulting object. When `null`, the `cidrs` field will be omitted from the resulting object.\n  - `from_port` (`number`): Set the `from_port` field on the resulting object.\n  - `ipv6_cidrs` (`list`): Set the `ipv6_cidrs` field on the resulting object. When `null`, the `ipv6_cidrs` field will be omitted from the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting object.\n  - `to_port` (`number`): Set the `to_port` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `port_info` sub block.\n', args=[]),
     new(
       from_port,
       protocol,
       to_port,
+      cidr_list_aliases=null,
       cidrs=null,
       ipv6_cidrs=null
     ):: std.prune(a={
+      cidr_list_aliases: cidr_list_aliases,
       cidrs: cidrs,
       from_port: from_port,
       ipv6_cidrs: ipv6_cidrs,

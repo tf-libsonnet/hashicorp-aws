@@ -15,6 +15,8 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAlarms()`](#fn-withalarms)
+* [`fn withAlarmsMixin()`](#fn-withalarmsmixin)
 * [`fn withCapacityProviderStrategy()`](#fn-withcapacityproviderstrategy)
 * [`fn withCapacityProviderStrategyMixin()`](#fn-withcapacityproviderstrategymixin)
 * [`fn withCluster()`](#fn-withcluster)
@@ -54,6 +56,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withTriggers()`](#fn-withtriggers)
 * [`fn withWaitForSteadyState()`](#fn-withwaitforsteadystate)
+* [`obj alarms`](#obj-alarms)
+  * [`fn new()`](#fn-alarmsnew)
 * [`obj capacity_provider_strategy`](#obj-capacity_provider_strategy)
   * [`fn new()`](#fn-capacity_provider_strategynew)
 * [`obj deployment_circuit_breaker`](#obj-deployment_circuit_breaker)
@@ -131,6 +135,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `task_definition` (`string`): Set the `task_definition` field on the resulting resource block. When `null`, the `task_definition` field will be omitted from the resulting object.
   - `triggers` (`obj`): Set the `triggers` field on the resulting resource block. When `null`, the `triggers` field will be omitted from the resulting object.
   - `wait_for_steady_state` (`bool`): Set the `wait_for_steady_state` field on the resulting resource block. When `null`, the `wait_for_steady_state` field will be omitted from the resulting object.
+  - `alarms` (`list[obj]`): Set the `alarms` field on the resulting resource block. When `null`, the `alarms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.alarms.new](#fn-alarmsnew) constructor.
   - `capacity_provider_strategy` (`list[obj]`): Set the `capacity_provider_strategy` field on the resulting resource block. When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.capacity_provider_strategy.new](#fn-capacity_provider_strategynew) constructor.
   - `deployment_circuit_breaker` (`list[obj]`): Set the `deployment_circuit_breaker` field on the resulting resource block. When `null`, the `deployment_circuit_breaker` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_circuit_breaker.new](#fn-deployment_circuit_breakernew) constructor.
   - `deployment_controller` (`list[obj]`): Set the `deployment_controller` field on the resulting resource block. When `null`, the `deployment_controller` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_controller.new](#fn-deployment_controllernew) constructor.
@@ -183,6 +188,7 @@ injecting into a complete block.
   - `task_definition` (`string`): Set the `task_definition` field on the resulting object. When `null`, the `task_definition` field will be omitted from the resulting object.
   - `triggers` (`obj`): Set the `triggers` field on the resulting object. When `null`, the `triggers` field will be omitted from the resulting object.
   - `wait_for_steady_state` (`bool`): Set the `wait_for_steady_state` field on the resulting object. When `null`, the `wait_for_steady_state` field will be omitted from the resulting object.
+  - `alarms` (`list[obj]`): Set the `alarms` field on the resulting object. When `null`, the `alarms` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.alarms.new](#fn-alarmsnew) constructor.
   - `capacity_provider_strategy` (`list[obj]`): Set the `capacity_provider_strategy` field on the resulting object. When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.capacity_provider_strategy.new](#fn-capacity_provider_strategynew) constructor.
   - `deployment_circuit_breaker` (`list[obj]`): Set the `deployment_circuit_breaker` field on the resulting object. When `null`, the `deployment_circuit_breaker` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_circuit_breaker.new](#fn-deployment_circuit_breakernew) constructor.
   - `deployment_controller` (`list[obj]`): Set the `deployment_controller` field on the resulting object. When `null`, the `deployment_controller` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.deployment_controller.new](#fn-deployment_controllernew) constructor.
@@ -196,6 +202,43 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ecs_service` resource into the root Terraform configuration.
+
+
+### fn withAlarms
+
+```ts
+withAlarms()
+```
+
+`aws.list[obj].withAlarms` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the alarms field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withAlarmsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `alarms` field.
+
+
+### fn withAlarmsMixin
+
+```ts
+withAlarmsMixin()
+```
+
+`aws.list[obj].withAlarmsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the alarms field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withAlarms](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `alarms` field.
 
 
 ### fn withCapacityProviderStrategy
@@ -869,6 +912,31 @@ Terraform resource block to set or update the wait_for_steady_state field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `wait_for_steady_state` field.
+
+
+## obj alarms
+
+
+
+### fn alarms.new
+
+```ts
+new()
+```
+
+
+`aws.ecs_service.alarms.new` constructs a new object with attributes and blocks configured for the `alarms`
+Terraform sub block.
+
+
+
+**Args**:
+  - `alarm_names` (`list`): Set the `alarm_names` field on the resulting object.
+  - `enable` (`bool`): Set the `enable` field on the resulting object.
+  - `rollback` (`bool`): Set the `rollback` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `alarms` sub block.
 
 
 ## obj capacity_provider_strategy
