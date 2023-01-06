@@ -257,6 +257,7 @@ Terraform sub block.
 **Args**:
   - `bytes_scanned_cutoff_per_query` (`number`): Set the `bytes_scanned_cutoff_per_query` field on the resulting object. When `null`, the `bytes_scanned_cutoff_per_query` field will be omitted from the resulting object.
   - `enforce_workgroup_configuration` (`bool`): Set the `enforce_workgroup_configuration` field on the resulting object. When `null`, the `enforce_workgroup_configuration` field will be omitted from the resulting object.
+  - `execution_role` (`string`): Set the `execution_role` field on the resulting object. When `null`, the `execution_role` field will be omitted from the resulting object.
   - `publish_cloudwatch_metrics_enabled` (`bool`): Set the `publish_cloudwatch_metrics_enabled` field on the resulting object. When `null`, the `publish_cloudwatch_metrics_enabled` field will be omitted from the resulting object.
   - `requester_pays_enabled` (`bool`): Set the `requester_pays_enabled` field on the resulting object. When `null`, the `requester_pays_enabled` field will be omitted from the resulting object.
   - `engine_version` (`list[obj]`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.athena_workgroup.configuration.engine_version.new](#fn-configurationengine_versionnew) constructor.
