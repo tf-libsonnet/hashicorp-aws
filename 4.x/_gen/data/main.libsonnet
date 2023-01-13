@@ -260,6 +260,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   lb_hosted_zone_id: (import 'lb_hosted_zone_id.libsonnet'),
   lb_listener: (import 'lb_listener.libsonnet'),
   lb_target_group: (import 'lb_target_group.libsonnet'),
+  lbs: (import 'lbs.libsonnet'),
   lex_bot: (import 'lex_bot.libsonnet'),
   lex_bot_alias: (import 'lex_bot_alias.libsonnet'),
   lex_intent: (import 'lex_intent.libsonnet'),

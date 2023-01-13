@@ -124,10 +124,10 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags_all: tags_all,
   }),
   observability_configuration:: {
-    '#new':: d.fn(help='\n`aws.apprunner_service.observability_configuration.new` constructs a new object with attributes and blocks configured for the `observability_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `observability_configuration_arn` (`string`): Set the `observability_configuration_arn` field on the resulting object.\n  - `observability_enabled` (`bool`): Set the `observability_enabled` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `observability_configuration` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.apprunner_service.observability_configuration.new` constructs a new object with attributes and blocks configured for the `observability_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `observability_configuration_arn` (`string`): Set the `observability_configuration_arn` field on the resulting object. When `null`, the `observability_configuration_arn` field will be omitted from the resulting object.\n  - `observability_enabled` (`bool`): Set the `observability_enabled` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `observability_configuration` sub block.\n', args=[]),
     new(
-      observability_configuration_arn,
-      observability_enabled
+      observability_enabled,
+      observability_configuration_arn=null
     ):: std.prune(a={
       observability_configuration_arn: observability_configuration_arn,
       observability_enabled: observability_enabled,

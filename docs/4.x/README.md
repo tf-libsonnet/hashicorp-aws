@@ -1009,6 +1009,7 @@ project.
 * [ses_receipt_rule_set](ses_receipt_rule_set.md)
 * [ses_template](ses_template.md)
 * [sesv2_configuration_set](sesv2_configuration_set.md)
+* [sesv2_configuration_set_event_destination](sesv2_configuration_set_event_destination.md)
 * [sesv2_dedicated_ip_assignment](sesv2_dedicated_ip_assignment.md)
 * [sesv2_dedicated_ip_pool](sesv2_dedicated_ip_pool.md)
 * [sesv2_email_identity](sesv2_email_identity.md)

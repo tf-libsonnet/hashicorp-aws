@@ -998,6 +998,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   ses_receipt_rule_set: (import 'resources/ses_receipt_rule_set.libsonnet'),
   ses_template: (import 'resources/ses_template.libsonnet'),
   sesv2_configuration_set: (import 'resources/sesv2_configuration_set.libsonnet'),
+  sesv2_configuration_set_event_destination: (import 'resources/sesv2_configuration_set_event_destination.libsonnet'),
   sesv2_dedicated_ip_assignment: (import 'resources/sesv2_dedicated_ip_assignment.libsonnet'),
   sesv2_dedicated_ip_pool: (import 'resources/sesv2_dedicated_ip_pool.libsonnet'),
   sesv2_email_identity: (import 'resources/sesv2_email_identity.libsonnet'),
