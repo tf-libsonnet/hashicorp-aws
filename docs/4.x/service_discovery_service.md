@@ -27,6 +27,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withNamespaceId()`](#fn-withnamespaceid)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withType()`](#fn-withtype)
 * [`obj dns_config`](#obj-dns_config)
   * [`fn new()`](#fn-dns_confignew)
   * [`obj dns_config.dns_records`](#obj-dns_configdns_records)
@@ -71,6 +72,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `namespace_id` (`string`): Set the `namespace_id` field on the resulting resource block. When `null`, the `namespace_id` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
   - `dns_config` (`list[obj]`): Set the `dns_config` field on the resulting resource block. When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-dns_confignew) constructor.
   - `health_check_config` (`list[obj]`): Set the `health_check_config` field on the resulting resource block. When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-health_check_confignew) constructor.
   - `health_check_custom_config` (`list[obj]`): Set the `health_check_custom_config` field on the resulting resource block. When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-health_check_custom_confignew) constructor.
@@ -103,6 +105,7 @@ injecting into a complete block.
   - `namespace_id` (`string`): Set the `namespace_id` field on the resulting object. When `null`, the `namespace_id` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
   - `dns_config` (`list[obj]`): Set the `dns_config` field on the resulting object. When `null`, the `dns_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.dns_config.new](#fn-dns_confignew) constructor.
   - `health_check_config` (`list[obj]`): Set the `health_check_config` field on the resulting object. When `null`, the `health_check_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_config.new](#fn-health_check_confignew) constructor.
   - `health_check_custom_config` (`list[obj]`): Set the `health_check_custom_config` field on the resulting object. When `null`, the `health_check_custom_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.service_discovery_service.health_check_custom_config.new](#fn-health_check_custom_confignew) constructor.
@@ -316,6 +319,22 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
+
+
+### fn withType
+
+```ts
+withType()
+```
+
+`aws.string.withType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `type` field.
 
 
 ## obj dns_config

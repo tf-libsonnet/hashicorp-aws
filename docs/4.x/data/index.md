@@ -265,6 +265,7 @@ permalink: /data/
 * [lb_hosted_zone_id](lb_hosted_zone_id.md)
 * [lb_listener](lb_listener.md)
 * [lb_target_group](lb_target_group.md)
+* [lbs](lbs.md)
 * [lex_bot](lex_bot.md)
 * [lex_bot_alias](lex_bot_alias.md)
 * [lex_intent](lex_intent.md)

@@ -2,18 +2,19 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
 local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='redshiftdata_statement', url='', help='`redshiftdata_statement` represents the `aws_redshiftdata_statement` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
-  '#new':: d.fn(help="\n`aws.redshiftdata_statement.new` injects a new `aws_redshiftdata_statement` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.redshiftdata_statement.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.redshiftdata_statement` using the reference:\n\n    $._ref.aws_redshiftdata_statement.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_redshiftdata_statement.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.\n  - `database` (`string`): Set the `database` field on the resulting resource block.\n  - `db_user` (`string`): Set the `db_user` field on the resulting resource block. When `null`, the `db_user` field will be omitted from the resulting object.\n  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting resource block. When `null`, the `secret_arn` field will be omitted from the resulting object.\n  - `sql` (`string`): Set the `sql` field on the resulting resource block.\n  - `statement_name` (`string`): Set the `statement_name` field on the resulting resource block. When `null`, the `statement_name` field will be omitted from the resulting object.\n  - `with_event` (`bool`): Set the `with_event` field on the resulting resource block. When `null`, the `with_event` field will be omitted from the resulting object.\n  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.redshiftdata_statement.new` injects a new `aws_redshiftdata_statement` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.redshiftdata_statement.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.redshiftdata_statement` using the reference:\n\n    $._ref.aws_redshiftdata_statement.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_redshiftdata_statement.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block. When `null`, the `cluster_identifier` field will be omitted from the resulting object.\n  - `database` (`string`): Set the `database` field on the resulting resource block.\n  - `db_user` (`string`): Set the `db_user` field on the resulting resource block. When `null`, the `db_user` field will be omitted from the resulting object.\n  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting resource block. When `null`, the `secret_arn` field will be omitted from the resulting object.\n  - `sql` (`string`): Set the `sql` field on the resulting resource block.\n  - `statement_name` (`string`): Set the `statement_name` field on the resulting resource block. When `null`, the `statement_name` field will be omitted from the resulting object.\n  - `with_event` (`bool`): Set the `with_event` field on the resulting resource block. When `null`, the `with_event` field will be omitted from the resulting object.\n  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting resource block. When `null`, the `workgroup_name` field will be omitted from the resulting object.\n  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
-    cluster_identifier,
     database,
     sql,
+    cluster_identifier=null,
     db_user=null,
     parameters=null,
     secret_arn=null,
     statement_name=null,
     timeouts=null,
     with_event=null,
+    workgroup_name=null,
     _meta={}
   ):: tf.withResource(
     type='aws_redshiftdata_statement',
@@ -27,21 +28,23 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       sql=sql,
       statement_name=statement_name,
       timeouts=timeouts,
-      with_event=with_event
+      with_event=with_event,
+      workgroup_name=workgroup_name
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.redshiftdata_statement.newAttrs` constructs a new object with attributes and blocks configured for the `redshiftdata_statement`\nTerraform resource.\n\nUnlike [aws.redshiftdata_statement.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.\n  - `database` (`string`): Set the `database` field on the resulting object.\n  - `db_user` (`string`): Set the `db_user` field on the resulting object. When `null`, the `db_user` field will be omitted from the resulting object.\n  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.\n  - `sql` (`string`): Set the `sql` field on the resulting object.\n  - `statement_name` (`string`): Set the `statement_name` field on the resulting object. When `null`, the `statement_name` field will be omitted from the resulting object.\n  - `with_event` (`bool`): Set the `with_event` field on the resulting object. When `null`, the `with_event` field will be omitted from the resulting object.\n  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting object. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftdata_statement` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.redshiftdata_statement.newAttrs` constructs a new object with attributes and blocks configured for the `redshiftdata_statement`\nTerraform resource.\n\nUnlike [aws.redshiftdata_statement.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object. When `null`, the `cluster_identifier` field will be omitted from the resulting object.\n  - `database` (`string`): Set the `database` field on the resulting object.\n  - `db_user` (`string`): Set the `db_user` field on the resulting object. When `null`, the `db_user` field will be omitted from the resulting object.\n  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.\n  - `sql` (`string`): Set the `sql` field on the resulting object.\n  - `statement_name` (`string`): Set the `statement_name` field on the resulting object. When `null`, the `statement_name` field will be omitted from the resulting object.\n  - `with_event` (`bool`): Set the `with_event` field on the resulting object. When `null`, the `with_event` field will be omitted from the resulting object.\n  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting object. When `null`, the `workgroup_name` field will be omitted from the resulting object.\n  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting object. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftdata_statement` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
-    cluster_identifier,
     database,
     sql,
+    cluster_identifier=null,
     db_user=null,
     parameters=null,
     secret_arn=null,
     statement_name=null,
     timeouts=null,
-    with_event=null
+    with_event=null,
+    workgroup_name=null
   ):: std.prune(a={
     cluster_identifier: cluster_identifier,
     database: database,
@@ -52,6 +55,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     statement_name: statement_name,
     timeouts: timeouts,
     with_event: with_event,
+    workgroup_name: workgroup_name,
   }),
   parameters:: {
     '#new':: d.fn(help='\n`aws.redshiftdata_statement.parameters.new` constructs a new object with attributes and blocks configured for the `parameters`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `value` (`string`): Set the `value` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `parameters` sub block.\n', args=[]),
@@ -177,6 +181,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_redshiftdata_statement+: {
         [resourceLabel]+: {
           with_event: value,
+        },
+      },
+    },
+  },
+  '#withWorkgroupName':: d.fn(help='`aws.string.withWorkgroupName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the workgroup_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `workgroup_name` field.\n', args=[]),
+  withWorkgroupName(resourceLabel, value): {
+    resource+: {
+      aws_redshiftdata_statement+: {
+        [resourceLabel]+: {
+          workgroup_name: value,
         },
       },
     },

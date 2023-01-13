@@ -589,7 +589,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `observability_configuration_arn` (`string`): Set the `observability_configuration_arn` field on the resulting object.
+  - `observability_configuration_arn` (`string`): Set the `observability_configuration_arn` field on the resulting object. When `null`, the `observability_configuration_arn` field will be omitted from the resulting object.
   - `observability_enabled` (`bool`): Set the `observability_enabled` field on the resulting object.
 
 **Returns**:

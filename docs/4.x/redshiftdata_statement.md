@@ -26,6 +26,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withWithEvent()`](#fn-withwithevent)
+* [`fn withWorkgroupName()`](#fn-withworkgroupname)
 * [`obj parameters`](#obj-parameters)
   * [`fn new()`](#fn-parametersnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -60,13 +61,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block. When `null`, the `cluster_identifier` field will be omitted from the resulting object.
   - `database` (`string`): Set the `database` field on the resulting resource block.
   - `db_user` (`string`): Set the `db_user` field on the resulting resource block. When `null`, the `db_user` field will be omitted from the resulting object.
   - `secret_arn` (`string`): Set the `secret_arn` field on the resulting resource block. When `null`, the `secret_arn` field will be omitted from the resulting object.
   - `sql` (`string`): Set the `sql` field on the resulting resource block.
   - `statement_name` (`string`): Set the `statement_name` field on the resulting resource block. When `null`, the `statement_name` field will be omitted from the resulting object.
   - `with_event` (`bool`): Set the `with_event` field on the resulting resource block. When `null`, the `with_event` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting resource block. When `null`, the `workgroup_name` field will be omitted from the resulting object.
   - `parameters` (`list[obj]`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -92,13 +94,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
+  - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object. When `null`, the `cluster_identifier` field will be omitted from the resulting object.
   - `database` (`string`): Set the `database` field on the resulting object.
   - `db_user` (`string`): Set the `db_user` field on the resulting object. When `null`, the `db_user` field will be omitted from the resulting object.
   - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.
   - `sql` (`string`): Set the `sql` field on the resulting object.
   - `statement_name` (`string`): Set the `statement_name` field on the resulting object. When `null`, the `statement_name` field will be omitted from the resulting object.
   - `with_event` (`bool`): Set the `with_event` field on the resulting object. When `null`, the `with_event` field will be omitted from the resulting object.
+  - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting object. When `null`, the `workgroup_name` field will be omitted from the resulting object.
   - `parameters` (`list[obj]`): Set the `parameters` field on the resulting object. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.parameters.new](#fn-parametersnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftdata_statement.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -289,6 +292,22 @@ Terraform resource block to set or update the with_event field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `with_event` field.
+
+
+### fn withWorkgroupName
+
+```ts
+withWorkgroupName()
+```
+
+`aws.string.withWorkgroupName` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the workgroup_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `workgroup_name` field.
 
 
 ## obj parameters
