@@ -411,6 +411,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `service_name` (`string`): Set the `service_name` field on the resulting object.
 
 **Returns**:
@@ -599,6 +600,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
   - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.hostname.new](#fn-specspechttp2_routehostnamenew) constructor.
 
@@ -812,6 +814,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
   - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.hostname.new](#fn-specspechttp_routehostnamenew) constructor.
 

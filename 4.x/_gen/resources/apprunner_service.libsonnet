@@ -147,17 +147,19 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     code_repository:: {
       code_configuration:: {
         code_configuration_values:: {
-          '#new':: d.fn(help='\n`aws.apprunner_service.source_configuration.code_repository.code_configuration.code_configuration_values.new` constructs a new object with attributes and blocks configured for the `code_configuration_values`\nTerraform sub block.\n\n\n\n**Args**:\n  - `build_command` (`string`): Set the `build_command` field on the resulting object. When `null`, the `build_command` field will be omitted from the resulting object.\n  - `port` (`string`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `runtime` (`string`): Set the `runtime` field on the resulting object.\n  - `runtime_environment_variables` (`obj`): Set the `runtime_environment_variables` field on the resulting object. When `null`, the `runtime_environment_variables` field will be omitted from the resulting object.\n  - `start_command` (`string`): Set the `start_command` field on the resulting object. When `null`, the `start_command` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `code_configuration_values` sub block.\n', args=[]),
+          '#new':: d.fn(help='\n`aws.apprunner_service.source_configuration.code_repository.code_configuration.code_configuration_values.new` constructs a new object with attributes and blocks configured for the `code_configuration_values`\nTerraform sub block.\n\n\n\n**Args**:\n  - `build_command` (`string`): Set the `build_command` field on the resulting object. When `null`, the `build_command` field will be omitted from the resulting object.\n  - `port` (`string`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `runtime` (`string`): Set the `runtime` field on the resulting object.\n  - `runtime_environment_secrets` (`obj`): Set the `runtime_environment_secrets` field on the resulting object. When `null`, the `runtime_environment_secrets` field will be omitted from the resulting object.\n  - `runtime_environment_variables` (`obj`): Set the `runtime_environment_variables` field on the resulting object. When `null`, the `runtime_environment_variables` field will be omitted from the resulting object.\n  - `start_command` (`string`): Set the `start_command` field on the resulting object. When `null`, the `start_command` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `code_configuration_values` sub block.\n', args=[]),
           new(
             runtime,
             build_command=null,
             port=null,
+            runtime_environment_secrets=null,
             runtime_environment_variables=null,
             start_command=null
           ):: std.prune(a={
             build_command: build_command,
             port: port,
             runtime: runtime,
+            runtime_environment_secrets: runtime_environment_secrets,
             runtime_environment_variables: runtime_environment_variables,
             start_command: start_command,
           }),
@@ -194,13 +196,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     },
     image_repository:: {
       image_configuration:: {
-        '#new':: d.fn(help='\n`aws.apprunner_service.source_configuration.image_repository.image_configuration.new` constructs a new object with attributes and blocks configured for the `image_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`string`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `runtime_environment_variables` (`obj`): Set the `runtime_environment_variables` field on the resulting object. When `null`, the `runtime_environment_variables` field will be omitted from the resulting object.\n  - `start_command` (`string`): Set the `start_command` field on the resulting object. When `null`, the `start_command` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `image_configuration` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.apprunner_service.source_configuration.image_repository.image_configuration.new` constructs a new object with attributes and blocks configured for the `image_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`string`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `runtime_environment_secrets` (`obj`): Set the `runtime_environment_secrets` field on the resulting object. When `null`, the `runtime_environment_secrets` field will be omitted from the resulting object.\n  - `runtime_environment_variables` (`obj`): Set the `runtime_environment_variables` field on the resulting object. When `null`, the `runtime_environment_variables` field will be omitted from the resulting object.\n  - `start_command` (`string`): Set the `start_command` field on the resulting object. When `null`, the `start_command` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `image_configuration` sub block.\n', args=[]),
         new(
           port=null,
+          runtime_environment_secrets=null,
           runtime_environment_variables=null,
           start_command=null
         ):: std.prune(a={
           port: port,
+          runtime_environment_secrets: runtime_environment_secrets,
           runtime_environment_variables: runtime_environment_variables,
           start_command: start_command,
         }),

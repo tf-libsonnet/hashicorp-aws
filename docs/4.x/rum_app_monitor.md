@@ -17,6 +17,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAppMonitorConfiguration()`](#fn-withappmonitorconfiguration)
 * [`fn withAppMonitorConfigurationMixin()`](#fn-withappmonitorconfigurationmixin)
+* [`fn withCustomEvents()`](#fn-withcustomevents)
+* [`fn withCustomEventsMixin()`](#fn-withcustomeventsmixin)
 * [`fn withCwLogEnabled()`](#fn-withcwlogenabled)
 * [`fn withDomain()`](#fn-withdomain)
 * [`fn withName()`](#fn-withname)
@@ -24,6 +26,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`obj app_monitor_configuration`](#obj-app_monitor_configuration)
   * [`fn new()`](#fn-app_monitor_configurationnew)
+* [`obj custom_events`](#obj-custom_events)
+  * [`fn new()`](#fn-custom_eventsnew)
 
 ## Fields
 
@@ -60,6 +64,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `app_monitor_configuration` (`list[obj]`): Set the `app_monitor_configuration` field on the resulting resource block. When `null`, the `app_monitor_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rum_app_monitor.app_monitor_configuration.new](#fn-app_monitor_configurationnew) constructor.
+  - `custom_events` (`list[obj]`): Set the `custom_events` field on the resulting resource block. When `null`, the `custom_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rum_app_monitor.custom_events.new](#fn-custom_eventsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,6 +94,7 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `app_monitor_configuration` (`list[obj]`): Set the `app_monitor_configuration` field on the resulting object. When `null`, the `app_monitor_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rum_app_monitor.app_monitor_configuration.new](#fn-app_monitor_configurationnew) constructor.
+  - `custom_events` (`list[obj]`): Set the `custom_events` field on the resulting object. When `null`, the `custom_events` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.rum_app_monitor.custom_events.new](#fn-custom_eventsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `rum_app_monitor` resource into the root Terraform configuration.
@@ -129,6 +135,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `app_monitor_configuration` field.
+
+
+### fn withCustomEvents
+
+```ts
+withCustomEvents()
+```
+
+`aws.list[obj].withCustomEvents` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the custom_events field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withCustomEventsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `custom_events` field.
+
+
+### fn withCustomEventsMixin
+
+```ts
+withCustomEventsMixin()
+```
+
+`aws.list[obj].withCustomEventsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the custom_events field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withCustomEvents](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `custom_events` field.
 
 
 ### fn withCwLogEnabled
@@ -240,3 +283,26 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `app_monitor_configuration` sub block.
+
+
+## obj custom_events
+
+
+
+### fn custom_events.new
+
+```ts
+new()
+```
+
+
+`aws.rum_app_monitor.custom_events.new` constructs a new object with attributes and blocks configured for the `custom_events`
+Terraform sub block.
+
+
+
+**Args**:
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `custom_events` sub block.
