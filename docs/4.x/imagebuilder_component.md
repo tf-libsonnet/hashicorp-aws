@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withKmsKeyId()`](#fn-withkmskeyid)
 * [`fn withName()`](#fn-withname)
 * [`fn withPlatform()`](#fn-withplatform)
+* [`fn withSkipDestroy()`](#fn-withskipdestroy)
 * [`fn withSupportedOsVersions()`](#fn-withsupportedosversions)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
@@ -62,6 +63,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `platform` (`string`): Set the `platform` field on the resulting resource block.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting resource block. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `supported_os_versions` (`list`): Set the `supported_os_versions` field on the resulting resource block. When `null`, the `supported_os_versions` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -96,6 +98,7 @@ injecting into a complete block.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `platform` (`string`): Set the `platform` field on the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting object. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `supported_os_versions` (`list`): Set the `supported_os_versions` field on the resulting object. When `null`, the `supported_os_versions` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -200,6 +203,22 @@ Terraform resource block to set or update the platform field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `platform` field.
+
+
+### fn withSkipDestroy
+
+```ts
+withSkipDestroy()
+```
+
+`aws.bool.withSkipDestroy` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the skip_destroy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `skip_destroy` field.
 
 
 ### fn withSupportedOsVersions

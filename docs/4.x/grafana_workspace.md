@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAccountAccessType()`](#fn-withaccountaccesstype)
 * [`fn withAuthenticationProviders()`](#fn-withauthenticationproviders)
+* [`fn withConfiguration()`](#fn-withconfiguration)
 * [`fn withDataSources()`](#fn-withdatasources)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withName()`](#fn-withname)
@@ -68,6 +69,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `account_access_type` (`string`): Set the `account_access_type` field on the resulting resource block.
   - `authentication_providers` (`list`): Set the `authentication_providers` field on the resulting resource block.
+  - `configuration` (`string`): Set the `configuration` field on the resulting resource block. When `null`, the `configuration` field will be omitted from the resulting object.
   - `data_sources` (`list`): Set the `data_sources` field on the resulting resource block. When `null`, the `data_sources` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
@@ -106,6 +108,7 @@ injecting into a complete block.
 **Args**:
   - `account_access_type` (`string`): Set the `account_access_type` field on the resulting object.
   - `authentication_providers` (`list`): Set the `authentication_providers` field on the resulting object.
+  - `configuration` (`string`): Set the `configuration` field on the resulting object. When `null`, the `configuration` field will be omitted from the resulting object.
   - `data_sources` (`list`): Set the `data_sources` field on the resulting object. When `null`, the `data_sources` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
@@ -154,6 +157,22 @@ Terraform resource block to set or update the authentication_providers field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `authentication_providers` field.
+
+
+### fn withConfiguration
+
+```ts
+withConfiguration()
+```
+
+`aws.string.withConfiguration` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the configuration field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `configuration` field.
 
 
 ### fn withDataSources

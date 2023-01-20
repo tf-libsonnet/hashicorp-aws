@@ -715,6 +715,7 @@ Terraform sub block.
   - `build_command` (`string`): Set the `build_command` field on the resulting object. When `null`, the `build_command` field will be omitted from the resulting object.
   - `port` (`string`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `runtime` (`string`): Set the `runtime` field on the resulting object.
+  - `runtime_environment_secrets` (`obj`): Set the `runtime_environment_secrets` field on the resulting object. When `null`, the `runtime_environment_secrets` field will be omitted from the resulting object.
   - `runtime_environment_variables` (`obj`): Set the `runtime_environment_variables` field on the resulting object. When `null`, the `runtime_environment_variables` field will be omitted from the resulting object.
   - `start_command` (`string`): Set the `start_command` field on the resulting object. When `null`, the `start_command` field will be omitted from the resulting object.
 
@@ -789,6 +790,7 @@ Terraform sub block.
 
 **Args**:
   - `port` (`string`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+  - `runtime_environment_secrets` (`obj`): Set the `runtime_environment_secrets` field on the resulting object. When `null`, the `runtime_environment_secrets` field will be omitted from the resulting object.
   - `runtime_environment_variables` (`obj`): Set the `runtime_environment_variables` field on the resulting object. When `null`, the `runtime_environment_variables` field will be omitted from the resulting object.
   - `start_command` (`string`): Set the `start_command` field on the resulting object. When `null`, the `start_command` field will be omitted from the resulting object.
 

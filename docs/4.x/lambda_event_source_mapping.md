@@ -32,6 +32,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMaximumRetryAttempts()`](#fn-withmaximumretryattempts)
 * [`fn withParallelizationFactor()`](#fn-withparallelizationfactor)
 * [`fn withQueues()`](#fn-withqueues)
+* [`fn withScalingConfig()`](#fn-withscalingconfig)
+* [`fn withScalingConfigMixin()`](#fn-withscalingconfigmixin)
 * [`fn withSelfManagedEventSource()`](#fn-withselfmanagedeventsource)
 * [`fn withSelfManagedEventSourceMixin()`](#fn-withselfmanagedeventsourcemixin)
 * [`fn withSelfManagedKafkaEventSourceConfig()`](#fn-withselfmanagedkafkaeventsourceconfig)
@@ -52,6 +54,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-filter_criterianew)
   * [`obj filter_criteria.filter`](#obj-filter_criteriafilter)
     * [`fn new()`](#fn-filter_criteriafilternew)
+* [`obj scaling_config`](#obj-scaling_config)
+  * [`fn new()`](#fn-scaling_confignew)
 * [`obj self_managed_event_source`](#obj-self_managed_event_source)
   * [`fn new()`](#fn-self_managed_event_sourcenew)
 * [`obj self_managed_kafka_event_source_config`](#obj-self_managed_kafka_event_source_config)
@@ -106,6 +110,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `amazon_managed_kafka_event_source_config` (`list[obj]`): Set the `amazon_managed_kafka_event_source_config` field on the resulting resource block. When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
   - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting resource block. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
   - `filter_criteria` (`list[obj]`): Set the `filter_criteria` field on the resulting resource block. When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
+  - `scaling_config` (`list[obj]`): Set the `scaling_config` field on the resulting resource block. When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.scaling_config.new](#fn-scaling_confignew) constructor.
   - `self_managed_event_source` (`list[obj]`): Set the `self_managed_event_source` field on the resulting resource block. When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
   - `self_managed_kafka_event_source_config` (`list[obj]`): Set the `self_managed_kafka_event_source_config` field on the resulting resource block. When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
   - `source_access_configuration` (`list[obj]`): Set the `source_access_configuration` field on the resulting resource block. When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
@@ -150,6 +155,7 @@ injecting into a complete block.
   - `amazon_managed_kafka_event_source_config` (`list[obj]`): Set the `amazon_managed_kafka_event_source_config` field on the resulting object. When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
   - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting object. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
   - `filter_criteria` (`list[obj]`): Set the `filter_criteria` field on the resulting object. When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
+  - `scaling_config` (`list[obj]`): Set the `scaling_config` field on the resulting object. When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.scaling_config.new](#fn-scaling_confignew) constructor.
   - `self_managed_event_source` (`list[obj]`): Set the `self_managed_event_source` field on the resulting object. When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
   - `self_managed_kafka_event_source_config` (`list[obj]`): Set the `self_managed_kafka_event_source_config` field on the resulting object. When `null`, the `self_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_kafka_event_source_config.new](#fn-self_managed_kafka_event_source_confignew) constructor.
   - `source_access_configuration` (`list[obj]`): Set the `source_access_configuration` field on the resulting object. When `null`, the `source_access_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.source_access_configuration.new](#fn-source_access_configurationnew) constructor.
@@ -445,6 +451,43 @@ Terraform resource block to set or update the queues field.
   - `value` (`list`): The value to set for the `queues` field.
 
 
+### fn withScalingConfig
+
+```ts
+withScalingConfig()
+```
+
+`aws.list[obj].withScalingConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the scaling_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withScalingConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `scaling_config` field.
+
+
+### fn withScalingConfigMixin
+
+```ts
+withScalingConfigMixin()
+```
+
+`aws.list[obj].withScalingConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the scaling_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withScalingConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `scaling_config` field.
+
+
 ### fn withSelfManagedEventSource
 
 ```ts
@@ -733,6 +776,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `filter` sub block.
+
+
+## obj scaling_config
+
+
+
+### fn scaling_config.new
+
+```ts
+new()
+```
+
+
+`aws.lambda_event_source_mapping.scaling_config.new` constructs a new object with attributes and blocks configured for the `scaling_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `maximum_concurrency` (`number`): Set the `maximum_concurrency` field on the resulting object. When `null`, the `maximum_concurrency` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `scaling_config` sub block.
 
 
 ## obj self_managed_event_source

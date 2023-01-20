@@ -103,6 +103,8 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-spectcp_routeactionnew)
       * [`obj spec.tcp_route.action.weighted_target`](#obj-spectcp_routeactionweighted_target)
         * [`fn new()`](#fn-spectcp_routeactionweighted_targetnew)
+    * [`obj spec.tcp_route.match`](#obj-spectcp_routematch)
+      * [`fn new()`](#fn-spectcp_routematchnew)
     * [`obj spec.tcp_route.timeout`](#obj-spectcp_routetimeout)
       * [`fn new()`](#fn-spectcp_routetimeoutnew)
       * [`obj spec.tcp_route.timeout.idle`](#obj-spectcp_routetimeoutidle)
@@ -405,6 +407,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
   - `weight` (`number`): Set the `weight` field on the resulting object.
 
@@ -430,6 +433,7 @@ Terraform sub block.
 
 **Args**:
   - `method_name` (`string`): Set the `method_name` field on the resulting object. When `null`, the `method_name` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
   - `service_name` (`string`): Set the `service_name` field on the resulting object. When `null`, the `service_name` field will be omitted from the resulting object.
   - `metadata` (`list[obj]`): Set the `metadata` field on the resulting object. When `null`, the `metadata` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.grpc_route.match.metadata.new](#fn-specspecgrpc_routemetadatanew) constructor.
@@ -703,6 +707,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
   - `weight` (`number`): Set the `weight` field on the resulting object.
 
@@ -728,6 +733,7 @@ Terraform sub block.
 
 **Args**:
   - `method` (`string`): Set the `method` field on the resulting object. When `null`, the `method` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `prefix` (`string`): Set the `prefix` field on the resulting object.
   - `scheme` (`string`): Set the `scheme` field on the resulting object. When `null`, the `scheme` field will be omitted from the resulting object.
   - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.new](#fn-specspechttp2_routeheadernew) constructor.
@@ -1000,6 +1006,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
   - `weight` (`number`): Set the `weight` field on the resulting object.
 
@@ -1025,6 +1032,7 @@ Terraform sub block.
 
 **Args**:
   - `method` (`string`): Set the `method` field on the resulting object. When `null`, the `method` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `prefix` (`string`): Set the `prefix` field on the resulting object.
   - `scheme` (`string`): Set the `scheme` field on the resulting object. When `null`, the `scheme` field will be omitted from the resulting object.
   - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.new](#fn-specspechttp_routeheadernew) constructor.
@@ -1249,6 +1257,7 @@ Terraform sub block.
 
 **Args**:
   - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.action.new](#fn-specspecactionnew) constructor.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.match.new](#fn-specspecmatchnew) constructor.
   - `timeout` (`list[obj]`): Set the `timeout` field on the resulting object. When `null`, the `timeout` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.tcp_route.timeout.new](#fn-specspectimeoutnew) constructor.
 
 **Returns**:
@@ -1295,11 +1304,35 @@ Terraform sub block.
 
 
 **Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `virtual_node` (`string`): Set the `virtual_node` field on the resulting object.
   - `weight` (`number`): Set the `weight` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `weighted_target` sub block.
+
+
+## obj spec.tcp_route.match
+
+
+
+### fn spec.tcp_route.match.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_route.spec.tcp_route.match.new` constructs a new object with attributes and blocks configured for the `match`
+Terraform sub block.
+
+
+
+**Args**:
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `match` sub block.
 
 
 ## obj spec.tcp_route.timeout

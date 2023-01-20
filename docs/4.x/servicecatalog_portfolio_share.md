@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAcceptLanguage()`](#fn-withacceptlanguage)
 * [`fn withPortfolioId()`](#fn-withportfolioid)
 * [`fn withPrincipalId()`](#fn-withprincipalid)
+* [`fn withSharePrincipals()`](#fn-withshareprincipals)
 * [`fn withShareTagOptions()`](#fn-withsharetagoptions)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
@@ -58,6 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `accept_language` (`string`): Set the `accept_language` field on the resulting resource block. When `null`, the `accept_language` field will be omitted from the resulting object.
   - `portfolio_id` (`string`): Set the `portfolio_id` field on the resulting resource block.
   - `principal_id` (`string`): Set the `principal_id` field on the resulting resource block.
+  - `share_principals` (`bool`): Set the `share_principals` field on the resulting resource block. When `null`, the `share_principals` field will be omitted from the resulting object.
   - `share_tag_options` (`bool`): Set the `share_tag_options` field on the resulting resource block. When `null`, the `share_tag_options` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting resource block.
   - `wait_for_acceptance` (`bool`): Set the `wait_for_acceptance` field on the resulting resource block. When `null`, the `wait_for_acceptance` field will be omitted from the resulting object.
@@ -88,6 +90,7 @@ injecting into a complete block.
   - `accept_language` (`string`): Set the `accept_language` field on the resulting object. When `null`, the `accept_language` field will be omitted from the resulting object.
   - `portfolio_id` (`string`): Set the `portfolio_id` field on the resulting object.
   - `principal_id` (`string`): Set the `principal_id` field on the resulting object.
+  - `share_principals` (`bool`): Set the `share_principals` field on the resulting object. When `null`, the `share_principals` field will be omitted from the resulting object.
   - `share_tag_options` (`bool`): Set the `share_tag_options` field on the resulting object. When `null`, the `share_tag_options` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `wait_for_acceptance` (`bool`): Set the `wait_for_acceptance` field on the resulting object. When `null`, the `wait_for_acceptance` field will be omitted from the resulting object.
@@ -143,6 +146,22 @@ Terraform resource block to set or update the principal_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `principal_id` field.
+
+
+### fn withSharePrincipals
+
+```ts
+withSharePrincipals()
+```
+
+`aws.bool.withSharePrincipals` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the share_principals field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `share_principals` field.
 
 
 ### fn withShareTagOptions
