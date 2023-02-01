@@ -32,6 +32,7 @@ permalink: /data/
 * [appmesh_virtual_service](appmesh_virtual_service.md)
 * [arn](arn.md)
 * [auditmanager_control](auditmanager_control.md)
+* [auditmanager_framework](auditmanager_framework.md)
 * [autoscaling_group](autoscaling_group.md)
 * [autoscaling_groups](autoscaling_groups.md)
 * [availability_zone](availability_zone.md)

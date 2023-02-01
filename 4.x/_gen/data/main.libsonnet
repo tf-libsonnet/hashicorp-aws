@@ -27,6 +27,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   appmesh_virtual_service: (import 'appmesh_virtual_service.libsonnet'),
   arn: (import 'arn.libsonnet'),
   auditmanager_control: (import 'auditmanager_control.libsonnet'),
+  auditmanager_framework: (import 'auditmanager_framework.libsonnet'),
   autoscaling_group: (import 'autoscaling_group.libsonnet'),
   autoscaling_groups: (import 'autoscaling_groups.libsonnet'),
   availability_zone: (import 'availability_zone.libsonnet'),
