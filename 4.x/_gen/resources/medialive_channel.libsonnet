@@ -112,12 +112,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       },
       codec_settings:: {
         aac_settings:: {
-          '#new':: d.fn(help='\n`aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.aac_settings.new` constructs a new object with attributes and blocks configured for the `aac_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bitrate` (`number`): Set the `bitrate` field on the resulting object. When `null`, the `bitrate` field will be omitted from the resulting object.\n  - `coding_mode` (`string`): Set the `coding_mode` field on the resulting object. When `null`, the `coding_mode` field will be omitted from the resulting object.\n  - `input_type` (`string`): Set the `input_type` field on the resulting object. When `null`, the `input_type` field will be omitted from the resulting object.\n  - `profile` (`string`): Set the `profile` field on the resulting object. When `null`, the `profile` field will be omitted from the resulting object.\n  - `raw_format` (`string`): Set the `raw_format` field on the resulting object. When `null`, the `raw_format` field will be omitted from the resulting object.\n  - `sample_rate` (`number`): Set the `sample_rate` field on the resulting object. When `null`, the `sample_rate` field will be omitted from the resulting object.\n  - `spec` (`string`): Set the `spec` field on the resulting object. When `null`, the `spec` field will be omitted from the resulting object.\n  - `vbr_quality` (`string`): Set the `vbr_quality` field on the resulting object. When `null`, the `vbr_quality` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `aac_settings` sub block.\n', args=[]),
+          '#new':: d.fn(help='\n`aws.medialive_channel.encoder_settings.audio_descriptions.codec_settings.aac_settings.new` constructs a new object with attributes and blocks configured for the `aac_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bitrate` (`number`): Set the `bitrate` field on the resulting object. When `null`, the `bitrate` field will be omitted from the resulting object.\n  - `coding_mode` (`string`): Set the `coding_mode` field on the resulting object. When `null`, the `coding_mode` field will be omitted from the resulting object.\n  - `input_type` (`string`): Set the `input_type` field on the resulting object. When `null`, the `input_type` field will be omitted from the resulting object.\n  - `profile` (`string`): Set the `profile` field on the resulting object. When `null`, the `profile` field will be omitted from the resulting object.\n  - `rate_control_mode` (`string`): Set the `rate_control_mode` field on the resulting object. When `null`, the `rate_control_mode` field will be omitted from the resulting object.\n  - `raw_format` (`string`): Set the `raw_format` field on the resulting object. When `null`, the `raw_format` field will be omitted from the resulting object.\n  - `sample_rate` (`number`): Set the `sample_rate` field on the resulting object. When `null`, the `sample_rate` field will be omitted from the resulting object.\n  - `spec` (`string`): Set the `spec` field on the resulting object. When `null`, the `spec` field will be omitted from the resulting object.\n  - `vbr_quality` (`string`): Set the `vbr_quality` field on the resulting object. When `null`, the `vbr_quality` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `aac_settings` sub block.\n', args=[]),
           new(
             bitrate=null,
             coding_mode=null,
             input_type=null,
             profile=null,
+            rate_control_mode=null,
             raw_format=null,
             sample_rate=null,
             spec=null,
@@ -127,6 +128,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
             coding_mode: coding_mode,
             input_type: input_type,
             profile: profile,
+            rate_control_mode: rate_control_mode,
             raw_format: raw_format,
             sample_rate: sample_rate,
             spec: spec,

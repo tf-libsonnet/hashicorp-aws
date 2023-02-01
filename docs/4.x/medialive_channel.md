@@ -1134,6 +1134,7 @@ Terraform sub block.
   - `coding_mode` (`string`): Set the `coding_mode` field on the resulting object. When `null`, the `coding_mode` field will be omitted from the resulting object.
   - `input_type` (`string`): Set the `input_type` field on the resulting object. When `null`, the `input_type` field will be omitted from the resulting object.
   - `profile` (`string`): Set the `profile` field on the resulting object. When `null`, the `profile` field will be omitted from the resulting object.
+  - `rate_control_mode` (`string`): Set the `rate_control_mode` field on the resulting object. When `null`, the `rate_control_mode` field will be omitted from the resulting object.
   - `raw_format` (`string`): Set the `raw_format` field on the resulting object. When `null`, the `raw_format` field will be omitted from the resulting object.
   - `sample_rate` (`number`): Set the `sample_rate` field on the resulting object. When `null`, the `sample_rate` field will be omitted from the resulting object.
   - `spec` (`string`): Set the `spec` field on the resulting object. When `null`, the `spec` field will be omitted from the resulting object.
