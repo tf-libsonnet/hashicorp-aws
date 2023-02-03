@@ -19,6 +19,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCidrAuthorizationContext()`](#fn-withcidrauthorizationcontext)
 * [`fn withCidrAuthorizationContextMixin()`](#fn-withcidrauthorizationcontextmixin)
 * [`fn withIpamPoolId()`](#fn-withipampoolid)
+* [`fn withNetmaskLength()`](#fn-withnetmasklength)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`obj cidr_authorization_context`](#obj-cidr_authorization_context)
@@ -57,6 +58,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `cidr` (`string`): Set the `cidr` field on the resulting resource block. When `null`, the `cidr` field will be omitted from the resulting object.
   - `ipam_pool_id` (`string`): Set the `ipam_pool_id` field on the resulting resource block.
+  - `netmask_length` (`number`): Set the `netmask_length` field on the resulting resource block. When `null`, the `netmask_length` field will be omitted from the resulting object.
   - `cidr_authorization_context` (`list[obj]`): Set the `cidr_authorization_context` field on the resulting resource block. When `null`, the `cidr_authorization_context` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool_cidr.cidr_authorization_context.new](#fn-cidr_authorization_contextnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool_cidr.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -84,6 +86,7 @@ injecting into a complete block.
 **Args**:
   - `cidr` (`string`): Set the `cidr` field on the resulting object. When `null`, the `cidr` field will be omitted from the resulting object.
   - `ipam_pool_id` (`string`): Set the `ipam_pool_id` field on the resulting object.
+  - `netmask_length` (`number`): Set the `netmask_length` field on the resulting object. When `null`, the `netmask_length` field will be omitted from the resulting object.
   - `cidr_authorization_context` (`list[obj]`): Set the `cidr_authorization_context` field on the resulting object. When `null`, the `cidr_authorization_context` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool_cidr.cidr_authorization_context.new](#fn-cidr_authorization_contextnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_ipam_pool_cidr.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -158,6 +161,22 @@ Terraform resource block to set or update the ipam_pool_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `ipam_pool_id` field.
+
+
+### fn withNetmaskLength
+
+```ts
+withNetmaskLength()
+```
+
+`aws.number.withNetmaskLength` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the netmask_length field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `netmask_length` field.
 
 
 ### fn withTimeouts
