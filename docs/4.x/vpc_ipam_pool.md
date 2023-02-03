@@ -25,6 +25,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withIpamScopeId()`](#fn-withipamscopeid)
 * [`fn withLocale()`](#fn-withlocale)
+* [`fn withPublicIpSource()`](#fn-withpublicipsource)
 * [`fn withPubliclyAdvertisable()`](#fn-withpubliclyadvertisable)
 * [`fn withSourceIpamPoolId()`](#fn-withsourceipampoolid)
 * [`fn withTags()`](#fn-withtags)
@@ -73,6 +74,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `ipam_scope_id` (`string`): Set the `ipam_scope_id` field on the resulting resource block.
   - `locale` (`string`): Set the `locale` field on the resulting resource block. When `null`, the `locale` field will be omitted from the resulting object.
+  - `public_ip_source` (`string`): Set the `public_ip_source` field on the resulting resource block. When `null`, the `public_ip_source` field will be omitted from the resulting object.
   - `publicly_advertisable` (`bool`): Set the `publicly_advertisable` field on the resulting resource block. When `null`, the `publicly_advertisable` field will be omitted from the resulting object.
   - `source_ipam_pool_id` (`string`): Set the `source_ipam_pool_id` field on the resulting resource block. When `null`, the `source_ipam_pool_id` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
@@ -111,6 +113,7 @@ injecting into a complete block.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `ipam_scope_id` (`string`): Set the `ipam_scope_id` field on the resulting object.
   - `locale` (`string`): Set the `locale` field on the resulting object. When `null`, the `locale` field will be omitted from the resulting object.
+  - `public_ip_source` (`string`): Set the `public_ip_source` field on the resulting object. When `null`, the `public_ip_source` field will be omitted from the resulting object.
   - `publicly_advertisable` (`bool`): Set the `publicly_advertisable` field on the resulting object. When `null`, the `publicly_advertisable` field will be omitted from the resulting object.
   - `source_ipam_pool_id` (`string`): Set the `source_ipam_pool_id` field on the resulting object. When `null`, the `source_ipam_pool_id` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
@@ -279,6 +282,22 @@ Terraform resource block to set or update the locale field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `locale` field.
+
+
+### fn withPublicIpSource
+
+```ts
+withPublicIpSource()
+```
+
+`aws.string.withPublicIpSource` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the public_ip_source field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `public_ip_source` field.
 
 
 ### fn withPubliclyAdvertisable
