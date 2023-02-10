@@ -72,10 +72,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     vpc_id: vpc_id,
   }),
   subnet_mapping:: {
-    '#new':: d.fn(help='\n`aws.networkfirewall_firewall.subnet_mapping.new` constructs a new object with attributes and blocks configured for the `subnet_mapping`\nTerraform sub block.\n\n\n\n**Args**:\n  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `subnet_mapping` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.networkfirewall_firewall.subnet_mapping.new` constructs a new object with attributes and blocks configured for the `subnet_mapping`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.\n  - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `subnet_mapping` sub block.\n', args=[]),
     new(
-      subnet_id
+      subnet_id,
+      ip_address_type=null
     ):: std.prune(a={
+      ip_address_type: ip_address_type,
       subnet_id: subnet_id,
     }),
   },
