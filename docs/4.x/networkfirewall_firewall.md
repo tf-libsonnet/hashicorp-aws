@@ -371,6 +371,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
   - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
 
 **Returns**:

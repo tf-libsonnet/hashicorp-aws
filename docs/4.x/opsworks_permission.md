@@ -53,7 +53,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `allow_ssh` (`bool`): Set the `allow_ssh` field on the resulting resource block. When `null`, the `allow_ssh` field will be omitted from the resulting object.
   - `allow_sudo` (`bool`): Set the `allow_sudo` field on the resulting resource block. When `null`, the `allow_sudo` field will be omitted from the resulting object.
   - `level` (`string`): Set the `level` field on the resulting resource block. When `null`, the `level` field will be omitted from the resulting object.
-  - `stack_id` (`string`): Set the `stack_id` field on the resulting resource block. When `null`, the `stack_id` field will be omitted from the resulting object.
+  - `stack_id` (`string`): Set the `stack_id` field on the resulting resource block.
   - `user_arn` (`string`): Set the `user_arn` field on the resulting resource block.
 
 **Returns**:
@@ -81,7 +81,7 @@ injecting into a complete block.
   - `allow_ssh` (`bool`): Set the `allow_ssh` field on the resulting object. When `null`, the `allow_ssh` field will be omitted from the resulting object.
   - `allow_sudo` (`bool`): Set the `allow_sudo` field on the resulting object. When `null`, the `allow_sudo` field will be omitted from the resulting object.
   - `level` (`string`): Set the `level` field on the resulting object. When `null`, the `level` field will be omitted from the resulting object.
-  - `stack_id` (`string`): Set the `stack_id` field on the resulting object. When `null`, the `stack_id` field will be omitted from the resulting object.
+  - `stack_id` (`string`): Set the `stack_id` field on the resulting object.
   - `user_arn` (`string`): Set the `user_arn` field on the resulting object.
 
 **Returns**:

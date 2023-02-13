@@ -37,6 +37,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMemorySize()`](#fn-withmemorysize)
 * [`fn withPackageType()`](#fn-withpackagetype)
 * [`fn withPublish()`](#fn-withpublish)
+* [`fn withReplaceSecurityGroupsOnDestroy()`](#fn-withreplacesecuritygroupsondestroy)
+* [`fn withReplacementSecurityGroupIds()`](#fn-withreplacementsecuritygroupids)
 * [`fn withReservedConcurrentExecutions()`](#fn-withreservedconcurrentexecutions)
 * [`fn withRole()`](#fn-withrole)
 * [`fn withRuntime()`](#fn-withruntime)
@@ -115,6 +117,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `memory_size` (`number`): Set the `memory_size` field on the resulting resource block. When `null`, the `memory_size` field will be omitted from the resulting object.
   - `package_type` (`string`): Set the `package_type` field on the resulting resource block. When `null`, the `package_type` field will be omitted from the resulting object.
   - `publish` (`bool`): Set the `publish` field on the resulting resource block. When `null`, the `publish` field will be omitted from the resulting object.
+  - `replace_security_groups_on_destroy` (`bool`): Set the `replace_security_groups_on_destroy` field on the resulting resource block. When `null`, the `replace_security_groups_on_destroy` field will be omitted from the resulting object.
+  - `replacement_security_group_ids` (`list`): Set the `replacement_security_group_ids` field on the resulting resource block. When `null`, the `replacement_security_group_ids` field will be omitted from the resulting object.
   - `reserved_concurrent_executions` (`number`): Set the `reserved_concurrent_executions` field on the resulting resource block. When `null`, the `reserved_concurrent_executions` field will be omitted from the resulting object.
   - `role` (`string`): Set the `role` field on the resulting resource block.
   - `runtime` (`string`): Set the `runtime` field on the resulting resource block. When `null`, the `runtime` field will be omitted from the resulting object.
@@ -169,6 +173,8 @@ injecting into a complete block.
   - `memory_size` (`number`): Set the `memory_size` field on the resulting object. When `null`, the `memory_size` field will be omitted from the resulting object.
   - `package_type` (`string`): Set the `package_type` field on the resulting object. When `null`, the `package_type` field will be omitted from the resulting object.
   - `publish` (`bool`): Set the `publish` field on the resulting object. When `null`, the `publish` field will be omitted from the resulting object.
+  - `replace_security_groups_on_destroy` (`bool`): Set the `replace_security_groups_on_destroy` field on the resulting object. When `null`, the `replace_security_groups_on_destroy` field will be omitted from the resulting object.
+  - `replacement_security_group_ids` (`list`): Set the `replacement_security_group_ids` field on the resulting object. When `null`, the `replacement_security_group_ids` field will be omitted from the resulting object.
   - `reserved_concurrent_executions` (`number`): Set the `reserved_concurrent_executions` field on the resulting object. When `null`, the `reserved_concurrent_executions` field will be omitted from the resulting object.
   - `role` (`string`): Set the `role` field on the resulting object.
   - `runtime` (`string`): Set the `runtime` field on the resulting object. When `null`, the `runtime` field will be omitted from the resulting object.
@@ -568,6 +574,38 @@ Terraform resource block to set or update the publish field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `publish` field.
+
+
+### fn withReplaceSecurityGroupsOnDestroy
+
+```ts
+withReplaceSecurityGroupsOnDestroy()
+```
+
+`aws.bool.withReplaceSecurityGroupsOnDestroy` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the replace_security_groups_on_destroy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `replace_security_groups_on_destroy` field.
+
+
+### fn withReplacementSecurityGroupIds
+
+```ts
+withReplacementSecurityGroupIds()
+```
+
+`aws.list.withReplacementSecurityGroupIds` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the replacement_security_group_ids field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `replacement_security_group_ids` field.
 
 
 ### fn withReservedConcurrentExecutions
