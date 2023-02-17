@@ -3,15 +3,17 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='db_proxy', url='', help='`db_proxy` represents the `aws_db_proxy` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   auth:: {
-    '#new':: d.fn(help='\n`aws.db_proxy.auth.new` constructs a new object with attributes and blocks configured for the `auth`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auth_scheme` (`string`): Set the `auth_scheme` field on the resulting object. When `null`, the `auth_scheme` field will be omitted from the resulting object.\n  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.\n  - `iam_auth` (`string`): Set the `iam_auth` field on the resulting object. When `null`, the `iam_auth` field will be omitted from the resulting object.\n  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.\n  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `auth` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.db_proxy.auth.new` constructs a new object with attributes and blocks configured for the `auth`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auth_scheme` (`string`): Set the `auth_scheme` field on the resulting object. When `null`, the `auth_scheme` field will be omitted from the resulting object.\n  - `client_password_auth_type` (`string`): Set the `client_password_auth_type` field on the resulting object. When `null`, the `client_password_auth_type` field will be omitted from the resulting object.\n  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.\n  - `iam_auth` (`string`): Set the `iam_auth` field on the resulting object. When `null`, the `iam_auth` field will be omitted from the resulting object.\n  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.\n  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `auth` sub block.\n', args=[]),
     new(
       auth_scheme=null,
+      client_password_auth_type=null,
       description=null,
       iam_auth=null,
       secret_arn=null,
       username=null
     ):: std.prune(a={
       auth_scheme: auth_scheme,
+      client_password_auth_type: client_password_auth_type,
       description: description,
       iam_auth: iam_auth,
       secret_arn: secret_arn,

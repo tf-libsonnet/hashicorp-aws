@@ -366,6 +366,7 @@ Terraform sub block.
 
 **Args**:
   - `auth_scheme` (`string`): Set the `auth_scheme` field on the resulting object. When `null`, the `auth_scheme` field will be omitted from the resulting object.
+  - `client_password_auth_type` (`string`): Set the `client_password_auth_type` field on the resulting object. When `null`, the `client_password_auth_type` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `iam_auth` (`string`): Set the `iam_auth` field on the resulting object. When `null`, the `iam_auth` field will be omitted from the resulting object.
   - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object. When `null`, the `secret_arn` field will be omitted from the resulting object.

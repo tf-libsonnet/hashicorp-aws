@@ -227,9 +227,9 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   },
   service_connect_configuration:: {
     log_configuration:: {
-      '#new':: d.fn(help='\n`aws.ecs_service.service_connect_configuration.log_configuration.new` constructs a new object with attributes and blocks configured for the `log_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_driver` (`string`): Set the `log_driver` field on the resulting object. When `null`, the `log_driver` field will be omitted from the resulting object.\n  - `options` (`obj`): Set the `options` field on the resulting object. When `null`, the `options` field will be omitted from the resulting object.\n  - `secret_option` (`list[obj]`): Set the `secret_option` field on the resulting object. When `null`, the `secret_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.secret_option.new](#fn-service_connect_configurationservice_connect_configurationsecret_optionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `log_configuration` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.ecs_service.service_connect_configuration.log_configuration.new` constructs a new object with attributes and blocks configured for the `log_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_driver` (`string`): Set the `log_driver` field on the resulting object.\n  - `options` (`obj`): Set the `options` field on the resulting object. When `null`, the `options` field will be omitted from the resulting object.\n  - `secret_option` (`list[obj]`): Set the `secret_option` field on the resulting object. When `null`, the `secret_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_service.service_connect_configuration.log_configuration.secret_option.new](#fn-service_connect_configurationservice_connect_configurationsecret_optionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `log_configuration` sub block.\n', args=[]),
       new(
-        log_driver=null,
+        log_driver,
         options=null,
         secret_option=null
       ):: std.prune(a={

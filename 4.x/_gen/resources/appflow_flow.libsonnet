@@ -586,11 +586,11 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       sapo_data:: {
-        '#new':: d.fn(help='\n`aws.appflow_flow.source_flow_config.source_connector_properties.sapo_data.new` constructs a new object with attributes and blocks configured for the `sapo_data`\nTerraform sub block.\n\n\n\n**Args**:\n  - `object` (`string`): Set the `object` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `sapo_data` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.appflow_flow.source_flow_config.source_connector_properties.sapo_data.new` constructs a new object with attributes and blocks configured for the `sapo_data`\nTerraform sub block.\n\n\n\n**Args**:\n  - `object_path` (`string`): Set the `object_path` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `sapo_data` sub block.\n', args=[]),
         new(
-          object
+          object_path
         ):: std.prune(a={
-          object: object,
+          object_path: object_path,
         }),
       },
       service_now:: {

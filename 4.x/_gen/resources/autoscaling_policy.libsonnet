@@ -258,30 +258,30 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         target_value: target_value,
       }),
       predefined_load_metric_specification:: {
-        '#new':: d.fn(help='\n`aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_load_metric_specification.new` constructs a new object with attributes and blocks configured for the `predefined_load_metric_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.\n  - `resource_label` (`string`): Set the `resource_label` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `predefined_load_metric_specification` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_load_metric_specification.new` constructs a new object with attributes and blocks configured for the `predefined_load_metric_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.\n  - `resource_label` (`string`): Set the `resource_label` field on the resulting object. When `null`, the `resource_label` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `predefined_load_metric_specification` sub block.\n', args=[]),
         new(
           predefined_metric_type,
-          resource_label
+          resource_label=null
         ):: std.prune(a={
           predefined_metric_type: predefined_metric_type,
           resource_label: resource_label,
         }),
       },
       predefined_metric_pair_specification:: {
-        '#new':: d.fn(help='\n`aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_metric_pair_specification.new` constructs a new object with attributes and blocks configured for the `predefined_metric_pair_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.\n  - `resource_label` (`string`): Set the `resource_label` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `predefined_metric_pair_specification` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_metric_pair_specification.new` constructs a new object with attributes and blocks configured for the `predefined_metric_pair_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.\n  - `resource_label` (`string`): Set the `resource_label` field on the resulting object. When `null`, the `resource_label` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `predefined_metric_pair_specification` sub block.\n', args=[]),
         new(
           predefined_metric_type,
-          resource_label
+          resource_label=null
         ):: std.prune(a={
           predefined_metric_type: predefined_metric_type,
           resource_label: resource_label,
         }),
       },
       predefined_scaling_metric_specification:: {
-        '#new':: d.fn(help='\n`aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_scaling_metric_specification.new` constructs a new object with attributes and blocks configured for the `predefined_scaling_metric_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.\n  - `resource_label` (`string`): Set the `resource_label` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `predefined_scaling_metric_specification` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.autoscaling_policy.predictive_scaling_configuration.metric_specification.predefined_scaling_metric_specification.new` constructs a new object with attributes and blocks configured for the `predefined_scaling_metric_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.\n  - `resource_label` (`string`): Set the `resource_label` field on the resulting object. When `null`, the `resource_label` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `predefined_scaling_metric_specification` sub block.\n', args=[]),
         new(
           predefined_metric_type,
-          resource_label
+          resource_label=null
         ):: std.prune(a={
           predefined_metric_type: predefined_metric_type,
           resource_label: resource_label,

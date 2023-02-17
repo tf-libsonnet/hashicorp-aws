@@ -1562,7 +1562,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `object` (`string`): Set the `object` field on the resulting object.
+  - `object_path` (`string`): Set the `object_path` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `sapo_data` sub block.
