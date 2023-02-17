@@ -32,6 +32,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withIamRoles()`](#fn-withiamroles)
 * [`fn withKmsKeyArn()`](#fn-withkmskeyarn)
 * [`fn withNeptuneClusterParameterGroupName()`](#fn-withneptuneclusterparametergroupname)
+* [`fn withNeptuneInstanceParameterGroupName()`](#fn-withneptuneinstanceparametergroupname)
 * [`fn withNeptuneSubnetGroupName()`](#fn-withneptunesubnetgroupname)
 * [`fn withPort()`](#fn-withport)
 * [`fn withPreferredBackupWindow()`](#fn-withpreferredbackupwindow)
@@ -98,6 +99,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `iam_roles` (`list`): Set the `iam_roles` field on the resulting resource block. When `null`, the `iam_roles` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `neptune_cluster_parameter_group_name` (`string`): Set the `neptune_cluster_parameter_group_name` field on the resulting resource block. When `null`, the `neptune_cluster_parameter_group_name` field will be omitted from the resulting object.
+  - `neptune_instance_parameter_group_name` (`string`): Set the `neptune_instance_parameter_group_name` field on the resulting resource block. When `null`, the `neptune_instance_parameter_group_name` field will be omitted from the resulting object.
   - `neptune_subnet_group_name` (`string`): Set the `neptune_subnet_group_name` field on the resulting resource block. When `null`, the `neptune_subnet_group_name` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
   - `preferred_backup_window` (`string`): Set the `preferred_backup_window` field on the resulting resource block. When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
@@ -151,6 +153,7 @@ injecting into a complete block.
   - `iam_roles` (`list`): Set the `iam_roles` field on the resulting object. When `null`, the `iam_roles` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `neptune_cluster_parameter_group_name` (`string`): Set the `neptune_cluster_parameter_group_name` field on the resulting object. When `null`, the `neptune_cluster_parameter_group_name` field will be omitted from the resulting object.
+  - `neptune_instance_parameter_group_name` (`string`): Set the `neptune_instance_parameter_group_name` field on the resulting object. When `null`, the `neptune_instance_parameter_group_name` field will be omitted from the resulting object.
   - `neptune_subnet_group_name` (`string`): Set the `neptune_subnet_group_name` field on the resulting object. When `null`, the `neptune_subnet_group_name` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `preferred_backup_window` (`string`): Set the `preferred_backup_window` field on the resulting object. When `null`, the `preferred_backup_window` field will be omitted from the resulting object.
@@ -439,6 +442,22 @@ Terraform resource block to set or update the neptune_cluster_parameter_group_na
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `neptune_cluster_parameter_group_name` field.
+
+
+### fn withNeptuneInstanceParameterGroupName
+
+```ts
+withNeptuneInstanceParameterGroupName()
+```
+
+`aws.string.withNeptuneInstanceParameterGroupName` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the neptune_instance_parameter_group_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `neptune_instance_parameter_group_name` field.
 
 
 ### fn withNeptuneSubnetGroupName

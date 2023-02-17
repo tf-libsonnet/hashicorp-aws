@@ -313,6 +313,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   organizations_delegated_administrators: (import 'organizations_delegated_administrators.libsonnet'),
   organizations_delegated_services: (import 'organizations_delegated_services.libsonnet'),
   organizations_organization: (import 'organizations_organization.libsonnet'),
+  organizations_organizational_unit_child_accounts: (import 'organizations_organizational_unit_child_accounts.libsonnet'),
+  organizations_organizational_unit_descendant_accounts: (import 'organizations_organizational_unit_descendant_accounts.libsonnet'),
   organizations_organizational_units: (import 'organizations_organizational_units.libsonnet'),
   organizations_resource_tags: (import 'organizations_resource_tags.libsonnet'),
   outposts_asset: (import 'outposts_asset.libsonnet'),

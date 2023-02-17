@@ -879,7 +879,7 @@ Terraform sub block.
 
 **Args**:
   - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.
-  - `resource_label` (`string`): Set the `resource_label` field on the resulting object.
+  - `resource_label` (`string`): Set the `resource_label` field on the resulting object. When `null`, the `resource_label` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `predefined_load_metric_specification` sub block.
@@ -903,7 +903,7 @@ Terraform sub block.
 
 **Args**:
   - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.
-  - `resource_label` (`string`): Set the `resource_label` field on the resulting object.
+  - `resource_label` (`string`): Set the `resource_label` field on the resulting object. When `null`, the `resource_label` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `predefined_metric_pair_specification` sub block.
@@ -927,7 +927,7 @@ Terraform sub block.
 
 **Args**:
   - `predefined_metric_type` (`string`): Set the `predefined_metric_type` field on the resulting object.
-  - `resource_label` (`string`): Set the `resource_label` field on the resulting object.
+  - `resource_label` (`string`): Set the `resource_label` field on the resulting object. When `null`, the `resource_label` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `predefined_scaling_metric_specification` sub block.

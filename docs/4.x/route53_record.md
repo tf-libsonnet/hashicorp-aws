@@ -18,6 +18,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAlias()`](#fn-withalias)
 * [`fn withAliasMixin()`](#fn-withaliasmixin)
 * [`fn withAllowOverwrite()`](#fn-withallowoverwrite)
+* [`fn withCidrRoutingPolicy()`](#fn-withcidrroutingpolicy)
+* [`fn withCidrRoutingPolicyMixin()`](#fn-withcidrroutingpolicymixin)
 * [`fn withFailoverRoutingPolicy()`](#fn-withfailoverroutingpolicy)
 * [`fn withFailoverRoutingPolicyMixin()`](#fn-withfailoverroutingpolicymixin)
 * [`fn withGeolocationRoutingPolicy()`](#fn-withgeolocationroutingpolicy)
@@ -36,6 +38,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withZoneId()`](#fn-withzoneid)
 * [`obj alias`](#obj-alias)
   * [`fn new()`](#fn-aliasnew)
+* [`obj cidr_routing_policy`](#obj-cidr_routing_policy)
+  * [`fn new()`](#fn-cidr_routing_policynew)
 * [`obj failover_routing_policy`](#obj-failover_routing_policy)
   * [`fn new()`](#fn-failover_routing_policynew)
 * [`obj geolocation_routing_policy`](#obj-geolocation_routing_policy)
@@ -84,6 +88,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `type` (`string`): Set the `type` field on the resulting resource block.
   - `zone_id` (`string`): Set the `zone_id` field on the resulting resource block.
   - `alias` (`list[obj]`): Set the `alias` field on the resulting resource block. When `null`, the `alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.alias.new](#fn-aliasnew) constructor.
+  - `cidr_routing_policy` (`list[obj]`): Set the `cidr_routing_policy` field on the resulting resource block. When `null`, the `cidr_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.cidr_routing_policy.new](#fn-cidr_routing_policynew) constructor.
   - `failover_routing_policy` (`list[obj]`): Set the `failover_routing_policy` field on the resulting resource block. When `null`, the `failover_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.failover_routing_policy.new](#fn-failover_routing_policynew) constructor.
   - `geolocation_routing_policy` (`list[obj]`): Set the `geolocation_routing_policy` field on the resulting resource block. When `null`, the `geolocation_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.geolocation_routing_policy.new](#fn-geolocation_routing_policynew) constructor.
   - `latency_routing_policy` (`list[obj]`): Set the `latency_routing_policy` field on the resulting resource block. When `null`, the `latency_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.latency_routing_policy.new](#fn-latency_routing_policynew) constructor.
@@ -121,6 +126,7 @@ injecting into a complete block.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `zone_id` (`string`): Set the `zone_id` field on the resulting object.
   - `alias` (`list[obj]`): Set the `alias` field on the resulting object. When `null`, the `alias` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.alias.new](#fn-aliasnew) constructor.
+  - `cidr_routing_policy` (`list[obj]`): Set the `cidr_routing_policy` field on the resulting object. When `null`, the `cidr_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.cidr_routing_policy.new](#fn-cidr_routing_policynew) constructor.
   - `failover_routing_policy` (`list[obj]`): Set the `failover_routing_policy` field on the resulting object. When `null`, the `failover_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.failover_routing_policy.new](#fn-failover_routing_policynew) constructor.
   - `geolocation_routing_policy` (`list[obj]`): Set the `geolocation_routing_policy` field on the resulting object. When `null`, the `geolocation_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.geolocation_routing_policy.new](#fn-geolocation_routing_policynew) constructor.
   - `latency_routing_policy` (`list[obj]`): Set the `latency_routing_policy` field on the resulting object. When `null`, the `latency_routing_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_record.latency_routing_policy.new](#fn-latency_routing_policynew) constructor.
@@ -181,6 +187,43 @@ Terraform resource block to set or update the allow_overwrite field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `allow_overwrite` field.
+
+
+### fn withCidrRoutingPolicy
+
+```ts
+withCidrRoutingPolicy()
+```
+
+`aws.list[obj].withCidrRoutingPolicy` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the cidr_routing_policy field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withCidrRoutingPolicyMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `cidr_routing_policy` field.
+
+
+### fn withCidrRoutingPolicyMixin
+
+```ts
+withCidrRoutingPolicyMixin()
+```
+
+`aws.list[obj].withCidrRoutingPolicyMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the cidr_routing_policy field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withCidrRoutingPolicy](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `cidr_routing_policy` field.
 
 
 ### fn withFailoverRoutingPolicy
@@ -482,6 +525,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `alias` sub block.
+
+
+## obj cidr_routing_policy
+
+
+
+### fn cidr_routing_policy.new
+
+```ts
+new()
+```
+
+
+`aws.route53_record.cidr_routing_policy.new` constructs a new object with attributes and blocks configured for the `cidr_routing_policy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `collection_id` (`string`): Set the `collection_id` field on the resulting object.
+  - `location_name` (`string`): Set the `location_name` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `cidr_routing_policy` sub block.
 
 
 ## obj failover_routing_policy

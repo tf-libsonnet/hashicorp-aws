@@ -318,6 +318,8 @@ permalink: /data/
 * [organizations_delegated_administrators](organizations_delegated_administrators.md)
 * [organizations_delegated_services](organizations_delegated_services.md)
 * [organizations_organization](organizations_organization.md)
+* [organizations_organizational_unit_child_accounts](organizations_organizational_unit_child_accounts.md)
+* [organizations_organizational_unit_descendant_accounts](organizations_organizational_unit_descendant_accounts.md)
 * [organizations_organizational_units](organizations_organizational_units.md)
 * [organizations_resource_tags](organizations_resource_tags.md)
 * [outposts_asset](outposts_asset.md)
