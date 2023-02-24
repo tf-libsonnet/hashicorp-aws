@@ -333,6 +333,7 @@ Terraform sub block.
   - `cloudwatchevidently` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudwatchevidently` field will be omitted from the resulting object.
   - `cloudwatchlog` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudwatchlog` field will be omitted from the resulting object.
   - `cloudwatchlogs` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudwatchlogs` field will be omitted from the resulting object.
+  - `cloudwatchobservabilityaccessmanager` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudwatchobservabilityaccessmanager` field will be omitted from the resulting object.
   - `cloudwatchrum` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudwatchrum` field will be omitted from the resulting object.
   - `codeartifact` (`string`): Use this to override the default service endpoint URL When `null`, the `codeartifact` field will be omitted from the resulting object.
   - `codebuild` (`string`): Use this to override the default service endpoint URL When `null`, the `codebuild` field will be omitted from the resulting object.
@@ -529,6 +530,7 @@ Terraform sub block.
   - `networkmanager` (`string`): Use this to override the default service endpoint URL When `null`, the `networkmanager` field will be omitted from the resulting object.
   - `nimble` (`string`): Use this to override the default service endpoint URL When `null`, the `nimble` field will be omitted from the resulting object.
   - `nimblestudio` (`string`): Use this to override the default service endpoint URL When `null`, the `nimblestudio` field will be omitted from the resulting object.
+  - `oam` (`string`): Use this to override the default service endpoint URL When `null`, the `oam` field will be omitted from the resulting object.
   - `opensearch` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearch` field will be omitted from the resulting object.
   - `opensearchserverless` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchserverless` field will be omitted from the resulting object.
   - `opensearchservice` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchservice` field will be omitted from the resulting object.

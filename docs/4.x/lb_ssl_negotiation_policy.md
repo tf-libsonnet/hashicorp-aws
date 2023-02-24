@@ -20,6 +20,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLbPort()`](#fn-withlbport)
 * [`fn withLoadBalancer()`](#fn-withloadbalancer)
 * [`fn withName()`](#fn-withname)
+* [`fn withTriggers()`](#fn-withtriggers)
 * [`obj attribute`](#obj-attribute)
   * [`fn new()`](#fn-attributenew)
 
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `lb_port` (`number`): Set the `lb_port` field on the resulting resource block.
   - `load_balancer` (`string`): Set the `load_balancer` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `triggers` (`obj`): Set the `triggers` field on the resulting resource block. When `null`, the `triggers` field will be omitted from the resulting object.
   - `attribute` (`list[obj]`): Set the `attribute` field on the resulting resource block. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_ssl_negotiation_policy.attribute.new](#fn-attributenew) constructor.
 
 **Returns**:
@@ -82,6 +84,7 @@ injecting into a complete block.
   - `lb_port` (`number`): Set the `lb_port` field on the resulting object.
   - `load_balancer` (`string`): Set the `load_balancer` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
+  - `triggers` (`obj`): Set the `triggers` field on the resulting object. When `null`, the `triggers` field will be omitted from the resulting object.
   - `attribute` (`list[obj]`): Set the `attribute` field on the resulting object. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_ssl_negotiation_policy.attribute.new](#fn-attributenew) constructor.
 
 **Returns**:
@@ -171,6 +174,22 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withTriggers
+
+```ts
+withTriggers()
+```
+
+`aws.obj.withTriggers` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the triggers field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `triggers` field.
 
 
 ## obj attribute

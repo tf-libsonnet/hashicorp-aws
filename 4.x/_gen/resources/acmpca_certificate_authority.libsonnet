@@ -99,11 +99,11 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   }),
   revocation_configuration:: {
     crl_configuration:: {
-      '#new':: d.fn(help='\n`aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new` constructs a new object with attributes and blocks configured for the `crl_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `custom_cname` (`string`): Set the `custom_cname` field on the resulting object. When `null`, the `custom_cname` field will be omitted from the resulting object.\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n  - `expiration_in_days` (`number`): Set the `expiration_in_days` field on the resulting object.\n  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object. When `null`, the `s3_bucket_name` field will be omitted from the resulting object.\n  - `s3_object_acl` (`string`): Set the `s3_object_acl` field on the resulting object. When `null`, the `s3_object_acl` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `crl_configuration` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.acmpca_certificate_authority.revocation_configuration.crl_configuration.new` constructs a new object with attributes and blocks configured for the `crl_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `custom_cname` (`string`): Set the `custom_cname` field on the resulting object. When `null`, the `custom_cname` field will be omitted from the resulting object.\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.\n  - `expiration_in_days` (`number`): Set the `expiration_in_days` field on the resulting object. When `null`, the `expiration_in_days` field will be omitted from the resulting object.\n  - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object. When `null`, the `s3_bucket_name` field will be omitted from the resulting object.\n  - `s3_object_acl` (`string`): Set the `s3_object_acl` field on the resulting object. When `null`, the `s3_object_acl` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `crl_configuration` sub block.\n', args=[]),
       new(
-        expiration_in_days,
         custom_cname=null,
         enabled=null,
+        expiration_in_days=null,
         s3_bucket_name=null,
         s3_object_acl=null
       ):: std.prune(a={
