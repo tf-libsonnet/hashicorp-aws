@@ -427,6 +427,8 @@ permalink: /data/
 * [vpc_ipam_preview_next_cidr](vpc_ipam_preview_next_cidr.md)
 * [vpc_peering_connection](vpc_peering_connection.md)
 * [vpc_peering_connections](vpc_peering_connections.md)
+* [vpc_security_group_rule](vpc_security_group_rule.md)
+* [vpc_security_group_rules](vpc_security_group_rules.md)
 * [vpcs](vpcs.md)
 * [vpn_gateway](vpn_gateway.md)
 * [waf_ipset](waf_ipset.md)

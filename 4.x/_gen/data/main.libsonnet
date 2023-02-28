@@ -422,6 +422,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   vpc_ipam_preview_next_cidr: (import 'vpc_ipam_preview_next_cidr.libsonnet'),
   vpc_peering_connection: (import 'vpc_peering_connection.libsonnet'),
   vpc_peering_connections: (import 'vpc_peering_connections.libsonnet'),
+  vpc_security_group_rule: (import 'vpc_security_group_rule.libsonnet'),
+  vpc_security_group_rules: (import 'vpc_security_group_rules.libsonnet'),
   vpcs: (import 'vpcs.libsonnet'),
   vpn_gateway: (import 'vpn_gateway.libsonnet'),
   waf_ipset: (import 'waf_ipset.libsonnet'),

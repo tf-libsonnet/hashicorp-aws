@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withImageDigest()`](#fn-withimagedigest)
 * [`fn withImageTag()`](#fn-withimagetag)
+* [`fn withMostRecent()`](#fn-withmostrecent)
 * [`fn withRegistryId()`](#fn-withregistryid)
 * [`fn withRepositoryName()`](#fn-withrepositoryname)
 
@@ -51,6 +52,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `dataSrcLabel` (`string`): The name label of the block.
   - `image_digest` (`string`): Set the `image_digest` field on the resulting data source block. When `null`, the `image_digest` field will be omitted from the resulting object.
   - `image_tag` (`string`): Set the `image_tag` field on the resulting data source block. When `null`, the `image_tag` field will be omitted from the resulting object.
+  - `most_recent` (`bool`): Set the `most_recent` field on the resulting data source block. When `null`, the `most_recent` field will be omitted from the resulting object.
   - `registry_id` (`string`): Set the `registry_id` field on the resulting data source block. When `null`, the `registry_id` field will be omitted from the resulting object.
   - `repository_name` (`string`): Set the `repository_name` field on the resulting data source block.
 
@@ -78,6 +80,7 @@ injecting into a complete block.
 **Args**:
   - `image_digest` (`string`): Set the `image_digest` field on the resulting object. When `null`, the `image_digest` field will be omitted from the resulting object.
   - `image_tag` (`string`): Set the `image_tag` field on the resulting object. When `null`, the `image_tag` field will be omitted from the resulting object.
+  - `most_recent` (`bool`): Set the `most_recent` field on the resulting object. When `null`, the `most_recent` field will be omitted from the resulting object.
   - `registry_id` (`string`): Set the `registry_id` field on the resulting object. When `null`, the `registry_id` field will be omitted from the resulting object.
   - `repository_name` (`string`): Set the `repository_name` field on the resulting object.
 
@@ -115,6 +118,22 @@ Terraform data source block to set or update the image_tag field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `image_tag` field.
+
+
+### fn withMostRecent
+
+```ts
+withMostRecent()
+```
+
+`aws.bool.withMostRecent` constructs a mixin object that can be merged into the `bool`
+Terraform data source block to set or update the most_recent field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `most_recent` field.
 
 
 ### fn withRegistryId

@@ -35,11 +35,13 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withName()`](#fn-withname)
 * [`fn withNamePrefix()`](#fn-withnameprefix)
 * [`fn withPolicy()`](#fn-withpolicy)
+* [`fn withSignatureVersion()`](#fn-withsignatureversion)
 * [`fn withSqsFailureFeedbackRoleArn()`](#fn-withsqsfailurefeedbackrolearn)
 * [`fn withSqsSuccessFeedbackRoleArn()`](#fn-withsqssuccessfeedbackrolearn)
 * [`fn withSqsSuccessFeedbackSampleRate()`](#fn-withsqssuccessfeedbacksamplerate)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTracingConfig()`](#fn-withtracingconfig)
 
 ## Fields
 
@@ -90,11 +92,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
+  - `signature_version` (`number`): Set the `signature_version` field on the resulting resource block. When `null`, the `signature_version` field will be omitted from the resulting object.
   - `sqs_failure_feedback_role_arn` (`string`): Set the `sqs_failure_feedback_role_arn` field on the resulting resource block. When `null`, the `sqs_failure_feedback_role_arn` field will be omitted from the resulting object.
   - `sqs_success_feedback_role_arn` (`string`): Set the `sqs_success_feedback_role_arn` field on the resulting resource block. When `null`, the `sqs_success_feedback_role_arn` field will be omitted from the resulting object.
   - `sqs_success_feedback_sample_rate` (`number`): Set the `sqs_success_feedback_sample_rate` field on the resulting resource block. When `null`, the `sqs_success_feedback_sample_rate` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tracing_config` (`string`): Set the `tracing_config` field on the resulting resource block. When `null`, the `tracing_config` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -138,11 +142,13 @@ injecting into a complete block.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
+  - `signature_version` (`number`): Set the `signature_version` field on the resulting object. When `null`, the `signature_version` field will be omitted from the resulting object.
   - `sqs_failure_feedback_role_arn` (`string`): Set the `sqs_failure_feedback_role_arn` field on the resulting object. When `null`, the `sqs_failure_feedback_role_arn` field will be omitted from the resulting object.
   - `sqs_success_feedback_role_arn` (`string`): Set the `sqs_success_feedback_role_arn` field on the resulting object. When `null`, the `sqs_success_feedback_role_arn` field will be omitted from the resulting object.
   - `sqs_success_feedback_sample_rate` (`number`): Set the `sqs_success_feedback_sample_rate` field on the resulting object. When `null`, the `sqs_success_feedback_sample_rate` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `tracing_config` (`string`): Set the `tracing_config` field on the resulting object. When `null`, the `tracing_config` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sns_topic` resource into the root Terraform configuration.
@@ -468,6 +474,22 @@ Terraform resource block to set or update the policy field.
   - `value` (`string`): The value to set for the `policy` field.
 
 
+### fn withSignatureVersion
+
+```ts
+withSignatureVersion()
+```
+
+`aws.number.withSignatureVersion` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the signature_version field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `signature_version` field.
+
+
 ### fn withSqsFailureFeedbackRoleArn
 
 ```ts
@@ -546,3 +568,19 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
+
+
+### fn withTracingConfig
+
+```ts
+withTracingConfig()
+```
+
+`aws.string.withTracingConfig` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the tracing_config field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `tracing_config` field.

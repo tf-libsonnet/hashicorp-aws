@@ -424,7 +424,7 @@ Terraform sub block.
 **Args**:
   - `custom_cname` (`string`): Set the `custom_cname` field on the resulting object. When `null`, the `custom_cname` field will be omitted from the resulting object.
   - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `expiration_in_days` (`number`): Set the `expiration_in_days` field on the resulting object.
+  - `expiration_in_days` (`number`): Set the `expiration_in_days` field on the resulting object. When `null`, the `expiration_in_days` field will be omitted from the resulting object.
   - `s3_bucket_name` (`string`): Set the `s3_bucket_name` field on the resulting object. When `null`, the `s3_bucket_name` field will be omitted from the resulting object.
   - `s3_object_acl` (`string`): Set the `s3_object_acl` field on the resulting object. When `null`, the `s3_object_acl` field will be omitted from the resulting object.
 
