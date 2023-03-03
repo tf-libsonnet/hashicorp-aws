@@ -658,6 +658,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   licensemanager_license_configuration: (import 'resources/licensemanager_license_configuration.libsonnet'),
   lightsail_bucket: (import 'resources/lightsail_bucket.libsonnet'),
   lightsail_bucket_access_key: (import 'resources/lightsail_bucket_access_key.libsonnet'),
+  lightsail_bucket_resource_access: (import 'resources/lightsail_bucket_resource_access.libsonnet'),
   lightsail_certificate: (import 'resources/lightsail_certificate.libsonnet'),
   lightsail_container_service: (import 'resources/lightsail_container_service.libsonnet'),
   lightsail_container_service_deployment_version: (import 'resources/lightsail_container_service_deployment_version.libsonnet'),

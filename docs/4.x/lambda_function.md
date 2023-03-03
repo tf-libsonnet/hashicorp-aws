@@ -45,6 +45,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withS3Bucket()`](#fn-withs3bucket)
 * [`fn withS3Key()`](#fn-withs3key)
 * [`fn withS3ObjectVersion()`](#fn-withs3objectversion)
+* [`fn withSkipDestroy()`](#fn-withskipdestroy)
 * [`fn withSnapStart()`](#fn-withsnapstart)
 * [`fn withSnapStartMixin()`](#fn-withsnapstartmixin)
 * [`fn withSourceCodeHash()`](#fn-withsourcecodehash)
@@ -125,6 +126,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting resource block. When `null`, the `s3_bucket` field will be omitted from the resulting object.
   - `s3_key` (`string`): Set the `s3_key` field on the resulting resource block. When `null`, the `s3_key` field will be omitted from the resulting object.
   - `s3_object_version` (`string`): Set the `s3_object_version` field on the resulting resource block. When `null`, the `s3_object_version` field will be omitted from the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting resource block. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `source_code_hash` (`string`): Set the `source_code_hash` field on the resulting resource block. When `null`, the `source_code_hash` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -181,6 +183,7 @@ injecting into a complete block.
   - `s3_bucket` (`string`): Set the `s3_bucket` field on the resulting object. When `null`, the `s3_bucket` field will be omitted from the resulting object.
   - `s3_key` (`string`): Set the `s3_key` field on the resulting object. When `null`, the `s3_key` field will be omitted from the resulting object.
   - `s3_object_version` (`string`): Set the `s3_object_version` field on the resulting object. When `null`, the `s3_object_version` field will be omitted from the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting object. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `source_code_hash` (`string`): Set the `source_code_hash` field on the resulting object. When `null`, the `source_code_hash` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -704,6 +707,22 @@ Terraform resource block to set or update the s3_object_version field.
   - `value` (`string`): The value to set for the `s3_object_version` field.
 
 
+### fn withSkipDestroy
+
+```ts
+withSkipDestroy()
+```
+
+`aws.bool.withSkipDestroy` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the skip_destroy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `skip_destroy` field.
+
+
 ### fn withSnapStart
 
 ```ts
@@ -1074,6 +1093,7 @@ Terraform sub block.
 
 **Args**:
   - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
   - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:

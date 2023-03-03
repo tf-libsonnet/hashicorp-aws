@@ -327,16 +327,66 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           value: value,
         }),
       },
-      '#new':: d.fn(help='\n`aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.new` constructs a new object with attributes and blocks configured for the `customized_metric_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.\n  - `namespace` (`string`): Set the `namespace` field on the resulting object.\n  - `statistic` (`string`): Set the `statistic` field on the resulting object.\n  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.\n  - `metric_dimension` (`list[obj]`): Set the `metric_dimension` field on the resulting object. When `null`, the `metric_dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metric_dimension.new](#fn-target_tracking_configurationtarget_tracking_configurationmetric_dimensionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `customized_metric_specification` sub block.\n', args=[]),
+      metrics:: {
+        metric_stat:: {
+          metric:: {
+            dimensions:: {
+              '#new':: d.fn(help='\n`aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions.new` constructs a new object with attributes and blocks configured for the `dimensions`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `value` (`string`): Set the `value` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `dimensions` sub block.\n', args=[]),
+              new(
+                name,
+                value
+              ):: std.prune(a={
+                name: name,
+                value: value,
+              }),
+            },
+            '#new':: d.fn(help='\n`aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.metric_stat.metric.new` constructs a new object with attributes and blocks configured for the `metric`\nTerraform sub block.\n\n\n\n**Args**:\n  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.\n  - `namespace` (`string`): Set the `namespace` field on the resulting object.\n  - `dimensions` (`list[obj]`): Set the `dimensions` field on the resulting object. When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions.new](#fn-target_tracking_configurationtarget_tracking_configurationcustomized_metric_specificationmetricsmetric_statdimensionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `metric` sub block.\n', args=[]),
+            new(
+              metric_name,
+              namespace,
+              dimensions=null
+            ):: std.prune(a={
+              dimensions: dimensions,
+              metric_name: metric_name,
+              namespace: namespace,
+            }),
+          },
+          '#new':: d.fn(help='\n`aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.metric_stat.new` constructs a new object with attributes and blocks configured for the `metric_stat`\nTerraform sub block.\n\n\n\n**Args**:\n  - `stat` (`string`): Set the `stat` field on the resulting object.\n  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.\n  - `metric` (`list[obj]`): Set the `metric` field on the resulting object. When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.metric_stat.metric.new](#fn-target_tracking_configurationtarget_tracking_configurationcustomized_metric_specificationmetricsmetricnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `metric_stat` sub block.\n', args=[]),
+          new(
+            stat,
+            metric=null,
+            unit=null
+          ):: std.prune(a={
+            metric: metric,
+            stat: stat,
+            unit: unit,
+          }),
+        },
+        '#new':: d.fn(help='\n`aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.new` constructs a new object with attributes and blocks configured for the `metrics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `expression` (`string`): Set the `expression` field on the resulting object. When `null`, the `expression` field will be omitted from the resulting object.\n  - `label` (`string`): Set the `label` field on the resulting object. When `null`, the `label` field will be omitted from the resulting object.\n  - `return_data` (`bool`): Set the `return_data` field on the resulting object. When `null`, the `return_data` field will be omitted from the resulting object.\n  - `metric_stat` (`list[obj]`): Set the `metric_stat` field on the resulting object. When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.metric_stat.new](#fn-target_tracking_configurationtarget_tracking_configurationcustomized_metric_specificationmetric_statnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `metrics` sub block.\n', args=[]),
+        new(
+          expression=null,
+          label=null,
+          metric_stat=null,
+          return_data=null
+        ):: std.prune(a={
+          expression: expression,
+          label: label,
+          metric_stat: metric_stat,
+          return_data: return_data,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.new` constructs a new object with attributes and blocks configured for the `customized_metric_specification`\nTerraform sub block.\n\n\n\n**Args**:\n  - `metric_name` (`string`): Set the `metric_name` field on the resulting object. When `null`, the `metric_name` field will be omitted from the resulting object.\n  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.\n  - `statistic` (`string`): Set the `statistic` field on the resulting object. When `null`, the `statistic` field will be omitted from the resulting object.\n  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.\n  - `metric_dimension` (`list[obj]`): Set the `metric_dimension` field on the resulting object. When `null`, the `metric_dimension` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metric_dimension.new](#fn-target_tracking_configurationtarget_tracking_configurationmetric_dimensionnew) constructor.\n  - `metrics` (`list[obj]`): Set the `metrics` field on the resulting object. When `null`, the `metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_policy.target_tracking_configuration.customized_metric_specification.metrics.new](#fn-target_tracking_configurationtarget_tracking_configurationmetricsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `customized_metric_specification` sub block.\n', args=[]),
       new(
-        metric_name,
-        namespace,
-        statistic,
         metric_dimension=null,
+        metric_name=null,
+        metrics=null,
+        namespace=null,
+        statistic=null,
         unit=null
       ):: std.prune(a={
         metric_dimension: metric_dimension,
         metric_name: metric_name,
+        metrics: metrics,
         namespace: namespace,
         statistic: statistic,
         unit: unit,

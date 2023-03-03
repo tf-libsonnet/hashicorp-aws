@@ -17,6 +17,11 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withContext()`](#fn-withcontext)
 * [`fn withExcessCapacityTerminationPolicy()`](#fn-withexcesscapacityterminationpolicy)
+* [`fn withFleetInstanceSet()`](#fn-withfleetinstanceset)
+* [`fn withFleetInstanceSetMixin()`](#fn-withfleetinstancesetmixin)
+* [`fn withFleetState()`](#fn-withfleetstate)
+* [`fn withFulfilledCapacity()`](#fn-withfulfilledcapacity)
+* [`fn withFulfilledOnDemandCapacity()`](#fn-withfulfilledondemandcapacity)
 * [`fn withLaunchTemplateConfig()`](#fn-withlaunchtemplateconfig)
 * [`fn withLaunchTemplateConfigMixin()`](#fn-withlaunchtemplateconfigmixin)
 * [`fn withOnDemandOptions()`](#fn-withondemandoptions)
@@ -33,6 +38,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withType()`](#fn-withtype)
+* [`fn withValidFrom()`](#fn-withvalidfrom)
+* [`fn withValidUntil()`](#fn-withvaliduntil)
+* [`obj fleet_instance_set`](#obj-fleet_instance_set)
+  * [`fn new()`](#fn-fleet_instance_setnew)
 * [`obj launch_template_config`](#obj-launch_template_config)
   * [`fn new()`](#fn-launch_template_confignew)
   * [`obj launch_template_config.launch_template_specification`](#obj-launch_template_configlaunch_template_specification)
@@ -51,6 +60,8 @@ This package contains functions and utilities for setting up the resource using 
         * [`fn new()`](#fn-launch_template_configoverrideinstance_requirementsmemory_gib_per_vcpunew)
       * [`obj launch_template_config.override.instance_requirements.memory_mib`](#obj-launch_template_configoverrideinstance_requirementsmemory_mib)
         * [`fn new()`](#fn-launch_template_configoverrideinstance_requirementsmemory_mibnew)
+      * [`obj launch_template_config.override.instance_requirements.network_bandwidth_gbps`](#obj-launch_template_configoverrideinstance_requirementsnetwork_bandwidth_gbps)
+        * [`fn new()`](#fn-launch_template_configoverrideinstance_requirementsnetwork_bandwidth_gbpsnew)
       * [`obj launch_template_config.override.instance_requirements.network_interface_count`](#obj-launch_template_configoverrideinstance_requirementsnetwork_interface_count)
         * [`fn new()`](#fn-launch_template_configoverrideinstance_requirementsnetwork_interface_countnew)
       * [`obj launch_template_config.override.instance_requirements.total_local_storage_gb`](#obj-launch_template_configoverrideinstance_requirementstotal_local_storage_gb)
@@ -101,12 +112,18 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `context` (`string`): Set the `context` field on the resulting resource block. When `null`, the `context` field will be omitted from the resulting object.
   - `excess_capacity_termination_policy` (`string`): Set the `excess_capacity_termination_policy` field on the resulting resource block. When `null`, the `excess_capacity_termination_policy` field will be omitted from the resulting object.
+  - `fleet_state` (`string`): Set the `fleet_state` field on the resulting resource block. When `null`, the `fleet_state` field will be omitted from the resulting object.
+  - `fulfilled_capacity` (`number`): Set the `fulfilled_capacity` field on the resulting resource block. When `null`, the `fulfilled_capacity` field will be omitted from the resulting object.
+  - `fulfilled_on_demand_capacity` (`number`): Set the `fulfilled_on_demand_capacity` field on the resulting resource block. When `null`, the `fulfilled_on_demand_capacity` field will be omitted from the resulting object.
   - `replace_unhealthy_instances` (`bool`): Set the `replace_unhealthy_instances` field on the resulting resource block. When `null`, the `replace_unhealthy_instances` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `terminate_instances` (`bool`): Set the `terminate_instances` field on the resulting resource block. When `null`, the `terminate_instances` field will be omitted from the resulting object.
   - `terminate_instances_with_expiration` (`bool`): Set the `terminate_instances_with_expiration` field on the resulting resource block. When `null`, the `terminate_instances_with_expiration` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
+  - `valid_from` (`string`): Set the `valid_from` field on the resulting resource block. When `null`, the `valid_from` field will be omitted from the resulting object.
+  - `valid_until` (`string`): Set the `valid_until` field on the resulting resource block. When `null`, the `valid_until` field will be omitted from the resulting object.
+  - `fleet_instance_set` (`list[obj]`): Set the `fleet_instance_set` field on the resulting resource block. When `null`, the `fleet_instance_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.fleet_instance_set.new](#fn-fleet_instance_setnew) constructor.
   - `launch_template_config` (`list[obj]`): Set the `launch_template_config` field on the resulting resource block. When `null`, the `launch_template_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.new](#fn-launch_template_confignew) constructor.
   - `on_demand_options` (`list[obj]`): Set the `on_demand_options` field on the resulting resource block. When `null`, the `on_demand_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.on_demand_options.new](#fn-on_demand_optionsnew) constructor.
   - `spot_options` (`list[obj]`): Set the `spot_options` field on the resulting resource block. When `null`, the `spot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.spot_options.new](#fn-spot_optionsnew) constructor.
@@ -137,12 +154,18 @@ injecting into a complete block.
 **Args**:
   - `context` (`string`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.
   - `excess_capacity_termination_policy` (`string`): Set the `excess_capacity_termination_policy` field on the resulting object. When `null`, the `excess_capacity_termination_policy` field will be omitted from the resulting object.
+  - `fleet_state` (`string`): Set the `fleet_state` field on the resulting object. When `null`, the `fleet_state` field will be omitted from the resulting object.
+  - `fulfilled_capacity` (`number`): Set the `fulfilled_capacity` field on the resulting object. When `null`, the `fulfilled_capacity` field will be omitted from the resulting object.
+  - `fulfilled_on_demand_capacity` (`number`): Set the `fulfilled_on_demand_capacity` field on the resulting object. When `null`, the `fulfilled_on_demand_capacity` field will be omitted from the resulting object.
   - `replace_unhealthy_instances` (`bool`): Set the `replace_unhealthy_instances` field on the resulting object. When `null`, the `replace_unhealthy_instances` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `terminate_instances` (`bool`): Set the `terminate_instances` field on the resulting object. When `null`, the `terminate_instances` field will be omitted from the resulting object.
   - `terminate_instances_with_expiration` (`bool`): Set the `terminate_instances_with_expiration` field on the resulting object. When `null`, the `terminate_instances_with_expiration` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `valid_from` (`string`): Set the `valid_from` field on the resulting object. When `null`, the `valid_from` field will be omitted from the resulting object.
+  - `valid_until` (`string`): Set the `valid_until` field on the resulting object. When `null`, the `valid_until` field will be omitted from the resulting object.
+  - `fleet_instance_set` (`list[obj]`): Set the `fleet_instance_set` field on the resulting object. When `null`, the `fleet_instance_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.fleet_instance_set.new](#fn-fleet_instance_setnew) constructor.
   - `launch_template_config` (`list[obj]`): Set the `launch_template_config` field on the resulting object. When `null`, the `launch_template_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.new](#fn-launch_template_confignew) constructor.
   - `on_demand_options` (`list[obj]`): Set the `on_demand_options` field on the resulting object. When `null`, the `on_demand_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.on_demand_options.new](#fn-on_demand_optionsnew) constructor.
   - `spot_options` (`list[obj]`): Set the `spot_options` field on the resulting object. When `null`, the `spot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.spot_options.new](#fn-spot_optionsnew) constructor.
@@ -183,6 +206,91 @@ Terraform resource block to set or update the excess_capacity_termination_policy
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `excess_capacity_termination_policy` field.
+
+
+### fn withFleetInstanceSet
+
+```ts
+withFleetInstanceSet()
+```
+
+`aws.list[obj].withFleetInstanceSet` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the fleet_instance_set field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withFleetInstanceSetMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `fleet_instance_set` field.
+
+
+### fn withFleetInstanceSetMixin
+
+```ts
+withFleetInstanceSetMixin()
+```
+
+`aws.list[obj].withFleetInstanceSetMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the fleet_instance_set field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withFleetInstanceSet](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `fleet_instance_set` field.
+
+
+### fn withFleetState
+
+```ts
+withFleetState()
+```
+
+`aws.string.withFleetState` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the fleet_state field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `fleet_state` field.
+
+
+### fn withFulfilledCapacity
+
+```ts
+withFulfilledCapacity()
+```
+
+`aws.number.withFulfilledCapacity` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the fulfilled_capacity field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `fulfilled_capacity` field.
+
+
+### fn withFulfilledOnDemandCapacity
+
+```ts
+withFulfilledOnDemandCapacity()
+```
+
+`aws.number.withFulfilledOnDemandCapacity` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the fulfilled_on_demand_capacity field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `fulfilled_on_demand_capacity` field.
 
 
 ### fn withLaunchTemplateConfig
@@ -465,6 +573,64 @@ Terraform resource block to set or update the type field.
   - `value` (`string`): The value to set for the `type` field.
 
 
+### fn withValidFrom
+
+```ts
+withValidFrom()
+```
+
+`aws.string.withValidFrom` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the valid_from field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `valid_from` field.
+
+
+### fn withValidUntil
+
+```ts
+withValidUntil()
+```
+
+`aws.string.withValidUntil` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the valid_until field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `valid_until` field.
+
+
+## obj fleet_instance_set
+
+
+
+### fn fleet_instance_set.new
+
+```ts
+new()
+```
+
+
+`aws.ec2_fleet.fleet_instance_set.new` constructs a new object with attributes and blocks configured for the `fleet_instance_set`
+Terraform sub block.
+
+
+
+**Args**:
+  - `instance_ids` (`list`): Set the `instance_ids` field on the resulting object. When `null`, the `instance_ids` field will be omitted from the resulting object.
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle` (`string`): Set the `lifecycle` field on the resulting object. When `null`, the `lifecycle` field will be omitted from the resulting object.
+  - `platform` (`string`): Set the `platform` field on the resulting object. When `null`, the `platform` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `fleet_instance_set` sub block.
+
+
 ## obj launch_template_config
 
 
@@ -563,6 +729,7 @@ Terraform sub block.
   - `accelerator_manufacturers` (`list`): Set the `accelerator_manufacturers` field on the resulting object. When `null`, the `accelerator_manufacturers` field will be omitted from the resulting object.
   - `accelerator_names` (`list`): Set the `accelerator_names` field on the resulting object. When `null`, the `accelerator_names` field will be omitted from the resulting object.
   - `accelerator_types` (`list`): Set the `accelerator_types` field on the resulting object. When `null`, the `accelerator_types` field will be omitted from the resulting object.
+  - `allowed_instance_types` (`list`): Set the `allowed_instance_types` field on the resulting object. When `null`, the `allowed_instance_types` field will be omitted from the resulting object.
   - `bare_metal` (`string`): Set the `bare_metal` field on the resulting object. When `null`, the `bare_metal` field will be omitted from the resulting object.
   - `burstable_performance` (`string`): Set the `burstable_performance` field on the resulting object. When `null`, the `burstable_performance` field will be omitted from the resulting object.
   - `cpu_manufacturers` (`list`): Set the `cpu_manufacturers` field on the resulting object. When `null`, the `cpu_manufacturers` field will be omitted from the resulting object.
@@ -578,6 +745,7 @@ Terraform sub block.
   - `baseline_ebs_bandwidth_mbps` (`list[obj]`): Set the `baseline_ebs_bandwidth_mbps` field on the resulting object. When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-launch_template_configlaunch_template_configoverridebaseline_ebs_bandwidth_mbpsnew) constructor.
   - `memory_gib_per_vcpu` (`list[obj]`): Set the `memory_gib_per_vcpu` field on the resulting object. When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.memory_gib_per_vcpu.new](#fn-launch_template_configlaunch_template_configoverridememory_gib_per_vcpunew) constructor.
   - `memory_mib` (`list[obj]`): Set the `memory_mib` field on the resulting object. When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.memory_mib.new](#fn-launch_template_configlaunch_template_configoverridememory_mibnew) constructor.
+  - `network_bandwidth_gbps` (`list[obj]`): Set the `network_bandwidth_gbps` field on the resulting object. When `null`, the `network_bandwidth_gbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.network_bandwidth_gbps.new](#fn-launch_template_configlaunch_template_configoverridenetwork_bandwidth_gbpsnew) constructor.
   - `network_interface_count` (`list[obj]`): Set the `network_interface_count` field on the resulting object. When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.network_interface_count.new](#fn-launch_template_configlaunch_template_configoverridenetwork_interface_countnew) constructor.
   - `total_local_storage_gb` (`list[obj]`): Set the `total_local_storage_gb` field on the resulting object. When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.total_local_storage_gb.new](#fn-launch_template_configlaunch_template_configoverridetotal_local_storage_gbnew) constructor.
   - `vcpu_count` (`list[obj]`): Set the `vcpu_count` field on the resulting object. When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_fleet.launch_template_config.override.instance_requirements.vcpu_count.new](#fn-launch_template_configlaunch_template_configoverridevcpu_countnew) constructor.
@@ -706,6 +874,30 @@ Terraform sub block.
   - An attribute object that represents the `memory_mib` sub block.
 
 
+## obj launch_template_config.override.instance_requirements.network_bandwidth_gbps
+
+
+
+### fn launch_template_config.override.instance_requirements.network_bandwidth_gbps.new
+
+```ts
+new()
+```
+
+
+`aws.ec2_fleet.launch_template_config.override.instance_requirements.network_bandwidth_gbps.new` constructs a new object with attributes and blocks configured for the `network_bandwidth_gbps`
+Terraform sub block.
+
+
+
+**Args**:
+  - `max` (`number`): Set the `max` field on the resulting object. When `null`, the `max` field will be omitted from the resulting object.
+  - `min` (`number`): Set the `min` field on the resulting object. When `null`, the `min` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `network_bandwidth_gbps` sub block.
+
+
 ## obj launch_template_config.override.instance_requirements.network_interface_count
 
 
@@ -796,6 +988,10 @@ Terraform sub block.
 
 **Args**:
   - `allocation_strategy` (`string`): Set the `allocation_strategy` field on the resulting object. When `null`, the `allocation_strategy` field will be omitted from the resulting object.
+  - `max_total_price` (`string`): Set the `max_total_price` field on the resulting object. When `null`, the `max_total_price` field will be omitted from the resulting object.
+  - `min_target_capacity` (`number`): Set the `min_target_capacity` field on the resulting object. When `null`, the `min_target_capacity` field will be omitted from the resulting object.
+  - `single_availability_zone` (`bool`): Set the `single_availability_zone` field on the resulting object. When `null`, the `single_availability_zone` field will be omitted from the resulting object.
+  - `single_instance_type` (`bool`): Set the `single_instance_type` field on the resulting object. When `null`, the `single_instance_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `on_demand_options` sub block.
@@ -868,6 +1064,7 @@ Terraform sub block.
 
 **Args**:
   - `replacement_strategy` (`string`): Set the `replacement_strategy` field on the resulting object. When `null`, the `replacement_strategy` field will be omitted from the resulting object.
+  - `termination_delay` (`number`): Set the `termination_delay` field on the resulting object. When `null`, the `termination_delay` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `capacity_rebalance` sub block.

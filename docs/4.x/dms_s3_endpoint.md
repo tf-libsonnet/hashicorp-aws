@@ -37,6 +37,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDatePartitionEnabled()`](#fn-withdatepartitionenabled)
 * [`fn withDatePartitionSequence()`](#fn-withdatepartitionsequence)
 * [`fn withDatePartitionTimezone()`](#fn-withdatepartitiontimezone)
+* [`fn withDetachTargetOnLobLookupFailureParquet()`](#fn-withdetachtargetonloblookupfailureparquet)
 * [`fn withDictPageSizeLimit()`](#fn-withdictpagesizelimit)
 * [`fn withEnableStatistics()`](#fn-withenablestatistics)
 * [`fn withEncodingType()`](#fn-withencodingtype)
@@ -118,6 +119,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `date_partition_enabled` (`bool`): Set the `date_partition_enabled` field on the resulting resource block. When `null`, the `date_partition_enabled` field will be omitted from the resulting object.
   - `date_partition_sequence` (`string`): Set the `date_partition_sequence` field on the resulting resource block. When `null`, the `date_partition_sequence` field will be omitted from the resulting object.
   - `date_partition_timezone` (`string`): Set the `date_partition_timezone` field on the resulting resource block. When `null`, the `date_partition_timezone` field will be omitted from the resulting object.
+  - `detach_target_on_lob_lookup_failure_parquet` (`bool`): Set the `detach_target_on_lob_lookup_failure_parquet` field on the resulting resource block. When `null`, the `detach_target_on_lob_lookup_failure_parquet` field will be omitted from the resulting object.
   - `dict_page_size_limit` (`number`): Set the `dict_page_size_limit` field on the resulting resource block. When `null`, the `dict_page_size_limit` field will be omitted from the resulting object.
   - `enable_statistics` (`bool`): Set the `enable_statistics` field on the resulting resource block. When `null`, the `enable_statistics` field will be omitted from the resulting object.
   - `encoding_type` (`string`): Set the `encoding_type` field on the resulting resource block. When `null`, the `encoding_type` field will be omitted from the resulting object.
@@ -189,6 +191,7 @@ injecting into a complete block.
   - `date_partition_enabled` (`bool`): Set the `date_partition_enabled` field on the resulting object. When `null`, the `date_partition_enabled` field will be omitted from the resulting object.
   - `date_partition_sequence` (`string`): Set the `date_partition_sequence` field on the resulting object. When `null`, the `date_partition_sequence` field will be omitted from the resulting object.
   - `date_partition_timezone` (`string`): Set the `date_partition_timezone` field on the resulting object. When `null`, the `date_partition_timezone` field will be omitted from the resulting object.
+  - `detach_target_on_lob_lookup_failure_parquet` (`bool`): Set the `detach_target_on_lob_lookup_failure_parquet` field on the resulting object. When `null`, the `detach_target_on_lob_lookup_failure_parquet` field will be omitted from the resulting object.
   - `dict_page_size_limit` (`number`): Set the `dict_page_size_limit` field on the resulting object. When `null`, the `dict_page_size_limit` field will be omitted from the resulting object.
   - `enable_statistics` (`bool`): Set the `enable_statistics` field on the resulting object. When `null`, the `enable_statistics` field will be omitted from the resulting object.
   - `encoding_type` (`string`): Set the `encoding_type` field on the resulting object. When `null`, the `encoding_type` field will be omitted from the resulting object.
@@ -570,6 +573,22 @@ Terraform resource block to set or update the date_partition_timezone field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `date_partition_timezone` field.
+
+
+### fn withDetachTargetOnLobLookupFailureParquet
+
+```ts
+withDetachTargetOnLobLookupFailureParquet()
+```
+
+`aws.bool.withDetachTargetOnLobLookupFailureParquet` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the detach_target_on_lob_lookup_failure_parquet field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `detach_target_on_lob_lookup_failure_parquet` field.
 
 
 ### fn withDictPageSizeLimit
