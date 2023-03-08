@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withBasePolicyRegion()`](#fn-withbasepolicyregion)
+* [`fn withBasePolicyRegions()`](#fn-withbasepolicyregions)
 * [`fn withCreateBasePolicy()`](#fn-withcreatebasepolicy)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withGlobalNetworkId()`](#fn-withglobalnetworkid)
@@ -57,6 +58,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `base_policy_region` (`string`): Set the `base_policy_region` field on the resulting resource block. When `null`, the `base_policy_region` field will be omitted from the resulting object.
+  - `base_policy_regions` (`list`): Set the `base_policy_regions` field on the resulting resource block. When `null`, the `base_policy_regions` field will be omitted from the resulting object.
   - `create_base_policy` (`bool`): Set the `create_base_policy` field on the resulting resource block. When `null`, the `create_base_policy` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `global_network_id` (`string`): Set the `global_network_id` field on the resulting resource block.
@@ -88,6 +90,7 @@ injecting into a complete block.
 
 **Args**:
   - `base_policy_region` (`string`): Set the `base_policy_region` field on the resulting object. When `null`, the `base_policy_region` field will be omitted from the resulting object.
+  - `base_policy_regions` (`list`): Set the `base_policy_regions` field on the resulting object. When `null`, the `base_policy_regions` field will be omitted from the resulting object.
   - `create_base_policy` (`bool`): Set the `create_base_policy` field on the resulting object. When `null`, the `create_base_policy` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `global_network_id` (`string`): Set the `global_network_id` field on the resulting object.
@@ -114,6 +117,22 @@ Terraform resource block to set or update the base_policy_region field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `base_policy_region` field.
+
+
+### fn withBasePolicyRegions
+
+```ts
+withBasePolicyRegions()
+```
+
+`aws.list.withBasePolicyRegions` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the base_policy_regions field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `base_policy_regions` field.
 
 
 ### fn withCreateBasePolicy

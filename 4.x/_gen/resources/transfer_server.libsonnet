@@ -320,12 +320,24 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     },
   },
   workflow_details:: {
-    '#new':: d.fn(help='\n`aws.transfer_server.workflow_details.new` constructs a new object with attributes and blocks configured for the `workflow_details`\nTerraform sub block.\n\n\n\n**Args**:\n  - `on_upload` (`list[obj]`): Set the `on_upload` field on the resulting object. When `null`, the `on_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_upload.new](#fn-workflow_detailson_uploadnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `workflow_details` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.transfer_server.workflow_details.new` constructs a new object with attributes and blocks configured for the `workflow_details`\nTerraform sub block.\n\n\n\n**Args**:\n  - `on_partial_upload` (`list[obj]`): Set the `on_partial_upload` field on the resulting object. When `null`, the `on_partial_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_partial_upload.new](#fn-workflow_detailson_partial_uploadnew) constructor.\n  - `on_upload` (`list[obj]`): Set the `on_upload` field on the resulting object. When `null`, the `on_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_upload.new](#fn-workflow_detailson_uploadnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `workflow_details` sub block.\n', args=[]),
     new(
+      on_partial_upload=null,
       on_upload=null
     ):: std.prune(a={
+      on_partial_upload: on_partial_upload,
       on_upload: on_upload,
     }),
+    on_partial_upload:: {
+      '#new':: d.fn(help='\n`aws.transfer_server.workflow_details.on_partial_upload.new` constructs a new object with attributes and blocks configured for the `on_partial_upload`\nTerraform sub block.\n\n\n\n**Args**:\n  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.\n  - `workflow_id` (`string`): Set the `workflow_id` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `on_partial_upload` sub block.\n', args=[]),
+      new(
+        execution_role,
+        workflow_id
+      ):: std.prune(a={
+        execution_role: execution_role,
+        workflow_id: workflow_id,
+      }),
+    },
     on_upload:: {
       '#new':: d.fn(help='\n`aws.transfer_server.workflow_details.on_upload.new` constructs a new object with attributes and blocks configured for the `on_upload`\nTerraform sub block.\n\n\n\n**Args**:\n  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.\n  - `workflow_id` (`string`): Set the `workflow_id` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `on_upload` sub block.\n', args=[]),
       new(

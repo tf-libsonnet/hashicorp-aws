@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAdvancedEventSelector()`](#fn-withadvancedeventselector)
 * [`fn withAdvancedEventSelectorMixin()`](#fn-withadvancedeventselectormixin)
+* [`fn withKmsKeyId()`](#fn-withkmskeyid)
 * [`fn withMultiRegionEnabled()`](#fn-withmultiregionenabled)
 * [`fn withName()`](#fn-withname)
 * [`fn withOrganizationEnabled()`](#fn-withorganizationenabled)
@@ -62,6 +63,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `multi_region_enabled` (`bool`): Set the `multi_region_enabled` field on the resulting resource block. When `null`, the `multi_region_enabled` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `organization_enabled` (`bool`): Set the `organization_enabled` field on the resulting resource block. When `null`, the `organization_enabled` field will be omitted from the resulting object.
@@ -94,6 +96,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `multi_region_enabled` (`bool`): Set the `multi_region_enabled` field on the resulting object. When `null`, the `multi_region_enabled` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `organization_enabled` (`bool`): Set the `organization_enabled` field on the resulting object. When `null`, the `organization_enabled` field will be omitted from the resulting object.
@@ -143,6 +146,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `advanced_event_selector` field.
+
+
+### fn withKmsKeyId
+
+```ts
+withKmsKeyId()
+```
+
+`aws.string.withKmsKeyId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the kms_key_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `kms_key_id` field.
 
 
 ### fn withMultiRegionEnabled

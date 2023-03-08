@@ -668,6 +668,7 @@ project.
 * [licensemanager_license_configuration](licensemanager_license_configuration.md)
 * [lightsail_bucket](lightsail_bucket.md)
 * [lightsail_bucket_access_key](lightsail_bucket_access_key.md)
+* [lightsail_bucket_resource_access](lightsail_bucket_resource_access.md)
 * [lightsail_certificate](lightsail_certificate.md)
 * [lightsail_container_service](lightsail_container_service.md)
 * [lightsail_container_service_deployment_version](lightsail_container_service_deployment_version.md)

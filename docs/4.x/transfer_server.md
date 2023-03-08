@@ -40,6 +40,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-endpoint_detailsnew)
 * [`obj workflow_details`](#obj-workflow_details)
   * [`fn new()`](#fn-workflow_detailsnew)
+  * [`obj workflow_details.on_partial_upload`](#obj-workflow_detailson_partial_upload)
+    * [`fn new()`](#fn-workflow_detailson_partial_uploadnew)
   * [`obj workflow_details.on_upload`](#obj-workflow_detailson_upload)
     * [`fn new()`](#fn-workflow_detailson_uploadnew)
 
@@ -528,10 +530,35 @@ Terraform sub block.
 
 
 **Args**:
+  - `on_partial_upload` (`list[obj]`): Set the `on_partial_upload` field on the resulting object. When `null`, the `on_partial_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_partial_upload.new](#fn-workflow_detailson_partial_uploadnew) constructor.
   - `on_upload` (`list[obj]`): Set the `on_upload` field on the resulting object. When `null`, the `on_upload` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.on_upload.new](#fn-workflow_detailson_uploadnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `workflow_details` sub block.
+
+
+## obj workflow_details.on_partial_upload
+
+
+
+### fn workflow_details.on_partial_upload.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_server.workflow_details.on_partial_upload.new` constructs a new object with attributes and blocks configured for the `on_partial_upload`
+Terraform sub block.
+
+
+
+**Args**:
+  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.
+  - `workflow_id` (`string`): Set the `workflow_id` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `on_partial_upload` sub block.
 
 
 ## obj workflow_details.on_upload

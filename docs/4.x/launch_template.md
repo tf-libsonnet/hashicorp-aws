@@ -110,6 +110,8 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-instance_requirementsmemory_gib_per_vcpunew)
   * [`obj instance_requirements.memory_mib`](#obj-instance_requirementsmemory_mib)
     * [`fn new()`](#fn-instance_requirementsmemory_mibnew)
+  * [`obj instance_requirements.network_bandwidth_gbps`](#obj-instance_requirementsnetwork_bandwidth_gbps)
+    * [`fn new()`](#fn-instance_requirementsnetwork_bandwidth_gbpsnew)
   * [`obj instance_requirements.network_interface_count`](#obj-instance_requirementsnetwork_interface_count)
     * [`fn new()`](#fn-instance_requirementsnetwork_interface_countnew)
   * [`obj instance_requirements.total_local_storage_gb`](#obj-instance_requirementstotal_local_storage_gb)
@@ -1611,6 +1613,7 @@ Terraform sub block.
   - `accelerator_manufacturers` (`list`): Set the `accelerator_manufacturers` field on the resulting object. When `null`, the `accelerator_manufacturers` field will be omitted from the resulting object.
   - `accelerator_names` (`list`): Set the `accelerator_names` field on the resulting object. When `null`, the `accelerator_names` field will be omitted from the resulting object.
   - `accelerator_types` (`list`): Set the `accelerator_types` field on the resulting object. When `null`, the `accelerator_types` field will be omitted from the resulting object.
+  - `allowed_instance_types` (`list`): Set the `allowed_instance_types` field on the resulting object. When `null`, the `allowed_instance_types` field will be omitted from the resulting object.
   - `bare_metal` (`string`): Set the `bare_metal` field on the resulting object. When `null`, the `bare_metal` field will be omitted from the resulting object.
   - `burstable_performance` (`string`): Set the `burstable_performance` field on the resulting object. When `null`, the `burstable_performance` field will be omitted from the resulting object.
   - `cpu_manufacturers` (`list`): Set the `cpu_manufacturers` field on the resulting object. When `null`, the `cpu_manufacturers` field will be omitted from the resulting object.
@@ -1626,6 +1629,7 @@ Terraform sub block.
   - `baseline_ebs_bandwidth_mbps` (`list[obj]`): Set the `baseline_ebs_bandwidth_mbps` field on the resulting object. When `null`, the `baseline_ebs_bandwidth_mbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.baseline_ebs_bandwidth_mbps.new](#fn-instance_requirementsbaseline_ebs_bandwidth_mbpsnew) constructor.
   - `memory_gib_per_vcpu` (`list[obj]`): Set the `memory_gib_per_vcpu` field on the resulting object. When `null`, the `memory_gib_per_vcpu` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.memory_gib_per_vcpu.new](#fn-instance_requirementsmemory_gib_per_vcpunew) constructor.
   - `memory_mib` (`list[obj]`): Set the `memory_mib` field on the resulting object. When `null`, the `memory_mib` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.memory_mib.new](#fn-instance_requirementsmemory_mibnew) constructor.
+  - `network_bandwidth_gbps` (`list[obj]`): Set the `network_bandwidth_gbps` field on the resulting object. When `null`, the `network_bandwidth_gbps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.network_bandwidth_gbps.new](#fn-instance_requirementsnetwork_bandwidth_gbpsnew) constructor.
   - `network_interface_count` (`list[obj]`): Set the `network_interface_count` field on the resulting object. When `null`, the `network_interface_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.network_interface_count.new](#fn-instance_requirementsnetwork_interface_countnew) constructor.
   - `total_local_storage_gb` (`list[obj]`): Set the `total_local_storage_gb` field on the resulting object. When `null`, the `total_local_storage_gb` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.total_local_storage_gb.new](#fn-instance_requirementstotal_local_storage_gbnew) constructor.
   - `vcpu_count` (`list[obj]`): Set the `vcpu_count` field on the resulting object. When `null`, the `vcpu_count` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_template.instance_requirements.vcpu_count.new](#fn-instance_requirementsvcpu_countnew) constructor.
@@ -1752,6 +1756,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `memory_mib` sub block.
+
+
+## obj instance_requirements.network_bandwidth_gbps
+
+
+
+### fn instance_requirements.network_bandwidth_gbps.new
+
+```ts
+new()
+```
+
+
+`aws.launch_template.instance_requirements.network_bandwidth_gbps.new` constructs a new object with attributes and blocks configured for the `network_bandwidth_gbps`
+Terraform sub block.
+
+
+
+**Args**:
+  - `max` (`number`): Set the `max` field on the resulting object. When `null`, the `max` field will be omitted from the resulting object.
+  - `min` (`number`): Set the `min` field on the resulting object. When `null`, the `min` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `network_bandwidth_gbps` sub block.
 
 
 ## obj instance_requirements.network_interface_count
