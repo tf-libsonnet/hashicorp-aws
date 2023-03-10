@@ -34,6 +34,14 @@ This package contains functions and utilities for setting up the resource using 
         * [`fn new()`](#fn-on_exception_stepscopy_step_detailsdestination_file_locations3_file_locationnew)
   * [`obj on_exception_steps.custom_step_details`](#obj-on_exception_stepscustom_step_details)
     * [`fn new()`](#fn-on_exception_stepscustom_step_detailsnew)
+  * [`obj on_exception_steps.decrypt_step_details`](#obj-on_exception_stepsdecrypt_step_details)
+    * [`fn new()`](#fn-on_exception_stepsdecrypt_step_detailsnew)
+    * [`obj on_exception_steps.decrypt_step_details.destination_file_location`](#obj-on_exception_stepsdecrypt_step_detailsdestination_file_location)
+      * [`fn new()`](#fn-on_exception_stepsdecrypt_step_detailsdestination_file_locationnew)
+      * [`obj on_exception_steps.decrypt_step_details.destination_file_location.efs_file_location`](#obj-on_exception_stepsdecrypt_step_detailsdestination_file_locationefs_file_location)
+        * [`fn new()`](#fn-on_exception_stepsdecrypt_step_detailsdestination_file_locationefs_file_locationnew)
+      * [`obj on_exception_steps.decrypt_step_details.destination_file_location.s3_file_location`](#obj-on_exception_stepsdecrypt_step_detailsdestination_file_locations3_file_location)
+        * [`fn new()`](#fn-on_exception_stepsdecrypt_step_detailsdestination_file_locations3_file_locationnew)
   * [`obj on_exception_steps.delete_step_details`](#obj-on_exception_stepsdelete_step_details)
     * [`fn new()`](#fn-on_exception_stepsdelete_step_detailsnew)
   * [`obj on_exception_steps.tag_step_details`](#obj-on_exception_stepstag_step_details)
@@ -52,6 +60,14 @@ This package contains functions and utilities for setting up the resource using 
         * [`fn new()`](#fn-stepscopy_step_detailsdestination_file_locations3_file_locationnew)
   * [`obj steps.custom_step_details`](#obj-stepscustom_step_details)
     * [`fn new()`](#fn-stepscustom_step_detailsnew)
+  * [`obj steps.decrypt_step_details`](#obj-stepsdecrypt_step_details)
+    * [`fn new()`](#fn-stepsdecrypt_step_detailsnew)
+    * [`obj steps.decrypt_step_details.destination_file_location`](#obj-stepsdecrypt_step_detailsdestination_file_location)
+      * [`fn new()`](#fn-stepsdecrypt_step_detailsdestination_file_locationnew)
+      * [`obj steps.decrypt_step_details.destination_file_location.efs_file_location`](#obj-stepsdecrypt_step_detailsdestination_file_locationefs_file_location)
+        * [`fn new()`](#fn-stepsdecrypt_step_detailsdestination_file_locationefs_file_locationnew)
+      * [`obj steps.decrypt_step_details.destination_file_location.s3_file_location`](#obj-stepsdecrypt_step_detailsdestination_file_locations3_file_location)
+        * [`fn new()`](#fn-stepsdecrypt_step_detailsdestination_file_locations3_file_locationnew)
   * [`obj steps.delete_step_details`](#obj-stepsdelete_step_details)
     * [`fn new()`](#fn-stepsdelete_step_detailsnew)
   * [`obj steps.tag_step_details`](#obj-stepstag_step_details)
@@ -268,6 +284,7 @@ Terraform sub block.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `copy_step_details` (`list[obj]`): Set the `copy_step_details` field on the resulting object. When `null`, the `copy_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.copy_step_details.new](#fn-on_exception_stepscopy_step_detailsnew) constructor.
   - `custom_step_details` (`list[obj]`): Set the `custom_step_details` field on the resulting object. When `null`, the `custom_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.custom_step_details.new](#fn-on_exception_stepscustom_step_detailsnew) constructor.
+  - `decrypt_step_details` (`list[obj]`): Set the `decrypt_step_details` field on the resulting object. When `null`, the `decrypt_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.decrypt_step_details.new](#fn-on_exception_stepsdecrypt_step_detailsnew) constructor.
   - `delete_step_details` (`list[obj]`): Set the `delete_step_details` field on the resulting object. When `null`, the `delete_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.delete_step_details.new](#fn-on_exception_stepsdelete_step_detailsnew) constructor.
   - `tag_step_details` (`list[obj]`): Set the `tag_step_details` field on the resulting object. When `null`, the `tag_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.tag_step_details.new](#fn-on_exception_stepstag_step_detailsnew) constructor.
 
@@ -399,6 +416,105 @@ Terraform sub block.
   - An attribute object that represents the `custom_step_details` sub block.
 
 
+## obj on_exception_steps.decrypt_step_details
+
+
+
+### fn on_exception_steps.decrypt_step_details.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.on_exception_steps.decrypt_step_details.new` constructs a new object with attributes and blocks configured for the `decrypt_step_details`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `overwrite_existing` (`string`): Set the `overwrite_existing` field on the resulting object. When `null`, the `overwrite_existing` field will be omitted from the resulting object.
+  - `source_file_location` (`string`): Set the `source_file_location` field on the resulting object. When `null`, the `source_file_location` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `destination_file_location` (`list[obj]`): Set the `destination_file_location` field on the resulting object. When `null`, the `destination_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.decrypt_step_details.destination_file_location.new](#fn-on_exception_stepson_exception_stepsdestination_file_locationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `decrypt_step_details` sub block.
+
+
+## obj on_exception_steps.decrypt_step_details.destination_file_location
+
+
+
+### fn on_exception_steps.decrypt_step_details.destination_file_location.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.on_exception_steps.decrypt_step_details.destination_file_location.new` constructs a new object with attributes and blocks configured for the `destination_file_location`
+Terraform sub block.
+
+
+
+**Args**:
+  - `efs_file_location` (`list[obj]`): Set the `efs_file_location` field on the resulting object. When `null`, the `efs_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.decrypt_step_details.destination_file_location.efs_file_location.new](#fn-on_exception_stepson_exception_stepsdecrypt_step_detailsefs_file_locationnew) constructor.
+  - `s3_file_location` (`list[obj]`): Set the `s3_file_location` field on the resulting object. When `null`, the `s3_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.on_exception_steps.decrypt_step_details.destination_file_location.s3_file_location.new](#fn-on_exception_stepson_exception_stepsdecrypt_step_detailss3_file_locationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `destination_file_location` sub block.
+
+
+## obj on_exception_steps.decrypt_step_details.destination_file_location.efs_file_location
+
+
+
+### fn on_exception_steps.decrypt_step_details.destination_file_location.efs_file_location.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.on_exception_steps.decrypt_step_details.destination_file_location.efs_file_location.new` constructs a new object with attributes and blocks configured for the `efs_file_location`
+Terraform sub block.
+
+
+
+**Args**:
+  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object. When `null`, the `file_system_id` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `efs_file_location` sub block.
+
+
+## obj on_exception_steps.decrypt_step_details.destination_file_location.s3_file_location
+
+
+
+### fn on_exception_steps.decrypt_step_details.destination_file_location.s3_file_location.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.on_exception_steps.decrypt_step_details.destination_file_location.s3_file_location.new` constructs a new object with attributes and blocks configured for the `s3_file_location`
+Terraform sub block.
+
+
+
+**Args**:
+  - `bucket` (`string`): Set the `bucket` field on the resulting object. When `null`, the `bucket` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `s3_file_location` sub block.
+
+
 ## obj on_exception_steps.delete_step_details
 
 
@@ -492,6 +608,7 @@ Terraform sub block.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `copy_step_details` (`list[obj]`): Set the `copy_step_details` field on the resulting object. When `null`, the `copy_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.copy_step_details.new](#fn-stepscopy_step_detailsnew) constructor.
   - `custom_step_details` (`list[obj]`): Set the `custom_step_details` field on the resulting object. When `null`, the `custom_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.custom_step_details.new](#fn-stepscustom_step_detailsnew) constructor.
+  - `decrypt_step_details` (`list[obj]`): Set the `decrypt_step_details` field on the resulting object. When `null`, the `decrypt_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.decrypt_step_details.new](#fn-stepsdecrypt_step_detailsnew) constructor.
   - `delete_step_details` (`list[obj]`): Set the `delete_step_details` field on the resulting object. When `null`, the `delete_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.delete_step_details.new](#fn-stepsdelete_step_detailsnew) constructor.
   - `tag_step_details` (`list[obj]`): Set the `tag_step_details` field on the resulting object. When `null`, the `tag_step_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.tag_step_details.new](#fn-stepstag_step_detailsnew) constructor.
 
@@ -621,6 +738,105 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `custom_step_details` sub block.
+
+
+## obj steps.decrypt_step_details
+
+
+
+### fn steps.decrypt_step_details.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.steps.decrypt_step_details.new` constructs a new object with attributes and blocks configured for the `decrypt_step_details`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `overwrite_existing` (`string`): Set the `overwrite_existing` field on the resulting object. When `null`, the `overwrite_existing` field will be omitted from the resulting object.
+  - `source_file_location` (`string`): Set the `source_file_location` field on the resulting object. When `null`, the `source_file_location` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `destination_file_location` (`list[obj]`): Set the `destination_file_location` field on the resulting object. When `null`, the `destination_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.decrypt_step_details.destination_file_location.new](#fn-stepsstepsdestination_file_locationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `decrypt_step_details` sub block.
+
+
+## obj steps.decrypt_step_details.destination_file_location
+
+
+
+### fn steps.decrypt_step_details.destination_file_location.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.steps.decrypt_step_details.destination_file_location.new` constructs a new object with attributes and blocks configured for the `destination_file_location`
+Terraform sub block.
+
+
+
+**Args**:
+  - `efs_file_location` (`list[obj]`): Set the `efs_file_location` field on the resulting object. When `null`, the `efs_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.decrypt_step_details.destination_file_location.efs_file_location.new](#fn-stepsstepsdecrypt_step_detailsefs_file_locationnew) constructor.
+  - `s3_file_location` (`list[obj]`): Set the `s3_file_location` field on the resulting object. When `null`, the `s3_file_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_workflow.steps.decrypt_step_details.destination_file_location.s3_file_location.new](#fn-stepsstepsdecrypt_step_detailss3_file_locationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `destination_file_location` sub block.
+
+
+## obj steps.decrypt_step_details.destination_file_location.efs_file_location
+
+
+
+### fn steps.decrypt_step_details.destination_file_location.efs_file_location.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.steps.decrypt_step_details.destination_file_location.efs_file_location.new` constructs a new object with attributes and blocks configured for the `efs_file_location`
+Terraform sub block.
+
+
+
+**Args**:
+  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object. When `null`, the `file_system_id` field will be omitted from the resulting object.
+  - `path` (`string`): Set the `path` field on the resulting object. When `null`, the `path` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `efs_file_location` sub block.
+
+
+## obj steps.decrypt_step_details.destination_file_location.s3_file_location
+
+
+
+### fn steps.decrypt_step_details.destination_file_location.s3_file_location.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_workflow.steps.decrypt_step_details.destination_file_location.s3_file_location.new` constructs a new object with attributes and blocks configured for the `s3_file_location`
+Terraform sub block.
+
+
+
+**Args**:
+  - `bucket` (`string`): Set the `bucket` field on the resulting object. When `null`, the `bucket` field will be omitted from the resulting object.
+  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `s3_file_location` sub block.
 
 
 ## obj steps.delete_step_details

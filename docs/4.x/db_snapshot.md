@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withDbInstanceIdentifier()`](#fn-withdbinstanceidentifier)
 * [`fn withDbSnapshotIdentifier()`](#fn-withdbsnapshotidentifier)
+* [`fn withSharedAccounts()`](#fn-withsharedaccounts)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting resource block.
   - `db_snapshot_identifier` (`string`): Set the `db_snapshot_identifier` field on the resulting resource block.
+  - `shared_accounts` (`list`): Set the `shared_accounts` field on the resulting resource block. When `null`, the `shared_accounts` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_snapshot.timeouts.new](#fn-timeoutsnew) constructor.
@@ -83,6 +85,7 @@ injecting into a complete block.
 **Args**:
   - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting object.
   - `db_snapshot_identifier` (`string`): Set the `db_snapshot_identifier` field on the resulting object.
+  - `shared_accounts` (`list`): Set the `shared_accounts` field on the resulting object. When `null`, the `shared_accounts` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.db_snapshot.timeouts.new](#fn-timeoutsnew) constructor.
@@ -121,6 +124,22 @@ Terraform resource block to set or update the db_snapshot_identifier field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `db_snapshot_identifier` field.
+
+
+### fn withSharedAccounts
+
+```ts
+withSharedAccounts()
+```
+
+`aws.list.withSharedAccounts` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the shared_accounts field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `shared_accounts` field.
 
 
 ### fn withTags
@@ -208,7 +227,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
