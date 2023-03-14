@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAppId()`](#fn-withappid)
 * [`fn withDomainName()`](#fn-withdomainname)
+* [`fn withEnableAutoSubDomain()`](#fn-withenableautosubdomain)
 * [`fn withSubDomain()`](#fn-withsubdomain)
 * [`fn withSubDomainMixin()`](#fn-withsubdomainmixin)
 * [`fn withWaitForVerification()`](#fn-withwaitforverification)
@@ -54,6 +55,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `app_id` (`string`): Set the `app_id` field on the resulting resource block.
   - `domain_name` (`string`): Set the `domain_name` field on the resulting resource block.
+  - `enable_auto_sub_domain` (`bool`): Set the `enable_auto_sub_domain` field on the resulting resource block. When `null`, the `enable_auto_sub_domain` field will be omitted from the resulting object.
   - `wait_for_verification` (`bool`): Set the `wait_for_verification` field on the resulting resource block. When `null`, the `wait_for_verification` field will be omitted from the resulting object.
   - `sub_domain` (`list[obj]`): Set the `sub_domain` field on the resulting resource block. When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
 
@@ -81,6 +83,7 @@ injecting into a complete block.
 **Args**:
   - `app_id` (`string`): Set the `app_id` field on the resulting object.
   - `domain_name` (`string`): Set the `domain_name` field on the resulting object.
+  - `enable_auto_sub_domain` (`bool`): Set the `enable_auto_sub_domain` field on the resulting object. When `null`, the `enable_auto_sub_domain` field will be omitted from the resulting object.
   - `wait_for_verification` (`bool`): Set the `wait_for_verification` field on the resulting object. When `null`, the `wait_for_verification` field will be omitted from the resulting object.
   - `sub_domain` (`list[obj]`): Set the `sub_domain` field on the resulting object. When `null`, the `sub_domain` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.amplify_domain_association.sub_domain.new](#fn-sub_domainnew) constructor.
 
@@ -118,6 +121,22 @@ Terraform resource block to set or update the domain_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `domain_name` field.
+
+
+### fn withEnableAutoSubDomain
+
+```ts
+withEnableAutoSubDomain()
+```
+
+`aws.bool.withEnableAutoSubDomain` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the enable_auto_sub_domain field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `enable_auto_sub_domain` field.
 
 
 ### fn withSubDomain

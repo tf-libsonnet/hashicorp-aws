@@ -29,6 +29,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLoggingRole()`](#fn-withloggingrole)
 * [`fn withPostAuthenticationLoginBanner()`](#fn-withpostauthenticationloginbanner)
 * [`fn withPreAuthenticationLoginBanner()`](#fn-withpreauthenticationloginbanner)
+* [`fn withProtocolDetails()`](#fn-withprotocoldetails)
+* [`fn withProtocolDetailsMixin()`](#fn-withprotocoldetailsmixin)
 * [`fn withProtocols()`](#fn-withprotocols)
 * [`fn withSecurityPolicyName()`](#fn-withsecuritypolicyname)
 * [`fn withTags()`](#fn-withtags)
@@ -38,6 +40,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withWorkflowDetailsMixin()`](#fn-withworkflowdetailsmixin)
 * [`obj endpoint_details`](#obj-endpoint_details)
   * [`fn new()`](#fn-endpoint_detailsnew)
+* [`obj protocol_details`](#obj-protocol_details)
+  * [`fn new()`](#fn-protocol_detailsnew)
 * [`obj workflow_details`](#obj-workflow_details)
   * [`fn new()`](#fn-workflow_detailsnew)
   * [`obj workflow_details.on_partial_upload`](#obj-workflow_detailson_partial_upload)
@@ -92,6 +96,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `url` (`string`): Set the `url` field on the resulting resource block. When `null`, the `url` field will be omitted from the resulting object.
   - `endpoint_details` (`list[obj]`): Set the `endpoint_details` field on the resulting resource block. When `null`, the `endpoint_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.endpoint_details.new](#fn-endpoint_detailsnew) constructor.
+  - `protocol_details` (`list[obj]`): Set the `protocol_details` field on the resulting resource block. When `null`, the `protocol_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.protocol_details.new](#fn-protocol_detailsnew) constructor.
   - `workflow_details` (`list[obj]`): Set the `workflow_details` field on the resulting resource block. When `null`, the `workflow_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.new](#fn-workflow_detailsnew) constructor.
 
 **Returns**:
@@ -134,6 +139,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `url` (`string`): Set the `url` field on the resulting object. When `null`, the `url` field will be omitted from the resulting object.
   - `endpoint_details` (`list[obj]`): Set the `endpoint_details` field on the resulting object. When `null`, the `endpoint_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.endpoint_details.new](#fn-endpoint_detailsnew) constructor.
+  - `protocol_details` (`list[obj]`): Set the `protocol_details` field on the resulting object. When `null`, the `protocol_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.protocol_details.new](#fn-protocol_detailsnew) constructor.
   - `workflow_details` (`list[obj]`): Set the `workflow_details` field on the resulting object. When `null`, the `workflow_details` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_server.workflow_details.new](#fn-workflow_detailsnew) constructor.
 
 **Returns**:
@@ -369,6 +375,43 @@ Terraform resource block to set or update the pre_authentication_login_banner fi
   - `value` (`string`): The value to set for the `pre_authentication_login_banner` field.
 
 
+### fn withProtocolDetails
+
+```ts
+withProtocolDetails()
+```
+
+`aws.list[obj].withProtocolDetails` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the protocol_details field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withProtocolDetailsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `protocol_details` field.
+
+
+### fn withProtocolDetailsMixin
+
+```ts
+withProtocolDetailsMixin()
+```
+
+`aws.list[obj].withProtocolDetailsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the protocol_details field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withProtocolDetails](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `protocol_details` field.
+
+
 ### fn withProtocols
 
 ```ts
@@ -511,6 +554,32 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `endpoint_details` sub block.
+
+
+## obj protocol_details
+
+
+
+### fn protocol_details.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_server.protocol_details.new` constructs a new object with attributes and blocks configured for the `protocol_details`
+Terraform sub block.
+
+
+
+**Args**:
+  - `as2_transports` (`list`): Set the `as2_transports` field on the resulting object. When `null`, the `as2_transports` field will be omitted from the resulting object.
+  - `passive_ip` (`string`): Set the `passive_ip` field on the resulting object. When `null`, the `passive_ip` field will be omitted from the resulting object.
+  - `set_stat_option` (`string`): Set the `set_stat_option` field on the resulting object. When `null`, the `set_stat_option` field will be omitted from the resulting object.
+  - `tls_session_resumption_mode` (`string`): Set the `tls_session_resumption_mode` field on the resulting object. When `null`, the `tls_session_resumption_mode` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `protocol_details` sub block.
 
 
 ## obj workflow_details

@@ -12,7 +12,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       tls_policy: tls_policy,
     }),
   },
-  '#new':: d.fn(help="\n`aws.sesv2_configuration_set.new` injects a new `aws_sesv2_configuration_set` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.sesv2_configuration_set.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.sesv2_configuration_set` using the reference:\n\n    $._ref.aws_sesv2_configuration_set.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_sesv2_configuration_set.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `configuration_set_name` (`string`): Set the `configuration_set_name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `delivery_options` (`list[obj]`): Set the `delivery_options` field on the resulting resource block. When `null`, the `delivery_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.delivery_options.new](#fn-delivery_optionsnew) constructor.\n  - `reputation_options` (`list[obj]`): Set the `reputation_options` field on the resulting resource block. When `null`, the `reputation_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.reputation_options.new](#fn-reputation_optionsnew) constructor.\n  - `sending_options` (`list[obj]`): Set the `sending_options` field on the resulting resource block. When `null`, the `sending_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.sending_options.new](#fn-sending_optionsnew) constructor.\n  - `suppression_options` (`list[obj]`): Set the `suppression_options` field on the resulting resource block. When `null`, the `suppression_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.suppression_options.new](#fn-suppression_optionsnew) constructor.\n  - `tracking_options` (`list[obj]`): Set the `tracking_options` field on the resulting resource block. When `null`, the `tracking_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.tracking_options.new](#fn-tracking_optionsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.sesv2_configuration_set.new` injects a new `aws_sesv2_configuration_set` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.sesv2_configuration_set.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.sesv2_configuration_set` using the reference:\n\n    $._ref.aws_sesv2_configuration_set.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_sesv2_configuration_set.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `configuration_set_name` (`string`): Set the `configuration_set_name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `delivery_options` (`list[obj]`): Set the `delivery_options` field on the resulting resource block. When `null`, the `delivery_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.delivery_options.new](#fn-delivery_optionsnew) constructor.\n  - `reputation_options` (`list[obj]`): Set the `reputation_options` field on the resulting resource block. When `null`, the `reputation_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.reputation_options.new](#fn-reputation_optionsnew) constructor.\n  - `sending_options` (`list[obj]`): Set the `sending_options` field on the resulting resource block. When `null`, the `sending_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.sending_options.new](#fn-sending_optionsnew) constructor.\n  - `suppression_options` (`list[obj]`): Set the `suppression_options` field on the resulting resource block. When `null`, the `suppression_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.suppression_options.new](#fn-suppression_optionsnew) constructor.\n  - `tracking_options` (`list[obj]`): Set the `tracking_options` field on the resulting resource block. When `null`, the `tracking_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.tracking_options.new](#fn-tracking_optionsnew) constructor.\n  - `vdm_options` (`list[obj]`): Set the `vdm_options` field on the resulting resource block. When `null`, the `vdm_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.new](#fn-vdm_optionsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     configuration_set_name,
@@ -23,6 +23,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags=null,
     tags_all=null,
     tracking_options=null,
+    vdm_options=null,
     _meta={}
   ):: tf.withResource(
     type='aws_sesv2_configuration_set',
@@ -35,11 +36,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       suppression_options=suppression_options,
       tags=tags,
       tags_all=tags_all,
-      tracking_options=tracking_options
+      tracking_options=tracking_options,
+      vdm_options=vdm_options
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.sesv2_configuration_set.newAttrs` constructs a new object with attributes and blocks configured for the `sesv2_configuration_set`\nTerraform resource.\n\nUnlike [aws.sesv2_configuration_set.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `configuration_set_name` (`string`): Set the `configuration_set_name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `delivery_options` (`list[obj]`): Set the `delivery_options` field on the resulting object. When `null`, the `delivery_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.delivery_options.new](#fn-delivery_optionsnew) constructor.\n  - `reputation_options` (`list[obj]`): Set the `reputation_options` field on the resulting object. When `null`, the `reputation_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.reputation_options.new](#fn-reputation_optionsnew) constructor.\n  - `sending_options` (`list[obj]`): Set the `sending_options` field on the resulting object. When `null`, the `sending_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.sending_options.new](#fn-sending_optionsnew) constructor.\n  - `suppression_options` (`list[obj]`): Set the `suppression_options` field on the resulting object. When `null`, the `suppression_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.suppression_options.new](#fn-suppression_optionsnew) constructor.\n  - `tracking_options` (`list[obj]`): Set the `tracking_options` field on the resulting object. When `null`, the `tracking_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.tracking_options.new](#fn-tracking_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sesv2_configuration_set` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.sesv2_configuration_set.newAttrs` constructs a new object with attributes and blocks configured for the `sesv2_configuration_set`\nTerraform resource.\n\nUnlike [aws.sesv2_configuration_set.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `configuration_set_name` (`string`): Set the `configuration_set_name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `delivery_options` (`list[obj]`): Set the `delivery_options` field on the resulting object. When `null`, the `delivery_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.delivery_options.new](#fn-delivery_optionsnew) constructor.\n  - `reputation_options` (`list[obj]`): Set the `reputation_options` field on the resulting object. When `null`, the `reputation_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.reputation_options.new](#fn-reputation_optionsnew) constructor.\n  - `sending_options` (`list[obj]`): Set the `sending_options` field on the resulting object. When `null`, the `sending_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.sending_options.new](#fn-sending_optionsnew) constructor.\n  - `suppression_options` (`list[obj]`): Set the `suppression_options` field on the resulting object. When `null`, the `suppression_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.suppression_options.new](#fn-suppression_optionsnew) constructor.\n  - `tracking_options` (`list[obj]`): Set the `tracking_options` field on the resulting object. When `null`, the `tracking_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.tracking_options.new](#fn-tracking_optionsnew) constructor.\n  - `vdm_options` (`list[obj]`): Set the `vdm_options` field on the resulting object. When `null`, the `vdm_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.new](#fn-vdm_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sesv2_configuration_set` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     configuration_set_name,
     delivery_options=null,
@@ -48,7 +50,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     suppression_options=null,
     tags=null,
     tags_all=null,
-    tracking_options=null
+    tracking_options=null,
+    vdm_options=null
   ):: std.prune(a={
     configuration_set_name: configuration_set_name,
     delivery_options: delivery_options,
@@ -58,6 +61,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags: tags,
     tags_all: tags_all,
     tracking_options: tracking_options,
+    vdm_options: vdm_options,
   }),
   reputation_options:: {
     '#new':: d.fn(help='\n`aws.sesv2_configuration_set.reputation_options.new` constructs a new object with attributes and blocks configured for the `reputation_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `reputation_metrics_enabled` (`bool`): Set the `reputation_metrics_enabled` field on the resulting object. When `null`, the `reputation_metrics_enabled` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `reputation_options` sub block.\n', args=[]),
@@ -89,6 +93,32 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       custom_redirect_domain
     ):: std.prune(a={
       custom_redirect_domain: custom_redirect_domain,
+    }),
+  },
+  vdm_options:: {
+    dashboard_options:: {
+      '#new':: d.fn(help='\n`aws.sesv2_configuration_set.vdm_options.dashboard_options.new` constructs a new object with attributes and blocks configured for the `dashboard_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `engagement_metrics` (`string`): Set the `engagement_metrics` field on the resulting object. When `null`, the `engagement_metrics` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `dashboard_options` sub block.\n', args=[]),
+      new(
+        engagement_metrics=null
+      ):: std.prune(a={
+        engagement_metrics: engagement_metrics,
+      }),
+    },
+    guardian_options:: {
+      '#new':: d.fn(help='\n`aws.sesv2_configuration_set.vdm_options.guardian_options.new` constructs a new object with attributes and blocks configured for the `guardian_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `optimized_shared_delivery` (`string`): Set the `optimized_shared_delivery` field on the resulting object. When `null`, the `optimized_shared_delivery` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `guardian_options` sub block.\n', args=[]),
+      new(
+        optimized_shared_delivery=null
+      ):: std.prune(a={
+        optimized_shared_delivery: optimized_shared_delivery,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.sesv2_configuration_set.vdm_options.new` constructs a new object with attributes and blocks configured for the `vdm_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `dashboard_options` (`list[obj]`): Set the `dashboard_options` field on the resulting object. When `null`, the `dashboard_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.dashboard_options.new](#fn-vdm_optionsdashboard_optionsnew) constructor.\n  - `guardian_options` (`list[obj]`): Set the `guardian_options` field on the resulting object. When `null`, the `guardian_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.guardian_options.new](#fn-vdm_optionsguardian_optionsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `vdm_options` sub block.\n', args=[]),
+    new(
+      dashboard_options=null,
+      guardian_options=null
+    ):: std.prune(a={
+      dashboard_options: dashboard_options,
+      guardian_options: guardian_options,
     }),
   },
   '#withConfigurationSetName':: d.fn(help='`aws.string.withConfigurationSetName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the configuration_set_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `configuration_set_name` field.\n', args=[]),
@@ -217,6 +247,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_sesv2_configuration_set+: {
         [resourceLabel]+: {
           tracking_options+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withVdmOptions':: d.fn(help='`aws.list[obj].withVdmOptions` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the vdm_options field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withVdmOptionsMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `vdm_options` field.\n', args=[]),
+  withVdmOptions(resourceLabel, value): {
+    resource+: {
+      aws_sesv2_configuration_set+: {
+        [resourceLabel]+: {
+          vdm_options: value,
+        },
+      },
+    },
+  },
+  '#withVdmOptionsMixin':: d.fn(help='`aws.list[obj].withVdmOptionsMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the vdm_options field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withVdmOptions](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `vdm_options` field.\n', args=[]),
+  withVdmOptionsMixin(resourceLabel, value): {
+    resource+: {
+      aws_sesv2_configuration_set+: {
+        [resourceLabel]+: {
+          vdm_options+: if std.isArray(v=value) then value else [value],
         },
       },
     },

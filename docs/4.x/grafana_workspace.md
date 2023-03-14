@@ -21,6 +21,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDataSources()`](#fn-withdatasources)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withName()`](#fn-withname)
+* [`fn withNetworkAccessControl()`](#fn-withnetworkaccesscontrol)
+* [`fn withNetworkAccessControlMixin()`](#fn-withnetworkaccesscontrolmixin)
 * [`fn withNotificationDestinations()`](#fn-withnotificationdestinations)
 * [`fn withOrganizationRoleName()`](#fn-withorganizationrolename)
 * [`fn withOrganizationalUnits()`](#fn-withorganizationalunits)
@@ -33,6 +35,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withVpcConfiguration()`](#fn-withvpcconfiguration)
 * [`fn withVpcConfigurationMixin()`](#fn-withvpcconfigurationmixin)
+* [`obj network_access_control`](#obj-network_access_control)
+  * [`fn new()`](#fn-network_access_controlnew)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
 * [`obj vpc_configuration`](#obj-vpc_configuration)
@@ -81,6 +85,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `stack_set_name` (`string`): Set the `stack_set_name` field on the resulting resource block. When `null`, the `stack_set_name` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `network_access_control` (`list[obj]`): Set the `network_access_control` field on the resulting resource block. When `null`, the `network_access_control` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.network_access_control.new](#fn-network_access_controlnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting resource block. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
@@ -120,6 +125,7 @@ injecting into a complete block.
   - `stack_set_name` (`string`): Set the `stack_set_name` field on the resulting object. When `null`, the `stack_set_name` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `network_access_control` (`list[obj]`): Set the `network_access_control` field on the resulting object. When `null`, the `network_access_control` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.network_access_control.new](#fn-network_access_controlnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting object. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.grafana_workspace.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
@@ -221,6 +227,43 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withNetworkAccessControl
+
+```ts
+withNetworkAccessControl()
+```
+
+`aws.list[obj].withNetworkAccessControl` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the network_access_control field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withNetworkAccessControlMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `network_access_control` field.
+
+
+### fn withNetworkAccessControlMixin
+
+```ts
+withNetworkAccessControlMixin()
+```
+
+`aws.list[obj].withNetworkAccessControlMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the network_access_control field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withNetworkAccessControl](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `network_access_control` field.
 
 
 ### fn withNotificationDestinations
@@ -422,6 +465,30 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `vpc_configuration` field.
+
+
+## obj network_access_control
+
+
+
+### fn network_access_control.new
+
+```ts
+new()
+```
+
+
+`aws.grafana_workspace.network_access_control.new` constructs a new object with attributes and blocks configured for the `network_access_control`
+Terraform sub block.
+
+
+
+**Args**:
+  - `prefix_list_ids` (`list`): Set the `prefix_list_ids` field on the resulting object.
+  - `vpce_ids` (`list`): Set the `vpce_ids` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `network_access_control` sub block.
 
 
 ## obj timeouts

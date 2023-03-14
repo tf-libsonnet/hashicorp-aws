@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withDeliverCrossAccountRole()`](#fn-withdelivercrossaccountrole)
 * [`fn withDestinationOptions()`](#fn-withdestinationoptions)
 * [`fn withDestinationOptionsMixin()`](#fn-withdestinationoptionsmixin)
 * [`fn withEniId()`](#fn-witheniid)
@@ -63,6 +64,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `deliver_cross_account_role` (`string`): Set the `deliver_cross_account_role` field on the resulting resource block. When `null`, the `deliver_cross_account_role` field will be omitted from the resulting object.
   - `eni_id` (`string`): Set the `eni_id` field on the resulting resource block. When `null`, the `eni_id` field will be omitted from the resulting object.
   - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting resource block. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
   - `log_destination` (`string`): Set the `log_destination` field on the resulting resource block. When `null`, the `log_destination` field will be omitted from the resulting object.
@@ -101,6 +103,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `deliver_cross_account_role` (`string`): Set the `deliver_cross_account_role` field on the resulting object. When `null`, the `deliver_cross_account_role` field will be omitted from the resulting object.
   - `eni_id` (`string`): Set the `eni_id` field on the resulting object. When `null`, the `eni_id` field will be omitted from the resulting object.
   - `iam_role_arn` (`string`): Set the `iam_role_arn` field on the resulting object. When `null`, the `iam_role_arn` field will be omitted from the resulting object.
   - `log_destination` (`string`): Set the `log_destination` field on the resulting object. When `null`, the `log_destination` field will be omitted from the resulting object.
@@ -119,6 +122,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `flow_log` resource into the root Terraform configuration.
+
+
+### fn withDeliverCrossAccountRole
+
+```ts
+withDeliverCrossAccountRole()
+```
+
+`aws.string.withDeliverCrossAccountRole` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the deliver_cross_account_role field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `deliver_cross_account_role` field.
 
 
 ### fn withDestinationOptions

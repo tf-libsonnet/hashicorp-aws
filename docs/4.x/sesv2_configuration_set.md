@@ -28,6 +28,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTrackingOptions()`](#fn-withtrackingoptions)
 * [`fn withTrackingOptionsMixin()`](#fn-withtrackingoptionsmixin)
+* [`fn withVdmOptions()`](#fn-withvdmoptions)
+* [`fn withVdmOptionsMixin()`](#fn-withvdmoptionsmixin)
 * [`obj delivery_options`](#obj-delivery_options)
   * [`fn new()`](#fn-delivery_optionsnew)
 * [`obj reputation_options`](#obj-reputation_options)
@@ -38,6 +40,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-suppression_optionsnew)
 * [`obj tracking_options`](#obj-tracking_options)
   * [`fn new()`](#fn-tracking_optionsnew)
+* [`obj vdm_options`](#obj-vdm_options)
+  * [`fn new()`](#fn-vdm_optionsnew)
+  * [`obj vdm_options.dashboard_options`](#obj-vdm_optionsdashboard_options)
+    * [`fn new()`](#fn-vdm_optionsdashboard_optionsnew)
+  * [`obj vdm_options.guardian_options`](#obj-vdm_optionsguardian_options)
+    * [`fn new()`](#fn-vdm_optionsguardian_optionsnew)
 
 ## Fields
 
@@ -76,6 +84,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `sending_options` (`list[obj]`): Set the `sending_options` field on the resulting resource block. When `null`, the `sending_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.sending_options.new](#fn-sending_optionsnew) constructor.
   - `suppression_options` (`list[obj]`): Set the `suppression_options` field on the resulting resource block. When `null`, the `suppression_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.suppression_options.new](#fn-suppression_optionsnew) constructor.
   - `tracking_options` (`list[obj]`): Set the `tracking_options` field on the resulting resource block. When `null`, the `tracking_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.tracking_options.new](#fn-tracking_optionsnew) constructor.
+  - `vdm_options` (`list[obj]`): Set the `vdm_options` field on the resulting resource block. When `null`, the `vdm_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.new](#fn-vdm_optionsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -107,6 +116,7 @@ injecting into a complete block.
   - `sending_options` (`list[obj]`): Set the `sending_options` field on the resulting object. When `null`, the `sending_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.sending_options.new](#fn-sending_optionsnew) constructor.
   - `suppression_options` (`list[obj]`): Set the `suppression_options` field on the resulting object. When `null`, the `suppression_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.suppression_options.new](#fn-suppression_optionsnew) constructor.
   - `tracking_options` (`list[obj]`): Set the `tracking_options` field on the resulting object. When `null`, the `tracking_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.tracking_options.new](#fn-tracking_optionsnew) constructor.
+  - `vdm_options` (`list[obj]`): Set the `vdm_options` field on the resulting object. When `null`, the `vdm_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.new](#fn-vdm_optionsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sesv2_configuration_set` resource into the root Terraform configuration.
@@ -345,6 +355,43 @@ function.
   - `value` (`list[obj]`): The value to set for the `tracking_options` field.
 
 
+### fn withVdmOptions
+
+```ts
+withVdmOptions()
+```
+
+`aws.list[obj].withVdmOptions` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the vdm_options field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withVdmOptionsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `vdm_options` field.
+
+
+### fn withVdmOptionsMixin
+
+```ts
+withVdmOptionsMixin()
+```
+
+`aws.list[obj].withVdmOptionsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the vdm_options field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withVdmOptions](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `vdm_options` field.
+
+
 ## obj delivery_options
 
 
@@ -459,3 +506,73 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `tracking_options` sub block.
+
+
+## obj vdm_options
+
+
+
+### fn vdm_options.new
+
+```ts
+new()
+```
+
+
+`aws.sesv2_configuration_set.vdm_options.new` constructs a new object with attributes and blocks configured for the `vdm_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `dashboard_options` (`list[obj]`): Set the `dashboard_options` field on the resulting object. When `null`, the `dashboard_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.dashboard_options.new](#fn-vdm_optionsdashboard_optionsnew) constructor.
+  - `guardian_options` (`list[obj]`): Set the `guardian_options` field on the resulting object. When `null`, the `guardian_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sesv2_configuration_set.vdm_options.guardian_options.new](#fn-vdm_optionsguardian_optionsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `vdm_options` sub block.
+
+
+## obj vdm_options.dashboard_options
+
+
+
+### fn vdm_options.dashboard_options.new
+
+```ts
+new()
+```
+
+
+`aws.sesv2_configuration_set.vdm_options.dashboard_options.new` constructs a new object with attributes and blocks configured for the `dashboard_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `engagement_metrics` (`string`): Set the `engagement_metrics` field on the resulting object. When `null`, the `engagement_metrics` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `dashboard_options` sub block.
+
+
+## obj vdm_options.guardian_options
+
+
+
+### fn vdm_options.guardian_options.new
+
+```ts
+new()
+```
+
+
+`aws.sesv2_configuration_set.vdm_options.guardian_options.new` constructs a new object with attributes and blocks configured for the `guardian_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `optimized_shared_delivery` (`string`): Set the `optimized_shared_delivery` field on the resulting object. When `null`, the `optimized_shared_delivery` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `guardian_options` sub block.
