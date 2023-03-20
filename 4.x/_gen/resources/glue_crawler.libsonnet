@@ -19,13 +19,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   delta_target:: {
-    '#new':: d.fn(help='\n`aws.glue_crawler.delta_target.new` constructs a new object with attributes and blocks configured for the `delta_target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.\n  - `delta_tables` (`list`): Set the `delta_tables` field on the resulting object.\n  - `write_manifest` (`bool`): Set the `write_manifest` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `delta_target` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.glue_crawler.delta_target.new` constructs a new object with attributes and blocks configured for the `delta_target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.\n  - `create_native_delta_table` (`bool`): Set the `create_native_delta_table` field on the resulting object. When `null`, the `create_native_delta_table` field will be omitted from the resulting object.\n  - `delta_tables` (`list`): Set the `delta_tables` field on the resulting object.\n  - `write_manifest` (`bool`): Set the `write_manifest` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `delta_target` sub block.\n', args=[]),
     new(
       delta_tables,
       write_manifest,
-      connection_name=null
+      connection_name=null,
+      create_native_delta_table=null
     ):: std.prune(a={
       connection_name: connection_name,
+      create_native_delta_table: create_native_delta_table,
       delta_tables: delta_tables,
       write_manifest: write_manifest,
     }),

@@ -27,6 +27,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withNotificationType()`](#fn-withnotificationtype)
 * [`fn withSubscriber()`](#fn-withsubscriber)
 * [`fn withSubscriberMixin()`](#fn-withsubscribermixin)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`obj action_threshold`](#obj-action_threshold)
   * [`fn new()`](#fn-action_thresholdnew)
 * [`obj definition`](#obj-definition)
@@ -39,6 +41,8 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-definitionssm_action_definitionnew)
 * [`obj subscriber`](#obj-subscriber)
   * [`fn new()`](#fn-subscribernew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
 
 ## Fields
 
@@ -78,6 +82,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `action_threshold` (`list[obj]`): Set the `action_threshold` field on the resulting resource block. When `null`, the `action_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.action_threshold.new](#fn-action_thresholdnew) constructor.
   - `definition` (`list[obj]`): Set the `definition` field on the resulting resource block. When `null`, the `definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.new](#fn-definitionnew) constructor.
   - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting resource block. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.subscriber.new](#fn-subscribernew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -110,6 +115,7 @@ injecting into a complete block.
   - `action_threshold` (`list[obj]`): Set the `action_threshold` field on the resulting object. When `null`, the `action_threshold` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.action_threshold.new](#fn-action_thresholdnew) constructor.
   - `definition` (`list[obj]`): Set the `definition` field on the resulting object. When `null`, the `definition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.definition.new](#fn-definitionnew) constructor.
   - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting object. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.subscriber.new](#fn-subscribernew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.budgets_budget_action.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `budgets_budget_action` resource into the root Terraform configuration.
@@ -322,6 +328,42 @@ function.
   - `value` (`list[obj]`): The value to set for the `subscriber` field.
 
 
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.obj.withTimeouts` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will replace the map with the passed in `value`. If you wish to instead merge the
+passed in value to the existing map, use the [aws.obj.withTimeoutsMixin](TODO) function.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.obj.withTimeoutsMixin` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.obj.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
 ## obj action_threshold
 
 
@@ -468,3 +510,27 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `subscriber` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.budgets_budget_action.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

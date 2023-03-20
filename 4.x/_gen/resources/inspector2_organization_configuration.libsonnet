@@ -3,13 +3,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='inspector2_organization_configuration', url='', help='`inspector2_organization_configuration` represents the `aws_inspector2_organization_configuration` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   auto_enable:: {
-    '#new':: d.fn(help='\n`aws.inspector2_organization_configuration.auto_enable.new` constructs a new object with attributes and blocks configured for the `auto_enable`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ec2` (`bool`): Set the `ec2` field on the resulting object.\n  - `ecr` (`bool`): Set the `ecr` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `auto_enable` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.inspector2_organization_configuration.auto_enable.new` constructs a new object with attributes and blocks configured for the `auto_enable`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ec2` (`bool`): Set the `ec2` field on the resulting object.\n  - `ecr` (`bool`): Set the `ecr` field on the resulting object.\n  - `lambda` (`bool`): Set the `lambda` field on the resulting object. When `null`, the `lambda` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `auto_enable` sub block.\n', args=[]),
     new(
       ec2,
-      ecr
+      ecr,
+      lambda=null
     ):: std.prune(a={
       ec2: ec2,
       ecr: ecr,
+      lambda: lambda,
     }),
   },
   '#new':: d.fn(help="\n`aws.inspector2_organization_configuration.new` injects a new `aws_inspector2_organization_configuration` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.inspector2_organization_configuration.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.inspector2_organization_configuration` using the reference:\n\n    $._ref.aws_inspector2_organization_configuration.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_inspector2_organization_configuration.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `auto_enable` (`list[obj]`): Set the `auto_enable` field on the resulting resource block. When `null`, the `auto_enable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector2_organization_configuration.auto_enable.new](#fn-auto_enablenew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.inspector2_organization_configuration.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),

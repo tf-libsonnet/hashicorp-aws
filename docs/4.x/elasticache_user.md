@@ -16,7 +16,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAccessString()`](#fn-withaccessstring)
-* [`fn withArn()`](#fn-witharn)
+* [`fn withAuthenticationMode()`](#fn-withauthenticationmode)
+* [`fn withAuthenticationModeMixin()`](#fn-withauthenticationmodemixin)
 * [`fn withEngine()`](#fn-withengine)
 * [`fn withNoPasswordRequired()`](#fn-withnopasswordrequired)
 * [`fn withPasswords()`](#fn-withpasswords)
@@ -24,6 +25,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withUserId()`](#fn-withuserid)
 * [`fn withUserName()`](#fn-withusername)
+* [`obj authentication_mode`](#obj-authentication_mode)
+  * [`fn new()`](#fn-authentication_modenew)
 
 ## Fields
 
@@ -55,7 +58,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `access_string` (`string`): Set the `access_string` field on the resulting resource block.
-  - `arn` (`string`): Set the `arn` field on the resulting resource block. When `null`, the `arn` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting resource block.
   - `no_password_required` (`bool`): Set the `no_password_required` field on the resulting resource block. When `null`, the `no_password_required` field will be omitted from the resulting object.
   - `passwords` (`list`): Set the `passwords` field on the resulting resource block. When `null`, the `passwords` field will be omitted from the resulting object.
@@ -63,6 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_id` (`string`): Set the `user_id` field on the resulting resource block.
   - `user_name` (`string`): Set the `user_name` field on the resulting resource block.
+  - `authentication_mode` (`list[obj]`): Set the `authentication_mode` field on the resulting resource block. When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_user.authentication_mode.new](#fn-authentication_modenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -87,7 +90,6 @@ injecting into a complete block.
 
 **Args**:
   - `access_string` (`string`): Set the `access_string` field on the resulting object.
-  - `arn` (`string`): Set the `arn` field on the resulting object. When `null`, the `arn` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting object.
   - `no_password_required` (`bool`): Set the `no_password_required` field on the resulting object. When `null`, the `no_password_required` field will be omitted from the resulting object.
   - `passwords` (`list`): Set the `passwords` field on the resulting object. When `null`, the `passwords` field will be omitted from the resulting object.
@@ -95,6 +97,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `user_id` (`string`): Set the `user_id` field on the resulting object.
   - `user_name` (`string`): Set the `user_name` field on the resulting object.
+  - `authentication_mode` (`list[obj]`): Set the `authentication_mode` field on the resulting object. When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_user.authentication_mode.new](#fn-authentication_modenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `elasticache_user` resource into the root Terraform configuration.
@@ -116,20 +119,41 @@ Terraform resource block to set or update the access_string field.
   - `value` (`string`): The value to set for the `access_string` field.
 
 
-### fn withArn
+### fn withAuthenticationMode
 
 ```ts
-withArn()
+withAuthenticationMode()
 ```
 
-`aws.string.withArn` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the arn field.
+`aws.list[obj].withAuthenticationMode` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the authentication_mode field.
 
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withAuthenticationModeMixin](TODO) function.
 
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `arn` field.
+  - `value` (`list[obj]`): The value to set for the `authentication_mode` field.
+
+
+### fn withAuthenticationModeMixin
+
+```ts
+withAuthenticationModeMixin()
+```
+
+`aws.list[obj].withAuthenticationModeMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the authentication_mode field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withAuthenticationMode](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `authentication_mode` field.
 
 
 ### fn withEngine
@@ -242,3 +266,27 @@ Terraform resource block to set or update the user_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `user_name` field.
+
+
+## obj authentication_mode
+
+
+
+### fn authentication_mode.new
+
+```ts
+new()
+```
+
+
+`aws.elasticache_user.authentication_mode.new` constructs a new object with attributes and blocks configured for the `authentication_mode`
+Terraform sub block.
+
+
+
+**Args**:
+  - `passwords` (`list`): Set the `passwords` field on the resulting object. When `null`, the `passwords` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `authentication_mode` sub block.

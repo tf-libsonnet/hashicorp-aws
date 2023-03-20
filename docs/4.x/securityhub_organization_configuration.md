@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAutoEnable()`](#fn-withautoenable)
+* [`fn withAutoEnableStandards()`](#fn-withautoenablestandards)
 
 ## Fields
 
@@ -47,6 +48,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting resource block.
+  - `auto_enable_standards` (`string`): Set the `auto_enable_standards` field on the resulting resource block. When `null`, the `auto_enable_standards` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -71,6 +73,7 @@ injecting into a complete block.
 
 **Args**:
   - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting object.
+  - `auto_enable_standards` (`string`): Set the `auto_enable_standards` field on the resulting object. When `null`, the `auto_enable_standards` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `securityhub_organization_configuration` resource into the root Terraform configuration.
@@ -90,3 +93,19 @@ Terraform resource block to set or update the auto_enable field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `auto_enable` field.
+
+
+### fn withAutoEnableStandards
+
+```ts
+withAutoEnableStandards()
+```
+
+`aws.string.withAutoEnableStandards` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the auto_enable_standards field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `auto_enable_standards` field.
