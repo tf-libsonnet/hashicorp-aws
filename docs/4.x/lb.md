@@ -23,7 +23,9 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withEnableCrossZoneLoadBalancing()`](#fn-withenablecrosszoneloadbalancing)
 * [`fn withEnableDeletionProtection()`](#fn-withenabledeletionprotection)
 * [`fn withEnableHttp2()`](#fn-withenablehttp2)
+* [`fn withEnableTlsVersionAndCipherSuiteHeaders()`](#fn-withenabletlsversionandciphersuiteheaders)
 * [`fn withEnableWafFailOpen()`](#fn-withenablewaffailopen)
+* [`fn withEnableXffClientPort()`](#fn-withenablexffclientport)
 * [`fn withIdleTimeout()`](#fn-withidletimeout)
 * [`fn withInternal()`](#fn-withinternal)
 * [`fn withIpAddressType()`](#fn-withipaddresstype)
@@ -39,6 +41,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`fn withXffHeaderProcessingMode()`](#fn-withxffheaderprocessingmode)
 * [`obj access_logs`](#obj-access_logs)
   * [`fn new()`](#fn-access_logsnew)
 * [`obj subnet_mapping`](#obj-subnet_mapping)
@@ -81,7 +84,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `enable_cross_zone_load_balancing` (`bool`): Set the `enable_cross_zone_load_balancing` field on the resulting resource block. When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
   - `enable_deletion_protection` (`bool`): Set the `enable_deletion_protection` field on the resulting resource block. When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
   - `enable_http2` (`bool`): Set the `enable_http2` field on the resulting resource block. When `null`, the `enable_http2` field will be omitted from the resulting object.
+  - `enable_tls_version_and_cipher_suite_headers` (`bool`): Set the `enable_tls_version_and_cipher_suite_headers` field on the resulting resource block. When `null`, the `enable_tls_version_and_cipher_suite_headers` field will be omitted from the resulting object.
   - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting resource block. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
+  - `enable_xff_client_port` (`bool`): Set the `enable_xff_client_port` field on the resulting resource block. When `null`, the `enable_xff_client_port` field will be omitted from the resulting object.
   - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting resource block. When `null`, the `idle_timeout` field will be omitted from the resulting object.
   - `internal` (`bool`): Set the `internal` field on the resulting resource block. When `null`, the `internal` field will be omitted from the resulting object.
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
@@ -93,6 +98,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subnets` (`list`): Set the `subnets` field on the resulting resource block. When `null`, the `subnets` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `xff_header_processing_mode` (`string`): Set the `xff_header_processing_mode` field on the resulting resource block. When `null`, the `xff_header_processing_mode` field will be omitted from the resulting object.
   - `access_logs` (`list[obj]`): Set the `access_logs` field on the resulting resource block. When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-access_logsnew) constructor.
   - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting resource block. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-timeoutsnew) constructor.
@@ -125,7 +131,9 @@ injecting into a complete block.
   - `enable_cross_zone_load_balancing` (`bool`): Set the `enable_cross_zone_load_balancing` field on the resulting object. When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
   - `enable_deletion_protection` (`bool`): Set the `enable_deletion_protection` field on the resulting object. When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
   - `enable_http2` (`bool`): Set the `enable_http2` field on the resulting object. When `null`, the `enable_http2` field will be omitted from the resulting object.
+  - `enable_tls_version_and_cipher_suite_headers` (`bool`): Set the `enable_tls_version_and_cipher_suite_headers` field on the resulting object. When `null`, the `enable_tls_version_and_cipher_suite_headers` field will be omitted from the resulting object.
   - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting object. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
+  - `enable_xff_client_port` (`bool`): Set the `enable_xff_client_port` field on the resulting object. When `null`, the `enable_xff_client_port` field will be omitted from the resulting object.
   - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting object. When `null`, the `idle_timeout` field will be omitted from the resulting object.
   - `internal` (`bool`): Set the `internal` field on the resulting object. When `null`, the `internal` field will be omitted from the resulting object.
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
@@ -137,6 +145,7 @@ injecting into a complete block.
   - `subnets` (`list`): Set the `subnets` field on the resulting object. When `null`, the `subnets` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `xff_header_processing_mode` (`string`): Set the `xff_header_processing_mode` field on the resulting object. When `null`, the `xff_header_processing_mode` field will be omitted from the resulting object.
   - `access_logs` (`list[obj]`): Set the `access_logs` field on the resulting object. When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.access_logs.new](#fn-access_logsnew) constructor.
   - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting object. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb.timeouts.new](#fn-timeoutsnew) constructor.
@@ -278,6 +287,22 @@ Terraform resource block to set or update the enable_http2 field.
   - `value` (`bool`): The value to set for the `enable_http2` field.
 
 
+### fn withEnableTlsVersionAndCipherSuiteHeaders
+
+```ts
+withEnableTlsVersionAndCipherSuiteHeaders()
+```
+
+`aws.bool.withEnableTlsVersionAndCipherSuiteHeaders` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the enable_tls_version_and_cipher_suite_headers field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `enable_tls_version_and_cipher_suite_headers` field.
+
+
 ### fn withEnableWafFailOpen
 
 ```ts
@@ -292,6 +317,22 @@ Terraform resource block to set or update the enable_waf_fail_open field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `enable_waf_fail_open` field.
+
+
+### fn withEnableXffClientPort
+
+```ts
+withEnableXffClientPort()
+```
+
+`aws.bool.withEnableXffClientPort` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the enable_xff_client_port field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `enable_xff_client_port` field.
 
 
 ### fn withIdleTimeout
@@ -541,6 +582,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `timeouts` field.
+
+
+### fn withXffHeaderProcessingMode
+
+```ts
+withXffHeaderProcessingMode()
+```
+
+`aws.string.withXffHeaderProcessingMode` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the xff_header_processing_mode field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `xff_header_processing_mode` field.
 
 
 ## obj access_logs

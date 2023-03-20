@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withDeleteAllPolicyResources()`](#fn-withdeleteallpolicyresources)
 * [`fn withDeleteUnusedFmManagedResources()`](#fn-withdeleteunusedfmmanagedresources)
+* [`fn withDescription()`](#fn-withdescription)
 * [`fn withExcludeMap()`](#fn-withexcludemap)
 * [`fn withExcludeMapMixin()`](#fn-withexcludemapmixin)
 * [`fn withExcludeResourceTags()`](#fn-withexcluderesourcetags)
@@ -69,6 +70,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `delete_all_policy_resources` (`bool`): Set the `delete_all_policy_resources` field on the resulting resource block. When `null`, the `delete_all_policy_resources` field will be omitted from the resulting object.
   - `delete_unused_fm_managed_resources` (`bool`): Set the `delete_unused_fm_managed_resources` field on the resulting resource block. When `null`, the `delete_unused_fm_managed_resources` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `exclude_resource_tags` (`bool`): Set the `exclude_resource_tags` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `remediation_enabled` (`bool`): Set the `remediation_enabled` field on the resulting resource block. When `null`, the `remediation_enabled` field will be omitted from the resulting object.
@@ -105,6 +107,7 @@ injecting into a complete block.
 **Args**:
   - `delete_all_policy_resources` (`bool`): Set the `delete_all_policy_resources` field on the resulting object. When `null`, the `delete_all_policy_resources` field will be omitted from the resulting object.
   - `delete_unused_fm_managed_resources` (`bool`): Set the `delete_unused_fm_managed_resources` field on the resulting object. When `null`, the `delete_unused_fm_managed_resources` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `exclude_resource_tags` (`bool`): Set the `exclude_resource_tags` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `remediation_enabled` (`bool`): Set the `remediation_enabled` field on the resulting object. When `null`, the `remediation_enabled` field will be omitted from the resulting object.
@@ -151,6 +154,22 @@ Terraform resource block to set or update the delete_unused_fm_managed_resources
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `delete_unused_fm_managed_resources` field.
+
+
+### fn withDescription
+
+```ts
+withDescription()
+```
+
+`aws.string.withDescription` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the description field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `description` field.
 
 
 ### fn withExcludeMap

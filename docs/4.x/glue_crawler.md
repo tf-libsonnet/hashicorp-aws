@@ -757,6 +757,7 @@ Terraform sub block.
 
 **Args**:
   - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.
+  - `create_native_delta_table` (`bool`): Set the `create_native_delta_table` field on the resulting object. When `null`, the `create_native_delta_table` field will be omitted from the resulting object.
   - `delta_tables` (`list`): Set the `delta_tables` field on the resulting object.
   - `write_manifest` (`bool`): Set the `write_manifest` field on the resulting object.
 

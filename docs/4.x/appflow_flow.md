@@ -842,6 +842,7 @@ Terraform sub block.
 
 **Args**:
   - `file_type` (`string`): Set the `file_type` field on the resulting object. When `null`, the `file_type` field will be omitted from the resulting object.
+  - `preserve_source_data_typing` (`bool`): Set the `preserve_source_data_typing` field on the resulting object. When `null`, the `preserve_source_data_typing` field will be omitted from the resulting object.
   - `aggregation_config` (`list[obj]`): Set the `aggregation_config` field on the resulting object. When `null`, the `aggregation_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3aggregation_confignew) constructor.
   - `prefix_config` (`list[obj]`): Set the `prefix_config` field on the resulting object. When `null`, the `prefix_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config.new](#fn-destination_flow_configdestination_flow_configdestination_connector_propertiess3prefix_confignew) constructor.
 

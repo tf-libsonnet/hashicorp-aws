@@ -2085,10 +2085,10 @@ Terraform sub block.
 
 **Args**:
   - `acquisition_point_id` (`string`): Set the `acquisition_point_id` field on the resulting object. When `null`, the `acquisition_point_id` field will be omitted from the resulting object.
-  - `audio_only_timecodec_control` (`string`): Set the `audio_only_timecodec_control` field on the resulting object. When `null`, the `audio_only_timecodec_control` field will be omitted from the resulting object.
+  - `audio_only_timecode_control` (`string`): Set the `audio_only_timecode_control` field on the resulting object. When `null`, the `audio_only_timecode_control` field will be omitted from the resulting object.
   - `certificate_mode` (`string`): Set the `certificate_mode` field on the resulting object. When `null`, the `certificate_mode` field will be omitted from the resulting object.
   - `connection_retry_interval` (`number`): Set the `connection_retry_interval` field on the resulting object. When `null`, the `connection_retry_interval` field will be omitted from the resulting object.
-  - `event_id` (`number`): Set the `event_id` field on the resulting object. When `null`, the `event_id` field will be omitted from the resulting object.
+  - `event_id` (`string`): Set the `event_id` field on the resulting object. When `null`, the `event_id` field will be omitted from the resulting object.
   - `event_id_mode` (`string`): Set the `event_id_mode` field on the resulting object. When `null`, the `event_id_mode` field will be omitted from the resulting object.
   - `event_stop_behavior` (`string`): Set the `event_stop_behavior` field on the resulting object. When `null`, the `event_stop_behavior` field will be omitted from the resulting object.
   - `filecache_duration` (`number`): Set the `filecache_duration` field on the resulting object. When `null`, the `filecache_duration` field will be omitted from the resulting object.

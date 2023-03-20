@@ -21,6 +21,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDynamodbConfigMixin()`](#fn-withdynamodbconfigmixin)
 * [`fn withElasticsearchConfig()`](#fn-withelasticsearchconfig)
 * [`fn withElasticsearchConfigMixin()`](#fn-withelasticsearchconfigmixin)
+* [`fn withEventBridgeConfig()`](#fn-witheventbridgeconfig)
+* [`fn withEventBridgeConfigMixin()`](#fn-witheventbridgeconfigmixin)
 * [`fn withHttpConfig()`](#fn-withhttpconfig)
 * [`fn withHttpConfigMixin()`](#fn-withhttpconfigmixin)
 * [`fn withLambdaConfig()`](#fn-withlambdaconfig)
@@ -36,6 +38,8 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-dynamodb_configdelta_sync_confignew)
 * [`obj elasticsearch_config`](#obj-elasticsearch_config)
   * [`fn new()`](#fn-elasticsearch_confignew)
+* [`obj event_bridge_config`](#obj-event_bridge_config)
+  * [`fn new()`](#fn-event_bridge_confignew)
 * [`obj http_config`](#obj-http_config)
   * [`fn new()`](#fn-http_confignew)
   * [`obj http_config.authorization_config`](#obj-http_configauthorization_config)
@@ -85,6 +89,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `type` (`string`): Set the `type` field on the resulting resource block.
   - `dynamodb_config` (`list[obj]`): Set the `dynamodb_config` field on the resulting resource block. When `null`, the `dynamodb_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.new](#fn-dynamodb_confignew) constructor.
   - `elasticsearch_config` (`list[obj]`): Set the `elasticsearch_config` field on the resulting resource block. When `null`, the `elasticsearch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.elasticsearch_config.new](#fn-elasticsearch_confignew) constructor.
+  - `event_bridge_config` (`list[obj]`): Set the `event_bridge_config` field on the resulting resource block. When `null`, the `event_bridge_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.event_bridge_config.new](#fn-event_bridge_confignew) constructor.
   - `http_config` (`list[obj]`): Set the `http_config` field on the resulting resource block. When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
   - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting resource block. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
   - `relational_database_config` (`list[obj]`): Set the `relational_database_config` field on the resulting resource block. When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
@@ -118,6 +123,7 @@ injecting into a complete block.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `dynamodb_config` (`list[obj]`): Set the `dynamodb_config` field on the resulting object. When `null`, the `dynamodb_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.dynamodb_config.new](#fn-dynamodb_confignew) constructor.
   - `elasticsearch_config` (`list[obj]`): Set the `elasticsearch_config` field on the resulting object. When `null`, the `elasticsearch_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.elasticsearch_config.new](#fn-elasticsearch_confignew) constructor.
+  - `event_bridge_config` (`list[obj]`): Set the `event_bridge_config` field on the resulting object. When `null`, the `event_bridge_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.event_bridge_config.new](#fn-event_bridge_confignew) constructor.
   - `http_config` (`list[obj]`): Set the `http_config` field on the resulting object. When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
   - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting object. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
   - `relational_database_config` (`list[obj]`): Set the `relational_database_config` field on the resulting object. When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
@@ -230,6 +236,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `elasticsearch_config` field.
+
+
+### fn withEventBridgeConfig
+
+```ts
+withEventBridgeConfig()
+```
+
+`aws.list[obj].withEventBridgeConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the event_bridge_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withEventBridgeConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `event_bridge_config` field.
+
+
+### fn withEventBridgeConfigMixin
+
+```ts
+withEventBridgeConfigMixin()
+```
+
+`aws.list[obj].withEventBridgeConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the event_bridge_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withEventBridgeConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `event_bridge_config` field.
 
 
 ### fn withHttpConfig
@@ -465,6 +508,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `elasticsearch_config` sub block.
+
+
+## obj event_bridge_config
+
+
+
+### fn event_bridge_config.new
+
+```ts
+new()
+```
+
+
+`aws.appsync_datasource.event_bridge_config.new` constructs a new object with attributes and blocks configured for the `event_bridge_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `event_bus_arn` (`string`): Set the `event_bus_arn` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `event_bridge_config` sub block.
 
 
 ## obj http_config

@@ -22,6 +22,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withIpAddressType()`](#fn-withipaddresstype)
 * [`fn withLambdaMultiValueHeadersEnabled()`](#fn-withlambdamultivalueheadersenabled)
 * [`fn withLoadBalancingAlgorithmType()`](#fn-withloadbalancingalgorithmtype)
+* [`fn withLoadBalancingCrossZoneEnabled()`](#fn-withloadbalancingcrosszoneenabled)
 * [`fn withName()`](#fn-withname)
 * [`fn withNamePrefix()`](#fn-withnameprefix)
 * [`fn withPort()`](#fn-withport)
@@ -79,6 +80,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
   - `lambda_multi_value_headers_enabled` (`bool`): Set the `lambda_multi_value_headers_enabled` field on the resulting resource block. When `null`, the `lambda_multi_value_headers_enabled` field will be omitted from the resulting object.
   - `load_balancing_algorithm_type` (`string`): Set the `load_balancing_algorithm_type` field on the resulting resource block. When `null`, the `load_balancing_algorithm_type` field will be omitted from the resulting object.
+  - `load_balancing_cross_zone_enabled` (`string`): Set the `load_balancing_cross_zone_enabled` field on the resulting resource block. When `null`, the `load_balancing_cross_zone_enabled` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
@@ -122,6 +124,7 @@ injecting into a complete block.
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
   - `lambda_multi_value_headers_enabled` (`bool`): Set the `lambda_multi_value_headers_enabled` field on the resulting object. When `null`, the `lambda_multi_value_headers_enabled` field will be omitted from the resulting object.
   - `load_balancing_algorithm_type` (`string`): Set the `load_balancing_algorithm_type` field on the resulting object. When `null`, the `load_balancing_algorithm_type` field will be omitted from the resulting object.
+  - `load_balancing_cross_zone_enabled` (`string`): Set the `load_balancing_cross_zone_enabled` field on the resulting object. When `null`, the `load_balancing_cross_zone_enabled` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
@@ -257,6 +260,22 @@ Terraform resource block to set or update the load_balancing_algorithm_type fiel
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `load_balancing_algorithm_type` field.
+
+
+### fn withLoadBalancingCrossZoneEnabled
+
+```ts
+withLoadBalancingCrossZoneEnabled()
+```
+
+`aws.string.withLoadBalancingCrossZoneEnabled` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the load_balancing_cross_zone_enabled field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `load_balancing_cross_zone_enabled` field.
 
 
 ### fn withName

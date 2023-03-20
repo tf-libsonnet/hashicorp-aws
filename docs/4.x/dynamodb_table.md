@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAttribute()`](#fn-withattribute)
 * [`fn withAttributeMixin()`](#fn-withattributemixin)
 * [`fn withBillingMode()`](#fn-withbillingmode)
+* [`fn withDeletionProtectionEnabled()`](#fn-withdeletionprotectionenabled)
 * [`fn withGlobalSecondaryIndex()`](#fn-withglobalsecondaryindex)
 * [`fn withGlobalSecondaryIndexMixin()`](#fn-withglobalsecondaryindexmixin)
 * [`fn withHashKey()`](#fn-withhashkey)
@@ -92,6 +93,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `billing_mode` (`string`): Set the `billing_mode` field on the resulting resource block. When `null`, the `billing_mode` field will be omitted from the resulting object.
+  - `deletion_protection_enabled` (`bool`): Set the `deletion_protection_enabled` field on the resulting resource block. When `null`, the `deletion_protection_enabled` field will be omitted from the resulting object.
   - `hash_key` (`string`): Set the `hash_key` field on the resulting resource block. When `null`, the `hash_key` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `range_key` (`string`): Set the `range_key` field on the resulting resource block. When `null`, the `range_key` field will be omitted from the resulting object.
@@ -137,6 +139,7 @@ injecting into a complete block.
 
 **Args**:
   - `billing_mode` (`string`): Set the `billing_mode` field on the resulting object. When `null`, the `billing_mode` field will be omitted from the resulting object.
+  - `deletion_protection_enabled` (`bool`): Set the `deletion_protection_enabled` field on the resulting object. When `null`, the `deletion_protection_enabled` field will be omitted from the resulting object.
   - `hash_key` (`string`): Set the `hash_key` field on the resulting object. When `null`, the `hash_key` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `range_key` (`string`): Set the `range_key` field on the resulting object. When `null`, the `range_key` field will be omitted from the resulting object.
@@ -214,6 +217,22 @@ Terraform resource block to set or update the billing_mode field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `billing_mode` field.
+
+
+### fn withDeletionProtectionEnabled
+
+```ts
+withDeletionProtectionEnabled()
+```
+
+`aws.bool.withDeletionProtectionEnabled` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the deletion_protection_enabled field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `deletion_protection_enabled` field.
 
 
 ### fn withGlobalSecondaryIndex

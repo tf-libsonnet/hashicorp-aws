@@ -21,18 +21,20 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         unit: unit,
       }),
     },
-    '#new':: d.fn(help='\n`aws.cloudwatch_metric_alarm.metric_query.new` constructs a new object with attributes and blocks configured for the `metric_query`\nTerraform sub block.\n\n\n\n**Args**:\n  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.\n  - `expression` (`string`): Set the `expression` field on the resulting object. When `null`, the `expression` field will be omitted from the resulting object.\n  - `label` (`string`): Set the `label` field on the resulting object. When `null`, the `label` field will be omitted from the resulting object.\n  - `return_data` (`bool`): Set the `return_data` field on the resulting object. When `null`, the `return_data` field will be omitted from the resulting object.\n  - `metric` (`list[obj]`): Set the `metric` field on the resulting object. When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-metric_querymetricnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `metric_query` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudwatch_metric_alarm.metric_query.new` constructs a new object with attributes and blocks configured for the `metric_query`\nTerraform sub block.\n\n\n\n**Args**:\n  - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.\n  - `expression` (`string`): Set the `expression` field on the resulting object. When `null`, the `expression` field will be omitted from the resulting object.\n  - `label` (`string`): Set the `label` field on the resulting object. When `null`, the `label` field will be omitted from the resulting object.\n  - `period` (`number`): Set the `period` field on the resulting object. When `null`, the `period` field will be omitted from the resulting object.\n  - `return_data` (`bool`): Set the `return_data` field on the resulting object. When `null`, the `return_data` field will be omitted from the resulting object.\n  - `metric` (`list[obj]`): Set the `metric` field on the resulting object. When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_metric_alarm.metric_query.metric.new](#fn-metric_querymetricnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `metric_query` sub block.\n', args=[]),
     new(
       account_id=null,
       expression=null,
       label=null,
       metric=null,
+      period=null,
       return_data=null
     ):: std.prune(a={
       account_id: account_id,
       expression: expression,
       label: label,
       metric: metric,
+      period: period,
       return_data: return_data,
     }),
   },
