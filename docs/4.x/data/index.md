@@ -29,6 +29,8 @@ permalink: /data/
 * [appconfig_environment](appconfig_environment.md)
 * [appconfig_environments](appconfig_environments.md)
 * [appmesh_mesh](appmesh_mesh.md)
+* [appmesh_route](appmesh_route.md)
+* [appmesh_virtual_gateway](appmesh_virtual_gateway.md)
 * [appmesh_virtual_service](appmesh_virtual_service.md)
 * [arn](arn.md)
 * [auditmanager_control](auditmanager_control.md)
