@@ -92,6 +92,10 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-specloggingaccess_lognew)
       * [`obj spec.logging.access_log.file`](#obj-specloggingaccess_logfile)
         * [`fn new()`](#fn-specloggingaccess_logfilenew)
+        * [`obj spec.logging.access_log.file.format`](#obj-specloggingaccess_logfileformat)
+          * [`fn new()`](#fn-specloggingaccess_logfileformatnew)
+          * [`obj spec.logging.access_log.file.format.json`](#obj-specloggingaccess_logfileformatjson)
+            * [`fn new()`](#fn-specloggingaccess_logfileformatjsonnew)
 
 ## Fields
 
@@ -1109,6 +1113,55 @@ Terraform sub block.
 
 **Args**:
   - `path` (`string`): Set the `path` field on the resulting object.
+  - `format` (`list[obj]`): Set the `format` field on the resulting object. When `null`, the `format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.new](#fn-specspecloggingaccess_logformatnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `file` sub block.
+
+
+## obj spec.logging.access_log.file.format
+
+
+
+### fn spec.logging.access_log.file.format.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.new` constructs a new object with attributes and blocks configured for the `format`
+Terraform sub block.
+
+
+
+**Args**:
+  - `text` (`string`): Set the `text` field on the resulting object. When `null`, the `text` field will be omitted from the resulting object.
+  - `json` (`list[obj]`): Set the `json` field on the resulting object. When `null`, the `json` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.json.new](#fn-specspecloggingaccess_logfilejsonnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `format` sub block.
+
+
+## obj spec.logging.access_log.file.format.json
+
+
+
+### fn spec.logging.access_log.file.format.json.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.json.new` constructs a new object with attributes and blocks configured for the `json`
+Terraform sub block.
+
+
+
+**Args**:
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `json` sub block.

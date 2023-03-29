@@ -349,10 +349,32 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     logging:: {
       access_log:: {
         file:: {
-          '#new':: d.fn(help='\n`aws.appmesh_virtual_gateway.spec.logging.access_log.file.new` constructs a new object with attributes and blocks configured for the `file`\nTerraform sub block.\n\n\n\n**Args**:\n  - `path` (`string`): Set the `path` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `file` sub block.\n', args=[]),
+          format:: {
+            json:: {
+              '#new':: d.fn(help='\n`aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.json.new` constructs a new object with attributes and blocks configured for the `json`\nTerraform sub block.\n\n\n\n**Args**:\n  - `key` (`string`): Set the `key` field on the resulting object.\n  - `value` (`string`): Set the `value` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `json` sub block.\n', args=[]),
+              new(
+                key,
+                value
+              ):: std.prune(a={
+                key: key,
+                value: value,
+              }),
+            },
+            '#new':: d.fn(help='\n`aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.new` constructs a new object with attributes and blocks configured for the `format`\nTerraform sub block.\n\n\n\n**Args**:\n  - `text` (`string`): Set the `text` field on the resulting object. When `null`, the `text` field will be omitted from the resulting object.\n  - `json` (`list[obj]`): Set the `json` field on the resulting object. When `null`, the `json` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.json.new](#fn-specspecloggingaccess_logfilejsonnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `format` sub block.\n', args=[]),
+            new(
+              json=null,
+              text=null
+            ):: std.prune(a={
+              json: json,
+              text: text,
+            }),
+          },
+          '#new':: d.fn(help='\n`aws.appmesh_virtual_gateway.spec.logging.access_log.file.new` constructs a new object with attributes and blocks configured for the `file`\nTerraform sub block.\n\n\n\n**Args**:\n  - `path` (`string`): Set the `path` field on the resulting object.\n  - `format` (`list[obj]`): Set the `format` field on the resulting object. When `null`, the `format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_gateway.spec.logging.access_log.file.format.new](#fn-specspecloggingaccess_logformatnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `file` sub block.\n', args=[]),
           new(
-            path
+            path,
+            format=null
           ):: std.prune(a={
+            format: format,
             path: path,
           }),
         },
