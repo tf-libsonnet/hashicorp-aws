@@ -49,7 +49,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `account_id` (`string`): Set the `account_id` field on the resulting resource block.
-  - `email` (`string`): Set the `email` field on the resulting resource block. When `null`, the `email` field will be omitted from the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting resource block.
   - `invite` (`bool`): Set the `invite` field on the resulting resource block. When `null`, the `invite` field will be omitted from the resulting object.
 
 **Returns**:
@@ -75,7 +75,7 @@ injecting into a complete block.
 
 **Args**:
   - `account_id` (`string`): Set the `account_id` field on the resulting object.
-  - `email` (`string`): Set the `email` field on the resulting object. When `null`, the `email` field will be omitted from the resulting object.
+  - `email` (`string`): Set the `email` field on the resulting object.
   - `invite` (`bool`): Set the `invite` field on the resulting object. When `null`, the `invite` field will be omitted from the resulting object.
 
 **Returns**:

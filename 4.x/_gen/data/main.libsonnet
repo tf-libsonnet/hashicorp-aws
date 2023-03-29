@@ -24,8 +24,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   appconfig_environment: (import 'appconfig_environment.libsonnet'),
   appconfig_environments: (import 'appconfig_environments.libsonnet'),
   appmesh_mesh: (import 'appmesh_mesh.libsonnet'),
-  appmesh_route: (import 'appmesh_route.libsonnet'),
-  appmesh_virtual_gateway: (import 'appmesh_virtual_gateway.libsonnet'),
   appmesh_virtual_service: (import 'appmesh_virtual_service.libsonnet'),
   arn: (import 'arn.libsonnet'),
   auditmanager_control: (import 'auditmanager_control.libsonnet'),

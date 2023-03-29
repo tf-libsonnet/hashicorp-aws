@@ -15,7 +15,6 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
-* [`fn withEnableDefaultStandards()`](#fn-withenabledefaultstandards)
 
 ## Fields
 
@@ -46,7 +45,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `enable_default_standards` (`bool`): Set the `enable_default_standards` field on the resulting resource block. When `null`, the `enable_default_standards` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -69,24 +67,5 @@ block into the root Terraform document. Instead, this must be passed in as the `
 This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
 injecting into a complete block.
 
-**Args**:
-  - `enable_default_standards` (`bool`): Set the `enable_default_standards` field on the resulting object. When `null`, the `enable_default_standards` field will be omitted from the resulting object.
-
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `securityhub_account` resource into the root Terraform configuration.
-
-
-### fn withEnableDefaultStandards
-
-```ts
-withEnableDefaultStandards()
-```
-
-`aws.bool.withEnableDefaultStandards` constructs a mixin object that can be merged into the `bool`
-Terraform resource block to set or update the enable_default_standards field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`bool`): The value to set for the `enable_default_standards` field.
