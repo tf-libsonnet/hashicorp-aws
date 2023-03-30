@@ -43,7 +43,9 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withIamRoles()`](#fn-withiamroles)
 * [`fn withIops()`](#fn-withiops)
 * [`fn withKmsKeyId()`](#fn-withkmskeyid)
+* [`fn withManageMasterUserPassword()`](#fn-withmanagemasteruserpassword)
 * [`fn withMasterPassword()`](#fn-withmasterpassword)
+* [`fn withMasterUserSecretKmsKeyId()`](#fn-withmasterusersecretkmskeyid)
 * [`fn withMasterUsername()`](#fn-withmasterusername)
 * [`fn withNetworkType()`](#fn-withnetworktype)
 * [`fn withPort()`](#fn-withport)
@@ -136,7 +138,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `iam_roles` (`list`): Set the `iam_roles` field on the resulting resource block. When `null`, the `iam_roles` field will be omitted from the resulting object.
   - `iops` (`number`): Set the `iops` field on the resulting resource block. When `null`, the `iops` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `manage_master_user_password` (`bool`): Set the `manage_master_user_password` field on the resulting resource block. When `null`, the `manage_master_user_password` field will be omitted from the resulting object.
   - `master_password` (`string`): Set the `master_password` field on the resulting resource block. When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_user_secret_kms_key_id` (`string`): Set the `master_user_secret_kms_key_id` field on the resulting resource block. When `null`, the `master_user_secret_kms_key_id` field will be omitted from the resulting object.
   - `master_username` (`string`): Set the `master_username` field on the resulting resource block. When `null`, the `master_username` field will be omitted from the resulting object.
   - `network_type` (`string`): Set the `network_type` field on the resulting resource block. When `null`, the `network_type` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
@@ -207,7 +211,9 @@ injecting into a complete block.
   - `iam_roles` (`list`): Set the `iam_roles` field on the resulting object. When `null`, the `iam_roles` field will be omitted from the resulting object.
   - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `manage_master_user_password` (`bool`): Set the `manage_master_user_password` field on the resulting object. When `null`, the `manage_master_user_password` field will be omitted from the resulting object.
   - `master_password` (`string`): Set the `master_password` field on the resulting object. When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_user_secret_kms_key_id` (`string`): Set the `master_user_secret_kms_key_id` field on the resulting object. When `null`, the `master_user_secret_kms_key_id` field will be omitted from the resulting object.
   - `master_username` (`string`): Set the `master_username` field on the resulting object. When `null`, the `master_username` field will be omitted from the resulting object.
   - `network_type` (`string`): Set the `network_type` field on the resulting object. When `null`, the `network_type` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
@@ -680,6 +686,22 @@ Terraform resource block to set or update the kms_key_id field.
   - `value` (`string`): The value to set for the `kms_key_id` field.
 
 
+### fn withManageMasterUserPassword
+
+```ts
+withManageMasterUserPassword()
+```
+
+`aws.bool.withManageMasterUserPassword` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the manage_master_user_password field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `manage_master_user_password` field.
+
+
 ### fn withMasterPassword
 
 ```ts
@@ -694,6 +716,22 @@ Terraform resource block to set or update the master_password field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `master_password` field.
+
+
+### fn withMasterUserSecretKmsKeyId
+
+```ts
+withMasterUserSecretKmsKeyId()
+```
+
+`aws.string.withMasterUserSecretKmsKeyId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the master_user_secret_kms_key_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `master_user_secret_kms_key_id` field.
 
 
 ### fn withMasterUsername

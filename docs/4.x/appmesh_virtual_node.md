@@ -2022,6 +2022,8 @@ Terraform sub block.
 
 **Args**:
   - `hostname` (`string`): Set the `hostname` field on the resulting object.
+  - `ip_preference` (`string`): Set the `ip_preference` field on the resulting object. When `null`, the `ip_preference` field will be omitted from the resulting object.
+  - `response_type` (`string`): Set the `response_type` field on the resulting object. When `null`, the `response_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dns` sub block.

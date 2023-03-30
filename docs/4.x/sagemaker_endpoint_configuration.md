@@ -529,6 +529,7 @@ Terraform sub block.
 **Args**:
   - `accelerator_type` (`string`): Set the `accelerator_type` field on the resulting object. When `null`, the `accelerator_type` field will be omitted from the resulting object.
   - `container_startup_health_check_timeout_in_seconds` (`number`): Set the `container_startup_health_check_timeout_in_seconds` field on the resulting object. When `null`, the `container_startup_health_check_timeout_in_seconds` field will be omitted from the resulting object.
+  - `enable_ssm_access` (`bool`): Set the `enable_ssm_access` field on the resulting object. When `null`, the `enable_ssm_access` field will be omitted from the resulting object.
   - `initial_instance_count` (`number`): Set the `initial_instance_count` field on the resulting object. When `null`, the `initial_instance_count` field will be omitted from the resulting object.
   - `initial_variant_weight` (`number`): Set the `initial_variant_weight` field on the resulting object. When `null`, the `initial_variant_weight` field will be omitted from the resulting object.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
@@ -610,6 +611,7 @@ Terraform sub block.
 **Args**:
   - `accelerator_type` (`string`): Set the `accelerator_type` field on the resulting object. When `null`, the `accelerator_type` field will be omitted from the resulting object.
   - `container_startup_health_check_timeout_in_seconds` (`number`): Set the `container_startup_health_check_timeout_in_seconds` field on the resulting object. When `null`, the `container_startup_health_check_timeout_in_seconds` field will be omitted from the resulting object.
+  - `enable_ssm_access` (`bool`): Set the `enable_ssm_access` field on the resulting object. When `null`, the `enable_ssm_access` field will be omitted from the resulting object.
   - `initial_instance_count` (`number`): Set the `initial_instance_count` field on the resulting object. When `null`, the `initial_instance_count` field will be omitted from the resulting object.
   - `initial_variant_weight` (`number`): Set the `initial_variant_weight` field on the resulting object. When `null`, the `initial_variant_weight` field will be omitted from the resulting object.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.

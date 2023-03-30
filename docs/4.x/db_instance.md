@@ -47,6 +47,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withKmsKeyId()`](#fn-withkmskeyid)
 * [`fn withLicenseModel()`](#fn-withlicensemodel)
 * [`fn withMaintenanceWindow()`](#fn-withmaintenancewindow)
+* [`fn withManageMasterUserPassword()`](#fn-withmanagemasteruserpassword)
+* [`fn withMasterUserSecretKmsKeyId()`](#fn-withmasterusersecretkmskeyid)
 * [`fn withMaxAllocatedStorage()`](#fn-withmaxallocatedstorage)
 * [`fn withMonitoringInterval()`](#fn-withmonitoringinterval)
 * [`fn withMonitoringRoleArn()`](#fn-withmonitoringrolearn)
@@ -149,6 +151,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `license_model` (`string`): Set the `license_model` field on the resulting resource block. When `null`, the `license_model` field will be omitted from the resulting object.
   - `maintenance_window` (`string`): Set the `maintenance_window` field on the resulting resource block. When `null`, the `maintenance_window` field will be omitted from the resulting object.
+  - `manage_master_user_password` (`bool`): Set the `manage_master_user_password` field on the resulting resource block. When `null`, the `manage_master_user_password` field will be omitted from the resulting object.
+  - `master_user_secret_kms_key_id` (`string`): Set the `master_user_secret_kms_key_id` field on the resulting resource block. When `null`, the `master_user_secret_kms_key_id` field will be omitted from the resulting object.
   - `max_allocated_storage` (`number`): Set the `max_allocated_storage` field on the resulting resource block. When `null`, the `max_allocated_storage` field will be omitted from the resulting object.
   - `monitoring_interval` (`number`): Set the `monitoring_interval` field on the resulting resource block. When `null`, the `monitoring_interval` field will be omitted from the resulting object.
   - `monitoring_role_arn` (`string`): Set the `monitoring_role_arn` field on the resulting resource block. When `null`, the `monitoring_role_arn` field will be omitted from the resulting object.
@@ -234,6 +238,8 @@ injecting into a complete block.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `license_model` (`string`): Set the `license_model` field on the resulting object. When `null`, the `license_model` field will be omitted from the resulting object.
   - `maintenance_window` (`string`): Set the `maintenance_window` field on the resulting object. When `null`, the `maintenance_window` field will be omitted from the resulting object.
+  - `manage_master_user_password` (`bool`): Set the `manage_master_user_password` field on the resulting object. When `null`, the `manage_master_user_password` field will be omitted from the resulting object.
+  - `master_user_secret_kms_key_id` (`string`): Set the `master_user_secret_kms_key_id` field on the resulting object. When `null`, the `master_user_secret_kms_key_id` field will be omitted from the resulting object.
   - `max_allocated_storage` (`number`): Set the `max_allocated_storage` field on the resulting object. When `null`, the `max_allocated_storage` field will be omitted from the resulting object.
   - `monitoring_interval` (`number`): Set the `monitoring_interval` field on the resulting object. When `null`, the `monitoring_interval` field will be omitted from the resulting object.
   - `monitoring_role_arn` (`string`): Set the `monitoring_role_arn` field on the resulting object. When `null`, the `monitoring_role_arn` field will be omitted from the resulting object.
@@ -786,6 +792,38 @@ Terraform resource block to set or update the maintenance_window field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `maintenance_window` field.
+
+
+### fn withManageMasterUserPassword
+
+```ts
+withManageMasterUserPassword()
+```
+
+`aws.bool.withManageMasterUserPassword` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the manage_master_user_password field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `manage_master_user_password` field.
+
+
+### fn withMasterUserSecretKmsKeyId
+
+```ts
+withMasterUserSecretKmsKeyId()
+```
+
+`aws.string.withMasterUserSecretKmsKeyId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the master_user_secret_kms_key_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `master_user_secret_kms_key_id` field.
 
 
 ### fn withMaxAllocatedStorage

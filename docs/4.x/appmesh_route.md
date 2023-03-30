@@ -63,6 +63,12 @@ This package contains functions and utilities for setting up the resource using 
           * [`fn new()`](#fn-spechttp2_routematchheadermatchnew)
           * [`obj spec.http2_route.match.header.match.range`](#obj-spechttp2_routematchheadermatchrange)
             * [`fn new()`](#fn-spechttp2_routematchheadermatchrangenew)
+      * [`obj spec.http2_route.match.path`](#obj-spechttp2_routematchpath)
+        * [`fn new()`](#fn-spechttp2_routematchpathnew)
+      * [`obj spec.http2_route.match.query_parameter`](#obj-spechttp2_routematchquery_parameter)
+        * [`fn new()`](#fn-spechttp2_routematchquery_parameternew)
+        * [`obj spec.http2_route.match.query_parameter.match`](#obj-spechttp2_routematchquery_parametermatch)
+          * [`fn new()`](#fn-spechttp2_routematchquery_parametermatchnew)
     * [`obj spec.http2_route.retry_policy`](#obj-spechttp2_routeretry_policy)
       * [`fn new()`](#fn-spechttp2_routeretry_policynew)
       * [`obj spec.http2_route.retry_policy.per_retry_timeout`](#obj-spechttp2_routeretry_policyper_retry_timeout)
@@ -87,6 +93,12 @@ This package contains functions and utilities for setting up the resource using 
           * [`fn new()`](#fn-spechttp_routematchheadermatchnew)
           * [`obj spec.http_route.match.header.match.range`](#obj-spechttp_routematchheadermatchrange)
             * [`fn new()`](#fn-spechttp_routematchheadermatchrangenew)
+      * [`obj spec.http_route.match.path`](#obj-spechttp_routematchpath)
+        * [`fn new()`](#fn-spechttp_routematchpathnew)
+      * [`obj spec.http_route.match.query_parameter`](#obj-spechttp_routematchquery_parameter)
+        * [`fn new()`](#fn-spechttp_routematchquery_parameternew)
+        * [`obj spec.http_route.match.query_parameter.match`](#obj-spechttp_routematchquery_parametermatch)
+          * [`fn new()`](#fn-spechttp_routematchquery_parametermatchnew)
     * [`obj spec.http_route.retry_policy`](#obj-spechttp_routeretry_policy)
       * [`fn new()`](#fn-spechttp_routeretry_policynew)
       * [`obj spec.http_route.retry_policy.per_retry_timeout`](#obj-spechttp_routeretry_policyper_retry_timeout)
@@ -734,9 +746,11 @@ Terraform sub block.
 **Args**:
   - `method` (`string`): Set the `method` field on the resulting object. When `null`, the `method` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
   - `scheme` (`string`): Set the `scheme` field on the resulting object. When `null`, the `scheme` field will be omitted from the resulting object.
   - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.header.new](#fn-specspechttp2_routeheadernew) constructor.
+  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.path.new](#fn-specspechttp2_routepathnew) constructor.
+  - `query_parameter` (`list[obj]`): Set the `query_parameter` field on the resulting object. When `null`, the `query_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.query_parameter.new](#fn-specspechttp2_routequery_parameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -816,6 +830,77 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `range` sub block.
+
+
+## obj spec.http2_route.match.path
+
+
+
+### fn spec.http2_route.match.path.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_route.spec.http2_route.match.path.new` constructs a new object with attributes and blocks configured for the `path`
+Terraform sub block.
+
+
+
+**Args**:
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `path` sub block.
+
+
+## obj spec.http2_route.match.query_parameter
+
+
+
+### fn spec.http2_route.match.query_parameter.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_route.spec.http2_route.match.query_parameter.new` constructs a new object with attributes and blocks configured for the `query_parameter`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http2_route.match.query_parameter.match.new](#fn-specspechttp2_routematchmatchnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `query_parameter` sub block.
+
+
+## obj spec.http2_route.match.query_parameter.match
+
+
+
+### fn spec.http2_route.match.query_parameter.match.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_route.spec.http2_route.match.query_parameter.match.new` constructs a new object with attributes and blocks configured for the `match`
+Terraform sub block.
+
+
+
+**Args**:
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `match` sub block.
 
 
 ## obj spec.http2_route.retry_policy
@@ -1033,9 +1118,11 @@ Terraform sub block.
 **Args**:
   - `method` (`string`): Set the `method` field on the resulting object. When `null`, the `method` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
-  - `prefix` (`string`): Set the `prefix` field on the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
   - `scheme` (`string`): Set the `scheme` field on the resulting object. When `null`, the `scheme` field will be omitted from the resulting object.
   - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.header.new](#fn-specspechttp_routeheadernew) constructor.
+  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.path.new](#fn-specspechttp_routepathnew) constructor.
+  - `query_parameter` (`list[obj]`): Set the `query_parameter` field on the resulting object. When `null`, the `query_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.query_parameter.new](#fn-specspechttp_routequery_parameternew) constructor.
 
 **Returns**:
   - An attribute object that represents the `match` sub block.
@@ -1115,6 +1202,77 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `range` sub block.
+
+
+## obj spec.http_route.match.path
+
+
+
+### fn spec.http_route.match.path.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_route.spec.http_route.match.path.new` constructs a new object with attributes and blocks configured for the `path`
+Terraform sub block.
+
+
+
+**Args**:
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `path` sub block.
+
+
+## obj spec.http_route.match.query_parameter
+
+
+
+### fn spec.http_route.match.query_parameter.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_route.spec.http_route.match.query_parameter.new` constructs a new object with attributes and blocks configured for the `query_parameter`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_route.spec.http_route.match.query_parameter.match.new](#fn-specspechttp_routematchmatchnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `query_parameter` sub block.
+
+
+## obj spec.http_route.match.query_parameter.match
+
+
+
+### fn spec.http_route.match.query_parameter.match.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_route.spec.http_route.match.query_parameter.match.new` constructs a new object with attributes and blocks configured for the `match`
+Terraform sub block.
+
+
+
+**Args**:
+  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `match` sub block.
 
 
 ## obj spec.http_route.retry_policy
