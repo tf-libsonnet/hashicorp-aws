@@ -720,11 +720,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       dns:: {
-        '#new':: d.fn(help='\n`aws.appmesh_virtual_node.spec.service_discovery.dns.new` constructs a new object with attributes and blocks configured for the `dns`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`string`): Set the `hostname` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `dns` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.appmesh_virtual_node.spec.service_discovery.dns.new` constructs a new object with attributes and blocks configured for the `dns`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`string`): Set the `hostname` field on the resulting object.\n  - `ip_preference` (`string`): Set the `ip_preference` field on the resulting object. When `null`, the `ip_preference` field will be omitted from the resulting object.\n  - `response_type` (`string`): Set the `response_type` field on the resulting object. When `null`, the `response_type` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `dns` sub block.\n', args=[]),
         new(
-          hostname
+          hostname,
+          ip_preference=null,
+          response_type=null
         ):: std.prune(a={
           hostname: hostname,
+          ip_preference: ip_preference,
+          response_type: response_type,
         }),
       },
       '#new':: d.fn(help='\n`aws.appmesh_virtual_node.spec.service_discovery.new` constructs a new object with attributes and blocks configured for the `service_discovery`\nTerraform sub block.\n\n\n\n**Args**:\n  - `aws_cloud_map` (`list[obj]`): Set the `aws_cloud_map` field on the resulting object. When `null`, the `aws_cloud_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_node.spec.service_discovery.aws_cloud_map.new](#fn-specspecaws_cloud_mapnew) constructor.\n  - `dns` (`list[obj]`): Set the `dns` field on the resulting object. When `null`, the `dns` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_virtual_node.spec.service_discovery.dns.new](#fn-specspecdnsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `service_discovery` sub block.\n', args=[]),

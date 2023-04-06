@@ -55,10 +55,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           target: target,
         }),
         target:: {
-          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.grpc_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.virtual_service.new](#fn-specspecgrpc_routeactionvirtual_servicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.grpc_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.action.target.virtual_service.new](#fn-specspecgrpc_routeactionvirtual_servicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
           new(
+            port=null,
             virtual_service=null
           ):: std.prune(a={
+            port: port,
             virtual_service: virtual_service,
           }),
           virtual_service:: {
@@ -129,10 +131,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           },
         },
         target:: {
-          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.virtual_service.new](#fn-specspechttp2_routeactionvirtual_servicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.target.virtual_service.new](#fn-specspechttp2_routeactionvirtual_servicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
           new(
+            port=null,
             virtual_service=null
           ):: std.prune(a={
+            port: port,
             virtual_service: virtual_service,
           }),
           virtual_service:: {
@@ -146,6 +150,44 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         },
       },
       match:: {
+        header:: {
+          match:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.header.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.\n  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.\n  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.\n  - `range` (`list[obj]`): Set the `range` field on the resulting object. When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.header.match.range.new](#fn-specspechttp2_routematchheaderrangenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+            new(
+              exact=null,
+              prefix=null,
+              range=null,
+              regex=null,
+              suffix=null
+            ):: std.prune(a={
+              exact: exact,
+              prefix: prefix,
+              range: range,
+              regex: regex,
+              suffix: suffix,
+            }),
+            range:: {
+              '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.header.match.range.new` constructs a new object with attributes and blocks configured for the `range`\nTerraform sub block.\n\n\n\n**Args**:\n  - `end` (`number`): Set the `end` field on the resulting object.\n  - `start` (`number`): Set the `start` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `range` sub block.\n', args=[]),
+              new(
+                end,
+                start
+              ):: std.prune(a={
+                end: end,
+                start: start,
+              }),
+            },
+          },
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.header.new` constructs a new object with attributes and blocks configured for the `header`\nTerraform sub block.\n\n\n\n**Args**:\n  - `invert` (`bool`): Set the `invert` field on the resulting object. When `null`, the `invert` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.header.match.new](#fn-specspechttp2_routematchmatchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `header` sub block.\n', args=[]),
+          new(
+            name,
+            invert=null,
+            match=null
+          ):: std.prune(a={
+            invert: invert,
+            match: match,
+            name: name,
+          }),
+        },
         hostname:: {
           '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.hostname.new` constructs a new object with attributes and blocks configured for the `hostname`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `hostname` sub block.\n', args=[]),
           new(
@@ -156,16 +198,50 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
             suffix: suffix,
           }),
         },
-        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.hostname.new](#fn-specspechttp2_routehostnamenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.\n  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.header.new](#fn-specspechttp2_routeheadernew) constructor.\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.hostname.new](#fn-specspechttp2_routehostnamenew) constructor.\n  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.path.new](#fn-specspechttp2_routepathnew) constructor.\n  - `query_parameter` (`list[obj]`): Set the `query_parameter` field on the resulting object. When `null`, the `query_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.query_parameter.new](#fn-specspechttp2_routequery_parameternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
         new(
+          header=null,
           hostname=null,
+          path=null,
           port=null,
-          prefix=null
+          prefix=null,
+          query_parameter=null
         ):: std.prune(a={
+          header: header,
           hostname: hostname,
+          path: path,
           port: port,
           prefix: prefix,
+          query_parameter: query_parameter,
         }),
+        path:: {
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.path.new` constructs a new object with attributes and blocks configured for the `path`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `path` sub block.\n', args=[]),
+          new(
+            exact=null,
+            regex=null
+          ):: std.prune(a={
+            exact: exact,
+            regex: regex,
+          }),
+        },
+        query_parameter:: {
+          match:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.query_parameter.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+            new(
+              exact=null
+            ):: std.prune(a={
+              exact: exact,
+            }),
+          },
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.match.query_parameter.new` constructs a new object with attributes and blocks configured for the `query_parameter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.query_parameter.match.new](#fn-specspechttp2_routematchmatchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `query_parameter` sub block.\n', args=[]),
+          new(
+            name,
+            match=null
+          ):: std.prune(a={
+            match: match,
+            name: name,
+          }),
+        },
       },
       '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.new` constructs a new object with attributes and blocks configured for the `http2_route`\nTerraform sub block.\n\n\n\n**Args**:\n  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.new](#fn-specspecactionnew) constructor.\n  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.match.new](#fn-specspecmatchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `http2_route` sub block.\n', args=[]),
       new(
@@ -215,10 +291,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           },
         },
         target:: {
-          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.virtual_service.new](#fn-specspechttp_routeactionvirtual_servicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `virtual_service` (`list[obj]`): Set the `virtual_service` field on the resulting object. When `null`, the `virtual_service` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.target.virtual_service.new](#fn-specspechttp_routeactionvirtual_servicenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
           new(
+            port=null,
             virtual_service=null
           ):: std.prune(a={
+            port: port,
             virtual_service: virtual_service,
           }),
           virtual_service:: {
@@ -232,6 +310,44 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         },
       },
       match:: {
+        header:: {
+          match:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.header.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.\n  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.\n  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.\n  - `range` (`list[obj]`): Set the `range` field on the resulting object. When `null`, the `range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.header.match.range.new](#fn-specspechttp_routematchheaderrangenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+            new(
+              exact=null,
+              prefix=null,
+              range=null,
+              regex=null,
+              suffix=null
+            ):: std.prune(a={
+              exact: exact,
+              prefix: prefix,
+              range: range,
+              regex: regex,
+              suffix: suffix,
+            }),
+            range:: {
+              '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.header.match.range.new` constructs a new object with attributes and blocks configured for the `range`\nTerraform sub block.\n\n\n\n**Args**:\n  - `end` (`number`): Set the `end` field on the resulting object.\n  - `start` (`number`): Set the `start` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `range` sub block.\n', args=[]),
+              new(
+                end,
+                start
+              ):: std.prune(a={
+                end: end,
+                start: start,
+              }),
+            },
+          },
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.header.new` constructs a new object with attributes and blocks configured for the `header`\nTerraform sub block.\n\n\n\n**Args**:\n  - `invert` (`bool`): Set the `invert` field on the resulting object. When `null`, the `invert` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.header.match.new](#fn-specspechttp_routematchmatchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `header` sub block.\n', args=[]),
+          new(
+            name,
+            invert=null,
+            match=null
+          ):: std.prune(a={
+            invert: invert,
+            match: match,
+            name: name,
+          }),
+        },
         hostname:: {
           '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.hostname.new` constructs a new object with attributes and blocks configured for the `hostname`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n  - `suffix` (`string`): Set the `suffix` field on the resulting object. When `null`, the `suffix` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `hostname` sub block.\n', args=[]),
           new(
@@ -242,16 +358,50 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
             suffix: suffix,
           }),
         },
-        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.hostname.new](#fn-specspechttp_routehostnamenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.\n  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.header.new](#fn-specspechttp_routeheadernew) constructor.\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.hostname.new](#fn-specspechttp_routehostnamenew) constructor.\n  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.path.new](#fn-specspechttp_routepathnew) constructor.\n  - `query_parameter` (`list[obj]`): Set the `query_parameter` field on the resulting object. When `null`, the `query_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.query_parameter.new](#fn-specspechttp_routequery_parameternew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
         new(
+          header=null,
           hostname=null,
+          path=null,
           port=null,
-          prefix=null
+          prefix=null,
+          query_parameter=null
         ):: std.prune(a={
+          header: header,
           hostname: hostname,
+          path: path,
           port: port,
           prefix: prefix,
+          query_parameter: query_parameter,
         }),
+        path:: {
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.path.new` constructs a new object with attributes and blocks configured for the `path`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n  - `regex` (`string`): Set the `regex` field on the resulting object. When `null`, the `regex` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `path` sub block.\n', args=[]),
+          new(
+            exact=null,
+            regex=null
+          ):: std.prune(a={
+            exact: exact,
+            regex: regex,
+          }),
+        },
+        query_parameter:: {
+          match:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.query_parameter.match.new` constructs a new object with attributes and blocks configured for the `match`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object. When `null`, the `exact` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `match` sub block.\n', args=[]),
+            new(
+              exact=null
+            ):: std.prune(a={
+              exact: exact,
+            }),
+          },
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.match.query_parameter.new` constructs a new object with attributes and blocks configured for the `query_parameter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.query_parameter.match.new](#fn-specspechttp_routematchmatchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `query_parameter` sub block.\n', args=[]),
+          new(
+            name,
+            match=null
+          ):: std.prune(a={
+            match: match,
+            name: name,
+          }),
+        },
       },
       '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.new` constructs a new object with attributes and blocks configured for the `http_route`\nTerraform sub block.\n\n\n\n**Args**:\n  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.new](#fn-specspecactionnew) constructor.\n  - `match` (`list[obj]`): Set the `match` field on the resulting object. When `null`, the `match` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.match.new](#fn-specspecmatchnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `http_route` sub block.\n', args=[]),
       new(
@@ -262,15 +412,17 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         match: match,
       }),
     },
-    '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.new` constructs a new object with attributes and blocks configured for the `spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `grpc_route` (`list[obj]`): Set the `grpc_route` field on the resulting object. When `null`, the `grpc_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.new](#fn-specgrpc_routenew) constructor.\n  - `http2_route` (`list[obj]`): Set the `http2_route` field on the resulting object. When `null`, the `http2_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.new](#fn-spechttp2_routenew) constructor.\n  - `http_route` (`list[obj]`): Set the `http_route` field on the resulting object. When `null`, the `http_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.new](#fn-spechttp_routenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `spec` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.new` constructs a new object with attributes and blocks configured for the `spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.\n  - `grpc_route` (`list[obj]`): Set the `grpc_route` field on the resulting object. When `null`, the `grpc_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.grpc_route.new](#fn-specgrpc_routenew) constructor.\n  - `http2_route` (`list[obj]`): Set the `http2_route` field on the resulting object. When `null`, the `http2_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.new](#fn-spechttp2_routenew) constructor.\n  - `http_route` (`list[obj]`): Set the `http_route` field on the resulting object. When `null`, the `http_route` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.new](#fn-spechttp_routenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `spec` sub block.\n', args=[]),
     new(
       grpc_route=null,
       http2_route=null,
-      http_route=null
+      http_route=null,
+      priority=null
     ):: std.prune(a={
       grpc_route: grpc_route,
       http2_route: http2_route,
       http_route: http_route,
+      priority: priority,
     }),
   },
   '#withMeshName':: d.fn(help='`aws.string.withMeshName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the mesh_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `mesh_name` field.\n', args=[]),
