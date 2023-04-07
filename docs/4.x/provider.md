@@ -315,6 +315,7 @@ Terraform sub block.
   - `ce` (`string`): Use this to override the default service endpoint URL When `null`, the `ce` field will be omitted from the resulting object.
   - `chime` (`string`): Use this to override the default service endpoint URL When `null`, the `chime` field will be omitted from the resulting object.
   - `chimesdkidentity` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkidentity` field will be omitted from the resulting object.
+  - `chimesdkmediapipelines` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkmediapipelines` field will be omitted from the resulting object.
   - `chimesdkmeetings` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkmeetings` field will be omitted from the resulting object.
   - `chimesdkmessaging` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkmessaging` field will be omitted from the resulting object.
   - `cloud9` (`string`): Use this to override the default service endpoint URL When `null`, the `cloud9` field will be omitted from the resulting object.
@@ -596,6 +597,7 @@ Terraform sub block.
   - `sdb` (`string`): Use this to override the default service endpoint URL When `null`, the `sdb` field will be omitted from the resulting object.
   - `secretsmanager` (`string`): Use this to override the default service endpoint URL When `null`, the `secretsmanager` field will be omitted from the resulting object.
   - `securityhub` (`string`): Use this to override the default service endpoint URL When `null`, the `securityhub` field will be omitted from the resulting object.
+  - `securitylake` (`string`): Use this to override the default service endpoint URL When `null`, the `securitylake` field will be omitted from the resulting object.
   - `serverlessapplicationrepository` (`string`): Use this to override the default service endpoint URL When `null`, the `serverlessapplicationrepository` field will be omitted from the resulting object.
   - `serverlessapprepo` (`string`): Use this to override the default service endpoint URL When `null`, the `serverlessapprepo` field will be omitted from the resulting object.
   - `serverlessrepo` (`string`): Use this to override the default service endpoint URL When `null`, the `serverlessrepo` field will be omitted from the resulting object.
@@ -636,6 +638,7 @@ Terraform sub block.
   - `transfer` (`string`): Use this to override the default service endpoint URL When `null`, the `transfer` field will be omitted from the resulting object.
   - `translate` (`string`): Use this to override the default service endpoint URL When `null`, the `translate` field will be omitted from the resulting object.
   - `voiceid` (`string`): Use this to override the default service endpoint URL When `null`, the `voiceid` field will be omitted from the resulting object.
+  - `vpclattice` (`string`): Use this to override the default service endpoint URL When `null`, the `vpclattice` field will be omitted from the resulting object.
   - `waf` (`string`): Use this to override the default service endpoint URL When `null`, the `waf` field will be omitted from the resulting object.
   - `wafregional` (`string`): Use this to override the default service endpoint URL When `null`, the `wafregional` field will be omitted from the resulting object.
   - `wafv2` (`string`): Use this to override the default service endpoint URL When `null`, the `wafv2` field will be omitted from the resulting object.

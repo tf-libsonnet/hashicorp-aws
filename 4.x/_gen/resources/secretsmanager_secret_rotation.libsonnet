@@ -26,11 +26,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     secret_id: secret_id,
   }),
   rotation_rules:: {
-    '#new':: d.fn(help='\n`aws.secretsmanager_secret_rotation.rotation_rules.new` constructs a new object with attributes and blocks configured for the `rotation_rules`\nTerraform sub block.\n\n\n\n**Args**:\n  - `automatically_after_days` (`number`): Set the `automatically_after_days` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `rotation_rules` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.secretsmanager_secret_rotation.rotation_rules.new` constructs a new object with attributes and blocks configured for the `rotation_rules`\nTerraform sub block.\n\n\n\n**Args**:\n  - `automatically_after_days` (`number`): Set the `automatically_after_days` field on the resulting object. When `null`, the `automatically_after_days` field will be omitted from the resulting object.\n  - `duration` (`string`): Set the `duration` field on the resulting object. When `null`, the `duration` field will be omitted from the resulting object.\n  - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object. When `null`, the `schedule_expression` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `rotation_rules` sub block.\n', args=[]),
     new(
-      automatically_after_days
+      automatically_after_days=null,
+      duration=null,
+      schedule_expression=null
     ):: std.prune(a={
       automatically_after_days: automatically_after_days,
+      duration: duration,
+      schedule_expression: schedule_expression,
     }),
   },
   '#withRotationLambdaArn':: d.fn(help='`aws.string.withRotationLambdaArn` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the rotation_lambda_arn field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `rotation_lambda_arn` field.\n', args=[]),

@@ -1173,14 +1173,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
                 destination_ref_id: destination_ref_id,
               }),
             },
-            '#new':: d.fn(help='\n`aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.new` constructs a new object with attributes and blocks configured for the `rtmp_output_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `certficate_mode` (`string`): Set the `certficate_mode` field on the resulting object. When `null`, the `certficate_mode` field will be omitted from the resulting object.\n  - `connection_retry_interval` (`number`): Set the `connection_retry_interval` field on the resulting object. When `null`, the `connection_retry_interval` field will be omitted from the resulting object.\n  - `num_retries` (`number`): Set the `num_retries` field on the resulting object. When `null`, the `num_retries` field will be omitted from the resulting object.\n  - `destination` (`list[obj]`): Set the `destination` field on the resulting object. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.destination.new](#fn-encoder_settingsencoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rtmp_output_settings` sub block.\n', args=[]),
+            '#new':: d.fn(help='\n`aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.new` constructs a new object with attributes and blocks configured for the `rtmp_output_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `certificate_mode` (`string`): Set the `certificate_mode` field on the resulting object. When `null`, the `certificate_mode` field will be omitted from the resulting object.\n  - `connection_retry_interval` (`number`): Set the `connection_retry_interval` field on the resulting object. When `null`, the `connection_retry_interval` field will be omitted from the resulting object.\n  - `num_retries` (`number`): Set the `num_retries` field on the resulting object. When `null`, the `num_retries` field will be omitted from the resulting object.\n  - `destination` (`list[obj]`): Set the `destination` field on the resulting object. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.destination.new](#fn-encoder_settingsencoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rtmp_output_settings` sub block.\n', args=[]),
             new(
-              certficate_mode=null,
+              certificate_mode=null,
               connection_retry_interval=null,
               destination=null,
               num_retries=null
             ):: std.prune(a={
-              certficate_mode: certficate_mode,
+              certificate_mode: certificate_mode,
               connection_retry_interval: connection_retry_interval,
               destination: destination,
               num_retries: num_retries,
