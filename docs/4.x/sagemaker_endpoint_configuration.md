@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDataCaptureConfigMixin()`](#fn-withdatacaptureconfigmixin)
 * [`fn withKmsKeyArn()`](#fn-withkmskeyarn)
 * [`fn withName()`](#fn-withname)
+* [`fn withNamePrefix()`](#fn-withnameprefix)
 * [`fn withProductionVariants()`](#fn-withproductionvariants)
 * [`fn withProductionVariantsMixin()`](#fn-withproductionvariantsmixin)
 * [`fn withShadowProductionVariants()`](#fn-withshadowproductionvariants)
@@ -85,6 +86,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `async_inference_config` (`list[obj]`): Set the `async_inference_config` field on the resulting resource block. When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
@@ -116,6 +118,7 @@ injecting into a complete block.
 **Args**:
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `async_inference_config` (`list[obj]`): Set the `async_inference_config` field on the resulting object. When `null`, the `async_inference_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.new](#fn-async_inference_confignew) constructor.
@@ -231,6 +234,22 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withNamePrefix
+
+```ts
+withNamePrefix()
+```
+
+`aws.string.withNamePrefix` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the name_prefix field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `name_prefix` field.
 
 
 ### fn withProductionVariants

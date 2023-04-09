@@ -390,7 +390,9 @@ Terraform sub block.
 
 
 **Args**:
-  - `automatically_after_days` (`number`): Set the `automatically_after_days` field on the resulting object.
+  - `automatically_after_days` (`number`): Set the `automatically_after_days` field on the resulting object. When `null`, the `automatically_after_days` field will be omitted from the resulting object.
+  - `duration` (`string`): Set the `duration` field on the resulting object. When `null`, the `duration` field will be omitted from the resulting object.
+  - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object. When `null`, the `schedule_expression` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `rotation_rules` sub block.

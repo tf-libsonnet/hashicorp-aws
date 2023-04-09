@@ -383,6 +383,7 @@ Terraform sub block.
 
 **Args**:
   - `disable_glue_table_creation` (`bool`): Set the `disable_glue_table_creation` field on the resulting object. When `null`, the `disable_glue_table_creation` field will be omitted from the resulting object.
+  - `table_format` (`string`): Set the `table_format` field on the resulting object. When `null`, the `table_format` field will be omitted from the resulting object.
   - `data_catalog_config` (`list[obj]`): Set the `data_catalog_config` field on the resulting object. When `null`, the `data_catalog_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.data_catalog_config.new](#fn-offline_store_configdata_catalog_confignew) constructor.
   - `s3_storage_config` (`list[obj]`): Set the `s3_storage_config` field on the resulting object. When `null`, the `s3_storage_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.offline_store_config.s3_storage_config.new](#fn-offline_store_configs3_storage_confignew) constructor.
 

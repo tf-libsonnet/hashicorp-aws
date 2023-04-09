@@ -20,6 +20,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAutoStartConfigurationMixin()`](#fn-withautostartconfigurationmixin)
 * [`fn withAutoStopConfiguration()`](#fn-withautostopconfiguration)
 * [`fn withAutoStopConfigurationMixin()`](#fn-withautostopconfigurationmixin)
+* [`fn withImageConfiguration()`](#fn-withimageconfiguration)
+* [`fn withImageConfigurationMixin()`](#fn-withimageconfigurationmixin)
 * [`fn withInitialCapacity()`](#fn-withinitialcapacity)
 * [`fn withInitialCapacityMixin()`](#fn-withinitialcapacitymixin)
 * [`fn withMaximumCapacity()`](#fn-withmaximumcapacity)
@@ -35,6 +37,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-auto_start_configurationnew)
 * [`obj auto_stop_configuration`](#obj-auto_stop_configuration)
   * [`fn new()`](#fn-auto_stop_configurationnew)
+* [`obj image_configuration`](#obj-image_configuration)
+  * [`fn new()`](#fn-image_configurationnew)
 * [`obj initial_capacity`](#obj-initial_capacity)
   * [`fn new()`](#fn-initial_capacitynew)
   * [`obj initial_capacity.initial_capacity_config`](#obj-initial_capacityinitial_capacity_config)
@@ -83,6 +87,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `type` (`string`): Set the `type` field on the resulting resource block.
   - `auto_start_configuration` (`list[obj]`): Set the `auto_start_configuration` field on the resulting resource block. When `null`, the `auto_start_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_start_configuration.new](#fn-auto_start_configurationnew) constructor.
   - `auto_stop_configuration` (`list[obj]`): Set the `auto_stop_configuration` field on the resulting resource block. When `null`, the `auto_stop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_stop_configuration.new](#fn-auto_stop_configurationnew) constructor.
+  - `image_configuration` (`list[obj]`): Set the `image_configuration` field on the resulting resource block. When `null`, the `image_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.image_configuration.new](#fn-image_configurationnew) constructor.
   - `initial_capacity` (`list[obj]`): Set the `initial_capacity` field on the resulting resource block. When `null`, the `initial_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.new](#fn-initial_capacitynew) constructor.
   - `maximum_capacity` (`list[obj]`): Set the `maximum_capacity` field on the resulting resource block. When `null`, the `maximum_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.maximum_capacity.new](#fn-maximum_capacitynew) constructor.
   - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting resource block. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.network_configuration.new](#fn-network_configurationnew) constructor.
@@ -117,6 +122,7 @@ injecting into a complete block.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `auto_start_configuration` (`list[obj]`): Set the `auto_start_configuration` field on the resulting object. When `null`, the `auto_start_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_start_configuration.new](#fn-auto_start_configurationnew) constructor.
   - `auto_stop_configuration` (`list[obj]`): Set the `auto_stop_configuration` field on the resulting object. When `null`, the `auto_stop_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.auto_stop_configuration.new](#fn-auto_stop_configurationnew) constructor.
+  - `image_configuration` (`list[obj]`): Set the `image_configuration` field on the resulting object. When `null`, the `image_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.image_configuration.new](#fn-image_configurationnew) constructor.
   - `initial_capacity` (`list[obj]`): Set the `initial_capacity` field on the resulting object. When `null`, the `initial_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.initial_capacity.new](#fn-initial_capacitynew) constructor.
   - `maximum_capacity` (`list[obj]`): Set the `maximum_capacity` field on the resulting object. When `null`, the `maximum_capacity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.maximum_capacity.new](#fn-maximum_capacitynew) constructor.
   - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting object. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.emrserverless_application.network_configuration.new](#fn-network_configurationnew) constructor.
@@ -213,6 +219,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `auto_stop_configuration` field.
+
+
+### fn withImageConfiguration
+
+```ts
+withImageConfiguration()
+```
+
+`aws.list[obj].withImageConfiguration` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the image_configuration field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withImageConfigurationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `image_configuration` field.
+
+
+### fn withImageConfigurationMixin
+
+```ts
+withImageConfigurationMixin()
+```
+
+`aws.list[obj].withImageConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the image_configuration field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withImageConfiguration](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `image_configuration` field.
 
 
 ### fn withInitialCapacity
@@ -451,6 +494,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `auto_stop_configuration` sub block.
+
+
+## obj image_configuration
+
+
+
+### fn image_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.emrserverless_application.image_configuration.new` constructs a new object with attributes and blocks configured for the `image_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `image_uri` (`string`): Set the `image_uri` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `image_configuration` sub block.
 
 
 ## obj initial_capacity

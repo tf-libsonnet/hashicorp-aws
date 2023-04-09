@@ -2815,7 +2815,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `certficate_mode` (`string`): Set the `certficate_mode` field on the resulting object. When `null`, the `certficate_mode` field will be omitted from the resulting object.
+  - `certificate_mode` (`string`): Set the `certificate_mode` field on the resulting object. When `null`, the `certificate_mode` field will be omitted from the resulting object.
   - `connection_retry_interval` (`number`): Set the `connection_retry_interval` field on the resulting object. When `null`, the `connection_retry_interval` field will be omitted from the resulting object.
   - `num_retries` (`number`): Set the `num_retries` field on the resulting object. When `null`, the `num_retries` field will be omitted from the resulting object.
   - `destination` (`list[obj]`): Set the `destination` field on the resulting object. When `null`, the `destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.outputs.output_settings.rtmp_output_settings.destination.new](#fn-encoder_settingsencoder_settingsoutput_groupsoutputsoutput_settingsdestinationnew) constructor.

@@ -26,6 +26,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withKmsKeyId()`](#fn-withkmskeyid)
 * [`fn withName()`](#fn-withname)
 * [`fn withParentImage()`](#fn-withparentimage)
+* [`fn withPlatformOverride()`](#fn-withplatformoverride)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTargetRepository()`](#fn-withtargetrepository)
@@ -81,6 +82,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `parent_image` (`string`): Set the `parent_image` field on the resulting resource block.
+  - `platform_override` (`string`): Set the `platform_override` field on the resulting resource block. When `null`, the `platform_override` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): Set the `version` field on the resulting resource block.
@@ -118,6 +120,7 @@ injecting into a complete block.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `parent_image` (`string`): Set the `parent_image` field on the resulting object.
+  - `platform_override` (`string`): Set the `platform_override` field on the resulting object. When `null`, the `platform_override` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): Set the `version` field on the resulting object.
@@ -314,6 +317,22 @@ Terraform resource block to set or update the parent_image field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `parent_image` field.
+
+
+### fn withPlatformOverride
+
+```ts
+withPlatformOverride()
+```
+
+`aws.string.withPlatformOverride` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the platform_override field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `platform_override` field.
 
 
 ### fn withTags

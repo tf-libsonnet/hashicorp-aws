@@ -446,7 +446,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `arn` (`string`): Set the `arn` field on the resulting object. When `null`, the `arn` field will be omitted from the resulting object.
+  - `arn` (`string`): Set the `arn` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dead_letter_config` sub block.
