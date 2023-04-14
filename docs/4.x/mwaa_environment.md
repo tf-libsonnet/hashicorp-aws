@@ -34,6 +34,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRequirementsS3Path()`](#fn-withrequirementss3path)
 * [`fn withSchedulers()`](#fn-withschedulers)
 * [`fn withSourceBucketArn()`](#fn-withsourcebucketarn)
+* [`fn withStartupScriptS3ObjectVersion()`](#fn-withstartupscripts3objectversion)
+* [`fn withStartupScriptS3Path()`](#fn-withstartupscripts3path)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -101,6 +103,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `requirements_s3_path` (`string`): Set the `requirements_s3_path` field on the resulting resource block. When `null`, the `requirements_s3_path` field will be omitted from the resulting object.
   - `schedulers` (`number`): Set the `schedulers` field on the resulting resource block. When `null`, the `schedulers` field will be omitted from the resulting object.
   - `source_bucket_arn` (`string`): Set the `source_bucket_arn` field on the resulting resource block.
+  - `startup_script_s3_object_version` (`string`): Set the `startup_script_s3_object_version` field on the resulting resource block. When `null`, the `startup_script_s3_object_version` field will be omitted from the resulting object.
+  - `startup_script_s3_path` (`string`): Set the `startup_script_s3_path` field on the resulting resource block. When `null`, the `startup_script_s3_path` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `webserver_access_mode` (`string`): Set the `webserver_access_mode` field on the resulting resource block. When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
@@ -146,6 +150,8 @@ injecting into a complete block.
   - `requirements_s3_path` (`string`): Set the `requirements_s3_path` field on the resulting object. When `null`, the `requirements_s3_path` field will be omitted from the resulting object.
   - `schedulers` (`number`): Set the `schedulers` field on the resulting object. When `null`, the `schedulers` field will be omitted from the resulting object.
   - `source_bucket_arn` (`string`): Set the `source_bucket_arn` field on the resulting object.
+  - `startup_script_s3_object_version` (`string`): Set the `startup_script_s3_object_version` field on the resulting object. When `null`, the `startup_script_s3_object_version` field will be omitted from the resulting object.
+  - `startup_script_s3_path` (`string`): Set the `startup_script_s3_path` field on the resulting object. When `null`, the `startup_script_s3_path` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `webserver_access_mode` (`string`): Set the `webserver_access_mode` field on the resulting object. When `null`, the `webserver_access_mode` field will be omitted from the resulting object.
@@ -470,6 +476,38 @@ Terraform resource block to set or update the source_bucket_arn field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `source_bucket_arn` field.
+
+
+### fn withStartupScriptS3ObjectVersion
+
+```ts
+withStartupScriptS3ObjectVersion()
+```
+
+`aws.string.withStartupScriptS3ObjectVersion` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the startup_script_s3_object_version field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `startup_script_s3_object_version` field.
+
+
+### fn withStartupScriptS3Path
+
+```ts
+withStartupScriptS3Path()
+```
+
+`aws.string.withStartupScriptS3Path` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the startup_script_s3_path field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `startup_script_s3_path` field.
 
 
 ### fn withTags

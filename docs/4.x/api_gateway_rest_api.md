@@ -22,6 +22,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDisableExecuteApiEndpoint()`](#fn-withdisableexecuteapiendpoint)
 * [`fn withEndpointConfiguration()`](#fn-withendpointconfiguration)
 * [`fn withEndpointConfigurationMixin()`](#fn-withendpointconfigurationmixin)
+* [`fn withFailOnWarnings()`](#fn-withfailonwarnings)
 * [`fn withMinimumCompressionSize()`](#fn-withminimumcompressionsize)
 * [`fn withName()`](#fn-withname)
 * [`fn withParameters()`](#fn-withparameters)
@@ -66,6 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `body` (`string`): Set the `body` field on the resulting resource block. When `null`, the `body` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting resource block. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
+  - `fail_on_warnings` (`bool`): Set the `fail_on_warnings` field on the resulting resource block. When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
   - `minimum_compression_size` (`number`): Set the `minimum_compression_size` field on the resulting resource block. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
@@ -102,6 +104,7 @@ injecting into a complete block.
   - `body` (`string`): Set the `body` field on the resulting object. When `null`, the `body` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting object. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
+  - `fail_on_warnings` (`bool`): Set the `fail_on_warnings` field on the resulting object. When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
   - `minimum_compression_size` (`number`): Set the `minimum_compression_size` field on the resulting object. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
@@ -230,6 +233,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `endpoint_configuration` field.
+
+
+### fn withFailOnWarnings
+
+```ts
+withFailOnWarnings()
+```
+
+`aws.bool.withFailOnWarnings` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the fail_on_warnings field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `fail_on_warnings` field.
 
 
 ### fn withMinimumCompressionSize

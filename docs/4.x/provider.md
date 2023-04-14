@@ -318,6 +318,8 @@ Terraform sub block.
   - `chimesdkmediapipelines` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkmediapipelines` field will be omitted from the resulting object.
   - `chimesdkmeetings` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkmeetings` field will be omitted from the resulting object.
   - `chimesdkmessaging` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkmessaging` field will be omitted from the resulting object.
+  - `chimesdkvoice` (`string`): Use this to override the default service endpoint URL When `null`, the `chimesdkvoice` field will be omitted from the resulting object.
+  - `cleanrooms` (`string`): Use this to override the default service endpoint URL When `null`, the `cleanrooms` field will be omitted from the resulting object.
   - `cloud9` (`string`): Use this to override the default service endpoint URL When `null`, the `cloud9` field will be omitted from the resulting object.
   - `cloudcontrol` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudcontrol` field will be omitted from the resulting object.
   - `cloudcontrolapi` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudcontrolapi` field will be omitted from the resulting object.
@@ -381,6 +383,7 @@ Terraform sub block.
   - `dlm` (`string`): Use this to override the default service endpoint URL When `null`, the `dlm` field will be omitted from the resulting object.
   - `dms` (`string`): Use this to override the default service endpoint URL When `null`, the `dms` field will be omitted from the resulting object.
   - `docdb` (`string`): Use this to override the default service endpoint URL When `null`, the `docdb` field will be omitted from the resulting object.
+  - `docdbelastic` (`string`): Use this to override the default service endpoint URL When `null`, the `docdbelastic` field will be omitted from the resulting object.
   - `drs` (`string`): Use this to override the default service endpoint URL When `null`, the `drs` field will be omitted from the resulting object.
   - `ds` (`string`): Use this to override the default service endpoint URL When `null`, the `ds` field will be omitted from the resulting object.
   - `dynamodb` (`string`): Use this to override the default service endpoint URL When `null`, the `dynamodb` field will be omitted from the resulting object.

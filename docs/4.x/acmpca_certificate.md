@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withApiPassthrough()`](#fn-withapipassthrough)
 * [`fn withCertificateAuthorityArn()`](#fn-withcertificateauthorityarn)
 * [`fn withCertificateSigningRequest()`](#fn-withcertificatesigningrequest)
 * [`fn withSigningAlgorithm()`](#fn-withsigningalgorithm)
@@ -53,6 +54,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `api_passthrough` (`string`): Set the `api_passthrough` field on the resulting resource block. When `null`, the `api_passthrough` field will be omitted from the resulting object.
   - `certificate_authority_arn` (`string`): Set the `certificate_authority_arn` field on the resulting resource block.
   - `certificate_signing_request` (`string`): Set the `certificate_signing_request` field on the resulting resource block.
   - `signing_algorithm` (`string`): Set the `signing_algorithm` field on the resulting resource block.
@@ -81,6 +83,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `api_passthrough` (`string`): Set the `api_passthrough` field on the resulting object. When `null`, the `api_passthrough` field will be omitted from the resulting object.
   - `certificate_authority_arn` (`string`): Set the `certificate_authority_arn` field on the resulting object.
   - `certificate_signing_request` (`string`): Set the `certificate_signing_request` field on the resulting object.
   - `signing_algorithm` (`string`): Set the `signing_algorithm` field on the resulting object.
@@ -89,6 +92,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `acmpca_certificate` resource into the root Terraform configuration.
+
+
+### fn withApiPassthrough
+
+```ts
+withApiPassthrough()
+```
+
+`aws.string.withApiPassthrough` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the api_passthrough field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `api_passthrough` field.
 
 
 ### fn withCertificateAuthorityArn
