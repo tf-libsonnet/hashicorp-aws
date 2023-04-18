@@ -19,6 +19,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCors()`](#fn-withcors)
 * [`fn withCorsMixin()`](#fn-withcorsmixin)
 * [`fn withFunctionName()`](#fn-withfunctionname)
+* [`fn withInvokeMode()`](#fn-withinvokemode)
 * [`fn withQualifier()`](#fn-withqualifier)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
@@ -58,6 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `authorization_type` (`string`): Set the `authorization_type` field on the resulting resource block.
   - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
+  - `invoke_mode` (`string`): Set the `invoke_mode` field on the resulting resource block. When `null`, the `invoke_mode` field will be omitted from the resulting object.
   - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.
   - `cors` (`list[obj]`): Set the `cors` field on the resulting resource block. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.
@@ -86,6 +88,7 @@ injecting into a complete block.
 **Args**:
   - `authorization_type` (`string`): Set the `authorization_type` field on the resulting object.
   - `function_name` (`string`): Set the `function_name` field on the resulting object.
+  - `invoke_mode` (`string`): Set the `invoke_mode` field on the resulting object. When `null`, the `invoke_mode` field will be omitted from the resulting object.
   - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.
   - `cors` (`list[obj]`): Set the `cors` field on the resulting object. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.
@@ -161,6 +164,22 @@ Terraform resource block to set or update the function_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `function_name` field.
+
+
+### fn withInvokeMode
+
+```ts
+withInvokeMode()
+```
+
+`aws.string.withInvokeMode` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the invoke_mode field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `invoke_mode` field.
 
 
 ### fn withQualifier

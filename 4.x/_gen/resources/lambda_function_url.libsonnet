@@ -20,12 +20,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       max_age: max_age,
     }),
   },
-  '#new':: d.fn(help="\n`aws.lambda_function_url.new` injects a new `aws_lambda_function_url` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.lambda_function_url.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.lambda_function_url` using the reference:\n\n    $._ref.aws_lambda_function_url.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_lambda_function_url.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting resource block.\n  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.\n  - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.\n  - `cors` (`list[obj]`): Set the `cors` field on the resulting resource block. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.lambda_function_url.new` injects a new `aws_lambda_function_url` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.lambda_function_url.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.lambda_function_url` using the reference:\n\n    $._ref.aws_lambda_function_url.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_lambda_function_url.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting resource block.\n  - `function_name` (`string`): Set the `function_name` field on the resulting resource block.\n  - `invoke_mode` (`string`): Set the `invoke_mode` field on the resulting resource block. When `null`, the `invoke_mode` field will be omitted from the resulting object.\n  - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.\n  - `cors` (`list[obj]`): Set the `cors` field on the resulting resource block. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     authorization_type,
     function_name,
     cors=null,
+    invoke_mode=null,
     qualifier=null,
     timeouts=null,
     _meta={}
@@ -36,22 +37,25 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       authorization_type=authorization_type,
       cors=cors,
       function_name=function_name,
+      invoke_mode=invoke_mode,
       qualifier=qualifier,
       timeouts=timeouts
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.lambda_function_url.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_function_url`\nTerraform resource.\n\nUnlike [aws.lambda_function_url.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting object.\n  - `function_name` (`string`): Set the `function_name` field on the resulting object.\n  - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.\n  - `cors` (`list[obj]`): Set the `cors` field on the resulting object. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_function_url` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.lambda_function_url.newAttrs` constructs a new object with attributes and blocks configured for the `lambda_function_url`\nTerraform resource.\n\nUnlike [aws.lambda_function_url.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `authorization_type` (`string`): Set the `authorization_type` field on the resulting object.\n  - `function_name` (`string`): Set the `function_name` field on the resulting object.\n  - `invoke_mode` (`string`): Set the `invoke_mode` field on the resulting object. When `null`, the `invoke_mode` field will be omitted from the resulting object.\n  - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.\n  - `cors` (`list[obj]`): Set the `cors` field on the resulting object. When `null`, the `cors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.cors.new](#fn-corsnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function_url.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lambda_function_url` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     authorization_type,
     function_name,
     cors=null,
+    invoke_mode=null,
     qualifier=null,
     timeouts=null
   ):: std.prune(a={
     authorization_type: authorization_type,
     cors: cors,
     function_name: function_name,
+    invoke_mode: invoke_mode,
     qualifier: qualifier,
     timeouts: timeouts,
   }),
@@ -99,6 +103,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_lambda_function_url+: {
         [resourceLabel]+: {
           function_name: value,
+        },
+      },
+    },
+  },
+  '#withInvokeMode':: d.fn(help='`aws.string.withInvokeMode` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the invoke_mode field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `invoke_mode` field.\n', args=[]),
+  withInvokeMode(resourceLabel, value): {
+    resource+: {
+      aws_lambda_function_url+: {
+        [resourceLabel]+: {
+          invoke_mode: value,
         },
       },
     },
