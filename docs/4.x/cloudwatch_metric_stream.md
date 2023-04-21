@@ -20,6 +20,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withFirehoseArn()`](#fn-withfirehosearn)
 * [`fn withIncludeFilter()`](#fn-withincludefilter)
 * [`fn withIncludeFilterMixin()`](#fn-withincludefiltermixin)
+* [`fn withIncludeLinkedAccountsMetrics()`](#fn-withincludelinkedaccountsmetrics)
 * [`fn withName()`](#fn-withname)
 * [`fn withNamePrefix()`](#fn-withnameprefix)
 * [`fn withOutputFormat()`](#fn-withoutputformat)
@@ -71,6 +72,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `firehose_arn` (`string`): Set the `firehose_arn` field on the resulting resource block.
+  - `include_linked_accounts_metrics` (`bool`): Set the `include_linked_accounts_metrics` field on the resulting resource block. When `null`, the `include_linked_accounts_metrics` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `output_format` (`string`): Set the `output_format` field on the resulting resource block.
@@ -105,6 +107,7 @@ injecting into a complete block.
 
 **Args**:
   - `firehose_arn` (`string`): Set the `firehose_arn` field on the resulting object.
+  - `include_linked_accounts_metrics` (`bool`): Set the `include_linked_accounts_metrics` field on the resulting object. When `null`, the `include_linked_accounts_metrics` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `output_format` (`string`): Set the `output_format` field on the resulting object.
@@ -208,6 +211,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `include_filter` field.
+
+
+### fn withIncludeLinkedAccountsMetrics
+
+```ts
+withIncludeLinkedAccountsMetrics()
+```
+
+`aws.bool.withIncludeLinkedAccountsMetrics` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the include_linked_accounts_metrics field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `include_linked_accounts_metrics` field.
 
 
 ### fn withName

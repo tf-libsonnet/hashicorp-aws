@@ -21,6 +21,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withBisectBatchOnFunctionError()`](#fn-withbisectbatchonfunctionerror)
 * [`fn withDestinationConfig()`](#fn-withdestinationconfig)
 * [`fn withDestinationConfigMixin()`](#fn-withdestinationconfigmixin)
+* [`fn withDocumentDbEventSourceConfig()`](#fn-withdocumentdbeventsourceconfig)
+* [`fn withDocumentDbEventSourceConfigMixin()`](#fn-withdocumentdbeventsourceconfigmixin)
 * [`fn withEnabled()`](#fn-withenabled)
 * [`fn withEventSourceArn()`](#fn-witheventsourcearn)
 * [`fn withFilterCriteria()`](#fn-withfiltercriteria)
@@ -50,6 +52,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-destination_confignew)
   * [`obj destination_config.on_failure`](#obj-destination_configon_failure)
     * [`fn new()`](#fn-destination_configon_failurenew)
+* [`obj document_db_event_source_config`](#obj-document_db_event_source_config)
+  * [`fn new()`](#fn-document_db_event_source_confignew)
 * [`obj filter_criteria`](#obj-filter_criteria)
   * [`fn new()`](#fn-filter_criterianew)
   * [`obj filter_criteria.filter`](#obj-filter_criteriafilter)
@@ -109,6 +113,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tumbling_window_in_seconds` (`number`): Set the `tumbling_window_in_seconds` field on the resulting resource block. When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
   - `amazon_managed_kafka_event_source_config` (`list[obj]`): Set the `amazon_managed_kafka_event_source_config` field on the resulting resource block. When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
   - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting resource block. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
+  - `document_db_event_source_config` (`list[obj]`): Set the `document_db_event_source_config` field on the resulting resource block. When `null`, the `document_db_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.document_db_event_source_config.new](#fn-document_db_event_source_confignew) constructor.
   - `filter_criteria` (`list[obj]`): Set the `filter_criteria` field on the resulting resource block. When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
   - `scaling_config` (`list[obj]`): Set the `scaling_config` field on the resulting resource block. When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.scaling_config.new](#fn-scaling_confignew) constructor.
   - `self_managed_event_source` (`list[obj]`): Set the `self_managed_event_source` field on the resulting resource block. When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
@@ -154,6 +159,7 @@ injecting into a complete block.
   - `tumbling_window_in_seconds` (`number`): Set the `tumbling_window_in_seconds` field on the resulting object. When `null`, the `tumbling_window_in_seconds` field will be omitted from the resulting object.
   - `amazon_managed_kafka_event_source_config` (`list[obj]`): Set the `amazon_managed_kafka_event_source_config` field on the resulting object. When `null`, the `amazon_managed_kafka_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.amazon_managed_kafka_event_source_config.new](#fn-amazon_managed_kafka_event_source_confignew) constructor.
   - `destination_config` (`list[obj]`): Set the `destination_config` field on the resulting object. When `null`, the `destination_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.destination_config.new](#fn-destination_confignew) constructor.
+  - `document_db_event_source_config` (`list[obj]`): Set the `document_db_event_source_config` field on the resulting object. When `null`, the `document_db_event_source_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.document_db_event_source_config.new](#fn-document_db_event_source_confignew) constructor.
   - `filter_criteria` (`list[obj]`): Set the `filter_criteria` field on the resulting object. When `null`, the `filter_criteria` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.filter_criteria.new](#fn-filter_criterianew) constructor.
   - `scaling_config` (`list[obj]`): Set the `scaling_config` field on the resulting object. When `null`, the `scaling_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.scaling_config.new](#fn-scaling_confignew) constructor.
   - `self_managed_event_source` (`list[obj]`): Set the `self_managed_event_source` field on the resulting object. When `null`, the `self_managed_event_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_event_source_mapping.self_managed_event_source.new](#fn-self_managed_event_sourcenew) constructor.
@@ -268,6 +274,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `destination_config` field.
+
+
+### fn withDocumentDbEventSourceConfig
+
+```ts
+withDocumentDbEventSourceConfig()
+```
+
+`aws.list[obj].withDocumentDbEventSourceConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the document_db_event_source_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withDocumentDbEventSourceConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `document_db_event_source_config` field.
+
+
+### fn withDocumentDbEventSourceConfigMixin
+
+```ts
+withDocumentDbEventSourceConfigMixin()
+```
+
+`aws.list[obj].withDocumentDbEventSourceConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the document_db_event_source_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withDocumentDbEventSourceConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `document_db_event_source_config` field.
 
 
 ### fn withEnabled
@@ -730,6 +773,31 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `on_failure` sub block.
+
+
+## obj document_db_event_source_config
+
+
+
+### fn document_db_event_source_config.new
+
+```ts
+new()
+```
+
+
+`aws.lambda_event_source_mapping.document_db_event_source_config.new` constructs a new object with attributes and blocks configured for the `document_db_event_source_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `collection_name` (`string`): Set the `collection_name` field on the resulting object. When `null`, the `collection_name` field will be omitted from the resulting object.
+  - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `full_document` (`string`): Set the `full_document` field on the resulting object. When `null`, the `full_document` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `document_db_event_source_config` sub block.
 
 
 ## obj filter_criteria

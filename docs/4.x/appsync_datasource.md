@@ -28,6 +28,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLambdaConfig()`](#fn-withlambdaconfig)
 * [`fn withLambdaConfigMixin()`](#fn-withlambdaconfigmixin)
 * [`fn withName()`](#fn-withname)
+* [`fn withOpensearchserviceConfig()`](#fn-withopensearchserviceconfig)
+* [`fn withOpensearchserviceConfigMixin()`](#fn-withopensearchserviceconfigmixin)
 * [`fn withRelationalDatabaseConfig()`](#fn-withrelationaldatabaseconfig)
 * [`fn withRelationalDatabaseConfigMixin()`](#fn-withrelationaldatabaseconfigmixin)
 * [`fn withServiceRoleArn()`](#fn-withservicerolearn)
@@ -48,6 +50,8 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-http_configauthorization_configaws_iam_confignew)
 * [`obj lambda_config`](#obj-lambda_config)
   * [`fn new()`](#fn-lambda_confignew)
+* [`obj opensearchservice_config`](#obj-opensearchservice_config)
+  * [`fn new()`](#fn-opensearchservice_confignew)
 * [`obj relational_database_config`](#obj-relational_database_config)
   * [`fn new()`](#fn-relational_database_confignew)
   * [`obj relational_database_config.http_endpoint_config`](#obj-relational_database_confighttp_endpoint_config)
@@ -92,6 +96,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `event_bridge_config` (`list[obj]`): Set the `event_bridge_config` field on the resulting resource block. When `null`, the `event_bridge_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.event_bridge_config.new](#fn-event_bridge_confignew) constructor.
   - `http_config` (`list[obj]`): Set the `http_config` field on the resulting resource block. When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
   - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting resource block. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
+  - `opensearchservice_config` (`list[obj]`): Set the `opensearchservice_config` field on the resulting resource block. When `null`, the `opensearchservice_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.opensearchservice_config.new](#fn-opensearchservice_confignew) constructor.
   - `relational_database_config` (`list[obj]`): Set the `relational_database_config` field on the resulting resource block. When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
 
 **Returns**:
@@ -126,6 +131,7 @@ injecting into a complete block.
   - `event_bridge_config` (`list[obj]`): Set the `event_bridge_config` field on the resulting object. When `null`, the `event_bridge_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.event_bridge_config.new](#fn-event_bridge_confignew) constructor.
   - `http_config` (`list[obj]`): Set the `http_config` field on the resulting object. When `null`, the `http_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.http_config.new](#fn-http_confignew) constructor.
   - `lambda_config` (`list[obj]`): Set the `lambda_config` field on the resulting object. When `null`, the `lambda_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.lambda_config.new](#fn-lambda_confignew) constructor.
+  - `opensearchservice_config` (`list[obj]`): Set the `opensearchservice_config` field on the resulting object. When `null`, the `opensearchservice_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.opensearchservice_config.new](#fn-opensearchservice_confignew) constructor.
   - `relational_database_config` (`list[obj]`): Set the `relational_database_config` field on the resulting object. When `null`, the `relational_database_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_datasource.relational_database_config.new](#fn-relational_database_confignew) constructor.
 
 **Returns**:
@@ -363,6 +369,43 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withOpensearchserviceConfig
+
+```ts
+withOpensearchserviceConfig()
+```
+
+`aws.list[obj].withOpensearchserviceConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the opensearchservice_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withOpensearchserviceConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `opensearchservice_config` field.
+
+
+### fn withOpensearchserviceConfigMixin
+
+```ts
+withOpensearchserviceConfigMixin()
+```
+
+`aws.list[obj].withOpensearchserviceConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the opensearchservice_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withOpensearchserviceConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `opensearchservice_config` field.
 
 
 ### fn withRelationalDatabaseConfig
@@ -626,6 +669,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `lambda_config` sub block.
+
+
+## obj opensearchservice_config
+
+
+
+### fn opensearchservice_config.new
+
+```ts
+new()
+```
+
+
+`aws.appsync_datasource.opensearchservice_config.new` constructs a new object with attributes and blocks configured for the `opensearchservice_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `endpoint` (`string`): Set the `endpoint` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `opensearchservice_config` sub block.
 
 
 ## obj relational_database_config

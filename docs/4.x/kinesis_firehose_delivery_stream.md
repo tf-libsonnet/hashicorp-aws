@@ -27,6 +27,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withKinesisSourceConfiguration()`](#fn-withkinesissourceconfiguration)
 * [`fn withKinesisSourceConfigurationMixin()`](#fn-withkinesissourceconfigurationmixin)
 * [`fn withName()`](#fn-withname)
+* [`fn withOpensearchConfiguration()`](#fn-withopensearchconfiguration)
+* [`fn withOpensearchConfigurationMixin()`](#fn-withopensearchconfigurationmixin)
 * [`fn withRedshiftConfiguration()`](#fn-withredshiftconfiguration)
 * [`fn withRedshiftConfigurationMixin()`](#fn-withredshiftconfigurationmixin)
 * [`fn withS3Configuration()`](#fn-withs3configuration)
@@ -104,6 +106,18 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-http_endpoint_configurationrequest_configurationcommon_attributesnew)
 * [`obj kinesis_source_configuration`](#obj-kinesis_source_configuration)
   * [`fn new()`](#fn-kinesis_source_configurationnew)
+* [`obj opensearch_configuration`](#obj-opensearch_configuration)
+  * [`fn new()`](#fn-opensearch_configurationnew)
+  * [`obj opensearch_configuration.cloudwatch_logging_options`](#obj-opensearch_configurationcloudwatch_logging_options)
+    * [`fn new()`](#fn-opensearch_configurationcloudwatch_logging_optionsnew)
+  * [`obj opensearch_configuration.processing_configuration`](#obj-opensearch_configurationprocessing_configuration)
+    * [`fn new()`](#fn-opensearch_configurationprocessing_configurationnew)
+    * [`obj opensearch_configuration.processing_configuration.processors`](#obj-opensearch_configurationprocessing_configurationprocessors)
+      * [`fn new()`](#fn-opensearch_configurationprocessing_configurationprocessorsnew)
+      * [`obj opensearch_configuration.processing_configuration.processors.parameters`](#obj-opensearch_configurationprocessing_configurationprocessorsparameters)
+        * [`fn new()`](#fn-opensearch_configurationprocessing_configurationprocessorsparametersnew)
+  * [`obj opensearch_configuration.vpc_config`](#obj-opensearch_configurationvpc_config)
+    * [`fn new()`](#fn-opensearch_configurationvpc_confignew)
 * [`obj redshift_configuration`](#obj-redshift_configuration)
   * [`fn new()`](#fn-redshift_configurationnew)
   * [`obj redshift_configuration.cloudwatch_logging_options`](#obj-redshift_configurationcloudwatch_logging_options)
@@ -177,6 +191,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `extended_s3_configuration` (`list[obj]`): Set the `extended_s3_configuration` field on the resulting resource block. When `null`, the `extended_s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.extended_s3_configuration.new](#fn-extended_s3_configurationnew) constructor.
   - `http_endpoint_configuration` (`list[obj]`): Set the `http_endpoint_configuration` field on the resulting resource block. When `null`, the `http_endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.http_endpoint_configuration.new](#fn-http_endpoint_configurationnew) constructor.
   - `kinesis_source_configuration` (`list[obj]`): Set the `kinesis_source_configuration` field on the resulting resource block. When `null`, the `kinesis_source_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.kinesis_source_configuration.new](#fn-kinesis_source_configurationnew) constructor.
+  - `opensearch_configuration` (`list[obj]`): Set the `opensearch_configuration` field on the resulting resource block. When `null`, the `opensearch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.new](#fn-opensearch_configurationnew) constructor.
   - `redshift_configuration` (`list[obj]`): Set the `redshift_configuration` field on the resulting resource block. When `null`, the `redshift_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.redshift_configuration.new](#fn-redshift_configurationnew) constructor.
   - `s3_configuration` (`list[obj]`): Set the `s3_configuration` field on the resulting resource block. When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.s3_configuration.new](#fn-s3_configurationnew) constructor.
   - `server_side_encryption` (`list[obj]`): Set the `server_side_encryption` field on the resulting resource block. When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
@@ -216,6 +231,7 @@ injecting into a complete block.
   - `extended_s3_configuration` (`list[obj]`): Set the `extended_s3_configuration` field on the resulting object. When `null`, the `extended_s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.extended_s3_configuration.new](#fn-extended_s3_configurationnew) constructor.
   - `http_endpoint_configuration` (`list[obj]`): Set the `http_endpoint_configuration` field on the resulting object. When `null`, the `http_endpoint_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.http_endpoint_configuration.new](#fn-http_endpoint_configurationnew) constructor.
   - `kinesis_source_configuration` (`list[obj]`): Set the `kinesis_source_configuration` field on the resulting object. When `null`, the `kinesis_source_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.kinesis_source_configuration.new](#fn-kinesis_source_configurationnew) constructor.
+  - `opensearch_configuration` (`list[obj]`): Set the `opensearch_configuration` field on the resulting object. When `null`, the `opensearch_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.new](#fn-opensearch_configurationnew) constructor.
   - `redshift_configuration` (`list[obj]`): Set the `redshift_configuration` field on the resulting object. When `null`, the `redshift_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.redshift_configuration.new](#fn-redshift_configurationnew) constructor.
   - `s3_configuration` (`list[obj]`): Set the `s3_configuration` field on the resulting object. When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.s3_configuration.new](#fn-s3_configurationnew) constructor.
   - `server_side_encryption` (`list[obj]`): Set the `server_side_encryption` field on the resulting object. When `null`, the `server_side_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.server_side_encryption.new](#fn-server_side_encryptionnew) constructor.
@@ -436,6 +452,43 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withOpensearchConfiguration
+
+```ts
+withOpensearchConfiguration()
+```
+
+`aws.list[obj].withOpensearchConfiguration` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the opensearch_configuration field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withOpensearchConfigurationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `opensearch_configuration` field.
+
+
+### fn withOpensearchConfigurationMixin
+
+```ts
+withOpensearchConfigurationMixin()
+```
+
+`aws.list[obj].withOpensearchConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the opensearch_configuration field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withOpensearchConfiguration](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `opensearch_configuration` field.
 
 
 ### fn withRedshiftConfiguration
@@ -1496,6 +1549,163 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `kinesis_source_configuration` sub block.
+
+
+## obj opensearch_configuration
+
+
+
+### fn opensearch_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.kinesis_firehose_delivery_stream.opensearch_configuration.new` constructs a new object with attributes and blocks configured for the `opensearch_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `buffering_interval` (`number`): Set the `buffering_interval` field on the resulting object. When `null`, the `buffering_interval` field will be omitted from the resulting object.
+  - `buffering_size` (`number`): Set the `buffering_size` field on the resulting object. When `null`, the `buffering_size` field will be omitted from the resulting object.
+  - `cluster_endpoint` (`string`): Set the `cluster_endpoint` field on the resulting object. When `null`, the `cluster_endpoint` field will be omitted from the resulting object.
+  - `domain_arn` (`string`): Set the `domain_arn` field on the resulting object. When `null`, the `domain_arn` field will be omitted from the resulting object.
+  - `index_name` (`string`): Set the `index_name` field on the resulting object.
+  - `index_rotation_period` (`string`): Set the `index_rotation_period` field on the resulting object. When `null`, the `index_rotation_period` field will be omitted from the resulting object.
+  - `retry_duration` (`number`): Set the `retry_duration` field on the resulting object. When `null`, the `retry_duration` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `s3_backup_mode` (`string`): Set the `s3_backup_mode` field on the resulting object. When `null`, the `s3_backup_mode` field will be omitted from the resulting object.
+  - `type_name` (`string`): Set the `type_name` field on the resulting object. When `null`, the `type_name` field will be omitted from the resulting object.
+  - `cloudwatch_logging_options` (`list[obj]`): Set the `cloudwatch_logging_options` field on the resulting object. When `null`, the `cloudwatch_logging_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.cloudwatch_logging_options.new](#fn-opensearch_configurationcloudwatch_logging_optionsnew) constructor.
+  - `processing_configuration` (`list[obj]`): Set the `processing_configuration` field on the resulting object. When `null`, the `processing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.processing_configuration.new](#fn-opensearch_configurationprocessing_configurationnew) constructor.
+  - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.vpc_config.new](#fn-opensearch_configurationvpc_confignew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `opensearch_configuration` sub block.
+
+
+## obj opensearch_configuration.cloudwatch_logging_options
+
+
+
+### fn opensearch_configuration.cloudwatch_logging_options.new
+
+```ts
+new()
+```
+
+
+`aws.kinesis_firehose_delivery_stream.opensearch_configuration.cloudwatch_logging_options.new` constructs a new object with attributes and blocks configured for the `cloudwatch_logging_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `log_group_name` (`string`): Set the `log_group_name` field on the resulting object. When `null`, the `log_group_name` field will be omitted from the resulting object.
+  - `log_stream_name` (`string`): Set the `log_stream_name` field on the resulting object. When `null`, the `log_stream_name` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `cloudwatch_logging_options` sub block.
+
+
+## obj opensearch_configuration.processing_configuration
+
+
+
+### fn opensearch_configuration.processing_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.kinesis_firehose_delivery_stream.opensearch_configuration.processing_configuration.new` constructs a new object with attributes and blocks configured for the `processing_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `processors` (`list[obj]`): Set the `processors` field on the resulting object. When `null`, the `processors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.processing_configuration.processors.new](#fn-opensearch_configurationopensearch_configurationprocessorsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `processing_configuration` sub block.
+
+
+## obj opensearch_configuration.processing_configuration.processors
+
+
+
+### fn opensearch_configuration.processing_configuration.processors.new
+
+```ts
+new()
+```
+
+
+`aws.kinesis_firehose_delivery_stream.opensearch_configuration.processing_configuration.processors.new` constructs a new object with attributes and blocks configured for the `processors`
+Terraform sub block.
+
+
+
+**Args**:
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `parameters` (`list[obj]`): Set the `parameters` field on the resulting object. When `null`, the `parameters` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.processing_configuration.processors.parameters.new](#fn-opensearch_configurationopensearch_configurationprocessing_configurationparametersnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `processors` sub block.
+
+
+## obj opensearch_configuration.processing_configuration.processors.parameters
+
+
+
+### fn opensearch_configuration.processing_configuration.processors.parameters.new
+
+```ts
+new()
+```
+
+
+`aws.kinesis_firehose_delivery_stream.opensearch_configuration.processing_configuration.processors.parameters.new` constructs a new object with attributes and blocks configured for the `parameters`
+Terraform sub block.
+
+
+
+**Args**:
+  - `parameter_name` (`string`): Set the `parameter_name` field on the resulting object.
+  - `parameter_value` (`string`): Set the `parameter_value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `parameters` sub block.
+
+
+## obj opensearch_configuration.vpc_config
+
+
+
+### fn opensearch_configuration.vpc_config.new
+
+```ts
+new()
+```
+
+
+`aws.kinesis_firehose_delivery_stream.opensearch_configuration.vpc_config.new` constructs a new object with attributes and blocks configured for the `vpc_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
+  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
+  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `vpc_config` sub block.
 
 
 ## obj redshift_configuration

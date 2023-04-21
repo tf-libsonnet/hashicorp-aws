@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCidrBlock()`](#fn-withcidrblock)
 * [`fn withCustomerOwnedIpv4Pool()`](#fn-withcustomerownedipv4pool)
 * [`fn withEnableDns64()`](#fn-withenabledns64)
+* [`fn withEnableLniAtDeviceIndex()`](#fn-withenablelniatdeviceindex)
 * [`fn withEnableResourceNameDnsARecordOnLaunch()`](#fn-withenableresourcenamednsarecordonlaunch)
 * [`fn withEnableResourceNameDnsAaaaRecordOnLaunch()`](#fn-withenableresourcenamednsaaaarecordonlaunch)
 * [`fn withIpv6CidrBlock()`](#fn-withipv6cidrblock)
@@ -72,6 +73,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `cidr_block` (`string`): Set the `cidr_block` field on the resulting resource block. When `null`, the `cidr_block` field will be omitted from the resulting object.
   - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting resource block. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
   - `enable_dns64` (`bool`): Set the `enable_dns64` field on the resulting resource block. When `null`, the `enable_dns64` field will be omitted from the resulting object.
+  - `enable_lni_at_device_index` (`number`): Set the `enable_lni_at_device_index` field on the resulting resource block. When `null`, the `enable_lni_at_device_index` field will be omitted from the resulting object.
   - `enable_resource_name_dns_a_record_on_launch` (`bool`): Set the `enable_resource_name_dns_a_record_on_launch` field on the resulting resource block. When `null`, the `enable_resource_name_dns_a_record_on_launch` field will be omitted from the resulting object.
   - `enable_resource_name_dns_aaaa_record_on_launch` (`bool`): Set the `enable_resource_name_dns_aaaa_record_on_launch` field on the resulting resource block. When `null`, the `enable_resource_name_dns_aaaa_record_on_launch` field will be omitted from the resulting object.
   - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting resource block. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
@@ -113,6 +115,7 @@ injecting into a complete block.
   - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
   - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting object. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
   - `enable_dns64` (`bool`): Set the `enable_dns64` field on the resulting object. When `null`, the `enable_dns64` field will be omitted from the resulting object.
+  - `enable_lni_at_device_index` (`number`): Set the `enable_lni_at_device_index` field on the resulting object. When `null`, the `enable_lni_at_device_index` field will be omitted from the resulting object.
   - `enable_resource_name_dns_a_record_on_launch` (`bool`): Set the `enable_resource_name_dns_a_record_on_launch` field on the resulting object. When `null`, the `enable_resource_name_dns_a_record_on_launch` field will be omitted from the resulting object.
   - `enable_resource_name_dns_aaaa_record_on_launch` (`bool`): Set the `enable_resource_name_dns_aaaa_record_on_launch` field on the resulting object. When `null`, the `enable_resource_name_dns_aaaa_record_on_launch` field will be omitted from the resulting object.
   - `ipv6_cidr_block` (`string`): Set the `ipv6_cidr_block` field on the resulting object. When `null`, the `ipv6_cidr_block` field will be omitted from the resulting object.
@@ -224,6 +227,22 @@ Terraform resource block to set or update the enable_dns64 field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `enable_dns64` field.
+
+
+### fn withEnableLniAtDeviceIndex
+
+```ts
+withEnableLniAtDeviceIndex()
+```
+
+`aws.number.withEnableLniAtDeviceIndex` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the enable_lni_at_device_index field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `enable_lni_at_device_index` field.
 
 
 ### fn withEnableResourceNameDnsARecordOnLaunch
