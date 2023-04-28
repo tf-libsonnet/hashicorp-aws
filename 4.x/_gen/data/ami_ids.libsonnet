@@ -12,12 +12,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       values: values,
     }),
   },
-  '#new':: d.fn(help="\n`aws.data.ami_ids.new` injects a new `data_aws_ami_ids` Terraform `data source`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.data.ami_ids.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.data.ami_ids` using the reference:\n\n    $._ref.data_aws_ami_ids.some_id.get('id')\n\nThis is the same as directly entering `\"${ data_aws_ami_ids.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block.\n  - `executable_users` (`list`): Set the `executable_users` field on the resulting data source block. When `null`, the `executable_users` field will be omitted from the resulting object.\n  - `name_regex` (`string`): Set the `name_regex` field on the resulting data source block. When `null`, the `name_regex` field will be omitted from the resulting object.\n  - `owners` (`list`): Set the `owners` field on the resulting data source block.\n  - `sort_ascending` (`bool`): Set the `sort_ascending` field on the resulting data source block. When `null`, the `sort_ascending` field will be omitted from the resulting object.\n  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.filter.new](#fn-filternew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new data source into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.data.ami_ids.new` injects a new `data_aws_ami_ids` Terraform `data source`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.data.ami_ids.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.data.ami_ids` using the reference:\n\n    $._ref.data_aws_ami_ids.some_id.get('id')\n\nThis is the same as directly entering `\"${ data_aws_ami_ids.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block.\n  - `executable_users` (`list`): Set the `executable_users` field on the resulting data source block. When `null`, the `executable_users` field will be omitted from the resulting object.\n  - `include_deprecated` (`bool`): Set the `include_deprecated` field on the resulting data source block. When `null`, the `include_deprecated` field will be omitted from the resulting object.\n  - `name_regex` (`string`): Set the `name_regex` field on the resulting data source block. When `null`, the `name_regex` field will be omitted from the resulting object.\n  - `owners` (`list`): Set the `owners` field on the resulting data source block.\n  - `sort_ascending` (`bool`): Set the `sort_ascending` field on the resulting data source block. When `null`, the `sort_ascending` field will be omitted from the resulting object.\n  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.filter.new](#fn-filternew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new data source into the root Terraform configuration.\n", args=[]),
   new(
     dataSrcLabel,
     owners,
     executable_users=null,
     filter=null,
+    include_deprecated=null,
     name_regex=null,
     sort_ascending=null,
     timeouts=null,
@@ -28,6 +29,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     attrs=self.newAttrs(
       executable_users=executable_users,
       filter=filter,
+      include_deprecated=include_deprecated,
       name_regex=name_regex,
       owners=owners,
       sort_ascending=sort_ascending,
@@ -35,17 +37,19 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.data.ami_ids.newAttrs` constructs a new object with attributes and blocks configured for the `ami_ids`\nTerraform data source.\n\nUnlike [aws.data.ami_ids.new](#fn-new), this function will not inject the `data source`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `executable_users` (`list`): Set the `executable_users` field on the resulting object. When `null`, the `executable_users` field will be omitted from the resulting object.\n  - `name_regex` (`string`): Set the `name_regex` field on the resulting object. When `null`, the `name_regex` field will be omitted from the resulting object.\n  - `owners` (`list`): Set the `owners` field on the resulting object.\n  - `sort_ascending` (`bool`): Set the `sort_ascending` field on the resulting object. When `null`, the `sort_ascending` field will be omitted from the resulting object.\n  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.filter.new](#fn-filternew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ami_ids` data source into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.data.ami_ids.newAttrs` constructs a new object with attributes and blocks configured for the `ami_ids`\nTerraform data source.\n\nUnlike [aws.data.ami_ids.new](#fn-new), this function will not inject the `data source`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `executable_users` (`list`): Set the `executable_users` field on the resulting object. When `null`, the `executable_users` field will be omitted from the resulting object.\n  - `include_deprecated` (`bool`): Set the `include_deprecated` field on the resulting object. When `null`, the `include_deprecated` field will be omitted from the resulting object.\n  - `name_regex` (`string`): Set the `name_regex` field on the resulting object. When `null`, the `name_regex` field will be omitted from the resulting object.\n  - `owners` (`list`): Set the `owners` field on the resulting object.\n  - `sort_ascending` (`bool`): Set the `sort_ascending` field on the resulting object. When `null`, the `sort_ascending` field will be omitted from the resulting object.\n  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.filter.new](#fn-filternew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.ami_ids.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `ami_ids` data source into the root Terraform configuration.\n', args=[]),
   newAttrs(
     owners,
     executable_users=null,
     filter=null,
+    include_deprecated=null,
     name_regex=null,
     sort_ascending=null,
     timeouts=null
   ):: std.prune(a={
     executable_users: executable_users,
     filter: filter,
+    include_deprecated: include_deprecated,
     name_regex: name_regex,
     owners: owners,
     sort_ascending: sort_ascending,
@@ -85,6 +89,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_ami_ids+: {
         [dataSrcLabel]+: {
           filter+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withIncludeDeprecated':: d.fn(help='`aws.bool.withIncludeDeprecated` constructs a mixin object that can be merged into the `bool`\nTerraform data source block to set or update the include_deprecated field.\n\n\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block to update.\n  - `value` (`bool`): The value to set for the `include_deprecated` field.\n', args=[]),
+  withIncludeDeprecated(dataSrcLabel, value): {
+    data+: {
+      aws_ami_ids+: {
+        [dataSrcLabel]+: {
+          include_deprecated: value,
         },
       },
     },

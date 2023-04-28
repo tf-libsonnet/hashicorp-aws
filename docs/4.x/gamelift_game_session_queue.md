@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withCustomEventData()`](#fn-withcustomeventdata)
 * [`fn withDestinations()`](#fn-withdestinations)
 * [`fn withName()`](#fn-withname)
 * [`fn withNotificationTarget()`](#fn-withnotificationtarget)
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `custom_event_data` (`string`): Set the `custom_event_data` field on the resulting resource block. When `null`, the `custom_event_data` field will be omitted from the resulting object.
   - `destinations` (`list`): Set the `destinations` field on the resulting resource block. When `null`, the `destinations` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `notification_target` (`string`): Set the `notification_target` field on the resulting resource block. When `null`, the `notification_target` field will be omitted from the resulting object.
@@ -85,6 +87,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `custom_event_data` (`string`): Set the `custom_event_data` field on the resulting object. When `null`, the `custom_event_data` field will be omitted from the resulting object.
   - `destinations` (`list`): Set the `destinations` field on the resulting object. When `null`, the `destinations` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `notification_target` (`string`): Set the `notification_target` field on the resulting object. When `null`, the `notification_target` field will be omitted from the resulting object.
@@ -95,6 +98,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `gamelift_game_session_queue` resource into the root Terraform configuration.
+
+
+### fn withCustomEventData
+
+```ts
+withCustomEventData()
+```
+
+`aws.string.withCustomEventData` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the custom_event_data field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `custom_event_data` field.
 
 
 ### fn withDestinations
