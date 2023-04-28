@@ -43,6 +43,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMasterInstanceGroup()`](#fn-withmasterinstancegroup)
 * [`fn withMasterInstanceGroupMixin()`](#fn-withmasterinstancegroupmixin)
 * [`fn withName()`](#fn-withname)
+* [`fn withPlacementGroupConfig()`](#fn-withplacementgroupconfig)
 * [`fn withReleaseLabel()`](#fn-withreleaselabel)
 * [`fn withScaleDownBehavior()`](#fn-withscaledownbehavior)
 * [`fn withSecurityConfiguration()`](#fn-withsecurityconfiguration)
@@ -139,6 +140,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `log_encryption_kms_key_id` (`string`): Set the `log_encryption_kms_key_id` field on the resulting resource block. When `null`, the `log_encryption_kms_key_id` field will be omitted from the resulting object.
   - `log_uri` (`string`): Set the `log_uri` field on the resulting resource block. When `null`, the `log_uri` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `placement_group_config` (`list`): Set the `placement_group_config` field on the resulting resource block. When `null`, the `placement_group_config` field will be omitted from the resulting object.
   - `release_label` (`string`): Set the `release_label` field on the resulting resource block.
   - `scale_down_behavior` (`string`): Set the `scale_down_behavior` field on the resulting resource block. When `null`, the `scale_down_behavior` field will be omitted from the resulting object.
   - `security_configuration` (`string`): Set the `security_configuration` field on the resulting resource block. When `null`, the `security_configuration` field will be omitted from the resulting object.
@@ -192,6 +194,7 @@ injecting into a complete block.
   - `log_encryption_kms_key_id` (`string`): Set the `log_encryption_kms_key_id` field on the resulting object. When `null`, the `log_encryption_kms_key_id` field will be omitted from the resulting object.
   - `log_uri` (`string`): Set the `log_uri` field on the resulting object. When `null`, the `log_uri` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
+  - `placement_group_config` (`list`): Set the `placement_group_config` field on the resulting object. When `null`, the `placement_group_config` field will be omitted from the resulting object.
   - `release_label` (`string`): Set the `release_label` field on the resulting object.
   - `scale_down_behavior` (`string`): Set the `scale_down_behavior` field on the resulting object. When `null`, the `scale_down_behavior` field will be omitted from the resulting object.
   - `security_configuration` (`string`): Set the `security_configuration` field on the resulting object. When `null`, the `security_configuration` field will be omitted from the resulting object.
@@ -701,6 +704,22 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withPlacementGroupConfig
+
+```ts
+withPlacementGroupConfig()
+```
+
+`aws.list.withPlacementGroupConfig` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the placement_group_config field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `placement_group_config` field.
 
 
 ### fn withReleaseLabel

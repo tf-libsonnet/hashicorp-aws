@@ -16,11 +16,14 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAdmins()`](#fn-withadmins)
+* [`fn withAllowExternalDataFiltering()`](#fn-withallowexternaldatafiltering)
+* [`fn withAuthorizedSessionTagValueList()`](#fn-withauthorizedsessiontagvaluelist)
 * [`fn withCatalogId()`](#fn-withcatalogid)
 * [`fn withCreateDatabaseDefaultPermissions()`](#fn-withcreatedatabasedefaultpermissions)
 * [`fn withCreateDatabaseDefaultPermissionsMixin()`](#fn-withcreatedatabasedefaultpermissionsmixin)
 * [`fn withCreateTableDefaultPermissions()`](#fn-withcreatetabledefaultpermissions)
 * [`fn withCreateTableDefaultPermissionsMixin()`](#fn-withcreatetabledefaultpermissionsmixin)
+* [`fn withExternalDataFilteringAllowList()`](#fn-withexternaldatafilteringallowlist)
 * [`fn withTrustedResourceOwners()`](#fn-withtrustedresourceowners)
 * [`obj create_database_default_permissions`](#obj-create_database_default_permissions)
   * [`fn new()`](#fn-create_database_default_permissionsnew)
@@ -57,7 +60,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `admins` (`list`): Set the `admins` field on the resulting resource block. When `null`, the `admins` field will be omitted from the resulting object.
+  - `allow_external_data_filtering` (`bool`): Set the `allow_external_data_filtering` field on the resulting resource block. When `null`, the `allow_external_data_filtering` field will be omitted from the resulting object.
+  - `authorized_session_tag_value_list` (`list`): Set the `authorized_session_tag_value_list` field on the resulting resource block. When `null`, the `authorized_session_tag_value_list` field will be omitted from the resulting object.
   - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `external_data_filtering_allow_list` (`list`): Set the `external_data_filtering_allow_list` field on the resulting resource block. When `null`, the `external_data_filtering_allow_list` field will be omitted from the resulting object.
   - `trusted_resource_owners` (`list`): Set the `trusted_resource_owners` field on the resulting resource block. When `null`, the `trusted_resource_owners` field will be omitted from the resulting object.
   - `create_database_default_permissions` (`list[obj]`): Set the `create_database_default_permissions` field on the resulting resource block. When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-create_database_default_permissionsnew) constructor.
   - `create_table_default_permissions` (`list[obj]`): Set the `create_table_default_permissions` field on the resulting resource block. When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-create_table_default_permissionsnew) constructor.
@@ -85,7 +91,10 @@ injecting into a complete block.
 
 **Args**:
   - `admins` (`list`): Set the `admins` field on the resulting object. When `null`, the `admins` field will be omitted from the resulting object.
+  - `allow_external_data_filtering` (`bool`): Set the `allow_external_data_filtering` field on the resulting object. When `null`, the `allow_external_data_filtering` field will be omitted from the resulting object.
+  - `authorized_session_tag_value_list` (`list`): Set the `authorized_session_tag_value_list` field on the resulting object. When `null`, the `authorized_session_tag_value_list` field will be omitted from the resulting object.
   - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
+  - `external_data_filtering_allow_list` (`list`): Set the `external_data_filtering_allow_list` field on the resulting object. When `null`, the `external_data_filtering_allow_list` field will be omitted from the resulting object.
   - `trusted_resource_owners` (`list`): Set the `trusted_resource_owners` field on the resulting object. When `null`, the `trusted_resource_owners` field will be omitted from the resulting object.
   - `create_database_default_permissions` (`list[obj]`): Set the `create_database_default_permissions` field on the resulting object. When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-create_database_default_permissionsnew) constructor.
   - `create_table_default_permissions` (`list[obj]`): Set the `create_table_default_permissions` field on the resulting object. When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-create_table_default_permissionsnew) constructor.
@@ -108,6 +117,38 @@ Terraform resource block to set or update the admins field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `admins` field.
+
+
+### fn withAllowExternalDataFiltering
+
+```ts
+withAllowExternalDataFiltering()
+```
+
+`aws.bool.withAllowExternalDataFiltering` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the allow_external_data_filtering field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `allow_external_data_filtering` field.
+
+
+### fn withAuthorizedSessionTagValueList
+
+```ts
+withAuthorizedSessionTagValueList()
+```
+
+`aws.list.withAuthorizedSessionTagValueList` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the authorized_session_tag_value_list field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `authorized_session_tag_value_list` field.
 
 
 ### fn withCatalogId
@@ -198,6 +239,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `create_table_default_permissions` field.
+
+
+### fn withExternalDataFilteringAllowList
+
+```ts
+withExternalDataFilteringAllowList()
+```
+
+`aws.list.withExternalDataFilteringAllowList` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the external_data_filtering_allow_list field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `external_data_filtering_allow_list` field.
 
 
 ### fn withTrustedResourceOwners

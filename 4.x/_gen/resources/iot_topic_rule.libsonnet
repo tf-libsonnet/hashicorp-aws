@@ -204,12 +204,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
     firehose:: {
-      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.firehose.new` constructs a new object with attributes and blocks configured for the `firehose`\nTerraform sub block.\n\n\n\n**Args**:\n  - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `firehose` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.firehose.new` constructs a new object with attributes and blocks configured for the `firehose`\nTerraform sub block.\n\n\n\n**Args**:\n  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.\n  - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `firehose` sub block.\n', args=[]),
       new(
         delivery_stream_name,
         role_arn,
+        batch_mode=null,
         separator=null
       ):: std.prune(a={
+        batch_mode: batch_mode,
         delivery_stream_name: delivery_stream_name,
         role_arn: role_arn,
         separator: separator,
@@ -238,22 +240,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
     iot_analytics:: {
-      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.iot_analytics.new` constructs a new object with attributes and blocks configured for the `iot_analytics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `channel_name` (`string`): Set the `channel_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_analytics` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.iot_analytics.new` constructs a new object with attributes and blocks configured for the `iot_analytics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.\n  - `channel_name` (`string`): Set the `channel_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_analytics` sub block.\n', args=[]),
       new(
         channel_name,
-        role_arn
+        role_arn,
+        batch_mode=null
       ):: std.prune(a={
+        batch_mode: batch_mode,
         channel_name: channel_name,
         role_arn: role_arn,
       }),
     },
     iot_events:: {
-      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.iot_events.new` constructs a new object with attributes and blocks configured for the `iot_events`\nTerraform sub block.\n\n\n\n**Args**:\n  - `input_name` (`string`): Set the `input_name` field on the resulting object.\n  - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_events` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.iot_events.new` constructs a new object with attributes and blocks configured for the `iot_events`\nTerraform sub block.\n\n\n\n**Args**:\n  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.\n  - `input_name` (`string`): Set the `input_name` field on the resulting object.\n  - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_events` sub block.\n', args=[]),
       new(
         input_name,
         role_arn,
+        batch_mode=null,
         message_id=null
       ):: std.prune(a={
+        batch_mode: batch_mode,
         input_name: input_name,
         message_id: message_id,
         role_arn: role_arn,
@@ -437,12 +443,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     },
   },
   firehose:: {
-    '#new':: d.fn(help='\n`aws.iot_topic_rule.firehose.new` constructs a new object with attributes and blocks configured for the `firehose`\nTerraform sub block.\n\n\n\n**Args**:\n  - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `firehose` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.iot_topic_rule.firehose.new` constructs a new object with attributes and blocks configured for the `firehose`\nTerraform sub block.\n\n\n\n**Args**:\n  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.\n  - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `firehose` sub block.\n', args=[]),
     new(
       delivery_stream_name,
       role_arn,
+      batch_mode=null,
       separator=null
     ):: std.prune(a={
+      batch_mode: batch_mode,
       delivery_stream_name: delivery_stream_name,
       role_arn: role_arn,
       separator: separator,
@@ -471,22 +479,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   iot_analytics:: {
-    '#new':: d.fn(help='\n`aws.iot_topic_rule.iot_analytics.new` constructs a new object with attributes and blocks configured for the `iot_analytics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `channel_name` (`string`): Set the `channel_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_analytics` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.iot_topic_rule.iot_analytics.new` constructs a new object with attributes and blocks configured for the `iot_analytics`\nTerraform sub block.\n\n\n\n**Args**:\n  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.\n  - `channel_name` (`string`): Set the `channel_name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_analytics` sub block.\n', args=[]),
     new(
       channel_name,
-      role_arn
+      role_arn,
+      batch_mode=null
     ):: std.prune(a={
+      batch_mode: batch_mode,
       channel_name: channel_name,
       role_arn: role_arn,
     }),
   },
   iot_events:: {
-    '#new':: d.fn(help='\n`aws.iot_topic_rule.iot_events.new` constructs a new object with attributes and blocks configured for the `iot_events`\nTerraform sub block.\n\n\n\n**Args**:\n  - `input_name` (`string`): Set the `input_name` field on the resulting object.\n  - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_events` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.iot_topic_rule.iot_events.new` constructs a new object with attributes and blocks configured for the `iot_events`\nTerraform sub block.\n\n\n\n**Args**:\n  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.\n  - `input_name` (`string`): Set the `input_name` field on the resulting object.\n  - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `iot_events` sub block.\n', args=[]),
     new(
       input_name,
       role_arn,
+      batch_mode=null,
       message_id=null
     ):: std.prune(a={
+      batch_mode: batch_mode,
       input_name: input_name,
       message_id: message_id,
       role_arn: role_arn,

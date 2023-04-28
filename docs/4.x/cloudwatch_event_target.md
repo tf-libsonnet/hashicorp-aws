@@ -52,6 +52,8 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-ecs_targetcapacity_provider_strategynew)
   * [`obj ecs_target.network_configuration`](#obj-ecs_targetnetwork_configuration)
     * [`fn new()`](#fn-ecs_targetnetwork_configurationnew)
+  * [`obj ecs_target.ordered_placement_strategy`](#obj-ecs_targetordered_placement_strategy)
+    * [`fn new()`](#fn-ecs_targetordered_placement_strategynew)
   * [`obj ecs_target.placement_constraint`](#obj-ecs_targetplacement_constraint)
     * [`fn new()`](#fn-ecs_targetplacement_constraintnew)
 * [`obj http_target`](#obj-http_target)
@@ -719,6 +721,7 @@ Terraform sub block.
   - `task_definition_arn` (`string`): Set the `task_definition_arn` field on the resulting object.
   - `capacity_provider_strategy` (`list[obj]`): Set the `capacity_provider_strategy` field on the resulting object. When `null`, the `capacity_provider_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.capacity_provider_strategy.new](#fn-ecs_targetcapacity_provider_strategynew) constructor.
   - `network_configuration` (`list[obj]`): Set the `network_configuration` field on the resulting object. When `null`, the `network_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.network_configuration.new](#fn-ecs_targetnetwork_configurationnew) constructor.
+  - `ordered_placement_strategy` (`list[obj]`): Set the `ordered_placement_strategy` field on the resulting object. When `null`, the `ordered_placement_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.ordered_placement_strategy.new](#fn-ecs_targetordered_placement_strategynew) constructor.
   - `placement_constraint` (`list[obj]`): Set the `placement_constraint` field on the resulting object. When `null`, the `placement_constraint` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.ecs_target.placement_constraint.new](#fn-ecs_targetplacement_constraintnew) constructor.
 
 **Returns**:
@@ -773,6 +776,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `network_configuration` sub block.
+
+
+## obj ecs_target.ordered_placement_strategy
+
+
+
+### fn ecs_target.ordered_placement_strategy.new
+
+```ts
+new()
+```
+
+
+`aws.cloudwatch_event_target.ecs_target.ordered_placement_strategy.new` constructs a new object with attributes and blocks configured for the `ordered_placement_strategy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `field` (`string`): Set the `field` field on the resulting object. When `null`, the `field` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `ordered_placement_strategy` sub block.
 
 
 ## obj ecs_target.placement_constraint

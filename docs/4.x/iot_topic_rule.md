@@ -1544,6 +1544,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.
   - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
   - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.
@@ -1618,6 +1619,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.
   - `channel_name` (`string`): Set the `channel_name` field on the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
@@ -1642,6 +1644,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.
   - `input_name` (`string`): Set the `input_name` field on the resulting object.
   - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
@@ -1943,6 +1946,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.
   - `delivery_stream_name` (`string`): Set the `delivery_stream_name` field on the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
   - `separator` (`string`): Set the `separator` field on the resulting object. When `null`, the `separator` field will be omitted from the resulting object.
@@ -2017,6 +2021,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.
   - `channel_name` (`string`): Set the `channel_name` field on the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
 
@@ -2041,6 +2046,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `batch_mode` (`bool`): Set the `batch_mode` field on the resulting object. When `null`, the `batch_mode` field will be omitted from the resulting object.
   - `input_name` (`string`): Set the `input_name` field on the resulting object.
   - `message_id` (`string`): Set the `message_id` field on the resulting object. When `null`, the `message_id` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.

@@ -22,6 +22,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCustomHeadersConfigMixin()`](#fn-withcustomheadersconfigmixin)
 * [`fn withEtag()`](#fn-withetag)
 * [`fn withName()`](#fn-withname)
+* [`fn withRemoveHeadersConfig()`](#fn-withremoveheadersconfig)
+* [`fn withRemoveHeadersConfigMixin()`](#fn-withremoveheadersconfigmixin)
 * [`fn withSecurityHeadersConfig()`](#fn-withsecurityheadersconfig)
 * [`fn withSecurityHeadersConfigMixin()`](#fn-withsecurityheadersconfigmixin)
 * [`fn withServerTimingHeadersConfig()`](#fn-withservertimingheadersconfig)
@@ -40,6 +42,10 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-custom_headers_confignew)
   * [`obj custom_headers_config.items`](#obj-custom_headers_configitems)
     * [`fn new()`](#fn-custom_headers_configitemsnew)
+* [`obj remove_headers_config`](#obj-remove_headers_config)
+  * [`fn new()`](#fn-remove_headers_confignew)
+  * [`obj remove_headers_config.items`](#obj-remove_headers_configitems)
+    * [`fn new()`](#fn-remove_headers_configitemsnew)
 * [`obj security_headers_config`](#obj-security_headers_config)
   * [`fn new()`](#fn-security_headers_confignew)
   * [`obj security_headers_config.content_security_policy`](#obj-security_headers_configcontent_security_policy)
@@ -91,6 +97,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `cors_config` (`list[obj]`): Set the `cors_config` field on the resulting resource block. When `null`, the `cors_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.new](#fn-cors_confignew) constructor.
   - `custom_headers_config` (`list[obj]`): Set the `custom_headers_config` field on the resulting resource block. When `null`, the `custom_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.new](#fn-custom_headers_confignew) constructor.
+  - `remove_headers_config` (`list[obj]`): Set the `remove_headers_config` field on the resulting resource block. When `null`, the `remove_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.remove_headers_config.new](#fn-remove_headers_confignew) constructor.
   - `security_headers_config` (`list[obj]`): Set the `security_headers_config` field on the resulting resource block. When `null`, the `security_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.new](#fn-security_headers_confignew) constructor.
   - `server_timing_headers_config` (`list[obj]`): Set the `server_timing_headers_config` field on the resulting resource block. When `null`, the `server_timing_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.server_timing_headers_config.new](#fn-server_timing_headers_confignew) constructor.
 
@@ -121,6 +128,7 @@ injecting into a complete block.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `cors_config` (`list[obj]`): Set the `cors_config` field on the resulting object. When `null`, the `cors_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.cors_config.new](#fn-cors_confignew) constructor.
   - `custom_headers_config` (`list[obj]`): Set the `custom_headers_config` field on the resulting object. When `null`, the `custom_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.custom_headers_config.new](#fn-custom_headers_confignew) constructor.
+  - `remove_headers_config` (`list[obj]`): Set the `remove_headers_config` field on the resulting object. When `null`, the `remove_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.remove_headers_config.new](#fn-remove_headers_confignew) constructor.
   - `security_headers_config` (`list[obj]`): Set the `security_headers_config` field on the resulting object. When `null`, the `security_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.security_headers_config.new](#fn-security_headers_confignew) constructor.
   - `server_timing_headers_config` (`list[obj]`): Set the `server_timing_headers_config` field on the resulting object. When `null`, the `server_timing_headers_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.server_timing_headers_config.new](#fn-server_timing_headers_confignew) constructor.
 
@@ -248,6 +256,43 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withRemoveHeadersConfig
+
+```ts
+withRemoveHeadersConfig()
+```
+
+`aws.list[obj].withRemoveHeadersConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the remove_headers_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withRemoveHeadersConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `remove_headers_config` field.
+
+
+### fn withRemoveHeadersConfigMixin
+
+```ts
+withRemoveHeadersConfigMixin()
+```
+
+`aws.list[obj].withRemoveHeadersConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the remove_headers_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withRemoveHeadersConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `remove_headers_config` field.
 
 
 ### fn withSecurityHeadersConfig
@@ -488,6 +533,52 @@ Terraform sub block.
   - `header` (`string`): Set the `header` field on the resulting object.
   - `override` (`bool`): Set the `override` field on the resulting object.
   - `value` (`string`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `items` sub block.
+
+
+## obj remove_headers_config
+
+
+
+### fn remove_headers_config.new
+
+```ts
+new()
+```
+
+
+`aws.cloudfront_response_headers_policy.remove_headers_config.new` constructs a new object with attributes and blocks configured for the `remove_headers_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `items` (`list[obj]`): Set the `items` field on the resulting object. When `null`, the `items` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudfront_response_headers_policy.remove_headers_config.items.new](#fn-remove_headers_configitemsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `remove_headers_config` sub block.
+
+
+## obj remove_headers_config.items
+
+
+
+### fn remove_headers_config.items.new
+
+```ts
+new()
+```
+
+
+`aws.cloudfront_response_headers_policy.remove_headers_config.items.new` constructs a new object with attributes and blocks configured for the `items`
+Terraform sub block.
+
+
+
+**Args**:
+  - `header` (`string`): Set the `header` field on the resulting object.
 
 **Returns**:
   - An attribute object that represents the `items` sub block.
