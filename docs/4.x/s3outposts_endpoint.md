@@ -15,6 +15,8 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAccessType()`](#fn-withaccesstype)
+* [`fn withCustomerOwnedIpv4Pool()`](#fn-withcustomerownedipv4pool)
 * [`fn withOutpostId()`](#fn-withoutpostid)
 * [`fn withSecurityGroupId()`](#fn-withsecuritygroupid)
 * [`fn withSubnetId()`](#fn-withsubnetid)
@@ -48,6 +50,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `access_type` (`string`): Set the `access_type` field on the resulting resource block. When `null`, the `access_type` field will be omitted from the resulting object.
+  - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting resource block. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
   - `outpost_id` (`string`): Set the `outpost_id` field on the resulting resource block.
   - `security_group_id` (`string`): Set the `security_group_id` field on the resulting resource block.
   - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block.
@@ -74,12 +78,46 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `access_type` (`string`): Set the `access_type` field on the resulting object. When `null`, the `access_type` field will be omitted from the resulting object.
+  - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting object. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
   - `outpost_id` (`string`): Set the `outpost_id` field on the resulting object.
   - `security_group_id` (`string`): Set the `security_group_id` field on the resulting object.
   - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3outposts_endpoint` resource into the root Terraform configuration.
+
+
+### fn withAccessType
+
+```ts
+withAccessType()
+```
+
+`aws.string.withAccessType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the access_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `access_type` field.
+
+
+### fn withCustomerOwnedIpv4Pool
+
+```ts
+withCustomerOwnedIpv4Pool()
+```
+
+`aws.string.withCustomerOwnedIpv4Pool` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the customer_owned_ipv4_pool field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `customer_owned_ipv4_pool` field.
 
 
 ### fn withOutpostId

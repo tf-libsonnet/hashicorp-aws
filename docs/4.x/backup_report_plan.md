@@ -277,8 +277,11 @@ Terraform sub block.
 
 
 **Args**:
+  - `accounts` (`list`): Set the `accounts` field on the resulting object. When `null`, the `accounts` field will be omitted from the resulting object.
   - `framework_arns` (`list`): Set the `framework_arns` field on the resulting object. When `null`, the `framework_arns` field will be omitted from the resulting object.
   - `number_of_frameworks` (`number`): Set the `number_of_frameworks` field on the resulting object. When `null`, the `number_of_frameworks` field will be omitted from the resulting object.
+  - `organization_units` (`list`): Set the `organization_units` field on the resulting object. When `null`, the `organization_units` field will be omitted from the resulting object.
+  - `regions` (`list`): Set the `regions` field on the resulting object. When `null`, the `regions` field will be omitted from the resulting object.
   - `report_template` (`string`): Set the `report_template` field on the resulting object.
 
 **Returns**:
