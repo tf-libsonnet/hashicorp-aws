@@ -18,7 +18,6 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn withExecutableUsers()`](#fn-withexecutableusers)
 * [`fn withFilter()`](#fn-withfilter)
 * [`fn withFilterMixin()`](#fn-withfiltermixin)
-* [`fn withIncludeDeprecated()`](#fn-withincludedeprecated)
 * [`fn withNameRegex()`](#fn-withnameregex)
 * [`fn withOwners()`](#fn-withowners)
 * [`fn withSortAscending()`](#fn-withsortascending)
@@ -59,7 +58,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `executable_users` (`list`): Set the `executable_users` field on the resulting data source block. When `null`, the `executable_users` field will be omitted from the resulting object.
-  - `include_deprecated` (`bool`): Set the `include_deprecated` field on the resulting data source block. When `null`, the `include_deprecated` field will be omitted from the resulting object.
   - `name_regex` (`string`): Set the `name_regex` field on the resulting data source block. When `null`, the `name_regex` field will be omitted from the resulting object.
   - `owners` (`list`): Set the `owners` field on the resulting data source block.
   - `sort_ascending` (`bool`): Set the `sort_ascending` field on the resulting data source block. When `null`, the `sort_ascending` field will be omitted from the resulting object.
@@ -89,7 +87,6 @@ injecting into a complete block.
 
 **Args**:
   - `executable_users` (`list`): Set the `executable_users` field on the resulting object. When `null`, the `executable_users` field will be omitted from the resulting object.
-  - `include_deprecated` (`bool`): Set the `include_deprecated` field on the resulting object. When `null`, the `include_deprecated` field will be omitted from the resulting object.
   - `name_regex` (`string`): Set the `name_regex` field on the resulting object. When `null`, the `name_regex` field will be omitted from the resulting object.
   - `owners` (`list`): Set the `owners` field on the resulting object.
   - `sort_ascending` (`bool`): Set the `sort_ascending` field on the resulting object. When `null`, the `sort_ascending` field will be omitted from the resulting object.
@@ -151,22 +148,6 @@ function.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `filter` field.
-
-
-### fn withIncludeDeprecated
-
-```ts
-withIncludeDeprecated()
-```
-
-`aws.bool.withIncludeDeprecated` constructs a mixin object that can be merged into the `bool`
-Terraform data source block to set or update the include_deprecated field.
-
-
-
-**Args**:
-  - `dataSrcLabel` (`string`): The name label of the block to update.
-  - `value` (`bool`): The value to set for the `include_deprecated` field.
 
 
 ### fn withNameRegex

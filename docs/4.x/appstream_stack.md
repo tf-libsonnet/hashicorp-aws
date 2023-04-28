@@ -27,8 +27,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRedirectUrl()`](#fn-withredirecturl)
 * [`fn withStorageConnectors()`](#fn-withstorageconnectors)
 * [`fn withStorageConnectorsMixin()`](#fn-withstorageconnectorsmixin)
-* [`fn withStreamingExperienceSettings()`](#fn-withstreamingexperiencesettings)
-* [`fn withStreamingExperienceSettingsMixin()`](#fn-withstreamingexperiencesettingsmixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withUserSettings()`](#fn-withusersettings)
@@ -39,8 +37,6 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-application_settingsnew)
 * [`obj storage_connectors`](#obj-storage_connectors)
   * [`fn new()`](#fn-storage_connectorsnew)
-* [`obj streaming_experience_settings`](#obj-streaming_experience_settings)
-  * [`fn new()`](#fn-streaming_experience_settingsnew)
 * [`obj user_settings`](#obj-user_settings)
   * [`fn new()`](#fn-user_settingsnew)
 
@@ -84,7 +80,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `access_endpoints` (`list[obj]`): Set the `access_endpoints` field on the resulting resource block. When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
   - `application_settings` (`list[obj]`): Set the `application_settings` field on the resulting resource block. When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
   - `storage_connectors` (`list[obj]`): Set the `storage_connectors` field on the resulting resource block. When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
-  - `streaming_experience_settings` (`list[obj]`): Set the `streaming_experience_settings` field on the resulting resource block. When `null`, the `streaming_experience_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.streaming_experience_settings.new](#fn-streaming_experience_settingsnew) constructor.
   - `user_settings` (`list[obj]`): Set the `user_settings` field on the resulting resource block. When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
 
 **Returns**:
@@ -120,7 +115,6 @@ injecting into a complete block.
   - `access_endpoints` (`list[obj]`): Set the `access_endpoints` field on the resulting object. When `null`, the `access_endpoints` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.access_endpoints.new](#fn-access_endpointsnew) constructor.
   - `application_settings` (`list[obj]`): Set the `application_settings` field on the resulting object. When `null`, the `application_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.application_settings.new](#fn-application_settingsnew) constructor.
   - `storage_connectors` (`list[obj]`): Set the `storage_connectors` field on the resulting object. When `null`, the `storage_connectors` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.storage_connectors.new](#fn-storage_connectorsnew) constructor.
-  - `streaming_experience_settings` (`list[obj]`): Set the `streaming_experience_settings` field on the resulting object. When `null`, the `streaming_experience_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.streaming_experience_settings.new](#fn-streaming_experience_settingsnew) constructor.
   - `user_settings` (`list[obj]`): Set the `user_settings` field on the resulting object. When `null`, the `user_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appstream_stack.user_settings.new](#fn-user_settingsnew) constructor.
 
 **Returns**:
@@ -334,43 +328,6 @@ function.
   - `value` (`list[obj]`): The value to set for the `storage_connectors` field.
 
 
-### fn withStreamingExperienceSettings
-
-```ts
-withStreamingExperienceSettings()
-```
-
-`aws.list[obj].withStreamingExperienceSettings` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the streaming_experience_settings field.
-
-This function will replace the array with the passed in `value`. If you wish to instead append the
-passed in value to the existing array, use the [aws.list[obj].withStreamingExperienceSettingsMixin](TODO) function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `streaming_experience_settings` field.
-
-
-### fn withStreamingExperienceSettingsMixin
-
-```ts
-withStreamingExperienceSettingsMixin()
-```
-
-`aws.list[obj].withStreamingExperienceSettingsMixin` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the streaming_experience_settings field.
-
-This function will append the passed in array or object to the existing array. If you wish
-to instead replace the array with the passed in `value`, use the [aws.list[obj].withStreamingExperienceSettings](TODO)
-function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `streaming_experience_settings` field.
-
-
 ### fn withTags
 
 ```ts
@@ -511,29 +468,6 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `storage_connectors` sub block.
-
-
-## obj streaming_experience_settings
-
-
-
-### fn streaming_experience_settings.new
-
-```ts
-new()
-```
-
-
-`aws.appstream_stack.streaming_experience_settings.new` constructs a new object with attributes and blocks configured for the `streaming_experience_settings`
-Terraform sub block.
-
-
-
-**Args**:
-  - `preferred_protocol` (`string`): Set the `preferred_protocol` field on the resulting object. When `null`, the `preferred_protocol` field will be omitted from the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `streaming_experience_settings` sub block.
 
 
 ## obj user_settings

@@ -443,7 +443,6 @@ Terraform sub block.
   - `inspector` (`string`): Use this to override the default service endpoint URL When `null`, the `inspector` field will be omitted from the resulting object.
   - `inspector2` (`string`): Use this to override the default service endpoint URL When `null`, the `inspector2` field will be omitted from the resulting object.
   - `inspectorv2` (`string`): Use this to override the default service endpoint URL When `null`, the `inspectorv2` field will be omitted from the resulting object.
-  - `internetmonitor` (`string`): Use this to override the default service endpoint URL When `null`, the `internetmonitor` field will be omitted from the resulting object.
   - `iot` (`string`): Use this to override the default service endpoint URL When `null`, the `iot` field will be omitted from the resulting object.
   - `iot1clickdevices` (`string`): Use this to override the default service endpoint URL When `null`, the `iot1clickdevices` field will be omitted from the resulting object.
   - `iot1clickdevicesservice` (`string`): Use this to override the default service endpoint URL When `null`, the `iot1clickdevicesservice` field will be omitted from the resulting object.

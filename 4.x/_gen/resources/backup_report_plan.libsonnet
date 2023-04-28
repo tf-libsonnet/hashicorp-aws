@@ -54,20 +54,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   report_setting:: {
-    '#new':: d.fn(help='\n`aws.backup_report_plan.report_setting.new` constructs a new object with attributes and blocks configured for the `report_setting`\nTerraform sub block.\n\n\n\n**Args**:\n  - `accounts` (`list`): Set the `accounts` field on the resulting object. When `null`, the `accounts` field will be omitted from the resulting object.\n  - `framework_arns` (`list`): Set the `framework_arns` field on the resulting object. When `null`, the `framework_arns` field will be omitted from the resulting object.\n  - `number_of_frameworks` (`number`): Set the `number_of_frameworks` field on the resulting object. When `null`, the `number_of_frameworks` field will be omitted from the resulting object.\n  - `organization_units` (`list`): Set the `organization_units` field on the resulting object. When `null`, the `organization_units` field will be omitted from the resulting object.\n  - `regions` (`list`): Set the `regions` field on the resulting object. When `null`, the `regions` field will be omitted from the resulting object.\n  - `report_template` (`string`): Set the `report_template` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `report_setting` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.backup_report_plan.report_setting.new` constructs a new object with attributes and blocks configured for the `report_setting`\nTerraform sub block.\n\n\n\n**Args**:\n  - `framework_arns` (`list`): Set the `framework_arns` field on the resulting object. When `null`, the `framework_arns` field will be omitted from the resulting object.\n  - `number_of_frameworks` (`number`): Set the `number_of_frameworks` field on the resulting object. When `null`, the `number_of_frameworks` field will be omitted from the resulting object.\n  - `report_template` (`string`): Set the `report_template` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `report_setting` sub block.\n', args=[]),
     new(
       report_template,
-      accounts=null,
       framework_arns=null,
-      number_of_frameworks=null,
-      organization_units=null,
-      regions=null
+      number_of_frameworks=null
     ):: std.prune(a={
-      accounts: accounts,
       framework_arns: framework_arns,
       number_of_frameworks: number_of_frameworks,
-      organization_units: organization_units,
-      regions: regions,
       report_template: report_template,
     }),
   },
