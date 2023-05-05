@@ -20,6 +20,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withConfiguration()`](#fn-withconfiguration)
 * [`fn withDataSources()`](#fn-withdatasources)
 * [`fn withDescription()`](#fn-withdescription)
+* [`fn withGrafanaVersion()`](#fn-withgrafanaversion)
 * [`fn withName()`](#fn-withname)
 * [`fn withNetworkAccessControl()`](#fn-withnetworkaccesscontrol)
 * [`fn withNetworkAccessControlMixin()`](#fn-withnetworkaccesscontrolmixin)
@@ -76,6 +77,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `configuration` (`string`): Set the `configuration` field on the resulting resource block. When `null`, the `configuration` field will be omitted from the resulting object.
   - `data_sources` (`list`): Set the `data_sources` field on the resulting resource block. When `null`, the `data_sources` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `grafana_version` (`string`): Set the `grafana_version` field on the resulting resource block. When `null`, the `grafana_version` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
   - `notification_destinations` (`list`): Set the `notification_destinations` field on the resulting resource block. When `null`, the `notification_destinations` field will be omitted from the resulting object.
   - `organization_role_name` (`string`): Set the `organization_role_name` field on the resulting resource block. When `null`, the `organization_role_name` field will be omitted from the resulting object.
@@ -116,6 +118,7 @@ injecting into a complete block.
   - `configuration` (`string`): Set the `configuration` field on the resulting object. When `null`, the `configuration` field will be omitted from the resulting object.
   - `data_sources` (`list`): Set the `data_sources` field on the resulting object. When `null`, the `data_sources` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `grafana_version` (`string`): Set the `grafana_version` field on the resulting object. When `null`, the `grafana_version` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `notification_destinations` (`list`): Set the `notification_destinations` field on the resulting object. When `null`, the `notification_destinations` field will be omitted from the resulting object.
   - `organization_role_name` (`string`): Set the `organization_role_name` field on the resulting object. When `null`, the `organization_role_name` field will be omitted from the resulting object.
@@ -211,6 +214,22 @@ Terraform resource block to set or update the description field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `description` field.
+
+
+### fn withGrafanaVersion
+
+```ts
+withGrafanaVersion()
+```
+
+`aws.string.withGrafanaVersion` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the grafana_version field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `grafana_version` field.
 
 
 ### fn withName

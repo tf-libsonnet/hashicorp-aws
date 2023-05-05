@@ -224,6 +224,26 @@ This package contains functions and utilities for setting up the resource using 
           * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh264_settingsfilter_settingsnew)
           * [`obj encoder_settings.video_descriptions.codec_settings.h264_settings.filter_settings.temporal_filter_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh264_settingsfilter_settingstemporal_filter_settings)
             * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh264_settingsfilter_settingstemporal_filter_settingsnew)
+      * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settings)
+        * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingsnew)
+        * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settings)
+          * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingsnew)
+          * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.color_space_passthrough_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingscolor_space_passthrough_settings)
+            * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingscolor_space_passthrough_settingsnew)
+          * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.dolby_vision81_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingsdolby_vision81_settings)
+            * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingsdolby_vision81_settingsnew)
+          * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.hdr10_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingshdr10_settings)
+            * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingshdr10_settingsnew)
+          * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec601_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingsrec601_settings)
+            * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingsrec601_settingsnew)
+          * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec709_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingsrec709_settings)
+            * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_settingsrec709_settingsnew)
+        * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingsfilter_settings)
+          * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingsfilter_settingsnew)
+          * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.temporal_filter_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingsfilter_settingstemporal_filter_settings)
+            * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingsfilter_settingstemporal_filter_settingsnew)
+        * [`obj encoder_settings.video_descriptions.codec_settings.h265_settings.timecode_burnin_settings`](#obj-encoder_settingsvideo_descriptionscodec_settingsh265_settingstimecode_burnin_settings)
+          * [`fn new()`](#fn-encoder_settingsvideo_descriptionscodec_settingsh265_settingstimecode_burnin_settingsnew)
 * [`obj input_attachments`](#obj-input_attachments)
   * [`fn new()`](#fn-input_attachmentsnew)
   * [`obj input_attachments.automatic_input_failover_settings`](#obj-input_attachmentsautomatic_input_failover_settings)
@@ -3159,6 +3179,7 @@ Terraform sub block.
 **Args**:
   - `frame_capture_settings` (`list[obj]`): Set the `frame_capture_settings` field on the resulting object. When `null`, the `frame_capture_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.frame_capture_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionsframe_capture_settingsnew) constructor.
   - `h264_settings` (`list[obj]`): Set the `h264_settings` field on the resulting object. When `null`, the `h264_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h264_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionsh264_settingsnew) constructor.
+  - `h265_settings` (`list[obj]`): Set the `h265_settings` field on the resulting object. When `null`, the `h265_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionsh265_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `codec_settings` sub block.
@@ -3295,6 +3316,261 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `temporal_filter_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.new` constructs a new object with attributes and blocks configured for the `h265_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `adaptive_quantization` (`string`): Set the `adaptive_quantization` field on the resulting object. When `null`, the `adaptive_quantization` field will be omitted from the resulting object.
+  - `afd_signaling` (`string`): Set the `afd_signaling` field on the resulting object. When `null`, the `afd_signaling` field will be omitted from the resulting object.
+  - `alternative_transfer_function` (`string`): Set the `alternative_transfer_function` field on the resulting object. When `null`, the `alternative_transfer_function` field will be omitted from the resulting object.
+  - `bitrate` (`number`): Set the `bitrate` field on the resulting object.
+  - `buf_size` (`number`): Set the `buf_size` field on the resulting object. When `null`, the `buf_size` field will be omitted from the resulting object.
+  - `color_metadata` (`string`): Set the `color_metadata` field on the resulting object. When `null`, the `color_metadata` field will be omitted from the resulting object.
+  - `fixed_afd` (`string`): Set the `fixed_afd` field on the resulting object. When `null`, the `fixed_afd` field will be omitted from the resulting object.
+  - `flicker_aq` (`string`): Set the `flicker_aq` field on the resulting object. When `null`, the `flicker_aq` field will be omitted from the resulting object.
+  - `framerate_denominator` (`number`): Set the `framerate_denominator` field on the resulting object.
+  - `framerate_numerator` (`number`): Set the `framerate_numerator` field on the resulting object.
+  - `gop_closed_cadence` (`number`): Set the `gop_closed_cadence` field on the resulting object. When `null`, the `gop_closed_cadence` field will be omitted from the resulting object.
+  - `gop_size` (`number`): Set the `gop_size` field on the resulting object. When `null`, the `gop_size` field will be omitted from the resulting object.
+  - `gop_size_units` (`string`): Set the `gop_size_units` field on the resulting object. When `null`, the `gop_size_units` field will be omitted from the resulting object.
+  - `level` (`string`): Set the `level` field on the resulting object. When `null`, the `level` field will be omitted from the resulting object.
+  - `look_ahead_rate_control` (`string`): Set the `look_ahead_rate_control` field on the resulting object. When `null`, the `look_ahead_rate_control` field will be omitted from the resulting object.
+  - `max_bitrate` (`number`): Set the `max_bitrate` field on the resulting object. When `null`, the `max_bitrate` field will be omitted from the resulting object.
+  - `min_i_interval` (`number`): Set the `min_i_interval` field on the resulting object. When `null`, the `min_i_interval` field will be omitted from the resulting object.
+  - `par_denominator` (`number`): Set the `par_denominator` field on the resulting object. When `null`, the `par_denominator` field will be omitted from the resulting object.
+  - `par_numerator` (`number`): Set the `par_numerator` field on the resulting object. When `null`, the `par_numerator` field will be omitted from the resulting object.
+  - `profile` (`string`): Set the `profile` field on the resulting object. When `null`, the `profile` field will be omitted from the resulting object.
+  - `qvbr_quality_level` (`number`): Set the `qvbr_quality_level` field on the resulting object. When `null`, the `qvbr_quality_level` field will be omitted from the resulting object.
+  - `rate_control_mode` (`string`): Set the `rate_control_mode` field on the resulting object. When `null`, the `rate_control_mode` field will be omitted from the resulting object.
+  - `scan_type` (`string`): Set the `scan_type` field on the resulting object. When `null`, the `scan_type` field will be omitted from the resulting object.
+  - `scene_change_detect` (`string`): Set the `scene_change_detect` field on the resulting object. When `null`, the `scene_change_detect` field will be omitted from the resulting object.
+  - `slices` (`number`): Set the `slices` field on the resulting object. When `null`, the `slices` field will be omitted from the resulting object.
+  - `tier` (`string`): Set the `tier` field on the resulting object. When `null`, the `tier` field will be omitted from the resulting object.
+  - `timecode_insertion` (`string`): Set the `timecode_insertion` field on the resulting object. When `null`, the `timecode_insertion` field will be omitted from the resulting object.
+  - `color_space_settings` (`list[obj]`): Set the `color_space_settings` field on the resulting object. When `null`, the `color_space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingscolor_space_settingsnew) constructor.
+  - `filter_settings` (`list[obj]`): Set the `filter_settings` field on the resulting object. When `null`, the `filter_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingsfilter_settingsnew) constructor.
+  - `timecode_burnin_settings` (`list[obj]`): Set the `timecode_burnin_settings` field on the resulting object. When `null`, the `timecode_burnin_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.timecode_burnin_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingstimecode_burnin_settingsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `h265_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.new` constructs a new object with attributes and blocks configured for the `color_space_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `color_space_passthrough_settings` (`list[obj]`): Set the `color_space_passthrough_settings` field on the resulting object. When `null`, the `color_space_passthrough_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.color_space_passthrough_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingsh265_settingscolor_space_passthrough_settingsnew) constructor.
+  - `dolby_vision81_settings` (`list[obj]`): Set the `dolby_vision81_settings` field on the resulting object. When `null`, the `dolby_vision81_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.dolby_vision81_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingsh265_settingsdolby_vision81_settingsnew) constructor.
+  - `hdr10_settings` (`list[obj]`): Set the `hdr10_settings` field on the resulting object. When `null`, the `hdr10_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.hdr10_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingsh265_settingshdr10_settingsnew) constructor.
+  - `rec601_settings` (`list[obj]`): Set the `rec601_settings` field on the resulting object. When `null`, the `rec601_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec601_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingsh265_settingsrec601_settingsnew) constructor.
+  - `rec709_settings` (`list[obj]`): Set the `rec709_settings` field on the resulting object. When `null`, the `rec709_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec709_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingsh265_settingsrec709_settingsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `color_space_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.color_space_passthrough_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.color_space_passthrough_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.color_space_passthrough_settings.new` constructs a new object with attributes and blocks configured for the `color_space_passthrough_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `color_space_passthrough_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.dolby_vision81_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.dolby_vision81_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.dolby_vision81_settings.new` constructs a new object with attributes and blocks configured for the `dolby_vision81_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `dolby_vision81_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.hdr10_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.hdr10_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.hdr10_settings.new` constructs a new object with attributes and blocks configured for the `hdr10_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `max_cll` (`number`): Set the `max_cll` field on the resulting object. When `null`, the `max_cll` field will be omitted from the resulting object.
+  - `max_fall` (`number`): Set the `max_fall` field on the resulting object. When `null`, the `max_fall` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `hdr10_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec601_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec601_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec601_settings.new` constructs a new object with attributes and blocks configured for the `rec601_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `rec601_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec709_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec709_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.color_space_settings.rec709_settings.new` constructs a new object with attributes and blocks configured for the `rec709_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `rec709_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.new` constructs a new object with attributes and blocks configured for the `filter_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `temporal_filter_settings` (`list[obj]`): Set the `temporal_filter_settings` field on the resulting object. When `null`, the `temporal_filter_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.temporal_filter_settings.new](#fn-encoder_settingsencoder_settingsvideo_descriptionscodec_settingsh265_settingstemporal_filter_settingsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `filter_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.temporal_filter_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.temporal_filter_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.filter_settings.temporal_filter_settings.new` constructs a new object with attributes and blocks configured for the `temporal_filter_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `post_filter_sharpening` (`string`): Set the `post_filter_sharpening` field on the resulting object. When `null`, the `post_filter_sharpening` field will be omitted from the resulting object.
+  - `strength` (`string`): Set the `strength` field on the resulting object. When `null`, the `strength` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `temporal_filter_settings` sub block.
+
+
+## obj encoder_settings.video_descriptions.codec_settings.h265_settings.timecode_burnin_settings
+
+
+
+### fn encoder_settings.video_descriptions.codec_settings.h265_settings.timecode_burnin_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.video_descriptions.codec_settings.h265_settings.timecode_burnin_settings.new` constructs a new object with attributes and blocks configured for the `timecode_burnin_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `timecode_burnin_font_size` (`string`): Set the `timecode_burnin_font_size` field on the resulting object. When `null`, the `timecode_burnin_font_size` field will be omitted from the resulting object.
+  - `timecode_burnin_position` (`string`): Set the `timecode_burnin_position` field on the resulting object. When `null`, the `timecode_burnin_position` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timecode_burnin_settings` sub block.
 
 
 ## obj input_attachments

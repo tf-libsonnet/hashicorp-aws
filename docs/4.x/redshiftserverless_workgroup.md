@@ -25,9 +25,13 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSubnetIds()`](#fn-withsubnetids)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withWorkgroupName()`](#fn-withworkgroupname)
 * [`obj config_parameter`](#obj-config_parameter)
   * [`fn new()`](#fn-config_parameternew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
 
 ## Fields
 
@@ -68,6 +72,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting resource block.
   - `config_parameter` (`list[obj]`): Set the `config_parameter` field on the resulting resource block. When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,6 +106,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `workgroup_name` (`string`): Set the `workgroup_name` field on the resulting object.
   - `config_parameter` (`list[obj]`): Set the `config_parameter` field on the resulting object. When `null`, the `config_parameter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.config_parameter.new](#fn-config_parameternew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.redshiftserverless_workgroup.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `redshiftserverless_workgroup` resource into the root Terraform configuration.
@@ -271,6 +277,42 @@ Terraform resource block to set or update the tags_all field.
   - `value` (`obj`): The value to set for the `tags_all` field.
 
 
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.obj.withTimeouts` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will replace the map with the passed in `value`. If you wish to instead merge the
+passed in value to the existing map, use the [aws.obj.withTimeoutsMixin](TODO) function.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.obj.withTimeoutsMixin` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.obj.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
 ### fn withWorkgroupName
 
 ```ts
@@ -309,3 +351,28 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `config_parameter` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.redshiftserverless_workgroup.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

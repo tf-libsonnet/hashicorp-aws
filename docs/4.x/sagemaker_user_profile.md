@@ -27,6 +27,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-user_settingsnew)
   * [`obj user_settings.canvas_app_settings`](#obj-user_settingscanvas_app_settings)
     * [`fn new()`](#fn-user_settingscanvas_app_settingsnew)
+    * [`obj user_settings.canvas_app_settings.model_register_settings`](#obj-user_settingscanvas_app_settingsmodel_register_settings)
+      * [`fn new()`](#fn-user_settingscanvas_app_settingsmodel_register_settingsnew)
     * [`obj user_settings.canvas_app_settings.time_series_forecasting_settings`](#obj-user_settingscanvas_app_settingstime_series_forecasting_settings)
       * [`fn new()`](#fn-user_settingscanvas_app_settingstime_series_forecasting_settingsnew)
   * [`obj user_settings.jupyter_server_app_settings`](#obj-user_settingsjupyter_server_app_settings)
@@ -47,6 +49,8 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-user_settingsr_session_app_settingscustom_imagenew)
     * [`obj user_settings.r_session_app_settings.default_resource_spec`](#obj-user_settingsr_session_app_settingsdefault_resource_spec)
       * [`fn new()`](#fn-user_settingsr_session_app_settingsdefault_resource_specnew)
+  * [`obj user_settings.r_studio_server_pro_app_settings`](#obj-user_settingsr_studio_server_pro_app_settings)
+    * [`fn new()`](#fn-user_settingsr_studio_server_pro_app_settingsnew)
   * [`obj user_settings.sharing_settings`](#obj-user_settingssharing_settings)
     * [`fn new()`](#fn-user_settingssharing_settingsnew)
   * [`obj user_settings.tensor_board_app_settings`](#obj-user_settingstensor_board_app_settings)
@@ -281,6 +285,7 @@ Terraform sub block.
   - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.new](#fn-user_settingsjupyter_server_app_settingsnew) constructor.
   - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.new](#fn-user_settingskernel_gateway_app_settingsnew) constructor.
   - `r_session_app_settings` (`list[obj]`): Set the `r_session_app_settings` field on the resulting object. When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.new](#fn-user_settingsr_session_app_settingsnew) constructor.
+  - `r_studio_server_pro_app_settings` (`list[obj]`): Set the `r_studio_server_pro_app_settings` field on the resulting object. When `null`, the `r_studio_server_pro_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_studio_server_pro_app_settings.new](#fn-user_settingsr_studio_server_pro_app_settingsnew) constructor.
   - `sharing_settings` (`list[obj]`): Set the `sharing_settings` field on the resulting object. When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.sharing_settings.new](#fn-user_settingssharing_settingsnew) constructor.
   - `tensor_board_app_settings` (`list[obj]`): Set the `tensor_board_app_settings` field on the resulting object. When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.tensor_board_app_settings.new](#fn-user_settingstensor_board_app_settingsnew) constructor.
 
@@ -305,10 +310,35 @@ Terraform sub block.
 
 
 **Args**:
+  - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.model_register_settings.new](#fn-user_settingsuser_settingsmodel_register_settingsnew) constructor.
   - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-user_settingsuser_settingstime_series_forecasting_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `canvas_app_settings` sub block.
+
+
+## obj user_settings.canvas_app_settings.model_register_settings
+
+
+
+### fn user_settings.canvas_app_settings.model_register_settings.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_user_profile.user_settings.canvas_app_settings.model_register_settings.new` constructs a new object with attributes and blocks configured for the `model_register_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `cross_account_model_register_role_arn` (`string`): Set the `cross_account_model_register_role_arn` field on the resulting object. When `null`, the `cross_account_model_register_role_arn` field will be omitted from the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `model_register_settings` sub block.
 
 
 ## obj user_settings.canvas_app_settings.time_series_forecasting_settings
@@ -558,6 +588,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `default_resource_spec` sub block.
+
+
+## obj user_settings.r_studio_server_pro_app_settings
+
+
+
+### fn user_settings.r_studio_server_pro_app_settings.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_user_profile.user_settings.r_studio_server_pro_app_settings.new` constructs a new object with attributes and blocks configured for the `r_studio_server_pro_app_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `access_status` (`string`): Set the `access_status` field on the resulting object. When `null`, the `access_status` field will be omitted from the resulting object.
+  - `user_group` (`string`): Set the `user_group` field on the resulting object. When `null`, the `user_group` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `r_studio_server_pro_app_settings` sub block.
 
 
 ## obj user_settings.sharing_settings

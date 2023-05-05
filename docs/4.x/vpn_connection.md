@@ -29,6 +29,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTransportTransitGatewayAttachmentId()`](#fn-withtransporttransitgatewayattachmentid)
 * [`fn withTunnel1DpdTimeoutAction()`](#fn-withtunnel1dpdtimeoutaction)
 * [`fn withTunnel1DpdTimeoutSeconds()`](#fn-withtunnel1dpdtimeoutseconds)
+* [`fn withTunnel1EnableTunnelLifecycleControl()`](#fn-withtunnel1enabletunnellifecyclecontrol)
 * [`fn withTunnel1IkeVersions()`](#fn-withtunnel1ikeversions)
 * [`fn withTunnel1InsideCidr()`](#fn-withtunnel1insidecidr)
 * [`fn withTunnel1InsideIpv6Cidr()`](#fn-withtunnel1insideipv6cidr)
@@ -49,6 +50,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTunnel1StartupAction()`](#fn-withtunnel1startupaction)
 * [`fn withTunnel2DpdTimeoutAction()`](#fn-withtunnel2dpdtimeoutaction)
 * [`fn withTunnel2DpdTimeoutSeconds()`](#fn-withtunnel2dpdtimeoutseconds)
+* [`fn withTunnel2EnableTunnelLifecycleControl()`](#fn-withtunnel2enabletunnellifecyclecontrol)
 * [`fn withTunnel2IkeVersions()`](#fn-withtunnel2ikeversions)
 * [`fn withTunnel2InsideCidr()`](#fn-withtunnel2insidecidr)
 * [`fn withTunnel2InsideIpv6Cidr()`](#fn-withtunnel2insideipv6cidr)
@@ -122,6 +124,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `transport_transit_gateway_attachment_id` (`string`): Set the `transport_transit_gateway_attachment_id` field on the resulting resource block. When `null`, the `transport_transit_gateway_attachment_id` field will be omitted from the resulting object.
   - `tunnel1_dpd_timeout_action` (`string`): Set the `tunnel1_dpd_timeout_action` field on the resulting resource block. When `null`, the `tunnel1_dpd_timeout_action` field will be omitted from the resulting object.
   - `tunnel1_dpd_timeout_seconds` (`number`): Set the `tunnel1_dpd_timeout_seconds` field on the resulting resource block. When `null`, the `tunnel1_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel1_enable_tunnel_lifecycle_control` (`bool`): Set the `tunnel1_enable_tunnel_lifecycle_control` field on the resulting resource block. When `null`, the `tunnel1_enable_tunnel_lifecycle_control` field will be omitted from the resulting object.
   - `tunnel1_ike_versions` (`list`): Set the `tunnel1_ike_versions` field on the resulting resource block. When `null`, the `tunnel1_ike_versions` field will be omitted from the resulting object.
   - `tunnel1_inside_cidr` (`string`): Set the `tunnel1_inside_cidr` field on the resulting resource block. When `null`, the `tunnel1_inside_cidr` field will be omitted from the resulting object.
   - `tunnel1_inside_ipv6_cidr` (`string`): Set the `tunnel1_inside_ipv6_cidr` field on the resulting resource block. When `null`, the `tunnel1_inside_ipv6_cidr` field will be omitted from the resulting object.
@@ -140,6 +143,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tunnel1_startup_action` (`string`): Set the `tunnel1_startup_action` field on the resulting resource block. When `null`, the `tunnel1_startup_action` field will be omitted from the resulting object.
   - `tunnel2_dpd_timeout_action` (`string`): Set the `tunnel2_dpd_timeout_action` field on the resulting resource block. When `null`, the `tunnel2_dpd_timeout_action` field will be omitted from the resulting object.
   - `tunnel2_dpd_timeout_seconds` (`number`): Set the `tunnel2_dpd_timeout_seconds` field on the resulting resource block. When `null`, the `tunnel2_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel2_enable_tunnel_lifecycle_control` (`bool`): Set the `tunnel2_enable_tunnel_lifecycle_control` field on the resulting resource block. When `null`, the `tunnel2_enable_tunnel_lifecycle_control` field will be omitted from the resulting object.
   - `tunnel2_ike_versions` (`list`): Set the `tunnel2_ike_versions` field on the resulting resource block. When `null`, the `tunnel2_ike_versions` field will be omitted from the resulting object.
   - `tunnel2_inside_cidr` (`string`): Set the `tunnel2_inside_cidr` field on the resulting resource block. When `null`, the `tunnel2_inside_cidr` field will be omitted from the resulting object.
   - `tunnel2_inside_ipv6_cidr` (`string`): Set the `tunnel2_inside_ipv6_cidr` field on the resulting resource block. When `null`, the `tunnel2_inside_ipv6_cidr` field will be omitted from the resulting object.
@@ -198,6 +202,7 @@ injecting into a complete block.
   - `transport_transit_gateway_attachment_id` (`string`): Set the `transport_transit_gateway_attachment_id` field on the resulting object. When `null`, the `transport_transit_gateway_attachment_id` field will be omitted from the resulting object.
   - `tunnel1_dpd_timeout_action` (`string`): Set the `tunnel1_dpd_timeout_action` field on the resulting object. When `null`, the `tunnel1_dpd_timeout_action` field will be omitted from the resulting object.
   - `tunnel1_dpd_timeout_seconds` (`number`): Set the `tunnel1_dpd_timeout_seconds` field on the resulting object. When `null`, the `tunnel1_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel1_enable_tunnel_lifecycle_control` (`bool`): Set the `tunnel1_enable_tunnel_lifecycle_control` field on the resulting object. When `null`, the `tunnel1_enable_tunnel_lifecycle_control` field will be omitted from the resulting object.
   - `tunnel1_ike_versions` (`list`): Set the `tunnel1_ike_versions` field on the resulting object. When `null`, the `tunnel1_ike_versions` field will be omitted from the resulting object.
   - `tunnel1_inside_cidr` (`string`): Set the `tunnel1_inside_cidr` field on the resulting object. When `null`, the `tunnel1_inside_cidr` field will be omitted from the resulting object.
   - `tunnel1_inside_ipv6_cidr` (`string`): Set the `tunnel1_inside_ipv6_cidr` field on the resulting object. When `null`, the `tunnel1_inside_ipv6_cidr` field will be omitted from the resulting object.
@@ -216,6 +221,7 @@ injecting into a complete block.
   - `tunnel1_startup_action` (`string`): Set the `tunnel1_startup_action` field on the resulting object. When `null`, the `tunnel1_startup_action` field will be omitted from the resulting object.
   - `tunnel2_dpd_timeout_action` (`string`): Set the `tunnel2_dpd_timeout_action` field on the resulting object. When `null`, the `tunnel2_dpd_timeout_action` field will be omitted from the resulting object.
   - `tunnel2_dpd_timeout_seconds` (`number`): Set the `tunnel2_dpd_timeout_seconds` field on the resulting object. When `null`, the `tunnel2_dpd_timeout_seconds` field will be omitted from the resulting object.
+  - `tunnel2_enable_tunnel_lifecycle_control` (`bool`): Set the `tunnel2_enable_tunnel_lifecycle_control` field on the resulting object. When `null`, the `tunnel2_enable_tunnel_lifecycle_control` field will be omitted from the resulting object.
   - `tunnel2_ike_versions` (`list`): Set the `tunnel2_ike_versions` field on the resulting object. When `null`, the `tunnel2_ike_versions` field will be omitted from the resulting object.
   - `tunnel2_inside_cidr` (`string`): Set the `tunnel2_inside_cidr` field on the resulting object. When `null`, the `tunnel2_inside_cidr` field will be omitted from the resulting object.
   - `tunnel2_inside_ipv6_cidr` (`string`): Set the `tunnel2_inside_ipv6_cidr` field on the resulting object. When `null`, the `tunnel2_inside_ipv6_cidr` field will be omitted from the resulting object.
@@ -464,6 +470,22 @@ Terraform resource block to set or update the tunnel1_dpd_timeout_seconds field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `tunnel1_dpd_timeout_seconds` field.
+
+
+### fn withTunnel1EnableTunnelLifecycleControl
+
+```ts
+withTunnel1EnableTunnelLifecycleControl()
+```
+
+`aws.bool.withTunnel1EnableTunnelLifecycleControl` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the tunnel1_enable_tunnel_lifecycle_control field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `tunnel1_enable_tunnel_lifecycle_control` field.
 
 
 ### fn withTunnel1IkeVersions
@@ -789,6 +811,22 @@ Terraform resource block to set or update the tunnel2_dpd_timeout_seconds field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `tunnel2_dpd_timeout_seconds` field.
+
+
+### fn withTunnel2EnableTunnelLifecycleControl
+
+```ts
+withTunnel2EnableTunnelLifecycleControl()
+```
+
+`aws.bool.withTunnel2EnableTunnelLifecycleControl` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the tunnel2_enable_tunnel_lifecycle_control field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `tunnel2_enable_tunnel_lifecycle_control` field.
 
 
 ### fn withTunnel2IkeVersions

@@ -22,6 +22,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLocationUri()`](#fn-withlocationuri)
 * [`fn withName()`](#fn-withname)
 * [`fn withParameters()`](#fn-withparameters)
+* [`fn withTags()`](#fn-withtags)
+* [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTargetDatabase()`](#fn-withtargetdatabase)
 * [`fn withTargetDatabaseMixin()`](#fn-withtargetdatabasemixin)
 * [`obj create_table_default_permission`](#obj-create_table_default_permission)
@@ -65,6 +67,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `location_uri` (`string`): Set the `location_uri` field on the resulting resource block. When `null`, the `location_uri` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `create_table_default_permission` (`list[obj]`): Set the `create_table_default_permission` field on the resulting resource block. When `null`, the `create_table_default_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.new](#fn-create_table_default_permissionnew) constructor.
   - `target_database` (`list[obj]`): Set the `target_database` field on the resulting resource block. When `null`, the `target_database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.target_database.new](#fn-target_databasenew) constructor.
 
@@ -95,6 +99,8 @@ injecting into a complete block.
   - `location_uri` (`string`): Set the `location_uri` field on the resulting object. When `null`, the `location_uri` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `create_table_default_permission` (`list[obj]`): Set the `create_table_default_permission` field on the resulting object. When `null`, the `create_table_default_permission` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.create_table_default_permission.new](#fn-create_table_default_permissionnew) constructor.
   - `target_database` (`list[obj]`): Set the `target_database` field on the resulting object. When `null`, the `target_database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_database.target_database.new](#fn-target_databasenew) constructor.
 
@@ -217,6 +223,38 @@ Terraform resource block to set or update the parameters field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `parameters` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.obj.withTags` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the tags field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags` field.
+
+
+### fn withTagsAll
+
+```ts
+withTagsAll()
+```
+
+`aws.obj.withTagsAll` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the tags_all field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags_all` field.
 
 
 ### fn withTargetDatabase

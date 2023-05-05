@@ -423,6 +423,7 @@ Terraform sub block.
 
 **Args**:
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `s3_failure_path` (`string`): Set the `s3_failure_path` field on the resulting object. When `null`, the `s3_failure_path` field will be omitted from the resulting object.
   - `s3_output_path` (`string`): Set the `s3_output_path` field on the resulting object.
   - `notification_config` (`list[obj]`): Set the `notification_config` field on the resulting object. When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new](#fn-async_inference_configasync_inference_confignotification_confignew) constructor.
 
@@ -448,6 +449,7 @@ Terraform sub block.
 
 **Args**:
   - `error_topic` (`string`): Set the `error_topic` field on the resulting object. When `null`, the `error_topic` field will be omitted from the resulting object.
+  - `include_inference_response_in` (`list`): Set the `include_inference_response_in` field on the resulting object. When `null`, the `include_inference_response_in` field will be omitted from the resulting object.
   - `success_topic` (`string`): Set the `success_topic` field on the resulting object. When `null`, the `success_topic` field will be omitted from the resulting object.
 
 **Returns**:

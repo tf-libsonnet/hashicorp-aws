@@ -34,6 +34,14 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationnew)
     * [`obj target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions`](#obj-target_tracking_scaling_policy_configurationcustomized_metric_specificationdimensions)
       * [`fn new()`](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationdimensionsnew)
+    * [`obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics`](#obj-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetrics)
+      * [`fn new()`](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsnew)
+      * [`obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat`](#obj-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetric_stat)
+        * [`fn new()`](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetric_statnew)
+        * [`obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric`](#obj-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetric_statmetric)
+          * [`fn new()`](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetric_statmetricnew)
+          * [`obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions`](#obj-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetric_statmetricdimensions)
+            * [`fn new()`](#fn-target_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetric_statmetricdimensionsnew)
   * [`obj target_tracking_scaling_policy_configuration.predefined_metric_specification`](#obj-target_tracking_scaling_policy_configurationpredefined_metric_specification)
     * [`fn new()`](#fn-target_tracking_scaling_policy_configurationpredefined_metric_specificationnew)
 
@@ -359,11 +367,12 @@ Terraform sub block.
 
 
 **Args**:
-  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.
-  - `namespace` (`string`): Set the `namespace` field on the resulting object.
-  - `statistic` (`string`): Set the `statistic` field on the resulting object.
+  - `metric_name` (`string`): Set the `metric_name` field on the resulting object. When `null`, the `metric_name` field will be omitted from the resulting object.
+  - `namespace` (`string`): Set the `namespace` field on the resulting object. When `null`, the `namespace` field will be omitted from the resulting object.
+  - `statistic` (`string`): Set the `statistic` field on the resulting object. When `null`, the `statistic` field will be omitted from the resulting object.
   - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.
   - `dimensions` (`list[obj]`): Set the `dimensions` field on the resulting object. When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationdimensionsnew) constructor.
+  - `metrics` (`list[obj]`): Set the `metrics` field on the resulting object. When `null`, the `metrics` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationmetricsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `customized_metric_specification` sub block.
@@ -381,6 +390,106 @@ new()
 
 
 `aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions.new` constructs a new object with attributes and blocks configured for the `dimensions`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `dimensions` sub block.
+
+
+## obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics
+
+
+
+### fn target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.new
+
+```ts
+new()
+```
+
+
+`aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.new` constructs a new object with attributes and blocks configured for the `metrics`
+Terraform sub block.
+
+
+
+**Args**:
+  - `expression` (`string`): Set the `expression` field on the resulting object. When `null`, the `expression` field will be omitted from the resulting object.
+  - `label` (`string`): Set the `label` field on the resulting object. When `null`, the `label` field will be omitted from the resulting object.
+  - `return_data` (`bool`): Set the `return_data` field on the resulting object. When `null`, the `return_data` field will be omitted from the resulting object.
+  - `metric_stat` (`list[obj]`): Set the `metric_stat` field on the resulting object. When `null`, the `metric_stat` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationcustomized_metric_specificationmetric_statnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `metrics` sub block.
+
+
+## obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat
+
+
+
+### fn target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.new
+
+```ts
+new()
+```
+
+
+`aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.new` constructs a new object with attributes and blocks configured for the `metric_stat`
+Terraform sub block.
+
+
+
+**Args**:
+  - `stat` (`string`): Set the `stat` field on the resulting object.
+  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.
+  - `metric` (`list[obj]`): Set the `metric` field on the resulting object. When `null`, the `metric` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetricnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `metric_stat` sub block.
+
+
+## obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric
+
+
+
+### fn target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.new
+
+```ts
+new()
+```
+
+
+`aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.new` constructs a new object with attributes and blocks configured for the `metric`
+Terraform sub block.
+
+
+
+**Args**:
+  - `metric_name` (`string`): Set the `metric_name` field on the resulting object.
+  - `namespace` (`string`): Set the `namespace` field on the resulting object.
+  - `dimensions` (`list[obj]`): Set the `dimensions` field on the resulting object. When `null`, the `dimensions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions.new](#fn-target_tracking_scaling_policy_configurationtarget_tracking_scaling_policy_configurationcustomized_metric_specificationmetricsmetric_statdimensionsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `metric` sub block.
+
+
+## obj target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions
+
+
+
+### fn target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions.new
+
+```ts
+new()
+```
+
+
+`aws.appautoscaling_policy.target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions.new` constructs a new object with attributes and blocks configured for the `dimensions`
 Terraform sub block.
 
 

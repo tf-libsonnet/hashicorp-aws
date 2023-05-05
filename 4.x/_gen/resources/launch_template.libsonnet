@@ -59,11 +59,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   cpu_options:: {
-    '#new':: d.fn(help='\n`aws.launch_template.cpu_options.new` constructs a new object with attributes and blocks configured for the `cpu_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `core_count` (`number`): Set the `core_count` field on the resulting object. When `null`, the `core_count` field will be omitted from the resulting object.\n  - `threads_per_core` (`number`): Set the `threads_per_core` field on the resulting object. When `null`, the `threads_per_core` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `cpu_options` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.launch_template.cpu_options.new` constructs a new object with attributes and blocks configured for the `cpu_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `amd_sev_snp` (`string`): Set the `amd_sev_snp` field on the resulting object. When `null`, the `amd_sev_snp` field will be omitted from the resulting object.\n  - `core_count` (`number`): Set the `core_count` field on the resulting object. When `null`, the `core_count` field will be omitted from the resulting object.\n  - `threads_per_core` (`number`): Set the `threads_per_core` field on the resulting object. When `null`, the `threads_per_core` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `cpu_options` sub block.\n', args=[]),
     new(
+      amd_sev_snp=null,
       core_count=null,
       threads_per_core=null
     ):: std.prune(a={
+      amd_sev_snp: amd_sev_snp,
       core_count: core_count,
       threads_per_core: threads_per_core,
     }),

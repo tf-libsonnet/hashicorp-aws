@@ -47,10 +47,22 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   }),
   user_settings:: {
     canvas_app_settings:: {
-      '#new':: d.fn(help='\n`aws.sagemaker_user_profile.user_settings.canvas_app_settings.new` constructs a new object with attributes and blocks configured for the `canvas_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-user_settingsuser_settingstime_series_forecasting_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `canvas_app_settings` sub block.\n', args=[]),
+      model_register_settings:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_user_profile.user_settings.canvas_app_settings.model_register_settings.new` constructs a new object with attributes and blocks configured for the `model_register_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cross_account_model_register_role_arn` (`string`): Set the `cross_account_model_register_role_arn` field on the resulting object. When `null`, the `cross_account_model_register_role_arn` field will be omitted from the resulting object.\n  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `model_register_settings` sub block.\n', args=[]),
+        new(
+          cross_account_model_register_role_arn=null,
+          status=null
+        ):: std.prune(a={
+          cross_account_model_register_role_arn: cross_account_model_register_role_arn,
+          status: status,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.sagemaker_user_profile.user_settings.canvas_app_settings.new` constructs a new object with attributes and blocks configured for the `canvas_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.model_register_settings.new](#fn-user_settingsuser_settingsmodel_register_settingsnew) constructor.\n  - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-user_settingsuser_settingstime_series_forecasting_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `canvas_app_settings` sub block.\n', args=[]),
       new(
+        model_register_settings=null,
         time_series_forecasting_settings=null
       ):: std.prune(a={
+        model_register_settings: model_register_settings,
         time_series_forecasting_settings: time_series_forecasting_settings,
       }),
       time_series_forecasting_settings:: {
@@ -136,13 +148,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         lifecycle_config_arns: lifecycle_config_arns,
       }),
     },
-    '#new':: d.fn(help='\n`aws.sagemaker_user_profile.user_settings.new` constructs a new object with attributes and blocks configured for the `user_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.\n  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.\n  - `canvas_app_settings` (`list[obj]`): Set the `canvas_app_settings` field on the resulting object. When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.new](#fn-user_settingscanvas_app_settingsnew) constructor.\n  - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.new](#fn-user_settingsjupyter_server_app_settingsnew) constructor.\n  - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.new](#fn-user_settingskernel_gateway_app_settingsnew) constructor.\n  - `r_session_app_settings` (`list[obj]`): Set the `r_session_app_settings` field on the resulting object. When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.new](#fn-user_settingsr_session_app_settingsnew) constructor.\n  - `sharing_settings` (`list[obj]`): Set the `sharing_settings` field on the resulting object. When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.sharing_settings.new](#fn-user_settingssharing_settingsnew) constructor.\n  - `tensor_board_app_settings` (`list[obj]`): Set the `tensor_board_app_settings` field on the resulting object. When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.tensor_board_app_settings.new](#fn-user_settingstensor_board_app_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `user_settings` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.sagemaker_user_profile.user_settings.new` constructs a new object with attributes and blocks configured for the `user_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.\n  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.\n  - `canvas_app_settings` (`list[obj]`): Set the `canvas_app_settings` field on the resulting object. When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.new](#fn-user_settingscanvas_app_settingsnew) constructor.\n  - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.jupyter_server_app_settings.new](#fn-user_settingsjupyter_server_app_settingsnew) constructor.\n  - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.kernel_gateway_app_settings.new](#fn-user_settingskernel_gateway_app_settingsnew) constructor.\n  - `r_session_app_settings` (`list[obj]`): Set the `r_session_app_settings` field on the resulting object. When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_session_app_settings.new](#fn-user_settingsr_session_app_settingsnew) constructor.\n  - `r_studio_server_pro_app_settings` (`list[obj]`): Set the `r_studio_server_pro_app_settings` field on the resulting object. When `null`, the `r_studio_server_pro_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.r_studio_server_pro_app_settings.new](#fn-user_settingsr_studio_server_pro_app_settingsnew) constructor.\n  - `sharing_settings` (`list[obj]`): Set the `sharing_settings` field on the resulting object. When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.sharing_settings.new](#fn-user_settingssharing_settingsnew) constructor.\n  - `tensor_board_app_settings` (`list[obj]`): Set the `tensor_board_app_settings` field on the resulting object. When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.tensor_board_app_settings.new](#fn-user_settingstensor_board_app_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `user_settings` sub block.\n', args=[]),
     new(
       execution_role,
       canvas_app_settings=null,
       jupyter_server_app_settings=null,
       kernel_gateway_app_settings=null,
       r_session_app_settings=null,
+      r_studio_server_pro_app_settings=null,
       security_groups=null,
       sharing_settings=null,
       tensor_board_app_settings=null
@@ -152,6 +165,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       jupyter_server_app_settings: jupyter_server_app_settings,
       kernel_gateway_app_settings: kernel_gateway_app_settings,
       r_session_app_settings: r_session_app_settings,
+      r_studio_server_pro_app_settings: r_studio_server_pro_app_settings,
       security_groups: security_groups,
       sharing_settings: sharing_settings,
       tensor_board_app_settings: tensor_board_app_settings,
@@ -190,6 +204,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       ):: std.prune(a={
         custom_image: custom_image,
         default_resource_spec: default_resource_spec,
+      }),
+    },
+    r_studio_server_pro_app_settings:: {
+      '#new':: d.fn(help='\n`aws.sagemaker_user_profile.user_settings.r_studio_server_pro_app_settings.new` constructs a new object with attributes and blocks configured for the `r_studio_server_pro_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `access_status` (`string`): Set the `access_status` field on the resulting object. When `null`, the `access_status` field will be omitted from the resulting object.\n  - `user_group` (`string`): Set the `user_group` field on the resulting object. When `null`, the `user_group` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `r_studio_server_pro_app_settings` sub block.\n', args=[]),
+      new(
+        access_status=null,
+        user_group=null
+      ):: std.prune(a={
+        access_status: access_status,
+        user_group: user_group,
       }),
     },
     sharing_settings:: {
