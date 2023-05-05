@@ -21,6 +21,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCapacityReservationSpecification()`](#fn-withcapacityreservationspecification)
 * [`fn withCapacityReservationSpecificationMixin()`](#fn-withcapacityreservationspecificationmixin)
 * [`fn withCpuCoreCount()`](#fn-withcpucorecount)
+* [`fn withCpuOptions()`](#fn-withcpuoptions)
+* [`fn withCpuOptionsMixin()`](#fn-withcpuoptionsmixin)
 * [`fn withCpuThreadsPerCore()`](#fn-withcputhreadspercore)
 * [`fn withCreditSpecification()`](#fn-withcreditspecification)
 * [`fn withCreditSpecificationMixin()`](#fn-withcreditspecificationmixin)
@@ -77,6 +79,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-capacity_reservation_specificationnew)
   * [`obj capacity_reservation_specification.capacity_reservation_target`](#obj-capacity_reservation_specificationcapacity_reservation_target)
     * [`fn new()`](#fn-capacity_reservation_specificationcapacity_reservation_targetnew)
+* [`obj cpu_options`](#obj-cpu_options)
+  * [`fn new()`](#fn-cpu_optionsnew)
 * [`obj credit_specification`](#obj-credit_specification)
   * [`fn new()`](#fn-credit_specificationnew)
 * [`obj ebs_block_device`](#obj-ebs_block_device)
@@ -164,6 +168,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `volume_tags` (`obj`): Set the `volume_tags` field on the resulting resource block. When `null`, the `volume_tags` field will be omitted from the resulting object.
   - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting resource block. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
   - `capacity_reservation_specification` (`list[obj]`): Set the `capacity_reservation_specification` field on the resulting resource block. When `null`, the `capacity_reservation_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.new](#fn-capacity_reservation_specificationnew) constructor.
+  - `cpu_options` (`list[obj]`): Set the `cpu_options` field on the resulting resource block. When `null`, the `cpu_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.cpu_options.new](#fn-cpu_optionsnew) constructor.
   - `credit_specification` (`list[obj]`): Set the `credit_specification` field on the resulting resource block. When `null`, the `credit_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.credit_specification.new](#fn-credit_specificationnew) constructor.
   - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting resource block. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
   - `enclave_options` (`list[obj]`): Set the `enclave_options` field on the resulting resource block. When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
@@ -233,6 +238,7 @@ injecting into a complete block.
   - `volume_tags` (`obj`): Set the `volume_tags` field on the resulting object. When `null`, the `volume_tags` field will be omitted from the resulting object.
   - `vpc_security_group_ids` (`list`): Set the `vpc_security_group_ids` field on the resulting object. When `null`, the `vpc_security_group_ids` field will be omitted from the resulting object.
   - `capacity_reservation_specification` (`list[obj]`): Set the `capacity_reservation_specification` field on the resulting object. When `null`, the `capacity_reservation_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.capacity_reservation_specification.new](#fn-capacity_reservation_specificationnew) constructor.
+  - `cpu_options` (`list[obj]`): Set the `cpu_options` field on the resulting object. When `null`, the `cpu_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.cpu_options.new](#fn-cpu_optionsnew) constructor.
   - `credit_specification` (`list[obj]`): Set the `credit_specification` field on the resulting object. When `null`, the `credit_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.credit_specification.new](#fn-credit_specificationnew) constructor.
   - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting object. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
   - `enclave_options` (`list[obj]`): Set the `enclave_options` field on the resulting object. When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
@@ -348,6 +354,43 @@ Terraform resource block to set or update the cpu_core_count field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `cpu_core_count` field.
+
+
+### fn withCpuOptions
+
+```ts
+withCpuOptions()
+```
+
+`aws.list[obj].withCpuOptions` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the cpu_options field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withCpuOptionsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `cpu_options` field.
+
+
+### fn withCpuOptionsMixin
+
+```ts
+withCpuOptionsMixin()
+```
+
+`aws.list[obj].withCpuOptionsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the cpu_options field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withCpuOptions](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `cpu_options` field.
 
 
 ### fn withCpuThreadsPerCore
@@ -1282,6 +1325,31 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `capacity_reservation_target` sub block.
+
+
+## obj cpu_options
+
+
+
+### fn cpu_options.new
+
+```ts
+new()
+```
+
+
+`aws.instance.cpu_options.new` constructs a new object with attributes and blocks configured for the `cpu_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `amd_sev_snp` (`string`): Set the `amd_sev_snp` field on the resulting object. When `null`, the `amd_sev_snp` field will be omitted from the resulting object.
+  - `core_count` (`number`): Set the `core_count` field on the resulting object. When `null`, the `core_count` field will be omitted from the resulting object.
+  - `threads_per_core` (`number`): Set the `threads_per_core` field on the resulting object. When `null`, the `threads_per_core` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `cpu_options` sub block.
 
 
 ## obj credit_specification

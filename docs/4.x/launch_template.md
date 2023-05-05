@@ -1396,6 +1396,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `amd_sev_snp` (`string`): Set the `amd_sev_snp` field on the resulting object. When `null`, the `amd_sev_snp` field will be omitted from the resulting object.
   - `core_count` (`number`): Set the `core_count` field on the resulting object. When `null`, the `core_count` field will be omitted from the resulting object.
   - `threads_per_core` (`number`): Set the `threads_per_core` field on the resulting object. When `null`, the `threads_per_core` field will be omitted from the resulting object.
 

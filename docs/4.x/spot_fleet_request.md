@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAllocationStrategy()`](#fn-withallocationstrategy)
+* [`fn withContext()`](#fn-withcontext)
 * [`fn withExcessCapacityTerminationPolicy()`](#fn-withexcesscapacityterminationpolicy)
 * [`fn withFleetType()`](#fn-withfleettype)
 * [`fn withIamFleetRole()`](#fn-withiamfleetrole)
@@ -116,6 +117,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `allocation_strategy` (`string`): Set the `allocation_strategy` field on the resulting resource block. When `null`, the `allocation_strategy` field will be omitted from the resulting object.
+  - `context` (`string`): Set the `context` field on the resulting resource block. When `null`, the `context` field will be omitted from the resulting object.
   - `excess_capacity_termination_policy` (`string`): Set the `excess_capacity_termination_policy` field on the resulting resource block. When `null`, the `excess_capacity_termination_policy` field will be omitted from the resulting object.
   - `fleet_type` (`string`): Set the `fleet_type` field on the resulting resource block. When `null`, the `fleet_type` field will be omitted from the resulting object.
   - `iam_fleet_role` (`string`): Set the `iam_fleet_role` field on the resulting resource block.
@@ -165,6 +167,7 @@ injecting into a complete block.
 
 **Args**:
   - `allocation_strategy` (`string`): Set the `allocation_strategy` field on the resulting object. When `null`, the `allocation_strategy` field will be omitted from the resulting object.
+  - `context` (`string`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.
   - `excess_capacity_termination_policy` (`string`): Set the `excess_capacity_termination_policy` field on the resulting object. When `null`, the `excess_capacity_termination_policy` field will be omitted from the resulting object.
   - `fleet_type` (`string`): Set the `fleet_type` field on the resulting object. When `null`, the `fleet_type` field will be omitted from the resulting object.
   - `iam_fleet_role` (`string`): Set the `iam_fleet_role` field on the resulting object.
@@ -209,6 +212,22 @@ Terraform resource block to set or update the allocation_strategy field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `allocation_strategy` field.
+
+
+### fn withContext
+
+```ts
+withContext()
+```
+
+`aws.string.withContext` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the context field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `context` field.
 
 
 ### fn withExcessCapacityTerminationPolicy

@@ -31,6 +31,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLogConfiguration()`](#fn-withlogconfiguration)
 * [`fn withLogConfigurationMixin()`](#fn-withlogconfigurationmixin)
 * [`fn withPerUnitStorageThroughput()`](#fn-withperunitstoragethroughput)
+* [`fn withRootSquashConfiguration()`](#fn-withrootsquashconfiguration)
+* [`fn withRootSquashConfigurationMixin()`](#fn-withrootsquashconfigurationmixin)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
 * [`fn withStorageCapacity()`](#fn-withstoragecapacity)
 * [`fn withStorageType()`](#fn-withstoragetype)
@@ -42,6 +44,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withWeeklyMaintenanceStartTime()`](#fn-withweeklymaintenancestarttime)
 * [`obj log_configuration`](#obj-log_configuration)
   * [`fn new()`](#fn-log_configurationnew)
+* [`obj root_squash_configuration`](#obj-root_squash_configuration)
+  * [`fn new()`](#fn-root_squash_configurationnew)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
 
@@ -96,6 +100,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting resource block. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
   - `log_configuration` (`list[obj]`): Set the `log_configuration` field on the resulting resource block. When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.log_configuration.new](#fn-log_configurationnew) constructor.
+  - `root_squash_configuration` (`list[obj]`): Set the `root_squash_configuration` field on the resulting resource block. When `null`, the `root_squash_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.root_squash_configuration.new](#fn-root_squash_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -142,6 +147,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
   - `log_configuration` (`list[obj]`): Set the `log_configuration` field on the resulting object. When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.log_configuration.new](#fn-log_configurationnew) constructor.
+  - `root_squash_configuration` (`list[obj]`): Set the `root_squash_configuration` field on the resulting object. When `null`, the `root_squash_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.root_squash_configuration.new](#fn-root_squash_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_lustre_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -409,6 +415,43 @@ Terraform resource block to set or update the per_unit_storage_throughput field.
   - `value` (`number`): The value to set for the `per_unit_storage_throughput` field.
 
 
+### fn withRootSquashConfiguration
+
+```ts
+withRootSquashConfiguration()
+```
+
+`aws.list[obj].withRootSquashConfiguration` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the root_squash_configuration field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withRootSquashConfigurationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `root_squash_configuration` field.
+
+
+### fn withRootSquashConfigurationMixin
+
+```ts
+withRootSquashConfigurationMixin()
+```
+
+`aws.list[obj].withRootSquashConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the root_squash_configuration field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withRootSquashConfiguration](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `root_squash_configuration` field.
+
+
 ### fn withSecurityGroupIds
 
 ```ts
@@ -579,6 +622,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `log_configuration` sub block.
+
+
+## obj root_squash_configuration
+
+
+
+### fn root_squash_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.fsx_lustre_file_system.root_squash_configuration.new` constructs a new object with attributes and blocks configured for the `root_squash_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `no_squash_nids` (`list`): Set the `no_squash_nids` field on the resulting object. When `null`, the `no_squash_nids` field will be omitted from the resulting object.
+  - `root_squash` (`string`): Set the `root_squash` field on the resulting object. When `null`, the `root_squash` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `root_squash_configuration` sub block.
 
 
 ## obj timeouts

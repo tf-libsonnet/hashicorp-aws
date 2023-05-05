@@ -20,23 +20,27 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       output_config: output_config,
     }),
     output_config:: {
-      '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.async_inference_config.output_config.new` constructs a new object with attributes and blocks configured for the `output_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `s3_output_path` (`string`): Set the `s3_output_path` field on the resulting object.\n  - `notification_config` (`list[obj]`): Set the `notification_config` field on the resulting object. When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new](#fn-async_inference_configasync_inference_confignotification_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `output_config` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.async_inference_config.output_config.new` constructs a new object with attributes and blocks configured for the `output_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `s3_failure_path` (`string`): Set the `s3_failure_path` field on the resulting object. When `null`, the `s3_failure_path` field will be omitted from the resulting object.\n  - `s3_output_path` (`string`): Set the `s3_output_path` field on the resulting object.\n  - `notification_config` (`list[obj]`): Set the `notification_config` field on the resulting object. When `null`, the `notification_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new](#fn-async_inference_configasync_inference_confignotification_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `output_config` sub block.\n', args=[]),
       new(
         s3_output_path,
         kms_key_id=null,
-        notification_config=null
+        notification_config=null,
+        s3_failure_path=null
       ):: std.prune(a={
         kms_key_id: kms_key_id,
         notification_config: notification_config,
+        s3_failure_path: s3_failure_path,
         s3_output_path: s3_output_path,
       }),
       notification_config:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new` constructs a new object with attributes and blocks configured for the `notification_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `error_topic` (`string`): Set the `error_topic` field on the resulting object. When `null`, the `error_topic` field will be omitted from the resulting object.\n  - `success_topic` (`string`): Set the `success_topic` field on the resulting object. When `null`, the `success_topic` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `notification_config` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.async_inference_config.output_config.notification_config.new` constructs a new object with attributes and blocks configured for the `notification_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `error_topic` (`string`): Set the `error_topic` field on the resulting object. When `null`, the `error_topic` field will be omitted from the resulting object.\n  - `include_inference_response_in` (`list`): Set the `include_inference_response_in` field on the resulting object. When `null`, the `include_inference_response_in` field will be omitted from the resulting object.\n  - `success_topic` (`string`): Set the `success_topic` field on the resulting object. When `null`, the `success_topic` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `notification_config` sub block.\n', args=[]),
         new(
           error_topic=null,
+          include_inference_response_in=null,
           success_topic=null
         ):: std.prune(a={
           error_topic: error_topic,
+          include_inference_response_in: include_inference_response_in,
           success_topic: success_topic,
         }),
       },

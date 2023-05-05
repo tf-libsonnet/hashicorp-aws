@@ -50,6 +50,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-default_user_settingsnew)
   * [`obj default_user_settings.canvas_app_settings`](#obj-default_user_settingscanvas_app_settings)
     * [`fn new()`](#fn-default_user_settingscanvas_app_settingsnew)
+    * [`obj default_user_settings.canvas_app_settings.model_register_settings`](#obj-default_user_settingscanvas_app_settingsmodel_register_settings)
+      * [`fn new()`](#fn-default_user_settingscanvas_app_settingsmodel_register_settingsnew)
     * [`obj default_user_settings.canvas_app_settings.time_series_forecasting_settings`](#obj-default_user_settingscanvas_app_settingstime_series_forecasting_settings)
       * [`fn new()`](#fn-default_user_settingscanvas_app_settingstime_series_forecasting_settingsnew)
   * [`obj default_user_settings.jupyter_server_app_settings`](#obj-default_user_settingsjupyter_server_app_settings)
@@ -70,6 +72,8 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-default_user_settingsr_session_app_settingscustom_imagenew)
     * [`obj default_user_settings.r_session_app_settings.default_resource_spec`](#obj-default_user_settingsr_session_app_settingsdefault_resource_spec)
       * [`fn new()`](#fn-default_user_settingsr_session_app_settingsdefault_resource_specnew)
+  * [`obj default_user_settings.r_studio_server_pro_app_settings`](#obj-default_user_settingsr_studio_server_pro_app_settings)
+    * [`fn new()`](#fn-default_user_settingsr_studio_server_pro_app_settingsnew)
   * [`obj default_user_settings.sharing_settings`](#obj-default_user_settingssharing_settings)
     * [`fn new()`](#fn-default_user_settingssharing_settingsnew)
   * [`obj default_user_settings.tensor_board_app_settings`](#obj-default_user_settingstensor_board_app_settings)
@@ -78,6 +82,10 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-default_user_settingstensor_board_app_settingsdefault_resource_specnew)
 * [`obj domain_settings`](#obj-domain_settings)
   * [`fn new()`](#fn-domain_settingsnew)
+  * [`obj domain_settings.r_studio_server_pro_domain_settings`](#obj-domain_settingsr_studio_server_pro_domain_settings)
+    * [`fn new()`](#fn-domain_settingsr_studio_server_pro_domain_settingsnew)
+    * [`obj domain_settings.r_studio_server_pro_domain_settings.default_resource_spec`](#obj-domain_settingsr_studio_server_pro_domain_settingsdefault_resource_spec)
+      * [`fn new()`](#fn-domain_settingsr_studio_server_pro_domain_settingsdefault_resource_specnew)
 * [`obj retention_policy`](#obj-retention_policy)
   * [`fn new()`](#fn-retention_policynew)
 
@@ -655,6 +663,7 @@ Terraform sub block.
   - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.new](#fn-default_user_settingsjupyter_server_app_settingsnew) constructor.
   - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.new](#fn-default_user_settingskernel_gateway_app_settingsnew) constructor.
   - `r_session_app_settings` (`list[obj]`): Set the `r_session_app_settings` field on the resulting object. When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.new](#fn-default_user_settingsr_session_app_settingsnew) constructor.
+  - `r_studio_server_pro_app_settings` (`list[obj]`): Set the `r_studio_server_pro_app_settings` field on the resulting object. When `null`, the `r_studio_server_pro_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_studio_server_pro_app_settings.new](#fn-default_user_settingsr_studio_server_pro_app_settingsnew) constructor.
   - `sharing_settings` (`list[obj]`): Set the `sharing_settings` field on the resulting object. When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.sharing_settings.new](#fn-default_user_settingssharing_settingsnew) constructor.
   - `tensor_board_app_settings` (`list[obj]`): Set the `tensor_board_app_settings` field on the resulting object. When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.new](#fn-default_user_settingstensor_board_app_settingsnew) constructor.
 
@@ -679,10 +688,35 @@ Terraform sub block.
 
 
 **Args**:
+  - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.model_register_settings.new](#fn-default_user_settingsdefault_user_settingsmodel_register_settingsnew) constructor.
   - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-default_user_settingsdefault_user_settingstime_series_forecasting_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `canvas_app_settings` sub block.
+
+
+## obj default_user_settings.canvas_app_settings.model_register_settings
+
+
+
+### fn default_user_settings.canvas_app_settings.model_register_settings.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_domain.default_user_settings.canvas_app_settings.model_register_settings.new` constructs a new object with attributes and blocks configured for the `model_register_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `cross_account_model_register_role_arn` (`string`): Set the `cross_account_model_register_role_arn` field on the resulting object. When `null`, the `cross_account_model_register_role_arn` field will be omitted from the resulting object.
+  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `model_register_settings` sub block.
 
 
 ## obj default_user_settings.canvas_app_settings.time_series_forecasting_settings
@@ -934,6 +968,30 @@ Terraform sub block.
   - An attribute object that represents the `default_resource_spec` sub block.
 
 
+## obj default_user_settings.r_studio_server_pro_app_settings
+
+
+
+### fn default_user_settings.r_studio_server_pro_app_settings.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_domain.default_user_settings.r_studio_server_pro_app_settings.new` constructs a new object with attributes and blocks configured for the `r_studio_server_pro_app_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `access_status` (`string`): Set the `access_status` field on the resulting object. When `null`, the `access_status` field will be omitted from the resulting object.
+  - `user_group` (`string`): Set the `user_group` field on the resulting object. When `null`, the `user_group` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `r_studio_server_pro_app_settings` sub block.
+
+
 ## obj default_user_settings.sharing_settings
 
 
@@ -1027,9 +1085,62 @@ Terraform sub block.
 **Args**:
   - `execution_role_identity_config` (`string`): Set the `execution_role_identity_config` field on the resulting object. When `null`, the `execution_role_identity_config` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `r_studio_server_pro_domain_settings` (`list[obj]`): Set the `r_studio_server_pro_domain_settings` field on the resulting object. When `null`, the `r_studio_server_pro_domain_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.domain_settings.r_studio_server_pro_domain_settings.new](#fn-domain_settingsr_studio_server_pro_domain_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `domain_settings` sub block.
+
+
+## obj domain_settings.r_studio_server_pro_domain_settings
+
+
+
+### fn domain_settings.r_studio_server_pro_domain_settings.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_domain.domain_settings.r_studio_server_pro_domain_settings.new` constructs a new object with attributes and blocks configured for the `r_studio_server_pro_domain_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `domain_execution_role_arn` (`string`): Set the `domain_execution_role_arn` field on the resulting object.
+  - `r_studio_connect_url` (`string`): Set the `r_studio_connect_url` field on the resulting object. When `null`, the `r_studio_connect_url` field will be omitted from the resulting object.
+  - `r_studio_package_manager_url` (`string`): Set the `r_studio_package_manager_url` field on the resulting object. When `null`, the `r_studio_package_manager_url` field will be omitted from the resulting object.
+  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.domain_settings.r_studio_server_pro_domain_settings.default_resource_spec.new](#fn-domain_settingsdomain_settingsdefault_resource_specnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `r_studio_server_pro_domain_settings` sub block.
+
+
+## obj domain_settings.r_studio_server_pro_domain_settings.default_resource_spec
+
+
+
+### fn domain_settings.r_studio_server_pro_domain_settings.default_resource_spec.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_domain.domain_settings.r_studio_server_pro_domain_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`
+Terraform sub block.
+
+
+
+**Args**:
+  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `default_resource_spec` sub block.
 
 
 ## obj retention_policy
