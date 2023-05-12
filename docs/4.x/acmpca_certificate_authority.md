@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCertificateAuthorityConfiguration()`](#fn-withcertificateauthorityconfiguration)
 * [`fn withCertificateAuthorityConfigurationMixin()`](#fn-withcertificateauthorityconfigurationmixin)
 * [`fn withEnabled()`](#fn-withenabled)
+* [`fn withKeyStorageSecurityStandard()`](#fn-withkeystoragesecuritystandard)
 * [`fn withPermanentDeletionTimeInDays()`](#fn-withpermanentdeletiontimeindays)
 * [`fn withRevocationConfiguration()`](#fn-withrevocationconfiguration)
 * [`fn withRevocationConfigurationMixin()`](#fn-withrevocationconfigurationmixin)
@@ -70,6 +71,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `key_storage_security_standard` (`string`): Set the `key_storage_security_standard` field on the resulting resource block. When `null`, the `key_storage_security_standard` field will be omitted from the resulting object.
   - `permanent_deletion_time_in_days` (`number`): Set the `permanent_deletion_time_in_days` field on the resulting resource block. When `null`, the `permanent_deletion_time_in_days` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -102,6 +104,7 @@ injecting into a complete block.
 
 **Args**:
   - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `key_storage_security_standard` (`string`): Set the `key_storage_security_standard` field on the resulting object. When `null`, the `key_storage_security_standard` field will be omitted from the resulting object.
   - `permanent_deletion_time_in_days` (`number`): Set the `permanent_deletion_time_in_days` field on the resulting object. When `null`, the `permanent_deletion_time_in_days` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -166,6 +169,22 @@ Terraform resource block to set or update the enabled field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `enabled` field.
+
+
+### fn withKeyStorageSecurityStandard
+
+```ts
+withKeyStorageSecurityStandard()
+```
+
+`aws.string.withKeyStorageSecurityStandard` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the key_storage_security_standard field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `key_storage_security_standard` field.
 
 
 ### fn withPermanentDeletionTimeInDays
