@@ -33,6 +33,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withPermissionsMixin()`](#fn-withpermissionsmixin)
 * [`fn withPhysicalTableMap()`](#fn-withphysicaltablemap)
 * [`fn withPhysicalTableMapMixin()`](#fn-withphysicaltablemapmixin)
+* [`fn withRefreshProperties()`](#fn-withrefreshproperties)
+* [`fn withRefreshPropertiesMixin()`](#fn-withrefreshpropertiesmixin)
 * [`fn withRowLevelPermissionDataSet()`](#fn-withrowlevelpermissiondataset)
 * [`fn withRowLevelPermissionDataSetMixin()`](#fn-withrowlevelpermissiondatasetmixin)
 * [`fn withRowLevelPermissionTagConfiguration()`](#fn-withrowlevelpermissiontagconfiguration)
@@ -99,6 +101,14 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-physical_table_maps3_sourceinput_columnsnew)
     * [`obj physical_table_map.s3_source.upload_settings`](#obj-physical_table_maps3_sourceupload_settings)
       * [`fn new()`](#fn-physical_table_maps3_sourceupload_settingsnew)
+* [`obj refresh_properties`](#obj-refresh_properties)
+  * [`fn new()`](#fn-refresh_propertiesnew)
+  * [`obj refresh_properties.refresh_configuration`](#obj-refresh_propertiesrefresh_configuration)
+    * [`fn new()`](#fn-refresh_propertiesrefresh_configurationnew)
+    * [`obj refresh_properties.refresh_configuration.incremental_refresh`](#obj-refresh_propertiesrefresh_configurationincremental_refresh)
+      * [`fn new()`](#fn-refresh_propertiesrefresh_configurationincremental_refreshnew)
+      * [`obj refresh_properties.refresh_configuration.incremental_refresh.lookback_window`](#obj-refresh_propertiesrefresh_configurationincremental_refreshlookback_window)
+        * [`fn new()`](#fn-refresh_propertiesrefresh_configurationincremental_refreshlookback_windownew)
 * [`obj row_level_permission_data_set`](#obj-row_level_permission_data_set)
   * [`fn new()`](#fn-row_level_permission_data_setnew)
 * [`obj row_level_permission_tag_configuration`](#obj-row_level_permission_tag_configuration)
@@ -148,6 +158,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `logical_table_map` (`list[obj]`): Set the `logical_table_map` field on the resulting resource block. When `null`, the `logical_table_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.logical_table_map.new](#fn-logical_table_mapnew) constructor.
   - `permissions` (`list[obj]`): Set the `permissions` field on the resulting resource block. When `null`, the `permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.permissions.new](#fn-permissionsnew) constructor.
   - `physical_table_map` (`list[obj]`): Set the `physical_table_map` field on the resulting resource block. When `null`, the `physical_table_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.physical_table_map.new](#fn-physical_table_mapnew) constructor.
+  - `refresh_properties` (`list[obj]`): Set the `refresh_properties` field on the resulting resource block. When `null`, the `refresh_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.refresh_properties.new](#fn-refresh_propertiesnew) constructor.
   - `row_level_permission_data_set` (`list[obj]`): Set the `row_level_permission_data_set` field on the resulting resource block. When `null`, the `row_level_permission_data_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.row_level_permission_data_set.new](#fn-row_level_permission_data_setnew) constructor.
   - `row_level_permission_tag_configuration` (`list[obj]`): Set the `row_level_permission_tag_configuration` field on the resulting resource block. When `null`, the `row_level_permission_tag_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.row_level_permission_tag_configuration.new](#fn-row_level_permission_tag_configurationnew) constructor.
 
@@ -186,6 +197,7 @@ injecting into a complete block.
   - `logical_table_map` (`list[obj]`): Set the `logical_table_map` field on the resulting object. When `null`, the `logical_table_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.logical_table_map.new](#fn-logical_table_mapnew) constructor.
   - `permissions` (`list[obj]`): Set the `permissions` field on the resulting object. When `null`, the `permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.permissions.new](#fn-permissionsnew) constructor.
   - `physical_table_map` (`list[obj]`): Set the `physical_table_map` field on the resulting object. When `null`, the `physical_table_map` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.physical_table_map.new](#fn-physical_table_mapnew) constructor.
+  - `refresh_properties` (`list[obj]`): Set the `refresh_properties` field on the resulting object. When `null`, the `refresh_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.refresh_properties.new](#fn-refresh_propertiesnew) constructor.
   - `row_level_permission_data_set` (`list[obj]`): Set the `row_level_permission_data_set` field on the resulting object. When `null`, the `row_level_permission_data_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.row_level_permission_data_set.new](#fn-row_level_permission_data_setnew) constructor.
   - `row_level_permission_tag_configuration` (`list[obj]`): Set the `row_level_permission_tag_configuration` field on the resulting object. When `null`, the `row_level_permission_tag_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.row_level_permission_tag_configuration.new](#fn-row_level_permission_tag_configurationnew) constructor.
 
@@ -514,6 +526,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `physical_table_map` field.
+
+
+### fn withRefreshProperties
+
+```ts
+withRefreshProperties()
+```
+
+`aws.list[obj].withRefreshProperties` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the refresh_properties field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withRefreshPropertiesMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `refresh_properties` field.
+
+
+### fn withRefreshPropertiesMixin
+
+```ts
+withRefreshPropertiesMixin()
+```
+
+`aws.list[obj].withRefreshPropertiesMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the refresh_properties field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withRefreshProperties](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `refresh_properties` field.
 
 
 ### fn withRowLevelPermissionDataSet
@@ -1360,6 +1409,100 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `upload_settings` sub block.
+
+
+## obj refresh_properties
+
+
+
+### fn refresh_properties.new
+
+```ts
+new()
+```
+
+
+`aws.quicksight_data_set.refresh_properties.new` constructs a new object with attributes and blocks configured for the `refresh_properties`
+Terraform sub block.
+
+
+
+**Args**:
+  - `refresh_configuration` (`list[obj]`): Set the `refresh_configuration` field on the resulting object. When `null`, the `refresh_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.refresh_properties.refresh_configuration.new](#fn-refresh_propertiesrefresh_configurationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `refresh_properties` sub block.
+
+
+## obj refresh_properties.refresh_configuration
+
+
+
+### fn refresh_properties.refresh_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.quicksight_data_set.refresh_properties.refresh_configuration.new` constructs a new object with attributes and blocks configured for the `refresh_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `incremental_refresh` (`list[obj]`): Set the `incremental_refresh` field on the resulting object. When `null`, the `incremental_refresh` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.refresh_properties.refresh_configuration.incremental_refresh.new](#fn-refresh_propertiesrefresh_propertiesincremental_refreshnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `refresh_configuration` sub block.
+
+
+## obj refresh_properties.refresh_configuration.incremental_refresh
+
+
+
+### fn refresh_properties.refresh_configuration.incremental_refresh.new
+
+```ts
+new()
+```
+
+
+`aws.quicksight_data_set.refresh_properties.refresh_configuration.incremental_refresh.new` constructs a new object with attributes and blocks configured for the `incremental_refresh`
+Terraform sub block.
+
+
+
+**Args**:
+  - `lookback_window` (`list[obj]`): Set the `lookback_window` field on the resulting object. When `null`, the `lookback_window` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.quicksight_data_set.refresh_properties.refresh_configuration.incremental_refresh.lookback_window.new](#fn-refresh_propertiesrefresh_propertiesrefresh_configurationlookback_windownew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `incremental_refresh` sub block.
+
+
+## obj refresh_properties.refresh_configuration.incremental_refresh.lookback_window
+
+
+
+### fn refresh_properties.refresh_configuration.incremental_refresh.lookback_window.new
+
+```ts
+new()
+```
+
+
+`aws.quicksight_data_set.refresh_properties.refresh_configuration.incremental_refresh.lookback_window.new` constructs a new object with attributes and blocks configured for the `lookback_window`
+Terraform sub block.
+
+
+
+**Args**:
+  - `column_name` (`string`): Set the `column_name` field on the resulting object.
+  - `size` (`number`): Set the `size` field on the resulting object.
+  - `size_unit` (`string`): Set the `size_unit` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `lookback_window` sub block.
 
 
 ## obj row_level_permission_data_set

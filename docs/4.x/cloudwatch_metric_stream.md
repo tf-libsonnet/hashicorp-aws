@@ -415,6 +415,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `metric_names` (`list`): Set the `metric_names` field on the resulting object. When `null`, the `metric_names` field will be omitted from the resulting object.
   - `namespace` (`string`): Set the `namespace` field on the resulting object.
 
 **Returns**:
@@ -438,6 +439,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `metric_names` (`list`): Set the `metric_names` field on the resulting object. When `null`, the `metric_names` field will be omitted from the resulting object.
   - `namespace` (`string`): Set the `namespace` field on the resulting object.
 
 **Returns**:
