@@ -3,22 +3,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='cloudwatch_metric_stream', url='', help='`cloudwatch_metric_stream` represents the `aws_cloudwatch_metric_stream` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   exclude_filter:: {
-    '#new':: d.fn(help='\n`aws.cloudwatch_metric_stream.exclude_filter.new` constructs a new object with attributes and blocks configured for the `exclude_filter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `metric_names` (`list`): Set the `metric_names` field on the resulting object. When `null`, the `metric_names` field will be omitted from the resulting object.\n  - `namespace` (`string`): Set the `namespace` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `exclude_filter` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudwatch_metric_stream.exclude_filter.new` constructs a new object with attributes and blocks configured for the `exclude_filter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `namespace` (`string`): Set the `namespace` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `exclude_filter` sub block.\n', args=[]),
     new(
-      namespace,
-      metric_names=null
+      namespace
     ):: std.prune(a={
-      metric_names: metric_names,
       namespace: namespace,
     }),
   },
   include_filter:: {
-    '#new':: d.fn(help='\n`aws.cloudwatch_metric_stream.include_filter.new` constructs a new object with attributes and blocks configured for the `include_filter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `metric_names` (`list`): Set the `metric_names` field on the resulting object. When `null`, the `metric_names` field will be omitted from the resulting object.\n  - `namespace` (`string`): Set the `namespace` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `include_filter` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.cloudwatch_metric_stream.include_filter.new` constructs a new object with attributes and blocks configured for the `include_filter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `namespace` (`string`): Set the `namespace` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `include_filter` sub block.\n', args=[]),
     new(
-      namespace,
-      metric_names=null
+      namespace
     ):: std.prune(a={
-      metric_names: metric_names,
       namespace: namespace,
     }),
   },
