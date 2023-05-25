@@ -22,7 +22,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDestinationPrefixListId()`](#fn-withdestinationprefixlistid)
 * [`fn withEgressOnlyGatewayId()`](#fn-withegressonlygatewayid)
 * [`fn withGatewayId()`](#fn-withgatewayid)
-* [`fn withInstanceId()`](#fn-withinstanceid)
 * [`fn withLocalGatewayId()`](#fn-withlocalgatewayid)
 * [`fn withNatGatewayId()`](#fn-withnatgatewayid)
 * [`fn withNetworkInterfaceId()`](#fn-withnetworkinterfaceid)
@@ -71,7 +70,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `destination_prefix_list_id` (`string`): Set the `destination_prefix_list_id` field on the resulting resource block. When `null`, the `destination_prefix_list_id` field will be omitted from the resulting object.
   - `egress_only_gateway_id` (`string`): Set the `egress_only_gateway_id` field on the resulting resource block. When `null`, the `egress_only_gateway_id` field will be omitted from the resulting object.
   - `gateway_id` (`string`): Set the `gateway_id` field on the resulting resource block. When `null`, the `gateway_id` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting resource block. When `null`, the `instance_id` field will be omitted from the resulting object.
   - `local_gateway_id` (`string`): Set the `local_gateway_id` field on the resulting resource block. When `null`, the `local_gateway_id` field will be omitted from the resulting object.
   - `nat_gateway_id` (`string`): Set the `nat_gateway_id` field on the resulting resource block. When `null`, the `nat_gateway_id` field will be omitted from the resulting object.
   - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting resource block. When `null`, the `network_interface_id` field will be omitted from the resulting object.
@@ -110,7 +108,6 @@ injecting into a complete block.
   - `destination_prefix_list_id` (`string`): Set the `destination_prefix_list_id` field on the resulting object. When `null`, the `destination_prefix_list_id` field will be omitted from the resulting object.
   - `egress_only_gateway_id` (`string`): Set the `egress_only_gateway_id` field on the resulting object. When `null`, the `egress_only_gateway_id` field will be omitted from the resulting object.
   - `gateway_id` (`string`): Set the `gateway_id` field on the resulting object. When `null`, the `gateway_id` field will be omitted from the resulting object.
-  - `instance_id` (`string`): Set the `instance_id` field on the resulting object. When `null`, the `instance_id` field will be omitted from the resulting object.
   - `local_gateway_id` (`string`): Set the `local_gateway_id` field on the resulting object. When `null`, the `local_gateway_id` field will be omitted from the resulting object.
   - `nat_gateway_id` (`string`): Set the `nat_gateway_id` field on the resulting object. When `null`, the `nat_gateway_id` field will be omitted from the resulting object.
   - `network_interface_id` (`string`): Set the `network_interface_id` field on the resulting object. When `null`, the `network_interface_id` field will be omitted from the resulting object.
@@ -234,22 +231,6 @@ Terraform resource block to set or update the gateway_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `gateway_id` field.
-
-
-### fn withInstanceId
-
-```ts
-withInstanceId()
-```
-
-`aws.string.withInstanceId` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the instance_id field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `instance_id` field.
 
 
 ### fn withLocalGatewayId

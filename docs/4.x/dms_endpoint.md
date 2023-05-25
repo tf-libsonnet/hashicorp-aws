@@ -962,7 +962,6 @@ Terraform sub block.
   - `encryption_mode` (`string`): Set the `encryption_mode` field on the resulting object. When `null`, the `encryption_mode` field will be omitted from the resulting object.
   - `external_table_definition` (`string`): Set the `external_table_definition` field on the resulting object. When `null`, the `external_table_definition` field will be omitted from the resulting object.
   - `ignore_header_rows` (`number`): Set the `ignore_header_rows` field on the resulting object. When `null`, the `ignore_header_rows` field will be omitted from the resulting object.
-  - `ignore_headers_row` (`number`): This setting has no effect, is deprecated, and will be removed in a future version When `null`, the `ignore_headers_row` field will be omitted from the resulting object.
   - `include_op_for_full_load` (`bool`): Set the `include_op_for_full_load` field on the resulting object. When `null`, the `include_op_for_full_load` field will be omitted from the resulting object.
   - `max_file_size` (`number`): Set the `max_file_size` field on the resulting object. When `null`, the `max_file_size` field will be omitted from the resulting object.
   - `parquet_timestamp_in_millisecond` (`bool`): Set the `parquet_timestamp_in_millisecond` field on the resulting object. When `null`, the `parquet_timestamp_in_millisecond` field will be omitted from the resulting object.

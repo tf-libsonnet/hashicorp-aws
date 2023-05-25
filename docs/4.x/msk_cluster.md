@@ -555,7 +555,6 @@ Terraform sub block.
 **Args**:
   - `az_distribution` (`string`): Set the `az_distribution` field on the resulting object. When `null`, the `az_distribution` field will be omitted from the resulting object.
   - `client_subnets` (`list`): Set the `client_subnets` field on the resulting object.
-  - `ebs_volume_size` (`number`): Set the `ebs_volume_size` field on the resulting object. When `null`, the `ebs_volume_size` field will be omitted from the resulting object.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
   - `security_groups` (`list`): Set the `security_groups` field on the resulting object.
   - `connectivity_info` (`list[obj]`): Set the `connectivity_info` field on the resulting object. When `null`, the `connectivity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.new](#fn-broker_node_group_infoconnectivity_infonew) constructor.

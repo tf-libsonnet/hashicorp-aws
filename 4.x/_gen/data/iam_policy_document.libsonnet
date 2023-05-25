@@ -2,13 +2,11 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
 local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='iam_policy_document', url='', help='`iam_policy_document` represents the `aws_iam_policy_document` Terraform data source.\n\n\n\nThis package contains functions and utilities for setting up the data source using Jsonnet code.\n'),
-  '#new':: d.fn(help="\n`aws.data.iam_policy_document.new` injects a new `data_aws_iam_policy_document` Terraform `data source`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.data.iam_policy_document.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.data.iam_policy_document` using the reference:\n\n    $._ref.data_aws_iam_policy_document.some_id.get('id')\n\nThis is the same as directly entering `\"${ data_aws_iam_policy_document.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block.\n  - `override_json` (`string`): Set the `override_json` field on the resulting data source block. When `null`, the `override_json` field will be omitted from the resulting object.\n  - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting data source block. When `null`, the `override_policy_documents` field will be omitted from the resulting object.\n  - `policy_id` (`string`): Set the `policy_id` field on the resulting data source block. When `null`, the `policy_id` field will be omitted from the resulting object.\n  - `source_json` (`string`): Set the `source_json` field on the resulting data source block. When `null`, the `source_json` field will be omitted from the resulting object.\n  - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting data source block. When `null`, the `source_policy_documents` field will be omitted from the resulting object.\n  - `version` (`string`): Set the `version` field on the resulting data source block. When `null`, the `version` field will be omitted from the resulting object.\n  - `statement` (`list[obj]`): Set the `statement` field on the resulting data source block. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new data source into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.data.iam_policy_document.new` injects a new `data_aws_iam_policy_document` Terraform `data source`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.data.iam_policy_document.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.data.iam_policy_document` using the reference:\n\n    $._ref.data_aws_iam_policy_document.some_id.get('id')\n\nThis is the same as directly entering `\"${ data_aws_iam_policy_document.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block.\n  - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting data source block. When `null`, the `override_policy_documents` field will be omitted from the resulting object.\n  - `policy_id` (`string`): Set the `policy_id` field on the resulting data source block. When `null`, the `policy_id` field will be omitted from the resulting object.\n  - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting data source block. When `null`, the `source_policy_documents` field will be omitted from the resulting object.\n  - `version` (`string`): Set the `version` field on the resulting data source block. When `null`, the `version` field will be omitted from the resulting object.\n  - `statement` (`list[obj]`): Set the `statement` field on the resulting data source block. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new data source into the root Terraform configuration.\n", args=[]),
   new(
     dataSrcLabel,
-    override_json=null,
     override_policy_documents=null,
     policy_id=null,
-    source_json=null,
     source_policy_documents=null,
     statement=null,
     version=null,
@@ -17,30 +15,24 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     type='aws_iam_policy_document',
     label=dataSrcLabel,
     attrs=self.newAttrs(
-      override_json=override_json,
       override_policy_documents=override_policy_documents,
       policy_id=policy_id,
-      source_json=source_json,
       source_policy_documents=source_policy_documents,
       statement=statement,
       version=version
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.data.iam_policy_document.newAttrs` constructs a new object with attributes and blocks configured for the `iam_policy_document`\nTerraform data source.\n\nUnlike [aws.data.iam_policy_document.new](#fn-new), this function will not inject the `data source`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `override_json` (`string`): Set the `override_json` field on the resulting object. When `null`, the `override_json` field will be omitted from the resulting object.\n  - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting object. When `null`, the `override_policy_documents` field will be omitted from the resulting object.\n  - `policy_id` (`string`): Set the `policy_id` field on the resulting object. When `null`, the `policy_id` field will be omitted from the resulting object.\n  - `source_json` (`string`): Set the `source_json` field on the resulting object. When `null`, the `source_json` field will be omitted from the resulting object.\n  - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting object. When `null`, the `source_policy_documents` field will be omitted from the resulting object.\n  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.\n  - `statement` (`list[obj]`): Set the `statement` field on the resulting object. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `iam_policy_document` data source into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.data.iam_policy_document.newAttrs` constructs a new object with attributes and blocks configured for the `iam_policy_document`\nTerraform data source.\n\nUnlike [aws.data.iam_policy_document.new](#fn-new), this function will not inject the `data source`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting object. When `null`, the `override_policy_documents` field will be omitted from the resulting object.\n  - `policy_id` (`string`): Set the `policy_id` field on the resulting object. When `null`, the `policy_id` field will be omitted from the resulting object.\n  - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting object. When `null`, the `source_policy_documents` field will be omitted from the resulting object.\n  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.\n  - `statement` (`list[obj]`): Set the `statement` field on the resulting object. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `iam_policy_document` data source into the root Terraform configuration.\n', args=[]),
   newAttrs(
-    override_json=null,
     override_policy_documents=null,
     policy_id=null,
-    source_json=null,
     source_policy_documents=null,
     statement=null,
     version=null
   ):: std.prune(a={
-    override_json: override_json,
     override_policy_documents: override_policy_documents,
     policy_id: policy_id,
-    source_json: source_json,
     source_policy_documents: source_policy_documents,
     statement: statement,
     version: version,
@@ -101,16 +93,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
   },
-  '#withOverrideJson':: d.fn(help='`aws.string.withOverrideJson` constructs a mixin object that can be merged into the `string`\nTerraform data source block to set or update the override_json field.\n\n\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `override_json` field.\n', args=[]),
-  withOverrideJson(dataSrcLabel, value): {
-    data+: {
-      aws_iam_policy_document+: {
-        [dataSrcLabel]+: {
-          override_json: value,
-        },
-      },
-    },
-  },
   '#withOverridePolicyDocuments':: d.fn(help='`aws.list.withOverridePolicyDocuments` constructs a mixin object that can be merged into the `list`\nTerraform data source block to set or update the override_policy_documents field.\n\n\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block to update.\n  - `value` (`list`): The value to set for the `override_policy_documents` field.\n', args=[]),
   withOverridePolicyDocuments(dataSrcLabel, value): {
     data+: {
@@ -127,16 +109,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_iam_policy_document+: {
         [dataSrcLabel]+: {
           policy_id: value,
-        },
-      },
-    },
-  },
-  '#withSourceJson':: d.fn(help='`aws.string.withSourceJson` constructs a mixin object that can be merged into the `string`\nTerraform data source block to set or update the source_json field.\n\n\n\n**Args**:\n  - `dataSrcLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `source_json` field.\n', args=[]),
-  withSourceJson(dataSrcLabel, value): {
-    data+: {
-      aws_iam_policy_document+: {
-        [dataSrcLabel]+: {
-          source_json: value,
         },
       },
     },

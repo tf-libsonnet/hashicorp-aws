@@ -26,28 +26,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
     video_settings:: {
-      '#new':: d.fn(help='\n`aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new` constructs a new object with attributes and blocks configured for the `video_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `constant_bitrate` (`number`): Set the `constant_bitrate` field on the resulting object. When `null`, the `constant_bitrate` field will be omitted from the resulting object.\n  - `statemux_settings` (`list[obj]`): Set the `statemux_settings` field on the resulting object. When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatemux_settingsnew) constructor.\n  - `statmux_settings` (`list[obj]`): Set the `statmux_settings` field on the resulting object. When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatmux_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `video_settings` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.medialive_multiplex_program.multiplex_program_settings.video_settings.new` constructs a new object with attributes and blocks configured for the `video_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `constant_bitrate` (`number`): Set the `constant_bitrate` field on the resulting object. When `null`, the `constant_bitrate` field will be omitted from the resulting object.\n  - `statmux_settings` (`list[obj]`): Set the `statmux_settings` field on the resulting object. When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatmux_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `video_settings` sub block.\n', args=[]),
       new(
         constant_bitrate=null,
-        statemux_settings=null,
         statmux_settings=null
       ):: std.prune(a={
         constant_bitrate: constant_bitrate,
-        statemux_settings: statemux_settings,
         statmux_settings: statmux_settings,
       }),
-      statemux_settings:: {
-        '#new':: d.fn(help='\n`aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new` constructs a new object with attributes and blocks configured for the `statemux_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `maximum_bitrate` (`number`): Set the `maximum_bitrate` field on the resulting object. When `null`, the `maximum_bitrate` field will be omitted from the resulting object.\n  - `minimum_bitrate` (`number`): Set the `minimum_bitrate` field on the resulting object. When `null`, the `minimum_bitrate` field will be omitted from the resulting object.\n  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `statemux_settings` sub block.\n', args=[]),
-        new(
-          maximum_bitrate=null,
-          minimum_bitrate=null,
-          priority=null
-        ):: std.prune(a={
-          maximum_bitrate: maximum_bitrate,
-          minimum_bitrate: minimum_bitrate,
-          priority: priority,
-        }),
-      },
       statmux_settings:: {
         '#new':: d.fn(help='\n`aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new` constructs a new object with attributes and blocks configured for the `statmux_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `maximum_bitrate` (`number`): Set the `maximum_bitrate` field on the resulting object. When `null`, the `maximum_bitrate` field will be omitted from the resulting object.\n  - `minimum_bitrate` (`number`): Set the `minimum_bitrate` field on the resulting object. When `null`, the `minimum_bitrate` field will be omitted from the resulting object.\n  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `statmux_settings` sub block.\n', args=[]),
         new(

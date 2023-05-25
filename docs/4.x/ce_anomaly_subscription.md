@@ -23,7 +23,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSubscriberMixin()`](#fn-withsubscribermixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
-* [`fn withThreshold()`](#fn-withthreshold)
 * [`fn withThresholdExpression()`](#fn-withthresholdexpression)
 * [`fn withThresholdExpressionMixin()`](#fn-withthresholdexpressionmixin)
 * [`obj subscriber`](#obj-subscriber)
@@ -96,7 +95,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `threshold` (`number`): Set the `threshold` field on the resulting resource block. When `null`, the `threshold` field will be omitted from the resulting object.
   - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting resource block. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.subscriber.new](#fn-subscribernew) constructor.
   - `threshold_expression` (`list[obj]`): Set the `threshold_expression` field on the resulting resource block. When `null`, the `threshold_expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.threshold_expression.new](#fn-threshold_expressionnew) constructor.
 
@@ -128,7 +126,6 @@ injecting into a complete block.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `threshold` (`number`): Set the `threshold` field on the resulting object. When `null`, the `threshold` field will be omitted from the resulting object.
   - `subscriber` (`list[obj]`): Set the `subscriber` field on the resulting object. When `null`, the `subscriber` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.subscriber.new](#fn-subscribernew) constructor.
   - `threshold_expression` (`list[obj]`): Set the `threshold_expression` field on the resulting object. When `null`, the `threshold_expression` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ce_anomaly_subscription.threshold_expression.new](#fn-threshold_expressionnew) constructor.
 
@@ -267,22 +264,6 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
-
-
-### fn withThreshold
-
-```ts
-withThreshold()
-```
-
-`aws.number.withThreshold` constructs a mixin object that can be merged into the `number`
-Terraform resource block to set or update the threshold field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`number`): The value to set for the `threshold` field.
 
 
 ### fn withThresholdExpression

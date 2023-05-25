@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAutoEnable()`](#fn-withautoenable)
+* [`fn withAutoEnableOrganizationMembers()`](#fn-withautoenableorganizationmembers)
 * [`fn withDatasources()`](#fn-withdatasources)
 * [`fn withDatasourcesMixin()`](#fn-withdatasourcesmixin)
 * [`fn withDetectorId()`](#fn-withdetectorid)
@@ -63,7 +64,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting resource block.
+  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting resource block. When `null`, the `auto_enable` field will be omitted from the resulting object.
+  - `auto_enable_organization_members` (`string`): Set the `auto_enable_organization_members` field on the resulting resource block. When `null`, the `auto_enable_organization_members` field will be omitted from the resulting object.
   - `detector_id` (`string`): Set the `detector_id` field on the resulting resource block.
   - `datasources` (`list[obj]`): Set the `datasources` field on the resulting resource block. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_organization_configuration.datasources.new](#fn-datasourcesnew) constructor.
 
@@ -89,7 +91,8 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting object.
+  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting object. When `null`, the `auto_enable` field will be omitted from the resulting object.
+  - `auto_enable_organization_members` (`string`): Set the `auto_enable_organization_members` field on the resulting object. When `null`, the `auto_enable_organization_members` field will be omitted from the resulting object.
   - `detector_id` (`string`): Set the `detector_id` field on the resulting object.
   - `datasources` (`list[obj]`): Set the `datasources` field on the resulting object. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_organization_configuration.datasources.new](#fn-datasourcesnew) constructor.
 
@@ -111,6 +114,22 @@ Terraform resource block to set or update the auto_enable field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `auto_enable` field.
+
+
+### fn withAutoEnableOrganizationMembers
+
+```ts
+withAutoEnableOrganizationMembers()
+```
+
+`aws.string.withAutoEnableOrganizationMembers` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the auto_enable_organization_members field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `auto_enable_organization_members` field.
 
 
 ### fn withDatasources

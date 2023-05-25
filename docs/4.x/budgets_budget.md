@@ -21,7 +21,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withBudgetType()`](#fn-withbudgettype)
 * [`fn withCostFilter()`](#fn-withcostfilter)
 * [`fn withCostFilterMixin()`](#fn-withcostfiltermixin)
-* [`fn withCostFilters()`](#fn-withcostfilters)
 * [`fn withCostTypes()`](#fn-withcosttypes)
 * [`fn withCostTypesMixin()`](#fn-withcosttypesmixin)
 * [`fn withLimitAmount()`](#fn-withlimitamount)
@@ -79,7 +78,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
   - `budget_type` (`string`): Set the `budget_type` field on the resulting resource block.
-  - `cost_filters` (`obj`): Set the `cost_filters` field on the resulting resource block. When `null`, the `cost_filters` field will be omitted from the resulting object.
   - `limit_amount` (`string`): Set the `limit_amount` field on the resulting resource block. When `null`, the `limit_amount` field will be omitted from the resulting object.
   - `limit_unit` (`string`): Set the `limit_unit` field on the resulting resource block. When `null`, the `limit_unit` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
@@ -117,7 +115,6 @@ injecting into a complete block.
 **Args**:
   - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
   - `budget_type` (`string`): Set the `budget_type` field on the resulting object.
-  - `cost_filters` (`obj`): Set the `cost_filters` field on the resulting object. When `null`, the `cost_filters` field will be omitted from the resulting object.
   - `limit_amount` (`string`): Set the `limit_amount` field on the resulting object. When `null`, the `limit_amount` field will be omitted from the resulting object.
   - `limit_unit` (`string`): Set the `limit_unit` field on the resulting object. When `null`, the `limit_unit` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
@@ -239,22 +236,6 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `cost_filter` field.
-
-
-### fn withCostFilters
-
-```ts
-withCostFilters()
-```
-
-`aws.obj.withCostFilters` constructs a mixin object that can be merged into the `obj`
-Terraform resource block to set or update the cost_filters field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`obj`): The value to set for the `cost_filters` field.
 
 
 ### fn withCostTypes

@@ -82,40 +82,22 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     resource_arn: resource_arn,
   }),
   redacted_fields:: {
-    all_query_arguments:: {
-      '#new':: d.fn(help='\n`aws.wafv2_web_acl_logging_configuration.redacted_fields.all_query_arguments.new` constructs a new object with attributes and blocks configured for the `all_query_arguments`\nTerraform sub block.\n\n\n\n**Returns**:\n  - An attribute object that represents the `all_query_arguments` sub block.\n', args=[]),
-      new(
-
-      ):: std.prune(a={}),
-    },
-    body:: {
-      '#new':: d.fn(help='\n`aws.wafv2_web_acl_logging_configuration.redacted_fields.body.new` constructs a new object with attributes and blocks configured for the `body`\nTerraform sub block.\n\n\n\n**Returns**:\n  - An attribute object that represents the `body` sub block.\n', args=[]),
-      new(
-
-      ):: std.prune(a={}),
-    },
     method:: {
       '#new':: d.fn(help='\n`aws.wafv2_web_acl_logging_configuration.redacted_fields.method.new` constructs a new object with attributes and blocks configured for the `method`\nTerraform sub block.\n\n\n\n**Returns**:\n  - An attribute object that represents the `method` sub block.\n', args=[]),
       new(
 
       ):: std.prune(a={}),
     },
-    '#new':: d.fn(help='\n`aws.wafv2_web_acl_logging_configuration.redacted_fields.new` constructs a new object with attributes and blocks configured for the `redacted_fields`\nTerraform sub block.\n\n\n\n**Args**:\n  - `all_query_arguments` (`list[obj]`): Set the `all_query_arguments` field on the resulting object. When `null`, the `all_query_arguments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.all_query_arguments.new](#fn-redacted_fieldsall_query_argumentsnew) constructor.\n  - `body` (`list[obj]`): Set the `body` field on the resulting object. When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.body.new](#fn-redacted_fieldsbodynew) constructor.\n  - `method` (`list[obj]`): Set the `method` field on the resulting object. When `null`, the `method` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.method.new](#fn-redacted_fieldsmethodnew) constructor.\n  - `query_string` (`list[obj]`): Set the `query_string` field on the resulting object. When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.query_string.new](#fn-redacted_fieldsquery_stringnew) constructor.\n  - `single_header` (`list[obj]`): Set the `single_header` field on the resulting object. When `null`, the `single_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_header.new](#fn-redacted_fieldssingle_headernew) constructor.\n  - `single_query_argument` (`list[obj]`): Set the `single_query_argument` field on the resulting object. When `null`, the `single_query_argument` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_query_argument.new](#fn-redacted_fieldssingle_query_argumentnew) constructor.\n  - `uri_path` (`list[obj]`): Set the `uri_path` field on the resulting object. When `null`, the `uri_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.uri_path.new](#fn-redacted_fieldsuri_pathnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `redacted_fields` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.wafv2_web_acl_logging_configuration.redacted_fields.new` constructs a new object with attributes and blocks configured for the `redacted_fields`\nTerraform sub block.\n\n\n\n**Args**:\n  - `method` (`list[obj]`): Set the `method` field on the resulting object. When `null`, the `method` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.method.new](#fn-redacted_fieldsmethodnew) constructor.\n  - `query_string` (`list[obj]`): Set the `query_string` field on the resulting object. When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.query_string.new](#fn-redacted_fieldsquery_stringnew) constructor.\n  - `single_header` (`list[obj]`): Set the `single_header` field on the resulting object. When `null`, the `single_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_header.new](#fn-redacted_fieldssingle_headernew) constructor.\n  - `uri_path` (`list[obj]`): Set the `uri_path` field on the resulting object. When `null`, the `uri_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.uri_path.new](#fn-redacted_fieldsuri_pathnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `redacted_fields` sub block.\n', args=[]),
     new(
-      all_query_arguments=null,
-      body=null,
       method=null,
       query_string=null,
       single_header=null,
-      single_query_argument=null,
       uri_path=null
     ):: std.prune(a={
-      all_query_arguments: all_query_arguments,
-      body: body,
       method: method,
       query_string: query_string,
       single_header: single_header,
-      single_query_argument: single_query_argument,
       uri_path: uri_path,
     }),
     query_string:: {
@@ -126,14 +108,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     },
     single_header:: {
       '#new':: d.fn(help='\n`aws.wafv2_web_acl_logging_configuration.redacted_fields.single_header.new` constructs a new object with attributes and blocks configured for the `single_header`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `single_header` sub block.\n', args=[]),
-      new(
-        name
-      ):: std.prune(a={
-        name: name,
-      }),
-    },
-    single_query_argument:: {
-      '#new':: d.fn(help='\n`aws.wafv2_web_acl_logging_configuration.redacted_fields.single_query_argument.new` constructs a new object with attributes and blocks configured for the `single_query_argument`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `single_query_argument` sub block.\n', args=[]),
       new(
         name
       ):: std.prune(a={

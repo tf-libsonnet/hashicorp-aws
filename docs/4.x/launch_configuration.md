@@ -37,8 +37,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSpotPrice()`](#fn-withspotprice)
 * [`fn withUserData()`](#fn-withuserdata)
 * [`fn withUserDataBase64()`](#fn-withuserdatabase64)
-* [`fn withVpcClassicLinkId()`](#fn-withvpcclassiclinkid)
-* [`fn withVpcClassicLinkSecurityGroups()`](#fn-withvpcclassiclinksecuritygroups)
 * [`obj ebs_block_device`](#obj-ebs_block_device)
   * [`fn new()`](#fn-ebs_block_devicenew)
 * [`obj ephemeral_block_device`](#obj-ephemeral_block_device)
@@ -91,8 +89,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `spot_price` (`string`): Set the `spot_price` field on the resulting resource block. When `null`, the `spot_price` field will be omitted from the resulting object.
   - `user_data` (`string`): Set the `user_data` field on the resulting resource block. When `null`, the `user_data` field will be omitted from the resulting object.
   - `user_data_base64` (`string`): Set the `user_data_base64` field on the resulting resource block. When `null`, the `user_data_base64` field will be omitted from the resulting object.
-  - `vpc_classic_link_id` (`string`): Set the `vpc_classic_link_id` field on the resulting resource block. When `null`, the `vpc_classic_link_id` field will be omitted from the resulting object.
-  - `vpc_classic_link_security_groups` (`list`): Set the `vpc_classic_link_security_groups` field on the resulting resource block. When `null`, the `vpc_classic_link_security_groups` field will be omitted from the resulting object.
   - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting resource block. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
   - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting resource block. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
   - `metadata_options` (`list[obj]`): Set the `metadata_options` field on the resulting resource block. When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.metadata_options.new](#fn-metadata_optionsnew) constructor.
@@ -134,8 +130,6 @@ injecting into a complete block.
   - `spot_price` (`string`): Set the `spot_price` field on the resulting object. When `null`, the `spot_price` field will be omitted from the resulting object.
   - `user_data` (`string`): Set the `user_data` field on the resulting object. When `null`, the `user_data` field will be omitted from the resulting object.
   - `user_data_base64` (`string`): Set the `user_data_base64` field on the resulting object. When `null`, the `user_data_base64` field will be omitted from the resulting object.
-  - `vpc_classic_link_id` (`string`): Set the `vpc_classic_link_id` field on the resulting object. When `null`, the `vpc_classic_link_id` field will be omitted from the resulting object.
-  - `vpc_classic_link_security_groups` (`list`): Set the `vpc_classic_link_security_groups` field on the resulting object. When `null`, the `vpc_classic_link_security_groups` field will be omitted from the resulting object.
   - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting object. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
   - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting object. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
   - `metadata_options` (`list[obj]`): Set the `metadata_options` field on the resulting object. When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.launch_configuration.metadata_options.new](#fn-metadata_optionsnew) constructor.
@@ -515,38 +509,6 @@ Terraform resource block to set or update the user_data_base64 field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `user_data_base64` field.
-
-
-### fn withVpcClassicLinkId
-
-```ts
-withVpcClassicLinkId()
-```
-
-`aws.string.withVpcClassicLinkId` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the vpc_classic_link_id field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `vpc_classic_link_id` field.
-
-
-### fn withVpcClassicLinkSecurityGroups
-
-```ts
-withVpcClassicLinkSecurityGroups()
-```
-
-`aws.list.withVpcClassicLinkSecurityGroups` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the vpc_classic_link_security_groups field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `vpc_classic_link_security_groups` field.
 
 
 ## obj ebs_block_device

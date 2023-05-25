@@ -19,20 +19,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
     },
-    '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.new` constructs a new object with attributes and blocks configured for the `broker_node_group_info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `az_distribution` (`string`): Set the `az_distribution` field on the resulting object. When `null`, the `az_distribution` field will be omitted from the resulting object.\n  - `client_subnets` (`list`): Set the `client_subnets` field on the resulting object.\n  - `ebs_volume_size` (`number`): Set the `ebs_volume_size` field on the resulting object. When `null`, the `ebs_volume_size` field will be omitted from the resulting object.\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.\n  - `security_groups` (`list`): Set the `security_groups` field on the resulting object.\n  - `connectivity_info` (`list[obj]`): Set the `connectivity_info` field on the resulting object. When `null`, the `connectivity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.new](#fn-broker_node_group_infoconnectivity_infonew) constructor.\n  - `storage_info` (`list[obj]`): Set the `storage_info` field on the resulting object. When `null`, the `storage_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.new](#fn-broker_node_group_infostorage_infonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `broker_node_group_info` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.new` constructs a new object with attributes and blocks configured for the `broker_node_group_info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `az_distribution` (`string`): Set the `az_distribution` field on the resulting object. When `null`, the `az_distribution` field will be omitted from the resulting object.\n  - `client_subnets` (`list`): Set the `client_subnets` field on the resulting object.\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object.\n  - `security_groups` (`list`): Set the `security_groups` field on the resulting object.\n  - `connectivity_info` (`list[obj]`): Set the `connectivity_info` field on the resulting object. When `null`, the `connectivity_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.new](#fn-broker_node_group_infoconnectivity_infonew) constructor.\n  - `storage_info` (`list[obj]`): Set the `storage_info` field on the resulting object. When `null`, the `storage_info` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.storage_info.new](#fn-broker_node_group_infostorage_infonew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `broker_node_group_info` sub block.\n', args=[]),
     new(
       client_subnets,
       instance_type,
       security_groups,
       az_distribution=null,
       connectivity_info=null,
-      ebs_volume_size=null,
       storage_info=null
     ):: std.prune(a={
       az_distribution: az_distribution,
       client_subnets: client_subnets,
       connectivity_info: connectivity_info,
-      ebs_volume_size: ebs_volume_size,
       instance_type: instance_type,
       security_groups: security_groups,
       storage_info: storage_info,

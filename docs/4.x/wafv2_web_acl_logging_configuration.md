@@ -33,18 +33,12 @@ This package contains functions and utilities for setting up the resource using 
         * [`fn new()`](#fn-logging_filterfilterconditionlabel_name_conditionnew)
 * [`obj redacted_fields`](#obj-redacted_fields)
   * [`fn new()`](#fn-redacted_fieldsnew)
-  * [`obj redacted_fields.all_query_arguments`](#obj-redacted_fieldsall_query_arguments)
-    * [`fn new()`](#fn-redacted_fieldsall_query_argumentsnew)
-  * [`obj redacted_fields.body`](#obj-redacted_fieldsbody)
-    * [`fn new()`](#fn-redacted_fieldsbodynew)
   * [`obj redacted_fields.method`](#obj-redacted_fieldsmethod)
     * [`fn new()`](#fn-redacted_fieldsmethodnew)
   * [`obj redacted_fields.query_string`](#obj-redacted_fieldsquery_string)
     * [`fn new()`](#fn-redacted_fieldsquery_stringnew)
   * [`obj redacted_fields.single_header`](#obj-redacted_fieldssingle_header)
     * [`fn new()`](#fn-redacted_fieldssingle_headernew)
-  * [`obj redacted_fields.single_query_argument`](#obj-redacted_fieldssingle_query_argument)
-    * [`fn new()`](#fn-redacted_fieldssingle_query_argumentnew)
   * [`obj redacted_fields.uri_path`](#obj-redacted_fieldsuri_path)
     * [`fn new()`](#fn-redacted_fieldsuri_pathnew)
 
@@ -355,56 +349,13 @@ Terraform sub block.
 
 
 **Args**:
-  - `all_query_arguments` (`list[obj]`): Set the `all_query_arguments` field on the resulting object. When `null`, the `all_query_arguments` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.all_query_arguments.new](#fn-redacted_fieldsall_query_argumentsnew) constructor.
-  - `body` (`list[obj]`): Set the `body` field on the resulting object. When `null`, the `body` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.body.new](#fn-redacted_fieldsbodynew) constructor.
   - `method` (`list[obj]`): Set the `method` field on the resulting object. When `null`, the `method` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.method.new](#fn-redacted_fieldsmethodnew) constructor.
   - `query_string` (`list[obj]`): Set the `query_string` field on the resulting object. When `null`, the `query_string` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.query_string.new](#fn-redacted_fieldsquery_stringnew) constructor.
   - `single_header` (`list[obj]`): Set the `single_header` field on the resulting object. When `null`, the `single_header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_header.new](#fn-redacted_fieldssingle_headernew) constructor.
-  - `single_query_argument` (`list[obj]`): Set the `single_query_argument` field on the resulting object. When `null`, the `single_query_argument` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.single_query_argument.new](#fn-redacted_fieldssingle_query_argumentnew) constructor.
   - `uri_path` (`list[obj]`): Set the `uri_path` field on the resulting object. When `null`, the `uri_path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.wafv2_web_acl_logging_configuration.redacted_fields.uri_path.new](#fn-redacted_fieldsuri_pathnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `redacted_fields` sub block.
-
-
-## obj redacted_fields.all_query_arguments
-
-
-
-### fn redacted_fields.all_query_arguments.new
-
-```ts
-new()
-```
-
-
-`aws.wafv2_web_acl_logging_configuration.redacted_fields.all_query_arguments.new` constructs a new object with attributes and blocks configured for the `all_query_arguments`
-Terraform sub block.
-
-
-
-**Returns**:
-  - An attribute object that represents the `all_query_arguments` sub block.
-
-
-## obj redacted_fields.body
-
-
-
-### fn redacted_fields.body.new
-
-```ts
-new()
-```
-
-
-`aws.wafv2_web_acl_logging_configuration.redacted_fields.body.new` constructs a new object with attributes and blocks configured for the `body`
-Terraform sub block.
-
-
-
-**Returns**:
-  - An attribute object that represents the `body` sub block.
 
 
 ## obj redacted_fields.method
@@ -468,29 +419,6 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `single_header` sub block.
-
-
-## obj redacted_fields.single_query_argument
-
-
-
-### fn redacted_fields.single_query_argument.new
-
-```ts
-new()
-```
-
-
-`aws.wafv2_web_acl_logging_configuration.redacted_fields.single_query_argument.new` constructs a new object with attributes and blocks configured for the `single_query_argument`
-Terraform sub block.
-
-
-
-**Args**:
-  - `name` (`string`): Set the `name` field on the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `single_query_argument` sub block.
 
 
 ## obj redacted_fields.uri_path

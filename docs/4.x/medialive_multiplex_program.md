@@ -25,8 +25,6 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-multiplex_program_settingsservice_descriptornew)
   * [`obj multiplex_program_settings.video_settings`](#obj-multiplex_program_settingsvideo_settings)
     * [`fn new()`](#fn-multiplex_program_settingsvideo_settingsnew)
-    * [`obj multiplex_program_settings.video_settings.statemux_settings`](#obj-multiplex_program_settingsvideo_settingsstatemux_settings)
-      * [`fn new()`](#fn-multiplex_program_settingsvideo_settingsstatemux_settingsnew)
     * [`obj multiplex_program_settings.video_settings.statmux_settings`](#obj-multiplex_program_settingsvideo_settingsstatmux_settings)
       * [`fn new()`](#fn-multiplex_program_settingsvideo_settingsstatmux_settingsnew)
 
@@ -230,36 +228,10 @@ Terraform sub block.
 
 **Args**:
   - `constant_bitrate` (`number`): Set the `constant_bitrate` field on the resulting object. When `null`, the `constant_bitrate` field will be omitted from the resulting object.
-  - `statemux_settings` (`list[obj]`): Set the `statemux_settings` field on the resulting object. When `null`, the `statemux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatemux_settingsnew) constructor.
   - `statmux_settings` (`list[obj]`): Set the `statmux_settings` field on the resulting object. When `null`, the `statmux_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statmux_settings.new](#fn-multiplex_program_settingsmultiplex_program_settingsstatmux_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `video_settings` sub block.
-
-
-## obj multiplex_program_settings.video_settings.statemux_settings
-
-
-
-### fn multiplex_program_settings.video_settings.statemux_settings.new
-
-```ts
-new()
-```
-
-
-`aws.medialive_multiplex_program.multiplex_program_settings.video_settings.statemux_settings.new` constructs a new object with attributes and blocks configured for the `statemux_settings`
-Terraform sub block.
-
-
-
-**Args**:
-  - `maximum_bitrate` (`number`): Set the `maximum_bitrate` field on the resulting object. When `null`, the `maximum_bitrate` field will be omitted from the resulting object.
-  - `minimum_bitrate` (`number`): Set the `minimum_bitrate` field on the resulting object. When `null`, the `minimum_bitrate` field will be omitted from the resulting object.
-  - `priority` (`number`): Set the `priority` field on the resulting object. When `null`, the `priority` field will be omitted from the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `statemux_settings` sub block.
 
 
 ## obj multiplex_program_settings.video_settings.statmux_settings

@@ -38,7 +38,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withPreferredOutpostArn()`](#fn-withpreferredoutpostarn)
 * [`fn withReplicationGroupId()`](#fn-withreplicationgroupid)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
-* [`fn withSecurityGroupNames()`](#fn-withsecuritygroupnames)
 * [`fn withSnapshotArns()`](#fn-withsnapshotarns)
 * [`fn withSnapshotName()`](#fn-withsnapshotname)
 * [`fn withSnapshotRetentionLimit()`](#fn-withsnapshotretentionlimit)
@@ -99,7 +98,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `preferred_outpost_arn` (`string`): Set the `preferred_outpost_arn` field on the resulting resource block. When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.
   - `replication_group_id` (`string`): Set the `replication_group_id` field on the resulting resource block. When `null`, the `replication_group_id` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `security_group_names` (`list`): Set the `security_group_names` field on the resulting resource block. When `null`, the `security_group_names` field will be omitted from the resulting object.
   - `snapshot_arns` (`list`): Set the `snapshot_arns` field on the resulting resource block. When `null`, the `snapshot_arns` field will be omitted from the resulting object.
   - `snapshot_name` (`string`): Set the `snapshot_name` field on the resulting resource block. When `null`, the `snapshot_name` field will be omitted from the resulting object.
   - `snapshot_retention_limit` (`number`): Set the `snapshot_retention_limit` field on the resulting resource block. When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.
@@ -152,7 +150,6 @@ injecting into a complete block.
   - `preferred_outpost_arn` (`string`): Set the `preferred_outpost_arn` field on the resulting object. When `null`, the `preferred_outpost_arn` field will be omitted from the resulting object.
   - `replication_group_id` (`string`): Set the `replication_group_id` field on the resulting object. When `null`, the `replication_group_id` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
-  - `security_group_names` (`list`): Set the `security_group_names` field on the resulting object. When `null`, the `security_group_names` field will be omitted from the resulting object.
   - `snapshot_arns` (`list`): Set the `snapshot_arns` field on the resulting object. When `null`, the `snapshot_arns` field will be omitted from the resulting object.
   - `snapshot_name` (`string`): Set the `snapshot_name` field on the resulting object. When `null`, the `snapshot_name` field will be omitted from the resulting object.
   - `snapshot_retention_limit` (`number`): Set the `snapshot_retention_limit` field on the resulting object. When `null`, the `snapshot_retention_limit` field will be omitted from the resulting object.
@@ -537,22 +534,6 @@ Terraform resource block to set or update the security_group_ids field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `security_group_ids` field.
-
-
-### fn withSecurityGroupNames
-
-```ts
-withSecurityGroupNames()
-```
-
-`aws.list.withSecurityGroupNames` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the security_group_names field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `security_group_names` field.
 
 
 ### fn withSnapshotArns

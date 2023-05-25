@@ -53,7 +53,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMonitoringInterval()`](#fn-withmonitoringinterval)
 * [`fn withMonitoringRoleArn()`](#fn-withmonitoringrolearn)
 * [`fn withMultiAz()`](#fn-withmultiaz)
-* [`fn withName()`](#fn-withname)
 * [`fn withNcharCharacterSetName()`](#fn-withncharcharactersetname)
 * [`fn withNetworkType()`](#fn-withnetworktype)
 * [`fn withOptionGroupName()`](#fn-withoptiongroupname)
@@ -70,7 +69,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRestoreToPointInTimeMixin()`](#fn-withrestoretopointintimemixin)
 * [`fn withS3Import()`](#fn-withs3import)
 * [`fn withS3ImportMixin()`](#fn-withs3importmixin)
-* [`fn withSecurityGroupNames()`](#fn-withsecuritygroupnames)
 * [`fn withSkipFinalSnapshot()`](#fn-withskipfinalsnapshot)
 * [`fn withSnapshotIdentifier()`](#fn-withsnapshotidentifier)
 * [`fn withStorageEncrypted()`](#fn-withstorageencrypted)
@@ -157,7 +155,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `monitoring_interval` (`number`): Set the `monitoring_interval` field on the resulting resource block. When `null`, the `monitoring_interval` field will be omitted from the resulting object.
   - `monitoring_role_arn` (`string`): Set the `monitoring_role_arn` field on the resulting resource block. When `null`, the `monitoring_role_arn` field will be omitted from the resulting object.
   - `multi_az` (`bool`): Set the `multi_az` field on the resulting resource block. When `null`, the `multi_az` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
   - `nchar_character_set_name` (`string`): Set the `nchar_character_set_name` field on the resulting resource block. When `null`, the `nchar_character_set_name` field will be omitted from the resulting object.
   - `network_type` (`string`): Set the `network_type` field on the resulting resource block. When `null`, the `network_type` field will be omitted from the resulting object.
   - `option_group_name` (`string`): Set the `option_group_name` field on the resulting resource block. When `null`, the `option_group_name` field will be omitted from the resulting object.
@@ -170,7 +167,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting resource block. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `replica_mode` (`string`): Set the `replica_mode` field on the resulting resource block. When `null`, the `replica_mode` field will be omitted from the resulting object.
   - `replicate_source_db` (`string`): Set the `replicate_source_db` field on the resulting resource block. When `null`, the `replicate_source_db` field will be omitted from the resulting object.
-  - `security_group_names` (`list`): Set the `security_group_names` field on the resulting resource block. When `null`, the `security_group_names` field will be omitted from the resulting object.
   - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting resource block. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
   - `snapshot_identifier` (`string`): Set the `snapshot_identifier` field on the resulting resource block. When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
   - `storage_encrypted` (`bool`): Set the `storage_encrypted` field on the resulting resource block. When `null`, the `storage_encrypted` field will be omitted from the resulting object.
@@ -244,7 +240,6 @@ injecting into a complete block.
   - `monitoring_interval` (`number`): Set the `monitoring_interval` field on the resulting object. When `null`, the `monitoring_interval` field will be omitted from the resulting object.
   - `monitoring_role_arn` (`string`): Set the `monitoring_role_arn` field on the resulting object. When `null`, the `monitoring_role_arn` field will be omitted from the resulting object.
   - `multi_az` (`bool`): Set the `multi_az` field on the resulting object. When `null`, the `multi_az` field will be omitted from the resulting object.
-  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `nchar_character_set_name` (`string`): Set the `nchar_character_set_name` field on the resulting object. When `null`, the `nchar_character_set_name` field will be omitted from the resulting object.
   - `network_type` (`string`): Set the `network_type` field on the resulting object. When `null`, the `network_type` field will be omitted from the resulting object.
   - `option_group_name` (`string`): Set the `option_group_name` field on the resulting object. When `null`, the `option_group_name` field will be omitted from the resulting object.
@@ -257,7 +252,6 @@ injecting into a complete block.
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting object. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `replica_mode` (`string`): Set the `replica_mode` field on the resulting object. When `null`, the `replica_mode` field will be omitted from the resulting object.
   - `replicate_source_db` (`string`): Set the `replicate_source_db` field on the resulting object. When `null`, the `replicate_source_db` field will be omitted from the resulting object.
-  - `security_group_names` (`list`): Set the `security_group_names` field on the resulting object. When `null`, the `security_group_names` field will be omitted from the resulting object.
   - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting object. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
   - `snapshot_identifier` (`string`): Set the `snapshot_identifier` field on the resulting object. When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
   - `storage_encrypted` (`bool`): Set the `storage_encrypted` field on the resulting object. When `null`, the `storage_encrypted` field will be omitted from the resulting object.
@@ -890,22 +884,6 @@ Terraform resource block to set or update the multi_az field.
   - `value` (`bool`): The value to set for the `multi_az` field.
 
 
-### fn withName
-
-```ts
-withName()
-```
-
-`aws.string.withName` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the name field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `name` field.
-
-
 ### fn withNcharCharacterSetName
 
 ```ts
@@ -1170,22 +1148,6 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `s3_import` field.
-
-
-### fn withSecurityGroupNames
-
-```ts
-withSecurityGroupNames()
-```
-
-`aws.list.withSecurityGroupNames` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the security_group_names field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `security_group_names` field.
 
 
 ### fn withSkipFinalSnapshot

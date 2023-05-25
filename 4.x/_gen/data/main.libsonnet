@@ -456,7 +456,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   ssoadmin_permission_set: (import 'ssoadmin_permission_set.libsonnet'),
   storagegateway_local_disk: (import 'storagegateway_local_disk.libsonnet'),
   subnet: (import 'subnet.libsonnet'),
-  subnet_ids: (import 'subnet_ids.libsonnet'),
   subnets: (import 'subnets.libsonnet'),
   transfer_server: (import 'transfer_server.libsonnet'),
   vpc: (import 'vpc.libsonnet'),

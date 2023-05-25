@@ -24,15 +24,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRecoveryWindowInDays()`](#fn-withrecoverywindowindays)
 * [`fn withReplica()`](#fn-withreplica)
 * [`fn withReplicaMixin()`](#fn-withreplicamixin)
-* [`fn withRotationLambdaArn()`](#fn-withrotationlambdaarn)
-* [`fn withRotationRules()`](#fn-withrotationrules)
-* [`fn withRotationRulesMixin()`](#fn-withrotationrulesmixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`obj replica`](#obj-replica)
   * [`fn new()`](#fn-replicanew)
-* [`obj rotation_rules`](#obj-rotation_rules)
-  * [`fn new()`](#fn-rotation_rulesnew)
 
 ## Fields
 
@@ -70,11 +65,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
   - `recovery_window_in_days` (`number`): Set the `recovery_window_in_days` field on the resulting resource block. When `null`, the `recovery_window_in_days` field will be omitted from the resulting object.
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting resource block. When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `replica` (`list[obj]`): Set the `replica` field on the resulting resource block. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.replica.new](#fn-replicanew) constructor.
-  - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting resource block. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,11 +98,9 @@ injecting into a complete block.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
   - `recovery_window_in_days` (`number`): Set the `recovery_window_in_days` field on the resulting object. When `null`, the `recovery_window_in_days` field will be omitted from the resulting object.
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting object. When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `replica` (`list[obj]`): Set the `replica` field on the resulting object. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.replica.new](#fn-replicanew) constructor.
-  - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting object. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `secretsmanager_secret` resource into the root Terraform configuration.
@@ -264,59 +255,6 @@ function.
   - `value` (`list[obj]`): The value to set for the `replica` field.
 
 
-### fn withRotationLambdaArn
-
-```ts
-withRotationLambdaArn()
-```
-
-`aws.string.withRotationLambdaArn` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the rotation_lambda_arn field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `rotation_lambda_arn` field.
-
-
-### fn withRotationRules
-
-```ts
-withRotationRules()
-```
-
-`aws.list[obj].withRotationRules` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the rotation_rules field.
-
-This function will replace the array with the passed in `value`. If you wish to instead append the
-passed in value to the existing array, use the [aws.list[obj].withRotationRulesMixin](TODO) function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `rotation_rules` field.
-
-
-### fn withRotationRulesMixin
-
-```ts
-withRotationRulesMixin()
-```
-
-`aws.list[obj].withRotationRulesMixin` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the rotation_rules field.
-
-This function will append the passed in array or object to the existing array. If you wish
-to instead replace the array with the passed in `value`, use the [aws.list[obj].withRotationRules](TODO)
-function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `rotation_rules` field.
-
-
 ### fn withTags
 
 ```ts
@@ -371,28 +309,3 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `replica` sub block.
-
-
-## obj rotation_rules
-
-
-
-### fn rotation_rules.new
-
-```ts
-new()
-```
-
-
-`aws.secretsmanager_secret.rotation_rules.new` constructs a new object with attributes and blocks configured for the `rotation_rules`
-Terraform sub block.
-
-
-
-**Args**:
-  - `automatically_after_days` (`number`): Set the `automatically_after_days` field on the resulting object. When `null`, the `automatically_after_days` field will be omitted from the resulting object.
-  - `duration` (`string`): Set the `duration` field on the resulting object. When `null`, the `duration` field will be omitted from the resulting object.
-  - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object. When `null`, the `schedule_expression` field will be omitted from the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `rotation_rules` sub block.

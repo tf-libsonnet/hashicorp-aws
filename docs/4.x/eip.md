@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAddress()`](#fn-withaddress)
 * [`fn withAssociateWithPrivateIp()`](#fn-withassociatewithprivateip)
 * [`fn withCustomerOwnedIpv4Pool()`](#fn-withcustomerownedipv4pool)
+* [`fn withDomain()`](#fn-withdomain)
 * [`fn withInstance()`](#fn-withinstance)
 * [`fn withNetworkBorderGroup()`](#fn-withnetworkbordergroup)
 * [`fn withNetworkInterface()`](#fn-withnetworkinterface)
@@ -62,6 +63,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `address` (`string`): Set the `address` field on the resulting resource block. When `null`, the `address` field will be omitted from the resulting object.
   - `associate_with_private_ip` (`string`): Set the `associate_with_private_ip` field on the resulting resource block. When `null`, the `associate_with_private_ip` field will be omitted from the resulting object.
   - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting resource block. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
+  - `domain` (`string`): Set the `domain` field on the resulting resource block. When `null`, the `domain` field will be omitted from the resulting object.
   - `instance` (`string`): Set the `instance` field on the resulting resource block. When `null`, the `instance` field will be omitted from the resulting object.
   - `network_border_group` (`string`): Set the `network_border_group` field on the resulting resource block. When `null`, the `network_border_group` field will be omitted from the resulting object.
   - `network_interface` (`string`): Set the `network_interface` field on the resulting resource block. When `null`, the `network_interface` field will be omitted from the resulting object.
@@ -96,6 +98,7 @@ injecting into a complete block.
   - `address` (`string`): Set the `address` field on the resulting object. When `null`, the `address` field will be omitted from the resulting object.
   - `associate_with_private_ip` (`string`): Set the `associate_with_private_ip` field on the resulting object. When `null`, the `associate_with_private_ip` field will be omitted from the resulting object.
   - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting object. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
+  - `domain` (`string`): Set the `domain` field on the resulting object. When `null`, the `domain` field will be omitted from the resulting object.
   - `instance` (`string`): Set the `instance` field on the resulting object. When `null`, the `instance` field will be omitted from the resulting object.
   - `network_border_group` (`string`): Set the `network_border_group` field on the resulting object. When `null`, the `network_border_group` field will be omitted from the resulting object.
   - `network_interface` (`string`): Set the `network_interface` field on the resulting object. When `null`, the `network_interface` field will be omitted from the resulting object.
@@ -155,6 +158,22 @@ Terraform resource block to set or update the customer_owned_ipv4_pool field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `customer_owned_ipv4_pool` field.
+
+
+### fn withDomain
+
+```ts
+withDomain()
+```
+
+`aws.string.withDomain` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the domain field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `domain` field.
 
 
 ### fn withInstance

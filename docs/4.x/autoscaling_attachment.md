@@ -15,7 +15,6 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
-* [`fn withAlbTargetGroupArn()`](#fn-withalbtargetgrouparn)
 * [`fn withAutoscalingGroupName()`](#fn-withautoscalinggroupname)
 * [`fn withElb()`](#fn-withelb)
 * [`fn withLbTargetGroupArn()`](#fn-withlbtargetgrouparn)
@@ -49,7 +48,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `alb_target_group_arn` (`string`): Set the `alb_target_group_arn` field on the resulting resource block. When `null`, the `alb_target_group_arn` field will be omitted from the resulting object.
   - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting resource block.
   - `elb` (`string`): Set the `elb` field on the resulting resource block. When `null`, the `elb` field will be omitted from the resulting object.
   - `lb_target_group_arn` (`string`): Set the `lb_target_group_arn` field on the resulting resource block. When `null`, the `lb_target_group_arn` field will be omitted from the resulting object.
@@ -76,29 +74,12 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `alb_target_group_arn` (`string`): Set the `alb_target_group_arn` field on the resulting object. When `null`, the `alb_target_group_arn` field will be omitted from the resulting object.
   - `autoscaling_group_name` (`string`): Set the `autoscaling_group_name` field on the resulting object.
   - `elb` (`string`): Set the `elb` field on the resulting object. When `null`, the `elb` field will be omitted from the resulting object.
   - `lb_target_group_arn` (`string`): Set the `lb_target_group_arn` field on the resulting object. When `null`, the `lb_target_group_arn` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `autoscaling_attachment` resource into the root Terraform configuration.
-
-
-### fn withAlbTargetGroupArn
-
-```ts
-withAlbTargetGroupArn()
-```
-
-`aws.string.withAlbTargetGroupArn` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the alb_target_group_arn field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `alb_target_group_arn` field.
 
 
 ### fn withAutoscalingGroupName

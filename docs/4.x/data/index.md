@@ -461,7 +461,6 @@ permalink: /data/
 * [ssoadmin_permission_set](ssoadmin_permission_set.md)
 * [storagegateway_local_disk](storagegateway_local_disk.md)
 * [subnet](subnet.md)
-* [subnet_ids](subnet_ids.md)
 * [subnets](subnets.md)
 * [transfer_server](transfer_server.md)
 * [vpc](vpc.md)

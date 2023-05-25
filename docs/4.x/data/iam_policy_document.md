@@ -15,10 +15,8 @@ This package contains functions and utilities for setting up the data source usi
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
-* [`fn withOverrideJson()`](#fn-withoverridejson)
 * [`fn withOverridePolicyDocuments()`](#fn-withoverridepolicydocuments)
 * [`fn withPolicyId()`](#fn-withpolicyid)
-* [`fn withSourceJson()`](#fn-withsourcejson)
 * [`fn withSourcePolicyDocuments()`](#fn-withsourcepolicydocuments)
 * [`fn withStatement()`](#fn-withstatement)
 * [`fn withStatementMixin()`](#fn-withstatementmixin)
@@ -61,10 +59,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `override_json` (`string`): Set the `override_json` field on the resulting data source block. When `null`, the `override_json` field will be omitted from the resulting object.
   - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting data source block. When `null`, the `override_policy_documents` field will be omitted from the resulting object.
   - `policy_id` (`string`): Set the `policy_id` field on the resulting data source block. When `null`, the `policy_id` field will be omitted from the resulting object.
-  - `source_json` (`string`): Set the `source_json` field on the resulting data source block. When `null`, the `source_json` field will be omitted from the resulting object.
   - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting data source block. When `null`, the `source_policy_documents` field will be omitted from the resulting object.
   - `version` (`string`): Set the `version` field on the resulting data source block. When `null`, the `version` field will be omitted from the resulting object.
   - `statement` (`list[obj]`): Set the `statement` field on the resulting data source block. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.
@@ -91,32 +87,14 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `override_json` (`string`): Set the `override_json` field on the resulting object. When `null`, the `override_json` field will be omitted from the resulting object.
   - `override_policy_documents` (`list`): Set the `override_policy_documents` field on the resulting object. When `null`, the `override_policy_documents` field will be omitted from the resulting object.
   - `policy_id` (`string`): Set the `policy_id` field on the resulting object. When `null`, the `policy_id` field will be omitted from the resulting object.
-  - `source_json` (`string`): Set the `source_json` field on the resulting object. When `null`, the `source_json` field will be omitted from the resulting object.
   - `source_policy_documents` (`list`): Set the `source_policy_documents` field on the resulting object. When `null`, the `source_policy_documents` field will be omitted from the resulting object.
   - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
   - `statement` (`list[obj]`): Set the `statement` field on the resulting object. When `null`, the `statement` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.iam_policy_document.statement.new](#fn-statementnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `iam_policy_document` data source into the root Terraform configuration.
-
-
-### fn withOverrideJson
-
-```ts
-withOverrideJson()
-```
-
-`aws.string.withOverrideJson` constructs a mixin object that can be merged into the `string`
-Terraform data source block to set or update the override_json field.
-
-
-
-**Args**:
-  - `dataSrcLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `override_json` field.
 
 
 ### fn withOverridePolicyDocuments
@@ -149,22 +127,6 @@ Terraform data source block to set or update the policy_id field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `policy_id` field.
-
-
-### fn withSourceJson
-
-```ts
-withSourceJson()
-```
-
-`aws.string.withSourceJson` constructs a mixin object that can be merged into the `string`
-Terraform data source block to set or update the source_json field.
-
-
-
-**Args**:
-  - `dataSrcLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `source_json` field.
 
 
 ### fn withSourcePolicyDocuments

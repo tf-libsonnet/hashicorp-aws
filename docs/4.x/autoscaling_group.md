@@ -50,7 +50,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSuspendedProcesses()`](#fn-withsuspendedprocesses)
 * [`fn withTag()`](#fn-withtag)
 * [`fn withTagMixin()`](#fn-withtagmixin)
-* [`fn withTags()`](#fn-withtags)
 * [`fn withTargetGroupArns()`](#fn-withtargetgrouparns)
 * [`fn withTerminationPolicies()`](#fn-withterminationpolicies)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -163,7 +162,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `protect_from_scale_in` (`bool`): Set the `protect_from_scale_in` field on the resulting resource block. When `null`, the `protect_from_scale_in` field will be omitted from the resulting object.
   - `service_linked_role_arn` (`string`): Set the `service_linked_role_arn` field on the resulting resource block. When `null`, the `service_linked_role_arn` field will be omitted from the resulting object.
   - `suspended_processes` (`list`): Set the `suspended_processes` field on the resulting resource block. When `null`, the `suspended_processes` field will be omitted from the resulting object.
-  - `tags` (`list`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `target_group_arns` (`list`): Set the `target_group_arns` field on the resulting resource block. When `null`, the `target_group_arns` field will be omitted from the resulting object.
   - `termination_policies` (`list`): Set the `termination_policies` field on the resulting resource block. When `null`, the `termination_policies` field will be omitted from the resulting object.
   - `vpc_zone_identifier` (`list`): Set the `vpc_zone_identifier` field on the resulting resource block. When `null`, the `vpc_zone_identifier` field will be omitted from the resulting object.
@@ -224,7 +222,6 @@ injecting into a complete block.
   - `protect_from_scale_in` (`bool`): Set the `protect_from_scale_in` field on the resulting object. When `null`, the `protect_from_scale_in` field will be omitted from the resulting object.
   - `service_linked_role_arn` (`string`): Set the `service_linked_role_arn` field on the resulting object. When `null`, the `service_linked_role_arn` field will be omitted from the resulting object.
   - `suspended_processes` (`list`): Set the `suspended_processes` field on the resulting object. When `null`, the `suspended_processes` field will be omitted from the resulting object.
-  - `tags` (`list`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `target_group_arns` (`list`): Set the `target_group_arns` field on the resulting object. When `null`, the `target_group_arns` field will be omitted from the resulting object.
   - `termination_policies` (`list`): Set the `termination_policies` field on the resulting object. When `null`, the `termination_policies` field will be omitted from the resulting object.
   - `vpc_zone_identifier` (`list`): Set the `vpc_zone_identifier` field on the resulting object. When `null`, the `vpc_zone_identifier` field will be omitted from the resulting object.
@@ -825,22 +822,6 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `tag` field.
-
-
-### fn withTags
-
-```ts
-withTags()
-```
-
-`aws.list.withTags` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the tags field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `tags` field.
 
 
 ### fn withTargetGroupArns

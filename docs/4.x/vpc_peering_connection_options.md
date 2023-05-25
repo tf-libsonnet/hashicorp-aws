@@ -195,9 +195,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_classic_link_to_remote_vpc` (`bool`): Set the `allow_classic_link_to_remote_vpc` field on the resulting object. When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.
   - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.
-  - `allow_vpc_to_remote_classic_link` (`bool`): Set the `allow_vpc_to_remote_classic_link` field on the resulting object. When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `accepter` sub block.
@@ -220,9 +218,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `allow_classic_link_to_remote_vpc` (`bool`): Set the `allow_classic_link_to_remote_vpc` field on the resulting object. When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.
   - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.
-  - `allow_vpc_to_remote_classic_link` (`bool`): Set the `allow_vpc_to_remote_classic_link` field on the resulting object. When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `requester` sub block.

@@ -25,7 +25,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withClusterParameterGroupName()`](#fn-withclusterparametergroupname)
 * [`fn withClusterPublicKey()`](#fn-withclusterpublickey)
 * [`fn withClusterRevisionNumber()`](#fn-withclusterrevisionnumber)
-* [`fn withClusterSecurityGroups()`](#fn-withclustersecuritygroups)
 * [`fn withClusterSubnetGroupName()`](#fn-withclustersubnetgroupname)
 * [`fn withClusterType()`](#fn-withclustertype)
 * [`fn withClusterVersion()`](#fn-withclusterversion)
@@ -106,7 +105,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `cluster_parameter_group_name` (`string`): Set the `cluster_parameter_group_name` field on the resulting resource block. When `null`, the `cluster_parameter_group_name` field will be omitted from the resulting object.
   - `cluster_public_key` (`string`): Set the `cluster_public_key` field on the resulting resource block. When `null`, the `cluster_public_key` field will be omitted from the resulting object.
   - `cluster_revision_number` (`string`): Set the `cluster_revision_number` field on the resulting resource block. When `null`, the `cluster_revision_number` field will be omitted from the resulting object.
-  - `cluster_security_groups` (`list`): Set the `cluster_security_groups` field on the resulting resource block. When `null`, the `cluster_security_groups` field will be omitted from the resulting object.
   - `cluster_subnet_group_name` (`string`): Set the `cluster_subnet_group_name` field on the resulting resource block. When `null`, the `cluster_subnet_group_name` field will be omitted from the resulting object.
   - `cluster_type` (`string`): Set the `cluster_type` field on the resulting resource block. When `null`, the `cluster_type` field will be omitted from the resulting object.
   - `cluster_version` (`string`): Set the `cluster_version` field on the resulting resource block. When `null`, the `cluster_version` field will be omitted from the resulting object.
@@ -171,7 +169,6 @@ injecting into a complete block.
   - `cluster_parameter_group_name` (`string`): Set the `cluster_parameter_group_name` field on the resulting object. When `null`, the `cluster_parameter_group_name` field will be omitted from the resulting object.
   - `cluster_public_key` (`string`): Set the `cluster_public_key` field on the resulting object. When `null`, the `cluster_public_key` field will be omitted from the resulting object.
   - `cluster_revision_number` (`string`): Set the `cluster_revision_number` field on the resulting object. When `null`, the `cluster_revision_number` field will be omitted from the resulting object.
-  - `cluster_security_groups` (`list`): Set the `cluster_security_groups` field on the resulting object. When `null`, the `cluster_security_groups` field will be omitted from the resulting object.
   - `cluster_subnet_group_name` (`string`): Set the `cluster_subnet_group_name` field on the resulting object. When `null`, the `cluster_subnet_group_name` field will be omitted from the resulting object.
   - `cluster_type` (`string`): Set the `cluster_type` field on the resulting object. When `null`, the `cluster_type` field will be omitted from the resulting object.
   - `cluster_version` (`string`): Set the `cluster_version` field on the resulting object. When `null`, the `cluster_version` field will be omitted from the resulting object.
@@ -366,22 +363,6 @@ Terraform resource block to set or update the cluster_revision_number field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `cluster_revision_number` field.
-
-
-### fn withClusterSecurityGroups
-
-```ts
-withClusterSecurityGroups()
-```
-
-`aws.list.withClusterSecurityGroups` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the cluster_security_groups field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `cluster_security_groups` field.
 
 
 ### fn withClusterSubnetGroupName

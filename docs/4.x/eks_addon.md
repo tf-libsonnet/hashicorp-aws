@@ -21,6 +21,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withConfigurationValues()`](#fn-withconfigurationvalues)
 * [`fn withPreserve()`](#fn-withpreserve)
 * [`fn withResolveConflicts()`](#fn-withresolveconflicts)
+* [`fn withResolveConflictsOnCreate()`](#fn-withresolveconflictsoncreate)
+* [`fn withResolveConflictsOnUpdate()`](#fn-withresolveconflictsonupdate)
 * [`fn withServiceAccountRoleArn()`](#fn-withserviceaccountrolearn)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
@@ -64,6 +66,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `configuration_values` (`string`): Set the `configuration_values` field on the resulting resource block. When `null`, the `configuration_values` field will be omitted from the resulting object.
   - `preserve` (`bool`): Set the `preserve` field on the resulting resource block. When `null`, the `preserve` field will be omitted from the resulting object.
   - `resolve_conflicts` (`string`): Set the `resolve_conflicts` field on the resulting resource block. When `null`, the `resolve_conflicts` field will be omitted from the resulting object.
+  - `resolve_conflicts_on_create` (`string`): Set the `resolve_conflicts_on_create` field on the resulting resource block. When `null`, the `resolve_conflicts_on_create` field will be omitted from the resulting object.
+  - `resolve_conflicts_on_update` (`string`): Set the `resolve_conflicts_on_update` field on the resulting resource block. When `null`, the `resolve_conflicts_on_update` field will be omitted from the resulting object.
   - `service_account_role_arn` (`string`): Set the `service_account_role_arn` field on the resulting resource block. When `null`, the `service_account_role_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -97,6 +101,8 @@ injecting into a complete block.
   - `configuration_values` (`string`): Set the `configuration_values` field on the resulting object. When `null`, the `configuration_values` field will be omitted from the resulting object.
   - `preserve` (`bool`): Set the `preserve` field on the resulting object. When `null`, the `preserve` field will be omitted from the resulting object.
   - `resolve_conflicts` (`string`): Set the `resolve_conflicts` field on the resulting object. When `null`, the `resolve_conflicts` field will be omitted from the resulting object.
+  - `resolve_conflicts_on_create` (`string`): Set the `resolve_conflicts_on_create` field on the resulting object. When `null`, the `resolve_conflicts_on_create` field will be omitted from the resulting object.
+  - `resolve_conflicts_on_update` (`string`): Set the `resolve_conflicts_on_update` field on the resulting object. When `null`, the `resolve_conflicts_on_update` field will be omitted from the resulting object.
   - `service_account_role_arn` (`string`): Set the `service_account_role_arn` field on the resulting object. When `null`, the `service_account_role_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -200,6 +206,38 @@ Terraform resource block to set or update the resolve_conflicts field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `resolve_conflicts` field.
+
+
+### fn withResolveConflictsOnCreate
+
+```ts
+withResolveConflictsOnCreate()
+```
+
+`aws.string.withResolveConflictsOnCreate` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the resolve_conflicts_on_create field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `resolve_conflicts_on_create` field.
+
+
+### fn withResolveConflictsOnUpdate
+
+```ts
+withResolveConflictsOnUpdate()
+```
+
+`aws.string.withResolveConflictsOnUpdate` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the resolve_conflicts_on_update field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `resolve_conflicts_on_update` field.
 
 
 ### fn withServiceAccountRoleArn

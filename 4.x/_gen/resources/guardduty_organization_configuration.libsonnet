@@ -62,26 +62,34 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
   },
-  '#new':: d.fn(help="\n`aws.guardduty_organization_configuration.new` injects a new `aws_guardduty_organization_configuration` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.guardduty_organization_configuration.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.guardduty_organization_configuration` using the reference:\n\n    $._ref.aws_guardduty_organization_configuration.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_guardduty_organization_configuration.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting resource block.\n  - `detector_id` (`string`): Set the `detector_id` field on the resulting resource block.\n  - `datasources` (`list[obj]`): Set the `datasources` field on the resulting resource block. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_organization_configuration.datasources.new](#fn-datasourcesnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.guardduty_organization_configuration.new` injects a new `aws_guardduty_organization_configuration` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.guardduty_organization_configuration.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.guardduty_organization_configuration` using the reference:\n\n    $._ref.aws_guardduty_organization_configuration.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_guardduty_organization_configuration.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting resource block. When `null`, the `auto_enable` field will be omitted from the resulting object.\n  - `auto_enable_organization_members` (`string`): Set the `auto_enable_organization_members` field on the resulting resource block. When `null`, the `auto_enable_organization_members` field will be omitted from the resulting object.\n  - `detector_id` (`string`): Set the `detector_id` field on the resulting resource block.\n  - `datasources` (`list[obj]`): Set the `datasources` field on the resulting resource block. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_organization_configuration.datasources.new](#fn-datasourcesnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
-    auto_enable,
     detector_id,
+    auto_enable=null,
+    auto_enable_organization_members=null,
     datasources=null,
     _meta={}
   ):: tf.withResource(
     type='aws_guardduty_organization_configuration',
     label=resourceLabel,
-    attrs=self.newAttrs(auto_enable=auto_enable, datasources=datasources, detector_id=detector_id),
+    attrs=self.newAttrs(
+      auto_enable=auto_enable,
+      auto_enable_organization_members=auto_enable_organization_members,
+      datasources=datasources,
+      detector_id=detector_id
+    ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.guardduty_organization_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `guardduty_organization_configuration`\nTerraform resource.\n\nUnlike [aws.guardduty_organization_configuration.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting object.\n  - `detector_id` (`string`): Set the `detector_id` field on the resulting object.\n  - `datasources` (`list[obj]`): Set the `datasources` field on the resulting object. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_organization_configuration.datasources.new](#fn-datasourcesnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `guardduty_organization_configuration` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.guardduty_organization_configuration.newAttrs` constructs a new object with attributes and blocks configured for the `guardduty_organization_configuration`\nTerraform resource.\n\nUnlike [aws.guardduty_organization_configuration.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `auto_enable` (`bool`): Set the `auto_enable` field on the resulting object. When `null`, the `auto_enable` field will be omitted from the resulting object.\n  - `auto_enable_organization_members` (`string`): Set the `auto_enable_organization_members` field on the resulting object. When `null`, the `auto_enable_organization_members` field will be omitted from the resulting object.\n  - `detector_id` (`string`): Set the `detector_id` field on the resulting object.\n  - `datasources` (`list[obj]`): Set the `datasources` field on the resulting object. When `null`, the `datasources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.guardduty_organization_configuration.datasources.new](#fn-datasourcesnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `guardduty_organization_configuration` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
-    auto_enable,
     detector_id,
+    auto_enable=null,
+    auto_enable_organization_members=null,
     datasources=null
   ):: std.prune(a={
     auto_enable: auto_enable,
+    auto_enable_organization_members: auto_enable_organization_members,
     datasources: datasources,
     detector_id: detector_id,
   }),
@@ -91,6 +99,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_guardduty_organization_configuration+: {
         [resourceLabel]+: {
           auto_enable: value,
+        },
+      },
+    },
+  },
+  '#withAutoEnableOrganizationMembers':: d.fn(help='`aws.string.withAutoEnableOrganizationMembers` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the auto_enable_organization_members field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `auto_enable_organization_members` field.\n', args=[]),
+  withAutoEnableOrganizationMembers(resourceLabel, value): {
+    resource+: {
+      aws_guardduty_organization_configuration+: {
+        [resourceLabel]+: {
+          auto_enable_organization_members: value,
         },
       },
     },

@@ -17,8 +17,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAssignGeneratedIpv6CidrBlock()`](#fn-withassigngeneratedipv6cidrblock)
 * [`fn withCidrBlock()`](#fn-withcidrblock)
-* [`fn withEnableClassiclink()`](#fn-withenableclassiclink)
-* [`fn withEnableClassiclinkDnsSupport()`](#fn-withenableclassiclinkdnssupport)
 * [`fn withEnableDnsHostnames()`](#fn-withenablednshostnames)
 * [`fn withEnableDnsSupport()`](#fn-withenablednssupport)
 * [`fn withEnableNetworkAddressUsageMetrics()`](#fn-withenablenetworkaddressusagemetrics)
@@ -63,8 +61,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `assign_generated_ipv6_cidr_block` (`bool`): Set the `assign_generated_ipv6_cidr_block` field on the resulting resource block. When `null`, the `assign_generated_ipv6_cidr_block` field will be omitted from the resulting object.
   - `cidr_block` (`string`): Set the `cidr_block` field on the resulting resource block. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `enable_classiclink` (`bool`): Set the `enable_classiclink` field on the resulting resource block. When `null`, the `enable_classiclink` field will be omitted from the resulting object.
-  - `enable_classiclink_dns_support` (`bool`): Set the `enable_classiclink_dns_support` field on the resulting resource block. When `null`, the `enable_classiclink_dns_support` field will be omitted from the resulting object.
   - `enable_dns_hostnames` (`bool`): Set the `enable_dns_hostnames` field on the resulting resource block. When `null`, the `enable_dns_hostnames` field will be omitted from the resulting object.
   - `enable_dns_support` (`bool`): Set the `enable_dns_support` field on the resulting resource block. When `null`, the `enable_dns_support` field will be omitted from the resulting object.
   - `enable_network_address_usage_metrics` (`bool`): Set the `enable_network_address_usage_metrics` field on the resulting resource block. When `null`, the `enable_network_address_usage_metrics` field will be omitted from the resulting object.
@@ -102,8 +98,6 @@ injecting into a complete block.
 **Args**:
   - `assign_generated_ipv6_cidr_block` (`bool`): Set the `assign_generated_ipv6_cidr_block` field on the resulting object. When `null`, the `assign_generated_ipv6_cidr_block` field will be omitted from the resulting object.
   - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object. When `null`, the `cidr_block` field will be omitted from the resulting object.
-  - `enable_classiclink` (`bool`): Set the `enable_classiclink` field on the resulting object. When `null`, the `enable_classiclink` field will be omitted from the resulting object.
-  - `enable_classiclink_dns_support` (`bool`): Set the `enable_classiclink_dns_support` field on the resulting object. When `null`, the `enable_classiclink_dns_support` field will be omitted from the resulting object.
   - `enable_dns_hostnames` (`bool`): Set the `enable_dns_hostnames` field on the resulting object. When `null`, the `enable_dns_hostnames` field will be omitted from the resulting object.
   - `enable_dns_support` (`bool`): Set the `enable_dns_support` field on the resulting object. When `null`, the `enable_dns_support` field will be omitted from the resulting object.
   - `enable_network_address_usage_metrics` (`bool`): Set the `enable_network_address_usage_metrics` field on the resulting object. When `null`, the `enable_network_address_usage_metrics` field will be omitted from the resulting object.
@@ -151,38 +145,6 @@ Terraform resource block to set or update the cidr_block field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `cidr_block` field.
-
-
-### fn withEnableClassiclink
-
-```ts
-withEnableClassiclink()
-```
-
-`aws.bool.withEnableClassiclink` constructs a mixin object that can be merged into the `bool`
-Terraform resource block to set or update the enable_classiclink field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`bool`): The value to set for the `enable_classiclink` field.
-
-
-### fn withEnableClassiclinkDnsSupport
-
-```ts
-withEnableClassiclinkDnsSupport()
-```
-
-`aws.bool.withEnableClassiclinkDnsSupport` constructs a mixin object that can be merged into the `bool`
-Terraform resource block to set or update the enable_classiclink_dns_support field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`bool`): The value to set for the `enable_classiclink_dns_support` field.
 
 
 ### fn withEnableDnsHostnames

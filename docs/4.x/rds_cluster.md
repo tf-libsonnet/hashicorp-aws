@@ -129,7 +129,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `enable_global_write_forwarding` (`bool`): Set the `enable_global_write_forwarding` field on the resulting resource block. When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
   - `enable_http_endpoint` (`bool`): Set the `enable_http_endpoint` field on the resulting resource block. When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
   - `enabled_cloudwatch_logs_exports` (`list`): Set the `enabled_cloudwatch_logs_exports` field on the resulting resource block. When `null`, the `enabled_cloudwatch_logs_exports` field will be omitted from the resulting object.
-  - `engine` (`string`): Set the `engine` field on the resulting resource block. When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting resource block.
   - `engine_mode` (`string`): Set the `engine_mode` field on the resulting resource block. When `null`, the `engine_mode` field will be omitted from the resulting object.
   - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting resource block. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
@@ -202,7 +202,7 @@ injecting into a complete block.
   - `enable_global_write_forwarding` (`bool`): Set the `enable_global_write_forwarding` field on the resulting object. When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
   - `enable_http_endpoint` (`bool`): Set the `enable_http_endpoint` field on the resulting object. When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
   - `enabled_cloudwatch_logs_exports` (`list`): Set the `enabled_cloudwatch_logs_exports` field on the resulting object. When `null`, the `enabled_cloudwatch_logs_exports` field will be omitted from the resulting object.
-  - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting object.
   - `engine_mode` (`string`): Set the `engine_mode` field on the resulting object. When `null`, the `engine_mode` field will be omitted from the resulting object.
   - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting object. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.

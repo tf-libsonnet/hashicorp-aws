@@ -16,7 +16,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withClientVpnEndpointId()`](#fn-withclientvpnendpointid)
-* [`fn withSecurityGroups()`](#fn-withsecuritygroups)
 * [`fn withSubnetId()`](#fn-withsubnetid)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
@@ -53,7 +52,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `client_vpn_endpoint_id` (`string`): Set the `client_vpn_endpoint_id` field on the resulting resource block.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting resource block. When `null`, the `security_groups` field will be omitted from the resulting object.
   - `subnet_id` (`string`): Set the `subnet_id` field on the resulting resource block.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_network_association.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -80,7 +78,6 @@ injecting into a complete block.
 
 **Args**:
   - `client_vpn_endpoint_id` (`string`): Set the `client_vpn_endpoint_id` field on the resulting object.
-  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.
   - `subnet_id` (`string`): Set the `subnet_id` field on the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ec2_client_vpn_network_association.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -102,22 +99,6 @@ Terraform resource block to set or update the client_vpn_endpoint_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `client_vpn_endpoint_id` field.
-
-
-### fn withSecurityGroups
-
-```ts
-withSecurityGroups()
-```
-
-`aws.list.withSecurityGroups` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the security_groups field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `security_groups` field.
 
 
 ### fn withSubnetId

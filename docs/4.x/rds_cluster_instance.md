@@ -81,7 +81,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting resource block. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
   - `db_parameter_group_name` (`string`): Set the `db_parameter_group_name` field on the resulting resource block. When `null`, the `db_parameter_group_name` field will be omitted from the resulting object.
   - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting resource block. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
-  - `engine` (`string`): Set the `engine` field on the resulting resource block. When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting resource block.
   - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `identifier` (`string`): Set the `identifier` field on the resulting resource block. When `null`, the `identifier` field will be omitted from the resulting object.
   - `identifier_prefix` (`string`): Set the `identifier_prefix` field on the resulting resource block. When `null`, the `identifier_prefix` field will be omitted from the resulting object.
@@ -129,7 +129,7 @@ injecting into a complete block.
   - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting object. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
   - `db_parameter_group_name` (`string`): Set the `db_parameter_group_name` field on the resulting object. When `null`, the `db_parameter_group_name` field will be omitted from the resulting object.
   - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting object. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
-  - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting object.
   - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `identifier` (`string`): Set the `identifier` field on the resulting object. When `null`, the `identifier` field will be omitted from the resulting object.
   - `identifier_prefix` (`string`): Set the `identifier_prefix` field on the resulting object. When `null`, the `identifier_prefix` field will be omitted from the resulting object.

@@ -78,16 +78,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-secondary_source_versionnew)
 * [`obj secondary_sources`](#obj-secondary_sources)
   * [`fn new()`](#fn-secondary_sourcesnew)
-  * [`obj secondary_sources.auth`](#obj-secondary_sourcesauth)
-    * [`fn new()`](#fn-secondary_sourcesauthnew)
   * [`obj secondary_sources.build_status_config`](#obj-secondary_sourcesbuild_status_config)
     * [`fn new()`](#fn-secondary_sourcesbuild_status_confignew)
   * [`obj secondary_sources.git_submodules_config`](#obj-secondary_sourcesgit_submodules_config)
     * [`fn new()`](#fn-secondary_sourcesgit_submodules_confignew)
 * [`obj source`](#obj-source)
   * [`fn new()`](#fn-sourcenew)
-  * [`obj source.auth`](#obj-sourceauth)
-    * [`fn new()`](#fn-sourceauthnew)
   * [`obj source.build_status_config`](#obj-sourcebuild_status_config)
     * [`fn new()`](#fn-sourcebuild_status_confignew)
   * [`obj source.git_submodules_config`](#obj-sourcegit_submodules_config)
@@ -1183,36 +1179,11 @@ Terraform sub block.
   - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.
   - `source_identifier` (`string`): Set the `source_identifier` field on the resulting object.
   - `type` (`string`): Set the `type` field on the resulting object.
-  - `auth` (`list[obj]`): Set the `auth` field on the resulting object. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.auth.new](#fn-secondary_sourcesauthnew) constructor.
   - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.build_status_config.new](#fn-secondary_sourcesbuild_status_confignew) constructor.
   - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.git_submodules_config.new](#fn-secondary_sourcesgit_submodules_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `secondary_sources` sub block.
-
-
-## obj secondary_sources.auth
-
-
-
-### fn secondary_sources.auth.new
-
-```ts
-new()
-```
-
-
-`aws.codebuild_project.secondary_sources.auth.new` constructs a new object with attributes and blocks configured for the `auth`
-Terraform sub block.
-
-
-
-**Args**:
-  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `auth` sub block.
 
 
 ## obj secondary_sources.build_status_config
@@ -1285,36 +1256,11 @@ Terraform sub block.
   - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.
   - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting object.
-  - `auth` (`list[obj]`): Set the `auth` field on the resulting object. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.auth.new](#fn-sourceauthnew) constructor.
   - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.build_status_config.new](#fn-sourcebuild_status_confignew) constructor.
   - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.git_submodules_config.new](#fn-sourcegit_submodules_confignew) constructor.
 
 **Returns**:
   - An attribute object that represents the `source` sub block.
-
-
-## obj source.auth
-
-
-
-### fn source.auth.new
-
-```ts
-new()
-```
-
-
-`aws.codebuild_project.source.auth.new` constructs a new object with attributes and blocks configured for the `auth`
-Terraform sub block.
-
-
-
-**Args**:
-  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `auth` sub block.
 
 
 ## obj source.build_status_config

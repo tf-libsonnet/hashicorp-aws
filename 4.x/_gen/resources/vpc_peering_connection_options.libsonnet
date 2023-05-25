@@ -3,15 +3,11 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='vpc_peering_connection_options', url='', help='`vpc_peering_connection_options` represents the `aws_vpc_peering_connection_options` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   accepter:: {
-    '#new':: d.fn(help='\n`aws.vpc_peering_connection_options.accepter.new` constructs a new object with attributes and blocks configured for the `accepter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `allow_classic_link_to_remote_vpc` (`bool`): Set the `allow_classic_link_to_remote_vpc` field on the resulting object. When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.\n  - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.\n  - `allow_vpc_to_remote_classic_link` (`bool`): Set the `allow_vpc_to_remote_classic_link` field on the resulting object. When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `accepter` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.vpc_peering_connection_options.accepter.new` constructs a new object with attributes and blocks configured for the `accepter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `accepter` sub block.\n', args=[]),
     new(
-      allow_classic_link_to_remote_vpc=null,
-      allow_remote_vpc_dns_resolution=null,
-      allow_vpc_to_remote_classic_link=null
+      allow_remote_vpc_dns_resolution=null
     ):: std.prune(a={
-      allow_classic_link_to_remote_vpc: allow_classic_link_to_remote_vpc,
       allow_remote_vpc_dns_resolution: allow_remote_vpc_dns_resolution,
-      allow_vpc_to_remote_classic_link: allow_vpc_to_remote_classic_link,
     }),
   },
   '#new':: d.fn(help="\n`aws.vpc_peering_connection_options.new` injects a new `aws_vpc_peering_connection_options` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.vpc_peering_connection_options.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.vpc_peering_connection_options` using the reference:\n\n    $._ref.aws_vpc_peering_connection_options.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_vpc_peering_connection_options.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `vpc_peering_connection_id` (`string`): Set the `vpc_peering_connection_id` field on the resulting resource block.\n  - `accepter` (`list[obj]`): Set the `accepter` field on the resulting resource block. When `null`, the `accepter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_options.accepter.new](#fn-accepternew) constructor.\n  - `requester` (`list[obj]`): Set the `requester` field on the resulting resource block. When `null`, the `requester` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpc_peering_connection_options.requester.new](#fn-requesternew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
@@ -38,15 +34,11 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     vpc_peering_connection_id: vpc_peering_connection_id,
   }),
   requester:: {
-    '#new':: d.fn(help='\n`aws.vpc_peering_connection_options.requester.new` constructs a new object with attributes and blocks configured for the `requester`\nTerraform sub block.\n\n\n\n**Args**:\n  - `allow_classic_link_to_remote_vpc` (`bool`): Set the `allow_classic_link_to_remote_vpc` field on the resulting object. When `null`, the `allow_classic_link_to_remote_vpc` field will be omitted from the resulting object.\n  - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.\n  - `allow_vpc_to_remote_classic_link` (`bool`): Set the `allow_vpc_to_remote_classic_link` field on the resulting object. When `null`, the `allow_vpc_to_remote_classic_link` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `requester` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.vpc_peering_connection_options.requester.new` constructs a new object with attributes and blocks configured for the `requester`\nTerraform sub block.\n\n\n\n**Args**:\n  - `allow_remote_vpc_dns_resolution` (`bool`): Set the `allow_remote_vpc_dns_resolution` field on the resulting object. When `null`, the `allow_remote_vpc_dns_resolution` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `requester` sub block.\n', args=[]),
     new(
-      allow_classic_link_to_remote_vpc=null,
-      allow_remote_vpc_dns_resolution=null,
-      allow_vpc_to_remote_classic_link=null
+      allow_remote_vpc_dns_resolution=null
     ):: std.prune(a={
-      allow_classic_link_to_remote_vpc: allow_classic_link_to_remote_vpc,
       allow_remote_vpc_dns_resolution: allow_remote_vpc_dns_resolution,
-      allow_vpc_to_remote_classic_link: allow_vpc_to_remote_classic_link,
     }),
   },
   '#withAccepter':: d.fn(help='`aws.list[obj].withAccepter` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the accepter field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withAccepterMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `accepter` field.\n', args=[]),

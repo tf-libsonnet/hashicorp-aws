@@ -20,9 +20,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAuthToken()`](#fn-withauthtoken)
 * [`fn withAutoMinorVersionUpgrade()`](#fn-withautominorversionupgrade)
 * [`fn withAutomaticFailoverEnabled()`](#fn-withautomaticfailoverenabled)
-* [`fn withAvailabilityZones()`](#fn-withavailabilityzones)
-* [`fn withClusterMode()`](#fn-withclustermode)
-* [`fn withClusterModeMixin()`](#fn-withclustermodemixin)
 * [`fn withDataTieringEnabled()`](#fn-withdatatieringenabled)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withEngine()`](#fn-withengine)
@@ -38,12 +35,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withNotificationTopicArn()`](#fn-withnotificationtopicarn)
 * [`fn withNumCacheClusters()`](#fn-withnumcacheclusters)
 * [`fn withNumNodeGroups()`](#fn-withnumnodegroups)
-* [`fn withNumberCacheClusters()`](#fn-withnumbercacheclusters)
 * [`fn withParameterGroupName()`](#fn-withparametergroupname)
 * [`fn withPort()`](#fn-withport)
 * [`fn withPreferredCacheClusterAzs()`](#fn-withpreferredcacheclusterazs)
 * [`fn withReplicasPerNodeGroup()`](#fn-withreplicaspernodegroup)
-* [`fn withReplicationGroupDescription()`](#fn-withreplicationgroupdescription)
 * [`fn withReplicationGroupId()`](#fn-withreplicationgroupid)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
 * [`fn withSecurityGroupNames()`](#fn-withsecuritygroupnames)
@@ -58,8 +53,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withTransitEncryptionEnabled()`](#fn-withtransitencryptionenabled)
 * [`fn withUserGroupIds()`](#fn-withusergroupids)
-* [`obj cluster_mode`](#obj-cluster_mode)
-  * [`fn new()`](#fn-cluster_modenew)
 * [`obj log_delivery_configuration`](#obj-log_delivery_configuration)
   * [`fn new()`](#fn-log_delivery_configurationnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -99,7 +92,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `auth_token` (`string`): Set the `auth_token` field on the resulting resource block. When `null`, the `auth_token` field will be omitted from the resulting object.
   - `auto_minor_version_upgrade` (`string`): Set the `auto_minor_version_upgrade` field on the resulting resource block. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
   - `automatic_failover_enabled` (`bool`): Set the `automatic_failover_enabled` field on the resulting resource block. When `null`, the `automatic_failover_enabled` field will be omitted from the resulting object.
-  - `availability_zones` (`list`): Set the `availability_zones` field on the resulting resource block. When `null`, the `availability_zones` field will be omitted from the resulting object.
   - `data_tiering_enabled` (`bool`): Set the `data_tiering_enabled` field on the resulting resource block. When `null`, the `data_tiering_enabled` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting resource block. When `null`, the `engine` field will be omitted from the resulting object.
@@ -113,12 +105,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `notification_topic_arn` (`string`): Set the `notification_topic_arn` field on the resulting resource block. When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
   - `num_cache_clusters` (`number`): Set the `num_cache_clusters` field on the resulting resource block. When `null`, the `num_cache_clusters` field will be omitted from the resulting object.
   - `num_node_groups` (`number`): Set the `num_node_groups` field on the resulting resource block. When `null`, the `num_node_groups` field will be omitted from the resulting object.
-  - `number_cache_clusters` (`number`): Set the `number_cache_clusters` field on the resulting resource block. When `null`, the `number_cache_clusters` field will be omitted from the resulting object.
   - `parameter_group_name` (`string`): Set the `parameter_group_name` field on the resulting resource block. When `null`, the `parameter_group_name` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
   - `preferred_cache_cluster_azs` (`list`): Set the `preferred_cache_cluster_azs` field on the resulting resource block. When `null`, the `preferred_cache_cluster_azs` field will be omitted from the resulting object.
   - `replicas_per_node_group` (`number`): Set the `replicas_per_node_group` field on the resulting resource block. When `null`, the `replicas_per_node_group` field will be omitted from the resulting object.
-  - `replication_group_description` (`string`): Set the `replication_group_description` field on the resulting resource block. When `null`, the `replication_group_description` field will be omitted from the resulting object.
   - `replication_group_id` (`string`): Set the `replication_group_id` field on the resulting resource block.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `security_group_names` (`list`): Set the `security_group_names` field on the resulting resource block. When `null`, the `security_group_names` field will be omitted from the resulting object.
@@ -131,7 +121,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `transit_encryption_enabled` (`bool`): Set the `transit_encryption_enabled` field on the resulting resource block. When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
   - `user_group_ids` (`list`): Set the `user_group_ids` field on the resulting resource block. When `null`, the `user_group_ids` field will be omitted from the resulting object.
-  - `cluster_mode` (`list[obj]`): Set the `cluster_mode` field on the resulting resource block. When `null`, the `cluster_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_replication_group.cluster_mode.new](#fn-cluster_modenew) constructor.
   - `log_delivery_configuration` (`list[obj]`): Set the `log_delivery_configuration` field on the resulting resource block. When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_replication_group.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_replication_group.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -162,7 +151,6 @@ injecting into a complete block.
   - `auth_token` (`string`): Set the `auth_token` field on the resulting object. When `null`, the `auth_token` field will be omitted from the resulting object.
   - `auto_minor_version_upgrade` (`string`): Set the `auto_minor_version_upgrade` field on the resulting object. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
   - `automatic_failover_enabled` (`bool`): Set the `automatic_failover_enabled` field on the resulting object. When `null`, the `automatic_failover_enabled` field will be omitted from the resulting object.
-  - `availability_zones` (`list`): Set the `availability_zones` field on the resulting object. When `null`, the `availability_zones` field will be omitted from the resulting object.
   - `data_tiering_enabled` (`bool`): Set the `data_tiering_enabled` field on the resulting object. When `null`, the `data_tiering_enabled` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
@@ -176,12 +164,10 @@ injecting into a complete block.
   - `notification_topic_arn` (`string`): Set the `notification_topic_arn` field on the resulting object. When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
   - `num_cache_clusters` (`number`): Set the `num_cache_clusters` field on the resulting object. When `null`, the `num_cache_clusters` field will be omitted from the resulting object.
   - `num_node_groups` (`number`): Set the `num_node_groups` field on the resulting object. When `null`, the `num_node_groups` field will be omitted from the resulting object.
-  - `number_cache_clusters` (`number`): Set the `number_cache_clusters` field on the resulting object. When `null`, the `number_cache_clusters` field will be omitted from the resulting object.
   - `parameter_group_name` (`string`): Set the `parameter_group_name` field on the resulting object. When `null`, the `parameter_group_name` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `preferred_cache_cluster_azs` (`list`): Set the `preferred_cache_cluster_azs` field on the resulting object. When `null`, the `preferred_cache_cluster_azs` field will be omitted from the resulting object.
   - `replicas_per_node_group` (`number`): Set the `replicas_per_node_group` field on the resulting object. When `null`, the `replicas_per_node_group` field will be omitted from the resulting object.
-  - `replication_group_description` (`string`): Set the `replication_group_description` field on the resulting object. When `null`, the `replication_group_description` field will be omitted from the resulting object.
   - `replication_group_id` (`string`): Set the `replication_group_id` field on the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `security_group_names` (`list`): Set the `security_group_names` field on the resulting object. When `null`, the `security_group_names` field will be omitted from the resulting object.
@@ -194,7 +180,6 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `transit_encryption_enabled` (`bool`): Set the `transit_encryption_enabled` field on the resulting object. When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
   - `user_group_ids` (`list`): Set the `user_group_ids` field on the resulting object. When `null`, the `user_group_ids` field will be omitted from the resulting object.
-  - `cluster_mode` (`list[obj]`): Set the `cluster_mode` field on the resulting object. When `null`, the `cluster_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_replication_group.cluster_mode.new](#fn-cluster_modenew) constructor.
   - `log_delivery_configuration` (`list[obj]`): Set the `log_delivery_configuration` field on the resulting object. When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_replication_group.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_replication_group.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -280,59 +265,6 @@ Terraform resource block to set or update the automatic_failover_enabled field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `automatic_failover_enabled` field.
-
-
-### fn withAvailabilityZones
-
-```ts
-withAvailabilityZones()
-```
-
-`aws.list.withAvailabilityZones` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the availability_zones field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `availability_zones` field.
-
-
-### fn withClusterMode
-
-```ts
-withClusterMode()
-```
-
-`aws.list[obj].withClusterMode` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the cluster_mode field.
-
-This function will replace the array with the passed in `value`. If you wish to instead append the
-passed in value to the existing array, use the [aws.list[obj].withClusterModeMixin](TODO) function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `cluster_mode` field.
-
-
-### fn withClusterModeMixin
-
-```ts
-withClusterModeMixin()
-```
-
-`aws.list[obj].withClusterModeMixin` constructs a mixin object that can be merged into the `list[obj]`
-Terraform resource block to set or update the cluster_mode field.
-
-This function will append the passed in array or object to the existing array. If you wish
-to instead replace the array with the passed in `value`, use the [aws.list[obj].withClusterMode](TODO)
-function.
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list[obj]`): The value to set for the `cluster_mode` field.
 
 
 ### fn withDataTieringEnabled
@@ -580,22 +512,6 @@ Terraform resource block to set or update the num_node_groups field.
   - `value` (`number`): The value to set for the `num_node_groups` field.
 
 
-### fn withNumberCacheClusters
-
-```ts
-withNumberCacheClusters()
-```
-
-`aws.number.withNumberCacheClusters` constructs a mixin object that can be merged into the `number`
-Terraform resource block to set or update the number_cache_clusters field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`number`): The value to set for the `number_cache_clusters` field.
-
-
 ### fn withParameterGroupName
 
 ```ts
@@ -658,22 +574,6 @@ Terraform resource block to set or update the replicas_per_node_group field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `replicas_per_node_group` field.
-
-
-### fn withReplicationGroupDescription
-
-```ts
-withReplicationGroupDescription()
-```
-
-`aws.string.withReplicationGroupDescription` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the replication_group_description field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `replication_group_description` field.
 
 
 ### fn withReplicationGroupId
@@ -902,30 +802,6 @@ Terraform resource block to set or update the user_group_ids field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `user_group_ids` field.
-
-
-## obj cluster_mode
-
-
-
-### fn cluster_mode.new
-
-```ts
-new()
-```
-
-
-`aws.elasticache_replication_group.cluster_mode.new` constructs a new object with attributes and blocks configured for the `cluster_mode`
-Terraform sub block.
-
-
-
-**Args**:
-  - `num_node_groups` (`number`): Set the `num_node_groups` field on the resulting object. When `null`, the `num_node_groups` field will be omitted from the resulting object.
-  - `replicas_per_node_group` (`number`): Set the `replicas_per_node_group` field on the resulting object. When `null`, the `replicas_per_node_group` field will be omitted from the resulting object.
-
-**Returns**:
-  - An attribute object that represents the `cluster_mode` sub block.
 
 
 ## obj log_delivery_configuration

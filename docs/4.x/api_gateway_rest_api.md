@@ -68,7 +68,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting resource block. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
   - `fail_on_warnings` (`bool`): Set the `fail_on_warnings` field on the resulting resource block. When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
-  - `minimum_compression_size` (`number`): Set the `minimum_compression_size` field on the resulting resource block. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
+  - `minimum_compression_size` (`string`): Set the `minimum_compression_size` field on the resulting resource block. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
   - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
@@ -105,7 +105,7 @@ injecting into a complete block.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `disable_execute_api_endpoint` (`bool`): Set the `disable_execute_api_endpoint` field on the resulting object. When `null`, the `disable_execute_api_endpoint` field will be omitted from the resulting object.
   - `fail_on_warnings` (`bool`): Set the `fail_on_warnings` field on the resulting object. When `null`, the `fail_on_warnings` field will be omitted from the resulting object.
-  - `minimum_compression_size` (`number`): Set the `minimum_compression_size` field on the resulting object. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
+  - `minimum_compression_size` (`string`): Set the `minimum_compression_size` field on the resulting object. When `null`, the `minimum_compression_size` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
   - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
@@ -257,14 +257,14 @@ Terraform resource block to set or update the fail_on_warnings field.
 withMinimumCompressionSize()
 ```
 
-`aws.number.withMinimumCompressionSize` constructs a mixin object that can be merged into the `number`
+`aws.string.withMinimumCompressionSize` constructs a mixin object that can be merged into the `string`
 Terraform resource block to set or update the minimum_compression_size field.
 
 
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`number`): The value to set for the `minimum_compression_size` field.
+  - `value` (`string`): The value to set for the `minimum_compression_size` field.
 
 
 ### fn withName

@@ -59,10 +59,6 @@ thrown. When `null`, the `max_retries` field will be omitted from the resulting 
 created with `aws configure` will be used. When `null`, the `profile` field will be omitted from the resulting object.
   - `region` (`string`): The region where AWS operations will take place. Examples
 are us-east-1, us-west-2, etc. When `null`, the `region` field will be omitted from the resulting object.
-  - `s3_force_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
-i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
-use virtual hosted bucket addressing when possible
-(https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. When `null`, the `s3_force_path_style` field will be omitted from the resulting object.
   - `s3_use_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
 i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
 use virtual hosted bucket addressing when possible
@@ -70,10 +66,8 @@ use virtual hosted bucket addressing when possible
   - `secret_key` (`string`): The secret key for API operations. You can retrieve this
 from the &#39;Security &amp; Credentials&#39; section of the AWS console. When `null`, the `secret_key` field will be omitted from the resulting object.
   - `shared_config_files` (`list`): List of paths to shared config files. If not set, defaults to [~/.aws/config]. When `null`, the `shared_config_files` field will be omitted from the resulting object.
-  - `shared_credentials_file` (`string`): The path to the shared credentials file. If not set, defaults to ~/.aws/credentials. When `null`, the `shared_credentials_file` field will be omitted from the resulting object.
   - `shared_credentials_files` (`list`): List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. When `null`, the `shared_credentials_files` field will be omitted from the resulting object.
   - `skip_credentials_validation` (`bool`): Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. When `null`, the `skip_credentials_validation` field will be omitted from the resulting object.
-  - `skip_get_ec2_platforms` (`bool`): Skip getting the supported EC2 platforms. Used by users that don&#39;t have ec2:DescribeAccountAttributes permissions. When `null`, the `skip_get_ec2_platforms` field will be omitted from the resulting object.
   - `skip_metadata_api_check` (`string`): Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. When `null`, the `skip_metadata_api_check` field will be omitted from the resulting object.
   - `skip_region_validation` (`bool`): Skip static validation of region name. Used by users of alternative AWS-like APIs or users w/ access to regions that are not public (yet). When `null`, the `skip_region_validation` field will be omitted from the resulting object.
   - `skip_requesting_account_id` (`bool`): Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. When `null`, the `skip_requesting_account_id` field will be omitted from the resulting object.
@@ -135,10 +129,6 @@ thrown. When `null`, the `max_retries` field will be omitted from the resulting 
 created with `aws configure` will be used. When `null`, the `profile` field will be omitted from the resulting object.
   - `region` (`string`): The region where AWS operations will take place. Examples
 are us-east-1, us-west-2, etc. When `null`, the `region` field will be omitted from the resulting object.
-  - `s3_force_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
-i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
-use virtual hosted bucket addressing when possible
-(https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. When `null`, the `s3_force_path_style` field will be omitted from the resulting object.
   - `s3_use_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
 i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
 use virtual hosted bucket addressing when possible
@@ -146,10 +136,8 @@ use virtual hosted bucket addressing when possible
   - `secret_key` (`string`): The secret key for API operations. You can retrieve this
 from the &#39;Security &amp; Credentials&#39; section of the AWS console. When `null`, the `secret_key` field will be omitted from the resulting object.
   - `shared_config_files` (`list`): List of paths to shared config files. If not set, defaults to [~/.aws/config]. When `null`, the `shared_config_files` field will be omitted from the resulting object.
-  - `shared_credentials_file` (`string`): The path to the shared credentials file. If not set, defaults to ~/.aws/credentials. When `null`, the `shared_credentials_file` field will be omitted from the resulting object.
   - `shared_credentials_files` (`list`): List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. When `null`, the `shared_credentials_files` field will be omitted from the resulting object.
   - `skip_credentials_validation` (`bool`): Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. When `null`, the `skip_credentials_validation` field will be omitted from the resulting object.
-  - `skip_get_ec2_platforms` (`bool`): Skip getting the supported EC2 platforms. Used by users that don&#39;t have ec2:DescribeAccountAttributes permissions. When `null`, the `skip_get_ec2_platforms` field will be omitted from the resulting object.
   - `skip_metadata_api_check` (`string`): Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. When `null`, the `skip_metadata_api_check` field will be omitted from the resulting object.
   - `skip_region_validation` (`bool`): Skip static validation of region name. Used by users of alternative AWS-like APIs or users w/ access to regions that are not public (yet). When `null`, the `skip_region_validation` field will be omitted from the resulting object.
   - `skip_requesting_account_id` (`bool`): Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. When `null`, the `skip_requesting_account_id` field will be omitted from the resulting object.
@@ -188,7 +176,6 @@ Terraform sub block.
 
 **Args**:
   - `duration` (`string`): The duration, between 15 minutes and 12 hours, of the role session. Valid time units are ns, us (or µs), ms, s, h, or m. When `null`, the `duration` field will be omitted from the resulting object.
-  - `duration_seconds` (`number`): The duration, in seconds, of the role session. When `null`, the `duration_seconds` field will be omitted from the resulting object.
   - `external_id` (`string`): A unique identifier that might be required when you assume a role in another account. When `null`, the `external_id` field will be omitted from the resulting object.
   - `policy` (`string`): IAM Policy JSON describing further restricting permissions for the IAM Role being assumed. When `null`, the `policy` field will be omitted from the resulting object.
   - `policy_arns` (`list`): Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. When `null`, the `policy_arns` field will be omitted from the resulting object.

@@ -308,16 +308,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   secondary_sources:: {
-    auth:: {
-      '#new':: d.fn(help='\n`aws.codebuild_project.secondary_sources.auth.new` constructs a new object with attributes and blocks configured for the `auth`\nTerraform sub block.\n\n\n\n**Args**:\n  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `auth` sub block.\n', args=[]),
-      new(
-        type,
-        resource=null
-      ):: std.prune(a={
-        resource: resource,
-        type: type,
-      }),
-    },
     build_status_config:: {
       '#new':: d.fn(help='\n`aws.codebuild_project.secondary_sources.build_status_config.new` constructs a new object with attributes and blocks configured for the `build_status_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `context` (`string`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.\n  - `target_url` (`string`): Set the `target_url` field on the resulting object. When `null`, the `target_url` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `build_status_config` sub block.\n', args=[]),
       new(
@@ -336,11 +326,10 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         fetch_submodules: fetch_submodules,
       }),
     },
-    '#new':: d.fn(help='\n`aws.codebuild_project.secondary_sources.new` constructs a new object with attributes and blocks configured for the `secondary_sources`\nTerraform sub block.\n\n\n\n**Args**:\n  - `buildspec` (`string`): Set the `buildspec` field on the resulting object. When `null`, the `buildspec` field will be omitted from the resulting object.\n  - `git_clone_depth` (`number`): Set the `git_clone_depth` field on the resulting object. When `null`, the `git_clone_depth` field will be omitted from the resulting object.\n  - `insecure_ssl` (`bool`): Set the `insecure_ssl` field on the resulting object. When `null`, the `insecure_ssl` field will be omitted from the resulting object.\n  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.\n  - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.\n  - `source_identifier` (`string`): Set the `source_identifier` field on the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `auth` (`list[obj]`): Set the `auth` field on the resulting object. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.auth.new](#fn-secondary_sourcesauthnew) constructor.\n  - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.build_status_config.new](#fn-secondary_sourcesbuild_status_confignew) constructor.\n  - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.git_submodules_config.new](#fn-secondary_sourcesgit_submodules_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `secondary_sources` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.codebuild_project.secondary_sources.new` constructs a new object with attributes and blocks configured for the `secondary_sources`\nTerraform sub block.\n\n\n\n**Args**:\n  - `buildspec` (`string`): Set the `buildspec` field on the resulting object. When `null`, the `buildspec` field will be omitted from the resulting object.\n  - `git_clone_depth` (`number`): Set the `git_clone_depth` field on the resulting object. When `null`, the `git_clone_depth` field will be omitted from the resulting object.\n  - `insecure_ssl` (`bool`): Set the `insecure_ssl` field on the resulting object. When `null`, the `insecure_ssl` field will be omitted from the resulting object.\n  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.\n  - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.\n  - `source_identifier` (`string`): Set the `source_identifier` field on the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.build_status_config.new](#fn-secondary_sourcesbuild_status_confignew) constructor.\n  - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.secondary_sources.git_submodules_config.new](#fn-secondary_sourcesgit_submodules_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `secondary_sources` sub block.\n', args=[]),
     new(
       source_identifier,
       type,
-      auth=null,
       build_status_config=null,
       buildspec=null,
       git_clone_depth=null,
@@ -349,7 +338,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       location=null,
       report_build_status=null
     ):: std.prune(a={
-      auth: auth,
       build_status_config: build_status_config,
       buildspec: buildspec,
       git_clone_depth: git_clone_depth,
@@ -362,16 +350,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   source:: {
-    auth:: {
-      '#new':: d.fn(help='\n`aws.codebuild_project.source.auth.new` constructs a new object with attributes and blocks configured for the `auth`\nTerraform sub block.\n\n\n\n**Args**:\n  - `resource` (`string`): Set the `resource` field on the resulting object. When `null`, the `resource` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `auth` sub block.\n', args=[]),
-      new(
-        type,
-        resource=null
-      ):: std.prune(a={
-        resource: resource,
-        type: type,
-      }),
-    },
     build_status_config:: {
       '#new':: d.fn(help='\n`aws.codebuild_project.source.build_status_config.new` constructs a new object with attributes and blocks configured for the `build_status_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `context` (`string`): Set the `context` field on the resulting object. When `null`, the `context` field will be omitted from the resulting object.\n  - `target_url` (`string`): Set the `target_url` field on the resulting object. When `null`, the `target_url` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `build_status_config` sub block.\n', args=[]),
       new(
@@ -390,10 +368,9 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         fetch_submodules: fetch_submodules,
       }),
     },
-    '#new':: d.fn(help='\n`aws.codebuild_project.source.new` constructs a new object with attributes and blocks configured for the `source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `buildspec` (`string`): Set the `buildspec` field on the resulting object. When `null`, the `buildspec` field will be omitted from the resulting object.\n  - `git_clone_depth` (`number`): Set the `git_clone_depth` field on the resulting object. When `null`, the `git_clone_depth` field will be omitted from the resulting object.\n  - `insecure_ssl` (`bool`): Set the `insecure_ssl` field on the resulting object. When `null`, the `insecure_ssl` field will be omitted from the resulting object.\n  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.\n  - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `auth` (`list[obj]`): Set the `auth` field on the resulting object. When `null`, the `auth` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.auth.new](#fn-sourceauthnew) constructor.\n  - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.build_status_config.new](#fn-sourcebuild_status_confignew) constructor.\n  - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.git_submodules_config.new](#fn-sourcegit_submodules_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `source` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.codebuild_project.source.new` constructs a new object with attributes and blocks configured for the `source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `buildspec` (`string`): Set the `buildspec` field on the resulting object. When `null`, the `buildspec` field will be omitted from the resulting object.\n  - `git_clone_depth` (`number`): Set the `git_clone_depth` field on the resulting object. When `null`, the `git_clone_depth` field will be omitted from the resulting object.\n  - `insecure_ssl` (`bool`): Set the `insecure_ssl` field on the resulting object. When `null`, the `insecure_ssl` field will be omitted from the resulting object.\n  - `location` (`string`): Set the `location` field on the resulting object. When `null`, the `location` field will be omitted from the resulting object.\n  - `report_build_status` (`bool`): Set the `report_build_status` field on the resulting object. When `null`, the `report_build_status` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `build_status_config` (`list[obj]`): Set the `build_status_config` field on the resulting object. When `null`, the `build_status_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.build_status_config.new](#fn-sourcebuild_status_confignew) constructor.\n  - `git_submodules_config` (`list[obj]`): Set the `git_submodules_config` field on the resulting object. When `null`, the `git_submodules_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codebuild_project.source.git_submodules_config.new](#fn-sourcegit_submodules_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `source` sub block.\n', args=[]),
     new(
       type,
-      auth=null,
       build_status_config=null,
       buildspec=null,
       git_clone_depth=null,
@@ -402,7 +379,6 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       location=null,
       report_build_status=null
     ):: std.prune(a={
-      auth: auth,
       build_status_config: build_status_config,
       buildspec: buildspec,
       git_clone_depth: git_clone_depth,

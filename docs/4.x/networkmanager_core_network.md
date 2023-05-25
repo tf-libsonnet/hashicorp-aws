@@ -20,7 +20,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCreateBasePolicy()`](#fn-withcreatebasepolicy)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withGlobalNetworkId()`](#fn-withglobalnetworkid)
-* [`fn withPolicyDocument()`](#fn-withpolicydocument)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -62,7 +61,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `create_base_policy` (`bool`): Set the `create_base_policy` field on the resulting resource block. When `null`, the `create_base_policy` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `global_network_id` (`string`): Set the `global_network_id` field on the resulting resource block.
-  - `policy_document` (`string`): Set the `policy_document` field on the resulting resource block. When `null`, the `policy_document` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network.timeouts.new](#fn-timeoutsnew) constructor.
@@ -94,7 +92,6 @@ injecting into a complete block.
   - `create_base_policy` (`bool`): Set the `create_base_policy` field on the resulting object. When `null`, the `create_base_policy` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `global_network_id` (`string`): Set the `global_network_id` field on the resulting object.
-  - `policy_document` (`string`): Set the `policy_document` field on the resulting object. When `null`, the `policy_document` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_core_network.timeouts.new](#fn-timeoutsnew) constructor.
@@ -181,22 +178,6 @@ Terraform resource block to set or update the global_network_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `global_network_id` field.
-
-
-### fn withPolicyDocument
-
-```ts
-withPolicyDocument()
-```
-
-`aws.string.withPolicyDocument` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the policy_document field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `policy_document` field.
 
 
 ### fn withTags
