@@ -54,6 +54,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTerminationPolicies()`](#fn-withterminationpolicies)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`fn withTrafficSource()`](#fn-withtrafficsource)
+* [`fn withTrafficSourceMixin()`](#fn-withtrafficsourcemixin)
 * [`fn withVpcZoneIdentifier()`](#fn-withvpczoneidentifier)
 * [`fn withWaitForCapacityTimeout()`](#fn-withwaitforcapacitytimeout)
 * [`fn withWaitForElbCapacity()`](#fn-withwaitforelbcapacity)
@@ -103,6 +105,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-tagnew)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
+* [`obj traffic_source`](#obj-traffic_source)
+  * [`fn new()`](#fn-traffic_sourcenew)
 * [`obj warm_pool`](#obj-warm_pool)
   * [`fn new()`](#fn-warm_poolnew)
   * [`obj warm_pool.instance_reuse_policy`](#obj-warm_poolinstance_reuse_policy)
@@ -173,6 +177,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `mixed_instances_policy` (`list[obj]`): Set the `mixed_instances_policy` field on the resulting resource block. When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-mixed_instances_policynew) constructor.
   - `tag` (`list[obj]`): Set the `tag` field on the resulting resource block. When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.tag.new](#fn-tagnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `traffic_source` (`list[obj]`): Set the `traffic_source` field on the resulting resource block. When `null`, the `traffic_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.traffic_source.new](#fn-traffic_sourcenew) constructor.
   - `warm_pool` (`list[obj]`): Set the `warm_pool` field on the resulting resource block. When `null`, the `warm_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.new](#fn-warm_poolnew) constructor.
 
 **Returns**:
@@ -233,6 +238,7 @@ injecting into a complete block.
   - `mixed_instances_policy` (`list[obj]`): Set the `mixed_instances_policy` field on the resulting object. When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-mixed_instances_policynew) constructor.
   - `tag` (`list[obj]`): Set the `tag` field on the resulting object. When `null`, the `tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.tag.new](#fn-tagnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.timeouts.new](#fn-timeoutsnew) constructor.
+  - `traffic_source` (`list[obj]`): Set the `traffic_source` field on the resulting object. When `null`, the `traffic_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.traffic_source.new](#fn-traffic_sourcenew) constructor.
   - `warm_pool` (`list[obj]`): Set the `warm_pool` field on the resulting object. When `null`, the `warm_pool` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.warm_pool.new](#fn-warm_poolnew) constructor.
 
 **Returns**:
@@ -892,6 +898,43 @@ function.
   - `value` (`obj`): The value to set for the `timeouts` field.
 
 
+### fn withTrafficSource
+
+```ts
+withTrafficSource()
+```
+
+`aws.list[obj].withTrafficSource` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the traffic_source field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withTrafficSourceMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `traffic_source` field.
+
+
+### fn withTrafficSourceMixin
+
+```ts
+withTrafficSourceMixin()
+```
+
+`aws.list[obj].withTrafficSourceMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the traffic_source field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withTrafficSource](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `traffic_source` field.
+
+
 ### fn withVpcZoneIdentifier
 
 ```ts
@@ -1543,6 +1586,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.
+
+
+## obj traffic_source
+
+
+
+### fn traffic_source.new
+
+```ts
+new()
+```
+
+
+`aws.autoscaling_group.traffic_source.new` constructs a new object with attributes and blocks configured for the `traffic_source`
+Terraform sub block.
+
+
+
+**Args**:
+  - `identifier` (`string`): Set the `identifier` field on the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `traffic_source` sub block.
 
 
 ## obj warm_pool

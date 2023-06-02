@@ -17,7 +17,9 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withFunctionName()`](#fn-withfunctionname)
 * [`fn withInput()`](#fn-withinput)
+* [`fn withLifecycleScope()`](#fn-withlifecyclescope)
 * [`fn withQualifier()`](#fn-withqualifier)
+* [`fn withTerraformKey()`](#fn-withterraformkey)
 * [`fn withTriggers()`](#fn-withtriggers)
 
 ## Fields
@@ -51,7 +53,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
   - `input` (`string`): Set the `input` field on the resulting resource block.
+  - `lifecycle_scope` (`string`): Set the `lifecycle_scope` field on the resulting resource block. When `null`, the `lifecycle_scope` field will be omitted from the resulting object.
   - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `terraform_key` (`string`): Set the `terraform_key` field on the resulting resource block. When `null`, the `terraform_key` field will be omitted from the resulting object.
   - `triggers` (`obj`): Set the `triggers` field on the resulting resource block. When `null`, the `triggers` field will be omitted from the resulting object.
 
 **Returns**:
@@ -78,7 +82,9 @@ injecting into a complete block.
 **Args**:
   - `function_name` (`string`): Set the `function_name` field on the resulting object.
   - `input` (`string`): Set the `input` field on the resulting object.
+  - `lifecycle_scope` (`string`): Set the `lifecycle_scope` field on the resulting object. When `null`, the `lifecycle_scope` field will be omitted from the resulting object.
   - `qualifier` (`string`): Set the `qualifier` field on the resulting object. When `null`, the `qualifier` field will be omitted from the resulting object.
+  - `terraform_key` (`string`): Set the `terraform_key` field on the resulting object. When `null`, the `terraform_key` field will be omitted from the resulting object.
   - `triggers` (`obj`): Set the `triggers` field on the resulting object. When `null`, the `triggers` field will be omitted from the resulting object.
 
 **Returns**:
@@ -117,6 +123,22 @@ Terraform resource block to set or update the input field.
   - `value` (`string`): The value to set for the `input` field.
 
 
+### fn withLifecycleScope
+
+```ts
+withLifecycleScope()
+```
+
+`aws.string.withLifecycleScope` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the lifecycle_scope field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `lifecycle_scope` field.
+
+
 ### fn withQualifier
 
 ```ts
@@ -131,6 +153,22 @@ Terraform resource block to set or update the qualifier field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `qualifier` field.
+
+
+### fn withTerraformKey
+
+```ts
+withTerraformKey()
+```
+
+`aws.string.withTerraformKey` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the terraform_key field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `terraform_key` field.
 
 
 ### fn withTriggers

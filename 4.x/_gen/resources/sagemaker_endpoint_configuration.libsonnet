@@ -173,13 +173,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       volume_size_in_gb: volume_size_in_gb,
     }),
     serverless_config:: {
-      '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.production_variants.serverless_config.new` constructs a new object with attributes and blocks configured for the `serverless_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.\n  - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `serverless_config` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.production_variants.serverless_config.new` constructs a new object with attributes and blocks configured for the `serverless_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.\n  - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.\n  - `provisioned_concurrency` (`number`): Set the `provisioned_concurrency` field on the resulting object. When `null`, the `provisioned_concurrency` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `serverless_config` sub block.\n', args=[]),
       new(
         max_concurrency,
-        memory_size_in_mb
+        memory_size_in_mb,
+        provisioned_concurrency=null
       ):: std.prune(a={
         max_concurrency: max_concurrency,
         memory_size_in_mb: memory_size_in_mb,
+        provisioned_concurrency: provisioned_concurrency,
       }),
     },
   },
@@ -223,13 +225,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       volume_size_in_gb: volume_size_in_gb,
     }),
     serverless_config:: {
-      '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.shadow_production_variants.serverless_config.new` constructs a new object with attributes and blocks configured for the `serverless_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.\n  - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `serverless_config` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.sagemaker_endpoint_configuration.shadow_production_variants.serverless_config.new` constructs a new object with attributes and blocks configured for the `serverless_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.\n  - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.\n  - `provisioned_concurrency` (`number`): Set the `provisioned_concurrency` field on the resulting object. When `null`, the `provisioned_concurrency` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `serverless_config` sub block.\n', args=[]),
       new(
         max_concurrency,
-        memory_size_in_mb
+        memory_size_in_mb,
+        provisioned_concurrency=null
       ):: std.prune(a={
         max_concurrency: max_concurrency,
         memory_size_in_mb: memory_size_in_mb,
+        provisioned_concurrency: provisioned_concurrency,
       }),
     },
   },

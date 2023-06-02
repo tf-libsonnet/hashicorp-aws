@@ -472,6 +472,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   vpc_security_group_rules: (import 'vpc_security_group_rules.libsonnet'),
   vpclattice_auth_policy: (import 'vpclattice_auth_policy.libsonnet'),
   vpclattice_listener: (import 'vpclattice_listener.libsonnet'),
+  vpclattice_resource_policy: (import 'vpclattice_resource_policy.libsonnet'),
   vpclattice_service: (import 'vpclattice_service.libsonnet'),
   vpclattice_service_network: (import 'vpclattice_service_network.libsonnet'),
   vpcs: (import 'vpcs.libsonnet'),

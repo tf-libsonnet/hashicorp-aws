@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withFunctionName()`](#fn-withfunctionname)
 * [`fn withProvisionedConcurrentExecutions()`](#fn-withprovisionedconcurrentexecutions)
 * [`fn withQualifier()`](#fn-withqualifier)
+* [`fn withSkipDestroy()`](#fn-withskipdestroy)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`obj timeouts`](#obj-timeouts)
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `function_name` (`string`): Set the `function_name` field on the resulting resource block.
   - `provisioned_concurrent_executions` (`number`): Set the `provisioned_concurrent_executions` field on the resulting resource block.
   - `qualifier` (`string`): Set the `qualifier` field on the resulting resource block.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting resource block. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_provisioned_concurrency_config.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -82,6 +84,7 @@ injecting into a complete block.
   - `function_name` (`string`): Set the `function_name` field on the resulting object.
   - `provisioned_concurrent_executions` (`number`): Set the `provisioned_concurrent_executions` field on the resulting object.
   - `qualifier` (`string`): Set the `qualifier` field on the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting object. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_provisioned_concurrency_config.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -134,6 +137,22 @@ Terraform resource block to set or update the qualifier field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `qualifier` field.
+
+
+### fn withSkipDestroy
+
+```ts
+withSkipDestroy()
+```
+
+`aws.bool.withSkipDestroy` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the skip_destroy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `skip_destroy` field.
 
 
 ### fn withTimeouts

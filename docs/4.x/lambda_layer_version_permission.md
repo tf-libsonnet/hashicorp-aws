@@ -19,6 +19,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLayerName()`](#fn-withlayername)
 * [`fn withOrganizationId()`](#fn-withorganizationid)
 * [`fn withPrincipal()`](#fn-withprincipal)
+* [`fn withSkipDestroy()`](#fn-withskipdestroy)
 * [`fn withStatementId()`](#fn-withstatementid)
 * [`fn withVersionNumber()`](#fn-withversionnumber)
 
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `layer_name` (`string`): Set the `layer_name` field on the resulting resource block.
   - `organization_id` (`string`): Set the `organization_id` field on the resulting resource block. When `null`, the `organization_id` field will be omitted from the resulting object.
   - `principal` (`string`): Set the `principal` field on the resulting resource block.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting resource block. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `statement_id` (`string`): Set the `statement_id` field on the resulting resource block.
   - `version_number` (`number`): Set the `version_number` field on the resulting resource block.
 
@@ -84,6 +86,7 @@ injecting into a complete block.
   - `layer_name` (`string`): Set the `layer_name` field on the resulting object.
   - `organization_id` (`string`): Set the `organization_id` field on the resulting object. When `null`, the `organization_id` field will be omitted from the resulting object.
   - `principal` (`string`): Set the `principal` field on the resulting object.
+  - `skip_destroy` (`bool`): Set the `skip_destroy` field on the resulting object. When `null`, the `skip_destroy` field will be omitted from the resulting object.
   - `statement_id` (`string`): Set the `statement_id` field on the resulting object.
   - `version_number` (`number`): Set the `version_number` field on the resulting object.
 
@@ -153,6 +156,22 @@ Terraform resource block to set or update the principal field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `principal` field.
+
+
+### fn withSkipDestroy
+
+```ts
+withSkipDestroy()
+```
+
+`aws.bool.withSkipDestroy` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the skip_destroy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `skip_destroy` field.
 
 
 ### fn withStatementId

@@ -30,6 +30,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withUserPoolConfig()`](#fn-withuserpoolconfig)
 * [`fn withUserPoolConfigMixin()`](#fn-withuserpoolconfigmixin)
+* [`fn withVisibility()`](#fn-withvisibility)
 * [`fn withXrayEnabled()`](#fn-withxrayenabled)
 * [`obj additional_authentication_provider`](#obj-additional_authentication_provider)
   * [`fn new()`](#fn-additional_authentication_providernew)
@@ -82,6 +83,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `schema` (`string`): Set the `schema` field on the resulting resource block. When `null`, the `schema` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `visibility` (`string`): Set the `visibility` field on the resulting resource block. When `null`, the `visibility` field will be omitted from the resulting object.
   - `xray_enabled` (`bool`): Set the `xray_enabled` field on the resulting resource block. When `null`, the `xray_enabled` field will be omitted from the resulting object.
   - `additional_authentication_provider` (`list[obj]`): Set the `additional_authentication_provider` field on the resulting resource block. When `null`, the `additional_authentication_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.new](#fn-additional_authentication_providernew) constructor.
   - `lambda_authorizer_config` (`list[obj]`): Set the `lambda_authorizer_config` field on the resulting resource block. When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.lambda_authorizer_config.new](#fn-lambda_authorizer_confignew) constructor.
@@ -116,6 +118,7 @@ injecting into a complete block.
   - `schema` (`string`): Set the `schema` field on the resulting object. When `null`, the `schema` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `visibility` (`string`): Set the `visibility` field on the resulting object. When `null`, the `visibility` field will be omitted from the resulting object.
   - `xray_enabled` (`bool`): Set the `xray_enabled` field on the resulting object. When `null`, the `xray_enabled` field will be omitted from the resulting object.
   - `additional_authentication_provider` (`list[obj]`): Set the `additional_authentication_provider` field on the resulting object. When `null`, the `additional_authentication_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.additional_authentication_provider.new](#fn-additional_authentication_providernew) constructor.
   - `lambda_authorizer_config` (`list[obj]`): Set the `lambda_authorizer_config` field on the resulting object. When `null`, the `lambda_authorizer_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appsync_graphql_api.lambda_authorizer_config.new](#fn-lambda_authorizer_confignew) constructor.
@@ -390,6 +393,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `user_pool_config` field.
+
+
+### fn withVisibility
+
+```ts
+withVisibility()
+```
+
+`aws.string.withVisibility` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the visibility field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `visibility` field.
 
 
 ### fn withXrayEnabled

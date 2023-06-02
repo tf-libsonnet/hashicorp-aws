@@ -22,6 +22,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCapabilities()`](#fn-withcapabilities)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withExecutionRoleName()`](#fn-withexecutionrolename)
+* [`fn withManagedExecution()`](#fn-withmanagedexecution)
+* [`fn withManagedExecutionMixin()`](#fn-withmanagedexecutionmixin)
 * [`fn withName()`](#fn-withname)
 * [`fn withOperationPreferences()`](#fn-withoperationpreferences)
 * [`fn withOperationPreferencesMixin()`](#fn-withoperationpreferencesmixin)
@@ -35,6 +37,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`obj auto_deployment`](#obj-auto_deployment)
   * [`fn new()`](#fn-auto_deploymentnew)
+* [`obj managed_execution`](#obj-managed_execution)
+  * [`fn new()`](#fn-managed_executionnew)
 * [`obj operation_preferences`](#obj-operation_preferences)
   * [`fn new()`](#fn-operation_preferencesnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -82,6 +86,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `template_body` (`string`): Set the `template_body` field on the resulting resource block. When `null`, the `template_body` field will be omitted from the resulting object.
   - `template_url` (`string`): Set the `template_url` field on the resulting resource block. When `null`, the `template_url` field will be omitted from the resulting object.
   - `auto_deployment` (`list[obj]`): Set the `auto_deployment` field on the resulting resource block. When `null`, the `auto_deployment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.auto_deployment.new](#fn-auto_deploymentnew) constructor.
+  - `managed_execution` (`list[obj]`): Set the `managed_execution` field on the resulting resource block. When `null`, the `managed_execution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.managed_execution.new](#fn-managed_executionnew) constructor.
   - `operation_preferences` (`list[obj]`): Set the `operation_preferences` field on the resulting resource block. When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.operation_preferences.new](#fn-operation_preferencesnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -120,6 +125,7 @@ injecting into a complete block.
   - `template_body` (`string`): Set the `template_body` field on the resulting object. When `null`, the `template_body` field will be omitted from the resulting object.
   - `template_url` (`string`): Set the `template_url` field on the resulting object. When `null`, the `template_url` field will be omitted from the resulting object.
   - `auto_deployment` (`list[obj]`): Set the `auto_deployment` field on the resulting object. When `null`, the `auto_deployment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.auto_deployment.new](#fn-auto_deploymentnew) constructor.
+  - `managed_execution` (`list[obj]`): Set the `managed_execution` field on the resulting object. When `null`, the `managed_execution` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.managed_execution.new](#fn-managed_executionnew) constructor.
   - `operation_preferences` (`list[obj]`): Set the `operation_preferences` field on the resulting object. When `null`, the `operation_preferences` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.operation_preferences.new](#fn-operation_preferencesnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudformation_stack_set.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -242,6 +248,43 @@ Terraform resource block to set or update the execution_role_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `execution_role_name` field.
+
+
+### fn withManagedExecution
+
+```ts
+withManagedExecution()
+```
+
+`aws.list[obj].withManagedExecution` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the managed_execution field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withManagedExecutionMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `managed_execution` field.
+
+
+### fn withManagedExecutionMixin
+
+```ts
+withManagedExecutionMixin()
+```
+
+`aws.list[obj].withManagedExecutionMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the managed_execution field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withManagedExecution](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `managed_execution` field.
 
 
 ### fn withName
@@ -451,6 +494,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `auto_deployment` sub block.
+
+
+## obj managed_execution
+
+
+
+### fn managed_execution.new
+
+```ts
+new()
+```
+
+
+`aws.cloudformation_stack_set.managed_execution.new` constructs a new object with attributes and blocks configured for the `managed_execution`
+Terraform sub block.
+
+
+
+**Args**:
+  - `active` (`bool`): Set the `active` field on the resulting object. When `null`, the `active` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `managed_execution` sub block.
 
 
 ## obj operation_preferences

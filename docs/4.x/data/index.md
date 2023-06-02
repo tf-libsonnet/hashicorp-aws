@@ -477,6 +477,7 @@ permalink: /data/
 * [vpc_security_group_rules](vpc_security_group_rules.md)
 * [vpclattice_auth_policy](vpclattice_auth_policy.md)
 * [vpclattice_listener](vpclattice_listener.md)
+* [vpclattice_resource_policy](vpclattice_resource_policy.md)
 * [vpclattice_service](vpclattice_service.md)
 * [vpclattice_service_network](vpclattice_service_network.md)
 * [vpcs](vpcs.md)

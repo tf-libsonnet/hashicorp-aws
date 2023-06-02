@@ -608,6 +608,7 @@ Terraform sub block.
 **Args**:
   - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.
   - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.
+  - `provisioned_concurrency` (`number`): Set the `provisioned_concurrency` field on the resulting object. When `null`, the `provisioned_concurrency` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `serverless_config` sub block.
@@ -690,6 +691,7 @@ Terraform sub block.
 **Args**:
   - `max_concurrency` (`number`): Set the `max_concurrency` field on the resulting object.
   - `memory_size_in_mb` (`number`): Set the `memory_size_in_mb` field on the resulting object.
+  - `provisioned_concurrency` (`number`): Set the `provisioned_concurrency` field on the resulting object. When `null`, the `provisioned_concurrency` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `serverless_config` sub block.

@@ -17,8 +17,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withJunctionPath()`](#fn-withjunctionpath)
 * [`fn withName()`](#fn-withname)
+* [`fn withOntapVolumeType()`](#fn-withontapvolumetype)
 * [`fn withSecurityStyle()`](#fn-withsecuritystyle)
 * [`fn withSizeInMegabytes()`](#fn-withsizeinmegabytes)
+* [`fn withSkipFinalBackup()`](#fn-withskipfinalbackup)
 * [`fn withStorageEfficiencyEnabled()`](#fn-withstorageefficiencyenabled)
 * [`fn withStorageVirtualMachineId()`](#fn-withstoragevirtualmachineid)
 * [`fn withTags()`](#fn-withtags)
@@ -62,11 +64,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `junction_path` (`string`): Set the `junction_path` field on the resulting resource block.
+  - `junction_path` (`string`): Set the `junction_path` field on the resulting resource block. When `null`, the `junction_path` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `ontap_volume_type` (`string`): Set the `ontap_volume_type` field on the resulting resource block. When `null`, the `ontap_volume_type` field will be omitted from the resulting object.
   - `security_style` (`string`): Set the `security_style` field on the resulting resource block. When `null`, the `security_style` field will be omitted from the resulting object.
   - `size_in_megabytes` (`number`): Set the `size_in_megabytes` field on the resulting resource block.
-  - `storage_efficiency_enabled` (`bool`): Set the `storage_efficiency_enabled` field on the resulting resource block.
+  - `skip_final_backup` (`bool`): Set the `skip_final_backup` field on the resulting resource block. When `null`, the `skip_final_backup` field will be omitted from the resulting object.
+  - `storage_efficiency_enabled` (`bool`): Set the `storage_efficiency_enabled` field on the resulting resource block. When `null`, the `storage_efficiency_enabled` field will be omitted from the resulting object.
   - `storage_virtual_machine_id` (`string`): Set the `storage_virtual_machine_id` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -96,11 +100,13 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `junction_path` (`string`): Set the `junction_path` field on the resulting object.
+  - `junction_path` (`string`): Set the `junction_path` field on the resulting object. When `null`, the `junction_path` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
+  - `ontap_volume_type` (`string`): Set the `ontap_volume_type` field on the resulting object. When `null`, the `ontap_volume_type` field will be omitted from the resulting object.
   - `security_style` (`string`): Set the `security_style` field on the resulting object. When `null`, the `security_style` field will be omitted from the resulting object.
   - `size_in_megabytes` (`number`): Set the `size_in_megabytes` field on the resulting object.
-  - `storage_efficiency_enabled` (`bool`): Set the `storage_efficiency_enabled` field on the resulting object.
+  - `skip_final_backup` (`bool`): Set the `skip_final_backup` field on the resulting object. When `null`, the `skip_final_backup` field will be omitted from the resulting object.
+  - `storage_efficiency_enabled` (`bool`): Set the `storage_efficiency_enabled` field on the resulting object. When `null`, the `storage_efficiency_enabled` field will be omitted from the resulting object.
   - `storage_virtual_machine_id` (`string`): Set the `storage_virtual_machine_id` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -144,6 +150,22 @@ Terraform resource block to set or update the name field.
   - `value` (`string`): The value to set for the `name` field.
 
 
+### fn withOntapVolumeType
+
+```ts
+withOntapVolumeType()
+```
+
+`aws.string.withOntapVolumeType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the ontap_volume_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `ontap_volume_type` field.
+
+
 ### fn withSecurityStyle
 
 ```ts
@@ -174,6 +196,22 @@ Terraform resource block to set or update the size_in_megabytes field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `size_in_megabytes` field.
+
+
+### fn withSkipFinalBackup
+
+```ts
+withSkipFinalBackup()
+```
+
+`aws.bool.withSkipFinalBackup` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the skip_final_backup field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `skip_final_backup` field.
 
 
 ### fn withStorageEfficiencyEnabled

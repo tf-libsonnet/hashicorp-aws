@@ -37,6 +37,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLogPublishingOptionsMixin()`](#fn-withlogpublishingoptionsmixin)
 * [`fn withNodeToNodeEncryption()`](#fn-withnodetonodeencryption)
 * [`fn withNodeToNodeEncryptionMixin()`](#fn-withnodetonodeencryptionmixin)
+* [`fn withOffPeakWindowOptions()`](#fn-withoffpeakwindowoptions)
+* [`fn withOffPeakWindowOptionsMixin()`](#fn-withoffpeakwindowoptionsmixin)
 * [`fn withSnapshotOptions()`](#fn-withsnapshotoptions)
 * [`fn withSnapshotOptionsMixin()`](#fn-withsnapshotoptionsmixin)
 * [`fn withTags()`](#fn-withtags)
@@ -73,6 +75,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-log_publishing_optionsnew)
 * [`obj node_to_node_encryption`](#obj-node_to_node_encryption)
   * [`fn new()`](#fn-node_to_node_encryptionnew)
+* [`obj off_peak_window_options`](#obj-off_peak_window_options)
+  * [`fn new()`](#fn-off_peak_window_optionsnew)
+  * [`obj off_peak_window_options.off_peak_window`](#obj-off_peak_window_optionsoff_peak_window)
+    * [`fn new()`](#fn-off_peak_window_optionsoff_peak_windownew)
+    * [`obj off_peak_window_options.off_peak_window.window_start_time`](#obj-off_peak_window_optionsoff_peak_windowwindow_start_time)
+      * [`fn new()`](#fn-off_peak_window_optionsoff_peak_windowwindow_start_timenew)
 * [`obj snapshot_options`](#obj-snapshot_options)
   * [`fn new()`](#fn-snapshot_optionsnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -124,6 +132,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `encrypt_at_rest` (`list[obj]`): Set the `encrypt_at_rest` field on the resulting resource block. When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.encrypt_at_rest.new](#fn-encrypt_at_restnew) constructor.
   - `log_publishing_options` (`list[obj]`): Set the `log_publishing_options` field on the resulting resource block. When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.log_publishing_options.new](#fn-log_publishing_optionsnew) constructor.
   - `node_to_node_encryption` (`list[obj]`): Set the `node_to_node_encryption` field on the resulting resource block. When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
+  - `off_peak_window_options` (`list[obj]`): Set the `off_peak_window_options` field on the resulting resource block. When `null`, the `off_peak_window_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.off_peak_window_options.new](#fn-off_peak_window_optionsnew) constructor.
   - `snapshot_options` (`list[obj]`): Set the `snapshot_options` field on the resulting resource block. When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_options` (`list[obj]`): Set the `vpc_options` field on the resulting resource block. When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
@@ -165,6 +174,7 @@ injecting into a complete block.
   - `encrypt_at_rest` (`list[obj]`): Set the `encrypt_at_rest` field on the resulting object. When `null`, the `encrypt_at_rest` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.encrypt_at_rest.new](#fn-encrypt_at_restnew) constructor.
   - `log_publishing_options` (`list[obj]`): Set the `log_publishing_options` field on the resulting object. When `null`, the `log_publishing_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.log_publishing_options.new](#fn-log_publishing_optionsnew) constructor.
   - `node_to_node_encryption` (`list[obj]`): Set the `node_to_node_encryption` field on the resulting object. When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
+  - `off_peak_window_options` (`list[obj]`): Set the `off_peak_window_options` field on the resulting object. When `null`, the `off_peak_window_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.off_peak_window_options.new](#fn-off_peak_window_optionsnew) constructor.
   - `snapshot_options` (`list[obj]`): Set the `snapshot_options` field on the resulting object. When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_options` (`list[obj]`): Set the `vpc_options` field on the resulting object. When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
@@ -568,6 +578,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `node_to_node_encryption` field.
+
+
+### fn withOffPeakWindowOptions
+
+```ts
+withOffPeakWindowOptions()
+```
+
+`aws.list[obj].withOffPeakWindowOptions` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the off_peak_window_options field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withOffPeakWindowOptionsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `off_peak_window_options` field.
+
+
+### fn withOffPeakWindowOptionsMixin
+
+```ts
+withOffPeakWindowOptionsMixin()
+```
+
+`aws.list[obj].withOffPeakWindowOptionsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the off_peak_window_options field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withOffPeakWindowOptions](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `off_peak_window_options` field.
 
 
 ### fn withSnapshotOptions
@@ -1066,6 +1113,77 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `node_to_node_encryption` sub block.
+
+
+## obj off_peak_window_options
+
+
+
+### fn off_peak_window_options.new
+
+```ts
+new()
+```
+
+
+`aws.opensearch_domain.off_peak_window_options.new` constructs a new object with attributes and blocks configured for the `off_peak_window_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `off_peak_window` (`list[obj]`): Set the `off_peak_window` field on the resulting object. When `null`, the `off_peak_window` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.off_peak_window_options.off_peak_window.new](#fn-off_peak_window_optionsoff_peak_windownew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `off_peak_window_options` sub block.
+
+
+## obj off_peak_window_options.off_peak_window
+
+
+
+### fn off_peak_window_options.off_peak_window.new
+
+```ts
+new()
+```
+
+
+`aws.opensearch_domain.off_peak_window_options.off_peak_window.new` constructs a new object with attributes and blocks configured for the `off_peak_window`
+Terraform sub block.
+
+
+
+**Args**:
+  - `window_start_time` (`list[obj]`): Set the `window_start_time` field on the resulting object. When `null`, the `window_start_time` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.off_peak_window_options.off_peak_window.window_start_time.new](#fn-off_peak_window_optionsoff_peak_window_optionswindow_start_timenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `off_peak_window` sub block.
+
+
+## obj off_peak_window_options.off_peak_window.window_start_time
+
+
+
+### fn off_peak_window_options.off_peak_window.window_start_time.new
+
+```ts
+new()
+```
+
+
+`aws.opensearch_domain.off_peak_window_options.off_peak_window.window_start_time.new` constructs a new object with attributes and blocks configured for the `window_start_time`
+Terraform sub block.
+
+
+
+**Args**:
+  - `hours` (`number`): Set the `hours` field on the resulting object. When `null`, the `hours` field will be omitted from the resulting object.
+  - `minutes` (`number`): Set the `minutes` field on the resulting object. When `null`, the `minutes` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `window_start_time` sub block.
 
 
 ## obj snapshot_options
