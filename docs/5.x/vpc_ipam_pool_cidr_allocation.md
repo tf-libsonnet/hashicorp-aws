@@ -1,0 +1,168 @@
+---
+permalink: /vpc_ipam_pool_cidr_allocation/
+---
+
+# vpc_ipam_pool_cidr_allocation
+
+`vpc_ipam_pool_cidr_allocation` represents the `aws_vpc_ipam_pool_cidr_allocation` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withCidr()`](#fn-withcidr)
+* [`fn withDescription()`](#fn-withdescription)
+* [`fn withDisallowedCidrs()`](#fn-withdisallowedcidrs)
+* [`fn withIpamPoolId()`](#fn-withipampoolid)
+* [`fn withNetmaskLength()`](#fn-withnetmasklength)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.vpc_ipam_pool_cidr_allocation.new` injects a new `aws_vpc_ipam_pool_cidr_allocation` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.vpc_ipam_pool_cidr_allocation.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.vpc_ipam_pool_cidr_allocation` using the reference:
+
+    $._ref.aws_vpc_ipam_pool_cidr_allocation.some_id.get('id')
+
+This is the same as directly entering `"${ aws_vpc_ipam_pool_cidr_allocation.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `cidr` (`string`): Set the `cidr` field on the resulting resource block. When `null`, the `cidr` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `disallowed_cidrs` (`list`): Set the `disallowed_cidrs` field on the resulting resource block. When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
+  - `ipam_pool_id` (`string`): Set the `ipam_pool_id` field on the resulting resource block.
+  - `netmask_length` (`number`): Set the `netmask_length` field on the resulting resource block. When `null`, the `netmask_length` field will be omitted from the resulting object.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.vpc_ipam_pool_cidr_allocation.newAttrs` constructs a new object with attributes and blocks configured for the `vpc_ipam_pool_cidr_allocation`
+Terraform resource.
+
+Unlike [aws.vpc_ipam_pool_cidr_allocation.new](#fn-new), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `cidr` (`string`): Set the `cidr` field on the resulting object. When `null`, the `cidr` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `disallowed_cidrs` (`list`): Set the `disallowed_cidrs` field on the resulting object. When `null`, the `disallowed_cidrs` field will be omitted from the resulting object.
+  - `ipam_pool_id` (`string`): Set the `ipam_pool_id` field on the resulting object.
+  - `netmask_length` (`number`): Set the `netmask_length` field on the resulting object. When `null`, the `netmask_length` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `vpc_ipam_pool_cidr_allocation` resource into the root Terraform configuration.
+
+
+### fn withCidr
+
+```ts
+withCidr()
+```
+
+`aws.string.withCidr` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the cidr field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `cidr` field.
+
+
+### fn withDescription
+
+```ts
+withDescription()
+```
+
+`aws.string.withDescription` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the description field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `description` field.
+
+
+### fn withDisallowedCidrs
+
+```ts
+withDisallowedCidrs()
+```
+
+`aws.list.withDisallowedCidrs` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the disallowed_cidrs field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `disallowed_cidrs` field.
+
+
+### fn withIpamPoolId
+
+```ts
+withIpamPoolId()
+```
+
+`aws.string.withIpamPoolId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the ipam_pool_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `ipam_pool_id` field.
+
+
+### fn withNetmaskLength
+
+```ts
+withNetmaskLength()
+```
+
+`aws.number.withNetmaskLength` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the netmask_length field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `netmask_length` field.
