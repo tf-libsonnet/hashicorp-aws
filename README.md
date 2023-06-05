@@ -36,7 +36,7 @@ jb install github.com/tf-libsonnet/hashicorp-aws@main
 # Or if you want to install a specific release
 #   jb install github.com/tf-libsonnet/hashicorp-aws@v0.0.1
 # Or if you want to install bindings for a specific provider major version series
-#   jb install github.com/tf-libsonnet/hashicorp-aws/4.x@main
+#   jb install github.com/tf-libsonnet/hashicorp-aws/5.x@main
 ```
 
 You can then import the package in your Jsonnet code:
@@ -124,11 +124,11 @@ This will generate the following Terraform JSON :
 }
 ```
 
-Refer to the [reference docs](/docs/4.x/README.md) for a list of supported data sources and resources:
+Refer to the [reference docs](/docs/5.x/README.md) for a list of supported data sources and resources:
 
-- [provider config](/docs/4.x/provider.md)
-- [resources](/docs/4.x/README.md)
-- [data sources](/docs/4.x/data/index.md)
+- [provider config](/docs/5.x/provider.md)
+- [resources](/docs/5.x/README.md)
+- [data sources](/docs/5.x/data/index.md)
 
 
 ## Support

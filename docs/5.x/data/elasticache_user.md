@@ -1,0 +1,254 @@
+---
+permalink: /data/elasticache_user/
+---
+
+# data.elasticache_user
+
+`elasticache_user` represents the `aws_elasticache_user` Terraform data source.
+
+
+
+This package contains functions and utilities for setting up the data source using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAccessString()`](#fn-withaccessstring)
+* [`fn withAuthenticationMode()`](#fn-withauthenticationmode)
+* [`fn withAuthenticationModeMixin()`](#fn-withauthenticationmodemixin)
+* [`fn withEngine()`](#fn-withengine)
+* [`fn withNoPasswordRequired()`](#fn-withnopasswordrequired)
+* [`fn withPasswords()`](#fn-withpasswords)
+* [`fn withUserId()`](#fn-withuserid)
+* [`fn withUserName()`](#fn-withusername)
+* [`obj authentication_mode`](#obj-authentication_mode)
+  * [`fn new()`](#fn-authentication_modenew)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.data.elasticache_user.new` injects a new `data_aws_elasticache_user` Terraform `data source`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.data.elasticache_user.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.data.elasticache_user` using the reference:
+
+    $._ref.data_aws_elasticache_user.some_id.get('id')
+
+This is the same as directly entering `"${ data_aws_elasticache_user.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block.
+  - `access_string` (`string`): Set the `access_string` field on the resulting data source block. When `null`, the `access_string` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting data source block. When `null`, the `engine` field will be omitted from the resulting object.
+  - `no_password_required` (`bool`): Set the `no_password_required` field on the resulting data source block. When `null`, the `no_password_required` field will be omitted from the resulting object.
+  - `passwords` (`list`): Set the `passwords` field on the resulting data source block. When `null`, the `passwords` field will be omitted from the resulting object.
+  - `user_id` (`string`): Set the `user_id` field on the resulting data source block.
+  - `user_name` (`string`): Set the `user_name` field on the resulting data source block. When `null`, the `user_name` field will be omitted from the resulting object.
+  - `authentication_mode` (`list[obj]`): Set the `authentication_mode` field on the resulting data source block. When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.elasticache_user.authentication_mode.new](#fn-authentication_modenew) constructor.
+
+**Returns**:
+- A mixin object that injects the new data source into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.data.elasticache_user.newAttrs` constructs a new object with attributes and blocks configured for the `elasticache_user`
+Terraform data source.
+
+Unlike [aws.data.elasticache_user.new](#fn-new), this function will not inject the `data source`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `access_string` (`string`): Set the `access_string` field on the resulting object. When `null`, the `access_string` field will be omitted from the resulting object.
+  - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
+  - `no_password_required` (`bool`): Set the `no_password_required` field on the resulting object. When `null`, the `no_password_required` field will be omitted from the resulting object.
+  - `passwords` (`list`): Set the `passwords` field on the resulting object. When `null`, the `passwords` field will be omitted from the resulting object.
+  - `user_id` (`string`): Set the `user_id` field on the resulting object.
+  - `user_name` (`string`): Set the `user_name` field on the resulting object. When `null`, the `user_name` field will be omitted from the resulting object.
+  - `authentication_mode` (`list[obj]`): Set the `authentication_mode` field on the resulting object. When `null`, the `authentication_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.elasticache_user.authentication_mode.new](#fn-authentication_modenew) constructor.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `elasticache_user` data source into the root Terraform configuration.
+
+
+### fn withAccessString
+
+```ts
+withAccessString()
+```
+
+`aws.string.withAccessString` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the access_string field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `access_string` field.
+
+
+### fn withAuthenticationMode
+
+```ts
+withAuthenticationMode()
+```
+
+`aws.list[obj].withAuthenticationMode` constructs a mixin object that can be merged into the `list[obj]`
+Terraform data source block to set or update the authentication_mode field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withAuthenticationModeMixin](TODO) function.
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `authentication_mode` field.
+
+
+### fn withAuthenticationModeMixin
+
+```ts
+withAuthenticationModeMixin()
+```
+
+`aws.list[obj].withAuthenticationModeMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform data source block to set or update the authentication_mode field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withAuthenticationMode](TODO)
+function.
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `authentication_mode` field.
+
+
+### fn withEngine
+
+```ts
+withEngine()
+```
+
+`aws.string.withEngine` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the engine field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `engine` field.
+
+
+### fn withNoPasswordRequired
+
+```ts
+withNoPasswordRequired()
+```
+
+`aws.bool.withNoPasswordRequired` constructs a mixin object that can be merged into the `bool`
+Terraform data source block to set or update the no_password_required field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `no_password_required` field.
+
+
+### fn withPasswords
+
+```ts
+withPasswords()
+```
+
+`aws.list.withPasswords` constructs a mixin object that can be merged into the `list`
+Terraform data source block to set or update the passwords field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `passwords` field.
+
+
+### fn withUserId
+
+```ts
+withUserId()
+```
+
+`aws.string.withUserId` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the user_id field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `user_id` field.
+
+
+### fn withUserName
+
+```ts
+withUserName()
+```
+
+`aws.string.withUserName` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the user_name field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `user_name` field.
+
+
+## obj authentication_mode
+
+
+
+### fn authentication_mode.new
+
+```ts
+new()
+```
+
+
+`aws.elasticache_user.authentication_mode.new` constructs a new object with attributes and blocks configured for the `authentication_mode`
+Terraform sub block.
+
+
+
+**Args**:
+  - `password_count` (`number`): Set the `password_count` field on the resulting object. When `null`, the `password_count` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `authentication_mode` sub block.
