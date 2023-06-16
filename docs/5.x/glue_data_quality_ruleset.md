@@ -228,6 +228,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `database_name` (`string`): Set the `database_name` field on the resulting object.
   - `table_name` (`string`): Set the `table_name` field on the resulting object.
 

@@ -404,6 +404,7 @@ Terraform sub block.
 
 **Args**:
   - `dns_record_ip_type` (`string`): Set the `dns_record_ip_type` field on the resulting object. When `null`, the `dns_record_ip_type` field will be omitted from the resulting object.
+  - `private_dns_only_for_inbound_resolver_endpoint` (`bool`): Set the `private_dns_only_for_inbound_resolver_endpoint` field on the resulting object. When `null`, the `private_dns_only_for_inbound_resolver_endpoint` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `dns_options` sub block.
