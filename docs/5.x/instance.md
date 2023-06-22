@@ -41,6 +41,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withHostResourceGroupArn()`](#fn-withhostresourcegrouparn)
 * [`fn withIamInstanceProfile()`](#fn-withiaminstanceprofile)
 * [`fn withInstanceInitiatedShutdownBehavior()`](#fn-withinstanceinitiatedshutdownbehavior)
+* [`fn withInstanceMarketOptions()`](#fn-withinstancemarketoptions)
+* [`fn withInstanceMarketOptionsMixin()`](#fn-withinstancemarketoptionsmixin)
 * [`fn withInstanceType()`](#fn-withinstancetype)
 * [`fn withIpv6AddressCount()`](#fn-withipv6addresscount)
 * [`fn withIpv6Addresses()`](#fn-withipv6addresses)
@@ -89,6 +91,10 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-enclave_optionsnew)
 * [`obj ephemeral_block_device`](#obj-ephemeral_block_device)
   * [`fn new()`](#fn-ephemeral_block_devicenew)
+* [`obj instance_market_options`](#obj-instance_market_options)
+  * [`fn new()`](#fn-instance_market_optionsnew)
+  * [`obj instance_market_options.spot_options`](#obj-instance_market_optionsspot_options)
+    * [`fn new()`](#fn-instance_market_optionsspot_optionsnew)
 * [`obj launch_template`](#obj-launch_template)
   * [`fn new()`](#fn-launch_templatenew)
 * [`obj maintenance_options`](#obj-maintenance_options)
@@ -173,6 +179,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting resource block. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
   - `enclave_options` (`list[obj]`): Set the `enclave_options` field on the resulting resource block. When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
   - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting resource block. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `instance_market_options` (`list[obj]`): Set the `instance_market_options` field on the resulting resource block. When `null`, the `instance_market_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.instance_market_options.new](#fn-instance_market_optionsnew) constructor.
   - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting resource block. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.launch_template.new](#fn-launch_templatenew) constructor.
   - `maintenance_options` (`list[obj]`): Set the `maintenance_options` field on the resulting resource block. When `null`, the `maintenance_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.maintenance_options.new](#fn-maintenance_optionsnew) constructor.
   - `metadata_options` (`list[obj]`): Set the `metadata_options` field on the resulting resource block. When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.metadata_options.new](#fn-metadata_optionsnew) constructor.
@@ -243,6 +250,7 @@ injecting into a complete block.
   - `ebs_block_device` (`list[obj]`): Set the `ebs_block_device` field on the resulting object. When `null`, the `ebs_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ebs_block_device.new](#fn-ebs_block_devicenew) constructor.
   - `enclave_options` (`list[obj]`): Set the `enclave_options` field on the resulting object. When `null`, the `enclave_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.enclave_options.new](#fn-enclave_optionsnew) constructor.
   - `ephemeral_block_device` (`list[obj]`): Set the `ephemeral_block_device` field on the resulting object. When `null`, the `ephemeral_block_device` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.ephemeral_block_device.new](#fn-ephemeral_block_devicenew) constructor.
+  - `instance_market_options` (`list[obj]`): Set the `instance_market_options` field on the resulting object. When `null`, the `instance_market_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.instance_market_options.new](#fn-instance_market_optionsnew) constructor.
   - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting object. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.launch_template.new](#fn-launch_templatenew) constructor.
   - `maintenance_options` (`list[obj]`): Set the `maintenance_options` field on the resulting object. When `null`, the `maintenance_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.maintenance_options.new](#fn-maintenance_optionsnew) constructor.
   - `metadata_options` (`list[obj]`): Set the `metadata_options` field on the resulting object. When `null`, the `metadata_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.metadata_options.new](#fn-metadata_optionsnew) constructor.
@@ -699,6 +707,43 @@ Terraform resource block to set or update the instance_initiated_shutdown_behavi
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `instance_initiated_shutdown_behavior` field.
+
+
+### fn withInstanceMarketOptions
+
+```ts
+withInstanceMarketOptions()
+```
+
+`aws.list[obj].withInstanceMarketOptions` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the instance_market_options field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withInstanceMarketOptionsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `instance_market_options` field.
+
+
+### fn withInstanceMarketOptionsMixin
+
+```ts
+withInstanceMarketOptionsMixin()
+```
+
+`aws.list[obj].withInstanceMarketOptionsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the instance_market_options field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withInstanceMarketOptions](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `instance_market_options` field.
 
 
 ### fn withInstanceType
@@ -1453,6 +1498,56 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `ephemeral_block_device` sub block.
+
+
+## obj instance_market_options
+
+
+
+### fn instance_market_options.new
+
+```ts
+new()
+```
+
+
+`aws.instance.instance_market_options.new` constructs a new object with attributes and blocks configured for the `instance_market_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `market_type` (`string`): Set the `market_type` field on the resulting object. When `null`, the `market_type` field will be omitted from the resulting object.
+  - `spot_options` (`list[obj]`): Set the `spot_options` field on the resulting object. When `null`, the `spot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.instance.instance_market_options.spot_options.new](#fn-instance_market_optionsspot_optionsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `instance_market_options` sub block.
+
+
+## obj instance_market_options.spot_options
+
+
+
+### fn instance_market_options.spot_options.new
+
+```ts
+new()
+```
+
+
+`aws.instance.instance_market_options.spot_options.new` constructs a new object with attributes and blocks configured for the `spot_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `instance_interruption_behavior` (`string`): Set the `instance_interruption_behavior` field on the resulting object. When `null`, the `instance_interruption_behavior` field will be omitted from the resulting object.
+  - `max_price` (`string`): Set the `max_price` field on the resulting object. When `null`, the `max_price` field will be omitted from the resulting object.
+  - `spot_instance_type` (`string`): Set the `spot_instance_type` field on the resulting object. When `null`, the `spot_instance_type` field will be omitted from the resulting object.
+  - `valid_until` (`string`): Set the `valid_until` field on the resulting object. When `null`, the `valid_until` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `spot_options` sub block.
 
 
 ## obj launch_template

@@ -59,6 +59,7 @@ thrown. When `null`, the `max_retries` field will be omitted from the resulting 
 created with `aws configure` will be used. When `null`, the `profile` field will be omitted from the resulting object.
   - `region` (`string`): The region where AWS operations will take place. Examples
 are us-east-1, us-west-2, etc. When `null`, the `region` field will be omitted from the resulting object.
+  - `retry_mode` (`string`): Specifies how retries are attempted. Valid values are `standard` and `adaptive`. Can also be configured using the `AWS_RETRY_MODE` environment variable. When `null`, the `retry_mode` field will be omitted from the resulting object.
   - `s3_use_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
 i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
 use virtual hosted bucket addressing when possible
@@ -129,6 +130,7 @@ thrown. When `null`, the `max_retries` field will be omitted from the resulting 
 created with `aws configure` will be used. When `null`, the `profile` field will be omitted from the resulting object.
   - `region` (`string`): The region where AWS operations will take place. Examples
 are us-east-1, us-west-2, etc. When `null`, the `region` field will be omitted from the resulting object.
+  - `retry_mode` (`string`): Specifies how retries are attempted. Valid values are `standard` and `adaptive`. Can also be configured using the `AWS_RETRY_MODE` environment variable. When `null`, the `retry_mode` field will be omitted from the resulting object.
   - `s3_use_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
 i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
 use virtual hosted bucket addressing when possible

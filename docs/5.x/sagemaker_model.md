@@ -367,9 +367,10 @@ Terraform sub block.
 **Args**:
   - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.
   - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.
-  - `image` (`string`): Set the `image` field on the resulting object.
+  - `image` (`string`): Set the `image` field on the resulting object. When `null`, the `image` field will be omitted from the resulting object.
   - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
   - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.
+  - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.
   - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-containerimage_confignew) constructor.
 
 **Returns**:
@@ -465,9 +466,10 @@ Terraform sub block.
 **Args**:
   - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.
   - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.
-  - `image` (`string`): Set the `image` field on the resulting object.
+  - `image` (`string`): Set the `image` field on the resulting object. When `null`, the `image` field will be omitted from the resulting object.
   - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
   - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.
+  - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.
   - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-primary_containerimage_confignew) constructor.
 
 **Returns**:

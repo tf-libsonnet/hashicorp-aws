@@ -32,11 +32,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       stateless_rule_group_reference: stateless_rule_group_reference,
     }),
     stateful_engine_options:: {
-      '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new` constructs a new object with attributes and blocks configured for the `stateful_engine_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `rule_order` (`string`): Set the `rule_order` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `stateful_engine_options` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new` constructs a new object with attributes and blocks configured for the `stateful_engine_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `rule_order` (`string`): Set the `rule_order` field on the resulting object. When `null`, the `rule_order` field will be omitted from the resulting object.\n  - `stream_exception_policy` (`string`): Set the `stream_exception_policy` field on the resulting object. When `null`, the `stream_exception_policy` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `stateful_engine_options` sub block.\n', args=[]),
       new(
-        rule_order
+        rule_order=null,
+        stream_exception_policy=null
       ):: std.prune(a={
         rule_order: rule_order,
+        stream_exception_policy: stream_exception_policy,
       }),
     },
     stateful_rule_group_reference:: {

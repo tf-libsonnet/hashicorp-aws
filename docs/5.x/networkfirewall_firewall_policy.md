@@ -321,7 +321,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `rule_order` (`string`): Set the `rule_order` field on the resulting object.
+  - `rule_order` (`string`): Set the `rule_order` field on the resulting object. When `null`, the `rule_order` field will be omitted from the resulting object.
+  - `stream_exception_policy` (`string`): Set the `stream_exception_policy` field on the resulting object. When `null`, the `stream_exception_policy` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `stateful_engine_options` sub block.
