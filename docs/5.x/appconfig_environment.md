@@ -21,7 +21,6 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMonitorMixin()`](#fn-withmonitormixin)
 * [`fn withName()`](#fn-withname)
 * [`fn withTags()`](#fn-withtags)
-* [`fn withTagsAll()`](#fn-withtagsall)
 * [`obj monitor`](#obj-monitor)
   * [`fn new()`](#fn-monitornew)
 
@@ -58,7 +57,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `monitor` (`list[obj]`): Set the `monitor` field on the resulting resource block. When `null`, the `monitor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appconfig_environment.monitor.new](#fn-monitornew) constructor.
 
 **Returns**:
@@ -87,7 +85,6 @@ injecting into a complete block.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
-  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `monitor` (`list[obj]`): Set the `monitor` field on the resulting object. When `null`, the `monitor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appconfig_environment.monitor.new](#fn-monitornew) constructor.
 
 **Returns**:
@@ -193,22 +190,6 @@ Terraform resource block to set or update the tags field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags` field.
-
-
-### fn withTagsAll
-
-```ts
-withTagsAll()
-```
-
-`aws.obj.withTagsAll` constructs a mixin object that can be merged into the `obj`
-Terraform resource block to set or update the tags_all field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`obj`): The value to set for the `tags_all` field.
 
 
 ## obj monitor

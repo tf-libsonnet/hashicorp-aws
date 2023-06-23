@@ -441,6 +441,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   ses_email_identity: (import 'ses_email_identity.libsonnet'),
   sesv2_configuration_set: (import 'sesv2_configuration_set.libsonnet'),
   sesv2_dedicated_ip_pool: (import 'sesv2_dedicated_ip_pool.libsonnet'),
+  sesv2_email_identity: (import 'sesv2_email_identity.libsonnet'),
+  sesv2_email_identity_mail_from_attributes: (import 'sesv2_email_identity_mail_from_attributes.libsonnet'),
   sfn_activity: (import 'sfn_activity.libsonnet'),
   sfn_state_machine: (import 'sfn_state_machine.libsonnet'),
   signer_signing_job: (import 'signer_signing_job.libsonnet'),

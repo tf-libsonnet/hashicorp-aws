@@ -446,6 +446,8 @@ permalink: /data/
 * [ses_email_identity](ses_email_identity.md)
 * [sesv2_configuration_set](sesv2_configuration_set.md)
 * [sesv2_dedicated_ip_pool](sesv2_dedicated_ip_pool.md)
+* [sesv2_email_identity](sesv2_email_identity.md)
+* [sesv2_email_identity_mail_from_attributes](sesv2_email_identity_mail_from_attributes.md)
 * [sfn_activity](sfn_activity.md)
 * [sfn_state_machine](sfn_state_machine.md)
 * [signer_signing_job](signer_signing_job.md)
