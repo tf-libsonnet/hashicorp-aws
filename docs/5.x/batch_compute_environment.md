@@ -322,6 +322,7 @@ Terraform sub block.
   - `instance_type` (`list`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
   - `max_vcpus` (`number`): Set the `max_vcpus` field on the resulting object.
   - `min_vcpus` (`number`): Set the `min_vcpus` field on the resulting object. When `null`, the `min_vcpus` field will be omitted from the resulting object.
+  - `placement_group` (`string`): Set the `placement_group` field on the resulting object. When `null`, the `placement_group` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `spot_iam_fleet_role` (`string`): Set the `spot_iam_fleet_role` field on the resulting object. When `null`, the `spot_iam_fleet_role` field will be omitted from the resulting object.
   - `subnets` (`list`): Set the `subnets` field on the resulting object.

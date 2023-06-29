@@ -20,6 +20,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLoggingConfigurationMixin()`](#fn-withloggingconfigurationmixin)
 * [`fn withName()`](#fn-withname)
 * [`fn withNamePrefix()`](#fn-withnameprefix)
+* [`fn withPublish()`](#fn-withpublish)
 * [`fn withRoleArn()`](#fn-withrolearn)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
@@ -67,6 +68,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `definition` (`string`): Set the `definition` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `publish` (`bool`): Set the `publish` field on the resulting resource block. When `null`, the `publish` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -100,6 +102,7 @@ injecting into a complete block.
   - `definition` (`string`): Set the `definition` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
+  - `publish` (`bool`): Set the `publish` field on the resulting object. When `null`, the `publish` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -195,6 +198,22 @@ Terraform resource block to set or update the name_prefix field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name_prefix` field.
+
+
+### fn withPublish
+
+```ts
+withPublish()
+```
+
+`aws.bool.withPublish` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the publish field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `publish` field.
 
 
 ### fn withRoleArn
