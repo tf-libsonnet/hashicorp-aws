@@ -173,6 +173,7 @@ project.
 * [chimesdkvoice_sip_media_application](chimesdkvoice_sip_media_application.md)
 * [chimesdkvoice_sip_rule](chimesdkvoice_sip_rule.md)
 * [chimesdkvoice_voice_profile_domain](chimesdkvoice_voice_profile_domain.md)
+* [cleanrooms_collaboration](cleanrooms_collaboration.md)
 * [cloud9_environment_ec2](cloud9_environment_ec2.md)
 * [cloud9_environment_membership](cloud9_environment_membership.md)
 * [cloudcontrolapi_resource](cloudcontrolapi_resource.md)

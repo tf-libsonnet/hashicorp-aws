@@ -34,13 +34,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       magnetic_store_rejected_data_location: magnetic_store_rejected_data_location,
     }),
   },
-  '#new':: d.fn(help="\n`aws.timestreamwrite_table.new` injects a new `aws_timestreamwrite_table` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.timestreamwrite_table.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.timestreamwrite_table` using the reference:\n\n    $._ref.aws_timestreamwrite_table.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_timestreamwrite_table.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `database_name` (`string`): Set the `database_name` field on the resulting resource block.\n  - `table_name` (`string`): Set the `table_name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting resource block. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.\n  - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting resource block. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.timestreamwrite_table.new` injects a new `aws_timestreamwrite_table` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.timestreamwrite_table.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.timestreamwrite_table` using the reference:\n\n    $._ref.aws_timestreamwrite_table.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_timestreamwrite_table.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `database_name` (`string`): Set the `database_name` field on the resulting resource block.\n  - `table_name` (`string`): Set the `table_name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting resource block. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.\n  - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting resource block. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.\n  - `schema` (`list[obj]`): Set the `schema` field on the resulting resource block. When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.schema.new](#fn-schemanew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     database_name,
     table_name,
     magnetic_store_write_properties=null,
     retention_properties=null,
+    schema=null,
     tags=null,
     tags_all=null,
     _meta={}
@@ -51,24 +52,27 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       database_name=database_name,
       magnetic_store_write_properties=magnetic_store_write_properties,
       retention_properties=retention_properties,
+      schema=schema,
       table_name=table_name,
       tags=tags,
       tags_all=tags_all
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.timestreamwrite_table.newAttrs` constructs a new object with attributes and blocks configured for the `timestreamwrite_table`\nTerraform resource.\n\nUnlike [aws.timestreamwrite_table.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `database_name` (`string`): Set the `database_name` field on the resulting object.\n  - `table_name` (`string`): Set the `table_name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting object. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.\n  - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting object. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `timestreamwrite_table` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.timestreamwrite_table.newAttrs` constructs a new object with attributes and blocks configured for the `timestreamwrite_table`\nTerraform resource.\n\nUnlike [aws.timestreamwrite_table.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `database_name` (`string`): Set the `database_name` field on the resulting object.\n  - `table_name` (`string`): Set the `table_name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting object. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.\n  - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting object. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.\n  - `schema` (`list[obj]`): Set the `schema` field on the resulting object. When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.schema.new](#fn-schemanew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `timestreamwrite_table` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     database_name,
     table_name,
     magnetic_store_write_properties=null,
     retention_properties=null,
+    schema=null,
     tags=null,
     tags_all=null
   ):: std.prune(a={
     database_name: database_name,
     magnetic_store_write_properties: magnetic_store_write_properties,
     retention_properties: retention_properties,
+    schema: schema,
     table_name: table_name,
     tags: tags,
     tags_all: tags_all,
@@ -81,6 +85,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ):: std.prune(a={
       magnetic_store_retention_period_in_days: magnetic_store_retention_period_in_days,
       memory_store_retention_period_in_hours: memory_store_retention_period_in_hours,
+    }),
+  },
+  schema:: {
+    composite_partition_key:: {
+      '#new':: d.fn(help='\n`aws.timestreamwrite_table.schema.composite_partition_key.new` constructs a new object with attributes and blocks configured for the `composite_partition_key`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enforcement_in_record` (`string`): Set the `enforcement_in_record` field on the resulting object. When `null`, the `enforcement_in_record` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `composite_partition_key` sub block.\n', args=[]),
+      new(
+        type,
+        enforcement_in_record=null,
+        name=null
+      ):: std.prune(a={
+        enforcement_in_record: enforcement_in_record,
+        name: name,
+        type: type,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.timestreamwrite_table.schema.new` constructs a new object with attributes and blocks configured for the `schema`\nTerraform sub block.\n\n\n\n**Args**:\n  - `composite_partition_key` (`list[obj]`): Set the `composite_partition_key` field on the resulting object. When `null`, the `composite_partition_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.schema.composite_partition_key.new](#fn-schemacomposite_partition_keynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `schema` sub block.\n', args=[]),
+    new(
+      composite_partition_key=null
+    ):: std.prune(a={
+      composite_partition_key: composite_partition_key,
     }),
   },
   '#withDatabaseName':: d.fn(help='`aws.string.withDatabaseName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the database_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `database_name` field.\n', args=[]),
@@ -129,6 +153,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_timestreamwrite_table+: {
         [resourceLabel]+: {
           retention_properties+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withSchema':: d.fn(help='`aws.list[obj].withSchema` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the schema field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withSchemaMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `schema` field.\n', args=[]),
+  withSchema(resourceLabel, value): {
+    resource+: {
+      aws_timestreamwrite_table+: {
+        [resourceLabel]+: {
+          schema: value,
+        },
+      },
+    },
+  },
+  '#withSchemaMixin':: d.fn(help='`aws.list[obj].withSchemaMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the schema field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withSchema](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `schema` field.\n', args=[]),
+  withSchemaMixin(resourceLabel, value): {
+    resource+: {
+      aws_timestreamwrite_table+: {
+        [resourceLabel]+: {
+          schema+: if std.isArray(v=value) then value else [value],
         },
       },
     },

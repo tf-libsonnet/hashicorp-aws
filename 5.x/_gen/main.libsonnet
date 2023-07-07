@@ -164,6 +164,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   chimesdkvoice_sip_media_application: (import 'resources/chimesdkvoice_sip_media_application.libsonnet'),
   chimesdkvoice_sip_rule: (import 'resources/chimesdkvoice_sip_rule.libsonnet'),
   chimesdkvoice_voice_profile_domain: (import 'resources/chimesdkvoice_voice_profile_domain.libsonnet'),
+  cleanrooms_collaboration: (import 'resources/cleanrooms_collaboration.libsonnet'),
   cloud9_environment_ec2: (import 'resources/cloud9_environment_ec2.libsonnet'),
   cloud9_environment_membership: (import 'resources/cloud9_environment_membership.libsonnet'),
   cloudcontrolapi_resource: (import 'resources/cloudcontrolapi_resource.libsonnet'),

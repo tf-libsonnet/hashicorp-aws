@@ -20,6 +20,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMagneticStoreWritePropertiesMixin()`](#fn-withmagneticstorewritepropertiesmixin)
 * [`fn withRetentionProperties()`](#fn-withretentionproperties)
 * [`fn withRetentionPropertiesMixin()`](#fn-withretentionpropertiesmixin)
+* [`fn withSchema()`](#fn-withschema)
+* [`fn withSchemaMixin()`](#fn-withschemamixin)
 * [`fn withTableName()`](#fn-withtablename)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
@@ -31,6 +33,10 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-magnetic_store_write_propertiesmagnetic_store_rejected_data_locations3_configurationnew)
 * [`obj retention_properties`](#obj-retention_properties)
   * [`fn new()`](#fn-retention_propertiesnew)
+* [`obj schema`](#obj-schema)
+  * [`fn new()`](#fn-schemanew)
+  * [`obj schema.composite_partition_key`](#obj-schemacomposite_partition_key)
+    * [`fn new()`](#fn-schemacomposite_partition_keynew)
 
 ## Fields
 
@@ -67,6 +73,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting resource block. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.
   - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting resource block. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.
+  - `schema` (`list[obj]`): Set the `schema` field on the resulting resource block. When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.schema.new](#fn-schemanew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -96,6 +103,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `magnetic_store_write_properties` (`list[obj]`): Set the `magnetic_store_write_properties` field on the resulting object. When `null`, the `magnetic_store_write_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.magnetic_store_write_properties.new](#fn-magnetic_store_write_propertiesnew) constructor.
   - `retention_properties` (`list[obj]`): Set the `retention_properties` field on the resulting object. When `null`, the `retention_properties` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.retention_properties.new](#fn-retention_propertiesnew) constructor.
+  - `schema` (`list[obj]`): Set the `schema` field on the resulting object. When `null`, the `schema` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.schema.new](#fn-schemanew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `timestreamwrite_table` resource into the root Terraform configuration.
@@ -189,6 +197,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `retention_properties` field.
+
+
+### fn withSchema
+
+```ts
+withSchema()
+```
+
+`aws.list[obj].withSchema` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the schema field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withSchemaMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `schema` field.
+
+
+### fn withSchemaMixin
+
+```ts
+withSchemaMixin()
+```
+
+`aws.list[obj].withSchemaMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the schema field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withSchema](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `schema` field.
 
 
 ### fn withTableName
@@ -334,3 +379,51 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `retention_properties` sub block.
+
+
+## obj schema
+
+
+
+### fn schema.new
+
+```ts
+new()
+```
+
+
+`aws.timestreamwrite_table.schema.new` constructs a new object with attributes and blocks configured for the `schema`
+Terraform sub block.
+
+
+
+**Args**:
+  - `composite_partition_key` (`list[obj]`): Set the `composite_partition_key` field on the resulting object. When `null`, the `composite_partition_key` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.timestreamwrite_table.schema.composite_partition_key.new](#fn-schemacomposite_partition_keynew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `schema` sub block.
+
+
+## obj schema.composite_partition_key
+
+
+
+### fn schema.composite_partition_key.new
+
+```ts
+new()
+```
+
+
+`aws.timestreamwrite_table.schema.composite_partition_key.new` constructs a new object with attributes and blocks configured for the `composite_partition_key`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enforcement_in_record` (`string`): Set the `enforcement_in_record` field on the resulting object. When `null`, the `enforcement_in_record` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `composite_partition_key` sub block.

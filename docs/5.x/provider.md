@@ -630,6 +630,7 @@ Terraform sub block.
   - `transcribestreamingservice` (`string`): Use this to override the default service endpoint URL When `null`, the `transcribestreamingservice` field will be omitted from the resulting object.
   - `transfer` (`string`): Use this to override the default service endpoint URL When `null`, the `transfer` field will be omitted from the resulting object.
   - `translate` (`string`): Use this to override the default service endpoint URL When `null`, the `translate` field will be omitted from the resulting object.
+  - `verifiedpermissions` (`string`): Use this to override the default service endpoint URL When `null`, the `verifiedpermissions` field will be omitted from the resulting object.
   - `voiceid` (`string`): Use this to override the default service endpoint URL When `null`, the `voiceid` field will be omitted from the resulting object.
   - `vpclattice` (`string`): Use this to override the default service endpoint URL When `null`, the `vpclattice` field will be omitted from the resulting object.
   - `waf` (`string`): Use this to override the default service endpoint URL When `null`, the `waf` field will be omitted from the resulting object.
