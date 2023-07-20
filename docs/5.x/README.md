@@ -1242,6 +1242,7 @@ project.
 * [wafv2_web_acl_logging_configuration](wafv2_web_acl_logging_configuration.md)
 * [worklink_fleet](worklink_fleet.md)
 * [worklink_website_certificate_authority_association](worklink_website_certificate_authority_association.md)
+* [workspaces_connection_alias](workspaces_connection_alias.md)
 * [workspaces_directory](workspaces_directory.md)
 * [workspaces_ip_group](workspaces_ip_group.md)
 * [workspaces_workspace](workspaces_workspace.md)

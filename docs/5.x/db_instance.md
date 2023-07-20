@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAutoMinorVersionUpgrade()`](#fn-withautominorversionupgrade)
 * [`fn withAvailabilityZone()`](#fn-withavailabilityzone)
 * [`fn withBackupRetentionPeriod()`](#fn-withbackupretentionperiod)
+* [`fn withBackupTarget()`](#fn-withbackuptarget)
 * [`fn withBackupWindow()`](#fn-withbackupwindow)
 * [`fn withBlueGreenUpdate()`](#fn-withbluegreenupdate)
 * [`fn withBlueGreenUpdateMixin()`](#fn-withbluegreenupdatemixin)
@@ -125,6 +126,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `auto_minor_version_upgrade` (`bool`): Set the `auto_minor_version_upgrade` field on the resulting resource block. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
   - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block. When `null`, the `availability_zone` field will be omitted from the resulting object.
   - `backup_retention_period` (`number`): Set the `backup_retention_period` field on the resulting resource block. When `null`, the `backup_retention_period` field will be omitted from the resulting object.
+  - `backup_target` (`string`): Set the `backup_target` field on the resulting resource block. When `null`, the `backup_target` field will be omitted from the resulting object.
   - `backup_window` (`string`): Set the `backup_window` field on the resulting resource block. When `null`, the `backup_window` field will be omitted from the resulting object.
   - `ca_cert_identifier` (`string`): Set the `ca_cert_identifier` field on the resulting resource block. When `null`, the `ca_cert_identifier` field will be omitted from the resulting object.
   - `character_set_name` (`string`): Set the `character_set_name` field on the resulting resource block. When `null`, the `character_set_name` field will be omitted from the resulting object.
@@ -210,6 +212,7 @@ injecting into a complete block.
   - `auto_minor_version_upgrade` (`bool`): Set the `auto_minor_version_upgrade` field on the resulting object. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
   - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
   - `backup_retention_period` (`number`): Set the `backup_retention_period` field on the resulting object. When `null`, the `backup_retention_period` field will be omitted from the resulting object.
+  - `backup_target` (`string`): Set the `backup_target` field on the resulting object. When `null`, the `backup_target` field will be omitted from the resulting object.
   - `backup_window` (`string`): Set the `backup_window` field on the resulting object. When `null`, the `backup_window` field will be omitted from the resulting object.
   - `ca_cert_identifier` (`string`): Set the `ca_cert_identifier` field on the resulting object. When `null`, the `ca_cert_identifier` field will be omitted from the resulting object.
   - `character_set_name` (`string`): Set the `character_set_name` field on the resulting object. When `null`, the `character_set_name` field will be omitted from the resulting object.
@@ -365,6 +368,22 @@ Terraform resource block to set or update the backup_retention_period field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `backup_retention_period` field.
+
+
+### fn withBackupTarget
+
+```ts
+withBackupTarget()
+```
+
+`aws.string.withBackupTarget` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the backup_target field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `backup_target` field.
 
 
 ### fn withBackupWindow

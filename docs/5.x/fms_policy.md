@@ -38,6 +38,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-include_mapnew)
 * [`obj security_service_policy_data`](#obj-security_service_policy_data)
   * [`fn new()`](#fn-security_service_policy_datanew)
+  * [`obj security_service_policy_data.policy_option`](#obj-security_service_policy_datapolicy_option)
+    * [`fn new()`](#fn-security_service_policy_datapolicy_optionnew)
+    * [`obj security_service_policy_data.policy_option.network_firewall_policy`](#obj-security_service_policy_datapolicy_optionnetwork_firewall_policy)
+      * [`fn new()`](#fn-security_service_policy_datapolicy_optionnetwork_firewall_policynew)
+    * [`obj security_service_policy_data.policy_option.third_party_firewall_policy`](#obj-security_service_policy_datapolicy_optionthird_party_firewall_policy)
+      * [`fn new()`](#fn-security_service_policy_datapolicy_optionthird_party_firewall_policynew)
 
 ## Fields
 
@@ -478,6 +484,77 @@ Terraform sub block.
 **Args**:
   - `managed_service_data` (`string`): Set the `managed_service_data` field on the resulting object. When `null`, the `managed_service_data` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting object.
+  - `policy_option` (`list[obj]`): Set the `policy_option` field on the resulting object. When `null`, the `policy_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.policy_option.new](#fn-security_service_policy_datapolicy_optionnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `security_service_policy_data` sub block.
+
+
+## obj security_service_policy_data.policy_option
+
+
+
+### fn security_service_policy_data.policy_option.new
+
+```ts
+new()
+```
+
+
+`aws.fms_policy.security_service_policy_data.policy_option.new` constructs a new object with attributes and blocks configured for the `policy_option`
+Terraform sub block.
+
+
+
+**Args**:
+  - `network_firewall_policy` (`list[obj]`): Set the `network_firewall_policy` field on the resulting object. When `null`, the `network_firewall_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.policy_option.network_firewall_policy.new](#fn-security_service_policy_datasecurity_service_policy_datanetwork_firewall_policynew) constructor.
+  - `third_party_firewall_policy` (`list[obj]`): Set the `third_party_firewall_policy` field on the resulting object. When `null`, the `third_party_firewall_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.policy_option.third_party_firewall_policy.new](#fn-security_service_policy_datasecurity_service_policy_datathird_party_firewall_policynew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `policy_option` sub block.
+
+
+## obj security_service_policy_data.policy_option.network_firewall_policy
+
+
+
+### fn security_service_policy_data.policy_option.network_firewall_policy.new
+
+```ts
+new()
+```
+
+
+`aws.fms_policy.security_service_policy_data.policy_option.network_firewall_policy.new` constructs a new object with attributes and blocks configured for the `network_firewall_policy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `firewall_deployment_model` (`string`): Set the `firewall_deployment_model` field on the resulting object. When `null`, the `firewall_deployment_model` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `network_firewall_policy` sub block.
+
+
+## obj security_service_policy_data.policy_option.third_party_firewall_policy
+
+
+
+### fn security_service_policy_data.policy_option.third_party_firewall_policy.new
+
+```ts
+new()
+```
+
+
+`aws.fms_policy.security_service_policy_data.policy_option.third_party_firewall_policy.new` constructs a new object with attributes and blocks configured for the `third_party_firewall_policy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `firewall_deployment_model` (`string`): Set the `firewall_deployment_model` field on the resulting object. When `null`, the `firewall_deployment_model` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `third_party_firewall_policy` sub block.

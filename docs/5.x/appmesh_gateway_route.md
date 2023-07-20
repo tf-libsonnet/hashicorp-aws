@@ -43,6 +43,8 @@ This package contains functions and utilities for setting up the resource using 
         * [`fn new()`](#fn-spechttp2_routeactionrewritenew)
         * [`obj spec.http2_route.action.rewrite.hostname`](#obj-spechttp2_routeactionrewritehostname)
           * [`fn new()`](#fn-spechttp2_routeactionrewritehostnamenew)
+        * [`obj spec.http2_route.action.rewrite.path`](#obj-spechttp2_routeactionrewritepath)
+          * [`fn new()`](#fn-spechttp2_routeactionrewritepathnew)
         * [`obj spec.http2_route.action.rewrite.prefix`](#obj-spechttp2_routeactionrewriteprefix)
           * [`fn new()`](#fn-spechttp2_routeactionrewriteprefixnew)
       * [`obj spec.http2_route.action.target`](#obj-spechttp2_routeactiontarget)
@@ -73,6 +75,8 @@ This package contains functions and utilities for setting up the resource using 
         * [`fn new()`](#fn-spechttp_routeactionrewritenew)
         * [`obj spec.http_route.action.rewrite.hostname`](#obj-spechttp_routeactionrewritehostname)
           * [`fn new()`](#fn-spechttp_routeactionrewritehostnamenew)
+        * [`obj spec.http_route.action.rewrite.path`](#obj-spechttp_routeactionrewritepath)
+          * [`fn new()`](#fn-spechttp_routeactionrewritepathnew)
         * [`obj spec.http_route.action.rewrite.prefix`](#obj-spechttp_routeactionrewriteprefix)
           * [`fn new()`](#fn-spechttp_routeactionrewriteprefixnew)
       * [`obj spec.http_route.action.target`](#obj-spechttp_routeactiontarget)
@@ -510,6 +514,7 @@ Terraform sub block.
 
 **Args**:
   - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.hostname.new](#fn-specspechttp2_routeactionhostnamenew) constructor.
+  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.path.new](#fn-specspechttp2_routeactionpathnew) constructor.
   - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new](#fn-specspechttp2_routeactionprefixnew) constructor.
 
 **Returns**:
@@ -537,6 +542,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `hostname` sub block.
+
+
+## obj spec.http2_route.action.rewrite.path
+
+
+
+### fn spec.http2_route.action.rewrite.path.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.path.new` constructs a new object with attributes and blocks configured for the `path`
+Terraform sub block.
+
+
+
+**Args**:
+  - `exact` (`string`): Set the `exact` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `path` sub block.
 
 
 ## obj spec.http2_route.action.rewrite.prefix
@@ -875,6 +903,7 @@ Terraform sub block.
 
 **Args**:
   - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.hostname.new](#fn-specspechttp_routeactionhostnamenew) constructor.
+  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.path.new](#fn-specspechttp_routeactionpathnew) constructor.
   - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new](#fn-specspechttp_routeactionprefixnew) constructor.
 
 **Returns**:
@@ -902,6 +931,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `hostname` sub block.
+
+
+## obj spec.http_route.action.rewrite.path
+
+
+
+### fn spec.http_route.action.rewrite.path.new
+
+```ts
+new()
+```
+
+
+`aws.appmesh_gateway_route.spec.http_route.action.rewrite.path.new` constructs a new object with attributes and blocks configured for the `path`
+Terraform sub block.
+
+
+
+**Args**:
+  - `exact` (`string`): Set the `exact` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `path` sub block.
 
 
 ## obj spec.http_route.action.rewrite.prefix

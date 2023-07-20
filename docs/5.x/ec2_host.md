@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAssetId()`](#fn-withassetid)
 * [`fn withAutoPlacement()`](#fn-withautoplacement)
 * [`fn withAvailabilityZone()`](#fn-withavailabilityzone)
 * [`fn withHostRecovery()`](#fn-withhostrecovery)
@@ -53,6 +54,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `asset_id` (`string`): Set the `asset_id` field on the resulting resource block. When `null`, the `asset_id` field will be omitted from the resulting object.
   - `auto_placement` (`string`): Set the `auto_placement` field on the resulting resource block. When `null`, the `auto_placement` field will be omitted from the resulting object.
   - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block.
   - `host_recovery` (`string`): Set the `host_recovery` field on the resulting resource block. When `null`, the `host_recovery` field will be omitted from the resulting object.
@@ -84,6 +86,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `asset_id` (`string`): Set the `asset_id` field on the resulting object. When `null`, the `asset_id` field will be omitted from the resulting object.
   - `auto_placement` (`string`): Set the `auto_placement` field on the resulting object. When `null`, the `auto_placement` field will be omitted from the resulting object.
   - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object.
   - `host_recovery` (`string`): Set the `host_recovery` field on the resulting object. When `null`, the `host_recovery` field will be omitted from the resulting object.
@@ -95,6 +98,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `ec2_host` resource into the root Terraform configuration.
+
+
+### fn withAssetId
+
+```ts
+withAssetId()
+```
+
+`aws.string.withAssetId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the asset_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `asset_id` field.
 
 
 ### fn withAutoPlacement

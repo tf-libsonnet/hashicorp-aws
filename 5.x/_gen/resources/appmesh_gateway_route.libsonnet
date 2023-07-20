@@ -111,14 +111,24 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
               default_target_hostname: default_target_hostname,
             }),
           },
-          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.new` constructs a new object with attributes and blocks configured for the `rewrite`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.hostname.new](#fn-specspechttp2_routeactionhostnamenew) constructor.\n  - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new](#fn-specspechttp2_routeactionprefixnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rewrite` sub block.\n', args=[]),
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.new` constructs a new object with attributes and blocks configured for the `rewrite`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.hostname.new](#fn-specspechttp2_routeactionhostnamenew) constructor.\n  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.path.new](#fn-specspechttp2_routeactionpathnew) constructor.\n  - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new](#fn-specspechttp2_routeactionprefixnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rewrite` sub block.\n', args=[]),
           new(
             hostname=null,
+            path=null,
             prefix=null
           ):: std.prune(a={
             hostname: hostname,
+            path: path,
             prefix: prefix,
           }),
+          path:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.path.new` constructs a new object with attributes and blocks configured for the `path`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `path` sub block.\n', args=[]),
+            new(
+              exact
+            ):: std.prune(a={
+              exact: exact,
+            }),
+          },
           prefix:: {
             '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http2_route.action.rewrite.prefix.new` constructs a new object with attributes and blocks configured for the `prefix`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_prefix` (`string`): Set the `default_prefix` field on the resulting object. When `null`, the `default_prefix` field will be omitted from the resulting object.\n  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `prefix` sub block.\n', args=[]),
             new(
@@ -271,14 +281,24 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
               default_target_hostname: default_target_hostname,
             }),
           },
-          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.rewrite.new` constructs a new object with attributes and blocks configured for the `rewrite`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.hostname.new](#fn-specspechttp_routeactionhostnamenew) constructor.\n  - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new](#fn-specspechttp_routeactionprefixnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rewrite` sub block.\n', args=[]),
+          '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.rewrite.new` constructs a new object with attributes and blocks configured for the `rewrite`\nTerraform sub block.\n\n\n\n**Args**:\n  - `hostname` (`list[obj]`): Set the `hostname` field on the resulting object. When `null`, the `hostname` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.hostname.new](#fn-specspechttp_routeactionhostnamenew) constructor.\n  - `path` (`list[obj]`): Set the `path` field on the resulting object. When `null`, the `path` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.path.new](#fn-specspechttp_routeactionpathnew) constructor.\n  - `prefix` (`list[obj]`): Set the `prefix` field on the resulting object. When `null`, the `prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new](#fn-specspechttp_routeactionprefixnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rewrite` sub block.\n', args=[]),
           new(
             hostname=null,
+            path=null,
             prefix=null
           ):: std.prune(a={
             hostname: hostname,
+            path: path,
             prefix: prefix,
           }),
+          path:: {
+            '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.rewrite.path.new` constructs a new object with attributes and blocks configured for the `path`\nTerraform sub block.\n\n\n\n**Args**:\n  - `exact` (`string`): Set the `exact` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `path` sub block.\n', args=[]),
+            new(
+              exact
+            ):: std.prune(a={
+              exact: exact,
+            }),
+          },
           prefix:: {
             '#new':: d.fn(help='\n`aws.appmesh_gateway_route.spec.http_route.action.rewrite.prefix.new` constructs a new object with attributes and blocks configured for the `prefix`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_prefix` (`string`): Set the `default_prefix` field on the resulting object. When `null`, the `default_prefix` field will be omitted from the resulting object.\n  - `value` (`string`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `prefix` sub block.\n', args=[]),
             new(

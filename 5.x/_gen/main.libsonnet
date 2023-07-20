@@ -1231,6 +1231,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   wafv2_web_acl_logging_configuration: (import 'resources/wafv2_web_acl_logging_configuration.libsonnet'),
   worklink_fleet: (import 'resources/worklink_fleet.libsonnet'),
   worklink_website_certificate_authority_association: (import 'resources/worklink_website_certificate_authority_association.libsonnet'),
+  workspaces_connection_alias: (import 'resources/workspaces_connection_alias.libsonnet'),
   workspaces_directory: (import 'resources/workspaces_directory.libsonnet'),
   workspaces_ip_group: (import 'resources/workspaces_ip_group.libsonnet'),
   workspaces_workspace: (import 'resources/workspaces_workspace.libsonnet'),
