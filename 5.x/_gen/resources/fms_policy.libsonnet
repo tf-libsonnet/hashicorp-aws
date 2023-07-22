@@ -94,14 +94,42 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags_all: tags_all,
   }),
   security_service_policy_data:: {
-    '#new':: d.fn(help='\n`aws.fms_policy.security_service_policy_data.new` constructs a new object with attributes and blocks configured for the `security_service_policy_data`\nTerraform sub block.\n\n\n\n**Args**:\n  - `managed_service_data` (`string`): Set the `managed_service_data` field on the resulting object. When `null`, the `managed_service_data` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `security_service_policy_data` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.fms_policy.security_service_policy_data.new` constructs a new object with attributes and blocks configured for the `security_service_policy_data`\nTerraform sub block.\n\n\n\n**Args**:\n  - `managed_service_data` (`string`): Set the `managed_service_data` field on the resulting object. When `null`, the `managed_service_data` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `policy_option` (`list[obj]`): Set the `policy_option` field on the resulting object. When `null`, the `policy_option` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.policy_option.new](#fn-security_service_policy_datapolicy_optionnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `security_service_policy_data` sub block.\n', args=[]),
     new(
       type,
-      managed_service_data=null
+      managed_service_data=null,
+      policy_option=null
     ):: std.prune(a={
       managed_service_data: managed_service_data,
+      policy_option: policy_option,
       type: type,
     }),
+    policy_option:: {
+      network_firewall_policy:: {
+        '#new':: d.fn(help='\n`aws.fms_policy.security_service_policy_data.policy_option.network_firewall_policy.new` constructs a new object with attributes and blocks configured for the `network_firewall_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `firewall_deployment_model` (`string`): Set the `firewall_deployment_model` field on the resulting object. When `null`, the `firewall_deployment_model` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `network_firewall_policy` sub block.\n', args=[]),
+        new(
+          firewall_deployment_model=null
+        ):: std.prune(a={
+          firewall_deployment_model: firewall_deployment_model,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.fms_policy.security_service_policy_data.policy_option.new` constructs a new object with attributes and blocks configured for the `policy_option`\nTerraform sub block.\n\n\n\n**Args**:\n  - `network_firewall_policy` (`list[obj]`): Set the `network_firewall_policy` field on the resulting object. When `null`, the `network_firewall_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.policy_option.network_firewall_policy.new](#fn-security_service_policy_datasecurity_service_policy_datanetwork_firewall_policynew) constructor.\n  - `third_party_firewall_policy` (`list[obj]`): Set the `third_party_firewall_policy` field on the resulting object. When `null`, the `third_party_firewall_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fms_policy.security_service_policy_data.policy_option.third_party_firewall_policy.new](#fn-security_service_policy_datasecurity_service_policy_datathird_party_firewall_policynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `policy_option` sub block.\n', args=[]),
+      new(
+        network_firewall_policy=null,
+        third_party_firewall_policy=null
+      ):: std.prune(a={
+        network_firewall_policy: network_firewall_policy,
+        third_party_firewall_policy: third_party_firewall_policy,
+      }),
+      third_party_firewall_policy:: {
+        '#new':: d.fn(help='\n`aws.fms_policy.security_service_policy_data.policy_option.third_party_firewall_policy.new` constructs a new object with attributes and blocks configured for the `third_party_firewall_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `firewall_deployment_model` (`string`): Set the `firewall_deployment_model` field on the resulting object. When `null`, the `firewall_deployment_model` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `third_party_firewall_policy` sub block.\n', args=[]),
+        new(
+          firewall_deployment_model=null
+        ):: std.prune(a={
+          firewall_deployment_model: firewall_deployment_model,
+        }),
+      },
+    },
   },
   '#withDeleteAllPolicyResources':: d.fn(help='`aws.bool.withDeleteAllPolicyResources` constructs a mixin object that can be merged into the `bool`\nTerraform resource block to set or update the delete_all_policy_resources field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`bool`): The value to set for the `delete_all_policy_resources` field.\n', args=[]),
   withDeleteAllPolicyResources(resourceLabel, value): {

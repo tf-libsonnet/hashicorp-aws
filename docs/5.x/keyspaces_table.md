@@ -17,6 +17,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withCapacitySpecification()`](#fn-withcapacityspecification)
 * [`fn withCapacitySpecificationMixin()`](#fn-withcapacityspecificationmixin)
+* [`fn withClientSideTimestamps()`](#fn-withclientsidetimestamps)
+* [`fn withClientSideTimestampsMixin()`](#fn-withclientsidetimestampsmixin)
 * [`fn withComment()`](#fn-withcomment)
 * [`fn withCommentMixin()`](#fn-withcommentmixin)
 * [`fn withDefaultTimeToLive()`](#fn-withdefaulttimetolive)
@@ -36,6 +38,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTtlMixin()`](#fn-withttlmixin)
 * [`obj capacity_specification`](#obj-capacity_specification)
   * [`fn new()`](#fn-capacity_specificationnew)
+* [`obj client_side_timestamps`](#obj-client_side_timestamps)
+  * [`fn new()`](#fn-client_side_timestampsnew)
 * [`obj comment`](#obj-comment)
   * [`fn new()`](#fn-commentnew)
 * [`obj encryption_specification`](#obj-encryption_specification)
@@ -92,6 +96,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `capacity_specification` (`list[obj]`): Set the `capacity_specification` field on the resulting resource block. When `null`, the `capacity_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.capacity_specification.new](#fn-capacity_specificationnew) constructor.
+  - `client_side_timestamps` (`list[obj]`): Set the `client_side_timestamps` field on the resulting resource block. When `null`, the `client_side_timestamps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.client_side_timestamps.new](#fn-client_side_timestampsnew) constructor.
   - `comment` (`list[obj]`): Set the `comment` field on the resulting resource block. When `null`, the `comment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.comment.new](#fn-commentnew) constructor.
   - `encryption_specification` (`list[obj]`): Set the `encryption_specification` field on the resulting resource block. When `null`, the `encryption_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.encryption_specification.new](#fn-encryption_specificationnew) constructor.
   - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting resource block. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
@@ -127,6 +132,7 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `capacity_specification` (`list[obj]`): Set the `capacity_specification` field on the resulting object. When `null`, the `capacity_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.capacity_specification.new](#fn-capacity_specificationnew) constructor.
+  - `client_side_timestamps` (`list[obj]`): Set the `client_side_timestamps` field on the resulting object. When `null`, the `client_side_timestamps` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.client_side_timestamps.new](#fn-client_side_timestampsnew) constructor.
   - `comment` (`list[obj]`): Set the `comment` field on the resulting object. When `null`, the `comment` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.comment.new](#fn-commentnew) constructor.
   - `encryption_specification` (`list[obj]`): Set the `encryption_specification` field on the resulting object. When `null`, the `encryption_specification` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.encryption_specification.new](#fn-encryption_specificationnew) constructor.
   - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting object. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.keyspaces_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
@@ -173,6 +179,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `capacity_specification` field.
+
+
+### fn withClientSideTimestamps
+
+```ts
+withClientSideTimestamps()
+```
+
+`aws.list[obj].withClientSideTimestamps` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the client_side_timestamps field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withClientSideTimestampsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `client_side_timestamps` field.
+
+
+### fn withClientSideTimestampsMixin
+
+```ts
+withClientSideTimestampsMixin()
+```
+
+`aws.list[obj].withClientSideTimestampsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the client_side_timestamps field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withClientSideTimestamps](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `client_side_timestamps` field.
 
 
 ### fn withComment
@@ -499,6 +542,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `capacity_specification` sub block.
+
+
+## obj client_side_timestamps
+
+
+
+### fn client_side_timestamps.new
+
+```ts
+new()
+```
+
+
+`aws.keyspaces_table.client_side_timestamps.new` constructs a new object with attributes and blocks configured for the `client_side_timestamps`
+Terraform sub block.
+
+
+
+**Args**:
+  - `status` (`string`): Set the `status` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `client_side_timestamps` sub block.
 
 
 ## obj comment

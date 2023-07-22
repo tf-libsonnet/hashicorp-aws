@@ -26,16 +26,36 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     role_arn: role_arn,
   }),
   recording_group:: {
-    '#new':: d.fn(help='\n`aws.config_configuration_recorder.recording_group.new` constructs a new object with attributes and blocks configured for the `recording_group`\nTerraform sub block.\n\n\n\n**Args**:\n  - `all_supported` (`bool`): Set the `all_supported` field on the resulting object. When `null`, the `all_supported` field will be omitted from the resulting object.\n  - `include_global_resource_types` (`bool`): Set the `include_global_resource_types` field on the resulting object. When `null`, the `include_global_resource_types` field will be omitted from the resulting object.\n  - `resource_types` (`list`): Set the `resource_types` field on the resulting object. When `null`, the `resource_types` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `recording_group` sub block.\n', args=[]),
+    exclusion_by_resource_types:: {
+      '#new':: d.fn(help='\n`aws.config_configuration_recorder.recording_group.exclusion_by_resource_types.new` constructs a new object with attributes and blocks configured for the `exclusion_by_resource_types`\nTerraform sub block.\n\n\n\n**Args**:\n  - `resource_types` (`list`): Set the `resource_types` field on the resulting object. When `null`, the `resource_types` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `exclusion_by_resource_types` sub block.\n', args=[]),
+      new(
+        resource_types=null
+      ):: std.prune(a={
+        resource_types: resource_types,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.config_configuration_recorder.recording_group.new` constructs a new object with attributes and blocks configured for the `recording_group`\nTerraform sub block.\n\n\n\n**Args**:\n  - `all_supported` (`bool`): Set the `all_supported` field on the resulting object. When `null`, the `all_supported` field will be omitted from the resulting object.\n  - `include_global_resource_types` (`bool`): Set the `include_global_resource_types` field on the resulting object. When `null`, the `include_global_resource_types` field will be omitted from the resulting object.\n  - `resource_types` (`list`): Set the `resource_types` field on the resulting object. When `null`, the `resource_types` field will be omitted from the resulting object.\n  - `exclusion_by_resource_types` (`list[obj]`): Set the `exclusion_by_resource_types` field on the resulting object. When `null`, the `exclusion_by_resource_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_recorder.recording_group.exclusion_by_resource_types.new](#fn-recording_groupexclusion_by_resource_typesnew) constructor.\n  - `recording_strategy` (`list[obj]`): Set the `recording_strategy` field on the resulting object. When `null`, the `recording_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_recorder.recording_group.recording_strategy.new](#fn-recording_grouprecording_strategynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `recording_group` sub block.\n', args=[]),
     new(
       all_supported=null,
+      exclusion_by_resource_types=null,
       include_global_resource_types=null,
+      recording_strategy=null,
       resource_types=null
     ):: std.prune(a={
       all_supported: all_supported,
+      exclusion_by_resource_types: exclusion_by_resource_types,
       include_global_resource_types: include_global_resource_types,
+      recording_strategy: recording_strategy,
       resource_types: resource_types,
     }),
+    recording_strategy:: {
+      '#new':: d.fn(help='\n`aws.config_configuration_recorder.recording_group.recording_strategy.new` constructs a new object with attributes and blocks configured for the `recording_strategy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `use_only` (`string`): Set the `use_only` field on the resulting object. When `null`, the `use_only` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `recording_strategy` sub block.\n', args=[]),
+      new(
+        use_only=null
+      ):: std.prune(a={
+        use_only: use_only,
+      }),
+    },
   },
   '#withName':: d.fn(help='`aws.string.withName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `name` field.\n', args=[]),
   withName(resourceLabel, value): {

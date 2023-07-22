@@ -182,16 +182,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   user:: {
-    '#new':: d.fn(help='\n`aws.mq_broker.user.new` constructs a new object with attributes and blocks configured for the `user`\nTerraform sub block.\n\n\n\n**Args**:\n  - `console_access` (`bool`): Set the `console_access` field on the resulting object. When `null`, the `console_access` field will be omitted from the resulting object.\n  - `groups` (`list`): Set the `groups` field on the resulting object. When `null`, the `groups` field will be omitted from the resulting object.\n  - `password` (`string`): Set the `password` field on the resulting object.\n  - `username` (`string`): Set the `username` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `user` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.mq_broker.user.new` constructs a new object with attributes and blocks configured for the `user`\nTerraform sub block.\n\n\n\n**Args**:\n  - `console_access` (`bool`): Set the `console_access` field on the resulting object. When `null`, the `console_access` field will be omitted from the resulting object.\n  - `groups` (`list`): Set the `groups` field on the resulting object. When `null`, the `groups` field will be omitted from the resulting object.\n  - `password` (`string`): Set the `password` field on the resulting object.\n  - `replication_user` (`bool`): Set the `replication_user` field on the resulting object. When `null`, the `replication_user` field will be omitted from the resulting object.\n  - `username` (`string`): Set the `username` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `user` sub block.\n', args=[]),
     new(
       password,
       username,
       console_access=null,
-      groups=null
+      groups=null,
+      replication_user=null
     ):: std.prune(a={
       console_access: console_access,
       groups: groups,
       password: password,
+      replication_user: replication_user,
       username: username,
     }),
   },

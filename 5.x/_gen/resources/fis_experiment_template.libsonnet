@@ -40,12 +40,43 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
   },
-  '#new':: d.fn(help="\n`aws.fis_experiment_template.new` injects a new `aws_fis_experiment_template` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.fis_experiment_template.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.fis_experiment_template` using the reference:\n\n    $._ref.aws_fis_experiment_template.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_fis_experiment_template.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `description` (`string`): Set the `description` field on the resulting resource block.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `action` (`list[obj]`): Set the `action` field on the resulting resource block. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.new](#fn-actionnew) constructor.\n  - `stop_condition` (`list[obj]`): Set the `stop_condition` field on the resulting resource block. When `null`, the `stop_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.stop_condition.new](#fn-stop_conditionnew) constructor.\n  - `target` (`list[obj]`): Set the `target` field on the resulting resource block. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.new](#fn-targetnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  log_configuration:: {
+    cloudwatch_logs_configuration:: {
+      '#new':: d.fn(help='\n`aws.fis_experiment_template.log_configuration.cloudwatch_logs_configuration.new` constructs a new object with attributes and blocks configured for the `cloudwatch_logs_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_group_arn` (`string`): Set the `log_group_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `cloudwatch_logs_configuration` sub block.\n', args=[]),
+      new(
+        log_group_arn
+      ):: std.prune(a={
+        log_group_arn: log_group_arn,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.fis_experiment_template.log_configuration.new` constructs a new object with attributes and blocks configured for the `log_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `log_schema_version` (`number`): Set the `log_schema_version` field on the resulting object.\n  - `cloudwatch_logs_configuration` (`list[obj]`): Set the `cloudwatch_logs_configuration` field on the resulting object. When `null`, the `cloudwatch_logs_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.log_configuration.cloudwatch_logs_configuration.new](#fn-log_configurationcloudwatch_logs_configurationnew) constructor.\n  - `s3_configuration` (`list[obj]`): Set the `s3_configuration` field on the resulting object. When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.log_configuration.s3_configuration.new](#fn-log_configurations3_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `log_configuration` sub block.\n', args=[]),
+    new(
+      log_schema_version,
+      cloudwatch_logs_configuration=null,
+      s3_configuration=null
+    ):: std.prune(a={
+      cloudwatch_logs_configuration: cloudwatch_logs_configuration,
+      log_schema_version: log_schema_version,
+      s3_configuration: s3_configuration,
+    }),
+    s3_configuration:: {
+      '#new':: d.fn(help='\n`aws.fis_experiment_template.log_configuration.s3_configuration.new` constructs a new object with attributes and blocks configured for the `s3_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.\n  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `s3_configuration` sub block.\n', args=[]),
+      new(
+        bucket_name,
+        prefix=null
+      ):: std.prune(a={
+        bucket_name: bucket_name,
+        prefix: prefix,
+      }),
+    },
+  },
+  '#new':: d.fn(help="\n`aws.fis_experiment_template.new` injects a new `aws_fis_experiment_template` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.fis_experiment_template.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.fis_experiment_template` using the reference:\n\n    $._ref.aws_fis_experiment_template.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_fis_experiment_template.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `description` (`string`): Set the `description` field on the resulting resource block.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `action` (`list[obj]`): Set the `action` field on the resulting resource block. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.new](#fn-actionnew) constructor.\n  - `log_configuration` (`list[obj]`): Set the `log_configuration` field on the resulting resource block. When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.log_configuration.new](#fn-log_configurationnew) constructor.\n  - `stop_condition` (`list[obj]`): Set the `stop_condition` field on the resulting resource block. When `null`, the `stop_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.stop_condition.new](#fn-stop_conditionnew) constructor.\n  - `target` (`list[obj]`): Set the `target` field on the resulting resource block. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.new](#fn-targetnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     description,
     role_arn,
     action=null,
+    log_configuration=null,
     stop_condition=null,
     tags=null,
     tags_all=null,
@@ -58,6 +89,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     attrs=self.newAttrs(
       action=action,
       description=description,
+      log_configuration=log_configuration,
       role_arn=role_arn,
       stop_condition=stop_condition,
       tags=tags,
@@ -67,11 +99,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.fis_experiment_template.newAttrs` constructs a new object with attributes and blocks configured for the `fis_experiment_template`\nTerraform resource.\n\nUnlike [aws.fis_experiment_template.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `description` (`string`): Set the `description` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.new](#fn-actionnew) constructor.\n  - `stop_condition` (`list[obj]`): Set the `stop_condition` field on the resulting object. When `null`, the `stop_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.stop_condition.new](#fn-stop_conditionnew) constructor.\n  - `target` (`list[obj]`): Set the `target` field on the resulting object. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.new](#fn-targetnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fis_experiment_template` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.fis_experiment_template.newAttrs` constructs a new object with attributes and blocks configured for the `fis_experiment_template`\nTerraform resource.\n\nUnlike [aws.fis_experiment_template.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `description` (`string`): Set the `description` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `action` (`list[obj]`): Set the `action` field on the resulting object. When `null`, the `action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.action.new](#fn-actionnew) constructor.\n  - `log_configuration` (`list[obj]`): Set the `log_configuration` field on the resulting object. When `null`, the `log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.log_configuration.new](#fn-log_configurationnew) constructor.\n  - `stop_condition` (`list[obj]`): Set the `stop_condition` field on the resulting object. When `null`, the `stop_condition` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.stop_condition.new](#fn-stop_conditionnew) constructor.\n  - `target` (`list[obj]`): Set the `target` field on the resulting object. When `null`, the `target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.new](#fn-targetnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fis_experiment_template` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     description,
     role_arn,
     action=null,
+    log_configuration=null,
     stop_condition=null,
     tags=null,
     tags_all=null,
@@ -80,6 +113,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   ):: std.prune(a={
     action: action,
     description: description,
+    log_configuration: log_configuration,
     role_arn: role_arn,
     stop_condition: stop_condition,
     tags: tags,
@@ -108,17 +142,19 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         values: values,
       }),
     },
-    '#new':: d.fn(help='\n`aws.fis_experiment_template.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `resource_arns` (`list`): Set the `resource_arns` field on the resulting object. When `null`, the `resource_arns` field will be omitted from the resulting object.\n  - `resource_type` (`string`): Set the `resource_type` field on the resulting object.\n  - `selection_mode` (`string`): Set the `selection_mode` field on the resulting object.\n  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.filter.new](#fn-targetfilternew) constructor.\n  - `resource_tag` (`list[obj]`): Set the `resource_tag` field on the resulting object. When `null`, the `resource_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.resource_tag.new](#fn-targetresource_tagnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.fis_experiment_template.target.new` constructs a new object with attributes and blocks configured for the `target`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.\n  - `resource_arns` (`list`): Set the `resource_arns` field on the resulting object. When `null`, the `resource_arns` field will be omitted from the resulting object.\n  - `resource_type` (`string`): Set the `resource_type` field on the resulting object.\n  - `selection_mode` (`string`): Set the `selection_mode` field on the resulting object.\n  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.filter.new](#fn-targetfilternew) constructor.\n  - `resource_tag` (`list[obj]`): Set the `resource_tag` field on the resulting object. When `null`, the `resource_tag` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fis_experiment_template.target.resource_tag.new](#fn-targetresource_tagnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target` sub block.\n', args=[]),
     new(
       name,
       resource_type,
       selection_mode,
       filter=null,
+      parameters=null,
       resource_arns=null,
       resource_tag=null
     ):: std.prune(a={
       filter: filter,
       name: name,
+      parameters: parameters,
       resource_arns: resource_arns,
       resource_tag: resource_tag,
       resource_type: resource_type,
@@ -173,6 +209,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_fis_experiment_template+: {
         [resourceLabel]+: {
           description: value,
+        },
+      },
+    },
+  },
+  '#withLogConfiguration':: d.fn(help='`aws.list[obj].withLogConfiguration` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the log_configuration field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withLogConfigurationMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `log_configuration` field.\n', args=[]),
+  withLogConfiguration(resourceLabel, value): {
+    resource+: {
+      aws_fis_experiment_template+: {
+        [resourceLabel]+: {
+          log_configuration: value,
+        },
+      },
+    },
+  },
+  '#withLogConfigurationMixin':: d.fn(help='`aws.list[obj].withLogConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the log_configuration field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withLogConfiguration](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `log_configuration` field.\n', args=[]),
+  withLogConfigurationMixin(resourceLabel, value): {
+    resource+: {
+      aws_fis_experiment_template+: {
+        [resourceLabel]+: {
+          log_configuration+: if std.isArray(v=value) then value else [value],
         },
       },
     },

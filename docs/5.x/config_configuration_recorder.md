@@ -21,6 +21,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRoleArn()`](#fn-withrolearn)
 * [`obj recording_group`](#obj-recording_group)
   * [`fn new()`](#fn-recording_groupnew)
+  * [`obj recording_group.exclusion_by_resource_types`](#obj-recording_groupexclusion_by_resource_types)
+    * [`fn new()`](#fn-recording_groupexclusion_by_resource_typesnew)
+  * [`obj recording_group.recording_strategy`](#obj-recording_grouprecording_strategy)
+    * [`fn new()`](#fn-recording_grouprecording_strategynew)
 
 ## Fields
 
@@ -174,6 +178,54 @@ Terraform sub block.
   - `all_supported` (`bool`): Set the `all_supported` field on the resulting object. When `null`, the `all_supported` field will be omitted from the resulting object.
   - `include_global_resource_types` (`bool`): Set the `include_global_resource_types` field on the resulting object. When `null`, the `include_global_resource_types` field will be omitted from the resulting object.
   - `resource_types` (`list`): Set the `resource_types` field on the resulting object. When `null`, the `resource_types` field will be omitted from the resulting object.
+  - `exclusion_by_resource_types` (`list[obj]`): Set the `exclusion_by_resource_types` field on the resulting object. When `null`, the `exclusion_by_resource_types` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_recorder.recording_group.exclusion_by_resource_types.new](#fn-recording_groupexclusion_by_resource_typesnew) constructor.
+  - `recording_strategy` (`list[obj]`): Set the `recording_strategy` field on the resulting object. When `null`, the `recording_strategy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_configuration_recorder.recording_group.recording_strategy.new](#fn-recording_grouprecording_strategynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `recording_group` sub block.
+
+
+## obj recording_group.exclusion_by_resource_types
+
+
+
+### fn recording_group.exclusion_by_resource_types.new
+
+```ts
+new()
+```
+
+
+`aws.config_configuration_recorder.recording_group.exclusion_by_resource_types.new` constructs a new object with attributes and blocks configured for the `exclusion_by_resource_types`
+Terraform sub block.
+
+
+
+**Args**:
+  - `resource_types` (`list`): Set the `resource_types` field on the resulting object. When `null`, the `resource_types` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `exclusion_by_resource_types` sub block.
+
+
+## obj recording_group.recording_strategy
+
+
+
+### fn recording_group.recording_strategy.new
+
+```ts
+new()
+```
+
+
+`aws.config_configuration_recorder.recording_group.recording_strategy.new` constructs a new object with attributes and blocks configured for the `recording_strategy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `use_only` (`string`): Set the `use_only` field on the resulting object. When `null`, the `use_only` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `recording_strategy` sub block.

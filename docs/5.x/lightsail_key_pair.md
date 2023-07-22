@@ -19,6 +19,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withNamePrefix()`](#fn-withnameprefix)
 * [`fn withPgpKey()`](#fn-withpgpkey)
 * [`fn withPublicKey()`](#fn-withpublickey)
+* [`fn withTags()`](#fn-withtags)
+* [`fn withTagsAll()`](#fn-withtagsall)
 
 ## Fields
 
@@ -53,6 +55,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `pgp_key` (`string`): Set the `pgp_key` field on the resulting resource block. When `null`, the `pgp_key` field will be omitted from the resulting object.
   - `public_key` (`string`): Set the `public_key` field on the resulting resource block. When `null`, the `public_key` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -80,6 +84,8 @@ injecting into a complete block.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `pgp_key` (`string`): Set the `pgp_key` field on the resulting object. When `null`, the `pgp_key` field will be omitted from the resulting object.
   - `public_key` (`string`): Set the `public_key` field on the resulting object. When `null`, the `public_key` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lightsail_key_pair` resource into the root Terraform configuration.
@@ -147,3 +153,35 @@ Terraform resource block to set or update the public_key field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `public_key` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.obj.withTags` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the tags field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags` field.
+
+
+### fn withTagsAll
+
+```ts
+withTagsAll()
+```
+
+`aws.obj.withTagsAll` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the tags_all field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags_all` field.

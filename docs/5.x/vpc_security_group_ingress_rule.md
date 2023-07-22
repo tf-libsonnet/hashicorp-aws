@@ -62,7 +62,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ip_protocol` (`string`): Set the `ip_protocol` field on the resulting resource block.
   - `prefix_list_id` (`string`): Set the `prefix_list_id` field on the resulting resource block. When `null`, the `prefix_list_id` field will be omitted from the resulting object.
   - `referenced_security_group_id` (`string`): Set the `referenced_security_group_id` field on the resulting resource block. When `null`, the `referenced_security_group_id` field will be omitted from the resulting object.
-  - `security_group_id` (`string`): Set the `security_group_id` field on the resulting resource block. When `null`, the `security_group_id` field will be omitted from the resulting object.
+  - `security_group_id` (`string`): Set the `security_group_id` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `to_port` (`number`): Set the `to_port` field on the resulting resource block. When `null`, the `to_port` field will be omitted from the resulting object.
 
@@ -95,7 +95,7 @@ injecting into a complete block.
   - `ip_protocol` (`string`): Set the `ip_protocol` field on the resulting object.
   - `prefix_list_id` (`string`): Set the `prefix_list_id` field on the resulting object. When `null`, the `prefix_list_id` field will be omitted from the resulting object.
   - `referenced_security_group_id` (`string`): Set the `referenced_security_group_id` field on the resulting object. When `null`, the `referenced_security_group_id` field will be omitted from the resulting object.
-  - `security_group_id` (`string`): Set the `security_group_id` field on the resulting object. When `null`, the `security_group_id` field will be omitted from the resulting object.
+  - `security_group_id` (`string`): Set the `security_group_id` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `to_port` (`number`): Set the `to_port` field on the resulting object. When `null`, the `to_port` field will be omitted from the resulting object.
 

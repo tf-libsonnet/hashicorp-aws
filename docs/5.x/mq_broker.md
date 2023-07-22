@@ -813,6 +813,7 @@ Terraform sub block.
   - `console_access` (`bool`): Set the `console_access` field on the resulting object. When `null`, the `console_access` field will be omitted from the resulting object.
   - `groups` (`list`): Set the `groups` field on the resulting object. When `null`, the `groups` field will be omitted from the resulting object.
   - `password` (`string`): Set the `password` field on the resulting object.
+  - `replication_user` (`bool`): Set the `replication_user` field on the resulting object. When `null`, the `replication_user` field will be omitted from the resulting object.
   - `username` (`string`): Set the `username` field on the resulting object.
 
 **Returns**:

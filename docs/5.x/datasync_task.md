@@ -471,6 +471,7 @@ Terraform sub block.
   - `gid` (`string`): Set the `gid` field on the resulting object. When `null`, the `gid` field will be omitted from the resulting object.
   - `log_level` (`string`): Set the `log_level` field on the resulting object. When `null`, the `log_level` field will be omitted from the resulting object.
   - `mtime` (`string`): Set the `mtime` field on the resulting object. When `null`, the `mtime` field will be omitted from the resulting object.
+  - `object_tags` (`string`): Set the `object_tags` field on the resulting object. When `null`, the `object_tags` field will be omitted from the resulting object.
   - `overwrite_mode` (`string`): Set the `overwrite_mode` field on the resulting object. When `null`, the `overwrite_mode` field will be omitted from the resulting object.
   - `posix_permissions` (`string`): Set the `posix_permissions` field on the resulting object. When `null`, the `posix_permissions` field will be omitted from the resulting object.
   - `preserve_deleted_files` (`string`): Set the `preserve_deleted_files` field on the resulting object. When `null`, the `preserve_deleted_files` field will be omitted from the resulting object.

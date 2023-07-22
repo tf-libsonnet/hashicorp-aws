@@ -24,8 +24,12 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withStreamName()`](#fn-withstreamname)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`obj kinesis_configuration`](#obj-kinesis_configuration)
   * [`fn new()`](#fn-kinesis_configurationnew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
 
 ## Fields
 
@@ -64,6 +68,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `kinesis_configuration` (`list[obj]`): Set the `kinesis_configuration` field on the resulting resource block. When `null`, the `kinesis_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.kinesis_configuration.new](#fn-kinesis_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -95,6 +100,7 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `kinesis_configuration` (`list[obj]`): Set the `kinesis_configuration` field on the resulting object. When `null`, the `kinesis_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.kinesis_configuration.new](#fn-kinesis_configurationnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.qldb_stream.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `qldb_stream` resource into the root Terraform configuration.
@@ -249,6 +255,42 @@ Terraform resource block to set or update the tags_all field.
   - `value` (`obj`): The value to set for the `tags_all` field.
 
 
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.obj.withTimeouts` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will replace the map with the passed in `value`. If you wish to instead merge the
+passed in value to the existing map, use the [aws.obj.withTimeoutsMixin](TODO) function.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.obj.withTimeoutsMixin` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.obj.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
 ## obj kinesis_configuration
 
 
@@ -271,3 +313,27 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `kinesis_configuration` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.qldb_stream.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

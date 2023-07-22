@@ -2,13 +2,14 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
 local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='signer_signing_profile', url='', help='`signer_signing_profile` represents the `aws_signer_signing_profile` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
-  '#new':: d.fn(help="\n`aws.signer_signing_profile.new` injects a new `aws_signer_signing_profile` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.signer_signing_profile.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.signer_signing_profile` using the reference:\n\n    $._ref.aws_signer_signing_profile.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_signer_signing_profile.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.\n  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.\n  - `platform_id` (`string`): Set the `platform_id` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `signature_validity_period` (`list[obj]`): Set the `signature_validity_period` field on the resulting resource block. When `null`, the `signature_validity_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_profile.signature_validity_period.new](#fn-signature_validity_periodnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.signer_signing_profile.new` injects a new `aws_signer_signing_profile` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.signer_signing_profile.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.signer_signing_profile` using the reference:\n\n    $._ref.aws_signer_signing_profile.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_signer_signing_profile.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.\n  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.\n  - `platform_id` (`string`): Set the `platform_id` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `signature_validity_period` (`list[obj]`): Set the `signature_validity_period` field on the resulting resource block. When `null`, the `signature_validity_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_profile.signature_validity_period.new](#fn-signature_validity_periodnew) constructor.\n  - `signing_material` (`list[obj]`): Set the `signing_material` field on the resulting resource block. When `null`, the `signing_material` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_profile.signing_material.new](#fn-signing_materialnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     platform_id,
     name=null,
     name_prefix=null,
     signature_validity_period=null,
+    signing_material=null,
     tags=null,
     tags_all=null,
     _meta={}
@@ -20,17 +21,19 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       name_prefix=name_prefix,
       platform_id=platform_id,
       signature_validity_period=signature_validity_period,
+      signing_material=signing_material,
       tags=tags,
       tags_all=tags_all
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.signer_signing_profile.newAttrs` constructs a new object with attributes and blocks configured for the `signer_signing_profile`\nTerraform resource.\n\nUnlike [aws.signer_signing_profile.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.\n  - `platform_id` (`string`): Set the `platform_id` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `signature_validity_period` (`list[obj]`): Set the `signature_validity_period` field on the resulting object. When `null`, the `signature_validity_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_profile.signature_validity_period.new](#fn-signature_validity_periodnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `signer_signing_profile` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.signer_signing_profile.newAttrs` constructs a new object with attributes and blocks configured for the `signer_signing_profile`\nTerraform resource.\n\nUnlike [aws.signer_signing_profile.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.\n  - `platform_id` (`string`): Set the `platform_id` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `signature_validity_period` (`list[obj]`): Set the `signature_validity_period` field on the resulting object. When `null`, the `signature_validity_period` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_profile.signature_validity_period.new](#fn-signature_validity_periodnew) constructor.\n  - `signing_material` (`list[obj]`): Set the `signing_material` field on the resulting object. When `null`, the `signing_material` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.signer_signing_profile.signing_material.new](#fn-signing_materialnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `signer_signing_profile` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     platform_id,
     name=null,
     name_prefix=null,
     signature_validity_period=null,
+    signing_material=null,
     tags=null,
     tags_all=null
   ):: std.prune(a={
@@ -38,6 +41,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     name_prefix: name_prefix,
     platform_id: platform_id,
     signature_validity_period: signature_validity_period,
+    signing_material: signing_material,
     tags: tags,
     tags_all: tags_all,
   }),
@@ -49,6 +53,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ):: std.prune(a={
       type: type,
       value: value,
+    }),
+  },
+  signing_material:: {
+    '#new':: d.fn(help='\n`aws.signer_signing_profile.signing_material.new` constructs a new object with attributes and blocks configured for the `signing_material`\nTerraform sub block.\n\n\n\n**Args**:\n  - `certificate_arn` (`string`): Set the `certificate_arn` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `signing_material` sub block.\n', args=[]),
+    new(
+      certificate_arn
+    ):: std.prune(a={
+      certificate_arn: certificate_arn,
     }),
   },
   '#withName':: d.fn(help='`aws.string.withName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `name` field.\n', args=[]),
@@ -97,6 +109,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_signer_signing_profile+: {
         [resourceLabel]+: {
           signature_validity_period+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withSigningMaterial':: d.fn(help='`aws.list[obj].withSigningMaterial` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the signing_material field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withSigningMaterialMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `signing_material` field.\n', args=[]),
+  withSigningMaterial(resourceLabel, value): {
+    resource+: {
+      aws_signer_signing_profile+: {
+        [resourceLabel]+: {
+          signing_material: value,
+        },
+      },
+    },
+  },
+  '#withSigningMaterialMixin':: d.fn(help='`aws.list[obj].withSigningMaterialMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the signing_material field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withSigningMaterial](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `signing_material` field.\n', args=[]),
+  withSigningMaterialMixin(resourceLabel, value): {
+    resource+: {
+      aws_signer_signing_profile+: {
+        [resourceLabel]+: {
+          signing_material+: if std.isArray(v=value) then value else [value],
         },
       },
     },

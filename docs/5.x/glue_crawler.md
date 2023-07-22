@@ -25,6 +25,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withDynamodbTarget()`](#fn-withdynamodbtarget)
 * [`fn withDynamodbTargetMixin()`](#fn-withdynamodbtargetmixin)
+* [`fn withIcebergTarget()`](#fn-withicebergtarget)
+* [`fn withIcebergTargetMixin()`](#fn-withicebergtargetmixin)
 * [`fn withJdbcTarget()`](#fn-withjdbctarget)
 * [`fn withJdbcTargetMixin()`](#fn-withjdbctargetmixin)
 * [`fn withLakeFormationConfiguration()`](#fn-withlakeformationconfiguration)
@@ -52,6 +54,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-delta_targetnew)
 * [`obj dynamodb_target`](#obj-dynamodb_target)
   * [`fn new()`](#fn-dynamodb_targetnew)
+* [`obj iceberg_target`](#obj-iceberg_target)
+  * [`fn new()`](#fn-iceberg_targetnew)
 * [`obj jdbc_target`](#obj-jdbc_target)
   * [`fn new()`](#fn-jdbc_targetnew)
 * [`obj lake_formation_configuration`](#obj-lake_formation_configuration)
@@ -110,6 +114,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `catalog_target` (`list[obj]`): Set the `catalog_target` field on the resulting resource block. When `null`, the `catalog_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.catalog_target.new](#fn-catalog_targetnew) constructor.
   - `delta_target` (`list[obj]`): Set the `delta_target` field on the resulting resource block. When `null`, the `delta_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.delta_target.new](#fn-delta_targetnew) constructor.
   - `dynamodb_target` (`list[obj]`): Set the `dynamodb_target` field on the resulting resource block. When `null`, the `dynamodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.dynamodb_target.new](#fn-dynamodb_targetnew) constructor.
+  - `iceberg_target` (`list[obj]`): Set the `iceberg_target` field on the resulting resource block. When `null`, the `iceberg_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.iceberg_target.new](#fn-iceberg_targetnew) constructor.
   - `jdbc_target` (`list[obj]`): Set the `jdbc_target` field on the resulting resource block. When `null`, the `jdbc_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.jdbc_target.new](#fn-jdbc_targetnew) constructor.
   - `lake_formation_configuration` (`list[obj]`): Set the `lake_formation_configuration` field on the resulting resource block. When `null`, the `lake_formation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lake_formation_configuration.new](#fn-lake_formation_configurationnew) constructor.
   - `lineage_configuration` (`list[obj]`): Set the `lineage_configuration` field on the resulting resource block. When `null`, the `lineage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lineage_configuration.new](#fn-lineage_configurationnew) constructor.
@@ -154,6 +159,7 @@ injecting into a complete block.
   - `catalog_target` (`list[obj]`): Set the `catalog_target` field on the resulting object. When `null`, the `catalog_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.catalog_target.new](#fn-catalog_targetnew) constructor.
   - `delta_target` (`list[obj]`): Set the `delta_target` field on the resulting object. When `null`, the `delta_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.delta_target.new](#fn-delta_targetnew) constructor.
   - `dynamodb_target` (`list[obj]`): Set the `dynamodb_target` field on the resulting object. When `null`, the `dynamodb_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.dynamodb_target.new](#fn-dynamodb_targetnew) constructor.
+  - `iceberg_target` (`list[obj]`): Set the `iceberg_target` field on the resulting object. When `null`, the `iceberg_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.iceberg_target.new](#fn-iceberg_targetnew) constructor.
   - `jdbc_target` (`list[obj]`): Set the `jdbc_target` field on the resulting object. When `null`, the `jdbc_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.jdbc_target.new](#fn-jdbc_targetnew) constructor.
   - `lake_formation_configuration` (`list[obj]`): Set the `lake_formation_configuration` field on the resulting object. When `null`, the `lake_formation_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lake_formation_configuration.new](#fn-lake_formation_configurationnew) constructor.
   - `lineage_configuration` (`list[obj]`): Set the `lineage_configuration` field on the resulting object. When `null`, the `lineage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_crawler.lineage_configuration.new](#fn-lineage_configurationnew) constructor.
@@ -339,6 +345,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `dynamodb_target` field.
+
+
+### fn withIcebergTarget
+
+```ts
+withIcebergTarget()
+```
+
+`aws.list[obj].withIcebergTarget` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the iceberg_target field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withIcebergTargetMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `iceberg_target` field.
+
+
+### fn withIcebergTargetMixin
+
+```ts
+withIcebergTargetMixin()
+```
+
+`aws.list[obj].withIcebergTargetMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the iceberg_target field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withIcebergTarget](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `iceberg_target` field.
 
 
 ### fn withJdbcTarget
@@ -788,6 +831,32 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `dynamodb_target` sub block.
+
+
+## obj iceberg_target
+
+
+
+### fn iceberg_target.new
+
+```ts
+new()
+```
+
+
+`aws.glue_crawler.iceberg_target.new` constructs a new object with attributes and blocks configured for the `iceberg_target`
+Terraform sub block.
+
+
+
+**Args**:
+  - `connection_name` (`string`): Set the `connection_name` field on the resulting object. When `null`, the `connection_name` field will be omitted from the resulting object.
+  - `exclusions` (`list`): Set the `exclusions` field on the resulting object. When `null`, the `exclusions` field will be omitted from the resulting object.
+  - `maximum_traversal_depth` (`number`): Set the `maximum_traversal_depth` field on the resulting object.
+  - `paths` (`list`): Set the `paths` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `iceberg_target` sub block.
 
 
 ## obj jdbc_target

@@ -15,6 +15,8 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withHealthEventsConfig()`](#fn-withhealtheventsconfig)
+* [`fn withHealthEventsConfigMixin()`](#fn-withhealtheventsconfigmixin)
 * [`fn withInternetMeasurementsLogDelivery()`](#fn-withinternetmeasurementslogdelivery)
 * [`fn withInternetMeasurementsLogDeliveryMixin()`](#fn-withinternetmeasurementslogdeliverymixin)
 * [`fn withMaxCityNetworksToMonitor()`](#fn-withmaxcitynetworkstomonitor)
@@ -24,6 +26,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTrafficPercentageToMonitor()`](#fn-withtrafficpercentagetomonitor)
+* [`obj health_events_config`](#obj-health_events_config)
+  * [`fn new()`](#fn-health_events_confignew)
 * [`obj internet_measurements_log_delivery`](#obj-internet_measurements_log_delivery)
   * [`fn new()`](#fn-internet_measurements_log_deliverynew)
   * [`obj internet_measurements_log_delivery.s3_config`](#obj-internet_measurements_log_deliverys3_config)
@@ -65,6 +69,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `traffic_percentage_to_monitor` (`number`): Set the `traffic_percentage_to_monitor` field on the resulting resource block. When `null`, the `traffic_percentage_to_monitor` field will be omitted from the resulting object.
+  - `health_events_config` (`list[obj]`): Set the `health_events_config` field on the resulting resource block. When `null`, the `health_events_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.internetmonitor_monitor.health_events_config.new](#fn-health_events_confignew) constructor.
   - `internet_measurements_log_delivery` (`list[obj]`): Set the `internet_measurements_log_delivery` field on the resulting resource block. When `null`, the `internet_measurements_log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.internetmonitor_monitor.internet_measurements_log_delivery.new](#fn-internet_measurements_log_deliverynew) constructor.
 
 **Returns**:
@@ -96,10 +101,48 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `traffic_percentage_to_monitor` (`number`): Set the `traffic_percentage_to_monitor` field on the resulting object. When `null`, the `traffic_percentage_to_monitor` field will be omitted from the resulting object.
+  - `health_events_config` (`list[obj]`): Set the `health_events_config` field on the resulting object. When `null`, the `health_events_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.internetmonitor_monitor.health_events_config.new](#fn-health_events_confignew) constructor.
   - `internet_measurements_log_delivery` (`list[obj]`): Set the `internet_measurements_log_delivery` field on the resulting object. When `null`, the `internet_measurements_log_delivery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.internetmonitor_monitor.internet_measurements_log_delivery.new](#fn-internet_measurements_log_deliverynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `internetmonitor_monitor` resource into the root Terraform configuration.
+
+
+### fn withHealthEventsConfig
+
+```ts
+withHealthEventsConfig()
+```
+
+`aws.list[obj].withHealthEventsConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the health_events_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withHealthEventsConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `health_events_config` field.
+
+
+### fn withHealthEventsConfigMixin
+
+```ts
+withHealthEventsConfigMixin()
+```
+
+`aws.list[obj].withHealthEventsConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the health_events_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withHealthEventsConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `health_events_config` field.
 
 
 ### fn withInternetMeasurementsLogDelivery
@@ -249,6 +292,30 @@ Terraform resource block to set or update the traffic_percentage_to_monitor fiel
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `traffic_percentage_to_monitor` field.
+
+
+## obj health_events_config
+
+
+
+### fn health_events_config.new
+
+```ts
+new()
+```
+
+
+`aws.internetmonitor_monitor.health_events_config.new` constructs a new object with attributes and blocks configured for the `health_events_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `availability_score_threshold` (`number`): Set the `availability_score_threshold` field on the resulting object. When `null`, the `availability_score_threshold` field will be omitted from the resulting object.
+  - `performance_score_threshold` (`number`): Set the `performance_score_threshold` field on the resulting object. When `null`, the `performance_score_threshold` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `health_events_config` sub block.
 
 
 ## obj internet_measurements_log_delivery
