@@ -31,6 +31,8 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-user_settingscanvas_app_settingsmodel_register_settingsnew)
     * [`obj user_settings.canvas_app_settings.time_series_forecasting_settings`](#obj-user_settingscanvas_app_settingstime_series_forecasting_settings)
       * [`fn new()`](#fn-user_settingscanvas_app_settingstime_series_forecasting_settingsnew)
+    * [`obj user_settings.canvas_app_settings.workspace_settings`](#obj-user_settingscanvas_app_settingsworkspace_settings)
+      * [`fn new()`](#fn-user_settingscanvas_app_settingsworkspace_settingsnew)
   * [`obj user_settings.jupyter_server_app_settings`](#obj-user_settingsjupyter_server_app_settings)
     * [`fn new()`](#fn-user_settingsjupyter_server_app_settingsnew)
     * [`obj user_settings.jupyter_server_app_settings.code_repository`](#obj-user_settingsjupyter_server_app_settingscode_repository)
@@ -312,6 +314,7 @@ Terraform sub block.
 **Args**:
   - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.model_register_settings.new](#fn-user_settingsuser_settingsmodel_register_settingsnew) constructor.
   - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-user_settingsuser_settingstime_series_forecasting_settingsnew) constructor.
+  - `workspace_settings` (`list[obj]`): Set the `workspace_settings` field on the resulting object. When `null`, the `workspace_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_user_profile.user_settings.canvas_app_settings.workspace_settings.new](#fn-user_settingsuser_settingsworkspace_settingsnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `canvas_app_settings` sub block.
@@ -363,6 +366,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `time_series_forecasting_settings` sub block.
+
+
+## obj user_settings.canvas_app_settings.workspace_settings
+
+
+
+### fn user_settings.canvas_app_settings.workspace_settings.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_user_profile.user_settings.canvas_app_settings.workspace_settings.new` constructs a new object with attributes and blocks configured for the `workspace_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `s3_artifact_path` (`string`): Set the `s3_artifact_path` field on the resulting object. When `null`, the `s3_artifact_path` field will be omitted from the resulting object.
+  - `s3_kms_key_id` (`string`): Set the `s3_kms_key_id` field on the resulting object. When `null`, the `s3_kms_key_id` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `workspace_settings` sub block.
 
 
 ## obj user_settings.jupyter_server_app_settings

@@ -525,6 +525,7 @@ Terraform sub block.
 **Args**:
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `python_version` (`string`): Set the `python_version` field on the resulting object. When `null`, the `python_version` field will be omitted from the resulting object.
+  - `runtime` (`string`): Set the `runtime` field on the resulting object. When `null`, the `runtime` field will be omitted from the resulting object.
   - `script_location` (`string`): Set the `script_location` field on the resulting object.
 
 **Returns**:

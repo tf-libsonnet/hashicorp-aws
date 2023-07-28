@@ -27,6 +27,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-encryption_configurationnew)
 * [`obj firewall_policy`](#obj-firewall_policy)
   * [`fn new()`](#fn-firewall_policynew)
+  * [`obj firewall_policy.policy_variables`](#obj-firewall_policypolicy_variables)
+    * [`fn new()`](#fn-firewall_policypolicy_variablesnew)
+    * [`obj firewall_policy.policy_variables.rule_variables`](#obj-firewall_policypolicy_variablesrule_variables)
+      * [`fn new()`](#fn-firewall_policypolicy_variablesrule_variablesnew)
+      * [`obj firewall_policy.policy_variables.rule_variables.ip_set`](#obj-firewall_policypolicy_variablesrule_variablesip_set)
+        * [`fn new()`](#fn-firewall_policypolicy_variablesrule_variablesip_setnew)
   * [`obj firewall_policy.stateful_engine_options`](#obj-firewall_policystateful_engine_options)
     * [`fn new()`](#fn-firewall_policystateful_engine_optionsnew)
   * [`obj firewall_policy.stateful_rule_group_reference`](#obj-firewall_policystateful_rule_group_reference)
@@ -295,6 +301,7 @@ Terraform sub block.
   - `stateful_default_actions` (`list`): Set the `stateful_default_actions` field on the resulting object. When `null`, the `stateful_default_actions` field will be omitted from the resulting object.
   - `stateless_default_actions` (`list`): Set the `stateless_default_actions` field on the resulting object.
   - `stateless_fragment_default_actions` (`list`): Set the `stateless_fragment_default_actions` field on the resulting object.
+  - `policy_variables` (`list[obj]`): Set the `policy_variables` field on the resulting object. When `null`, the `policy_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.new](#fn-firewall_policypolicy_variablesnew) constructor.
   - `stateful_engine_options` (`list[obj]`): Set the `stateful_engine_options` field on the resulting object. When `null`, the `stateful_engine_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new](#fn-firewall_policystateful_engine_optionsnew) constructor.
   - `stateful_rule_group_reference` (`list[obj]`): Set the `stateful_rule_group_reference` field on the resulting object. When `null`, the `stateful_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_rule_group_reference.new](#fn-firewall_policystateful_rule_group_referencenew) constructor.
   - `stateless_custom_action` (`list[obj]`): Set the `stateless_custom_action` field on the resulting object. When `null`, the `stateless_custom_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.new](#fn-firewall_policystateless_custom_actionnew) constructor.
@@ -302,6 +309,76 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `firewall_policy` sub block.
+
+
+## obj firewall_policy.policy_variables
+
+
+
+### fn firewall_policy.policy_variables.new
+
+```ts
+new()
+```
+
+
+`aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.new` constructs a new object with attributes and blocks configured for the `policy_variables`
+Terraform sub block.
+
+
+
+**Args**:
+  - `rule_variables` (`list[obj]`): Set the `rule_variables` field on the resulting object. When `null`, the `rule_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.new](#fn-firewall_policyfirewall_policyrule_variablesnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `policy_variables` sub block.
+
+
+## obj firewall_policy.policy_variables.rule_variables
+
+
+
+### fn firewall_policy.policy_variables.rule_variables.new
+
+```ts
+new()
+```
+
+
+`aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.new` constructs a new object with attributes and blocks configured for the `rule_variables`
+Terraform sub block.
+
+
+
+**Args**:
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `ip_set` (`list[obj]`): Set the `ip_set` field on the resulting object. When `null`, the `ip_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.ip_set.new](#fn-firewall_policyfirewall_policypolicy_variablesip_setnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `rule_variables` sub block.
+
+
+## obj firewall_policy.policy_variables.rule_variables.ip_set
+
+
+
+### fn firewall_policy.policy_variables.rule_variables.ip_set.new
+
+```ts
+new()
+```
+
+
+`aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.ip_set.new` constructs a new object with attributes and blocks configured for the `ip_set`
+Terraform sub block.
+
+
+
+**Args**:
+  - `definition` (`list`): Set the `definition` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `ip_set` sub block.
 
 
 ## obj firewall_policy.stateful_engine_options

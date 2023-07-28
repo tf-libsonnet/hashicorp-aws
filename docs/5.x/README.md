@@ -583,6 +583,7 @@ project.
 * [iam_role_policy](iam_role_policy.md)
 * [iam_role_policy_attachment](iam_role_policy_attachment.md)
 * [iam_saml_provider](iam_saml_provider.md)
+* [iam_security_token_service_preferences](iam_security_token_service_preferences.md)
 * [iam_server_certificate](iam_server_certificate.md)
 * [iam_service_linked_role](iam_service_linked_role.md)
 * [iam_service_specific_credential](iam_service_specific_credential.md)

@@ -573,6 +573,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   iam_role_policy: (import 'resources/iam_role_policy.libsonnet'),
   iam_role_policy_attachment: (import 'resources/iam_role_policy_attachment.libsonnet'),
   iam_saml_provider: (import 'resources/iam_saml_provider.libsonnet'),
+  iam_security_token_service_preferences: (import 'resources/iam_security_token_service_preferences.libsonnet'),
   iam_server_certificate: (import 'resources/iam_server_certificate.libsonnet'),
   iam_service_linked_role: (import 'resources/iam_service_linked_role.libsonnet'),
   iam_service_specific_credential: (import 'resources/iam_service_specific_credential.libsonnet'),
