@@ -790,7 +790,7 @@ Terraform sub block.
 
 **Args**:
   - `cache_type` (`string`): Set the `cache_type` field on the resulting object.
-  - `db_paths` (`list`): Set the `db_paths` field on the resulting object.
+  - `db_paths` (`list`): Set the `db_paths` field on the resulting object. When `null`, the `db_paths` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `cache_configurations` sub block.

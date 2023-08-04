@@ -33,6 +33,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withProtocolDetailsMixin()`](#fn-withprotocoldetailsmixin)
 * [`fn withProtocols()`](#fn-withprotocols)
 * [`fn withSecurityPolicyName()`](#fn-withsecuritypolicyname)
+* [`fn withStructuredLogDestinations()`](#fn-withstructuredlogdestinations)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withUrl()`](#fn-withurl)
@@ -92,6 +93,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `pre_authentication_login_banner` (`string`): Set the `pre_authentication_login_banner` field on the resulting resource block. When `null`, the `pre_authentication_login_banner` field will be omitted from the resulting object.
   - `protocols` (`list`): Set the `protocols` field on the resulting resource block. When `null`, the `protocols` field will be omitted from the resulting object.
   - `security_policy_name` (`string`): Set the `security_policy_name` field on the resulting resource block. When `null`, the `security_policy_name` field will be omitted from the resulting object.
+  - `structured_log_destinations` (`list`): This is a set of arns of destinations that will receive structured logs from the transfer server When `null`, the `structured_log_destinations` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `url` (`string`): Set the `url` field on the resulting resource block. When `null`, the `url` field will be omitted from the resulting object.
@@ -135,6 +137,7 @@ injecting into a complete block.
   - `pre_authentication_login_banner` (`string`): Set the `pre_authentication_login_banner` field on the resulting object. When `null`, the `pre_authentication_login_banner` field will be omitted from the resulting object.
   - `protocols` (`list`): Set the `protocols` field on the resulting object. When `null`, the `protocols` field will be omitted from the resulting object.
   - `security_policy_name` (`string`): Set the `security_policy_name` field on the resulting object. When `null`, the `security_policy_name` field will be omitted from the resulting object.
+  - `structured_log_destinations` (`list`): This is a set of arns of destinations that will receive structured logs from the transfer server When `null`, the `structured_log_destinations` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `url` (`string`): Set the `url` field on the resulting object. When `null`, the `url` field will be omitted from the resulting object.
@@ -442,6 +445,22 @@ Terraform resource block to set or update the security_policy_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `security_policy_name` field.
+
+
+### fn withStructuredLogDestinations
+
+```ts
+withStructuredLogDestinations()
+```
+
+`aws.list.withStructuredLogDestinations` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the structured_log_destinations field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `structured_log_destinations` field.
 
 
 ### fn withTags

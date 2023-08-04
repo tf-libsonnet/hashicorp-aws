@@ -13,16 +13,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   firewall_policy:: {
-    '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.new` constructs a new object with attributes and blocks configured for the `firewall_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `stateful_default_actions` (`list`): Set the `stateful_default_actions` field on the resulting object. When `null`, the `stateful_default_actions` field will be omitted from the resulting object.\n  - `stateless_default_actions` (`list`): Set the `stateless_default_actions` field on the resulting object.\n  - `stateless_fragment_default_actions` (`list`): Set the `stateless_fragment_default_actions` field on the resulting object.\n  - `stateful_engine_options` (`list[obj]`): Set the `stateful_engine_options` field on the resulting object. When `null`, the `stateful_engine_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new](#fn-firewall_policystateful_engine_optionsnew) constructor.\n  - `stateful_rule_group_reference` (`list[obj]`): Set the `stateful_rule_group_reference` field on the resulting object. When `null`, the `stateful_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_rule_group_reference.new](#fn-firewall_policystateful_rule_group_referencenew) constructor.\n  - `stateless_custom_action` (`list[obj]`): Set the `stateless_custom_action` field on the resulting object. When `null`, the `stateless_custom_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.new](#fn-firewall_policystateless_custom_actionnew) constructor.\n  - `stateless_rule_group_reference` (`list[obj]`): Set the `stateless_rule_group_reference` field on the resulting object. When `null`, the `stateless_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_rule_group_reference.new](#fn-firewall_policystateless_rule_group_referencenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `firewall_policy` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.new` constructs a new object with attributes and blocks configured for the `firewall_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `stateful_default_actions` (`list`): Set the `stateful_default_actions` field on the resulting object. When `null`, the `stateful_default_actions` field will be omitted from the resulting object.\n  - `stateless_default_actions` (`list`): Set the `stateless_default_actions` field on the resulting object.\n  - `stateless_fragment_default_actions` (`list`): Set the `stateless_fragment_default_actions` field on the resulting object.\n  - `policy_variables` (`list[obj]`): Set the `policy_variables` field on the resulting object. When `null`, the `policy_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.new](#fn-firewall_policypolicy_variablesnew) constructor.\n  - `stateful_engine_options` (`list[obj]`): Set the `stateful_engine_options` field on the resulting object. When `null`, the `stateful_engine_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new](#fn-firewall_policystateful_engine_optionsnew) constructor.\n  - `stateful_rule_group_reference` (`list[obj]`): Set the `stateful_rule_group_reference` field on the resulting object. When `null`, the `stateful_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateful_rule_group_reference.new](#fn-firewall_policystateful_rule_group_referencenew) constructor.\n  - `stateless_custom_action` (`list[obj]`): Set the `stateless_custom_action` field on the resulting object. When `null`, the `stateless_custom_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_custom_action.new](#fn-firewall_policystateless_custom_actionnew) constructor.\n  - `stateless_rule_group_reference` (`list[obj]`): Set the `stateless_rule_group_reference` field on the resulting object. When `null`, the `stateless_rule_group_reference` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.stateless_rule_group_reference.new](#fn-firewall_policystateless_rule_group_referencenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `firewall_policy` sub block.\n', args=[]),
     new(
       stateless_default_actions,
       stateless_fragment_default_actions,
+      policy_variables=null,
       stateful_default_actions=null,
       stateful_engine_options=null,
       stateful_rule_group_reference=null,
       stateless_custom_action=null,
       stateless_rule_group_reference=null
     ):: std.prune(a={
+      policy_variables: policy_variables,
       stateful_default_actions: stateful_default_actions,
       stateful_engine_options: stateful_engine_options,
       stateful_rule_group_reference: stateful_rule_group_reference,
@@ -31,6 +33,32 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       stateless_fragment_default_actions: stateless_fragment_default_actions,
       stateless_rule_group_reference: stateless_rule_group_reference,
     }),
+    policy_variables:: {
+      '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.new` constructs a new object with attributes and blocks configured for the `policy_variables`\nTerraform sub block.\n\n\n\n**Args**:\n  - `rule_variables` (`list[obj]`): Set the `rule_variables` field on the resulting object. When `null`, the `rule_variables` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.new](#fn-firewall_policyfirewall_policyrule_variablesnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `policy_variables` sub block.\n', args=[]),
+      new(
+        rule_variables=null
+      ):: std.prune(a={
+        rule_variables: rule_variables,
+      }),
+      rule_variables:: {
+        ip_set:: {
+          '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.ip_set.new` constructs a new object with attributes and blocks configured for the `ip_set`\nTerraform sub block.\n\n\n\n**Args**:\n  - `definition` (`list`): Set the `definition` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `ip_set` sub block.\n', args=[]),
+          new(
+            definition
+          ):: std.prune(a={
+            definition: definition,
+          }),
+        },
+        '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.new` constructs a new object with attributes and blocks configured for the `rule_variables`\nTerraform sub block.\n\n\n\n**Args**:\n  - `key` (`string`): Set the `key` field on the resulting object.\n  - `ip_set` (`list[obj]`): Set the `ip_set` field on the resulting object. When `null`, the `ip_set` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall_policy.firewall_policy.policy_variables.rule_variables.ip_set.new](#fn-firewall_policyfirewall_policypolicy_variablesip_setnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule_variables` sub block.\n', args=[]),
+        new(
+          key,
+          ip_set=null
+        ):: std.prune(a={
+          ip_set: ip_set,
+          key: key,
+        }),
+      },
+    },
     stateful_engine_options:: {
       '#new':: d.fn(help='\n`aws.networkfirewall_firewall_policy.firewall_policy.stateful_engine_options.new` constructs a new object with attributes and blocks configured for the `stateful_engine_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `rule_order` (`string`): Set the `rule_order` field on the resulting object. When `null`, the `rule_order` field will be omitted from the resulting object.\n  - `stream_exception_policy` (`string`): Set the `stream_exception_policy` field on the resulting object. When `null`, the `stream_exception_policy` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `stateful_engine_options` sub block.\n', args=[]),
       new(

@@ -88,6 +88,54 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-encoder_settingsavail_blankingnew)
     * [`obj encoder_settings.avail_blanking.avail_blanking_image`](#obj-encoder_settingsavail_blankingavail_blanking_image)
       * [`fn new()`](#fn-encoder_settingsavail_blankingavail_blanking_imagenew)
+  * [`obj encoder_settings.caption_descriptions`](#obj-encoder_settingscaption_descriptions)
+    * [`fn new()`](#fn-encoder_settingscaption_descriptionsnew)
+    * [`obj encoder_settings.caption_descriptions.destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settings)
+      * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.arib_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsarib_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsarib_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsburn_in_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsburn_in_destination_settingsnew)
+        * [`obj encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.font`](#obj-encoder_settingscaption_descriptionsdestination_settingsburn_in_destination_settingsfont)
+          * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsburn_in_destination_settingsfontnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsdvb_sub_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsdvb_sub_destination_settingsnew)
+        * [`obj encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.font`](#obj-encoder_settingscaption_descriptionsdestination_settingsdvb_sub_destination_settingsfont)
+          * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsdvb_sub_destination_settingsfontnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.ebu_tt_d_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsebu_tt_d_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsebu_tt_d_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.embedded_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsembedded_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsembedded_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.embedded_plus_scte20_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsembedded_plus_scte20_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsembedded_plus_scte20_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.rtmp_caption_info_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsrtmp_caption_info_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsrtmp_caption_info_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.scte20_plus_embedded_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsscte20_plus_embedded_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsscte20_plus_embedded_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.scte27_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsscte27_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsscte27_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.smpte_tt_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingssmpte_tt_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingssmpte_tt_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.teletext_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsteletext_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsteletext_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.ttml_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingsttml_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingsttml_destination_settingsnew)
+      * [`obj encoder_settings.caption_descriptions.destination_settings.webvtt_destination_settings`](#obj-encoder_settingscaption_descriptionsdestination_settingswebvtt_destination_settings)
+        * [`fn new()`](#fn-encoder_settingscaption_descriptionsdestination_settingswebvtt_destination_settingsnew)
+  * [`obj encoder_settings.global_configuration`](#obj-encoder_settingsglobal_configuration)
+    * [`fn new()`](#fn-encoder_settingsglobal_configurationnew)
+    * [`obj encoder_settings.global_configuration.input_loss_behavior`](#obj-encoder_settingsglobal_configurationinput_loss_behavior)
+      * [`fn new()`](#fn-encoder_settingsglobal_configurationinput_loss_behaviornew)
+      * [`obj encoder_settings.global_configuration.input_loss_behavior.input_loss_image_slate`](#obj-encoder_settingsglobal_configurationinput_loss_behaviorinput_loss_image_slate)
+        * [`fn new()`](#fn-encoder_settingsglobal_configurationinput_loss_behaviorinput_loss_image_slatenew)
+  * [`obj encoder_settings.motion_graphics_configuration`](#obj-encoder_settingsmotion_graphics_configuration)
+    * [`fn new()`](#fn-encoder_settingsmotion_graphics_configurationnew)
+    * [`obj encoder_settings.motion_graphics_configuration.motion_graphics_settings`](#obj-encoder_settingsmotion_graphics_configurationmotion_graphics_settings)
+      * [`fn new()`](#fn-encoder_settingsmotion_graphics_configurationmotion_graphics_settingsnew)
+      * [`obj encoder_settings.motion_graphics_configuration.motion_graphics_settings.html_motion_graphics_settings`](#obj-encoder_settingsmotion_graphics_configurationmotion_graphics_settingshtml_motion_graphics_settings)
+        * [`fn new()`](#fn-encoder_settingsmotion_graphics_configurationmotion_graphics_settingshtml_motion_graphics_settingsnew)
+  * [`obj encoder_settings.nielsen_configuration`](#obj-encoder_settingsnielsen_configuration)
+    * [`fn new()`](#fn-encoder_settingsnielsen_configurationnew)
   * [`obj encoder_settings.output_groups`](#obj-encoder_settingsoutput_groups)
     * [`fn new()`](#fn-encoder_settingsoutput_groupsnew)
     * [`obj encoder_settings.output_groups.output_group_settings`](#obj-encoder_settingsoutput_groupsoutput_group_settings)
@@ -941,6 +989,10 @@ Terraform sub block.
 **Args**:
   - `audio_descriptions` (`list[obj]`): Set the `audio_descriptions` field on the resulting object. When `null`, the `audio_descriptions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.audio_descriptions.new](#fn-encoder_settingsaudio_descriptionsnew) constructor.
   - `avail_blanking` (`list[obj]`): Set the `avail_blanking` field on the resulting object. When `null`, the `avail_blanking` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.avail_blanking.new](#fn-encoder_settingsavail_blankingnew) constructor.
+  - `caption_descriptions` (`list[obj]`): Set the `caption_descriptions` field on the resulting object. When `null`, the `caption_descriptions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.new](#fn-encoder_settingscaption_descriptionsnew) constructor.
+  - `global_configuration` (`list[obj]`): Set the `global_configuration` field on the resulting object. When `null`, the `global_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.global_configuration.new](#fn-encoder_settingsglobal_configurationnew) constructor.
+  - `motion_graphics_configuration` (`list[obj]`): Set the `motion_graphics_configuration` field on the resulting object. When `null`, the `motion_graphics_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.motion_graphics_configuration.new](#fn-encoder_settingsmotion_graphics_configurationnew) constructor.
+  - `nielsen_configuration` (`list[obj]`): Set the `nielsen_configuration` field on the resulting object. When `null`, the `nielsen_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.nielsen_configuration.new](#fn-encoder_settingsnielsen_configurationnew) constructor.
   - `output_groups` (`list[obj]`): Set the `output_groups` field on the resulting object. When `null`, the `output_groups` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.output_groups.new](#fn-encoder_settingsoutput_groupsnew) constructor.
   - `timecode_config` (`list[obj]`): Set the `timecode_config` field on the resulting object. When `null`, the `timecode_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.timecode_config.new](#fn-encoder_settingstimecode_confignew) constructor.
   - `video_descriptions` (`list[obj]`): Set the `video_descriptions` field on the resulting object. When `null`, the `video_descriptions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.video_descriptions.new](#fn-encoder_settingsvideo_descriptionsnew) constructor.
@@ -1454,6 +1506,600 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `avail_blanking_image` sub block.
+
+
+## obj encoder_settings.caption_descriptions
+
+
+
+### fn encoder_settings.caption_descriptions.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.new` constructs a new object with attributes and blocks configured for the `caption_descriptions`
+Terraform sub block.
+
+
+
+**Args**:
+  - `accessibility` (`string`): Set the `accessibility` field on the resulting object. When `null`, the `accessibility` field will be omitted from the resulting object.
+  - `caption_selector_name` (`string`): Set the `caption_selector_name` field on the resulting object.
+  - `language_code` (`string`): Set the `language_code` field on the resulting object. When `null`, the `language_code` field will be omitted from the resulting object.
+  - `language_description` (`string`): Set the `language_description` field on the resulting object. When `null`, the `language_description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `destination_settings` (`list[obj]`): Set the `destination_settings` field on the resulting object. When `null`, the `destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.new](#fn-encoder_settingsencoder_settingsdestination_settingsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `caption_descriptions` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.new` constructs a new object with attributes and blocks configured for the `destination_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `arib_destination_settings` (`list[obj]`): Set the `arib_destination_settings` field on the resulting object. When `null`, the `arib_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.arib_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsarib_destination_settingsnew) constructor.
+  - `burn_in_destination_settings` (`list[obj]`): Set the `burn_in_destination_settings` field on the resulting object. When `null`, the `burn_in_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsburn_in_destination_settingsnew) constructor.
+  - `dvb_sub_destination_settings` (`list[obj]`): Set the `dvb_sub_destination_settings` field on the resulting object. When `null`, the `dvb_sub_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsdvb_sub_destination_settingsnew) constructor.
+  - `ebu_tt_d_destination_settings` (`list[obj]`): Set the `ebu_tt_d_destination_settings` field on the resulting object. When `null`, the `ebu_tt_d_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.ebu_tt_d_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsebu_tt_d_destination_settingsnew) constructor.
+  - `embedded_destination_settings` (`list[obj]`): Set the `embedded_destination_settings` field on the resulting object. When `null`, the `embedded_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.embedded_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsembedded_destination_settingsnew) constructor.
+  - `embedded_plus_scte20_destination_settings` (`list[obj]`): Set the `embedded_plus_scte20_destination_settings` field on the resulting object. When `null`, the `embedded_plus_scte20_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.embedded_plus_scte20_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsembedded_plus_scte20_destination_settingsnew) constructor.
+  - `rtmp_caption_info_destination_settings` (`list[obj]`): Set the `rtmp_caption_info_destination_settings` field on the resulting object. When `null`, the `rtmp_caption_info_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.rtmp_caption_info_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsrtmp_caption_info_destination_settingsnew) constructor.
+  - `scte20_plus_embedded_destination_settings` (`list[obj]`): Set the `scte20_plus_embedded_destination_settings` field on the resulting object. When `null`, the `scte20_plus_embedded_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.scte20_plus_embedded_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsscte20_plus_embedded_destination_settingsnew) constructor.
+  - `scte27_destination_settings` (`list[obj]`): Set the `scte27_destination_settings` field on the resulting object. When `null`, the `scte27_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.scte27_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsscte27_destination_settingsnew) constructor.
+  - `smpte_tt_destination_settings` (`list[obj]`): Set the `smpte_tt_destination_settings` field on the resulting object. When `null`, the `smpte_tt_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.smpte_tt_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionssmpte_tt_destination_settingsnew) constructor.
+  - `teletext_destination_settings` (`list[obj]`): Set the `teletext_destination_settings` field on the resulting object. When `null`, the `teletext_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.teletext_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsteletext_destination_settingsnew) constructor.
+  - `ttml_destination_settings` (`list[obj]`): Set the `ttml_destination_settings` field on the resulting object. When `null`, the `ttml_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.ttml_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionsttml_destination_settingsnew) constructor.
+  - `webvtt_destination_settings` (`list[obj]`): Set the `webvtt_destination_settings` field on the resulting object. When `null`, the `webvtt_destination_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.webvtt_destination_settings.new](#fn-encoder_settingsencoder_settingscaption_descriptionswebvtt_destination_settingsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.arib_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.arib_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.arib_destination_settings.new` constructs a new object with attributes and blocks configured for the `arib_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `arib_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.new` constructs a new object with attributes and blocks configured for the `burn_in_destination_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `alignment` (`string`): Set the `alignment` field on the resulting object. When `null`, the `alignment` field will be omitted from the resulting object.
+  - `background_color` (`string`): Set the `background_color` field on the resulting object. When `null`, the `background_color` field will be omitted from the resulting object.
+  - `background_opacity` (`number`): Set the `background_opacity` field on the resulting object. When `null`, the `background_opacity` field will be omitted from the resulting object.
+  - `font_color` (`string`): Set the `font_color` field on the resulting object. When `null`, the `font_color` field will be omitted from the resulting object.
+  - `font_opacity` (`number`): Set the `font_opacity` field on the resulting object. When `null`, the `font_opacity` field will be omitted from the resulting object.
+  - `font_resolution` (`number`): Set the `font_resolution` field on the resulting object. When `null`, the `font_resolution` field will be omitted from the resulting object.
+  - `font_size` (`string`): Set the `font_size` field on the resulting object. When `null`, the `font_size` field will be omitted from the resulting object.
+  - `outline_color` (`string`): Set the `outline_color` field on the resulting object.
+  - `outline_size` (`number`): Set the `outline_size` field on the resulting object. When `null`, the `outline_size` field will be omitted from the resulting object.
+  - `shadow_color` (`string`): Set the `shadow_color` field on the resulting object. When `null`, the `shadow_color` field will be omitted from the resulting object.
+  - `shadow_opacity` (`number`): Set the `shadow_opacity` field on the resulting object. When `null`, the `shadow_opacity` field will be omitted from the resulting object.
+  - `shadow_x_offset` (`number`): Set the `shadow_x_offset` field on the resulting object. When `null`, the `shadow_x_offset` field will be omitted from the resulting object.
+  - `shadow_y_offset` (`number`): Set the `shadow_y_offset` field on the resulting object. When `null`, the `shadow_y_offset` field will be omitted from the resulting object.
+  - `teletext_grid_control` (`string`): Set the `teletext_grid_control` field on the resulting object.
+  - `x_position` (`number`): Set the `x_position` field on the resulting object. When `null`, the `x_position` field will be omitted from the resulting object.
+  - `y_position` (`number`): Set the `y_position` field on the resulting object. When `null`, the `y_position` field will be omitted from the resulting object.
+  - `font` (`list[obj]`): Set the `font` field on the resulting object. When `null`, the `font` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.font.new](#fn-encoder_settingsencoder_settingscaption_descriptionsdestination_settingsfontnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `burn_in_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.font
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.font.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.burn_in_destination_settings.font.new` constructs a new object with attributes and blocks configured for the `font`
+Terraform sub block.
+
+
+
+**Args**:
+  - `password_param` (`string`): Set the `password_param` field on the resulting object. When `null`, the `password_param` field will be omitted from the resulting object.
+  - `uri` (`string`): Set the `uri` field on the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `font` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.new` constructs a new object with attributes and blocks configured for the `dvb_sub_destination_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `alignment` (`string`): Set the `alignment` field on the resulting object. When `null`, the `alignment` field will be omitted from the resulting object.
+  - `background_color` (`string`): Set the `background_color` field on the resulting object. When `null`, the `background_color` field will be omitted from the resulting object.
+  - `background_opacity` (`number`): Set the `background_opacity` field on the resulting object. When `null`, the `background_opacity` field will be omitted from the resulting object.
+  - `font_color` (`string`): Set the `font_color` field on the resulting object. When `null`, the `font_color` field will be omitted from the resulting object.
+  - `font_opacity` (`number`): Set the `font_opacity` field on the resulting object. When `null`, the `font_opacity` field will be omitted from the resulting object.
+  - `font_resolution` (`number`): Set the `font_resolution` field on the resulting object. When `null`, the `font_resolution` field will be omitted from the resulting object.
+  - `font_size` (`string`): Set the `font_size` field on the resulting object. When `null`, the `font_size` field will be omitted from the resulting object.
+  - `outline_color` (`string`): Set the `outline_color` field on the resulting object. When `null`, the `outline_color` field will be omitted from the resulting object.
+  - `outline_size` (`number`): Set the `outline_size` field on the resulting object. When `null`, the `outline_size` field will be omitted from the resulting object.
+  - `shadow_color` (`string`): Set the `shadow_color` field on the resulting object. When `null`, the `shadow_color` field will be omitted from the resulting object.
+  - `shadow_opacity` (`number`): Set the `shadow_opacity` field on the resulting object. When `null`, the `shadow_opacity` field will be omitted from the resulting object.
+  - `shadow_x_offset` (`number`): Set the `shadow_x_offset` field on the resulting object. When `null`, the `shadow_x_offset` field will be omitted from the resulting object.
+  - `shadow_y_offset` (`number`): Set the `shadow_y_offset` field on the resulting object. When `null`, the `shadow_y_offset` field will be omitted from the resulting object.
+  - `teletext_grid_control` (`string`): Set the `teletext_grid_control` field on the resulting object. When `null`, the `teletext_grid_control` field will be omitted from the resulting object.
+  - `x_position` (`number`): Set the `x_position` field on the resulting object. When `null`, the `x_position` field will be omitted from the resulting object.
+  - `y_position` (`number`): Set the `y_position` field on the resulting object. When `null`, the `y_position` field will be omitted from the resulting object.
+  - `font` (`list[obj]`): Set the `font` field on the resulting object. When `null`, the `font` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.font.new](#fn-encoder_settingsencoder_settingscaption_descriptionsdestination_settingsfontnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `dvb_sub_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.font
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.font.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.dvb_sub_destination_settings.font.new` constructs a new object with attributes and blocks configured for the `font`
+Terraform sub block.
+
+
+
+**Args**:
+  - `password_param` (`string`): Set the `password_param` field on the resulting object. When `null`, the `password_param` field will be omitted from the resulting object.
+  - `uri` (`string`): Set the `uri` field on the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `font` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.ebu_tt_d_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.ebu_tt_d_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.ebu_tt_d_destination_settings.new` constructs a new object with attributes and blocks configured for the `ebu_tt_d_destination_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `copyright_holder` (`string`): Set the `copyright_holder` field on the resulting object. When `null`, the `copyright_holder` field will be omitted from the resulting object.
+  - `fill_line_gap` (`string`): Set the `fill_line_gap` field on the resulting object. When `null`, the `fill_line_gap` field will be omitted from the resulting object.
+  - `font_family` (`string`): Set the `font_family` field on the resulting object. When `null`, the `font_family` field will be omitted from the resulting object.
+  - `style_control` (`string`): Set the `style_control` field on the resulting object. When `null`, the `style_control` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `ebu_tt_d_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.embedded_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.embedded_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.embedded_destination_settings.new` constructs a new object with attributes and blocks configured for the `embedded_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `embedded_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.embedded_plus_scte20_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.embedded_plus_scte20_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.embedded_plus_scte20_destination_settings.new` constructs a new object with attributes and blocks configured for the `embedded_plus_scte20_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `embedded_plus_scte20_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.rtmp_caption_info_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.rtmp_caption_info_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.rtmp_caption_info_destination_settings.new` constructs a new object with attributes and blocks configured for the `rtmp_caption_info_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `rtmp_caption_info_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.scte20_plus_embedded_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.scte20_plus_embedded_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.scte20_plus_embedded_destination_settings.new` constructs a new object with attributes and blocks configured for the `scte20_plus_embedded_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `scte20_plus_embedded_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.scte27_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.scte27_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.scte27_destination_settings.new` constructs a new object with attributes and blocks configured for the `scte27_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `scte27_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.smpte_tt_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.smpte_tt_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.smpte_tt_destination_settings.new` constructs a new object with attributes and blocks configured for the `smpte_tt_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `smpte_tt_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.teletext_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.teletext_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.teletext_destination_settings.new` constructs a new object with attributes and blocks configured for the `teletext_destination_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `teletext_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.ttml_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.ttml_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.ttml_destination_settings.new` constructs a new object with attributes and blocks configured for the `ttml_destination_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `style_control` (`string`): Set the `style_control` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `ttml_destination_settings` sub block.
+
+
+## obj encoder_settings.caption_descriptions.destination_settings.webvtt_destination_settings
+
+
+
+### fn encoder_settings.caption_descriptions.destination_settings.webvtt_destination_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.caption_descriptions.destination_settings.webvtt_destination_settings.new` constructs a new object with attributes and blocks configured for the `webvtt_destination_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `style_control` (`string`): Set the `style_control` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `webvtt_destination_settings` sub block.
+
+
+## obj encoder_settings.global_configuration
+
+
+
+### fn encoder_settings.global_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.global_configuration.new` constructs a new object with attributes and blocks configured for the `global_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `initial_audio_gain` (`number`): Set the `initial_audio_gain` field on the resulting object. When `null`, the `initial_audio_gain` field will be omitted from the resulting object.
+  - `input_end_action` (`string`): Set the `input_end_action` field on the resulting object. When `null`, the `input_end_action` field will be omitted from the resulting object.
+  - `output_locking_mode` (`string`): Set the `output_locking_mode` field on the resulting object. When `null`, the `output_locking_mode` field will be omitted from the resulting object.
+  - `output_timing_source` (`string`): Set the `output_timing_source` field on the resulting object. When `null`, the `output_timing_source` field will be omitted from the resulting object.
+  - `support_low_framerate_inputs` (`string`): Set the `support_low_framerate_inputs` field on the resulting object. When `null`, the `support_low_framerate_inputs` field will be omitted from the resulting object.
+  - `input_loss_behavior` (`list[obj]`): Set the `input_loss_behavior` field on the resulting object. When `null`, the `input_loss_behavior` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.global_configuration.input_loss_behavior.new](#fn-encoder_settingsencoder_settingsinput_loss_behaviornew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `global_configuration` sub block.
+
+
+## obj encoder_settings.global_configuration.input_loss_behavior
+
+
+
+### fn encoder_settings.global_configuration.input_loss_behavior.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.global_configuration.input_loss_behavior.new` constructs a new object with attributes and blocks configured for the `input_loss_behavior`
+Terraform sub block.
+
+
+
+**Args**:
+  - `black_frame_msec` (`number`): Set the `black_frame_msec` field on the resulting object. When `null`, the `black_frame_msec` field will be omitted from the resulting object.
+  - `input_loss_image_color` (`string`): Set the `input_loss_image_color` field on the resulting object. When `null`, the `input_loss_image_color` field will be omitted from the resulting object.
+  - `input_loss_image_type` (`string`): Set the `input_loss_image_type` field on the resulting object. When `null`, the `input_loss_image_type` field will be omitted from the resulting object.
+  - `repeat_frame_msec` (`number`): Set the `repeat_frame_msec` field on the resulting object. When `null`, the `repeat_frame_msec` field will be omitted from the resulting object.
+  - `input_loss_image_slate` (`list[obj]`): Set the `input_loss_image_slate` field on the resulting object. When `null`, the `input_loss_image_slate` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.global_configuration.input_loss_behavior.input_loss_image_slate.new](#fn-encoder_settingsencoder_settingsglobal_configurationinput_loss_image_slatenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `input_loss_behavior` sub block.
+
+
+## obj encoder_settings.global_configuration.input_loss_behavior.input_loss_image_slate
+
+
+
+### fn encoder_settings.global_configuration.input_loss_behavior.input_loss_image_slate.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.global_configuration.input_loss_behavior.input_loss_image_slate.new` constructs a new object with attributes and blocks configured for the `input_loss_image_slate`
+Terraform sub block.
+
+
+
+**Args**:
+  - `password_param` (`string`): Set the `password_param` field on the resulting object. When `null`, the `password_param` field will be omitted from the resulting object.
+  - `uri` (`string`): Set the `uri` field on the resulting object.
+  - `username` (`string`): Set the `username` field on the resulting object. When `null`, the `username` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `input_loss_image_slate` sub block.
+
+
+## obj encoder_settings.motion_graphics_configuration
+
+
+
+### fn encoder_settings.motion_graphics_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.motion_graphics_configuration.new` constructs a new object with attributes and blocks configured for the `motion_graphics_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `motion_graphics_insertion` (`string`): Set the `motion_graphics_insertion` field on the resulting object. When `null`, the `motion_graphics_insertion` field will be omitted from the resulting object.
+  - `motion_graphics_settings` (`list[obj]`): Set the `motion_graphics_settings` field on the resulting object. When `null`, the `motion_graphics_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.motion_graphics_configuration.motion_graphics_settings.new](#fn-encoder_settingsencoder_settingsmotion_graphics_settingsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `motion_graphics_configuration` sub block.
+
+
+## obj encoder_settings.motion_graphics_configuration.motion_graphics_settings
+
+
+
+### fn encoder_settings.motion_graphics_configuration.motion_graphics_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.motion_graphics_configuration.motion_graphics_settings.new` constructs a new object with attributes and blocks configured for the `motion_graphics_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `html_motion_graphics_settings` (`list[obj]`): Set the `html_motion_graphics_settings` field on the resulting object. When `null`, the `html_motion_graphics_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.encoder_settings.motion_graphics_configuration.motion_graphics_settings.html_motion_graphics_settings.new](#fn-encoder_settingsencoder_settingsmotion_graphics_configurationhtml_motion_graphics_settingsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `motion_graphics_settings` sub block.
+
+
+## obj encoder_settings.motion_graphics_configuration.motion_graphics_settings.html_motion_graphics_settings
+
+
+
+### fn encoder_settings.motion_graphics_configuration.motion_graphics_settings.html_motion_graphics_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.motion_graphics_configuration.motion_graphics_settings.html_motion_graphics_settings.new` constructs a new object with attributes and blocks configured for the `html_motion_graphics_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `html_motion_graphics_settings` sub block.
+
+
+## obj encoder_settings.nielsen_configuration
+
+
+
+### fn encoder_settings.nielsen_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.encoder_settings.nielsen_configuration.new` constructs a new object with attributes and blocks configured for the `nielsen_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `distributor_id` (`string`): Set the `distributor_id` field on the resulting object. When `null`, the `distributor_id` field will be omitted from the resulting object.
+  - `nielsen_pcm_to_id3_tagging` (`string`): Set the `nielsen_pcm_to_id3_tagging` field on the resulting object. When `null`, the `nielsen_pcm_to_id3_tagging` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `nielsen_configuration` sub block.
 
 
 ## obj encoder_settings.output_groups

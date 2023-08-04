@@ -100,13 +100,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           status: status,
         }),
       },
-      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.new` constructs a new object with attributes and blocks configured for the `canvas_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.model_register_settings.new](#fn-default_user_settingsdefault_user_settingsmodel_register_settingsnew) constructor.\n  - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-default_user_settingsdefault_user_settingstime_series_forecasting_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `canvas_app_settings` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.new` constructs a new object with attributes and blocks configured for the `canvas_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.model_register_settings.new](#fn-default_user_settingsdefault_user_settingsmodel_register_settingsnew) constructor.\n  - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-default_user_settingsdefault_user_settingstime_series_forecasting_settingsnew) constructor.\n  - `workspace_settings` (`list[obj]`): Set the `workspace_settings` field on the resulting object. When `null`, the `workspace_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.workspace_settings.new](#fn-default_user_settingsdefault_user_settingsworkspace_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `canvas_app_settings` sub block.\n', args=[]),
       new(
         model_register_settings=null,
-        time_series_forecasting_settings=null
+        time_series_forecasting_settings=null,
+        workspace_settings=null
       ):: std.prune(a={
         model_register_settings: model_register_settings,
         time_series_forecasting_settings: time_series_forecasting_settings,
+        workspace_settings: workspace_settings,
       }),
       time_series_forecasting_settings:: {
         '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new` constructs a new object with attributes and blocks configured for the `time_series_forecasting_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `amazon_forecast_role_arn` (`string`): Set the `amazon_forecast_role_arn` field on the resulting object. When `null`, the `amazon_forecast_role_arn` field will be omitted from the resulting object.\n  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `time_series_forecasting_settings` sub block.\n', args=[]),
@@ -116,6 +118,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         ):: std.prune(a={
           amazon_forecast_role_arn: amazon_forecast_role_arn,
           status: status,
+        }),
+      },
+      workspace_settings:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.workspace_settings.new` constructs a new object with attributes and blocks configured for the `workspace_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_artifact_path` (`string`): Set the `s3_artifact_path` field on the resulting object. When `null`, the `s3_artifact_path` field will be omitted from the resulting object.\n  - `s3_kms_key_id` (`string`): Set the `s3_kms_key_id` field on the resulting object. When `null`, the `s3_kms_key_id` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `workspace_settings` sub block.\n', args=[]),
+        new(
+          s3_artifact_path=null,
+          s3_kms_key_id=null
+        ):: std.prune(a={
+          s3_artifact_path: s3_artifact_path,
+          s3_kms_key_id: s3_kms_key_id,
         }),
       },
     },

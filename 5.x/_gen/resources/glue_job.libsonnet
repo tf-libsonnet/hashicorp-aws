@@ -3,14 +3,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='glue_job', url='', help='`glue_job` represents the `aws_glue_job` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   command:: {
-    '#new':: d.fn(help='\n`aws.glue_job.command.new` constructs a new object with attributes and blocks configured for the `command`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `python_version` (`string`): Set the `python_version` field on the resulting object. When `null`, the `python_version` field will be omitted from the resulting object.\n  - `script_location` (`string`): Set the `script_location` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `command` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.glue_job.command.new` constructs a new object with attributes and blocks configured for the `command`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `python_version` (`string`): Set the `python_version` field on the resulting object. When `null`, the `python_version` field will be omitted from the resulting object.\n  - `runtime` (`string`): Set the `runtime` field on the resulting object. When `null`, the `runtime` field will be omitted from the resulting object.\n  - `script_location` (`string`): Set the `script_location` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `command` sub block.\n', args=[]),
     new(
       script_location,
       name=null,
-      python_version=null
+      python_version=null,
+      runtime=null
     ):: std.prune(a={
       name: name,
       python_version: python_version,
+      runtime: runtime,
       script_location: script_location,
     }),
   },

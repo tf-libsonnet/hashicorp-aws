@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the data source usi
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withName()`](#fn-withname)
 * [`fn withServiceIdentifier()`](#fn-withserviceidentifier)
 * [`fn withTags()`](#fn-withtags)
 
@@ -47,7 +48,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `service_identifier` (`string`): Set the `service_identifier` field on the resulting data source block.
+  - `name` (`string`): Set the `name` field on the resulting data source block. When `null`, the `name` field will be omitted from the resulting object.
+  - `service_identifier` (`string`): Set the `service_identifier` field on the resulting data source block. When `null`, the `service_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
@@ -72,11 +74,28 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `service_identifier` (`string`): Set the `service_identifier` field on the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
+  - `service_identifier` (`string`): Set the `service_identifier` field on the resulting object. When `null`, the `service_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `vpclattice_service` data source into the root Terraform configuration.
+
+
+### fn withName
+
+```ts
+withName()
+```
+
+`aws.string.withName` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the name field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `name` field.
 
 
 ### fn withServiceIdentifier

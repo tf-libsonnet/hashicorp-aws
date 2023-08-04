@@ -65,14 +65,50 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
     },
-    '#new':: d.fn(help='\n`aws.sagemaker_endpoint.deployment_config.new` constructs a new object with attributes and blocks configured for the `deployment_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auto_rollback_configuration` (`list[obj]`): Set the `auto_rollback_configuration` field on the resulting object. When `null`, the `auto_rollback_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.auto_rollback_configuration.new](#fn-deployment_configauto_rollback_configurationnew) constructor.\n  - `blue_green_update_policy` (`list[obj]`): Set the `blue_green_update_policy` field on the resulting object. When `null`, the `blue_green_update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.new](#fn-deployment_configblue_green_update_policynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `deployment_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.sagemaker_endpoint.deployment_config.new` constructs a new object with attributes and blocks configured for the `deployment_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auto_rollback_configuration` (`list[obj]`): Set the `auto_rollback_configuration` field on the resulting object. When `null`, the `auto_rollback_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.auto_rollback_configuration.new](#fn-deployment_configauto_rollback_configurationnew) constructor.\n  - `blue_green_update_policy` (`list[obj]`): Set the `blue_green_update_policy` field on the resulting object. When `null`, the `blue_green_update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.new](#fn-deployment_configblue_green_update_policynew) constructor.\n  - `rolling_update_policy` (`list[obj]`): Set the `rolling_update_policy` field on the resulting object. When `null`, the `rolling_update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.rolling_update_policy.new](#fn-deployment_configrolling_update_policynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `deployment_config` sub block.\n', args=[]),
     new(
       auto_rollback_configuration=null,
-      blue_green_update_policy=null
+      blue_green_update_policy=null,
+      rolling_update_policy=null
     ):: std.prune(a={
       auto_rollback_configuration: auto_rollback_configuration,
       blue_green_update_policy: blue_green_update_policy,
+      rolling_update_policy: rolling_update_policy,
     }),
+    rolling_update_policy:: {
+      maximum_batch_size:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_endpoint.deployment_config.rolling_update_policy.maximum_batch_size.new` constructs a new object with attributes and blocks configured for the `maximum_batch_size`\nTerraform sub block.\n\n\n\n**Args**:\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `value` (`number`): Set the `value` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `maximum_batch_size` sub block.\n', args=[]),
+        new(
+          type,
+          value
+        ):: std.prune(a={
+          type: type,
+          value: value,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.sagemaker_endpoint.deployment_config.rolling_update_policy.new` constructs a new object with attributes and blocks configured for the `rolling_update_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `maximum_execution_timeout_in_seconds` (`number`): Set the `maximum_execution_timeout_in_seconds` field on the resulting object. When `null`, the `maximum_execution_timeout_in_seconds` field will be omitted from the resulting object.\n  - `wait_interval_in_seconds` (`number`): Set the `wait_interval_in_seconds` field on the resulting object.\n  - `maximum_batch_size` (`list[obj]`): Set the `maximum_batch_size` field on the resulting object. When `null`, the `maximum_batch_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.rolling_update_policy.maximum_batch_size.new](#fn-deployment_configdeployment_configmaximum_batch_sizenew) constructor.\n  - `rollback_maximum_batch_size` (`list[obj]`): Set the `rollback_maximum_batch_size` field on the resulting object. When `null`, the `rollback_maximum_batch_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.rolling_update_policy.rollback_maximum_batch_size.new](#fn-deployment_configdeployment_configrollback_maximum_batch_sizenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rolling_update_policy` sub block.\n', args=[]),
+      new(
+        wait_interval_in_seconds,
+        maximum_batch_size=null,
+        maximum_execution_timeout_in_seconds=null,
+        rollback_maximum_batch_size=null
+      ):: std.prune(a={
+        maximum_batch_size: maximum_batch_size,
+        maximum_execution_timeout_in_seconds: maximum_execution_timeout_in_seconds,
+        rollback_maximum_batch_size: rollback_maximum_batch_size,
+        wait_interval_in_seconds: wait_interval_in_seconds,
+      }),
+      rollback_maximum_batch_size:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_endpoint.deployment_config.rolling_update_policy.rollback_maximum_batch_size.new` constructs a new object with attributes and blocks configured for the `rollback_maximum_batch_size`\nTerraform sub block.\n\n\n\n**Args**:\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `value` (`number`): Set the `value` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `rollback_maximum_batch_size` sub block.\n', args=[]),
+        new(
+          type,
+          value
+        ):: std.prune(a={
+          type: type,
+          value: value,
+        }),
+      },
+    },
   },
   '#new':: d.fn(help="\n`aws.sagemaker_endpoint.new` injects a new `aws_sagemaker_endpoint` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.sagemaker_endpoint.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.sagemaker_endpoint` using the reference:\n\n    $._ref.aws_sagemaker_endpoint.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_sagemaker_endpoint.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `endpoint_config_name` (`string`): Set the `endpoint_config_name` field on the resulting resource block.\n  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `deployment_config` (`list[obj]`): Set the `deployment_config` field on the resulting resource block. When `null`, the `deployment_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.new](#fn-deployment_confignew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(

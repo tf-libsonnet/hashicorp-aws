@@ -54,10 +54,10 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   },
   database:: {
     cache_configurations:: {
-      '#new':: d.fn(help='\n`aws.finspace_kx_cluster.database.cache_configurations.new` constructs a new object with attributes and blocks configured for the `cache_configurations`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cache_type` (`string`): Set the `cache_type` field on the resulting object.\n  - `db_paths` (`list`): Set the `db_paths` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `cache_configurations` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.finspace_kx_cluster.database.cache_configurations.new` constructs a new object with attributes and blocks configured for the `cache_configurations`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cache_type` (`string`): Set the `cache_type` field on the resulting object.\n  - `db_paths` (`list`): Set the `db_paths` field on the resulting object. When `null`, the `db_paths` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `cache_configurations` sub block.\n', args=[]),
       new(
         cache_type,
-        db_paths
+        db_paths=null
       ):: std.prune(a={
         cache_type: cache_type,
         db_paths: db_paths,
