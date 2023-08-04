@@ -1002,6 +1002,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   sagemaker_monitoring_schedule: (import 'resources/sagemaker_monitoring_schedule.libsonnet'),
   sagemaker_notebook_instance: (import 'resources/sagemaker_notebook_instance.libsonnet'),
   sagemaker_notebook_instance_lifecycle_configuration: (import 'resources/sagemaker_notebook_instance_lifecycle_configuration.libsonnet'),
+  sagemaker_pipeline: (import 'resources/sagemaker_pipeline.libsonnet'),
   sagemaker_project: (import 'resources/sagemaker_project.libsonnet'),
   sagemaker_servicecatalog_portfolio_status: (import 'resources/sagemaker_servicecatalog_portfolio_status.libsonnet'),
   sagemaker_space: (import 'resources/sagemaker_space.libsonnet'),

@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withFilter()`](#fn-withfilter)
 * [`fn withFilterMixin()`](#fn-withfiltermixin)
+* [`fn withTags()`](#fn-withtags)
 * [`obj filter`](#obj-filter)
   * [`fn new()`](#fn-filternew)
 
@@ -49,6 +50,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
+  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
   - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.db_instances.filter.new](#fn-filternew) constructor.
 
 **Returns**:
@@ -73,6 +75,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.db_instances.filter.new](#fn-filternew) constructor.
 
 **Returns**:
@@ -114,6 +117,22 @@ function.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `filter` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.obj.withTags` constructs a mixin object that can be merged into the `obj`
+Terraform data source block to set or update the tags field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags` field.
 
 
 ## obj filter

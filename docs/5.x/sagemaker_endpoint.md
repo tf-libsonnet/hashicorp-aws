@@ -35,6 +35,12 @@ This package contains functions and utilities for setting up the resource using 
         * [`fn new()`](#fn-deployment_configblue_green_update_policytraffic_routing_configurationcanary_sizenew)
       * [`obj deployment_config.blue_green_update_policy.traffic_routing_configuration.linear_step_size`](#obj-deployment_configblue_green_update_policytraffic_routing_configurationlinear_step_size)
         * [`fn new()`](#fn-deployment_configblue_green_update_policytraffic_routing_configurationlinear_step_sizenew)
+  * [`obj deployment_config.rolling_update_policy`](#obj-deployment_configrolling_update_policy)
+    * [`fn new()`](#fn-deployment_configrolling_update_policynew)
+    * [`obj deployment_config.rolling_update_policy.maximum_batch_size`](#obj-deployment_configrolling_update_policymaximum_batch_size)
+      * [`fn new()`](#fn-deployment_configrolling_update_policymaximum_batch_sizenew)
+    * [`obj deployment_config.rolling_update_policy.rollback_maximum_batch_size`](#obj-deployment_configrolling_update_policyrollback_maximum_batch_size)
+      * [`fn new()`](#fn-deployment_configrolling_update_policyrollback_maximum_batch_sizenew)
 
 ## Fields
 
@@ -223,6 +229,7 @@ Terraform sub block.
 **Args**:
   - `auto_rollback_configuration` (`list[obj]`): Set the `auto_rollback_configuration` field on the resulting object. When `null`, the `auto_rollback_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.auto_rollback_configuration.new](#fn-deployment_configauto_rollback_configurationnew) constructor.
   - `blue_green_update_policy` (`list[obj]`): Set the `blue_green_update_policy` field on the resulting object. When `null`, the `blue_green_update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.blue_green_update_policy.new](#fn-deployment_configblue_green_update_policynew) constructor.
+  - `rolling_update_policy` (`list[obj]`): Set the `rolling_update_policy` field on the resulting object. When `null`, the `rolling_update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.rolling_update_policy.new](#fn-deployment_configrolling_update_policynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `deployment_config` sub block.
@@ -371,3 +378,77 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `linear_step_size` sub block.
+
+
+## obj deployment_config.rolling_update_policy
+
+
+
+### fn deployment_config.rolling_update_policy.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_endpoint.deployment_config.rolling_update_policy.new` constructs a new object with attributes and blocks configured for the `rolling_update_policy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `maximum_execution_timeout_in_seconds` (`number`): Set the `maximum_execution_timeout_in_seconds` field on the resulting object. When `null`, the `maximum_execution_timeout_in_seconds` field will be omitted from the resulting object.
+  - `wait_interval_in_seconds` (`number`): Set the `wait_interval_in_seconds` field on the resulting object.
+  - `maximum_batch_size` (`list[obj]`): Set the `maximum_batch_size` field on the resulting object. When `null`, the `maximum_batch_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.rolling_update_policy.maximum_batch_size.new](#fn-deployment_configdeployment_configmaximum_batch_sizenew) constructor.
+  - `rollback_maximum_batch_size` (`list[obj]`): Set the `rollback_maximum_batch_size` field on the resulting object. When `null`, the `rollback_maximum_batch_size` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_endpoint.deployment_config.rolling_update_policy.rollback_maximum_batch_size.new](#fn-deployment_configdeployment_configrollback_maximum_batch_sizenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `rolling_update_policy` sub block.
+
+
+## obj deployment_config.rolling_update_policy.maximum_batch_size
+
+
+
+### fn deployment_config.rolling_update_policy.maximum_batch_size.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_endpoint.deployment_config.rolling_update_policy.maximum_batch_size.new` constructs a new object with attributes and blocks configured for the `maximum_batch_size`
+Terraform sub block.
+
+
+
+**Args**:
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `maximum_batch_size` sub block.
+
+
+## obj deployment_config.rolling_update_policy.rollback_maximum_batch_size
+
+
+
+### fn deployment_config.rolling_update_policy.rollback_maximum_batch_size.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_endpoint.deployment_config.rolling_update_policy.rollback_maximum_batch_size.new` constructs a new object with attributes and blocks configured for the `rollback_maximum_batch_size`
+Terraform sub block.
+
+
+
+**Args**:
+  - `type` (`string`): Set the `type` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `rollback_maximum_batch_size` sub block.

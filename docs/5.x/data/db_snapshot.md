@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn withIncludeShared()`](#fn-withincludeshared)
 * [`fn withMostRecent()`](#fn-withmostrecent)
 * [`fn withSnapshotType()`](#fn-withsnapshottype)
+* [`fn withTags()`](#fn-withtags)
 
 ## Fields
 
@@ -57,6 +58,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `include_shared` (`bool`): Set the `include_shared` field on the resulting data source block. When `null`, the `include_shared` field will be omitted from the resulting object.
   - `most_recent` (`bool`): Set the `most_recent` field on the resulting data source block. When `null`, the `most_recent` field will be omitted from the resulting object.
   - `snapshot_type` (`string`): Set the `snapshot_type` field on the resulting data source block. When `null`, the `snapshot_type` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -86,6 +88,7 @@ injecting into a complete block.
   - `include_shared` (`bool`): Set the `include_shared` field on the resulting object. When `null`, the `include_shared` field will be omitted from the resulting object.
   - `most_recent` (`bool`): Set the `most_recent` field on the resulting object. When `null`, the `most_recent` field will be omitted from the resulting object.
   - `snapshot_type` (`string`): Set the `snapshot_type` field on the resulting object. When `null`, the `snapshot_type` field will be omitted from the resulting object.
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `db_snapshot` data source into the root Terraform configuration.
@@ -185,3 +188,19 @@ Terraform data source block to set or update the snapshot_type field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `snapshot_type` field.
+
+
+### fn withTags
+
+```ts
+withTags()
+```
+
+`aws.obj.withTags` constructs a mixin object that can be merged into the `obj`
+Terraform data source block to set or update the tags field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `tags` field.

@@ -1013,6 +1013,7 @@ project.
 * [sagemaker_monitoring_schedule](sagemaker_monitoring_schedule.md)
 * [sagemaker_notebook_instance](sagemaker_notebook_instance.md)
 * [sagemaker_notebook_instance_lifecycle_configuration](sagemaker_notebook_instance_lifecycle_configuration.md)
+* [sagemaker_pipeline](sagemaker_pipeline.md)
 * [sagemaker_project](sagemaker_project.md)
 * [sagemaker_servicecatalog_portfolio_status](sagemaker_servicecatalog_portfolio_status.md)
 * [sagemaker_space](sagemaker_space.md)

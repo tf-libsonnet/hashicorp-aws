@@ -47,7 +47,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
-  - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting data source block.
+  - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting data source block. When `null`, the `db_instance_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
@@ -72,7 +72,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting object.
+  - `db_instance_identifier` (`string`): Set the `db_instance_identifier` field on the resulting object. When `null`, the `db_instance_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
