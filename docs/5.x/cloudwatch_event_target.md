@@ -39,6 +39,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRule()`](#fn-withrule)
 * [`fn withRunCommandTargets()`](#fn-withruncommandtargets)
 * [`fn withRunCommandTargetsMixin()`](#fn-withruncommandtargetsmixin)
+* [`fn withSagemakerPipelineTarget()`](#fn-withsagemakerpipelinetarget)
+* [`fn withSagemakerPipelineTargetMixin()`](#fn-withsagemakerpipelinetargetmixin)
 * [`fn withSqsTarget()`](#fn-withsqstarget)
 * [`fn withSqsTargetMixin()`](#fn-withsqstargetmixin)
 * [`fn withTargetId()`](#fn-withtargetid)
@@ -68,6 +70,10 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-retry_policynew)
 * [`obj run_command_targets`](#obj-run_command_targets)
   * [`fn new()`](#fn-run_command_targetsnew)
+* [`obj sagemaker_pipeline_target`](#obj-sagemaker_pipeline_target)
+  * [`fn new()`](#fn-sagemaker_pipeline_targetnew)
+  * [`obj sagemaker_pipeline_target.pipeline_parameter_list`](#obj-sagemaker_pipeline_targetpipeline_parameter_list)
+    * [`fn new()`](#fn-sagemaker_pipeline_targetpipeline_parameter_listnew)
 * [`obj sqs_target`](#obj-sqs_target)
   * [`fn new()`](#fn-sqs_targetnew)
 
@@ -116,6 +122,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `redshift_target` (`list[obj]`): Set the `redshift_target` field on the resulting resource block. When `null`, the `redshift_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.redshift_target.new](#fn-redshift_targetnew) constructor.
   - `retry_policy` (`list[obj]`): Set the `retry_policy` field on the resulting resource block. When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.retry_policy.new](#fn-retry_policynew) constructor.
   - `run_command_targets` (`list[obj]`): Set the `run_command_targets` field on the resulting resource block. When `null`, the `run_command_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.run_command_targets.new](#fn-run_command_targetsnew) constructor.
+  - `sagemaker_pipeline_target` (`list[obj]`): Set the `sagemaker_pipeline_target` field on the resulting resource block. When `null`, the `sagemaker_pipeline_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sagemaker_pipeline_target.new](#fn-sagemaker_pipeline_targetnew) constructor.
   - `sqs_target` (`list[obj]`): Set the `sqs_target` field on the resulting resource block. When `null`, the `sqs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sqs_target.new](#fn-sqs_targetnew) constructor.
 
 **Returns**:
@@ -156,6 +163,7 @@ injecting into a complete block.
   - `redshift_target` (`list[obj]`): Set the `redshift_target` field on the resulting object. When `null`, the `redshift_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.redshift_target.new](#fn-redshift_targetnew) constructor.
   - `retry_policy` (`list[obj]`): Set the `retry_policy` field on the resulting object. When `null`, the `retry_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.retry_policy.new](#fn-retry_policynew) constructor.
   - `run_command_targets` (`list[obj]`): Set the `run_command_targets` field on the resulting object. When `null`, the `run_command_targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.run_command_targets.new](#fn-run_command_targetsnew) constructor.
+  - `sagemaker_pipeline_target` (`list[obj]`): Set the `sagemaker_pipeline_target` field on the resulting object. When `null`, the `sagemaker_pipeline_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sagemaker_pipeline_target.new](#fn-sagemaker_pipeline_targetnew) constructor.
   - `sqs_target` (`list[obj]`): Set the `sqs_target` field on the resulting object. When `null`, the `sqs_target` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sqs_target.new](#fn-sqs_targetnew) constructor.
 
 **Returns**:
@@ -591,6 +599,43 @@ function.
   - `value` (`list[obj]`): The value to set for the `run_command_targets` field.
 
 
+### fn withSagemakerPipelineTarget
+
+```ts
+withSagemakerPipelineTarget()
+```
+
+`aws.list[obj].withSagemakerPipelineTarget` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the sagemaker_pipeline_target field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withSagemakerPipelineTargetMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `sagemaker_pipeline_target` field.
+
+
+### fn withSagemakerPipelineTargetMixin
+
+```ts
+withSagemakerPipelineTargetMixin()
+```
+
+`aws.list[obj].withSagemakerPipelineTargetMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the sagemaker_pipeline_target field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withSagemakerPipelineTarget](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `sagemaker_pipeline_target` field.
+
+
 ### fn withSqsTarget
 
 ```ts
@@ -972,6 +1017,53 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `run_command_targets` sub block.
+
+
+## obj sagemaker_pipeline_target
+
+
+
+### fn sagemaker_pipeline_target.new
+
+```ts
+new()
+```
+
+
+`aws.cloudwatch_event_target.sagemaker_pipeline_target.new` constructs a new object with attributes and blocks configured for the `sagemaker_pipeline_target`
+Terraform sub block.
+
+
+
+**Args**:
+  - `pipeline_parameter_list` (`list[obj]`): Set the `pipeline_parameter_list` field on the resulting object. When `null`, the `pipeline_parameter_list` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.cloudwatch_event_target.sagemaker_pipeline_target.pipeline_parameter_list.new](#fn-sagemaker_pipeline_targetpipeline_parameter_listnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `sagemaker_pipeline_target` sub block.
+
+
+## obj sagemaker_pipeline_target.pipeline_parameter_list
+
+
+
+### fn sagemaker_pipeline_target.pipeline_parameter_list.new
+
+```ts
+new()
+```
+
+
+`aws.cloudwatch_event_target.sagemaker_pipeline_target.pipeline_parameter_list.new` constructs a new object with attributes and blocks configured for the `pipeline_parameter_list`
+Terraform sub block.
+
+
+
+**Args**:
+  - `name` (`string`): Set the `name` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `pipeline_parameter_list` sub block.
 
 
 ## obj sqs_target

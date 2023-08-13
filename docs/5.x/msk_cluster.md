@@ -42,6 +42,12 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-broker_node_group_infoconnectivity_infonew)
     * [`obj broker_node_group_info.connectivity_info.public_access`](#obj-broker_node_group_infoconnectivity_infopublic_access)
       * [`fn new()`](#fn-broker_node_group_infoconnectivity_infopublic_accessnew)
+    * [`obj broker_node_group_info.connectivity_info.vpc_connectivity`](#obj-broker_node_group_infoconnectivity_infovpc_connectivity)
+      * [`fn new()`](#fn-broker_node_group_infoconnectivity_infovpc_connectivitynew)
+      * [`obj broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication`](#obj-broker_node_group_infoconnectivity_infovpc_connectivityclient_authentication)
+        * [`fn new()`](#fn-broker_node_group_infoconnectivity_infovpc_connectivityclient_authenticationnew)
+        * [`obj broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.sasl`](#obj-broker_node_group_infoconnectivity_infovpc_connectivityclient_authenticationsasl)
+          * [`fn new()`](#fn-broker_node_group_infoconnectivity_infovpc_connectivityclient_authenticationsaslnew)
   * [`obj broker_node_group_info.storage_info`](#obj-broker_node_group_infostorage_info)
     * [`fn new()`](#fn-broker_node_group_infostorage_infonew)
     * [`obj broker_node_group_info.storage_info.ebs_storage_info`](#obj-broker_node_group_infostorage_infoebs_storage_info)
@@ -582,6 +588,7 @@ Terraform sub block.
 
 **Args**:
   - `public_access` (`list[obj]`): Set the `public_access` field on the resulting object. When `null`, the `public_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.public_access.new](#fn-broker_node_group_infobroker_node_group_infopublic_accessnew) constructor.
+  - `vpc_connectivity` (`list[obj]`): Set the `vpc_connectivity` field on the resulting object. When `null`, the `vpc_connectivity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.new](#fn-broker_node_group_infobroker_node_group_infovpc_connectivitynew) constructor.
 
 **Returns**:
   - An attribute object that represents the `connectivity_info` sub block.
@@ -608,6 +615,77 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `public_access` sub block.
+
+
+## obj broker_node_group_info.connectivity_info.vpc_connectivity
+
+
+
+### fn broker_node_group_info.connectivity_info.vpc_connectivity.new
+
+```ts
+new()
+```
+
+
+`aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.new` constructs a new object with attributes and blocks configured for the `vpc_connectivity`
+Terraform sub block.
+
+
+
+**Args**:
+  - `client_authentication` (`list[obj]`): Set the `client_authentication` field on the resulting object. When `null`, the `client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.new](#fn-broker_node_group_infobroker_node_group_infoconnectivity_infoclient_authenticationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `vpc_connectivity` sub block.
+
+
+## obj broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication
+
+
+
+### fn broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.new
+
+```ts
+new()
+```
+
+
+`aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.new` constructs a new object with attributes and blocks configured for the `client_authentication`
+Terraform sub block.
+
+
+
+**Args**:
+  - `tls` (`bool`): Set the `tls` field on the resulting object. When `null`, the `tls` field will be omitted from the resulting object.
+  - `sasl` (`list[obj]`): Set the `sasl` field on the resulting object. When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.sasl.new](#fn-broker_node_group_infobroker_node_group_infoconnectivity_infovpc_connectivitysaslnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `client_authentication` sub block.
+
+
+## obj broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.sasl
+
+
+
+### fn broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.sasl.new
+
+```ts
+new()
+```
+
+
+`aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.sasl.new` constructs a new object with attributes and blocks configured for the `sasl`
+Terraform sub block.
+
+
+
+**Args**:
+  - `iam` (`bool`): Set the `iam` field on the resulting object. When `null`, the `iam` field will be omitted from the resulting object.
+  - `scram` (`bool`): Set the `scram` field on the resulting object. When `null`, the `scram` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `sasl` sub block.
 
 
 ## obj broker_node_group_info.storage_info

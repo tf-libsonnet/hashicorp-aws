@@ -311,6 +311,7 @@ Terraform sub block.
   - `cloudwatchrum` (`string`): Use this to override the default service endpoint URL When `null`, the `cloudwatchrum` field will be omitted from the resulting object.
   - `codeartifact` (`string`): Use this to override the default service endpoint URL When `null`, the `codeartifact` field will be omitted from the resulting object.
   - `codebuild` (`string`): Use this to override the default service endpoint URL When `null`, the `codebuild` field will be omitted from the resulting object.
+  - `codecatalyst` (`string`): Use this to override the default service endpoint URL When `null`, the `codecatalyst` field will be omitted from the resulting object.
   - `codecommit` (`string`): Use this to override the default service endpoint URL When `null`, the `codecommit` field will be omitted from the resulting object.
   - `codedeploy` (`string`): Use this to override the default service endpoint URL When `null`, the `codedeploy` field will be omitted from the resulting object.
   - `codegurureviewer` (`string`): Use this to override the default service endpoint URL When `null`, the `codegurureviewer` field will be omitted from the resulting object.

@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAliases()`](#fn-withaliases)
 * [`fn withComment()`](#fn-withcomment)
+* [`fn withContinuousDeploymentPolicyId()`](#fn-withcontinuousdeploymentpolicyid)
 * [`fn withCustomErrorResponse()`](#fn-withcustomerrorresponse)
 * [`fn withCustomErrorResponseMixin()`](#fn-withcustomerrorresponsemixin)
 * [`fn withDefaultCacheBehavior()`](#fn-withdefaultcachebehavior)
@@ -37,6 +38,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRestrictions()`](#fn-withrestrictions)
 * [`fn withRestrictionsMixin()`](#fn-withrestrictionsmixin)
 * [`fn withRetainOnDelete()`](#fn-withretainondelete)
+* [`fn withStaging()`](#fn-withstaging)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withViewerCertificate()`](#fn-withviewercertificate)
@@ -121,12 +123,14 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `aliases` (`list`): Set the `aliases` field on the resulting resource block. When `null`, the `aliases` field will be omitted from the resulting object.
   - `comment` (`string`): Set the `comment` field on the resulting resource block. When `null`, the `comment` field will be omitted from the resulting object.
+  - `continuous_deployment_policy_id` (`string`): Set the `continuous_deployment_policy_id` field on the resulting resource block. When `null`, the `continuous_deployment_policy_id` field will be omitted from the resulting object.
   - `default_root_object` (`string`): Set the `default_root_object` field on the resulting resource block. When `null`, the `default_root_object` field will be omitted from the resulting object.
   - `enabled` (`bool`): Set the `enabled` field on the resulting resource block.
   - `http_version` (`string`): Set the `http_version` field on the resulting resource block. When `null`, the `http_version` field will be omitted from the resulting object.
   - `is_ipv6_enabled` (`bool`): Set the `is_ipv6_enabled` field on the resulting resource block. When `null`, the `is_ipv6_enabled` field will be omitted from the resulting object.
   - `price_class` (`string`): Set the `price_class` field on the resulting resource block. When `null`, the `price_class` field will be omitted from the resulting object.
   - `retain_on_delete` (`bool`): Set the `retain_on_delete` field on the resulting resource block. When `null`, the `retain_on_delete` field will be omitted from the resulting object.
+  - `staging` (`bool`): Set the `staging` field on the resulting resource block. When `null`, the `staging` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `wait_for_deployment` (`bool`): Set the `wait_for_deployment` field on the resulting resource block. When `null`, the `wait_for_deployment` field will be omitted from the resulting object.
@@ -164,12 +168,14 @@ injecting into a complete block.
 **Args**:
   - `aliases` (`list`): Set the `aliases` field on the resulting object. When `null`, the `aliases` field will be omitted from the resulting object.
   - `comment` (`string`): Set the `comment` field on the resulting object. When `null`, the `comment` field will be omitted from the resulting object.
+  - `continuous_deployment_policy_id` (`string`): Set the `continuous_deployment_policy_id` field on the resulting object. When `null`, the `continuous_deployment_policy_id` field will be omitted from the resulting object.
   - `default_root_object` (`string`): Set the `default_root_object` field on the resulting object. When `null`, the `default_root_object` field will be omitted from the resulting object.
   - `enabled` (`bool`): Set the `enabled` field on the resulting object.
   - `http_version` (`string`): Set the `http_version` field on the resulting object. When `null`, the `http_version` field will be omitted from the resulting object.
   - `is_ipv6_enabled` (`bool`): Set the `is_ipv6_enabled` field on the resulting object. When `null`, the `is_ipv6_enabled` field will be omitted from the resulting object.
   - `price_class` (`string`): Set the `price_class` field on the resulting object. When `null`, the `price_class` field will be omitted from the resulting object.
   - `retain_on_delete` (`bool`): Set the `retain_on_delete` field on the resulting object. When `null`, the `retain_on_delete` field will be omitted from the resulting object.
+  - `staging` (`bool`): Set the `staging` field on the resulting object. When `null`, the `staging` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `wait_for_deployment` (`bool`): Set the `wait_for_deployment` field on the resulting object. When `null`, the `wait_for_deployment` field will be omitted from the resulting object.
@@ -217,6 +223,22 @@ Terraform resource block to set or update the comment field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `comment` field.
+
+
+### fn withContinuousDeploymentPolicyId
+
+```ts
+withContinuousDeploymentPolicyId()
+```
+
+`aws.string.withContinuousDeploymentPolicyId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the continuous_deployment_policy_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `continuous_deployment_policy_id` field.
 
 
 ### fn withCustomErrorResponse
@@ -572,6 +594,22 @@ Terraform resource block to set or update the retain_on_delete field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `retain_on_delete` field.
+
+
+### fn withStaging
+
+```ts
+withStaging()
+```
+
+`aws.bool.withStaging` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the staging field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `staging` field.
 
 
 ### fn withTags

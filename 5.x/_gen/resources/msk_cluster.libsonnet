@@ -4,11 +4,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   '#':: d.pkg(name='msk_cluster', url='', help='`msk_cluster` represents the `aws_msk_cluster` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   broker_node_group_info:: {
     connectivity_info:: {
-      '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.connectivity_info.new` constructs a new object with attributes and blocks configured for the `connectivity_info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `public_access` (`list[obj]`): Set the `public_access` field on the resulting object. When `null`, the `public_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.public_access.new](#fn-broker_node_group_infobroker_node_group_infopublic_accessnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `connectivity_info` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.connectivity_info.new` constructs a new object with attributes and blocks configured for the `connectivity_info`\nTerraform sub block.\n\n\n\n**Args**:\n  - `public_access` (`list[obj]`): Set the `public_access` field on the resulting object. When `null`, the `public_access` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.public_access.new](#fn-broker_node_group_infobroker_node_group_infopublic_accessnew) constructor.\n  - `vpc_connectivity` (`list[obj]`): Set the `vpc_connectivity` field on the resulting object. When `null`, the `vpc_connectivity` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.new](#fn-broker_node_group_infobroker_node_group_infovpc_connectivitynew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `connectivity_info` sub block.\n', args=[]),
       new(
-        public_access=null
+        public_access=null,
+        vpc_connectivity=null
       ):: std.prune(a={
         public_access: public_access,
+        vpc_connectivity: vpc_connectivity,
       }),
       public_access:: {
         '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.connectivity_info.public_access.new` constructs a new object with attributes and blocks configured for the `public_access`\nTerraform sub block.\n\n\n\n**Args**:\n  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `public_access` sub block.\n', args=[]),
@@ -16,6 +18,34 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           type=null
         ):: std.prune(a={
           type: type,
+        }),
+      },
+      vpc_connectivity:: {
+        client_authentication:: {
+          '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.new` constructs a new object with attributes and blocks configured for the `client_authentication`\nTerraform sub block.\n\n\n\n**Args**:\n  - `tls` (`bool`): Set the `tls` field on the resulting object. When `null`, the `tls` field will be omitted from the resulting object.\n  - `sasl` (`list[obj]`): Set the `sasl` field on the resulting object. When `null`, the `sasl` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.sasl.new](#fn-broker_node_group_infobroker_node_group_infoconnectivity_infovpc_connectivitysaslnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `client_authentication` sub block.\n', args=[]),
+          new(
+            sasl=null,
+            tls=null
+          ):: std.prune(a={
+            sasl: sasl,
+            tls: tls,
+          }),
+          sasl:: {
+            '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.sasl.new` constructs a new object with attributes and blocks configured for the `sasl`\nTerraform sub block.\n\n\n\n**Args**:\n  - `iam` (`bool`): Set the `iam` field on the resulting object. When `null`, the `iam` field will be omitted from the resulting object.\n  - `scram` (`bool`): Set the `scram` field on the resulting object. When `null`, the `scram` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `sasl` sub block.\n', args=[]),
+            new(
+              iam=null,
+              scram=null
+            ):: std.prune(a={
+              iam: iam,
+              scram: scram,
+            }),
+          },
+        },
+        '#new':: d.fn(help='\n`aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.new` constructs a new object with attributes and blocks configured for the `vpc_connectivity`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_authentication` (`list[obj]`): Set the `client_authentication` field on the resulting object. When `null`, the `client_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.msk_cluster.broker_node_group_info.connectivity_info.vpc_connectivity.client_authentication.new](#fn-broker_node_group_infobroker_node_group_infoconnectivity_infoclient_authenticationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `vpc_connectivity` sub block.\n', args=[]),
+        new(
+          client_authentication=null
+        ):: std.prune(a={
+          client_authentication: client_authentication,
         }),
       },
     },

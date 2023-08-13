@@ -1615,6 +1615,7 @@ Terraform sub block.
 
 **Args**:
   - `http_endpoint` (`string`): Set the `http_endpoint` field on the resulting object. When `null`, the `http_endpoint` field will be omitted from the resulting object.
+  - `http_protocol_ipv6` (`string`): Set the `http_protocol_ipv6` field on the resulting object. When `null`, the `http_protocol_ipv6` field will be omitted from the resulting object.
   - `http_put_response_hop_limit` (`number`): Set the `http_put_response_hop_limit` field on the resulting object. When `null`, the `http_put_response_hop_limit` field will be omitted from the resulting object.
   - `http_tokens` (`string`): Set the `http_tokens` field on the resulting object. When `null`, the `http_tokens` field will be omitted from the resulting object.
   - `instance_metadata_tags` (`string`): Set the `instance_metadata_tags` field on the resulting object. When `null`, the `instance_metadata_tags` field will be omitted from the resulting object.

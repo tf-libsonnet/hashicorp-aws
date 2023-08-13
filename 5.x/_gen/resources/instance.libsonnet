@@ -131,14 +131,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   metadata_options:: {
-    '#new':: d.fn(help='\n`aws.instance.metadata_options.new` constructs a new object with attributes and blocks configured for the `metadata_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `http_endpoint` (`string`): Set the `http_endpoint` field on the resulting object. When `null`, the `http_endpoint` field will be omitted from the resulting object.\n  - `http_put_response_hop_limit` (`number`): Set the `http_put_response_hop_limit` field on the resulting object. When `null`, the `http_put_response_hop_limit` field will be omitted from the resulting object.\n  - `http_tokens` (`string`): Set the `http_tokens` field on the resulting object. When `null`, the `http_tokens` field will be omitted from the resulting object.\n  - `instance_metadata_tags` (`string`): Set the `instance_metadata_tags` field on the resulting object. When `null`, the `instance_metadata_tags` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `metadata_options` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.instance.metadata_options.new` constructs a new object with attributes and blocks configured for the `metadata_options`\nTerraform sub block.\n\n\n\n**Args**:\n  - `http_endpoint` (`string`): Set the `http_endpoint` field on the resulting object. When `null`, the `http_endpoint` field will be omitted from the resulting object.\n  - `http_protocol_ipv6` (`string`): Set the `http_protocol_ipv6` field on the resulting object. When `null`, the `http_protocol_ipv6` field will be omitted from the resulting object.\n  - `http_put_response_hop_limit` (`number`): Set the `http_put_response_hop_limit` field on the resulting object. When `null`, the `http_put_response_hop_limit` field will be omitted from the resulting object.\n  - `http_tokens` (`string`): Set the `http_tokens` field on the resulting object. When `null`, the `http_tokens` field will be omitted from the resulting object.\n  - `instance_metadata_tags` (`string`): Set the `instance_metadata_tags` field on the resulting object. When `null`, the `instance_metadata_tags` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `metadata_options` sub block.\n', args=[]),
     new(
       http_endpoint=null,
+      http_protocol_ipv6=null,
       http_put_response_hop_limit=null,
       http_tokens=null,
       instance_metadata_tags=null
     ):: std.prune(a={
       http_endpoint: http_endpoint,
+      http_protocol_ipv6: http_protocol_ipv6,
       http_put_response_hop_limit: http_put_response_hop_limit,
       http_tokens: http_tokens,
       instance_metadata_tags: instance_metadata_tags,
