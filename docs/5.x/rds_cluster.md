@@ -30,6 +30,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDbClusterParameterGroupName()`](#fn-withdbclusterparametergroupname)
 * [`fn withDbInstanceParameterGroupName()`](#fn-withdbinstanceparametergroupname)
 * [`fn withDbSubnetGroupName()`](#fn-withdbsubnetgroupname)
+* [`fn withDbSystemId()`](#fn-withdbsystemid)
 * [`fn withDeletionProtection()`](#fn-withdeletionprotection)
 * [`fn withEnableGlobalWriteForwarding()`](#fn-withenableglobalwriteforwarding)
 * [`fn withEnableHttpEndpoint()`](#fn-withenablehttpendpoint)
@@ -125,6 +126,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `db_cluster_parameter_group_name` (`string`): Set the `db_cluster_parameter_group_name` field on the resulting resource block. When `null`, the `db_cluster_parameter_group_name` field will be omitted from the resulting object.
   - `db_instance_parameter_group_name` (`string`): Set the `db_instance_parameter_group_name` field on the resulting resource block. When `null`, the `db_instance_parameter_group_name` field will be omitted from the resulting object.
   - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting resource block. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
+  - `db_system_id` (`string`): Set the `db_system_id` field on the resulting resource block. When `null`, the `db_system_id` field will be omitted from the resulting object.
   - `deletion_protection` (`bool`): Set the `deletion_protection` field on the resulting resource block. When `null`, the `deletion_protection` field will be omitted from the resulting object.
   - `enable_global_write_forwarding` (`bool`): Set the `enable_global_write_forwarding` field on the resulting resource block. When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
   - `enable_http_endpoint` (`bool`): Set the `enable_http_endpoint` field on the resulting resource block. When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
@@ -198,6 +200,7 @@ injecting into a complete block.
   - `db_cluster_parameter_group_name` (`string`): Set the `db_cluster_parameter_group_name` field on the resulting object. When `null`, the `db_cluster_parameter_group_name` field will be omitted from the resulting object.
   - `db_instance_parameter_group_name` (`string`): Set the `db_instance_parameter_group_name` field on the resulting object. When `null`, the `db_instance_parameter_group_name` field will be omitted from the resulting object.
   - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting object. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
+  - `db_system_id` (`string`): Set the `db_system_id` field on the resulting object. When `null`, the `db_system_id` field will be omitted from the resulting object.
   - `deletion_protection` (`bool`): Set the `deletion_protection` field on the resulting object. When `null`, the `deletion_protection` field will be omitted from the resulting object.
   - `enable_global_write_forwarding` (`bool`): Set the `enable_global_write_forwarding` field on the resulting object. When `null`, the `enable_global_write_forwarding` field will be omitted from the resulting object.
   - `enable_http_endpoint` (`bool`): Set the `enable_http_endpoint` field on the resulting object. When `null`, the `enable_http_endpoint` field will be omitted from the resulting object.
@@ -476,6 +479,22 @@ Terraform resource block to set or update the db_subnet_group_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `db_subnet_group_name` field.
+
+
+### fn withDbSystemId
+
+```ts
+withDbSystemId()
+```
+
+`aws.string.withDbSystemId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the db_system_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `db_system_id` field.
 
 
 ### fn withDeletionProtection

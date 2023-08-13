@@ -27,6 +27,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withForceDeleteWarmPool()`](#fn-withforcedeletewarmpool)
 * [`fn withHealthCheckGracePeriod()`](#fn-withhealthcheckgraceperiod)
 * [`fn withHealthCheckType()`](#fn-withhealthchecktype)
+* [`fn withIgnoreFailedScalingActivities()`](#fn-withignorefailedscalingactivities)
 * [`fn withInitialLifecycleHook()`](#fn-withinitiallifecyclehook)
 * [`fn withInitialLifecycleHookMixin()`](#fn-withinitiallifecyclehookmixin)
 * [`fn withInstanceRefresh()`](#fn-withinstancerefresh)
@@ -153,6 +154,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `force_delete_warm_pool` (`bool`): Set the `force_delete_warm_pool` field on the resulting resource block. When `null`, the `force_delete_warm_pool` field will be omitted from the resulting object.
   - `health_check_grace_period` (`number`): Set the `health_check_grace_period` field on the resulting resource block. When `null`, the `health_check_grace_period` field will be omitted from the resulting object.
   - `health_check_type` (`string`): Set the `health_check_type` field on the resulting resource block. When `null`, the `health_check_type` field will be omitted from the resulting object.
+  - `ignore_failed_scaling_activities` (`bool`): Set the `ignore_failed_scaling_activities` field on the resulting resource block. When `null`, the `ignore_failed_scaling_activities` field will be omitted from the resulting object.
   - `launch_configuration` (`string`): Set the `launch_configuration` field on the resulting resource block. When `null`, the `launch_configuration` field will be omitted from the resulting object.
   - `load_balancers` (`list`): Set the `load_balancers` field on the resulting resource block. When `null`, the `load_balancers` field will be omitted from the resulting object.
   - `max_instance_lifetime` (`number`): Set the `max_instance_lifetime` field on the resulting resource block. When `null`, the `max_instance_lifetime` field will be omitted from the resulting object.
@@ -214,6 +216,7 @@ injecting into a complete block.
   - `force_delete_warm_pool` (`bool`): Set the `force_delete_warm_pool` field on the resulting object. When `null`, the `force_delete_warm_pool` field will be omitted from the resulting object.
   - `health_check_grace_period` (`number`): Set the `health_check_grace_period` field on the resulting object. When `null`, the `health_check_grace_period` field will be omitted from the resulting object.
   - `health_check_type` (`string`): Set the `health_check_type` field on the resulting object. When `null`, the `health_check_type` field will be omitted from the resulting object.
+  - `ignore_failed_scaling_activities` (`bool`): Set the `ignore_failed_scaling_activities` field on the resulting object. When `null`, the `ignore_failed_scaling_activities` field will be omitted from the resulting object.
   - `launch_configuration` (`string`): Set the `launch_configuration` field on the resulting object. When `null`, the `launch_configuration` field will be omitted from the resulting object.
   - `load_balancers` (`list`): Set the `load_balancers` field on the resulting object. When `null`, the `load_balancers` field will be omitted from the resulting object.
   - `max_instance_lifetime` (`number`): Set the `max_instance_lifetime` field on the resulting object. When `null`, the `max_instance_lifetime` field will be omitted from the resulting object.
@@ -435,6 +438,22 @@ Terraform resource block to set or update the health_check_type field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `health_check_type` field.
+
+
+### fn withIgnoreFailedScalingActivities
+
+```ts
+withIgnoreFailedScalingActivities()
+```
+
+`aws.bool.withIgnoreFailedScalingActivities` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the ignore_failed_scaling_activities field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `ignore_failed_scaling_activities` field.
 
 
 ### fn withInitialLifecycleHook

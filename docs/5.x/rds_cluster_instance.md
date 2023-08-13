@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCaCertIdentifier()`](#fn-withcacertidentifier)
 * [`fn withClusterIdentifier()`](#fn-withclusteridentifier)
 * [`fn withCopyTagsToSnapshot()`](#fn-withcopytagstosnapshot)
+* [`fn withCustomIamInstanceProfile()`](#fn-withcustomiaminstanceprofile)
 * [`fn withDbParameterGroupName()`](#fn-withdbparametergroupname)
 * [`fn withDbSubnetGroupName()`](#fn-withdbsubnetgroupname)
 * [`fn withEngine()`](#fn-withengine)
@@ -79,6 +80,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ca_cert_identifier` (`string`): Set the `ca_cert_identifier` field on the resulting resource block. When `null`, the `ca_cert_identifier` field will be omitted from the resulting object.
   - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.
   - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting resource block. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
+  - `custom_iam_instance_profile` (`string`): Set the `custom_iam_instance_profile` field on the resulting resource block. When `null`, the `custom_iam_instance_profile` field will be omitted from the resulting object.
   - `db_parameter_group_name` (`string`): Set the `db_parameter_group_name` field on the resulting resource block. When `null`, the `db_parameter_group_name` field will be omitted from the resulting object.
   - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting resource block. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting resource block.
@@ -127,6 +129,7 @@ injecting into a complete block.
   - `ca_cert_identifier` (`string`): Set the `ca_cert_identifier` field on the resulting object. When `null`, the `ca_cert_identifier` field will be omitted from the resulting object.
   - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
   - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting object. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
+  - `custom_iam_instance_profile` (`string`): Set the `custom_iam_instance_profile` field on the resulting object. When `null`, the `custom_iam_instance_profile` field will be omitted from the resulting object.
   - `db_parameter_group_name` (`string`): Set the `db_parameter_group_name` field on the resulting object. When `null`, the `db_parameter_group_name` field will be omitted from the resulting object.
   - `db_subnet_group_name` (`string`): Set the `db_subnet_group_name` field on the resulting object. When `null`, the `db_subnet_group_name` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting object.
@@ -245,6 +248,22 @@ Terraform resource block to set or update the copy_tags_to_snapshot field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `copy_tags_to_snapshot` field.
+
+
+### fn withCustomIamInstanceProfile
+
+```ts
+withCustomIamInstanceProfile()
+```
+
+`aws.string.withCustomIamInstanceProfile` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the custom_iam_instance_profile field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `custom_iam_instance_profile` field.
 
 
 ### fn withDbParameterGroupName
