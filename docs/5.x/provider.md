@@ -60,6 +60,7 @@ created with `aws configure` will be used. When `null`, the `profile` field will
   - `region` (`string`): The region where AWS operations will take place. Examples
 are us-east-1, us-west-2, etc. When `null`, the `region` field will be omitted from the resulting object.
   - `retry_mode` (`string`): Specifies how retries are attempted. Valid values are `standard` and `adaptive`. Can also be configured using the `AWS_RETRY_MODE` environment variable. When `null`, the `retry_mode` field will be omitted from the resulting object.
+  - `s3_us_east_1_regional_endpoint` (`string`): Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. Valid values are `legacy` or `regional`. Can also be configured using the `AWS_S3_US_EAST_1_REGIONAL_ENDPOINT` environment variable or the `s3_us_east_1_regional_endpoint` shared config file parameter When `null`, the `s3_us_east_1_regional_endpoint` field will be omitted from the resulting object.
   - `s3_use_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
 i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
 use virtual hosted bucket addressing when possible
@@ -131,6 +132,7 @@ created with `aws configure` will be used. When `null`, the `profile` field will
   - `region` (`string`): The region where AWS operations will take place. Examples
 are us-east-1, us-west-2, etc. When `null`, the `region` field will be omitted from the resulting object.
   - `retry_mode` (`string`): Specifies how retries are attempted. Valid values are `standard` and `adaptive`. Can also be configured using the `AWS_RETRY_MODE` environment variable. When `null`, the `retry_mode` field will be omitted from the resulting object.
+  - `s3_us_east_1_regional_endpoint` (`string`): Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. Valid values are `legacy` or `regional`. Can also be configured using the `AWS_S3_US_EAST_1_REGIONAL_ENDPOINT` environment variable or the `s3_us_east_1_regional_endpoint` shared config file parameter When `null`, the `s3_us_east_1_regional_endpoint` field will be omitted from the resulting object.
   - `s3_use_path_style` (`bool`): Set this to true to enable the request to use path-style addressing,
 i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
 use virtual hosted bucket addressing when possible
