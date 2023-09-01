@@ -906,6 +906,7 @@ Terraform sub block.
   - `dedicated_master_type` (`string`): Set the `dedicated_master_type` field on the resulting object. When `null`, the `dedicated_master_type` field will be omitted from the resulting object.
   - `instance_count` (`number`): Set the `instance_count` field on the resulting object. When `null`, the `instance_count` field will be omitted from the resulting object.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `multi_az_with_standby_enabled` (`bool`): Set the `multi_az_with_standby_enabled` field on the resulting object. When `null`, the `multi_az_with_standby_enabled` field will be omitted from the resulting object.
   - `warm_count` (`number`): Set the `warm_count` field on the resulting object. When `null`, the `warm_count` field will be omitted from the resulting object.
   - `warm_enabled` (`bool`): Set the `warm_enabled` field on the resulting object. When `null`, the `warm_enabled` field will be omitted from the resulting object.
   - `warm_type` (`string`): Set the `warm_type` field on the resulting object. When `null`, the `warm_type` field will be omitted from the resulting object.

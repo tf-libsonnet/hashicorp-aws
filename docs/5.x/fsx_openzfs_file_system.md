@@ -23,9 +23,12 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDeploymentType()`](#fn-withdeploymenttype)
 * [`fn withDiskIopsConfiguration()`](#fn-withdiskiopsconfiguration)
 * [`fn withDiskIopsConfigurationMixin()`](#fn-withdiskiopsconfigurationmixin)
+* [`fn withEndpointIpAddressRange()`](#fn-withendpointipaddressrange)
 * [`fn withKmsKeyId()`](#fn-withkmskeyid)
+* [`fn withPreferredSubnetId()`](#fn-withpreferredsubnetid)
 * [`fn withRootVolumeConfiguration()`](#fn-withrootvolumeconfiguration)
 * [`fn withRootVolumeConfigurationMixin()`](#fn-withrootvolumeconfigurationmixin)
+* [`fn withRouteTableIds()`](#fn-withroutetableids)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
 * [`fn withStorageCapacity()`](#fn-withstoragecapacity)
 * [`fn withStorageType()`](#fn-withstoragetype)
@@ -84,7 +87,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `copy_tags_to_volumes` (`bool`): Set the `copy_tags_to_volumes` field on the resulting resource block. When `null`, the `copy_tags_to_volumes` field will be omitted from the resulting object.
   - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting resource block. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
   - `deployment_type` (`string`): Set the `deployment_type` field on the resulting resource block.
+  - `endpoint_ip_address_range` (`string`): Set the `endpoint_ip_address_range` field on the resulting resource block. When `null`, the `endpoint_ip_address_range` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting resource block. When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
+  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting resource block. When `null`, the `route_table_ids` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block. When `null`, the `storage_capacity` field will be omitted from the resulting object.
   - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.
@@ -125,7 +131,10 @@ injecting into a complete block.
   - `copy_tags_to_volumes` (`bool`): Set the `copy_tags_to_volumes` field on the resulting object. When `null`, the `copy_tags_to_volumes` field will be omitted from the resulting object.
   - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting object. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.
   - `deployment_type` (`string`): Set the `deployment_type` field on the resulting object.
+  - `endpoint_ip_address_range` (`string`): Set the `endpoint_ip_address_range` field on the resulting object. When `null`, the `endpoint_ip_address_range` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting object. When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
+  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting object. When `null`, the `route_table_ids` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object. When `null`, the `storage_capacity` field will be omitted from the resulting object.
   - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
@@ -275,6 +284,22 @@ function.
   - `value` (`list[obj]`): The value to set for the `disk_iops_configuration` field.
 
 
+### fn withEndpointIpAddressRange
+
+```ts
+withEndpointIpAddressRange()
+```
+
+`aws.string.withEndpointIpAddressRange` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the endpoint_ip_address_range field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `endpoint_ip_address_range` field.
+
+
 ### fn withKmsKeyId
 
 ```ts
@@ -289,6 +314,22 @@ Terraform resource block to set or update the kms_key_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `kms_key_id` field.
+
+
+### fn withPreferredSubnetId
+
+```ts
+withPreferredSubnetId()
+```
+
+`aws.string.withPreferredSubnetId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the preferred_subnet_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `preferred_subnet_id` field.
 
 
 ### fn withRootVolumeConfiguration
@@ -326,6 +367,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `root_volume_configuration` field.
+
+
+### fn withRouteTableIds
+
+```ts
+withRouteTableIds()
+```
+
+`aws.list.withRouteTableIds` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the route_table_ids field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `route_table_ids` field.
 
 
 ### fn withSecurityGroupIds

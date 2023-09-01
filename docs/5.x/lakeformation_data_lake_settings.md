@@ -24,6 +24,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCreateTableDefaultPermissions()`](#fn-withcreatetabledefaultpermissions)
 * [`fn withCreateTableDefaultPermissionsMixin()`](#fn-withcreatetabledefaultpermissionsmixin)
 * [`fn withExternalDataFilteringAllowList()`](#fn-withexternaldatafilteringallowlist)
+* [`fn withReadOnlyAdmins()`](#fn-withreadonlyadmins)
 * [`fn withTrustedResourceOwners()`](#fn-withtrustedresourceowners)
 * [`obj create_database_default_permissions`](#obj-create_database_default_permissions)
   * [`fn new()`](#fn-create_database_default_permissionsnew)
@@ -64,6 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `authorized_session_tag_value_list` (`list`): Set the `authorized_session_tag_value_list` field on the resulting resource block. When `null`, the `authorized_session_tag_value_list` field will be omitted from the resulting object.
   - `catalog_id` (`string`): Set the `catalog_id` field on the resulting resource block. When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `external_data_filtering_allow_list` (`list`): Set the `external_data_filtering_allow_list` field on the resulting resource block. When `null`, the `external_data_filtering_allow_list` field will be omitted from the resulting object.
+  - `read_only_admins` (`list`): Set the `read_only_admins` field on the resulting resource block. When `null`, the `read_only_admins` field will be omitted from the resulting object.
   - `trusted_resource_owners` (`list`): Set the `trusted_resource_owners` field on the resulting resource block. When `null`, the `trusted_resource_owners` field will be omitted from the resulting object.
   - `create_database_default_permissions` (`list[obj]`): Set the `create_database_default_permissions` field on the resulting resource block. When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-create_database_default_permissionsnew) constructor.
   - `create_table_default_permissions` (`list[obj]`): Set the `create_table_default_permissions` field on the resulting resource block. When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-create_table_default_permissionsnew) constructor.
@@ -95,6 +97,7 @@ injecting into a complete block.
   - `authorized_session_tag_value_list` (`list`): Set the `authorized_session_tag_value_list` field on the resulting object. When `null`, the `authorized_session_tag_value_list` field will be omitted from the resulting object.
   - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object. When `null`, the `catalog_id` field will be omitted from the resulting object.
   - `external_data_filtering_allow_list` (`list`): Set the `external_data_filtering_allow_list` field on the resulting object. When `null`, the `external_data_filtering_allow_list` field will be omitted from the resulting object.
+  - `read_only_admins` (`list`): Set the `read_only_admins` field on the resulting object. When `null`, the `read_only_admins` field will be omitted from the resulting object.
   - `trusted_resource_owners` (`list`): Set the `trusted_resource_owners` field on the resulting object. When `null`, the `trusted_resource_owners` field will be omitted from the resulting object.
   - `create_database_default_permissions` (`list[obj]`): Set the `create_database_default_permissions` field on the resulting object. When `null`, the `create_database_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_database_default_permissions.new](#fn-create_database_default_permissionsnew) constructor.
   - `create_table_default_permissions` (`list[obj]`): Set the `create_table_default_permissions` field on the resulting object. When `null`, the `create_table_default_permissions` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lakeformation_data_lake_settings.create_table_default_permissions.new](#fn-create_table_default_permissionsnew) constructor.
@@ -255,6 +258,22 @@ Terraform resource block to set or update the external_data_filtering_allow_list
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `external_data_filtering_allow_list` field.
+
+
+### fn withReadOnlyAdmins
+
+```ts
+withReadOnlyAdmins()
+```
+
+`aws.list.withReadOnlyAdmins` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the read_only_admins field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `read_only_admins` field.
 
 
 ### fn withTrustedResourceOwners

@@ -411,6 +411,8 @@ Terraform sub block.
   - `lexmodelbuilding` (`string`): Use this to override the default service endpoint URL When `null`, the `lexmodelbuilding` field will be omitted from the resulting object.
   - `lexmodelbuildingservice` (`string`): Use this to override the default service endpoint URL When `null`, the `lexmodelbuildingservice` field will be omitted from the resulting object.
   - `lexmodels` (`string`): Use this to override the default service endpoint URL When `null`, the `lexmodels` field will be omitted from the resulting object.
+  - `lexmodelsv2` (`string`): Use this to override the default service endpoint URL When `null`, the `lexmodelsv2` field will be omitted from the resulting object.
+  - `lexv2models` (`string`): Use this to override the default service endpoint URL When `null`, the `lexv2models` field will be omitted from the resulting object.
   - `licensemanager` (`string`): Use this to override the default service endpoint URL When `null`, the `licensemanager` field will be omitted from the resulting object.
   - `lightsail` (`string`): Use this to override the default service endpoint URL When `null`, the `lightsail` field will be omitted from the resulting object.
   - `location` (`string`): Use this to override the default service endpoint URL When `null`, the `location` field will be omitted from the resulting object.
