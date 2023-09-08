@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withCustomerId()`](#fn-withcustomerid)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withEnabled()`](#fn-withenabled)
 * [`fn withName()`](#fn-withname)
@@ -51,6 +52,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `customer_id` (`string`): Set the `customer_id` field on the resulting resource block. When `null`, the `customer_id` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
@@ -80,6 +82,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `customer_id` (`string`): Set the `customer_id` field on the resulting object. When `null`, the `customer_id` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
@@ -89,6 +92,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `api_gateway_api_key` resource into the root Terraform configuration.
+
+
+### fn withCustomerId
+
+```ts
+withCustomerId()
+```
+
+`aws.string.withCustomerId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the customer_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `customer_id` field.
 
 
 ### fn withDescription

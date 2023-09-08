@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn withFetchOwner()`](#fn-withfetchowner)
 * [`fn withMaxKeys()`](#fn-withmaxkeys)
 * [`fn withPrefix()`](#fn-withprefix)
+* [`fn withRequestPayer()`](#fn-withrequestpayer)
 * [`fn withStartAfter()`](#fn-withstartafter)
 
 ## Fields
@@ -58,6 +59,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `fetch_owner` (`bool`): Set the `fetch_owner` field on the resulting data source block. When `null`, the `fetch_owner` field will be omitted from the resulting object.
   - `max_keys` (`number`): Set the `max_keys` field on the resulting data source block. When `null`, the `max_keys` field will be omitted from the resulting object.
   - `prefix` (`string`): Set the `prefix` field on the resulting data source block. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `request_payer` (`string`): Set the `request_payer` field on the resulting data source block. When `null`, the `request_payer` field will be omitted from the resulting object.
   - `start_after` (`string`): Set the `start_after` field on the resulting data source block. When `null`, the `start_after` field will be omitted from the resulting object.
 
 **Returns**:
@@ -88,6 +90,7 @@ injecting into a complete block.
   - `fetch_owner` (`bool`): Set the `fetch_owner` field on the resulting object. When `null`, the `fetch_owner` field will be omitted from the resulting object.
   - `max_keys` (`number`): Set the `max_keys` field on the resulting object. When `null`, the `max_keys` field will be omitted from the resulting object.
   - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+  - `request_payer` (`string`): Set the `request_payer` field on the resulting object. When `null`, the `request_payer` field will be omitted from the resulting object.
   - `start_after` (`string`): Set the `start_after` field on the resulting object. When `null`, the `start_after` field will be omitted from the resulting object.
 
 **Returns**:
@@ -188,6 +191,22 @@ Terraform data source block to set or update the prefix field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `prefix` field.
+
+
+### fn withRequestPayer
+
+```ts
+withRequestPayer()
+```
+
+`aws.string.withRequestPayer` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the request_payer field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `request_payer` field.
 
 
 ### fn withStartAfter

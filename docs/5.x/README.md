@@ -1099,6 +1099,8 @@ project.
 * [sfn_activity](sfn_activity.md)
 * [sfn_alias](sfn_alias.md)
 * [sfn_state_machine](sfn_state_machine.md)
+* [shield_drt_access_log_bucket_association](shield_drt_access_log_bucket_association.md)
+* [shield_drt_access_role_arn_association](shield_drt_access_role_arn_association.md)
 * [shield_protection](shield_protection.md)
 * [shield_protection_group](shield_protection_group.md)
 * [shield_protection_health_check_association](shield_protection_health_check_association.md)

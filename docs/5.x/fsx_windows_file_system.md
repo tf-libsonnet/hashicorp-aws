@@ -24,6 +24,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCopyTagsToBackups()`](#fn-withcopytagstobackups)
 * [`fn withDailyAutomaticBackupStartTime()`](#fn-withdailyautomaticbackupstarttime)
 * [`fn withDeploymentType()`](#fn-withdeploymenttype)
+* [`fn withDiskIopsConfiguration()`](#fn-withdiskiopsconfiguration)
+* [`fn withDiskIopsConfigurationMixin()`](#fn-withdiskiopsconfigurationmixin)
 * [`fn withKmsKeyId()`](#fn-withkmskeyid)
 * [`fn withPreferredSubnetId()`](#fn-withpreferredsubnetid)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
@@ -41,6 +43,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withWeeklyMaintenanceStartTime()`](#fn-withweeklymaintenancestarttime)
 * [`obj audit_log_configuration`](#obj-audit_log_configuration)
   * [`fn new()`](#fn-audit_log_configurationnew)
+* [`obj disk_iops_configuration`](#obj-disk_iops_configuration)
+  * [`fn new()`](#fn-disk_iops_configurationnew)
 * [`obj self_managed_active_directory`](#obj-self_managed_active_directory)
   * [`fn new()`](#fn-self_managed_active_directorynew)
 * [`obj timeouts`](#obj-timeouts)
@@ -94,6 +98,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting resource block.
   - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting resource block. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
   - `audit_log_configuration` (`list[obj]`): Set the `audit_log_configuration` field on the resulting resource block. When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-audit_log_configurationnew) constructor.
+  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting resource block. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.
   - `self_managed_active_directory` (`list[obj]`): Set the `self_managed_active_directory` field on the resulting resource block. When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-self_managed_active_directorynew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -138,6 +143,7 @@ injecting into a complete block.
   - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting object.
   - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.
   - `audit_log_configuration` (`list[obj]`): Set the `audit_log_configuration` field on the resulting object. When `null`, the `audit_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.audit_log_configuration.new](#fn-audit_log_configurationnew) constructor.
+  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting object. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.
   - `self_managed_active_directory` (`list[obj]`): Set the `self_managed_active_directory` field on the resulting object. When `null`, the `self_managed_active_directory` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.self_managed_active_directory.new](#fn-self_managed_active_directorynew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_windows_file_system.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -292,6 +298,43 @@ Terraform resource block to set or update the deployment_type field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `deployment_type` field.
+
+
+### fn withDiskIopsConfiguration
+
+```ts
+withDiskIopsConfiguration()
+```
+
+`aws.list[obj].withDiskIopsConfiguration` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the disk_iops_configuration field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withDiskIopsConfigurationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `disk_iops_configuration` field.
+
+
+### fn withDiskIopsConfigurationMixin
+
+```ts
+withDiskIopsConfigurationMixin()
+```
+
+`aws.list[obj].withDiskIopsConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the disk_iops_configuration field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withDiskIopsConfiguration](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `disk_iops_configuration` field.
 
 
 ### fn withKmsKeyId
@@ -566,6 +609,30 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `audit_log_configuration` sub block.
+
+
+## obj disk_iops_configuration
+
+
+
+### fn disk_iops_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.fsx_windows_file_system.disk_iops_configuration.new` constructs a new object with attributes and blocks configured for the `disk_iops_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `iops` (`number`): Set the `iops` field on the resulting object. When `null`, the `iops` field will be omitted from the resulting object.
+  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `disk_iops_configuration` sub block.
 
 
 ## obj self_managed_active_directory

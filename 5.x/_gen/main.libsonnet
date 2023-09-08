@@ -1088,6 +1088,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   sfn_activity: (import 'resources/sfn_activity.libsonnet'),
   sfn_alias: (import 'resources/sfn_alias.libsonnet'),
   sfn_state_machine: (import 'resources/sfn_state_machine.libsonnet'),
+  shield_drt_access_log_bucket_association: (import 'resources/shield_drt_access_log_bucket_association.libsonnet'),
+  shield_drt_access_role_arn_association: (import 'resources/shield_drt_access_role_arn_association.libsonnet'),
   shield_protection: (import 'resources/shield_protection.libsonnet'),
   shield_protection_group: (import 'resources/shield_protection_group.libsonnet'),
   shield_protection_health_check_association: (import 'resources/shield_protection_health_check_association.libsonnet'),

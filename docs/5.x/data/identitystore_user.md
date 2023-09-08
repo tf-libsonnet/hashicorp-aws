@@ -17,6 +17,8 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAlternateIdentifier()`](#fn-withalternateidentifier)
 * [`fn withAlternateIdentifierMixin()`](#fn-withalternateidentifiermixin)
+* [`fn withFilter()`](#fn-withfilter)
+* [`fn withFilterMixin()`](#fn-withfiltermixin)
 * [`fn withIdentityStoreId()`](#fn-withidentitystoreid)
 * [`fn withUserId()`](#fn-withuserid)
 * [`obj alternate_identifier`](#obj-alternate_identifier)
@@ -25,6 +27,8 @@ This package contains functions and utilities for setting up the data source usi
     * [`fn new()`](#fn-alternate_identifierexternal_idnew)
   * [`obj alternate_identifier.unique_attribute`](#obj-alternate_identifierunique_attribute)
     * [`fn new()`](#fn-alternate_identifierunique_attributenew)
+* [`obj filter`](#obj-filter)
+  * [`fn new()`](#fn-filternew)
 
 ## Fields
 
@@ -58,6 +62,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `identity_store_id` (`string`): Set the `identity_store_id` field on the resulting data source block.
   - `user_id` (`string`): Set the `user_id` field on the resulting data source block. When `null`, the `user_id` field will be omitted from the resulting object.
   - `alternate_identifier` (`list[obj]`): Set the `alternate_identifier` field on the resulting data source block. When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_user.alternate_identifier.new](#fn-alternate_identifiernew) constructor.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting data source block. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_user.filter.new](#fn-filternew) constructor.
 
 **Returns**:
 - A mixin object that injects the new data source into the root Terraform configuration.
@@ -84,6 +89,7 @@ injecting into a complete block.
   - `identity_store_id` (`string`): Set the `identity_store_id` field on the resulting object.
   - `user_id` (`string`): Set the `user_id` field on the resulting object. When `null`, the `user_id` field will be omitted from the resulting object.
   - `alternate_identifier` (`list[obj]`): Set the `alternate_identifier` field on the resulting object. When `null`, the `alternate_identifier` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_user.alternate_identifier.new](#fn-alternate_identifiernew) constructor.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.identitystore_user.filter.new](#fn-filternew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withData](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withdata) to construct a new `identitystore_user` data source into the root Terraform configuration.
@@ -124,6 +130,43 @@ function.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `alternate_identifier` field.
+
+
+### fn withFilter
+
+```ts
+withFilter()
+```
+
+`aws.list[obj].withFilter` constructs a mixin object that can be merged into the `list[obj]`
+Terraform data source block to set or update the filter field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withFilterMixin](TODO) function.
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `filter` field.
+
+
+### fn withFilterMixin
+
+```ts
+withFilterMixin()
+```
+
+`aws.list[obj].withFilterMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform data source block to set or update the filter field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withFilter](TODO)
+function.
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `filter` field.
 
 
 ### fn withIdentityStoreId
@@ -227,3 +270,27 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `unique_attribute` sub block.
+
+
+## obj filter
+
+
+
+### fn filter.new
+
+```ts
+new()
+```
+
+
+`aws.identitystore_user.filter.new` constructs a new object with attributes and blocks configured for the `filter`
+Terraform sub block.
+
+
+
+**Args**:
+  - `attribute_path` (`string`): Set the `attribute_path` field on the resulting object.
+  - `attribute_value` (`string`): Set the `attribute_value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `filter` sub block.
