@@ -1166,6 +1166,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   transfer_tag: (import 'resources/transfer_tag.libsonnet'),
   transfer_user: (import 'resources/transfer_user.libsonnet'),
   transfer_workflow: (import 'resources/transfer_workflow.libsonnet'),
+  verifiedaccess_trust_provider: (import 'resources/verifiedaccess_trust_provider.libsonnet'),
   volume_attachment: (import 'resources/volume_attachment.libsonnet'),
   vpc: (import 'resources/vpc.libsonnet'),
   vpc_dhcp_options: (import 'resources/vpc_dhcp_options.libsonnet'),

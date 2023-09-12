@@ -1177,6 +1177,7 @@ project.
 * [transfer_tag](transfer_tag.md)
 * [transfer_user](transfer_user.md)
 * [transfer_workflow](transfer_workflow.md)
+* [verifiedaccess_trust_provider](verifiedaccess_trust_provider.md)
 * [volume_attachment](volume_attachment.md)
 * [vpc](vpc.md)
 * [vpc_dhcp_options](vpc_dhcp_options.md)

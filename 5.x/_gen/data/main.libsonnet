@@ -81,6 +81,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   codecommit_approval_rule_template: (import 'codecommit_approval_rule_template.libsonnet'),
   codecommit_repository: (import 'codecommit_repository.libsonnet'),
   codestarconnections_connection: (import 'codestarconnections_connection.libsonnet'),
+  cognito_identity_pool: (import 'cognito_identity_pool.libsonnet'),
   cognito_user_pool_client: (import 'cognito_user_pool_client.libsonnet'),
   cognito_user_pool_clients: (import 'cognito_user_pool_clients.libsonnet'),
   cognito_user_pool_signing_certificate: (import 'cognito_user_pool_signing_certificate.libsonnet'),
