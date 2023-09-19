@@ -28,11 +28,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
     region:: {
-      '#new':: d.fn(help='\n`aws.s3control_multi_region_access_point.details.region.new` constructs a new object with attributes and blocks configured for the `region`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket` (`string`): Set the `bucket` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `region` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.s3control_multi_region_access_point.details.region.new` constructs a new object with attributes and blocks configured for the `region`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket` (`string`): Set the `bucket` field on the resulting object.\n  - `bucket_account_id` (`string`): Set the `bucket_account_id` field on the resulting object. When `null`, the `bucket_account_id` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `region` sub block.\n', args=[]),
       new(
-        bucket
+        bucket,
+        bucket_account_id=null
       ):: std.prune(a={
         bucket: bucket,
+        bucket_account_id: bucket_account_id,
       }),
     },
   },
