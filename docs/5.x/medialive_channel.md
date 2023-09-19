@@ -320,16 +320,20 @@ This package contains functions and utilities for setting up the resource using 
           * [`fn new()`](#fn-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_pid_selectionnew)
         * [`obj input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection`](#obj-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selection)
           * [`fn new()`](#fn-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selectionnew)
-          * [`obj input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.track`](#obj-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selectiontrack)
-            * [`fn new()`](#fn-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selectiontracknew)
+          * [`obj input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.dolby_e_decode`](#obj-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selectiondolby_e_decode)
+            * [`fn new()`](#fn-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selectiondolby_e_decodenew)
+          * [`obj input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.tracks`](#obj-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selectiontracks)
+            * [`fn new()`](#fn-input_attachmentsinput_settingsaudio_selectorselector_settingsaudio_track_selectiontracksnew)
     * [`obj input_attachments.input_settings.caption_selector`](#obj-input_attachmentsinput_settingscaption_selector)
       * [`fn new()`](#fn-input_attachmentsinput_settingscaption_selectornew)
       * [`obj input_attachments.input_settings.caption_selector.selector_settings`](#obj-input_attachmentsinput_settingscaption_selectorselector_settings)
         * [`fn new()`](#fn-input_attachmentsinput_settingscaption_selectorselector_settingsnew)
         * [`obj input_attachments.input_settings.caption_selector.selector_settings.ancillary_source_settings`](#obj-input_attachmentsinput_settingscaption_selectorselector_settingsancillary_source_settings)
           * [`fn new()`](#fn-input_attachmentsinput_settingscaption_selectorselector_settingsancillary_source_settingsnew)
-        * [`obj input_attachments.input_settings.caption_selector.selector_settings.dvb_tdt_settings`](#obj-input_attachmentsinput_settingscaption_selectorselector_settingsdvb_tdt_settings)
-          * [`fn new()`](#fn-input_attachmentsinput_settingscaption_selectorselector_settingsdvb_tdt_settingsnew)
+        * [`obj input_attachments.input_settings.caption_selector.selector_settings.arib_source_settings`](#obj-input_attachmentsinput_settingscaption_selectorselector_settingsarib_source_settings)
+          * [`fn new()`](#fn-input_attachmentsinput_settingscaption_selectorselector_settingsarib_source_settingsnew)
+        * [`obj input_attachments.input_settings.caption_selector.selector_settings.dvb_sub_source_settings`](#obj-input_attachmentsinput_settingscaption_selectorselector_settingsdvb_sub_source_settings)
+          * [`fn new()`](#fn-input_attachmentsinput_settingscaption_selectorselector_settingsdvb_sub_source_settingsnew)
         * [`obj input_attachments.input_settings.caption_selector.selector_settings.embedded_source_settings`](#obj-input_attachmentsinput_settingscaption_selectorselector_settingsembedded_source_settings)
           * [`fn new()`](#fn-input_attachmentsinput_settingscaption_selectorselector_settingsembedded_source_settingsnew)
         * [`obj input_attachments.input_settings.caption_selector.selector_settings.scte20_source_settings`](#obj-input_attachmentsinput_settingscaption_selectorselector_settingsscte20_source_settings)
@@ -4561,24 +4565,48 @@ Terraform sub block.
 
 
 **Args**:
-  - `track` (`list[obj]`): Set the `track` field on the resulting object. When `null`, the `track` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.track.new](#fn-input_attachmentsinput_attachmentsinput_settingsaudio_selectorselector_settingstracknew) constructor.
+  - `dolby_e_decode` (`list[obj]`): Set the `dolby_e_decode` field on the resulting object. When `null`, the `dolby_e_decode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.dolby_e_decode.new](#fn-input_attachmentsinput_attachmentsinput_settingsaudio_selectorselector_settingsdolby_e_decodenew) constructor.
+  - `tracks` (`list[obj]`): Set the `tracks` field on the resulting object. When `null`, the `tracks` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.tracks.new](#fn-input_attachmentsinput_attachmentsinput_settingsaudio_selectorselector_settingstracksnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `audio_track_selection` sub block.
 
 
-## obj input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.track
+## obj input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.dolby_e_decode
 
 
 
-### fn input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.track.new
+### fn input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.dolby_e_decode.new
 
 ```ts
 new()
 ```
 
 
-`aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.track.new` constructs a new object with attributes and blocks configured for the `track`
+`aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.dolby_e_decode.new` constructs a new object with attributes and blocks configured for the `dolby_e_decode`
+Terraform sub block.
+
+
+
+**Args**:
+  - `program_selection` (`string`): Set the `program_selection` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `dolby_e_decode` sub block.
+
+
+## obj input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.tracks
+
+
+
+### fn input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.tracks.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.input_attachments.input_settings.audio_selector.selector_settings.audio_track_selection.tracks.new` constructs a new object with attributes and blocks configured for the `tracks`
 Terraform sub block.
 
 
@@ -4587,7 +4615,7 @@ Terraform sub block.
   - `track` (`number`): Set the `track` field on the resulting object.
 
 **Returns**:
-  - An attribute object that represents the `track` sub block.
+  - An attribute object that represents the `tracks` sub block.
 
 
 ## obj input_attachments.input_settings.caption_selector
@@ -4633,7 +4661,8 @@ Terraform sub block.
 
 **Args**:
   - `ancillary_source_settings` (`list[obj]`): Set the `ancillary_source_settings` field on the resulting object. When `null`, the `ancillary_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.ancillary_source_settings.new](#fn-input_attachmentsinput_attachmentsinput_settingscaption_selectorancillary_source_settingsnew) constructor.
-  - `dvb_tdt_settings` (`list[obj]`): Set the `dvb_tdt_settings` field on the resulting object. When `null`, the `dvb_tdt_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.dvb_tdt_settings.new](#fn-input_attachmentsinput_attachmentsinput_settingscaption_selectordvb_tdt_settingsnew) constructor.
+  - `arib_source_settings` (`list[obj]`): Set the `arib_source_settings` field on the resulting object. When `null`, the `arib_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.arib_source_settings.new](#fn-input_attachmentsinput_attachmentsinput_settingscaption_selectorarib_source_settingsnew) constructor.
+  - `dvb_sub_source_settings` (`list[obj]`): Set the `dvb_sub_source_settings` field on the resulting object. When `null`, the `dvb_sub_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.dvb_sub_source_settings.new](#fn-input_attachmentsinput_attachmentsinput_settingscaption_selectordvb_sub_source_settingsnew) constructor.
   - `embedded_source_settings` (`list[obj]`): Set the `embedded_source_settings` field on the resulting object. When `null`, the `embedded_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.embedded_source_settings.new](#fn-input_attachmentsinput_attachmentsinput_settingscaption_selectorembedded_source_settingsnew) constructor.
   - `scte20_source_settings` (`list[obj]`): Set the `scte20_source_settings` field on the resulting object. When `null`, the `scte20_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.scte20_source_settings.new](#fn-input_attachmentsinput_attachmentsinput_settingscaption_selectorscte20_source_settingsnew) constructor.
   - `scte27_source_settings` (`list[obj]`): Set the `scte27_source_settings` field on the resulting object. When `null`, the `scte27_source_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.scte27_source_settings.new](#fn-input_attachmentsinput_attachmentsinput_settingscaption_selectorscte27_source_settingsnew) constructor.
@@ -4666,18 +4695,38 @@ Terraform sub block.
   - An attribute object that represents the `ancillary_source_settings` sub block.
 
 
-## obj input_attachments.input_settings.caption_selector.selector_settings.dvb_tdt_settings
+## obj input_attachments.input_settings.caption_selector.selector_settings.arib_source_settings
 
 
 
-### fn input_attachments.input_settings.caption_selector.selector_settings.dvb_tdt_settings.new
+### fn input_attachments.input_settings.caption_selector.selector_settings.arib_source_settings.new
 
 ```ts
 new()
 ```
 
 
-`aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.dvb_tdt_settings.new` constructs a new object with attributes and blocks configured for the `dvb_tdt_settings`
+`aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.arib_source_settings.new` constructs a new object with attributes and blocks configured for the `arib_source_settings`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `arib_source_settings` sub block.
+
+
+## obj input_attachments.input_settings.caption_selector.selector_settings.dvb_sub_source_settings
+
+
+
+### fn input_attachments.input_settings.caption_selector.selector_settings.dvb_sub_source_settings.new
+
+```ts
+new()
+```
+
+
+`aws.medialive_channel.input_attachments.input_settings.caption_selector.selector_settings.dvb_sub_source_settings.new` constructs a new object with attributes and blocks configured for the `dvb_sub_source_settings`
 Terraform sub block.
 
 
@@ -4687,7 +4736,7 @@ Terraform sub block.
   - `pid` (`number`): Set the `pid` field on the resulting object. When `null`, the `pid` field will be omitted from the resulting object.
 
 **Returns**:
-  - An attribute object that represents the `dvb_tdt_settings` sub block.
+  - An attribute object that represents the `dvb_sub_source_settings` sub block.
 
 
 ## obj input_attachments.input_settings.caption_selector.selector_settings.embedded_source_settings
@@ -4710,7 +4759,6 @@ Terraform sub block.
   - `convert_608_to_708` (`string`): Set the `convert_608_to_708` field on the resulting object. When `null`, the `convert_608_to_708` field will be omitted from the resulting object.
   - `scte20_detection` (`string`): Set the `scte20_detection` field on the resulting object. When `null`, the `scte20_detection` field will be omitted from the resulting object.
   - `source_608_channel_number` (`number`): Set the `source_608_channel_number` field on the resulting object. When `null`, the `source_608_channel_number` field will be omitted from the resulting object.
-  - `source_608_track_number` (`number`): Set the `source_608_track_number` field on the resulting object. When `null`, the `source_608_track_number` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `embedded_source_settings` sub block.

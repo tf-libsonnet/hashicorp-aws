@@ -250,6 +250,7 @@ Terraform sub block.
 
 **Args**:
   - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `bucket_account_id` (`string`): Set the `bucket_account_id` field on the resulting object. When `null`, the `bucket_account_id` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `region` sub block.

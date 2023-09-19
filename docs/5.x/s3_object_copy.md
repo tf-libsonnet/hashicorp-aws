@@ -19,6 +19,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withBucket()`](#fn-withbucket)
 * [`fn withBucketKeyEnabled()`](#fn-withbucketkeyenabled)
 * [`fn withCacheControl()`](#fn-withcachecontrol)
+* [`fn withChecksumAlgorithm()`](#fn-withchecksumalgorithm)
 * [`fn withContentDisposition()`](#fn-withcontentdisposition)
 * [`fn withContentEncoding()`](#fn-withcontentencoding)
 * [`fn withContentLanguage()`](#fn-withcontentlanguage)
@@ -91,6 +92,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `bucket` (`string`): Set the `bucket` field on the resulting resource block.
   - `bucket_key_enabled` (`bool`): Set the `bucket_key_enabled` field on the resulting resource block. When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
   - `cache_control` (`string`): Set the `cache_control` field on the resulting resource block. When `null`, the `cache_control` field will be omitted from the resulting object.
+  - `checksum_algorithm` (`string`): Set the `checksum_algorithm` field on the resulting resource block. When `null`, the `checksum_algorithm` field will be omitted from the resulting object.
   - `content_disposition` (`string`): Set the `content_disposition` field on the resulting resource block. When `null`, the `content_disposition` field will be omitted from the resulting object.
   - `content_encoding` (`string`): Set the `content_encoding` field on the resulting resource block. When `null`, the `content_encoding` field will be omitted from the resulting object.
   - `content_language` (`string`): Set the `content_language` field on the resulting resource block. When `null`, the `content_language` field will be omitted from the resulting object.
@@ -153,6 +155,7 @@ injecting into a complete block.
   - `bucket` (`string`): Set the `bucket` field on the resulting object.
   - `bucket_key_enabled` (`bool`): Set the `bucket_key_enabled` field on the resulting object. When `null`, the `bucket_key_enabled` field will be omitted from the resulting object.
   - `cache_control` (`string`): Set the `cache_control` field on the resulting object. When `null`, the `cache_control` field will be omitted from the resulting object.
+  - `checksum_algorithm` (`string`): Set the `checksum_algorithm` field on the resulting object. When `null`, the `checksum_algorithm` field will be omitted from the resulting object.
   - `content_disposition` (`string`): Set the `content_disposition` field on the resulting object. When `null`, the `content_disposition` field will be omitted from the resulting object.
   - `content_encoding` (`string`): Set the `content_encoding` field on the resulting object. When `null`, the `content_encoding` field will be omitted from the resulting object.
   - `content_language` (`string`): Set the `content_language` field on the resulting object. When `null`, the `content_language` field will be omitted from the resulting object.
@@ -255,6 +258,22 @@ Terraform resource block to set or update the cache_control field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `cache_control` field.
+
+
+### fn withChecksumAlgorithm
+
+```ts
+withChecksumAlgorithm()
+```
+
+`aws.string.withChecksumAlgorithm` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the checksum_algorithm field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `checksum_algorithm` field.
 
 
 ### fn withContentDisposition

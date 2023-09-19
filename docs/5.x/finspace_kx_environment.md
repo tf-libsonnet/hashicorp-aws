@@ -32,6 +32,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-timeoutsnew)
 * [`obj transit_gateway_configuration`](#obj-transit_gateway_configuration)
   * [`fn new()`](#fn-transit_gateway_configurationnew)
+  * [`obj transit_gateway_configuration.attachment_network_acl_configuration`](#obj-transit_gateway_configurationattachment_network_acl_configuration)
+    * [`fn new()`](#fn-transit_gateway_configurationattachment_network_acl_configurationnew)
+    * [`obj transit_gateway_configuration.attachment_network_acl_configuration.icmp_type_code`](#obj-transit_gateway_configurationattachment_network_acl_configurationicmp_type_code)
+      * [`fn new()`](#fn-transit_gateway_configurationattachment_network_acl_configurationicmp_type_codenew)
+    * [`obj transit_gateway_configuration.attachment_network_acl_configuration.port_range`](#obj-transit_gateway_configurationattachment_network_acl_configurationport_range)
+      * [`fn new()`](#fn-transit_gateway_configurationattachment_network_acl_configurationport_rangenew)
 
 ## Fields
 
@@ -364,6 +370,83 @@ Terraform sub block.
 **Args**:
   - `routable_cidr_space` (`string`): Set the `routable_cidr_space` field on the resulting object.
   - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting object.
+  - `attachment_network_acl_configuration` (`list[obj]`): Set the `attachment_network_acl_configuration` field on the resulting object. When `null`, the `attachment_network_acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.new](#fn-transit_gateway_configurationattachment_network_acl_configurationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `transit_gateway_configuration` sub block.
+
+
+## obj transit_gateway_configuration.attachment_network_acl_configuration
+
+
+
+### fn transit_gateway_configuration.attachment_network_acl_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.new` constructs a new object with attributes and blocks configured for the `attachment_network_acl_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object.
+  - `rule_action` (`string`): Set the `rule_action` field on the resulting object.
+  - `rule_number` (`number`): Set the `rule_number` field on the resulting object.
+  - `icmp_type_code` (`list[obj]`): Set the `icmp_type_code` field on the resulting object. When `null`, the `icmp_type_code` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.icmp_type_code.new](#fn-transit_gateway_configurationtransit_gateway_configurationicmp_type_codenew) constructor.
+  - `port_range` (`list[obj]`): Set the `port_range` field on the resulting object. When `null`, the `port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.port_range.new](#fn-transit_gateway_configurationtransit_gateway_configurationport_rangenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `attachment_network_acl_configuration` sub block.
+
+
+## obj transit_gateway_configuration.attachment_network_acl_configuration.icmp_type_code
+
+
+
+### fn transit_gateway_configuration.attachment_network_acl_configuration.icmp_type_code.new
+
+```ts
+new()
+```
+
+
+`aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.icmp_type_code.new` constructs a new object with attributes and blocks configured for the `icmp_type_code`
+Terraform sub block.
+
+
+
+**Args**:
+  - `code` (`number`): Set the `code` field on the resulting object.
+  - `type` (`number`): Set the `type` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `icmp_type_code` sub block.
+
+
+## obj transit_gateway_configuration.attachment_network_acl_configuration.port_range
+
+
+
+### fn transit_gateway_configuration.attachment_network_acl_configuration.port_range.new
+
+```ts
+new()
+```
+
+
+`aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.port_range.new` constructs a new object with attributes and blocks configured for the `port_range`
+Terraform sub block.
+
+
+
+**Args**:
+  - `from` (`number`): Set the `from` field on the resulting object.
+  - `to` (`number`): Set the `to` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `port_range` sub block.

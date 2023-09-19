@@ -19,11 +19,15 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAs2Config()`](#fn-withas2config)
 * [`fn withAs2ConfigMixin()`](#fn-withas2configmixin)
 * [`fn withLoggingRole()`](#fn-withloggingrole)
+* [`fn withSftpConfig()`](#fn-withsftpconfig)
+* [`fn withSftpConfigMixin()`](#fn-withsftpconfigmixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withUrl()`](#fn-withurl)
 * [`obj as2_config`](#obj-as2_config)
   * [`fn new()`](#fn-as2_confignew)
+* [`obj sftp_config`](#obj-sftp_config)
+  * [`fn new()`](#fn-sftp_confignew)
 
 ## Fields
 
@@ -60,6 +64,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `url` (`string`): Set the `url` field on the resulting resource block.
   - `as2_config` (`list[obj]`): Set the `as2_config` field on the resulting resource block. When `null`, the `as2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.as2_config.new](#fn-as2_confignew) constructor.
+  - `sftp_config` (`list[obj]`): Set the `sftp_config` field on the resulting resource block. When `null`, the `sftp_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.sftp_config.new](#fn-sftp_confignew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -89,6 +94,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `url` (`string`): Set the `url` field on the resulting object.
   - `as2_config` (`list[obj]`): Set the `as2_config` field on the resulting object. When `null`, the `as2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.as2_config.new](#fn-as2_confignew) constructor.
+  - `sftp_config` (`list[obj]`): Set the `sftp_config` field on the resulting object. When `null`, the `sftp_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.sftp_config.new](#fn-sftp_confignew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transfer_connector` resource into the root Terraform configuration.
@@ -161,6 +167,43 @@ Terraform resource block to set or update the logging_role field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `logging_role` field.
+
+
+### fn withSftpConfig
+
+```ts
+withSftpConfig()
+```
+
+`aws.list[obj].withSftpConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the sftp_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withSftpConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `sftp_config` field.
+
+
+### fn withSftpConfigMixin
+
+```ts
+withSftpConfigMixin()
+```
+
+`aws.list[obj].withSftpConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the sftp_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withSftpConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `sftp_config` field.
 
 
 ### fn withTags
@@ -239,3 +282,27 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `as2_config` sub block.
+
+
+## obj sftp_config
+
+
+
+### fn sftp_config.new
+
+```ts
+new()
+```
+
+
+`aws.transfer_connector.sftp_config.new` constructs a new object with attributes and blocks configured for the `sftp_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `trusted_host_keys` (`list`): Set the `trusted_host_keys` field on the resulting object. When `null`, the `trusted_host_keys` field will be omitted from the resulting object.
+  - `user_secret_id` (`string`): Set the `user_secret_id` field on the resulting object. When `null`, the `user_secret_id` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `sftp_config` sub block.

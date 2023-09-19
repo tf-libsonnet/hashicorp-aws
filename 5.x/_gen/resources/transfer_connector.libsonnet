@@ -24,13 +24,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       signing_algorithm: signing_algorithm,
     }),
   },
-  '#new':: d.fn(help="\n`aws.transfer_connector.new` injects a new `aws_transfer_connector` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.transfer_connector.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.transfer_connector` using the reference:\n\n    $._ref.aws_transfer_connector.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_transfer_connector.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `access_role` (`string`): Set the `access_role` field on the resulting resource block.\n  - `logging_role` (`string`): Set the `logging_role` field on the resulting resource block. When `null`, the `logging_role` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `url` (`string`): Set the `url` field on the resulting resource block.\n  - `as2_config` (`list[obj]`): Set the `as2_config` field on the resulting resource block. When `null`, the `as2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.as2_config.new](#fn-as2_confignew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.transfer_connector.new` injects a new `aws_transfer_connector` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.transfer_connector.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.transfer_connector` using the reference:\n\n    $._ref.aws_transfer_connector.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_transfer_connector.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `access_role` (`string`): Set the `access_role` field on the resulting resource block.\n  - `logging_role` (`string`): Set the `logging_role` field on the resulting resource block. When `null`, the `logging_role` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `url` (`string`): Set the `url` field on the resulting resource block.\n  - `as2_config` (`list[obj]`): Set the `as2_config` field on the resulting resource block. When `null`, the `as2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.as2_config.new](#fn-as2_confignew) constructor.\n  - `sftp_config` (`list[obj]`): Set the `sftp_config` field on the resulting resource block. When `null`, the `sftp_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.sftp_config.new](#fn-sftp_confignew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     access_role,
     url,
     as2_config=null,
     logging_role=null,
+    sftp_config=null,
     tags=null,
     tags_all=null,
     _meta={}
@@ -41,28 +42,41 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       access_role=access_role,
       as2_config=as2_config,
       logging_role=logging_role,
+      sftp_config=sftp_config,
       tags=tags,
       tags_all=tags_all,
       url=url
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.transfer_connector.newAttrs` constructs a new object with attributes and blocks configured for the `transfer_connector`\nTerraform resource.\n\nUnlike [aws.transfer_connector.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `access_role` (`string`): Set the `access_role` field on the resulting object.\n  - `logging_role` (`string`): Set the `logging_role` field on the resulting object. When `null`, the `logging_role` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `url` (`string`): Set the `url` field on the resulting object.\n  - `as2_config` (`list[obj]`): Set the `as2_config` field on the resulting object. When `null`, the `as2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.as2_config.new](#fn-as2_confignew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transfer_connector` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.transfer_connector.newAttrs` constructs a new object with attributes and blocks configured for the `transfer_connector`\nTerraform resource.\n\nUnlike [aws.transfer_connector.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `access_role` (`string`): Set the `access_role` field on the resulting object.\n  - `logging_role` (`string`): Set the `logging_role` field on the resulting object. When `null`, the `logging_role` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `url` (`string`): Set the `url` field on the resulting object.\n  - `as2_config` (`list[obj]`): Set the `as2_config` field on the resulting object. When `null`, the `as2_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.as2_config.new](#fn-as2_confignew) constructor.\n  - `sftp_config` (`list[obj]`): Set the `sftp_config` field on the resulting object. When `null`, the `sftp_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.transfer_connector.sftp_config.new](#fn-sftp_confignew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `transfer_connector` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     access_role,
     url,
     as2_config=null,
     logging_role=null,
+    sftp_config=null,
     tags=null,
     tags_all=null
   ):: std.prune(a={
     access_role: access_role,
     as2_config: as2_config,
     logging_role: logging_role,
+    sftp_config: sftp_config,
     tags: tags,
     tags_all: tags_all,
     url: url,
   }),
+  sftp_config:: {
+    '#new':: d.fn(help='\n`aws.transfer_connector.sftp_config.new` constructs a new object with attributes and blocks configured for the `sftp_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `trusted_host_keys` (`list`): Set the `trusted_host_keys` field on the resulting object. When `null`, the `trusted_host_keys` field will be omitted from the resulting object.\n  - `user_secret_id` (`string`): Set the `user_secret_id` field on the resulting object. When `null`, the `user_secret_id` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `sftp_config` sub block.\n', args=[]),
+    new(
+      trusted_host_keys=null,
+      user_secret_id=null
+    ):: std.prune(a={
+      trusted_host_keys: trusted_host_keys,
+      user_secret_id: user_secret_id,
+    }),
+  },
   '#withAccessRole':: d.fn(help='`aws.string.withAccessRole` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the access_role field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `access_role` field.\n', args=[]),
   withAccessRole(resourceLabel, value): {
     resource+: {
@@ -99,6 +113,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_transfer_connector+: {
         [resourceLabel]+: {
           logging_role: value,
+        },
+      },
+    },
+  },
+  '#withSftpConfig':: d.fn(help='`aws.list[obj].withSftpConfig` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the sftp_config field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withSftpConfigMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `sftp_config` field.\n', args=[]),
+  withSftpConfig(resourceLabel, value): {
+    resource+: {
+      aws_transfer_connector+: {
+        [resourceLabel]+: {
+          sftp_config: value,
+        },
+      },
+    },
+  },
+  '#withSftpConfigMixin':: d.fn(help='`aws.list[obj].withSftpConfigMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the sftp_config field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withSftpConfig](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `sftp_config` field.\n', args=[]),
+  withSftpConfigMixin(resourceLabel, value): {
+    resource+: {
+      aws_transfer_connector+: {
+        [resourceLabel]+: {
+          sftp_config+: if std.isArray(v=value) then value else [value],
         },
       },
     },

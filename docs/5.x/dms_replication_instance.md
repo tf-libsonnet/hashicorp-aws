@@ -23,6 +23,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withEngineVersion()`](#fn-withengineversion)
 * [`fn withKmsKeyArn()`](#fn-withkmskeyarn)
 * [`fn withMultiAz()`](#fn-withmultiaz)
+* [`fn withNetworkType()`](#fn-withnetworktype)
 * [`fn withPreferredMaintenanceWindow()`](#fn-withpreferredmaintenancewindow)
 * [`fn withPubliclyAccessible()`](#fn-withpubliclyaccessible)
 * [`fn withReplicationInstanceClass()`](#fn-withreplicationinstanceclass)
@@ -73,6 +74,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `multi_az` (`bool`): Set the `multi_az` field on the resulting resource block. When `null`, the `multi_az` field will be omitted from the resulting object.
+  - `network_type` (`string`): Set the `network_type` field on the resulting resource block. When `null`, the `network_type` field will be omitted from the resulting object.
   - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting resource block. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting resource block. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `replication_instance_class` (`string`): Set the `replication_instance_class` field on the resulting resource block.
@@ -113,6 +115,7 @@ injecting into a complete block.
   - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `multi_az` (`bool`): Set the `multi_az` field on the resulting object. When `null`, the `multi_az` field will be omitted from the resulting object.
+  - `network_type` (`string`): Set the `network_type` field on the resulting object. When `null`, the `network_type` field will be omitted from the resulting object.
   - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting object. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting object. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `replication_instance_class` (`string`): Set the `replication_instance_class` field on the resulting object.
@@ -253,6 +256,22 @@ Terraform resource block to set or update the multi_az field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `multi_az` field.
+
+
+### fn withNetworkType
+
+```ts
+withNetworkType()
+```
+
+`aws.string.withNetworkType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the network_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `network_type` field.
 
 
 ### fn withPreferredMaintenanceWindow

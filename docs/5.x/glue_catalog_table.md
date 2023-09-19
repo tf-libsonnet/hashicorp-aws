@@ -19,6 +19,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDatabaseName()`](#fn-withdatabasename)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withName()`](#fn-withname)
+* [`fn withOpenTableFormatInput()`](#fn-withopentableformatinput)
+* [`fn withOpenTableFormatInputMixin()`](#fn-withopentableformatinputmixin)
 * [`fn withOwner()`](#fn-withowner)
 * [`fn withParameters()`](#fn-withparameters)
 * [`fn withPartitionIndex()`](#fn-withpartitionindex)
@@ -33,6 +35,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTargetTableMixin()`](#fn-withtargettablemixin)
 * [`fn withViewExpandedText()`](#fn-withviewexpandedtext)
 * [`fn withViewOriginalText()`](#fn-withvieworiginaltext)
+* [`obj open_table_format_input`](#obj-open_table_format_input)
+  * [`fn new()`](#fn-open_table_format_inputnew)
+  * [`obj open_table_format_input.iceberg_input`](#obj-open_table_format_inputiceberg_input)
+    * [`fn new()`](#fn-open_table_format_inputiceberg_inputnew)
 * [`obj partition_index`](#obj-partition_index)
   * [`fn new()`](#fn-partition_indexnew)
 * [`obj partition_keys`](#obj-partition_keys)
@@ -93,6 +99,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `table_type` (`string`): Set the `table_type` field on the resulting resource block. When `null`, the `table_type` field will be omitted from the resulting object.
   - `view_expanded_text` (`string`): Set the `view_expanded_text` field on the resulting resource block. When `null`, the `view_expanded_text` field will be omitted from the resulting object.
   - `view_original_text` (`string`): Set the `view_original_text` field on the resulting resource block. When `null`, the `view_original_text` field will be omitted from the resulting object.
+  - `open_table_format_input` (`list[obj]`): Set the `open_table_format_input` field on the resulting resource block. When `null`, the `open_table_format_input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.open_table_format_input.new](#fn-open_table_format_inputnew) constructor.
   - `partition_index` (`list[obj]`): Set the `partition_index` field on the resulting resource block. When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_index.new](#fn-partition_indexnew) constructor.
   - `partition_keys` (`list[obj]`): Set the `partition_keys` field on the resulting resource block. When `null`, the `partition_keys` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_keys.new](#fn-partition_keysnew) constructor.
   - `storage_descriptor` (`list[obj]`): Set the `storage_descriptor` field on the resulting resource block. When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.new](#fn-storage_descriptornew) constructor.
@@ -130,6 +137,7 @@ injecting into a complete block.
   - `table_type` (`string`): Set the `table_type` field on the resulting object. When `null`, the `table_type` field will be omitted from the resulting object.
   - `view_expanded_text` (`string`): Set the `view_expanded_text` field on the resulting object. When `null`, the `view_expanded_text` field will be omitted from the resulting object.
   - `view_original_text` (`string`): Set the `view_original_text` field on the resulting object. When `null`, the `view_original_text` field will be omitted from the resulting object.
+  - `open_table_format_input` (`list[obj]`): Set the `open_table_format_input` field on the resulting object. When `null`, the `open_table_format_input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.open_table_format_input.new](#fn-open_table_format_inputnew) constructor.
   - `partition_index` (`list[obj]`): Set the `partition_index` field on the resulting object. When `null`, the `partition_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_index.new](#fn-partition_indexnew) constructor.
   - `partition_keys` (`list[obj]`): Set the `partition_keys` field on the resulting object. When `null`, the `partition_keys` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.partition_keys.new](#fn-partition_keysnew) constructor.
   - `storage_descriptor` (`list[obj]`): Set the `storage_descriptor` field on the resulting object. When `null`, the `storage_descriptor` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.storage_descriptor.new](#fn-storage_descriptornew) constructor.
@@ -201,6 +209,43 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withOpenTableFormatInput
+
+```ts
+withOpenTableFormatInput()
+```
+
+`aws.list[obj].withOpenTableFormatInput` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the open_table_format_input field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withOpenTableFormatInputMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `open_table_format_input` field.
+
+
+### fn withOpenTableFormatInputMixin
+
+```ts
+withOpenTableFormatInputMixin()
+```
+
+`aws.list[obj].withOpenTableFormatInputMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the open_table_format_input field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withOpenTableFormatInput](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `open_table_format_input` field.
 
 
 ### fn withOwner
@@ -445,6 +490,53 @@ Terraform resource block to set or update the view_original_text field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `view_original_text` field.
+
+
+## obj open_table_format_input
+
+
+
+### fn open_table_format_input.new
+
+```ts
+new()
+```
+
+
+`aws.glue_catalog_table.open_table_format_input.new` constructs a new object with attributes and blocks configured for the `open_table_format_input`
+Terraform sub block.
+
+
+
+**Args**:
+  - `iceberg_input` (`list[obj]`): Set the `iceberg_input` field on the resulting object. When `null`, the `iceberg_input` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.glue_catalog_table.open_table_format_input.iceberg_input.new](#fn-open_table_format_inputiceberg_inputnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `open_table_format_input` sub block.
+
+
+## obj open_table_format_input.iceberg_input
+
+
+
+### fn open_table_format_input.iceberg_input.new
+
+```ts
+new()
+```
+
+
+`aws.glue_catalog_table.open_table_format_input.iceberg_input.new` constructs a new object with attributes and blocks configured for the `iceberg_input`
+Terraform sub block.
+
+
+
+**Args**:
+  - `metadata_operation` (`string`): Set the `metadata_operation` field on the resulting object.
+  - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `iceberg_input` sub block.
 
 
 ## obj partition_index

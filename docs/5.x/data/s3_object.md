@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withBucket()`](#fn-withbucket)
+* [`fn withChecksumMode()`](#fn-withchecksummode)
 * [`fn withKey()`](#fn-withkey)
 * [`fn withRange()`](#fn-withrange)
 * [`fn withTags()`](#fn-withtags)
@@ -51,6 +52,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `bucket` (`string`): Set the `bucket` field on the resulting data source block.
+  - `checksum_mode` (`string`): Set the `checksum_mode` field on the resulting data source block. When `null`, the `checksum_mode` field will be omitted from the resulting object.
   - `key` (`string`): Set the `key` field on the resulting data source block.
   - `range` (`string`): Set the `range` field on the resulting data source block. When `null`, the `range` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
@@ -79,6 +81,7 @@ injecting into a complete block.
 
 **Args**:
   - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `checksum_mode` (`string`): Set the `checksum_mode` field on the resulting object. When `null`, the `checksum_mode` field will be omitted from the resulting object.
   - `key` (`string`): Set the `key` field on the resulting object.
   - `range` (`string`): Set the `range` field on the resulting object. When `null`, the `range` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
@@ -102,6 +105,22 @@ Terraform data source block to set or update the bucket field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `bucket` field.
+
+
+### fn withChecksumMode
+
+```ts
+withChecksumMode()
+```
+
+`aws.string.withChecksumMode` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the checksum_mode field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `checksum_mode` field.
 
 
 ### fn withKey

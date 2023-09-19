@@ -72,11 +72,51 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   transit_gateway_configuration:: {
-    '#new':: d.fn(help='\n`aws.finspace_kx_environment.transit_gateway_configuration.new` constructs a new object with attributes and blocks configured for the `transit_gateway_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `routable_cidr_space` (`string`): Set the `routable_cidr_space` field on the resulting object.\n  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `transit_gateway_configuration` sub block.\n', args=[]),
+    attachment_network_acl_configuration:: {
+      icmp_type_code:: {
+        '#new':: d.fn(help='\n`aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.icmp_type_code.new` constructs a new object with attributes and blocks configured for the `icmp_type_code`\nTerraform sub block.\n\n\n\n**Args**:\n  - `code` (`number`): Set the `code` field on the resulting object.\n  - `type` (`number`): Set the `type` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `icmp_type_code` sub block.\n', args=[]),
+        new(
+          code,
+          type
+        ):: std.prune(a={
+          code: code,
+          type: type,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.new` constructs a new object with attributes and blocks configured for the `attachment_network_acl_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cidr_block` (`string`): Set the `cidr_block` field on the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting object.\n  - `rule_action` (`string`): Set the `rule_action` field on the resulting object.\n  - `rule_number` (`number`): Set the `rule_number` field on the resulting object.\n  - `icmp_type_code` (`list[obj]`): Set the `icmp_type_code` field on the resulting object. When `null`, the `icmp_type_code` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.icmp_type_code.new](#fn-transit_gateway_configurationtransit_gateway_configurationicmp_type_codenew) constructor.\n  - `port_range` (`list[obj]`): Set the `port_range` field on the resulting object. When `null`, the `port_range` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.port_range.new](#fn-transit_gateway_configurationtransit_gateway_configurationport_rangenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `attachment_network_acl_configuration` sub block.\n', args=[]),
+      new(
+        cidr_block,
+        protocol,
+        rule_action,
+        rule_number,
+        icmp_type_code=null,
+        port_range=null
+      ):: std.prune(a={
+        cidr_block: cidr_block,
+        icmp_type_code: icmp_type_code,
+        port_range: port_range,
+        protocol: protocol,
+        rule_action: rule_action,
+        rule_number: rule_number,
+      }),
+      port_range:: {
+        '#new':: d.fn(help='\n`aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.port_range.new` constructs a new object with attributes and blocks configured for the `port_range`\nTerraform sub block.\n\n\n\n**Args**:\n  - `from` (`number`): Set the `from` field on the resulting object.\n  - `to` (`number`): Set the `to` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `port_range` sub block.\n', args=[]),
+        new(
+          from,
+          to
+        ):: std.prune(a={
+          from: from,
+          to: to,
+        }),
+      },
+    },
+    '#new':: d.fn(help='\n`aws.finspace_kx_environment.transit_gateway_configuration.new` constructs a new object with attributes and blocks configured for the `transit_gateway_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `routable_cidr_space` (`string`): Set the `routable_cidr_space` field on the resulting object.\n  - `transit_gateway_id` (`string`): Set the `transit_gateway_id` field on the resulting object.\n  - `attachment_network_acl_configuration` (`list[obj]`): Set the `attachment_network_acl_configuration` field on the resulting object. When `null`, the `attachment_network_acl_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_environment.transit_gateway_configuration.attachment_network_acl_configuration.new](#fn-transit_gateway_configurationattachment_network_acl_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `transit_gateway_configuration` sub block.\n', args=[]),
     new(
       routable_cidr_space,
-      transit_gateway_id
+      transit_gateway_id,
+      attachment_network_acl_configuration=null
     ):: std.prune(a={
+      attachment_network_acl_configuration: attachment_network_acl_configuration,
       routable_cidr_space: routable_cidr_space,
       transit_gateway_id: transit_gateway_id,
     }),

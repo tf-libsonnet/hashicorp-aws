@@ -45,6 +45,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSubnetGroupName()`](#fn-withsubnetgroupname)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTransitEncryptionEnabled()`](#fn-withtransitencryptionenabled)
 * [`obj log_delivery_configuration`](#obj-log_delivery_configuration)
   * [`fn new()`](#fn-log_delivery_configurationnew)
 
@@ -105,6 +106,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `subnet_group_name` (`string`): Set the `subnet_group_name` field on the resulting resource block. When `null`, the `subnet_group_name` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_encryption_enabled` (`bool`): Set the `transit_encryption_enabled` field on the resulting resource block. When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
   - `log_delivery_configuration` (`list[obj]`): Set the `log_delivery_configuration` field on the resulting resource block. When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
 
 **Returns**:
@@ -157,6 +159,7 @@ injecting into a complete block.
   - `subnet_group_name` (`string`): Set the `subnet_group_name` field on the resulting object. When `null`, the `subnet_group_name` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `transit_encryption_enabled` (`bool`): Set the `transit_encryption_enabled` field on the resulting object. When `null`, the `transit_encryption_enabled` field will be omitted from the resulting object.
   - `log_delivery_configuration` (`list[obj]`): Set the `log_delivery_configuration` field on the resulting object. When `null`, the `log_delivery_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.elasticache_cluster.log_delivery_configuration.new](#fn-log_delivery_configurationnew) constructor.
 
 **Returns**:
@@ -646,6 +649,22 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
+
+
+### fn withTransitEncryptionEnabled
+
+```ts
+withTransitEncryptionEnabled()
+```
+
+`aws.bool.withTransitEncryptionEnabled` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the transit_encryption_enabled field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `transit_encryption_enabled` field.
 
 
 ## obj log_delivery_configuration

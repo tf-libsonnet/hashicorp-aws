@@ -28,6 +28,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withOutputLocationMixin()`](#fn-withoutputlocationmixin)
 * [`fn withParameters()`](#fn-withparameters)
 * [`fn withScheduleExpression()`](#fn-withscheduleexpression)
+* [`fn withSyncCompliance()`](#fn-withsynccompliance)
 * [`fn withTargets()`](#fn-withtargets)
 * [`fn withTargetsMixin()`](#fn-withtargetsmixin)
 * [`fn withWaitForSuccessTimeoutSeconds()`](#fn-withwaitforsuccesstimeoutseconds)
@@ -76,6 +77,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
   - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting resource block. When `null`, the `schedule_expression` field will be omitted from the resulting object.
+  - `sync_compliance` (`string`): Set the `sync_compliance` field on the resulting resource block. When `null`, the `sync_compliance` field will be omitted from the resulting object.
   - `wait_for_success_timeout_seconds` (`number`): Set the `wait_for_success_timeout_seconds` field on the resulting resource block. When `null`, the `wait_for_success_timeout_seconds` field will be omitted from the resulting object.
   - `output_location` (`list[obj]`): Set the `output_location` field on the resulting resource block. When `null`, the `output_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.output_location.new](#fn-output_locationnew) constructor.
   - `targets` (`list[obj]`): Set the `targets` field on the resulting resource block. When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.targets.new](#fn-targetsnew) constructor.
@@ -113,6 +115,7 @@ injecting into a complete block.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
   - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object. When `null`, the `schedule_expression` field will be omitted from the resulting object.
+  - `sync_compliance` (`string`): Set the `sync_compliance` field on the resulting object. When `null`, the `sync_compliance` field will be omitted from the resulting object.
   - `wait_for_success_timeout_seconds` (`number`): Set the `wait_for_success_timeout_seconds` field on the resulting object. When `null`, the `wait_for_success_timeout_seconds` field will be omitted from the resulting object.
   - `output_location` (`list[obj]`): Set the `output_location` field on the resulting object. When `null`, the `output_location` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.output_location.new](#fn-output_locationnew) constructor.
   - `targets` (`list[obj]`): Set the `targets` field on the resulting object. When `null`, the `targets` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ssm_association.targets.new](#fn-targetsnew) constructor.
@@ -332,6 +335,22 @@ Terraform resource block to set or update the schedule_expression field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `schedule_expression` field.
+
+
+### fn withSyncCompliance
+
+```ts
+withSyncCompliance()
+```
+
+`aws.string.withSyncCompliance` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the sync_compliance field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `sync_compliance` field.
 
 
 ### fn withTargets

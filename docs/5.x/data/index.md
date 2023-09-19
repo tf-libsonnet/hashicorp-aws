@@ -86,6 +86,7 @@ permalink: /data/
 * [codecommit_approval_rule_template](codecommit_approval_rule_template.md)
 * [codecommit_repository](codecommit_repository.md)
 * [codestarconnections_connection](codestarconnections_connection.md)
+* [cognito_identity_pool](cognito_identity_pool.md)
 * [cognito_user_pool_client](cognito_user_pool_client.md)
 * [cognito_user_pool_clients](cognito_user_pool_clients.md)
 * [cognito_user_pool_signing_certificate](cognito_user_pool_signing_certificate.md)

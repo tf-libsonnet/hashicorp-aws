@@ -41,6 +41,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withOffPeakWindowOptionsMixin()`](#fn-withoffpeakwindowoptionsmixin)
 * [`fn withSnapshotOptions()`](#fn-withsnapshotoptions)
 * [`fn withSnapshotOptionsMixin()`](#fn-withsnapshotoptionsmixin)
+* [`fn withSoftwareUpdateOptions()`](#fn-withsoftwareupdateoptions)
+* [`fn withSoftwareUpdateOptionsMixin()`](#fn-withsoftwareupdateoptionsmixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -83,6 +85,8 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-off_peak_window_optionsoff_peak_windowwindow_start_timenew)
 * [`obj snapshot_options`](#obj-snapshot_options)
   * [`fn new()`](#fn-snapshot_optionsnew)
+* [`obj software_update_options`](#obj-software_update_options)
+  * [`fn new()`](#fn-software_update_optionsnew)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
 * [`obj vpc_options`](#obj-vpc_options)
@@ -134,6 +138,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `node_to_node_encryption` (`list[obj]`): Set the `node_to_node_encryption` field on the resulting resource block. When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
   - `off_peak_window_options` (`list[obj]`): Set the `off_peak_window_options` field on the resulting resource block. When `null`, the `off_peak_window_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.off_peak_window_options.new](#fn-off_peak_window_optionsnew) constructor.
   - `snapshot_options` (`list[obj]`): Set the `snapshot_options` field on the resulting resource block. When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
+  - `software_update_options` (`list[obj]`): Set the `software_update_options` field on the resulting resource block. When `null`, the `software_update_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.software_update_options.new](#fn-software_update_optionsnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_options` (`list[obj]`): Set the `vpc_options` field on the resulting resource block. When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
 
@@ -176,6 +181,7 @@ injecting into a complete block.
   - `node_to_node_encryption` (`list[obj]`): Set the `node_to_node_encryption` field on the resulting object. When `null`, the `node_to_node_encryption` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.node_to_node_encryption.new](#fn-node_to_node_encryptionnew) constructor.
   - `off_peak_window_options` (`list[obj]`): Set the `off_peak_window_options` field on the resulting object. When `null`, the `off_peak_window_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.off_peak_window_options.new](#fn-off_peak_window_optionsnew) constructor.
   - `snapshot_options` (`list[obj]`): Set the `snapshot_options` field on the resulting object. When `null`, the `snapshot_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.snapshot_options.new](#fn-snapshot_optionsnew) constructor.
+  - `software_update_options` (`list[obj]`): Set the `software_update_options` field on the resulting object. When `null`, the `software_update_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.software_update_options.new](#fn-software_update_optionsnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_options` (`list[obj]`): Set the `vpc_options` field on the resulting object. When `null`, the `vpc_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearch_domain.vpc_options.new](#fn-vpc_optionsnew) constructor.
 
@@ -654,6 +660,43 @@ function.
   - `value` (`list[obj]`): The value to set for the `snapshot_options` field.
 
 
+### fn withSoftwareUpdateOptions
+
+```ts
+withSoftwareUpdateOptions()
+```
+
+`aws.list[obj].withSoftwareUpdateOptions` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the software_update_options field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withSoftwareUpdateOptionsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `software_update_options` field.
+
+
+### fn withSoftwareUpdateOptionsMixin
+
+```ts
+withSoftwareUpdateOptionsMixin()
+```
+
+`aws.list[obj].withSoftwareUpdateOptionsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the software_update_options field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withSoftwareUpdateOptions](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `software_update_options` field.
+
+
 ### fn withTags
 
 ```ts
@@ -906,6 +949,7 @@ Terraform sub block.
   - `dedicated_master_type` (`string`): Set the `dedicated_master_type` field on the resulting object. When `null`, the `dedicated_master_type` field will be omitted from the resulting object.
   - `instance_count` (`number`): Set the `instance_count` field on the resulting object. When `null`, the `instance_count` field will be omitted from the resulting object.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
+  - `multi_az_with_standby_enabled` (`bool`): Set the `multi_az_with_standby_enabled` field on the resulting object. When `null`, the `multi_az_with_standby_enabled` field will be omitted from the resulting object.
   - `warm_count` (`number`): Set the `warm_count` field on the resulting object. When `null`, the `warm_count` field will be omitted from the resulting object.
   - `warm_enabled` (`bool`): Set the `warm_enabled` field on the resulting object. When `null`, the `warm_enabled` field will be omitted from the resulting object.
   - `warm_type` (`string`): Set the `warm_type` field on the resulting object. When `null`, the `warm_type` field will be omitted from the resulting object.
@@ -1207,6 +1251,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `snapshot_options` sub block.
+
+
+## obj software_update_options
+
+
+
+### fn software_update_options.new
+
+```ts
+new()
+```
+
+
+`aws.opensearch_domain.software_update_options.new` constructs a new object with attributes and blocks configured for the `software_update_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `auto_software_update_enabled` (`bool`): Set the `auto_software_update_enabled` field on the resulting object. When `null`, the `auto_software_update_enabled` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `software_update_options` sub block.
 
 
 ## obj timeouts
