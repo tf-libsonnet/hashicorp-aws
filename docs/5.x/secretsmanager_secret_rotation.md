@@ -51,7 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting resource block.
+  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting resource block. When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
   - `secret_id` (`string`): Set the `secret_id` field on the resulting resource block.
   - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting resource block. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret_rotation.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 
@@ -77,7 +77,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting object.
+  - `rotation_lambda_arn` (`string`): Set the `rotation_lambda_arn` field on the resulting object. When `null`, the `rotation_lambda_arn` field will be omitted from the resulting object.
   - `secret_id` (`string`): Set the `secret_id` field on the resulting object.
   - `rotation_rules` (`list[obj]`): Set the `rotation_rules` field on the resulting object. When `null`, the `rotation_rules` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.secretsmanager_secret_rotation.rotation_rules.new](#fn-rotation_rulesnew) constructor.
 

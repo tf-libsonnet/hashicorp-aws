@@ -178,6 +178,7 @@ Terraform sub block.
   - `ec2` (`bool`): Set the `ec2` field on the resulting object.
   - `ecr` (`bool`): Set the `ecr` field on the resulting object.
   - `lambda` (`bool`): Set the `lambda` field on the resulting object. When `null`, the `lambda` field will be omitted from the resulting object.
+  - `lambda_code` (`bool`): Set the `lambda_code` field on the resulting object. When `null`, the `lambda_code` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `auto_enable` sub block.

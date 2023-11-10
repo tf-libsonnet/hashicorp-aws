@@ -37,17 +37,19 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         unhealthy_threshold_count: unhealthy_threshold_count,
       }),
     },
-    '#new':: d.fn(help='\n`aws.vpclattice_target_group.config.new` constructs a new object with attributes and blocks configured for the `config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.\n  - `port` (`number`): Set the `port` field on the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting object.\n  - `protocol_version` (`string`): Set the `protocol_version` field on the resulting object. When `null`, the `protocol_version` field will be omitted from the resulting object.\n  - `vpc_identifier` (`string`): Set the `vpc_identifier` field on the resulting object.\n  - `health_check` (`list[obj]`): Set the `health_check` field on the resulting object. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpclattice_target_group.config.health_check.new](#fn-confighealth_checknew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.vpclattice_target_group.config.new` constructs a new object with attributes and blocks configured for the `config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.\n  - `lambda_event_structure_version` (`string`): Set the `lambda_event_structure_version` field on the resulting object. When `null`, the `lambda_event_structure_version` field will be omitted from the resulting object.\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.\n  - `protocol_version` (`string`): Set the `protocol_version` field on the resulting object. When `null`, the `protocol_version` field will be omitted from the resulting object.\n  - `vpc_identifier` (`string`): Set the `vpc_identifier` field on the resulting object. When `null`, the `vpc_identifier` field will be omitted from the resulting object.\n  - `health_check` (`list[obj]`): Set the `health_check` field on the resulting object. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpclattice_target_group.config.health_check.new](#fn-confighealth_checknew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `config` sub block.\n', args=[]),
     new(
-      port,
-      protocol,
-      vpc_identifier,
       health_check=null,
       ip_address_type=null,
-      protocol_version=null
+      lambda_event_structure_version=null,
+      port=null,
+      protocol=null,
+      protocol_version=null,
+      vpc_identifier=null
     ):: std.prune(a={
       health_check: health_check,
       ip_address_type: ip_address_type,
+      lambda_event_structure_version: lambda_event_structure_version,
       port: port,
       protocol: protocol,
       protocol_version: protocol_version,

@@ -1140,6 +1140,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `ipv6_allowed_for_dual_stack` (`bool`): Set the `ipv6_allowed_for_dual_stack` field on the resulting object. When `null`, the `ipv6_allowed_for_dual_stack` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.
   - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
 

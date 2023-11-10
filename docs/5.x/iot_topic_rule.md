@@ -104,6 +104,8 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-error_actioniot_eventsnew)
   * [`obj error_action.kafka`](#obj-error_actionkafka)
     * [`fn new()`](#fn-error_actionkafkanew)
+    * [`obj error_action.kafka.header`](#obj-error_actionkafkaheader)
+      * [`fn new()`](#fn-error_actionkafkaheadernew)
   * [`obj error_action.kinesis`](#obj-error_actionkinesis)
     * [`fn new()`](#fn-error_actionkinesisnew)
   * [`obj error_action.lambda`](#obj-error_actionlambda)
@@ -136,6 +138,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-iot_eventsnew)
 * [`obj kafka`](#obj-kafka)
   * [`fn new()`](#fn-kafkanew)
+  * [`obj kafka.header`](#obj-kafkaheader)
+    * [`fn new()`](#fn-kafkaheadernew)
 * [`obj kinesis`](#obj-kinesis)
   * [`fn new()`](#fn-kinesisnew)
 * [`obj lambda`](#obj-lambda)
@@ -1675,9 +1679,34 @@ Terraform sub block.
   - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
   - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.
   - `topic` (`string`): Set the `topic` field on the resulting object.
+  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kafka.header.new](#fn-error_actionerror_actionheadernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kafka` sub block.
+
+
+## obj error_action.kafka.header
+
+
+
+### fn error_action.kafka.header.new
+
+```ts
+new()
+```
+
+
+`aws.iot_topic_rule.error_action.kafka.header.new` constructs a new object with attributes and blocks configured for the `header`
+Terraform sub block.
+
+
+
+**Args**:
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `header` sub block.
 
 
 ## obj error_action.kinesis
@@ -2077,9 +2106,34 @@ Terraform sub block.
   - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.
   - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.
   - `topic` (`string`): Set the `topic` field on the resulting object.
+  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kafka.header.new](#fn-kafkaheadernew) constructor.
 
 **Returns**:
   - An attribute object that represents the `kafka` sub block.
+
+
+## obj kafka.header
+
+
+
+### fn kafka.header.new
+
+```ts
+new()
+```
+
+
+`aws.iot_topic_rule.kafka.header.new` constructs a new object with attributes and blocks configured for the `header`
+Terraform sub block.
+
+
+
+**Args**:
+  - `key` (`string`): Set the `key` field on the resulting object.
+  - `value` (`string`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `header` sub block.
 
 
 ## obj kinesis

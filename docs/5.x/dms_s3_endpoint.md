@@ -46,6 +46,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withEndpointType()`](#fn-withendpointtype)
 * [`fn withExpectedBucketOwner()`](#fn-withexpectedbucketowner)
 * [`fn withExternalTableDefinition()`](#fn-withexternaltabledefinition)
+* [`fn withGlueCatalogGeneration()`](#fn-withgluecataloggeneration)
 * [`fn withIgnoreHeaderRows()`](#fn-withignoreheaderrows)
 * [`fn withIncludeOpForFullLoad()`](#fn-withincludeopforfullload)
 * [`fn withKmsKeyArn()`](#fn-withkmskeyarn)
@@ -128,6 +129,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting resource block.
   - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `external_table_definition` (`string`): Set the `external_table_definition` field on the resulting resource block. When `null`, the `external_table_definition` field will be omitted from the resulting object.
+  - `glue_catalog_generation` (`bool`): Set the `glue_catalog_generation` field on the resulting resource block. When `null`, the `glue_catalog_generation` field will be omitted from the resulting object.
   - `ignore_header_rows` (`number`): Set the `ignore_header_rows` field on the resulting resource block. When `null`, the `ignore_header_rows` field will be omitted from the resulting object.
   - `include_op_for_full_load` (`bool`): Set the `include_op_for_full_load` field on the resulting resource block. When `null`, the `include_op_for_full_load` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
@@ -200,6 +202,7 @@ injecting into a complete block.
   - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting object.
   - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.
   - `external_table_definition` (`string`): Set the `external_table_definition` field on the resulting object. When `null`, the `external_table_definition` field will be omitted from the resulting object.
+  - `glue_catalog_generation` (`bool`): Set the `glue_catalog_generation` field on the resulting object. When `null`, the `glue_catalog_generation` field will be omitted from the resulting object.
   - `ignore_header_rows` (`number`): Set the `ignore_header_rows` field on the resulting object. When `null`, the `ignore_header_rows` field will be omitted from the resulting object.
   - `include_op_for_full_load` (`bool`): Set the `include_op_for_full_load` field on the resulting object. When `null`, the `include_op_for_full_load` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
@@ -717,6 +720,22 @@ Terraform resource block to set or update the external_table_definition field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `external_table_definition` field.
+
+
+### fn withGlueCatalogGeneration
+
+```ts
+withGlueCatalogGeneration()
+```
+
+`aws.bool.withGlueCatalogGeneration` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the glue_catalog_generation field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `glue_catalog_generation` field.
 
 
 ### fn withIgnoreHeaderRows

@@ -19,6 +19,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDistributionConfigurationArn()`](#fn-withdistributionconfigurationarn)
 * [`fn withEnhancedImageMetadataEnabled()`](#fn-withenhancedimagemetadataenabled)
 * [`fn withImageRecipeArn()`](#fn-withimagerecipearn)
+* [`fn withImageScanningConfiguration()`](#fn-withimagescanningconfiguration)
+* [`fn withImageScanningConfigurationMixin()`](#fn-withimagescanningconfigurationmixin)
 * [`fn withImageTestsConfiguration()`](#fn-withimagetestsconfiguration)
 * [`fn withImageTestsConfigurationMixin()`](#fn-withimagetestsconfigurationmixin)
 * [`fn withInfrastructureConfigurationArn()`](#fn-withinfrastructureconfigurationarn)
@@ -26,6 +28,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`obj image_scanning_configuration`](#obj-image_scanning_configuration)
+  * [`fn new()`](#fn-image_scanning_configurationnew)
+  * [`obj image_scanning_configuration.ecr_configuration`](#obj-image_scanning_configurationecr_configuration)
+    * [`fn new()`](#fn-image_scanning_configurationecr_configurationnew)
 * [`obj image_tests_configuration`](#obj-image_tests_configuration)
   * [`fn new()`](#fn-image_tests_configurationnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -67,6 +73,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `infrastructure_configuration_arn` (`string`): Set the `infrastructure_configuration_arn` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `image_scanning_configuration` (`list[obj]`): Set the `image_scanning_configuration` field on the resulting resource block. When `null`, the `image_scanning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image.image_scanning_configuration.new](#fn-image_scanning_configurationnew) constructor.
   - `image_tests_configuration` (`list[obj]`): Set the `image_tests_configuration` field on the resulting resource block. When `null`, the `image_tests_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image.image_tests_configuration.new](#fn-image_tests_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -99,6 +106,7 @@ injecting into a complete block.
   - `infrastructure_configuration_arn` (`string`): Set the `infrastructure_configuration_arn` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `image_scanning_configuration` (`list[obj]`): Set the `image_scanning_configuration` field on the resulting object. When `null`, the `image_scanning_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image.image_scanning_configuration.new](#fn-image_scanning_configurationnew) constructor.
   - `image_tests_configuration` (`list[obj]`): Set the `image_tests_configuration` field on the resulting object. When `null`, the `image_tests_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image.image_tests_configuration.new](#fn-image_tests_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -168,6 +176,43 @@ Terraform resource block to set or update the image_recipe_arn field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `image_recipe_arn` field.
+
+
+### fn withImageScanningConfiguration
+
+```ts
+withImageScanningConfiguration()
+```
+
+`aws.list[obj].withImageScanningConfiguration` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the image_scanning_configuration field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withImageScanningConfigurationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `image_scanning_configuration` field.
+
+
+### fn withImageScanningConfigurationMixin
+
+```ts
+withImageScanningConfigurationMixin()
+```
+
+`aws.list[obj].withImageScanningConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the image_scanning_configuration field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withImageScanningConfiguration](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `image_scanning_configuration` field.
 
 
 ### fn withImageTestsConfiguration
@@ -289,6 +334,54 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `timeouts` field.
+
+
+## obj image_scanning_configuration
+
+
+
+### fn image_scanning_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.imagebuilder_image.image_scanning_configuration.new` constructs a new object with attributes and blocks configured for the `image_scanning_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `image_scanning_enabled` (`bool`): Set the `image_scanning_enabled` field on the resulting object. When `null`, the `image_scanning_enabled` field will be omitted from the resulting object.
+  - `ecr_configuration` (`list[obj]`): Set the `ecr_configuration` field on the resulting object. When `null`, the `ecr_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.imagebuilder_image.image_scanning_configuration.ecr_configuration.new](#fn-image_scanning_configurationecr_configurationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `image_scanning_configuration` sub block.
+
+
+## obj image_scanning_configuration.ecr_configuration
+
+
+
+### fn image_scanning_configuration.ecr_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.imagebuilder_image.image_scanning_configuration.ecr_configuration.new` constructs a new object with attributes and blocks configured for the `ecr_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `container_tags` (`list`): Set the `container_tags` field on the resulting object. When `null`, the `container_tags` field will be omitted from the resulting object.
+  - `repository_name` (`string`): Set the `repository_name` field on the resulting object. When `null`, the `repository_name` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `ecr_configuration` sub block.
 
 
 ## obj image_tests_configuration

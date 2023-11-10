@@ -34,6 +34,10 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-containerimage_confignew)
     * [`obj container.image_config.repository_auth_config`](#obj-containerimage_configrepository_auth_config)
       * [`fn new()`](#fn-containerimage_configrepository_auth_confignew)
+  * [`obj container.model_data_source`](#obj-containermodel_data_source)
+    * [`fn new()`](#fn-containermodel_data_sourcenew)
+    * [`obj container.model_data_source.s3_data_source`](#obj-containermodel_data_sources3_data_source)
+      * [`fn new()`](#fn-containermodel_data_sources3_data_sourcenew)
 * [`obj inference_execution_config`](#obj-inference_execution_config)
   * [`fn new()`](#fn-inference_execution_confignew)
 * [`obj primary_container`](#obj-primary_container)
@@ -42,6 +46,10 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-primary_containerimage_confignew)
     * [`obj primary_container.image_config.repository_auth_config`](#obj-primary_containerimage_configrepository_auth_config)
       * [`fn new()`](#fn-primary_containerimage_configrepository_auth_confignew)
+  * [`obj primary_container.model_data_source`](#obj-primary_containermodel_data_source)
+    * [`fn new()`](#fn-primary_containermodel_data_sourcenew)
+    * [`obj primary_container.model_data_source.s3_data_source`](#obj-primary_containermodel_data_sources3_data_source)
+      * [`fn new()`](#fn-primary_containermodel_data_sources3_data_sourcenew)
 * [`obj vpc_config`](#obj-vpc_config)
   * [`fn new()`](#fn-vpc_confignew)
 
@@ -372,6 +380,7 @@ Terraform sub block.
   - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.
   - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.
   - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-containerimage_confignew) constructor.
+  - `model_data_source` (`list[obj]`): Set the `model_data_source` field on the resulting object. When `null`, the `model_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.model_data_source.new](#fn-containermodel_data_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `container` sub block.
@@ -424,6 +433,54 @@ Terraform sub block.
   - An attribute object that represents the `repository_auth_config` sub block.
 
 
+## obj container.model_data_source
+
+
+
+### fn container.model_data_source.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_model.container.model_data_source.new` constructs a new object with attributes and blocks configured for the `model_data_source`
+Terraform sub block.
+
+
+
+**Args**:
+  - `s3_data_source` (`list[obj]`): Set the `s3_data_source` field on the resulting object. When `null`, the `s3_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.model_data_source.s3_data_source.new](#fn-containercontainers3_data_sourcenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `model_data_source` sub block.
+
+
+## obj container.model_data_source.s3_data_source
+
+
+
+### fn container.model_data_source.s3_data_source.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_model.container.model_data_source.s3_data_source.new` constructs a new object with attributes and blocks configured for the `s3_data_source`
+Terraform sub block.
+
+
+
+**Args**:
+  - `compression_type` (`string`): Set the `compression_type` field on the resulting object.
+  - `s3_data_type` (`string`): Set the `s3_data_type` field on the resulting object.
+  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `s3_data_source` sub block.
+
+
 ## obj inference_execution_config
 
 
@@ -471,6 +528,7 @@ Terraform sub block.
   - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.
   - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.
   - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-primary_containerimage_confignew) constructor.
+  - `model_data_source` (`list[obj]`): Set the `model_data_source` field on the resulting object. When `null`, the `model_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.model_data_source.new](#fn-primary_containermodel_data_sourcenew) constructor.
 
 **Returns**:
   - An attribute object that represents the `primary_container` sub block.
@@ -521,6 +579,54 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `repository_auth_config` sub block.
+
+
+## obj primary_container.model_data_source
+
+
+
+### fn primary_container.model_data_source.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_model.primary_container.model_data_source.new` constructs a new object with attributes and blocks configured for the `model_data_source`
+Terraform sub block.
+
+
+
+**Args**:
+  - `s3_data_source` (`list[obj]`): Set the `s3_data_source` field on the resulting object. When `null`, the `s3_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.model_data_source.s3_data_source.new](#fn-primary_containerprimary_containers3_data_sourcenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `model_data_source` sub block.
+
+
+## obj primary_container.model_data_source.s3_data_source
+
+
+
+### fn primary_container.model_data_source.s3_data_source.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_model.primary_container.model_data_source.s3_data_source.new` constructs a new object with attributes and blocks configured for the `s3_data_source`
+Terraform sub block.
+
+
+
+**Args**:
+  - `compression_type` (`string`): Set the `compression_type` field on the resulting object.
+  - `s3_data_type` (`string`): Set the `s3_data_type` field on the resulting object.
+  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `s3_data_source` sub block.
 
 
 ## obj vpc_config

@@ -1,0 +1,149 @@
+---
+permalink: /servicequotas_template/
+---
+
+# servicequotas_template
+
+`servicequotas_template` represents the `aws_servicequotas_template` Terraform resource.
+
+
+
+This package contains functions and utilities for setting up the resource using Jsonnet code.
+
+
+## Index
+
+* [`fn new()`](#fn-new)
+* [`fn newAttrs()`](#fn-newattrs)
+* [`fn withQuotaCode()`](#fn-withquotacode)
+* [`fn withRegion()`](#fn-withregion)
+* [`fn withServiceCode()`](#fn-withservicecode)
+* [`fn withValue()`](#fn-withvalue)
+
+## Fields
+
+### fn new
+
+```ts
+new()
+```
+
+
+`aws.servicequotas_template.new` injects a new `aws_servicequotas_template` Terraform `resource`
+block into the root module document.
+
+Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
+resource. For example, if you added a new instance to the root using:
+
+    # arguments omitted for brevity
+    aws.servicequotas_template.new('some_id')
+
+You can get the reference to the `id` field of the created `aws.servicequotas_template` using the reference:
+
+    $._ref.aws_servicequotas_template.some_id.get('id')
+
+This is the same as directly entering `"${ aws_servicequotas_template.some_id.id }"` as the value.
+
+NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
+or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block.
+  - `quota_code` (`string`): Set the `quota_code` field on the resulting resource block.
+  - `region` (`string`): Set the `region` field on the resulting resource block.
+  - `service_code` (`string`): Set the `service_code` field on the resulting resource block.
+  - `value` (`number`): Set the `value` field on the resulting resource block.
+
+**Returns**:
+- A mixin object that injects the new resource into the root Terraform configuration.
+
+
+### fn newAttrs
+
+```ts
+newAttrs()
+```
+
+
+`aws.servicequotas_template.newAttrs` constructs a new object with attributes and blocks configured for the `servicequotas_template`
+Terraform resource.
+
+Unlike [aws.servicequotas_template.new](#fn-new), this function will not inject the `resource`
+block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
+[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
+
+This is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to
+injecting into a complete block.
+
+**Args**:
+  - `quota_code` (`string`): Set the `quota_code` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object.
+  - `service_code` (`string`): Set the `service_code` field on the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object.
+
+**Returns**:
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `servicequotas_template` resource into the root Terraform configuration.
+
+
+### fn withQuotaCode
+
+```ts
+withQuotaCode()
+```
+
+`aws.string.withQuotaCode` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the quota_code field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `quota_code` field.
+
+
+### fn withRegion
+
+```ts
+withRegion()
+```
+
+`aws.string.withRegion` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the region field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `region` field.
+
+
+### fn withServiceCode
+
+```ts
+withServiceCode()
+```
+
+`aws.string.withServiceCode` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the service_code field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `service_code` field.
+
+
+### fn withValue
+
+```ts
+withValue()
+```
+
+`aws.number.withValue` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the value field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `value` field.

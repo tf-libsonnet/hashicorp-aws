@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withDescription()`](#fn-withdescription)
+* [`fn withFipsEnabled()`](#fn-withfipsenabled)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 
@@ -49,6 +50,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `fips_enabled` (`bool`): Set the `fips_enabled` field on the resulting resource block. When `null`, the `fips_enabled` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -75,6 +77,7 @@ injecting into a complete block.
 
 **Args**:
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `fips_enabled` (`bool`): Set the `fips_enabled` field on the resulting object. When `null`, the `fips_enabled` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -96,6 +99,22 @@ Terraform resource block to set or update the description field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `description` field.
+
+
+### fn withFipsEnabled
+
+```ts
+withFipsEnabled()
+```
+
+`aws.bool.withFipsEnabled` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the fips_enabled field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `fips_enabled` field.
 
 
 ### fn withTags

@@ -24,6 +24,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withProtocol()`](#fn-withprotocol)
 * [`fn withRawMessageDelivery()`](#fn-withrawmessagedelivery)
 * [`fn withRedrivePolicy()`](#fn-withredrivepolicy)
+* [`fn withReplayPolicy()`](#fn-withreplaypolicy)
 * [`fn withSubscriptionRoleArn()`](#fn-withsubscriptionrolearn)
 * [`fn withTopicArn()`](#fn-withtopicarn)
 
@@ -65,6 +66,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `protocol` (`string`): Set the `protocol` field on the resulting resource block.
   - `raw_message_delivery` (`bool`): Set the `raw_message_delivery` field on the resulting resource block. When `null`, the `raw_message_delivery` field will be omitted from the resulting object.
   - `redrive_policy` (`string`): Set the `redrive_policy` field on the resulting resource block. When `null`, the `redrive_policy` field will be omitted from the resulting object.
+  - `replay_policy` (`string`): Set the `replay_policy` field on the resulting resource block. When `null`, the `replay_policy` field will be omitted from the resulting object.
   - `subscription_role_arn` (`string`): Set the `subscription_role_arn` field on the resulting resource block. When `null`, the `subscription_role_arn` field will be omitted from the resulting object.
   - `topic_arn` (`string`): Set the `topic_arn` field on the resulting resource block.
 
@@ -99,6 +101,7 @@ injecting into a complete block.
   - `protocol` (`string`): Set the `protocol` field on the resulting object.
   - `raw_message_delivery` (`bool`): Set the `raw_message_delivery` field on the resulting object. When `null`, the `raw_message_delivery` field will be omitted from the resulting object.
   - `redrive_policy` (`string`): Set the `redrive_policy` field on the resulting object. When `null`, the `redrive_policy` field will be omitted from the resulting object.
+  - `replay_policy` (`string`): Set the `replay_policy` field on the resulting object. When `null`, the `replay_policy` field will be omitted from the resulting object.
   - `subscription_role_arn` (`string`): Set the `subscription_role_arn` field on the resulting object. When `null`, the `subscription_role_arn` field will be omitted from the resulting object.
   - `topic_arn` (`string`): Set the `topic_arn` field on the resulting object.
 
@@ -248,6 +251,22 @@ Terraform resource block to set or update the redrive_policy field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `redrive_policy` field.
+
+
+### fn withReplayPolicy
+
+```ts
+withReplayPolicy()
+```
+
+`aws.string.withReplayPolicy` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the replay_policy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `replay_policy` field.
 
 
 ### fn withSubscriptionRoleArn

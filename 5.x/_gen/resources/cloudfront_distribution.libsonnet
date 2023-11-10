@@ -367,10 +367,10 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       s3_origin_config: s3_origin_config,
     }),
     origin_shield:: {
-      '#new':: d.fn(help='\n`aws.cloudfront_distribution.origin.origin_shield.new` constructs a new object with attributes and blocks configured for the `origin_shield`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object.\n  - `origin_shield_region` (`string`): Set the `origin_shield_region` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `origin_shield` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.cloudfront_distribution.origin.origin_shield.new` constructs a new object with attributes and blocks configured for the `origin_shield`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enabled` (`bool`): Set the `enabled` field on the resulting object.\n  - `origin_shield_region` (`string`): Set the `origin_shield_region` field on the resulting object. When `null`, the `origin_shield_region` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `origin_shield` sub block.\n', args=[]),
       new(
         enabled,
-        origin_shield_region
+        origin_shield_region=null
       ):: std.prune(a={
         enabled: enabled,
         origin_shield_region: origin_shield_region,

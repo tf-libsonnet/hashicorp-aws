@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withContainerProperties()`](#fn-withcontainerproperties)
 * [`fn withName()`](#fn-withname)
+* [`fn withNodeProperties()`](#fn-withnodeproperties)
 * [`fn withParameters()`](#fn-withparameters)
 * [`fn withPlatformCapabilities()`](#fn-withplatformcapabilities)
 * [`fn withPropagateTags()`](#fn-withpropagatetags)
@@ -65,6 +66,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `container_properties` (`string`): Set the `container_properties` field on the resulting resource block. When `null`, the `container_properties` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `node_properties` (`string`): Set the `node_properties` field on the resulting resource block. When `null`, the `node_properties` field will be omitted from the resulting object.
   - `parameters` (`obj`): Set the `parameters` field on the resulting resource block. When `null`, the `parameters` field will be omitted from the resulting object.
   - `platform_capabilities` (`list`): Set the `platform_capabilities` field on the resulting resource block. When `null`, the `platform_capabilities` field will be omitted from the resulting object.
   - `propagate_tags` (`bool`): Set the `propagate_tags` field on the resulting resource block. When `null`, the `propagate_tags` field will be omitted from the resulting object.
@@ -98,6 +100,7 @@ injecting into a complete block.
 **Args**:
   - `container_properties` (`string`): Set the `container_properties` field on the resulting object. When `null`, the `container_properties` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
+  - `node_properties` (`string`): Set the `node_properties` field on the resulting object. When `null`, the `node_properties` field will be omitted from the resulting object.
   - `parameters` (`obj`): Set the `parameters` field on the resulting object. When `null`, the `parameters` field will be omitted from the resulting object.
   - `platform_capabilities` (`list`): Set the `platform_capabilities` field on the resulting object. When `null`, the `platform_capabilities` field will be omitted from the resulting object.
   - `propagate_tags` (`bool`): Set the `propagate_tags` field on the resulting object. When `null`, the `propagate_tags` field will be omitted from the resulting object.
@@ -141,6 +144,22 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withNodeProperties
+
+```ts
+withNodeProperties()
+```
+
+`aws.string.withNodeProperties` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the node_properties field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `node_properties` field.
 
 
 ### fn withParameters

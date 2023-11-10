@@ -15,6 +15,7 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withBasePolicyDocument()`](#fn-withbasepolicydocument)
 * [`fn withBasePolicyRegion()`](#fn-withbasepolicyregion)
 * [`fn withBasePolicyRegions()`](#fn-withbasepolicyregions)
 * [`fn withCreateBasePolicy()`](#fn-withcreatebasepolicy)
@@ -56,6 +57,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
+  - `base_policy_document` (`string`): Set the `base_policy_document` field on the resulting resource block. When `null`, the `base_policy_document` field will be omitted from the resulting object.
   - `base_policy_region` (`string`): Set the `base_policy_region` field on the resulting resource block. When `null`, the `base_policy_region` field will be omitted from the resulting object.
   - `base_policy_regions` (`list`): Set the `base_policy_regions` field on the resulting resource block. When `null`, the `base_policy_regions` field will be omitted from the resulting object.
   - `create_base_policy` (`bool`): Set the `create_base_policy` field on the resulting resource block. When `null`, the `create_base_policy` field will be omitted from the resulting object.
@@ -87,6 +89,7 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
+  - `base_policy_document` (`string`): Set the `base_policy_document` field on the resulting object. When `null`, the `base_policy_document` field will be omitted from the resulting object.
   - `base_policy_region` (`string`): Set the `base_policy_region` field on the resulting object. When `null`, the `base_policy_region` field will be omitted from the resulting object.
   - `base_policy_regions` (`list`): Set the `base_policy_regions` field on the resulting object. When `null`, the `base_policy_regions` field will be omitted from the resulting object.
   - `create_base_policy` (`bool`): Set the `create_base_policy` field on the resulting object. When `null`, the `create_base_policy` field will be omitted from the resulting object.
@@ -98,6 +101,22 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkmanager_core_network` resource into the root Terraform configuration.
+
+
+### fn withBasePolicyDocument
+
+```ts
+withBasePolicyDocument()
+```
+
+`aws.string.withBasePolicyDocument` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the base_policy_document field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `base_policy_document` field.
 
 
 ### fn withBasePolicyRegion

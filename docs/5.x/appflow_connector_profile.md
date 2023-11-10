@@ -823,6 +823,8 @@ Terraform sub block.
 **Args**:
   - `access_token` (`string`): Set the `access_token` field on the resulting object. When `null`, the `access_token` field will be omitted from the resulting object.
   - `client_credentials_arn` (`string`): Set the `client_credentials_arn` field on the resulting object. When `null`, the `client_credentials_arn` field will be omitted from the resulting object.
+  - `jwt_token` (`string`): Set the `jwt_token` field on the resulting object. When `null`, the `jwt_token` field will be omitted from the resulting object.
+  - `oauth2_grant_type` (`string`): Set the `oauth2_grant_type` field on the resulting object. When `null`, the `oauth2_grant_type` field will be omitted from the resulting object.
   - `refresh_token` (`string`): Set the `refresh_token` field on the resulting object. When `null`, the `refresh_token` field will be omitted from the resulting object.
   - `oauth_request` (`list[obj]`): Set the `oauth_request` field on the resulting object. When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.oauth_request.new](#fn-connector_profile_configconnector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.
 

@@ -29,6 +29,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-thing_indexing_configurationnew)
   * [`obj thing_indexing_configuration.custom_field`](#obj-thing_indexing_configurationcustom_field)
     * [`fn new()`](#fn-thing_indexing_configurationcustom_fieldnew)
+  * [`obj thing_indexing_configuration.filter`](#obj-thing_indexing_configurationfilter)
+    * [`fn new()`](#fn-thing_indexing_configurationfilternew)
   * [`obj thing_indexing_configuration.managed_field`](#obj-thing_indexing_configurationmanaged_field)
     * [`fn new()`](#fn-thing_indexing_configurationmanaged_fieldnew)
 
@@ -262,6 +264,7 @@ Terraform sub block.
   - `thing_connectivity_indexing_mode` (`string`): Set the `thing_connectivity_indexing_mode` field on the resulting object. When `null`, the `thing_connectivity_indexing_mode` field will be omitted from the resulting object.
   - `thing_indexing_mode` (`string`): Set the `thing_indexing_mode` field on the resulting object.
   - `custom_field` (`list[obj]`): Set the `custom_field` field on the resulting object. When `null`, the `custom_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.custom_field.new](#fn-thing_indexing_configurationcustom_fieldnew) constructor.
+  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.filter.new](#fn-thing_indexing_configurationfilternew) constructor.
   - `managed_field` (`list[obj]`): Set the `managed_field` field on the resulting object. When `null`, the `managed_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.managed_field.new](#fn-thing_indexing_configurationmanaged_fieldnew) constructor.
 
 **Returns**:
@@ -290,6 +293,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `custom_field` sub block.
+
+
+## obj thing_indexing_configuration.filter
+
+
+
+### fn thing_indexing_configuration.filter.new
+
+```ts
+new()
+```
+
+
+`aws.iot_indexing_configuration.thing_indexing_configuration.filter.new` constructs a new object with attributes and blocks configured for the `filter`
+Terraform sub block.
+
+
+
+**Args**:
+  - `named_shadow_names` (`list`): Set the `named_shadow_names` field on the resulting object. When `null`, the `named_shadow_names` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `filter` sub block.
 
 
 ## obj thing_indexing_configuration.managed_field

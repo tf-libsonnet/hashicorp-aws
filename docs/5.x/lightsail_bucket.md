@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withBundleId()`](#fn-withbundleid)
+* [`fn withForceDelete()`](#fn-withforcedelete)
 * [`fn withName()`](#fn-withname)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
@@ -50,6 +51,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `bundle_id` (`string`): Set the `bundle_id` field on the resulting resource block.
+  - `force_delete` (`bool`): Set the `force_delete` field on the resulting resource block. When `null`, the `force_delete` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -77,6 +79,7 @@ injecting into a complete block.
 
 **Args**:
   - `bundle_id` (`string`): Set the `bundle_id` field on the resulting object.
+  - `force_delete` (`bool`): Set the `force_delete` field on the resulting object. When `null`, the `force_delete` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -99,6 +102,22 @@ Terraform resource block to set or update the bundle_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `bundle_id` field.
+
+
+### fn withForceDelete
+
+```ts
+withForceDelete()
+```
+
+`aws.bool.withForceDelete` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the force_delete field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `force_delete` field.
 
 
 ### fn withName

@@ -266,16 +266,28 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
     kafka:: {
-      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.kafka.new` constructs a new object with attributes and blocks configured for the `kafka`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_properties` (`obj`): Set the `client_properties` field on the resulting object.\n  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.\n  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.\n  - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.\n  - `topic` (`string`): Set the `topic` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `kafka` sub block.\n', args=[]),
+      header:: {
+        '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.kafka.header.new` constructs a new object with attributes and blocks configured for the `header`\nTerraform sub block.\n\n\n\n**Args**:\n  - `key` (`string`): Set the `key` field on the resulting object.\n  - `value` (`string`): Set the `value` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `header` sub block.\n', args=[]),
+        new(
+          key,
+          value
+        ):: std.prune(a={
+          key: key,
+          value: value,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.iot_topic_rule.error_action.kafka.new` constructs a new object with attributes and blocks configured for the `kafka`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_properties` (`obj`): Set the `client_properties` field on the resulting object.\n  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.\n  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.\n  - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.\n  - `topic` (`string`): Set the `topic` field on the resulting object.\n  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.error_action.kafka.header.new](#fn-error_actionerror_actionheadernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `kafka` sub block.\n', args=[]),
       new(
         client_properties,
         destination_arn,
         topic,
+        header=null,
         key=null,
         partition=null
       ):: std.prune(a={
         client_properties: client_properties,
         destination_arn: destination_arn,
+        header: header,
         key: key,
         partition: partition,
         topic: topic,
@@ -505,16 +517,28 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   kafka:: {
-    '#new':: d.fn(help='\n`aws.iot_topic_rule.kafka.new` constructs a new object with attributes and blocks configured for the `kafka`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_properties` (`obj`): Set the `client_properties` field on the resulting object.\n  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.\n  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.\n  - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.\n  - `topic` (`string`): Set the `topic` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `kafka` sub block.\n', args=[]),
+    header:: {
+      '#new':: d.fn(help='\n`aws.iot_topic_rule.kafka.header.new` constructs a new object with attributes and blocks configured for the `header`\nTerraform sub block.\n\n\n\n**Args**:\n  - `key` (`string`): Set the `key` field on the resulting object.\n  - `value` (`string`): Set the `value` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `header` sub block.\n', args=[]),
+      new(
+        key,
+        value
+      ):: std.prune(a={
+        key: key,
+        value: value,
+      }),
+    },
+    '#new':: d.fn(help='\n`aws.iot_topic_rule.kafka.new` constructs a new object with attributes and blocks configured for the `kafka`\nTerraform sub block.\n\n\n\n**Args**:\n  - `client_properties` (`obj`): Set the `client_properties` field on the resulting object.\n  - `destination_arn` (`string`): Set the `destination_arn` field on the resulting object.\n  - `key` (`string`): Set the `key` field on the resulting object. When `null`, the `key` field will be omitted from the resulting object.\n  - `partition` (`string`): Set the `partition` field on the resulting object. When `null`, the `partition` field will be omitted from the resulting object.\n  - `topic` (`string`): Set the `topic` field on the resulting object.\n  - `header` (`list[obj]`): Set the `header` field on the resulting object. When `null`, the `header` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_topic_rule.kafka.header.new](#fn-kafkaheadernew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `kafka` sub block.\n', args=[]),
     new(
       client_properties,
       destination_arn,
       topic,
+      header=null,
       key=null,
       partition=null
     ):: std.prune(a={
       client_properties: client_properties,
       destination_arn: destination_arn,
+      header: header,
       key: key,
       partition: partition,
       topic: topic,

@@ -21,13 +21,34 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
     },
-    '#new':: d.fn(help='\n`aws.sagemaker_model.container.new` constructs a new object with attributes and blocks configured for the `container`\nTerraform sub block.\n\n\n\n**Args**:\n  - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.\n  - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.\n  - `image` (`string`): Set the `image` field on the resulting object. When `null`, the `image` field will be omitted from the resulting object.\n  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.\n  - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.\n  - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.\n  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-containerimage_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `container` sub block.\n', args=[]),
+    model_data_source:: {
+      '#new':: d.fn(help='\n`aws.sagemaker_model.container.model_data_source.new` constructs a new object with attributes and blocks configured for the `model_data_source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_data_source` (`list[obj]`): Set the `s3_data_source` field on the resulting object. When `null`, the `s3_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.model_data_source.s3_data_source.new](#fn-containercontainers3_data_sourcenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `model_data_source` sub block.\n', args=[]),
+      new(
+        s3_data_source=null
+      ):: std.prune(a={
+        s3_data_source: s3_data_source,
+      }),
+      s3_data_source:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_model.container.model_data_source.s3_data_source.new` constructs a new object with attributes and blocks configured for the `s3_data_source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `compression_type` (`string`): Set the `compression_type` field on the resulting object.\n  - `s3_data_type` (`string`): Set the `s3_data_type` field on the resulting object.\n  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `s3_data_source` sub block.\n', args=[]),
+        new(
+          compression_type,
+          s3_data_type,
+          s3_uri
+        ):: std.prune(a={
+          compression_type: compression_type,
+          s3_data_type: s3_data_type,
+          s3_uri: s3_uri,
+        }),
+      },
+    },
+    '#new':: d.fn(help='\n`aws.sagemaker_model.container.new` constructs a new object with attributes and blocks configured for the `container`\nTerraform sub block.\n\n\n\n**Args**:\n  - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.\n  - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.\n  - `image` (`string`): Set the `image` field on the resulting object. When `null`, the `image` field will be omitted from the resulting object.\n  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.\n  - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.\n  - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.\n  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.image_config.new](#fn-containerimage_confignew) constructor.\n  - `model_data_source` (`list[obj]`): Set the `model_data_source` field on the resulting object. When `null`, the `model_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.container.model_data_source.new](#fn-containermodel_data_sourcenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `container` sub block.\n', args=[]),
     new(
       container_hostname=null,
       environment=null,
       image=null,
       image_config=null,
       mode=null,
+      model_data_source=null,
       model_data_url=null,
       model_package_name=null
     ):: std.prune(a={
@@ -36,6 +57,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       image: image,
       image_config: image_config,
       mode: mode,
+      model_data_source: model_data_source,
       model_data_url: model_data_url,
       model_package_name: model_package_name,
     }),
@@ -118,13 +140,34 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
     },
-    '#new':: d.fn(help='\n`aws.sagemaker_model.primary_container.new` constructs a new object with attributes and blocks configured for the `primary_container`\nTerraform sub block.\n\n\n\n**Args**:\n  - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.\n  - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.\n  - `image` (`string`): Set the `image` field on the resulting object. When `null`, the `image` field will be omitted from the resulting object.\n  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.\n  - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.\n  - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.\n  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-primary_containerimage_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `primary_container` sub block.\n', args=[]),
+    model_data_source:: {
+      '#new':: d.fn(help='\n`aws.sagemaker_model.primary_container.model_data_source.new` constructs a new object with attributes and blocks configured for the `model_data_source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `s3_data_source` (`list[obj]`): Set the `s3_data_source` field on the resulting object. When `null`, the `s3_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.model_data_source.s3_data_source.new](#fn-primary_containerprimary_containers3_data_sourcenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `model_data_source` sub block.\n', args=[]),
+      new(
+        s3_data_source=null
+      ):: std.prune(a={
+        s3_data_source: s3_data_source,
+      }),
+      s3_data_source:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_model.primary_container.model_data_source.s3_data_source.new` constructs a new object with attributes and blocks configured for the `s3_data_source`\nTerraform sub block.\n\n\n\n**Args**:\n  - `compression_type` (`string`): Set the `compression_type` field on the resulting object.\n  - `s3_data_type` (`string`): Set the `s3_data_type` field on the resulting object.\n  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `s3_data_source` sub block.\n', args=[]),
+        new(
+          compression_type,
+          s3_data_type,
+          s3_uri
+        ):: std.prune(a={
+          compression_type: compression_type,
+          s3_data_type: s3_data_type,
+          s3_uri: s3_uri,
+        }),
+      },
+    },
+    '#new':: d.fn(help='\n`aws.sagemaker_model.primary_container.new` constructs a new object with attributes and blocks configured for the `primary_container`\nTerraform sub block.\n\n\n\n**Args**:\n  - `container_hostname` (`string`): Set the `container_hostname` field on the resulting object. When `null`, the `container_hostname` field will be omitted from the resulting object.\n  - `environment` (`obj`): Set the `environment` field on the resulting object. When `null`, the `environment` field will be omitted from the resulting object.\n  - `image` (`string`): Set the `image` field on the resulting object. When `null`, the `image` field will be omitted from the resulting object.\n  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.\n  - `model_data_url` (`string`): Set the `model_data_url` field on the resulting object. When `null`, the `model_data_url` field will be omitted from the resulting object.\n  - `model_package_name` (`string`): Set the `model_package_name` field on the resulting object. When `null`, the `model_package_name` field will be omitted from the resulting object.\n  - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.image_config.new](#fn-primary_containerimage_confignew) constructor.\n  - `model_data_source` (`list[obj]`): Set the `model_data_source` field on the resulting object. When `null`, the `model_data_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_model.primary_container.model_data_source.new](#fn-primary_containermodel_data_sourcenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `primary_container` sub block.\n', args=[]),
     new(
       container_hostname=null,
       environment=null,
       image=null,
       image_config=null,
       mode=null,
+      model_data_source=null,
       model_data_url=null,
       model_package_name=null
     ):: std.prune(a={
@@ -133,6 +176,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       image: image,
       image_config: image_config,
       mode: mode,
+      model_data_source: model_data_source,
       model_data_url: model_data_url,
       model_package_name: model_package_name,
     }),
