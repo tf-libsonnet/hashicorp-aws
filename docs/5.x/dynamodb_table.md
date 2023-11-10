@@ -22,6 +22,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withGlobalSecondaryIndex()`](#fn-withglobalsecondaryindex)
 * [`fn withGlobalSecondaryIndexMixin()`](#fn-withglobalsecondaryindexmixin)
 * [`fn withHashKey()`](#fn-withhashkey)
+* [`fn withImportTable()`](#fn-withimporttable)
+* [`fn withImportTableMixin()`](#fn-withimporttablemixin)
 * [`fn withLocalSecondaryIndex()`](#fn-withlocalsecondaryindex)
 * [`fn withLocalSecondaryIndexMixin()`](#fn-withlocalsecondaryindexmixin)
 * [`fn withName()`](#fn-withname)
@@ -50,6 +52,14 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-attributenew)
 * [`obj global_secondary_index`](#obj-global_secondary_index)
   * [`fn new()`](#fn-global_secondary_indexnew)
+* [`obj import_table`](#obj-import_table)
+  * [`fn new()`](#fn-import_tablenew)
+  * [`obj import_table.input_format_options`](#obj-import_tableinput_format_options)
+    * [`fn new()`](#fn-import_tableinput_format_optionsnew)
+    * [`obj import_table.input_format_options.csv`](#obj-import_tableinput_format_optionscsv)
+      * [`fn new()`](#fn-import_tableinput_format_optionscsvnew)
+  * [`obj import_table.s3_bucket_source`](#obj-import_tables3_bucket_source)
+    * [`fn new()`](#fn-import_tables3_bucket_sourcenew)
 * [`obj local_secondary_index`](#obj-local_secondary_index)
   * [`fn new()`](#fn-local_secondary_indexnew)
 * [`obj point_in_time_recovery`](#obj-point_in_time_recovery)
@@ -109,6 +119,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `write_capacity` (`number`): Set the `write_capacity` field on the resulting resource block. When `null`, the `write_capacity` field will be omitted from the resulting object.
   - `attribute` (`list[obj]`): Set the `attribute` field on the resulting resource block. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
   - `global_secondary_index` (`list[obj]`): Set the `global_secondary_index` field on the resulting resource block. When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
+  - `import_table` (`list[obj]`): Set the `import_table` field on the resulting resource block. When `null`, the `import_table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.import_table.new](#fn-import_tablenew) constructor.
   - `local_secondary_index` (`list[obj]`): Set the `local_secondary_index` field on the resulting resource block. When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
   - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting resource block. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
   - `replica` (`list[obj]`): Set the `replica` field on the resulting resource block. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
@@ -155,6 +166,7 @@ injecting into a complete block.
   - `write_capacity` (`number`): Set the `write_capacity` field on the resulting object. When `null`, the `write_capacity` field will be omitted from the resulting object.
   - `attribute` (`list[obj]`): Set the `attribute` field on the resulting object. When `null`, the `attribute` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.attribute.new](#fn-attributenew) constructor.
   - `global_secondary_index` (`list[obj]`): Set the `global_secondary_index` field on the resulting object. When `null`, the `global_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.global_secondary_index.new](#fn-global_secondary_indexnew) constructor.
+  - `import_table` (`list[obj]`): Set the `import_table` field on the resulting object. When `null`, the `import_table` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.import_table.new](#fn-import_tablenew) constructor.
   - `local_secondary_index` (`list[obj]`): Set the `local_secondary_index` field on the resulting object. When `null`, the `local_secondary_index` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.local_secondary_index.new](#fn-local_secondary_indexnew) constructor.
   - `point_in_time_recovery` (`list[obj]`): Set the `point_in_time_recovery` field on the resulting object. When `null`, the `point_in_time_recovery` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.point_in_time_recovery.new](#fn-point_in_time_recoverynew) constructor.
   - `replica` (`list[obj]`): Set the `replica` field on the resulting object. When `null`, the `replica` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.replica.new](#fn-replicanew) constructor.
@@ -286,6 +298,43 @@ Terraform resource block to set or update the hash_key field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `hash_key` field.
+
+
+### fn withImportTable
+
+```ts
+withImportTable()
+```
+
+`aws.list[obj].withImportTable` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the import_table field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withImportTableMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `import_table` field.
+
+
+### fn withImportTableMixin
+
+```ts
+withImportTableMixin()
+```
+
+`aws.list[obj].withImportTableMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the import_table field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withImportTable](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `import_table` field.
 
 
 ### fn withLocalSecondaryIndex
@@ -752,6 +801,104 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `global_secondary_index` sub block.
+
+
+## obj import_table
+
+
+
+### fn import_table.new
+
+```ts
+new()
+```
+
+
+`aws.dynamodb_table.import_table.new` constructs a new object with attributes and blocks configured for the `import_table`
+Terraform sub block.
+
+
+
+**Args**:
+  - `input_compression_type` (`string`): Set the `input_compression_type` field on the resulting object. When `null`, the `input_compression_type` field will be omitted from the resulting object.
+  - `input_format` (`string`): Set the `input_format` field on the resulting object.
+  - `input_format_options` (`list[obj]`): Set the `input_format_options` field on the resulting object. When `null`, the `input_format_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.import_table.input_format_options.new](#fn-import_tableinput_format_optionsnew) constructor.
+  - `s3_bucket_source` (`list[obj]`): Set the `s3_bucket_source` field on the resulting object. When `null`, the `s3_bucket_source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.import_table.s3_bucket_source.new](#fn-import_tables3_bucket_sourcenew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `import_table` sub block.
+
+
+## obj import_table.input_format_options
+
+
+
+### fn import_table.input_format_options.new
+
+```ts
+new()
+```
+
+
+`aws.dynamodb_table.import_table.input_format_options.new` constructs a new object with attributes and blocks configured for the `input_format_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `csv` (`list[obj]`): Set the `csv` field on the resulting object. When `null`, the `csv` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dynamodb_table.import_table.input_format_options.csv.new](#fn-import_tableimport_tablecsvnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `input_format_options` sub block.
+
+
+## obj import_table.input_format_options.csv
+
+
+
+### fn import_table.input_format_options.csv.new
+
+```ts
+new()
+```
+
+
+`aws.dynamodb_table.import_table.input_format_options.csv.new` constructs a new object with attributes and blocks configured for the `csv`
+Terraform sub block.
+
+
+
+**Args**:
+  - `delimiter` (`string`): Set the `delimiter` field on the resulting object. When `null`, the `delimiter` field will be omitted from the resulting object.
+  - `header_list` (`list`): Set the `header_list` field on the resulting object. When `null`, the `header_list` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `csv` sub block.
+
+
+## obj import_table.s3_bucket_source
+
+
+
+### fn import_table.s3_bucket_source.new
+
+```ts
+new()
+```
+
+
+`aws.dynamodb_table.import_table.s3_bucket_source.new` constructs a new object with attributes and blocks configured for the `s3_bucket_source`
+Terraform sub block.
+
+
+
+**Args**:
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `bucket_owner` (`string`): Set the `bucket_owner` field on the resulting object. When `null`, the `bucket_owner` field will be omitted from the resulting object.
+  - `key_prefix` (`string`): Set the `key_prefix` field on the resulting object. When `null`, the `key_prefix` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `s3_bucket_source` sub block.
 
 
 ## obj local_secondary_index

@@ -241,15 +241,19 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       salesforce:: {
-        '#new':: d.fn(help='\n`aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.new` constructs a new object with attributes and blocks configured for the `salesforce`\nTerraform sub block.\n\n\n\n**Args**:\n  - `access_token` (`string`): Set the `access_token` field on the resulting object. When `null`, the `access_token` field will be omitted from the resulting object.\n  - `client_credentials_arn` (`string`): Set the `client_credentials_arn` field on the resulting object. When `null`, the `client_credentials_arn` field will be omitted from the resulting object.\n  - `refresh_token` (`string`): Set the `refresh_token` field on the resulting object. When `null`, the `refresh_token` field will be omitted from the resulting object.\n  - `oauth_request` (`list[obj]`): Set the `oauth_request` field on the resulting object. When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.oauth_request.new](#fn-connector_profile_configconnector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `salesforce` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.new` constructs a new object with attributes and blocks configured for the `salesforce`\nTerraform sub block.\n\n\n\n**Args**:\n  - `access_token` (`string`): Set the `access_token` field on the resulting object. When `null`, the `access_token` field will be omitted from the resulting object.\n  - `client_credentials_arn` (`string`): Set the `client_credentials_arn` field on the resulting object. When `null`, the `client_credentials_arn` field will be omitted from the resulting object.\n  - `jwt_token` (`string`): Set the `jwt_token` field on the resulting object. When `null`, the `jwt_token` field will be omitted from the resulting object.\n  - `oauth2_grant_type` (`string`): Set the `oauth2_grant_type` field on the resulting object. When `null`, the `oauth2_grant_type` field will be omitted from the resulting object.\n  - `refresh_token` (`string`): Set the `refresh_token` field on the resulting object. When `null`, the `refresh_token` field will be omitted from the resulting object.\n  - `oauth_request` (`list[obj]`): Set the `oauth_request` field on the resulting object. When `null`, the `oauth_request` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_connector_profile.connector_profile_config.connector_profile_credentials.salesforce.oauth_request.new](#fn-connector_profile_configconnector_profile_configconnector_profile_credentialsoauth_requestnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `salesforce` sub block.\n', args=[]),
         new(
           access_token=null,
           client_credentials_arn=null,
+          jwt_token=null,
+          oauth2_grant_type=null,
           oauth_request=null,
           refresh_token=null
         ):: std.prune(a={
           access_token: access_token,
           client_credentials_arn: client_credentials_arn,
+          jwt_token: jwt_token,
+          oauth2_grant_type: oauth2_grant_type,
           oauth_request: oauth_request,
           refresh_token: refresh_token,
         }),

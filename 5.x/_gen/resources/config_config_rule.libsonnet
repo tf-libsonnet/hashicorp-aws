@@ -2,11 +2,20 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
 local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='config_config_rule', url='', help='`config_config_rule` represents the `aws_config_config_rule` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
-  '#new':: d.fn(help="\n`aws.config_config_rule.new` injects a new `aws_config_config_rule` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.config_config_rule.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.config_config_rule` using the reference:\n\n    $._ref.aws_config_config_rule.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_config_config_rule.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.\n  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting resource block. When `null`, the `input_parameters` field will be omitted from the resulting object.\n  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting resource block. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `scope` (`list[obj]`): Set the `scope` field on the resulting resource block. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.\n  - `source` (`list[obj]`): Set the `source` field on the resulting resource block. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  evaluation_mode:: {
+    '#new':: d.fn(help='\n`aws.config_config_rule.evaluation_mode.new` constructs a new object with attributes and blocks configured for the `evaluation_mode`\nTerraform sub block.\n\n\n\n**Args**:\n  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `evaluation_mode` sub block.\n', args=[]),
+    new(
+      mode=null
+    ):: std.prune(a={
+      mode: mode,
+    }),
+  },
+  '#new':: d.fn(help="\n`aws.config_config_rule.new` injects a new `aws_config_config_rule` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.config_config_rule.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.config_config_rule` using the reference:\n\n    $._ref.aws_config_config_rule.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_config_config_rule.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.\n  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting resource block. When `null`, the `input_parameters` field will be omitted from the resulting object.\n  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting resource block. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `evaluation_mode` (`list[obj]`): Set the `evaluation_mode` field on the resulting resource block. When `null`, the `evaluation_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.evaluation_mode.new](#fn-evaluation_modenew) constructor.\n  - `scope` (`list[obj]`): Set the `scope` field on the resulting resource block. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.\n  - `source` (`list[obj]`): Set the `source` field on the resulting resource block. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     name,
     description=null,
+    evaluation_mode=null,
     input_parameters=null,
     maximum_execution_frequency=null,
     scope=null,
@@ -19,6 +28,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     label=resourceLabel,
     attrs=self.newAttrs(
       description=description,
+      evaluation_mode=evaluation_mode,
       input_parameters=input_parameters,
       maximum_execution_frequency=maximum_execution_frequency,
       name=name,
@@ -29,10 +39,11 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.config_config_rule.newAttrs` constructs a new object with attributes and blocks configured for the `config_config_rule`\nTerraform resource.\n\nUnlike [aws.config_config_rule.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.\n  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting object. When `null`, the `input_parameters` field will be omitted from the resulting object.\n  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting object. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `scope` (`list[obj]`): Set the `scope` field on the resulting object. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.\n  - `source` (`list[obj]`): Set the `source` field on the resulting object. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_config_rule` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.config_config_rule.newAttrs` constructs a new object with attributes and blocks configured for the `config_config_rule`\nTerraform resource.\n\nUnlike [aws.config_config_rule.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.\n  - `input_parameters` (`string`): Set the `input_parameters` field on the resulting object. When `null`, the `input_parameters` field will be omitted from the resulting object.\n  - `maximum_execution_frequency` (`string`): Set the `maximum_execution_frequency` field on the resulting object. When `null`, the `maximum_execution_frequency` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `evaluation_mode` (`list[obj]`): Set the `evaluation_mode` field on the resulting object. When `null`, the `evaluation_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.evaluation_mode.new](#fn-evaluation_modenew) constructor.\n  - `scope` (`list[obj]`): Set the `scope` field on the resulting object. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.\n  - `source` (`list[obj]`): Set the `source` field on the resulting object. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `config_config_rule` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     name,
     description=null,
+    evaluation_mode=null,
     input_parameters=null,
     maximum_execution_frequency=null,
     scope=null,
@@ -41,6 +52,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags_all=null
   ):: std.prune(a={
     description: description,
+    evaluation_mode: evaluation_mode,
     input_parameters: input_parameters,
     maximum_execution_frequency: maximum_execution_frequency,
     name: name,
@@ -107,6 +119,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_config_config_rule+: {
         [resourceLabel]+: {
           description: value,
+        },
+      },
+    },
+  },
+  '#withEvaluationMode':: d.fn(help='`aws.list[obj].withEvaluationMode` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the evaluation_mode field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withEvaluationModeMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `evaluation_mode` field.\n', args=[]),
+  withEvaluationMode(resourceLabel, value): {
+    resource+: {
+      aws_config_config_rule+: {
+        [resourceLabel]+: {
+          evaluation_mode: value,
+        },
+      },
+    },
+  },
+  '#withEvaluationModeMixin':: d.fn(help='`aws.list[obj].withEvaluationModeMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the evaluation_mode field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withEvaluationMode](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `evaluation_mode` field.\n', args=[]),
+  withEvaluationModeMixin(resourceLabel, value): {
+    resource+: {
+      aws_config_config_rule+: {
+        [resourceLabel]+: {
+          evaluation_mode+: if std.isArray(v=value) then value else [value],
         },
       },
     },

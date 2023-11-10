@@ -19,6 +19,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAccessLogsMixin()`](#fn-withaccesslogsmixin)
 * [`fn withCustomerOwnedIpv4Pool()`](#fn-withcustomerownedipv4pool)
 * [`fn withDesyncMitigationMode()`](#fn-withdesyncmitigationmode)
+* [`fn withDnsRecordClientRoutingPolicy()`](#fn-withdnsrecordclientroutingpolicy)
 * [`fn withDropInvalidHeaderFields()`](#fn-withdropinvalidheaderfields)
 * [`fn withEnableCrossZoneLoadBalancing()`](#fn-withenablecrosszoneloadbalancing)
 * [`fn withEnableDeletionProtection()`](#fn-withenabledeletionprotection)
@@ -80,6 +81,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting resource block. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
   - `desync_mitigation_mode` (`string`): Set the `desync_mitigation_mode` field on the resulting resource block. When `null`, the `desync_mitigation_mode` field will be omitted from the resulting object.
+  - `dns_record_client_routing_policy` (`string`): Set the `dns_record_client_routing_policy` field on the resulting resource block. When `null`, the `dns_record_client_routing_policy` field will be omitted from the resulting object.
   - `drop_invalid_header_fields` (`bool`): Set the `drop_invalid_header_fields` field on the resulting resource block. When `null`, the `drop_invalid_header_fields` field will be omitted from the resulting object.
   - `enable_cross_zone_load_balancing` (`bool`): Set the `enable_cross_zone_load_balancing` field on the resulting resource block. When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
   - `enable_deletion_protection` (`bool`): Set the `enable_deletion_protection` field on the resulting resource block. When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
@@ -127,6 +129,7 @@ injecting into a complete block.
 **Args**:
   - `customer_owned_ipv4_pool` (`string`): Set the `customer_owned_ipv4_pool` field on the resulting object. When `null`, the `customer_owned_ipv4_pool` field will be omitted from the resulting object.
   - `desync_mitigation_mode` (`string`): Set the `desync_mitigation_mode` field on the resulting object. When `null`, the `desync_mitigation_mode` field will be omitted from the resulting object.
+  - `dns_record_client_routing_policy` (`string`): Set the `dns_record_client_routing_policy` field on the resulting object. When `null`, the `dns_record_client_routing_policy` field will be omitted from the resulting object.
   - `drop_invalid_header_fields` (`bool`): Set the `drop_invalid_header_fields` field on the resulting object. When `null`, the `drop_invalid_header_fields` field will be omitted from the resulting object.
   - `enable_cross_zone_load_balancing` (`bool`): Set the `enable_cross_zone_load_balancing` field on the resulting object. When `null`, the `enable_cross_zone_load_balancing` field will be omitted from the resulting object.
   - `enable_deletion_protection` (`bool`): Set the `enable_deletion_protection` field on the resulting object. When `null`, the `enable_deletion_protection` field will be omitted from the resulting object.
@@ -221,6 +224,22 @@ Terraform resource block to set or update the desync_mitigation_mode field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `desync_mitigation_mode` field.
+
+
+### fn withDnsRecordClientRoutingPolicy
+
+```ts
+withDnsRecordClientRoutingPolicy()
+```
+
+`aws.string.withDnsRecordClientRoutingPolicy` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the dns_record_client_routing_policy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `dns_record_client_routing_policy` field.
 
 
 ### fn withDropInvalidHeaderFields

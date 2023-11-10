@@ -26,11 +26,13 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withEngineVersion()`](#fn-withengineversion)
 * [`fn withFinalSnapshotIdentifier()`](#fn-withfinalsnapshotidentifier)
 * [`fn withGlobalReplicationGroupId()`](#fn-withglobalreplicationgroupid)
+* [`fn withIpDiscovery()`](#fn-withipdiscovery)
 * [`fn withKmsKeyId()`](#fn-withkmskeyid)
 * [`fn withLogDeliveryConfiguration()`](#fn-withlogdeliveryconfiguration)
 * [`fn withLogDeliveryConfigurationMixin()`](#fn-withlogdeliveryconfigurationmixin)
 * [`fn withMaintenanceWindow()`](#fn-withmaintenancewindow)
 * [`fn withMultiAzEnabled()`](#fn-withmultiazenabled)
+* [`fn withNetworkType()`](#fn-withnetworktype)
 * [`fn withNodeType()`](#fn-withnodetype)
 * [`fn withNotificationTopicArn()`](#fn-withnotificationtopicarn)
 * [`fn withNumCacheClusters()`](#fn-withnumcacheclusters)
@@ -98,9 +100,11 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `engine_version` (`string`): Set the `engine_version` field on the resulting resource block. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting resource block. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
   - `global_replication_group_id` (`string`): Set the `global_replication_group_id` field on the resulting resource block. When `null`, the `global_replication_group_id` field will be omitted from the resulting object.
+  - `ip_discovery` (`string`): Set the `ip_discovery` field on the resulting resource block. When `null`, the `ip_discovery` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `maintenance_window` (`string`): Set the `maintenance_window` field on the resulting resource block. When `null`, the `maintenance_window` field will be omitted from the resulting object.
   - `multi_az_enabled` (`bool`): Set the `multi_az_enabled` field on the resulting resource block. When `null`, the `multi_az_enabled` field will be omitted from the resulting object.
+  - `network_type` (`string`): Set the `network_type` field on the resulting resource block. When `null`, the `network_type` field will be omitted from the resulting object.
   - `node_type` (`string`): Set the `node_type` field on the resulting resource block. When `null`, the `node_type` field will be omitted from the resulting object.
   - `notification_topic_arn` (`string`): Set the `notification_topic_arn` field on the resulting resource block. When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
   - `num_cache_clusters` (`number`): Set the `num_cache_clusters` field on the resulting resource block. When `null`, the `num_cache_clusters` field will be omitted from the resulting object.
@@ -157,9 +161,11 @@ injecting into a complete block.
   - `engine_version` (`string`): Set the `engine_version` field on the resulting object. When `null`, the `engine_version` field will be omitted from the resulting object.
   - `final_snapshot_identifier` (`string`): Set the `final_snapshot_identifier` field on the resulting object. When `null`, the `final_snapshot_identifier` field will be omitted from the resulting object.
   - `global_replication_group_id` (`string`): Set the `global_replication_group_id` field on the resulting object. When `null`, the `global_replication_group_id` field will be omitted from the resulting object.
+  - `ip_discovery` (`string`): Set the `ip_discovery` field on the resulting object. When `null`, the `ip_discovery` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `maintenance_window` (`string`): Set the `maintenance_window` field on the resulting object. When `null`, the `maintenance_window` field will be omitted from the resulting object.
   - `multi_az_enabled` (`bool`): Set the `multi_az_enabled` field on the resulting object. When `null`, the `multi_az_enabled` field will be omitted from the resulting object.
+  - `network_type` (`string`): Set the `network_type` field on the resulting object. When `null`, the `network_type` field will be omitted from the resulting object.
   - `node_type` (`string`): Set the `node_type` field on the resulting object. When `null`, the `node_type` field will be omitted from the resulting object.
   - `notification_topic_arn` (`string`): Set the `notification_topic_arn` field on the resulting object. When `null`, the `notification_topic_arn` field will be omitted from the resulting object.
   - `num_cache_clusters` (`number`): Set the `num_cache_clusters` field on the resulting object. When `null`, the `num_cache_clusters` field will be omitted from the resulting object.
@@ -363,6 +369,22 @@ Terraform resource block to set or update the global_replication_group_id field.
   - `value` (`string`): The value to set for the `global_replication_group_id` field.
 
 
+### fn withIpDiscovery
+
+```ts
+withIpDiscovery()
+```
+
+`aws.string.withIpDiscovery` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the ip_discovery field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `ip_discovery` field.
+
+
 ### fn withKmsKeyId
 
 ```ts
@@ -446,6 +468,22 @@ Terraform resource block to set or update the multi_az_enabled field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `multi_az_enabled` field.
+
+
+### fn withNetworkType
+
+```ts
+withNetworkType()
+```
+
+`aws.string.withNetworkType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the network_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `network_type` field.
 
 
 ### fn withNodeType

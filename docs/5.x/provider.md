@@ -289,6 +289,7 @@ Terraform sub block.
   - `backup` (`string`): Use this to override the default service endpoint URL When `null`, the `backup` field will be omitted from the resulting object.
   - `batch` (`string`): Use this to override the default service endpoint URL When `null`, the `batch` field will be omitted from the resulting object.
   - `beanstalk` (`string`): Use this to override the default service endpoint URL When `null`, the `beanstalk` field will be omitted from the resulting object.
+  - `bedrock` (`string`): Use this to override the default service endpoint URL When `null`, the `bedrock` field will be omitted from the resulting object.
   - `budgets` (`string`): Use this to override the default service endpoint URL When `null`, the `budgets` field will be omitted from the resulting object.
   - `ce` (`string`): Use this to override the default service endpoint URL When `null`, the `ce` field will be omitted from the resulting object.
   - `chime` (`string`): Use this to override the default service endpoint URL When `null`, the `chime` field will be omitted from the resulting object.
@@ -493,6 +494,7 @@ Terraform sub block.
   - `ssm` (`string`): Use this to override the default service endpoint URL When `null`, the `ssm` field will be omitted from the resulting object.
   - `ssmcontacts` (`string`): Use this to override the default service endpoint URL When `null`, the `ssmcontacts` field will be omitted from the resulting object.
   - `ssmincidents` (`string`): Use this to override the default service endpoint URL When `null`, the `ssmincidents` field will be omitted from the resulting object.
+  - `sso` (`string`): Use this to override the default service endpoint URL When `null`, the `sso` field will be omitted from the resulting object.
   - `ssoadmin` (`string`): Use this to override the default service endpoint URL When `null`, the `ssoadmin` field will be omitted from the resulting object.
   - `stepfunctions` (`string`): Use this to override the default service endpoint URL When `null`, the `stepfunctions` field will be omitted from the resulting object.
   - `storagegateway` (`string`): Use this to override the default service endpoint URL When `null`, the `storagegateway` field will be omitted from the resulting object.

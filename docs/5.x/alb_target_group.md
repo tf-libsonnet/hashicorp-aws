@@ -37,6 +37,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTargetFailover()`](#fn-withtargetfailover)
 * [`fn withTargetFailoverMixin()`](#fn-withtargetfailovermixin)
+* [`fn withTargetHealthState()`](#fn-withtargethealthstate)
+* [`fn withTargetHealthStateMixin()`](#fn-withtargethealthstatemixin)
 * [`fn withTargetType()`](#fn-withtargettype)
 * [`fn withVpcId()`](#fn-withvpcid)
 * [`obj health_check`](#obj-health_check)
@@ -45,6 +47,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-stickinessnew)
 * [`obj target_failover`](#obj-target_failover)
   * [`fn new()`](#fn-target_failovernew)
+* [`obj target_health_state`](#obj-target_health_state)
+  * [`fn new()`](#fn-target_health_statenew)
 
 ## Fields
 
@@ -96,6 +100,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `health_check` (`list[obj]`): Set the `health_check` field on the resulting resource block. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.health_check.new](#fn-health_checknew) constructor.
   - `stickiness` (`list[obj]`): Set the `stickiness` field on the resulting resource block. When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.stickiness.new](#fn-stickinessnew) constructor.
   - `target_failover` (`list[obj]`): Set the `target_failover` field on the resulting resource block. When `null`, the `target_failover` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_failover.new](#fn-target_failovernew) constructor.
+  - `target_health_state` (`list[obj]`): Set the `target_health_state` field on the resulting resource block. When `null`, the `target_health_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_health_state.new](#fn-target_health_statenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -140,6 +145,7 @@ injecting into a complete block.
   - `health_check` (`list[obj]`): Set the `health_check` field on the resulting object. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.health_check.new](#fn-health_checknew) constructor.
   - `stickiness` (`list[obj]`): Set the `stickiness` field on the resulting object. When `null`, the `stickiness` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.stickiness.new](#fn-stickinessnew) constructor.
   - `target_failover` (`list[obj]`): Set the `target_failover` field on the resulting object. When `null`, the `target_failover` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_failover.new](#fn-target_failovernew) constructor.
+  - `target_health_state` (`list[obj]`): Set the `target_health_state` field on the resulting object. When `null`, the `target_health_state` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_target_group.target_health_state.new](#fn-target_health_statenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `alb_target_group` resource into the root Terraform configuration.
@@ -512,6 +518,43 @@ function.
   - `value` (`list[obj]`): The value to set for the `target_failover` field.
 
 
+### fn withTargetHealthState
+
+```ts
+withTargetHealthState()
+```
+
+`aws.list[obj].withTargetHealthState` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the target_health_state field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withTargetHealthStateMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `target_health_state` field.
+
+
+### fn withTargetHealthStateMixin
+
+```ts
+withTargetHealthStateMixin()
+```
+
+`aws.list[obj].withTargetHealthStateMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the target_health_state field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withTargetHealthState](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `target_health_state` field.
+
+
 ### fn withTargetType
 
 ```ts
@@ -623,3 +666,26 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `target_failover` sub block.
+
+
+## obj target_health_state
+
+
+
+### fn target_health_state.new
+
+```ts
+new()
+```
+
+
+`aws.alb_target_group.target_health_state.new` constructs a new object with attributes and blocks configured for the `target_health_state`
+Terraform sub block.
+
+
+
+**Args**:
+  - `enable_unhealthy_connection_termination` (`bool`): Set the `enable_unhealthy_connection_termination` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `target_health_state` sub block.

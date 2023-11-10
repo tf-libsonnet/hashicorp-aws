@@ -1147,7 +1147,7 @@ Terraform sub block.
 
 **Args**:
   - `enabled` (`bool`): Set the `enabled` field on the resulting object.
-  - `origin_shield_region` (`string`): Set the `origin_shield_region` field on the resulting object.
+  - `origin_shield_region` (`string`): Set the `origin_shield_region` field on the resulting object. When `null`, the `origin_shield_region` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `origin_shield` sub block.

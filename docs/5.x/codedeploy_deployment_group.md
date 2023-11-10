@@ -37,6 +37,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLoadBalancerInfoMixin()`](#fn-withloadbalancerinfomixin)
 * [`fn withOnPremisesInstanceTagFilter()`](#fn-withonpremisesinstancetagfilter)
 * [`fn withOnPremisesInstanceTagFilterMixin()`](#fn-withonpremisesinstancetagfiltermixin)
+* [`fn withOutdatedInstancesStrategy()`](#fn-withoutdatedinstancesstrategy)
 * [`fn withServiceRoleArn()`](#fn-withservicerolearn)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
@@ -116,6 +117,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `autoscaling_groups` (`list`): Set the `autoscaling_groups` field on the resulting resource block. When `null`, the `autoscaling_groups` field will be omitted from the resulting object.
   - `deployment_config_name` (`string`): Set the `deployment_config_name` field on the resulting resource block. When `null`, the `deployment_config_name` field will be omitted from the resulting object.
   - `deployment_group_name` (`string`): Set the `deployment_group_name` field on the resulting resource block.
+  - `outdated_instances_strategy` (`string`): Set the `outdated_instances_strategy` field on the resulting resource block. When `null`, the `outdated_instances_strategy` field will be omitted from the resulting object.
   - `service_role_arn` (`string`): Set the `service_role_arn` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -156,6 +158,7 @@ injecting into a complete block.
   - `autoscaling_groups` (`list`): Set the `autoscaling_groups` field on the resulting object. When `null`, the `autoscaling_groups` field will be omitted from the resulting object.
   - `deployment_config_name` (`string`): Set the `deployment_config_name` field on the resulting object. When `null`, the `deployment_config_name` field will be omitted from the resulting object.
   - `deployment_group_name` (`string`): Set the `deployment_group_name` field on the resulting object.
+  - `outdated_instances_strategy` (`string`): Set the `outdated_instances_strategy` field on the resulting object. When `null`, the `outdated_instances_strategy` field will be omitted from the resulting object.
   - `service_role_arn` (`string`): Set the `service_role_arn` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -569,6 +572,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `on_premises_instance_tag_filter` field.
+
+
+### fn withOutdatedInstancesStrategy
+
+```ts
+withOutdatedInstancesStrategy()
+```
+
+`aws.string.withOutdatedInstancesStrategy` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the outdated_instances_strategy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `outdated_instances_strategy` field.
 
 
 ### fn withServiceRoleArn

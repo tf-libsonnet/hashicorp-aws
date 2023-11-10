@@ -20,6 +20,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAvailabilityZone()`](#fn-withavailabilityzone)
 * [`fn withCaCertIdentifier()`](#fn-withcacertidentifier)
 * [`fn withClusterIdentifier()`](#fn-withclusteridentifier)
+* [`fn withCopyTagsToSnapshot()`](#fn-withcopytagstosnapshot)
 * [`fn withEnablePerformanceInsights()`](#fn-withenableperformanceinsights)
 * [`fn withEngine()`](#fn-withengine)
 * [`fn withIdentifier()`](#fn-withidentifier)
@@ -69,6 +70,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `availability_zone` (`string`): Set the `availability_zone` field on the resulting resource block. When `null`, the `availability_zone` field will be omitted from the resulting object.
   - `ca_cert_identifier` (`string`): Set the `ca_cert_identifier` field on the resulting resource block. When `null`, the `ca_cert_identifier` field will be omitted from the resulting object.
   - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting resource block.
+  - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting resource block. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
   - `enable_performance_insights` (`bool`): Set the `enable_performance_insights` field on the resulting resource block. When `null`, the `enable_performance_insights` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting resource block. When `null`, the `engine` field will be omitted from the resulting object.
   - `identifier` (`string`): Set the `identifier` field on the resulting resource block. When `null`, the `identifier` field will be omitted from the resulting object.
@@ -108,6 +110,7 @@ injecting into a complete block.
   - `availability_zone` (`string`): Set the `availability_zone` field on the resulting object. When `null`, the `availability_zone` field will be omitted from the resulting object.
   - `ca_cert_identifier` (`string`): Set the `ca_cert_identifier` field on the resulting object. When `null`, the `ca_cert_identifier` field will be omitted from the resulting object.
   - `cluster_identifier` (`string`): Set the `cluster_identifier` field on the resulting object.
+  - `copy_tags_to_snapshot` (`bool`): Set the `copy_tags_to_snapshot` field on the resulting object. When `null`, the `copy_tags_to_snapshot` field will be omitted from the resulting object.
   - `enable_performance_insights` (`bool`): Set the `enable_performance_insights` field on the resulting object. When `null`, the `enable_performance_insights` field will be omitted from the resulting object.
   - `engine` (`string`): Set the `engine` field on the resulting object. When `null`, the `engine` field will be omitted from the resulting object.
   - `identifier` (`string`): Set the `identifier` field on the resulting object. When `null`, the `identifier` field will be omitted from the resulting object.
@@ -202,6 +205,22 @@ Terraform resource block to set or update the cluster_identifier field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `cluster_identifier` field.
+
+
+### fn withCopyTagsToSnapshot
+
+```ts
+withCopyTagsToSnapshot()
+```
+
+`aws.bool.withCopyTagsToSnapshot` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the copy_tags_to_snapshot field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `copy_tags_to_snapshot` field.
 
 
 ### fn withEnablePerformanceInsights

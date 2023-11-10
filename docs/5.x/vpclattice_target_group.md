@@ -256,10 +256,11 @@ Terraform sub block.
 
 **Args**:
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
-  - `port` (`number`): Set the `port` field on the resulting object.
-  - `protocol` (`string`): Set the `protocol` field on the resulting object.
+  - `lambda_event_structure_version` (`string`): Set the `lambda_event_structure_version` field on the resulting object. When `null`, the `lambda_event_structure_version` field will be omitted from the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
+  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.
   - `protocol_version` (`string`): Set the `protocol_version` field on the resulting object. When `null`, the `protocol_version` field will be omitted from the resulting object.
-  - `vpc_identifier` (`string`): Set the `vpc_identifier` field on the resulting object.
+  - `vpc_identifier` (`string`): Set the `vpc_identifier` field on the resulting object. When `null`, the `vpc_identifier` field will be omitted from the resulting object.
   - `health_check` (`list[obj]`): Set the `health_check` field on the resulting object. When `null`, the `health_check` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.vpclattice_target_group.config.health_check.new](#fn-confighealth_checknew) constructor.
 
 **Returns**:

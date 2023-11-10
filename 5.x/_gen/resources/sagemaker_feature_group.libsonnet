@@ -93,24 +93,30 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       table_format: table_format,
     }),
     s3_storage_config:: {
-      '#new':: d.fn(help='\n`aws.sagemaker_feature_group.offline_store_config.s3_storage_config.new` constructs a new object with attributes and blocks configured for the `s3_storage_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `s3_storage_config` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.sagemaker_feature_group.offline_store_config.s3_storage_config.new` constructs a new object with attributes and blocks configured for the `s3_storage_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `resolved_output_s3_uri` (`string`): Set the `resolved_output_s3_uri` field on the resulting object. When `null`, the `resolved_output_s3_uri` field will be omitted from the resulting object.\n  - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `s3_storage_config` sub block.\n', args=[]),
       new(
         s3_uri,
-        kms_key_id=null
+        kms_key_id=null,
+        resolved_output_s3_uri=null
       ):: std.prune(a={
         kms_key_id: kms_key_id,
+        resolved_output_s3_uri: resolved_output_s3_uri,
         s3_uri: s3_uri,
       }),
     },
   },
   online_store_config:: {
-    '#new':: d.fn(help='\n`aws.sagemaker_feature_group.online_store_config.new` constructs a new object with attributes and blocks configured for the `online_store_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enable_online_store` (`bool`): Set the `enable_online_store` field on the resulting object. When `null`, the `enable_online_store` field will be omitted from the resulting object.\n  - `security_config` (`list[obj]`): Set the `security_config` field on the resulting object. When `null`, the `security_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.security_config.new](#fn-online_store_configsecurity_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `online_store_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.sagemaker_feature_group.online_store_config.new` constructs a new object with attributes and blocks configured for the `online_store_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `enable_online_store` (`bool`): Set the `enable_online_store` field on the resulting object. When `null`, the `enable_online_store` field will be omitted from the resulting object.\n  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.\n  - `security_config` (`list[obj]`): Set the `security_config` field on the resulting object. When `null`, the `security_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.security_config.new](#fn-online_store_configsecurity_confignew) constructor.\n  - `ttl_duration` (`list[obj]`): Set the `ttl_duration` field on the resulting object. When `null`, the `ttl_duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.ttl_duration.new](#fn-online_store_configttl_durationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `online_store_config` sub block.\n', args=[]),
     new(
       enable_online_store=null,
-      security_config=null
+      security_config=null,
+      storage_type=null,
+      ttl_duration=null
     ):: std.prune(a={
       enable_online_store: enable_online_store,
       security_config: security_config,
+      storage_type: storage_type,
+      ttl_duration: ttl_duration,
     }),
     security_config:: {
       '#new':: d.fn(help='\n`aws.sagemaker_feature_group.online_store_config.security_config.new` constructs a new object with attributes and blocks configured for the `security_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `security_config` sub block.\n', args=[]),
@@ -118,6 +124,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         kms_key_id=null
       ):: std.prune(a={
         kms_key_id: kms_key_id,
+      }),
+    },
+    ttl_duration:: {
+      '#new':: d.fn(help='\n`aws.sagemaker_feature_group.online_store_config.ttl_duration.new` constructs a new object with attributes and blocks configured for the `ttl_duration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.\n  - `value` (`number`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `ttl_duration` sub block.\n', args=[]),
+      new(
+        unit=null,
+        value=null
+      ):: std.prune(a={
+        unit: unit,
+        value: value,
       }),
     },
   },

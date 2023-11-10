@@ -65,6 +65,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
+    filter:: {
+      '#new':: d.fn(help='\n`aws.iot_indexing_configuration.thing_indexing_configuration.filter.new` constructs a new object with attributes and blocks configured for the `filter`\nTerraform sub block.\n\n\n\n**Args**:\n  - `named_shadow_names` (`list`): Set the `named_shadow_names` field on the resulting object. When `null`, the `named_shadow_names` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `filter` sub block.\n', args=[]),
+      new(
+        named_shadow_names=null
+      ):: std.prune(a={
+        named_shadow_names: named_shadow_names,
+      }),
+    },
     managed_field:: {
       '#new':: d.fn(help='\n`aws.iot_indexing_configuration.thing_indexing_configuration.managed_field.new` constructs a new object with attributes and blocks configured for the `managed_field`\nTerraform sub block.\n\n\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `managed_field` sub block.\n', args=[]),
       new(
@@ -75,17 +83,19 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         type: type,
       }),
     },
-    '#new':: d.fn(help='\n`aws.iot_indexing_configuration.thing_indexing_configuration.new` constructs a new object with attributes and blocks configured for the `thing_indexing_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `device_defender_indexing_mode` (`string`): Set the `device_defender_indexing_mode` field on the resulting object. When `null`, the `device_defender_indexing_mode` field will be omitted from the resulting object.\n  - `named_shadow_indexing_mode` (`string`): Set the `named_shadow_indexing_mode` field on the resulting object. When `null`, the `named_shadow_indexing_mode` field will be omitted from the resulting object.\n  - `thing_connectivity_indexing_mode` (`string`): Set the `thing_connectivity_indexing_mode` field on the resulting object. When `null`, the `thing_connectivity_indexing_mode` field will be omitted from the resulting object.\n  - `thing_indexing_mode` (`string`): Set the `thing_indexing_mode` field on the resulting object.\n  - `custom_field` (`list[obj]`): Set the `custom_field` field on the resulting object. When `null`, the `custom_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.custom_field.new](#fn-thing_indexing_configurationcustom_fieldnew) constructor.\n  - `managed_field` (`list[obj]`): Set the `managed_field` field on the resulting object. When `null`, the `managed_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.managed_field.new](#fn-thing_indexing_configurationmanaged_fieldnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `thing_indexing_configuration` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.iot_indexing_configuration.thing_indexing_configuration.new` constructs a new object with attributes and blocks configured for the `thing_indexing_configuration`\nTerraform sub block.\n\n\n\n**Args**:\n  - `device_defender_indexing_mode` (`string`): Set the `device_defender_indexing_mode` field on the resulting object. When `null`, the `device_defender_indexing_mode` field will be omitted from the resulting object.\n  - `named_shadow_indexing_mode` (`string`): Set the `named_shadow_indexing_mode` field on the resulting object. When `null`, the `named_shadow_indexing_mode` field will be omitted from the resulting object.\n  - `thing_connectivity_indexing_mode` (`string`): Set the `thing_connectivity_indexing_mode` field on the resulting object. When `null`, the `thing_connectivity_indexing_mode` field will be omitted from the resulting object.\n  - `thing_indexing_mode` (`string`): Set the `thing_indexing_mode` field on the resulting object.\n  - `custom_field` (`list[obj]`): Set the `custom_field` field on the resulting object. When `null`, the `custom_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.custom_field.new](#fn-thing_indexing_configurationcustom_fieldnew) constructor.\n  - `filter` (`list[obj]`): Set the `filter` field on the resulting object. When `null`, the `filter` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.filter.new](#fn-thing_indexing_configurationfilternew) constructor.\n  - `managed_field` (`list[obj]`): Set the `managed_field` field on the resulting object. When `null`, the `managed_field` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.iot_indexing_configuration.thing_indexing_configuration.managed_field.new](#fn-thing_indexing_configurationmanaged_fieldnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `thing_indexing_configuration` sub block.\n', args=[]),
     new(
       thing_indexing_mode,
       custom_field=null,
       device_defender_indexing_mode=null,
+      filter=null,
       managed_field=null,
       named_shadow_indexing_mode=null,
       thing_connectivity_indexing_mode=null
     ):: std.prune(a={
       custom_field: custom_field,
       device_defender_indexing_mode: device_defender_indexing_mode,
+      filter: filter,
       managed_field: managed_field,
       named_shadow_indexing_mode: named_shadow_indexing_mode,
       thing_connectivity_indexing_mode: thing_connectivity_indexing_mode,

@@ -31,6 +31,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withMongodbSettings()`](#fn-withmongodbsettings)
 * [`fn withMongodbSettingsMixin()`](#fn-withmongodbsettingsmixin)
 * [`fn withPassword()`](#fn-withpassword)
+* [`fn withPauseReplicationTasks()`](#fn-withpausereplicationtasks)
 * [`fn withPort()`](#fn-withport)
 * [`fn withRedisSettings()`](#fn-withredissettings)
 * [`fn withRedisSettingsMixin()`](#fn-withredissettingsmixin)
@@ -102,6 +103,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `extra_connection_attributes` (`string`): Set the `extra_connection_attributes` field on the resulting resource block. When `null`, the `extra_connection_attributes` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `password` (`string`): Set the `password` field on the resulting resource block. When `null`, the `password` field will be omitted from the resulting object.
+  - `pause_replication_tasks` (`bool`): Set the `pause_replication_tasks` field on the resulting resource block. When `null`, the `pause_replication_tasks` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
   - `secrets_manager_access_role_arn` (`string`): Set the `secrets_manager_access_role_arn` field on the resulting resource block. When `null`, the `secrets_manager_access_role_arn` field will be omitted from the resulting object.
   - `secrets_manager_arn` (`string`): Set the `secrets_manager_arn` field on the resulting resource block. When `null`, the `secrets_manager_arn` field will be omitted from the resulting object.
@@ -150,6 +152,7 @@ injecting into a complete block.
   - `extra_connection_attributes` (`string`): Set the `extra_connection_attributes` field on the resulting object. When `null`, the `extra_connection_attributes` field will be omitted from the resulting object.
   - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `password` (`string`): Set the `password` field on the resulting object. When `null`, the `password` field will be omitted from the resulting object.
+  - `pause_replication_tasks` (`bool`): Set the `pause_replication_tasks` field on the resulting object. When `null`, the `pause_replication_tasks` field will be omitted from the resulting object.
   - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `secrets_manager_access_role_arn` (`string`): Set the `secrets_manager_access_role_arn` field on the resulting object. When `null`, the `secrets_manager_access_role_arn` field will be omitted from the resulting object.
   - `secrets_manager_arn` (`string`): Set the `secrets_manager_arn` field on the resulting object. When `null`, the `secrets_manager_arn` field will be omitted from the resulting object.
@@ -446,6 +449,22 @@ Terraform resource block to set or update the password field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `password` field.
+
+
+### fn withPauseReplicationTasks
+
+```ts
+withPauseReplicationTasks()
+```
+
+`aws.bool.withPauseReplicationTasks` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the pause_replication_tasks field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `pause_replication_tasks` field.
 
 
 ### fn withPort
@@ -961,6 +980,7 @@ Terraform sub block.
   - `encoding_type` (`string`): Set the `encoding_type` field on the resulting object. When `null`, the `encoding_type` field will be omitted from the resulting object.
   - `encryption_mode` (`string`): Set the `encryption_mode` field on the resulting object. When `null`, the `encryption_mode` field will be omitted from the resulting object.
   - `external_table_definition` (`string`): Set the `external_table_definition` field on the resulting object. When `null`, the `external_table_definition` field will be omitted from the resulting object.
+  - `glue_catalog_generation` (`bool`): Set the `glue_catalog_generation` field on the resulting object. When `null`, the `glue_catalog_generation` field will be omitted from the resulting object.
   - `ignore_header_rows` (`number`): Set the `ignore_header_rows` field on the resulting object. When `null`, the `ignore_header_rows` field will be omitted from the resulting object.
   - `include_op_for_full_load` (`bool`): Set the `include_op_for_full_load` field on the resulting object. When `null`, the `include_op_for_full_load` field will be omitted from the resulting object.
   - `max_file_size` (`number`): Set the `max_file_size` field on the resulting object. When `null`, the `max_file_size` field will be omitted from the resulting object.

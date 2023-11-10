@@ -16,6 +16,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withDescription()`](#fn-withdescription)
+* [`fn withEvaluationMode()`](#fn-withevaluationmode)
+* [`fn withEvaluationModeMixin()`](#fn-withevaluationmodemixin)
 * [`fn withInputParameters()`](#fn-withinputparameters)
 * [`fn withMaximumExecutionFrequency()`](#fn-withmaximumexecutionfrequency)
 * [`fn withName()`](#fn-withname)
@@ -25,6 +27,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSourceMixin()`](#fn-withsourcemixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`obj evaluation_mode`](#obj-evaluation_mode)
+  * [`fn new()`](#fn-evaluation_modenew)
 * [`obj scope`](#obj-scope)
   * [`fn new()`](#fn-scopenew)
 * [`obj source`](#obj-source)
@@ -69,6 +73,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `evaluation_mode` (`list[obj]`): Set the `evaluation_mode` field on the resulting resource block. When `null`, the `evaluation_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.evaluation_mode.new](#fn-evaluation_modenew) constructor.
   - `scope` (`list[obj]`): Set the `scope` field on the resulting resource block. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
   - `source` (`list[obj]`): Set the `source` field on the resulting resource block. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
 
@@ -100,6 +105,7 @@ injecting into a complete block.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `evaluation_mode` (`list[obj]`): Set the `evaluation_mode` field on the resulting object. When `null`, the `evaluation_mode` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.evaluation_mode.new](#fn-evaluation_modenew) constructor.
   - `scope` (`list[obj]`): Set the `scope` field on the resulting object. When `null`, the `scope` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.scope.new](#fn-scopenew) constructor.
   - `source` (`list[obj]`): Set the `source` field on the resulting object. When `null`, the `source` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.config_config_rule.source.new](#fn-sourcenew) constructor.
 
@@ -121,6 +127,43 @@ Terraform resource block to set or update the description field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `description` field.
+
+
+### fn withEvaluationMode
+
+```ts
+withEvaluationMode()
+```
+
+`aws.list[obj].withEvaluationMode` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the evaluation_mode field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withEvaluationModeMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `evaluation_mode` field.
+
+
+### fn withEvaluationModeMixin
+
+```ts
+withEvaluationModeMixin()
+```
+
+`aws.list[obj].withEvaluationModeMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the evaluation_mode field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withEvaluationMode](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `evaluation_mode` field.
 
 
 ### fn withInputParameters
@@ -275,6 +318,29 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
+
+
+## obj evaluation_mode
+
+
+
+### fn evaluation_mode.new
+
+```ts
+new()
+```
+
+
+`aws.config_config_rule.evaluation_mode.new` constructs a new object with attributes and blocks configured for the `evaluation_mode`
+Terraform sub block.
+
+
+
+**Args**:
+  - `mode` (`string`): Set the `mode` field on the resulting object. When `null`, the `mode` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `evaluation_mode` sub block.
 
 
 ## obj scope

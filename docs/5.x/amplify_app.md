@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withAutoBranchCreationPatterns()`](#fn-withautobranchcreationpatterns)
 * [`fn withBasicAuthCredentials()`](#fn-withbasicauthcredentials)
 * [`fn withBuildSpec()`](#fn-withbuildspec)
+* [`fn withCustomHeaders()`](#fn-withcustomheaders)
 * [`fn withCustomRule()`](#fn-withcustomrule)
 * [`fn withCustomRuleMixin()`](#fn-withcustomrulemixin)
 * [`fn withDescription()`](#fn-withdescription)
@@ -74,6 +75,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `auto_branch_creation_patterns` (`list`): Set the `auto_branch_creation_patterns` field on the resulting resource block. When `null`, the `auto_branch_creation_patterns` field will be omitted from the resulting object.
   - `basic_auth_credentials` (`string`): Set the `basic_auth_credentials` field on the resulting resource block. When `null`, the `basic_auth_credentials` field will be omitted from the resulting object.
   - `build_spec` (`string`): Set the `build_spec` field on the resulting resource block. When `null`, the `build_spec` field will be omitted from the resulting object.
+  - `custom_headers` (`string`): Set the `custom_headers` field on the resulting resource block. When `null`, the `custom_headers` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `enable_auto_branch_creation` (`bool`): Set the `enable_auto_branch_creation` field on the resulting resource block. When `null`, the `enable_auto_branch_creation` field will be omitted from the resulting object.
   - `enable_basic_auth` (`bool`): Set the `enable_basic_auth` field on the resulting resource block. When `null`, the `enable_basic_auth` field will be omitted from the resulting object.
@@ -116,6 +118,7 @@ injecting into a complete block.
   - `auto_branch_creation_patterns` (`list`): Set the `auto_branch_creation_patterns` field on the resulting object. When `null`, the `auto_branch_creation_patterns` field will be omitted from the resulting object.
   - `basic_auth_credentials` (`string`): Set the `basic_auth_credentials` field on the resulting object. When `null`, the `basic_auth_credentials` field will be omitted from the resulting object.
   - `build_spec` (`string`): Set the `build_spec` field on the resulting object. When `null`, the `build_spec` field will be omitted from the resulting object.
+  - `custom_headers` (`string`): Set the `custom_headers` field on the resulting object. When `null`, the `custom_headers` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `enable_auto_branch_creation` (`bool`): Set the `enable_auto_branch_creation` field on the resulting object. When `null`, the `enable_auto_branch_creation` field will be omitted from the resulting object.
   - `enable_basic_auth` (`bool`): Set the `enable_basic_auth` field on the resulting object. When `null`, the `enable_basic_auth` field will be omitted from the resulting object.
@@ -235,6 +238,22 @@ Terraform resource block to set or update the build_spec field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `build_spec` field.
+
+
+### fn withCustomHeaders
+
+```ts
+withCustomHeaders()
+```
+
+`aws.string.withCustomHeaders` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the custom_headers field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `custom_headers` field.
 
 
 ### fn withCustomRule

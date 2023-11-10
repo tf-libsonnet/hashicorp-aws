@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withCoreNetworkAddress()`](#fn-withcorenetworkaddress)
 * [`fn withInsideCidrBlocks()`](#fn-withinsidecidrblocks)
 * [`fn withPeerAddress()`](#fn-withpeeraddress)
+* [`fn withSubnetArn()`](#fn-withsubnetarn)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -61,8 +62,9 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `connect_attachment_id` (`string`): Set the `connect_attachment_id` field on the resulting resource block.
   - `core_network_address` (`string`): Set the `core_network_address` field on the resulting resource block. When `null`, the `core_network_address` field will be omitted from the resulting object.
-  - `inside_cidr_blocks` (`list`): Set the `inside_cidr_blocks` field on the resulting resource block.
+  - `inside_cidr_blocks` (`list`): Set the `inside_cidr_blocks` field on the resulting resource block. When `null`, the `inside_cidr_blocks` field will be omitted from the resulting object.
   - `peer_address` (`string`): Set the `peer_address` field on the resulting resource block.
+  - `subnet_arn` (`string`): Set the `subnet_arn` field on the resulting resource block. When `null`, the `subnet_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `bgp_options` (`list[obj]`): Set the `bgp_options` field on the resulting resource block. When `null`, the `bgp_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_connect_peer.bgp_options.new](#fn-bgp_optionsnew) constructor.
@@ -92,8 +94,9 @@ injecting into a complete block.
 **Args**:
   - `connect_attachment_id` (`string`): Set the `connect_attachment_id` field on the resulting object.
   - `core_network_address` (`string`): Set the `core_network_address` field on the resulting object. When `null`, the `core_network_address` field will be omitted from the resulting object.
-  - `inside_cidr_blocks` (`list`): Set the `inside_cidr_blocks` field on the resulting object.
+  - `inside_cidr_blocks` (`list`): Set the `inside_cidr_blocks` field on the resulting object. When `null`, the `inside_cidr_blocks` field will be omitted from the resulting object.
   - `peer_address` (`string`): Set the `peer_address` field on the resulting object.
+  - `subnet_arn` (`string`): Set the `subnet_arn` field on the resulting object. When `null`, the `subnet_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `bgp_options` (`list[obj]`): Set the `bgp_options` field on the resulting object. When `null`, the `bgp_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkmanager_connect_peer.bgp_options.new](#fn-bgp_optionsnew) constructor.
@@ -202,6 +205,22 @@ Terraform resource block to set or update the peer_address field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `peer_address` field.
+
+
+### fn withSubnetArn
+
+```ts
+withSubnetArn()
+```
+
+`aws.string.withSubnetArn` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the subnet_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `subnet_arn` field.
 
 
 ### fn withTags

@@ -29,6 +29,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSourceLocationArn()`](#fn-withsourcelocationarn)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTaskReportConfig()`](#fn-withtaskreportconfig)
+* [`fn withTaskReportConfigMixin()`](#fn-withtaskreportconfigmixin)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`obj excludes`](#obj-excludes)
@@ -39,6 +41,12 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-optionsnew)
 * [`obj schedule`](#obj-schedule)
   * [`fn new()`](#fn-schedulenew)
+* [`obj task_report_config`](#obj-task_report_config)
+  * [`fn new()`](#fn-task_report_confignew)
+  * [`obj task_report_config.report_overrides`](#obj-task_report_configreport_overrides)
+    * [`fn new()`](#fn-task_report_configreport_overridesnew)
+  * [`obj task_report_config.s3_destination`](#obj-task_report_configs3_destination)
+    * [`fn new()`](#fn-task_report_configs3_destinationnew)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
 
@@ -81,6 +89,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `includes` (`list[obj]`): Set the `includes` field on the resulting resource block. When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.includes.new](#fn-includesnew) constructor.
   - `options` (`list[obj]`): Set the `options` field on the resulting resource block. When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.options.new](#fn-optionsnew) constructor.
   - `schedule` (`list[obj]`): Set the `schedule` field on the resulting resource block. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.schedule.new](#fn-schedulenew) constructor.
+  - `task_report_config` (`list[obj]`): Set the `task_report_config` field on the resulting resource block. When `null`, the `task_report_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.new](#fn-task_report_confignew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -115,6 +124,7 @@ injecting into a complete block.
   - `includes` (`list[obj]`): Set the `includes` field on the resulting object. When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.includes.new](#fn-includesnew) constructor.
   - `options` (`list[obj]`): Set the `options` field on the resulting object. When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.options.new](#fn-optionsnew) constructor.
   - `schedule` (`list[obj]`): Set the `schedule` field on the resulting object. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.schedule.new](#fn-schedulenew) constructor.
+  - `task_report_config` (`list[obj]`): Set the `task_report_config` field on the resulting object. When `null`, the `task_report_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.new](#fn-task_report_confignew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -365,6 +375,43 @@ Terraform resource block to set or update the tags_all field.
   - `value` (`obj`): The value to set for the `tags_all` field.
 
 
+### fn withTaskReportConfig
+
+```ts
+withTaskReportConfig()
+```
+
+`aws.list[obj].withTaskReportConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the task_report_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withTaskReportConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `task_report_config` field.
+
+
+### fn withTaskReportConfigMixin
+
+```ts
+withTaskReportConfigMixin()
+```
+
+`aws.list[obj].withTaskReportConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the task_report_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withTaskReportConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `task_report_config` field.
+
+
 ### fn withTimeouts
 
 ```ts
@@ -507,6 +554,84 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `schedule` sub block.
+
+
+## obj task_report_config
+
+
+
+### fn task_report_config.new
+
+```ts
+new()
+```
+
+
+`aws.datasync_task.task_report_config.new` constructs a new object with attributes and blocks configured for the `task_report_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `output_type` (`string`): Set the `output_type` field on the resulting object. When `null`, the `output_type` field will be omitted from the resulting object.
+  - `report_level` (`string`): Set the `report_level` field on the resulting object. When `null`, the `report_level` field will be omitted from the resulting object.
+  - `s3_object_versioning` (`string`): Set the `s3_object_versioning` field on the resulting object. When `null`, the `s3_object_versioning` field will be omitted from the resulting object.
+  - `report_overrides` (`list[obj]`): Set the `report_overrides` field on the resulting object. When `null`, the `report_overrides` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.report_overrides.new](#fn-task_report_configreport_overridesnew) constructor.
+  - `s3_destination` (`list[obj]`): Set the `s3_destination` field on the resulting object. When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.s3_destination.new](#fn-task_report_configs3_destinationnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `task_report_config` sub block.
+
+
+## obj task_report_config.report_overrides
+
+
+
+### fn task_report_config.report_overrides.new
+
+```ts
+new()
+```
+
+
+`aws.datasync_task.task_report_config.report_overrides.new` constructs a new object with attributes and blocks configured for the `report_overrides`
+Terraform sub block.
+
+
+
+**Args**:
+  - `deleted_override` (`string`): Set the `deleted_override` field on the resulting object. When `null`, the `deleted_override` field will be omitted from the resulting object.
+  - `skipped_override` (`string`): Set the `skipped_override` field on the resulting object. When `null`, the `skipped_override` field will be omitted from the resulting object.
+  - `transferred_override` (`string`): Set the `transferred_override` field on the resulting object. When `null`, the `transferred_override` field will be omitted from the resulting object.
+  - `verified_override` (`string`): Set the `verified_override` field on the resulting object. When `null`, the `verified_override` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `report_overrides` sub block.
+
+
+## obj task_report_config.s3_destination
+
+
+
+### fn task_report_config.s3_destination.new
+
+```ts
+new()
+```
+
+
+`aws.datasync_task.task_report_config.s3_destination.new` constructs a new object with attributes and blocks configured for the `s3_destination`
+Terraform sub block.
+
+
+
+**Args**:
+  - `bucket_access_role_arn` (`string`): Set the `bucket_access_role_arn` field on the resulting object.
+  - `s3_bucket_arn` (`string`): Set the `s3_bucket_arn` field on the resulting object.
+  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting object. When `null`, the `subdirectory` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `s3_destination` sub block.
 
 
 ## obj timeouts

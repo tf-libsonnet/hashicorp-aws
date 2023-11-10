@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withApplicationFailureFeedbackRoleArn()`](#fn-withapplicationfailurefeedbackrolearn)
 * [`fn withApplicationSuccessFeedbackRoleArn()`](#fn-withapplicationsuccessfeedbackrolearn)
 * [`fn withApplicationSuccessFeedbackSampleRate()`](#fn-withapplicationsuccessfeedbacksamplerate)
+* [`fn withArchivePolicy()`](#fn-witharchivepolicy)
 * [`fn withContentBasedDeduplication()`](#fn-withcontentbaseddeduplication)
 * [`fn withDeliveryPolicy()`](#fn-withdeliverypolicy)
 * [`fn withDisplayName()`](#fn-withdisplayname)
@@ -75,6 +76,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `application_failure_feedback_role_arn` (`string`): Set the `application_failure_feedback_role_arn` field on the resulting resource block. When `null`, the `application_failure_feedback_role_arn` field will be omitted from the resulting object.
   - `application_success_feedback_role_arn` (`string`): Set the `application_success_feedback_role_arn` field on the resulting resource block. When `null`, the `application_success_feedback_role_arn` field will be omitted from the resulting object.
   - `application_success_feedback_sample_rate` (`number`): Set the `application_success_feedback_sample_rate` field on the resulting resource block. When `null`, the `application_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `archive_policy` (`string`): Set the `archive_policy` field on the resulting resource block. When `null`, the `archive_policy` field will be omitted from the resulting object.
   - `content_based_deduplication` (`bool`): Set the `content_based_deduplication` field on the resulting resource block. When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
   - `delivery_policy` (`string`): Set the `delivery_policy` field on the resulting resource block. When `null`, the `delivery_policy` field will be omitted from the resulting object.
   - `display_name` (`string`): Set the `display_name` field on the resulting resource block. When `null`, the `display_name` field will be omitted from the resulting object.
@@ -125,6 +127,7 @@ injecting into a complete block.
   - `application_failure_feedback_role_arn` (`string`): Set the `application_failure_feedback_role_arn` field on the resulting object. When `null`, the `application_failure_feedback_role_arn` field will be omitted from the resulting object.
   - `application_success_feedback_role_arn` (`string`): Set the `application_success_feedback_role_arn` field on the resulting object. When `null`, the `application_success_feedback_role_arn` field will be omitted from the resulting object.
   - `application_success_feedback_sample_rate` (`number`): Set the `application_success_feedback_sample_rate` field on the resulting object. When `null`, the `application_success_feedback_sample_rate` field will be omitted from the resulting object.
+  - `archive_policy` (`string`): Set the `archive_policy` field on the resulting object. When `null`, the `archive_policy` field will be omitted from the resulting object.
   - `content_based_deduplication` (`bool`): Set the `content_based_deduplication` field on the resulting object. When `null`, the `content_based_deduplication` field will be omitted from the resulting object.
   - `delivery_policy` (`string`): Set the `delivery_policy` field on the resulting object. When `null`, the `delivery_policy` field will be omitted from the resulting object.
   - `display_name` (`string`): Set the `display_name` field on the resulting object. When `null`, the `display_name` field will be omitted from the resulting object.
@@ -200,6 +203,22 @@ Terraform resource block to set or update the application_success_feedback_sampl
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `application_success_feedback_sample_rate` field.
+
+
+### fn withArchivePolicy
+
+```ts
+withArchivePolicy()
+```
+
+`aws.string.withArchivePolicy` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the archive_policy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `archive_policy` field.
 
 
 ### fn withContentBasedDeduplication

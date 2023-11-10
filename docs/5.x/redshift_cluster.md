@@ -40,8 +40,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLogging()`](#fn-withlogging)
 * [`fn withLoggingMixin()`](#fn-withloggingmixin)
 * [`fn withMaintenanceTrackName()`](#fn-withmaintenancetrackname)
+* [`fn withManageMasterPassword()`](#fn-withmanagemasterpassword)
 * [`fn withManualSnapshotRetentionPeriod()`](#fn-withmanualsnapshotretentionperiod)
 * [`fn withMasterPassword()`](#fn-withmasterpassword)
+* [`fn withMasterPasswordSecretKmsKeyId()`](#fn-withmasterpasswordsecretkmskeyid)
 * [`fn withMasterUsername()`](#fn-withmasterusername)
 * [`fn withNodeType()`](#fn-withnodetype)
 * [`fn withNumberOfNodes()`](#fn-withnumberofnodes)
@@ -50,6 +52,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withPreferredMaintenanceWindow()`](#fn-withpreferredmaintenancewindow)
 * [`fn withPubliclyAccessible()`](#fn-withpubliclyaccessible)
 * [`fn withSkipFinalSnapshot()`](#fn-withskipfinalsnapshot)
+* [`fn withSnapshotArn()`](#fn-withsnapshotarn)
 * [`fn withSnapshotClusterIdentifier()`](#fn-withsnapshotclusteridentifier)
 * [`fn withSnapshotCopy()`](#fn-withsnapshotcopy)
 * [`fn withSnapshotCopyMixin()`](#fn-withsnapshotcopymixin)
@@ -118,8 +121,10 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `iam_roles` (`list`): Set the `iam_roles` field on the resulting resource block. When `null`, the `iam_roles` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `maintenance_track_name` (`string`): Set the `maintenance_track_name` field on the resulting resource block. When `null`, the `maintenance_track_name` field will be omitted from the resulting object.
+  - `manage_master_password` (`bool`): Set the `manage_master_password` field on the resulting resource block. When `null`, the `manage_master_password` field will be omitted from the resulting object.
   - `manual_snapshot_retention_period` (`number`): Set the `manual_snapshot_retention_period` field on the resulting resource block. When `null`, the `manual_snapshot_retention_period` field will be omitted from the resulting object.
   - `master_password` (`string`): Set the `master_password` field on the resulting resource block. When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_password_secret_kms_key_id` (`string`): Set the `master_password_secret_kms_key_id` field on the resulting resource block. When `null`, the `master_password_secret_kms_key_id` field will be omitted from the resulting object.
   - `master_username` (`string`): Set the `master_username` field on the resulting resource block. When `null`, the `master_username` field will be omitted from the resulting object.
   - `node_type` (`string`): Set the `node_type` field on the resulting resource block.
   - `number_of_nodes` (`number`): Set the `number_of_nodes` field on the resulting resource block. When `null`, the `number_of_nodes` field will be omitted from the resulting object.
@@ -128,6 +133,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting resource block. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting resource block. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting resource block. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `snapshot_arn` (`string`): Set the `snapshot_arn` field on the resulting resource block. When `null`, the `snapshot_arn` field will be omitted from the resulting object.
   - `snapshot_cluster_identifier` (`string`): Set the `snapshot_cluster_identifier` field on the resulting resource block. When `null`, the `snapshot_cluster_identifier` field will be omitted from the resulting object.
   - `snapshot_identifier` (`string`): Set the `snapshot_identifier` field on the resulting resource block. When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
@@ -182,8 +188,10 @@ injecting into a complete block.
   - `iam_roles` (`list`): Set the `iam_roles` field on the resulting object. When `null`, the `iam_roles` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `maintenance_track_name` (`string`): Set the `maintenance_track_name` field on the resulting object. When `null`, the `maintenance_track_name` field will be omitted from the resulting object.
+  - `manage_master_password` (`bool`): Set the `manage_master_password` field on the resulting object. When `null`, the `manage_master_password` field will be omitted from the resulting object.
   - `manual_snapshot_retention_period` (`number`): Set the `manual_snapshot_retention_period` field on the resulting object. When `null`, the `manual_snapshot_retention_period` field will be omitted from the resulting object.
   - `master_password` (`string`): Set the `master_password` field on the resulting object. When `null`, the `master_password` field will be omitted from the resulting object.
+  - `master_password_secret_kms_key_id` (`string`): Set the `master_password_secret_kms_key_id` field on the resulting object. When `null`, the `master_password_secret_kms_key_id` field will be omitted from the resulting object.
   - `master_username` (`string`): Set the `master_username` field on the resulting object. When `null`, the `master_username` field will be omitted from the resulting object.
   - `node_type` (`string`): Set the `node_type` field on the resulting object.
   - `number_of_nodes` (`number`): Set the `number_of_nodes` field on the resulting object. When `null`, the `number_of_nodes` field will be omitted from the resulting object.
@@ -192,6 +200,7 @@ injecting into a complete block.
   - `preferred_maintenance_window` (`string`): Set the `preferred_maintenance_window` field on the resulting object. When `null`, the `preferred_maintenance_window` field will be omitted from the resulting object.
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting object. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `skip_final_snapshot` (`bool`): Set the `skip_final_snapshot` field on the resulting object. When `null`, the `skip_final_snapshot` field will be omitted from the resulting object.
+  - `snapshot_arn` (`string`): Set the `snapshot_arn` field on the resulting object. When `null`, the `snapshot_arn` field will be omitted from the resulting object.
   - `snapshot_cluster_identifier` (`string`): Set the `snapshot_cluster_identifier` field on the resulting object. When `null`, the `snapshot_cluster_identifier` field will be omitted from the resulting object.
   - `snapshot_identifier` (`string`): Set the `snapshot_identifier` field on the resulting object. When `null`, the `snapshot_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
@@ -610,6 +619,22 @@ Terraform resource block to set or update the maintenance_track_name field.
   - `value` (`string`): The value to set for the `maintenance_track_name` field.
 
 
+### fn withManageMasterPassword
+
+```ts
+withManageMasterPassword()
+```
+
+`aws.bool.withManageMasterPassword` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the manage_master_password field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `manage_master_password` field.
+
+
 ### fn withManualSnapshotRetentionPeriod
 
 ```ts
@@ -640,6 +665,22 @@ Terraform resource block to set or update the master_password field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `master_password` field.
+
+
+### fn withMasterPasswordSecretKmsKeyId
+
+```ts
+withMasterPasswordSecretKmsKeyId()
+```
+
+`aws.string.withMasterPasswordSecretKmsKeyId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the master_password_secret_kms_key_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `master_password_secret_kms_key_id` field.
 
 
 ### fn withMasterUsername
@@ -768,6 +809,22 @@ Terraform resource block to set or update the skip_final_snapshot field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `skip_final_snapshot` field.
+
+
+### fn withSnapshotArn
+
+```ts
+withSnapshotArn()
+```
+
+`aws.string.withSnapshotArn` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the snapshot_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `snapshot_arn` field.
 
 
 ### fn withSnapshotClusterIdentifier

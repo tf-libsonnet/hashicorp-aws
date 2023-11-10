@@ -34,6 +34,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withObjectLockLegalHoldStatus()`](#fn-withobjectlocklegalholdstatus)
 * [`fn withObjectLockMode()`](#fn-withobjectlockmode)
 * [`fn withObjectLockRetainUntilDate()`](#fn-withobjectlockretainuntildate)
+* [`fn withOverrideProvider()`](#fn-withoverrideprovider)
+* [`fn withOverrideProviderMixin()`](#fn-withoverrideprovidermixin)
 * [`fn withServerSideEncryption()`](#fn-withserversideencryption)
 * [`fn withSource()`](#fn-withsource)
 * [`fn withSourceHash()`](#fn-withsourcehash)
@@ -41,6 +43,10 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withWebsiteRedirect()`](#fn-withwebsiteredirect)
+* [`obj override_provider`](#obj-override_provider)
+  * [`fn new()`](#fn-override_providernew)
+  * [`obj override_provider.default_tags`](#obj-override_providerdefault_tags)
+    * [`fn new()`](#fn-override_providerdefault_tagsnew)
 
 ## Fields
 
@@ -97,6 +103,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `website_redirect` (`string`): Set the `website_redirect` field on the resulting resource block. When `null`, the `website_redirect` field will be omitted from the resulting object.
+  - `override_provider` (`list[obj]`): Set the `override_provider` field on the resulting resource block. When `null`, the `override_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_object.override_provider.new](#fn-override_providernew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -146,6 +153,7 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `website_redirect` (`string`): Set the `website_redirect` field on the resulting object. When `null`, the `website_redirect` field will be omitted from the resulting object.
+  - `override_provider` (`list[obj]`): Set the `override_provider` field on the resulting object. When `null`, the `override_provider` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_object.override_provider.new](#fn-override_providernew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_object` resource into the root Terraform configuration.
@@ -455,6 +463,43 @@ Terraform resource block to set or update the object_lock_retain_until_date fiel
   - `value` (`string`): The value to set for the `object_lock_retain_until_date` field.
 
 
+### fn withOverrideProvider
+
+```ts
+withOverrideProvider()
+```
+
+`aws.list[obj].withOverrideProvider` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the override_provider field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withOverrideProviderMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `override_provider` field.
+
+
+### fn withOverrideProviderMixin
+
+```ts
+withOverrideProviderMixin()
+```
+
+`aws.list[obj].withOverrideProviderMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the override_provider field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withOverrideProvider](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `override_provider` field.
+
+
 ### fn withServerSideEncryption
 
 ```ts
@@ -565,3 +610,49 @@ Terraform resource block to set or update the website_redirect field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `website_redirect` field.
+
+
+## obj override_provider
+
+
+
+### fn override_provider.new
+
+```ts
+new()
+```
+
+
+`aws.s3_object.override_provider.new` constructs a new object with attributes and blocks configured for the `override_provider`
+Terraform sub block.
+
+
+
+**Args**:
+  - `default_tags` (`list[obj]`): Set the `default_tags` field on the resulting object. When `null`, the `default_tags` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_object.override_provider.default_tags.new](#fn-override_providerdefault_tagsnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `override_provider` sub block.
+
+
+## obj override_provider.default_tags
+
+
+
+### fn override_provider.default_tags.new
+
+```ts
+new()
+```
+
+
+`aws.s3_object.override_provider.default_tags.new` constructs a new object with attributes and blocks configured for the `default_tags`
+Terraform sub block.
+
+
+
+**Args**:
+  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `default_tags` sub block.

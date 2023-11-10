@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withCopyTagsToSnapshots()`](#fn-withcopytagstosnapshots)
 * [`fn withDataCompressionType()`](#fn-withdatacompressiontype)
+* [`fn withDeleteVolumeOptions()`](#fn-withdeletevolumeoptions)
 * [`fn withName()`](#fn-withname)
 * [`fn withNfsExports()`](#fn-withnfsexports)
 * [`fn withNfsExportsMixin()`](#fn-withnfsexportsmixin)
@@ -76,6 +77,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `copy_tags_to_snapshots` (`bool`): Set the `copy_tags_to_snapshots` field on the resulting resource block. When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
   - `data_compression_type` (`string`): Set the `data_compression_type` field on the resulting resource block. When `null`, the `data_compression_type` field will be omitted from the resulting object.
+  - `delete_volume_options` (`list`): Set the `delete_volume_options` field on the resulting resource block. When `null`, the `delete_volume_options` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `parent_volume_id` (`string`): Set the `parent_volume_id` field on the resulting resource block.
   - `read_only` (`bool`): Set the `read_only` field on the resulting resource block. When `null`, the `read_only` field will be omitted from the resulting object.
@@ -114,6 +116,7 @@ injecting into a complete block.
 **Args**:
   - `copy_tags_to_snapshots` (`bool`): Set the `copy_tags_to_snapshots` field on the resulting object. When `null`, the `copy_tags_to_snapshots` field will be omitted from the resulting object.
   - `data_compression_type` (`string`): Set the `data_compression_type` field on the resulting object. When `null`, the `data_compression_type` field will be omitted from the resulting object.
+  - `delete_volume_options` (`list`): Set the `delete_volume_options` field on the resulting object. When `null`, the `delete_volume_options` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `parent_volume_id` (`string`): Set the `parent_volume_id` field on the resulting object.
   - `read_only` (`bool`): Set the `read_only` field on the resulting object. When `null`, the `read_only` field will be omitted from the resulting object.
@@ -162,6 +165,22 @@ Terraform resource block to set or update the data_compression_type field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `data_compression_type` field.
+
+
+### fn withDeleteVolumeOptions
+
+```ts
+withDeleteVolumeOptions()
+```
+
+`aws.list.withDeleteVolumeOptions` constructs a mixin object that can be merged into the `list`
+Terraform resource block to set or update the delete_volume_options field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list`): The value to set for the `delete_volume_options` field.
 
 
 ### fn withName

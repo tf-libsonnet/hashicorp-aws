@@ -90,6 +90,34 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   },
   default_user_settings:: {
     canvas_app_settings:: {
+      direct_deploy_settings:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.direct_deploy_settings.new` constructs a new object with attributes and blocks configured for the `direct_deploy_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `direct_deploy_settings` sub block.\n', args=[]),
+        new(
+          status=null
+        ):: std.prune(a={
+          status: status,
+        }),
+      },
+      identity_provider_oauth_settings:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.identity_provider_oauth_settings.new` constructs a new object with attributes and blocks configured for the `identity_provider_oauth_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `data_source_name` (`string`): Set the `data_source_name` field on the resulting object. When `null`, the `data_source_name` field will be omitted from the resulting object.\n  - `secret_arn` (`string`): Set the `secret_arn` field on the resulting object.\n  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `identity_provider_oauth_settings` sub block.\n', args=[]),
+        new(
+          secret_arn,
+          data_source_name=null,
+          status=null
+        ):: std.prune(a={
+          data_source_name: data_source_name,
+          secret_arn: secret_arn,
+          status: status,
+        }),
+      },
+      kendra_settings:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.kendra_settings.new` constructs a new object with attributes and blocks configured for the `kendra_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `kendra_settings` sub block.\n', args=[]),
+        new(
+          status=null
+        ):: std.prune(a={
+          status: status,
+        }),
+      },
       model_register_settings:: {
         '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.model_register_settings.new` constructs a new object with attributes and blocks configured for the `model_register_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cross_account_model_register_role_arn` (`string`): Set the `cross_account_model_register_role_arn` field on the resulting object. When `null`, the `cross_account_model_register_role_arn` field will be omitted from the resulting object.\n  - `status` (`string`): Set the `status` field on the resulting object. When `null`, the `status` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `model_register_settings` sub block.\n', args=[]),
         new(
@@ -100,12 +128,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
           status: status,
         }),
       },
-      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.new` constructs a new object with attributes and blocks configured for the `canvas_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.model_register_settings.new](#fn-default_user_settingsdefault_user_settingsmodel_register_settingsnew) constructor.\n  - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-default_user_settingsdefault_user_settingstime_series_forecasting_settingsnew) constructor.\n  - `workspace_settings` (`list[obj]`): Set the `workspace_settings` field on the resulting object. When `null`, the `workspace_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.workspace_settings.new](#fn-default_user_settingsdefault_user_settingsworkspace_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `canvas_app_settings` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.canvas_app_settings.new` constructs a new object with attributes and blocks configured for the `canvas_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `direct_deploy_settings` (`list[obj]`): Set the `direct_deploy_settings` field on the resulting object. When `null`, the `direct_deploy_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.direct_deploy_settings.new](#fn-default_user_settingsdefault_user_settingsdirect_deploy_settingsnew) constructor.\n  - `identity_provider_oauth_settings` (`list[obj]`): Set the `identity_provider_oauth_settings` field on the resulting object. When `null`, the `identity_provider_oauth_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.identity_provider_oauth_settings.new](#fn-default_user_settingsdefault_user_settingsidentity_provider_oauth_settingsnew) constructor.\n  - `kendra_settings` (`list[obj]`): Set the `kendra_settings` field on the resulting object. When `null`, the `kendra_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.kendra_settings.new](#fn-default_user_settingsdefault_user_settingskendra_settingsnew) constructor.\n  - `model_register_settings` (`list[obj]`): Set the `model_register_settings` field on the resulting object. When `null`, the `model_register_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.model_register_settings.new](#fn-default_user_settingsdefault_user_settingsmodel_register_settingsnew) constructor.\n  - `time_series_forecasting_settings` (`list[obj]`): Set the `time_series_forecasting_settings` field on the resulting object. When `null`, the `time_series_forecasting_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.time_series_forecasting_settings.new](#fn-default_user_settingsdefault_user_settingstime_series_forecasting_settingsnew) constructor.\n  - `workspace_settings` (`list[obj]`): Set the `workspace_settings` field on the resulting object. When `null`, the `workspace_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.workspace_settings.new](#fn-default_user_settingsdefault_user_settingsworkspace_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `canvas_app_settings` sub block.\n', args=[]),
       new(
+        direct_deploy_settings=null,
+        identity_provider_oauth_settings=null,
+        kendra_settings=null,
         model_register_settings=null,
         time_series_forecasting_settings=null,
         workspace_settings=null
       ):: std.prune(a={
+        direct_deploy_settings: direct_deploy_settings,
+        identity_provider_oauth_settings: identity_provider_oauth_settings,
+        kendra_settings: kendra_settings,
         model_register_settings: model_register_settings,
         time_series_forecasting_settings: time_series_forecasting_settings,
         workspace_settings: workspace_settings,

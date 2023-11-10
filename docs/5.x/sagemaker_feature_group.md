@@ -40,6 +40,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-online_store_confignew)
   * [`obj online_store_config.security_config`](#obj-online_store_configsecurity_config)
     * [`fn new()`](#fn-online_store_configsecurity_confignew)
+  * [`obj online_store_config.ttl_duration`](#obj-online_store_configttl_duration)
+    * [`fn new()`](#fn-online_store_configttl_durationnew)
 
 ## Fields
 
@@ -434,6 +436,7 @@ Terraform sub block.
 
 **Args**:
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
+  - `resolved_output_s3_uri` (`string`): Set the `resolved_output_s3_uri` field on the resulting object. When `null`, the `resolved_output_s3_uri` field will be omitted from the resulting object.
   - `s3_uri` (`string`): Set the `s3_uri` field on the resulting object.
 
 **Returns**:
@@ -458,7 +461,9 @@ Terraform sub block.
 
 **Args**:
   - `enable_online_store` (`bool`): Set the `enable_online_store` field on the resulting object. When `null`, the `enable_online_store` field will be omitted from the resulting object.
+  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
   - `security_config` (`list[obj]`): Set the `security_config` field on the resulting object. When `null`, the `security_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.security_config.new](#fn-online_store_configsecurity_confignew) constructor.
+  - `ttl_duration` (`list[obj]`): Set the `ttl_duration` field on the resulting object. When `null`, the `ttl_duration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_feature_group.online_store_config.ttl_duration.new](#fn-online_store_configttl_durationnew) constructor.
 
 **Returns**:
   - An attribute object that represents the `online_store_config` sub block.
@@ -485,3 +490,27 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `security_config` sub block.
+
+
+## obj online_store_config.ttl_duration
+
+
+
+### fn online_store_config.ttl_duration.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_feature_group.online_store_config.ttl_duration.new` constructs a new object with attributes and blocks configured for the `ttl_duration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `unit` (`string`): Set the `unit` field on the resulting object. When `null`, the `unit` field will be omitted from the resulting object.
+  - `value` (`number`): Set the `value` field on the resulting object. When `null`, the `value` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `ttl_duration` sub block.

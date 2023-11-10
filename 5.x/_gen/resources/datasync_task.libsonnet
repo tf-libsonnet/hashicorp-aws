@@ -22,7 +22,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       value: value,
     }),
   },
-  '#new':: d.fn(help="\n`aws.datasync_task.new` injects a new `aws_datasync_task` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.datasync_task.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.datasync_task` using the reference:\n\n    $._ref.aws_datasync_task.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_datasync_task.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting resource block. When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.\n  - `destination_location_arn` (`string`): Set the `destination_location_arn` field on the resulting resource block.\n  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.\n  - `source_location_arn` (`string`): Set the `source_location_arn` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `excludes` (`list[obj]`): Set the `excludes` field on the resulting resource block. When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.excludes.new](#fn-excludesnew) constructor.\n  - `includes` (`list[obj]`): Set the `includes` field on the resulting resource block. When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.includes.new](#fn-includesnew) constructor.\n  - `options` (`list[obj]`): Set the `options` field on the resulting resource block. When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.options.new](#fn-optionsnew) constructor.\n  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting resource block. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.schedule.new](#fn-schedulenew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.datasync_task.new` injects a new `aws_datasync_task` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.datasync_task.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.datasync_task` using the reference:\n\n    $._ref.aws_datasync_task.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_datasync_task.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting resource block. When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.\n  - `destination_location_arn` (`string`): Set the `destination_location_arn` field on the resulting resource block.\n  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.\n  - `source_location_arn` (`string`): Set the `source_location_arn` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `excludes` (`list[obj]`): Set the `excludes` field on the resulting resource block. When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.excludes.new](#fn-excludesnew) constructor.\n  - `includes` (`list[obj]`): Set the `includes` field on the resulting resource block. When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.includes.new](#fn-includesnew) constructor.\n  - `options` (`list[obj]`): Set the `options` field on the resulting resource block. When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.options.new](#fn-optionsnew) constructor.\n  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting resource block. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.schedule.new](#fn-schedulenew) constructor.\n  - `task_report_config` (`list[obj]`): Set the `task_report_config` field on the resulting resource block. When `null`, the `task_report_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.new](#fn-task_report_confignew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     destination_location_arn,
@@ -35,6 +35,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     schedule=null,
     tags=null,
     tags_all=null,
+    task_report_config=null,
     timeouts=null,
     _meta={}
   ):: tf.withResource(
@@ -51,11 +52,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       source_location_arn=source_location_arn,
       tags=tags,
       tags_all=tags_all,
+      task_report_config=task_report_config,
       timeouts=timeouts
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.datasync_task.newAttrs` constructs a new object with attributes and blocks configured for the `datasync_task`\nTerraform resource.\n\nUnlike [aws.datasync_task.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting object. When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.\n  - `destination_location_arn` (`string`): Set the `destination_location_arn` field on the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `source_location_arn` (`string`): Set the `source_location_arn` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `excludes` (`list[obj]`): Set the `excludes` field on the resulting object. When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.excludes.new](#fn-excludesnew) constructor.\n  - `includes` (`list[obj]`): Set the `includes` field on the resulting object. When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.includes.new](#fn-includesnew) constructor.\n  - `options` (`list[obj]`): Set the `options` field on the resulting object. When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.options.new](#fn-optionsnew) constructor.\n  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting object. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.schedule.new](#fn-schedulenew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_task` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.datasync_task.newAttrs` constructs a new object with attributes and blocks configured for the `datasync_task`\nTerraform resource.\n\nUnlike [aws.datasync_task.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `cloudwatch_log_group_arn` (`string`): Set the `cloudwatch_log_group_arn` field on the resulting object. When `null`, the `cloudwatch_log_group_arn` field will be omitted from the resulting object.\n  - `destination_location_arn` (`string`): Set the `destination_location_arn` field on the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `source_location_arn` (`string`): Set the `source_location_arn` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `excludes` (`list[obj]`): Set the `excludes` field on the resulting object. When `null`, the `excludes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.excludes.new](#fn-excludesnew) constructor.\n  - `includes` (`list[obj]`): Set the `includes` field on the resulting object. When `null`, the `includes` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.includes.new](#fn-includesnew) constructor.\n  - `options` (`list[obj]`): Set the `options` field on the resulting object. When `null`, the `options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.options.new](#fn-optionsnew) constructor.\n  - `schedule` (`list[obj]`): Set the `schedule` field on the resulting object. When `null`, the `schedule` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.schedule.new](#fn-schedulenew) constructor.\n  - `task_report_config` (`list[obj]`): Set the `task_report_config` field on the resulting object. When `null`, the `task_report_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.new](#fn-task_report_confignew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `datasync_task` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     destination_location_arn,
     source_location_arn,
@@ -67,6 +69,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     schedule=null,
     tags=null,
     tags_all=null,
+    task_report_config=null,
     timeouts=null
   ):: std.prune(a={
     cloudwatch_log_group_arn: cloudwatch_log_group_arn,
@@ -79,6 +82,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     source_location_arn: source_location_arn,
     tags: tags,
     tags_all: tags_all,
+    task_report_config: task_report_config,
     timeouts: timeouts,
   }),
   options:: {
@@ -124,6 +128,48 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ):: std.prune(a={
       schedule_expression: schedule_expression,
     }),
+  },
+  task_report_config:: {
+    '#new':: d.fn(help='\n`aws.datasync_task.task_report_config.new` constructs a new object with attributes and blocks configured for the `task_report_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `output_type` (`string`): Set the `output_type` field on the resulting object. When `null`, the `output_type` field will be omitted from the resulting object.\n  - `report_level` (`string`): Set the `report_level` field on the resulting object. When `null`, the `report_level` field will be omitted from the resulting object.\n  - `s3_object_versioning` (`string`): Set the `s3_object_versioning` field on the resulting object. When `null`, the `s3_object_versioning` field will be omitted from the resulting object.\n  - `report_overrides` (`list[obj]`): Set the `report_overrides` field on the resulting object. When `null`, the `report_overrides` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.report_overrides.new](#fn-task_report_configreport_overridesnew) constructor.\n  - `s3_destination` (`list[obj]`): Set the `s3_destination` field on the resulting object. When `null`, the `s3_destination` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.datasync_task.task_report_config.s3_destination.new](#fn-task_report_configs3_destinationnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `task_report_config` sub block.\n', args=[]),
+    new(
+      output_type=null,
+      report_level=null,
+      report_overrides=null,
+      s3_destination=null,
+      s3_object_versioning=null
+    ):: std.prune(a={
+      output_type: output_type,
+      report_level: report_level,
+      report_overrides: report_overrides,
+      s3_destination: s3_destination,
+      s3_object_versioning: s3_object_versioning,
+    }),
+    report_overrides:: {
+      '#new':: d.fn(help='\n`aws.datasync_task.task_report_config.report_overrides.new` constructs a new object with attributes and blocks configured for the `report_overrides`\nTerraform sub block.\n\n\n\n**Args**:\n  - `deleted_override` (`string`): Set the `deleted_override` field on the resulting object. When `null`, the `deleted_override` field will be omitted from the resulting object.\n  - `skipped_override` (`string`): Set the `skipped_override` field on the resulting object. When `null`, the `skipped_override` field will be omitted from the resulting object.\n  - `transferred_override` (`string`): Set the `transferred_override` field on the resulting object. When `null`, the `transferred_override` field will be omitted from the resulting object.\n  - `verified_override` (`string`): Set the `verified_override` field on the resulting object. When `null`, the `verified_override` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `report_overrides` sub block.\n', args=[]),
+      new(
+        deleted_override=null,
+        skipped_override=null,
+        transferred_override=null,
+        verified_override=null
+      ):: std.prune(a={
+        deleted_override: deleted_override,
+        skipped_override: skipped_override,
+        transferred_override: transferred_override,
+        verified_override: verified_override,
+      }),
+    },
+    s3_destination:: {
+      '#new':: d.fn(help='\n`aws.datasync_task.task_report_config.s3_destination.new` constructs a new object with attributes and blocks configured for the `s3_destination`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket_access_role_arn` (`string`): Set the `bucket_access_role_arn` field on the resulting object.\n  - `s3_bucket_arn` (`string`): Set the `s3_bucket_arn` field on the resulting object.\n  - `subdirectory` (`string`): Set the `subdirectory` field on the resulting object. When `null`, the `subdirectory` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `s3_destination` sub block.\n', args=[]),
+      new(
+        bucket_access_role_arn,
+        s3_bucket_arn,
+        subdirectory=null
+      ):: std.prune(a={
+        bucket_access_role_arn: bucket_access_role_arn,
+        s3_bucket_arn: s3_bucket_arn,
+        subdirectory: subdirectory,
+      }),
+    },
   },
   timeouts:: {
     '#new':: d.fn(help='\n`aws.datasync_task.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`\nTerraform sub block.\n\n\n\n**Args**:\n  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `timeouts` sub block.\n', args=[]),
@@ -269,6 +315,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_datasync_task+: {
         [resourceLabel]+: {
           tags_all: value,
+        },
+      },
+    },
+  },
+  '#withTaskReportConfig':: d.fn(help='`aws.list[obj].withTaskReportConfig` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the task_report_config field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withTaskReportConfigMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `task_report_config` field.\n', args=[]),
+  withTaskReportConfig(resourceLabel, value): {
+    resource+: {
+      aws_datasync_task+: {
+        [resourceLabel]+: {
+          task_report_config: value,
+        },
+      },
+    },
+  },
+  '#withTaskReportConfigMixin':: d.fn(help='`aws.list[obj].withTaskReportConfigMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the task_report_config field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withTaskReportConfig](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `task_report_config` field.\n', args=[]),
+  withTaskReportConfigMixin(resourceLabel, value): {
+    resource+: {
+      aws_datasync_task+: {
+        [resourceLabel]+: {
+          task_report_config+: if std.isArray(v=value) then value else [value],
         },
       },
     },

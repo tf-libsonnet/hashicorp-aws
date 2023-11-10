@@ -228,11 +228,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
   },
   vpc_config:: {
-    '#new':: d.fn(help='\n`aws.lambda_function.vpc_config.new` constructs a new object with attributes and blocks configured for the `vpc_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.\n  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `vpc_config` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.lambda_function.vpc_config.new` constructs a new object with attributes and blocks configured for the `vpc_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ipv6_allowed_for_dual_stack` (`bool`): Set the `ipv6_allowed_for_dual_stack` field on the resulting object. When `null`, the `ipv6_allowed_for_dual_stack` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.\n  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `vpc_config` sub block.\n', args=[]),
     new(
       security_group_ids,
-      subnet_ids
+      subnet_ids,
+      ipv6_allowed_for_dual_stack=null
     ):: std.prune(a={
+      ipv6_allowed_for_dual_stack: ipv6_allowed_for_dual_stack,
       security_group_ids: security_group_ids,
       subnet_ids: subnet_ids,
     }),
