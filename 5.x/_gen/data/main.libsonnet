@@ -266,6 +266,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   instances: (import 'instances.libsonnet'),
   internet_gateway: (import 'internet_gateway.libsonnet'),
   iot_endpoint: (import 'iot_endpoint.libsonnet'),
+  iot_registration_code: (import 'iot_registration_code.libsonnet'),
   ip_ranges: (import 'ip_ranges.libsonnet'),
   ivs_stream_key: (import 'ivs_stream_key.libsonnet'),
   kendra_experience: (import 'kendra_experience.libsonnet'),

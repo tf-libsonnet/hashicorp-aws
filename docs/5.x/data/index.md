@@ -271,6 +271,7 @@ permalink: /data/
 * [instances](instances.md)
 * [internet_gateway](internet_gateway.md)
 * [iot_endpoint](iot_endpoint.md)
+* [iot_registration_code](iot_registration_code.md)
 * [ip_ranges](ip_ranges.md)
 * [ivs_stream_key](ivs_stream_key.md)
 * [kendra_experience](kendra_experience.md)

@@ -50,11 +50,13 @@ from the &#39;Security &amp; Credentials&#39; section of the AWS console. When `
   - `ec2_metadata_service_endpoint` (`string`): Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. When `null`, the `ec2_metadata_service_endpoint` field will be omitted from the resulting object.
   - `ec2_metadata_service_endpoint_mode` (`string`): Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. When `null`, the `ec2_metadata_service_endpoint_mode` field will be omitted from the resulting object.
   - `forbidden_account_ids` (`list`): Set the `forbidden_account_ids` field on the resulting provider block. When `null`, the `forbidden_account_ids` field will be omitted from the resulting object.
-  - `http_proxy` (`string`): The address of an HTTP proxy to use when accessing the AWS API. Can also be configured using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables. When `null`, the `http_proxy` field will be omitted from the resulting object.
+  - `http_proxy` (`string`): URL of a proxy to use for HTTP requests when accessing the AWS API. Can also be set using the `HTTP_PROXY` or `http_proxy` environment variables. When `null`, the `http_proxy` field will be omitted from the resulting object.
+  - `https_proxy` (`string`): URL of a proxy to use for HTTPS requests when accessing the AWS API. Can also be set using the `HTTPS_PROXY` or `https_proxy` environment variables. When `null`, the `https_proxy` field will be omitted from the resulting object.
   - `insecure` (`bool`): Explicitly allow the provider to perform &#34;insecure&#34; SSL requests. If omitted, default value is `false` When `null`, the `insecure` field will be omitted from the resulting object.
   - `max_retries` (`number`): The maximum number of times an AWS API request is
 being executed. If the API request still fails, an error is
 thrown. When `null`, the `max_retries` field will be omitted from the resulting object.
+  - `no_proxy` (`string`): Comma-separated list of hosts that should not use HTTP or HTTPS proxies. Can also be set using the `NO_PROXY` or `no_proxy` environment variables. When `null`, the `no_proxy` field will be omitted from the resulting object.
   - `profile` (`string`): The profile for API operations. If not set, the default profile
 created with `aws configure` will be used. When `null`, the `profile` field will be omitted from the resulting object.
   - `region` (`string`): The region where AWS operations will take place. Examples
@@ -122,11 +124,13 @@ from the &#39;Security &amp; Credentials&#39; section of the AWS console. When `
   - `ec2_metadata_service_endpoint` (`string`): Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. When `null`, the `ec2_metadata_service_endpoint` field will be omitted from the resulting object.
   - `ec2_metadata_service_endpoint_mode` (`string`): Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. When `null`, the `ec2_metadata_service_endpoint_mode` field will be omitted from the resulting object.
   - `forbidden_account_ids` (`list`): Set the `forbidden_account_ids` field on the resulting object. When `null`, the `forbidden_account_ids` field will be omitted from the resulting object.
-  - `http_proxy` (`string`): The address of an HTTP proxy to use when accessing the AWS API. Can also be configured using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables. When `null`, the `http_proxy` field will be omitted from the resulting object.
+  - `http_proxy` (`string`): URL of a proxy to use for HTTP requests when accessing the AWS API. Can also be set using the `HTTP_PROXY` or `http_proxy` environment variables. When `null`, the `http_proxy` field will be omitted from the resulting object.
+  - `https_proxy` (`string`): URL of a proxy to use for HTTPS requests when accessing the AWS API. Can also be set using the `HTTPS_PROXY` or `https_proxy` environment variables. When `null`, the `https_proxy` field will be omitted from the resulting object.
   - `insecure` (`bool`): Explicitly allow the provider to perform &#34;insecure&#34; SSL requests. If omitted, default value is `false` When `null`, the `insecure` field will be omitted from the resulting object.
   - `max_retries` (`number`): The maximum number of times an AWS API request is
 being executed. If the API request still fails, an error is
 thrown. When `null`, the `max_retries` field will be omitted from the resulting object.
+  - `no_proxy` (`string`): Comma-separated list of hosts that should not use HTTP or HTTPS proxies. Can also be set using the `NO_PROXY` or `no_proxy` environment variables. When `null`, the `no_proxy` field will be omitted from the resulting object.
   - `profile` (`string`): The profile for API operations. If not set, the default profile
 created with `aws configure` will be used. When `null`, the `profile` field will be omitted from the resulting object.
   - `region` (`string`): The region where AWS operations will take place. Examples
@@ -329,10 +333,12 @@ Terraform sub block.
   - `config` (`string`): Use this to override the default service endpoint URL When `null`, the `config` field will be omitted from the resulting object.
   - `configservice` (`string`): Use this to override the default service endpoint URL When `null`, the `configservice` field will be omitted from the resulting object.
   - `connect` (`string`): Use this to override the default service endpoint URL When `null`, the `connect` field will be omitted from the resulting object.
+  - `connectcases` (`string`): Use this to override the default service endpoint URL When `null`, the `connectcases` field will be omitted from the resulting object.
   - `controltower` (`string`): Use this to override the default service endpoint URL When `null`, the `controltower` field will be omitted from the resulting object.
   - `costandusagereportservice` (`string`): Use this to override the default service endpoint URL When `null`, the `costandusagereportservice` field will be omitted from the resulting object.
   - `costexplorer` (`string`): Use this to override the default service endpoint URL When `null`, the `costexplorer` field will be omitted from the resulting object.
   - `cur` (`string`): Use this to override the default service endpoint URL When `null`, the `cur` field will be omitted from the resulting object.
+  - `customerprofiles` (`string`): Use this to override the default service endpoint URL When `null`, the `customerprofiles` field will be omitted from the resulting object.
   - `databasemigration` (`string`): Use this to override the default service endpoint URL When `null`, the `databasemigration` field will be omitted from the resulting object.
   - `databasemigrationservice` (`string`): Use this to override the default service endpoint URL When `null`, the `databasemigrationservice` field will be omitted from the resulting object.
   - `dataexchange` (`string`): Use this to override the default service endpoint URL When `null`, the `dataexchange` field will be omitted from the resulting object.
@@ -435,10 +441,12 @@ Terraform sub block.
   - `networkmanager` (`string`): Use this to override the default service endpoint URL When `null`, the `networkmanager` field will be omitted from the resulting object.
   - `oam` (`string`): Use this to override the default service endpoint URL When `null`, the `oam` field will be omitted from the resulting object.
   - `opensearch` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearch` field will be omitted from the resulting object.
+  - `opensearchingestion` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchingestion` field will be omitted from the resulting object.
   - `opensearchserverless` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchserverless` field will be omitted from the resulting object.
   - `opensearchservice` (`string`): Use this to override the default service endpoint URL When `null`, the `opensearchservice` field will be omitted from the resulting object.
   - `opsworks` (`string`): Use this to override the default service endpoint URL When `null`, the `opsworks` field will be omitted from the resulting object.
   - `organizations` (`string`): Use this to override the default service endpoint URL When `null`, the `organizations` field will be omitted from the resulting object.
+  - `osis` (`string`): Use this to override the default service endpoint URL When `null`, the `osis` field will be omitted from the resulting object.
   - `outposts` (`string`): Use this to override the default service endpoint URL When `null`, the `outposts` field will be omitted from the resulting object.
   - `pinpoint` (`string`): Use this to override the default service endpoint URL When `null`, the `pinpoint` field will be omitted from the resulting object.
   - `pipes` (`string`): Use this to override the default service endpoint URL When `null`, the `pipes` field will be omitted from the resulting object.
