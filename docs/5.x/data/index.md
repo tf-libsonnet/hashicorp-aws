@@ -219,6 +219,7 @@ permalink: /data/
 * [elb_hosted_zone_id](elb_hosted_zone_id.md)
 * [elb_service_account](elb_service_account.md)
 * [emr_release_labels](emr_release_labels.md)
+* [emr_supported_instance_types](emr_supported_instance_types.md)
 * [emrcontainers_virtual_cluster](emrcontainers_virtual_cluster.md)
 * [fsx_ontap_file_system](fsx_ontap_file_system.md)
 * [fsx_ontap_storage_virtual_machine](fsx_ontap_storage_virtual_machine.md)

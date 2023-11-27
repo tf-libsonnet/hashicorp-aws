@@ -214,6 +214,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   elb_hosted_zone_id: (import 'elb_hosted_zone_id.libsonnet'),
   elb_service_account: (import 'elb_service_account.libsonnet'),
   emr_release_labels: (import 'emr_release_labels.libsonnet'),
+  emr_supported_instance_types: (import 'emr_supported_instance_types.libsonnet'),
   emrcontainers_virtual_cluster: (import 'emrcontainers_virtual_cluster.libsonnet'),
   fsx_ontap_file_system: (import 'fsx_ontap_file_system.libsonnet'),
   fsx_ontap_storage_virtual_machine: (import 'fsx_ontap_storage_virtual_machine.libsonnet'),

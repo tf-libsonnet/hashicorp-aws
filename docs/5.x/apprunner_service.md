@@ -518,6 +518,7 @@ Terraform sub block.
 
 
 **Args**:
+  - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
   - `egress_configuration` (`list[obj]`): Set the `egress_configuration` field on the resulting object. When `null`, the `egress_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.network_configuration.egress_configuration.new](#fn-network_configurationegress_configurationnew) constructor.
   - `ingress_configuration` (`list[obj]`): Set the `ingress_configuration` field on the resulting object. When `null`, the `ingress_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.network_configuration.ingress_configuration.new](#fn-network_configurationingress_configurationnew) constructor.
 
@@ -664,6 +665,7 @@ Terraform sub block.
 
 **Args**:
   - `repository_url` (`string`): Set the `repository_url` field on the resulting object.
+  - `source_directory` (`string`): Set the `source_directory` field on the resulting object. When `null`, the `source_directory` field will be omitted from the resulting object.
   - `code_configuration` (`list[obj]`): Set the `code_configuration` field on the resulting object. When `null`, the `code_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.code_configuration.new](#fn-source_configurationsource_configurationcode_configurationnew) constructor.
   - `source_code_version` (`list[obj]`): Set the `source_code_version` field on the resulting object. When `null`, the `source_code_version` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.apprunner_service.source_configuration.code_repository.source_code_version.new](#fn-source_configurationsource_configurationsource_code_versionnew) constructor.
 

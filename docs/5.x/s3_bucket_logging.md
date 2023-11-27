@@ -20,11 +20,19 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTargetBucket()`](#fn-withtargetbucket)
 * [`fn withTargetGrant()`](#fn-withtargetgrant)
 * [`fn withTargetGrantMixin()`](#fn-withtargetgrantmixin)
+* [`fn withTargetObjectKeyFormat()`](#fn-withtargetobjectkeyformat)
+* [`fn withTargetObjectKeyFormatMixin()`](#fn-withtargetobjectkeyformatmixin)
 * [`fn withTargetPrefix()`](#fn-withtargetprefix)
 * [`obj target_grant`](#obj-target_grant)
   * [`fn new()`](#fn-target_grantnew)
   * [`obj target_grant.grantee`](#obj-target_grantgrantee)
     * [`fn new()`](#fn-target_grantgranteenew)
+* [`obj target_object_key_format`](#obj-target_object_key_format)
+  * [`fn new()`](#fn-target_object_key_formatnew)
+  * [`obj target_object_key_format.partitioned_prefix`](#obj-target_object_key_formatpartitioned_prefix)
+    * [`fn new()`](#fn-target_object_key_formatpartitioned_prefixnew)
+  * [`obj target_object_key_format.simple_prefix`](#obj-target_object_key_formatsimple_prefix)
+    * [`fn new()`](#fn-target_object_key_formatsimple_prefixnew)
 
 ## Fields
 
@@ -60,6 +68,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `target_bucket` (`string`): Set the `target_bucket` field on the resulting resource block.
   - `target_prefix` (`string`): Set the `target_prefix` field on the resulting resource block.
   - `target_grant` (`list[obj]`): Set the `target_grant` field on the resulting resource block. When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.
+  - `target_object_key_format` (`list[obj]`): Set the `target_object_key_format` field on the resulting resource block. When `null`, the `target_object_key_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.new](#fn-target_object_key_formatnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -88,6 +97,7 @@ injecting into a complete block.
   - `target_bucket` (`string`): Set the `target_bucket` field on the resulting object.
   - `target_prefix` (`string`): Set the `target_prefix` field on the resulting object.
   - `target_grant` (`list[obj]`): Set the `target_grant` field on the resulting object. When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.
+  - `target_object_key_format` (`list[obj]`): Set the `target_object_key_format` field on the resulting object. When `null`, the `target_object_key_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.new](#fn-target_object_key_formatnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_logging` resource into the root Terraform configuration.
@@ -178,6 +188,43 @@ function.
   - `value` (`list[obj]`): The value to set for the `target_grant` field.
 
 
+### fn withTargetObjectKeyFormat
+
+```ts
+withTargetObjectKeyFormat()
+```
+
+`aws.list[obj].withTargetObjectKeyFormat` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the target_object_key_format field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withTargetObjectKeyFormatMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `target_object_key_format` field.
+
+
+### fn withTargetObjectKeyFormatMixin
+
+```ts
+withTargetObjectKeyFormatMixin()
+```
+
+`aws.list[obj].withTargetObjectKeyFormatMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the target_object_key_format field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withTargetObjectKeyFormat](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `target_object_key_format` field.
+
+
 ### fn withTargetPrefix
 
 ```ts
@@ -241,3 +288,70 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `grantee` sub block.
+
+
+## obj target_object_key_format
+
+
+
+### fn target_object_key_format.new
+
+```ts
+new()
+```
+
+
+`aws.s3_bucket_logging.target_object_key_format.new` constructs a new object with attributes and blocks configured for the `target_object_key_format`
+Terraform sub block.
+
+
+
+**Args**:
+  - `partitioned_prefix` (`list[obj]`): Set the `partitioned_prefix` field on the resulting object. When `null`, the `partitioned_prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.partitioned_prefix.new](#fn-target_object_key_formatpartitioned_prefixnew) constructor.
+  - `simple_prefix` (`list[obj]`): Set the `simple_prefix` field on the resulting object. When `null`, the `simple_prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.simple_prefix.new](#fn-target_object_key_formatsimple_prefixnew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `target_object_key_format` sub block.
+
+
+## obj target_object_key_format.partitioned_prefix
+
+
+
+### fn target_object_key_format.partitioned_prefix.new
+
+```ts
+new()
+```
+
+
+`aws.s3_bucket_logging.target_object_key_format.partitioned_prefix.new` constructs a new object with attributes and blocks configured for the `partitioned_prefix`
+Terraform sub block.
+
+
+
+**Args**:
+  - `partition_date_source` (`string`): Set the `partition_date_source` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `partitioned_prefix` sub block.
+
+
+## obj target_object_key_format.simple_prefix
+
+
+
+### fn target_object_key_format.simple_prefix.new
+
+```ts
+new()
+```
+
+
+`aws.s3_bucket_logging.target_object_key_format.simple_prefix.new` constructs a new object with attributes and blocks configured for the `simple_prefix`
+Terraform sub block.
+
+
+
+**Returns**:
+  - An attribute object that represents the `simple_prefix` sub block.

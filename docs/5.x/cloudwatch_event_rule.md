@@ -23,6 +23,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withNamePrefix()`](#fn-withnameprefix)
 * [`fn withRoleArn()`](#fn-withrolearn)
 * [`fn withScheduleExpression()`](#fn-withscheduleexpression)
+* [`fn withState()`](#fn-withstate)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 
@@ -63,6 +64,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting resource block. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block. When `null`, the `role_arn` field will be omitted from the resulting object.
   - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting resource block. When `null`, the `schedule_expression` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting resource block. When `null`, the `state` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -96,6 +98,7 @@ injecting into a complete block.
   - `name_prefix` (`string`): Set the `name_prefix` field on the resulting object. When `null`, the `name_prefix` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
   - `schedule_expression` (`string`): Set the `schedule_expression` field on the resulting object. When `null`, the `schedule_expression` field will be omitted from the resulting object.
+  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -229,6 +232,22 @@ Terraform resource block to set or update the schedule_expression field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `schedule_expression` field.
+
+
+### fn withState
+
+```ts
+withState()
+```
+
+`aws.string.withState` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the state field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `state` field.
 
 
 ### fn withTags
