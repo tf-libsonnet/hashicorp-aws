@@ -433,6 +433,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   s3_bucket_object: (import 's3_bucket_object.libsonnet'),
   s3_bucket_objects: (import 's3_bucket_objects.libsonnet'),
   s3_bucket_policy: (import 's3_bucket_policy.libsonnet'),
+  s3_directory_buckets: (import 's3_directory_buckets.libsonnet'),
   s3_object: (import 's3_object.libsonnet'),
   s3_objects: (import 's3_objects.libsonnet'),
   s3control_multi_region_access_point: (import 's3control_multi_region_access_point.libsonnet'),

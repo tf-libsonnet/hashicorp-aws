@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAccountId()`](#fn-withaccountid)
+* [`fn withIdentityCenterArn()`](#fn-withidentitycenterarn)
 * [`fn withTags()`](#fn-withtags)
 
 ## Fields
@@ -48,6 +49,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `account_id` (`string`): Set the `account_id` field on the resulting resource block. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `identity_center_arn` (`string`): Set the `identity_center_arn` field on the resulting resource block. When `null`, the `identity_center_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
@@ -73,6 +75,7 @@ injecting into a complete block.
 
 **Args**:
   - `account_id` (`string`): Set the `account_id` field on the resulting object. When `null`, the `account_id` field will be omitted from the resulting object.
+  - `identity_center_arn` (`string`): Set the `identity_center_arn` field on the resulting object. When `null`, the `identity_center_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
 
 **Returns**:
@@ -93,6 +96,22 @@ Terraform resource block to set or update the account_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `account_id` field.
+
+
+### fn withIdentityCenterArn
+
+```ts
+withIdentityCenterArn()
+```
+
+`aws.string.withIdentityCenterArn` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the identity_center_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `identity_center_arn` field.
 
 
 ### fn withTags

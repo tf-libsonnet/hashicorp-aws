@@ -1004,6 +1004,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   s3_bucket_server_side_encryption_configuration: (import 'resources/s3_bucket_server_side_encryption_configuration.libsonnet'),
   s3_bucket_versioning: (import 'resources/s3_bucket_versioning.libsonnet'),
   s3_bucket_website_configuration: (import 'resources/s3_bucket_website_configuration.libsonnet'),
+  s3_directory_bucket: (import 'resources/s3_directory_bucket.libsonnet'),
   s3_object: (import 'resources/s3_object.libsonnet'),
   s3_object_copy: (import 'resources/s3_object_copy.libsonnet'),
   s3control_access_grant: (import 'resources/s3control_access_grant.libsonnet'),

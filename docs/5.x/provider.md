@@ -277,6 +277,7 @@ Terraform sub block.
   - `apigatewayv2` (`string`): Use this to override the default service endpoint URL When `null`, the `apigatewayv2` field will be omitted from the resulting object.
   - `appautoscaling` (`string`): Use this to override the default service endpoint URL When `null`, the `appautoscaling` field will be omitted from the resulting object.
   - `appconfig` (`string`): Use this to override the default service endpoint URL When `null`, the `appconfig` field will be omitted from the resulting object.
+  - `appfabric` (`string`): Use this to override the default service endpoint URL When `null`, the `appfabric` field will be omitted from the resulting object.
   - `appflow` (`string`): Use this to override the default service endpoint URL When `null`, the `appflow` field will be omitted from the resulting object.
   - `appintegrations` (`string`): Use this to override the default service endpoint URL When `null`, the `appintegrations` field will be omitted from the resulting object.
   - `appintegrationsservice` (`string`): Use this to override the default service endpoint URL When `null`, the `appintegrationsservice` field will be omitted from the resulting object.

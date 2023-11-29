@@ -1015,6 +1015,7 @@ project.
 * [s3_bucket_server_side_encryption_configuration](s3_bucket_server_side_encryption_configuration.md)
 * [s3_bucket_versioning](s3_bucket_versioning.md)
 * [s3_bucket_website_configuration](s3_bucket_website_configuration.md)
+* [s3_directory_bucket](s3_directory_bucket.md)
 * [s3_object](s3_object.md)
 * [s3_object_copy](s3_object_copy.md)
 * [s3control_access_grant](s3control_access_grant.md)

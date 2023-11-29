@@ -438,6 +438,7 @@ permalink: /data/
 * [s3_bucket_object](s3_bucket_object.md)
 * [s3_bucket_objects](s3_bucket_objects.md)
 * [s3_bucket_policy](s3_bucket_policy.md)
+* [s3_directory_buckets](s3_directory_buckets.md)
 * [s3_object](s3_object.md)
 * [s3_objects](s3_objects.md)
 * [s3control_multi_region_access_point](s3control_multi_region_access_point.md)
