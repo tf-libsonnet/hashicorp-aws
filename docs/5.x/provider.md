@@ -322,6 +322,7 @@ Terraform sub block.
   - `codecatalyst` (`string`): Use this to override the default service endpoint URL When `null`, the `codecatalyst` field will be omitted from the resulting object.
   - `codecommit` (`string`): Use this to override the default service endpoint URL When `null`, the `codecommit` field will be omitted from the resulting object.
   - `codedeploy` (`string`): Use this to override the default service endpoint URL When `null`, the `codedeploy` field will be omitted from the resulting object.
+  - `codeguruprofiler` (`string`): Use this to override the default service endpoint URL When `null`, the `codeguruprofiler` field will be omitted from the resulting object.
   - `codegurureviewer` (`string`): Use this to override the default service endpoint URL When `null`, the `codegurureviewer` field will be omitted from the resulting object.
   - `codepipeline` (`string`): Use this to override the default service endpoint URL When `null`, the `codepipeline` field will be omitted from the resulting object.
   - `codestarconnections` (`string`): Use this to override the default service endpoint URL When `null`, the `codestarconnections` field will be omitted from the resulting object.
@@ -432,6 +433,7 @@ Terraform sub block.
   - `mediaconvert` (`string`): Use this to override the default service endpoint URL When `null`, the `mediaconvert` field will be omitted from the resulting object.
   - `medialive` (`string`): Use this to override the default service endpoint URL When `null`, the `medialive` field will be omitted from the resulting object.
   - `mediapackage` (`string`): Use this to override the default service endpoint URL When `null`, the `mediapackage` field will be omitted from the resulting object.
+  - `mediapackagev2` (`string`): Use this to override the default service endpoint URL When `null`, the `mediapackagev2` field will be omitted from the resulting object.
   - `mediastore` (`string`): Use this to override the default service endpoint URL When `null`, the `mediastore` field will be omitted from the resulting object.
   - `memorydb` (`string`): Use this to override the default service endpoint URL When `null`, the `memorydb` field will be omitted from the resulting object.
   - `mq` (`string`): Use this to override the default service endpoint URL When `null`, the `mq` field will be omitted from the resulting object.
