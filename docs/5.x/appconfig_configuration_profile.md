@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withApplicationId()`](#fn-withapplicationid)
 * [`fn withDescription()`](#fn-withdescription)
+* [`fn withKmsKeyIdentifier()`](#fn-withkmskeyidentifier)
 * [`fn withLocationUri()`](#fn-withlocationuri)
 * [`fn withName()`](#fn-withname)
 * [`fn withRetrievalRoleArn()`](#fn-withretrievalrolearn)
@@ -59,6 +60,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `application_id` (`string`): Set the `application_id` field on the resulting resource block.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
+  - `kms_key_identifier` (`string`): Set the `kms_key_identifier` field on the resulting resource block. When `null`, the `kms_key_identifier` field will be omitted from the resulting object.
   - `location_uri` (`string`): Set the `location_uri` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `retrieval_role_arn` (`string`): Set the `retrieval_role_arn` field on the resulting resource block. When `null`, the `retrieval_role_arn` field will be omitted from the resulting object.
@@ -91,6 +93,7 @@ injecting into a complete block.
 **Args**:
   - `application_id` (`string`): Set the `application_id` field on the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `kms_key_identifier` (`string`): Set the `kms_key_identifier` field on the resulting object. When `null`, the `kms_key_identifier` field will be omitted from the resulting object.
   - `location_uri` (`string`): Set the `location_uri` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `retrieval_role_arn` (`string`): Set the `retrieval_role_arn` field on the resulting object. When `null`, the `retrieval_role_arn` field will be omitted from the resulting object.
@@ -133,6 +136,22 @@ Terraform resource block to set or update the description field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `description` field.
+
+
+### fn withKmsKeyIdentifier
+
+```ts
+withKmsKeyIdentifier()
+```
+
+`aws.string.withKmsKeyIdentifier` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the kms_key_identifier field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `kms_key_identifier` field.
 
 
 ### fn withLocationUri

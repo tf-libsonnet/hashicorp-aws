@@ -427,6 +427,7 @@ Terraform sub block.
   - `location` (`string`): Use this to override the default service endpoint URL When `null`, the `location` field will be omitted from the resulting object.
   - `locationservice` (`string`): Use this to override the default service endpoint URL When `null`, the `locationservice` field will be omitted from the resulting object.
   - `logs` (`string`): Use this to override the default service endpoint URL When `null`, the `logs` field will be omitted from the resulting object.
+  - `lookoutmetrics` (`string`): Use this to override the default service endpoint URL When `null`, the `lookoutmetrics` field will be omitted from the resulting object.
   - `macie2` (`string`): Use this to override the default service endpoint URL When `null`, the `macie2` field will be omitted from the resulting object.
   - `managedgrafana` (`string`): Use this to override the default service endpoint URL When `null`, the `managedgrafana` field will be omitted from the resulting object.
   - `mediaconnect` (`string`): Use this to override the default service endpoint URL When `null`, the `mediaconnect` field will be omitted from the resulting object.

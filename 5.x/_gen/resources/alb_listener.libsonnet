@@ -134,13 +134,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
   },
-  '#new':: d.fn(help="\n`aws.alb_listener.new` injects a new `aws_alb_listener` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.alb_listener.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.alb_listener` using the reference:\n\n    $._ref.aws_alb_listener.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_alb_listener.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `alpn_policy` (`string`): Set the `alpn_policy` field on the resulting resource block. When `null`, the `alpn_policy` field will be omitted from the resulting object.\n  - `certificate_arn` (`string`): Set the `certificate_arn` field on the resulting resource block. When `null`, the `certificate_arn` field will be omitted from the resulting object.\n  - `load_balancer_arn` (`string`): Set the `load_balancer_arn` field on the resulting resource block.\n  - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting resource block. When `null`, the `protocol` field will be omitted from the resulting object.\n  - `ssl_policy` (`string`): Set the `ssl_policy` field on the resulting resource block. When `null`, the `ssl_policy` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `default_action` (`list[obj]`): Set the `default_action` field on the resulting resource block. When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.new](#fn-default_actionnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  mutual_authentication:: {
+    '#new':: d.fn(help='\n`aws.alb_listener.mutual_authentication.new` constructs a new object with attributes and blocks configured for the `mutual_authentication`\nTerraform sub block.\n\n\n\n**Args**:\n  - `ignore_client_certificate_expiry` (`bool`): Set the `ignore_client_certificate_expiry` field on the resulting object. When `null`, the `ignore_client_certificate_expiry` field will be omitted from the resulting object.\n  - `mode` (`string`): Set the `mode` field on the resulting object.\n  - `trust_store_arn` (`string`): Set the `trust_store_arn` field on the resulting object. When `null`, the `trust_store_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `mutual_authentication` sub block.\n', args=[]),
+    new(
+      mode,
+      ignore_client_certificate_expiry=null,
+      trust_store_arn=null
+    ):: std.prune(a={
+      ignore_client_certificate_expiry: ignore_client_certificate_expiry,
+      mode: mode,
+      trust_store_arn: trust_store_arn,
+    }),
+  },
+  '#new':: d.fn(help="\n`aws.alb_listener.new` injects a new `aws_alb_listener` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.alb_listener.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.alb_listener` using the reference:\n\n    $._ref.aws_alb_listener.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_alb_listener.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `alpn_policy` (`string`): Set the `alpn_policy` field on the resulting resource block. When `null`, the `alpn_policy` field will be omitted from the resulting object.\n  - `certificate_arn` (`string`): Set the `certificate_arn` field on the resulting resource block. When `null`, the `certificate_arn` field will be omitted from the resulting object.\n  - `load_balancer_arn` (`string`): Set the `load_balancer_arn` field on the resulting resource block.\n  - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting resource block. When `null`, the `protocol` field will be omitted from the resulting object.\n  - `ssl_policy` (`string`): Set the `ssl_policy` field on the resulting resource block. When `null`, the `ssl_policy` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `default_action` (`list[obj]`): Set the `default_action` field on the resulting resource block. When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.new](#fn-default_actionnew) constructor.\n  - `mutual_authentication` (`list[obj]`): Set the `mutual_authentication` field on the resulting resource block. When `null`, the `mutual_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.mutual_authentication.new](#fn-mutual_authenticationnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     load_balancer_arn,
     alpn_policy=null,
     certificate_arn=null,
     default_action=null,
+    mutual_authentication=null,
     port=null,
     protocol=null,
     ssl_policy=null,
@@ -156,6 +169,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       certificate_arn=certificate_arn,
       default_action=default_action,
       load_balancer_arn=load_balancer_arn,
+      mutual_authentication=mutual_authentication,
       port=port,
       protocol=protocol,
       ssl_policy=ssl_policy,
@@ -165,12 +179,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.alb_listener.newAttrs` constructs a new object with attributes and blocks configured for the `alb_listener`\nTerraform resource.\n\nUnlike [aws.alb_listener.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `alpn_policy` (`string`): Set the `alpn_policy` field on the resulting object. When `null`, the `alpn_policy` field will be omitted from the resulting object.\n  - `certificate_arn` (`string`): Set the `certificate_arn` field on the resulting object. When `null`, the `certificate_arn` field will be omitted from the resulting object.\n  - `load_balancer_arn` (`string`): Set the `load_balancer_arn` field on the resulting object.\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.\n  - `ssl_policy` (`string`): Set the `ssl_policy` field on the resulting object. When `null`, the `ssl_policy` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `default_action` (`list[obj]`): Set the `default_action` field on the resulting object. When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.new](#fn-default_actionnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `alb_listener` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.alb_listener.newAttrs` constructs a new object with attributes and blocks configured for the `alb_listener`\nTerraform resource.\n\nUnlike [aws.alb_listener.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `alpn_policy` (`string`): Set the `alpn_policy` field on the resulting object. When `null`, the `alpn_policy` field will be omitted from the resulting object.\n  - `certificate_arn` (`string`): Set the `certificate_arn` field on the resulting object. When `null`, the `certificate_arn` field will be omitted from the resulting object.\n  - `load_balancer_arn` (`string`): Set the `load_balancer_arn` field on the resulting object.\n  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.\n  - `protocol` (`string`): Set the `protocol` field on the resulting object. When `null`, the `protocol` field will be omitted from the resulting object.\n  - `ssl_policy` (`string`): Set the `ssl_policy` field on the resulting object. When `null`, the `ssl_policy` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `default_action` (`list[obj]`): Set the `default_action` field on the resulting object. When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.default_action.new](#fn-default_actionnew) constructor.\n  - `mutual_authentication` (`list[obj]`): Set the `mutual_authentication` field on the resulting object. When `null`, the `mutual_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.mutual_authentication.new](#fn-mutual_authenticationnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb_listener.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `alb_listener` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     load_balancer_arn,
     alpn_policy=null,
     certificate_arn=null,
     default_action=null,
+    mutual_authentication=null,
     port=null,
     protocol=null,
     ssl_policy=null,
@@ -182,6 +197,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     certificate_arn: certificate_arn,
     default_action: default_action,
     load_balancer_arn: load_balancer_arn,
+    mutual_authentication: mutual_authentication,
     port: port,
     protocol: protocol,
     ssl_policy: ssl_policy,
@@ -190,11 +206,13 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     timeouts: timeouts,
   }),
   timeouts:: {
-    '#new':: d.fn(help='\n`aws.alb_listener.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`\nTerraform sub block.\n\n\n\n**Args**:\n  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `timeouts` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.alb_listener.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`\nTerraform sub block.\n\n\n\n**Args**:\n  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.\n  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `timeouts` sub block.\n', args=[]),
     new(
-      read=null
+      create=null,
+      update=null
     ):: std.prune(a={
-      read: read,
+      create: create,
+      update: update,
     }),
   },
   '#withAlpnPolicy':: d.fn(help='`aws.string.withAlpnPolicy` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the alpn_policy field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `alpn_policy` field.\n', args=[]),
@@ -243,6 +261,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_alb_listener+: {
         [resourceLabel]+: {
           load_balancer_arn: value,
+        },
+      },
+    },
+  },
+  '#withMutualAuthentication':: d.fn(help='`aws.list[obj].withMutualAuthentication` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the mutual_authentication field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withMutualAuthenticationMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `mutual_authentication` field.\n', args=[]),
+  withMutualAuthentication(resourceLabel, value): {
+    resource+: {
+      aws_alb_listener+: {
+        [resourceLabel]+: {
+          mutual_authentication: value,
+        },
+      },
+    },
+  },
+  '#withMutualAuthenticationMixin':: d.fn(help='`aws.list[obj].withMutualAuthenticationMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the mutual_authentication field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withMutualAuthentication](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `mutual_authentication` field.\n', args=[]),
+  withMutualAuthenticationMixin(resourceLabel, value): {
+    resource+: {
+      aws_alb_listener+: {
+        [resourceLabel]+: {
+          mutual_authentication+: if std.isArray(v=value) then value else [value],
         },
       },
     },

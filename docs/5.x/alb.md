@@ -27,6 +27,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withEnableTlsVersionAndCipherSuiteHeaders()`](#fn-withenabletlsversionandciphersuiteheaders)
 * [`fn withEnableWafFailOpen()`](#fn-withenablewaffailopen)
 * [`fn withEnableXffClientPort()`](#fn-withenablexffclientport)
+* [`fn withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()`](#fn-withenforcesecuritygroupinboundrulesonprivatelinktraffic)
 * [`fn withIdleTimeout()`](#fn-withidletimeout)
 * [`fn withInternal()`](#fn-withinternal)
 * [`fn withIpAddressType()`](#fn-withipaddresstype)
@@ -89,6 +90,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `enable_tls_version_and_cipher_suite_headers` (`bool`): Set the `enable_tls_version_and_cipher_suite_headers` field on the resulting resource block. When `null`, the `enable_tls_version_and_cipher_suite_headers` field will be omitted from the resulting object.
   - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting resource block. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
   - `enable_xff_client_port` (`bool`): Set the `enable_xff_client_port` field on the resulting resource block. When `null`, the `enable_xff_client_port` field will be omitted from the resulting object.
+  - `enforce_security_group_inbound_rules_on_private_link_traffic` (`string`): Set the `enforce_security_group_inbound_rules_on_private_link_traffic` field on the resulting resource block. When `null`, the `enforce_security_group_inbound_rules_on_private_link_traffic` field will be omitted from the resulting object.
   - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting resource block. When `null`, the `idle_timeout` field will be omitted from the resulting object.
   - `internal` (`bool`): Set the `internal` field on the resulting resource block. When `null`, the `internal` field will be omitted from the resulting object.
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
@@ -137,6 +139,7 @@ injecting into a complete block.
   - `enable_tls_version_and_cipher_suite_headers` (`bool`): Set the `enable_tls_version_and_cipher_suite_headers` field on the resulting object. When `null`, the `enable_tls_version_and_cipher_suite_headers` field will be omitted from the resulting object.
   - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting object. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
   - `enable_xff_client_port` (`bool`): Set the `enable_xff_client_port` field on the resulting object. When `null`, the `enable_xff_client_port` field will be omitted from the resulting object.
+  - `enforce_security_group_inbound_rules_on_private_link_traffic` (`string`): Set the `enforce_security_group_inbound_rules_on_private_link_traffic` field on the resulting object. When `null`, the `enforce_security_group_inbound_rules_on_private_link_traffic` field will be omitted from the resulting object.
   - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting object. When `null`, the `idle_timeout` field will be omitted from the resulting object.
   - `internal` (`bool`): Set the `internal` field on the resulting object. When `null`, the `internal` field will be omitted from the resulting object.
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
@@ -352,6 +355,22 @@ Terraform resource block to set or update the enable_xff_client_port field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `enable_xff_client_port` field.
+
+
+### fn withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic
+
+```ts
+withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()
+```
+
+`aws.string.withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the enforce_security_group_inbound_rules_on_private_link_traffic field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `enforce_security_group_inbound_rules_on_private_link_traffic` field.
 
 
 ### fn withIdleTimeout

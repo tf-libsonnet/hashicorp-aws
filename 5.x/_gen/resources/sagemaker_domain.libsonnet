@@ -13,16 +13,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_space_settings.jupyter_server_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -51,16 +53,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_space_settings.kernel_gateway_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -165,6 +169,110 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
     },
+    code_editor_app_settings:: {
+      default_resource_spec:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.code_editor_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        new(
+          instance_type=null,
+          lifecycle_config_arn=null,
+          sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
+          sagemaker_image_version_arn=null
+        ):: std.prune(a={
+          instance_type: instance_type,
+          lifecycle_config_arn: lifecycle_config_arn,
+          sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
+          sagemaker_image_version_arn: sagemaker_image_version_arn,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.code_editor_app_settings.new` constructs a new object with attributes and blocks configured for the `code_editor_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `lifecycle_config_arns` (`list`): Set the `lifecycle_config_arns` field on the resulting object. When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.\n  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.code_editor_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `code_editor_app_settings` sub block.\n', args=[]),
+      new(
+        default_resource_spec=null,
+        lifecycle_config_arns=null
+      ):: std.prune(a={
+        default_resource_spec: default_resource_spec,
+        lifecycle_config_arns: lifecycle_config_arns,
+      }),
+    },
+    custom_file_system_config:: {
+      efs_file_system_config:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.custom_file_system_config.efs_file_system_config.new` constructs a new object with attributes and blocks configured for the `efs_file_system_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object.\n  - `file_system_path` (`string`): Set the `file_system_path` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `efs_file_system_config` sub block.\n', args=[]),
+        new(
+          file_system_id,
+          file_system_path
+        ):: std.prune(a={
+          file_system_id: file_system_id,
+          file_system_path: file_system_path,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.custom_file_system_config.new` constructs a new object with attributes and blocks configured for the `custom_file_system_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `efs_file_system_config` (`list[obj]`): Set the `efs_file_system_config` field on the resulting object. When `null`, the `efs_file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.custom_file_system_config.efs_file_system_config.new](#fn-default_user_settingsdefault_user_settingsefs_file_system_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `custom_file_system_config` sub block.\n', args=[]),
+      new(
+        efs_file_system_config=null
+      ):: std.prune(a={
+        efs_file_system_config: efs_file_system_config,
+      }),
+    },
+    custom_posix_user_config:: {
+      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.custom_posix_user_config.new` constructs a new object with attributes and blocks configured for the `custom_posix_user_config`\nTerraform sub block.\n\n\n\n**Args**:\n  - `gid` (`number`): Set the `gid` field on the resulting object.\n  - `uid` (`number`): Set the `uid` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `custom_posix_user_config` sub block.\n', args=[]),
+      new(
+        gid,
+        uid
+      ):: std.prune(a={
+        gid: gid,
+        uid: uid,
+      }),
+    },
+    jupyter_lab_app_settings:: {
+      code_repository:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.code_repository.new` constructs a new object with attributes and blocks configured for the `code_repository`\nTerraform sub block.\n\n\n\n**Args**:\n  - `repository_url` (`string`): Set the `repository_url` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `code_repository` sub block.\n', args=[]),
+        new(
+          repository_url
+        ):: std.prune(a={
+          repository_url: repository_url,
+        }),
+      },
+      custom_image:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.custom_image.new` constructs a new object with attributes and blocks configured for the `custom_image`\nTerraform sub block.\n\n\n\n**Args**:\n  - `app_image_config_name` (`string`): Set the `app_image_config_name` field on the resulting object.\n  - `image_name` (`string`): Set the `image_name` field on the resulting object.\n  - `image_version_number` (`number`): Set the `image_version_number` field on the resulting object. When `null`, the `image_version_number` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `custom_image` sub block.\n', args=[]),
+        new(
+          app_image_config_name,
+          image_name,
+          image_version_number=null
+        ):: std.prune(a={
+          app_image_config_name: app_image_config_name,
+          image_name: image_name,
+          image_version_number: image_version_number,
+        }),
+      },
+      default_resource_spec:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        new(
+          instance_type=null,
+          lifecycle_config_arn=null,
+          sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
+          sagemaker_image_version_arn=null
+        ):: std.prune(a={
+          instance_type: instance_type,
+          lifecycle_config_arn: lifecycle_config_arn,
+          sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
+          sagemaker_image_version_arn: sagemaker_image_version_arn,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.new` constructs a new object with attributes and blocks configured for the `jupyter_lab_app_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `lifecycle_config_arns` (`list`): Set the `lifecycle_config_arns` field on the resulting object. When `null`, the `lifecycle_config_arns` field will be omitted from the resulting object.\n  - `code_repository` (`list[obj]`): Set the `code_repository` field on the resulting object. When `null`, the `code_repository` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.code_repository.new](#fn-default_user_settingsdefault_user_settingscode_repositorynew) constructor.\n  - `custom_image` (`list[obj]`): Set the `custom_image` field on the resulting object. When `null`, the `custom_image` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.custom_image.new](#fn-default_user_settingsdefault_user_settingscustom_imagenew) constructor.\n  - `default_resource_spec` (`list[obj]`): Set the `default_resource_spec` field on the resulting object. When `null`, the `default_resource_spec` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.default_resource_spec.new](#fn-default_user_settingsdefault_user_settingsdefault_resource_specnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `jupyter_lab_app_settings` sub block.\n', args=[]),
+      new(
+        code_repository=null,
+        custom_image=null,
+        default_resource_spec=null,
+        lifecycle_config_arns=null
+      ):: std.prune(a={
+        code_repository: code_repository,
+        custom_image: custom_image,
+        default_resource_spec: default_resource_spec,
+        lifecycle_config_arns: lifecycle_config_arns,
+      }),
+    },
     jupyter_server_app_settings:: {
       code_repository:: {
         '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.code_repository.new` constructs a new object with attributes and blocks configured for the `code_repository`\nTerraform sub block.\n\n\n\n**Args**:\n  - `repository_url` (`string`): Set the `repository_url` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `code_repository` sub block.\n', args=[]),
@@ -175,16 +283,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -213,16 +323,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -237,26 +349,40 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         lifecycle_config_arns: lifecycle_config_arns,
       }),
     },
-    '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.new` constructs a new object with attributes and blocks configured for the `default_user_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.\n  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.\n  - `canvas_app_settings` (`list[obj]`): Set the `canvas_app_settings` field on the resulting object. When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.new](#fn-default_user_settingscanvas_app_settingsnew) constructor.\n  - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.new](#fn-default_user_settingsjupyter_server_app_settingsnew) constructor.\n  - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.new](#fn-default_user_settingskernel_gateway_app_settingsnew) constructor.\n  - `r_session_app_settings` (`list[obj]`): Set the `r_session_app_settings` field on the resulting object. When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.new](#fn-default_user_settingsr_session_app_settingsnew) constructor.\n  - `r_studio_server_pro_app_settings` (`list[obj]`): Set the `r_studio_server_pro_app_settings` field on the resulting object. When `null`, the `r_studio_server_pro_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_studio_server_pro_app_settings.new](#fn-default_user_settingsr_studio_server_pro_app_settingsnew) constructor.\n  - `sharing_settings` (`list[obj]`): Set the `sharing_settings` field on the resulting object. When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.sharing_settings.new](#fn-default_user_settingssharing_settingsnew) constructor.\n  - `tensor_board_app_settings` (`list[obj]`): Set the `tensor_board_app_settings` field on the resulting object. When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.new](#fn-default_user_settingstensor_board_app_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `default_user_settings` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.new` constructs a new object with attributes and blocks configured for the `default_user_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_landing_uri` (`string`): Set the `default_landing_uri` field on the resulting object. When `null`, the `default_landing_uri` field will be omitted from the resulting object.\n  - `execution_role` (`string`): Set the `execution_role` field on the resulting object.\n  - `security_groups` (`list`): Set the `security_groups` field on the resulting object. When `null`, the `security_groups` field will be omitted from the resulting object.\n  - `studio_web_portal` (`string`): Set the `studio_web_portal` field on the resulting object. When `null`, the `studio_web_portal` field will be omitted from the resulting object.\n  - `canvas_app_settings` (`list[obj]`): Set the `canvas_app_settings` field on the resulting object. When `null`, the `canvas_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.canvas_app_settings.new](#fn-default_user_settingscanvas_app_settingsnew) constructor.\n  - `code_editor_app_settings` (`list[obj]`): Set the `code_editor_app_settings` field on the resulting object. When `null`, the `code_editor_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.code_editor_app_settings.new](#fn-default_user_settingscode_editor_app_settingsnew) constructor.\n  - `custom_file_system_config` (`list[obj]`): Set the `custom_file_system_config` field on the resulting object. When `null`, the `custom_file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.custom_file_system_config.new](#fn-default_user_settingscustom_file_system_confignew) constructor.\n  - `custom_posix_user_config` (`list[obj]`): Set the `custom_posix_user_config` field on the resulting object. When `null`, the `custom_posix_user_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.custom_posix_user_config.new](#fn-default_user_settingscustom_posix_user_confignew) constructor.\n  - `jupyter_lab_app_settings` (`list[obj]`): Set the `jupyter_lab_app_settings` field on the resulting object. When `null`, the `jupyter_lab_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_lab_app_settings.new](#fn-default_user_settingsjupyter_lab_app_settingsnew) constructor.\n  - `jupyter_server_app_settings` (`list[obj]`): Set the `jupyter_server_app_settings` field on the resulting object. When `null`, the `jupyter_server_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.jupyter_server_app_settings.new](#fn-default_user_settingsjupyter_server_app_settingsnew) constructor.\n  - `kernel_gateway_app_settings` (`list[obj]`): Set the `kernel_gateway_app_settings` field on the resulting object. When `null`, the `kernel_gateway_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.kernel_gateway_app_settings.new](#fn-default_user_settingskernel_gateway_app_settingsnew) constructor.\n  - `r_session_app_settings` (`list[obj]`): Set the `r_session_app_settings` field on the resulting object. When `null`, the `r_session_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_session_app_settings.new](#fn-default_user_settingsr_session_app_settingsnew) constructor.\n  - `r_studio_server_pro_app_settings` (`list[obj]`): Set the `r_studio_server_pro_app_settings` field on the resulting object. When `null`, the `r_studio_server_pro_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.r_studio_server_pro_app_settings.new](#fn-default_user_settingsr_studio_server_pro_app_settingsnew) constructor.\n  - `sharing_settings` (`list[obj]`): Set the `sharing_settings` field on the resulting object. When `null`, the `sharing_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.sharing_settings.new](#fn-default_user_settingssharing_settingsnew) constructor.\n  - `space_storage_settings` (`list[obj]`): Set the `space_storage_settings` field on the resulting object. When `null`, the `space_storage_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.space_storage_settings.new](#fn-default_user_settingsspace_storage_settingsnew) constructor.\n  - `tensor_board_app_settings` (`list[obj]`): Set the `tensor_board_app_settings` field on the resulting object. When `null`, the `tensor_board_app_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.new](#fn-default_user_settingstensor_board_app_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `default_user_settings` sub block.\n', args=[]),
     new(
       execution_role,
       canvas_app_settings=null,
+      code_editor_app_settings=null,
+      custom_file_system_config=null,
+      custom_posix_user_config=null,
+      default_landing_uri=null,
+      jupyter_lab_app_settings=null,
       jupyter_server_app_settings=null,
       kernel_gateway_app_settings=null,
       r_session_app_settings=null,
       r_studio_server_pro_app_settings=null,
       security_groups=null,
       sharing_settings=null,
+      space_storage_settings=null,
+      studio_web_portal=null,
       tensor_board_app_settings=null
     ):: std.prune(a={
       canvas_app_settings: canvas_app_settings,
+      code_editor_app_settings: code_editor_app_settings,
+      custom_file_system_config: custom_file_system_config,
+      custom_posix_user_config: custom_posix_user_config,
+      default_landing_uri: default_landing_uri,
       execution_role: execution_role,
+      jupyter_lab_app_settings: jupyter_lab_app_settings,
       jupyter_server_app_settings: jupyter_server_app_settings,
       kernel_gateway_app_settings: kernel_gateway_app_settings,
       r_session_app_settings: r_session_app_settings,
       r_studio_server_pro_app_settings: r_studio_server_pro_app_settings,
       security_groups: security_groups,
       sharing_settings: sharing_settings,
+      space_storage_settings: space_storage_settings,
+      studio_web_portal: studio_web_portal,
       tensor_board_app_settings: tensor_board_app_settings,
     }),
     r_session_app_settings:: {
@@ -273,16 +399,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.r_session_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.r_session_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -317,18 +445,38 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         s3_output_path: s3_output_path,
       }),
     },
+    space_storage_settings:: {
+      default_ebs_storage_settings:: {
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.space_storage_settings.default_ebs_storage_settings.new` constructs a new object with attributes and blocks configured for the `default_ebs_storage_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_ebs_volume_size_in_gb` (`number`): Set the `default_ebs_volume_size_in_gb` field on the resulting object.\n  - `maximum_ebs_volume_size_in_gb` (`number`): Set the `maximum_ebs_volume_size_in_gb` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_ebs_storage_settings` sub block.\n', args=[]),
+        new(
+          default_ebs_volume_size_in_gb,
+          maximum_ebs_volume_size_in_gb
+        ):: std.prune(a={
+          default_ebs_volume_size_in_gb: default_ebs_volume_size_in_gb,
+          maximum_ebs_volume_size_in_gb: maximum_ebs_volume_size_in_gb,
+        }),
+      },
+      '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.space_storage_settings.new` constructs a new object with attributes and blocks configured for the `space_storage_settings`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_ebs_storage_settings` (`list[obj]`): Set the `default_ebs_storage_settings` field on the resulting object. When `null`, the `default_ebs_storage_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_domain.default_user_settings.space_storage_settings.default_ebs_storage_settings.new](#fn-default_user_settingsdefault_user_settingsdefault_ebs_storage_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `space_storage_settings` sub block.\n', args=[]),
+      new(
+        default_ebs_storage_settings=null
+      ):: std.prune(a={
+        default_ebs_storage_settings: default_ebs_storage_settings,
+      }),
+    },
     tensor_board_app_settings:: {
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.default_user_settings.tensor_board_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -353,16 +501,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     }),
     r_studio_server_pro_domain_settings:: {
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_domain.domain_settings.r_studio_server_pro_domain_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_domain.domain_settings.r_studio_server_pro_domain_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },

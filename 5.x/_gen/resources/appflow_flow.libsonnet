@@ -556,10 +556,10 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         zendesk: zendesk,
       }),
       s3:: {
-        '#new':: d.fn(help='\n`aws.appflow_flow.source_flow_config.source_connector_properties.s3.new` constructs a new object with attributes and blocks configured for the `s3`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.\n  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.\n  - `s3_input_format_config` (`list[obj]`): Set the `s3_input_format_config` field on the resulting object. When `null`, the `s3_input_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.s3.s3_input_format_config.new](#fn-source_flow_configsource_flow_configsource_connector_propertiess3_input_format_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `s3` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.appflow_flow.source_flow_config.source_connector_properties.s3.new` constructs a new object with attributes and blocks configured for the `s3`\nTerraform sub block.\n\n\n\n**Args**:\n  - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.\n  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object.\n  - `s3_input_format_config` (`list[obj]`): Set the `s3_input_format_config` field on the resulting object. When `null`, the `s3_input_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.s3.s3_input_format_config.new](#fn-source_flow_configsource_flow_configsource_connector_propertiess3_input_format_confignew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `s3` sub block.\n', args=[]),
         new(
           bucket_name,
-          bucket_prefix=null,
+          bucket_prefix,
           s3_input_format_config=null
         ):: std.prune(a={
           bucket_name: bucket_name,

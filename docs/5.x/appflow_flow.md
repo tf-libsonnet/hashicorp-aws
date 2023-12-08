@@ -1491,7 +1491,7 @@ Terraform sub block.
 
 **Args**:
   - `bucket_name` (`string`): Set the `bucket_name` field on the resulting object.
-  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object. When `null`, the `bucket_prefix` field will be omitted from the resulting object.
+  - `bucket_prefix` (`string`): Set the `bucket_prefix` field on the resulting object.
   - `s3_input_format_config` (`list[obj]`): Set the `s3_input_format_config` field on the resulting object. When `null`, the `s3_input_format_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.appflow_flow.source_flow_config.source_connector_properties.s3.s3_input_format_config.new](#fn-source_flow_configsource_flow_configsource_connector_propertiess3_input_format_confignew) constructor.
 
 **Returns**:

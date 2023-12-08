@@ -50,16 +50,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     user_profile_name: user_profile_name,
   }),
   resource_spec:: {
-    '#new':: d.fn(help='\n`aws.sagemaker_app.resource_spec.new` constructs a new object with attributes and blocks configured for the `resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `resource_spec` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.sagemaker_app.resource_spec.new` constructs a new object with attributes and blocks configured for the `resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `resource_spec` sub block.\n', args=[]),
     new(
       instance_type=null,
       lifecycle_config_arn=null,
       sagemaker_image_arn=null,
+      sagemaker_image_version_alias=null,
       sagemaker_image_version_arn=null
     ):: std.prune(a={
       instance_type: instance_type,
       lifecycle_config_arn: lifecycle_config_arn,
       sagemaker_image_arn: sagemaker_image_arn,
+      sagemaker_image_version_alias: sagemaker_image_version_alias,
       sagemaker_image_version_arn: sagemaker_image_version_arn,
     }),
   },
