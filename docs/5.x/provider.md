@@ -454,6 +454,7 @@ Terraform sub block.
   - `outposts` (`string`): Use this to override the default service endpoint URL When `null`, the `outposts` field will be omitted from the resulting object.
   - `pinpoint` (`string`): Use this to override the default service endpoint URL When `null`, the `pinpoint` field will be omitted from the resulting object.
   - `pipes` (`string`): Use this to override the default service endpoint URL When `null`, the `pipes` field will be omitted from the resulting object.
+  - `polly` (`string`): Use this to override the default service endpoint URL When `null`, the `polly` field will be omitted from the resulting object.
   - `pricing` (`string`): Use this to override the default service endpoint URL When `null`, the `pricing` field will be omitted from the resulting object.
   - `prometheus` (`string`): Use this to override the default service endpoint URL When `null`, the `prometheus` field will be omitted from the resulting object.
   - `prometheusservice` (`string`): Use this to override the default service endpoint URL When `null`, the `prometheusservice` field will be omitted from the resulting object.

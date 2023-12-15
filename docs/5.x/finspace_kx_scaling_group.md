@@ -1,10 +1,10 @@
 ---
-permalink: /dms_event_subscription/
+permalink: /finspace_kx_scaling_group/
 ---
 
-# dms_event_subscription
+# finspace_kx_scaling_group
 
-`dms_event_subscription` represents the `aws_dms_event_subscription` Terraform resource.
+`finspace_kx_scaling_group` represents the `aws_finspace_kx_scaling_group` Terraform resource.
 
 
 
@@ -15,12 +15,10 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
-* [`fn withEnabled()`](#fn-withenabled)
-* [`fn withEventCategories()`](#fn-witheventcategories)
+* [`fn withAvailabilityZoneId()`](#fn-withavailabilityzoneid)
+* [`fn withEnvironmentId()`](#fn-withenvironmentid)
+* [`fn withHostType()`](#fn-withhosttype)
 * [`fn withName()`](#fn-withname)
-* [`fn withSnsTopicArn()`](#fn-withsnstopicarn)
-* [`fn withSourceIds()`](#fn-withsourceids)
-* [`fn withSourceType()`](#fn-withsourcetype)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -37,35 +35,33 @@ new()
 ```
 
 
-`aws.dms_event_subscription.new` injects a new `aws_dms_event_subscription` Terraform `resource`
+`aws.finspace_kx_scaling_group.new` injects a new `aws_finspace_kx_scaling_group` Terraform `resource`
 block into the root module document.
 
 Additionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the
 resource. For example, if you added a new instance to the root using:
 
     # arguments omitted for brevity
-    aws.dms_event_subscription.new('some_id')
+    aws.finspace_kx_scaling_group.new('some_id')
 
-You can get the reference to the `id` field of the created `aws.dms_event_subscription` using the reference:
+You can get the reference to the `id` field of the created `aws.finspace_kx_scaling_group` using the reference:
 
-    $._ref.aws_dms_event_subscription.some_id.get('id')
+    $._ref.aws_finspace_kx_scaling_group.some_id.get('id')
 
-This is the same as directly entering `"${ aws_dms_event_subscription.some_id.id }"` as the value.
+This is the same as directly entering `"${ aws_finspace_kx_scaling_group.some_id.id }"` as the value.
 
 NOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,
 or `$` to refer to the root object. Instead, make an explicit outer object using `local`.
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
-  - `enabled` (`bool`): Set the `enabled` field on the resulting resource block. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `event_categories` (`list`): Set the `event_categories` field on the resulting resource block.
+  - `availability_zone_id` (`string`): Set the `availability_zone_id` field on the resulting resource block.
+  - `environment_id` (`string`): Set the `environment_id` field on the resulting resource block.
+  - `host_type` (`string`): Set the `host_type` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
-  - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting resource block.
-  - `source_ids` (`list`): Set the `source_ids` field on the resulting resource block.
-  - `source_type` (`string`): Set the `source_type` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_event_subscription.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_scaling_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -78,10 +74,10 @@ newAttrs()
 ```
 
 
-`aws.dms_event_subscription.newAttrs` constructs a new object with attributes and blocks configured for the `dms_event_subscription`
+`aws.finspace_kx_scaling_group.newAttrs` constructs a new object with attributes and blocks configured for the `finspace_kx_scaling_group`
 Terraform resource.
 
-Unlike [aws.dms_event_subscription.new](#fn-new), this function will not inject the `resource`
+Unlike [aws.finspace_kx_scaling_group.new](#fn-new), this function will not inject the `resource`
 block into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the
 [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.
 
@@ -89,50 +85,64 @@ This is most useful when you need to preprocess the attributes with functions, c
 injecting into a complete block.
 
 **Args**:
-  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
-  - `event_categories` (`list`): Set the `event_categories` field on the resulting object.
+  - `availability_zone_id` (`string`): Set the `availability_zone_id` field on the resulting object.
+  - `environment_id` (`string`): Set the `environment_id` field on the resulting object.
+  - `host_type` (`string`): Set the `host_type` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
-  - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting object.
-  - `source_ids` (`list`): Set the `source_ids` field on the resulting object.
-  - `source_type` (`string`): Set the `source_type` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
-  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_event_subscription.timeouts.new](#fn-timeoutsnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_scaling_group.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
-  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `dms_event_subscription` resource into the root Terraform configuration.
+  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `finspace_kx_scaling_group` resource into the root Terraform configuration.
 
 
-### fn withEnabled
+### fn withAvailabilityZoneId
 
 ```ts
-withEnabled()
+withAvailabilityZoneId()
 ```
 
-`aws.bool.withEnabled` constructs a mixin object that can be merged into the `bool`
-Terraform resource block to set or update the enabled field.
+`aws.string.withAvailabilityZoneId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the availability_zone_id field.
 
 
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`bool`): The value to set for the `enabled` field.
+  - `value` (`string`): The value to set for the `availability_zone_id` field.
 
 
-### fn withEventCategories
+### fn withEnvironmentId
 
 ```ts
-withEventCategories()
+withEnvironmentId()
 ```
 
-`aws.list.withEventCategories` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the event_categories field.
+`aws.string.withEnvironmentId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the environment_id field.
 
 
 
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `event_categories` field.
+  - `value` (`string`): The value to set for the `environment_id` field.
+
+
+### fn withHostType
+
+```ts
+withHostType()
+```
+
+`aws.string.withHostType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the host_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `host_type` field.
 
 
 ### fn withName
@@ -149,54 +159,6 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
-
-
-### fn withSnsTopicArn
-
-```ts
-withSnsTopicArn()
-```
-
-`aws.string.withSnsTopicArn` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the sns_topic_arn field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `sns_topic_arn` field.
-
-
-### fn withSourceIds
-
-```ts
-withSourceIds()
-```
-
-`aws.list.withSourceIds` constructs a mixin object that can be merged into the `list`
-Terraform resource block to set or update the source_ids field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`list`): The value to set for the `source_ids` field.
-
-
-### fn withSourceType
-
-```ts
-withSourceType()
-```
-
-`aws.string.withSourceType` constructs a mixin object that can be merged into the `string`
-Terraform resource block to set or update the source_type field.
-
-
-
-**Args**:
-  - `resourceLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `source_type` field.
 
 
 ### fn withTags
@@ -278,7 +240,7 @@ new()
 ```
 
 
-`aws.dms_event_subscription.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+`aws.finspace_kx_scaling_group.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
 Terraform sub block.
 
 
