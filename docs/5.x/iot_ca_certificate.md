@@ -266,7 +266,7 @@ Terraform sub block.
 
 
 **Args**:
-  - `role_arn` (`bool`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
   - `template_body` (`string`): Set the `template_body` field on the resulting object. When `null`, the `template_body` field will be omitted from the resulting object.
   - `template_name` (`string`): Set the `template_name` field on the resulting object. When `null`, the `template_name` field will be omitted from the resulting object.
 
