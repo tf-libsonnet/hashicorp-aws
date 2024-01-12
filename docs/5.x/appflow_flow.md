@@ -868,6 +868,7 @@ Terraform sub block.
 
 **Args**:
   - `aggregation_type` (`string`): Set the `aggregation_type` field on the resulting object. When `null`, the `aggregation_type` field will be omitted from the resulting object.
+  - `target_file_size` (`number`): Set the `target_file_size` field on the resulting object. When `null`, the `target_file_size` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `aggregation_config` sub block.

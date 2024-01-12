@@ -74,7 +74,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       kubernetes_namespace: kubernetes_namespace,
     }),
   },
-  '#new':: d.fn(help="\n`aws.batch_compute_environment.new` injects a new `aws_batch_compute_environment` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.batch_compute_environment.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.batch_compute_environment` using the reference:\n\n    $._ref.aws_batch_compute_environment.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_batch_compute_environment.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `compute_environment_name` (`string`): Set the `compute_environment_name` field on the resulting resource block. When `null`, the `compute_environment_name` field will be omitted from the resulting object.\n  - `compute_environment_name_prefix` (`string`): Set the `compute_environment_name_prefix` field on the resulting resource block. When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.\n  - `service_role` (`string`): Set the `service_role` field on the resulting resource block. When `null`, the `service_role` field will be omitted from the resulting object.\n  - `state` (`string`): Set the `state` field on the resulting resource block. When `null`, the `state` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting resource block.\n  - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting resource block. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.\n  - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting resource block. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.batch_compute_environment.new` injects a new `aws_batch_compute_environment` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.batch_compute_environment.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.batch_compute_environment` using the reference:\n\n    $._ref.aws_batch_compute_environment.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_batch_compute_environment.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `compute_environment_name` (`string`): Set the `compute_environment_name` field on the resulting resource block. When `null`, the `compute_environment_name` field will be omitted from the resulting object.\n  - `compute_environment_name_prefix` (`string`): Set the `compute_environment_name_prefix` field on the resulting resource block. When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.\n  - `service_role` (`string`): Set the `service_role` field on the resulting resource block. When `null`, the `service_role` field will be omitted from the resulting object.\n  - `state` (`string`): Set the `state` field on the resulting resource block. When `null`, the `state` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting resource block.\n  - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting resource block. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.\n  - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting resource block. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.\n  - `update_policy` (`list[obj]`): Set the `update_policy` field on the resulting resource block. When `null`, the `update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.update_policy.new](#fn-update_policynew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     type,
@@ -86,6 +86,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     state=null,
     tags=null,
     tags_all=null,
+    update_policy=null,
     _meta={}
   ):: tf.withResource(
     type='aws_batch_compute_environment',
@@ -99,11 +100,12 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       state=state,
       tags=tags,
       tags_all=tags_all,
-      type=type
+      type=type,
+      update_policy=update_policy
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.batch_compute_environment.newAttrs` constructs a new object with attributes and blocks configured for the `batch_compute_environment`\nTerraform resource.\n\nUnlike [aws.batch_compute_environment.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `compute_environment_name` (`string`): Set the `compute_environment_name` field on the resulting object. When `null`, the `compute_environment_name` field will be omitted from the resulting object.\n  - `compute_environment_name_prefix` (`string`): Set the `compute_environment_name_prefix` field on the resulting object. When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.\n  - `service_role` (`string`): Set the `service_role` field on the resulting object. When `null`, the `service_role` field will be omitted from the resulting object.\n  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting object. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.\n  - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting object. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `batch_compute_environment` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.batch_compute_environment.newAttrs` constructs a new object with attributes and blocks configured for the `batch_compute_environment`\nTerraform resource.\n\nUnlike [aws.batch_compute_environment.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `compute_environment_name` (`string`): Set the `compute_environment_name` field on the resulting object. When `null`, the `compute_environment_name` field will be omitted from the resulting object.\n  - `compute_environment_name_prefix` (`string`): Set the `compute_environment_name_prefix` field on the resulting object. When `null`, the `compute_environment_name_prefix` field will be omitted from the resulting object.\n  - `service_role` (`string`): Set the `service_role` field on the resulting object. When `null`, the `service_role` field will be omitted from the resulting object.\n  - `state` (`string`): Set the `state` field on the resulting object. When `null`, the `state` field will be omitted from the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `type` (`string`): Set the `type` field on the resulting object.\n  - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting object. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.\n  - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting object. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.\n  - `update_policy` (`list[obj]`): Set the `update_policy` field on the resulting object. When `null`, the `update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.update_policy.new](#fn-update_policynew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `batch_compute_environment` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     type,
     compute_environment_name=null,
@@ -113,7 +115,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     service_role=null,
     state=null,
     tags=null,
-    tags_all=null
+    tags_all=null,
+    update_policy=null
   ):: std.prune(a={
     compute_environment_name: compute_environment_name,
     compute_environment_name_prefix: compute_environment_name_prefix,
@@ -124,7 +127,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags: tags,
     tags_all: tags_all,
     type: type,
+    update_policy: update_policy,
   }),
+  update_policy:: {
+    '#new':: d.fn(help='\n`aws.batch_compute_environment.update_policy.new` constructs a new object with attributes and blocks configured for the `update_policy`\nTerraform sub block.\n\n\n\n**Args**:\n  - `job_execution_timeout_minutes` (`number`): Set the `job_execution_timeout_minutes` field on the resulting object.\n  - `terminate_jobs_on_update` (`bool`): Set the `terminate_jobs_on_update` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `update_policy` sub block.\n', args=[]),
+    new(
+      job_execution_timeout_minutes,
+      terminate_jobs_on_update
+    ):: std.prune(a={
+      job_execution_timeout_minutes: job_execution_timeout_minutes,
+      terminate_jobs_on_update: terminate_jobs_on_update,
+    }),
+  },
   '#withComputeEnvironmentName':: d.fn(help='`aws.string.withComputeEnvironmentName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the compute_environment_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `compute_environment_name` field.\n', args=[]),
   withComputeEnvironmentName(resourceLabel, value): {
     resource+: {
@@ -231,6 +245,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_batch_compute_environment+: {
         [resourceLabel]+: {
           type: value,
+        },
+      },
+    },
+  },
+  '#withUpdatePolicy':: d.fn(help='`aws.list[obj].withUpdatePolicy` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the update_policy field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withUpdatePolicyMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `update_policy` field.\n', args=[]),
+  withUpdatePolicy(resourceLabel, value): {
+    resource+: {
+      aws_batch_compute_environment+: {
+        [resourceLabel]+: {
+          update_policy: value,
+        },
+      },
+    },
+  },
+  '#withUpdatePolicyMixin':: d.fn(help='`aws.list[obj].withUpdatePolicyMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the update_policy field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withUpdatePolicy](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `update_policy` field.\n', args=[]),
+  withUpdatePolicyMixin(resourceLabel, value): {
+    resource+: {
+      aws_batch_compute_environment+: {
+        [resourceLabel]+: {
+          update_policy+: if std.isArray(v=value) then value else [value],
         },
       },
     },

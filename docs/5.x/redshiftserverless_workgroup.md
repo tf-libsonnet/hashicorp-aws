@@ -20,6 +20,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withConfigParameterMixin()`](#fn-withconfigparametermixin)
 * [`fn withEnhancedVpcRouting()`](#fn-withenhancedvpcrouting)
 * [`fn withNamespaceName()`](#fn-withnamespacename)
+* [`fn withPort()`](#fn-withport)
 * [`fn withPubliclyAccessible()`](#fn-withpubliclyaccessible)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
 * [`fn withSubnetIds()`](#fn-withsubnetids)
@@ -65,6 +66,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `base_capacity` (`number`): Set the `base_capacity` field on the resulting resource block. When `null`, the `base_capacity` field will be omitted from the resulting object.
   - `enhanced_vpc_routing` (`bool`): Set the `enhanced_vpc_routing` field on the resulting resource block. When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
   - `namespace_name` (`string`): Set the `namespace_name` field on the resulting resource block.
+  - `port` (`number`): Set the `port` field on the resulting resource block. When `null`, the `port` field will be omitted from the resulting object.
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting resource block. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block. When `null`, the `subnet_ids` field will be omitted from the resulting object.
@@ -99,6 +101,7 @@ injecting into a complete block.
   - `base_capacity` (`number`): Set the `base_capacity` field on the resulting object. When `null`, the `base_capacity` field will be omitted from the resulting object.
   - `enhanced_vpc_routing` (`bool`): Set the `enhanced_vpc_routing` field on the resulting object. When `null`, the `enhanced_vpc_routing` field will be omitted from the resulting object.
   - `namespace_name` (`string`): Set the `namespace_name` field on the resulting object.
+  - `port` (`number`): Set the `port` field on the resulting object. When `null`, the `port` field will be omitted from the resulting object.
   - `publicly_accessible` (`bool`): Set the `publicly_accessible` field on the resulting object. When `null`, the `publicly_accessible` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object. When `null`, the `subnet_ids` field will be omitted from the resulting object.
@@ -195,6 +198,22 @@ Terraform resource block to set or update the namespace_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `namespace_name` field.
+
+
+### fn withPort
+
+```ts
+withPort()
+```
+
+`aws.number.withPort` constructs a mixin object that can be merged into the `number`
+Terraform resource block to set or update the port field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`number`): The value to set for the `port` field.
 
 
 ### fn withPubliclyAccessible

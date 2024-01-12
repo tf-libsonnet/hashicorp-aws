@@ -18,11 +18,14 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withArtifactStore()`](#fn-withartifactstore)
 * [`fn withArtifactStoreMixin()`](#fn-withartifactstoremixin)
 * [`fn withName()`](#fn-withname)
+* [`fn withPipelineType()`](#fn-withpipelinetype)
 * [`fn withRoleArn()`](#fn-withrolearn)
 * [`fn withStage()`](#fn-withstage)
 * [`fn withStageMixin()`](#fn-withstagemixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withVariable()`](#fn-withvariable)
+* [`fn withVariableMixin()`](#fn-withvariablemixin)
 * [`obj artifact_store`](#obj-artifact_store)
   * [`fn new()`](#fn-artifact_storenew)
   * [`obj artifact_store.encryption_key`](#obj-artifact_storeencryption_key)
@@ -31,6 +34,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-stagenew)
   * [`obj stage.action`](#obj-stageaction)
     * [`fn new()`](#fn-stageactionnew)
+* [`obj variable`](#obj-variable)
+  * [`fn new()`](#fn-variablenew)
 
 ## Fields
 
@@ -62,11 +67,13 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `pipeline_type` (`string`): Set the `pipeline_type` field on the resulting resource block. When `null`, the `pipeline_type` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting resource block. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.
   - `stage` (`list[obj]`): Set the `stage` field on the resulting resource block. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.
+  - `variable` (`list[obj]`): Set the `variable` field on the resulting resource block. When `null`, the `variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.variable.new](#fn-variablenew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -91,11 +98,13 @@ injecting into a complete block.
 
 **Args**:
   - `name` (`string`): Set the `name` field on the resulting object.
+  - `pipeline_type` (`string`): Set the `pipeline_type` field on the resulting object. When `null`, the `pipeline_type` field will be omitted from the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting object. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.
   - `stage` (`list[obj]`): Set the `stage` field on the resulting object. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.
+  - `variable` (`list[obj]`): Set the `variable` field on the resulting object. When `null`, the `variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.variable.new](#fn-variablenew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codepipeline` resource into the root Terraform configuration.
@@ -152,6 +161,22 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withPipelineType
+
+```ts
+withPipelineType()
+```
+
+`aws.string.withPipelineType` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the pipeline_type field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `pipeline_type` field.
 
 
 ### fn withRoleArn
@@ -237,6 +262,43 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
+
+
+### fn withVariable
+
+```ts
+withVariable()
+```
+
+`aws.list[obj].withVariable` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the variable field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withVariableMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `variable` field.
+
+
+### fn withVariableMixin
+
+```ts
+withVariableMixin()
+```
+
+`aws.list[obj].withVariableMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the variable field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withVariable](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `variable` field.
 
 
 ## obj artifact_store
@@ -344,3 +406,28 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `action` sub block.
+
+
+## obj variable
+
+
+
+### fn variable.new
+
+```ts
+new()
+```
+
+
+`aws.codepipeline.variable.new` constructs a new object with attributes and blocks configured for the `variable`
+Terraform sub block.
+
+
+
+**Args**:
+  - `default_value` (`string`): Set the `default_value` field on the resulting object. When `null`, the `default_value` field will be omitted from the resulting object.
+  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
+  - `name` (`string`): Set the `name` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `variable` sub block.

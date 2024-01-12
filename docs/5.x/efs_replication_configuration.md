@@ -195,6 +195,7 @@ Terraform sub block.
 
 **Args**:
   - `availability_zone_name` (`string`): Set the `availability_zone_name` field on the resulting object. When `null`, the `availability_zone_name` field will be omitted from the resulting object.
+  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object. When `null`, the `file_system_id` field will be omitted from the resulting object.
   - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.
   - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
 

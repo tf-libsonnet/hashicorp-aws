@@ -1181,6 +1181,7 @@ Terraform sub block.
   - `checkpoint_delay` (`string`): Set the `checkpoint_delay` field on the resulting object. When `null`, the `checkpoint_delay` field will be omitted from the resulting object.
   - `checkpoint_percentages` (`list`): Set the `checkpoint_percentages` field on the resulting object. When `null`, the `checkpoint_percentages` field will be omitted from the resulting object.
   - `instance_warmup` (`string`): Set the `instance_warmup` field on the resulting object. When `null`, the `instance_warmup` field will be omitted from the resulting object.
+  - `max_healthy_percentage` (`number`): Set the `max_healthy_percentage` field on the resulting object. When `null`, the `max_healthy_percentage` field will be omitted from the resulting object.
   - `min_healthy_percentage` (`number`): Set the `min_healthy_percentage` field on the resulting object. When `null`, the `min_healthy_percentage` field will be omitted from the resulting object.
   - `scale_in_protected_instances` (`string`): Set the `scale_in_protected_instances` field on the resulting object. When `null`, the `scale_in_protected_instances` field will be omitted from the resulting object.
   - `skip_matching` (`bool`): Set the `skip_matching` field on the resulting object. When `null`, the `skip_matching` field will be omitted from the resulting object.

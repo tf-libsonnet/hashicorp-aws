@@ -124,6 +124,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-opensearch_configurationnew)
   * [`obj opensearch_configuration.cloudwatch_logging_options`](#obj-opensearch_configurationcloudwatch_logging_options)
     * [`fn new()`](#fn-opensearch_configurationcloudwatch_logging_optionsnew)
+  * [`obj opensearch_configuration.document_id_options`](#obj-opensearch_configurationdocument_id_options)
+    * [`fn new()`](#fn-opensearch_configurationdocument_id_optionsnew)
   * [`obj opensearch_configuration.processing_configuration`](#obj-opensearch_configurationprocessing_configuration)
     * [`fn new()`](#fn-opensearch_configurationprocessing_configurationnew)
     * [`obj opensearch_configuration.processing_configuration.processors`](#obj-opensearch_configurationprocessing_configurationprocessors)
@@ -1819,6 +1821,7 @@ Terraform sub block.
   - `s3_backup_mode` (`string`): Set the `s3_backup_mode` field on the resulting object. When `null`, the `s3_backup_mode` field will be omitted from the resulting object.
   - `type_name` (`string`): Set the `type_name` field on the resulting object. When `null`, the `type_name` field will be omitted from the resulting object.
   - `cloudwatch_logging_options` (`list[obj]`): Set the `cloudwatch_logging_options` field on the resulting object. When `null`, the `cloudwatch_logging_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.cloudwatch_logging_options.new](#fn-opensearch_configurationcloudwatch_logging_optionsnew) constructor.
+  - `document_id_options` (`list[obj]`): Set the `document_id_options` field on the resulting object. When `null`, the `document_id_options` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.document_id_options.new](#fn-opensearch_configurationdocument_id_optionsnew) constructor.
   - `processing_configuration` (`list[obj]`): Set the `processing_configuration` field on the resulting object. When `null`, the `processing_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.processing_configuration.new](#fn-opensearch_configurationprocessing_configurationnew) constructor.
   - `s3_configuration` (`list[obj]`): Set the `s3_configuration` field on the resulting object. When `null`, the `s3_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.s3_configuration.new](#fn-opensearch_configurations3_configurationnew) constructor.
   - `vpc_config` (`list[obj]`): Set the `vpc_config` field on the resulting object. When `null`, the `vpc_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kinesis_firehose_delivery_stream.opensearch_configuration.vpc_config.new](#fn-opensearch_configurationvpc_confignew) constructor.
@@ -1850,6 +1853,29 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `cloudwatch_logging_options` sub block.
+
+
+## obj opensearch_configuration.document_id_options
+
+
+
+### fn opensearch_configuration.document_id_options.new
+
+```ts
+new()
+```
+
+
+`aws.kinesis_firehose_delivery_stream.opensearch_configuration.document_id_options.new` constructs a new object with attributes and blocks configured for the `document_id_options`
+Terraform sub block.
+
+
+
+**Args**:
+  - `default_document_id_format` (`string`): Set the `default_document_id_format` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `document_id_options` sub block.
 
 
 ## obj opensearch_configuration.processing_configuration
@@ -2502,6 +2528,8 @@ Terraform sub block.
 
 
 **Args**:
+  - `buffering_interval` (`number`): Set the `buffering_interval` field on the resulting object. When `null`, the `buffering_interval` field will be omitted from the resulting object.
+  - `buffering_size` (`number`): Set the `buffering_size` field on the resulting object. When `null`, the `buffering_size` field will be omitted from the resulting object.
   - `hec_acknowledgment_timeout` (`number`): Set the `hec_acknowledgment_timeout` field on the resulting object. When `null`, the `hec_acknowledgment_timeout` field will be omitted from the resulting object.
   - `hec_endpoint` (`string`): Set the `hec_endpoint` field on the resulting object.
   - `hec_endpoint_type` (`string`): Set the `hec_endpoint_type` field on the resulting object. When `null`, the `hec_endpoint_type` field will be omitted from the resulting object.

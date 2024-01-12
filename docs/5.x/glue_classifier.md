@@ -289,6 +289,7 @@ Terraform sub block.
   - `disable_value_trimming` (`bool`): Set the `disable_value_trimming` field on the resulting object. When `null`, the `disable_value_trimming` field will be omitted from the resulting object.
   - `header` (`list`): Set the `header` field on the resulting object. When `null`, the `header` field will be omitted from the resulting object.
   - `quote_symbol` (`string`): Set the `quote_symbol` field on the resulting object. When `null`, the `quote_symbol` field will be omitted from the resulting object.
+  - `serde` (`string`): Set the `serde` field on the resulting object. When `null`, the `serde` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `csv_classifier` sub block.

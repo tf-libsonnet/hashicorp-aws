@@ -12,18 +12,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       mode: mode,
     }),
   },
-  '#new':: d.fn(help="\n`aws.fsx_ontap_file_system.new` injects a new `aws_fsx_ontap_file_system` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.fsx_ontap_file_system.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.fsx_ontap_file_system` using the reference:\n\n    $._ref.aws_fsx_ontap_file_system.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_fsx_ontap_file_system.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting resource block. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.\n  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting resource block. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.\n  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting resource block.\n  - `endpoint_ip_address_range` (`string`): Set the `endpoint_ip_address_range` field on the resulting resource block. When `null`, the `endpoint_ip_address_range` field will be omitted from the resulting object.\n  - `fsx_admin_password` (`string`): Set the `fsx_admin_password` field on the resulting resource block. When `null`, the `fsx_admin_password` field will be omitted from the resulting object.\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting resource block.\n  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting resource block. When `null`, the `route_table_ids` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.\n  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block. When `null`, the `storage_capacity` field will be omitted from the resulting object.\n  - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.\n  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting resource block.\n  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting resource block. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.\n  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting resource block. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.fsx_ontap_file_system.new` injects a new `aws_fsx_ontap_file_system` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.fsx_ontap_file_system.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.fsx_ontap_file_system` using the reference:\n\n    $._ref.aws_fsx_ontap_file_system.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_fsx_ontap_file_system.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting resource block. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.\n  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting resource block. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.\n  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting resource block.\n  - `endpoint_ip_address_range` (`string`): Set the `endpoint_ip_address_range` field on the resulting resource block. When `null`, the `endpoint_ip_address_range` field will be omitted from the resulting object.\n  - `fsx_admin_password` (`string`): Set the `fsx_admin_password` field on the resulting resource block. When `null`, the `fsx_admin_password` field will be omitted from the resulting object.\n  - `ha_pairs` (`number`): Set the `ha_pairs` field on the resulting resource block. When `null`, the `ha_pairs` field will be omitted from the resulting object.\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting resource block. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting resource block.\n  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting resource block. When `null`, the `route_table_ids` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.\n  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block. When `null`, the `storage_capacity` field will be omitted from the resulting object.\n  - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.\n  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting resource block. When `null`, the `throughput_capacity` field will be omitted from the resulting object.\n  - `throughput_capacity_per_ha_pair` (`number`): Set the `throughput_capacity_per_ha_pair` field on the resulting resource block. When `null`, the `throughput_capacity_per_ha_pair` field will be omitted from the resulting object.\n  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting resource block. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.\n  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting resource block. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     deployment_type,
     preferred_subnet_id,
     subnet_ids,
-    throughput_capacity,
     automatic_backup_retention_days=null,
     daily_automatic_backup_start_time=null,
     disk_iops_configuration=null,
     endpoint_ip_address_range=null,
     fsx_admin_password=null,
+    ha_pairs=null,
     kms_key_id=null,
     route_table_ids=null,
     security_group_ids=null,
@@ -31,6 +31,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     storage_type=null,
     tags=null,
     tags_all=null,
+    throughput_capacity=null,
+    throughput_capacity_per_ha_pair=null,
     timeouts=null,
     weekly_maintenance_start_time=null,
     _meta={}
@@ -44,6 +46,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       disk_iops_configuration=disk_iops_configuration,
       endpoint_ip_address_range=endpoint_ip_address_range,
       fsx_admin_password=fsx_admin_password,
+      ha_pairs=ha_pairs,
       kms_key_id=kms_key_id,
       preferred_subnet_id=preferred_subnet_id,
       route_table_ids=route_table_ids,
@@ -54,22 +57,23 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       tags=tags,
       tags_all=tags_all,
       throughput_capacity=throughput_capacity,
+      throughput_capacity_per_ha_pair=throughput_capacity_per_ha_pair,
       timeouts=timeouts,
       weekly_maintenance_start_time=weekly_maintenance_start_time
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.fsx_ontap_file_system.newAttrs` constructs a new object with attributes and blocks configured for the `fsx_ontap_file_system`\nTerraform resource.\n\nUnlike [aws.fsx_ontap_file_system.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting object. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.\n  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting object. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.\n  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting object.\n  - `endpoint_ip_address_range` (`string`): Set the `endpoint_ip_address_range` field on the resulting object. When `null`, the `endpoint_ip_address_range` field will be omitted from the resulting object.\n  - `fsx_admin_password` (`string`): Set the `fsx_admin_password` field on the resulting object. When `null`, the `fsx_admin_password` field will be omitted from the resulting object.\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting object.\n  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting object. When `null`, the `route_table_ids` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.\n  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object. When `null`, the `storage_capacity` field will be omitted from the resulting object.\n  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.\n  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting object.\n  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.\n  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting object. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_ontap_file_system` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.fsx_ontap_file_system.newAttrs` constructs a new object with attributes and blocks configured for the `fsx_ontap_file_system`\nTerraform resource.\n\nUnlike [aws.fsx_ontap_file_system.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `automatic_backup_retention_days` (`number`): Set the `automatic_backup_retention_days` field on the resulting object. When `null`, the `automatic_backup_retention_days` field will be omitted from the resulting object.\n  - `daily_automatic_backup_start_time` (`string`): Set the `daily_automatic_backup_start_time` field on the resulting object. When `null`, the `daily_automatic_backup_start_time` field will be omitted from the resulting object.\n  - `deployment_type` (`string`): Set the `deployment_type` field on the resulting object.\n  - `endpoint_ip_address_range` (`string`): Set the `endpoint_ip_address_range` field on the resulting object. When `null`, the `endpoint_ip_address_range` field will be omitted from the resulting object.\n  - `fsx_admin_password` (`string`): Set the `fsx_admin_password` field on the resulting object. When `null`, the `fsx_admin_password` field will be omitted from the resulting object.\n  - `ha_pairs` (`number`): Set the `ha_pairs` field on the resulting object. When `null`, the `ha_pairs` field will be omitted from the resulting object.\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting object.\n  - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting object. When `null`, the `route_table_ids` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.\n  - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object. When `null`, the `storage_capacity` field will be omitted from the resulting object.\n  - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.\n  - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `throughput_capacity` (`number`): Set the `throughput_capacity` field on the resulting object. When `null`, the `throughput_capacity` field will be omitted from the resulting object.\n  - `throughput_capacity_per_ha_pair` (`number`): Set the `throughput_capacity_per_ha_pair` field on the resulting object. When `null`, the `throughput_capacity_per_ha_pair` field will be omitted from the resulting object.\n  - `weekly_maintenance_start_time` (`string`): Set the `weekly_maintenance_start_time` field on the resulting object. When `null`, the `weekly_maintenance_start_time` field will be omitted from the resulting object.\n  - `disk_iops_configuration` (`list[obj]`): Set the `disk_iops_configuration` field on the resulting object. When `null`, the `disk_iops_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.disk_iops_configuration.new](#fn-disk_iops_configurationnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.fsx_ontap_file_system.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `fsx_ontap_file_system` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     deployment_type,
     preferred_subnet_id,
     subnet_ids,
-    throughput_capacity,
     automatic_backup_retention_days=null,
     daily_automatic_backup_start_time=null,
     disk_iops_configuration=null,
     endpoint_ip_address_range=null,
     fsx_admin_password=null,
+    ha_pairs=null,
     kms_key_id=null,
     route_table_ids=null,
     security_group_ids=null,
@@ -77,6 +81,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     storage_type=null,
     tags=null,
     tags_all=null,
+    throughput_capacity=null,
+    throughput_capacity_per_ha_pair=null,
     timeouts=null,
     weekly_maintenance_start_time=null
   ):: std.prune(a={
@@ -86,6 +92,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     disk_iops_configuration: disk_iops_configuration,
     endpoint_ip_address_range: endpoint_ip_address_range,
     fsx_admin_password: fsx_admin_password,
+    ha_pairs: ha_pairs,
     kms_key_id: kms_key_id,
     preferred_subnet_id: preferred_subnet_id,
     route_table_ids: route_table_ids,
@@ -96,6 +103,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     tags: tags,
     tags_all: tags_all,
     throughput_capacity: throughput_capacity,
+    throughput_capacity_per_ha_pair: throughput_capacity_per_ha_pair,
     timeouts: timeouts,
     weekly_maintenance_start_time: weekly_maintenance_start_time,
   }),
@@ -177,6 +185,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_fsx_ontap_file_system+: {
         [resourceLabel]+: {
           fsx_admin_password: value,
+        },
+      },
+    },
+  },
+  '#withHaPairs':: d.fn(help='`aws.number.withHaPairs` constructs a mixin object that can be merged into the `number`\nTerraform resource block to set or update the ha_pairs field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`number`): The value to set for the `ha_pairs` field.\n', args=[]),
+  withHaPairs(resourceLabel, value): {
+    resource+: {
+      aws_fsx_ontap_file_system+: {
+        [resourceLabel]+: {
+          ha_pairs: value,
         },
       },
     },
@@ -277,6 +295,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_fsx_ontap_file_system+: {
         [resourceLabel]+: {
           throughput_capacity: value,
+        },
+      },
+    },
+  },
+  '#withThroughputCapacityPerHaPair':: d.fn(help='`aws.number.withThroughputCapacityPerHaPair` constructs a mixin object that can be merged into the `number`\nTerraform resource block to set or update the throughput_capacity_per_ha_pair field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`number`): The value to set for the `throughput_capacity_per_ha_pair` field.\n', args=[]),
+  withThroughputCapacityPerHaPair(resourceLabel, value): {
+    resource+: {
+      aws_fsx_ontap_file_system+: {
+        [resourceLabel]+: {
+          throughput_capacity_per_ha_pair: value,
         },
       },
     },

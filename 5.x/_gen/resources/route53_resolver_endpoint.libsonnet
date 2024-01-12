@@ -12,13 +12,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       subnet_id: subnet_id,
     }),
   },
-  '#new':: d.fn(help="\n`aws.route53_resolver_endpoint.new` injects a new `aws_route53_resolver_endpoint` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.route53_resolver_endpoint.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.route53_resolver_endpoint` using the reference:\n\n    $._ref.aws_route53_resolver_endpoint.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_route53_resolver_endpoint.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `direction` (`string`): Set the `direction` field on the resulting resource block.\n  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `ip_address` (`list[obj]`): Set the `ip_address` field on the resulting resource block. When `null`, the `ip_address` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.ip_address.new](#fn-ip_addressnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.route53_resolver_endpoint.new` injects a new `aws_route53_resolver_endpoint` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.route53_resolver_endpoint.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.route53_resolver_endpoint` using the reference:\n\n    $._ref.aws_route53_resolver_endpoint.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_route53_resolver_endpoint.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `direction` (`string`): Set the `direction` field on the resulting resource block.\n  - `name` (`string`): Set the `name` field on the resulting resource block. When `null`, the `name` field will be omitted from the resulting object.\n  - `protocols` (`list`): Set the `protocols` field on the resulting resource block. When `null`, the `protocols` field will be omitted from the resulting object.\n  - `resolver_endpoint_type` (`string`): Set the `resolver_endpoint_type` field on the resulting resource block. When `null`, the `resolver_endpoint_type` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `ip_address` (`list[obj]`): Set the `ip_address` field on the resulting resource block. When `null`, the `ip_address` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.ip_address.new](#fn-ip_addressnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     direction,
     security_group_ids,
     ip_address=null,
     name=null,
+    protocols=null,
+    resolver_endpoint_type=null,
     tags=null,
     tags_all=null,
     timeouts=null,
@@ -30,6 +32,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       direction=direction,
       ip_address=ip_address,
       name=name,
+      protocols=protocols,
+      resolver_endpoint_type=resolver_endpoint_type,
       security_group_ids=security_group_ids,
       tags=tags,
       tags_all=tags_all,
@@ -37,12 +41,14 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.route53_resolver_endpoint.newAttrs` constructs a new object with attributes and blocks configured for the `route53_resolver_endpoint`\nTerraform resource.\n\nUnlike [aws.route53_resolver_endpoint.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `direction` (`string`): Set the `direction` field on the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `ip_address` (`list[obj]`): Set the `ip_address` field on the resulting object. When `null`, the `ip_address` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.ip_address.new](#fn-ip_addressnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_resolver_endpoint` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.route53_resolver_endpoint.newAttrs` constructs a new object with attributes and blocks configured for the `route53_resolver_endpoint`\nTerraform resource.\n\nUnlike [aws.route53_resolver_endpoint.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `direction` (`string`): Set the `direction` field on the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.\n  - `protocols` (`list`): Set the `protocols` field on the resulting object. When `null`, the `protocols` field will be omitted from the resulting object.\n  - `resolver_endpoint_type` (`string`): Set the `resolver_endpoint_type` field on the resulting object. When `null`, the `resolver_endpoint_type` field will be omitted from the resulting object.\n  - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `ip_address` (`list[obj]`): Set the `ip_address` field on the resulting object. When `null`, the `ip_address` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.ip_address.new](#fn-ip_addressnew) constructor.\n  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.route53_resolver_endpoint.timeouts.new](#fn-timeoutsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `route53_resolver_endpoint` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     direction,
     security_group_ids,
     ip_address=null,
     name=null,
+    protocols=null,
+    resolver_endpoint_type=null,
     tags=null,
     tags_all=null,
     timeouts=null
@@ -50,6 +56,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     direction: direction,
     ip_address: ip_address,
     name: name,
+    protocols: protocols,
+    resolver_endpoint_type: resolver_endpoint_type,
     security_group_ids: security_group_ids,
     tags: tags,
     tags_all: tags_all,
@@ -103,6 +111,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_route53_resolver_endpoint+: {
         [resourceLabel]+: {
           name: value,
+        },
+      },
+    },
+  },
+  '#withProtocols':: d.fn(help='`aws.list.withProtocols` constructs a mixin object that can be merged into the `list`\nTerraform resource block to set or update the protocols field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list`): The value to set for the `protocols` field.\n', args=[]),
+  withProtocols(resourceLabel, value): {
+    resource+: {
+      aws_route53_resolver_endpoint+: {
+        [resourceLabel]+: {
+          protocols: value,
+        },
+      },
+    },
+  },
+  '#withResolverEndpointType':: d.fn(help='`aws.string.withResolverEndpointType` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the resolver_endpoint_type field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `resolver_endpoint_type` field.\n', args=[]),
+  withResolverEndpointType(resourceLabel, value): {
+    resource+: {
+      aws_route53_resolver_endpoint+: {
+        [resourceLabel]+: {
+          resolver_endpoint_type: value,
         },
       },
     },

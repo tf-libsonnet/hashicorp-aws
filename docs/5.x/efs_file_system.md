@@ -22,12 +22,16 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLifecyclePolicy()`](#fn-withlifecyclepolicy)
 * [`fn withLifecyclePolicyMixin()`](#fn-withlifecyclepolicymixin)
 * [`fn withPerformanceMode()`](#fn-withperformancemode)
+* [`fn withProtection()`](#fn-withprotection)
+* [`fn withProtectionMixin()`](#fn-withprotectionmixin)
 * [`fn withProvisionedThroughputInMibps()`](#fn-withprovisionedthroughputinmibps)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withThroughputMode()`](#fn-withthroughputmode)
 * [`obj lifecycle_policy`](#obj-lifecycle_policy)
   * [`fn new()`](#fn-lifecycle_policynew)
+* [`obj protection`](#obj-protection)
+  * [`fn new()`](#fn-protectionnew)
 
 ## Fields
 
@@ -68,6 +72,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `throughput_mode` (`string`): Set the `throughput_mode` field on the resulting resource block. When `null`, the `throughput_mode` field will be omitted from the resulting object.
   - `lifecycle_policy` (`list[obj]`): Set the `lifecycle_policy` field on the resulting resource block. When `null`, the `lifecycle_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.lifecycle_policy.new](#fn-lifecycle_policynew) constructor.
+  - `protection` (`list[obj]`): Set the `protection` field on the resulting resource block. When `null`, the `protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.protection.new](#fn-protectionnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -101,6 +106,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `throughput_mode` (`string`): Set the `throughput_mode` field on the resulting object. When `null`, the `throughput_mode` field will be omitted from the resulting object.
   - `lifecycle_policy` (`list[obj]`): Set the `lifecycle_policy` field on the resulting object. When `null`, the `lifecycle_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.lifecycle_policy.new](#fn-lifecycle_policynew) constructor.
+  - `protection` (`list[obj]`): Set the `protection` field on the resulting object. When `null`, the `protection` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.efs_file_system.protection.new](#fn-protectionnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `efs_file_system` resource into the root Terraform configuration.
@@ -223,6 +229,43 @@ Terraform resource block to set or update the performance_mode field.
   - `value` (`string`): The value to set for the `performance_mode` field.
 
 
+### fn withProtection
+
+```ts
+withProtection()
+```
+
+`aws.list[obj].withProtection` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the protection field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withProtectionMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `protection` field.
+
+
+### fn withProtectionMixin
+
+```ts
+withProtectionMixin()
+```
+
+`aws.list[obj].withProtectionMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the protection field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withProtection](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `protection` field.
+
+
 ### fn withProvisionedThroughputInMibps
 
 ```ts
@@ -304,8 +347,32 @@ Terraform sub block.
 
 
 **Args**:
+  - `transition_to_archive` (`string`): Set the `transition_to_archive` field on the resulting object. When `null`, the `transition_to_archive` field will be omitted from the resulting object.
   - `transition_to_ia` (`string`): Set the `transition_to_ia` field on the resulting object. When `null`, the `transition_to_ia` field will be omitted from the resulting object.
   - `transition_to_primary_storage_class` (`string`): Set the `transition_to_primary_storage_class` field on the resulting object. When `null`, the `transition_to_primary_storage_class` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lifecycle_policy` sub block.
+
+
+## obj protection
+
+
+
+### fn protection.new
+
+```ts
+new()
+```
+
+
+`aws.efs_file_system.protection.new` constructs a new object with attributes and blocks configured for the `protection`
+Terraform sub block.
+
+
+
+**Args**:
+  - `replication_overwrite` (`string`): Set the `replication_overwrite` field on the resulting object. When `null`, the `replication_overwrite` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `protection` sub block.

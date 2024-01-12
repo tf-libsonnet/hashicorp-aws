@@ -284,6 +284,7 @@ Terraform sub block.
   - `applicationautoscaling` (`string`): Use this to override the default service endpoint URL When `null`, the `applicationautoscaling` field will be omitted from the resulting object.
   - `applicationinsights` (`string`): Use this to override the default service endpoint URL When `null`, the `applicationinsights` field will be omitted from the resulting object.
   - `appmesh` (`string`): Use this to override the default service endpoint URL When `null`, the `appmesh` field will be omitted from the resulting object.
+  - `appregistry` (`string`): Use this to override the default service endpoint URL When `null`, the `appregistry` field will be omitted from the resulting object.
   - `apprunner` (`string`): Use this to override the default service endpoint URL When `null`, the `apprunner` field will be omitted from the resulting object.
   - `appstream` (`string`): Use this to override the default service endpoint URL When `null`, the `appstream` field will be omitted from the resulting object.
   - `appsync` (`string`): Use this to override the default service endpoint URL When `null`, the `appsync` field will be omitted from the resulting object.
@@ -391,6 +392,7 @@ Terraform sub block.
   - `glue` (`string`): Use this to override the default service endpoint URL When `null`, the `glue` field will be omitted from the resulting object.
   - `grafana` (`string`): Use this to override the default service endpoint URL When `null`, the `grafana` field will be omitted from the resulting object.
   - `greengrass` (`string`): Use this to override the default service endpoint URL When `null`, the `greengrass` field will be omitted from the resulting object.
+  - `groundstation` (`string`): Use this to override the default service endpoint URL When `null`, the `groundstation` field will be omitted from the resulting object.
   - `guardduty` (`string`): Use this to override the default service endpoint URL When `null`, the `guardduty` field will be omitted from the resulting object.
   - `healthlake` (`string`): Use this to override the default service endpoint URL When `null`, the `healthlake` field will be omitted from the resulting object.
   - `iam` (`string`): Use this to override the default service endpoint URL When `null`, the `iam` field will be omitted from the resulting object.
@@ -416,6 +418,7 @@ Terraform sub block.
   - `kms` (`string`): Use this to override the default service endpoint URL When `null`, the `kms` field will be omitted from the resulting object.
   - `lakeformation` (`string`): Use this to override the default service endpoint URL When `null`, the `lakeformation` field will be omitted from the resulting object.
   - `lambda` (`string`): Use this to override the default service endpoint URL When `null`, the `lambda` field will be omitted from the resulting object.
+  - `launchwizard` (`string`): Use this to override the default service endpoint URL When `null`, the `launchwizard` field will be omitted from the resulting object.
   - `lex` (`string`): Use this to override the default service endpoint URL When `null`, the `lex` field will be omitted from the resulting object.
   - `lexmodelbuilding` (`string`): Use this to override the default service endpoint URL When `null`, the `lexmodelbuilding` field will be omitted from the resulting object.
   - `lexmodelbuildingservice` (`string`): Use this to override the default service endpoint URL When `null`, the `lexmodelbuildingservice` field will be omitted from the resulting object.
@@ -452,12 +455,14 @@ Terraform sub block.
   - `organizations` (`string`): Use this to override the default service endpoint URL When `null`, the `organizations` field will be omitted from the resulting object.
   - `osis` (`string`): Use this to override the default service endpoint URL When `null`, the `osis` field will be omitted from the resulting object.
   - `outposts` (`string`): Use this to override the default service endpoint URL When `null`, the `outposts` field will be omitted from the resulting object.
+  - `pcaconnectorad` (`string`): Use this to override the default service endpoint URL When `null`, the `pcaconnectorad` field will be omitted from the resulting object.
   - `pinpoint` (`string`): Use this to override the default service endpoint URL When `null`, the `pinpoint` field will be omitted from the resulting object.
   - `pipes` (`string`): Use this to override the default service endpoint URL When `null`, the `pipes` field will be omitted from the resulting object.
   - `polly` (`string`): Use this to override the default service endpoint URL When `null`, the `polly` field will be omitted from the resulting object.
   - `pricing` (`string`): Use this to override the default service endpoint URL When `null`, the `pricing` field will be omitted from the resulting object.
   - `prometheus` (`string`): Use this to override the default service endpoint URL When `null`, the `prometheus` field will be omitted from the resulting object.
   - `prometheusservice` (`string`): Use this to override the default service endpoint URL When `null`, the `prometheusservice` field will be omitted from the resulting object.
+  - `qbusiness` (`string`): Use this to override the default service endpoint URL When `null`, the `qbusiness` field will be omitted from the resulting object.
   - `qldb` (`string`): Use this to override the default service endpoint URL When `null`, the `qldb` field will be omitted from the resulting object.
   - `quicksight` (`string`): Use this to override the default service endpoint URL When `null`, the `quicksight` field will be omitted from the resulting object.
   - `ram` (`string`): Use this to override the default service endpoint URL When `null`, the `ram` field will be omitted from the resulting object.
@@ -494,6 +499,7 @@ Terraform sub block.
   - `serverlessapprepo` (`string`): Use this to override the default service endpoint URL When `null`, the `serverlessapprepo` field will be omitted from the resulting object.
   - `serverlessrepo` (`string`): Use this to override the default service endpoint URL When `null`, the `serverlessrepo` field will be omitted from the resulting object.
   - `servicecatalog` (`string`): Use this to override the default service endpoint URL When `null`, the `servicecatalog` field will be omitted from the resulting object.
+  - `servicecatalogappregistry` (`string`): Use this to override the default service endpoint URL When `null`, the `servicecatalogappregistry` field will be omitted from the resulting object.
   - `servicediscovery` (`string`): Use this to override the default service endpoint URL When `null`, the `servicediscovery` field will be omitted from the resulting object.
   - `servicequotas` (`string`): Use this to override the default service endpoint URL When `null`, the `servicequotas` field will be omitted from the resulting object.
   - `ses` (`string`): Use this to override the default service endpoint URL When `null`, the `ses` field will be omitted from the resulting object.
@@ -507,6 +513,7 @@ Terraform sub block.
   - `ssm` (`string`): Use this to override the default service endpoint URL When `null`, the `ssm` field will be omitted from the resulting object.
   - `ssmcontacts` (`string`): Use this to override the default service endpoint URL When `null`, the `ssmcontacts` field will be omitted from the resulting object.
   - `ssmincidents` (`string`): Use this to override the default service endpoint URL When `null`, the `ssmincidents` field will be omitted from the resulting object.
+  - `ssmsap` (`string`): Use this to override the default service endpoint URL When `null`, the `ssmsap` field will be omitted from the resulting object.
   - `sso` (`string`): Use this to override the default service endpoint URL When `null`, the `sso` field will be omitted from the resulting object.
   - `ssoadmin` (`string`): Use this to override the default service endpoint URL When `null`, the `ssoadmin` field will be omitted from the resulting object.
   - `stepfunctions` (`string`): Use this to override the default service endpoint URL When `null`, the `stepfunctions` field will be omitted from the resulting object.
@@ -523,6 +530,7 @@ Terraform sub block.
   - `waf` (`string`): Use this to override the default service endpoint URL When `null`, the `waf` field will be omitted from the resulting object.
   - `wafregional` (`string`): Use this to override the default service endpoint URL When `null`, the `wafregional` field will be omitted from the resulting object.
   - `wafv2` (`string`): Use this to override the default service endpoint URL When `null`, the `wafv2` field will be omitted from the resulting object.
+  - `wellarchitected` (`string`): Use this to override the default service endpoint URL When `null`, the `wellarchitected` field will be omitted from the resulting object.
   - `worklink` (`string`): Use this to override the default service endpoint URL When `null`, the `worklink` field will be omitted from the resulting object.
   - `workspaces` (`string`): Use this to override the default service endpoint URL When `null`, the `workspaces` field will be omitted from the resulting object.
   - `xray` (`string`): Use this to override the default service endpoint URL When `null`, the `xray` field will be omitted from the resulting object.
