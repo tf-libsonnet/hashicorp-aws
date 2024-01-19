@@ -320,6 +320,7 @@ Terraform sub block.
 **Args**:
   - `cold_storage_after` (`number`): Set the `cold_storage_after` field on the resulting object. When `null`, the `cold_storage_after` field will be omitted from the resulting object.
   - `delete_after` (`number`): Set the `delete_after` field on the resulting object. When `null`, the `delete_after` field will be omitted from the resulting object.
+  - `opt_in_to_archive_for_supported_resources` (`bool`): Set the `opt_in_to_archive_for_supported_resources` field on the resulting object. When `null`, the `opt_in_to_archive_for_supported_resources` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lifecycle` sub block.
@@ -344,6 +345,7 @@ Terraform sub block.
 **Args**:
   - `cold_storage_after` (`number`): Set the `cold_storage_after` field on the resulting object. When `null`, the `cold_storage_after` field will be omitted from the resulting object.
   - `delete_after` (`number`): Set the `delete_after` field on the resulting object. When `null`, the `delete_after` field will be omitted from the resulting object.
+  - `opt_in_to_archive_for_supported_resources` (`bool`): Set the `opt_in_to_archive_for_supported_resources` field on the resulting object. When `null`, the `opt_in_to_archive_for_supported_resources` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `lifecycle` sub block.

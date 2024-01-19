@@ -431,6 +431,7 @@ Terraform sub block.
   - `locationservice` (`string`): Use this to override the default service endpoint URL When `null`, the `locationservice` field will be omitted from the resulting object.
   - `logs` (`string`): Use this to override the default service endpoint URL When `null`, the `logs` field will be omitted from the resulting object.
   - `lookoutmetrics` (`string`): Use this to override the default service endpoint URL When `null`, the `lookoutmetrics` field will be omitted from the resulting object.
+  - `m2` (`string`): Use this to override the default service endpoint URL When `null`, the `m2` field will be omitted from the resulting object.
   - `macie2` (`string`): Use this to override the default service endpoint URL When `null`, the `macie2` field will be omitted from the resulting object.
   - `managedgrafana` (`string`): Use this to override the default service endpoint URL When `null`, the `managedgrafana` field will be omitted from the resulting object.
   - `mediaconnect` (`string`): Use this to override the default service endpoint URL When `null`, the `mediaconnect` field will be omitted from the resulting object.
@@ -473,6 +474,7 @@ Terraform sub block.
   - `redshiftdata` (`string`): Use this to override the default service endpoint URL When `null`, the `redshiftdata` field will be omitted from the resulting object.
   - `redshiftdataapiservice` (`string`): Use this to override the default service endpoint URL When `null`, the `redshiftdataapiservice` field will be omitted from the resulting object.
   - `redshiftserverless` (`string`): Use this to override the default service endpoint URL When `null`, the `redshiftserverless` field will be omitted from the resulting object.
+  - `rekognition` (`string`): Use this to override the default service endpoint URL When `null`, the `rekognition` field will be omitted from the resulting object.
   - `resourceexplorer2` (`string`): Use this to override the default service endpoint URL When `null`, the `resourceexplorer2` field will be omitted from the resulting object.
   - `resourcegroups` (`string`): Use this to override the default service endpoint URL When `null`, the `resourcegroups` field will be omitted from the resulting object.
   - `resourcegroupstagging` (`string`): Use this to override the default service endpoint URL When `null`, the `resourcegroupstagging` field will be omitted from the resulting object.

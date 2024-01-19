@@ -22,7 +22,6 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn withExcludeUppercase()`](#fn-withexcludeuppercase)
 * [`fn withIncludeSpace()`](#fn-withincludespace)
 * [`fn withPasswordLength()`](#fn-withpasswordlength)
-* [`fn withRandomPassword()`](#fn-withrandompassword)
 * [`fn withRequireEachIncludedType()`](#fn-withrequireeachincludedtype)
 
 ## Fields
@@ -61,7 +60,6 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `exclude_uppercase` (`bool`): Set the `exclude_uppercase` field on the resulting data source block. When `null`, the `exclude_uppercase` field will be omitted from the resulting object.
   - `include_space` (`bool`): Set the `include_space` field on the resulting data source block. When `null`, the `include_space` field will be omitted from the resulting object.
   - `password_length` (`number`): Set the `password_length` field on the resulting data source block. When `null`, the `password_length` field will be omitted from the resulting object.
-  - `random_password` (`string`): Set the `random_password` field on the resulting data source block. When `null`, the `random_password` field will be omitted from the resulting object.
   - `require_each_included_type` (`bool`): Set the `require_each_included_type` field on the resulting data source block. When `null`, the `require_each_included_type` field will be omitted from the resulting object.
 
 **Returns**:
@@ -93,7 +91,6 @@ injecting into a complete block.
   - `exclude_uppercase` (`bool`): Set the `exclude_uppercase` field on the resulting object. When `null`, the `exclude_uppercase` field will be omitted from the resulting object.
   - `include_space` (`bool`): Set the `include_space` field on the resulting object. When `null`, the `include_space` field will be omitted from the resulting object.
   - `password_length` (`number`): Set the `password_length` field on the resulting object. When `null`, the `password_length` field will be omitted from the resulting object.
-  - `random_password` (`string`): Set the `random_password` field on the resulting object. When `null`, the `random_password` field will be omitted from the resulting object.
   - `require_each_included_type` (`bool`): Set the `require_each_included_type` field on the resulting object. When `null`, the `require_each_included_type` field will be omitted from the resulting object.
 
 **Returns**:
@@ -210,22 +207,6 @@ Terraform data source block to set or update the password_length field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`number`): The value to set for the `password_length` field.
-
-
-### fn withRandomPassword
-
-```ts
-withRandomPassword()
-```
-
-`aws.string.withRandomPassword` constructs a mixin object that can be merged into the `string`
-Terraform data source block to set or update the random_password field.
-
-
-
-**Args**:
-  - `dataSrcLabel` (`string`): The name label of the block to update.
-  - `value` (`string`): The value to set for the `random_password` field.
 
 
 ### fn withRequireEachIncludedType

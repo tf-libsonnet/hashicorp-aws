@@ -202,6 +202,7 @@ permalink: /data/
 * [efs_mount_target](efs_mount_target.md)
 * [eip](eip.md)
 * [eips](eips.md)
+* [eks_access_entry](eks_access_entry.md)
 * [eks_addon](eks_addon.md)
 * [eks_addon_version](eks_addon_version.md)
 * [eks_cluster](eks_cluster.md)

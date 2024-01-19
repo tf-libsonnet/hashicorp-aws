@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withArn()`](#fn-witharn)
 * [`fn withRoleArn()`](#fn-withrolearn)
+* [`fn withUseServiceLinkedRole()`](#fn-withuseservicelinkedrole)
 
 ## Fields
 
@@ -49,6 +50,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `arn` (`string`): Set the `arn` field on the resulting resource block.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `use_service_linked_role` (`bool`): Set the `use_service_linked_role` field on the resulting resource block. When `null`, the `use_service_linked_role` field will be omitted from the resulting object.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -74,6 +76,7 @@ injecting into a complete block.
 **Args**:
   - `arn` (`string`): Set the `arn` field on the resulting object.
   - `role_arn` (`string`): Set the `role_arn` field on the resulting object. When `null`, the `role_arn` field will be omitted from the resulting object.
+  - `use_service_linked_role` (`bool`): Set the `use_service_linked_role` field on the resulting object. When `null`, the `use_service_linked_role` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `lakeformation_resource` resource into the root Terraform configuration.
@@ -109,3 +112,19 @@ Terraform resource block to set or update the role_arn field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `role_arn` field.
+
+
+### fn withUseServiceLinkedRole
+
+```ts
+withUseServiceLinkedRole()
+```
+
+`aws.bool.withUseServiceLinkedRole` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the use_service_linked_role field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `use_service_linked_role` field.

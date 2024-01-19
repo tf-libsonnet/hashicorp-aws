@@ -197,6 +197,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   efs_mount_target: (import 'efs_mount_target.libsonnet'),
   eip: (import 'eip.libsonnet'),
   eips: (import 'eips.libsonnet'),
+  eks_access_entry: (import 'eks_access_entry.libsonnet'),
   eks_addon: (import 'eks_addon.libsonnet'),
   eks_addon_version: (import 'eks_addon_version.libsonnet'),
   eks_cluster: (import 'eks_cluster.libsonnet'),
