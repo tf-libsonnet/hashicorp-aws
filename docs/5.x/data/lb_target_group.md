@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the data source usi
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withArn()`](#fn-witharn)
+* [`fn withLoadBalancingAnomalyMitigation()`](#fn-withloadbalancinganomalymitigation)
 * [`fn withName()`](#fn-withname)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTimeouts()`](#fn-withtimeouts)
@@ -53,6 +54,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block.
   - `arn` (`string`): Set the `arn` field on the resulting data source block. When `null`, the `arn` field will be omitted from the resulting object.
+  - `load_balancing_anomaly_mitigation` (`string`): Set the `load_balancing_anomaly_mitigation` field on the resulting data source block. When `null`, the `load_balancing_anomaly_mitigation` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting data source block. When `null`, the `name` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting data source block. When `null`, the `tags` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting data source block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lb_target_group.timeouts.new](#fn-timeoutsnew) constructor.
@@ -80,6 +82,7 @@ injecting into a complete block.
 
 **Args**:
   - `arn` (`string`): Set the `arn` field on the resulting object. When `null`, the `arn` field will be omitted from the resulting object.
+  - `load_balancing_anomaly_mitigation` (`string`): Set the `load_balancing_anomaly_mitigation` field on the resulting object. When `null`, the `load_balancing_anomaly_mitigation` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object. When `null`, the `name` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.data.lb_target_group.timeouts.new](#fn-timeoutsnew) constructor.
@@ -102,6 +105,22 @@ Terraform data source block to set or update the arn field.
 **Args**:
   - `dataSrcLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `arn` field.
+
+
+### fn withLoadBalancingAnomalyMitigation
+
+```ts
+withLoadBalancingAnomalyMitigation()
+```
+
+`aws.string.withLoadBalancingAnomalyMitigation` constructs a mixin object that can be merged into the `string`
+Terraform data source block to set or update the load_balancing_anomaly_mitigation field.
+
+
+
+**Args**:
+  - `dataSrcLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `load_balancing_anomaly_mitigation` field.
 
 
 ### fn withName

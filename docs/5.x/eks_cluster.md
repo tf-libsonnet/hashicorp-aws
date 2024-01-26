@@ -15,6 +15,8 @@ This package contains functions and utilities for setting up the resource using 
 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
+* [`fn withAccessConfig()`](#fn-withaccessconfig)
+* [`fn withAccessConfigMixin()`](#fn-withaccessconfigmixin)
 * [`fn withEnabledClusterLogTypes()`](#fn-withenabledclusterlogtypes)
 * [`fn withEncryptionConfig()`](#fn-withencryptionconfig)
 * [`fn withEncryptionConfigMixin()`](#fn-withencryptionconfigmixin)
@@ -31,6 +33,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withVersion()`](#fn-withversion)
 * [`fn withVpcConfig()`](#fn-withvpcconfig)
 * [`fn withVpcConfigMixin()`](#fn-withvpcconfigmixin)
+* [`obj access_config`](#obj-access_config)
+  * [`fn new()`](#fn-access_confignew)
 * [`obj encryption_config`](#obj-encryption_config)
   * [`fn new()`](#fn-encryption_confignew)
   * [`obj encryption_config.provider`](#obj-encryption_configprovider)
@@ -81,6 +85,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): Set the `version` field on the resulting resource block. When `null`, the `version` field will be omitted from the resulting object.
+  - `access_config` (`list[obj]`): Set the `access_config` field on the resulting resource block. When `null`, the `access_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.access_config.new](#fn-access_confignew) constructor.
   - `encryption_config` (`list[obj]`): Set the `encryption_config` field on the resulting resource block. When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.new](#fn-encryption_confignew) constructor.
   - `kubernetes_network_config` (`list[obj]`): Set the `kubernetes_network_config` field on the resulting resource block. When `null`, the `kubernetes_network_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.kubernetes_network_config.new](#fn-kubernetes_network_confignew) constructor.
   - `outpost_config` (`list[obj]`): Set the `outpost_config` field on the resulting resource block. When `null`, the `outpost_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.new](#fn-outpost_confignew) constructor.
@@ -115,6 +120,7 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `version` (`string`): Set the `version` field on the resulting object. When `null`, the `version` field will be omitted from the resulting object.
+  - `access_config` (`list[obj]`): Set the `access_config` field on the resulting object. When `null`, the `access_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.access_config.new](#fn-access_confignew) constructor.
   - `encryption_config` (`list[obj]`): Set the `encryption_config` field on the resulting object. When `null`, the `encryption_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.encryption_config.new](#fn-encryption_confignew) constructor.
   - `kubernetes_network_config` (`list[obj]`): Set the `kubernetes_network_config` field on the resulting object. When `null`, the `kubernetes_network_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.kubernetes_network_config.new](#fn-kubernetes_network_confignew) constructor.
   - `outpost_config` (`list[obj]`): Set the `outpost_config` field on the resulting object. When `null`, the `outpost_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.eks_cluster.outpost_config.new](#fn-outpost_confignew) constructor.
@@ -123,6 +129,43 @@ injecting into a complete block.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `eks_cluster` resource into the root Terraform configuration.
+
+
+### fn withAccessConfig
+
+```ts
+withAccessConfig()
+```
+
+`aws.list[obj].withAccessConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the access_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withAccessConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `access_config` field.
+
+
+### fn withAccessConfigMixin
+
+```ts
+withAccessConfigMixin()
+```
+
+`aws.list[obj].withAccessConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the access_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withAccessConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `access_config` field.
 
 
 ### fn withEnabledClusterLogTypes
@@ -403,6 +446,30 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `vpc_config` field.
+
+
+## obj access_config
+
+
+
+### fn access_config.new
+
+```ts
+new()
+```
+
+
+`aws.eks_cluster.access_config.new` constructs a new object with attributes and blocks configured for the `access_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `authentication_mode` (`string`): Set the `authentication_mode` field on the resulting object. When `null`, the `authentication_mode` field will be omitted from the resulting object.
+  - `bootstrap_cluster_creator_admin_permissions` (`bool`): Set the `bootstrap_cluster_creator_admin_permissions` field on the resulting object. When `null`, the `bootstrap_cluster_creator_admin_permissions` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `access_config` sub block.
 
 
 ## obj encryption_config

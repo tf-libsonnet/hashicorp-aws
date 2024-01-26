@@ -16,10 +16,16 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAppImageConfigName()`](#fn-withappimageconfigname)
+* [`fn withJupyterLabImageConfig()`](#fn-withjupyterlabimageconfig)
+* [`fn withJupyterLabImageConfigMixin()`](#fn-withjupyterlabimageconfigmixin)
 * [`fn withKernelGatewayImageConfig()`](#fn-withkernelgatewayimageconfig)
 * [`fn withKernelGatewayImageConfigMixin()`](#fn-withkernelgatewayimageconfigmixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`obj jupyter_lab_image_config`](#obj-jupyter_lab_image_config)
+  * [`fn new()`](#fn-jupyter_lab_image_confignew)
+  * [`obj jupyter_lab_image_config.container_config`](#obj-jupyter_lab_image_configcontainer_config)
+    * [`fn new()`](#fn-jupyter_lab_image_configcontainer_confignew)
 * [`obj kernel_gateway_image_config`](#obj-kernel_gateway_image_config)
   * [`fn new()`](#fn-kernel_gateway_image_confignew)
   * [`obj kernel_gateway_image_config.file_system_config`](#obj-kernel_gateway_image_configfile_system_config)
@@ -59,6 +65,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `app_image_config_name` (`string`): Set the `app_image_config_name` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `jupyter_lab_image_config` (`list[obj]`): Set the `jupyter_lab_image_config` field on the resulting resource block. When `null`, the `jupyter_lab_image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.jupyter_lab_image_config.new](#fn-jupyter_lab_image_confignew) constructor.
   - `kernel_gateway_image_config` (`list[obj]`): Set the `kernel_gateway_image_config` field on the resulting resource block. When `null`, the `kernel_gateway_image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.kernel_gateway_image_config.new](#fn-kernel_gateway_image_confignew) constructor.
 
 **Returns**:
@@ -86,6 +93,7 @@ injecting into a complete block.
   - `app_image_config_name` (`string`): Set the `app_image_config_name` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `jupyter_lab_image_config` (`list[obj]`): Set the `jupyter_lab_image_config` field on the resulting object. When `null`, the `jupyter_lab_image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.jupyter_lab_image_config.new](#fn-jupyter_lab_image_confignew) constructor.
   - `kernel_gateway_image_config` (`list[obj]`): Set the `kernel_gateway_image_config` field on the resulting object. When `null`, the `kernel_gateway_image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.kernel_gateway_image_config.new](#fn-kernel_gateway_image_confignew) constructor.
 
 **Returns**:
@@ -106,6 +114,43 @@ Terraform resource block to set or update the app_image_config_name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `app_image_config_name` field.
+
+
+### fn withJupyterLabImageConfig
+
+```ts
+withJupyterLabImageConfig()
+```
+
+`aws.list[obj].withJupyterLabImageConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the jupyter_lab_image_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withJupyterLabImageConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `jupyter_lab_image_config` field.
+
+
+### fn withJupyterLabImageConfigMixin
+
+```ts
+withJupyterLabImageConfigMixin()
+```
+
+`aws.list[obj].withJupyterLabImageConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the jupyter_lab_image_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withJupyterLabImageConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `jupyter_lab_image_config` field.
 
 
 ### fn withKernelGatewayImageConfig
@@ -175,6 +220,54 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
+
+
+## obj jupyter_lab_image_config
+
+
+
+### fn jupyter_lab_image_config.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_app_image_config.jupyter_lab_image_config.new` constructs a new object with attributes and blocks configured for the `jupyter_lab_image_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `container_config` (`list[obj]`): Set the `container_config` field on the resulting object. When `null`, the `container_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_app_image_config.jupyter_lab_image_config.container_config.new](#fn-jupyter_lab_image_configcontainer_confignew) constructor.
+
+**Returns**:
+  - An attribute object that represents the `jupyter_lab_image_config` sub block.
+
+
+## obj jupyter_lab_image_config.container_config
+
+
+
+### fn jupyter_lab_image_config.container_config.new
+
+```ts
+new()
+```
+
+
+`aws.sagemaker_app_image_config.jupyter_lab_image_config.container_config.new` constructs a new object with attributes and blocks configured for the `container_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `container_arguments` (`list`): Set the `container_arguments` field on the resulting object. When `null`, the `container_arguments` field will be omitted from the resulting object.
+  - `container_entrypoint` (`list`): Set the `container_entrypoint` field on the resulting object. When `null`, the `container_entrypoint` field will be omitted from the resulting object.
+  - `container_environment_variables` (`obj`): Set the `container_environment_variables` field on the resulting object. When `null`, the `container_environment_variables` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `container_config` sub block.
 
 
 ## obj kernel_gateway_image_config

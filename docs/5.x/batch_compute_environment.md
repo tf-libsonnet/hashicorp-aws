@@ -26,6 +26,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withType()`](#fn-withtype)
+* [`fn withUpdatePolicy()`](#fn-withupdatepolicy)
+* [`fn withUpdatePolicyMixin()`](#fn-withupdatepolicymixin)
 * [`obj compute_resources`](#obj-compute_resources)
   * [`fn new()`](#fn-compute_resourcesnew)
   * [`obj compute_resources.ec2_configuration`](#obj-compute_resourcesec2_configuration)
@@ -34,6 +36,8 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-compute_resourceslaunch_templatenew)
 * [`obj eks_configuration`](#obj-eks_configuration)
   * [`fn new()`](#fn-eks_configurationnew)
+* [`obj update_policy`](#obj-update_policy)
+  * [`fn new()`](#fn-update_policynew)
 
 ## Fields
 
@@ -73,6 +77,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `type` (`string`): Set the `type` field on the resulting resource block.
   - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting resource block. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.
   - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting resource block. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.
+  - `update_policy` (`list[obj]`): Set the `update_policy` field on the resulting resource block. When `null`, the `update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.update_policy.new](#fn-update_policynew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -105,6 +110,7 @@ injecting into a complete block.
   - `type` (`string`): Set the `type` field on the resulting object.
   - `compute_resources` (`list[obj]`): Set the `compute_resources` field on the resulting object. When `null`, the `compute_resources` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.compute_resources.new](#fn-compute_resourcesnew) constructor.
   - `eks_configuration` (`list[obj]`): Set the `eks_configuration` field on the resulting object. When `null`, the `eks_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.eks_configuration.new](#fn-eks_configurationnew) constructor.
+  - `update_policy` (`list[obj]`): Set the `update_policy` field on the resulting object. When `null`, the `update_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.batch_compute_environment.update_policy.new](#fn-update_policynew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `batch_compute_environment` resource into the root Terraform configuration.
@@ -296,6 +302,43 @@ Terraform resource block to set or update the type field.
   - `value` (`string`): The value to set for the `type` field.
 
 
+### fn withUpdatePolicy
+
+```ts
+withUpdatePolicy()
+```
+
+`aws.list[obj].withUpdatePolicy` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the update_policy field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withUpdatePolicyMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `update_policy` field.
+
+
+### fn withUpdatePolicyMixin
+
+```ts
+withUpdatePolicyMixin()
+```
+
+`aws.list[obj].withUpdatePolicyMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the update_policy field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withUpdatePolicy](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `update_policy` field.
+
+
 ## obj compute_resources
 
 
@@ -406,3 +449,27 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `eks_configuration` sub block.
+
+
+## obj update_policy
+
+
+
+### fn update_policy.new
+
+```ts
+new()
+```
+
+
+`aws.batch_compute_environment.update_policy.new` constructs a new object with attributes and blocks configured for the `update_policy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `job_execution_timeout_minutes` (`number`): Set the `job_execution_timeout_minutes` field on the resulting object.
+  - `terminate_jobs_on_update` (`bool`): Set the `terminate_jobs_on_update` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `update_policy` sub block.

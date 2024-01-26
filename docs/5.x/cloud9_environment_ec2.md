@@ -58,7 +58,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `automatic_stop_time_minutes` (`number`): Set the `automatic_stop_time_minutes` field on the resulting resource block. When `null`, the `automatic_stop_time_minutes` field will be omitted from the resulting object.
   - `connection_type` (`string`): Set the `connection_type` field on the resulting resource block. When `null`, the `connection_type` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
-  - `image_id` (`string`): Set the `image_id` field on the resulting resource block. When `null`, the `image_id` field will be omitted from the resulting object.
+  - `image_id` (`string`): Set the `image_id` field on the resulting resource block.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `owner_arn` (`string`): Set the `owner_arn` field on the resulting resource block. When `null`, the `owner_arn` field will be omitted from the resulting object.
@@ -91,7 +91,7 @@ injecting into a complete block.
   - `automatic_stop_time_minutes` (`number`): Set the `automatic_stop_time_minutes` field on the resulting object. When `null`, the `automatic_stop_time_minutes` field will be omitted from the resulting object.
   - `connection_type` (`string`): Set the `connection_type` field on the resulting object. When `null`, the `connection_type` field will be omitted from the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
-  - `image_id` (`string`): Set the `image_id` field on the resulting object. When `null`, the `image_id` field will be omitted from the resulting object.
+  - `image_id` (`string`): Set the `image_id` field on the resulting object.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `owner_arn` (`string`): Set the `owner_arn` field on the resulting object. When `null`, the `owner_arn` field will be omitted from the resulting object.

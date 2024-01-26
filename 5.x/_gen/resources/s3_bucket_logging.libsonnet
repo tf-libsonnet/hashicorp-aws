@@ -2,7 +2,7 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
 local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='s3_bucket_logging', url='', help='`s3_bucket_logging` represents the `aws_s3_bucket_logging` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
-  '#new':: d.fn(help="\n`aws.s3_bucket_logging.new` injects a new `aws_s3_bucket_logging` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.s3_bucket_logging.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.s3_bucket_logging` using the reference:\n\n    $._ref.aws_s3_bucket_logging.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_s3_bucket_logging.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.\n  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.\n  - `target_bucket` (`string`): Set the `target_bucket` field on the resulting resource block.\n  - `target_prefix` (`string`): Set the `target_prefix` field on the resulting resource block.\n  - `target_grant` (`list[obj]`): Set the `target_grant` field on the resulting resource block. When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.s3_bucket_logging.new` injects a new `aws_s3_bucket_logging` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.s3_bucket_logging.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.s3_bucket_logging` using the reference:\n\n    $._ref.aws_s3_bucket_logging.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_s3_bucket_logging.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `bucket` (`string`): Set the `bucket` field on the resulting resource block.\n  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting resource block. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.\n  - `target_bucket` (`string`): Set the `target_bucket` field on the resulting resource block.\n  - `target_prefix` (`string`): Set the `target_prefix` field on the resulting resource block.\n  - `target_grant` (`list[obj]`): Set the `target_grant` field on the resulting resource block. When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.\n  - `target_object_key_format` (`list[obj]`): Set the `target_object_key_format` field on the resulting resource block. When `null`, the `target_object_key_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.new](#fn-target_object_key_formatnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     bucket,
@@ -10,6 +10,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     target_prefix,
     expected_bucket_owner=null,
     target_grant=null,
+    target_object_key_format=null,
     _meta={}
   ):: tf.withResource(
     type='aws_s3_bucket_logging',
@@ -19,22 +20,25 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       expected_bucket_owner=expected_bucket_owner,
       target_bucket=target_bucket,
       target_grant=target_grant,
+      target_object_key_format=target_object_key_format,
       target_prefix=target_prefix
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.s3_bucket_logging.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_logging`\nTerraform resource.\n\nUnlike [aws.s3_bucket_logging.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `bucket` (`string`): Set the `bucket` field on the resulting object.\n  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.\n  - `target_bucket` (`string`): Set the `target_bucket` field on the resulting object.\n  - `target_prefix` (`string`): Set the `target_prefix` field on the resulting object.\n  - `target_grant` (`list[obj]`): Set the `target_grant` field on the resulting object. When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_logging` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.s3_bucket_logging.newAttrs` constructs a new object with attributes and blocks configured for the `s3_bucket_logging`\nTerraform resource.\n\nUnlike [aws.s3_bucket_logging.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `bucket` (`string`): Set the `bucket` field on the resulting object.\n  - `expected_bucket_owner` (`string`): Set the `expected_bucket_owner` field on the resulting object. When `null`, the `expected_bucket_owner` field will be omitted from the resulting object.\n  - `target_bucket` (`string`): Set the `target_bucket` field on the resulting object.\n  - `target_prefix` (`string`): Set the `target_prefix` field on the resulting object.\n  - `target_grant` (`list[obj]`): Set the `target_grant` field on the resulting object. When `null`, the `target_grant` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_grant.new](#fn-target_grantnew) constructor.\n  - `target_object_key_format` (`list[obj]`): Set the `target_object_key_format` field on the resulting object. When `null`, the `target_object_key_format` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.new](#fn-target_object_key_formatnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `s3_bucket_logging` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     bucket,
     target_bucket,
     target_prefix,
     expected_bucket_owner=null,
-    target_grant=null
+    target_grant=null,
+    target_object_key_format=null
   ):: std.prune(a={
     bucket: bucket,
     expected_bucket_owner: expected_bucket_owner,
     target_bucket: target_bucket,
     target_grant: target_grant,
+    target_object_key_format: target_object_key_format,
     target_prefix: target_prefix,
   }),
   target_grant:: {
@@ -58,6 +62,30 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       grantee: grantee,
       permission: permission,
     }),
+  },
+  target_object_key_format:: {
+    '#new':: d.fn(help='\n`aws.s3_bucket_logging.target_object_key_format.new` constructs a new object with attributes and blocks configured for the `target_object_key_format`\nTerraform sub block.\n\n\n\n**Args**:\n  - `partitioned_prefix` (`list[obj]`): Set the `partitioned_prefix` field on the resulting object. When `null`, the `partitioned_prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.partitioned_prefix.new](#fn-target_object_key_formatpartitioned_prefixnew) constructor.\n  - `simple_prefix` (`list[obj]`): Set the `simple_prefix` field on the resulting object. When `null`, the `simple_prefix` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.s3_bucket_logging.target_object_key_format.simple_prefix.new](#fn-target_object_key_formatsimple_prefixnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `target_object_key_format` sub block.\n', args=[]),
+    new(
+      partitioned_prefix=null,
+      simple_prefix=null
+    ):: std.prune(a={
+      partitioned_prefix: partitioned_prefix,
+      simple_prefix: simple_prefix,
+    }),
+    partitioned_prefix:: {
+      '#new':: d.fn(help='\n`aws.s3_bucket_logging.target_object_key_format.partitioned_prefix.new` constructs a new object with attributes and blocks configured for the `partitioned_prefix`\nTerraform sub block.\n\n\n\n**Args**:\n  - `partition_date_source` (`string`): Set the `partition_date_source` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `partitioned_prefix` sub block.\n', args=[]),
+      new(
+        partition_date_source
+      ):: std.prune(a={
+        partition_date_source: partition_date_source,
+      }),
+    },
+    simple_prefix:: {
+      '#new':: d.fn(help='\n`aws.s3_bucket_logging.target_object_key_format.simple_prefix.new` constructs a new object with attributes and blocks configured for the `simple_prefix`\nTerraform sub block.\n\n\n\n**Returns**:\n  - An attribute object that represents the `simple_prefix` sub block.\n', args=[]),
+      new(
+
+      ):: std.prune(a={}),
+    },
   },
   '#withBucket':: d.fn(help='`aws.string.withBucket` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the bucket field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `bucket` field.\n', args=[]),
   withBucket(resourceLabel, value): {
@@ -105,6 +133,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_s3_bucket_logging+: {
         [resourceLabel]+: {
           target_grant+: if std.isArray(v=value) then value else [value],
+        },
+      },
+    },
+  },
+  '#withTargetObjectKeyFormat':: d.fn(help='`aws.list[obj].withTargetObjectKeyFormat` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the target_object_key_format field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withTargetObjectKeyFormatMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `target_object_key_format` field.\n', args=[]),
+  withTargetObjectKeyFormat(resourceLabel, value): {
+    resource+: {
+      aws_s3_bucket_logging+: {
+        [resourceLabel]+: {
+          target_object_key_format: value,
+        },
+      },
+    },
+  },
+  '#withTargetObjectKeyFormatMixin':: d.fn(help='`aws.list[obj].withTargetObjectKeyFormatMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the target_object_key_format field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withTargetObjectKeyFormat](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `target_object_key_format` field.\n', args=[]),
+  withTargetObjectKeyFormatMixin(resourceLabel, value): {
+    resource+: {
+      aws_s3_bucket_logging+: {
+        [resourceLabel]+: {
+          target_object_key_format+: if std.isArray(v=value) then value else [value],
         },
       },
     },

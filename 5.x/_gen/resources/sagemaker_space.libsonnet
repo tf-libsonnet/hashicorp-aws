@@ -2,11 +2,12 @@ local tf = (import 'github.com/tf-libsonnet/core/main.libsonnet');
 local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='sagemaker_space', url='', help='`sagemaker_space` represents the `aws_sagemaker_space` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
-  '#new':: d.fn(help="\n`aws.sagemaker_space.new` injects a new `aws_sagemaker_space` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.sagemaker_space.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.sagemaker_space` using the reference:\n\n    $._ref.aws_sagemaker_space.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_sagemaker_space.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `domain_id` (`string`): Set the `domain_id` field on the resulting resource block.\n  - `space_name` (`string`): Set the `space_name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `space_settings` (`list[obj]`): Set the `space_settings` field on the resulting resource block. When `null`, the `space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.new](#fn-space_settingsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.sagemaker_space.new` injects a new `aws_sagemaker_space` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.sagemaker_space.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.sagemaker_space` using the reference:\n\n    $._ref.aws_sagemaker_space.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_sagemaker_space.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `domain_id` (`string`): Set the `domain_id` field on the resulting resource block.\n  - `space_display_name` (`string`): Set the `space_display_name` field on the resulting resource block. When `null`, the `space_display_name` field will be omitted from the resulting object.\n  - `space_name` (`string`): Set the `space_name` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `space_settings` (`list[obj]`): Set the `space_settings` field on the resulting resource block. When `null`, the `space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.new](#fn-space_settingsnew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     domain_id,
     space_name,
+    space_display_name=null,
     space_settings=null,
     tags=null,
     tags_all=null,
@@ -16,6 +17,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     label=resourceLabel,
     attrs=self.newAttrs(
       domain_id=domain_id,
+      space_display_name=space_display_name,
       space_name=space_name,
       space_settings=space_settings,
       tags=tags,
@@ -23,15 +25,17 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.sagemaker_space.newAttrs` constructs a new object with attributes and blocks configured for the `sagemaker_space`\nTerraform resource.\n\nUnlike [aws.sagemaker_space.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `domain_id` (`string`): Set the `domain_id` field on the resulting object.\n  - `space_name` (`string`): Set the `space_name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `space_settings` (`list[obj]`): Set the `space_settings` field on the resulting object. When `null`, the `space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.new](#fn-space_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_space` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.sagemaker_space.newAttrs` constructs a new object with attributes and blocks configured for the `sagemaker_space`\nTerraform resource.\n\nUnlike [aws.sagemaker_space.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `domain_id` (`string`): Set the `domain_id` field on the resulting object.\n  - `space_display_name` (`string`): Set the `space_display_name` field on the resulting object. When `null`, the `space_display_name` field will be omitted from the resulting object.\n  - `space_name` (`string`): Set the `space_name` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `space_settings` (`list[obj]`): Set the `space_settings` field on the resulting object. When `null`, the `space_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.sagemaker_space.space_settings.new](#fn-space_settingsnew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `sagemaker_space` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     domain_id,
     space_name,
+    space_display_name=null,
     space_settings=null,
     tags=null,
     tags_all=null
   ):: std.prune(a={
     domain_id: domain_id,
+    space_display_name: space_display_name,
     space_name: space_name,
     space_settings: space_settings,
     tags: tags,
@@ -48,16 +52,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_space.space_settings.jupyter_server_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_space.space_settings.jupyter_server_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -86,16 +92,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         }),
       },
       default_resource_spec:: {
-        '#new':: d.fn(help='\n`aws.sagemaker_space.space_settings.kernel_gateway_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.sagemaker_space.space_settings.kernel_gateway_app_settings.default_resource_spec.new` constructs a new object with attributes and blocks configured for the `default_resource_spec`\nTerraform sub block.\n\n\n\n**Args**:\n  - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.\n  - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.\n  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.\n  - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `default_resource_spec` sub block.\n', args=[]),
         new(
           instance_type=null,
           lifecycle_config_arn=null,
           sagemaker_image_arn=null,
+          sagemaker_image_version_alias=null,
           sagemaker_image_version_arn=null
         ):: std.prune(a={
           instance_type: instance_type,
           lifecycle_config_arn: lifecycle_config_arn,
           sagemaker_image_arn: sagemaker_image_arn,
+          sagemaker_image_version_alias: sagemaker_image_version_alias,
           sagemaker_image_version_arn: sagemaker_image_version_arn,
         }),
       },
@@ -125,6 +133,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_sagemaker_space+: {
         [resourceLabel]+: {
           domain_id: value,
+        },
+      },
+    },
+  },
+  '#withSpaceDisplayName':: d.fn(help='`aws.string.withSpaceDisplayName` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the space_display_name field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `space_display_name` field.\n', args=[]),
+  withSpaceDisplayName(resourceLabel, value): {
+    resource+: {
+      aws_sagemaker_space+: {
+        [resourceLabel]+: {
+          space_display_name: value,
         },
       },
     },

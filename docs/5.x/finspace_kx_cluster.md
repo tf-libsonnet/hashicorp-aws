@@ -36,8 +36,12 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withReleaseLabel()`](#fn-withreleaselabel)
 * [`fn withSavedownStorageConfiguration()`](#fn-withsavedownstorageconfiguration)
 * [`fn withSavedownStorageConfigurationMixin()`](#fn-withsavedownstorageconfigurationmixin)
+* [`fn withScalingGroupConfiguration()`](#fn-withscalinggroupconfiguration)
+* [`fn withScalingGroupConfigurationMixin()`](#fn-withscalinggroupconfigurationmixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTickerplantLogConfiguration()`](#fn-withtickerplantlogconfiguration)
+* [`fn withTickerplantLogConfigurationMixin()`](#fn-withtickerplantlogconfigurationmixin)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withType()`](#fn-withtype)
@@ -57,6 +61,10 @@ This package contains functions and utilities for setting up the resource using 
     * [`fn new()`](#fn-databasecache_configurationsnew)
 * [`obj savedown_storage_configuration`](#obj-savedown_storage_configuration)
   * [`fn new()`](#fn-savedown_storage_configurationnew)
+* [`obj scaling_group_configuration`](#obj-scaling_group_configuration)
+  * [`fn new()`](#fn-scaling_group_configurationnew)
+* [`obj tickerplant_log_configuration`](#obj-tickerplant_log_configuration)
+  * [`fn new()`](#fn-tickerplant_log_configurationnew)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
 * [`obj vpc_configuration`](#obj-vpc_configuration)
@@ -109,6 +117,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `code` (`list[obj]`): Set the `code` field on the resulting resource block. When `null`, the `code` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.code.new](#fn-codenew) constructor.
   - `database` (`list[obj]`): Set the `database` field on the resulting resource block. When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.database.new](#fn-databasenew) constructor.
   - `savedown_storage_configuration` (`list[obj]`): Set the `savedown_storage_configuration` field on the resulting resource block. When `null`, the `savedown_storage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.savedown_storage_configuration.new](#fn-savedown_storage_configurationnew) constructor.
+  - `scaling_group_configuration` (`list[obj]`): Set the `scaling_group_configuration` field on the resulting resource block. When `null`, the `scaling_group_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.scaling_group_configuration.new](#fn-scaling_group_configurationnew) constructor.
+  - `tickerplant_log_configuration` (`list[obj]`): Set the `tickerplant_log_configuration` field on the resulting resource block. When `null`, the `tickerplant_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.tickerplant_log_configuration.new](#fn-tickerplant_log_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting resource block. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
@@ -152,6 +162,8 @@ injecting into a complete block.
   - `code` (`list[obj]`): Set the `code` field on the resulting object. When `null`, the `code` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.code.new](#fn-codenew) constructor.
   - `database` (`list[obj]`): Set the `database` field on the resulting object. When `null`, the `database` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.database.new](#fn-databasenew) constructor.
   - `savedown_storage_configuration` (`list[obj]`): Set the `savedown_storage_configuration` field on the resulting object. When `null`, the `savedown_storage_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.savedown_storage_configuration.new](#fn-savedown_storage_configurationnew) constructor.
+  - `scaling_group_configuration` (`list[obj]`): Set the `scaling_group_configuration` field on the resulting object. When `null`, the `scaling_group_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.scaling_group_configuration.new](#fn-scaling_group_configurationnew) constructor.
+  - `tickerplant_log_configuration` (`list[obj]`): Set the `tickerplant_log_configuration` field on the resulting object. When `null`, the `tickerplant_log_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.tickerplant_log_configuration.new](#fn-tickerplant_log_configurationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.timeouts.new](#fn-timeoutsnew) constructor.
   - `vpc_configuration` (`list[obj]`): Set the `vpc_configuration` field on the resulting object. When `null`, the `vpc_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.vpc_configuration.new](#fn-vpc_configurationnew) constructor.
 
@@ -525,6 +537,43 @@ function.
   - `value` (`list[obj]`): The value to set for the `savedown_storage_configuration` field.
 
 
+### fn withScalingGroupConfiguration
+
+```ts
+withScalingGroupConfiguration()
+```
+
+`aws.list[obj].withScalingGroupConfiguration` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the scaling_group_configuration field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withScalingGroupConfigurationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `scaling_group_configuration` field.
+
+
+### fn withScalingGroupConfigurationMixin
+
+```ts
+withScalingGroupConfigurationMixin()
+```
+
+`aws.list[obj].withScalingGroupConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the scaling_group_configuration field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withScalingGroupConfiguration](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `scaling_group_configuration` field.
+
+
 ### fn withTags
 
 ```ts
@@ -555,6 +604,43 @@ Terraform resource block to set or update the tags_all field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `tags_all` field.
+
+
+### fn withTickerplantLogConfiguration
+
+```ts
+withTickerplantLogConfiguration()
+```
+
+`aws.list[obj].withTickerplantLogConfiguration` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the tickerplant_log_configuration field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withTickerplantLogConfigurationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `tickerplant_log_configuration` field.
+
+
+### fn withTickerplantLogConfigurationMixin
+
+```ts
+withTickerplantLogConfigurationMixin()
+```
+
+`aws.list[obj].withTickerplantLogConfigurationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the tickerplant_log_configuration field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withTickerplantLogConfiguration](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `tickerplant_log_configuration` field.
 
 
 ### fn withTimeouts
@@ -766,6 +852,7 @@ Terraform sub block.
 **Args**:
   - `changeset_id` (`string`): Set the `changeset_id` field on the resulting object. When `null`, the `changeset_id` field will be omitted from the resulting object.
   - `database_name` (`string`): Set the `database_name` field on the resulting object.
+  - `dataview_name` (`string`): Set the `dataview_name` field on the resulting object. When `null`, the `dataview_name` field will be omitted from the resulting object.
   - `cache_configurations` (`list[obj]`): Set the `cache_configurations` field on the resulting object. When `null`, the `cache_configurations` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.finspace_kx_cluster.database.cache_configurations.new](#fn-databasecache_configurationsnew) constructor.
 
 **Returns**:
@@ -813,11 +900,62 @@ Terraform sub block.
 
 
 **Args**:
-  - `size` (`number`): Set the `size` field on the resulting object.
-  - `type` (`string`): Set the `type` field on the resulting object.
+  - `size` (`number`): Set the `size` field on the resulting object. When `null`, the `size` field will be omitted from the resulting object.
+  - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
+  - `volume_name` (`string`): Set the `volume_name` field on the resulting object. When `null`, the `volume_name` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `savedown_storage_configuration` sub block.
+
+
+## obj scaling_group_configuration
+
+
+
+### fn scaling_group_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.finspace_kx_cluster.scaling_group_configuration.new` constructs a new object with attributes and blocks configured for the `scaling_group_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `cpu` (`number`): Set the `cpu` field on the resulting object. When `null`, the `cpu` field will be omitted from the resulting object.
+  - `memory_limit` (`number`): Set the `memory_limit` field on the resulting object. When `null`, the `memory_limit` field will be omitted from the resulting object.
+  - `memory_reservation` (`number`): Set the `memory_reservation` field on the resulting object.
+  - `node_count` (`number`): Set the `node_count` field on the resulting object.
+  - `scaling_group_name` (`string`): Set the `scaling_group_name` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `scaling_group_configuration` sub block.
+
+
+## obj tickerplant_log_configuration
+
+
+
+### fn tickerplant_log_configuration.new
+
+```ts
+new()
+```
+
+
+`aws.finspace_kx_cluster.tickerplant_log_configuration.new` constructs a new object with attributes and blocks configured for the `tickerplant_log_configuration`
+Terraform sub block.
+
+
+
+**Args**:
+  - `tickerplant_log_volumes` (`list`): Set the `tickerplant_log_volumes` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `tickerplant_log_configuration` sub block.
 
 
 ## obj timeouts

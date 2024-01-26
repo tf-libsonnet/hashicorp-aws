@@ -3,13 +3,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='efs_replication_configuration', url='', help='`efs_replication_configuration` represents the `aws_efs_replication_configuration` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   destination:: {
-    '#new':: d.fn(help='\n`aws.efs_replication_configuration.destination.new` constructs a new object with attributes and blocks configured for the `destination`\nTerraform sub block.\n\n\n\n**Args**:\n  - `availability_zone_name` (`string`): Set the `availability_zone_name` field on the resulting object. When `null`, the `availability_zone_name` field will be omitted from the resulting object.\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `destination` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.efs_replication_configuration.destination.new` constructs a new object with attributes and blocks configured for the `destination`\nTerraform sub block.\n\n\n\n**Args**:\n  - `availability_zone_name` (`string`): Set the `availability_zone_name` field on the resulting object. When `null`, the `availability_zone_name` field will be omitted from the resulting object.\n  - `file_system_id` (`string`): Set the `file_system_id` field on the resulting object. When `null`, the `file_system_id` field will be omitted from the resulting object.\n  - `kms_key_id` (`string`): Set the `kms_key_id` field on the resulting object. When `null`, the `kms_key_id` field will be omitted from the resulting object.\n  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `destination` sub block.\n', args=[]),
     new(
       availability_zone_name=null,
+      file_system_id=null,
       kms_key_id=null,
       region=null
     ):: std.prune(a={
       availability_zone_name: availability_zone_name,
+      file_system_id: file_system_id,
       kms_key_id: kms_key_id,
       region: region,
     }),

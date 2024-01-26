@@ -18,6 +18,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withApplyImmediately()`](#fn-withapplyimmediately)
 * [`fn withAtRestEncryptionEnabled()`](#fn-withatrestencryptionenabled)
 * [`fn withAuthToken()`](#fn-withauthtoken)
+* [`fn withAuthTokenUpdateStrategy()`](#fn-withauthtokenupdatestrategy)
 * [`fn withAutoMinorVersionUpgrade()`](#fn-withautominorversionupgrade)
 * [`fn withAutomaticFailoverEnabled()`](#fn-withautomaticfailoverenabled)
 * [`fn withDataTieringEnabled()`](#fn-withdatatieringenabled)
@@ -92,6 +93,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting resource block. When `null`, the `apply_immediately` field will be omitted from the resulting object.
   - `at_rest_encryption_enabled` (`bool`): Set the `at_rest_encryption_enabled` field on the resulting resource block. When `null`, the `at_rest_encryption_enabled` field will be omitted from the resulting object.
   - `auth_token` (`string`): Set the `auth_token` field on the resulting resource block. When `null`, the `auth_token` field will be omitted from the resulting object.
+  - `auth_token_update_strategy` (`string`): Set the `auth_token_update_strategy` field on the resulting resource block. When `null`, the `auth_token_update_strategy` field will be omitted from the resulting object.
   - `auto_minor_version_upgrade` (`string`): Set the `auto_minor_version_upgrade` field on the resulting resource block. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
   - `automatic_failover_enabled` (`bool`): Set the `automatic_failover_enabled` field on the resulting resource block. When `null`, the `automatic_failover_enabled` field will be omitted from the resulting object.
   - `data_tiering_enabled` (`bool`): Set the `data_tiering_enabled` field on the resulting resource block. When `null`, the `data_tiering_enabled` field will be omitted from the resulting object.
@@ -153,6 +155,7 @@ injecting into a complete block.
   - `apply_immediately` (`bool`): Set the `apply_immediately` field on the resulting object. When `null`, the `apply_immediately` field will be omitted from the resulting object.
   - `at_rest_encryption_enabled` (`bool`): Set the `at_rest_encryption_enabled` field on the resulting object. When `null`, the `at_rest_encryption_enabled` field will be omitted from the resulting object.
   - `auth_token` (`string`): Set the `auth_token` field on the resulting object. When `null`, the `auth_token` field will be omitted from the resulting object.
+  - `auth_token_update_strategy` (`string`): Set the `auth_token_update_strategy` field on the resulting object. When `null`, the `auth_token_update_strategy` field will be omitted from the resulting object.
   - `auto_minor_version_upgrade` (`string`): Set the `auto_minor_version_upgrade` field on the resulting object. When `null`, the `auto_minor_version_upgrade` field will be omitted from the resulting object.
   - `automatic_failover_enabled` (`bool`): Set the `automatic_failover_enabled` field on the resulting object. When `null`, the `automatic_failover_enabled` field will be omitted from the resulting object.
   - `data_tiering_enabled` (`bool`): Set the `data_tiering_enabled` field on the resulting object. When `null`, the `data_tiering_enabled` field will be omitted from the resulting object.
@@ -239,6 +242,22 @@ Terraform resource block to set or update the auth_token field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `auth_token` field.
+
+
+### fn withAuthTokenUpdateStrategy
+
+```ts
+withAuthTokenUpdateStrategy()
+```
+
+`aws.string.withAuthTokenUpdateStrategy` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the auth_token_update_strategy field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `auth_token_update_strategy` field.
 
 
 ### fn withAutoMinorVersionUpgrade

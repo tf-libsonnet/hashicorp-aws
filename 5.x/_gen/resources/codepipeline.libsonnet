@@ -24,15 +24,17 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       type: type,
     }),
   },
-  '#new':: d.fn(help="\n`aws.codepipeline.new` injects a new `aws_codepipeline` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.codepipeline.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.codepipeline` using the reference:\n\n    $._ref.aws_codepipeline.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_codepipeline.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `name` (`string`): Set the `name` field on the resulting resource block.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting resource block. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.\n  - `stage` (`list[obj]`): Set the `stage` field on the resulting resource block. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
+  '#new':: d.fn(help="\n`aws.codepipeline.new` injects a new `aws_codepipeline` Terraform `resource`\nblock into the root module document.\n\nAdditionally, this inserts a private function into the `_ref` attribute that generates references to attributes of the\nresource. For example, if you added a new instance to the root using:\n\n    # arguments omitted for brevity\n    aws.codepipeline.new('some_id')\n\nYou can get the reference to the `id` field of the created `aws.codepipeline` using the reference:\n\n    $._ref.aws_codepipeline.some_id.get('id')\n\nThis is the same as directly entering `\"${ aws_codepipeline.some_id.id }\"` as the value.\n\nNOTE: if you are chaining multiple resources together in a merge operation, you may not be able to use `super`, `self`,\nor `$` to refer to the root object. Instead, make an explicit outer object using `local`.\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block.\n  - `name` (`string`): Set the `name` field on the resulting resource block.\n  - `pipeline_type` (`string`): Set the `pipeline_type` field on the resulting resource block. When `null`, the `pipeline_type` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting resource block.\n  - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting resource block. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.\n  - `stage` (`list[obj]`): Set the `stage` field on the resulting resource block. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.\n  - `variable` (`list[obj]`): Set the `variable` field on the resulting resource block. When `null`, the `variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.variable.new](#fn-variablenew) constructor.\n\n**Returns**:\n- A mixin object that injects the new resource into the root Terraform configuration.\n", args=[]),
   new(
     resourceLabel,
     name,
     role_arn,
     artifact_store=null,
+    pipeline_type=null,
     stage=null,
     tags=null,
     tags_all=null,
+    variable=null,
     _meta={}
   ):: tf.withResource(
     type='aws_codepipeline',
@@ -40,28 +42,34 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     attrs=self.newAttrs(
       artifact_store=artifact_store,
       name=name,
+      pipeline_type=pipeline_type,
       role_arn=role_arn,
       stage=stage,
       tags=tags,
-      tags_all=tags_all
+      tags_all=tags_all,
+      variable=variable
     ),
     _meta=_meta
   ),
-  '#newAttrs':: d.fn(help='\n`aws.codepipeline.newAttrs` constructs a new object with attributes and blocks configured for the `codepipeline`\nTerraform resource.\n\nUnlike [aws.codepipeline.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting object. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.\n  - `stage` (`list[obj]`): Set the `stage` field on the resulting object. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codepipeline` resource into the root Terraform configuration.\n', args=[]),
+  '#newAttrs':: d.fn(help='\n`aws.codepipeline.newAttrs` constructs a new object with attributes and blocks configured for the `codepipeline`\nTerraform resource.\n\nUnlike [aws.codepipeline.new](#fn-new), this function will not inject the `resource`\nblock into the root Terraform document. Instead, this must be passed in as the `attrs` argument for the\n[tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) function to build a complete block.\n\nThis is most useful when you need to preprocess the attributes with functions, conditional, or looping logic prior to\ninjecting into a complete block.\n\n**Args**:\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `pipeline_type` (`string`): Set the `pipeline_type` field on the resulting object. When `null`, the `pipeline_type` field will be omitted from the resulting object.\n  - `role_arn` (`string`): Set the `role_arn` field on the resulting object.\n  - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.\n  - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.\n  - `artifact_store` (`list[obj]`): Set the `artifact_store` field on the resulting object. When `null`, the `artifact_store` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.artifact_store.new](#fn-artifact_storenew) constructor.\n  - `stage` (`list[obj]`): Set the `stage` field on the resulting object. When `null`, the `stage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.stage.new](#fn-stagenew) constructor.\n  - `variable` (`list[obj]`): Set the `variable` field on the resulting object. When `null`, the `variable` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.codepipeline.variable.new](#fn-variablenew) constructor.\n\n**Returns**:\n  - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `codepipeline` resource into the root Terraform configuration.\n', args=[]),
   newAttrs(
     name,
     role_arn,
     artifact_store=null,
+    pipeline_type=null,
     stage=null,
     tags=null,
-    tags_all=null
+    tags_all=null,
+    variable=null
   ):: std.prune(a={
     artifact_store: artifact_store,
     name: name,
+    pipeline_type: pipeline_type,
     role_arn: role_arn,
     stage: stage,
     tags: tags,
     tags_all: tags_all,
+    variable: variable,
   }),
   stage:: {
     action:: {
@@ -103,6 +111,18 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       name: name,
     }),
   },
+  variable:: {
+    '#new':: d.fn(help='\n`aws.codepipeline.variable.new` constructs a new object with attributes and blocks configured for the `variable`\nTerraform sub block.\n\n\n\n**Args**:\n  - `default_value` (`string`): Set the `default_value` field on the resulting object. When `null`, the `default_value` field will be omitted from the resulting object.\n  - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `variable` sub block.\n', args=[]),
+    new(
+      name,
+      default_value=null,
+      description=null
+    ):: std.prune(a={
+      default_value: default_value,
+      description: description,
+      name: name,
+    }),
+  },
   '#withArtifactStore':: d.fn(help='`aws.list[obj].withArtifactStore` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the artifact_store field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withArtifactStoreMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `artifact_store` field.\n', args=[]),
   withArtifactStore(resourceLabel, value): {
     resource+: {
@@ -129,6 +149,16 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_codepipeline+: {
         [resourceLabel]+: {
           name: value,
+        },
+      },
+    },
+  },
+  '#withPipelineType':: d.fn(help='`aws.string.withPipelineType` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the pipeline_type field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `pipeline_type` field.\n', args=[]),
+  withPipelineType(resourceLabel, value): {
+    resource+: {
+      aws_codepipeline+: {
+        [resourceLabel]+: {
+          pipeline_type: value,
         },
       },
     },
@@ -179,6 +209,26 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       aws_codepipeline+: {
         [resourceLabel]+: {
           tags_all: value,
+        },
+      },
+    },
+  },
+  '#withVariable':: d.fn(help='`aws.list[obj].withVariable` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the variable field.\n\nThis function will replace the array with the passed in `value`. If you wish to instead append the\npassed in value to the existing array, use the [aws.list[obj].withVariableMixin](TODO) function.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `variable` field.\n', args=[]),
+  withVariable(resourceLabel, value): {
+    resource+: {
+      aws_codepipeline+: {
+        [resourceLabel]+: {
+          variable: value,
+        },
+      },
+    },
+  },
+  '#withVariableMixin':: d.fn(help='`aws.list[obj].withVariableMixin` constructs a mixin object that can be merged into the `list[obj]`\nTerraform resource block to set or update the variable field.\n\nThis function will append the passed in array or object to the existing array. If you wish\nto instead replace the array with the passed in `value`, use the [aws.list[obj].withVariable](TODO)\nfunction.\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`list[obj]`): The value to set for the `variable` field.\n', args=[]),
+  withVariableMixin(resourceLabel, value): {
+    resource+: {
+      aws_codepipeline+: {
+        [resourceLabel]+: {
+          variable+: if std.isArray(v=value) then value else [value],
         },
       },
     },

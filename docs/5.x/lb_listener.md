@@ -20,6 +20,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDefaultAction()`](#fn-withdefaultaction)
 * [`fn withDefaultActionMixin()`](#fn-withdefaultactionmixin)
 * [`fn withLoadBalancerArn()`](#fn-withloadbalancerarn)
+* [`fn withMutualAuthentication()`](#fn-withmutualauthentication)
+* [`fn withMutualAuthenticationMixin()`](#fn-withmutualauthenticationmixin)
 * [`fn withPort()`](#fn-withport)
 * [`fn withProtocol()`](#fn-withprotocol)
 * [`fn withSslPolicy()`](#fn-withsslpolicy)
@@ -43,6 +45,8 @@ This package contains functions and utilities for setting up the resource using 
       * [`fn new()`](#fn-default_actionforwardtarget_groupnew)
   * [`obj default_action.redirect`](#obj-default_actionredirect)
     * [`fn new()`](#fn-default_actionredirectnew)
+* [`obj mutual_authentication`](#obj-mutual_authentication)
+  * [`fn new()`](#fn-mutual_authenticationnew)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
 
@@ -84,6 +88,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `default_action` (`list[obj]`): Set the `default_action` field on the resulting resource block. When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.new](#fn-default_actionnew) constructor.
+  - `mutual_authentication` (`list[obj]`): Set the `mutual_authentication` field on the resulting resource block. When `null`, the `mutual_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.mutual_authentication.new](#fn-mutual_authenticationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -117,6 +122,7 @@ injecting into a complete block.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `default_action` (`list[obj]`): Set the `default_action` field on the resulting object. When `null`, the `default_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.default_action.new](#fn-default_actionnew) constructor.
+  - `mutual_authentication` (`list[obj]`): Set the `mutual_authentication` field on the resulting object. When `null`, the `mutual_authentication` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.mutual_authentication.new](#fn-mutual_authenticationnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lb_listener.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -206,6 +212,43 @@ Terraform resource block to set or update the load_balancer_arn field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `load_balancer_arn` field.
+
+
+### fn withMutualAuthentication
+
+```ts
+withMutualAuthentication()
+```
+
+`aws.list[obj].withMutualAuthentication` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the mutual_authentication field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withMutualAuthenticationMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `mutual_authentication` field.
+
+
+### fn withMutualAuthenticationMixin
+
+```ts
+withMutualAuthenticationMixin()
+```
+
+`aws.list[obj].withMutualAuthenticationMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the mutual_authentication field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withMutualAuthentication](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `mutual_authentication` field.
 
 
 ### fn withPort
@@ -542,6 +585,31 @@ Terraform sub block.
   - An attribute object that represents the `redirect` sub block.
 
 
+## obj mutual_authentication
+
+
+
+### fn mutual_authentication.new
+
+```ts
+new()
+```
+
+
+`aws.lb_listener.mutual_authentication.new` constructs a new object with attributes and blocks configured for the `mutual_authentication`
+Terraform sub block.
+
+
+
+**Args**:
+  - `ignore_client_certificate_expiry` (`bool`): Set the `ignore_client_certificate_expiry` field on the resulting object. When `null`, the `ignore_client_certificate_expiry` field will be omitted from the resulting object.
+  - `mode` (`string`): Set the `mode` field on the resulting object.
+  - `trust_store_arn` (`string`): Set the `trust_store_arn` field on the resulting object. When `null`, the `trust_store_arn` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `mutual_authentication` sub block.
+
+
 ## obj timeouts
 
 
@@ -559,7 +627,8 @@ Terraform sub block.
 
 
 **Args**:
-  - `read` (`string`): Set the `read` field on the resulting object. When `null`, the `read` field will be omitted from the resulting object.
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `timeouts` sub block.

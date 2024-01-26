@@ -3,7 +3,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
 {
   '#':: d.pkg(name='glue_classifier', url='', help='`glue_classifier` represents the `aws_glue_classifier` Terraform resource.\n\n\n\nThis package contains functions and utilities for setting up the resource using Jsonnet code.\n'),
   csv_classifier:: {
-    '#new':: d.fn(help='\n`aws.glue_classifier.csv_classifier.new` constructs a new object with attributes and blocks configured for the `csv_classifier`\nTerraform sub block.\n\n\n\n**Args**:\n  - `allow_single_column` (`bool`): Set the `allow_single_column` field on the resulting object. When `null`, the `allow_single_column` field will be omitted from the resulting object.\n  - `contains_header` (`string`): Set the `contains_header` field on the resulting object. When `null`, the `contains_header` field will be omitted from the resulting object.\n  - `custom_datatype_configured` (`bool`): Set the `custom_datatype_configured` field on the resulting object. When `null`, the `custom_datatype_configured` field will be omitted from the resulting object.\n  - `custom_datatypes` (`list`): Set the `custom_datatypes` field on the resulting object. When `null`, the `custom_datatypes` field will be omitted from the resulting object.\n  - `delimiter` (`string`): Set the `delimiter` field on the resulting object. When `null`, the `delimiter` field will be omitted from the resulting object.\n  - `disable_value_trimming` (`bool`): Set the `disable_value_trimming` field on the resulting object. When `null`, the `disable_value_trimming` field will be omitted from the resulting object.\n  - `header` (`list`): Set the `header` field on the resulting object. When `null`, the `header` field will be omitted from the resulting object.\n  - `quote_symbol` (`string`): Set the `quote_symbol` field on the resulting object. When `null`, the `quote_symbol` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `csv_classifier` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.glue_classifier.csv_classifier.new` constructs a new object with attributes and blocks configured for the `csv_classifier`\nTerraform sub block.\n\n\n\n**Args**:\n  - `allow_single_column` (`bool`): Set the `allow_single_column` field on the resulting object. When `null`, the `allow_single_column` field will be omitted from the resulting object.\n  - `contains_header` (`string`): Set the `contains_header` field on the resulting object. When `null`, the `contains_header` field will be omitted from the resulting object.\n  - `custom_datatype_configured` (`bool`): Set the `custom_datatype_configured` field on the resulting object. When `null`, the `custom_datatype_configured` field will be omitted from the resulting object.\n  - `custom_datatypes` (`list`): Set the `custom_datatypes` field on the resulting object. When `null`, the `custom_datatypes` field will be omitted from the resulting object.\n  - `delimiter` (`string`): Set the `delimiter` field on the resulting object. When `null`, the `delimiter` field will be omitted from the resulting object.\n  - `disable_value_trimming` (`bool`): Set the `disable_value_trimming` field on the resulting object. When `null`, the `disable_value_trimming` field will be omitted from the resulting object.\n  - `header` (`list`): Set the `header` field on the resulting object. When `null`, the `header` field will be omitted from the resulting object.\n  - `quote_symbol` (`string`): Set the `quote_symbol` field on the resulting object. When `null`, the `quote_symbol` field will be omitted from the resulting object.\n  - `serde` (`string`): Set the `serde` field on the resulting object. When `null`, the `serde` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `csv_classifier` sub block.\n', args=[]),
     new(
       allow_single_column=null,
       contains_header=null,
@@ -12,7 +12,8 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       delimiter=null,
       disable_value_trimming=null,
       header=null,
-      quote_symbol=null
+      quote_symbol=null,
+      serde=null
     ):: std.prune(a={
       allow_single_column: allow_single_column,
       contains_header: contains_header,
@@ -22,6 +23,7 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       disable_value_trimming: disable_value_trimming,
       header: header,
       quote_symbol: quote_symbol,
+      serde: serde,
     }),
   },
   grok_classifier:: {

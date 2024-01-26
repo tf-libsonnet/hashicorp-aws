@@ -19,13 +19,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
         target_capacity: target_capacity,
       }),
     },
-    '#new':: d.fn(help='\n`aws.ecs_capacity_provider.auto_scaling_group_provider.new` constructs a new object with attributes and blocks configured for the `auto_scaling_group_provider`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auto_scaling_group_arn` (`string`): Set the `auto_scaling_group_arn` field on the resulting object.\n  - `managed_termination_protection` (`string`): Set the `managed_termination_protection` field on the resulting object. When `null`, the `managed_termination_protection` field will be omitted from the resulting object.\n  - `managed_scaling` (`list[obj]`): Set the `managed_scaling` field on the resulting object. When `null`, the `managed_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.managed_scaling.new](#fn-auto_scaling_group_providermanaged_scalingnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `auto_scaling_group_provider` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.ecs_capacity_provider.auto_scaling_group_provider.new` constructs a new object with attributes and blocks configured for the `auto_scaling_group_provider`\nTerraform sub block.\n\n\n\n**Args**:\n  - `auto_scaling_group_arn` (`string`): Set the `auto_scaling_group_arn` field on the resulting object.\n  - `managed_draining` (`string`): Set the `managed_draining` field on the resulting object. When `null`, the `managed_draining` field will be omitted from the resulting object.\n  - `managed_termination_protection` (`string`): Set the `managed_termination_protection` field on the resulting object. When `null`, the `managed_termination_protection` field will be omitted from the resulting object.\n  - `managed_scaling` (`list[obj]`): Set the `managed_scaling` field on the resulting object. When `null`, the `managed_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.managed_scaling.new](#fn-auto_scaling_group_providermanaged_scalingnew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `auto_scaling_group_provider` sub block.\n', args=[]),
     new(
       auto_scaling_group_arn,
+      managed_draining=null,
       managed_scaling=null,
       managed_termination_protection=null
     ):: std.prune(a={
       auto_scaling_group_arn: auto_scaling_group_arn,
+      managed_draining: managed_draining,
       managed_scaling: managed_scaling,
       managed_termination_protection: managed_termination_protection,
     }),

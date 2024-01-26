@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withDomainId()`](#fn-withdomainid)
+* [`fn withSpaceDisplayName()`](#fn-withspacedisplayname)
 * [`fn withSpaceName()`](#fn-withspacename)
 * [`fn withSpaceSettings()`](#fn-withspacesettings)
 * [`fn withSpaceSettingsMixin()`](#fn-withspacesettingsmixin)
@@ -66,6 +67,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `domain_id` (`string`): Set the `domain_id` field on the resulting resource block.
+  - `space_display_name` (`string`): Set the `space_display_name` field on the resulting resource block. When `null`, the `space_display_name` field will be omitted from the resulting object.
   - `space_name` (`string`): Set the `space_name` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -94,6 +96,7 @@ injecting into a complete block.
 
 **Args**:
   - `domain_id` (`string`): Set the `domain_id` field on the resulting object.
+  - `space_display_name` (`string`): Set the `space_display_name` field on the resulting object. When `null`, the `space_display_name` field will be omitted from the resulting object.
   - `space_name` (`string`): Set the `space_name` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -117,6 +120,22 @@ Terraform resource block to set or update the domain_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `domain_id` field.
+
+
+### fn withSpaceDisplayName
+
+```ts
+withSpaceDisplayName()
+```
+
+`aws.string.withSpaceDisplayName` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the space_display_name field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `space_display_name` field.
 
 
 ### fn withSpaceName
@@ -296,6 +315,7 @@ Terraform sub block.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
   - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
   - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.
   - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:
@@ -372,6 +392,7 @@ Terraform sub block.
   - `instance_type` (`string`): Set the `instance_type` field on the resulting object. When `null`, the `instance_type` field will be omitted from the resulting object.
   - `lifecycle_config_arn` (`string`): Set the `lifecycle_config_arn` field on the resulting object. When `null`, the `lifecycle_config_arn` field will be omitted from the resulting object.
   - `sagemaker_image_arn` (`string`): Set the `sagemaker_image_arn` field on the resulting object. When `null`, the `sagemaker_image_arn` field will be omitted from the resulting object.
+  - `sagemaker_image_version_alias` (`string`): Set the `sagemaker_image_version_alias` field on the resulting object. When `null`, the `sagemaker_image_version_alias` field will be omitted from the resulting object.
   - `sagemaker_image_version_arn` (`string`): Set the `sagemaker_image_version_arn` field on the resulting object. When `null`, the `sagemaker_image_version_arn` field will be omitted from the resulting object.
 
 **Returns**:

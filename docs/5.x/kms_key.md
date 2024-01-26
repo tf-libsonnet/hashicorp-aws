@@ -29,6 +29,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withTagsAll()`](#fn-withtagsall)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
+* [`fn withXksKeyId()`](#fn-withxkskeyid)
 * [`obj timeouts`](#obj-timeouts)
   * [`fn new()`](#fn-timeoutsnew)
 
@@ -73,6 +74,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `policy` (`string`): Set the `policy` field on the resulting resource block. When `null`, the `policy` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `xks_key_id` (`string`): Set the `xks_key_id` field on the resulting resource block. When `null`, the `xks_key_id` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kms_key.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -109,6 +111,7 @@ injecting into a complete block.
   - `policy` (`string`): Set the `policy` field on the resulting object. When `null`, the `policy` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
+  - `xks_key_id` (`string`): Set the `xks_key_id` field on the resulting object. When `null`, the `xks_key_id` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.kms_key.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
@@ -341,6 +344,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`obj`): The value to set for the `timeouts` field.
+
+
+### fn withXksKeyId
+
+```ts
+withXksKeyId()
+```
+
+`aws.string.withXksKeyId` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the xks_key_id field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `xks_key_id` field.
 
 
 ## obj timeouts

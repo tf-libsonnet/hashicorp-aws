@@ -21,6 +21,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withDeploymentStrategyId()`](#fn-withdeploymentstrategyid)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withEnvironmentId()`](#fn-withenvironmentid)
+* [`fn withKmsKeyIdentifier()`](#fn-withkmskeyidentifier)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
 
@@ -59,6 +60,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `deployment_strategy_id` (`string`): Set the `deployment_strategy_id` field on the resulting resource block.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `environment_id` (`string`): Set the `environment_id` field on the resulting resource block.
+  - `kms_key_identifier` (`string`): Set the `kms_key_identifier` field on the resulting resource block. When `null`, the `kms_key_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -90,6 +92,7 @@ injecting into a complete block.
   - `deployment_strategy_id` (`string`): Set the `deployment_strategy_id` field on the resulting object.
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `environment_id` (`string`): Set the `environment_id` field on the resulting object.
+  - `kms_key_identifier` (`string`): Set the `kms_key_identifier` field on the resulting object. When `null`, the `kms_key_identifier` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
 
@@ -191,6 +194,22 @@ Terraform resource block to set or update the environment_id field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `environment_id` field.
+
+
+### fn withKmsKeyIdentifier
+
+```ts
+withKmsKeyIdentifier()
+```
+
+`aws.string.withKmsKeyIdentifier` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the kms_key_identifier field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `kms_key_identifier` field.
 
 
 ### fn withTags

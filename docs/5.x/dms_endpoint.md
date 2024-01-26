@@ -33,6 +33,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withPassword()`](#fn-withpassword)
 * [`fn withPauseReplicationTasks()`](#fn-withpausereplicationtasks)
 * [`fn withPort()`](#fn-withport)
+* [`fn withPostgresSettings()`](#fn-withpostgressettings)
+* [`fn withPostgresSettingsMixin()`](#fn-withpostgressettingsmixin)
 * [`fn withRedisSettings()`](#fn-withredissettings)
 * [`fn withRedisSettingsMixin()`](#fn-withredissettingsmixin)
 * [`fn withRedshiftSettings()`](#fn-withredshiftsettings)
@@ -57,6 +59,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-kinesis_settingsnew)
 * [`obj mongodb_settings`](#obj-mongodb_settings)
   * [`fn new()`](#fn-mongodb_settingsnew)
+* [`obj postgres_settings`](#obj-postgres_settings)
+  * [`fn new()`](#fn-postgres_settingsnew)
 * [`obj redis_settings`](#obj-redis_settings)
   * [`fn new()`](#fn-redis_settingsnew)
 * [`obj redshift_settings`](#obj-redshift_settings)
@@ -117,6 +121,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `kafka_settings` (`list[obj]`): Set the `kafka_settings` field on the resulting resource block. When `null`, the `kafka_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.kafka_settings.new](#fn-kafka_settingsnew) constructor.
   - `kinesis_settings` (`list[obj]`): Set the `kinesis_settings` field on the resulting resource block. When `null`, the `kinesis_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.kinesis_settings.new](#fn-kinesis_settingsnew) constructor.
   - `mongodb_settings` (`list[obj]`): Set the `mongodb_settings` field on the resulting resource block. When `null`, the `mongodb_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.mongodb_settings.new](#fn-mongodb_settingsnew) constructor.
+  - `postgres_settings` (`list[obj]`): Set the `postgres_settings` field on the resulting resource block. When `null`, the `postgres_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.postgres_settings.new](#fn-postgres_settingsnew) constructor.
   - `redis_settings` (`list[obj]`): Set the `redis_settings` field on the resulting resource block. When `null`, the `redis_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.redis_settings.new](#fn-redis_settingsnew) constructor.
   - `redshift_settings` (`list[obj]`): Set the `redshift_settings` field on the resulting resource block. When `null`, the `redshift_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.redshift_settings.new](#fn-redshift_settingsnew) constructor.
   - `s3_settings` (`list[obj]`): This argument is deprecated and will be removed in a future version; use aws_dms_s3_endpoint instead When `null`, the `s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.s3_settings.new](#fn-s3_settingsnew) constructor.
@@ -166,6 +171,7 @@ injecting into a complete block.
   - `kafka_settings` (`list[obj]`): Set the `kafka_settings` field on the resulting object. When `null`, the `kafka_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.kafka_settings.new](#fn-kafka_settingsnew) constructor.
   - `kinesis_settings` (`list[obj]`): Set the `kinesis_settings` field on the resulting object. When `null`, the `kinesis_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.kinesis_settings.new](#fn-kinesis_settingsnew) constructor.
   - `mongodb_settings` (`list[obj]`): Set the `mongodb_settings` field on the resulting object. When `null`, the `mongodb_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.mongodb_settings.new](#fn-mongodb_settingsnew) constructor.
+  - `postgres_settings` (`list[obj]`): Set the `postgres_settings` field on the resulting object. When `null`, the `postgres_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.postgres_settings.new](#fn-postgres_settingsnew) constructor.
   - `redis_settings` (`list[obj]`): Set the `redis_settings` field on the resulting object. When `null`, the `redis_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.redis_settings.new](#fn-redis_settingsnew) constructor.
   - `redshift_settings` (`list[obj]`): Set the `redshift_settings` field on the resulting object. When `null`, the `redshift_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.redshift_settings.new](#fn-redshift_settingsnew) constructor.
   - `s3_settings` (`list[obj]`): This argument is deprecated and will be removed in a future version; use aws_dms_s3_endpoint instead When `null`, the `s3_settings` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_endpoint.s3_settings.new](#fn-s3_settingsnew) constructor.
@@ -483,6 +489,43 @@ Terraform resource block to set or update the port field.
   - `value` (`number`): The value to set for the `port` field.
 
 
+### fn withPostgresSettings
+
+```ts
+withPostgresSettings()
+```
+
+`aws.list[obj].withPostgresSettings` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the postgres_settings field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withPostgresSettingsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `postgres_settings` field.
+
+
+### fn withPostgresSettingsMixin
+
+```ts
+withPostgresSettingsMixin()
+```
+
+`aws.list[obj].withPostgresSettingsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the postgres_settings field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withPostgresSettings](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `postgres_settings` field.
+
+
 ### fn withRedisSettings
 
 ```ts
@@ -779,6 +822,7 @@ Terraform sub block.
   - `error_retry_duration` (`number`): Set the `error_retry_duration` field on the resulting object. When `null`, the `error_retry_duration` field will be omitted from the resulting object.
   - `full_load_error_percentage` (`number`): Set the `full_load_error_percentage` field on the resulting object. When `null`, the `full_load_error_percentage` field will be omitted from the resulting object.
   - `service_access_role_arn` (`string`): Set the `service_access_role_arn` field on the resulting object.
+  - `use_new_mapping_type` (`bool`): Set the `use_new_mapping_type` field on the resulting object. When `null`, the `use_new_mapping_type` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `elasticsearch_settings` sub block.
@@ -881,6 +925,44 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `mongodb_settings` sub block.
+
+
+## obj postgres_settings
+
+
+
+### fn postgres_settings.new
+
+```ts
+new()
+```
+
+
+`aws.dms_endpoint.postgres_settings.new` constructs a new object with attributes and blocks configured for the `postgres_settings`
+Terraform sub block.
+
+
+
+**Args**:
+  - `after_connect_script` (`string`): Set the `after_connect_script` field on the resulting object. When `null`, the `after_connect_script` field will be omitted from the resulting object.
+  - `babelfish_database_name` (`string`): Set the `babelfish_database_name` field on the resulting object. When `null`, the `babelfish_database_name` field will be omitted from the resulting object.
+  - `capture_ddls` (`bool`): Set the `capture_ddls` field on the resulting object. When `null`, the `capture_ddls` field will be omitted from the resulting object.
+  - `database_mode` (`string`): Set the `database_mode` field on the resulting object. When `null`, the `database_mode` field will be omitted from the resulting object.
+  - `ddl_artifacts_schema` (`string`): Set the `ddl_artifacts_schema` field on the resulting object. When `null`, the `ddl_artifacts_schema` field will be omitted from the resulting object.
+  - `execute_timeout` (`number`): Set the `execute_timeout` field on the resulting object. When `null`, the `execute_timeout` field will be omitted from the resulting object.
+  - `fail_tasks_on_lob_truncation` (`bool`): Set the `fail_tasks_on_lob_truncation` field on the resulting object. When `null`, the `fail_tasks_on_lob_truncation` field will be omitted from the resulting object.
+  - `heartbeat_enable` (`bool`): Set the `heartbeat_enable` field on the resulting object. When `null`, the `heartbeat_enable` field will be omitted from the resulting object.
+  - `heartbeat_frequency` (`number`): Set the `heartbeat_frequency` field on the resulting object. When `null`, the `heartbeat_frequency` field will be omitted from the resulting object.
+  - `heartbeat_schema` (`string`): Set the `heartbeat_schema` field on the resulting object. When `null`, the `heartbeat_schema` field will be omitted from the resulting object.
+  - `map_boolean_as_boolean` (`bool`): Set the `map_boolean_as_boolean` field on the resulting object. When `null`, the `map_boolean_as_boolean` field will be omitted from the resulting object.
+  - `map_jsonb_as_clob` (`bool`): Set the `map_jsonb_as_clob` field on the resulting object. When `null`, the `map_jsonb_as_clob` field will be omitted from the resulting object.
+  - `map_long_varchar_as` (`string`): Set the `map_long_varchar_as` field on the resulting object. When `null`, the `map_long_varchar_as` field will be omitted from the resulting object.
+  - `max_file_size` (`number`): Set the `max_file_size` field on the resulting object. When `null`, the `max_file_size` field will be omitted from the resulting object.
+  - `plugin_name` (`string`): Set the `plugin_name` field on the resulting object. When `null`, the `plugin_name` field will be omitted from the resulting object.
+  - `slot_name` (`string`): Set the `slot_name` field on the resulting object. When `null`, the `slot_name` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `postgres_settings` sub block.
 
 
 ## obj redis_settings

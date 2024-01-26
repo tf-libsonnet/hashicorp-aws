@@ -61,8 +61,8 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `event_categories` (`list`): Set the `event_categories` field on the resulting resource block.
   - `name` (`string`): Set the `name` field on the resulting resource block.
   - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting resource block.
-  - `source_ids` (`list`): Set the `source_ids` field on the resulting resource block. When `null`, the `source_ids` field will be omitted from the resulting object.
-  - `source_type` (`string`): Set the `source_type` field on the resulting resource block. When `null`, the `source_type` field will be omitted from the resulting object.
+  - `source_ids` (`list`): Set the `source_ids` field on the resulting resource block.
+  - `source_type` (`string`): Set the `source_type` field on the resulting resource block.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_event_subscription.timeouts.new](#fn-timeoutsnew) constructor.
@@ -93,8 +93,8 @@ injecting into a complete block.
   - `event_categories` (`list`): Set the `event_categories` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
   - `sns_topic_arn` (`string`): Set the `sns_topic_arn` field on the resulting object.
-  - `source_ids` (`list`): Set the `source_ids` field on the resulting object. When `null`, the `source_ids` field will be omitted from the resulting object.
-  - `source_type` (`string`): Set the `source_type` field on the resulting object. When `null`, the `source_type` field will be omitted from the resulting object.
+  - `source_ids` (`list`): Set the `source_ids` field on the resulting object.
+  - `source_type` (`string`): Set the `source_type` field on the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.dms_event_subscription.timeouts.new](#fn-timeoutsnew) constructor.

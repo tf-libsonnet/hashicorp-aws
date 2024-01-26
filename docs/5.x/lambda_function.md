@@ -34,6 +34,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withImageUri()`](#fn-withimageuri)
 * [`fn withKmsKeyArn()`](#fn-withkmskeyarn)
 * [`fn withLayers()`](#fn-withlayers)
+* [`fn withLoggingConfig()`](#fn-withloggingconfig)
+* [`fn withLoggingConfigMixin()`](#fn-withloggingconfigmixin)
 * [`fn withMemorySize()`](#fn-withmemorysize)
 * [`fn withPackageType()`](#fn-withpackagetype)
 * [`fn withPublish()`](#fn-withpublish)
@@ -68,6 +70,8 @@ This package contains functions and utilities for setting up the resource using 
   * [`fn new()`](#fn-file_system_confignew)
 * [`obj image_config`](#obj-image_config)
   * [`fn new()`](#fn-image_confignew)
+* [`obj logging_config`](#obj-logging_config)
+  * [`fn new()`](#fn-logging_confignew)
 * [`obj snap_start`](#obj-snap_start)
   * [`fn new()`](#fn-snap_startnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -136,6 +140,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `ephemeral_storage` (`list[obj]`): Set the `ephemeral_storage` field on the resulting resource block. When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
   - `file_system_config` (`list[obj]`): Set the `file_system_config` field on the resulting resource block. When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.file_system_config.new](#fn-file_system_confignew) constructor.
   - `image_config` (`list[obj]`): Set the `image_config` field on the resulting resource block. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.image_config.new](#fn-image_confignew) constructor.
+  - `logging_config` (`list[obj]`): Set the `logging_config` field on the resulting resource block. When `null`, the `logging_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.logging_config.new](#fn-logging_confignew) constructor.
   - `snap_start` (`list[obj]`): Set the `snap_start` field on the resulting resource block. When `null`, the `snap_start` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.snap_start.new](#fn-snap_startnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.timeouts.new](#fn-timeoutsnew) constructor.
   - `tracing_config` (`list[obj]`): Set the `tracing_config` field on the resulting resource block. When `null`, the `tracing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.tracing_config.new](#fn-tracing_confignew) constructor.
@@ -193,6 +198,7 @@ injecting into a complete block.
   - `ephemeral_storage` (`list[obj]`): Set the `ephemeral_storage` field on the resulting object. When `null`, the `ephemeral_storage` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.ephemeral_storage.new](#fn-ephemeral_storagenew) constructor.
   - `file_system_config` (`list[obj]`): Set the `file_system_config` field on the resulting object. When `null`, the `file_system_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.file_system_config.new](#fn-file_system_confignew) constructor.
   - `image_config` (`list[obj]`): Set the `image_config` field on the resulting object. When `null`, the `image_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.image_config.new](#fn-image_confignew) constructor.
+  - `logging_config` (`list[obj]`): Set the `logging_config` field on the resulting object. When `null`, the `logging_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.logging_config.new](#fn-logging_confignew) constructor.
   - `snap_start` (`list[obj]`): Set the `snap_start` field on the resulting object. When `null`, the `snap_start` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.snap_start.new](#fn-snap_startnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.timeouts.new](#fn-timeoutsnew) constructor.
   - `tracing_config` (`list[obj]`): Set the `tracing_config` field on the resulting object. When `null`, the `tracing_config` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.lambda_function.tracing_config.new](#fn-tracing_confignew) constructor.
@@ -529,6 +535,43 @@ Terraform resource block to set or update the layers field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `layers` field.
+
+
+### fn withLoggingConfig
+
+```ts
+withLoggingConfig()
+```
+
+`aws.list[obj].withLoggingConfig` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the logging_config field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withLoggingConfigMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `logging_config` field.
+
+
+### fn withLoggingConfigMixin
+
+```ts
+withLoggingConfigMixin()
+```
+
+`aws.list[obj].withLoggingConfigMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the logging_config field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withLoggingConfig](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `logging_config` field.
 
 
 ### fn withMemorySize
@@ -1050,6 +1093,32 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `image_config` sub block.
+
+
+## obj logging_config
+
+
+
+### fn logging_config.new
+
+```ts
+new()
+```
+
+
+`aws.lambda_function.logging_config.new` constructs a new object with attributes and blocks configured for the `logging_config`
+Terraform sub block.
+
+
+
+**Args**:
+  - `application_log_level` (`string`): Set the `application_log_level` field on the resulting object. When `null`, the `application_log_level` field will be omitted from the resulting object.
+  - `log_format` (`string`): Set the `log_format` field on the resulting object.
+  - `log_group` (`string`): Set the `log_group` field on the resulting object. When `null`, the `log_group` field will be omitted from the resulting object.
+  - `system_log_level` (`string`): Set the `system_log_level` field on the resulting object. When `null`, the `system_log_level` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `logging_config` sub block.
 
 
 ## obj snap_start

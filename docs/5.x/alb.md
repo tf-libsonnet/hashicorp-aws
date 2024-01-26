@@ -17,6 +17,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAccessLogs()`](#fn-withaccesslogs)
 * [`fn withAccessLogsMixin()`](#fn-withaccesslogsmixin)
+* [`fn withConnectionLogs()`](#fn-withconnectionlogs)
+* [`fn withConnectionLogsMixin()`](#fn-withconnectionlogsmixin)
 * [`fn withCustomerOwnedIpv4Pool()`](#fn-withcustomerownedipv4pool)
 * [`fn withDesyncMitigationMode()`](#fn-withdesyncmitigationmode)
 * [`fn withDnsRecordClientRoutingPolicy()`](#fn-withdnsrecordclientroutingpolicy)
@@ -27,6 +29,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withEnableTlsVersionAndCipherSuiteHeaders()`](#fn-withenabletlsversionandciphersuiteheaders)
 * [`fn withEnableWafFailOpen()`](#fn-withenablewaffailopen)
 * [`fn withEnableXffClientPort()`](#fn-withenablexffclientport)
+* [`fn withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()`](#fn-withenforcesecuritygroupinboundrulesonprivatelinktraffic)
 * [`fn withIdleTimeout()`](#fn-withidletimeout)
 * [`fn withInternal()`](#fn-withinternal)
 * [`fn withIpAddressType()`](#fn-withipaddresstype)
@@ -45,6 +48,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withXffHeaderProcessingMode()`](#fn-withxffheaderprocessingmode)
 * [`obj access_logs`](#obj-access_logs)
   * [`fn new()`](#fn-access_logsnew)
+* [`obj connection_logs`](#obj-connection_logs)
+  * [`fn new()`](#fn-connection_logsnew)
 * [`obj subnet_mapping`](#obj-subnet_mapping)
   * [`fn new()`](#fn-subnet_mappingnew)
 * [`obj timeouts`](#obj-timeouts)
@@ -89,6 +94,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `enable_tls_version_and_cipher_suite_headers` (`bool`): Set the `enable_tls_version_and_cipher_suite_headers` field on the resulting resource block. When `null`, the `enable_tls_version_and_cipher_suite_headers` field will be omitted from the resulting object.
   - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting resource block. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
   - `enable_xff_client_port` (`bool`): Set the `enable_xff_client_port` field on the resulting resource block. When `null`, the `enable_xff_client_port` field will be omitted from the resulting object.
+  - `enforce_security_group_inbound_rules_on_private_link_traffic` (`string`): Set the `enforce_security_group_inbound_rules_on_private_link_traffic` field on the resulting resource block. When `null`, the `enforce_security_group_inbound_rules_on_private_link_traffic` field will be omitted from the resulting object.
   - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting resource block. When `null`, the `idle_timeout` field will be omitted from the resulting object.
   - `internal` (`bool`): Set the `internal` field on the resulting resource block. When `null`, the `internal` field will be omitted from the resulting object.
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting resource block. When `null`, the `ip_address_type` field will be omitted from the resulting object.
@@ -102,6 +108,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `xff_header_processing_mode` (`string`): Set the `xff_header_processing_mode` field on the resulting resource block. When `null`, the `xff_header_processing_mode` field will be omitted from the resulting object.
   - `access_logs` (`list[obj]`): Set the `access_logs` field on the resulting resource block. When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.access_logs.new](#fn-access_logsnew) constructor.
+  - `connection_logs` (`list[obj]`): Set the `connection_logs` field on the resulting resource block. When `null`, the `connection_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.connection_logs.new](#fn-connection_logsnew) constructor.
   - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting resource block. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -137,6 +144,7 @@ injecting into a complete block.
   - `enable_tls_version_and_cipher_suite_headers` (`bool`): Set the `enable_tls_version_and_cipher_suite_headers` field on the resulting object. When `null`, the `enable_tls_version_and_cipher_suite_headers` field will be omitted from the resulting object.
   - `enable_waf_fail_open` (`bool`): Set the `enable_waf_fail_open` field on the resulting object. When `null`, the `enable_waf_fail_open` field will be omitted from the resulting object.
   - `enable_xff_client_port` (`bool`): Set the `enable_xff_client_port` field on the resulting object. When `null`, the `enable_xff_client_port` field will be omitted from the resulting object.
+  - `enforce_security_group_inbound_rules_on_private_link_traffic` (`string`): Set the `enforce_security_group_inbound_rules_on_private_link_traffic` field on the resulting object. When `null`, the `enforce_security_group_inbound_rules_on_private_link_traffic` field will be omitted from the resulting object.
   - `idle_timeout` (`number`): Set the `idle_timeout` field on the resulting object. When `null`, the `idle_timeout` field will be omitted from the resulting object.
   - `internal` (`bool`): Set the `internal` field on the resulting object. When `null`, the `internal` field will be omitted from the resulting object.
   - `ip_address_type` (`string`): Set the `ip_address_type` field on the resulting object. When `null`, the `ip_address_type` field will be omitted from the resulting object.
@@ -150,6 +158,7 @@ injecting into a complete block.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `xff_header_processing_mode` (`string`): Set the `xff_header_processing_mode` field on the resulting object. When `null`, the `xff_header_processing_mode` field will be omitted from the resulting object.
   - `access_logs` (`list[obj]`): Set the `access_logs` field on the resulting object. When `null`, the `access_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.access_logs.new](#fn-access_logsnew) constructor.
+  - `connection_logs` (`list[obj]`): Set the `connection_logs` field on the resulting object. When `null`, the `connection_logs` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.connection_logs.new](#fn-connection_logsnew) constructor.
   - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting object. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.alb.timeouts.new](#fn-timeoutsnew) constructor.
 
@@ -192,6 +201,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `access_logs` field.
+
+
+### fn withConnectionLogs
+
+```ts
+withConnectionLogs()
+```
+
+`aws.list[obj].withConnectionLogs` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the connection_logs field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withConnectionLogsMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `connection_logs` field.
+
+
+### fn withConnectionLogsMixin
+
+```ts
+withConnectionLogsMixin()
+```
+
+`aws.list[obj].withConnectionLogsMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the connection_logs field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withConnectionLogs](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `connection_logs` field.
 
 
 ### fn withCustomerOwnedIpv4Pool
@@ -352,6 +398,22 @@ Terraform resource block to set or update the enable_xff_client_port field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`bool`): The value to set for the `enable_xff_client_port` field.
+
+
+### fn withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic
+
+```ts
+withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()
+```
+
+`aws.string.withEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the enforce_security_group_inbound_rules_on_private_link_traffic field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `enforce_security_group_inbound_rules_on_private_link_traffic` field.
 
 
 ### fn withIdleTimeout
@@ -642,6 +704,31 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `access_logs` sub block.
+
+
+## obj connection_logs
+
+
+
+### fn connection_logs.new
+
+```ts
+new()
+```
+
+
+`aws.alb.connection_logs.new` constructs a new object with attributes and blocks configured for the `connection_logs`
+Terraform sub block.
+
+
+
+**Args**:
+  - `bucket` (`string`): Set the `bucket` field on the resulting object.
+  - `enabled` (`bool`): Set the `enabled` field on the resulting object. When `null`, the `enabled` field will be omitted from the resulting object.
+  - `prefix` (`string`): Set the `prefix` field on the resulting object. When `null`, the `prefix` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `connection_logs` sub block.
 
 
 ## obj subnet_mapping

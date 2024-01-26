@@ -793,6 +793,7 @@ Terraform sub block.
   - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object.
   - `database_name` (`string`): Set the `database_name` field on the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
+  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.
 
 **Returns**:
   - An attribute object that represents the `target_table` sub block.

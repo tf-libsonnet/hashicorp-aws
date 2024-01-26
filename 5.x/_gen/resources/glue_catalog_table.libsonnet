@@ -222,15 +222,17 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
     },
   },
   target_table:: {
-    '#new':: d.fn(help='\n`aws.glue_catalog_table.target_table.new` constructs a new object with attributes and blocks configured for the `target_table`\nTerraform sub block.\n\n\n\n**Args**:\n  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object.\n  - `database_name` (`string`): Set the `database_name` field on the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `target_table` sub block.\n', args=[]),
+    '#new':: d.fn(help='\n`aws.glue_catalog_table.target_table.new` constructs a new object with attributes and blocks configured for the `target_table`\nTerraform sub block.\n\n\n\n**Args**:\n  - `catalog_id` (`string`): Set the `catalog_id` field on the resulting object.\n  - `database_name` (`string`): Set the `database_name` field on the resulting object.\n  - `name` (`string`): Set the `name` field on the resulting object.\n  - `region` (`string`): Set the `region` field on the resulting object. When `null`, the `region` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `target_table` sub block.\n', args=[]),
     new(
       catalog_id,
       database_name,
-      name
+      name,
+      region=null
     ):: std.prune(a={
       catalog_id: catalog_id,
       database_name: database_name,
       name: name,
+      region: region,
     }),
   },
   '#withCatalogId':: d.fn(help='`aws.string.withCatalogId` constructs a mixin object that can be merged into the `string`\nTerraform resource block to set or update the catalog_id field.\n\n\n\n**Args**:\n  - `resourceLabel` (`string`): The name label of the block to update.\n  - `value` (`string`): The value to set for the `catalog_id` field.\n', args=[]),

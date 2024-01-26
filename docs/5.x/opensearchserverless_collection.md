@@ -17,6 +17,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withDescription()`](#fn-withdescription)
 * [`fn withName()`](#fn-withname)
+* [`fn withStandbyReplicas()`](#fn-withstandbyreplicas)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTimeouts()`](#fn-withtimeouts)
 * [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
@@ -55,6 +56,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `resourceLabel` (`string`): The name label of the block.
   - `description` (`string`): Set the `description` field on the resulting resource block. When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting resource block.
+  - `standby_replicas` (`string`): Set the `standby_replicas` field on the resulting resource block. When `null`, the `standby_replicas` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting resource block. When `null`, the `type` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearchserverless_collection.timeouts.new](#fn-timeoutsnew) constructor.
@@ -83,6 +85,7 @@ injecting into a complete block.
 **Args**:
   - `description` (`string`): Set the `description` field on the resulting object. When `null`, the `description` field will be omitted from the resulting object.
   - `name` (`string`): Set the `name` field on the resulting object.
+  - `standby_replicas` (`string`): Set the `standby_replicas` field on the resulting object. When `null`, the `standby_replicas` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `type` (`string`): Set the `type` field on the resulting object. When `null`, the `type` field will be omitted from the resulting object.
   - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.opensearchserverless_collection.timeouts.new](#fn-timeoutsnew) constructor.
@@ -121,6 +124,22 @@ Terraform resource block to set or update the name field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `name` field.
+
+
+### fn withStandbyReplicas
+
+```ts
+withStandbyReplicas()
+```
+
+`aws.string.withStandbyReplicas` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the standby_replicas field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `standby_replicas` field.
 
 
 ### fn withTags

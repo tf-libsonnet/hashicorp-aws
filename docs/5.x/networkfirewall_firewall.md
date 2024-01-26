@@ -27,11 +27,15 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withSubnetMappingMixin()`](#fn-withsubnetmappingmixin)
 * [`fn withTags()`](#fn-withtags)
 * [`fn withTagsAll()`](#fn-withtagsall)
+* [`fn withTimeouts()`](#fn-withtimeouts)
+* [`fn withTimeoutsMixin()`](#fn-withtimeoutsmixin)
 * [`fn withVpcId()`](#fn-withvpcid)
 * [`obj encryption_configuration`](#obj-encryption_configuration)
   * [`fn new()`](#fn-encryption_configurationnew)
 * [`obj subnet_mapping`](#obj-subnet_mapping)
   * [`fn new()`](#fn-subnet_mappingnew)
+* [`obj timeouts`](#obj-timeouts)
+  * [`fn new()`](#fn-timeoutsnew)
 
 ## Fields
 
@@ -73,6 +77,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `vpc_id` (`string`): Set the `vpc_id` field on the resulting resource block.
   - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting resource block. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
   - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting resource block. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting resource block. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
 - A mixin object that injects the new resource into the root Terraform configuration.
@@ -107,6 +112,7 @@ injecting into a complete block.
   - `vpc_id` (`string`): Set the `vpc_id` field on the resulting object.
   - `encryption_configuration` (`list[obj]`): Set the `encryption_configuration` field on the resulting object. When `null`, the `encryption_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.encryption_configuration.new](#fn-encryption_configurationnew) constructor.
   - `subnet_mapping` (`list[obj]`): Set the `subnet_mapping` field on the resulting object. When `null`, the `subnet_mapping` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.subnet_mapping.new](#fn-subnet_mappingnew) constructor.
+  - `timeouts` (`obj`): Set the `timeouts` field on the resulting object. When `null`, the `timeouts` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.networkfirewall_firewall.timeouts.new](#fn-timeoutsnew) constructor.
 
 **Returns**:
   - An attribute object that can be used with [tf.withResource](https://github.com/tf-libsonnet/core/tree/main/docs#fn-withresource) to construct a new `networkfirewall_firewall` resource into the root Terraform configuration.
@@ -314,6 +320,42 @@ Terraform resource block to set or update the tags_all field.
   - `value` (`obj`): The value to set for the `tags_all` field.
 
 
+### fn withTimeouts
+
+```ts
+withTimeouts()
+```
+
+`aws.obj.withTimeouts` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will replace the map with the passed in `value`. If you wish to instead merge the
+passed in value to the existing map, use the [aws.obj.withTimeoutsMixin](TODO) function.
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
+### fn withTimeoutsMixin
+
+```ts
+withTimeoutsMixin()
+```
+
+`aws.obj.withTimeoutsMixin` constructs a mixin object that can be merged into the `obj`
+Terraform resource block to set or update the timeouts field.
+
+This function will merge the passed in value to the existing map. If you wish
+to instead replace the entire map with the passed in `value`, use the [aws.obj.withTimeouts](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`obj`): The value to set for the `timeouts` field.
+
+
 ### fn withVpcId
 
 ```ts
@@ -376,3 +418,28 @@ Terraform sub block.
 
 **Returns**:
   - An attribute object that represents the `subnet_mapping` sub block.
+
+
+## obj timeouts
+
+
+
+### fn timeouts.new
+
+```ts
+new()
+```
+
+
+`aws.networkfirewall_firewall.timeouts.new` constructs a new object with attributes and blocks configured for the `timeouts`
+Terraform sub block.
+
+
+
+**Args**:
+  - `create` (`string`): Set the `create` field on the resulting object. When `null`, the `create` field will be omitted from the resulting object.
+  - `delete` (`string`): Set the `delete` field on the resulting object. When `null`, the `delete` field will be omitted from the resulting object.
+  - `update` (`string`): Set the `update` field on the resulting object. When `null`, the `update` field will be omitted from the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `timeouts` sub block.

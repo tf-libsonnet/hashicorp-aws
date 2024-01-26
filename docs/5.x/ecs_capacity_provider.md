@@ -193,6 +193,7 @@ Terraform sub block.
 
 **Args**:
   - `auto_scaling_group_arn` (`string`): Set the `auto_scaling_group_arn` field on the resulting object.
+  - `managed_draining` (`string`): Set the `managed_draining` field on the resulting object. When `null`, the `managed_draining` field will be omitted from the resulting object.
   - `managed_termination_protection` (`string`): Set the `managed_termination_protection` field on the resulting object. When `null`, the `managed_termination_protection` field will be omitted from the resulting object.
   - `managed_scaling` (`list[obj]`): Set the `managed_scaling` field on the resulting object. When `null`, the `managed_scaling` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.ecs_capacity_provider.auto_scaling_group_provider.managed_scaling.new](#fn-auto_scaling_group_providermanaged_scalingnew) constructor.
 

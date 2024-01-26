@@ -50,13 +50,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
   rule:: {
     copy_action:: {
       lifecycle:: {
-        '#new':: d.fn(help='\n`aws.backup_plan.rule.copy_action.lifecycle.new` constructs a new object with attributes and blocks configured for the `lifecycle`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cold_storage_after` (`number`): Set the `cold_storage_after` field on the resulting object. When `null`, the `cold_storage_after` field will be omitted from the resulting object.\n  - `delete_after` (`number`): Set the `delete_after` field on the resulting object. When `null`, the `delete_after` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `lifecycle` sub block.\n', args=[]),
+        '#new':: d.fn(help='\n`aws.backup_plan.rule.copy_action.lifecycle.new` constructs a new object with attributes and blocks configured for the `lifecycle`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cold_storage_after` (`number`): Set the `cold_storage_after` field on the resulting object. When `null`, the `cold_storage_after` field will be omitted from the resulting object.\n  - `delete_after` (`number`): Set the `delete_after` field on the resulting object. When `null`, the `delete_after` field will be omitted from the resulting object.\n  - `opt_in_to_archive_for_supported_resources` (`bool`): Set the `opt_in_to_archive_for_supported_resources` field on the resulting object. When `null`, the `opt_in_to_archive_for_supported_resources` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `lifecycle` sub block.\n', args=[]),
         new(
           cold_storage_after=null,
-          delete_after=null
+          delete_after=null,
+          opt_in_to_archive_for_supported_resources=null
         ):: std.prune(a={
           cold_storage_after: cold_storage_after,
           delete_after: delete_after,
+          opt_in_to_archive_for_supported_resources: opt_in_to_archive_for_supported_resources,
         }),
       },
       '#new':: d.fn(help='\n`aws.backup_plan.rule.copy_action.new` constructs a new object with attributes and blocks configured for the `copy_action`\nTerraform sub block.\n\n\n\n**Args**:\n  - `destination_vault_arn` (`string`): Set the `destination_vault_arn` field on the resulting object.\n  - `lifecycle` (`list[obj]`): Set the `lifecycle` field on the resulting object. When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.lifecycle.new](#fn-rulerulelifecyclenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `copy_action` sub block.\n', args=[]),
@@ -69,13 +71,15 @@ local d = (import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet');
       }),
     },
     lifecycle:: {
-      '#new':: d.fn(help='\n`aws.backup_plan.rule.lifecycle.new` constructs a new object with attributes and blocks configured for the `lifecycle`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cold_storage_after` (`number`): Set the `cold_storage_after` field on the resulting object. When `null`, the `cold_storage_after` field will be omitted from the resulting object.\n  - `delete_after` (`number`): Set the `delete_after` field on the resulting object. When `null`, the `delete_after` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `lifecycle` sub block.\n', args=[]),
+      '#new':: d.fn(help='\n`aws.backup_plan.rule.lifecycle.new` constructs a new object with attributes and blocks configured for the `lifecycle`\nTerraform sub block.\n\n\n\n**Args**:\n  - `cold_storage_after` (`number`): Set the `cold_storage_after` field on the resulting object. When `null`, the `cold_storage_after` field will be omitted from the resulting object.\n  - `delete_after` (`number`): Set the `delete_after` field on the resulting object. When `null`, the `delete_after` field will be omitted from the resulting object.\n  - `opt_in_to_archive_for_supported_resources` (`bool`): Set the `opt_in_to_archive_for_supported_resources` field on the resulting object. When `null`, the `opt_in_to_archive_for_supported_resources` field will be omitted from the resulting object.\n\n**Returns**:\n  - An attribute object that represents the `lifecycle` sub block.\n', args=[]),
       new(
         cold_storage_after=null,
-        delete_after=null
+        delete_after=null,
+        opt_in_to_archive_for_supported_resources=null
       ):: std.prune(a={
         cold_storage_after: cold_storage_after,
         delete_after: delete_after,
+        opt_in_to_archive_for_supported_resources: opt_in_to_archive_for_supported_resources,
       }),
     },
     '#new':: d.fn(help='\n`aws.backup_plan.rule.new` constructs a new object with attributes and blocks configured for the `rule`\nTerraform sub block.\n\n\n\n**Args**:\n  - `completion_window` (`number`): Set the `completion_window` field on the resulting object. When `null`, the `completion_window` field will be omitted from the resulting object.\n  - `enable_continuous_backup` (`bool`): Set the `enable_continuous_backup` field on the resulting object. When `null`, the `enable_continuous_backup` field will be omitted from the resulting object.\n  - `recovery_point_tags` (`obj`): Set the `recovery_point_tags` field on the resulting object. When `null`, the `recovery_point_tags` field will be omitted from the resulting object.\n  - `rule_name` (`string`): Set the `rule_name` field on the resulting object.\n  - `schedule` (`string`): Set the `schedule` field on the resulting object. When `null`, the `schedule` field will be omitted from the resulting object.\n  - `start_window` (`number`): Set the `start_window` field on the resulting object. When `null`, the `start_window` field will be omitted from the resulting object.\n  - `target_vault_name` (`string`): Set the `target_vault_name` field on the resulting object.\n  - `copy_action` (`list[obj]`): Set the `copy_action` field on the resulting object. When `null`, the `copy_action` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.copy_action.new](#fn-rulecopy_actionnew) constructor.\n  - `lifecycle` (`list[obj]`): Set the `lifecycle` field on the resulting object. When `null`, the `lifecycle` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.backup_plan.rule.lifecycle.new](#fn-rulelifecyclenew) constructor.\n\n**Returns**:\n  - An attribute object that represents the `rule` sub block.\n', args=[]),

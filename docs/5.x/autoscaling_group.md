@@ -30,6 +30,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withIgnoreFailedScalingActivities()`](#fn-withignorefailedscalingactivities)
 * [`fn withInitialLifecycleHook()`](#fn-withinitiallifecyclehook)
 * [`fn withInitialLifecycleHookMixin()`](#fn-withinitiallifecyclehookmixin)
+* [`fn withInstanceMaintenancePolicy()`](#fn-withinstancemaintenancepolicy)
+* [`fn withInstanceMaintenancePolicyMixin()`](#fn-withinstancemaintenancepolicymixin)
 * [`fn withInstanceRefresh()`](#fn-withinstancerefresh)
 * [`fn withInstanceRefreshMixin()`](#fn-withinstancerefreshmixin)
 * [`fn withLaunchConfiguration()`](#fn-withlaunchconfiguration)
@@ -64,6 +66,8 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withWarmPoolMixin()`](#fn-withwarmpoolmixin)
 * [`obj initial_lifecycle_hook`](#obj-initial_lifecycle_hook)
   * [`fn new()`](#fn-initial_lifecycle_hooknew)
+* [`obj instance_maintenance_policy`](#obj-instance_maintenance_policy)
+  * [`fn new()`](#fn-instance_maintenance_policynew)
 * [`obj instance_refresh`](#obj-instance_refresh)
   * [`fn new()`](#fn-instance_refreshnew)
   * [`obj instance_refresh.preferences`](#obj-instance_refreshpreferences)
@@ -174,6 +178,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `wait_for_capacity_timeout` (`string`): Set the `wait_for_capacity_timeout` field on the resulting resource block. When `null`, the `wait_for_capacity_timeout` field will be omitted from the resulting object.
   - `wait_for_elb_capacity` (`number`): Set the `wait_for_elb_capacity` field on the resulting resource block. When `null`, the `wait_for_elb_capacity` field will be omitted from the resulting object.
   - `initial_lifecycle_hook` (`list[obj]`): Set the `initial_lifecycle_hook` field on the resulting resource block. When `null`, the `initial_lifecycle_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.initial_lifecycle_hook.new](#fn-initial_lifecycle_hooknew) constructor.
+  - `instance_maintenance_policy` (`list[obj]`): Set the `instance_maintenance_policy` field on the resulting resource block. When `null`, the `instance_maintenance_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_maintenance_policy.new](#fn-instance_maintenance_policynew) constructor.
   - `instance_refresh` (`list[obj]`): Set the `instance_refresh` field on the resulting resource block. When `null`, the `instance_refresh` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.new](#fn-instance_refreshnew) constructor.
   - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting resource block. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.launch_template.new](#fn-launch_templatenew) constructor.
   - `mixed_instances_policy` (`list[obj]`): Set the `mixed_instances_policy` field on the resulting resource block. When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-mixed_instances_policynew) constructor.
@@ -236,6 +241,7 @@ injecting into a complete block.
   - `wait_for_capacity_timeout` (`string`): Set the `wait_for_capacity_timeout` field on the resulting object. When `null`, the `wait_for_capacity_timeout` field will be omitted from the resulting object.
   - `wait_for_elb_capacity` (`number`): Set the `wait_for_elb_capacity` field on the resulting object. When `null`, the `wait_for_elb_capacity` field will be omitted from the resulting object.
   - `initial_lifecycle_hook` (`list[obj]`): Set the `initial_lifecycle_hook` field on the resulting object. When `null`, the `initial_lifecycle_hook` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.initial_lifecycle_hook.new](#fn-initial_lifecycle_hooknew) constructor.
+  - `instance_maintenance_policy` (`list[obj]`): Set the `instance_maintenance_policy` field on the resulting object. When `null`, the `instance_maintenance_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_maintenance_policy.new](#fn-instance_maintenance_policynew) constructor.
   - `instance_refresh` (`list[obj]`): Set the `instance_refresh` field on the resulting object. When `null`, the `instance_refresh` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.instance_refresh.new](#fn-instance_refreshnew) constructor.
   - `launch_template` (`list[obj]`): Set the `launch_template` field on the resulting object. When `null`, the `launch_template` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.launch_template.new](#fn-launch_templatenew) constructor.
   - `mixed_instances_policy` (`list[obj]`): Set the `mixed_instances_policy` field on the resulting object. When `null`, the `mixed_instances_policy` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.autoscaling_group.mixed_instances_policy.new](#fn-mixed_instances_policynew) constructor.
@@ -491,6 +497,43 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `initial_lifecycle_hook` field.
+
+
+### fn withInstanceMaintenancePolicy
+
+```ts
+withInstanceMaintenancePolicy()
+```
+
+`aws.list[obj].withInstanceMaintenancePolicy` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the instance_maintenance_policy field.
+
+This function will replace the array with the passed in `value`. If you wish to instead append the
+passed in value to the existing array, use the [aws.list[obj].withInstanceMaintenancePolicyMixin](TODO) function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `instance_maintenance_policy` field.
+
+
+### fn withInstanceMaintenancePolicyMixin
+
+```ts
+withInstanceMaintenancePolicyMixin()
+```
+
+`aws.list[obj].withInstanceMaintenancePolicyMixin` constructs a mixin object that can be merged into the `list[obj]`
+Terraform resource block to set or update the instance_maintenance_policy field.
+
+This function will append the passed in array or object to the existing array. If you wish
+to instead replace the array with the passed in `value`, use the [aws.list[obj].withInstanceMaintenancePolicy](TODO)
+function.
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`list[obj]`): The value to set for the `instance_maintenance_policy` field.
 
 
 ### fn withInstanceRefresh
@@ -1068,6 +1111,30 @@ Terraform sub block.
   - An attribute object that represents the `initial_lifecycle_hook` sub block.
 
 
+## obj instance_maintenance_policy
+
+
+
+### fn instance_maintenance_policy.new
+
+```ts
+new()
+```
+
+
+`aws.autoscaling_group.instance_maintenance_policy.new` constructs a new object with attributes and blocks configured for the `instance_maintenance_policy`
+Terraform sub block.
+
+
+
+**Args**:
+  - `max_healthy_percentage` (`number`): Set the `max_healthy_percentage` field on the resulting object.
+  - `min_healthy_percentage` (`number`): Set the `min_healthy_percentage` field on the resulting object.
+
+**Returns**:
+  - An attribute object that represents the `instance_maintenance_policy` sub block.
+
+
 ## obj instance_refresh
 
 
@@ -1114,6 +1181,7 @@ Terraform sub block.
   - `checkpoint_delay` (`string`): Set the `checkpoint_delay` field on the resulting object. When `null`, the `checkpoint_delay` field will be omitted from the resulting object.
   - `checkpoint_percentages` (`list`): Set the `checkpoint_percentages` field on the resulting object. When `null`, the `checkpoint_percentages` field will be omitted from the resulting object.
   - `instance_warmup` (`string`): Set the `instance_warmup` field on the resulting object. When `null`, the `instance_warmup` field will be omitted from the resulting object.
+  - `max_healthy_percentage` (`number`): Set the `max_healthy_percentage` field on the resulting object. When `null`, the `max_healthy_percentage` field will be omitted from the resulting object.
   - `min_healthy_percentage` (`number`): Set the `min_healthy_percentage` field on the resulting object. When `null`, the `min_healthy_percentage` field will be omitted from the resulting object.
   - `scale_in_protected_instances` (`string`): Set the `scale_in_protected_instances` field on the resulting object. When `null`, the `scale_in_protected_instances` field will be omitted from the resulting object.
   - `skip_matching` (`bool`): Set the `skip_matching` field on the resulting object. When `null`, the `skip_matching` field will be omitted from the resulting object.

@@ -16,6 +16,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn new()`](#fn-new)
 * [`fn newAttrs()`](#fn-newattrs)
 * [`fn withAlias()`](#fn-withalias)
+* [`fn withKmsKeyArn()`](#fn-withkmskeyarn)
 * [`fn withLoggingConfiguration()`](#fn-withloggingconfiguration)
 * [`fn withLoggingConfigurationMixin()`](#fn-withloggingconfigurationmixin)
 * [`fn withTags()`](#fn-withtags)
@@ -53,6 +54,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
 **Args**:
   - `resourceLabel` (`string`): The name label of the block.
   - `alias` (`string`): Set the `alias` field on the resulting resource block. When `null`, the `alias` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting resource block. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `logging_configuration` (`list[obj]`): Set the `logging_configuration` field on the resulting resource block. When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.prometheus_workspace.logging_configuration.new](#fn-logging_configurationnew) constructor.
@@ -80,6 +82,7 @@ injecting into a complete block.
 
 **Args**:
   - `alias` (`string`): Set the `alias` field on the resulting object. When `null`, the `alias` field will be omitted from the resulting object.
+  - `kms_key_arn` (`string`): Set the `kms_key_arn` field on the resulting object. When `null`, the `kms_key_arn` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
   - `logging_configuration` (`list[obj]`): Set the `logging_configuration` field on the resulting object. When `null`, the `logging_configuration` sub block will be omitted from the resulting object. When setting the sub block, it is recommended to construct the object using the [aws.prometheus_workspace.logging_configuration.new](#fn-logging_configurationnew) constructor.
@@ -102,6 +105,22 @@ Terraform resource block to set or update the alias field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`string`): The value to set for the `alias` field.
+
+
+### fn withKmsKeyArn
+
+```ts
+withKmsKeyArn()
+```
+
+`aws.string.withKmsKeyArn` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the kms_key_arn field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `kms_key_arn` field.
 
 
 ### fn withLoggingConfiguration

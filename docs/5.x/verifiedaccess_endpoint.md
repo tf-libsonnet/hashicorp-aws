@@ -25,6 +25,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withLoadBalancerOptionsMixin()`](#fn-withloadbalanceroptionsmixin)
 * [`fn withNetworkInterfaceOptions()`](#fn-withnetworkinterfaceoptions)
 * [`fn withNetworkInterfaceOptionsMixin()`](#fn-withnetworkinterfaceoptionsmixin)
+* [`fn withPolicyDocument()`](#fn-withpolicydocument)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
 * [`fn withSseSpecification()`](#fn-withssespecification)
 * [`fn withSseSpecificationMixin()`](#fn-withssespecificationmixin)
@@ -77,6 +78,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `domain_certificate_arn` (`string`): Set the `domain_certificate_arn` field on the resulting resource block.
   - `endpoint_domain_prefix` (`string`): Set the `endpoint_domain_prefix` field on the resulting resource block.
   - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting resource block.
+  - `policy_document` (`string`): Set the `policy_document` field on the resulting resource block. When `null`, the `policy_document` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting resource block. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting resource block. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -114,6 +116,7 @@ injecting into a complete block.
   - `domain_certificate_arn` (`string`): Set the `domain_certificate_arn` field on the resulting object.
   - `endpoint_domain_prefix` (`string`): Set the `endpoint_domain_prefix` field on the resulting object.
   - `endpoint_type` (`string`): Set the `endpoint_type` field on the resulting object.
+  - `policy_document` (`string`): Set the `policy_document` field on the resulting object. When `null`, the `policy_document` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
   - `tags` (`obj`): Set the `tags` field on the resulting object. When `null`, the `tags` field will be omitted from the resulting object.
   - `tags_all` (`obj`): Set the `tags_all` field on the resulting object. When `null`, the `tags_all` field will be omitted from the resulting object.
@@ -295,6 +298,22 @@ function.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list[obj]`): The value to set for the `network_interface_options` field.
+
+
+### fn withPolicyDocument
+
+```ts
+withPolicyDocument()
+```
+
+`aws.string.withPolicyDocument` constructs a mixin object that can be merged into the `string`
+Terraform resource block to set or update the policy_document field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`string`): The value to set for the `policy_document` field.
 
 
 ### fn withSecurityGroupIds
