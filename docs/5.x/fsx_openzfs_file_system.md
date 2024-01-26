@@ -30,6 +30,7 @@ This package contains functions and utilities for setting up the resource using 
 * [`fn withRootVolumeConfigurationMixin()`](#fn-withrootvolumeconfigurationmixin)
 * [`fn withRouteTableIds()`](#fn-withroutetableids)
 * [`fn withSecurityGroupIds()`](#fn-withsecuritygroupids)
+* [`fn withSkipFinalBackup()`](#fn-withskipfinalbackup)
 * [`fn withStorageCapacity()`](#fn-withstoragecapacity)
 * [`fn withStorageType()`](#fn-withstoragetype)
 * [`fn withSubnetIds()`](#fn-withsubnetids)
@@ -92,6 +93,7 @@ or `$` to refer to the root object. Instead, make an explicit outer object using
   - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting resource block. When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
   - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting resource block. When `null`, the `route_table_ids` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting resource block. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `skip_final_backup` (`bool`): Set the `skip_final_backup` field on the resulting resource block. When `null`, the `skip_final_backup` field will be omitted from the resulting object.
   - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting resource block. When `null`, the `storage_capacity` field will be omitted from the resulting object.
   - `storage_type` (`string`): Set the `storage_type` field on the resulting resource block. When `null`, the `storage_type` field will be omitted from the resulting object.
   - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting resource block.
@@ -136,6 +138,7 @@ injecting into a complete block.
   - `preferred_subnet_id` (`string`): Set the `preferred_subnet_id` field on the resulting object. When `null`, the `preferred_subnet_id` field will be omitted from the resulting object.
   - `route_table_ids` (`list`): Set the `route_table_ids` field on the resulting object. When `null`, the `route_table_ids` field will be omitted from the resulting object.
   - `security_group_ids` (`list`): Set the `security_group_ids` field on the resulting object. When `null`, the `security_group_ids` field will be omitted from the resulting object.
+  - `skip_final_backup` (`bool`): Set the `skip_final_backup` field on the resulting object. When `null`, the `skip_final_backup` field will be omitted from the resulting object.
   - `storage_capacity` (`number`): Set the `storage_capacity` field on the resulting object. When `null`, the `storage_capacity` field will be omitted from the resulting object.
   - `storage_type` (`string`): Set the `storage_type` field on the resulting object. When `null`, the `storage_type` field will be omitted from the resulting object.
   - `subnet_ids` (`list`): Set the `subnet_ids` field on the resulting object.
@@ -399,6 +402,22 @@ Terraform resource block to set or update the security_group_ids field.
 **Args**:
   - `resourceLabel` (`string`): The name label of the block to update.
   - `value` (`list`): The value to set for the `security_group_ids` field.
+
+
+### fn withSkipFinalBackup
+
+```ts
+withSkipFinalBackup()
+```
+
+`aws.bool.withSkipFinalBackup` constructs a mixin object that can be merged into the `bool`
+Terraform resource block to set or update the skip_final_backup field.
+
+
+
+**Args**:
+  - `resourceLabel` (`string`): The name label of the block to update.
+  - `value` (`bool`): The value to set for the `skip_final_backup` field.
 
 
 ### fn withStorageCapacity
